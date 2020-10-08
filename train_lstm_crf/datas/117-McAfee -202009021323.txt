@@ -1,0 +1,58 @@
+‘ Operation Oceansalt ’ Attacks South Korea , U.S. , and Canada With Source Code From Chinese Hacker Group .		others malware malware others others location location others location others others location others tool tool others person person person others
+Release_Time : 2018-10-18 .		others others others others
+Report_URL : file:///C:/Users/86188/Desktop/rp-operation-oceansalt.pdf .		others others others others others others others others
+The third wave included a Word document with the same type of macro code as the Excel files .		attack_activity attack_activity attack_activity others others sub_activity sub_activity others others others others others others others others others sub_activity sub_activity others
+The document contained fake information related to the financials of the Inter-Korean Cooperation Fund .		reference_word reference_word others others others others others others target_crowd target_crowd target_crowd target_crowd target_crowd target_crowd others
+The document was created at the same time as the attacks on South Korean public infrastructure officials .		reference_word reference_word others others others others others others others others others others location location others others others others
+Lion authored both Excel and Word documents .		person others others reference_word others reference_word reference_word others
+This Word document used a different South Korean compromised website to distribute the implant .		reference_word reference_word reference_word others others others location location tool tool others others others malware others
+In this wave , an additional Excel document appeared with telephone numbers and contact information connected to the content of the Word document .		others reference_word reference_word others others others sub_activity sub_activity others others others others others others others others others others others others others sub_activity sub_activity others
+We identified a small number of targets outside of South Korea , as the attacks expanding their scope .		others others others others others others others others others location location others others others others others others others others
+We have yet to identify the malicious documents involved in delivering this implant to the victims .		others others others others others others reference_word reference_word others others others others malware others others person others
+Because Waves One and Two contained different distribution servers for the implant , we expect this wave had its own as well .		others attack_activity attack_activity attack_activity attack_activity others others others others others reference_word reference_word others others others others others others others others others others others
+According to McAfee telemetry data between August 10 and 14 , these North American targets fall within several industries :  Financial United States .		others others security_team others others others time time time time others others others others others others others others others others industry location location others
+Health Care United States .		industry industry location location others
+Health Care United States .		industry industry location location others
+Telecommunications Canada .		industry location others
+Financial United States .		industry location location others
+Agriculture and Industrial United States .		industry others industry location location others
+Financial United States .		industry location location others
+Telecommunications Canada .		industry location others
+Financial Canada .		industry location others
+Financial Technology United States .		industry industry location location others
+Government United States .		industry location location others
+The Oceansalt implant was not limited to just one sample .		others malware malware others others others others others others others others
+We discovered additional variants using different control servers .		others others others others others others others others others
+As we continued to investigate , we found more samples , though obfuscated to avoid detection .		others others others others others others others others others others others others others others others others others
+The samples were all identical to the initial Oceansalt implant .		others others others others others others others others malware malware others
+The fifth-wave samples were compiled between June 13 and July 17 and were submitted to us by organizations in South Korea and the United States .		attack_activity attack_activity attack_activity others others others time time others time time others others others others others others person others location location others others location location others
+38216571e9a9364b509e52ec19fae61b .		md5 others
+531dee019792a089a4589c2cce3dac95 .		md5 others
+0355C116C02B02C05D6E90A0B3DC107C .		md5 others
+74A50A5705E2AF736095B6B186D38DDF .		md5 others
+45C362F17C5DC8496E97D475562BEC4D .		md5 others
+C1773E9CF8265693F37DF1A39E0CBBE2 .		md5 others
+D14DD769C7F53ACEC482347F539EFDF4 .		md5 others
+B2F6D9A62C63F61A6B33DC6520BFCCCD .		md5 others
+76C8DA4147B08E902809D1E80D96FBB4 .		md5 others
+The campaign employed multiple control servers .		reference_word reference_word others others others others others
+We observed the following IP addresses in implants dating from June to July .		others others others others others others others malware others others time others time others
+172.81.132.62 211.104.160.196 27.102.112.179 158.69.131.78 .		IP IP IP IP others
+Our telemetry shows this campaign is operational in several countries .		others others others reference_word reference_word others others others others others others
+Address 211.104.160.196 indicates infections in Costa Rica , the United States , and the Philippines .		others IP others others others location location others others location location others others others location others
+Address 158.69.131.78 reveals additional infections in the United States and Canada .		others IP others others others others others location location others location others
+These machines resided in numerous countries from August 18–21 .		others others others others others others others time time others
+Because this operation involves multifunction implants , these machines are likely to be part of a larger covert listener network .		others others others others others malware others others others others others others others others others others others others others others others
+The Advanced Threat Research team has observed this kind of targeting in similar operations that compromise victims as control server relays .		others security_team security_team security_team security_team others others others others others others others others others others others person others others others others others
+Our initial investigation into earlier similar samples led us to a variant—bf4f5b4ff7ed9c7275496c07f9836028 , compiled in 2010 .		others others others others others others others others others others others others others others others time others
+Oceansalt uses portions of code from this sample ;  their overall similarity is 21% .		malware others others others others others others others others others others others others others others others
+The reused code is unique , is not considered a common library or common code , and serves reconnaissance and control .		others others others others others others others others others others others others others others others others others others others others others others
+The misclassified sample used a Comment Crew domain .		others others others others others threatActor_name threatActor_name others others
+Further investigation revealed the misclassified sample is 99% like Seasalt ( 5e0df5b28a349d46ac8cc7d9e5e61a96 ) , a Comment Crew implant reported to have been used in their operations around 2010 .		others others others others others others others others others others malware others reference_word others others others threatActor_name threatActor_name malware others others others others others others others others others time others
+Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant .		others others malware person others others others others others others malware others others others others malware others
+Based on the overall techniques , Oceansalt is unlikely to signal a rebirth of Comment Crew , raising the question of how the actor obtained the Seasalt code .		others others others others others others malware others others others others others others others threatActor_name threatActor_name others others others others others others others person others others malware others others
+Was it provided to this or another actor , or was it leaked and discovered by this actor ?		others reference_word others others reference_word others reference_word others others others others others others others others others reference_word reference_word others
+We have been unable to find any evidence in underground or public forums that suggest the source code of Seasalt has been leaked or made available .		others others others others others others others others others others others others others others others others others others others malware others others others others others others others
+We discovered another batch of samples compiled on July 16–17 that are obfuscated and essentially the same implant , with minor changes such as the control servers .		others others others others others others others others time time others others others others others others others malware others others others others others others others others others others
+Some of the samples are missing reverse-shell functionality , indicating that this actor has access to Seasalt source code and can compile implants from the original source .		others others others others others others others others others others others others person others others others malware others others others others others malware others others others others others
+This could demonstrate is a level of collaboration between two nation-states on their cyber offensive programs .		others others others others others others others others others others others others others others others others others

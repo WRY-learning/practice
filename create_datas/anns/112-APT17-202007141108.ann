@@ -1,0 +1,258 @@
+T1	threatActor_name 0 6	Winnti
+T2	threatActor_aliases 8 12	LEAD
+T3	threatActor_aliases 13 18	APT17
+R1	coreference Arg1:T2 Arg2:T1	
+R2	coreference Arg1:T3 Arg2:T1	
+T4	time 150 162	11 July 2017
+T5	person 216 236	Nate "Doomsday" Marx
+T6	person 190 211	Tom "Hollywood" Hegel
+T7	threatActor_name 176 182	winnti
+T8	threatActor_aliases 184 188	LEAD
+R3	coreference Arg1:T8 Arg2:T7	
+T9	time 277 290	July 11, 2017
+T10	domain 307 322	ProtectWise.com
+T11	threatActor_name 464 470	Winnti
+T12	company 558 564	GitHub
+T13	threatActor_name 723 729	Winnti
+T14	threatActor_aliases 756 760	LEAD
+R6	coreference Arg1:T14 Arg2:T13	
+T15	threatActor_name 770 776	Winnti
+T16	time 791 795	2009
+R7	first_found_time Arg1:T15 Arg2:T16	
+T17	threatActor_aliases 943 949	BARIUM
+T18	threatActor_aliases 934 938	LEAD
+R8	coreference Arg1:T18 Arg2:T15	
+R9	coreference Arg1:T17 Arg2:T15	
+T19	threatActor_aliases 911 926	Winnti umbrella
+R10	coreference Arg1:T19 Arg2:T15	
+T20	security_team 963 974	ProtectWise
+T21	threatActor_name 1089 1095	Winnti
+T22	threatActor_name 1296 1308	Winnti group
+T23	time 1339 1343	2009
+R11	occur_time Arg1:T22 Arg2:T23	
+T24	threatActor_name 1443 1452	Kaspersky
+T25	threatActor_name 1454 1463	Blue Coat
+T26	threatActor_name 1469 1479	TrendMicro
+R12	part_of Arg1:T24 Arg2:T22	
+R13	part_of Arg1:T25 Arg2:T22	
+R14	part_of Arg1:T26 Arg2:T22	
+T27	time 1497 1501	2009
+T28	government 1599 1604	Japan
+T29	government 1583 1594	South Korea
+T30	industry 1536 1563	multiple video game studios
+T31	reference_word 1503 1512	the group
+R15	coreference Arg1:T31 Arg2:T22	
+R16	attack Arg1:T31 Arg2:T30	
+R17	occur_time Arg1:T31 Arg2:T27	
+R18	located Arg1:T30 Arg2:T29	
+R19	located Arg1:T30 Arg2:T28	
+T32	attack_goal 1633 1659	various in-game currencies
+T33	attack_goal 1678 1718	developers’ certificates and source code
+R20	goal Arg1:T31 Arg2:T32	
+R21	goal Arg1:T31 Arg2:T33	
+T34	threatActor_name 1766 1770	LEAD
+T35	threatActor_aliases 1772 1777	APT17
+R22	coreference Arg1:T35 Arg2:T34	
+T36	threatActor_name 1783 1789	BARIUM
+T37	threatActor_name 1735 1747	Winnti group
+R23	part_of Arg1:T34 Arg2:T37	
+R24	part_of Arg1:T36 Arg2:T37	
+R25	part_of Arg1:T35 Arg2:T37	
+T38	threatActor_name 1824 1828	LEAD
+T39	attack_goal 1840 1860	digital certificates
+T40	attack_goal 1876 1888	certificates
+T41	malware 1897 1904	malware
+T42	attack_goal 1915 1933	gaming source code
+T43	attack_goal 1938 1960	infrastructure details
+R26	goal Arg1:T37 Arg2:T39	
+R27	goal Arg1:T37 Arg2:T40	
+R28	goal Arg1:T37 Arg2:T41	
+R29	goal Arg1:T37 Arg2:T42	
+R30	goal Arg1:T37 Arg2:T43	
+T44	tool 1978 1982	PIVY
+T45	tool 1984 1991	Chopper
+T46	tool 1993 1998	PlugX
+T47	tool 2000 2007	ZxShell
+T48	tool 2009 2015	Winnti
+R31	use Arg1:T37 Arg2:T44	
+R32	use Arg1:T37 Arg2:T45	
+R33	use Arg1:T37 Arg2:T46	
+R34	use Arg1:T37 Arg2:T47	
+R35	use Arg1:T37 Arg2:T48	
+T49	tool 2017 2046	Phishing HR/recruiting emails
+T50	malware 2115 2122	malware
+T51	tool 2077 2103	CHM email file attachments
+R36	use Arg1:T37 Arg2:T49	
+R37	use Arg1:T37 Arg2:T51	
+T52	tool 2131 2137	GitHub
+T53	tool 2142 2144	C2
+R38	use Arg1:T37 Arg2:T52	
+R39	use Arg1:T37 Arg2:T53	
+T54	attack_goal 2161 2192	Online video game organizations
+T55	attack_goal 2194 2208	Defense Sector
+T56	attack_goal 2210 2236	Internet Service Providers
+T57	attack_goal 2238 2245	Finance
+R40	attack Arg1:T37 Arg2:T54	
+R41	attack Arg1:T37 Arg2:T55	
+R42	attack Arg1:T37 Arg2:T56	
+R43	attack Arg1:T37 Arg2:T57	
+T58	location 2270 2275	China
+T59	threatActor_aliases 2314 2326	Wicked Panda
+T60	threatActor_aliases 2328 2333	APT17
+T61	threatActor_aliases 2335 2339	Mana
+T62	threatActor_name 2353 2359	Winnti
+R44	located Arg1:T58 Arg2:T62	
+R45	coreference Arg1:T59 Arg2:T62	
+R46	coreference Arg1:T60 Arg2:T62	
+R47	coreference Arg1:T61 Arg2:T62	
+T63	security_team 2382 2393	ProtectWise
+T64	reference_word 2453 2462	the group
+R48	coreference Arg1:T64 Arg2:T62	
+T65	tool 2486 2516	Browser Exploitation Framework
+R49	use Arg1:T62 Arg2:T65	
+T66	tool 2528 2550	Metasploit Meterpreter
+R50	use Arg1:T62 Arg2:T66	
+T67	tool 2564 2581	open source tools
+T68	threatActor_name 2750 2762	Winnti group
+T69	tool 2851 2860	JAR files
+T70	tool 2872 2890	macOS applications
+T71	tool 2959 2966	Windows
+T72	tool 2982 2991	MSI files
+T73	tool 3015 3025	a free EXE
+T74	tool 3029 3032	MSI
+T75	domain 3044 3068	http://www.exetomsi.com/
+T76	threatActor_name 3088 3094	Winnti
+T77	attack_activity 3137 3158	spear phishing emails
+R51	launch Arg1:T76 Arg2:T77	
+T78	location 3170 3178	Japanese
+T79	target_crowd 3179 3200	gaming studio’s staff
+R52	located Arg1:T79 Arg2:T78	
+R53	attack Arg1:T76 Arg2:T79	
+T80	attack_activity 3225 3231	emails
+R54	launch Arg1:T76 Arg2:T80	
+T81	threatActor_name 3397 3403	Winnti
+T82	attack_activity 3404 3418	phishing email
+T83	program_language 3482 3490	Object-C
+R55	launch Arg1:T81 Arg2:T82	
+T84	program_language 3492 3496	JAVA
+T85	program_language 3502 3507	Swift
+T86	program_language 3544 3548	Ruby
+T87	program_language 3577 3580	PHP
+T88	OS_name 3620 3623	iOS
+T89	OS_name 3641 3648	Android
+T90	OS_name 3655 3658	AWS
+T91	OS_name 3660 3667	Jenkins
+T92	OS_name 3669 3684	Microsoft Azure
+T93	OS_name 3686 3699	ZendFramework
+T94	threatActor_name 3855 3861	Winnti
+T95	protocol 3973 3977	HTML
+T96	malware 4120 4128	JAR file
+R56	use Arg1:T94 Arg2:T96	
+T97	attack_activity 4237 4256	Phishing Email Link
+R57	launch Arg1:T94 Arg2:T97	
+T98	protocol 4296 4300	HTML
+T99	malware 4353 4362	real.html
+T100	function 4326 4332	iframe
+T101	malware 4365 4374	real.html
+T102	protocol 4389 4393	HTML
+T103	tool 4459 4468	BeEF hook
+T104	IP 4722 4724	IP
+T105	sample_name 4805 4822	resume_screen.css
+T106	sample_name 4827 4836	mypic.jpg
+T107	tool 4951 4955	BeEF
+T108	tool 5037 5049	BeEF modules
+T109	tool 3785 3790	MSSQL
+T110	tool 3792 3797	Mysql
+T111	tool 3799 3805	Oracle
+T112	tool 3811 3821	PostgreSQL
+T114	sample_name 5078 5102	Jenkins_groovy_code_exec
+T113	attack_activity 5105 5123	Evasion Techniques
+T115	threatActor_name 5137 5143	Winnti
+R58	launch Arg1:T115 Arg2:T113	
+T116	protocol 5204 5207	DNS
+R59	use Arg1:T115 Arg2:T116	
+T117	domain 5313 5331	google-statics.com
+T118	domain 5380 5400	analytics.google.com
+R60	use Arg1:T115 Arg2:T117	
+R61	use Arg1:T115 Arg2:T118	
+T119	protocol 5430 5433	DNS
+T120	domain 5702 5720	google-statics.com
+T121	tool 5810 5832	css.google-statics.com
+T122	threatActor_name 5894 5900	Winnti
+T123	protocol 5862 5867	C2 IP
+T124	protocol 5229 5231	C2
+R62	use Arg1:T115 Arg2:T124	
+R63	use Arg1:T122 Arg2:T123	
+T125	tool 5994 6010	C2 communication
+R64	use Arg1:T122 Arg2:T125	
+T126	tool 6054 6058	BeEF
+T127	protocol 6086 6089	TCP
+R65	use Arg1:T122 Arg2:T126	
+R66	use Arg1:T122 Arg2:T127	
+T128	tool 6140 6144	BeEF
+T129	tool 6288 6296	GAGAHOOK
+T130	tool 6320 6328	BEEFHOOK
+T131	tool 6346 6357	BEEFSESSION
+R67	use Arg1:T122 Arg2:T128	
+R68	use Arg1:T122 Arg2:T129	
+R69	use Arg1:T122 Arg2:T130	
+R70	use Arg1:T122 Arg2:T131	
+T132	threatActor_name 6395 6411	Winnti campaigns
+T133	target_crowd 6490 6517	online gaming organizations
+R71	attack Arg1:T132 Arg2:T133	
+T134	tool 6440 6476	legitimate code signing certificates
+R72	use Arg1:T132 Arg2:T134	
+T135	malware 6533 6540	malware
+R73	use Arg1:T132 Arg2:T135	
+T136	reference_word 6543 6557	This technique
+R74	coreference Arg1:T136 Arg2:T135	
+T137	threatActor_name 6763 6775	Winnti group
+T138	tool 6807 6819	certificates
+R75	use Arg1:T137 Arg2:T138	
+T139	malware 6897 6904	malware
+T140	threatActor_name 7025 7037	Winnti group
+R76	use Arg1:T140 Arg2:T139	
+T142	domain_evil 7063 7087	job.yoyakuweb.technology
+T143	domain_evil 7089 7112	resume.immigrantlol.com
+T144	domain_evil 7113 7132	macos.exoticlol.com
+T145	domain_evil 7133 7155	css.google-statics.com
+T146	domain_evil 7156 7165	minami.cc
+T147	domain_evil 7166 7194	vps2java.securitytactics.com
+T148	IP_evil 7195 7208	106.184.5.252
+T149	IP_evil 7209 7220	61.78.62.21
+T150	IP_evil 7221 7235	139.162.106.19
+T151	IP_evil 7236 7251	172.104.101.131
+T152	IP_evil 7252 7266	139.162.17.161
+T153	IP_evil 7267 7282	133.242.145.137
+T154	IP_evil 7283 7297	106.185.31.128
+T155	attack_activity 7310 7341	Phishing email link destination
+T156	attack_activity 7344 7375	Phishing email link destination
+T157	attack_activity 7376 7414	Likely phishing email link destination
+T158	attack_activity 7415 7434	BeEF Landing and C2
+T159	attack_activity 7435 7475	Potential BeEF - Low confidence (Linode)
+T160	attack_activity 7476 7486	Malware C2
+T161	attack_activity 7487 7518	Phishing email link destination
+T162	attack_activity 7527 7534	BeEF C2
+T163	attack_activity 7556 7580	Linode - Used in BeEF C2
+T164	attack_activity 7581 7600	Linode - Malware C2
+T165	attack_activity 7601 7625	Linode - Used in BeEF C2
+T166	attack_activity 7626 7650	Linode - Used in BeEF C2
+T167	attack_activity 7651 7681	Linode - hosting BeEF landings
+T168	reference_word 239 248	This post
+R78	release_time Arg1:T9 Arg2:T168	
+R79	occur_time Arg1:T7 Arg2:T4	
+R80	find Arg1:T6 Arg2:T7	
+R81	find Arg1:T5 Arg2:T7	
+R4	part_of Arg1:T142 Arg2:T140	
+R5	part_of Arg1:T143 Arg2:T140	
+R77	part_of Arg1:T144 Arg2:T140	
+R82	part_of Arg1:T145 Arg2:T140	
+R83	part_of Arg1:T146 Arg2:T140	
+R84	part_of Arg1:T147 Arg2:T140	
+R85	part_of Arg1:T148 Arg2:T140	
+R86	part_of Arg1:T149 Arg2:T140	
+R87	part_of Arg1:T150 Arg2:T140	
+R88	part_of Arg1:T151 Arg2:T140	
+R89	part_of Arg1:T152 Arg2:T140	
+R90	part_of Arg1:T154 Arg2:T140	
+R91	part_of Arg1:T153 Arg2:T140	

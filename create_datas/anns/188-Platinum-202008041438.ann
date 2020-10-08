@@ -1,0 +1,222 @@
+T1	threatActor_name 0 8	Platinum
+T2	time 109 118	June 2018
+T3	location 183 218	South and Southeast Asian countries
+T4	threatActor_name 474 482	PLATINUM
+T5	time 330 334	2012
+T6	government 229 239	diplomatic
+T7	government 242 252	government
+T8	government 257 274	military entities
+T9	attack_activity 384 398	EasternRoppels
+R3	attack Arg1:T4 Arg2:T3	
+R4	part_of Arg1:T6 Arg2:T3	
+R5	part_of Arg1:T7 Arg2:T3	
+R6	part_of Arg1:T8 Arg2:T3	
+R7	first_found_time Arg1:T9 Arg2:T2	
+T10	tool 621 624	WMI
+T11	tool 657 678	PowerShell downloader
+T12	malware 722 741	PowerShell backdoor
+T13	tool 777 791	WMI PowerShell
+T14	tool 1199 1215	Dropbox accounts
+T15	malware 1286 1305	PowerShell backdoor
+T18	tool 1658 1669	WinSock NSP
+T19	malware 1763 1782	PowerShell backdoor
+T20	threatActor_name 2513 2521	PLATINUM
+T21	url 2713 2739	intelreports@kaspersky.com
+T23	function 4202 4212	NSPStartup
+T24	tool 4157 4160	DLL
+T25	function 4328 4351	WSCInstallNameSpace API
+T26	function 4388 4407	WSCEnableNSProvider
+T27	function 4633 4643	NSPStartup
+T28	tool 5023 5027	HTML
+T29	tool 5046 5056	C&C server
+T30	tool 4987 4991	HTML
+T31	encryption_algo 6332 6343	AES-256 CBC
+T22	encryption_algo 3386 3397	AES-256 CBC
+T32	tool 6756 6766	C&C server
+T33	tool 6924 6945	configuration manager
+T34	tool 7233 7247	config manager
+T35	malware 8061 8073	P2P backdoor
+T36	tool 8670 8680	C&C server
+T37	time 8789 8793	2012
+T38	tool 9181 9193	TransferPort
+T39	tool 9301 9313	TransferPort
+T40	OS_name 9825 9832	Windows
+T41	tool 10367 10378	P2P network
+T42	threatActor_name 12326 12334	PLATINUM
+T43	threatActor_name 12477 12485	PLATINUM
+T44	threatActor_name 12600 12608	PLATINUM
+T45	threatActor_name 12811 12819	PLATINUM
+T46	threatActor_name 12907 12915	PLATINUM
+T47	tool 12337 12369	Steganography backdoor installer
+T48	tool 12488 12528	Obsolete steganography backdoor launcher
+T49	tool 12611 12633	Steganography backdoor
+T50	tool 12822 12834	P2P backdoor
+T51	tool 12918 12932	Config manager
+T52	sha1 12372 12404	26a83effbe14b63683f0c3e0a3f657a9
+T53	sha1 12407 12439	4b4c3b57416c03ca7f57ff7241797456
+T54	sha1 12442 12474	58b10ac25df04a318a19260110d43894
+T55	sha1 12530 12562	d95d939337d789046bbda2083f88a4a0
+T56	sha1 12565 12597	b22499568d51759cf13bf8c05322dba2
+T57	sha1 12636 12668	5591704fd870919930e8ae1bd0447706
+T58	sha1 12671 12703	9179a84643bd6d1c1b8e6fe0d2330dab
+T59	sha1 12706 12738	c7fda2be17735eeaeb6c56d30fc86215
+T60	sha1 12741 12773	d1936dc97566625b2bfcab3103c048cb
+T61	sha1 12776 12808	d1a5801abb9f0dc0a44f19b2208e2b9a
+T62	sha1 12837 12869	0668df90c701cd75db2aa43a0481718d
+T63	sha1 12872 12904	e764a1ff12e68badb6d54f16886a128f
+T64	sha1 12935 12967	8dfabe7db613bcfc6d9afef4941cd769
+T65	sha1 12970 13002	37c76973a55134925c733f4f50108555
+R8	use Arg1:T42 Arg2:T47	
+R9	use Arg1:T43 Arg2:T48	
+R10	use Arg1:T44 Arg2:T49	
+R11	use Arg1:T45 Arg2:T50	
+R12	use Arg1:T46 Arg2:T51	
+R13	part_of Arg1:T52 Arg2:T47	
+R14	part_of Arg1:T53 Arg2:T47	
+R15	part_of Arg1:T54 Arg2:T47	
+R16	part_of Arg1:T55 Arg2:T48	
+R17	part_of Arg1:T56 Arg2:T48	
+R18	part_of Arg1:T57 Arg2:T49	
+R19	part_of Arg1:T58 Arg2:T49	
+R20	part_of Arg1:T59 Arg2:T49	
+R21	part_of Arg1:T60 Arg2:T49	
+R22	part_of Arg1:T61 Arg2:T49	
+R23	part_of Arg1:T62 Arg2:T50	
+R24	part_of Arg1:T63 Arg2:T50	
+R25	part_of Arg1:T64 Arg2:T51	
+R26	part_of Arg1:T65 Arg2:T51	
+T66	threatActor_name 12065 12073	PLATINUM
+T68	tool 1999 2009	C&C server
+T69	person 606 615	operators
+R27	use Arg1:T69 Arg2:T10	
+R28	use Arg1:T69 Arg2:T11	
+R29	use Arg1:T69 Arg2:T12	
+R30	use Arg1:T69 Arg2:T13	
+T70	person 1153 1162	attackers
+R31	use Arg1:T70 Arg2:T14	
+R32	use Arg1:T70 Arg2:T15	
+T71	attack_goal 1222 1262	storing the payload and exfiltrated data
+R33	goal Arg1:T14 Arg2:T71	
+T72	attack_goal 1313 1355	perform initial fingerprinting of a system
+R34	goal Arg1:T15 Arg2:T72	
+T17	sample_function 1808 1830	hardcoded active hours
+R35	part_of Arg1:T17 Arg2:T19	
+T67	attack_goal 2168 2190	store exfiltrated data
+R36	goal Arg1:T20 Arg2:T67	
+T73	tool 2818 2825	dropper
+T74	sample_function 2910 2946	creates directories for the backdoor
+R37	part_of Arg1:T74 Arg2:T73	
+T75	tool 3518 3528	C&C server
+T76	tool 1638 1641	DLL
+T77	tool 7741 7758	ChangeKeywordFile
+T78	tool 7763 7772	ChangeKey
+T79	sample_function 7421 7443	creates a command file
+R38	part_of Arg1:T79 Arg2:T34	
+T80	sample_function 7501 7542	stores it in the “ CommandDir ” directory
+R39	part_of Arg1:T80 Arg2:T34	
+T81	malware 7626 7648	Steganography backdoor
+T82	sample_function 8529 8568	interacting with other infected victims
+T83	sample_function 8573 8603	connecting them into a network
+R40	part_of Arg1:T82 Arg2:T35	
+R41	part_of Arg1:T83 Arg2:T35	
+T84	sample_function 8846 8867	sniff network traffic
+T85	malware 8818 8826	backdoor
+R42	coreference Arg1:T85 Arg2:T35	
+R43	part_of Arg1:T84 Arg2:T85	
+T86	url 12295 12321	intelreports@kaspersky.com
+T87	string 3569 3571	ht
+T88	string 3583 3585	sl
+T89	string 3707 3710	opt
+T90	string 3824 3827	die
+T91	string 3955 3956	p
+T92	string 3999 4000	t
+R1	launch Arg1:T4 Arg2:T9	
+R2	occur_time Arg1:T9 Arg2:T5	
+T16	malware 4100 4113	main backdoor
+R44	part_of Arg1:T24 Arg2:T16	
+R46	use Arg1:T16 Arg2:T25	
+R47	use Arg1:T16 Arg2:T26	
+T93	string 5376 5381	align
+T94	string 5388 5395	bgcolor
+T95	string 5402 5409	colspan
+T96	string 5418 5425	rowspan
+T97	tool 5603 5607	HTML
+T98	tool 5988 5992	HTML
+R45	use Arg1:T85 Arg2:T36	
+R48	first_found_time Arg1:T85 Arg2:T37	
+R49	use Arg1:T85 Arg2:T38	
+R50	use Arg1:T85 Arg2:T39	
+T99	security_team 12244 12276	Kaspersky Intelligence Reporting
+R51	part_of Arg1:T86 Arg2:T99	
+T100	tool 846 865	command and control
+T101	tool 868 871	C&C
+R52	coreference Arg1:T101 Arg2:T100	
+T102	malware 1721 1729	backdoor
+T103	malware 1774 1782	backdoor
+T104	tool 1763 1773	PowerShell
+T105	tool 1444 1454	PowerShell
+T106	tool 1091 1094	C&C
+T107	malware 1883 1891	backdoor
+T108	tool 1857 1860	C&C
+T109	tool 1672 1692	Nameservice Provider
+R53	part_of Arg1:T109 Arg2:T18	
+T110	tool 3973 3976	C&C
+T111	string 3413 3415	pr
+T112	tool 11343 11355	TransferPort
+T113	malware 8880 8888	backdoor
+T114	tool 11324 11333	ProbePort
+T115	malware 3118 3126	backdoor
+T116	malware 4265 4273	backdoor
+T117	malware 4689 4697	backdoor
+T118	malware 4930 4938	backdoor
+R54	use Arg1:T118 Arg2:T30	
+T119	malware 1297 1305	backdoor
+T120	tool 1286 1296	PowerShell
+T121	malware 1603 1611	backdoor
+R55	part_of Arg1:T18 Arg2:T121	
+R56	part_of Arg1:T76 Arg2:T121	
+T122	sample_function 1967 2009	hide all communication with its C&C server
+R57	part_of Arg1:T122 Arg2:T107	
+T123	malware 2473 2481	backdoor
+R58	part_of Arg1:T123 Arg2:T20	
+T124	sub_activity 1408 1433	download or upload a file
+T125	sub_activity 1438 1461	run a PowerShell script
+R59	part_of Arg1:T124 Arg2:T72	
+R60	part_of Arg1:T125 Arg2:T72	
+T126	malware 733 741	backdoor
+T127	tool 722 732	PowerShell
+T128	tool 2799 2806	dropper
+T129	malware 2760 2768	backdoor
+R61	part_of Arg1:T128 Arg2:T129	
+T130	malware 3197 3205	backdoor
+T131	tool 3180 3187	dropper
+T134	malware 5880 5888	backdoor
+T135	malware 6452 6460	backdoor
+T136	malware 6486 6494	backdoor
+T137	malware 7666 7674	backdoor
+T138	malware 8011 8019	backdoor
+T139	malware 7812 7820	backdoor
+T140	malware 8316 8324	backdoor
+T141	malware 8424 8432	backdoor
+T142	malware 8721 8729	backdoor
+T143	malware 9525 9533	backdoor
+T144	malware 9754 9762	backdoor
+T145	malware 9697 9705	backdoor
+T146	malware 9802 9810	backdoor
+T147	malware 10077 10085	backdoor
+T148	security_team 2662 2702	Kaspersky Intelligence Reporting service
+R62	part_of Arg1:T21 Arg2:T148	
+R63	use Arg1:T130 Arg2:T131	
+R64	use Arg1:T130 Arg2:T75	
+R65	use Arg1:T136 Arg2:T32	
+T132	sub_activity 6983 7003	create configuration
+T133	sub_activity 7008 7021	command files
+R66	part_of Arg1:T132 Arg2:T33	
+R67	part_of Arg1:T133 Arg2:T33	
+R68	coreference Arg1:T138 Arg2:T35	
+R69	coreference Arg1:T137 Arg2:T81	
+R70	coreference Arg1:T139 Arg2:T35	
+T149	malware 8081 8089	backdoor
+R71	coreference Arg1:T149 Arg2:T35	
+T150	tool 9825 9846	Windows index service
+R72	use Arg1:T146 Arg2:T150	

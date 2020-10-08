@@ -1,0 +1,159 @@
+T1	threatActor_name 0 5	APT28
+T2	threatActor_name 3354 3359	APT28
+T3	location 259 263	U.S.
+T4	government 41 70	Democratic National Committee
+T5	government 75 78	DNC
+R1	part_of Arg1:T5 Arg2:T4	
+T6	time 81 90	June 2016
+T7	government 142 160	Russian Government
+T8	attack_activity 209 220	sponsorship
+T9	location 200 206	Russia
+R2	launch Arg1:T9 Arg2:T8	
+R3	attack Arg1:T8 Arg2:T3	
+T10	government 308 326	Russian Government
+T11	attack_activity 441 456	state espionage
+R4	launch Arg1:T10 Arg2:T11	
+T12	government 491 494	DNC
+T13	government 536 554	Russian Government
+T14	attack_goal 558 603	interfere with the U.S. presidential election
+R5	goal Arg1:T13 Arg2:T14	
+T15	location 577 581	U.S.
+R6	find Arg1:T12 Arg2:T14	
+T16	location 686 692	Russia
+T17	sub_activity 745 750	hacks
+T18	sub_activity 755 760	leaks
+T19	sub_activity 766 792	undermine the institutions
+T20	sub_activity 795 803	policies
+T21	sub_activity 810 816	actors
+T22	government 826 844	Russian Government
+T23	reference_word 714 732	variety of methods
+R7	coreference Arg1:T17 Arg2:T23	
+R8	coreference Arg1:T18 Arg2:T23	
+R9	coreference Arg1:T19 Arg2:T23	
+R10	coreference Arg1:T20 Arg2:T23	
+R11	coreference Arg1:T21 Arg2:T23	
+R12	use Arg1:T16 Arg2:T23	
+T24	threatActor_name 964 969	APT28
+T25	government 995 1013	Russian Government
+R13	part_of Arg1:T24 Arg2:T25	
+T26	reference_word 1059 1073	the government
+R14	coreference Arg1:T26 Arg2:T25	
+T27	counter_measure 1206 1229	multiple investigations
+T28	counter_measure 1232 1240	endpoint
+T29	counter_measure 1245 1263	network detections
+T30	person 1158 1160	We
+T31	reference_word 1187 1197	this group
+T32	reference_word 1097 1100	its
+R15	coreference Arg1:T32 Arg2:T24	
+R16	coreference Arg1:T31 Arg2:T32	
+R17	find Arg1:T30 Arg2:T31	
+R18	use Arg1:T30 Arg2:T27	
+R19	use Arg1:T30 Arg2:T28	
+R20	use Arg1:T30 Arg2:T29	
+T33	counter_measure 1270 1291	continuous monitoring
+R21	use Arg1:T30 Arg2:T33	
+T34	threatActor_name 1314 1319	APT28
+T35	time 1358 1362	2007
+R22	first_found_time Arg1:T35 Arg2:T34	
+T36	threatActor_name 1605 1610	APT28
+T37	government 1618 1636	Russian Government
+R23	part_of Arg1:T36 Arg2:T37	
+T38	time 1642 1660	December 29 , 2016
+T39	government 1667 1698	Department of Homeland Security
+T40	government 1701 1704	DHS
+R24	part_of Arg1:T40 Arg2:T39	
+T41	government 1711 1742	Federal Bureau of Investigation
+T42	government 1745 1748	FBI
+R25	part_of Arg1:T42 Arg2:T41	
+T43	security_team 1795 1802	FireEye
+T44	government 1842 1860	Russian Government
+T45	threatActor_name 1870 1875	APT28
+R26	part_of Arg1:T45 Arg2:T44	
+R27	find Arg1:T43 Arg2:T45	
+R28	find Arg1:T42 Arg2:T45	
+R29	find Arg1:T40 Arg2:T45	
+R30	release_time Arg1:T38 Arg2:T45	
+T46	time 1893 1897	2007
+T47	threatActor_name 1900 1905	APT28
+T48	attack_goal 1956 1983	Russian strategic interests
+R31	goal Arg1:T47 Arg2:T48	
+T49	location 1956 1963	Russian
+R32	first_found_time Arg1:T46 Arg2:T47	
+T50	reference_word 1986 1995	The group
+R33	coreference Arg1:T50 Arg2:T47	
+T51	attack_goal 2110 2167	collected intelligence on defense and geopolitical issues
+R34	goal Arg1:T50 Arg2:T51	
+T52	threatActor_name 2170 2175	APT28
+T53	attack_activity 2176 2194	espionage activity
+R35	launch Arg1:T52 Arg2:T53	
+T54	location 2234 2238	U.S.
+T55	location 2241 2247	Europe
+T56	location 2258 2294	countries of the former Soviet Union
+T57	industry 2307 2318	governments
+T58	industry 2323 2333	militaries
+T59	industry 2336 2352	defense attaches
+T60	industry 2355 2369	media entities
+T61	target_crowd 2376 2386	dissidents
+T62	target_crowd 2391 2440	figures opposed to the current Russian Government
+T63	government 2422 2440	Russian Government
+T64	location 2469 2475	Russia
+T65	threatActor_name 2515 2520	APT28
+T66	target_crowd 2218 2226	entities
+R36	attack Arg1:T53 Arg2:T66	
+R37	located Arg1:T66 Arg2:T54	
+R38	located Arg1:T66 Arg2:T55	
+R39	located Arg1:T66 Arg2:T56	
+R40	part_of Arg1:T57 Arg2:T66	
+R41	part_of Arg1:T58 Arg2:T66	
+R42	part_of Arg1:T59 Arg2:T66	
+R43	part_of Arg1:T60 Arg2:T66	
+R44	part_of Arg1:T61 Arg2:T66	
+R45	part_of Arg1:T62 Arg2:T66	
+R46	use Arg1:T64 Arg2:T65	
+T67	attack_activity 2524 2608	conduct information operations commensurate with broader strategic military doctrine
+R47	launch Arg1:T65 Arg2:T67	
+T68	threatActor_name 2654 2659	APT28
+T69	sub_activity 2665 2684	steal internal data
+T70	sub_activity 2698 2767	leaked to further political narratives aligned with Russian interests
+R48	launch Arg1:T68 Arg2:T69	
+R49	launch Arg1:T68 Arg2:T70	
+T71	location 2814 2819	Syria
+T72	government 2822 2826	NATO
+T73	location 2827 2834	Ukraine
+T74	location 2851 2865	European Union
+T75	tool 2671 2684	internal data
+T76	time 2899 2903	2016
+T77	location 2929 2936	Russian
+T78	attack_activity 2991 3022	Russian state-sponsored hacking
+T79	time 3033 3037	2016
+T80	location 3038 3042	U.S.
+T81	threatActor_name 3107 3112	APT28
+T82	threatActor_name 3277 3282	APT28
+T83	time 3322 3334	October 2014
+T84	security_team 3337 3344	FireEye
+R50	find Arg1:T84 Arg2:T2	
+R51	release_time Arg1:T83 Arg2:T2	
+T85	attack_activity 3375 3410	Russia's Cyber Espionage Operations
+R52	launch Arg1:T2 Arg2:T85	
+T86	threatActor_name 3432 3437	APT28
+T87	government 3470 3488	Russian Government
+T88	attack_goal 3491 3526	strategic intelligence requirements
+R53	use Arg1:T87 Arg2:T86	
+R54	goal Arg1:T87 Arg2:T88	
+T89	threatActor_name 3544 3549	APT28
+T90	location 3644 3652	European
+T91	location 3657 3681	Eastern European nations
+T92	company 3695 3726	regional security organizations
+T93	government 3741 3775	North Atlantic Treaty Organization
+T94	government 3778 3782	NATO
+T95	government 3793 3844	Organization for Security and Cooperation in Europe
+T96	government 3847 3851	OSCE
+R55	part_of Arg1:T96 Arg2:T95	
+R56	part_of Arg1:T94 Arg2:T93	
+T97	government 3585 3604	foreign governments
+T98	industry 3609 3619	militaries
+R57	located Arg1:T97 Arg2:T90	
+R58	located Arg1:T97 Arg2:T91	
+R59	part_of Arg1:T92 Arg2:T98	
+R60	part_of Arg1:T93 Arg2:T92	
+R61	part_of Arg1:T95 Arg2:T92	

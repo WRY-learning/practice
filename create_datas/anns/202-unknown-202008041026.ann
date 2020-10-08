@@ -1,0 +1,56 @@
+T1	tool 1436 1443	NetWire
+T2	tool 1446 1454	NanoCore
+T3	tool 1461 1468	LokiBot
+T4	sample_name 1765 1822	AWARENESS NOTICE ON CORONAVIRUS COVID-19 DOCUMENT_pdf.exe
+T5	sample_name 1823 1855	Coronavirus COVID-19 upadte.xlsx
+T6	sample_name 1856 1873	CORONA VIRUS1.uue
+T7	sample_name 1874 1916	CORONA VIRUS AFFECTED CREW AND VESSEL.xlsm
+T8	sample_name 1917 1928	covid19.ZIP
+T9	malware 2151 2155	EDA2
+T10	malware 2191 2201	AgentTesla
+T11	industry 2296 2330	government healthcare organization
+T12	industry 2333 2362	medical research universities
+T13	industry 2365 2395	industrial manufacturing firms
+T14	industry 2402 2421	research institutes
+T15	sample_name 2534 2565	20200323-sitrep-63-covid-19.doc
+T16	sample_name 2608 2665	COVID-19 Supplier Notice/COVID-19 Supplier Notice.jpg.exe
+T17	email_evil 5278 5293	noreply@who.int
+T18	IP_evil 5351 5365	176.223.133.91
+T19	time 5141 5203	Between March 24 , 2020 at 18:25 UTC and March 26 at 11:54 UTC
+T20	sample_name 5649 5680	20200323-sitrep-63-covid-19.doc
+T21	encryption_algo 5685 5691	SHA256
+T22	sha2 5695 5759	62d38f19e67013ce7b2a84cb17362c77e2f13134ee3f8743cbadde818483e617
+T23	malware 5831 5835	EDA2
+T24	malware 5931 5941	HiddenTear
+T25	company 6078 6087	Microsoft
+T26	vulnerability_cve 6114 6127	CVE-2012-0158
+T27	malware 6426 6436	AgentTesla
+T28	time 6516 6520	2014
+T29	url_evil 6593 6609	covid-19-gov.com
+T30	sample_name 6741 6758	Covid-Locator.exe
+T31	sample_name 6684 6699	RedLine Stealer
+T32	sample_name 6559 6574	RedLine Stealer
+R1	located Arg1:T32 Arg2:T29	
+R2	occur_time Arg1:T17 Arg2:T19	
+T33	tool 7314 7324	PAN-DB URL
+T34	time 7560 7568	April 27
+T35	tool 7770 7788	Palo Alto Networks
+T36	security_team 7859 7882	Secure Remote Workforce
+T37	malware 1312 1328	malicious emails
+R3	use Arg1:T37 Arg2:T1	
+R4	use Arg1:T37 Arg2:T2	
+R5	use Arg1:T37 Arg2:T3	
+R6	attack Arg1:T10 Arg2:T11	
+R7	attack Arg1:T10 Arg2:T12	
+R8	attack Arg1:T10 Arg2:T14	
+R9	attack Arg1:T9 Arg2:T11	
+R10	attack Arg1:T9 Arg2:T12	
+R11	attack Arg1:T9 Arg2:T13	
+R12	attack Arg1:T9 Arg2:T14	
+R13	attack Arg1:T10 Arg2:T13	
+T38	time 4034 4061	from February 1 to March 31
+T39	time 3879 3909	between January 1 and March 31
+R14	use Arg1:T36 Arg2:T35	
+R15	part_of Arg1:T23 Arg2:T24	
+R16	use Arg1:T23 Arg2:T26	
+R17	first_found_time Arg1:T27 Arg2:T28	

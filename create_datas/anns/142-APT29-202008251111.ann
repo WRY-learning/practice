@@ -1,0 +1,46 @@
+T1	time 184 188	2015
+T2	malware 237 247	HAMMERTOSS
+T3	reference_word 215 222	malware
+R1	coreference Arg1:T3 Arg2:T2	
+T4	location 309 316	Russian
+T5	threatActor_name 363 368	APT29
+R2	first_found_time Arg1:T1 Arg2:T3	
+T6	sub_activity 256 288	advanced persistent threat group
+R3	goal Arg1:T4 Arg2:T6	
+T7	malware 714 724	HAMMERTOSS
+T8	sub_activity 730 836	Twitter , GitHub , and cloud storage services to relay commands and extract data from compromised networks
+R4	launch Arg1:T7 Arg2:T8	
+T9	malware 523 533	HAMMERTOSS
+T10	threatActor_name 579 584	APT29
+T11	sub_activity 636 711	adding layers of obfuscation and mimicking the behavior of legitimate users
+R5	launch Arg1:T10 Arg2:T11	
+T12	malware 839 849	HAMMERTOSS
+T13	sub_activity 862 1004	Retrieving commands via legitimate web services , such as Twitter and GitHub , or using compromised web servers for command-andcontrol ( CnC )
+R6	launch Arg1:T12 Arg2:T13	
+T14	threatActor_name 1331 1336	APT29
+T15	time 1396 1400	2014
+R7	occur_time Arg1:T15 Arg2:T14	
+T16	location 1418 1425	Russian
+T17	threatActor_name 1536 1541	APT29
+T18	threatActor_name 2007 2012	APT29
+T19	time 2466 2470	2015
+T20	malware 2446 2456	HAMMERTOSS
+R8	first_found_time Arg1:T19 Arg2:T20	
+T21	threatActor_name 2473 2478	APT29
+T22	threatActor_name 2689 2694	APT29
+T23	threatActor_name 3594 3599	APT29
+T24	malware 3660 3670	HAMMERTOSS
+T25	malware 2659 2669	HAMMERTOSS
+T26	malware 2491 2501	HAMMERTOSS
+T27	threatActor_name 2369 2374	APT29
+T28	sub_activity 2020 2118	always uses anti-forensic techniques , and they monitor victim remediation efforts to subvert them
+R9	launch Arg1:T18 Arg2:T28	
+T29	sub_activity 1554 1699	cease operations on Russian holidays , and their work hours seem to align with the UTC +3 time zone , which contains cities such as Moscow and St
+R10	launch Arg1:T17 Arg2:T29	
+R11	use Arg1:T21 Arg2:T26	
+T30	sub_activity 2505 2633	a backup for their two primary backdoors to execute commands and maintain access if the group ’s principal tools were discovered
+R12	launch Arg1:T26 Arg2:T30	
+T31	malware 2791 2799	uploader
+T32	malware 2804 2815	tDiscoverer
+R13	part_of Arg1:T25 Arg2:T31	
+R14	part_of Arg1:T25 Arg2:T32	

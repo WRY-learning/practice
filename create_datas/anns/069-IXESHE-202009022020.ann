@@ -1,0 +1,234 @@
+T1	company 652 663	Trend Micro
+T2	reference_word 785 787	We
+R1	coreference Arg1:T2 Arg2:T1	
+T3	attack_activity 842 850	Luckycat
+T5	attack_activity 856 861	Lurid
+R2	find Arg1:T2 Arg2:T3	
+R3	find Arg1:T2 Arg2:T5	
+T4	threatActor_name 966 972	IXESHE
+T6	government 1148 1170	East Asian governments
+T7	industry 1173 1198	electronics manufacturers
+T8	company 1207 1233	telecommunications company
+R4	attack Arg1:T4 Arg2:T6	
+R5	attack Arg1:T4 Arg2:T7	
+R6	attack Arg1:T4 Arg2:T8	
+T9	threatActor_name 1240 1246	IXESHE
+T10	tool 1278 1284	emails
+T11	sample_function 1315 1343	compromise victims ’ systems
+R7	goal Arg1:T10 Arg2:T11	
+R8	use Arg1:T9 Arg2:T10	
+T12	tool 1350 1356	emails
+T13	tool 1409 1470	malicious attachments that are almost always  ”  weaponized ”
+R9	part_of Arg1:T13 Arg2:T12	
+T14	tool 1475 1484	PDF files
+T15	sample_function 1510 1556	drop malware executables onto targeted systems
+R10	part_of Arg1:T15 Arg2:T14	
+T16	threatActor_name 1577 1583	IXESHE
+T17	time 1665 1669	2009
+T18	time 1685 1689	2011
+T19	sub_activity 1604 1657	two specific attacks that leveraged zero-day exploits
+R11	launch Arg1:T16 Arg2:T19	
+R12	occur_time Arg1:T17 Arg2:T19	
+R13	occur_time Arg1:T18 Arg2:T19	
+T20	threatActor_name 1696 1702	IXESHE
+T21	tool 1784 1787	C&C
+T22	tool 2051 2054	C&C
+T23	tool 2154 2157	C&C
+T24	tool 2219 2222	C&C
+T25	person 2249 2258	attackers
+T26	tool 2305 2331	dynamic Domain Name System
+T27	tool 2334 2337	DNS
+R14	coreference Arg1:T27 Arg2:T26	
+R15	use Arg1:T25 Arg2:T26	
+T28	sample_function 2364 2393	hide traces of their presence
+R16	goal Arg1:T26 Arg2:T28	
+T29	threatActor_name 2677 2683	IXESHE
+T30	protocol 2879 2881	IP
+T31	threatActor_name 2895 2901	IXESHE
+T32	protocol 2927 2930	DSL
+R17	use Arg1:T31 Arg2:T32	
+T33	sample_function 2948 2995	made it difficult to determine their identities
+R18	goal Arg1:T32 Arg2:T33	
+T34	government 3093 3115	East Asian governments
+T35	industry 3118 3153	Taiwanese electronics manufacturers
+T36	reference_word 3065 3078	the attackers
+R19	coreference Arg1:T36 Arg2:T31	
+R20	attack Arg1:T36 Arg2:T34	
+R21	attack Arg1:T36 Arg2:T35	
+T37	protocol 3227 3232	Whois
+T38	tool 3227 3240	Whois records
+T39	company 3268 3279	Trend Micro
+T40	counter_measure 3290 3378	notifies customers that are believed to have been specifically targeted by APT campaigns
+R22	launch Arg1:T39 Arg2:T40	
+T41	threatActor_name 3385 3391	IXESHE
+T42	time 3470 3479	July 2009
+R23	occur_time Arg1:T42 Arg2:T41	
+T43	threatActor_name 3504 3510	IXESHE
+T44	tool 3544 3550	emails
+R24	use Arg1:T43 Arg2:T44	
+T45	tool 3568 3588	PDF file attachments
+T46	person 3598 3607	attackers
+R25	use Arg1:T46 Arg2:T45	
+T47	tool 3666 3679	Adobe Acrobat
+T48	tool 3682 3688	Reader
+T49	tool 3695 3707	Flash Player
+T50	vulnerability_cve 3729 3743	CVE-2009-43243
+T51	vulnerability_cve 3746 3760	CVE-2009-09274
+T52	vulnerability_cve 3763 3777	CVE-2011-06095
+T53	vulnerability_cve 3780 3794	CVE-2011-06116
+T54	vulnerability_cve 3843 3858	CVE-2009- 43247
+T55	vulnerability_cve 3863 3877	CVE-2011-06098
+T56	reference_word 3824 3837	this campaign
+R26	coreference Arg1:T56 Arg2:T43	
+R27	use Arg1:T56 Arg2:T54	
+R28	use Arg1:T56 Arg2:T55	
+T57	threatActor_name 3965 3971	IXESHE
+T58	vulnerability_cve 4033 4046	CVE-2009-3129
+T59	sample_function 4008 4032	affected Microsoft Excel
+R29	goal Arg1:T58 Arg2:T59	
+R30	use Arg1:T57 Arg2:T58	
+T60	threatActor_name 4054 4060	IXESHE
+T61	tool 4050 4075	The IXESHE malware binary
+T62	person 4088 4097	attackers
+R31	use Arg1:T62 Arg2:T61	
+T63	sample_function 4108 4168	take over and maintain complete control of victims ’ systems
+R32	goal Arg1:T61 Arg2:T63	
+T64	attack_goal 4193 4235	List all services , processes , and drives
+T65	attack_goal 4238 4270	Terminate processes and services
+T66	attack_goal 4273 4298	Download and upload files
+T67	attack_goal 4301 4329	Start processes and services
+T68	attack_goal 4332 4356	Get victims ’ user names
+T69	attack_goal 4359 4396	Get a machine ’s name and domain name
+T70	attack_goal 4399 4435	Download and execute arbitrary files
+T71	attack_goal 4438 4504	Cause a system to pause or sleep for a specified number of minutes
+T72	attack_goal 4507 4527	Spawn a remote shell
+T73	attack_goal 4530 4568	List all current files and directories
+R33	goal Arg1:T61 Arg2:T64	
+R34	goal Arg1:T61 Arg2:T65	
+R35	goal Arg1:T61 Arg2:T66	
+R36	goal Arg1:T61 Arg2:T67	
+R37	goal Arg1:T61 Arg2:T68	
+R38	goal Arg1:T61 Arg2:T69	
+R39	goal Arg1:T61 Arg2:T70	
+R40	goal Arg1:T61 Arg2:T71	
+R41	goal Arg1:T61 Arg2:T72	
+R42	goal Arg1:T61 Arg2:T73	
+T74	threatActor_name 4577 4583	IXESHE
+T75	tool 4660 4665	email
+T76	tool 4671 4684	a PDF exploit
+R43	part_of Arg1:T76 Arg2:T75	
+R44	use Arg1:T74 Arg2:T75	
+T77	tool 4729 4732	XLS
+T78	threatActor_name 0 6	IXESHE
+T79	tool 4914 4920	emails
+T80	tool 4996 5002	Emails
+T81	location 5062 5079	the United States
+T82	location 5084 5089	China
+T83	tool 5046 5058	mail servers
+R45	located Arg1:T83 Arg2:T81	
+R46	located Arg1:T83 Arg2:T82	
+T84	sample_name 5437 5448	winhlps.exe
+T85	sample_name 5451 5462	acrotry.exe
+T86	sample_name 5465 5477	AcroRd32.exe
+T87	sample_name 5480 5491	Updater.exe
+T88	tool 5854 5869	Adobe Assistant
+T89	tool 5872 5880	Migrated
+T90	person 5816 5829	the attackers
+R47	use Arg1:T90 Arg2:T88	
+R48	use Arg1:T90 Arg2:T89	
+T95	tool 6716 6724	FGKD.jsp
+T96	tool 6731 6738	FPK.jsp
+T98	string 7133 7198	+NO5RZaGHviIjhYq8b4ndQ=p012ySTcCDrs/xPgUz67FM3wemKfkJLBo9VtWXlEuA
+T99	string 7201 7265	HZa4vjIiGndQ=p012y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T100	string 7268 7332	j4vpGZaHnIdQ=i012y+N/zPgUO5RSTx67FMhYb8q3wemKckJLBofCDrs9VtWXlEu
+T101	string 7335 7399	p12kJLBofCDrs9VtWXlEuainyj4vd+=H0GZIQNO5RST/zPgUx67FMhYb8q3wemKc
+T102	string 7402 7466	aZHGviIj4ndQ=p012y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T103	string 7469 7533	ZvQIajHi4ndG=p012y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T104	string 7536 7600	ZaGHviIj4ndQ=p012y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T105	string 7603 7667	4HIvZGjaiQdn=p012y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T106	string 7670 7734	pGIaHnZj0vdQ=i421y+NO5RSY/zMgUx67KPhTb8q3wemFckBLJufWErs9VtCXlDo
+T107	string 7737 7801	QpaZIivj4ndG=H021y+NO5RST/xPgUz67FMhYq8b3wemKfkJLBocCDrs9VtWXlEu
+T108	string 7804 7869	pGZaHnIj4vdQ=i012y+NO5RST/zPgUx67FMhYb8q3we mKckJLBofCDrs9VtWXlEu
+T110	threatActor_name 8463 8469	IXESHE
+T111	tool 8518 8521	C&C
+T112	tool 8594 8597	URL
+T113	tool 8764 8767	del
+T114	sample_function 8784 8820	Allows a remote user to delete files
+T115	tool 8823 8827	disk
+T116	sample_function 8844 8870	Lists all available drives
+T117	tool 8873 8876	dos
+T118	sample_function 8893 8945	Allows a remote user to execute commands via cmd.exe
+T119	sample_function 8968 9051	Allows a remote user to download a file from the remote server onto a local machine
+T120	tool 8948 8951	get
+T121	sample_function 9075 9111	Lists files on the victim ’s machine
+T122	tool 9054 9058	list
+T123	tool 9114 9116	ls
+T124	sample_function 9133 9192	Allows a remote user to display the contents of a directory
+R49	part_of Arg1:T114 Arg2:T113	
+R50	part_of Arg1:T116 Arg2:T115	
+R51	part_of Arg1:T118 Arg2:T117	
+R52	part_of Arg1:T119 Arg2:T120	
+R53	part_of Arg1:T121 Arg2:T122	
+R54	part_of Arg1:T124 Arg2:T123	
+T125	tool 9195 9199	kill
+T126	sample_function 9282 9359	Allows a remote user to upload a file from a local machine to a remote server
+T127	sample_function 9216 9259	Allows a remote user to terminate processes
+R55	part_of Arg1:T127 Arg2:T125	
+T128	tool 9262 9265	put
+R56	part_of Arg1:T126 Arg2:T128	
+T129	tool 9362 9365	rsh
+T130	tool 9397 9399	sh
+T131	tool 9403 9406	dos
+T132	tool 9490 9493	run
+T133	sample_function 9510 9550	Allows a remote user to execute programs
+R57	part_of Arg1:T133 Arg2:T132	
+T134	tool 9553 9555	sh
+T135	sample_function 9572 9624	Allows a remote user to execute commands via cmd.exe
+R58	part_of Arg1:T135 Arg2:T134	
+T136	tool 9627 9632	sleep
+T137	sample_function 9649 9702	Causes a system to sleep for a certain amount of time
+R59	part_of Arg1:T137 Arg2:T136	
+T138	encryption_algo 9713 9716	AES
+T139	encryption_algo 9801 9804	AES
+T140	threatActor_name 9850 9856	IXESHE
+T142	attack_activity 1640 1648	zero-day
+T143	threatActor_name 9903 9909	IXESHE
+T144	tool 9960 9963	C&C
+T145	sample_name 9992 10004	AWS12345.jsp
+T146	tool 10018 10029	Base64 blob
+T147	encryption_algo 10064 10067	AES
+R60	part_of Arg1:T145 Arg2:T144	
+R61	part_of Arg1:T146 Arg2:T144	
+T148	encryption_algo 10127 10130	AES
+T149	tool 10170 10173	C&C
+T150	threatActor_name 10226 10232	IXESHE
+T151	url_evil 10267 10307	http://C&C Server/ACDES Some Numbers.jsp
+T152	encryption_algo 10356 10359	AES
+T153	encryption_algo 10520 10523	AES
+T154	sample_function 10526 10540	Initial beacon
+R62	part_of Arg1:T154 Arg2:T153	
+T155	encryption_algo 10543 10546	DES
+T156	sample_function 10549 10577	Send the path of %systemdir%
+R63	part_of Arg1:T156 Arg2:T155	
+T157	encryption_algo 10580 10583	PES
+T158	sample_function 10586 10627	Send the result of the  ”  put ”  command
+R64	part_of Arg1:T158 Arg2:T157	
+T159	tool 10867 10870	AWS
+T160	url_evil 10913 10963	http://C&C Server/FPK Some Numbers.jsp?Base64 Blob
+T161	tool 10880 10884	POST
+R65	part_of Arg1:T160 Arg2:T161	
+R66	use Arg1:T159 Arg2:T161	
+T162	encryption_algo 11144 11147	AES
+T163	tool 11152 11155	AWS
+T141	person 5411 5420	attackers
+R67	use Arg1:T141 Arg2:T84	
+R68	use Arg1:T141 Arg2:T85	
+R69	use Arg1:T141 Arg2:T86	
+R70	use Arg1:T141 Arg2:T87	
+R71	use Arg1:T148 Arg2:T149	
+R72	use Arg1:T150 Arg2:T151	
+T91	tool 1290 1311	malicious attachments
+R73	part_of Arg1:T91 Arg2:T10	
+T92	tool 1762 1781	command-and-control
+R74	coreference Arg1:T21 Arg2:T92	
+R75	coreference Arg1:T46 Arg2:T41	

@@ -1,0 +1,439 @@
+T1	threatActor_name 14 19	Turla
+T2	threatActor_name 141 146	Turla
+T3	threatActor_aliases 163 176	Venomous Bear
+T4	threatActor_aliases 179 187	Waterbug
+T5	threatActor_aliases 194 202	Uroboros
+R1	coreference Arg1:T3 Arg2:T2	
+R2	coreference Arg1:T4 Arg2:T2	
+R3	coreference Arg1:T5 Arg2:T2	
+T6	malware 269 282	snake rootkit
+T8	government 294 298	NATO
+T9	time 594 598	2018
+T10	threatActor_name 619 624	Turla
+T11	malware 628 637	KopiLuwak
+T12	program_language 638 648	javascript
+T13	malware 649 657	backdoor
+R6	part_of Arg1:T11 Arg2:T13	
+R8	use Arg1:T11 Arg2:T12	
+T14	malware 680 686	Carbon
+T16	malware 756 764	Mosquito
+T17	tool 834 844	powershell
+T18	malware 799 844	customized PoshSec-Mod open-source powershell
+T19	malware 960 969	WhiteBear
+T20	malware 974 982	Mosquito
+T21	time 1014 1018	2017
+T22	time 1023 1027	2018
+T23	malware 1048 1057	KopiLuwak
+T24	threatActor_name 1203 1208	Turla
+T25	malware 1259 1268	KopiLuwak
+T26	malware 1326 1336	WhiteAtlas
+T27	malware 1341 1350	WhiteBear
+R9	part_of Arg1:T26 Arg2:T24	
+R10	part_of Arg1:T27 Arg2:T24	
+T28	time 1367 1371	2018
+T29	malware 1372 1381	KopiLuwak
+T30	malware 1428 1435	Zebrocy
+T31	attack_activity 1436 1449	spearphishing
+R11	launch Arg1:T30 Arg2:T31	
+T32	malware 701 712	meterpreter
+R12	part_of Arg1:T14 Arg2:T10	
+R13	part_of Arg1:T32 Arg2:T10	
+T15	sub_activity 1532 1536	MiTM
+T33	malware 1559 1567	Mosquito
+T34	malware 1568 1577	backdoors
+R14	part_of Arg1:T33 Arg2:T34	
+T35	threatActor_name 1600 1605	Turla
+T36	tool 1656 1660	Wifi
+T37	company 1703 1708	Adobe
+T38	tool 1712 1719	website
+T39	sub_activity 1725 1791	intercepted and injected to deliver Mosquito trojanized installers
+R16	launch Arg1:T38 Arg2:T39	
+R17	part_of Arg1:T38 Arg2:T37	
+T40	malware 1761 1769	Mosquito
+T41	malware 1761 1791	Mosquito trojanized installers
+T42	malware 1834 1842	Mosquito
+T43	sample_function 1867 1888	wifi credential theft
+R18	goal Arg1:T42 Arg2:T43	
+T44	malware 2038 2046	Mosquito
+T45	time 2061 2065	2019
+T46	malware 2097 2103	Carbon
+T47	malware 2196 2206	Snake lite
+R19	use Arg1:T46 Arg2:T47	
+T48	malware 2318 2329	meterpreter
+T49	malware 2294 2302	backdoor
+T50	time 2389 2393	2018
+T51	time 2503 2507	2019
+T52	malware 2603 2612	KopiLuwak
+T53	malware 2617 2628	IcedCoffeer
+T54	malware 2631 2637	Carbon
+T55	malware 2640 2648	Mosquito
+T56	malware 2651 2660	WhiteBear
+T57	time 2678 2682	2015
+T58	threatActor_name 2683 2688	Turla
+T59	program_language 2703 2713	Javascript
+T60	tool 2716 2726	powershell
+T61	tool 2733 2736	wsh
+R20	use Arg1:T58 Arg2:T59	
+R21	use Arg1:T58 Arg2:T60	
+R22	use Arg1:T58 Arg2:T61	
+T62	malware 2855 2864	backdoors
+T63	malware 2871 2882	White Atlas
+T64	program_language 2916 2926	Javascript
+T65	tool 2916 2933	Javascript script
+T66	sample_function 2937 2972	execute the malware dropper payload
+R23	use Arg1:T63 Arg2:T65	
+R24	goal Arg1:T65 Arg2:T66	
+T67	program_language 3003 3006	VBA
+T68	sub_activity 3028 3057	delete the dropper afterwards
+R25	launch Arg1:T63 Arg2:T68	
+T69	tool 3007 3017	macro code
+R26	use Arg1:T69 Arg2:T67	
+T70	program_language 3103 3113	Javascript
+T71	tool 3103 3120	Javascript script
+T72	malware 3137 3148	White Atlas
+T73	malware 3190 3198	backdoor
+T74	tool 3172 3179	Firefox
+T75	threatActor_name 3212 3217	Turla
+T76	sample_function 3281 3330	writing out the extension.json configuration file
+T77	sample_name 3297 3311	extension.json
+R27	goal Arg1:T71 Arg2:T76	
+T78	sample_function 3353 3389	deleting itself for cleanup purposes
+R28	goal Arg1:T71 Arg2:T78	
+R29	use Arg1:T72 Arg2:T71	
+R30	part_of Arg1:T71 Arg2:T75	
+T79	threatActor_name 3392 3397	Turla
+T80	program_language 3431 3441	Javascript
+T81	malware 3442 3451	backdoors
+T82	malware 3480 3490	IcedCoffee
+T83	malware 3491 3499	backdoor
+R32	part_of Arg1:T82 Arg2:T83	
+R31	use Arg1:T82 Arg2:T80	
+T84	sub_activity 3547 3556	Ice Turla
+T85	time 3535 3544	June 2016
+R33	occur_time Arg1:T84 Arg2:T85	
+R34	part_of Arg1:T82 Arg2:T84	
+R35	use Arg1:T79 Arg2:T82	
+T86	security_team 3594 3603	Kaspersky
+R36	part_of Arg1:T87 Arg2:T86	
+R37	launch Arg1:T86 Arg2:T84	
+T88	malware 3715 3724	KopiLuwak
+T89	malware 3725 3733	backdoor
+R38	part_of Arg1:T88 Arg2:T89	
+T91	md5 3644 3649	later
+T87	tool 3594 3629	Kaspersky APT Intelligence Services
+T90	malware 3736 3746	IcedCoffee
+T92	tool 3786 3799	RTF documents
+T93	tool 3830 3846	Office documents
+R40	part_of Arg1:T90 Arg2:T92	
+R41	part_of Arg1:T90 Arg2:T93	
+T95	tool 3853 3863	macro code
+T96	malware 3877 3887	IcedCoffee
+T97	malware 3937 3948	White Atlas
+T98	threatActor_name 4009 4014	Turla
+T99	tool 4050 4060	macro code
+T94	sample_function 4106 4159	relayed basic information to Turla controlled servers
+R39	goal Arg1:T99 Arg2:T94	
+T100	sample_function 4212 4230	profile the victim
+T101	sample_function 4257 4294	track the effectiveness of the attack
+R42	goal Arg1:T99 Arg2:T100	
+R43	goal Arg1:T99 Arg2:T101	
+T102	malware 4297 4307	IcedCoffee
+T103	malware 4326 4334	backdoor
+R44	part_of Arg1:T102 Arg2:T103	
+T104	tool 4346 4349	WMI
+R45	use Arg1:T102 Arg2:T104	
+T105	sample_function 4353 4401	collect a variety of system and user information
+R46	goal Arg1:T104 Arg2:T105	
+T106	encryption_algo 4447 4453	base64
+T107	encryption_algo 4471 4474	RC4
+T108	tool 4493 4502	HTTP POST
+T109	tool 4510 4512	C2
+T110	sub_activity 4479 4519	submitted via HTTP POST to the C2 server
+R47	launch Arg1:T105 Arg2:T110	
+T111	malware 4522 4532	IcedCoffee
+T112	program_language 4593 4603	javascript
+T113	tool 4619 4621	C2
+T114	sub_activity 4585 4628	receive javascript files from the C2 server
+R48	launch Arg1:T111 Arg2:T114	
+T115	malware 4734 4744	IcedCoffee
+T116	government 4797 4806	diplomats
+T117	government 4819 4830	Ambassadors
+T118	government 4836 4856	European governments
+T119	sub_activity 4641 4676	deobfuscated and executed in memory
+T120	sub_activity 4679 4731	leaving nothing behind on disk for forensic analysis
+R49	launch Arg1:T111 Arg2:T119	
+R50	launch Arg1:T111 Arg2:T120	
+R51	attack Arg1:T115 Arg2:T116	
+R52	attack Arg1:T115 Arg2:T117	
+R53	attack Arg1:T115 Arg2:T118	
+T121	time 4862 4875	November 2016
+T122	security_team 4878 4891	Kaspersky Lab
+T123	tool 4916 4942	weaponized macro documents
+T124	program_language 4983 4993	Javascript
+T125	malware 5016 5025	KopiLuwak
+R54	use Arg1:T125 Arg2:T124	
+R55	release_time Arg1:T122 Arg2:T121	
+R56	find Arg1:T122 Arg2:T123	
+R57	find Arg1:T122 Arg2:T125	
+T126	threatActor_name 5161 5166	Turla
+T127	government 5192 5212	European governments
+T128	malware 5262 5272	IcedCoffee
+T129	reference_word 5116 5132	this new malware
+R58	coreference Arg1:T129 Arg2:T125	
+R59	attack Arg1:T129 Arg2:T127	
+T130	malware 5279 5288	KopiLuwak
+T131	tool 5310 5320	macro code
+T132	malware 5363 5373	IcedCoffee
+T133	encryption_algo 5483 5486	RC4
+T134	program_language 5518 5528	javascript
+T135	tool 5581 5600	command and control
+T136	reference_word 5425 5436	This script
+R60	coreference Arg1:T136 Arg2:T130	
+T137	sample_function 5487 5528	decrypt an additional layer of javascript
+R61	goal Arg1:T136 Arg2:T137	
+T138	sample_function 5547 5576	system information collection
+R62	goal Arg1:T136 Arg2:T138	
+T139	malware 5627 5636	KopiLuwak
+T140	malware 5723 5733	IcedCoffee
+T141	malware 5827 5837	IcedCoffee
+T142	malware 5840 5849	KopiLuwak
+T143	tool 5874 5895	command functionality
+R63	part_of Arg1:T143 Arg2:T142	
+T144	sub_activity 5653 5673	comprehensive system
+T145	sub_activity 5678 5711	network reconnaissance collection
+R64	part_of Arg1:T144 Arg2:T139	
+R65	part_of Arg1:T145 Arg2:T139	
+T146	sample_function 5923 5952	run arbitrary system commands
+R66	goal Arg1:T143 Arg2:T146	
+T147	sample_function 5957 5973	uninstall itself
+R67	goal Arg1:T143 Arg2:T147	
+T148	time 5979 5987	mid-2017
+T149	sample_function 6080 6093	file download
+T150	sample_function 6098 6115	data exfiltration
+R68	goal Arg1:T143 Arg2:T149	
+R69	goal Arg1:T143 Arg2:T150	
+T151	malware 6164 6173	KopiLuwak
+T152	time 6201 6209	mid-2018
+T153	location 6258 6263	Syria
+T154	location 6268 6279	Afghanistan
+R70	attack Arg1:T151 Arg2:T153	
+R71	attack Arg1:T151 Arg2:T154	
+T155	malware 6345 6354	KopiLuwak
+T156	malware 6355 6363	backdoor
+R72	part_of Arg1:T155 Arg2:T156	
+T157	tool 6414 6418	.lnk
+T158	OS_name 6395 6402	Windows
+R73	part_of Arg1:T157 Arg2:T155	
+T160	malware 6608 6615	Zebrocy
+T161	malware 6647 6653	Carbon
+T162	government 6687 6697	government
+T163	location 6743 6755	Central Asia
+T164	government 6702 6739	foreign affairs related organizations
+R74	located Arg1:T164 Arg2:T163	
+R75	attack Arg1:T161 Arg2:T162	
+R76	attack Arg1:T161 Arg2:T164	
+T165	malware 6758 6764	Carbon
+T166	time 6831 6835	2014
+T167	tool 6859 6871	orchestrator
+T168	tool 6898 6915	transport library
+T169	string 6872 6878	v3.8.2
+T170	string 6916 6922	v4.0.8
+R77	part_of Arg1:T169 Arg2:T167	
+R78	part_of Arg1:T170 Arg2:T168	
+T171	malware 7073 7084	meterpreter
+T172	malware 7092 7103	meterpreter
+T173	threatActor_name 7139 7144	Turla
+T174	time 7201 7212	end of 2017
+T175	time 7217 7234	beginning of 2018
+T176	threatActor_name 7246 7251	Turla
+T177	attack_activity 7241 7251	Epic Turla
+T178	time 7274 7278	2014
+R79	occur_time Arg1:T177 Arg2:T178	
+T179	malware 7305 7311	Carbon
+R80	part_of Arg1:T179 Arg2:T177	
+T180	malware 7474 7494	the Carbon framework
+T181	malware 7533 7540	rootkit
+T182	malware 7527 7540	Snake rootkit
+T183	sample_function 7547 7566	extreme persistence
+R81	goal Arg1:T182 Arg2:T183	
+T184	malware 7576 7582	Carbon
+T185	malware 7692 7705	Snake rootkit
+T186	malware 7698 7705	rootkit
+T187	time 7872 7876	2018
+T188	malware 7889 7895	Carbon
+T189	time 8000 8004	2019
+T190	location 8012 8024	Central Asia
+T191	malware 8226 8234	backdoor
+T192	malware 8346 8355	WhiteBear
+T193	time 8403 8407	2017
+R82	first_found_time Arg1:T192 Arg2:T193	
+T194	malware 8593 8602	WhiteBear
+T195	malware 8648 8657	KopiLuwak
+T196	malware 8676 8685	WhiteBear
+T197	attack_activity 8695 8705	spearphish
+R83	launch Arg1:T196 Arg2:T197	
+T198	malware 8745 8755	WhiteAtlas
+T199	time 8806 8816	March 2018
+T200	malware 8876 8884	Mosquito
+T201	sub_activity 8848 8884	received actionable data on Mosquito
+R84	occur_time Arg1:T201 Arg2:T199	
+T202	sub_activity 8901 8909	fileless
+T203	tool 8914 8958	customized Posh-SecMod metasploit components
+R85	part_of Arg1:T202 Arg2:T201	
+R86	part_of Arg1:T203 Arg2:T201	
+T204	tool 8925 8936	Posh-SecMod
+T205	tool 8937 8947	metasploit
+T206	tool 810 821	PoshSec-Mod
+T207	tool 8993 9003	metasploit
+R87	part_of Arg1:T200 Arg2:T201	
+T208	malware 9064 9091	DllForUserFileLessInstaller
+T209	time 9143 9161	November 22 , 2017
+T210	malware 9195 9203	Mosquito
+R88	use Arg1:T210 Arg2:T208	
+T211	sub_activity 9207 9240	inject ComRAT modules into memory
+R89	launch Arg1:T208 Arg2:T211	
+T212	time 9248 9260	January 2018
+R90	occur_time Arg1:T211 Arg2:T212	
+R91	first_found_time Arg1:T208 Arg2:T209	
+T213	tool 9286 9296	metasploit
+T214	OS_name 9341 9346	Wow64
+T216	encryption_algo 9436 9439	AES
+T217	encryption_algo 9458 9462	3DES
+T218	tool 9376 9407	powershell registry loader code
+R92	use Arg1:T218 Arg2:T217	
+R93	part_of Arg1:T218 Arg2:T210	
+T159	malware 9580 9588	Mosquito
+T215	time 9600 9604	2018
+T219	malware 9807 9815	Mosquito
+T220	time 9850 9860	early 2017
+T221	malware 9948 9969	trojanized installers
+T222	url_evil 9972 10040	http://admdownload.adobe.com/bin/live/flashplayer23ax_ra_install.exe
+R94	part_of Arg1:T222 Arg2:T221	
+R95	part_of Arg1:T221 Arg2:T219	
+R96	first_found_time Arg1:T221 Arg2:T220	
+T223	attack_activity 10075 10079	MiTM
+T224	attack_activity 10146 10150	MiTM
+T225	tool 10141 10145	WiFi
+R97	use Arg1:T224 Arg2:T225	
+T226	sub_activity 10154 10171	router compromise
+T227	tool 10251 10275	ISP-level FinFisher MiTM
+T228	attack_activity 10271 10275	MiTM
+T229	tool 10443 10446	.js
+T230	sample_function 10484 10522	infected system configured to run them
+R98	goal Arg1:T229 Arg2:T230	
+T231	sample_function 10638 10677	remotely updated via google application
+R99	goal Arg1:T229 Arg2:T231	
+T232	sample_function 10684 10715	maintain local settings updates
+R100	goal Arg1:T229 Arg2:T232	
+T233	sub_activity 10719 10765	loading and running “ 1.txt ” at every startup
+R101	launch Arg1:T232 Arg2:T233	
+T234	sample_name 10741 10746	1.txt
+T235	malware 10844 10854	IcedCoffee
+T236	program_language 10855 10865	javascript
+T237	threatActor_name 10902 10907	Turla
+T238	government 10929 10962	European government organizations
+R102	attack Arg1:T237 Arg2:T238	
+T239	tool 10855 10884	javascript loading techniques
+R103	use Arg1:T235 Arg2:T239	
+T240	sample_name 11049 11073	google_update_checker.js
+T241	sample_name 11076 11099	local_update_checker.js
+T242	malware 11156 11164	Mosquito
+T243	threatActor_name 11165 11170	Turla
+R104	part_of Arg1:T242 Arg2:T243	
+T244	malware 11280 11288	Mosquito
+T245	tool 11402 11406	WiFi
+T246	string 11497 11562	cmd.exe /c netsh wlan export profile key=clear folder="%APPDATA%"
+T247	string 11446 11469	%APPDATA%\<profile>.xml
+T248	sample_function 11377 11415	export all local host ’s WiFi profiles
+T249	sample_function 11324 11369	writing and running this local_update js file
+T250	reference_word 11344 11369	this local_update js file
+R105	coreference Arg1:T250 Arg2:T240	
+R106	coreference Arg1:T250 Arg2:T241	
+R107	goal Arg1:T244 Arg2:T249	
+R108	goal Arg1:T244 Arg2:T248	
+R109	part_of Arg1:T247 Arg2:T248	
+R110	part_of Arg1:T246 Arg2:T248	
+T251	string 11622 11630	ipconfig
+T252	string 11635 11641	arp -a
+T253	sub_activity 11575 11606	gather more network information
+R111	part_of Arg1:T251 Arg2:T253	
+R112	part_of Arg1:T252 Arg2:T253	
+R113	launch Arg1:T243 Arg2:T253	
+T254	attack_activity 11806 11810	MiTM
+T255	sub_activity 11644 11705	Maintaining ongoing host-based collection of wifi credentials
+T256	sub_activity 11793 11801	spoofing
+R114	launch Arg1:T255 Arg2:T256	
+R115	launch Arg1:T255 Arg2:T254	
+T257	tool 11867 11871	WiFi
+T258	malware 11999 12007	Mosquito
+T259	threatActor_name 12008 12013	Turla
+R116	part_of Arg1:T258 Arg2:T259	
+T260	threatActor_name 12200 12205	Turla
+T261	sub_activity 12236 12244	DNC hack
+T262	threatActor_name 12257 12263	Sofacy
+T263	threatActor_name 12268 12276	CozyDuke
+R117	part_of Arg1:T262 Arg2:T261	
+R118	part_of Arg1:T263 Arg2:T261	
+T264	threatActor_name 12301 12306	Turla
+T265	threatActor_name 12552 12557	Turla
+T266	threatActor_name 12593 12598	Turla
+T267	malware 12602 12610	Mosquito
+R119	part_of Arg1:T267 Arg2:T266	
+T268	malware 12615 12621	Carbon
+R120	part_of Arg1:T268 Arg2:T266	
+T269	industry 12647 12657	diplomatic
+T270	industry 12662 12677	foreign affairs
+R121	attack Arg1:T266 Arg2:T269	
+R122	attack Arg1:T266 Arg2:T270	
+T271	malware 12694 12704	WhiteAtlas
+T272	malware 12709 12718	WhiteBear
+T273	industry 12766 12781	foreign affairs
+R123	attack Arg1:T271 Arg2:T273	
+R124	attack Arg1:T272 Arg2:T273	
+T274	industry 12861 12871	Scientific
+T275	industry 12876 12885	technical
+R125	attack Arg1:T271 Arg2:T274	
+R126	attack Arg1:T271 Arg2:T275	
+R127	attack Arg1:T272 Arg2:T274	
+R128	attack Arg1:T272 Arg2:T275	
+T276	threatActor_name 12991 12996	Turla
+T277	malware 13000 13009	KopiLuwak
+R129	part_of Arg1:T277 Arg2:T276	
+T278	industry 13049 13059	diplomatic
+T279	industry 13060 13075	foreign affairs
+T280	time 13127 13131	2018
+T281	industry 13169 13179	scientific
+T282	industry 13184 13199	energy research
+T283	industry 13241 13255	communications
+T284	location 13272 13283	Afghanistan
+R130	located Arg1:T283 Arg2:T284	
+R131	attack Arg1:T277 Arg2:T281	
+R132	attack Arg1:T277 Arg2:T282	
+R133	attack Arg1:T277 Arg2:T283	
+T285	sub_activity 13000 13018	KopiLuwak activity
+R134	launch Arg1:T276 Arg2:T285	
+R135	occur_time Arg1:T285 Arg2:T280	
+T286	time 13363 13367	2019
+T287	malware 13434 13443	KopiLuwak
+T288	malware 13448 13457	WhiteBear
+T289	malware 13499 13507	Mosquito
+T290	malware 13512 13518	Carbon
+T291	malware 13538 13539	e
+T292	malware 13548 13557	KopiLuwak
+T293	tool 13604 13607	.js
+T294	malware 13691 13699	Mosquito
+T295	malware 13704 13710	Carbon
+T296	malware 13734 13745	meterpreter
+T297	malware 13848 13857	KopiLuwak
+T298	malware 13883 13892	WhiteBear
+T299	attack_activity 13960 13973	spearphishing
+T300	malware 13952 13959	zebrocy
+R136	launch Arg1:T300 Arg2:T299	
+R137	part_of Arg1:T16 Arg2:T10	
+R138	part_of Arg1:T18 Arg2:T10	
+R4	attack Arg1:T6 Arg2:T8	
+R5	part_of Arg1:T11 Arg2:T10	
+R7	part_of Arg1:T25 Arg2:T24	
+R15	part_of Arg1:T33 Arg2:T15	
+R139	use Arg1:T35 Arg2:T36	
+R140	use Arg1:T2 Arg2:T6	

@@ -1,0 +1,8 @@
+Unknown
+Release_Time: unknown
+Report_URL: https://attack.mitre.org/groups/
+APT16 is a China-based threat group that has launched spearphishing campaigns targeting Japanese and Taiwanese organizations.
+APT17: Deputy Dog.
+APT17 is a China-based threat group that has conducted network intrusions against U.S. government entities, the defense industry, law firms, information technology companies, mining companies, and non-government organizations.
+APT18: TG-0416, Dynamite Panda, Threat Group-0416.
+APT18 is a threat group that has operated since at least 2009 and has targeted a range of industries, including technology, manufacturing, human rights groups, government, and medical.

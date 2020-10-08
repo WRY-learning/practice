@@ -1,0 +1,79 @@
+APT3 Adversary Emulation Plan
+Release_Time : 2017-09 
+Report_URL : https://attack.mitre.org/docs/APT3_Adversary_Emulation_Plan.pdf
+In an effort to advance the practice of security testing through adversary emulation and adversarial engineering , we present this emulation plan to be used by an adversary emulation team looking to emulate the threat group commonly known as APT3 .
+The plan includes the group ’s commonly known behavior through the tactics , techniques , and procedures ( TTPs ) that have been documented in publicly available threat reporting .
+To ground the plan in a common taxonomy , it is based on the MITRE ATT&CK model ( https://attack.mitre.org ) .
+The scope of this emulation plan covers the adversary lifecycle , beginning with initial network compromise and ending with exfiltration .
+It discusses tools , methods , style , tradecraft , and end state objectives .
+Historically , information about attackers ’ on-target actions and goals have been difficult to obtain and APT3 reporting is no exception ; however , the document bases instructions off publicly accessible sources whenever possible , focusing on sources that could be cross-referenced to some degree .
+To fill the intel gaps , the authors relied on their experience in threat intelligence and adversary emulation for best-estimates .
+ATT&CK Group ID : Group/G0022 .
+Aliases : APT3 , Gothic Panda , Pirpi , UPS Team , Buckeye , Threat Group-0110 , TG-0110 .
+Operations : Clandestine Wolf , Clandestine Fox , Operation Double Tap .
+Target Industries : Aerospace and Defense , Construction and Engineering , High Tech , Telecommunications , Transportation .
+Adversary Objectives : Reporting indicates APT3 actors are interested in exfiltration of documents .
+They have been known to target printers and file shares .
+They also target intellectual property , often industrial in nature .
+Background : APT3 is a China-based threat group .
+APT3 has traditionally targeted a myriad of US and international targets ; however , reporting dated September 2016 indicates the group shifted focus around March 2016 to target Hong Kong organizations .
+APT3 ’s process can be broken up into three main phases as shown below : 
+Initial Setup of command and control ( C2 ) , defense evasion techniques , and getting initial compromise 
+Discovery , privilege escalation , lateral movement , persistence , and execution 
+Collection , data staging , and exfiltration .
+These phases are broken up into more detail in the following sections .
+The next section is about the tools that APT3 uses for their operations , how to emulate them , and what ATT&CK tactics and techniques they correspond to .
+Command-line examples , as well as descriptions of what the tools do , are included in the accompanying " APT3 Adversary Emulation Field Manual " for reference .
+APT3 uses a combination of custom and openly available tools .
+Because custom adversary tools can have hidden functionality , be difficult to tailor to new environments , or utilize server-side controllers which may be unavailable , recommendations are made for replacements that can accurately perform similar activity .
+Adversary emulators and defenders should be aware that replacement tools will typically leave different footprints than adversary tools , specifically different file hashes , command line arguments , Antivirus detection , API calls , and network signatures .
+There are lots of ways to accomplish the same objectives with built-in Windows tools , but the focus for APT3 tends to be on more simplistic tools rather than more advanced Windows utilities like WMIC , WinRM , and PowerShell .
+The following table describes how to emulate the tools as well as detailing which ATT&CK Tactics are represented by them .
+Name Software Type Availability Emulation Notes : 
+Pirpi , SHOTPUT , Backdoor.APT. CookieCutter RAT Custom Standard Windows Binary based postcompromise toolkits such as MetaSploit ( free ) or Cobalt Strike ( paid ) .
+PlugX RAT Custom , but seen across multiple groups Standard Windows Binary based postcompromise toolkits such as MetaSploit ( free ) or Cobalt Strike ( paid ) .
+OSInfo Information Discovery Custom Several Windows commands can be used to gather similar information ( net use , systeminfo , set ) , also PowerShell scripts .
+Customized pwdump Windows Password Dumper Unmodified version openly available Standard version of pwdump or mimikatz .
+Customized Mimikatz Windows Password Dumper Unmodified version openly available Standard version of mimikatz .
+Keylogger Keylogger Custom Numerous publicly available keyloggers .
+RemoteCMD Remote Execution Custom Operates similarly to PsExec .
+Dsquery Information Discovery Openly Available , default on Windows Server A copy of Dsquery can be brought onto a system if it doesn’t have it by default .
+ChromePass Browser Password Dumper Openly Available ChromePass is a publicly available program from NirSoft .
+Lazagne Application Password Dumper Openly Available Lazagne source code is freely available on Github .
+ScanBox ExploitKit/ Host Profiler , and JavaScript Keylogger Custom Used just before initial exploit , effectively out of scope since pre initial network compromise .
+APT3 's custom tools provide a breadth of functionality .
+This section aims to break down these custom tools from the table above a bit further into their specific functions and show how they relate to ATT&CK , Windows utilities , and toolkits that are open source and commercially available .
+Pirpi Function Windows Built-in Cobalt Strike/Beacon Metasploit/Meterpreter ATT&CK Technique :
+ List processes tasklist ps , shell qprocess ps T1057 - Process Discovery .
+Download file ftp download [filename] Download [filename] T1041 - Exfiltration over Command and Control Channel .
+Execute file cmd.exe /c file.exe shell [filename] shell cmd.exe /c [filename] Execute –f [filename] [– i] [-H] T1059 - Command-Line Interface .
+Load/execute DLL ( from disk ) Rundll32.exe [filename.dll] , entry shell rundll32 [filename.dll] , entry post/windows/manage/ reflective_dll_inject T1085 - Rundll32 .
+Load/execute DLL ( from memory ) post/windows/manage/ reflective_dll_inject .
+List servers in domain net group " Domain Computers " /domain shell net group " Domain Computers " /domain post/windows/gather/ enum_ad_computers T1018 - Remote System Discovery .
+List TCP connections Netstat -ano shell netstat ano post/windows/gather/ tcpnetstat T1049 - System Network Connections Discovery .
+List connected users Net session shell net session post/windows/gather/ enum_logged_on_users T1049 - System Network Connections Discovery .
+List domain controllers Net group " Domain Controllers " /domain , Nltest /dclist shell net group " Domain Controllers " /domain , shell nltest /dclist , net dclist T1049 - Remote System Discovery .
+List directories Dir , tree shell dir ls T1083 - File and Directory Discovery .
+Terminate Process Taskkill shell taskkill /pid [pid] kill [pid] .
+Delete file Del [filename] shell del [filename] execute –f cmd.exe " del [filename] " T1107 - File Deletion .
+Sleep sleep [time in seconds] .
+Get Network Adapter Info Ipconfig /all , netsh config shell ipconfig /all execute –f cmd.exe " ipconfig /all " T1016 - System Network Configuration Discovery .
+Upload file ftp upload [filename] upload [filename] [destination] T1105 - Remote File Copy .
+Note : The PlugX table differs from the other tables in that each row refers to a module , not function , of PlugX .
+Modules within PlugX leverage other PlugX modules to perform functions , for example , the Disk module allows other modules to use any of the functions it provides on the disk , such as execute , create new files , copy , delete , etc.. 
+PlugX Modules Windows Built-in Cobalt Strike/Beacon Metasploit/ Meterpreter ATT&CK Technique :
+ Disk .\[file] , type [file] , del , copy shell [file/type/del/c opy] , upload execute -f cmd.exe " shell [file/type/del/copy] " , upload T1059 – Command-Line Interface , T1083 – File and Directory Discovery .
+Process Tasklist , taskkill ps , shell taskkill /pid [pid] ps , Kill [pid] T1057 – Process Discovery .
+Service sc [query/start/sto p/ config/create/ delete] shell sc [query/start/sto p/ config/create/ delete] execute –f cmd.exe " sc [query/start/stop/config/c reate/delete] " T1050 – New Service , T1031 – Modify Existing Service , T1035 – Service Execution .
+Regedit regedit shell regedit reg T102 – Query Registry , T1112 – Modify Registry .
+Netstat netstat shell netstat post/windows/gather/tcpn etstat T1049 – System Network Connections Discovery .
+Nethood net view [/domain] shell net view [/domain] execute -f cmd.exe " net view [/domain] " T1018 – Remote System Discovery .
+Option shutdown [/l ,/r ,/t] shell shutdown [/l ,/r/t] execute -f cmd.exe " shutdown [/l ,/r ,/t] " N/A .
+PortMap Details still N/A Details still N/A Details still N/A Details still N/A .
+Screen PrintScreen key if GUI available screenshot PID [x64] migrate PID | use espia | screengrab T1113 – Screen Capture .
+Shell cmd.exe /c [command] shell [command] shell or " execute -f cmd.exe -c -I " T1059 – Command-Line Interface .
+Telnet pkgmgr /iu : " TelnetServ er " shell pkgmgr /iu : " TelnetServ er " run metsvc T1050 – New Service , T1108 Redundant Access .
+SQL Osql shell osql auxiliary/admin/mssql/m ssql_sql N/A .
+Keylog N/A keylogger [pid] [x86|x64] Keyscan_start , keyscan_dump T1056 – Input Capture .
+Pkgmgr has been archived and may not be on newer Windows systems .
+Osql is usually found on Windows Server systems and will be replaced with sqlcmd instead .

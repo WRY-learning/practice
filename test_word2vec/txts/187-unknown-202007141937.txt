@@ -1,0 +1,51 @@
+IRANIAN FILELESS ATTACK INFILTRATES ISRAELI ORGANIZATIONS
+Release_Time : 2017-04-19 .
+Report_URL : https://blog.morphisec.com/iranian-fileless-cyberattack-on-israel-word-vulnerability .
+From April 19-24 , 2017 , a politically-motivated , targeted campaign was carried out against numerous Israeli organizations .
+Morphisec researchers began investigating the attacks on April 24 and continue to uncover more details .
+Initial reports of the attacks , published April 26 ( in Hebrew ) by the Israel National Cyber Event Readiness Team ( CERT-IL ) and The Marker , confirm that the attack was delivered through compromised email accounts at Ben-Gurion University and sent to multiple targets across Israel .
+Ironically , Ben-Gurion University is home to Israel ’s Cyber Security Research Center .
+Investigators put the origin of the attack as Iranian ; Morphisec ’s research supports this conclusion and attributes the attacks to the same infamous hacker group responsible for the OilRig malware campaigns .
+The fileless attack was delivered via Microsoft Word documents that exploited a former zero-day vulnerability in Word , CVE-2017-0199 , to install a fileless attack variant of the Helminth Trojan agent .
+Microsoft released the patch for the vulnerability on April 11 , but many organizations have not yet deployed the update .
+The attackers actually based their attack on an existing Proof-of-Concept method that was published by researchers after the patch release .
+By hunting through known malware repositories , Morphisec identified matching samples uploaded by Israeli high-tech development companies , medical organizations and education organizations , indicating that they were victims of the attack .
+For security purposes , Morphisec is not revealing these names .
+Upon deeper investigation into the installed Helminth fileless agent , we identified a near perfect match to the OilRig campaign executed by an Iranian hacker group against 140 financial institutions in the Middle East last year , as analyzed by FireEye , Palo Alto Networks and Logrhythm .
+This group has become one of the most active threat actors , with noteworthy abilities , resources and infrastructure ; speculations indicate the hacking organization to be sponsored by the Iranian government .
+In other recent attacks ( January 2017 ) , the group used a fake Juniper Networks VPN portal and fake University of Oxford websites to deliver malware as described by ClearSky .
+Name SHA256 .
+13.doc: a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab .
+558.doc , 2.doc: 2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84 .
+1.doc: 832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8 .
+3.doc: d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48 .
+The most notable difference from last year ’s OilRig campaign is the way the attack was delivered .
+In the previous campaign , the Iranian group sent specially crafted Excel and Word files , which contained macros that targeted individuals were convinced to enable .
+Name Delivery Server .
+test4.hta http://comonscar.in  ( 82.145.40.46 ) .
+test5.hta 80.82.67.42.
+test1.hta reserved .
+SHA256: 5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43 .
+Name SHA256 .
+0011.ps1 042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1 .
+1.vbs BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED .
+It is significant to note how the Iranian threat actors advanced their abilities in such a short time : 
+Utilizing a vulnerability PoC immediately after its publication 
+Setting up the required infrastructure with multiple domains and delivery servers
+Increasing the sophistication of the delivered Helminth agent , including regeneration of its signatures on the infected computer
+Improving the customized information gathering Mimikatz version
+fileless attack : a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab .
+fileless attack : 2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84 .
+fileless attack : 832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8 .
+fileless attack : d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48 .
+fileless attack : 5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43 .
+fileless attack : 042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1 .
+fileless attack : BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED .
+fileless attack : http://comonscar.in  ( 82.145.40.46 ) .
+fileless attack : 80.82.67.42.
+fileless attack : vpsupdate.tk .
+fileless attack : alenupdate.info .
+fileless attack : Maralen.tk .
+fileless attack : GoogleUpdateTasksMachineUI .
+fileless attack : Google Update Core .
+fileless attack : Google Sync Core .

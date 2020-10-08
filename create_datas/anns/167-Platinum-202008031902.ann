@@ -1,0 +1,360 @@
+T1	threatActor_name 14 22	Platinum
+T2	threatActor_name 155 163	Platinum
+T3	location 251 262	APAC region
+R1	attack Arg1:T2 Arg2:T3	
+T4	threatActor_name 302 310	Platinum
+T5	malware 345 353	Titanium
+T6	malware 0 8	Titanium
+R2	part_of Arg1:T6 Arg2:T1	
+R3	use Arg1:T4 Arg2:T5	
+T7	malware 422 430	Titanium
+T8	reference_word 515 526	The malware
+R4	coreference Arg1:T8 Arg2:T7	
+T9	sub_activity 550 575	mimicking common software
+R5	launch Arg1:T7 Arg2:T9	
+T10	sub_activity 456 512	sequence of dropping , downloading and installing stages
+R6	launch Arg1:T7 Arg2:T10	
+T11	location 662 686	South and Southeast Asia
+T12	threatActor_name 693 701	Titanium
+T13	sub_activity 725 781	sequence of dropping , downloading and installing stages
+T14	sub_activity 789 820	deployment of a Trojan-backdoor
+R7	launch Arg1:T12 Arg2:T13	
+R8	launch Arg1:T12 Arg2:T14	
+R9	attack Arg1:T12 Arg2:T11	
+T15	OS_name 1044 1051	Windows
+T16	malware 1213 1228	Trojan-backdoor
+T18	tool 1147 1166	An installer script
+T19	tool 1177 1193	A COM object DLL
+T20	threatActor_name 1253 1261	Titanium
+T21	tool 1271 1316	local intranet websites with a malicious code
+R10	use Arg1:T20 Arg2:T21	
+T22	sample_name 1458 1470	winlogon.exe
+T23	reference_word 1473 1482	Attackers
+R11	coreference Arg1:T23 Arg2:T20	
+T24	attack_goal 1656 1690	decrypt and load an encrypted file
+T25	attack_goal 1770 1843	redirect calls to the wrapper itself to the payload ’s exported functions
+T26	sample_name 2884 2896	Kernel32.dll
+T27	string 3132 3140	rundll32
+T28	sample_name 3142 3163	$temp\IOZwXLeM023.tmp
+T29	string 3166 3220	GetVersionInfo -t 06xwsrdrub2i84n6map3li3vz3h9bh4vfgcw
+T30	tool 944 953	shellcode
+T31	tool 975 985	downloader
+T32	tool 990 1000	downloader
+T33	tool 1016 1027	SFX archive
+T34	tool 1044 1076	Windows task installation script
+T35	tool 1385 1394	shellcode
+R12	use Arg1:T20 Arg2:T35	
+R13	coreference Arg1:T22 Arg2:T35	
+T36	tool 1560 1567	COM DLL
+T37	malware 1521 1529	wrappers
+T38	malware 1539 1546	wrapper
+T39	malware 1862 1873	wrapper DLL
+T40	attack_goal 1889 1990	obtain a command line from its exported function argument passed by a caller and create a new process
+T41	tool 2061 2076	BITS Downloader
+T42	tool 2022 2033	SFX archive
+T43	tool 2114 2124	downloader
+T44	tool 2153 2164	SFX archive
+T45	tool 2298 2301	DLL
+T46	attack_goal 2322 2394	install the Windows task to establish persistence in the infected system
+T47	OS_name 2334 2341	Windows
+T48	tool 2259 2279	cURL executable code
+R14	part_of Arg1:T48 Arg2:T45	
+T49	tool 2425 2436	SFX archive
+T50	tool 2668 2683	BITS Downloader
+T51	sub_activity 2695 2768	download encrypted files from the C&C server then decrypt and launch them
+T52	tool 2775 2784	shellcode
+T53	tool 2801 2826	position-independent code
+R15	part_of Arg1:T53 Arg2:T52	
+T54	attack_goal 2924 2960	connect to the hardcoded C&C address
+T55	attack_goal 2963 2992	download an encrypted payload
+T56	attack_goal 3039 3099	decrypt and launch it using the hardcoded unpacking password
+T57	tool 3228 3243	BITS Downloader
+T58	tool 3249 3252	DLL
+R16	part_of Arg1:T57 Arg2:T58	
+T59	attack_goal 3354 3415	download files in encrypted form from the C&C and launch them
+T60	tool 3438 3448	downloader
+T61	sub_activity 3460 3510	check whether it was started using the SYSTEM user
+T62	sub_activity 3528 3559	launches command line arguments
+T63	tool 3630 3633	WMI
+T64	tool 3607 3621	downloader DLL
+T65	person 3667 3678	SYSTEM user
+T66	person 3499 3510	SYSTEM user
+T67	tool 3685 3695	downloader
+R17	launch Arg1:T60 Arg2:T61	
+R18	launch Arg1:T60 Arg2:T62	
+R19	use Arg1:T60 Arg2:T63	
+T68	sub_activity 3696 3750	passes command line arguments into the argument parser
+R20	launch Arg1:T67 Arg2:T68	
+T72	tool 3944 3954	downloader
+T69	string 3753 3755	-c
+T70	string 3824 3826	-t
+T71	string 3910 3912	-u
+T73	string 4061 4064	-br
+T74	tool 4103 4107	GUID
+T75	tool 4147 4151	GUID
+T76	tool 4194 4204	downloader
+T77	sub_activity 4210 4287	collect information about installed antivirus products and send it to the C&C
+R21	launch Arg1:T76 Arg2:T77	
+T78	url_evil 4479 4519	http://70.39.115.196/payment/confirm.gif
+T79	string 4425 4438	%USERPROFILE%
+T80	sub_activity 4306 4356	sends the download request to the confirmation URL
+T81	reference_word 4303 4305	it
+R22	coreference Arg1:T81 Arg2:T76	
+R23	launch Arg1:T76 Arg2:T80	
+T82	sub_activity 4373 4448	the C&C sends a file that will be downloaded in the %USERPROFILE% directory
+T83	tool 4655 4665	downloader
+T84	sub_activity 4666 4735	checks the hash field against a calculated MD5 of the data field hash
+R24	launch Arg1:T83 Arg2:T84	
+T85	sub_activity 4801 4821	Appends an extension
+R25	launch Arg1:T83 Arg2:T85	
+T86	tool 4824 4827	DLL
+T87	tool 4831 4834	EXE
+T89	string 4898 4903	%TMP%
+T90	sample_name 4926 4970	% (SystemTimeAsFileTime.dwLowDateTime ).%TMP
+T91	tool 4982 4992	downloader
+T92	sub_activity 4993 5047	specifies a command line to launch the downloaded file
+R26	launch Arg1:T91 Arg2:T92	
+T93	tool 5067 5070	DLL
+T94	sample_name 5108 5142	%systemroot%\system32\rundll32.exe
+T95	sample_name 5143 5187	% (SystemTimeAsFileTime.dwLowDateTime )%.TMP
+T96	string 5189 5202	-peuwewh383eg
+T97	string 5203 5242	-t 06xwsrdrub2i84n6map3li3vz3h9bh4vfgcw
+T98	tool 5264 5267	EXE
+T99	sample_name 5276 5320	% (SystemTimeAsFileTime.dwLowDateTime )%.TMP
+T100	string 5321 5334	-peuwewh383eg
+T101	string 5335 5374	-t 06xwsrdrub2i84n6map3li3vz3h9bh4vfgcw
+T102	tool 5394 5404	downloader
+T103	sub_activity 5405 5452	deletes itself using the following command line
+R27	launch Arg1:T102 Arg2:T103	
+T104	string 5456 5587	/c for /L %i in ( 1,1,100 ) do ( for /L %k in ( 1,1,100 ) do ( del /f /q module_path > NUL & if not exist module_path exit /b 0 ) )
+T105	tool 5626 5636	downloader
+T106	tool 5751 5761	downloader
+T107	tool 5771 5783	BITS service
+T108	tool 5792 5805	COM interface
+R28	use Arg1:T106 Arg2:T107	
+R29	part_of Arg1:T108 Arg2:T107	
+T109	tool 5815 5837	IBackgroundCopyManager
+T110	company 5872 5881	Microsoft
+T111	sample_name 5951 5956	p.bat
+T112	sample_name 6000 6005	c.dll
+T113	sample_name 6053 6059	f1.ps1
+T114	sample_name 6131 6137	f2.ps1
+T115	sample_name 6210 6215	e.ps1
+T116	sample_name 6304 6309	h.ps1
+T117	sample_name 6361 6366	e.dll
+T118	sample_name 6435 6440	x.dat
+T119	sample_name 6441 6446	u.xml
+T120	sample_name 6472 6478	f1.ps1
+T121	sample_name 6508 6513	b.dat
+T122	sample_name 6514 6519	i.bat
+T123	sample_name 6575 6580	i.bat
+T124	OS_name 6590 6597	Windows
+T125	string 6618 6623	-pKEY
+T126	string 6672 6695	-t ACCEPTANCE_ID_STRING
+T127	sample_name 6773 6778	p.bat
+T128	sample_name 6792 6797	h.ps1
+R30	launch Arg1:T127 Arg2:T128	
+T129	sub_activity 6808 6856	get information about system-wide proxy settings
+T130	sample_name 6886 6891	e.ps1
+T131	sub_activity 6902 6965	calculate the SystemID that will be used in requests to the C&C
+T132	sample_name 6996 7001	c.dll
+T133	tool 7013 7017	cURL
+R31	part_of Arg1:T132 Arg2:T133	
+T134	string 7076 7080	%pp%
+T135	string 7101 7109	%output%
+T136	string 7121 7125	%p3%
+T137	sample_name 7168 7173	x.dat
+T138	sample_name 7189 7195	f1.ps1
+T139	sample_name 7220 7225	u.xml
+T140	sample_name 7245 7250	b.dat
+T141	sample_name 7266 7272	f2.ps1
+T142	sample_name 7297 7302	i.bat
+T143	sample_name 7349 7354	i.bat
+T144	sample_name 7390 7395	u.xml
+T145	sample_name 7427 7453	BabyBoyStyleBackground.wmv
+T146	sample_name 7475 7488	DvDupdate.dll
+T147	sample_name 7514 7531	nav_downarrow.png
+T148	sample_name 7550 7562	psinstrc.ps1
+T149	sample_name 7809 7821	psinstrc.ps1
+T150	sample_name 7861 7874	DvDupdate.dll
+T151	tool 8302 8316	payload loader
+T152	sample_name 8182 8195	DvDupadte.dll
+T153	tool 8201 8212	service DLL
+R32	part_of Arg1:T152 Arg2:T153	
+T154	tool 8269 8279	COM object
+T155	tool 8109 8119	COM object
+T156	sample_function 7851 7907	registers DvDupdate.dll as the ‘ DVDMaker Help ’ service
+T157	sample_function 7914 7964	sets its entry point as the DllGetClassObject name
+T158	sub_activity 7719 7806	the ps1 script uses two known CLSIDs to replace their COM DLL paths with malicious ones
+T159	tool 7773 7780	COM DLL
+T160	sub_activity 8125 8179	replacing an existing CLSID registry path with its own
+T161	OS_name 8363 8370	Windows
+T162	attack_goal 8489 8528	bypass some simple AV emulation engines
+T163	tool 8569 8579	COM object
+T164	sub_activity 8614 8656	creates a thread that decrypts the payload
+T165	sub_activity 8659 8689	restores its PE and MZ headers
+T166	sub_activity 8701 8737	loads it into memory and launches it
+T167	encryption_algo 8770 8781	AES 256 CBC
+T168	tool 9068 9071	DLL
+T169	tool 8603 8613	The loader
+T170	sub_activity 9175 9209	decrypt the other encrypted binary
+T171	reference_word 9164 9166	it
+T172	malware 9019 9030	The payload
+R33	part_of Arg1:T172 Arg2:T168	
+R34	coreference Arg1:T171 Arg2:T172	
+R35	launch Arg1:T169 Arg2:T164	
+R36	launch Arg1:T169 Arg2:T165	
+R37	launch Arg1:T169 Arg2:T166	
+T173	sub_activity 8972 9016	the loader calls its function with ordinal 1
+R38	launch Arg1:T172 Arg2:T170	
+T174	tool 9253 9264	SFX content
+T175	sub_activity 9307 9367	receiving commands from the C&C server and sending responses
+T176	sub_activity 9415 9468	reading configuration item #00 to get the C&C address
+T177	sub_activity 9525 9633	sends a base64-encoded request that contains a unique SystemID , computer name , and hard disk serial number
+T178	malware 9513 9524	the payload
+T179	malware 9724 9735	the payload
+T180	tool 9784 9800	UserAgent string
+R39	use Arg1:T179 Arg2:T180	
+T181	tool 9838 9865	cookie generation algorithm
+R40	use Arg1:T179 Arg2:T181	
+T182	reference_word 9889 9900	The malware
+T183	reference_word 9649 9660	the malware
+R41	launch Arg1:T178 Arg2:T177	
+R42	coreference Arg1:T183 Arg2:T178	
+R43	coreference Arg1:T182 Arg2:T179	
+T184	sub_activity 9910 9951	get proxy settings from Internet Explorer
+R44	launch Arg1:T179 Arg2:T184	
+T185	sub_activity 9988 10060	C&C answers with a PNG file that contains steganographically hidden data
+T186	sub_activity 10296 10351	Read any file from a file system and send it to the C&C
+T187	sub_activity 10354 10394	Drop or delete a file in the file system
+T188	sub_activity 10397 10419	Drop a file and run it
+T189	sub_activity 10422 10478	Run a command line and send execution results to the C&C
+T190	sub_activity 10481 10512	Update configuration parameters
+T191	encryption_algo 10526 10529	AES
+T192	threatActor_name 10669 10677	Titanium
+T193	reference_word 10582 10590	attacker
+R45	coreference Arg1:T193 Arg2:T192	
+T194	sub_activity 10594 10662	receive input from console programs and send their output at the C&C
+T195	sub_activity 10997 11029	mimicking of well-known software
+T196	threatActor_name 11119 11127	Titanium
+R46	part_of Arg1:T38 Arg2:T36	
+T197	malware 2401 2409	backdoor
+R47	use Arg1:T197 Arg2:T49	
+T198	url_evil 4557 4601	http://70.39.115.196/payment/confirm.gif?f=1
+T199	url_evil 4604 4648	http://70.39.115.196/payment/confirm.gif?f=2
+T88	sub_activity 4864 4910	Stores the downloaded file in the %TMP% folder
+T200	sample_name 5658 5678	Win32_ProcessStartup
+T201	tool 5646 5649	WMI
+R48	use Arg1:T105 Arg2:T201	
+T202	sample_name 5681 5694	Win32_Process
+R49	part_of Arg1:T200 Arg2:T201	
+R50	part_of Arg1:T202 Arg2:T201	
+T203	tool 6036 6039	DLL
+T204	sample_function 5957 5997	Launches cURL and obfuscated ps1 scripts
+T205	sample_function 6006 6039	cURL executable compiled as a DLL
+T206	sample_function 6060 6111	Will be executed after the first request to the C&C
+T207	sample_function 6114 6128	decrypts x.dat
+T208	sample_name 6123 6128	x.dat
+T209	sample_function 6138 6190	Will be executed after the second request to the C&C
+T210	sample_name 6202 6207	b.dat
+T211	sample_function 6193 6207	decrypts b.dat
+T212	sample_function 6216 6301	Contains code that calculates a string for the Authorization field of the HTTP header
+T213	protocol 6290 6294	HTTP
+T214	sample_function 6310 6358	Gets information about the system proxy settings
+T215	tool 6369 6372	DLL
+T216	sample_function 6367 6409	A DLL file with a single exported function
+T217	sample_function 6412 6432	calls CreateProcessA
+T218	encryption_algo 6447 6450	AES
+T219	encryption_algo 6520 6523	AES
+T220	sample_function 6581 6615	Performs Windows task installation
+T221	tool 6658 6669	SFX archive
+T222	sample_function 7029 7071	exported function called DllGetClassObject
+T223	tool 7489 7511	Trojan-backdoor loader
+T224	tool 7563 7589	Loader installation script
+T225	sample_function 7454 7472	Configuration data
+T226	tool 7749 7755	CLSIDs
+T227	tool 9271 9287	execution thread
+R51	launch Arg1:T227 Arg2:T175	
+T228	reference_word 9370 9372	It
+R52	coreference Arg1:T228 Arg2:T227	
+T229	sub_activity 9661 9686	starts receiving commands
+R53	launch Arg1:T178 Arg2:T229	
+T230	sub_activity 9736 9769	sends an empty request to the C&C
+R54	launch Arg1:T179 Arg2:T230	
+T231	tool 10007 10015	PNG file
+T232	malware 10201 10209	backdoor
+R55	goal Arg1:T38 Arg2:T24	
+R56	goal Arg1:T38 Arg2:T25	
+R57	goal Arg1:T39 Arg2:T40	
+T233	tool 2564 2583	DVD making software
+R58	launch Arg1:T50 Arg2:T51	
+R59	goal Arg1:T44 Arg2:T46	
+R60	goal Arg1:T57 Arg2:T59	
+R61	goal Arg1:T111 Arg2:T204	
+R62	goal Arg1:T112 Arg2:T205	
+R63	goal Arg1:T113 Arg2:T206	
+R64	goal Arg1:T113 Arg2:T207	
+R65	goal Arg1:T114 Arg2:T209	
+R66	goal Arg1:T114 Arg2:T211	
+R67	goal Arg1:T115 Arg2:T212	
+R68	goal Arg1:T116 Arg2:T214	
+R69	goal Arg1:T117 Arg2:T216	
+R70	goal Arg1:T117 Arg2:T217	
+R71	goal Arg1:T123 Arg2:T220	
+R72	goal Arg1:T149 Arg2:T156	
+R73	goal Arg1:T149 Arg2:T157	
+R74	launch Arg1:T193 Arg2:T194	
+R75	launch Arg1:T232 Arg2:T186	
+R76	launch Arg1:T232 Arg2:T187	
+R77	launch Arg1:T232 Arg2:T188	
+R78	launch Arg1:T232 Arg2:T189	
+R79	launch Arg1:T232 Arg2:T190	
+R80	launch Arg1:T128 Arg2:T129	
+R81	launch Arg1:T130 Arg2:T131	
+T234	malware 7532 7547	Trojan-backdoor
+T235	person 928 939	SYSTEM user
+T236	malware 805 820	Trojan-backdoor
+R82	part_of Arg1:T34 Arg2:T33	
+T17	tool 1100 1111	SFX archive
+T237	malware 1119 1144	Trojan-backdoor installer
+R83	part_of Arg1:T237 Arg2:T17	
+T238	sub_activity 957 985	download the next downloader
+R84	goal Arg1:T30 Arg2:T238	
+T239	sub_activity 1004 1027	download an SFX archive
+R85	goal Arg1:T32 Arg2:T239	
+T240	tool 2729 2732	C&C
+T241	tool 2949 2952	C&C
+T242	tool 3396 3399	C&C
+T243	tool 3904 3907	C&C
+T244	tool 4284 4287	C&C
+T245	tool 4377 4380	C&C
+T246	tool 6108 6111	C&C
+T247	tool 6187 6190	C&C
+T248	tool 6765 6768	C&C
+T249	tool 6962 6965	C&C
+T250	tool 9335 9338	C&C
+T251	tool 9457 9460	C&C
+R86	launch Arg1:T227 Arg2:T176	
+T252	tool 9507 9510	C&C
+T253	tool 9718 9721	C&C
+T254	tool 9766 9769	C&C
+T255	tool 9988 9991	C&C
+T256	tool 10348 10351	C&C
+T257	tool 10475 10478	C&C
+T258	tool 10659 10662	C&C
+T259	tool 8043 8060	DllGetClassObject
+T260	malware 7489 7504	Trojan-backdoor
+R87	part_of Arg1:T234 Arg2:T147	
+R88	part_of Arg1:T223 Arg2:T146	
+R89	part_of Arg1:T224 Arg2:T148	
+R90	launch Arg1:T155 Arg2:T160	
+T261	attack_goal 8912 8936	bypass simple AV engines
+T262	tool 10111 10114	C&C
+T263	sub_activity 7154 7178	downloads the x.dat file
+T264	sub_activity 7203 7225	decrypts it into u.xml
+T265	sub_activity 7231 7255	downloads the b.dat file
+T266	sub_activity 7280 7302	decrypts it into i.bat
+R91	use Arg1:T143 Arg2:T144	
+R92	launch Arg1:T138 Arg2:T264	
+R93	launch Arg1:T141 Arg2:T266	
+T267	tool 3018 3029	SFX archive

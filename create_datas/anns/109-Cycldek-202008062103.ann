@@ -1,0 +1,713 @@
+T1	threatActor_name 0 7	Cycldek
+T2	threatActor_name 194 201	Cycldek
+T3	time 207 211	2018
+R1	occur_time Arg1:T2 Arg2:T3	
+T4	threatActor_name 541 548	Cycldek
+T5	threatActor_aliases 565 577	Goblin Panda
+T6	threatActor_aliases 582 589	Conimes
+R2	coreference Arg1:T5 Arg2:T4	
+R3	coreference Arg1:T6 Arg2:T4	
+T7	location 686 700	Southeast Asia
+T8	target_crowd 671 700	governments in Southeast Asia
+R4	attack Arg1:T4 Arg2:T8	
+T9	malware 1107 1117	USBCulprit
+R5	use Arg1:T4 Arg2:T9	
+T10	string 1148 1151	USB
+T11	tool 1148 1157	USB media
+R6	use Arg1:T9 Arg2:T11	
+T12	threatActor_name 1212 1219	Cycldek
+T13	threatActor_name 1336 1343	Cycldek
+T14	location 1458 1473	Southeast Asian
+T15	location 1559 1566	Vietnam
+R9	located Arg1:T15 Arg2:T14	
+T18	time 1686 1690	2013
+T19	time 1845 1849	2014
+T20	time 2156 2160	2017
+T21	time 2363 2367	2018
+T22	company 1831 1842	CrowdStrike
+R12	release_time Arg1:T22 Arg2:T18	
+T23	company 1872 1883	CrowdStrike
+T24	location 1928 1943	Southeast Asian
+T25	location 1973 1980	Vietnam
+R13	located Arg1:T25 Arg2:T24	
+T26	reference_word 1914 1919	group
+R14	attack Arg1:T26 Arg2:T24	
+R15	attack Arg1:T26 Arg2:T25	
+T27	malware 2090 2095	PlugX
+R16	coreference Arg1:T26 Arg2:T13	
+R17	use Arg1:T26 Arg2:T27	
+T28	reference_word 2167 2172	group
+R18	coreference Arg1:T28 Arg2:T26	
+T29	tool 2211 2214	RTF
+T30	location 2264 2271	Vietnam
+R19	use Arg1:T28 Arg2:T29	
+R20	attack Arg1:T28 Arg2:T30	
+T31	malware 2322 2333	NewCore RAT
+T32	company 2352 2360	Fortinet
+R21	use Arg1:T28 Arg2:T31	
+R22	release_time Arg1:T32 Arg2:T20	
+T33	government 2401 2425	government organizations
+T34	location 2441 2456	Southeast Asian
+R23	located Arg1:T33 Arg2:T34	
+T35	location 2476 2483	Vietnam
+T36	location 2486 2494	Thailand
+T37	location 2499 2503	Laos
+R24	located Arg1:T35 Arg2:T34	
+R25	located Arg1:T36 Arg2:T34	
+R26	located Arg1:T37 Arg2:T34	
+T38	protocol 2539 2542	TTP
+T39	malware 2620 2631	NewCore RAT
+T40	tool 2573 2591	Royal Road builder
+T41	attack_activity 2370 2377	attacks
+R27	attack Arg1:T41 Arg2:T33	
+R28	use Arg1:T41 Arg2:T38	
+R29	use Arg1:T41 Arg2:T40	
+R30	use Arg1:T41 Arg2:T39	
+R31	occur_time Arg1:T41 Arg2:T21	
+R32	release_time Arg1:T23 Arg2:T19	
+T42	security_team 2723 2762	Kaspersky ’s Threat Intelligence Portal
+T43	time 2781 2793	October 2019
+T44	company 2696 2701	intel
+T45	time 2883 2887	2018
+T46	tool 2920 2923	RTF
+T47	sample_name 2948 2951	8.t
+T48	tool 2948 2968	8.t document builder
+T49	reference_word 2987 2997	Royal Road
+R33	coreference Arg1:T49 Arg2:T48	
+R34	part_of Arg1:T48 Arg2:T46	
+T50	attack_activity 3017 3030	phishing mail
+R35	use Arg1:T50 Arg2:T46	
+T51	reference_word 3054 3063	documents
+R36	coreference Arg1:T51 Arg2:T46	
+T52	vulnerability_cve 3104 3117	CVE-2012-0158
+T53	vulnerability_cve 3120 3134	CVE-2017-11882
+T54	vulnerability_cve 3137 3150	CVE-2018-0802
+R37	use Arg1:T51 Arg2:T52	
+R38	use Arg1:T51 Arg2:T53	
+R39	use Arg1:T51 Arg2:T54	
+T55	tool 3275 3292	QcConsol – McAfee
+T56	sample_name 3321 3334	wsc_proxy.exe
+T57	tool 3337 3342	Avast
+T58	tool 3296 3306	QuickClean
+R40	part_of Arg1:T58 Arg2:T55	
+R41	part_of Arg1:T56 Arg2:T57	
+T59	string 3380 3383	DLL
+T60	string 3494 3497	DLL
+T61	malware 3560 3571	NewCore RAT
+T62	tool 3620 3627	PcShare
+T63	tool 3631 3639	PcClient
+R42	use Arg1:T61 Arg2:T62	
+R43	use Arg1:T61 Arg2:T63	
+T64	reference_word 3728 3736	software
+R44	coreference Arg1:T64 Arg2:T61	
+T65	threatActor_name 3846 3853	Cycldek
+T66	malware 3907 3914	NewCore
+T67	time 3928 3932	2017
+R45	use Arg1:T65 Arg2:T66	
+T68	company 3966 3974	Fortinet
+T69	sample_function 4087 4193	taking screenshots , controlling the machine via a remote shell and shutting down or restarting the system
+T70	reference_word 3981 3988	malware
+R46	coreference Arg1:T70 Arg2:T66	
+R47	part_of Arg1:T69 Arg2:T70	
+T71	malware 4216 4227	NewCore RAT
+T72	string 4376 4379	DLL
+T73	reference_word 4608 4615	malware
+R48	coreference Arg1:T73 Arg2:T71	
+T74	sample_name 4711 4719	BlueCore
+T75	sample_name 4724 4731	RedCore
+T76	tool 4941 4944	RTF
+T77	sample_name 4987 4999	QcConcol.exe
+T78	tool 5002 5008	McAfee
+T79	tool 5012 5022	QuickClean
+R49	part_of Arg1:T79 Arg2:T78	
+T80	sample_name 5033 5046	wsc_proxy.exe
+T81	tool 5049 5054	Avast
+R50	part_of Arg1:T80 Arg2:T81	
+R51	part_of Arg1:T77 Arg2:T78	
+T82	string 5098 5101	DLL
+T83	threatActor_name 24238 24245	Cycldek
+T84	threatActor_name 24314 24321	Cycldek
+T85	threatActor_name 24410 24417	Cycldek
+T86	threatActor_name 24490 24497	Cycldek
+T87	threatActor_name 24569 24576	Cycldek
+T88	threatActor_name 24648 24655	Cycldek
+T89	threatActor_name 24742 24749	Cycldek
+T90	threatActor_name 24799 24806	Cycldek
+T91	threatActor_name 24856 24863	Cycldek
+T92	threatActor_name 24914 24921	Cycldek
+T93	threatActor_name 24973 24980	Cycldek
+T94	threatActor_name 25032 25039	Cycldek
+T95	threatActor_name 25091 25098	Cycldek
+T96	threatActor_name 25155 25162	Cycldek
+T97	threatActor_name 25219 25226	Cycldek
+T98	threatActor_name 25283 25290	Cycldek
+T99	threatActor_name 25347 25354	Cycldek
+T100	threatActor_name 25411 25418	Cycldek
+T101	threatActor_name 25475 25482	Cycldek
+T102	threatActor_name 25539 25546	Cycldek
+T103	threatActor_name 25603 25610	Cycldek
+T104	threatActor_name 25667 25674	Cycldek
+T105	threatActor_name 25732 25739	Cycldek
+T106	threatActor_name 25797 25804	Cycldek
+T107	threatActor_name 25862 25869	Cycldek
+T108	threatActor_name 25927 25934	Cycldek
+T109	threatActor_name 25993 26000	Cycldek
+T110	threatActor_name 26942 26949	Cycldek
+T111	threatActor_name 26994 27001	Cycldek
+T112	threatActor_name 27053 27060	Cycldek
+T113	threatActor_name 27107 27114	Cycldek
+T114	threatActor_name 27163 27170	Cycldek
+T115	threatActor_name 27217 27224	Cycldek
+T116	threatActor_name 27270 27277	Cycldek
+T117	threatActor_name 27331 27338	Cycldek
+T118	threatActor_name 27379 27386	Cycldek
+T119	threatActor_name 27431 27438	Cycldek
+T120	threatActor_name 27488 27495	Cycldek
+T121	threatActor_name 28786 28793	Cycldek
+T122	threatActor_name 28729 28736	Cycldek
+T123	threatActor_name 28673 28680	Cycldek
+T124	threatActor_name 28613 28620	Cycldek
+T125	threatActor_name 28558 28565	Cycldek
+T126	threatActor_name 28504 28511	Cycldek
+T127	threatActor_name 28452 28459	Cycldek
+T128	threatActor_name 28393 28400	Cycldek
+T129	threatActor_name 28336 28343	Cycldek
+T130	threatActor_name 28275 28282	Cycldek
+T131	threatActor_name 28209 28216	Cycldek
+T132	threatActor_name 28152 28159	Cycldek
+T133	threatActor_name 28096 28103	Cycldek
+T134	threatActor_name 28037 28044	Cycldek
+T135	threatActor_name 27976 27983	Cycldek
+T136	threatActor_name 27923 27930	Cycldek
+T137	threatActor_name 27864 27871	Cycldek
+T138	threatActor_name 27815 27822	Cycldek
+T139	threatActor_name 27767 27774	Cycldek
+T140	threatActor_name 27708 27715	Cycldek
+T141	threatActor_name 27657 27664	Cycldek
+T142	threatActor_name 27600 27607	Cycldek
+T143	threatActor_name 27547 27554	Cycldek
+T144	url_evil 28797 28825	http://hanghoa.trenduang.com
+T145	url_evil 28740 28768	http://thoitiet.yrindovn.com
+T146	url_evil 28684 28711	http://nhantai.xmeyeugh.com
+T147	url_evil 28624 28655	http://quocphong.ministop14.com
+T148	url_evil 28569 28595	http://24h.tinthethaoi.com
+T149	url_evil 28515 28540	http://news.cooodkord.com
+T150	url_evil 28463 28486	http://web.hcmuafgh.com
+T151	url_evil 28404 28434	http://images.webprogobest.com
+T152	url_evil 28347 28375	http://khinhte.chinhsech.com
+T153	url_evil 28286 28318	http://tinmoi.thoitietdulich.com
+T154	url_evil 28220 28257	http://nghiencuu.onetotechnologys.com
+T155	url_evil 28163 28191	http://cophieu.dcsvnqvmn.com
+T156	url_evil 28107 28134	http://login.vietnamfar.com
+T157	url_evil 28048 28078	http://login.diendanlichsu.com
+T158	url_evil 27987 28019	http://thanhnien.vietnannnet.com
+T159	url_evil 27934 27958	http://info.coreders.com
+T160	url_evil 27875 27905	http://login.dangquanwatch.com
+T161	url_evil 27826 27847	http://cdn.laokpl.com
+T162	url_evil 27778 27798	http://laovoanew.com
+T163	url_evil 27719 27750	http://thegioi.kinhtevanhoa.com
+T164	url_evil 27668 27691	http://lat.conglyan.com
+T165	url_evil 27611 27640	http://login.giaoxuchuson.com
+T166	url_evil 26953 26977	http://web.laovoanew.com
+T167	url_evil 27005 27036	http://tinmoi.vieclamthemde.com
+T168	url_evil 27064 27090	http://kinhte.chototem.com
+T169	url_evil 27118 27146	http://news.trungtamwtoa.com
+T170	url_evil 27174 27200	http://mychau.dongnain.com
+T171	url_evil 27228 27253	http://hcm.vietbaonam.com
+T172	url_evil 27281 27314	http://login.thanhnienthegioi.com
+T173	url_evil 27342 27362	http://103.253.25.73
+T174	url_evil 27390 27414	http://luan.conglyan.com
+T175	url_evil 27442 27471	http://toiyeuvn.dongaruou.com
+T176	url_evil 27499 27530	http://tintuc.daikynguyen21.com
+T177	url_evil 27558 27583	http://web.laomoodwin.com
+T178	sample_name 26044 26058	chromepass.exe
+T179	url_evil 26092 26119	http://login.vietnamfar.com
+T180	url_evil 26127 26155	http://news.trungtamwtoa.com
+T181	sample_name 26174 26186	goopdate.dll
+T182	url_evil 26220 26248	http://cophieu.dcsvnqvmn.com
+T183	url_evil 26256 26282	http://mychau.dongnain.com
+T184	url_evil 26289 26314	http://hcm.vietbaonam.com
+T185	sample_name 26334 26346	goopdate.dll
+T186	url_evil 26380 26417	http://nghiencuu.onetotechnologys.com
+T187	url_evil 26425 26456	ttp://tinmoi.thoitietdulich.com
+T188	url_evil 26463 26495	http://tinmoi.thoitietdulich.com
+T189	url_evil 26501 26532	http://tinmoi.vieclamthemde.com
+T190	url_evil 26538 26569	http://tinmoi.vieclamthemde.com
+T191	sample_name 26583 26593	qclite.dll
+T192	url_evil 26627 26650	http://web.hcmuafgh.com
+T193	url_evil 26651 26682	http://tinmoi.vieclamthemde.com
+T194	url_evil 26683 26714	http://tintuc.daikynguyen21.com
+T195	sample_name 26747 26765	silverlightmsi.dat
+T196	url_evil 26799 26823	http://web.laovoanew.com
+T197	url_evil 26830 26851	http://cdn.laokpl.com
+T198	url_evil 26859 26889	http://login.dangquanwatch.com
+T199	url_evil 26895 26919	http://info.coreders.com
+T200	md5 26766 26798	A44804C2767DCCD4902AAE30C36E62C0
+T201	md5 26594 26626	7FF0AF890B00DEACBF42B025DDEE8402
+T202	md5 26347 26379	2E522CE8104C0693288C997604AE0096
+T203	md5 26187 26219	D8DB9D6585D558BA2D28C33C6FC61874
+T204	md5 26059 26091	1EA07468EBDFD3D9EEC59AC57A490701
+T205	sample_name 5102 5112	QcLite.dll
+T206	sample_name 5113 5120	wsc.dll
+T207	sample_name 5138 5148	stdole.tlb
+T208	tool 5160 5162	PE
+T209	sample_name 5198 5206	BlueCore
+T210	sample_name 5214 5225	msgsm64.acm
+T211	tool 5236 5238	PE
+T212	sample_name 5278 5285	RedCore
+R52	part_of Arg1:T208 Arg2:T207	
+R53	part_of Arg1:T211 Arg2:T210	
+T213	sample_name 5312 5324	dllhst3g.exe
+T214	sample_name 5325 5337	explorer.exe
+T215	sample_name 5341 5353	winlogon.exe
+T216	sample_name 5375 5396	%APPDATA%\desktop.ini
+T217	sample_name 5397 5454	C:\Documents and Settings\All Users\Documents\desktop.ini
+T218	sample_name 5458 5520	C:\Documents and Settings\All Users\Documents\desktopWOW64.ini
+T219	string 5531 5535	UUID
+T220	string 5642 5646	UUID
+T221	string 5939 5942	URL
+T222	url_evil 5950 5992	http://%s : %d/link?url=%s&enpl=%s&encd=%s
+T223	url_evil 5993 6043	http://%s : %d/search.jsp?referer=%s&kw=%s&psid=%s
+T224	url_evil 6048 6104	ttp://%s : %d/search.jsp?url=%s&referer=%s&kw=%s&psid=%s
+R54	part_of Arg1:T222 Arg2:T221	
+R55	part_of Arg1:T223 Arg2:T221	
+R56	part_of Arg1:T224 Arg2:T221	
+T225	string 6199 6202	DLL
+T226	string 6241 6244	DLL
+T227	string 6351 6355	UUID
+T228	malware 6516 6527	PCShare RAT
+T229	program_language 6753 6762	shellcode
+T230	sample_name 6780 6787	RedCore
+T231	sample_name 6792 6800	BlueCore
+T232	program_language 6817 6826	shellcode
+T233	sample_name 6858 6868	stdole.tlb
+T234	sample_name 6878 6889	msgsm64.acm
+R57	part_of Arg1:T232 Arg2:T233	
+R58	part_of Arg1:T232 Arg2:T234	
+T235	program_language 7076 7085	shellcode
+T236	sample_name 7539 7546	RedCore
+T237	sample_name 7604 7612	BlueCore
+T238	tool 7685 7694	Keylogger
+T239	sample_name 7698 7705	RedCore
+T240	sample_name 7913 7925	RCoRes64.dat
+T241	sample_function 7706 7756	records the title of the current foreground window
+R59	part_of Arg1:T241 Arg2:T239	
+R60	use Arg1:T238 Arg2:T239	
+T242	string 7971 7974	XOR
+T243	string 7988 7992	0xFA
+R61	use Arg1:T238 Arg2:T242	
+R62	use Arg1:T238 Arg2:T243	
+T244	tool 7995 8012	Device enumerator
+T245	sample_name 8016 8023	RedCore
+T246	protocol 8407 8410	RDP
+T247	tool 8407 8416	RDP logge
+T248	sample_name 8421 8428	RedCore
+T249	tool 8872 8884	Proxy server
+T250	sample_name 8888 8895	RedCore
+T251	sample_function 8025 8243	egisters a window class intended to intercept window messages with a callback that checks if the inspected message was sent as a result of a DBT_DEVICEARRIVAL Such events signal the connection of a device to the system
+R63	part_of Arg1:T251 Arg2:T245	
+R64	use Arg1:T244 Arg2:T245	
+T252	tool 8401 8404	C&C
+T253	protocol 8446 8449	RDP
+T254	string 8471 8474	ETW
+R65	use Arg1:T248 Arg2:T254	
+T255	sample_function 8429 8510	subscribes to an RDP connection event via ETW and notifies the C&C when it occurs
+R66	part_of Arg1:T255 Arg2:T248	
+R67	use Arg1:T247 Arg2:T248	
+T256	tool 8492 8495	C&C
+T257	protocol 8689 8692	RDP
+R68	use Arg1:T248 Arg2:T257	
+T258	tool 8825 8828	C&C
+T259	sample_function 8896 9029	spawns a server thread that listens on a pre-configured port ( by default 49563 ) and accepts requests from non-localhost connections
+R69	part_of Arg1:T259 Arg2:T250	
+R70	use Arg1:T249 Arg2:T250	
+T260	tool 9034 9042	firewall
+T261	tool 9353 9356	C&C
+T262	tool 9472 9475	C&C
+T263	string 9709 9712	DLL
+T264	string 9410 9413	URL
+T265	string 9305 9308	URL
+T266	tool 9206 9209	C&C
+T267	reference_word 9289 9297	implants
+R71	use Arg1:T267 Arg2:T265	
+R72	use Arg1:T267 Arg2:T264	
+R73	use Arg1:T267 Arg2:T261	
+R74	use Arg1:T267 Arg2:T262	
+T268	target_crowd 9900 9934	diplomatic and government entities
+T269	sample_name 10024 10032	BlueCore
+T270	person 10003 10012	operators
+R75	part_of Arg1:T270 Arg2:T269	
+T271	location 10119 10123	Laos
+T272	location 10128 10136	Thailand
+T273	target_crowd 10075 10085	Vietnamese
+R76	attack Arg1:T270 Arg2:T273	
+R77	attack Arg1:T270 Arg2:T271	
+R78	attack Arg1:T270 Arg2:T272	
+T274	sample_name 10166 10173	RedCore
+T275	person 10149 10158	operators
+R79	part_of Arg1:T275 Arg2:T274	
+T276	location 10210 10217	Vietnam
+T277	location 10234 10238	Laos
+T278	time 10253 10257	2018
+R80	goal Arg1:T275 Arg2:T276	
+R81	goal Arg1:T275 Arg2:T277	
+T279	tool 10382 10385	C&C
+T280	threatActor_name 10594 10601	Cycldek
+T281	reference_word 10815 10820	group
+R82	coreference Arg1:T281 Arg2:T280	
+T282	tool 10827 10837	USBCulprit
+R83	use Arg1:T281 Arg2:T282	
+T283	sample_name 10884 10892	BlueCore
+T284	sample_name 10897 10904	RedCore
+T285	sample_name 11249 11257	BlueCore
+T286	sample_name 11262 11269	RedCore
+T287	sample_function 11295 11383	lateral movement in the compromised networks or information stealing from infected nodes
+R84	part_of Arg1:T287 Arg2:T285	
+R85	part_of Arg1:T287 Arg2:T286	
+T288	sample_name 11666 11673	RedCore
+T289	sample_name 11678 11686	BlueCore
+T290	string 11742 11745	DLL
+T291	sample_name 11829 11842	wsc_proxy.exe
+T292	tool 11845 11850	Avast
+R86	part_of Arg1:T291 Arg2:T292	
+T293	sample_name 11875 11887	qcconsol.exe
+T294	sample_name 11892 11904	mcvsshld.exe
+T295	tool 11907 11913	McAfee
+R87	part_of Arg1:T294 Arg2:T295	
+R88	part_of Arg1:T293 Arg2:T295	
+T296	company 11951 11960	Microsoft
+T297	tool 11965 11971	Google
+T298	sample_name 12011 12017	rc.exe
+T299	sample_name 12041 12057	googleupdate.exe
+T300	tool 12024 12038	Google Updates
+T301	tool 11991 12008	resource compiler
+R89	use Arg1:T301 Arg2:T298	
+R90	use Arg1:T300 Arg2:T299	
+R91	part_of Arg1:T301 Arg2:T296	
+R92	part_of Arg1:T300 Arg2:T297	
+T302	sample_function 12100 12253	bypass weak security mechanisms like application whitelisting , grant the malware additional permissions during execution or complicate incident response
+T303	sample_name 12406 12413	LOLbins
+T304	tool 12538 12556	BrowserHistoryView
+T305	sample_function 12559 12624	a Nirsoft utility to obtain browsing history from common browsers
+R93	part_of Arg1:T305 Arg2:T304	
+T306	tool 12629 12637	ProcDump
+T307	sample_function 12640 12732	Sysinternals tools used to dump memory , possibly to obtain passwords from running processes
+R94	part_of Arg1:T307 Arg2:T306	
+T308	tool 12640 12652	Sysinternals
+T309	tool 12737 12744	Nbtscan
+T310	sample_function 12747 12820	command line utility intended to scan IP networks for NetBIOS information
+T311	protocol 12785 12787	IP
+T312	OS_name 12801 12808	NetBIOS
+R95	part_of Arg1:T310 Arg2:T309	
+T313	tool 12827 12833	PsExec
+T314	tool 12836 12848	Sysinternals
+T315	sample_function 12836 12941	Sysinternals tools used to execute commands remotely in the network , typically used for lateral movement
+R96	part_of Arg1:T315 Arg2:T313	
+T316	tool 13152 13164	Custom HDoor
+T317	sample_function 13180 13330	providing full-featured backdoor capabilities like remote machine administration , information theft , lateral movement and the launch of DDoS attacks
+R97	part_of Arg1:T317 Arg2:T316	
+T318	string 13318 13322	DDoS
+T319	person 13364 13375	Wicked Rose
+R98	use Arg1:T319 Arg2:T316	
+T320	string 13461 13464	APT
+T321	threatActor_name 13528 13538	Naikon APT
+R99	use Arg1:T321 Arg2:T316	
+T322	threatActor_name 13603 13610	Cycldek
+R100	use Arg1:T322 Arg2:T316	
+T323	reference_word 13670 13672	it
+R101	coreference Arg1:T323 Arg2:T316	
+T324	attack_goal 13676 13799	scan internal networks and create tunnels between compromised hosts in order to avoid network detections and bypass proxies
+R102	goal Arg1:T322 Arg2:T324	
+T325	tool 13946 13957	JsonCookies
+T326	string 13990 13997	cookies
+T327	string 14003 14009	SQLite
+T328	sample_function 13983 14046	steals cookies from SQLite databases of Chromium-based browsers
+R103	part_of Arg1:T328 Arg2:T325	
+T329	tool 14115 14118	C&C
+T330	string 14182 14186	JSON
+T331	sample_name 14200 14215	FuckCookies.txt
+T332	string 14237 14243	cookie
+T333	sample_name 14072 14083	sqlite3.dll
+T334	tool 14251 14261	ChromePass
+T335	sample_function 14287 14347	steals saved passwords from Chromium-based browser databases
+R104	part_of Arg1:T335 Arg2:T334	
+T336	program_language 14390 14394	HTML
+T337	string 14428 14431	URL
+T338	threatActor_name 14643 14650	Cycldek
+T339	malware 14771 14781	USBCulrpit
+R105	use Arg1:T338 Arg2:T339	
+T340	sample_name 14823 14830	RedCore
+T341	sample_function 14877 15040	scanning various paths in victim machines , collecting documents with particular extensions and passing them on to USB drives when they are connected to the system
+T342	reference_word 14789 14793	tool
+R106	coreference Arg1:T342 Arg2:T339	
+R107	part_of Arg1:T341 Arg2:T342	
+T343	string 14992 14995	USB
+T344	reference_word 15043 15045	It
+R108	coreference Arg1:T344 Arg2:T342	
+T345	sample_function 15067 15136	copy itself to a removable drive in the presence of a particular file
+R109	part_of Arg1:T345 Arg2:T344	
+T346	tool 15352 15361	Kaspersky
+T347	malware 15377 15387	USBCulprit
+T348	time 15420 15424	2014
+T349	time 15474 15478	2019
+T350	time 15548 15552	2017
+T351	string 15623 15626	USB
+T352	time 15862 15866	2017
+T353	person 15801 15803	we
+T354	string 16051 16054	DLL
+T355	malware 15902 15909	dropper
+T356	string 16163 16166	DLL
+T357	person 16370 16375	actor
+T358	protocol 16407 16410	TTP
+T359	threatActor_name 16468 16475	Cycldek
+R110	part_of Arg1:T357 Arg2:T359	
+R111	use Arg1:T357 Arg2:T358	
+T360	string 16554 16557	DLL
+T361	sample_name 16654 16665	wrapper.exe
+T362	sample_name 16690 16714	PtUserSessionWrapper.exe
+R112	coreference Arg1:T362 Arg2:T361	
+T363	string 16785 16788	DLL
+T364	sample_name 16797 16809	TmDbgLog.dll
+T365	string 16860 16864	blob
+T366	reference_word 16826 16833	malware
+R113	use Arg1:T366 Arg2:T365	
+T367	encryption_algo 16889 16892	RC4
+T368	tool 16921 16930	PE loader
+R114	use Arg1:T365 Arg2:T367	
+R115	use Arg1:T365 Arg2:T368	
+T369	malware 16938 16948	USBCulprit
+R116	coreference Arg1:T366 Arg2:T369	
+T370	tool 17015 17023	Boostrap
+T371	reference_word 17091 17098	malware
+R117	coreference Arg1:T371 Arg2:T369	
+T372	function 17156 17176	CUSB::RegHideFileExt
+T373	function 17186 17203	CUSB::RegHideFile
+R118	use Arg1:T371 Arg2:T372	
+R119	use Arg1:T371 Arg2:T373	
+T374	OS_name 17268 17275	Windows
+T375	reference_word 17480 17487	malware
+R120	coreference Arg1:T375 Arg2:T371	
+T376	function 17570 17587	CUSB::USBFindFile
+R121	use Arg1:T375 Arg2:T376	
+T377	tool 18021 18024	RAR
+T378	reference_word 18058 18065	malware
+T379	sample_name 18079 18086	rar.exe
+T380	malware 18484 18494	USBCulprit
+T381	time 18870 18889	01/06/2016 00:00:00
+T382	string 18892 18895	USB
+T383	reference_word 19183 19190	malware
+T384	function 19278 19291	GetDriveTypeW
+R122	use Arg1:T383 Arg2:T384	
+T385	string 19330 19345	DRIVE_REMOVABLE
+T386	string 19383 19386	USB
+T387	sample_name 19571 19583	$Recyc1e.Bin
+T388	sample_name 19869 19874	1.txt
+T389	sample_name 19969 19981	$Recyc1e.Bin
+T390	sample_name 20310 20315	2.txt
+T391	sample_name 20495 20507	$Recyc1e.Bin
+T392	string 20635 20638	USB
+T393	malware 20763 20773	USBCulprit
+T394	string 20923 20926	USB
+T395	sample_name 20977 21013	D14030E9-C60C-481E-B7C2-0D76810C6E96
+T396	sample_name 21022 21058	D14030E9-C60C-481E-B7C2-0D76810C6E95
+T397	function 21443 21456	CUSB::runlist
+R123	use Arg1:T395 Arg2:T397	
+T398	string 22091 22094	USB
+T399	malware 22392 22402	USBCulprit
+T400	threatActor_name 22801 22808	Cycldek
+T401	person 22829 22834	actor
+R124	part_of Arg1:T401 Arg2:T400	
+T402	location 23142 23156	Southeast Asia
+R125	attack Arg1:T400 Arg2:T402	
+T403	sample_name 23677 23684	RedCore
+T404	sample_name 23623 23631	BlueCore
+T405	threatActor_name 24173 24180	Cycldek
+T406	md5 24249 24281	A6C751D945CFE84C918E88DF04D85798
+T407	md5 24325 24357	4B785345161D288D1652C1B2D5CEADA1
+T408	md5 24421 24453	1B19175C41B9A9881B23B4382CC5935F
+T409	md5 24501 24533	6D2E6A61EEDE06FA9D633CE151208831
+T410	md5 24580 24612	6EA33305B5F0F703F569B9EBD6035BFD
+T411	md5 24659 24691	600E14E4B0035C6F0C6A344D87B6C27F
+T412	md5 24753 24785	1640EE7A414DFF996AF8265E0947DE36
+T413	md5 24810 24842	1EA07468EBDFD3D9EEC59AC57A490701
+T414	md5 24867 24899	07EE1B99660C8CD5207E128F44AA8CBC
+T415	md5 24925 24957	809196A64CA4A32860D28760267A1A8B
+T416	md5 24984 25016	81660985276CF9B6D979753B6E581D34
+T417	md5 25043 25075	A44804C2767DCCD4902AAE30C36E62C0
+T418	md5 25102 25134	A9BCF983FE868A275F8D9D8F5DEFACF5
+T419	md5 25166 25198	C73B000313DCD2289F51B367F744DCD8
+T420	md5 25230 25262	2FB731903BD12FF61E6F778FDF9926EE
+T421	md5 25294 25326	4A21F9B508DB19398AEE7FE4AE0AC380
+T422	md5 25358 25390	6BE1362D722BA4224979DE91A2CD6242
+T423	md5 25422 25454	7789055B0836A905D9AA68B1D4A50F09
+T424	md5 25486 25518	782FF651F34C87448E4503B5444B6164
+T425	md5 25550 25582	88CDD3CE6E5BAA49DC69DA664EDEE5C1
+T426	md5 25614 25646	A4AD564F8FE80E2EE52E643E449C487D
+T427	md5 25678 25710	3CA7BD71B30007FC30717290BB437152
+T428	md5 25743 25775	58FE8DB0F7AE505346F6E4687D0AE233
+T429	md5 25808 25840	A02E2796E0BE9D84EE0D4B205673EC20
+T430	md5 25873 25905	D8DB9D6585D558BA2D28C33C6FC61874
+T431	md5 25938 25970	2E522CE8104C0693288C997604AE0096
+T432	sample_name 24284 24291	wsc.dll
+T433	sample_name 24360 24371	msgsm64.acm
+T434	string 24306 24309	DLL
+T435	program_language 24384 24393	shellcode
+R126	use Arg1:T435 Arg2:T433	
+R127	part_of Arg1:T432 Arg2:T434	
+R128	part_of Arg1:T406 Arg2:T83	
+R129	part_of Arg1:T407 Arg2:T84	
+T436	sample_name 24457 24467	QcLite.dll
+T437	string 24482 24485	DLL
+R130	part_of Arg1:T436 Arg2:T437	
+R131	part_of Arg1:T408 Arg2:T85	
+T438	sample_name 24536 24546	QcLite.dll
+T439	string 24561 24564	DLL
+R132	part_of Arg1:T438 Arg2:T439	
+T440	sample_name 24615 24625	QcLite.dll
+T441	string 24640 24643	DLL
+T442	sample_name 24693 24703	stdole.tlb
+T443	program_language 24716 24725	Shellcode
+R133	use Arg1:T443 Arg2:T442	
+R134	part_of Arg1:T440 Arg2:T441	
+R135	part_of Arg1:T409 Arg2:T86	
+R136	part_of Arg1:T410 Arg2:T87	
+R137	part_of Arg1:T411 Arg2:T88	
+T444	tool 24786 24796	Chromepass
+R138	part_of Arg1:T412 Arg2:T89	
+R139	use Arg1:T89 Arg2:T444	
+T445	tool 24843 24853	Chromepass
+R140	part_of Arg1:T413 Arg2:T90	
+R141	use Arg1:T90 Arg2:T445	
+T446	tool 24900 24911	JsonCookies
+R142	part_of Arg1:T414 Arg2:T91	
+R143	use Arg1:T91 Arg2:T446	
+T447	tool 24958 24970	Custom HDoor
+T448	tool 25017 25029	Custom HDoor
+T449	tool 25076 25088	Custom HDoor
+T450	malware 25135 25145	USBCulprit
+T451	malware 25199 25209	USBCulprit
+T452	malware 25263 25273	USBCulprit
+T453	malware 25327 25337	USBCulprit
+T454	malware 25391 25401	USBCulprit
+T455	malware 25455 25465	USBCulprit
+T456	malware 25519 25529	USBCulprit
+T457	malware 25583 25593	USBCulprit
+T458	malware 25647 25657	USBCulprit
+T459	malware 25711 25721	USBCulprit
+T460	malware 25776 25786	USBCulprit
+T461	malware 25841 25851	USBCulprit
+T462	malware 25906 25916	USBCulprit
+T463	malware 25971 25982	USBCulrprit
+T464	tool 25971 25990	USBCulrprit Payload
+R144	part_of Arg1:T431 Arg2:T108	
+R145	use Arg1:T108 Arg2:T464	
+T465	tool 25906 25924	USBCulprit Payload
+R146	part_of Arg1:T430 Arg2:T107	
+R147	use Arg1:T107 Arg2:T465	
+T466	tool 25841 25859	USBCulprit Payload
+R148	part_of Arg1:T429 Arg2:T106	
+R149	use Arg1:T106 Arg2:T466	
+R150	part_of Arg1:T428 Arg2:T105	
+T467	tool 25776 25794	USBCulprit Payload
+R151	use Arg1:T105 Arg2:T467	
+R152	part_of Arg1:T427 Arg2:T104	
+T468	tool 25711 25729	USBCulprit Payload
+R153	use Arg1:T104 Arg2:T468	
+T469	tool 25647 25664	USBCulprit Loader
+T470	tool 25583 25600	USBCulprit Loader
+T471	tool 25519 25536	USBCulprit Loader
+T472	tool 25455 25472	USBCulprit Loader
+T473	tool 25391 25408	USBCulprit Loader
+T474	tool 25327 25344	USBCulprit Loader
+T475	tool 25263 25280	USBCulprit Loader
+T476	tool 25199 25216	USBCulprit Loader
+T477	tool 25135 25152	USBCulprit Loader
+R154	part_of Arg1:T418 Arg2:T95	
+R155	use Arg1:T95 Arg2:T477	
+R156	part_of Arg1:T419 Arg2:T96	
+R157	use Arg1:T96 Arg2:T476	
+R158	part_of Arg1:T420 Arg2:T97	
+R159	use Arg1:T97 Arg2:T475	
+R160	part_of Arg1:T421 Arg2:T98	
+R161	use Arg1:T98 Arg2:T474	
+R162	part_of Arg1:T422 Arg2:T99	
+R163	use Arg1:T99 Arg2:T473	
+R164	part_of Arg1:T423 Arg2:T100	
+R165	use Arg1:T100 Arg2:T472	
+R166	part_of Arg1:T424 Arg2:T101	
+R167	use Arg1:T101 Arg2:T471	
+R168	part_of Arg1:T425 Arg2:T102	
+R169	use Arg1:T102 Arg2:T470	
+R170	part_of Arg1:T426 Arg2:T103	
+R171	use Arg1:T103 Arg2:T469	
+T478	tool 26161 26171	ChromePass
+T479	malware 26321 26331	USBCulprit
+T480	malware 26570 26580	USBCulprit
+T481	sample_name 26715 26723	BlueCore
+T482	tool 26732 26744	Hijacked DLL
+R172	use Arg1:T481 Arg2:T482	
+T483	tool 26927 26939	Custom HDoor
+R173	part_of Arg1:T204 Arg2:T178	
+R174	part_of Arg1:T179 Arg2:T178	
+R175	part_of Arg1:T180 Arg2:T178	
+R176	use Arg1:T178 Arg2:T478	
+R177	part_of Arg1:T203 Arg2:T181	
+R178	part_of Arg1:T182 Arg2:T181	
+R179	part_of Arg1:T183 Arg2:T181	
+R180	part_of Arg1:T184 Arg2:T181	
+R181	use Arg1:T181 Arg2:T479	
+R182	part_of Arg1:T202 Arg2:T185	
+R183	part_of Arg1:T186 Arg2:T185	
+R184	part_of Arg1:T187 Arg2:T185	
+R185	part_of Arg1:T188 Arg2:T185	
+R186	part_of Arg1:T189 Arg2:T185	
+R187	part_of Arg1:T190 Arg2:T185	
+R188	use Arg1:T185 Arg2:T480	
+R189	part_of Arg1:T201 Arg2:T191	
+R190	part_of Arg1:T192 Arg2:T191	
+R191	part_of Arg1:T193 Arg2:T191	
+R192	part_of Arg1:T194 Arg2:T191	
+R193	part_of Arg1:T191 Arg2:T481	
+R194	part_of Arg1:T200 Arg2:T195	
+R195	part_of Arg1:T196 Arg2:T195	
+R196	part_of Arg1:T197 Arg2:T195	
+R197	part_of Arg1:T198 Arg2:T195	
+R198	part_of Arg1:T199 Arg2:T195	
+R199	use Arg1:T195 Arg2:T483	
+R200	part_of Arg1:T166 Arg2:T110	
+R201	part_of Arg1:T167 Arg2:T111	
+R202	part_of Arg1:T168 Arg2:T112	
+R203	part_of Arg1:T169 Arg2:T113	
+R204	part_of Arg1:T170 Arg2:T114	
+R205	part_of Arg1:T171 Arg2:T115	
+R206	part_of Arg1:T172 Arg2:T116	
+R207	part_of Arg1:T173 Arg2:T117	
+R208	part_of Arg1:T174 Arg2:T118	
+R209	part_of Arg1:T175 Arg2:T119	
+R210	part_of Arg1:T176 Arg2:T120	
+R211	part_of Arg1:T177 Arg2:T143	
+R212	part_of Arg1:T165 Arg2:T142	
+R213	part_of Arg1:T164 Arg2:T141	
+R214	part_of Arg1:T163 Arg2:T140	
+R215	part_of Arg1:T162 Arg2:T139	
+R216	part_of Arg1:T161 Arg2:T138	
+R217	part_of Arg1:T160 Arg2:T137	
+R218	part_of Arg1:T144 Arg2:T121	
+R219	part_of Arg1:T145 Arg2:T122	
+R220	part_of Arg1:T146 Arg2:T123	
+R221	part_of Arg1:T147 Arg2:T124	
+R222	part_of Arg1:T148 Arg2:T125	
+R223	part_of Arg1:T149 Arg2:T126	
+R224	part_of Arg1:T150 Arg2:T127	
+R225	part_of Arg1:T151 Arg2:T128	
+R226	part_of Arg1:T152 Arg2:T129	
+R227	part_of Arg1:T153 Arg2:T130	
+R228	part_of Arg1:T154 Arg2:T131	
+R229	part_of Arg1:T155 Arg2:T132	
+R230	part_of Arg1:T156 Arg2:T133	
+R231	part_of Arg1:T157 Arg2:T134	
+R232	part_of Arg1:T158 Arg2:T135	
+R233	part_of Arg1:T159 Arg2:T136	
+T16	target_crowd 1514 1542	organizations and government
+R7	located Arg1:T16 Arg2:T15	
+R8	attack Arg1:T13 Arg2:T16	

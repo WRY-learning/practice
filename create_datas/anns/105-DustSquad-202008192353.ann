@@ -1,0 +1,462 @@
+T1	location 25 37	Central Asia
+T2	person 57 62	actor
+T3	location 98 110	Central Asia
+T4	person 301 306	actor
+T5	reference_word 378 387	the actor
+T6	person 740 745	actor
+T7	person 1248 1253	actor
+T8	threatActor_name 388 397	DustSquad
+T9	threatActor_name 923 932	DustSquad
+T10	threatActor_name 1155 1164	DustSquad
+T11	threatActor_name 5418 5427	DustSquad
+T12	threatActor_name 5630 5639	DustSquad
+T13	malware 0 7	Octopus
+T14	threatActor_name 7729 7738	DustSquad
+T15	threatActor_name 7699 7708	DustSquad
+T16	threatActor_name 7666 7675	DustSquad
+T17	threatActor_name 7633 7642	DustSquad
+T18	threatActor_name 7601 7610	DustSquad
+T19	threatActor_name 7574 7583	DustSquad
+T20	threatActor_name 7545 7554	DustSquad
+T21	threatActor_name 7519 7528	DustSquad
+T22	threatActor_name 7493 7502	DustSquad
+T23	threatActor_name 7465 7474	DustSquad
+T24	threatActor_name 7436 7445	DustSquad
+T25	threatActor_name 7407 7416	DustSquad
+T26	threatActor_name 7377 7386	DustSquad
+T27	threatActor_name 7344 7353	DustSquad
+T28	threatActor_name 7312 7321	DustSquad
+T29	threatActor_name 7277 7286	DustSquad
+T30	threatActor_name 7251 7260	DustSquad
+T31	threatActor_name 7221 7230	DustSquad
+T32	threatActor_name 7193 7202	DustSquad
+T33	threatActor_name 7164 7173	DustSquad
+T34	threatActor_name 7135 7144	DustSquad
+T35	threatActor_name 7107 7116	DustSquad
+T36	threatActor_name 7078 7087	DustSquad
+T37	threatActor_name 7048 7057	DustSquad
+T38	threatActor_name 7019 7028	DustSquad
+T39	threatActor_name 6995 7004	DustSquad
+T40	threatActor_name 6966 6975	DustSquad
+T41	threatActor_name 6939 6948	DustSquad
+T42	threatActor_name 6892 6901	DustSquad
+T43	threatActor_name 6845 6854	DustSquad
+T44	threatActor_name 6798 6807	DustSquad
+T45	threatActor_name 6751 6760	DustSquad
+T46	threatActor_name 6704 6713	DustSquad
+T47	threatActor_name 6657 6666	DustSquad
+T48	threatActor_name 6610 6619	DustSquad
+T49	threatActor_name 6563 6572	DustSquad
+T50	threatActor_name 6516 6525	DustSquad
+T51	threatActor_name 6469 6478	DustSquad
+T52	threatActor_name 6422 6431	DustSquad
+T53	threatActor_name 6375 6384	DustSquad
+T54	threatActor_name 6328 6337	DustSquad
+T55	threatActor_name 6281 6290	DustSquad
+T56	threatActor_name 6234 6243	DustSquad
+T57	threatActor_name 6187 6196	DustSquad
+T58	threatActor_name 5670 5679	DustSquad
+T59	threatActor_name 5717 5726	DustSquad
+T60	threatActor_name 5764 5773	DustSquad
+T61	threatActor_name 5811 5820	DustSquad
+T62	threatActor_name 5858 5867	DustSquad
+T63	threatActor_name 5905 5914	DustSquad
+T64	threatActor_name 5952 5961	DustSquad
+T65	threatActor_name 5999 6008	DustSquad
+T66	threatActor_name 6046 6055	DustSquad
+T67	threatActor_name 6093 6102	DustSquad
+T68	threatActor_name 6140 6149	DustSquad
+R1	located Arg1:T13 Arg2:T1	
+T69	location 323 336	Central Asian
+T70	person 337 342	users
+R2	located Arg1:T70 Arg2:T69	
+R3	attack Arg1:T4 Arg2:T70	
+T71	sub_activity 347 366	diplomatic entities
+R4	attack Arg1:T4 Arg2:T71	
+R5	coreference Arg1:T5 Arg2:T4	
+R6	part_of Arg1:T5 Arg2:T8	
+T72	OS_name 506 513	Android
+T73	OS_name 518 525	Windows
+T74	sub_activity 629 648	diplomatic entities
+T75	malware 601 608	Octopus
+T76	malware 1145 1152	Octopus
+T77	malware 901 908	Octopus
+T78	malware 1438 1445	Octopus
+T79	malware 1626 1633	Octopus
+T80	malware 2208 2215	Octopus
+T81	malware 3286 3293	Octopus
+T82	malware 5187 5194	Octopus
+T83	malware 5435 5442	Octopus
+T84	OS_name 586 593	Windows
+R7	located Arg1:T75 Arg2:T84	
+R8	attack Arg1:T75 Arg2:T74	
+T85	sample_name 708 720	0ct0pus3.php
+T86	security_team 685 689	ESET
+T87	time 693 697	2017
+T88	tool 759 761	C2
+R9	use Arg1:T6 Arg2:T85	
+R10	located Arg1:T85 Arg2:T88	
+T89	reference_word 651 659	The name
+R11	coreference Arg1:T89 Arg2:T75	
+R12	first_found_time Arg1:T89 Arg2:T87	
+R13	find Arg1:T86 Arg2:T89	
+R14	part_of Arg1:T77 Arg2:T9	
+T90	time 960 970	April 2018
+T91	reference_word 799 810	the malware
+R15	coreference Arg1:T91 Arg2:T75	
+T92	security_team 823 832	Kaspersky
+T93	tool 833 851	Attribution Engine
+R16	part_of Arg1:T93 Arg2:T92	
+T94	time 1023 1027	2014
+T95	location 1116 1127	Afghanistan
+T96	reference_word 1001 1014	this campaign
+T97	sub_activity 708 745	0ct0pus3.php script used by the actor
+R17	coreference Arg1:T96 Arg2:T97	
+R18	occur_time Arg1:T96 Arg2:T94	
+T98	location 1035 1058	former Soviet republics
+T99	location 1062 1074	Central Asia
+R19	part_of Arg1:T98 Arg2:T99	
+R20	located Arg1:T96 Arg2:T95	
+R21	located Arg1:T96 Arg2:T98	
+T100	program_language 1170 1176	Delphi
+R22	part_of Arg1:T76 Arg2:T10	
+T101	malware 1305 1312	Zebrocy
+T102	threatActor_name 1315 1321	Sofacy
+T103	program_language 1324 1330	Delphi
+R24	part_of Arg1:T101 Arg2:T102	
+R25	use Arg1:T101 Arg2:T103	
+T104	malware 1362 1378	DroppingElephant
+T105	malware 1404 1414	StrongPity
+T106	target_crowd 1446 1453	victims
+R26	attack Arg1:T78 Arg2:T106	
+T107	malware 1483 1490	Zebrocy
+T108	threatActor_name 1491 1497	Sofacy
+R27	attack Arg1:T107 Arg2:T106	
+R28	part_of Arg1:T107 Arg2:T108	
+T109	time 1595 1605	April 2018
+T110	tool 1658 1676	Telegram Messenger
+T111	sub_activity 1641 1676	pretending to be Telegram Messenger
+R29	launch Arg1:T79 Arg2:T111	
+R30	occur_time Arg1:T111 Arg2:T109	
+T112	reference_word 1750 1762	this malware
+R31	coreference Arg1:T112 Arg2:T79	
+T113	program_language 1860 1866	Delphi
+T114	tool 1848 1876	third-party Delphi libraries
+T115	reference_word 1832 1842	The Trojan
+T116	tool 1936 1955	TurboPower Abbrevia
+R32	use Arg1:T115 Arg2:T114	
+T117	sub_activity 2000 2011	compression
+R33	coreference Arg1:T115 Arg2:T79	
+R34	goal Arg1:T114 Arg2:T117	
+R35	part_of Arg1:T116 Arg2:T114	
+T118	sub_activity 1882 1898	The Indy Project
+T119	tool 1903 1907	JSON
+T120	sub_activity 2064 2079	system registry
+T121	sample_function 2022 2033	persistence
+T122	reference_word 2014 2021	Malware
+R36	coreference Arg1:T122 Arg2:T79	
+R37	launch Arg1:T122 Arg2:T120	
+R38	goal Arg1:T120 Arg2:T121	
+R39	part_of Arg1:T118 Arg2:T114	
+R40	use Arg1:T118 Arg2:T119	
+T123	tool 1914 1916	C2
+T124	sample_function 1914 1931	C2 communications
+R41	goal Arg1:T118 Arg2:T124	
+T125	tool 2086 2092	server
+T126	sub_activity 2103 2121	commercial hosting
+T127	sub_activity 2150 2162	.php scripts
+R42	located Arg1:T127 Arg2:T126	
+R43	use Arg1:T125 Arg2:T126	
+T128	sample_name 2467 2480	dvkmailer.zip
+T129	sample_name 2518 2531	CsvHelper.dll
+T130	sample_name 2569 2591	Telegram Messenger.exe
+T131	sample_name 2629 2644	TelegramApi.dll
+T132	sample_name 2682 2695	Settings.json
+T133	md5 2483 2515	979eff03faeaeea5310df53ee1a2fc8e
+T134	md5 2534 2566	d6e813a393f40c7375052a15e940bc67
+T135	md5 2594 2626	664a15bdc747c560c11aa0cf1a7bf06e
+T136	md5 2647 2679	87126c8489baa8096c6f30456f5bef5e
+T137	md5 2698 2730	d41d8cd98f00b204e9800998ecf8427e
+T138	security_team 2174 2187	Kaspersky Lab
+T139	malware 2226 2250	Trojan.Win32.Octopus.gen
+R44	find Arg1:T138 Arg2:T80	
+R45	coreference Arg1:T139 Arg2:T80	
+T140	person 2257 2266	attackers
+T141	reference_word 2405 2415	This actor
+R46	coreference Arg1:T141 Arg2:T140	
+T142	attack_activity 2432 2446	spear phishing
+R47	use Arg1:T141 Arg2:T142	
+T143	sub_activity 2450 2464	spread malware
+R48	launch Arg1:T141 Arg2:T143	
+T144	location 2302 2312	Kazakhstan
+T145	sub_activity 2286 2298	Telegram ban
+R49	located Arg1:T145 Arg2:T144	
+R50	use Arg1:T140 Arg2:T145	
+R51	part_of Arg1:T133 Arg2:T128	
+R52	part_of Arg1:T134 Arg2:T129	
+R53	part_of Arg1:T135 Arg2:T130	
+R54	part_of Arg1:T136 Arg2:T131	
+R55	part_of Arg1:T137 Arg2:T132	
+T146	person 2744 2748	user
+T147	sample_name 2833 2848	TelegramApi.dll
+T148	function 2774 2784	FormCreate
+T149	tool 2800 2808	launcher
+R56	part_of Arg1:T147 Arg2:T148	
+T150	sub_activity 2809 2848	checks for a file named TelegramApi.dll
+R57	launch Arg1:T149 Arg2:T150	
+T151	tool 2892 2900	launcher
+T152	sample_name 2955 2963	Java.exe
+T153	sub_activity 2901 2951	copies the network module to the startup directory
+R58	part_of Arg1:T151 Arg2:T153	
+T154	sub_activity 2912 2926	network module
+R59	part_of Arg1:T154 Arg2:T152	
+T155	program_language 2978 2984	Delphi
+T156	tool 2985 3009	Visual Component Library
+T157	tool 3012 3015	VCL
+R60	part_of Arg1:T157 Arg2:T156	
+R61	use Arg1:T156 Arg2:T155	
+T158	sub_activity 3018 3026	programs
+R62	use Arg1:T158 Arg2:T156	
+T159	reference_word 3075 3088	Such programs
+R63	coreference Arg1:T159 Arg2:T158	
+T160	reference_word 3119 3128	this code
+R64	coreference Arg1:T160 Arg2:T158	
+T161	sample_function 3147 3175	handle the visual components
+T162	sample_function 3180 3198	run-time libraries
+R65	goal Arg1:T160 Arg2:T161	
+R66	goal Arg1:T160 Arg2:T162	
+T163	tool 3294 3302	launcher
+R67	part_of Arg1:T163 Arg2:T81	
+T164	sub_activity 3216 3249	three programmer-defined handlers
+T165	sample_function 3254 3274	controlling elements
+R68	goal Arg1:T164 Arg2:T165	
+R69	located Arg1:T164 Arg2:T163	
+T166	function 3377 3389	Button1Click
+T167	function 3458 3478	DateTimePicker1Click
+T168	md5 5682 5714	87126c8489baa8096c6f30456f5bef5e
+T169	md5 5729 5761	ee3c829e7c773b4f94b700902ea3223c
+T170	md5 5776 5808	38f30749a87dcbf156689300737a094e
+T171	md5 5823 5855	6e85996c021d55328322ce8e93b31088
+T172	md5 5870 5902	7c0050a3e7aa3172392dcbab3bb92566
+T173	md5 5917 5949	2bf2f63c927616527a693edf31ecebea
+T174	md5 5964 5996	d9ad277eb23b6268465edb3f68b12cb2
+T175	md5 6011 6043	031e4900715564a21d0217c22609d73f
+T176	md5 6058 6090	1610cddb80d1be5d711feb46610f8a77
+T177	md5 6105 6137	1ce9548eae045433a0c943a07bb0570a
+T178	md5 6152 6184	3a54b3f9e9bd54b4098fe592d805bf72
+T179	md5 6199 6231	546ab9cdac9a812aab3e785b749c89b2
+T180	sub_activity 3394 3426	Shows the explorer dialog window
+T181	sub_activity 3430 3455	choose the "mailing file"
+T182	sub_activity 3483 3497	Shows calendar
+T183	sub_activity 3501 3526	select the "mailing date"
+R70	goal Arg1:T180 Arg2:T181	
+R71	goal Arg1:T182 Arg2:T183	
+R72	use Arg1:T166 Arg2:T180	
+R73	use Arg1:T167 Arg2:T182	
+R74	part_of Arg1:T166 Arg2:T164	
+R75	part_of Arg1:T167 Arg2:T164	
+T184	sample_name 3529 3544	TelegramApi.dll
+T185	md5 3547 3579	87126c8489baa8096c6f30456f5bef5e
+R76	part_of Arg1:T185 Arg2:T184	
+T186	sub_activity 3636 3676	self-sufficient portable executable file
+T187	sub_activity 3315 3329	network module
+T188	reference_word 3611 3630	this network module
+R77	coreference Arg1:T188 Arg2:T187	
+R78	part_of Arg1:T188 Arg2:T186	
+T189	person 3782 3786	user
+T190	sub_activity 3714 3726	first sample
+T191	sub_activity 3810 3836	deletes any files it finds
+R79	launch Arg1:T190 Arg2:T191	
+T192	reference_word 3844 3846	it
+R80	coreference Arg1:T192 Arg2:T190	
+T193	sample_name 3855 3868	.profiles.ini
+T194	sub_activity 3876 3902	Application Data directory
+R81	located Arg1:T193 Arg2:T194	
+T195	sub_activity 3847 3868	creates .profiles.ini
+R82	launch Arg1:T192 Arg2:T195	
+T196	md5 6246 6278	5cbbdce774a737618b8aa852ae754251
+T197	md5 6904 6936	4f4a8898b0aa4507dbb568dca1dedd38
+T198	sub_activity 3942 3957	network modules
+T199	protocol 3979 3981	IP
+T200	tool 3969 3991	hardcoded IP addresses
+R83	part_of Arg1:T200 Arg2:T198	
+T201	sub_activity 4005 4036	commercial web-hosting services
+R84	part_of Arg1:T200 Arg2:T201	
+T202	person 4072 4081	operators
+T203	sub_activity 4114 4125	.php script
+T204	protocol 4218 4222	HTTP
+T205	reference_word 4129 4133	them
+R85	located Arg1:T203 Arg2:T205	
+R86	coreference Arg1:T205 Arg2:T200	
+T206	sub_activity 4089 4125	deploy their first-stage .php script
+R87	launch Arg1:T202 Arg2:T206	
+T207	sub_activity 4147 4167	check the connection
+R88	launch Arg1:T203 Arg2:T207	
+T208	sub_activity 4172 4208	get the actual C2 server domain name
+T209	tool 4187 4189	C2
+T210	function 4223 4226	GET
+R89	part_of Arg1:T210 Arg2:T204	
+R90	use Arg1:T203 Arg2:T210	
+R91	launch Arg1:T210 Arg2:T208	
+T211	reference_word 4237 4255	The network module
+R92	coreference Arg1:T211 Arg2:T198	
+T212	protocol 4783 4787	HTTP
+T213	function 4788 4791	GET
+R93	part_of Arg1:T213 Arg2:T212	
+T214	tool 4541 4544	C2s
+T215	protocol 4585 4589	HTTP
+T216	protocol 4348 4352	HTTP
+T217	function 4353 4357	POST
+R94	part_of Arg1:T217 Arg2:T216	
+T218	sub_activity 4306 4339	sends the gathered data to the C2
+T219	sub_activity 4256 4301	checks against a 32-digit hardcoded victim id
+R95	launch Arg1:T211 Arg2:T219	
+T220	tool 4337 4339	C2
+R96	use Arg1:T211 Arg2:T217	
+R97	launch Arg1:T211 Arg2:T218	
+T221	sample_name 4651 4666	indyproject.org
+T222	sub_activity 4632 4648	The Indy Project
+T223	sub_activity 82 94	Telegram ban
+R98	coreference Arg1:T221 Arg2:T222	
+T224	person 4616 4626	developers
+T225	tool 4723 4742	TurboPower Abbrevia
+T226	sub_activity 4688 4695	library
+R99	part_of Arg1:T226 Arg2:T222	
+R100	use Arg1:T224 Arg2:T225	
+R101	goal Arg1:T224 Arg2:T226	
+T227	sub_activity 4747 4758	compression
+R102	goal Arg1:T224 Arg2:T227	
+T228	sub_activity 4518 4544	communication with the C2s
+R103	use Arg1:T228 Arg2:T215	
+T229	tool 4557 4561	JSON
+T230	sub_activity 4557 4576	JSON-formatted data
+R104	use Arg1:T228 Arg2:T230	
+T231	encryption_algo 4484 4487	MD5
+T232	tool 4832 4836	JSON
+T233	sub_activity 4825 4858	gather JSON-formatted system data
+T234	reference_word 4803 4814	the malware
+R105	launch Arg1:T234 Arg2:T233	
+T235	OS_name 5108 5115	Windows
+T236	tool 5116 5142	Management Instrumentation
+R106	part_of Arg1:T236 Arg2:T235	
+T237	person 5195 5205	developers
+R107	use Arg1:T237 Arg2:T82	
+T238	tool 5240 5246	fgdump
+R108	use Arg1:T237 Arg2:T238	
+T239	location 5271 5283	Central Asia
+T240	target_crowd 5249 5267	Political entities
+R109	located Arg1:T240 Arg2:T239	
+T241	time 5314 5318	2018
+T242	person 5332 5338	actors
+R110	attack Arg1:T242 Arg2:T240	
+T243	threatActor_name 5365 5371	Sofacy
+T244	threatActor_name 5351 5362	IndigoZebra
+T245	malware 5379 5386	Zebrocy
+R111	part_of Arg1:T245 Arg2:T243	
+R112	part_of Arg1:T83 Arg2:T11	
+R113	part_of Arg1:T244 Arg2:T242	
+R114	part_of Arg1:T243 Arg2:T242	
+R115	part_of Arg1:T11 Arg2:T242	
+T246	reference_word 5530 5541	this region
+R116	coreference Arg1:T246 Arg2:T239	
+T247	person 5520 5526	actors
+R117	part_of Arg1:T12 Arg2:T247	
+T248	md5 6293 6325	688854008f567e65138c3c34fb2562d0
+T249	IP_evil 6951 6963	85.93.31.141
+T250	IP_evil 6978 6992	104.223.20.136
+T251	md5 6857 6889	f7b1503a48a46e3269e6c6b537b033f8
+T252	IP_evil 7007 7016	5.8.88.87
+T253	IP_evil 7031 7045	103.208.86.237
+T254	md5 6340 6372	6fda541befa1ca675d9a0cc310c49061
+T255	md5 6387 6419	73d5d104b34fc14d32c04b30ce4de4ae
+T256	md5 6434 6466	88ad67294cf53d521f8295aa1a7b5c46
+T257	md5 6481 6513	a90caeb6645b6c866ef60eb2d5f2d0c5
+T258	md5 6528 6560	ae4e901509b05022bbe7ef340f4ad96c
+T259	md5 6575 6607	ca743d10d27277584834e72afefd6be8
+T260	md5 6810 6842	fc8b5b2f0b1132527a2bcb5985c2fe6b
+T261	md5 6716 6748	e149c1da1e05774e6b168b6b00272eb4
+T262	md5 6763 6795	f625ba7f9d7577db561d4a39a6bb134a
+T263	md5 6622 6654	ce45e69eac5c55419f2c30d9a8c9104b
+T264	md5 6669 6701	df392cd03909ad5cd7dcea83ee6d66a0
+R118	part_of Arg1:T168 Arg2:T58	
+R119	part_of Arg1:T169 Arg2:T59	
+R120	part_of Arg1:T170 Arg2:T60	
+R121	part_of Arg1:T171 Arg2:T61	
+R122	part_of Arg1:T172 Arg2:T62	
+R123	part_of Arg1:T173 Arg2:T63	
+R124	part_of Arg1:T174 Arg2:T64	
+T265	IP_evil 7060 7075	185.106.120.240
+T266	IP_evil 7090 7104	204.145.94.101
+T267	IP_evil 7119 7132	5.188.231.101
+T268	IP_evil 7147 7161	103.208.86.238
+T269	IP_evil 7176 7190	185.106.120.27
+T270	IP_evil 7205 7218	204.145.94.10
+T271	IP_evil 7586 7598	92.63.88.142
+T272	IP_evil 7557 7571	88.198.204.196
+T273	IP_evil 7531 7542	5.255.71.85
+T274	IP_evil 7505 7516	5.255.71.84
+T275	IP_evil 7477 7490	46.249.52.244
+T276	IP_evil 7448 7462	185.106.120.47
+T277	IP_evil 7419 7433	185.106.120.46
+T278	IP_evil 7389 7404	148.251.185.168
+T279	domain_evil 7233 7250	hovnanflovers.com
+T280	domain_evil 7263 7274	latecafe.in
+T281	domain_evil 7289 7309	certificatesshop.com
+T282	domain_evil 7324 7341	blondehairman.com
+T283	domain_evil 7356 7374	porenticofacts.com
+T284	domain_evil 7613 7630	giftfromspace.com
+T285	domain_evil 7645 7663	mikohanzer.website
+T286	domain_evil 7678 7696	humorpics.download
+T287	domain_evil 7711 7726	desperados20.es
+T288	domain_evil 7741 7753	prom3.biz.ua
+R125	part_of Arg1:T288 Arg2:T14	
+R126	part_of Arg1:T287 Arg2:T15	
+R127	part_of Arg1:T286 Arg2:T16	
+R128	part_of Arg1:T285 Arg2:T17	
+R129	part_of Arg1:T284 Arg2:T18	
+R130	part_of Arg1:T271 Arg2:T19	
+R131	part_of Arg1:T272 Arg2:T20	
+R132	part_of Arg1:T273 Arg2:T21	
+R133	part_of Arg1:T274 Arg2:T22	
+R134	part_of Arg1:T275 Arg2:T23	
+R135	part_of Arg1:T281 Arg2:T29	
+R136	part_of Arg1:T278 Arg2:T26	
+R137	part_of Arg1:T277 Arg2:T25	
+R138	part_of Arg1:T276 Arg2:T24	
+R139	part_of Arg1:T283 Arg2:T27	
+R140	part_of Arg1:T282 Arg2:T28	
+R141	part_of Arg1:T279 Arg2:T31	
+R142	part_of Arg1:T280 Arg2:T30	
+R143	part_of Arg1:T270 Arg2:T32	
+R144	part_of Arg1:T269 Arg2:T33	
+R145	part_of Arg1:T268 Arg2:T34	
+R146	part_of Arg1:T267 Arg2:T35	
+R147	part_of Arg1:T266 Arg2:T36	
+R148	part_of Arg1:T265 Arg2:T37	
+R149	part_of Arg1:T253 Arg2:T38	
+R150	part_of Arg1:T249 Arg2:T41	
+R151	part_of Arg1:T250 Arg2:T40	
+R152	part_of Arg1:T252 Arg2:T39	
+R153	part_of Arg1:T197 Arg2:T42	
+R154	part_of Arg1:T251 Arg2:T43	
+R155	part_of Arg1:T260 Arg2:T44	
+R156	part_of Arg1:T262 Arg2:T45	
+R157	part_of Arg1:T261 Arg2:T46	
+R158	part_of Arg1:T264 Arg2:T47	
+R159	part_of Arg1:T263 Arg2:T48	
+R160	part_of Arg1:T259 Arg2:T49	
+R161	part_of Arg1:T258 Arg2:T50	
+R162	part_of Arg1:T257 Arg2:T51	
+R163	part_of Arg1:T256 Arg2:T52	
+R164	part_of Arg1:T254 Arg2:T54	
+R165	part_of Arg1:T255 Arg2:T53	
+R166	part_of Arg1:T248 Arg2:T55	
+R167	part_of Arg1:T196 Arg2:T56	
+R168	part_of Arg1:T179 Arg2:T57	
+R169	part_of Arg1:T178 Arg2:T68	
+R170	part_of Arg1:T177 Arg2:T67	
+R171	part_of Arg1:T176 Arg2:T66	
+R172	part_of Arg1:T175 Arg2:T65	
+R173	located Arg1:T223 Arg2:T3	
+R174	use Arg1:T2 Arg2:T223	
+R23	use Arg1:T76 Arg2:T100	

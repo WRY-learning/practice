@@ -1,0 +1,280 @@
+T1	threatActor_name 23 32	BlackTech
+T2	threatActor_name 216 225	BlackTech
+T3	location 282 291	East Asia
+T4	target_crowd 307 313	Taiwan
+T5	target_crowd 335 340	Japan
+T6	target_crowd 345 354	Hong Kong
+R1	located Arg1:T4 Arg2:T3	
+R2	attack Arg1:T2 Arg2:T3	
+R3	located Arg1:T5 Arg2:T3	
+R4	located Arg1:T6 Arg2:T3	
+T7	attack_goal 472 504	steal their target ’s technology
+T8	tool 412 415	C&C
+R5	use Arg1:T2 Arg2:T8	
+R6	goal Arg1:T2 Arg2:T7	
+T9	attack_activity 675 680	PLEAD
+T10	attack_activity 683 700	Shrouded Crossbow
+T11	attack_activity 717 726	Waterbear
+R7	launch Arg1:T2 Arg2:T9	
+R8	launch Arg1:T2 Arg2:T10	
+R9	launch Arg1:T2 Arg2:T11	
+T12	attack_activity 888 893	PLEAD
+T13	attack_activity 896 913	Shrouded Crossbow
+T14	attack_activity 920 929	Waterbear
+T15	attack_activity 975 980	PLEAD
+T16	tool 1034 1056	confidential documents
+R10	attack Arg1:T15 Arg2:T16	
+T17	time 1072 1076	2012
+R11	occur_time Arg1:T15 Arg2:T17	
+T18	industry 1102 1131	Taiwanese government agencies
+T19	target_crowd 1136 1157	private organizations
+R12	attack Arg1:T15 Arg2:T18	
+R13	attack Arg1:T15 Arg2:T19	
+T20	attack_activity 1160 1165	PLEAD
+T21	attack_activity 1250 1255	PLEAD
+T22	attack_activity 1443 1448	PLEAD
+T23	malware 1526 1545	PLEAD ’s installers
+T24	attack_activity 1753 1758	PLEAD
+T25	tool 1201 1215	PLEAD backdoor
+T26	attack_activity 2026 2031	PLEAD
+T27	attack_activity 2221 2226	PLEAD
+T28	attack_activity 2522 2527	PLEAD
+T29	attack_activity 2489 2494	PLEAD
+T30	malware 2744 2761	PLEAD ’s backdoor
+T31	attack_activity 3001 3006	PLEAD
+T32	attack_activity 3605 3622	Shrouded Crossbow
+T33	reference_word 3372 3385	This campaign
+T34	attack_activity 3783 3800	Shrouded Crossbow
+T35	attack_activity 3886 3903	Shrouded Crossbow
+T36	attack_activity 3878 3883	PLEAD
+T37	attack_activity 4735 4752	Shrouded Crossbow
+R14	coreference Arg1:T33 Arg2:T32	
+T38	attack_activity 4798 4807	Waterbear
+T39	reference_word 4854 4866	The campaign
+R15	coreference Arg1:T39 Arg2:T38	
+T40	attack_activity 4954 4963	Waterbear
+T41	attack_activity 5453 5462	Waterbear
+T42	attack_activity 6149 6154	PLEAD
+T43	attack_activity 6876 6881	PLEAD
+T44	attack_activity 7600 7605	PLEAD
+T45	attack_activity 7608 7625	Shrouded Crossbow
+T46	attack_activity 7632 7641	Waterbear
+T47	tool 1224 1229	DRIGO
+T48	malware 1261 1282	spear-phishing emails
+T49	tool 1518 1523	DRIGO
+T50	vulnerability_cve 1801 1814	CVE-2015-5119
+T51	vulnerability_cve 1853 1866	CVE-2012-0158
+T52	vulnerability_cve 1910 1923	CVE-2014-6352
+T53	vulnerability_cve 1969 1982	CVE-2017-0199
+T54	vulnerability_cve 2156 2169	CVE-2015-5119
+T55	tool 2240 2259	router scanner tool
+R16	use Arg1:T27 Arg2:T55	
+T56	vulnerability_cve 2538 2551	CVE-2017-7269
+T57	tool 2446 2456	C&C server
+T58	tool 2463 2474	HTTP server
+T59	vul_aliases 2586 2637	Microsoft Internet Information Services ( IIS ) 6.0
+T60	attack_goal 2707 2741	establish a new C&C or HTTP server
+R19	use Arg1:T24 Arg2:T50	
+R20	use Arg1:T24 Arg2:T51	
+R21	use Arg1:T24 Arg2:T52	
+R22	use Arg1:T24 Arg2:T53	
+R23	use Arg1:T26 Arg2:T54	
+R24	part_of Arg1:T59 Arg2:T56	
+R25	use Arg1:T28 Arg2:T56	
+R28	use Arg1:T21 Arg2:T48	
+R29	use Arg1:T22 Arg2:T49	
+T61	sub_activity 2769 2839	Harvest saved credentials from browsers and email clients like Outlook
+T62	sub_activity 2842 2892	List drives , processes , open windows , and files
+T63	sub_activity 2895 2912	Open remote Shell
+T64	sub_activity 2915 2933	Upload target file
+T65	sub_activity 2936 2977	Execute applications via ShellExecute API
+T66	sub_activity 2980 2998	Delete target file
+T67	attack_goal 1486 1514	exfiltrated documents stolen
+R37	goal Arg1:T22 Arg2:T67	
+T68	tool 1583 1614	right-to-left-override ( RTLO )
+R38	use Arg1:T23 Arg2:T68	
+T69	attack_goal 1628 1661	obfuscate the malware ’s filename
+R39	goal Arg1:T23 Arg2:T69	
+T70	time 1839 1850	July , 2015
+T71	time 1895 1907	April , 2012
+T72	time 1952 1966	October , 2014
+T73	time 2011 2023	April , 2017
+T78	attack_goal 1722 1733	trick users
+T79	reference_word 1664 1668	They
+R44	coreference Arg1:T79 Arg2:T23	
+T80	tool 1695 1710	decoy documents
+R45	use Arg1:T79 Arg2:T80	
+R46	goal Arg1:T79 Arg2:T78	
+T81	tool 3058 3063	DRIGO
+R47	use Arg1:T31 Arg2:T81	
+T82	attack_goal 3079 3122	searches the infected machine for documents
+T83	tool 3138 3143	DRIGO
+T84	tool 3155 3168	refresh token
+R49	part_of Arg1:T84 Arg2:T83	
+T85	time 3406 3410	2010
+R50	occur_time Arg1:T33 Arg2:T85	
+T86	target_crowd 3632 3651	privatized agencies
+T87	target_crowd 3656 3678	government contractors
+T88	company 3690 3701	enterprises
+T89	industry 3709 3729	consumer electronics
+T90	industry 3732 3740	computer
+T91	industry 3743 3753	healthcare
+T92	industry 3760 3780	financial industries
+R51	part_of Arg1:T89 Arg2:T88	
+R52	part_of Arg1:T90 Arg2:T88	
+R53	part_of Arg1:T91 Arg2:T88	
+R54	part_of Arg1:T92 Arg2:T88	
+R55	attack Arg1:T32 Arg2:T86	
+R56	attack Arg1:T32 Arg2:T87	
+R57	attack Arg1:T32 Arg2:T88	
+T93	malware 3843 3850	BIFROSE
+T94	malware 3853 3859	KIVARS
+T95	malware 3866 3870	XBOW
+T96	attack_goal 2263 2290	scan for vulnerable routers
+R58	goal Arg1:T27 Arg2:T96	
+T97	attack_goal 1286 1320	deliver and install their backdoor
+R26	goal Arg1:T21 Arg2:T97	
+T99	malware 4032 4039	BIFROSE
+T100	protocol 4112 4124	Tor protocol
+T101	tool 4096 4107	C&C servers
+T102	attack_goal 4052 4069	evading detection
+R59	goal Arg1:T99 Arg2:T102	
+R60	use Arg1:T99 Arg2:T101	
+R61	use Arg1:T99 Arg2:T100	
+T103	OS_name 4156 4184	UNIX-based operating systems
+R62	attack Arg1:T99 Arg2:T103	
+T104	industry 4213 4220	servers
+T105	industry 4223 4235	workstations
+T106	industry 4242 4256	mobile devices
+R63	part_of Arg1:T103 Arg2:T104	
+R64	part_of Arg1:T103 Arg2:T105	
+R65	part_of Arg1:T103 Arg2:T106	
+T107	malware 4259 4265	KIVARS
+T108	malware 4294 4301	BIFROSE
+T109	malware 4359 4365	KIVARS
+T110	malware 4603 4609	KIVARS
+T111	malware 4676 4680	XBOW
+T112	malware 4714 4721	BIFROSE
+T113	malware 4726 4732	KIVARS
+T114	function 4387 4413	download and execute files
+T115	function 4416 4427	list drives
+T116	function 4430 4455	uninstall malware service
+T117	function 4458 4474	take screenshots
+T118	function 4477 4506	activate/deactivate keylogger
+T119	function 4509 4533	show/hide active windows
+T120	function 4540 4580	trigger mouse clicks and keyboard inputs
+R66	part_of Arg1:T114 Arg2:T109	
+R67	part_of Arg1:T115 Arg2:T109	
+R68	part_of Arg1:T116 Arg2:T109	
+R69	part_of Arg1:T117 Arg2:T109	
+R70	part_of Arg1:T118 Arg2:T109	
+R71	part_of Arg1:T119 Arg2:T109	
+R72	part_of Arg1:T120 Arg2:T109	
+R31	part_of Arg1:T61 Arg2:T30	
+R32	part_of Arg1:T62 Arg2:T30	
+R33	part_of Arg1:T63 Arg2:T30	
+T121	tool 5068 5078	C&C server
+T122	attack_goal 5082 5108	download the main backdoor
+T123	attack_goal 5113 5130	load it in memory
+R74	goal Arg1:T40 Arg2:T122	
+R75	goal Arg1:T40 Arg2:T123	
+T124	malware 5020 5047	loader component executable
+R76	use Arg1:T40 Arg2:T124	
+T125	tool 5324 5334	C&C server
+T126	company 1828 1833	Adobe
+T74	company 1880 1889	Microsoft
+T75	company 1937 1946	Microsoft
+T76	company 1996 2005	Microsoft
+R40	release_time Arg1:T50 Arg2:T70	
+R41	release_time Arg1:T51 Arg2:T71	
+R42	release_time Arg1:T52 Arg2:T72	
+R43	release_time Arg1:T53 Arg2:T73	
+T77	malware 3831 3840	backdoors
+R77	use Arg1:T34 Arg2:T77	
+R78	part_of Arg1:T93 Arg2:T77	
+R79	part_of Arg1:T94 Arg2:T77	
+R80	part_of Arg1:T95 Arg2:T77	
+T127	tool 3980 3994	RTLO technique
+R81	use Arg1:T35 Arg2:T127	
+T128	malware 6159 6165	KIVARS
+T129	malware 3936 3962	backdoor-laden attachments
+T130	malware 5252 5260	backdoor
+R73	attack Arg1:T124 Arg2:T121	
+T131	tool 5606 5617	C&C servers
+T132	tool 6200 6215	RTLO techniques
+T133	attack_goal 6219 6257	disguise their installers as documents
+R82	use Arg1:T42 Arg2:T132	
+R83	use Arg1:T128 Arg2:T132	
+R84	goal Arg1:T42 Arg2:T133	
+R85	goal Arg1:T128 Arg2:T133	
+T134	tool 6274 6289	decoy documents
+T135	reference_word 6260 6264	Both
+R86	coreference Arg1:T135 Arg2:T42	
+R87	coreference Arg1:T135 Arg2:T128	
+R88	use Arg1:T135 Arg2:T134	
+T136	tool 6302 6306	RTLO
+T137	attack_goal 6498 6542	steal important documents from their victims
+T138	reference_word 6476 6491	these campaigns
+R89	goal Arg1:T138 Arg2:T137	
+T139	malware 6886 6892	KIVARS
+T140	attack_activity 6945 6954	Waterbear
+T141	tool 6982 6990	backdoor
+T142	tool 7320 7332	Address book
+T143	tool 7349 7357	Contract
+T144	industry 7427 7440	Human affairs
+T145	tool 7490 7505	Official letter
+T146	tool 7506 7519	Password list
+T147	tool 7559 7572	Press release
+T148	industry 7573 7588	Public security
+T149	tool 7589 7597	Schedule
+T150	person 7777 7801	IT/system administrators
+T151	person 7806 7840	information security professionals
+T152	counter_measure 7854 7991	making a checklist of what to look out for in the network for any signs of anomalies and suspicious behavior that can indicate intrusions
+T153	counter_measure 7994 8017	Adopting best practices
+T154	counter_measure 8022 8104	employing multilayered security mechanisms and strategies against targeted attacks
+T155	counter_measure 8128 8152	Network traffic analysis
+T156	counter_measure 8155 8178	deployment of firewalls
+T157	counter_measure 8183 8202	intrusion detection
+T158	counter_measure 8207 8225	prevention systems
+T159	counter_measure 8228 8248	network segmentation
+T160	counter_measure 8255 8274	data categorization
+T161	security_team 8299 8327	Trend Micro™ Deep Discovery™
+T162	counter_measure 8583 8602	specialized engines
+T163	counter_measure 8605 8622	custom sandboxing
+T164	counter_measure 8629 8684	seamless correlation across the entire attack lifecycle
+T165	reference_word 8292 8296	them
+R93	coreference Arg1:T165 Arg2:T152	
+R94	coreference Arg1:T165 Arg2:T153	
+R95	coreference Arg1:T165 Arg2:T154	
+R96	part_of Arg1:T155 Arg2:T165	
+R97	part_of Arg1:T156 Arg2:T165	
+R98	part_of Arg1:T157 Arg2:T165	
+R99	part_of Arg1:T158 Arg2:T165	
+R100	part_of Arg1:T159 Arg2:T165	
+R101	part_of Arg1:T160 Arg2:T165	
+T166	reference_word 8459 8461	It
+R90	coreference Arg1:T166 Arg2:T161	
+R91	use Arg1:T166 Arg2:T162	
+R92	use Arg1:T166 Arg2:T163	
+R102	use Arg1:T166 Arg2:T164	
+T167	security_team 8803 8830	Trend Micro™ Deep Security™
+T168	counter_measure 8835 8848	Vulnerability
+T169	tool 8868 8884	virtual patching
+T170	tool 8962 8972	OfficeScan
+T171	tool 8976 9000	Vulnerability Protection
+R103	part_of Arg1:T171 Arg2:T170	
+T172	security_team 9104 9175	Trend Micro™ Smart Protection for Endpoints with Maximum XGen™ security
+T173	attack_activity 9441 9446	PLEAD
+T174	attack_activity 9449 9466	Shrouded Crossbow
+T175	attack_activity 9473 9482	Waterbear
+T176	tool 9502 9526	Indicators of Compromise
+T177	string 9529 9535	hashes
+T178	string 9538 9542	C&Cs
+R104	part_of Arg1:T177 Arg2:T176	
+R105	part_of Arg1:T178 Arg2:T176	
+R17	goal Arg1:T28 Arg2:T60	
+R18	goal Arg1:T31 Arg2:T82	
+T179	threatActor_name 426 435	BlackTech
+T98	attack_activity 3909 3923	spear-phishing
+T180	tool 3924 3930	emails
+R27	use Arg1:T35 Arg2:T180	

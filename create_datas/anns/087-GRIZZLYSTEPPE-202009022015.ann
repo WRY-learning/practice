@@ -1,0 +1,589 @@
+T1	person 194 216	Network administrators
+T2	attack_activity 0 14	GRIZZLY STEPPE
+T4	sub_activity 235 269	check their public-facing websites
+R2	launch Arg1:T1 Arg2:T4	
+T5	person 302 315	System owners
+T6	tool 344 348	Yara
+T7	tool 416 419	RIS
+T8	person 420 426	actors
+T9	tool 366 372	system
+R3	attack Arg1:T8 Arg2:T9	
+R5	located Arg1:T6 Arg2:T9	
+T10	sub_activity 336 358	run the Yara signature
+R6	launch Arg1:T5 Arg2:T10	
+T11	person 429 445	Malicious actors
+T12	sub_activity 478 512	interfere with information systems
+R7	launch Arg1:T11 Arg2:T12	
+T13	tool 623 638	Injection Flaws
+T15	sample_function 699 712	send commands
+T16	sample_function 757 800	allowing a regular user to control behavior
+T17	person 776 780	user
+T19	tool 830 843	SQL injection
+T21	tool 979 987	database
+T22	tool 946 957	information
+R13	located Arg1:T22 Arg2:T21	
+T23	sample_function 939 957	obtain information
+R14	goal Arg1:T19 Arg2:T3	
+T24	person 1045 1049	user
+T25	sample_function 1061 1095	send commands to operating systems
+R15	goal Arg1:T24 Arg2:T25	
+T26	tool 1078 1095	operating systems
+T27	tool 1109 1124	web application
+R16	part_of Arg1:T27 Arg2:T26	
+T28	tool 1128 1136	database
+R17	part_of Arg1:T28 Arg2:T26	
+T29	security_team 1147 1194	United States Computer Emergency Readiness Team
+T30	security_team 1197 1204	US-CERT
+R18	coreference Arg1:T30 Arg2:T29	
+T31	tool 1222 1235	SQL Injection
+T32	tool 1207 1218	Publication
+R19	located Arg1:T32 Arg2:T31	
+T33	vul_aliases 1259 1279	Cross-site scripting
+T34	vul_aliases 1282 1285	XSS
+R20	coreference Arg1:T34 Arg2:T33	
+T35	person 1310 1323	threat actors
+T36	sub_activity 1327 1333	insert
+T38	tool 1367 1383	web applications
+T39	vul_aliases 1397 1400	XSS
+T40	tool 1412 1420	websites
+T41	person 1437 1445	attacker
+R23	attack Arg1:T39 Arg2:T40	
+R24	use Arg1:T41 Arg2:T39	
+T43	vul_aliases 1517 1520	XSS
+T44	security_team 1527 1534	US-CERT
+T47	tool 1796 1804	websites
+T48	tool 1808 1817	databases
+T49	tool 1832 1838	server
+R27	located Arg1:T47 Arg2:T49	
+R28	located Arg1:T48 Arg2:T49	
+T50	security_team 1845 1851	USCERT
+T51	sub_activity 2075 2116	help prevent and mitigate against attacks
+T52	person 2034 2037	you
+R31	goal Arg1:T52 Arg2:T51	
+T53	sub_activity 2304 2331	cybersecurity risk analysis
+T54	sub_activity 2395 2423	cybersecurity best practices
+T55	sub_activity 2927 2952	hack into our own systems
+T56	sub_activity 2956 3030	test the security of our systems and our ability to defend against attacks
+R32	goal Arg1:T55 Arg2:T56	
+T57	sub_activity 2786 2813	sustain business operations
+T58	sub_activity 2425 2458	Vulnerability Scanning & Patching
+T59	sub_activity 2624 2664	approved programs to run on our networks
+T60	government 3032 3035	DHS
+T61	person 3047 3069	network administrators
+T62	sub_activity 3121 3176	prevent as many as 85 percent of targeted cyber-attacks
+R33	launch Arg1:T61 Arg2:T62	
+T63	government 3227 3230	DHS
+T64	sub_activity 3244 3258	see intrusions
+R34	launch Arg1:T63 Arg2:T64	
+T65	sub_activity 3316 3356	Patch applications and operating systems
+T66	reference_word 3448 3453	these
+T67	tool 3322 3356	applications and operating systems
+R35	coreference Arg1:T66 Arg2:T67	
+T68	person 3561 3569	attacker
+T69	tool 3520 3544	exploitable entry points
+R36	use Arg1:T68 Arg2:T69	
+T70	person 3912 3925	Threat actors
+T72	tool 3659 3685	authenticated vendor sites
+T73	tool 3618 3625	patches
+R37	located Arg1:T73 Arg2:T72	
+T74	tool 3688 3712	Application whitelisting
+T75	tool 3715 3727	Whitelisting
+T76	tool 3756 3766	strategies
+R38	part_of Arg1:T75 Arg2:T76	
+T77	reference_word 3775 3777	it
+R39	coreference Arg1:T77 Arg2:T75	
+T78	sample_function 3790 3815	specified programs to run
+T79	sample_function 3822 3841	blocking all others
+R40	goal Arg1:T77 Arg2:T78	
+R41	goal Arg1:T77 Arg2:T79	
+T80	sub_activity 4060 4077	Reduce privileges
+T81	sub_activity 3875 3909	Restrict administrative privileges
+T82	sub_activity 3954 3995	gaining control of legitimate credentials
+R42	goal Arg1:T70 Arg2:T82	
+T71	person 4105 4109	user
+T84	reference_word 4009 4014	those
+R43	part_of Arg1:T84 Arg2:T70	
+T83	person 4130 4144	administrators
+T85	sub_activity 4203 4259	Network Segmentation and Segregation into Security Zones
+T86	reference_word 4350 4354	This
+R44	coreference Arg1:T86 Arg2:T85	
+T87	sample_function 4361 4412	protect sensitive information and critical services
+T88	sample_function 4417 4430	limits damage
+R45	goal Arg1:T86 Arg2:T87	
+R46	goal Arg1:T86 Arg2:T88	
+T89	sub_activity 4465 4481	Input validation
+T91	person 4560 4565	users
+T92	tool 4571 4586	web application
+R47	use Arg1:T91 Arg2:T92	
+T90	sample_function 4597 4649	prevent many types of web application security flaws
+R48	goal Arg1:T89 Arg2:T90	
+T93	vul_aliases 4660 4664	SQLi
+T94	vul_aliases 4667 4670	XSS
+T95	sub_activity 4677 4694	command injection
+T97	sub_activity 4715 4754	Tune Anti-Virus file reputation systems
+T98	tool 4802 4810	products
+T99	sample_function 4815 4830	limit execution
+R49	goal Arg1:T98 Arg2:T99	
+T96	sample_function 4870 4913	stopping a wide range of untrustworthy code
+R50	goal Arg1:T98 Arg2:T96	
+T100	sub_activity 4937 4960	Understanding firewalls
+T101	tool 5078 5087	Firewalls
+T102	sample_function 5109 5119	block data
+R51	goal Arg1:T101 Arg2:T102	
+T103	tool 5145 5160	IP whitelisting
+T104	tool 5115 5119	data
+R52	located Arg1:T104 Arg2:T103	
+T105	tool 5166 5178	applications
+R53	located Arg1:T104 Arg2:T105	
+T106	sample_function 5185 5229	allowing relevant and necessary data through
+T107	sub_activity 5232 5302	Implement your security incident response and business continuity plan
+T109	tool 5346 5348	IT
+T110	person 5349 5362	professionals
+R54	use Arg1:T110 Arg2:T109	
+T111	sub_activity 5366 5408	isolate and remove threats to your systems
+T112	sub_activity 5413 5438	restore normal operations
+R55	launch Arg1:T110 Arg2:T111	
+R56	launch Arg1:T110 Arg2:T112	
+T108	industry 5572 5585	Organizations
+T113	sub_activity 5593 5633	maintain and regularly test backup plans
+T114	sub_activity 5636 5659	disaster recovery plans
+T115	sub_activity 5666 5696	business continuity procedures
+R57	goal Arg1:T108 Arg2:T113	
+R58	goal Arg1:T108 Arg2:T114	
+R59	goal Arg1:T108 Arg2:T115	
+T116	government 5707 5710	DHS
+T117	sub_activity 5699 5729	Contact DHS or law enforcement
+T118	government 5772 5781	DHS NCCIC
+T119	government 5840 5843	FBI
+T120	industry 5880 5900	FBI's Cyber Division
+T121	sub_activity 6042 6086	evaluate known and published vulnerabilities
+T122	sub_activity 6089 6138	perform software updates and technology refreshes
+T123	sub_activity 6158 6187	audit external-facing systems
+T124	sub_activity 6246 6290	harden both Web applications and the servers
+T125	tool 6283 6290	servers
+T126	reference_word 6299 6303	them
+R60	coreference Arg1:T126 Arg2:T125	
+T127	sample_function 6307 6343	reduce the risk of network intrusion
+R61	goal Arg1:T124 Arg2:T127	
+T128	tool 6390 6399	firewalls
+T129	sample_function 6403 6416	block attacks
+R62	goal Arg1:T128 Arg2:T129	
+T130	OS_name 6448 6455	Windows
+T131	sub_activity 6441 6463	secure Windows systems
+T132	sub_activity 6472 6498	installing and configuring
+R63	part_of Arg1:T132 Arg2:T131	
+T133	company 6499 6508	Microsoft
+T134	tool 6511 6549	Enhanced Mitigation Experience Toolkit
+T135	tool 6552 6556	EMET
+R64	coreference Arg1:T135 Arg2:T134	
+T136	tool 6563 6582	Microsoft AppLocker
+R65	part_of Arg1:T134 Arg2:T133	
+R66	part_of Arg1:T136 Arg2:T133	
+T137	sub_activity 6585 6625	Monitor and remove any unauthorized code
+T138	protocol 6706 6739	Internet Control Message Protocol
+T139	protocol 6742 6746	ICMP
+R67	coreference Arg1:T139 Arg2:T138	
+T140	sub_activity 6659 6702	Disable , discontinue , or disallow the use
+T141	protocol 6753 6787	Simple Network Management Protocol
+T142	protocol 6790 6794	SNMP
+R68	coreference Arg1:T142 Arg2:T141	
+T143	reference_word 6813 6818	these
+R69	coreference Arg1:T143 Arg2:T139	
+R70	coreference Arg1:T143 Arg2:T142	
+T144	protocol 6871 6875	HTTP
+T145	tool 6887 6898	Web servers
+T146	tool 6952 6955	GET
+T147	tool 6958 6962	POST
+T148	tool 6969 6973	HEAD
+T149	sub_activity 6851 6881	Remove non-required HTTP verbs
+R71	located Arg1:T144 Arg2:T145	
+T150	tool 6910 6938	Web servers and applications
+R72	use Arg1:T150 Arg2:T146	
+R73	use Arg1:T150 Arg2:T147	
+R74	use Arg1:T150 Arg2:T148	
+T151	sub_activity 7137 7189	Secure both the operating system and the application
+T152	sub_activity 7192 7227	Update and patch production servers
+T154	sub_activity 7240 7294	Disable potentially harmful SQL-stored procedure calls
+T153	sub_activity 7297 7324	Sanitize and validate input
+T155	sample_function 7328 7334	ensure
+R75	goal Arg1:T153 Arg2:T155	
+T156	sub_activity 7397 7463	Consider using type-safe stored procedures and prepared statements
+T157	sub_activity 7466 7532	Perform regular audits of transaction logs for suspicious activity
+T158	sub_activity 7535 7583	Perform penetration testing against Web services
+T159	sub_activity 7586 7619	Ensure error messages are generic
+T160	sub_activity 7627 7658	not expose too much information
+T162	protocol 7699 7702	SPF
+T163	protocol 7736 7754	Domain Name System
+T164	protocol 7757 7760	DNS
+T165	tool 7673 7696	Sender Policy Framework
+R76	coreference Arg1:T162 Arg2:T165	
+R77	coreference Arg1:T164 Arg2:T163	
+T161	sub_activity 7661 7696	Implement a Sender Policy Framework
+T166	sample_function 7776 7790	minimize risks
+R78	goal Arg1:T161 Arg2:T166	
+T167	person 7837 7850	Educate users
+T168	person 7948 7959	individuals
+T169	tool 7928 7942	email messages
+R79	use Arg1:T168 Arg2:T169	
+T170	person 7973 7982	employees
+T171	sub_activity 7960 8012	asking about employees or other internal information
+R80	launch Arg1:T168 Arg2:T171	
+T172	person 8029 8039	individual
+T173	industry 8071 8083	organization
+R81	located Arg1:T172 Arg2:T173	
+T174	reference_word 8100 8110	his or her
+R82	coreference Arg1:T174 Arg2:T172	
+T175	tool 8387 8399	social media
+T176	tool 8403 8408	email
+T177	tool 8372 8383	information
+R83	located Arg1:T177 Arg2:T175	
+R84	located Arg1:T177 Arg2:T176	
+T178	tool 8537 8540	URL
+T179	tool 8546 8553	website
+R85	located Arg1:T178 Arg2:T179	
+T180	tool 8625 8628	URL
+T181	tool 8646 8655	variation
+R86	part_of Arg1:T181 Arg2:T180	
+T182	tool 8683 8689	domain
+R87	part_of Arg1:T182 Arg2:T180	
+T183	tool 8769 8774	email
+T184	reference_word 8813 8815	it
+R88	coreference Arg1:T184 Arg2:T183	
+T185	tool 8872 8883	information
+T186	tool 8898 8905	website
+R89	located Arg1:T185 Arg2:T186	
+T187	sub_activity 8943 8968	check previous statements
+T188	tool 8981 8992	information
+R90	goal Arg1:T187 Arg2:T188	
+T189	security_team 9085 9112	Anti-Phishing Working Group
+T190	tool 9204 9216	email client
+T191	tool 9221 9232	web browser
+T192	sample_function 9165 9187	anti-phishing features
+R91	part_of Arg1:T192 Arg2:T190	
+R92	part_of Arg1:T192 Arg2:T191	
+T193	counter_measure 9235 9252	Patch all systems
+T194	tool 9316 9324	software
+T195	tool 9364 9376	web browsers
+T196	tool 9379 9394	browser plugins
+T197	tool 9401 9417	document readers
+R93	part_of Arg1:T195 Arg2:T194	
+R94	part_of Arg1:T196 Arg2:T194	
+R95	part_of Arg1:T197 Arg2:T194	
+T198	tool 9245 9252	systems
+R96	located Arg1:T194 Arg2:T198	
+T199	sub_activity 9420 9437	Reduce privileges
+T200	security_team 16140 16145	NCCIC
+T201	security_team 16300 16305	NCCIC
+T202	sub_activity 9481 9504	Restrict users' ability
+T203	tool 9758 9765	network
+T204	sample_function 9683 9698	prevent malware
+T205	sample_function 9715 9745	limit its capability to spread
+R97	use Arg1:T205 Arg2:T203	
+T206	person 9838 9843	users
+T207	tool 9857 9865	machines
+R98	use Arg1:T206 Arg2:T207	
+T208	sub_activity 9868 9911	Scrub and verify all administrator accounts
+T209	person 9963 9968	users
+T210	tool 9981 9994	login session
+R99	use Arg1:T209 Arg2:T210	
+T211	tool 9924 9946	Configure Group Policy
+T212	sample_function 9950 9958	restrict
+R100	goal Arg1:T211 Arg2:T212	
+T213	sub_activity 10014 10051	Enforce secure network authentication
+T214	person 10078 10092	administrators
+T215	tool 10100 10123	non-privileged accounts
+R101	use Arg1:T214 Arg2:T215	
+T216	tool 10128 10146	standard functions
+R102	goal Arg1:T215 Arg2:T216	
+T217	sample_function 10155 10167	Web browsing
+T218	sample_function 10171 10188	checking Web mail
+R103	part_of Arg1:T217 Arg2:T216	
+R104	part_of Arg1:T218 Arg2:T216	
+T219	protocol 10400 10403	RDP
+T220	tool 10538 10541	VPN
+T221	sub_activity 10368 10411	Configure firewalls to disallow RDP traffic
+T222	person 10799 10804	users
+T223	sub_activity 10755 10786	Enforce a strict lockout policy
+T224	sub_activity 10817 10855	monitor logs for failed login activity
+T225	tool 10825 10829	logs
+T226	reference_word 10858 10862	This
+R105	coreference Arg1:T226 Arg2:T225	
+T227	industry 11085 11098	organizations
+T229	tool 11251 11260	biometric
+T228	sub_activity 11115 11152	supplementing password authentication
+R106	launch Arg1:T227 Arg2:T228	
+R107	use Arg1:T227 Arg2:T229	
+T230	tool 11264 11279	physical tokens
+R108	use Arg1:T227 Arg2:T230	
+T231	tool 11442 11455	prevent tools
+T232	tool 11466 11474	Mimikatz
+R109	part_of Arg1:T232 Arg2:T231	
+T233	tool 11375 11398	administrative accounts
+T234	sub_activity 11481 11497	credential theft
+T235	sub_activity 11282 11319	Enforce a tiered administrative model
+T236	tool 11349 11361	workstations
+R111	goal Arg1:T235 Arg2:T234	
+T237	sub_activity 11429 11455	each tier to prevent tools
+R110	goal Arg1:T235 Arg2:T237	
+T238	tool 11292 11319	tiered administrative model
+R112	use Arg1:T238 Arg2:T236	
+R113	use Arg1:T238 Arg2:T233	
+T239	protocol 11715 11718	FTP
+T240	protocol 11721 11727	telnet
+T241	protocol 11735 11741	rlogin
+T242	tool 11588 11599	smart cards
+T243	sub_activity 11541 11578	Implement multi-factor authentication
+R114	use Arg1:T243 Arg2:T242	
+T244	person 11623 11628	users
+T245	tool 11644 11653	passwords
+R115	use Arg1:T244 Arg2:T245	
+T246	tool 11697 11705	services
+R116	part_of Arg1:T239 Arg2:T246	
+R117	part_of Arg1:T240 Arg2:T246	
+R118	use Arg1:T241 Arg2:T246	
+T247	tool 11773 11783	clear text
+R119	use Arg1:T246 Arg2:T247	
+T248	sample_function 11744 11769	transmit user credentials
+R120	goal Arg1:T246 Arg2:T248	
+T249	reference_word 11806 11811	these
+R121	coreference Arg1:T249 Arg2:T239	
+R122	coreference Arg1:T249 Arg2:T240	
+R123	coreference Arg1:T249 Arg2:T241	
+T250	OS_name 12144 12148	UNIX
+T251	tool 12113 12126	password file
+T252	tool 12130 12140	equivalent
+R124	located Arg1:T251 Arg2:T250	
+R125	located Arg1:T252 Arg2:T250	
+T253	tool 11916 11932	hashed passwords
+T254	tool 11884 11899	secure password
+R126	goal Arg1:T253 Arg2:T254	
+T255	sub_activity 12047 12094	restricting access to sensitive password hashes
+R127	use Arg1:T255 Arg2:T251	
+R128	use Arg1:T255 Arg2:T252	
+T256	sub_activity 12159 12185	Replace or modify services
+T257	sample_function 12198 12254	user credentials are passed through an encrypted channel
+R129	goal Arg1:T256 Arg2:T257	
+T258	tool 12331 12339	Policies
+T259	sample_function 12343 12348	avoid
+R130	goal Arg1:T258 Arg2:T259	
+T260	sample_function 12357 12389	lack of password expiration date
+T261	sample_function 12392 12414	lack of lockout policy
+T262	sample_function 12417 12465	low or disabled password complexity requirements
+T263	sample_function 12472 12500	password history set to zero
+R131	part_of Arg1:T260 Arg2:T259	
+R132	part_of Arg1:T261 Arg2:T259	
+R133	part_of Arg1:T262 Arg2:T259	
+R134	part_of Arg1:T263 Arg2:T259	
+T264	sub_activity 12565 12581	setting policies
+T265	sub_activity 12586 12611	conducting regular audits
+T266	sub_activity 12515 12547	users are not re-using passwords
+R135	goal Arg1:T264 Arg2:T266	
+R136	goal Arg1:T265 Arg2:T266	
+T267	tool 12679 12692	event logging
+T268	tool 12695 12707	applications
+T269	tool 12710 12716	events
+T270	tool 12719 12735	login activities
+T271	tool 12738 12757	security attributes
+R137	part_of Arg1:T268 Arg2:T267	
+R138	part_of Arg1:T269 Arg2:T267	
+R139	part_of Arg1:T270 Arg2:T267	
+R140	part_of Arg1:T271 Arg2:T267	
+T272	sub_activity 12614 12634	Use unique passwords
+T273	sub_activity 12257 12280	Avoid password policies
+T274	sub_activity 12834 12856	Configure network logs
+T275	sample_function 12860 12886	provide enough information
+T276	tool 12852 12856	logs
+R141	goal Arg1:T276 Arg2:T275	
+T277	sub_activity 12908 12944	developing an accurate determination
+R142	goal Arg1:T274 Arg2:T277	
+T278	tool 12978 12988	PowerShell
+T279	sub_activity 13040 13056	monitor the logs
+T280	sub_activity 13060 13095	detect usage of PowerShell commands
+T281	sub_activity 12970 13004	Upgrade PowerShell to new versions
+R143	goal Arg1:T281 Arg2:T280	
+R144	goal Arg1:T279 Arg2:T280	
+T282	sub_activity 13132 13143	Secure logs
+T283	sub_activity 13223 13256	Prepare an incident response plan
+T284	sub_activity 13277 13288	implemented
+R145	goal Arg1:T283 Arg2:T284	
+T285	government 13320 13323	DHS
+T286	sub_activity 13324 13353	offers a variety of resources
+R146	launch Arg1:T285 Arg2:T286	
+T287	sub_activity 13375 13427	help recognize and address their cybersecurity risks
+R147	goal Arg1:T286 Arg2:T287	
+T288	tool 13430 13439	Resources
+T289	tool 13448 13465	discussion points
+R148	part_of Arg1:T289 Arg2:T288	
+T290	tool 13468 13517	steps to start evaluating a cybersecurity program
+R149	part_of Arg1:T290 Arg2:T288	
+T291	tool 13524 13552	a list of hands-on resources
+R150	part_of Arg1:T291 Arg2:T288	
+T292	security_team 13679 13702	Cyber Security Advisors
+T293	security_team 13705 13708	CSA
+R151	coreference Arg1:T293 Arg2:T292	
+T294	government 13884 13902	Federal Government
+T295	sub_activity 13719 13727	bolsters
+R152	launch Arg1:T293 Arg2:T295	
+T296	person 13905 13909	CSAs
+T297	government 13914 13917	DHS
+R153	part_of Arg1:T296 Arg2:T297	
+T298	person 14009 14016	advisor
+R154	part_of Arg1:T298 Arg2:T296	
+T299	security_team 14035 14038	CSA
+T300	government 14066 14101	Federal Emergency Management Agency
+T301	tool 14167 14190	Cyber Resilience Review
+T302	tool 14193 14196	CRR
+R155	coreference Arg1:T302 Arg2:T301	
+T303	tool 14224 14234	assessment
+R156	part_of Arg1:T302 Arg2:T303	
+T304	sub_activity 14238 14272	evaluate and enhance cybersecurity
+R157	goal Arg1:T301 Arg2:T304	
+T305	tool 14396 14399	CRR
+T306	sub_activity 14406 14446	develop an understanding and measurement
+T307	sub_activity 14484 14513	provide meaningful indicators
+R158	goal Arg1:T305 Arg2:T306	
+R159	goal Arg1:T306 Arg2:T307	
+T308	sample_function 14520 14551	entity's operational resilience
+T309	tool 14503 14513	indicators
+R160	part_of Arg1:T308 Arg2:T309	
+T310	sample_function 14556 14584	ability to manage cyber risk
+R161	part_of Arg1:T310 Arg2:T309	
+T311	security_team 14747 14751	CERT
+T312	tool 14782 14813	Enhanced Cybersecurity Services
+T313	tool 14816 14819	ECS
+R162	coreference Arg1:T313 Arg2:T312	
+T314	industry 14961 14989	Commercial Service Providers
+T315	industry 14992 14996	CSPs
+R163	coreference Arg1:T315 Arg2:T314	
+T316	industry 15003 15027	Operational Implementers
+T317	industry 15030 15033	OIs
+R164	coreference Arg1:T317 Arg2:T316	
+T318	sample_function 14822 14858	helps critical infrastructure owners
+R165	goal Arg1:T312 Arg2:T318	
+T319	sample_function 14863 14894	operators protect their systems
+R166	goal Arg1:T312 Arg2:T319	
+T320	reference_word 14881 14886	their
+R167	coreference Arg1:T320 Arg2:T312	
+T321	industry 15038 15042	CSPs
+T322	tool 15069 15080	information
+R168	use Arg1:T321 Arg2:T322	
+T323	tool 15092 15094	CI
+T324	person 15095 15104	customers
+R169	use Arg1:T324 Arg2:T323	
+T325	sub_activity 15084 15104	protect CI customers
+R170	goal Arg1:T322 Arg2:T325	
+T326	industry 15107 15110	OIs
+T327	tool 15126 15137	information
+R171	use Arg1:T326 Arg2:T327	
+T328	sub_activity 15141 15166	protect internal networks
+R172	goal Arg1:T327 Arg2:T328	
+T329	tool 15227 15286	Cybersecurity Information Sharing and Collaboration Program
+T330	tool 15289 15294	CISCP
+R173	coreference Arg1:T330 Arg2:T329	
+T331	tool 15312 15357	information-sharing and collaboration program
+R174	part_of Arg1:T330 Arg2:T331	
+T332	government 15417 15435	Federal Government
+R175	use Arg1:T332 Arg2:T329	
+T333	person 15400 15408	partners
+R176	use Arg1:T333 Arg2:T329	
+T334	tool 15491 15518	Automated Indicator Sharing
+T335	tool 15521 15524	AIS
+R177	coreference Arg1:T335 Arg2:T334	
+T336	government 15543 15546	DHS
+T337	sub_activity 15557 15572	create a system
+R178	use Arg1:T336 Arg2:T334	
+R179	goal Arg1:T336 Arg2:T337	
+T338	person 15711 15719	partners
+T339	reference_word 15733 15737	them
+R180	coreference Arg1:T339 Arg2:T338	
+T340	tool 15657 15666	indicator
+R181	use Arg1:T338 Arg2:T340	
+T341	sample_function 15657 15681	indicator will be shared
+T342	sample_function 15722 15765	protecting them from that particular threat
+R182	goal Arg1:T341 Arg2:T342	
+T345	tool 15912 15915	AIS
+T346	reference_word 15965 15967	it
+R184	coreference Arg1:T346 Arg2:T345	
+T347	sub_activity 16013 16037	concentrate more on them
+T348	sub_activity 16041 16081	clearing away less sophisticated attacks
+T349	company 15979 15988	companies
+T350	industry 15993 16009	federal agencies
+R185	launch Arg1:T349 Arg2:T348	
+R186	goal Arg1:T349 Arg2:T347	
+R187	goal Arg1:T350 Arg2:T347	
+R188	launch Arg1:T350 Arg2:T348	
+T351	tool 16084 16087	AIS
+T352	person 16088 16100	participants
+R189	use Arg1:T352 Arg2:T351	
+T353	tool 16114 16132	DHS-managed system
+R190	located Arg1:T353 Arg2:T200	
+R191	use Arg1:T352 Arg2:T353	
+T354	tool 16196 16206	indicators
+R192	use Arg1:T353 Arg2:T354	
+T355	tool 16211 16217	server
+T356	sub_activity 16271 16290	exchange indicators
+T357	person 16233 16244	participant
+R193	use Arg1:T357 Arg2:T355	
+R194	goal Arg1:T357 Arg2:T356	
+T358	person 16308 16320	Participants
+T359	reference_word 16395 16399	they
+R195	coreference Arg1:T359 Arg2:T358	
+T360	tool 16384 16394	indicators
+R196	find Arg1:T359 Arg2:T360	
+T361	reference_word 16417 16422	their
+R197	coreference Arg1:T361 Arg2:T359	
+T362	tool 16427 16434	network
+R198	located Arg1:T360 Arg2:T362	
+T363	government 16459 16462	DHS
+T364	tool 16488 16491	AIS
+T365	person 16492 16504	participants
+R199	use Arg1:T365 Arg2:T364	
+T366	sub_activity 16473 16504	share with all AIS participants
+R200	use Arg1:T363 Arg2:T360	
+R201	goal Arg1:T363 Arg2:T366	
+T367	tool 16566 16589	Cybersecurity Framework
+T368	tool 16592 16601	Framework
+R202	coreference Arg1:T368 Arg2:T367	
+T369	security_team 16623 16669	National Institute of Standards and Technology
+T370	security_team 16672 16676	NIST
+R203	coreference Arg1:T370 Arg2:T369	
+T371	sample_function 16753 16800	improve the cybersecurity readiness of entities
+R204	goal Arg1:T367 Arg2:T371	
+T372	tool 16807 16816	Framework
+T373	sample_function 16909 16944	apply principles and best practices
+R205	goal Arg1:T372 Arg2:T373	
+T374	sample_function 16967 17002	improve the security and resiliency
+R206	goal Arg1:T373 Arg2:T374	
+T375	tool 17036 17045	Framework
+T376	reference_word 17131 17133	It
+R207	coreference Arg1:T376 Arg2:T375	
+T377	tool 17162 17176	Framework Core
+T378	tool 17183 17200	Framework Profile
+T379	tool 17207 17237	Framework Implementation Tiers
+R208	part_of Arg1:T377 Arg2:T376	
+R209	part_of Arg1:T378 Arg2:T376	
+R210	part_of Arg1:T379 Arg2:T376	
+T380	sample_function 17270 17278	Identify
+T381	sample_function 17281 17288	Protect
+T382	sample_function 17291 17297	Detect
+T383	sample_function 17300 17307	Respond
+T384	sample_function 17314 17321	Recover
+R211	goal Arg1:T376 Arg2:T380	
+R212	goal Arg1:T376 Arg2:T381	
+R213	goal Arg1:T376 Arg2:T382	
+R214	goal Arg1:T376 Arg2:T383	
+R215	goal Arg1:T376 Arg2:T384	
+R1	use Arg1:T8 Arg2:T7	
+R4	goal Arg1:T13 Arg2:T15	
+R8	goal Arg1:T15 Arg2:T16	
+T3	sample_function 852 877	subverts the relationship
+R9	goal Arg1:T3 Arg2:T23	
+R10	use Arg1:T35 Arg2:T34	
+T14	sub_activity 1338 1345	execute
+R11	launch Arg1:T35 Arg2:T36	
+R12	launch Arg1:T35 Arg2:T14	
+T18	sample_function 1425 1465	provide the attacker unauthorized access
+R21	goal Arg1:T39 Arg2:T18	
+T20	tool 1546 1569	Compromised Web Servers
+T37	tool 1574 1584	Web Shells
+T42	tool 1861 1877	Website Security

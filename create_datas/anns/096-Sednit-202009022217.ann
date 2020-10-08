@@ -1,0 +1,223 @@
+T1	threatActor_name 14 20	Sednit
+T2	threatActor_name 3104 3110	Sednit
+T3	threatActor_name 4784 4790	Sednit
+T4	threatActor_name 7894 7900	Sednit
+T5	function 186 213	HttpChannel::getRawPacket()
+T6	protocol 241 245	HTTP
+T7	function 246 249	GET
+T8	protocol 304 308	HTTP
+T9	function 327 355	HttpChannel::sendRawPacket()
+T10	protocol 362 366	HTTP
+T11	function 367 371	POST
+T12	tool 420 423	C&C
+T13	protocol 424 426	IP
+T14	sample_name 478 491	HttpChannel.h
+T15	sub_activity 420 434	C&C IP address
+R1	located Arg1:T15 Arg2:T14	
+T16	OS_name 726 731	Linux
+T17	tool 520 523	URL
+T18	tool 980 983	C&C
+T19	function 873 882	URL_TOKEN
+T20	sub_activity 938 972	check the integrity of the message
+R2	goal Arg1:T19 Arg2:T20	
+T21	function 1011 1015	POST
+T22	function 1139 1153	CryptRawPacket
+T23	function 1051 1054	GET
+T24	person 1261 1271	developers
+T25	function 1243 1253	DATA_TOKEN
+T26	function 1278 1289	MailChannel
+T27	time 1916 1926	April 2015
+T28	time 1930 1939	June 2015
+T29	time 1916 1939	April 2015 to June 2015
+T30	program_language 1780 1786	Python
+T31	reference_word 1753 1767	The proxy code
+T32	sub_activity 1876 1885	log files
+R3	part_of Arg1:T32 Arg2:T31	
+R4	occur_time Arg1:T32 Arg2:T29	
+R5	use Arg1:T31 Arg2:T30	
+T33	tool 3157 3160	C&C
+T34	protocol 2869 2873	SMTP
+T35	malware 1321 1327	Xagent
+T36	sub_activity 1303 1349	implementation of Xagent communication channel
+T37	tool 1355 1361	emails
+R6	located Arg1:T36 Arg2:T37	
+T38	tool 1489 1501	proxy server
+T39	malware 1536 1542	Xagent
+T40	target_crowd 1543 1561	infected computers
+R7	attack Arg1:T39 Arg2:T40	
+T41	tool 1568 1579	MailChannel
+R8	use Arg1:T38 Arg2:T41	
+T42	tool 1618 1621	C&C
+T43	sub_activity 1514 1527	relay traffic
+R9	goal Arg1:T41 Arg2:T43	
+T44	company 1730 1736	Google
+T45	tool 1730 1750	Google search engine
+R10	part_of Arg1:T45 Arg2:T44	
+T46	reference_word 1631 1647	This source code
+T47	sub_activity 1472 1483	source code
+R11	part_of Arg1:T47 Arg2:T38	
+R12	coreference Arg1:T46 Arg2:T47	
+R13	coreference Arg1:T31 Arg2:T46	
+T48	reference_word 1982 1991	the proxy
+R14	coreference Arg1:T48 Arg2:T31	
+T49	protocol 2111 2115	HTTP
+T50	tool 2133 2136	C&C
+T51	sub_activity 2052 2089	translates the email channel protocol
+R15	goal Arg1:T48 Arg2:T51	
+T52	reference_word 2244 2265	The proxy source code
+T53	protocol 2338 2342	HTTP
+T54	function 2356 2367	HttpChannel
+T55	function 2380 2391	MailChannel
+R16	use Arg1:T52 Arg2:T54	
+T56	sub_activity 2440 2473	relaying HTTP traffic from agents
+T57	function 2480 2488	W3Server
+R17	goal Arg1:T57 Arg2:T56	
+T58	malware 2557 2563	Xagent
+T59	person 2570 2579	operators
+T60	sub_activity 2598 2639	deploy the components of the proxy server
+T61	function 2692 2703	MailChannel
+T62	reference_word 2623 2639	the proxy server
+R18	coreference Arg1:T62 Arg2:T52	
+R19	use Arg1:T61 Arg2:T62	
+R20	launch Arg1:T59 Arg2:T60	
+T63	function 2723 2751	MailChannel::sendRawPacket()
+T64	function 2783 2797	CryptRawPacket
+T65	sub_activity 2775 2826	sending CryptRawPacket objects as email attachments
+R21	goal Arg1:T63 Arg2:T65	
+T66	reference_word 2848 2856	the code
+R22	coreference Arg1:T66 Arg2:T62	
+T67	tool 2869 2888	SMTP server address
+T68	sub_activity 2897 2910	email address
+T69	sub_activity 2917 2925	password
+R23	part_of Arg1:T68 Arg2:T67	
+R24	part_of Arg1:T69 Arg2:T67	
+T70	tool 2945 2968	recipient email address
+R25	part_of Arg1:T67 Arg2:T66	
+R26	part_of Arg1:T70 Arg2:T66	
+T71	reference_word 3030 3058	this recipient email address
+R27	coreference Arg1:T71 Arg2:T70	
+T72	person 3218 3227	operators
+T73	sub_activity 3146 3180	Building a C&C protocol over email
+T74	malware 3266 3272	Xagent
+T75	sub_activity 3254 3301	distinguish Xagent emails from unrelated emails
+T76	sub_activity 3355 3374	bypass spam filters
+R28	launch Arg1:T72 Arg2:T75	
+R29	launch Arg1:T72 Arg2:T76	
+T77	reference_word 3388 3392	they
+R30	coreference Arg1:T77 Arg2:T72	
+T78	protocol 3422 3430	P2Scheme
+T79	protocol 3446 3448	P2
+R31	coreference Arg1:T79 Arg2:T78	
+R32	use Arg1:T77 Arg2:T78	
+T80	sub_activity 3471 3503	defines the format of the emails
+R33	goal Arg1:T78 Arg2:T80	
+T81	malware 3866 3872	Xagent
+T82	malware 7805 7811	Xagent
+T83	malware 7831 7839	backdoor
+R34	part_of Arg1:T82 Arg2:T83	
+R35	part_of Arg1:T82 Arg2:T4	
+T84	protocol 7965 7969	HTTP
+T85	person 8017 8026	operators
+T86	tool 7977 7983	emails
+T87	sub_activity 7948 7983	communicate over HTTP or via emails
+R36	launch Arg1:T82 Arg2:T87	
+T88	reference_word 7989 7991	it
+R37	use Arg1:T85 Arg2:T88	
+R38	coreference Arg1:T88 Arg2:T82	
+T89	OS_name 8077 8084	Windows
+T90	OS_name 8087 8092	Linux
+T91	OS_name 8097 8100	iOS
+T92	malware 8057 8063	Xagent
+R39	use Arg1:T92 Arg2:T89	
+R40	use Arg1:T92 Arg2:T90	
+R41	use Arg1:T92 Arg2:T91	
+T93	OS_name 8219 8226	Android
+T94	time 4827 4831	2014
+T95	security_team 4816 4823	FireEye
+T96	target_crowd 4732 4753	Georgian institutions
+R42	attack Arg1:T3 Arg2:T96	
+R43	find Arg1:T95 Arg2:T3	
+R44	occur_time Arg1:T95 Arg2:T94	
+T97	protocol 4957 4961	SMTP
+T98	tool 4976 4979	TLS
+T99	email_evil 5013 5030	exfil@example.com
+T100	tool 5119 5122	C&C
+T101	function 5189 5216	MailChannel::getRawPacket()
+T102	tool 5270 5273	C&C
+T103	protocol 5290 5294	POP3
+T104	tool 5309 5312	TLS
+T105	email_evil 5409 5427	orders@example.com
+T106	email_evil 5812 5829	exfil@example.com
+T107	OS_name 6077 6082	Linux
+T108	sample_name 6144 6157	MailServer.py
+T109	sample_name 6472 6487	LocalStorage.py
+T110	tool 6990 6993	C&C
+T111	sample_name 6709 6715	w3s.py
+T112	protocol 7179 7181	P3
+T113	function 7094 7123	P3_Scheme.pack_service_data()
+T114	tool 7276 7279	C&C
+T115	protocol 7252 7256	HTTP
+T116	function 7257 7260	GET
+T117	sample_name 7220 7226	w3s.py
+T118	tool 7362 7365	C&C
+T119	protocol 7403 7405	P3
+T120	sample_name 7469 7482	MailServer.py
+T121	protocol 7556 7558	P2
+T122	OS_name 7687 7694	Windows
+T123	tool 7739 7745	Python
+T124	protocol 4227 4229	P2
+T125	OS_name 4313 4318	Linux
+T126	sub_activity 4043 4057	boundary value
+R45	use Arg1:T126 Arg2:T124	
+T127	sub_activity 4068 4110	separate a MIME multipart message in parts
+R46	goal Arg1:T126 Arg2:T127	
+T128	sample_name 4645 4659	detaluri_X.dat
+T129	function 4870 4884	CryptRawPacket
+T130	sub_activity 5086 5129	message will be forwarded to the C&C server
+T131	tool 5063 5075	proxy server
+R47	launch Arg1:T131 Arg2:T130	
+R48	use Arg1:T101 Arg2:T104	
+R49	use Arg1:T102 Arg2:T103	
+T132	sub_activity 5224 5260	retrieves emails containing messages
+R50	launch Arg1:T101 Arg2:T132	
+T133	reference_word 5458 5468	the method
+R51	coreference Arg1:T133 Arg2:T101	
+T134	sub_activity 5469 5492	checks that the subject
+R52	launch Arg1:T133 Arg2:T134	
+T135	sub_activity 5531 5587	instantiates a CryptRawPacket object from the attachment
+T136	sub_activity 5604 5638	transmitted to the intended module
+R53	launch Arg1:T133 Arg2:T135	
+R54	launch Arg1:T133 Arg2:T136	
+T137	sample_name 5645 5658	MailServer.py
+T138	sub_activity 5745 5781	fetches emails from the inbox agents
+R55	launch Arg1:T137 Arg2:T138	
+T139	sub_activity 5850 5871	checks for each email
+T140	reference_word 5834 5844	The script
+R56	coreference Arg1:T140 Arg2:T137	
+R57	launch Arg1:T140 Arg2:T139	
+T141	protocol 5904 5906	P2
+T142	protocol 6369 6373	HTTP
+T143	sample_function 6488 6505	manages a storage
+R58	goal Arg1:T109 Arg2:T143	
+T144	sub_activity 6560 6596	sent an email to the monitored inbox
+R59	goal Arg1:T143 Arg2:T144	
+T145	protocol 6765 6768	C&C
+T146	protocol 6736 6740	HTTP
+T147	sample_function 6724 6775	manages the HTTP communications with the C&C server
+R60	goal Arg1:T111 Arg2:T147	
+T148	protocol 6918 6922	HTTP
+T149	function 6923 6927	POST
+T150	tool 6890 6893	C&C
+T151	reference_word 6801 6811	the script
+R61	coreference Arg1:T151 Arg2:T111	
+T152	sub_activity 6812 6865	retrieves the messages dropped in the “ FROM ” folder
+R62	launch Arg1:T151 Arg2:T152	
+T153	sub_activity 6872 6900	sends them to the C&C server
+R63	launch Arg1:T151 Arg2:T153	
+R64	use Arg1:T113 Arg2:T112	
+T154	sub_activity 7244 7286	sends a HTTP GET request to the C&C server
+R65	launch Arg1:T117 Arg2:T154	
+T155	sub_activity 7495 7515	retrieve the message
+T156	sub_activity 7520 7558	attach it to an email following the P2
+R66	launch Arg1:T120 Arg2:T155	
+R67	launch Arg1:T120 Arg2:T156	

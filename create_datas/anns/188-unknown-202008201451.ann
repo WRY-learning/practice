@@ -1,0 +1,139 @@
+T1	time 219 223	2018
+T2	location 207 218	Pyeongchang
+T3	location 382 393	Pyeongchang
+T4	location 403 414	South Korea
+T5	tool 582 585	C&C
+T6	threatActor_name 863 870	Lazarus
+T7	threatActor_name 1116 1123	Lazarus
+T8	malware 1008 1024	OlympicDestroyer
+T9	malware 1151 1167	OlympicDestroyer
+T10	sample_name 1327 1337	kiwi86.dll
+T11	sample_name 1346 1356	kiwi64.dll
+T13	sample_name 1287 1290	102
+T14	sample_name 1295 1298	103
+T15	tool 1470 1478	Mimikatz
+T16	sample_name 1507 1510	105
+T17	sample_name 1581 1584	105
+T18	malware 1615 1631	OlympicDestroyer
+R2	part_of Arg1:T10 Arg2:T13	
+R3	part_of Arg1:T11 Arg2:T14	
+R4	part_of Arg1:T13 Arg2:T9	
+R5	part_of Arg1:T14 Arg2:T9	
+R6	part_of Arg1:T17 Arg2:T18	
+R7	part_of Arg1:T16 Arg2:T18	
+R8	use Arg1:T18 Arg2:T15	
+T19	threatActor_name 1849 1856	Lazarus
+T20	sample_function 1706 1733	removes shadow copy backups
+T22	sample_function 1785 1796	wipes files
+T21	sample_function 1736 1780	traverses the shared folders on the networks
+R9	part_of Arg1:T20 Arg2:T17	
+R10	part_of Arg1:T21 Arg2:T17	
+R11	part_of Arg1:T22 Arg2:T17	
+T23	tool 2028 2051	4096 bytes memory block
+T24	threatActor_name 2101 2111	Bluenoroff
+R12	use Arg1:T24 Arg2:T23	
+T25	threatActor_name 2539 2549	Bluenoroff
+T26	malware 2458 2474	OlympicDestroyer
+T27	sample_name 2401 2403	PE
+T28	malware 2627 2643	OlympicDestroyer
+T29	threatActor_name 2648 2658	Bluenoroff
+T30	malware 8933 8949	OlympicDestroyer
+T31	malware 9029 9045	OlympicDestroyer
+T32	sha2 8952 8984	3c0d740347b0362331c882c2dee96dbf
+T33	sha2 9048 9080	64aa21201bfd88d521fe90d44c7b5dba
+R13	part_of Arg1:T32 Arg2:T30	
+R14	part_of Arg1:T33 Arg2:T31	
+T36	sample_name 3029 3031	PE
+T37	tool 3059 3067	LINK.EXE
+T38	company 3078 3087	Microsoft
+T39	tool 3140 3163	Microsoft Visual Studio
+T40	tool 3355 3363	LINK.EXE
+T44	tool 4003 4007	MASM
+T45	tool 4017 4030	Visual Studio
+T42	tool 3943 3955	C++ compiler
+T43	tool 3962 3972	C compiler
+T46	tool 3979 3996	resource compiler
+T47	program_language 4260 4263	C++
+T48	tool 4331 4343	C++ compiler
+T49	malware 4408 4424	OlympicDestroyer
+T50	tool 4534 4549	Visual Studio 6
+R15	use Arg1:T49 Arg2:T50	
+T51	malware 8744 8760	OlympicDestroyer
+T34	function 4558 4565	masm613
+T35	program_language 4853 4856	C++
+T52	threatActor_name 5012 5022	Bluenoroff
+T53	sha2 5068 5100	5d0ffbc8389f27b0649696f0ef5b3cfe
+R16	part_of Arg1:T53 Arg2:T52	
+T54	function 4661 4668	VC 2003
+T55	tool 4606 4630	standard runtime library
+R17	part_of Arg1:T34 Arg2:T55	
+T56	tool 4717 4728	Windows SDK
+R18	part_of Arg1:T54 Arg2:T56	
+T57	tool 4750 4761	Windows API
+T58	tool 4943 4955	Windows APIs
+T59	tool 4927 4930	SDK
+T60	malware 5230 5246	OlympicDestroyer
+T61	tool 5364 5379	Visual Studio 6
+T62	sample_name 5397 5408	mscoree.dll
+T63	tool 5541 5554	Visual Studio
+T64	tool 5620 5638	Visual Studio 2010
+T65	tool 5641 5648	MSVC 10
+R19	part_of Arg1:T65 Arg2:T64	
+T66	function 5690 5705	tmainCRTStartup
+T67	tool 5765 5772	MSVC 10
+T68	tool 5914 5923	MSVC 2010
+T69	function 5979 5986	WinMain
+T70	tool 6060 6072	VC/VC++ 2010
+T71	tool 6152 6155	VC6
+T72	tool 6218 6236	Visual Studio 2010
+T73	threatActor_name 6526 6536	Bluenoroff
+T74	malware 6731 6747	OlympicDestroyer
+T75	threatActor_name 6801 6811	Bluenoroff
+T76	threatActor_name 6836 6843	Lazarus
+T77	threatActor_name 6989 6996	Lazarus
+T78	sha2 7012 7044	64aa21201bfd88d521fe90d44c7b5dba
+T79	time 7100 7119	2018-02-09 13:46:23
+T80	sample_name 7127 7136	olymp.exe
+T81	time 7308 7327	2018-02-09 10:42:19
+T82	time 7550 7569	2018-02-09 10:42:19
+T83	location 7608 7618	Pyeonchang
+T84	threatActor_name 7893 7900	Lazarus
+T85	malware 7920 7936	OlympicDestroyer
+T86	threatActor_name 8030 8037	Lazarus
+T87	time 8236 8249	February 13th
+T88	threatActor_name 8518 8525	Lazarus
+R20	occur_time Arg1:T8 Arg2:T1	
+R21	attack Arg1:T8 Arg2:T2	
+R22	use Arg1:T8 Arg2:T5	
+T12	sample_name 1226 1229	101
+T89	sample_name 1233 1236	105
+R1	part_of Arg1:T12 Arg2:T9	
+R23	part_of Arg1:T89 Arg2:T9	
+R24	use Arg1:T38 Arg2:T37	
+R25	part_of Arg1:T36 Arg2:T38	
+R26	use Arg1:T39 Arg2:T40	
+T41	sample_name 3493 3499	MZ DOS
+R27	use Arg1:T49 Arg2:T42	
+R28	use Arg1:T49 Arg2:T43	
+R29	use Arg1:T49 Arg2:T46	
+R30	use Arg1:T49 Arg2:T44	
+R31	use Arg1:T49 Arg2:T45	
+R32	use Arg1:T60 Arg2:T61	
+R33	use Arg1:T61 Arg2:T62	
+R34	part_of Arg1:T64 Arg2:T63	
+R35	part_of Arg1:T66 Arg2:T67	
+R36	part_of Arg1:T69 Arg2:T68	
+R37	part_of Arg1:T78 Arg2:T74	
+R38	first_found_time Arg1:T74 Arg2:T79	
+R39	occur_time Arg1:T74 Arg2:T81	
+R40	occur_time Arg1:T85 Arg2:T82	
+R41	attack Arg1:T85 Arg2:T83	
+T90	person 8864 8878	George Webster
+T91	person 8883 8896	Julian Kirsch
+T92	location 8900 8930	Technical University of Munich
+R42	part_of Arg1:T3 Arg2:T4	
+R43	part_of Arg1:T27 Arg2:T26	
+R44	use Arg1:T49 Arg2:T48	
+R45	use Arg1:T49 Arg2:T55	
+R46	use Arg1:T49 Arg2:T56	
+R47	use Arg1:T60 Arg2:T58	

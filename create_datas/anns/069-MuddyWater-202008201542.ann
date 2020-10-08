@@ -1,0 +1,322 @@
+T1	threatActor_name 34 44	MuddyWater
+T2	threatActor_name 160 170	MuddyWater
+T3	government 197 209	governmental
+T4	industry 214 219	telco
+T5	location 249 253	Iraq
+T6	location 256 268	Saudi Arabia
+T7	location 271 278	Bahrain
+T8	location 281 287	Jordan
+T9	location 290 296	Turkey
+T10	location 301 308	Lebanon
+R1	attack Arg1:T2 Arg2:T3	
+R2	attack Arg1:T2 Arg2:T4	
+R3	attack Arg1:T2 Arg2:T5	
+R4	attack Arg1:T2 Arg2:T6	
+R5	attack Arg1:T2 Arg2:T7	
+R6	attack Arg1:T2 Arg2:T8	
+R7	attack Arg1:T2 Arg2:T9	
+R8	attack Arg1:T2 Arg2:T10	
+T11	location 362 372	Azerbaijan
+R9	attack Arg1:T2 Arg2:T11	
+T12	location 375 383	Pakistan
+R10	attack Arg1:T2 Arg2:T12	
+T13	location 388 399	Afghanistan
+R11	attack Arg1:T2 Arg2:T13	
+T14	threatActor_name 404 414	MuddyWater
+T15	time 433 437	2017
+R12	first_found_time Arg1:T14 Arg2:T15	
+T16	threatActor_name 761 771	MuddyWater
+T17	person 823 843	MuddyWater attackers
+T18	program_language 927 933	Python
+T19	program_language 936 938	C#
+T20	tool 943 953	PowerShell
+R13	use Arg1:T17 Arg2:T18	
+R14	use Arg1:T17 Arg2:T19	
+R15	use Arg1:T17 Arg2:T20	
+T21	tool 1086 1108	download/execute tools
+T22	malware 1113 1116	RAT
+T23	program_language 1121 1123	C#
+T24	program_language 1128 1134	Python
+T26	tool 1137 1154	SSH Python script
+T25	program_language 1166 1172	Python
+R16	use Arg1:T22 Arg2:T23	
+R17	use Arg1:T22 Arg2:T24	
+R18	use Arg1:T17 Arg2:T21	
+R19	use Arg1:T17 Arg2:T26	
+R20	use Arg1:T17 Arg2:T25	
+R21	launch Arg1:T17 Arg2:T22	
+T27	reference_word 1285 1297	threat actor
+R22	coreference Arg1:T27 Arg2:T17	
+T28	threatActor_name 1536 1552	RXR Saudi Arabia
+T29	tool 1612 1617	OPSEC
+T30	person 1634 1643	attackers
+T31	threatActor_name 1753 1763	MuddyWater
+T32	reference_word 1839 1849	this actor
+T33	reference_word 1891 1896	actor
+R23	coreference Arg1:T32 Arg2:T31	
+R24	coreference Arg1:T33 Arg2:T31	
+T34	tool 2048 2053	Nihay
+T35	program_language 2056 2058	C#
+T36	malware 2087 2100	LisfonService
+T38	sample_name 2137 2150	Client-win.py
+T37	malware 2112 2121	Client.py
+R25	use Arg1:T34 Arg2:T35	
+T39	program_language 2103 2105	C#
+R26	use Arg1:T36 Arg2:T39	
+T40	malware 2106 2109	RAT
+T41	program_language 2124 2130	Python
+R27	use Arg1:T37 Arg2:T41	
+T42	malware 2131 2134	RAT
+T43	protocol 2153 2156	SSH
+T44	program_language 2157 2163	Python
+R28	part_of Arg1:T43 Arg2:T38	
+R29	part_of Arg1:T44 Arg2:T38	
+T45	malware 2173 2185	Rc.py/Rc.exe
+T46	program_language 2194 2200	Python
+T47	malware 2201 2204	RAT
+R30	part_of Arg1:T46 Arg2:T45	
+T48	program_language 2207 2215	VBScript
+T49	program_language 2220 2223	VBA
+T50	tool 2207 2229	VBScript and VBA files
+R31	use Arg1:T33 Arg2:T34	
+T51	tool 2232 2251	Third-party scripts
+T52	tool 2262 2274	Losi Boomber
+T53	tool 2254 2259	Muddy
+T54	tool 2277 2298	Slaver reverse tunnel
+T55	tool 2305 2336	Second stage PowerShell scripts
+T56	tool 2382 2388	Python
+T57	tool 2392 2402	PowerShell
+T58	threatActor_name 2421 2431	MuddyWater
+T59	tool 2459 2473	Python scripts
+T60	sample_function 2495 2506	portability
+R32	goal Arg1:T59 Arg2:T60	
+T61	tool 2515 2521	Py2Exe
+T62	tool 2526 2537	PyInstaller
+R33	use Arg1:T58 Arg2:T59	
+R34	use Arg1:T58 Arg2:T61	
+R35	use Arg1:T58 Arg2:T62	
+T63	tool 2593 2605	CrackMapExec
+T64	tool 2613 2622	shootback
+T65	tool 2632 2639	Lazagne
+T66	tool 2679 2685	PS2EXE
+R36	use Arg1:T58 Arg2:T63	
+R37	use Arg1:T58 Arg2:T64	
+R38	use Arg1:T58 Arg2:T65	
+T67	tool 2700 2710	PowerShell
+T68	tool 2756 2766	PowerShell
+T70	sample_function 2692 2735	convert PowerShell scripts into executables
+R39	goal Arg1:T66 Arg2:T70	
+T71	tool 2866 2891	PowerShell Reflective DLL
+T72	sample_function 2905 2945	deploy Metasploit Stageless Meterpreters
+R40	goal Arg1:T71 Arg2:T72	
+T73	tool 2912 2945	Metasploit Stageless Meterpreters
+T74	tool 3005 3026	Stageless Meterpreter
+T75	sample_name 3037 3062	Ext_server_stdapi.x64.dll
+T76	sample_name 3070 3095	Ext_server_extapi.x64.dll
+T77	sample_name 3107 3131	Ext_server_espia.x64.dll
+R41	part_of Arg1:T75 Arg2:T74	
+R42	part_of Arg1:T76 Arg2:T74	
+R43	part_of Arg1:T77 Arg2:T74	
+T78	malware 3148 3161	LisfonService
+T79	malware 3167 3170	RAT
+T80	malware 3191 3205	PowerShell RAT
+T81	malware 3258 3271	LisfonService
+T82	tool 3353 3355	C2
+T83	reference_word 3365 3367	It
+R44	coreference Arg1:T83 Arg2:T81	
+T84	attack_goal 3368 3416	collects some basic information about its victim
+R45	goal Arg1:T83 Arg2:T84	
+T85	tool 3596 3605	victim id
+T86	sample_function 3653 3681	request commands from the C2
+R46	goal Arg1:T85 Arg2:T86	
+T87	tool 3679 3681	C2
+T88	tool 3702 3712	PowerShell
+T89	program_language 3767 3769	C#
+T90	protocol 3934 3936	IP
+T91	tool 3952 3954	C2
+T92	IP_evil 3988 4053	http://78.129.222.56:8090/244271232658346635408608084822345041494
+T93	malware 4059 4068	Client.Py
+T94	program_language 4074 4080	Python
+R47	use Arg1:T93 Arg2:T94	
+T95	threatActor_name 4122 4132	MuddyWater
+T96	tool 4208 4219	PyInstaller
+T97	program_language 4184 4190	Python
+T98	reference_word 4135 4137	It
+R48	coreference Arg1:T98 Arg2:T93	
+R49	launch Arg1:T95 Arg2:T93	
+T99	sub_activity 4258 4309	Collects basic information about the victim machine
+R50	launch Arg1:T98 Arg2:T99	
+T100	tool 4404 4406	C2
+T101	reference_word 4367 4369	It
+R51	coreference Arg1:T101 Arg2:T93	
+T102	IP_evil 4417 4435	192.64.86.174:8980
+T103	sub_activity 4375 4435	sends the information to the C2 server at 192.64.86.174:8980
+R52	launch Arg1:T101 Arg2:T103	
+T104	reference_word 4595 4602	the RAT
+T105	sample_function 4606 4646	implements basic keylogger functionality
+T106	sample_function 4649 4683	stealing passwords saved in Chrome
+T107	sample_function 4686 4706	killing task manager
+T108	sample_function 4709 4797	remote command execution and displaying an alert message for the victim in a message box
+R53	part_of Arg1:T105 Arg2:T104	
+R54	part_of Arg1:T106 Arg2:T104	
+R55	part_of Arg1:T107 Arg2:T104	
+R56	part_of Arg1:T108 Arg2:T104	
+T109	sample_name 4800 4813	Client-win.py
+T110	protocol 4816 4819	SSH
+T111	program_language 4820 4826	Python
+R57	use Arg1:T109 Arg2:T110	
+R58	use Arg1:T109 Arg2:T111	
+T112	tool 4841 4852	PyInstaller
+T113	program_language 4862 4868	Python
+T114	tool 4893 4915	Python paramiko plugin
+R59	use Arg1:T109 Arg2:T114	
+T115	sub_activity 4919 4952	create a SSH connection to its C2
+R60	launch Arg1:T109 Arg2:T115	
+T116	tool 4999 5001	C2
+T118	reference_word 4836 4875	This PyInstaller-compiled Python script
+R61	coreference Arg1:T118 Arg2:T109	
+T117	protocol 5512 5515	SSH
+T119	malware 5527 5539	Rc.py/Rc.exe
+T120	tool 5566 5569	UPX
+T121	tool 5593 5604	PyInstaller
+T122	tool 5614 5627	Python script
+T123	tool 5630 5635	rc.py
+R62	coreference Arg1:T123 Arg2:T122	
+T124	reference_word 5640 5650	The script
+R63	coreference Arg1:T124 Arg2:T119	
+T125	tool 5682 5684	C2
+T126	tool 5974 5980	Chrome
+T127	tool 5983 5985	IE
+T128	tool 5989 5996	Mozilla
+T129	tool 5999 6004	Opera
+T130	tool 6009 6016	Outlook
+T131	tool 6257 6259	C2
+T132	string 6280 6294	C:\ProgramData
+T133	tool 6348 6350	C2
+T134	tool 6426 6428	C2
+T135	tool 6456 6458	C2
+T136	threatActor_name 6468 6478	MuddyWater
+T137	tool 6535 6578	macro-enabled Office 97-2003 Word documents
+R64	use Arg1:T136 Arg2:T137	
+T138	program_language 6595 6598	VBA
+T139	program_language 6670 6673	VBS
+T140	program_language 6735 6738	VBS
+T141	sample_name 6745 6759	powershell.exe
+T142	threatActor_name 6835 6845	MuddyWater
+T143	tool 6866 6873	Lazagne
+T144	tool 6931 6943	Losi Boomber
+R65	use Arg1:T142 Arg2:T144	
+T145	sample_function 6949 7014	used to extract credentials and history from browsers and Outlook
+R66	goal Arg1:T144 Arg2:T145	
+T146	tool 7017 7022	Muddy
+T147	sample_function 7055 7108	extracting credentials from mail clients and browsers
+R67	goal Arg1:T146 Arg2:T147	
+R68	use Arg1:T142 Arg2:T146	
+T148	tool 7164 7170	Chrome
+T149	tool 7173 7175	IE
+T150	tool 7178 7185	Mozilla
+T151	tool 7188 7193	Opera
+T152	tool 7198 7204	Coccoc
+T153	tool 7251 7258	Outlook
+T154	sample_name 7261 7270	Slaver.py
+T155	program_language 7285 7291	Python
+T156	tool 7312 7321	ShootBack
+T157	sample_function 7336 7369	establishing a reverse tcp tunnel
+R69	part_of Arg1:T157 Arg2:T154	
+T158	sample_name 7372 7378	Cr.exe
+T159	program_language 7393 7399	Python
+T160	tool 7416 7428	CrackMapExec
+T161	sample_function 7440 7487	credential gathering and lateral code execution
+R70	part_of Arg1:T161 Arg2:T158	
+T162	sample_name 7490 7497	Mmap.py
+T163	sample_name 7509 7517	MapTools
+R71	coreference Arg1:T163 Arg2:T162	
+T164	threatActor_name 7524 7535	MuddyWaters
+T165	tool 7555 7567	CrackMapExec
+R72	part_of Arg1:T161 Arg2:T162	
+T166	threatActor_name 7612 7622	MuddyWater
+T167	tool 7647 7665	PowerShell scripts
+R73	use Arg1:T166 Arg2:T167	
+T168	sub_activity 7700 7741	disabling PowerShell Script Block Logging
+T169	sub_activity 7746 7760	bypassing AMSI
+T170	tool 7763 7790	Anti-Malware Scan Interface
+T171	tool 7756 7760	AMSI
+R74	coreference Arg1:T170 Arg2:T171	
+R75	launch Arg1:T166 Arg2:T168	
+R76	launch Arg1:T166 Arg2:T169	
+T172	tool 7833 7861	InternetExplorer.Application
+R77	use Arg1:T166 Arg2:T172	
+T173	sample_function 7798 7820	fetches its next stage
+R78	part_of Arg1:T173 Arg2:T172	
+T174	sample_function 7879 7946	retrieve HTML content from http://104.237.233.40:7070/admin/get.php
+R79	goal Arg1:T172 Arg2:T174	
+T175	string 8018 8056	CF-RAY :  oBLKRK3GNKZcBGZeWl+s4ExIaQ0=
+T176	threatActor_name 8089 8099	MuddyWater
+T177	tool 8103 8113	PowerShell
+T178	sample_function 8154 8171	collect user info
+T179	malware 8103 8127	PowerShell prototype RAT
+R80	launch Arg1:T176 Arg2:T179	
+R81	part_of Arg1:T178 Arg2:T179	
+T180	sample_function 8238 8263	RC4 encryption/decryption
+R82	part_of Arg1:T180 Arg2:T179	
+T181	encryption_algo 8238 8241	RC4
+T182	sample_function 8266 8294	Base64 encoding and decoding
+R83	part_of Arg1:T182 Arg2:T179	
+T184	sample_function 8297 8334	changing cached group policy settings
+R84	attack Arg1:T184 Arg2:T179	
+T185	reference_word 8464 8466	It
+R85	coreference Arg1:T185 Arg2:T179	
+T186	sample_function 8472 8513	disables all HTTPS SSL certificate checks
+T187	protocol 8485 8490	HTTPS
+T188	protocol 8491 8494	SSL
+R86	part_of Arg1:T186 Arg2:T185	
+T189	tool 8604 8606	C2
+T190	IP_evil 8619 8633	78.129.139.134
+T191	encryption_algo 8655 8658	RC4
+T183	sample_name 8830 8843	Iranicard.exe
+T192	tool 8783 8793	WinRAR SFX
+T193	tool 8889 8894	MSHTA
+T194	tool 8862 8882	SFX pre-setup script
+T195	tool 8923 8933	PowerShell
+T196	tool 8972 8982	PowerShell
+T197	domain_evil 8995 9019	https://dzoz.us/js/js.js
+T198	person 9044 9054	this actor
+T199	tool 9095 9100	OPSEC
+T200	tool 9182 9187	OPSEC
+T201	tool 9219 9222	PDB
+T202	tool 9290 9292	C2
+T203	tool 9324 9337	LisfonService
+T204	tool 9345 9348	PDB
+T205	tool 9627 9637	PowerShell
+T206	tool 9719 9721	C2
+T207	tool 9866 9872	Office
+T208	tool 10046 10050	PDBs
+T209	tool 10168 10178	PowerShell
+T210	string 10202 10234	Ffb8ea0347a3af3dd2ab1b4e5a1be18a
+T211	encryption_algo 10350 10353	md5
+T212	md5 10357 10389	e684aa1c6e51f4696a836ecb6ff1e143
+T213	string 10403 10409	km.ps1
+T214	person 10414 10423	attackers
+T215	encryption_algo 10450 10453	RC4
+T216	tool 10496 10498	C2
+T217	IP_evil 10508 10522	78.129.139.134
+T218	IP_evil 10541 10555	78.129.139.134
+T219	tool 10569 10571	C2
+T220	tool 10634 10636	C2
+T221	program_language 10673 10677	HTML
+T222	program_language 10706 10710	HTML
+T223	person 10735 10744	attackers
+T224	threatActor_name 10800 10816	RXR Saudi Arabia
+T225	threatActor_name 10819 10829	MuddyWater
+T226	person 10922 10935	The attackers
+T227	program_language 11091 11097	Python
+T228	tool 11102 11112	PowerShell
+R87	use Arg1:T226 Arg2:T228	
+T229	location 11322 11336	Middle Eastern
+T230	tool 11558 11563	OPSEC
+T69	tool 3966 3976	Proxy URLs
+T231	tool 6365 6375	cmd.exe /c
+T232	sample_function 6389 6428	spawn a new process as determined by C2
+R88	goal Arg1:T231 Arg2:T232	
+R89	part_of Arg1:T212 Arg2:T211	
+R90	use Arg1:T226 Arg2:T227	

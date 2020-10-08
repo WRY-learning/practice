@@ -1,0 +1,223 @@
+T1	attack_activity 1 20	Operation Oceansalt
+T2	location 30 41	South Korea
+T3	location 43 46	U.S
+T4	location 53 59	Canada
+T5	threatActor_name 82 102	Chinese Hacker Group
+R1	launch Arg1:T5 Arg2:T1	
+R2	attack Arg1:T5 Arg2:T2	
+R3	attack Arg1:T5 Arg2:T3	
+R4	attack Arg1:T5 Arg2:T4	
+T6	time 939 954	March 30 , 2010
+T7	time 983 996	June 1 , 2018
+T8	malware 1401 1422	Comment Crew implants
+T9	threatActor_name 1238 1250	Comment Crew
+T10	threatActor_name 1634 1646	Comment Crew
+T11	threatActor_name 1858 1870	Comment Crew
+T12	time 2014 2024	July 16–18
+T13	IP_evil 2329 2343	27.102.112.179
+T14	threatActor_name 2577 2589	Comment Crew
+T15	threatActor_name 2627 2639	Comment Crew
+T16	threatActor_name 2677 2689	Comment Crew
+T17	threatActor_name 2727 2739	Comment Crew
+T18	threatActor_name 2777 2789	Comment Crew
+T19	threatActor_name 2827 2839	Comment Crew
+T20	threatActor_name 2877 2889	Comment Crew
+T21	threatActor_name 3004 3016	Comment Crew
+T22	threatActor_name 5860 5872	Comment Crew
+T23	time 5887 5891	2010
+T24	threatActor_name 5918 5930	Comment Crew
+T25	threatActor_name 6330 6342	Comment Crew
+T26	threatActor_name 6361 6373	Comment Crew
+T27	threatActor_name 6392 6404	Comment Crew
+T28	threatActor_name 6424 6436	Comment Crew
+T29	threatActor_name 6457 6469	Comment Crew
+T30	threatActor_name 6515 6527	Comment Crew
+T31	threatActor_name 6573 6585	Comment Crew
+T32	threatActor_name 6631 6643	Comment Crew
+T33	threatActor_name 6689 6701	Comment Crew
+T34	threatActor_name 6747 6759	Comment Crew
+T35	threatActor_name 6805 6817	Comment Crew
+T36	threatActor_name 6863 6875	Comment Crew
+T37	location 5793 5804	South Korea
+T38	location 6059 6070	South Korea
+T39	location 6231 6235	Asia
+T41	md5 2592 2624	C1773E9CF8265693F37DF1A39E0CBBE2
+T42	md5 2642 2674	0355C116C02B02C05D6E90A0B3DC107C
+T43	md5 2692 2724	74A50A5705E2AF736095B6B186D38DDF
+T44	md5 2742 2774	45C362F17C5DC8496E97D475562BEC4D
+T45	md5 2792 2824	D14DD769C7F53ACEC482347F539EFDF4
+T46	md5 2842 2874	B2F6D9A62C63F61A6B33DC6520BFCCCD
+T47	md5 2892 2924	76C8DA4147B08E902809D1E80D96FBB4
+T48	IP_evil 6345 6358	158.69.131.78
+T49	IP_evil 6376 6389	172.81.132.62
+T50	IP_evil 6407 6421	27.102.112.179
+T51	IP_evil 6439 6454	211.104.160.196
+T52	sha1 6472 6512	fc121db04067cffbed04d7403c1d222d376fa7ba
+T53	sha1 6530 6570	832d5e6ebd9808279ee3e59ba4b5b0e884b859a5
+T54	sha1 6588 6628	be4fbb5a4b32db20a914cad5701f5c7ba51571b7
+T55	sha1 6646 6686	1f70715e86a2fcc1437926ecfaeadc53ddce41c9
+T56	sha1 6704 6744	dd3fb2750da3e8fc889cd1611117b02d49cf17f7
+T57	sha1 6762 6802	583879cfaf735fa446be5bfcbcc9e580bf542c8c
+T58	sha1 6820 6860	ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36
+T59	sha1 6878 6918	d72bc671583801c3c65ac1a96bb75c6026e06a73
+T60	malware 322 331	Oceansalt
+T61	malware 440 449	Oceansalt
+T62	malware 494 503	Oceansalt
+T63	malware 723 732	Oceansalt
+T64	threatActor_name 957 966	Oceansalt
+T65	malware 1197 1206	Oceansalt
+T66	malware 1501 1510	Oceansalt
+T67	malware 1902 1911	Oceansalt
+T68	malware 1688 1697	Oceansalt
+T71	malware 3084 3093	Oceansalt
+T72	malware 3106 3126	obfuscated Oceansalt
+T73	malware 3339 3348	Oceansalt
+T74	malware 3519 3528	Oceansalt
+T75	malware 3674 3683	Oceansalt
+T76	malware 4156 4165	Oceansalt
+T77	malware 4670 4679	Oceansalt
+T78	malware 4775 4784	Oceansalt
+T79	malware 5416 5425	Oceansalt
+R5	use Arg1:T25 Arg2:T48	
+R6	use Arg1:T26 Arg2:T49	
+R7	use Arg1:T27 Arg2:T50	
+R8	use Arg1:T28 Arg2:T51	
+T81	md5 4174 4206	531dee019792a089a4589c2cce3dac95
+T82	time 4218 4222	June
+T83	IP_evil 4838 4851	158.69.131.78
+T84	tool 520 551	encoding and decoding mechanism
+R24	use Arg1:T62 Arg2:T84	
+T85	tool 740 772	hardcoded control server address
+R25	use Arg1:T63 Arg2:T85	
+T86	sample_function 776 799	establish communication
+R26	goal Arg1:T85 Arg2:T86	
+T87	malware 469 476	Seasalt
+T88	malware 915 922	Seasalt
+R27	occur_time Arg1:T88 Arg2:T6	
+R28	occur_time Arg1:T64 Arg2:T7	
+T89	malware 800 807	Seasalt
+T90	sub_activity 854 867	decoding data
+R29	launch Arg1:T89 Arg2:T90	
+T91	sample_function 808 834	parses the control address
+R30	goal Arg1:T90 Arg2:T91	
+T92	malware 1523 1530	Seasalt
+T93	malware 604 611	Seasalt
+T94	malware 1431 1441	WebC2-CSON
+T95	malware 1446 1460	WebC2-GREENCAT
+T96	malware 3133 3140	Seasalt
+T97	malware 3354 3361	Seasalt
+T99	malware 4314 4323	Oceansalt
+T100	reference_word 4409 4420	The implant
+T101	tool 4503 4530	a structured command system
+T102	sample_function 4455 4469	capturing data
+R31	use Arg1:T100 Arg2:T101	
+R32	goal Arg1:T101 Arg2:T102	
+T103	person 4716 4724	attacker
+T104	sub_activity 4728 4748	take various actions
+R33	launch Arg1:T103 Arg2:T104	
+T105	tool 4872 4885	reverse shell
+T106	tool 4908 4929	previous command code
+R34	use Arg1:T105 Arg2:T106	
+T107	security_team 5664 5700	McAfee Advanced Threat Research team
+T40	attack_activity 5730 5749	Operation Oceansalt
+R35	find Arg1:T107 Arg2:T40	
+T108	reference_word 5752 5766	This operation
+R36	coreference Arg1:T108 Arg2:T40	
+T109	tool 1319 1382	pipe-based inter-process communication for standard I/O handles
+T110	tool 1303 1316	reverse shell
+R37	coreference Arg1:T109 Arg2:T110	
+R38	part_of Arg1:T94 Arg2:T8	
+R39	part_of Arg1:T95 Arg2:T8	
+T111	reference_word 1541 1543	it
+T112	reference_word 1463 1476	These matches
+R40	coreference Arg1:T111 Arg2:T112	
+T113	tool 1563 1567	code
+R41	use Arg1:T111 Arg2:T113	
+R42	find Arg1:T10 Arg2:T68	
+T114	malware 1812 1821	Oceansalt
+T115	malware 1837 1844	Seasalt
+R43	located Arg1:T114 Arg2:T11	
+R44	located Arg1:T115 Arg2:T11	
+T69	person 3171 3180	attackers
+T116	sub_activity 3225 3266	modifying the control server IP addresses
+R45	launch Arg1:T69 Arg2:T116	
+T117	sub_activity 3547 3574	control server IP addresses
+T118	sub_activity 3579 3601	port numbers hardcoded
+R46	launch Arg1:T74 Arg2:T117	
+R47	launch Arg1:T74 Arg2:T118	
+R48	occur_time Arg1:T81 Arg2:T82	
+T119	sample_function 1169 1193	create the reverse shell
+T120	tool 1152 1160	The code
+R49	goal Arg1:T120 Arg2:T119	
+T70	person 2982 2999	Oceansalt authors
+T121	tool 3270 3283	The mechanism
+T122	sample_function 3288 3309	obtaining the address
+R50	goal Arg1:T121 Arg2:T122	
+T123	malware 3313 3320	Seasalt
+R51	located Arg1:T121 Arg2:T123	
+T124	tool 1272 1285	The mechanism
+T125	sample_function 1290 1316	creating the reverse shell
+R52	goal Arg1:T124 Arg2:T125	
+T126	company 6179 6185	McAfee
+T127	counter_measure 6199 6227	monitor the threat landscape
+R53	use Arg1:T126 Arg2:T127	
+T128	sample_function 6260 6295	track the evolution of known groups
+T129	sample_function 6300 6327	changes to their techniques
+T130	person 3951 3958	authors
+T131	reference_word 4002 4015	these samples
+R56	use Arg1:T130 Arg2:T131	
+T132	sub_activity 4019 4048	perform their initial testing
+R57	goal Arg1:T131 Arg2:T132	
+T133	malware 365 372	Seasalt
+R58	use Arg1:T65 Arg2:T120	
+T134	malware 1598 1605	Seasalt
+R59	use Arg1:T10 Arg2:T134	
+T135	tool 2146 2162	debug statements
+T136	tool 2217 2225	keywords
+R60	part_of Arg1:T136 Arg2:T135	
+T137	sub_activity 3362 3409	looks for encoded data at the end of the binary
+T138	sub_activity 3412 3469	decodes this data into tokens separated by the marker “ $
+T139	sub_activity 3478 3516	obtains the control server information
+R61	launch Arg1:T97 Arg2:T137	
+R62	launch Arg1:T97 Arg2:T138	
+R63	launch Arg1:T97 Arg2:T139	
+R64	part_of Arg1:T81 Arg2:T76	
+T140	reference_word 4575 4587	this implant
+R65	coreference Arg1:T140 Arg2:T100	
+T141	sub_activity 4805 4856	connect to its control server at 158.69.131.78:8080
+R66	launch Arg1:T78 Arg2:T141	
+T143	sub_activity 5015 5034	executed by cmd.exe
+R67	launch Arg1:T78 Arg2:T143	
+T144	sub_activity 5113 5141	read from cmd.exe via a pipe
+T145	sub_activity 5146 5172	sent to the control server
+R68	launch Arg1:T78 Arg2:T144	
+R69	launch Arg1:T78 Arg2:T145	
+T142	sub_activity 5203 5231	closing handles to the pipes
+R70	launch Arg1:T78 Arg2:T142	
+T146	sub_activity 5341 5393	receiving data ( 0x7 bytes ) from the control server
+T147	sub_activity 5398 5413	sending it back
+R71	launch Arg1:T78 Arg2:T146	
+R72	launch Arg1:T78 Arg2:T147	
+R73	first_found_time Arg1:T22 Arg2:T23	
+R54	goal Arg1:T127 Arg2:T128	
+R55	goal Arg1:T127 Arg2:T129	
+T98	malware 3881 3888	Seasalt
+T148	malware 4303 4310	Seasalt
+T80	malware 2477 2484	Seasalt
+T149	malware 3207 3214	Seasalt
+R16	part_of Arg1:T52 Arg2:T29	
+R17	part_of Arg1:T53 Arg2:T30	
+R18	part_of Arg1:T54 Arg2:T31	
+R19	part_of Arg1:T55 Arg2:T32	
+R20	part_of Arg1:T56 Arg2:T33	
+R21	part_of Arg1:T57 Arg2:T34	
+R22	part_of Arg1:T58 Arg2:T35	
+R23	part_of Arg1:T59 Arg2:T36	
+R9	part_of Arg1:T41 Arg2:T14	
+R10	part_of Arg1:T42 Arg2:T15	
+R11	part_of Arg1:T43 Arg2:T16	
+R12	part_of Arg1:T44 Arg2:T17	
+R13	part_of Arg1:T45 Arg2:T18	
+R14	part_of Arg1:T46 Arg2:T19	
+R15	part_of Arg1:T47 Arg2:T20	
+T150	malware 2464 2473	Oceansalt

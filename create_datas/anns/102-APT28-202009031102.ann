@@ -1,0 +1,249 @@
+T1	time 188 201	In April 2013
+T2	malware 343 351	backdoor
+T3	malware 354 362	EVILTOSS
+R1	part_of Arg1:T3 Arg2:T2	
+T4	malware 399 407	SOURFACE
+T5	malware 283 291	SOURFACE
+T6	malware 321 329	SOURFACE
+R2	part_of Arg1:T2 Arg2:T6	
+T7	reference_word 420 422	it
+T8	sample_function 477 523	provide access to the file system and registry
+T9	sample_function 526 553	enumerate network resources
+T10	sample_function 556 572	create processes
+T11	sample_function 575 589	log keystrokes
+T12	sample_function 592 617	access stored credentials
+R3	goal Arg1:T7 Arg2:T8	
+T13	sample_function 624 641	execute shellcode
+R4	goal Arg1:T7 Arg2:T9	
+R5	goal Arg1:T7 Arg2:T10	
+R6	goal Arg1:T7 Arg2:T11	
+R7	goal Arg1:T7 Arg2:T12	
+R8	goal Arg1:T7 Arg2:T13	
+T14	malware 648 656	backdoor
+T15	encryption_algo 695 698	RSA
+R9	use Arg1:T14 Arg2:T15	
+T16	sample_name 756 765	netui.dll
+T17	malware 768 776	EVILTOSS
+T18	protocol 798 827	Simple Mail Transfer Protocol
+T19	protocol 830 834	SMTP
+R10	coreference Arg1:T19 Arg2:T18	
+R11	use Arg1:T17 Arg2:T18	
+T21	malware 905 913	backdoor
+T22	time 1058 1062	2004
+R13	occur_time Arg1:T5 Arg2:T1	
+T23	malware 1112 1120	EVILTOSS
+R14	release_time Arg1:T23 Arg2:T22	
+T24	malware 1127 1135	backdoor
+T20	malware 1218 1226	backdoor
+T25	protocol 1241 1245	SMTP
+T26	security_team 1164 1168	NATO
+R12	use Arg1:T20 Arg2:T25	
+T27	protocol 1300 1303	POP
+R15	use Arg1:T20 Arg2:T27	
+T28	threatActor_name 1390 1395	APT28
+T29	threatActor_name 1435 1440	APT28
+T31	time 1478 1482	2004
+R16	occur_time Arg1:T29 Arg2:T31	
+T30	time 1655 1659	2007
+T32	threatActor_name 1703 1708	APT28
+T33	malware 1716 1724	backdoor
+R17	use Arg1:T32 Arg2:T33	
+T34	malware 1776 1784	backdoor
+T35	malware 1785 1794	CHOPSTICK
+R18	part_of Arg1:T35 Arg2:T34	
+T36	time 2275 2279	2007
+T37	malware 2468 2476	backdoor
+T38	malware 2495 2504	CHOPSTICK
+T39	protocol 2618 2622	HTTP
+T40	tool 2602 2604	C2
+R19	attack Arg1:T38 Arg2:T40	
+R20	attack Arg1:T38 Arg2:T39	
+T41	malware 2733 2742	CHOPSTICK
+T42	tool 2818 2834	Microsoft Office
+T43	sample_function 2790 2815	collecting keystroke logs
+T44	sub_activity 2851 2860	PGP files
+R21	goal Arg1:T41 Arg2:T43	
+R22	attack Arg1:T41 Arg2:T42	
+R23	attack Arg1:T41 Arg2:T44	
+T45	protocol 3013 3017	SMTP
+T46	location 3026 3034	Georgian
+T47	email_evil 3107 3118	@mia.gov.ge
+T48	malware 3256 3264	backdoor
+T49	malware 3324 3333	CHOPSTICK
+T50	threatActor_name 3470 3475	APT28
+T51	sub_activity 3420 3437	local directories
+T52	sub_activity 3440 3452	the registry
+T53	sub_activity 3457 3467	USB drives
+R24	attack Arg1:T49 Arg2:T51	
+R25	attack Arg1:T49 Arg2:T52	
+R26	attack Arg1:T49 Arg2:T53	
+T54	threatActor_name 3561 3566	APT28
+T55	location 3494 3501	RUSSIAN
+R27	located Arg1:T50 Arg2:T55	
+T56	threatActor_name 3656 3661	APT28
+T57	location 3688 3695	Russian
+T58	time 3782 3786	2007
+T59	time 3790 3794	2014
+R28	located Arg1:T56 Arg2:T57	
+T60	location 3881 3888	Russian
+T61	location 3904 3910	Moscow
+T62	tool 3980 3982	PE
+T63	tool 3995 3997	PE
+T64	tool 4178 4180	PE
+T65	tool 4250 4252	PE
+T66	threatActor_name 4555 4560	APT28
+T67	tool 4575 4577	PE
+R29	part_of Arg1:T67 Arg2:T66	
+T68	threatActor_name 4748 4753	APT28
+T69	location 4787 4793	Russia
+T70	location 4796 4798	RU
+R30	coreference Arg1:T70 Arg2:T69	
+T71	location 4833 4846	United States
+T72	location 4849 4851	US
+R31	coreference Arg1:T72 Arg2:T71	
+T73	location 4967 4981	United Kingdom
+T74	location 4984 4986	GB
+R32	coreference Arg1:T74 Arg2:T73	
+T75	time 5065 5069	2007
+T76	time 5079 5083	2013
+T77	threatActor_name 5183 5188	APT28
+T78	threatActor_name 5367 5372	APT28
+T79	location 5468 5474	Moscow
+T80	threatActor_name 5550 5555	APT28
+T81	location 5856 5863	Russian
+T82	location 5879 5885	Moscow
+T83	threatActor_name 5930 5935	APT28
+T84	threatActor_name 6080 6085	APT28
+T85	location 6118 6125	Russian
+R33	located Arg1:T84 Arg2:T85	
+T86	threatActor_name 6179 6184	APT28
+T87	threatActor_name 6206 6211	APT28
+T88	threatActor_name 6419 6424	APT28
+T89	protocol 6859 6863	HTTP
+T90	malware 6843 6852	Backdoors
+T91	malware 6875 6884	Backdoors
+R34	use Arg1:T90 Arg2:T89	
+T92	location 6965 6972	Georgia
+T93	location 6981 6989	Caucasus
+T94	government 6993 7021	Ministry of Internal Affairs
+T95	government 7024 7043	Ministry of Defense
+T96	company 7086 7099	Kavkaz Center
+T99	location 7147 7153	Polish
+T100	location 7167 7176	Hungarian
+T98	government 7190 7217	Ministry of Foreign Affairs
+T101	location 7221 7235	Eastern Europe
+R35	located Arg1:T98 Arg2:T101	
+T102	government 7238 7249	Baltic Host
+T103	security_team 7296 7300	NATO
+T104	security_team 7303 7307	OSCE
+T97	location 7102 7118	Eastern European
+T105	person 7310 7326	Defense attaches
+T106	sub_activity 7329 7359	Defense events and exhibitions
+T107	threatActor_name 7524 7529	APT28
+T108	location 7617 7623	Moscow
+T109	time 7695 7699	2007
+T110	time 7703 7707	2014
+T111	threatActor_name 7657 7662	APT28
+R36	occur_time Arg1:T111 Arg2:T109	
+R37	occur_time Arg1:T111 Arg2:T110	
+T112	location 7806 7813	Russian
+T113	person 7946 7952	actors
+T114	reference_word 8018 8023	These
+R38	coreference Arg1:T114 Arg2:T113	
+T115	reference_word 8125 8129	They
+R39	coreference Arg1:T115 Arg2:T114	
+T116	tool 8442 8448	pwdump
+T117	tool 8451 8456	HTran
+T118	tool 8462 8471	Gh0st RAT
+T119	person 8706 8711	actor
+T120	person 8630 8636	actors
+T121	person 9160 9166	actors
+T122	attack_activity 9221 9235	spear phishing
+T123	reference_word 9207 9211	They
+R40	coreference Arg1:T123 Arg2:T121	
+T124	malware 9440 9449	backdoors
+T125	reference_word 9289 9294	Their
+T126	reference_word 9434 9439	Their
+R41	coreference Arg1:T125 Arg2:T123	
+R42	coreference Arg1:T126 Arg2:T125	
+R43	use Arg1:T123 Arg2:T122	
+R44	use Arg1:T126 Arg2:T124	
+T127	person 9833 9838	actor
+T128	person 9851 9857	actors
+T129	time 10214 10218	2010
+T130	time 10300 10304	2011
+T131	time 10366 10370	2011
+T132	time 10467 10471	2011
+T133	time 10624 10628	2012
+T134	malware 10613 10621	SOURFACE
+T135	time 10738 10742	2012
+T136	time 10816 10820	2012
+T137	time 10883 10887	2012
+T138	time 10947 10951	2012
+T139	time 11046 11050	2012
+T140	time 11112 11116	2013
+T141	time 11167 11171	2013
+T142	time 11257 11261	2013
+T143	time 11351 11355	2013
+T144	time 11429 11433	2013
+T145	time 11508 11512	2013
+T146	time 11598 11602	2013
+T147	time 11674 11678	2014
+T148	time 11789 11793	2014
+T149	location 10219 10223	Iran
+T150	malware 10289 10297	SOURFACE
+T151	sample_name 10318 10342	military cooperation.doc
+T152	malware 10345 10353	SOURFACE
+T153	malware 10356 10363	OLDBAIT
+T154	malware 10456 10464	SOURFACE
+T155	malware 10727 10735	SOURFACE
+T156	malware 10805 10813	SOURFACE
+T157	malware 10872 10880	SOURFACE
+T158	malware 10936 10944	SOURFACE
+T159	malware 11035 11043	SOURFACE
+T160	malware 11101 11109	SOURFACE
+T161	malware 11143 11152	CHOPSTICK
+T162	malware 11155 11164	CORESHELL
+T163	malware 11245 11254	CORESHELL
+T164	malware 11340 11348	SOURFACE
+T165	malware 11405 11414	CHOPSTICK
+T166	malware 11417 11426	CORESHELL
+T167	malware 11484 11493	CHOPSTICK
+T168	malware 11496 11505	CORESHELL
+T169	malware 11587 11595	EVILTOSS
+T170	malware 11662 11671	CORESHELL
+T171	malware 11876 11885	CORESHELL
+T172	malware 11777 11786	CORESHELL
+T173	government 10417 10433	Internal Affairs
+T174	time 10718 10722	2013
+T175	government 10745 10748	IDF
+T176	location 10847 10855	Portugal
+T177	government 10890 10893	FBI
+T178	company 10905 10913	Facebook
+T179	company 10916 10923	Twitter
+T180	company 10926 10933	Myspace
+T181	location 10952 10959	Georgia
+T182	location 10962 10970	US state
+T183	location 10992 10999	Georgia
+R45	part_of Arg1:T181 Arg2:T182	
+T184	location 11072 11078	London
+T185	tool 10474 10491	USB Disk Security
+T186	location 10646 10652	Africa
+T187	location 11117 11129	South Africa
+T188	encryption_algo 11130 11133	MFA
+R46	use Arg1:T187 Arg2:T188	
+T189	location 11218 11220	US
+T190	location 11193 11217	Georgian-Polish-American
+T191	location 11262 11266	Asia
+T192	time 11303 11307	2013
+T193	location 11376 11382	Turkey
+T194	person 11434 11449	Turkish Cypriot
+T195	location 11461 11466	Syria
+T196	company 11603 11618	Apparent Reason
+T197	government 11730 11752	Chinese aviation group
+T198	government 11853 11868	Ukraine airline
+T199	location 11806 11814	Malaysia
+T200	location 11794 11805	Netherlands
+T201	threatActor_name 0 5	APT28
+T202	location 21 27	RUSSIA
+R47	located Arg1:T201 Arg2:T202	

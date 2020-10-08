@@ -1,0 +1,95 @@
+T1	malware 83 89	Pushdo
+T2	sample_function 97 147	cancels process notifications to security software
+T3	function 208 221	NtBuildNumber
+T4	OS_name 177 184	Windows
+T5	OS_name 237 247	Windows XP
+T7	string 272 276	2600
+T8	string 291 295	3790
+T9	sample_function 320 380	gets the runtime address for PsSetCreateProcessNotifyRoutine
+T10	function 448 480	PsSetCreateProcess NotifyRoutine
+T11	function 502 533	PsSetCreateProcessNotifyRoutine
+T12	sample_function 552 584	linearly scans the assembly code
+T13	string 589 593	0xBF
+T14	string 620 624	0x57
+T15	string 659 663	0xBF
+T16	function 680 709	PspCreateProcessNotifyRoutine
+T17	function 762 790	PsCreateProcessNotifyRoutine
+T18	OS_name 840 850	Windows XP
+T19	string 872 876	0xBF
+T20	string 898 902	0x57
+T21	tool 977 981	HTTP
+T22	tool 1206 1210	HTTP
+T23	OS_name 1628 1635	Windows
+T24	function 1638 1656	GetModuleFilenameW
+T25	string 1732 1738	sample
+T26	string 1820 1826	sample
+T27	tool 2154 2163	sandboxes
+T28	function 2660 2680	GetVolumeInformation
+T29	string 2586 2607	cmp DWORD PTR [EBP-8]
+T30	string 2610 2617	0CD1A40
+T31	tool 2728 2735	sandbox
+T32	tool 2796 2803	sandbox
+T33	tool 2871 2874	VMs
+T34	tool 3040 3047	sandbox
+T35	malware 3151 3165	Terminator RAT
+T36	tool 3286 3300	Microsoft Word
+T37	sample_name 3347 3355	DW20.exe
+T38	sample_name 3370 3378	DW20.exe
+T39	string 3411 3434	%UserProfile%\Microsoft
+T40	string 3443 3457	%AppData%\2019
+T41	company 3467 3476	Microsoft
+T42	sample_name 3545 3557	svchost_.exe
+T43	sample_name 3562 3569	sss.exe
+T46	OS_name 3669 3676	Windows
+T47	sample_name 3804 3813	DWE20.exe
+T49	OS_name 3991 3998	Windows
+T50	tool 4085 4092	sandbox
+T51	tool 4168 4177	sandboxes
+T52	tool 4535 4544	sandboxes
+T53	tool 4696 4705	sandboxes
+T54	tool 4913 4925	Flash player
+T55	function 4984 4990	getUrl
+T56	sample_name 5086 5091	f.swf
+T57	attack_goal 5097 5111	exploit a flaw
+R1	goal Arg1:T56 Arg2:T57	
+R2	part_of Arg1:T2 Arg2:T1	
+R3	use Arg1:T1 Arg2:T3	
+R4	part_of Arg1:T7 Arg2:T5	
+R5	part_of Arg1:T8 Arg2:T5	
+T58	reference_word 544 551	malware
+R6	coreference Arg1:T58 Arg2:T1	
+R7	part_of Arg1:T9 Arg2:T1	
+R8	part_of Arg1:T12 Arg2:T58	
+R9	part_of Arg1:T15 Arg2:T16	
+R10	part_of Arg1:T13 Arg2:T16	
+R11	part_of Arg1:T14 Arg2:T16	
+T59	string 882 889	mov edi
+T60	string 908 916	push edi
+R12	coreference Arg1:T59 Arg2:T19	
+R13	coreference Arg1:T60 Arg2:T20	
+R14	part_of Arg1:T19 Arg2:T18	
+R15	part_of Arg1:T20 Arg2:T18	
+T61	tool 1080 1089	sandboxes
+T62	tool 1184 1191	sandbox
+T63	tool 1261 1268	sandbox
+T64	tool 1369 1378	sandboxes
+T65	tool 2332 2341	sandboxes
+T66	tool 2447 2450	VMs
+R16	use Arg1:T35 Arg2:T36	
+R17	part_of Arg1:T37 Arg2:T35	
+R19	part_of Arg1:T39 Arg2:T38	
+R20	part_of Arg1:T40 Arg2:T38	
+T67	reference_word 3639 3646	malware
+R24	coreference Arg1:T67 Arg2:T35	
+R21	part_of Arg1:T43 Arg2:T67	
+R22	part_of Arg1:T42 Arg2:T67	
+R23	part_of Arg1:T47 Arg2:T67	
+R18	part_of Arg1:T38 Arg2:T67	
+T68	sample_function 3814 3828	deletes itself
+R25	part_of Arg1:T68 Arg2:T47	
+R26	part_of Arg1:T24 Arg2:T23	
+R27	use Arg1:T54 Arg2:T55	
+R28	use Arg1:T58 Arg2:T10	
+R29	use Arg1:T58 Arg2:T11	
+R30	use Arg1:T58 Arg2:T16	
+R31	use Arg1:T58 Arg2:T17	

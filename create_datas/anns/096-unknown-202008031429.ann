@@ -1,0 +1,763 @@
+T1	time 18 25	Q1 2020
+T2	security_team 153 186	Global Research and Analysis Team
+T3	security_team 189 194	GReAT
+T4	time 672 679	Q1 2020
+T5	domain 827 853	intelreports@kaspersky.com
+T6	government 1081 1106	World Health Organization
+T7	government 1109 1112	WHO
+R1	coreference Arg1:T7 Arg2:T6	
+T8	attack_activity 1233 1247	phishing scams
+T9	person 1282 1296	cybercriminals
+R2	launch Arg1:T9 Arg2:T8	
+T10	person 1398 1415	APT threat actors
+T11	threatActor_name 1424 1431	Kimsuky
+T12	threatActor_name 1434 1439	APT27
+T13	threatActor_name 1442 1449	Lazarus
+T14	threatActor_name 1453 1465	ViciousPanda
+R3	part_of Arg1:T11 Arg2:T10	
+R4	part_of Arg1:T12 Arg2:T10	
+R5	part_of Arg1:T13 Arg2:T10	
+R6	part_of Arg1:T14 Arg2:T10	
+T15	tool 1503 1524	COVID-19-themed lures
+R7	use Arg1:T10 Arg2:T15	
+T16	tool 1485 1490	OSINT
+T17	threatActor_name 1912 1921	DarkHotel
+T18	time 1839 1848	June 2019
+T19	government 1692 1695	WHO
+T20	government 1638 1675	health and humanitarian organizations
+T21	sub_activity 1576 1601	suspicious infrastructure
+T22	sample_function 1631 1675	target health and humanitarian organizations
+T23	person 1551 1553	We
+R8	find Arg1:T23 Arg2:T21	
+R9	goal Arg1:T21 Arg2:T22	
+R10	part_of Arg1:T19 Arg2:T20	
+T24	time 2447 2459	January 2020
+T25	attack_activity 2478 2491	watering-hole
+T26	OS_name 2516 2519	iOS
+T27	tool 2509 2533	remote iOS exploit chain
+R12	first_found_time Arg1:T25 Arg2:T24	
+T28	reference_word 2536 2545	This site
+T29	person 2462 2464	we
+R11	find Arg1:T29 Arg2:T25	
+R13	use Arg1:T29 Arg2:T27	
+T30	sample_function 2579 2591	target users
+T31	person 2586 2591	users
+T32	location 2595 2604	Hong Kong
+R14	located Arg1:T31 Arg2:T32	
+R15	goal Arg1:T28 Arg2:T30	
+T33	OS_name 2999 3004	MacOS
+T34	OS_name 2922 2929	Android
+T35	OS_name 2977 2984	Windows
+T36	OS_name 2987 2992	Linux
+T37	time 2844 2854	February 7
+T38	sub_activity 2820 2840	latest modifications
+T39	reference_word 2804 2806	We
+R16	coreference Arg1:T39 Arg2:T29	
+R17	find Arg1:T39 Arg2:T38	
+R18	first_found_time Arg1:T38 Arg2:T37	
+T40	person 2706 2711	actor
+T41	sub_activity 2736 2761	modifying the exploit kit
+T42	OS_name 2777 2780	iOS
+R19	launch Arg1:T40 Arg2:T41	
+T43	sub_activity 2765 2801	target more iOS versions and devices
+R20	goal Arg1:T41 Arg2:T43	
+T44	reference_word 2857 2868	The project
+R21	coreference Arg1:T44 Arg2:T38	
+T45	threatActor_name 3058 3070	TwoSail Junk
+T46	reference_word 3119 3121	it
+T47	sub_activity 3132 3146	infrastructure
+T48	sub_activity 3122 3146	maintains infrastructure
+R22	coreference Arg1:T46 Arg2:T45	
+R23	goal Arg1:T46 Arg2:T48	
+T49	location 3161 3170	Hong Kong
+T50	sub_activity 3196 3201	hosts
+R24	located Arg1:T47 Arg2:T49	
+T51	location 3213 3222	Singapore
+T52	location 3227 3235	Shanghai
+R25	located Arg1:T50 Arg2:T51	
+R26	located Arg1:T50 Arg2:T52	
+T53	threatActor_name 3238 3250	TwoSail Junk
+T54	sub_activity 3291 3304	posting links
+T55	sub_activity 3350 3376	creating new topic threads
+T56	sub_activity 3251 3287	directs visitors to its exploit site
+R27	launch Arg1:T53 Arg2:T54	
+R28	launch Arg1:T53 Arg2:T55	
+R29	goal Arg1:T54 Arg2:T56	
+R30	goal Arg1:T55 Arg2:T56	
+T57	location 3445 3454	Hong Kong
+T58	location 3476 3481	Macau
+T59	OS_name 3538 3541	iOS
+T60	tool 3559 3567	LightSpy
+T61	tool 3538 3549	iOS implant
+T62	OS_name 3702 3705	iOS
+R31	part_of Arg1:T60 Arg2:T61	
+T63	reference_word 3645 3660	the iOS implant
+R32	coreference Arg1:T63 Arg2:T60	
+T64	tool 3702 3728	iOS surveillance framework
+R33	part_of Arg1:T63 Arg2:T64	
+T65	time 3734 3741	January
+T66	threatActor_name 4505 4514	Gamaredon
+T67	time 4576 4580	2013
+T68	industry 4612 4630	Ukrainian entities
+R34	first_found_time Arg1:T66 Arg2:T67	
+R35	attack Arg1:T66 Arg2:T68	
+T69	threatActor_name 5690 5700	CactusPete
+T70	time 5767 5771	2012
+R36	first_found_time Arg1:T69 Arg2:T70	
+T71	reference_word 5842 5853	this threat
+R37	coreference Arg1:T71 Arg2:T69	
+T72	person 5854 5859	actor
+R38	part_of Arg1:T72 Arg2:T71	
+T73	industry 5873 5886	organizations
+T74	location 5925 5936	South Korea
+T75	location 5939 5944	Japan
+T76	location 5951 5953	US
+T77	location 5958 5964	Taiwan
+R39	located Arg1:T73 Arg2:T74	
+R40	located Arg1:T73 Arg2:T75	
+R41	located Arg1:T73 Arg2:T76	
+R42	located Arg1:T73 Arg2:T77	
+T78	time 5974 5985	end of 2019
+T79	reference_word 5986 5995	the group
+R43	coreference Arg1:T79 Arg2:T71	
+R44	attack Arg1:T72 Arg2:T73	
+R45	occur_time Arg1:T79 Arg2:T78	
+T80	industry 6039 6074	Mongolian and Russian organizations
+T81	threatActor_name 6077 6087	CactusPete
+T82	industry 6119 6134	Russian defense
+T83	government 6148 6168	Mongolian government
+T84	tool 7999 8005	GitHub
+T85	threatActor_name 6665 6673	DragonOK
+R46	attack Arg1:T81 Arg2:T82	
+R47	attack Arg1:T81 Arg2:T83	
+T86	sample_name 6335 6347	tmplogon.exe
+T87	malware 6315 6323	Flapjack
+T88	malware 6324 6332	backdoor
+R48	part_of Arg1:T87 Arg2:T88	
+T89	tool 6280 6301	bait exploit document
+R49	coreference Arg1:T86 Arg2:T89	
+T90	threatActor_name 6582 6588	Rancor
+T91	time 6638 6642	2018
+R50	first_found_time Arg1:T90 Arg2:T91	
+R51	attack Arg1:T79 Arg2:T80	
+R52	part_of Arg1:T87 Arg2:T89	
+T92	reference_word 6676 6686	This actor
+R53	coreference Arg1:T92 Arg2:T90	
+T93	target_crowd 6716 6739	Southeast Asian targets
+R54	attack Arg1:T92 Arg2:T93	
+T94	location 6749 6757	Cambodia
+T95	location 6760 6767	Vietnam
+T96	location 6772 6781	Singapore
+R55	located Arg1:T93 Arg2:T94	
+R56	located Arg1:T93 Arg2:T95	
+R57	located Arg1:T93 Arg2:T96	
+T97	malware 6904 6910	Dudell
+T98	malware 6939 6947	ExDudell
+T99	malware 6885 6918	new variant of the Dudell malware
+R58	coreference Arg1:T98 Arg2:T99	
+T100	tool 6975 6978	UAC
+T101	tool 6981 7001	User Account Control
+R59	coreference Arg1:T101 Arg2:T100	
+T102	threatActor_name 17640 17650	CactusPete
+T103	threatActor_name 17653 17661	LightSpy
+T104	threatActor_name 17664 17670	Rancor
+T105	threatActor_name 17673 17683	Holy Water
+T106	threatActor_name 17686 17698	TwoSail Junk
+T107	attack_goal 18150 18164	Financial gain
+T108	person 18191 18204	threat actors
+R60	goal Arg1:T108 Arg2:T107	
+T109	threatActor_name 18241 18248	Lazarus
+T110	threatActor_name 18253 18267	Roaming Mantis
+T111	location 18270 18284	Southeast Asia
+T112	sub_activity 18323 18337	APT activities
+R61	located Arg1:T112 Arg2:T111	
+T113	threatActor_name 18377 18384	Lazarus
+T114	threatActor_name 18387 18396	DarkHotel
+T115	threatActor_name 18401 18408	Kimsuky
+T116	threatActor_name 18436 18449	Cloud Snooper
+T117	threatActor_name 18454 18470	Fishing Elephant
+R62	launch Arg1:T113 Arg2:T112	
+R63	launch Arg1:T114 Arg2:T112	
+R64	launch Arg1:T115 Arg2:T112	
+R65	launch Arg1:T116 Arg2:T112	
+R66	launch Arg1:T117 Arg2:T112	
+T118	sub_activity 18570 18594	software vulnerabilities
+T119	threatActor_name 18499 18509	CactusPete
+T120	threatActor_name 18527 18537	FunnyDream
+T121	threatActor_name 18540 18549	DarkHotel
+T122	threatActor_name 18512 18524	TwoSail Junk
+R67	use Arg1:T119 Arg2:T118	
+R68	use Arg1:T122 Arg2:T118	
+R69	use Arg1:T120 Arg2:T118	
+R70	use Arg1:T121 Arg2:T118	
+T123	sub_activity 18627 18667	include mobile implants in their arsenal
+T124	person 18597 18614	APT threat actors
+R71	launch Arg1:T124 Arg2:T123	
+T125	threatActor_name 18719 18726	Kimsuky
+T126	threatActor_name 18729 18734	Hades
+T127	threatActor_name 18739 18748	DarkHotel
+T128	person 18762 18785	opportunistic criminals
+T129	sub_activity 18807 18824	COVID-19 pandemic
+R72	use Arg1:T125 Arg2:T129	
+R73	use Arg1:T126 Arg2:T129	
+R74	use Arg1:T127 Arg2:T129	
+R75	use Arg1:T128 Arg2:T129	
+T130	location 17827 17829	UK
+T131	government 17827 17860	UK National Cyber Security Centre
+R76	part_of Arg1:T131 Arg2:T130	
+T132	location 17909 17916	Georgia
+T133	location 17932 17938	Russia
+T134	government 17942 17971	military intelligence service
+R77	located Arg1:T134 Arg2:T133	
+T135	location 17993 17995	US
+T136	person 17999 18020	two Chinese nationals
+T137	sub_activity 18025 18048	laundering $100 million
+R78	located Arg1:T136 Arg2:T135	
+R79	launch Arg1:T136 Arg2:T137	
+T138	location 18080 18091	North Korea
+T139	person 19384 19401	APT threat actors
+T140	attack_activity 19450 19474	spear-phishing campaigns
+R80	launch Arg1:T139 Arg2:T140	
+T141	location 18884 18888	Asia
+T142	malware 3774 3785	SPLM/XAgent
+T143	industry 3814 3847	Eastern European telecoms company
+R81	find Arg1:T143 Arg2:T142	
+R82	first_found_time Arg1:T142 Arg2:T65	
+T144	threatActor_name 15578 15594	TransparentTribe
+T145	time 15656 15660	2019
+T146	malware 15628 15635	USBWorm
+T147	tool 15695 15699	.NET
+T148	tool 15688 15704	custom .NET tool
+R83	part_of Arg1:T148 Arg2:T147	
+T149	malware 15711 15721	CrimsonRAT
+R84	part_of Arg1:T149 Arg2:T148	
+R85	use Arg1:T144 Arg2:T146	
+T150	sub_activity 15674 15704	improving its custom .NET tool
+R86	occur_time Arg1:T146 Arg2:T145	
+R87	launch Arg1:T144 Arg2:T150	
+T151	malware 15749 15756	USBWorm
+T152	target_crowd 15789 15796	victims
+T153	location 15823 15834	Afghanistan
+T154	location 15839 15844	India
+T155	person 15861 15869	attacker
+T156	sub_activity 15890 15926	download and execute arbitrary files
+T157	sub_activity 15929 15956	spread to removable devices
+T158	sub_activity 15967 15972	files
+T159	location 15990 16004	infected hosts
+T160	sub_activity 15961 15984	steal files of interest
+R88	located Arg1:T158 Arg2:T159	
+R89	attack Arg1:T151 Arg2:T152	
+R90	located Arg1:T152 Arg2:T153	
+R91	located Arg1:T152 Arg2:T154	
+R92	launch Arg1:T155 Arg2:T156	
+R93	launch Arg1:T155 Arg2:T157	
+R94	launch Arg1:T155 Arg2:T160	
+T161	reference_word 16077 16087	this group
+T162	target_crowd 16106 16122	military targets
+T163	tool 16198 16201	VBA
+T164	malware 16231 16240	Peppy RAT
+T165	malware 16245 16255	CrimsonRAT
+R95	attack Arg1:T161 Arg2:T162	
+T166	tool 16160 16176	Office documents
+R96	use Arg1:T161 Arg2:T166	
+T167	sub_activity 16188 16201	malicious VBA
+R97	part_of Arg1:T167 Arg2:T166	
+R98	part_of Arg1:T164 Arg2:T166	
+R99	part_of Arg1:T165 Arg2:T166	
+T168	reference_word 16315 16324	the group
+R100	coreference Arg1:T168 Arg2:T161	
+T169	location 16410 16415	India
+T170	location 16383 16394	Afghanistan
+T171	industry 16363 16371	entities
+R101	attack Arg1:T168 Arg2:T171	
+R102	located Arg1:T171 Arg2:T170	
+T172	threatActor_name 16418 16435	Transparent Tribe
+T173	OS_name 16488 16495	Android
+T174	tool 16593 16599	GitHub
+T175	sample_function 16481 16503	infect Android devices
+T176	sub_activity 16457 16468	new implant
+T177	OS_name 16539 16546	Android
+T178	malware 16532 16550	AhMyth Android RAT
+T179	malware 16508 16550	modified version of the AhMyth Android RAT
+R103	part_of Arg1:T179 Arg2:T178	
+R104	use Arg1:T172 Arg2:T176	
+R105	goal Arg1:T176 Arg2:T175	
+R106	coreference Arg1:T179 Arg2:T176	
+T180	time 16613 16632	last months of 2019
+T181	threatActor_name 16680 16696	Fishing Elephant
+T182	sub_activity 16658 16666	campaign
+R107	launch Arg1:T181 Arg2:T182	
+R108	first_found_time Arg1:T182 Arg2:T180	
+T183	reference_word 16699 16708	The group
+T184	tool 16731 16737	Heroku
+T185	tool 16742 16749	Dropbox
+T186	tool 16791 16798	AresRAT
+R109	use Arg1:T183 Arg2:T184	
+R110	use Arg1:T183 Arg2:T185	
+R111	coreference Arg1:T183 Arg2:T181	
+T187	sub_activity 16896 16932	hinder manual and automatic analysis
+T188	sub_activity 16830 16878	incorporated a new technique into its operations
+T189	reference_word 16820 16829	the actor
+R112	coreference Arg1:T189 Arg2:T183	
+R113	launch Arg1:T189 Arg2:T188	
+R114	goal Arg1:T188 Arg2:T187	
+T190	sub_activity 16977 16994	certificate files
+T191	sub_activity 16958 16969	executables
+R115	located Arg1:T191 Arg2:T190	
+T192	sub_activity 16935 16969	geo-fencing and hiding executables
+T193	reference_word 17121 17130	the group
+T194	government 17144 17154	government
+T195	industry 17159 17178	diplomatic entities
+T196	target_crowd 17144 17178	government and diplomatic entities
+T197	location 17182 17188	Turkey
+T198	location 17191 17199	Pakistan
+T199	location 17202 17212	Bangladesh
+T200	location 17215 17222	Ukraine
+T201	location 17227 17232	China
+R116	attack Arg1:T193 Arg2:T196	
+R117	located Arg1:T196 Arg2:T197	
+R118	located Arg1:T196 Arg2:T198	
+R119	located Arg1:T196 Arg2:T200	
+R120	located Arg1:T196 Arg2:T199	
+R121	located Arg1:T196 Arg2:T201	
+T202	time 10394 10407	November 2019
+T203	threatActor_name 10327 10334	Lazarus
+T204	industry 10360 10384	Italian security company
+T205	company 10385 10390	Telsy
+T206	industry 10486 10511	cryptocurrency businesses
+R122	part_of Arg1:T205 Arg2:T204	
+T207	sub_activity 10327 10343	Lazarus campaign
+R123	find Arg1:T205 Arg2:T207	
+R124	first_found_time Arg1:T207 Arg2:T202	
+R125	attack Arg1:T203 Arg2:T206	
+T208	company 10539 10544	Telsy
+T209	time 10610 10618	mid-2018
+T210	sub_activity 10558 10580	first stage downloader
+R126	find Arg1:T208 Arg2:T210	
+R127	first_found_time Arg1:T210 Arg2:T209	
+T211	malware 10676 10686	Manuscrypt
+T212	sub_activity 10722 10753	deploying two types of payloads
+T213	threatActor_name 10712 10719	Lazarus
+T214	malware 10665 10686	variant of Manuscrypt
+R128	part_of Arg1:T214 Arg2:T211	
+R129	use Arg1:T213 Arg2:T214	
+R130	launch Arg1:T214 Arg2:T212	
+T215	tool 10783 10800	Ultra VNC program
+T216	malware 10823 10843	multi-stage backdoor
+T217	threatActor_name 10909 10916	Lazarus
+T218	malware 10962 10972	Manuscrypt
+T219	malware 10962 10980	Manuscrypt variant
+R131	part_of Arg1:T219 Arg2:T218	
+R132	use Arg1:T217 Arg2:T219	
+T220	threatActor_name 11035 11042	Lazarus
+T221	industry 11058 11083	cryptocurrency businesses
+T222	location 11087 11093	Cyprus
+T223	location 11100 11102	US
+T224	location 11105 11111	Taiwan
+T225	location 11116 11125	Hong Kong
+T226	time 11164 11181	beginning of 2020
+R133	attack Arg1:T220 Arg2:T221	
+R134	located Arg1:T221 Arg2:T222	
+R135	located Arg1:T221 Arg2:T223	
+R136	located Arg1:T221 Arg2:T224	
+R137	located Arg1:T221 Arg2:T225	
+R138	occur_time Arg1:T220 Arg2:T226	
+T227	threatActor_name 11184 11191	Kimsuky
+T228	time 11231 11235	2013
+T229	time 11267 11271	2019
+R139	first_found_time Arg1:T227 Arg2:T228	
+R140	occur_time Arg1:T227 Arg2:T229	
+T230	time 11277 11285	December
+T231	company 11288 11297	Microsoft
+T232	tool 11308 11318	50 domains
+T233	sub_activity 11298 11318	took down 50 domains
+T234	reference_word 11327 11336	the group
+T235	sub_activity 11341 11378	filed a lawsuit against the attackers
+R141	launch Arg1:T231 Arg2:T233	
+R142	occur_time Arg1:T233 Arg2:T230	
+R143	launch Arg1:T231 Arg2:T235	
+R144	use Arg1:T234 Arg2:T232	
+R145	coreference Arg1:T234 Arg2:T227	
+T236	person 11526 11531	actor
+R146	part_of Arg1:T236 Arg2:T234	
+T237	sub_activity 11539 11586	decoy image themed around New Year ’s greetings
+T238	sample_function 11670 11687	steal information
+R147	use Arg1:T236 Arg2:T237	
+R148	goal Arg1:T237 Arg2:T238	
+T239	time 11731 11745	end of January
+T240	tool 11798 11815	Internet Explorer
+T241	vulnerability_cve 11832 11845	CVE-2019-1367
+T242	sub_activity 11798 11829	Internet Explorer vulnerability
+R149	part_of Arg1:T241 Arg2:T242	
+R150	first_found_time Arg1:T241 Arg2:T239	
+T243	attack_activity 13113 13123	FunnyDream
+T244	time 13154 13162	mid-2018
+T245	industry 13175 13196	high-profile entities
+T246	location 13200 13208	Malaysia
+T247	location 13211 13217	Taiwan
+T248	location 13226 13237	Philippines
+T249	target_crowd 13249 13268	majority of victims
+T250	location 13272 13279	Vietnam
+T251	attack_activity 13325 13339	wider campaign
+T252	government 13384 13395	governments
+T253	industry 13415 13436	foreign organizations
+T254	location 13455 13469	Southeast Asia
+R151	first_found_time Arg1:T243 Arg2:T244	
+R152	attack Arg1:T243 Arg2:T245	
+R153	located Arg1:T245 Arg2:T246	
+R154	located Arg1:T245 Arg2:T247	
+R155	located Arg1:T245 Arg2:T248	
+R156	attack Arg1:T243 Arg2:T249	
+R157	located Arg1:T249 Arg2:T250	
+R158	part_of Arg1:T243 Arg2:T251	
+R159	attack Arg1:T251 Arg2:T252	
+R160	attack Arg1:T251 Arg2:T253	
+R161	located Arg1:T252 Arg2:T254	
+R162	located Arg1:T253 Arg2:T254	
+T255	tool 13535 13537	C2
+T256	malware 13488 13496	backdoor
+T257	sub_activity 13497 13537	downloads and uploads files from/to a C2
+T258	sub_activity 13540 13557	executes commands
+T259	sub_activity 13562 13580	runs new processes
+T260	person 13476 13484	attacker
+R163	part_of Arg1:T256 Arg2:T260	
+R164	launch Arg1:T256 Arg2:T257	
+R165	launch Arg1:T256 Arg2:T258	
+R166	launch Arg1:T256 Arg2:T259	
+T261	sub_activity 13605 13625	collects information
+T262	sub_activity 13666 13688	delivered to new hosts
+T263	sub_activity 13697 13723	remote execution utilities
+T264	reference_word 13597 13599	It
+R167	coreference Arg1:T264 Arg2:T256	
+R168	launch Arg1:T264 Arg2:T261	
+R169	use Arg1:T264 Arg2:T263	
+R170	launch Arg1:T263 Arg2:T262	
+T265	tool 13752 13755	RTL
+T266	malware 13752 13764	RTL backdoor
+T267	malware 13769 13785	Chinoxy backdoor
+T268	malware 13777 13785	backdoor
+R171	part_of Arg1:T267 Arg2:T268	
+T269	reference_word 13726 13738	The attacker
+R172	coreference Arg1:T269 Arg2:T260	
+R173	use Arg1:T269 Arg2:T266	
+R174	use Arg1:T269 Arg2:T267	
+T270	tool 13792 13794	C2
+T271	tool 13792 13809	C2 infrastructure
+T272	time 13832 13840	mid-2018
+T273	malware 13878 13898	FFRAT malware family
+R175	occur_time Arg1:T271 Arg2:T272	
+T274	threatActor_name 14904 14918	Roaming Mantis
+T275	time 14970 14974	2017
+T276	tool 14990 14993	SMS
+T277	sub_activity 14997 15038	distribute its malware to Android devices
+T278	location 15048 15059	South Korea
+T279	OS_name 15023 15030	Android
+T280	tool 15023 15038	Android devices
+R176	first_found_time Arg1:T274 Arg2:T275	
+R177	use Arg1:T274 Arg2:T276	
+R178	goal Arg1:T276 Arg2:T277	
+R179	located Arg1:T280 Arg2:T278	
+T281	reference_word 15088 15097	the group
+T282	OS_name 15175 15178	iOS
+T283	OS_name 15190 15197	Android
+T284	target_crowd 15209 15230	mining cryptocurrency
+R180	coreference Arg1:T281 Arg2:T274	
+R181	attack Arg1:T281 Arg2:T282	
+R182	attack Arg1:T281 Arg2:T283	
+R183	attack Arg1:T281 Arg2:T284	
+T285	person 15237 15242	actor
+R184	part_of Arg1:T285 Arg2:T281	
+T286	sub_activity 15248 15274	added new malware families
+T287	malware 15287 15294	Fakecop
+T288	malware 15299 15306	Wroba.j
+T289	tool 15352 15360	SMiShing
+T290	OS_name 15367 15374	Android
+T291	sample_function 15367 15395	Android malware distribution
+R185	launch Arg1:T285 Arg2:T286	
+R186	use Arg1:T285 Arg2:T289	
+R187	goal Arg1:T289 Arg2:T291	
+T292	location 15536 15541	Japan
+T293	location 15544 15550	Taiwan
+T294	location 15569 15575	Russia
+T295	location 15553 15564	South Korea
+T296	reference_word 15419 15421	it
+R188	coreference Arg1:T296 Arg2:T281	
+T297	sub_activity 15422 15461	distributed malicious APKs masquerading
+R189	launch Arg1:T296 Arg2:T297	
+T298	target_crowd 15505 15523	targeted countries
+R190	located Arg1:T298 Arg2:T292	
+R191	located Arg1:T298 Arg2:T293	
+R192	located Arg1:T298 Arg2:T295	
+R193	located Arg1:T298 Arg2:T294	
+T299	sub_activity 15486 15523	customized for the targeted countries
+R194	launch Arg1:T296 Arg2:T299	
+T300	attack_activity 14040 14059	Operation AppleJeus
+T301	threatActor_name 14101 14108	Lazarus
+T302	OS_name 14149 14154	macOS
+R195	part_of Arg1:T300 Arg2:T301	
+T303	target_crowd 14149 14162	macOS targets
+T304	person 14134 14139	actor
+T305	time 14169 14176	January
+T306	reference_word 14228 14237	the group
+T307	OS_name 14271 14276	macOS
+T308	tool 14292 14316	authentication mechanism
+T309	malware 14262 14284	homemade macOS malware
+T310	sub_activity 14330 14360	deliver the next-stage payload
+T311	OS_name 14443 14450	Windows
+T312	reference_word 14461 14470	the group
+T313	sub_activity 14475 14519	elaborated a multi-stage infection procedure
+T314	sub_activity 14524 14563	significantly changed the final payload
+T315	attack_goal 14436 14458	attack Windows victims
+T316	threatActor_name 14582 14589	Lazarus
+T317	attack_activity 14648 14667	Operation AppleJeus
+T318	person 14748 14755	victims
+T319	location 14763 14765	UK
+T320	location 14768 14774	Poland
+T321	location 14777 14783	Russia
+T322	location 14788 14793	China
+T323	industry 14873 14901	cryptocurrency organizations
+R196	located Arg1:T318 Arg2:T319	
+R197	located Arg1:T318 Arg2:T320	
+R198	located Arg1:T318 Arg2:T321	
+R199	located Arg1:T318 Arg2:T322	
+R200	launch Arg1:T312 Arg2:T313	
+R201	launch Arg1:T312 Arg2:T314	
+R202	goal Arg1:T312 Arg2:T315	
+R203	use Arg1:T306 Arg2:T309	
+R204	use Arg1:T306 Arg2:T308	
+R205	goal Arg1:T308 Arg2:T310	
+R206	first_found_time Arg1:T306 Arg2:T305	
+R207	part_of Arg1:T304 Arg2:T301	
+R208	attack Arg1:T304 Arg2:T303	
+T324	time 12667 12672	March
+T325	company 12692 12698	Google
+T326	person 12675 12686	researchers
+T327	person 12724 12731	hackers
+T328	vul_aliases 12742 12751	zero-days
+T329	person 12762 12814	North Koreans and North Korean-focused professionals
+T330	time 12818 12822	2019
+T331	reference_word 12825 12834	The group
+T332	tool 12854 12871	Internet Explorer
+T333	tool 12874 12880	Chrome
+T334	OS_name 12887 12894	Windows
+T335	sub_activity 12921 12950	carried malicious attachments
+T336	sub_activity 12954 12978	links to malicious sites
+T337	attack_activity 12992 13013	watering-hole attacks
+T338	tool 13074 13076	IE
+T339	threatActor_name 13101 13110	DarkHotel
+T340	OS_name 13088 13095	Windows
+R209	part_of Arg1:T326 Arg2:T325	
+R210	use Arg1:T327 Arg2:T328	
+R211	attack Arg1:T328 Arg2:T329	
+R212	occur_time Arg1:T327 Arg2:T330	
+R213	coreference Arg1:T331 Arg2:T327	
+T341	attack_activity 12900 12915	phishing emails
+T342	sub_activity 12845 12850	flaws
+R214	use Arg1:T331 Arg2:T342	
+R215	located Arg1:T342 Arg2:T332	
+R216	located Arg1:T342 Arg2:T333	
+R217	located Arg1:T342 Arg2:T334	
+R218	launch Arg1:T342 Arg2:T341	
+R219	part_of Arg1:T335 Arg2:T341	
+R220	part_of Arg1:T336 Arg2:T341	
+R221	part_of Arg1:T337 Arg2:T341	
+T343	sub_activity 11767 11783	malicious script
+R222	use Arg1:T343 Arg2:T242	
+T344	threatActor_name 11951 11960	DarkHotel
+T345	time 12015 12019	2018
+T346	reference_word 11972 11985	this campaign
+R223	coreference Arg1:T346 Arg2:T343	
+R224	launch Arg1:T344 Arg2:T346	
+R225	release_time Arg1:T346 Arg2:T345	
+T347	threatActor_name 12039 12048	DarkHotel
+T348	sub_activity 12059 12087	multi-stage binary infection
+R226	use Arg1:T347 Arg2:T348	
+T349	malware 12100 12119	home-brewed malware
+R227	use Arg1:T348 Arg2:T349	
+T350	sub_activity 12144 12164	creates a downloader
+T351	sub_activity 12154 12164	downloader
+T352	sub_activity 12171 12197	fetches another downloader
+T353	sample_function 12201 12227	collect system information
+T354	sub_activity 12232 12256	fetch the final backdoor
+T355	threatActor_name 12287 12296	DarkHotel
+T356	tool 12326 12330	TTPs
+T357	person 12361 12366	actor
+T358	sub_activity 12372 12394	diverse infrastructure
+T359	sub_activity 12398 12410	host malware
+T360	sub_activity 12418 12442	control infected victims
+T361	target_crowd 12435 12442	victims
+T362	tool 12457 12479	compromised web server
+T363	tool 12484 12510	commercial hosting service
+T364	tool 12515 12535	free hosting service
+T365	tool 12542 12574	free source code tracking system
+T366	industry 12610 12619	companies
+T367	location 12623 12634	South Korea
+T368	location 12639 12644	Japan
+R228	launch Arg1:T351 Arg2:T352	
+R229	goal Arg1:T352 Arg2:T353	
+R230	launch Arg1:T351 Arg2:T354	
+R231	use Arg1:T355 Arg2:T356	
+R232	part_of Arg1:T357 Arg2:T355	
+R233	use Arg1:T357 Arg2:T358	
+R234	goal Arg1:T358 Arg2:T359	
+R235	goal Arg1:T358 Arg2:T360	
+R236	part_of Arg1:T362 Arg2:T361	
+R237	part_of Arg1:T363 Arg2:T361	
+R238	part_of Arg1:T364 Arg2:T361	
+R239	part_of Arg1:T365 Arg2:T361	
+R240	attack Arg1:T357 Arg2:T366	
+R241	located Arg1:T366 Arg2:T367	
+R242	located Arg1:T366 Arg2:T368	
+T369	person 4796 4805	attackers
+T370	sub_activity 4806 4830	sent malicious documents
+T371	tool 4836 4861	remote template injection
+T372	sub_activity 4920 4936	malicious loader
+T373	tool 4973 4975	C2
+T374	sub_activity 4979 5006	download additional samples
+T375	sub_activity 4942 4975	periodically contacts a remote C2
+T376	sub_activity 4911 4936	deploy a malicious loader
+T377	threatActor_name 5051 5060	Gamaredon
+T378	sub_activity 5405 5425	second stage payload
+T379	sample_function 5440 5462	spreading capabilities
+T380	malware 5480 5497	Aversome infector
+R243	part_of Arg1:T380 Arg2:T378	
+T381	sample_function 5547 5576	maintain a strong persistence
+T382	sample_function 5606 5620	move laterally
+T383	company 5634 5643	Microsoft
+T384	tool 5634 5648	Microsoft Word
+T385	tool 5653 5658	Excel
+R244	part_of Arg1:T384 Arg2:T383	
+R245	part_of Arg1:T385 Arg2:T384	
+R246	goal Arg1:T380 Arg2:T381	
+R247	goal Arg1:T380 Arg2:T382	
+R248	goal Arg1:T380 Arg2:T379	
+T386	tool 5348 5356	UltraVNC
+R249	part_of Arg1:T369 Arg2:T66	
+R250	use Arg1:T369 Arg2:T371	
+R251	launch Arg1:T369 Arg2:T370	
+R252	goal Arg1:T370 Arg2:T376	
+R253	launch Arg1:T372 Arg2:T375	
+R254	goal Arg1:T375 Arg2:T374	
+T387	threatActor_name 4022 4028	Sofacy
+T388	tool 3977 3981	SPLM
+T389	malware 4142 4154	SPLM modules
+T390	threatActor_name 4157 4163	Sofacy
+T391	malware 4178 4190	.NET XTUNNEL
+T392	malware 4178 4217	.NET XTUNNEL variants and their loaders
+R255	part_of Arg1:T392 Arg2:T391	
+T393	malware 4231 4238	XTUNNEL
+T394	malware 4293 4300	XTUNNEL
+T395	program_language 4353 4355	C#
+T396	threatActor_name 4377 4383	Sofacy
+T397	malware 4415 4422	Zebrocy
+T398	malware 4384 4391	XTunnel
+R256	use Arg1:T390 Arg2:T392	
+R257	part_of Arg1:T398 Arg2:T396	
+T399	time 7300 7304	2019
+T400	threatActor_name 7768 7778	Holy Water
+T401	person 7792 7797	actor
+T402	tool 7933 7939	Sojson
+T403	tool 7933 7951	Sojson obfuscation
+T404	tool 7954 7968	NSIS installer
+T405	program_language 7971 7977	Python
+T406	tool 7980 7996	open-source code
+T407	tool 7999 8018	GitHub distribution
+T408	program_language 8021 8023	Go
+T409	tool 8046 8076	Google Drive-based C2 channels
+R258	use Arg1:T401 Arg2:T403	
+R259	use Arg1:T401 Arg2:T404	
+R260	use Arg1:T401 Arg2:T405	
+R261	use Arg1:T401 Arg2:T406	
+R262	use Arg1:T401 Arg2:T408	
+R263	use Arg1:T401 Arg2:T407	
+R264	use Arg1:T401 Arg2:T409	
+T410	time 8768 8773	March
+T411	time 9417 9430	December 2019
+T412	person 7342 7347	actor
+T413	sub_activity 7360 7384	deploying watering holes
+T414	sub_activity 7430 7486	fooling victims into installing fake Adobe Flash updates
+R265	launch Arg1:T412 Arg2:T413	
+T415	tool 7499 7516	GitHub repository
+T416	sub_activity 7462 7486	fake Adobe Flash updates
+R266	located Arg1:T416 Arg2:T415	
+R267	goal Arg1:T413 Arg2:T414	
+T417	location 7519 7528	Kaspersky
+T418	tool 7600 7606	GitHub
+T419	counter_measure 7552 7606	coordinating a takedown of this repository with GitHub
+T420	attack_activity 7660 7687	new round of watering holes
+T421	security_team 9433 9442	Kaspersky
+T422	tool 9433 9468	Kaspersky Threat Attribution Engine
+T423	malware 9499 9515	Zerocleare wiper
+T424	industry 9567 9580	energy sector
+T425	location 9592 9604	Saudi Arabia
+T426	malware 9673 9680	Dustman
+R268	coreference Arg1:T426 Arg2:T434	
+T427	malware 9700 9710	Zerocleare
+T428	location 9885 9897	Saudi Arabia
+T429	industry 9901 9914	energy sector
+T430	malware 10009 10016	Dustman
+T431	tool 9993 10001	PDB file
+T432	time 10290 10294	2012
+T433	malware 10245 10252	Shamoon
+T434	malware 9480 9515	new variant of the Zerocleare wiper
+R269	part_of Arg1:T434 Arg2:T423	
+R270	find Arg1:T422 Arg2:T434	
+R271	first_found_time Arg1:T434 Arg2:T411	
+R272	attack Arg1:T426 Arg2:T429	
+R273	located Arg1:T429 Arg2:T428	
+R274	release_time Arg1:T433 Arg2:T432	
+T435	malware 8824 8829	Milum
+T436	malware 8834 8840	Trojan
+T437	sample_function 8858 8883	remote control of devices
+T438	industry 8939 8956	industrial sector
+T439	threatActor_name 9016 9028	WildPressure
+T440	time 9053 9064	August 2019
+T441	malware 9109 9114	Milum
+T442	reference_word 9209 9220	The malware
+T443	person 9230 9239	attackers
+T444	sub_activity 9245 9281	remote control over infected devices
+T445	sub_activity 9291 9325	downloading and executing commands
+T446	sub_activity 9328 9367	collecting and exfiltrating information
+T447	sub_activity 9372 9406	installing upgrades in the malware
+R275	first_found_time Arg1:T435 Arg2:T410	
+R276	part_of Arg1:T435 Arg2:T436	
+R277	goal Arg1:T435 Arg2:T437	
+R278	attack Arg1:T435 Arg2:T438	
+R279	first_found_time Arg1:T439 Arg2:T440	
+T448	malware 8450 8458	backdoor
+T449	malware 12248 12256	backdoor
+T450	malware 13948 13956	backdoor
+R280	coreference Arg1:T442 Arg2:T441	
+R281	use Arg1:T443 Arg2:T442	
+R282	launch Arg1:T443 Arg2:T444	
+R283	launch Arg1:T443 Arg2:T445	
+R284	launch Arg1:T443 Arg2:T446	
+R285	launch Arg1:T443 Arg2:T447	
+T451	time 8187 8200	February 2020
+T452	person 8153 8160	victims
+T453	location 8164 8170	Turkey
+T454	attack_activity 8108 8142	ongoing data exfiltration campaign
+T455	threatActor_name 8209 8219	StrongPity
+T456	tool 8223 8227	TTPs
+T457	threatActor_name 8410 8420	StrongPity
+T458	sub_activity 8421 8458	updated its latest signature backdoor
+T459	malware 8467 8478	StrongPity2
+T460	tool 8538 8544	Office
+T461	tool 8549 8552	PDF
+R286	part_of Arg1:T459 Arg2:T448	
+T462	sub_activity 8538 8562	Office and PDF documents
+T463	tool 8575 8606	Dagesh Pro Word Processor files
+T465	tool 8633 8647	RiverCAD files
+T464	tool 8691 8707	plain-text files
+T466	tool 8730 8749	GPG encrypted files
+R287	attack Arg1:T454 Arg2:T452	
+R288	located Arg1:T452 Arg2:T453	
+R289	occur_time Arg1:T454 Arg2:T451	
+R290	part_of Arg1:T456 Arg2:T455	
+R291	launch Arg1:T457 Arg2:T458	
+T467	sub_activity 8485 8501	added more files
+R292	launch Arg1:T457 Arg2:T467	
+R293	part_of Arg1:T463 Arg2:T462	
+R294	part_of Arg1:T465 Arg2:T462	
+R295	part_of Arg1:T464 Arg2:T462	
+R296	part_of Arg1:T466 Arg2:T462	

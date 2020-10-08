@@ -1,0 +1,57 @@
+APT28 : AT THE CENTER OF THE STORM .
+Release_Time : 2017-01 .
+Report_URL : https://www2.fireeye.com/rs/848-DID-242/images/APT28-Center-of-Storm-2017.pdf .
+The Democratic National Committee ’s ( DNC ) June 2016 announcement attributing its network breach to the Russian Government triggered an international debate over Russia ’s sponsorship of information operations against the U.S. .
+At issue is the question of proof : did the Russian Government direct the group responsible for the breaches and related data leaks ?
+If so , is this simply a matter  of accepted state espionage , or did it cross a line ?
+Was the DNC breach part  of a concerted effort by the Russian Government to interfere with the U.S. presidential election?
+Unfortunately , we have failed to ask the most consequential question : how will Russia continue to employ a variety of methods , including hacks and leaks ,  to undermine the institutions , policies , and actors that the Russian Government perceives as constricting and condemning its forceful pursuit of its state aims ?
+Our visibility into the operations of APT28 - a group we believe the Russian Government sponsors - has given us insight into some of the government ’s  targets , as well as its objectives and the activities designed to further them .
+We have tracked and profiled this group through multiple investigations , endpoint and network detections , and continuous monitoring .
+Our visibility into APT28 ’s operations , which date to at least 2007 , has allowed us to understand the group ’s malware , operational changes , and motivations .
+This intelligence has been critical to protecting and informing our clients , exposing this threat , and strengthening  our confidence in attributing APT28 to the Russian Government .
+On December 29 , 2016 , the Department of Homeland Security ( DHS ) and Federal Bureau of Investigation ( FBI ) released a Joint Analysis Report confirming FireEye ’s long held public assessment that the Russian Government sponsors APT28 .
+Since at least 2007 , APT28 has engaged  in extensive operations in support of Russian strategic interests .
+The group , almost certainly compromised of a sophisticated and prolific set of developers and operators , has historically collected intelligence on defense and geopolitical issues .
+APT28 espionage activity has primarily targeted entities in the U.S. , Europe , and the countries of the former Soviet Union , including governments and militaries , defense attaches , media entities , and dissidents and figures opposed to the current Russian Government .
+Over the past two years , Russia appears to have increasingly leveraged APT28 to conduct information operations commensurate with broader strategic military doctrine .
+After compromising a victim organization , APT28 will steal internal data that is then leaked to further political narratives aligned with Russian interests .
+To date these have included  the conflict in Syria , NATO-Ukraine relations , the European Union refugee and migrant crisis , the 2016 Olympics and Paralympics Russian athlete doping scandal , public accusations regarding Russian state-sponsored hacking , and the 2016 U.S. presidential election .
+This report details our observations of APT28 ’s targeting , and our investigation into a related breach .
+We also provide an update on shifts in the group ’s tool development and use , and summarize the tactics APT28 employs to compromise its victims .
+In October 2014 , FireEye released APT28: A Window into Russia ’s Cyber Espionage Operations , and characterized APT28 ’s activity as aligning with the Russian Government ’s strategic intelligence requirements .
+While tracking APT28 , we noted the group ’s interest in foreign governments and militaries , particularly those of European and Eastern  European nations , as well as regional security organizations , such as the North Atlantic Treaty Organization ( NATO )  and the Organization for Security and Cooperation  in Europe ( OSCE ) , among others .
+Table 1 highlights  some recent examples of this activity .
+APT28 TARGETING OF POLITICAL ENTITIES AND INTRUSION ACTIVITY .
+OSCE NOVEMBER 2016 The OSCE confirmed that it had suffered an intrusion ,  which a Western intelligence service attributed to APT28 .
+Germany's Christian  Democratic Union ( CDU ) APRIL - MAY 2016 Researchers at Trend Micro observed APT28  establish a fake  CDU email server and launch phishing emails against CDU  members in an attempt to obtain their email credentials and access their accounts .
+Pussy Riot AUGUST 2015 APT28 targets Russian rockers and dissidents Pussy Riot via spear-phishing emails .
+NATO , Afghan Ministry  of Foreign Affairs , Pakistani Military JULY 2015 APT28 used two domains ( nato-news.com and bbc-news.org ) to host an Adobe Flash zero-day exploit to target NATO , the Afghan Ministry of Foreign Affairs , and the Pakistani military .
+German Bundestag  & Political Parties JUNE 2015 Germany ’s Federal Office for Security in Information Technology ( BSI ) announced that APT28 was likely responsible for the spear phishing emails sent to members of several German political parties .
+The head of Germany ’s domestic intelligence agency , Bundesamt für Verfassungsschutz ( BfV ) , also attributed the June 2015 compromise of the Bundestag ’s networks to APT28 .
+Kyrgyzstan Ministry  of Foreign Affairs OCTOBER 2014 THROUGH  SEPTEMBER 2015 FireEye iSight Intelligence identified changes made to domain name server ( DNS ) records that suggest that APT28 intercepted email traffic from the Kyrgyzstan Ministry of Foreign Affairs after maliciously modifying DNS records of the ministry ’s authoritative DNS servers .
+Polish Government & Power Exchange websites JUNE AND  SEPTEMBER 2014 APT28 employed “ Sedkit ” in conjunction with strategic web compromises to deliver “ Sofacy ” malware on Polish Government websites , and the websites of Polish energy company Power Exchange .
+Since 2014 , APT28 network activity has likely supported information operations designed to influence the domestic politics of foreign nations .
+Some of these operations have involved the disruption and defacement of websites , false flag operations using false hacktivist personas , and the theft of data that was later leaked publicly online .
+Table 2 highlights incidents in which victims suffered a compromise that FireEye iSIGHT Intelligence , other authorities , or the victims themselves later attributed to the group we track as APT28 .
+All of these operations have aimed to achieve a similar objective : securing a political outcome beneficial to Russia .
+APT28 NETWORK ACTIVITY HAS LIKELY SUPPORTED INFORMATION OPERATIONS .
+World Anti-Doping  Agency ( WADA ) SEPTEMBER 2016 On September 13 , WADA confirmed that APT28 had compromised its networks and accessed athlete medical data .
+On September 12 , 2016 , the “ Fancy Bears ’ Hack Team ” persona claimed to have compromised WADA and released athletes ’ medical records as “ proof of American athletes taking doping .
+U.S. Democratic National Committee ( DNC ) APRIL –  SEPTEMBER 2016 The DNC announced it had suffered a network compromise and that a subsequent investigation found evidence of two breaches , attributed to APT28 and APT29 .
+FireEye analyzed the malware found on DNC networks and determined that it was consistent with our previous observations of APT28 tools .
+In June 2016 , shortly after the DNC ’s announcement , the Guccifer 2.0 persona claimed responsibility for the DNC breach and leaked documents taken from the organization ’s network .
+Guccifer 2.0 continued to leak batches of DNC documents through September .
+John Podesta MARCH –  NOVEMBER 2016 Investigators found that John Podesta , Hillary Clinton ’s presidential campaign chairman , was one of thousands of individuals targeted in a mass phishing scheme using shortened URLs that security researchers attributed to APT28 .
+Throughout October and into early November , WikiLeaks published 34 batches of email correspondence stolen from John Podesta ’s personal email account .
+Correspondence of other individuals targeted in the same phishing campaign , including former Secretary of State Colin Powell and Clinton campaign staffer William Rinehart , were published on the  “ DC Leaks ” website .
+U.S. Democratic  Congressional Campaign Committee ( DCCC ) MARCH -  OCTOBER 2016 In July , the DCCC announced that it was investigating an ongoing “ cybersecurity incident ” that the FBI believed was linked to the compromise of the DNC .
+House Speaker Nancy Pelosi later confirmed that the DCCC had suffered a network compromise .
+Investigators indicated that the actors may have gained access to DCCC systems as early as March .
+In August , the Guccifer 2.0 persona contacted reporters covering U.S. House of Representative races to announce newly leaked documents from the DCCC pertaining to Democratic  candidates .
+From August to October , Guccifer 2.0 posted several additional installments of what appear to be internal DCCC documents on “ his ” WordPress site .
+TV5Monde FEBRUARY 2015 , APRIL 2015 In February , FireEye identified CORESHELL traffic beaconing from TV5Monde ’s network , confirming that APT28 had compromised TV5Monde ’s network .
+In April 2015 , alleged pro-ISIS hacktivist group CyberCaliphate defaced TV5Monde ’s websites and social media profiles and forced the company ’s 11 broadcast channels offline .
+FireEye identified overlaps between the domain registration details of CyberCaliphate ’s website and APT28 infrastructure .
+Ukrainian Central  Election Commission ( CEC ) MAY 2014 Ukrainian officials revealed that the investigation into the compromise of the CEC ’s internal network identified malware traced to APT28 .
+During the May 2014 Ukrainian presidential election , purported pro-Russian hacktivists CyberBerkut conducted a series of malicious activities against the CEC including a system compromise , data destruction , a data leak , a distributed denial-of-service ( DDoS ) attack , and an attempted defacement of the CEC website with fake election results .

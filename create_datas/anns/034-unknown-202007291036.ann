@@ -1,0 +1,142 @@
+T2	target_crowd 41 49	Diplomat
+T3	location 53 63	Uzbekistan
+R2	located Arg1:T2 Arg2:T3	
+T4	target_crowd 260 270	individual
+T6	location 307 317	Uzbekistan
+T7	location 321 326	China
+R3	located Arg1:T4 Arg2:T6	
+T8	email_evil 331 351	spear-phishing email
+T9	target_crowd 366 374	diplomat
+T10	government 382 389	Embassy
+T11	location 393 403	Uzbekistan
+T12	location 427 434	Beijing
+T13	location 437 442	China
+R4	located Arg1:T9 Arg2:T11	
+T14	vulnerability_cve 512 525	CVE-2012-0158
+T1	email_evil 12 32	Spear-Phishing Email
+T15	malware 0 11	NetTraveler
+R1	attack Arg1:T1 Arg2:T2	
+T16	malware 553 559	Trojan
+T17	malware 541 552	NetTraveler
+R5	part_of Arg1:T16 Arg2:T17	
+T18	person 484 490	actors
+R6	use Arg1:T18 Arg2:T14	
+T19	time 565 583	December 12 , 2015
+T20	email_evil 588 608	spear-phishing email
+T21	target_crowd 623 631	diplomat
+T22	government 639 646	Embassy
+T23	location 650 660	Uzbekistan
+R7	occur_time Arg1:T19 Arg2:T20	
+R8	located Arg1:T21 Arg2:T23	
+T24	location 765 772	Russian
+T25	government 773 789	Foreign Ministry
+T5	government 287 303	Foreign Ministry
+T26	government 850 853	CHS
+T27	government 907 910	SCO
+T28	sample_name 964 1003	2015.12.11_сроки СГГ 2015 в Уфе.doc.doc
+T29	location 1228 1231	Ufa
+T30	location 1266 1269	Ufa
+T31	location 1273 1279	Russia
+R9	part_of Arg1:T30 Arg2:T31	
+T32	government 1291 1294	SCO
+T33	government 1295 1300	BRICS
+T34	time 1311 1331	July 9 and 10 , 2015
+T35	government 1334 1337	SCO
+T36	government 1342 1347	BRICS
+T37	person 1541 1547	actors
+T38	vulnerability_cve 1569 1582	CVE-2012-0158
+T39	malware 1594 1612	NetTraveler Trojan
+R10	use Arg1:T37 Arg2:T38	
+T40	sample_name 1642 1681	2015.12.11_сроки СГГ 2015 в Уфе.doc.doc
+T41	tool 1723 1736	MNKit toolkit
+T42	vulnerability_cve 1750 1763	CVE-2012-0158
+T43	malware 1829 1835	trojan
+T44	malware 1845 1856	NetTraveler
+R11	part_of Arg1:T43 Arg2:T44	
+T45	malware 1905 1923	NetTraveler trojan
+T46	target_crowd 2078 2085	victims
+T47	person 2032 2038	actors
+R12	use Arg1:T47 Arg2:T45	
+T48	person 2215 2221	actors
+T49	security_team 2263 2270	Unit 42
+T50	sample_name 2397 2436	2015.12.11_сроки СГГ 2015 в Уфе.doc.doc
+T51	vulnerability_cve 2448 2461	CVE-2012-0158
+T52	sample_name 2485 2491	~$.doc
+T53	sample_name 2519 2527	DW20.exe
+T54	sample_name 2606 2614	DW20.exe
+T56	tool 2622 2649	self-extracting ( SFX ) RAR
+T57	sample_name 2695 2705	RasTls.exe
+T58	sample_name 2708 2718	rastls.dll
+T59	sample_name 2721 2737	Sycmentec.config
+T60	tool 2744 2751	SFX RAR
+T55	company 2866 2874	Symantec
+T61	sample_name 2899 2909	rastls.dll
+T62	sample_name 2917 2933	Setup=RasTls.exe
+T63	sample_name 2936 2944	TempMode
+T64	sample_name 2947 2955	Silent=1
+T65	sample_name 2958 2969	Overwrite=1
+T66	function 3039 3042	XOR
+T67	sample_name 2978 2994	Sycmentec.config
+T68	sample_name 3083 3093	rastls.dll
+T69	malware 3313 3331	NetTraveler Trojan
+T70	company 3443 3445	MS
+T71	OS_name 3446 3453	Windows
+T72	sha1 3530 3570	cce65a0b67674a313091a947506ceb91d30605ad
+T73	sha2 3577 3644	56 3b4e4d7a0b1185a45968d90ffe6346f4621116d14dbf88b5138040acc022c757
+T74	tool 3647 3653	ssdeep
+T75	encryption_algo 3658 3710	:jxKW1S8mWKFU7U9lYjhjXwVqTvS/G405:wCBmUw9lAhLWqW/G40
+T76	malware 4018 4036	NetTraveler Trojan
+T77	malware 4109 4120	NetTraveler
+T78	sample_name 4225 4235	config.dat
+T79	malware 4259 4270	NetTraveler
+T80	sample_name 4415 4426	svchost.exe
+T81	sample_name 4736 4752	Sycmentec.config
+T82	sample_name 4789 4799	config.dat
+T83	sample_name 4836 4865	c:\windows\system\CERTAPL.DLL
+T84	malware 4870 4880	NetTravele
+T85	sample_name 4906 4916	rastls.dll
+T86	malware 4972 4983	NetTraveler
+T88	url 5032 5035	URL
+T89	sample_name 5057 5111	http://192.168.3.201/downloader2013/asp/downloader.asp
+T90	security_team 5599 5606	Unit 42
+T91	tool 8276 8284	WildFire
+T92	security_team 7247 7261	Kaspersky Labs
+T93	time 7265 7269	2011
+T94	malware 7273 7284	NetTraveler
+T95	IP 7167 7180	98.126.38.107
+T96	domain 7129 7144	voennovosti.com
+T97	malware 7037 7048	NetTraveler
+T98	malware 6384 6395	NetTraveler
+T99	malware 6283 6289	Trojan
+T100	sample_name 5697 5708	CERTAPL.DLL
+T101	malware 5485 5491	Trojan
+T102	function 5497 5521	GetPrivateProfileStringA
+R13	use Arg1:T101 Arg2:T102	
+T103	sample_name 5396 5412	Sycmentec.config
+T104	sample_name 5272 5283	CERTAPL.DLL
+T105	sample_name 5229 5239	config.dat
+T106	malware 5126 5137	NetTraveler
+T107	url 6021 6024	URL
+T108	encryption_algo 6090 6103	DES algorithm
+T109	tool 6234 6243	C2 server
+T110	tool 6432 6441	C2 server
+T111	tool 7303 7313	C2 servers
+T112	sample_name 6866 6881	%TEMP%\Temp.bmp
+T113	sample_name 6971 6985	%TEMP%\tmp.bmp
+T114	malware 6746 6757	NetTraveler
+T115	url 6566 6614	%APPDATA%\cert2013.dat and %STARTUP%\consent.lnk
+T116	person 7451 7457	actors
+T117	malware 7465 7476	NetTraveler
+T118	target_crowd 7515 7524	diplomats
+T119	malware 7479 7490	NetTraveler
+R14	attack Arg1:T119 Arg2:T118	
+T120	government 7527 7536	embassies
+T121	government 7541 7564	government institutions
+T122	malware 7687 7698	NetTraveler
+T123	target_crowd 7804 7811	victims
+T124	malware 8306 8317	NetTraveler
+T125	malware 8372 8383	NetTraveler
+T126	tool 5044 5053	C2 server
+T127	tool 5318 5327	C2 server
+T128	reference_word 715 720	email
+R15	coreference Arg1:T128 Arg2:T20	

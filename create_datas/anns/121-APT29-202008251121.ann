@@ -1,0 +1,127 @@
+T1	threatActor_name 0 5	APT29
+T2	malware 12 31	HAMMERTOSS backdoor
+T3	company 68 75	Twitter
+T4	string 156 165	234Bob234
+T5	company 215 222	Twitter
+T6	reference_word 233 249	the threat group
+R2	coreference Arg1:T6 Arg2:T1	
+T7	malware 290 300	HAMMERTOSS
+T8	malware 364 374	HAMMERTOSS
+T9	target_crowd 397 412	Twitter account
+T10	company 397 404	Twitter
+R3	attack Arg1:T8 Arg2:T9	
+T12	tool 442 445	URL
+T13	malware 524 534	HAMMERTOSS
+T14	tool 546 549	URL
+R4	use Arg1:T13 Arg2:T14	
+T15	malware 668 678	HAMMERTOSS
+T16	malware 725 735	HAMMERTOSS
+T17	reference_word 790 801	the malware
+T18	tool 851 861	PowerShell
+R5	use Arg1:T17 Arg2:T18	
+T19	malware 908 918	HAMMERTOSS
+T11	company 956 963	Twitter
+T20	reference_word 980 991	the malware
+T21	company 1012 1019	Twitter
+T22	tool 956 971	Twitter handles
+T23	tool 1012 1026	Twitter handle
+T24	tool 68 82	Twitter handle
+R1	goal Arg1:T2 Arg2:T24	
+R6	part_of Arg1:T9 Arg2:T10	
+R7	part_of Arg1:T24 Arg2:T3	
+R8	part_of Arg1:T22 Arg2:T11	
+R9	part_of Arg1:T23 Arg2:T21	
+T25	tool 1049 1063	Twitter handle
+T26	company 1049 1056	Twitter
+R10	part_of Arg1:T25 Arg2:T26	
+T27	company 1093 1100	Twitter
+T28	security_team 1129 1136	FireEye
+T29	tool 1140 1154	Twitter handle
+R11	part_of Arg1:T29 Arg2:T28	
+T30	company 1140 1147	Twitter
+R12	part_of Arg1:T29 Arg2:T30	
+T31	string 1157 1165	@FireEye
+T32	tool 1174 1177	URL
+T33	url 1180 1212	https://www.twitter.com/ fireeye
+R13	part_of Arg1:T33 Arg2:T30	
+T34	malware 1219 1229	HAMMERTOSS
+T35	sample_name 1265 1268	Bob
+T36	encryption_algo 1304 1309	CRC32
+R14	use Arg1:T34 Arg2:T36	
+R15	part_of Arg1:T35 Arg2:T34	
+T37	string 1365 1374	1abBob52b
+T38	tool 1398 1401	URL
+T39	url 1404 1437	https://www.twitter.com/1abBob52b
+R16	part_of Arg1:T39 Arg2:T38	
+R17	part_of Arg1:T33 Arg2:T32	
+T40	malware 1440 1450	HAMMERTOSS
+T41	tool 1462 1473	Twitter URL
+T42	company 1462 1469	Twitter
+R18	part_of Arg1:T41 Arg2:T42	
+T43	tool 1495 1509	Twitter handle
+T44	company 1495 1502	Twitter
+R19	part_of Arg1:T43 Arg2:T44	
+R20	use Arg1:T40 Arg2:T43	
+T45	time 1530 1537	July 29
+T46	string 1565 1574	1abBob52b
+T47	url 1577 1606	https://twitter.com/1abBob52b
+T48	reference_word 1540 1542	it
+R21	coreference Arg1:T48 Arg2:T40	
+R22	occur_time Arg1:T48 Arg2:T45	
+T49	person 1611 1628	APT29 ’s operator
+T50	reference_word 1639 1649	the handle
+R23	part_of Arg1:T50 Arg2:T49	
+T51	malware 1652 1662	HAMMERTOSS
+T52	company 1675 1682	Twitter
+T53	person 1772 1789	APT29 ’s operator
+T54	malware 1821 1831	HAMMERTOSS
+T55	person 1886 1903	APT29 ’s operator
+T56	tool 1944 1958	Twitter handle
+T57	company 1944 1951	Twitter
+R24	part_of Arg1:T56 Arg2:T57	
+T58	malware 2025 2035	HAMMERTOSS
+T59	company 2068 2075	Twitter
+T60	reference_word 2078 2089	The malware
+T61	tool 2135 2149	Twitter handle
+T62	company 2135 2142	Twitter
+R25	part_of Arg1:T61 Arg2:T62	
+R26	use Arg1:T60 Arg2:T61	
+T63	string 2251 2254	Bob
+T64	encryption_algo 2290 2295	CRC32
+T65	string 2339 2348	1abBob52b
+T66	tool 2366 2369	URL
+T67	url 2372 2401	https://twitter.com/1abBob52b
+T68	malware 2409 2419	HAMMERTOSS
+T69	tool 2451 2465	Twitter handle
+R27	use Arg1:T68 Arg2:T69	
+T70	company 2451 2458	Twitter
+R28	part_of Arg1:T69 Arg2:T70	
+T71	threatActor_name 2477 2482	APT29
+T72	tool 2558 2572	Twitter handle
+T73	tool 2623 2626	URL
+T74	reference_word 2634 2645	the malware
+R29	use Arg1:T71 Arg2:T72	
+T75	company 2558 2565	Twitter
+R30	part_of Arg1:T72 Arg2:T75	
+R31	use Arg1:T71 Arg2:T73	
+T76	tool 2725 2728	URL
+T77	malware 2757 2767	HAMMERTOSS
+T78	threatActor_name 2845 2850	APT29
+T79	malware 2872 2882	HAMMERTOSS
+R32	part_of Arg1:T79 Arg2:T78	
+T80	tool 2954 2968	Twitter handle
+T81	company 2954 2961	Twitter
+R33	part_of Arg1:T80 Arg2:T81	
+T82	reference_word 3027 3038	the malware
+T83	person 3169 3186	APT29 ’s operator
+T84	tool 3250 3253	URL
+R34	use Arg1:T83 Arg2:T84	
+T85	tool 3268 3271	URL
+T86	malware 3314 3324	HAMMERTOSS
+T87	tool 3373 3376	URL
+R35	use Arg1:T86 Arg2:T87	
+T88	tool 3481 3487	GitHub
+T89	tool 3474 3477	URL
+R36	part_of Arg1:T89 Arg2:T88	
+T90	malware 3560 3570	HAMMERTOSS
+T91	string 3758 3763	docto

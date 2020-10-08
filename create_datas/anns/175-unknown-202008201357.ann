@@ -1,0 +1,182 @@
+T2	time 130 152	second quarter of 2017
+T1	security_team 155 201	Kaspersky ’s Global Research and Analysis Team
+T3	security_team 204 209	GReAT
+R1	coreference Arg1:T3 Arg2:T1	
+R2	release_time Arg1:T1 Arg2:T2	
+T4	time 481 485	2018
+T5	url 974 1000	intelreports@kaspersky.com
+T6	time 1176 1180	2018
+T7	vul_aliases 1350 1366	Meltdown/Spectre
+T8	attack_goal 1405 1434	CPU architectures and vendors
+R3	attack Arg1:T7 Arg2:T8	
+T9	attack_goal 1521 1525	PoCs
+T10	vulnerability_cve 5795 5809	CVE-2017-11882
+T11	threatActor_name 6921 6926	Turla
+T12	threatActor_aliases 6929 6934	Snake
+T13	threatActor_aliases 6937 6945	Uroburos
+R4	coreference Arg1:T12 Arg2:T11	
+R5	coreference Arg1:T13 Arg2:T11	
+T14	vulnerability_cve 8251 8264	CVE-2018-4878
+T15	vulnerability_cve 9286 9300	CVE-2017-11882
+T16	url 12968 12994	intelreports@kasperksy.com
+T17	vul_aliases 1797 1817	Meltdown and Spectre
+T18	government 2439 2456	the US Government
+T19	threatActor_name 2411 2421	CloudAtlas
+T20	threatActor_name 2401 2406	Regin
+T21	malware 2614 2623	Slingshot
+T22	attack_goal 2675 2691	Mikrotik routers
+R6	attack Arg1:T21 Arg2:T22	
+T23	attack_goal 2816 2866	Mikrotik used for the remote management of devices
+R7	goal Arg1:T21 Arg2:T23	
+T24	vul_aliases 2962 2972	Chimay-red
+T25	security_team 3011 3019	Wikileak
+T26	security_team 2985 2993	Mikrotek
+R8	attack Arg1:T24 Arg2:T26	
+R9	find Arg1:T25 Arg2:T24	
+T27	time 3090 3094	2018
+T28	malware 3073 3079	Hajime
+T29	vulnerability_cve 3344 3357	CVE-2018-7445
+T30	security_team 3196 3204	Mikrotik
+T31	counter_measure 3165 3192	the vulnerability was fixed
+R10	use Arg1:T30 Arg2:T31	
+T32	security_team 3299 3307	Mikrotik
+T33	malware 3647 3664	Olympic Destroyer
+T34	time 3363 3373	March 2018
+R11	find Arg1:T32 Arg2:T29	
+R12	release_time Arg1:T32 Arg2:T34	
+R13	occur_time Arg1:T28 Arg2:T27	
+T35	time 3617 3638	first quarter of 2018
+R14	occur_time Arg1:T33 Arg2:T35	
+T36	industry 3718 3758	Pyeongchang Olympic Games ’ organization
+T37	industry 3768 3786	Olympic facilities
+R15	attack Arg1:T33 Arg2:T36	
+R16	attack Arg1:T33 Arg2:T37	
+T38	time 7523 7535	January 2018
+T39	time 9080 9092	January 2018
+T40	time 10392 10433	the end of 2017 and the beginning of 2018
+T41	time 10536 10540	2014
+T42	time 6012 6016	2014
+T43	time 6170 6174	2018
+T44	time 5590 5594	2012
+T45	OS_name 4561 4568	Android
+T46	time 4492 4500	February
+T47	malware 4591 4600	Skygofree
+T48	reference_word 4503 4505	we
+R17	release_time Arg1:T48 Arg2:T46	
+R18	find Arg1:T48 Arg2:T47	
+T49	malware 4700 4712	Hacking Team
+T50	OS_name 4823 4830	Android
+T51	OS_name 4880 4883	iOS
+T52	company 4640 4655	Italian company
+T53	security_team 8445 8456	Korean CERT
+T54	security_team 8459 8466	KN-CERT
+R19	coreference Arg1:T54 Arg2:T53	
+T55	location 8607 8619	South Africa
+T56	time 8700 8711	summer 2017
+T57	threatActor_name 8636 8645	IronHusky
+R20	first_found_time Arg1:T57 Arg2:T56	
+T58	government 9045 9065	Mongolian government
+T59	malware 4899 4907	backdoor
+T60	tool 4954 4986	MDM ( Mobile Device Management )
+T61	person 4925 4934	attackers
+R21	use Arg1:T61 Arg2:T60	
+T62	tool 5141 5144	MDM
+T63	attack_goal 5006 5048	install their malware in victims ’ devices
+R22	goal Arg1:T61 Arg2:T63	
+T64	location 5249 5253	Asia
+T65	threatActor_name 5264 5277	Shaggypanther
+T66	location 5361 5367	Taiwan
+T67	location 5372 5380	Malaysia
+T68	government 5329 5348	government entities
+R23	located Arg1:T68 Arg2:T66	
+R24	located Arg1:T68 Arg2:T67	
+T69	time 5396 5400	2008
+R25	attack Arg1:T65 Arg2:T68	
+R26	occur_time Arg1:T65 Arg2:T69	
+T70	malware 5501 5511	Sidewinder
+T71	industry 5540 5565	Pakistan military targets
+R27	attack Arg1:T70 Arg2:T71	
+R28	occur_time Arg1:T70 Arg2:T44	
+T72	location 5662 5668	Indian
+T73	tool 5831 5841	Powershell
+T74	threatActor_name 5872 5886	CardinalLizard
+T75	location 6084 6095	Philippines
+T76	location 6098 6104	Russia
+T77	location 6107 6115	Mongolia
+T78	location 6120 6128	Malaysia
+T79	reference_word 6045 6054	the group
+T80	time 6028 6042	last few years
+R29	coreference Arg1:T79 Arg2:T74	
+R30	occur_time Arg1:T79 Arg2:T80	
+R31	attack Arg1:T79 Arg2:T75	
+R32	attack Arg1:T79 Arg2:T76	
+R33	attack Arg1:T79 Arg2:T77	
+R34	attack Arg1:T79 Arg2:T78	
+R35	occur_time Arg1:T79 Arg2:T43	
+T81	malware 6364 6369	PlugX
+T82	malware 6338 6349	RomaingTige
+T83	threatActor_name 6679 6685	Sofacy
+T84	tool 6726 6733	Zebrocy
+T85	malware 6702 6710	Gamefish
+T86	location 6876 6880	Asia
+T87	reference_word 6840 6845	group
+T88	reference_word 6824 6826	We
+R36	find Arg1:T88 Arg2:T87	
+R37	attack Arg1:T87 Arg2:T86	
+R38	coreference Arg1:T87 Arg2:T83	
+T89	threatActor_name 7088 7094	Sofacy
+T90	threatActor_name 7258 7267	The Dukes
+T91	location 7508 7519	South Korea
+T92	company 7975 7979	KHNP
+T93	threatActor_name 7668 7675	Kimsuky
+T94	industry 6991 7019	German Governmental networks
+R39	attack Arg1:T11 Arg2:T94	
+T95	time 7983 7987	2014
+T96	threatActor_name 10348 10362	Desert Falcons
+R40	occur_time Arg1:T96 Arg2:T40	
+T97	OS_name 10481 10488	Android
+T98	location 10762 10771	Palestine
+T99	location 10774 10779	Egypt
+T100	location 10782 10788	Jordan
+T101	location 10791 10797	Israel
+T102	location 10800 10807	Lebanon
+T103	location 10812 10818	Turkey
+T104	threatActor_name 10912 10921	Gaza Team
+T105	tool 11933 11943	Powershell
+T106	malware 12207 12224	Olympic Destroyer
+T107	location 7727 7739	South Korean
+R41	attack Arg1:T93 Arg2:T107	
+T108	location 7923 7935	South Korean
+T109	reference_word 7779 7788	The actor
+R42	coreference Arg1:T109 Arg2:T93	
+R43	attack Arg1:T109 Arg2:T108	
+R44	attack Arg1:T109 Arg2:T92	
+R45	occur_time Arg1:T109 Arg2:T95	
+T110	security_team 8003 8009	McAfee
+T111	vul_aliases 8216 8234	Flash Player 0-day
+T112	government 8168 8174	Korean
+T113	threatActor_name 8281 8290	Scarcruft
+T114	time 8294 8312	the end of January
+R46	find Arg1:T112 Arg2:T113	
+R47	use Arg1:T113 Arg2:T111	
+R48	occur_time Arg1:T113 Arg2:T114	
+T115	tool 8330 8344	Microsoft Word
+R49	use Arg1:T113 Arg2:T115	
+T116	government 9009 9036	International Monetary Fund
+T117	threatActor_name 9375 9380	PlugX
+T118	threatActor_name 9385 9394	PoisonIvy
+T119	threatActor_name 9475 9485	BlueNoroff
+T120	time 9793 9800	January
+T121	time 9805 9810	March
+T122	industry 9531 9557	cryptocurrencies companies
+T123	industry 9597 9603	PoS ’s
+R50	attack Arg1:T119 Arg2:T122	
+R51	attack Arg1:T119 Arg2:T123	
+T124	threatActor_name 9731 9741	StrongPity
+R52	occur_time Arg1:T124 Arg2:T120	
+R53	occur_time Arg1:T124 Arg2:T121	
+T125	malware 9908 9919	StrongPity2
+T127	malware 10240 10249	FinFisher
+T128	threatActor_name 10335 10345	CitizenLab
+T129	threatActor_name 10212 10222	StrongPity
+R54	use Arg1:T129 Arg2:T127	

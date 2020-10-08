@@ -1,0 +1,86 @@
+T1	location 274 280	Russia
+T2	location 384 387	Rio
+T3	threatActor_name 189 194	APT28
+T4	threatActor_name 0 5	APT28
+T5	tool 169 172	DNC
+T6	location 396 402	Russia
+T7	industry 456 469	Olympic Games
+T8	location 616 622	Russia
+T9	company 709 739	discredit anti-doping agencies
+T10	threatActor_name 776 781	APT28
+T11	company 799 803	WADA
+R2	attack Arg1:T10 Arg2:T11	
+T12	time 979 991	NOV ( 2015 )
+T13	company 992 996	WADA
+T14	company 1010 1036	Russian Anti-Doping Agency
+T15	location 1010 1017	Russian
+R1	located Arg1:T14 Arg2:T15	
+T16	time 1063 1070	JULY 18
+T17	company 1071 1075	WADA
+T18	time 1157 1162	AUG 4
+T19	industry 1214 1227	Olympic Games
+T20	time 1230 1239	EARLY AUG
+T21	threatActor_name 1240 1245	APT28
+T22	company 1277 1281	WADA
+T23	attack_activity 1252 1273	spear phishing emails
+R4	use Arg1:T21 Arg2:T23	
+R5	goal Arg1:T23 Arg2:T22	
+T24	time 1294 1300	AUG 10
+T25	threatActor_name 1301 1306	APT28
+T26	company 1381 1385	WADA
+R3	attack Arg1:T25 Arg2:T26	
+T27	time 1566 1570	2016
+T28	time 1458 1471	AUG 25-SEP 12
+R6	occur_time Arg1:T20 Arg2:T21	
+R7	occur_time Arg1:T24 Arg2:T25	
+T29	threatActor_name 1472 1477	APT28
+T30	industry 1511 1518	Olympic
+R8	occur_time Arg1:T28 Arg2:T29	
+R9	attack Arg1:T29 Arg2:T30	
+T31	time 1626 1631	AUG 9
+T33	company 1730 1735	 WADA
+T34	threatActor_aliases 1643 1652	@anpoland
+R10	attack Arg1:T34 Arg2:T33	
+R11	occur_time Arg1:T31 Arg2:T34	
+T32	time 1746 1752	AUG 11
+T35	attack_activity 1800 1811	DDoS attack
+T36	company 1839 1843	WADA
+R12	goal Arg1:T35 Arg2:T36	
+T37	threatActor_aliases 1767 1776	@anpoland
+R13	use Arg1:T37 Arg2:T35	
+R14	occur_time Arg1:T32 Arg2:T37	
+T38	time 1890 1896	SEP 12
+T39	threatActor_aliases 1899 1922	Fancy Bears ’ Hack Team
+R15	occur_time Arg1:T38 Arg2:T39	
+T40	tool 2010 2017	Twitter
+T41	company 2038 2042	WADA
+R16	use Arg1:T39 Arg2:T40	
+R17	attack Arg1:T39 Arg2:T41	
+T42	threatActor_aliases 2229 2252	Fancy Bears ’ Hack Team
+T43	time 2317 2323	SEP 13
+T44	company 2324 2328	WADA
+T45	threatActor_aliases 2441 2446	APT28
+T46	time 2449 2458	SEP 15-30
+T47	threatActor_aliases 2461 2484	Fancy Bears ’ Hack Team
+T48	location 2601 2605	U.S.
+T49	threatActor_aliases 2783 2806	Fancy Bears ’ Hack team
+T50	threatActor_aliases 2992 3001	@anpoland
+T51	threatActor_aliases 3008 3031	Fancy Bears ’ Hack Team
+T52	company 3099 3103	WADA
+T53	location 3208 3214	Russia
+T54	location 3460 3467	Russian
+T55	location 3479 3485	Russia
+T56	time 3541 3545	2014
+T57	threatActor_name 3569 3574	APT28
+R18	located Arg1:T57 Arg2:T55	
+T58	threatActor_name 3723 3728	APT28
+T59	time 3757 3761	2007
+T60	time 3970 3974	2014
+T61	threatActor_name 3984 3989	APT28
+T62	location 4005 4011	Russia
+R19	located Arg1:T61 Arg2:T62	
+T63	threatActor_name 4043 4048	APT28
+T64	threatActor_name 4483 4488	APT28
+T65	attack_activity 4586 4607	spear-phishing emails
+T66	threatActor_name 4816 4821	APT28
+R20	use Arg1:T64 Arg2:T65	

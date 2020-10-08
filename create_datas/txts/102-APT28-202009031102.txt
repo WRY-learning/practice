@@ -1,0 +1,134 @@
+APT28: A WINDOW INTO RUSSIA’S CYBER ESPIONAGE OPERATIONS?
+Release_Time: unknow .
+Report_URL: https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/rpt-apt28.pdf .
+In April 2013 , based on compile time , the group began to make significant alterations to the SOURFACE downloader .
+Variants of the SOURFACE second stage backdoor , EVILTOSS , share some code similarities with SOURFACE .
+However , it contains more capabilities , including the ability to provide access to the file system and registry , enumerate network resources , create processes , log keystrokes , access stored credentials , and execute shellcode .
+The backdoor encrypts data that it uploads with an RSA public key .
+Many of its variants we have seen are named netui.dll .
+EVILTOSS variants may use the Simple Mail Transfer Protocol ( SMTP ) to send stolen data in an attachment named “ detaluri .
+dat ” .
+The backdoor attaches this file to a preformatted email and sends it out through a victim ’s mail server .
+Interestingly , we found an antivirus report from 2004 detailing what appears to be an early variant of EVILTOSS .
+The backdoor was installed alongside the NATO-themed decoy document depicted in Figure 8 .
+The backdoor sent data via SMTP to nato_smtp@mail[ .
+]ru and received its tasking via POP from nato_pop@mail[.]ru .
+Although we have not conclusively attributed this sample to APT28 , it does suggest the possibility that APT28 has been operating since as early as 2004 .
+MODULAR IMPLANTS INDICATE A FORMAL DEVELOPMENT ENVIRONMENT .
+A modular development framework suggests the group has had an organized development effort since as early as 2007 .
+During our research , we discovered that APT28 uses a backdoor developed using a modular framework .
+We call this backdoor CHOPSTICK , a somewhat ironic name that comes from our semi-random name generator .
+The modular design allows flexible options for compiling variants with different capabilities as needed , as well as deploying additional capabilities at runtime .
+This allows the developers to make targeted implants , including only the capabilities and protocols necessary for a specific environment .
+Such a modular framework suggests the group has had an organized development effort since as early as 2007 .
+A formal development environment , in which code is versioned and well-organized , would almost certainly be required to track and define the various modules that can be included in the backdoor at compile time .
+CHOPSTICK variants may move messages and information using at least three methods : 
+Communications with a C2 server using HTTP .
+These protocols are covered in more detail in Appendix D. 
+Email sent through a specified mail server .
+One CHOPSTICK v1 variant contained modules and functions for collecting keystroke logs , Microsoft Office documents , and PGP files .
+The monitoring for new files of interest is performed by a “ Directory Observer ” module .
+In one sample this information was intended to be sent via SMTP using a Georgian MIA mail server .
+It used one of four embedded sender email addresses ( @mia.gov.ge ) to send files via email to another email address on the same mail server .
+All information required for the email was hardcoded in the backdoor .
+Local copying to defeat closed networks .
+One variant of CHOPSTICK focuses on apparent air gap / closed network capabilities by routing messages between local directories , the registry and USB drives .
+APT28 MALWARE INDICATES RUSSIAN SPEAKERS IN A RUSSIAN TIME ZONE .
+During our research into APT28 ’s malware , we noted two details consistent across malware samples .
+The first was that APT28 had consistently compiled Russian language settings into their malware .
+The second was that malware compile times from 2007 to 2014 corresponded to normal business hours in the UTC + 4 time zone , which includes major Russian cities such as Moscow and St. Petersburg .
+Use of Russian and English Language Settings in PE Resources .
+PE resources include language information that  can be helpful if a developer wants to show user 
+interface items in a specific language .
+Non-default language settings packaged with PE resources are dependent on the developer ’s build environment .
+Each PE resource includes a “ locale ” identifier with a language ID “ composed of a primary language identifier indicating the language and a sublanguage identifier indicating the country/region. ” 
+At the time of the writing of this paper , we had identified 103 malware samples that were both attributed to APT28 and contained PE resources .
+Table 5 shows the locale identifiers with associated language and country/region for these samples .
+Table 5: Locale and language identifiers associated with APT28 malware
+0x0419: Russian ( ru ) , Russia ( RU ) , 59 .
+0x0409: English ( en ) , United States ( US ),27 .
+0x0000 or 0x0800: Neutral locale / System default locale language , Neutral , 16 .
+0x0809: English ( en ) , United Kingdom ( GB ) , 1 .
+The samples with Russian language settings were compiled between late 2007 and late 2013 , as depicted in Figure 9 .
+This consistency over a long timeframe suggests that the developers of APT28 malware were using a build environment with Russian language settings at least some of the time and made no effort to obscure this detail .
+Overall , the locale IDs suggest that APT28 developers can operate in both Russian and English .
+Compile Times Align with Working Hours in Moscow and St. Petersburg .
+Of the 140 malware samples that we have attributed to APT28 so far , over 89% were compiled between 0400 and 1400 UTC time , as depicted in Figure 10 .
+Over 96% were compiled between Monday and Friday .
+This parallels the working hours in UTC+0400 ( that is , compile times begin about 8AM and end about 6PM in this time zone ) .
+This time zone includes major Russian cities such as Moscow and St. Petersburg .
+We started researching APT28 based on activity we observed on our clients ’ networks , similar to other targeted threat groups we have identified over time .
+We assess that APT28 is most likely sponsored by the Russian government .
+We summarize our key observations about APT28 in Figure 11 below .
+APT28 ’s characteristics-their targeting , malware , language , and working hours-have led us to conclude that we are tracking a focused , longstanding espionage effort .
+Given the available data , we assess that APT28 ’s work is sponsored by the Russian government .
+Evolves and Maintains Tools for Continued , Long-Term Use : 
+Uses malware with flexible and lasting platforms .
+Constantly evolves malware samples for continued use .
+Malware is tailored to specific victims ’ environments , and is designed to hamper reverse engineering efforts .
+Development in a formal code development environment .
+Various Data Theft Techniques :  
+Backdoors using HTTP protocol .
+Backdoors using victim mail server .
+Local copying to defeat closed/air gapped networks .
+Georgia and the Caucasus : 
+Ministry of Internal Affairs .
+Ministry of Defense .
+Journalist writing on Caucasus issues .
+Kavkaz Center .
+Eastern European Governments & Militaries : 
+Polish Government .
+Hungarian Government .
+Ministry of Foreign Affairs in Eastern Europe .
+Baltic Host exercises .
+Security-related Organizations : 
+NATO .
+OSCE .
+Defense attaches .
+Defense events and exhibitions .
+Russian Language Indicators : 	
+Consistent use of Russian language in malware over a period of six years .
+Lure to journalist writing on Caucasus issues suggests APT28 understands both Russian and English .
+Malware Compile Times Correspond to Work Day in Moscow ’s Time Zone ： 
+Consistent among APT28 samples with compile times from 2007 to 2014 .
+The compile times align with the standard workday in the UTC + 4 time zone which includes major Russian cities such as Moscow and St. Petersburg .
+APPENDIX A : DISTINGUISHING THREAT GROUPS .
+We use the term “ threat group ” to refer to actors who work together to target and penetrate networks of interest .
+These individuals may share the same set of tasks , coordinate targets , and share tools and methodology .
+They work together to gain access to their targets and steal data .
+The art of attributing disparate intrusion activities to the same threat group is not always simple .
+Different groups may use similar intrusion methodologies and common tools , particularly those that are widely available on the Internet , such as pwdump , HTran , or Gh0st RAT .
+There may be overlaps between groups caused by the sharing of malware or exploits they have authored , or even the sharing of personnel .
+Individual threat actors may move between groups either temporarily or permanently .
+A threat actor may also be a private citizen who is hired by multiple groups .
+Multiple groups , on occasion , compromise the same target within the same timeframe .
+Distinguishing one threat group from another is possible with enough information , analytical experience , and tools to piece it all together .
+We can analyze multiple incidents and tell by the evidence left behind that a given incident was the result of one threat group and not another .
+Threat actors leave behind various forensic details .
+They may send spear phishing emails from a specific IP address or email address .
+Their emails may contain certain patterns ; files have specific names , MD5 hashes , timestamps , custom functions , and encryption algorithms .
+Their backdoors may have command and control IP addresses or domain names embedded .
+These are just a few examples of the myriad of forensic details that we consider when distinguishing one threat group from another .
+At the most basic level , we say that two intrusion events are attributed to the same group when we have collected enough indicators to show beyond a reasonable doubt that the same actor or group of actors were involved .
+We track all of the indicators and significant linkages associated with identified threat groups in a proprietary database that comprises millions of nodes and linkages between them .
+In this way , we can always go back and answer “ why ” we associated cyber threat activity with a particular group .
+APPENDIX B : TIMELINE OF APT28 LURES .
+2010 Iran ’s work with an international organization ( internal document ) SOURFACE .
+2011 File named “ military cooperation.doc ” SOURFACE , OLDBAIT .
+2011 Georgian language IT document for Ministry of Internal Affairs ( internal document ) SOURFACE .
+2011 “ USB Disk Security is the best software to block threats that can damage your PC or compromise your personal information via USB storage. ” SOURFACE .
+2012 Food security in Africa ( “ Food and nutrition crisis reaches peak but good forecast for 2013 ” ) SOURFACE .
+2012 “ IDF Soldier Killed and another injured in a Terror Attack ” SOURFACE .
+2012 “ Echo Crisis Report ” on Portugal ’s forest fires SOURFACE .
+2012 “ FBI to monitor Facebook , Twitter , Myspace ” SOURFACE .
+2012 Georgia ( US state , not the country of Georgia ) murder case uncovers terror plot SOURFACE .
+2012 Military attaches in London ( internal document ) SOURFACE .
+2013 South Africa MFA document CHOPSTICK , CORESHELL .
+2013 John Shalikashvili ( Georgian-Polish-American US General ) Questionnaire CORESHELL .
+2013 Asia Pacific Economic Cooperation Summit 2013 reporters ( internal document ) SOURFACE .
+2013 Defense Attaches in Turkey ( internal document ) CHOPSTICK , CORESHELL .
+2013 Turkish Cypriot news about Syria chemical weapons CHOPSTICK , CORESHELL .
+2013 Georgian language document about drivers ’ licenses ( internal document ) EVILTOSS .
+2013 Apparent Reason Magazine-related lure sent to a journalist CORESHELL .
+2014 Mandarin language document , possibly related to a Chinese aviation group ( non-public document ) CORESHELL .
+2014 Netherlands-Malaysia cessation of hostilities ; related to Ukraine airline attack CORESHELL .

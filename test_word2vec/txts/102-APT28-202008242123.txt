@@ -1,0 +1,50 @@
+ APT28:  AT THE CENTER OF THE STORM
+APT28'S MALWARE SUITE : 
+CHOPSTICK : backdoor .
+Xagent , webhp , SPLM , ( .v2 fysbis ) .
+EVILTOSS : backdoor .
+Sedreco , AZZY , Xagent , ADVSTORESHELL , NETUI .
+GAMEFISH : backdoor .
+Sednit , Seduploader , JHUHUGIT , Sofacy .
+SOURFACE : downloader .
+Older version of CORESHELL , Sofacy .
+OLDBAIT : credential harvester .
+Sasfis .
+CORESHELL : downloader .
+Newer version of SOURFACE , Sofacy .
+APT28 continues to evolve its toolkit and refine its tactics in what is almost certainly an effort to protect its operational effectiveness in the face of heightened public exposure and scrutiny .
+In addition to the continued evolution of the group's first stage tools , we have also noted APT28:
+Leveraging zero-day vulnerabilities in Adobe Flash Player , Java , and Windows , including CVE-2015-1701 , CVE-2015-2424 , CVE-2015-2590 , CVE-2015-3043 , CVE-2015-5119 , and CVE-2015-7645 .
+Using a profiling script to deploy zero-days and other tools more selectively , decreasing the chance that researchers and others will gain access to the group's tools .
+Increasing reliance on public code depositories , such as Carberp , PowerShell Empire , P.A.S .
+webshell , Metasploit modules , and others in a likely effort to accelerate their development cycle and provide plausible deniability .
+Obtaining credentials through fabricated Google App authorization and Oauth access requests that allow the group to bypass two-factor authentication and other security measures .
+Moving laterally through a network relying only on legitimate tools that already exist within the victims' systems , at times forgoing their traditional toolset for the duration of the compromise .
+These changes are not only indicative of APT28's skills , resourcefulness , and desire to maintain operational effectiveness , but also highlight the longevity of the group's mission and its intent to continue its activities for the foreseeable future .
+We have observed APT28 rely on four key tactics when attempting to compromise intended targets .
+These include sending spear-phishing emails that either deliver exploit documents that deploy malware onto a user's systems , or contain a malicious URL designed to harvest the recipients' email credentials and provide access to the their accounts .
+APT28 has also compromised and placed malware on legitimate websites intending to infect site visitors , and has gained access to organizations by compromising their web-facing servers .
+INFECTION WITH MALWARE VIA SPEAR PHISH : 
+Craft exploit document with enticing lure content .
+Send exploit document to victim .
+Victim opens document , and malware is installed by exploiting a vulnerability ( e.g. , ARM-NATO_ENGLISH_30_NOV_2016.doc leveraged an Adobe Flash exploit , CVE-2016-7855 , to install GAMEFISH targeted machine ) .
+Register a domain spoofing that of a legitimate organization ( e.g. , theguardiannews.org ) .
+Send link mirroring structure of legitimate organization's site that is designed to expire once users clickit .
+Victim goes to link and retrieves malicious document or is served a web-based exploit that installs malware .
+( Flash Vulnerability CVE-2016-7855 and Windows Vulnerability CVE-2016-7255 were exploited as zero days to install malware on victims who visited a malicious URL ) .
+WEBMAIL ACCESS VIA SPEAR-PHISH : 
+Register a domain spoofing a webmail service or an organization's webmail portal ( e.g. , 0nedrive-0ffice365.com ) .
+Send email to targets instructing them to reset their passwords .
+Recipient visits fake login page and enters credentials .
+APT28 uses stolen credentials to access mailbox and read email .
+Send email to victims warning of security risk and asking them to enable security service .
+Person is asked to authorize application to view mail and gives access .
+APT28 leverages OAuth privileges given to malicious application to read email .
+INFECTION WITH MALWARE VIA STRATEGIC WEB COMPROMISE ( SWC ) : 
+Compromise a legitimate site and set up malicious iFrame .
+Users of the site are redirected using malicious iFrame and profiled ( e.g , this technique was used to compromise and infect visitors to numerous Polish Government websites in 2014 ) .
+Exploit is served to users matching the target profile and malware is installed on their system .
+ACCESS THROUGH INTERNET-FACING SERVERS : 
+Network reconnaissance to find vulnerable software .
+Exploitation of previously known vulnerabilities present on unpatched systems .
+Leverage initial compromise to access other systems and move deeper into the victim network .

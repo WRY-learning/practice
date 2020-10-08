@@ -1,0 +1,237 @@
+T1	threatActor_name 197 202	APT28
+T6	government 322 326	NATO
+T7	time 393 397	2010
+T8	location 382 388	Russia
+T2	government 273 319	NATO and other European security organizations
+R1	attack Arg1:T1 Arg2:T2	
+T3	government 582 594	Soviet Union
+T4	location 597 603	Russia
+T5	government 612 616	NATO
+T9	government 632 636	NATO
+T10	location 677 683	Russia
+T11	threatActor_name 710 715	APT28
+T12	government 760 801	Organization for Security and Cooperation
+T13	government 814 818	OSCE
+R2	coreference Arg1:T13 Arg2:T12	
+T14	government 953 957	NATO
+T15	government 964 968	OSCE
+T16	threatActor_name 1078 1083	APT28
+T17	government 1104 1108	NATO
+T18	government 1143 1179	NATO Special Operations Headquarters
+T19	government 1188 1206	NATO Future Forces
+T20	threatActor_name 1288 1293	APT28
+T21	tool 1304 1314	VirusTotal
+T22	government 1270 1277	NATO HQ
+T23	threatActor_name 1394 1399	APT28
+T24	government 1429 1433	NATO
+T25	threatActor_name 1458 1463	APT28
+T26	government 1584 1602	NATO Future Forces
+T27	time 1603 1607	2014
+T28	domain_evil 1559 1581	natoexhibitionff14.com
+T29	government 1502 1538	NATO Special Operations Headquarters
+T30	domain_evil 1541 1554	nshq.nato.int
+T31	domain_evil 1487 1499	nato.nshq.in
+T32	domain_evil 1634 1652	natoexhibition.org
+T33	threatActor_name 1657 1662	APT28
+T34	target_crowd 1696 1712	defense attaches
+R3	attack Arg1:T33 Arg2:T34	
+T35	threatActor_name 1762 1767	APT28
+T36	government 2044 2048	AMAC
+T37	government 2012 2041	Ankara Military Attaché Corps
+R4	coreference Arg1:T36 Arg2:T37	
+T38	location 1876 1882	London
+T39	target_crowd 1816 1832	British officers
+T40	target_crowd 1837 1872	U.S. and Canadian military attachés
+T41	location 2126 2132	Turkey
+R5	attack Arg1:T35 Arg2:T39	
+R6	attack Arg1:T35 Arg2:T40	
+T42	threatActor_name 1895 1900	APT28
+T43	threatActor_name 2226 2231	APT28
+T44	threatActor_name 2301 2306	APT28
+T45	threatActor_name 2500 2505	APT28
+T46	threatActor_name 2934 2939	APT28
+T47	threatActor_name 3208 3213	APT28
+T48	threatActor_name 3299 3304	APT28
+T49	threatActor_name 3444 3449	APT28
+T50	threatActor_name 3697 3702	APT28
+T51	threatActor_name 4020 4025	APT28
+T52	threatActor_name 4181 4186	APT28
+T53	threatActor_name 4245 4250	APT28
+T54	threatActor_name 4429 4434	APT28
+T55	threatActor_name 4568 4573	APT28
+T56	threatActor_name 4778 4783	APT28
+T57	threatActor_name 4806 4811	APT28
+T58	threatActor_name 5128 5133	APT28
+T59	threatActor_name 6083 6088	APT28
+T60	threatActor_name 6209 6214	APT28
+T61	threatActor_name 7244 7249	APT28
+T62	threatActor_name 7369 7374	APT28
+T63	threatActor_name 7580 7585	APT28
+T64	target_crowd 2245 2286	attendees of European defense exhibitions
+R9	attack Arg1:T43 Arg2:T64	
+R10	part_of Arg1:T37 Arg2:T41	
+T65	location 2367 2373	Europe
+T66	time 2483 2497	September 2014
+T67	domain_evil 2528 2549	smigroup-online.co.uk
+T68	company 2588 2591	SMi
+T69	company 2744 2747	SMi
+T70	time 2822 2835	November 2014
+T71	attack_goal 2963 2994	procure intelligence pertaining
+R11	goal Arg1:T46 Arg2:T71	
+T72	attack_goal 3237 3296	procure intelligence pertaining to new defense technologies
+R12	goal Arg1:T47 Arg2:T72	
+T73	government 3738 3752	Norwegian Army
+T74	government 3767 3787	Government of Mexico
+T75	government 3755 3764	Forsvaret
+R13	coreference Arg1:T75 Arg2:T73	
+T76	government 3788 3804	Chilean Military
+T77	government 3805 3819	Pakistani Navy
+T78	government 3820 3844	U.S. Defense Contractors
+T79	government 3845 3869	European Embassy in Iraq
+T80	government 3870 3906	Special Operations Forces Exhibition
+T81	government 3909 3914	SOFEX
+R14	coreference Arg1:T81 Arg2:T80	
+T82	location 3920 3926	Jordan
+T83	location 3947 3956	East Asia
+T84	target_crowd 3927 3943	Defense Attaches
+T85	government 3957 3990	Asia-Pacific Economic Cooperation
+T86	government 3993 3997	APEC
+R15	coreference Arg1:T86 Arg2:T85	
+T87	company 4000 4017	Al-Wayi News Site
+R16	attack Arg1:T50 Arg2:T73	
+R17	attack Arg1:T50 Arg2:T75	
+R18	attack Arg1:T50 Arg2:T74	
+R19	attack Arg1:T50 Arg2:T76	
+R20	attack Arg1:T50 Arg2:T77	
+R21	attack Arg1:T50 Arg2:T78	
+R22	attack Arg1:T50 Arg2:T79	
+R23	attack Arg1:T51 Arg2:T87	
+R24	attack Arg1:T51 Arg2:T85	
+R25	attack Arg1:T51 Arg2:T80	
+R26	attack Arg1:T51 Arg2:T84	
+T88	time 4238 4242	2007
+T89	malware 4849 4868	SOURFACE downloader
+T90	malware 4897 4905	EVILTOSS
+T91	malware 4954 4963	CHOPSTICK
+T92	malware 4966 4974	SOURFACE
+T93	malware 5013 5019	Sofacy
+T94	malware 5102 5108	Sofacy
+T95	malware 5169 5185	SOURFACE dropper
+T96	malware 5188 5196	EVILTOSS
+T97	malware 5199 5208	CHOPSTICK
+T98	malware 5219 5247	credential harvester OLDBAIT
+T99	malware 5274 5282	SOURFACE
+T100	tool 5384 5393	C2 server
+T102	malware 5396 5405	CORESHELL
+T103	malware 5431 5439	SOURFACE
+T104	malware 5442 5450	EVILTOSS
+T105	malware 5498 5517	SOURFACE downloader
+R27	part_of Arg1:T89 Arg2:T57	
+R28	part_of Arg1:T90 Arg2:T57	
+R29	part_of Arg1:T91 Arg2:T57	
+R30	part_of Arg1:T92 Arg2:T57	
+R31	coreference Arg1:T93 Arg2:T92	
+R32	part_of Arg1:T94 Arg2:T58	
+R33	part_of Arg1:T95 Arg2:T58	
+R34	part_of Arg1:T96 Arg2:T58	
+R35	part_of Arg1:T97 Arg2:T58	
+R36	part_of Arg1:T98 Arg2:T58	
+R37	part_of Arg1:T99 Arg2:T58	
+R39	part_of Arg1:T102 Arg2:T58	
+R41	part_of Arg1:T104 Arg2:T58	
+R40	coreference Arg1:T103 Arg2:T102	
+R42	use Arg1:T104 Arg2:T105	
+T106	sample_function 5561 5571	monitoring
+T107	sample_function 5574 5590	credential theft
+T108	sample_function 5597 5616	shellcode execution
+T109	sample_function 5521 5558	gain system access for reconnaissance
+R43	part_of Arg1:T108 Arg2:T105	
+R44	part_of Arg1:T107 Arg2:T105	
+R45	part_of Arg1:T106 Arg2:T105	
+R46	part_of Arg1:T109 Arg2:T105	
+T110	malware 5619 5628	CHOPSTICK
+T111	malware 5819 5828	CHOPSTICK
+R47	part_of Arg1:T111 Arg2:T59	
+R48	part_of Arg1:T110 Arg2:T59	
+T113	malware 6327 6336	CORESHELL
+T114	malware 6453 6462	CORESHELL
+T115	malware 6553 6562	CORESHELL
+T116	malware 6750 6758	SOURFACE
+T117	malware 6759 6768	CORESHELL
+T118	malware 6771 6780	CHOPSTICK
+T119	malware 6787 6795	EVILTOSS
+T120	malware 6891 6899	SOURFACE
+T121	malware 6900 6909	CORESHELL
+T122	malware 6914 6922	EVILTOSS
+T123	function 7263 7266	RSA
+T124	time 7494 7498	2007
+R50	use Arg1:T61 Arg2:T123	
+T125	malware 7426 7434	SOURFACE
+R51	part_of Arg1:T125 Arg2:T62	
+R52	part_of Arg1:T113 Arg2:T60	
+R53	part_of Arg1:T114 Arg2:T60	
+R54	part_of Arg1:T115 Arg2:T60	
+R55	part_of Arg1:T116 Arg2:T61	
+R56	part_of Arg1:T117 Arg2:T61	
+R57	part_of Arg1:T118 Arg2:T61	
+R58	part_of Arg1:T119 Arg2:T61	
+R60	part_of Arg1:T121 Arg2:T61	
+R61	part_of Arg1:T122 Arg2:T61	
+R59	part_of Arg1:T120 Arg2:T61	
+R62	occur_time Arg1:T62 Arg2:T124	
+T126	malware 7620 7628	SOURFACE
+T127	malware 7681 7689	SOURFACE
+T128	time 7649 7670	between 2007 and 2014
+R63	part_of Arg1:T126 Arg2:T63	
+R64	part_of Arg1:T127 Arg2:T63	
+R65	occur_time Arg1:T63 Arg2:T128	
+T129	tool 7828 7837	C2 server
+T130	time 7846 7850	2013
+T131	malware 7857 7865	SOURFACE
+T132	tool 7910 7912	C2
+T133	malware 7949 7958	CORESHELL
+T134	malware 8624 8632	SOURFACE
+T135	malware 8694 8702	SOURFACE
+T136	malware 8709 8717	SOURFACE
+T137	tool 8768 8777	C2 server
+T138	malware 8856 8864	EVILTOSS
+T139	time 8870 8880	April 2013
+T140	malware 8962 8970	SOURFACE
+T142	sample_name 9036 9049	coreshell.dll
+T144	malware 9234 9242	SOURFACE
+T145	malware 9243 9252	CORESHELL
+T146	malware 9383 9391	SOURFACE
+T147	md5 9457 9489	272f0fde35dbdfccbca1e33373b3570d
+T148	md5 9531 9563	8b92fe86c5b7a9e34f433a6fbac8bc3a
+T149	md5 9610 9642	9eebfebe3987fec3c395594dc57a0c4c
+T150	md5 9688 9720	da2a657dc69d7320f2ffc87013f257ad
+T151	md5 9781 9813	1259c4fe5efd9bf07fc4c78466f2dd09
+T152	md5 9874 9906	3b0ecd011500f61237c205834db0e13a
+T153	md5 9952 9984	5882fda97fdf78b47081cc4105d44f7c
+T154	md5 10030 10062	791428601ad12b9230b9ace4f2138713
+T155	md5 10122 10154	ead4ec18ebce6890d20757bb9f5285b1
+T156	md5 10214 10246	48656a93f9ba39410763a2196aabc67f
+T157	md5 10293 10325	8c4fa713c5e2b009114adda758adc445
+R67	part_of Arg1:T147 Arg2:T146	
+R68	part_of Arg1:T148 Arg2:T146	
+R69	part_of Arg1:T149 Arg2:T146	
+R70	part_of Arg1:T150 Arg2:T146	
+R71	part_of Arg1:T151 Arg2:T146	
+R72	part_of Arg1:T152 Arg2:T146	
+R73	part_of Arg1:T153 Arg2:T146	
+R74	attack Arg1:T154 Arg2:T146	
+R75	part_of Arg1:T155 Arg2:T146	
+R76	part_of Arg1:T156 Arg2:T146	
+R77	part_of Arg1:T157 Arg2:T146	
+R78	occur_time Arg1:T140 Arg2:T139	
+R79	use Arg1:T136 Arg2:T137	
+R80	occur_time Arg1:T131 Arg2:T130	
+R81	use Arg1:T131 Arg2:T132	
+R82	use Arg1:T127 Arg2:T129	
+R7	part_of Arg1:T31 Arg2:T25	
+R8	part_of Arg1:T28 Arg2:T25	
+R38	coreference Arg1:T30 Arg2:T31	
+R49	coreference Arg1:T32 Arg2:T28	
+R66	part_of Arg1:T67 Arg2:T45	
+R83	attack Arg1:T45 Arg2:T68	
+R84	attack Arg1:T45 Arg2:T69	

@@ -1,0 +1,478 @@
+T1	threatActor_name 0 29	Energetic Bear/Crouching Yeti
+T2	threatActor_name 149 178	Energetic Bear/Crouching Yeti
+T3	time 229 233	2010
+R1	first_found_time Arg1:T2 Arg2:T3	
+T4	reference_word 236 245	The group
+R2	coreference Arg1:T4 Arg2:T2	
+T5	industry 309 315	energy
+T6	industry 320 338	industrial sectors
+R3	attack Arg1:T2 Arg2:T5	
+R4	attack Arg1:T2 Arg2:T6	
+T7	threatActor_name 363 392	Energetic Bear/Crouching Yeti
+T8	location 471 477	Europe
+T9	location 486 488	US
+R5	attack Arg1:T7 Arg2:T8	
+R6	attack Arg1:T7 Arg2:T9	
+T10	time 494 503	2016-2017
+T11	location 544 550	Turkey
+R7	attack Arg1:T7 Arg2:T11	
+T12	sub_activity 615 693	sending phishing emails with malicious documents and infecting various servers
+T13	reference_word 597 606	the group
+R8	coreference Arg1:T7 Arg2:T13	
+T14	reference_word 696 705	The group
+R10	coreference Arg1:T14 Arg2:T7	
+T15	attack_goal 765 787	to host tools and logs
+R9	launch Arg1:T13 Arg2:T12	
+R11	goal Arg1:T14 Arg2:T15	
+T16	tool 723 739	infected servers
+R12	use Arg1:T14 Arg2:T16	
+T17	security_team 1125 1138	Kaspersky Lab
+T18	security_team 1139 1147	ICS CERT
+T19	location 938 940	US
+T20	reference_word 920 929	the group
+R13	coreference Arg1:T20 Arg2:T7	
+T21	security_team 974 981	US-CERT
+T22	attack_activity 838 855	waterhole attacks
+R14	launch Arg1:T14 Arg2:T22	
+T23	government 1023 1041	Russian government
+T24	reference_word 1006 1015	the actor
+R15	coreference Arg1:T24 Arg2:T7	
+T25	security_team 1074 1107	UK National Cyber Security Centre
+T26	time 1361 1365	2016
+T27	time 1379 1383	2017
+T28	reference_word 1227 1236	the group
+R16	coreference Arg1:T28 Arg2:T7	
+T29	threatActor_name 1333 1353	Energetic Bear group
+T30	reference_word 1401 1413	threat actor
+R17	coreference Arg1:T30 Arg2:T29	
+T31	industry 1444 1464	industrial companies
+T32	sub_activity 1303 1325	webservers compromised
+R18	launch Arg1:T29 Arg2:T32	
+R19	occur_time Arg1:T32 Arg2:T26	
+R20	occur_time Arg1:T32 Arg2:T27	
+T33	location 1490 1496	Russia
+T34	location 1538 1544	Russia
+T35	location 1625 1631	Russia
+T36	location 1658 1664	Russia
+T37	location 1749 1755	Russia
+T38	location 1869 1875	Russia
+T39	location 1956 1963	Ukraine
+T40	location 2006 2013	Ukraine
+T41	location 2031 2033	UK
+T42	location 2064 2071	Germany
+T43	location 2118 2125	Germany
+T44	attack_goal 2146 2166	collecting user data
+T45	attack_activity 2174 2190	waterhole attack
+T46	location 2195 2201	Turkey
+T47	location 2244 2250	Turkey
+T48	location 2280 2286	Turkey
+T49	location 2316 2322	Greece
+T50	location 2407 2410	USA
+T51	attack_goal 2358 2378	collecting user data
+T52	attack_activity 2386 2402	waterhole attack
+T53	attack_goal 2496 2516	collecting user data
+T54	attack_activity 2524 2540	waterhole attack
+T55	attack_activity 2441 2450	Waterhole
+T56	industry 2411 2429	Oil and gas sector
+T57	industry 2202 2220	Oil and gas sector
+T58	attack_activity 2232 2241	Waterhole
+T59	attack_activity 2268 2277	Waterhole
+T60	attack_activity 2304 2313	Waterhole
+T61	person 2072 2090	Software developer
+T62	person 2095 2105	integrator
+T63	attack_activity 2106 2115	Waterhole
+T64	industry 2251 2261	Industrial
+T65	industry 2287 2297	Investment
+T66	attack_activity 2052 2061	Waterhole
+T67	industry 2014 2018	Bank
+T68	attack_activity 2019 2028	Waterhole
+T69	attack_activity 1994 2003	Waterhole
+T70	industry 1964 1985	Electric power sector
+T71	industry 1876 1886	Investment
+T72	attack_goal 1907 1927	collecting user data
+T73	attack_activity 1935 1951	waterhole attack
+T74	attack_goal 1805 1825	collecting user data
+T75	attack_activity 1833 1849	waterhole attack
+T76	attack_goal 1852 1864	tool hosting
+T77	person 1665 1674	Developer
+T78	person 1679 1689	integrator
+T79	person 1726 1736	consultant
+T80	attack_activity 1737 1746	Waterhole
+T81	attack_activity 1646 1655	Waterhole
+T82	attack_activity 1526 1535	Waterhole
+T83	attack_goal 1576 1596	collecting user data
+T84	attack_activity 1604 1620	waterhole attack
+T85	industry 1545 1556	Real estate
+T86	industry 2034 2043	Aerospace
+T87	attack_activity 2549 2558	waterhole
+T88	sub_activity 2609 2683	injecting a link into a web page or JS file with the following file scheme
+T89	sample_name 2696 2708	filename.png
+R21	part_of Arg1:T88 Arg2:T87	
+T90	tool 2711 2719	The link
+T91	sub_activity 2731 2762	initiate a request for an image
+T92	person 2786 2794	the user
+T93	protocol 2834 2837	SMB
+R22	launch Arg1:T90 Arg2:T91	
+T95	attack_goal 2897 2940	extract the following data from the session
+T96	protocol 2974 2978	NTLM
+T94	tool 3162 3166	nmap
+T97	tool 3169 3178	dirsearch
+T98	tool 3181 3187	sqlmap
+T99	attack_activity 3576 3585	waterhole
+T100	company 3943 3962	Turkish hotel chain
+T101	tool 3887 3900	Bump platform
+T102	domain 4032 4041	kashey.ru
+T103	domain 4170 4184	www.esodedi.ru
+T104	domain 4187 4201	www.i-stroy.ru
+T105	domain 4204 4219	www.saledoor.ru
+T106	person 4004 4019	a web developer
+T107	person 4155 4167	site's owner
+T108	sample_name 4265 4278	ftpChecker.py
+T109	protocol 4346 4349	FTP
+T110	md5 4576 4608	f3e3e25a822012023c6e81b206711865
+T111	md5 4668 4700	f3e3e25a822012023c6e81b206711865
+T112	md5 4753 4785	c76470e85b7f3da46539b40e5c552712
+T113	md5 4843 4875	155385cc19e3092765bcfed034b82ccb
+T114	md5 4930 4962	1644af9b6424e8f58f39c7fa5e76de51
+T115	md5 5018 5050	1644af9b6424e8f58f39c7fa5e76de51
+T116	md5 5104 5136	2292f5db385068e161ae277531b2e114
+T117	md5 5189 5221	7ec514bbdc6dd8f606f803d39af8883f
+T118	md5 5275 5307	78c31eff38fdb72ea3b1800ea917940f
+T119	tool 4245 4258	Python script
+R23	part_of Arg1:T108 Arg2:T119	
+T120	reference_word 4313 4323	The script
+R24	coreference Arg1:T120 Arg2:T119	
+T121	tool 4404 4413	php files
+T122	sample_name 4552 4559	ini.php
+T123	sample_function 4560 4575	wso shell+ mail
+T124	time 4609 4628	2016-07-01 15:57:38
+T125	time 4701 4720	2016-06-12 13:35:30
+T126	sample_name 4642 4651	mysql.php
+T127	sample_function 4652 4667	wso shell+ mail
+T128	sample_name 4734 4742	opts.php
+T129	sample_function 4743 4752	wso shell
+T130	time 4786 4805	2016-06-12 12:23:28
+T131	sample_name 4819 4832	error_log.php
+T132	sample_function 4833 4842	wso shell
+T133	time 4876 4895	2016-06-12 10:59:39
+T134	sample_name 4909 4919	code29.php
+T135	sample_function 4920 4929	web shell
+T136	time 4963 4982	2016-06-12 11:10:40
+R25	part_of Arg1:T123 Arg2:T122	
+R26	part_of Arg1:T127 Arg2:T126	
+R27	part_of Arg1:T129 Arg2:T128	
+R28	part_of Arg1:T132 Arg2:T131	
+R29	part_of Arg1:T135 Arg2:T134	
+T137	sample_name 4996 5007	proxy87.php
+T138	sample_function 5008 5017	web shell
+T139	sample_name 5084 5093	theme.php
+T140	sample_function 5094 5103	wso shell
+T141	sample_name 5171 5178	sma.php
+T142	sample_function 5179 5188	PHPMailer
+T143	sample_name 5255 5264	media.php
+T144	sample_function 5265 5274	wso shell
+T145	time 5051 5070	2016-06-12 14:31:13
+T146	time 5137 5156	2017-05-16 17:33:02
+T147	time 5222 5241	2017-05-19 13:53:53
+T148	time 5308 5327	2017-04-17 15:58:41
+R30	part_of Arg1:T138 Arg2:T137	
+R31	part_of Arg1:T140 Arg2:T139	
+R32	part_of Arg1:T142 Arg2:T141	
+R33	part_of Arg1:T144 Arg2:T143	
+T149	tool 5365 5374	Web shell
+T150	tool 5438 5441	WSO
+T151	function 5543 5601	masquerade as an error page containing a hidden login form
+R34	part_of Arg1:T151 Arg2:T150	
+T152	function 5399 5435	remote administration of the machine
+R35	part_of Arg1:T152 Arg2:T149	
+T153	url 5632 5664	https://github.com/wso-shell/WSO
+T155	sample_name 5698 5705	ini.php
+T154	sample_name 5710 5719	mysql.php
+T156	tool 5678 5689	PHP scripts
+T157	tool 5734 5743	WSO shell
+R36	part_of Arg1:T157 Arg2:T154	
+R37	part_of Arg1:T157 Arg2:T155	
+T158	url_evil 5800 5877	https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php
+T159	attack_activity 5776 5790	email spamming
+R38	launch Arg1:T157 Arg2:T159	
+R39	part_of Arg1:T158 Arg2:T157	
+T160	sample_name 5993 6004	proxy87.php
+T161	sample_name 6009 6019	code29.php
+T162	protocol 6080 6084	HTTP
+T163	protocol 6098 6102	POST
+T164	tool 5930 5940	web shells
+R40	part_of Arg1:T160 Arg2:T164	
+R41	part_of Arg1:T161 Arg2:T164	
+T165	function 6036 6049	eval function
+T166	reference_word 6024 6026	It
+R42	coreference Arg1:T166 Arg2:T164	
+R43	use Arg1:T166 Arg2:T165	
+T167	sub_activity 6053 6110	execute a command sent via HTTP cookies or a POST request
+R44	launch Arg1:T166 Arg2:T167	
+T168	tool 6124 6128	sshd
+T169	malware 6149 6157	backdoor
+R45	part_of Arg1:T169 Arg2:T168	
+T170	malware 6239 6248	backdoors
+T171	tool 6253 6257	sshd
+T172	malware 6282 6290	backdoor
+T173	url 6337 6382	https://github.com/jivoi/openssh-backdoor-kit
+R46	part_of Arg1:T170 Arg2:T171	
+T174	tool 6423 6432	sshd file
+T175	tool 6501 6516	master password
+T176	attack_goal 6521 6556	get authorized on the remote server
+R47	goal Arg1:T175 Arg2:T176	
+T177	person 6478 6489	an attacker
+R48	use Arg1:T177 Arg2:T175	
+T178	protocol 6634 6637	ssh
+T179	tool 6669 6673	sshd
+T180	protocol 6694 6697	ssh
+T181	tool 6765 6780	master password
+T182	string 6884 6903	/var/tmp/.pipe.sock
+T183	sub_activity 6957 7007	installed the tools they needed at different times
+T184	url 7196 7239	https://github.com/sqlmapproject/sqlmap.git
+T185	tool 7355 7371	smbtrap log file
+T186	md5 9752 9784	f3e3e25a822012023c6e81b206711865
+T187	md5 9819 9851	c76470e85b7f3da46539b40e5c552712
+T188	md5 9886 9918	155385cc19e3092765bcfed034b82ccb
+T189	md5 9953 9985	1644af9b6424e8f58f39c7fa5e76de51
+T190	md5 10020 10052	2292f5db385068e161ae277531b2e114
+T191	md5 10087 10119	7ec514bbdc6dd8f606f803d39af8883f
+T192	md5 10154 10186	78c31eff38fdb72ea3b1800ea917940f
+T193	string 10221 10240	rule Backdoored_ssh
+T194	string 10275 10290	$a1 = "OpenSSH"
+T195	string 10325 10344	$a2 = "usage : ssh"
+T196	string 10379 10395	$a3 = "HISTFILE"
+T197	string 10430 10495	uint32 (0 ) == 0x464c457f and filesize<1000000 and all of ( $a* )
+T198	string 10530 10537	cd /tmp
+T199	string 10572 10612	workdir=428c5fcf495396df04a459e317b70ca2
+T200	string 10647 10661	mkdir $workdir
+T201	string 10696 10707	cd $workdir
+T202	string 10742 10802	find / -type d -iname smbtrap > find-smbtrap.txt 2>/dev/null
+T203	string 10837 10901	find / -type d -iname dirsearch > find-dirsearch.txt 2>/dev/null
+T204	string 10936 10990	find / -type d -iname nmap > find-nmap.txt 2>/dev/null
+T205	string 11025 11083	find / -type d -iname wpscan > find-wpscan.txt 2>/dev/null
+T206	string 11118 11182	find / -type d -iname sublist3r > find-sublist3r.txt 2>/dev/null
+T207	string 11217 11278	dpkg -l | grep -E \ (impacket\|pcapy\|nmap\ ) > dpkg-grep.txt
+T208	string 11313 11390	cp /var/lib/dpkg/info/openssh-server.md5sums .#retrieve initial hash for sshd
+T209	string 11425 11492	md5sum /usr/sbin/sshd > sshd.md5sum #calculate actual hash for sshd
+T210	string 11527 11534	cd /tmp
+T211	string 11569 11609	workdir=428c5fcf495396df04a459e317b70ca2
+T212	string 11644 11658	mkdir $workdir
+T213	string 11693 11704	cd $workdir
+T214	string 11739 11799	find / -type d -iname smbtrap > find-smbtrap.txt 2>/dev/null
+T215	string 11834 11898	find / -type d -iname dirsearch > find-dirsearch.txt 2>/dev/null
+T216	string 11933 11987	find / -type d -iname nmap > find-nmap.txt 2>/dev/null
+T217	string 12022 12080	find / -type d -iname wpscan > find-wpscan.txt 2>/dev/null
+T218	string 12115 12179	find / -type d -iname sublist3r > find-sublist3r.txt 2>/dev/null
+T219	string 12214 12274	rpm -qa | grep -E \ (impacket\|pcapy\|nmap\ ) > rpm-grep.txt
+T220	string 12309 12383	rpm -qa –dump | grep ssh > rpm-qa-dump.txt #retrieve initial hash for sshd
+T221	string 12418 12498	sha256sum /usr/sbin/sshd > sshd.sha256sum #calculate actual sha256 hash for sshd
+T222	string 12533 12604	md5sum /usr/sbin/sshd > sshd.md5sum #calculate actual md5 hash for sshd
+T223	string 9698 9717	/var/tmp/.pipe.sock
+T224	string 9639 9663	/usr/lib/libng/media.php
+T225	string 9589 9604	/root/theme.php
+T226	string 9524 9554	/usr/share/python2.7/theme.php
+T227	sample_name 9545 9554	theme.php
+T228	string 9461 9489	/usr/share/python2.7/sma.php
+T229	sample_name 9482 9489	sma.php
+T230	string 9395 9426	/usr/share/python2.7/Sublist3r/
+T231	sample_name 9595 9604	theme.php
+T232	sample_name 9654 9663	media.php
+T233	string 9332 9360	/usr/share/python2.7/wpscan/
+T234	string 9275 9297	/usr/lib/libng/wpscan/
+T235	string 9214 9240	/usr/lib/libng/sqlmap-dev/
+T236	string 9151 9179	/usr/share/python2.7/sqlmap/
+T237	string 9085 9116	/usr/lib/libng/subbrute-master/
+T238	string 9028 9050	/usr/lib/libng/commix/
+T239	string 8970 8993	/usr/lib/libng/SMBTrap/
+T240	string 8904 8935	/usr/share/python2.7/dirsearch/
+T241	string 8844 8869	/usr/lib/libng/dirsearch/
+T242	string 8795 8809	/usr/bin/nmap/
+T243	string 8732 8760	/usr/lib/libng/ftpChecker.py
+T244	sample_name 8747 8760	ftpChecker.py
+T245	tool 8804 8808	nmap
+T246	tool 8859 8868	dirsearch
+T247	tool 8925 8934	dirsearch
+T248	tool 8985 8992	SMBTrap
+T249	tool 9043 9049	commix
+T250	tool 9100 9115	subbrute-master
+T251	tool 9172 9178	sqlmap
+T252	tool 9229 9239	sqlmap-dev
+T253	tool 9290 9296	wpscan
+T254	tool 9353 9359	wpscan
+T255	tool 9416 9425	Sublist3r
+T256	person 7329 7342	The attackers
+T257	sub_activity 8536 8570	performing initial data collection
+T258	sub_activity 8573 8605	the theft of authentication data
+T259	sub_activity 8610 8642	gaining persistence on resources
+T260	sub_activity 8199 8228	searching for vulnerabilities
+T261	sub_activity 8231 8267	gaining persistence on various hosts
+T262	sub_activity 8274 8302	stealing authentication data
+T263	reference_word 8162 8171	the group
+R49	launch Arg1:T263 Arg2:T260	
+R50	launch Arg1:T263 Arg2:T261	
+R51	launch Arg1:T263 Arg2:T262	
+T264	reference_word 8440 8449	the group
+T265	person 8500 8509	customers
+R52	launch Arg1:T264 Arg2:T257	
+R53	launch Arg1:T264 Arg2:T258	
+R54	launch Arg1:T264 Arg2:T259	
+T266	person 8360 8373	the attackers
+T267	person 8007 8020	the attackers
+T268	reference_word 7809 7818	the group
+T269	reference_word 7707 7716	the group
+T270	person 7707 7726	the group's members
+T271	person 7625 7638	the attackers
+T272	attack_goal 8072 8121	develop further attacks against target facilities
+T273	sub_activity 8039 8059	establish a foothold
+R55	launch Arg1:T267 Arg2:T273	
+R56	goal Arg1:T273 Arg2:T272	
+T274	threatActor_name 8700 8729	Energetic Bear/Crouching Yeti
+T275	sub_activity 7486 7566	exploited SQL injection and collected data from a database of one of the victims
+T276	tool 7158 7162	nmap
+T277	person 6943 6956	the attackers
+R57	launch Arg1:T277 Arg2:T183	
+T278	threatActor_name 8763 8792	Energetic Bear/Crouching Yeti
+T279	threatActor_name 8812 8841	Energetic Bear/Crouching Yeti
+T280	threatActor_name 8872 8901	Energetic Bear/Crouching Yeti
+T281	threatActor_name 8938 8967	Energetic Bear/Crouching Yeti
+T282	threatActor_name 8996 9025	Energetic Bear/Crouching Yeti
+T283	threatActor_name 9053 9082	Energetic Bear/Crouching Yeti
+T284	threatActor_name 9119 9148	Energetic Bear/Crouching Yeti
+T285	threatActor_name 9182 9211	Energetic Bear/Crouching Yeti
+T286	threatActor_name 9243 9272	Energetic Bear/Crouching Yeti
+T287	threatActor_name 9300 9329	Energetic Bear/Crouching Yeti
+T288	threatActor_name 9363 9392	Energetic Bear/Crouching Yeti
+T289	threatActor_name 9429 9458	Energetic Bear/Crouching Yeti
+T290	threatActor_name 9492 9521	Energetic Bear/Crouching Yeti
+T291	threatActor_name 9557 9586	Energetic Bear/Crouching Yeti
+T292	threatActor_name 9607 9636	Energetic Bear/Crouching Yeti
+T293	threatActor_name 9666 9695	Energetic Bear/Crouching Yeti
+T294	threatActor_name 9720 9749	Energetic Bear/Crouching Yeti
+T295	threatActor_name 9787 9816	Energetic Bear/Crouching Yeti
+T296	threatActor_name 9854 9883	Energetic Bear/Crouching Yeti
+T297	threatActor_name 9921 9950	Energetic Bear/Crouching Yeti
+T298	threatActor_name 9988 10017	Energetic Bear/Crouching Yeti
+R58	part_of Arg1:T243 Arg2:T274	
+R59	part_of Arg1:T242 Arg2:T278	
+R60	part_of Arg1:T241 Arg2:T279	
+R61	part_of Arg1:T240 Arg2:T280	
+R62	part_of Arg1:T239 Arg2:T281	
+R63	part_of Arg1:T244 Arg2:T274	
+R64	use Arg1:T278 Arg2:T245	
+R65	use Arg1:T279 Arg2:T246	
+R66	use Arg1:T280 Arg2:T247	
+R67	use Arg1:T281 Arg2:T248	
+R68	use Arg1:T282 Arg2:T249	
+R69	part_of Arg1:T238 Arg2:T282	
+R70	part_of Arg1:T237 Arg2:T283	
+R71	part_of Arg1:T236 Arg2:T284	
+R72	use Arg1:T284 Arg2:T251	
+R73	part_of Arg1:T235 Arg2:T285	
+R74	use Arg1:T285 Arg2:T252	
+R75	part_of Arg1:T234 Arg2:T286	
+R76	use Arg1:T286 Arg2:T253	
+R77	part_of Arg1:T233 Arg2:T287	
+R78	use Arg1:T287 Arg2:T254	
+R79	part_of Arg1:T230 Arg2:T288	
+R80	attack Arg1:T288 Arg2:T255	
+T299	threatActor_name 10055 10084	Energetic Bear/Crouching Yeti
+T300	threatActor_name 10122 10151	Energetic Bear/Crouching Yeti
+T301	threatActor_name 10189 10218	Energetic Bear/Crouching Yeti
+T302	threatActor_name 10243 10272	Energetic Bear/Crouching Yeti
+T303	threatActor_name 10293 10322	Energetic Bear/Crouching Yeti
+T304	threatActor_name 10347 10376	Energetic Bear/Crouching Yeti
+T305	threatActor_name 10398 10427	Energetic Bear/Crouching Yeti
+T306	threatActor_name 10498 10527	Energetic Bear/Crouching Yeti
+T307	threatActor_name 10540 10569	Energetic Bear/Crouching Yeti
+T308	threatActor_name 10615 10644	Energetic Bear/Crouching Yeti
+T309	threatActor_name 10664 10693	Energetic Bear/Crouching Yeti
+T310	threatActor_name 10710 10739	Energetic Bear/Crouching Yeti
+T311	threatActor_name 10805 10834	Energetic Bear/Crouching Yeti
+T312	threatActor_name 10904 10933	Energetic Bear/Crouching Yeti
+T313	threatActor_name 10993 11022	Energetic Bear/Crouching Yeti
+T314	threatActor_name 11086 11115	Energetic Bear/Crouching Yeti
+T315	threatActor_name 11185 11214	Energetic Bear/Crouching Yeti
+T316	threatActor_name 11281 11310	Energetic Bear/Crouching Yeti
+T317	threatActor_name 11393 11422	Energetic Bear/Crouching Yeti
+T318	threatActor_name 11495 11524	Energetic Bear/Crouching Yeti
+T319	threatActor_name 11537 11566	Energetic Bear/Crouching Yeti
+T320	threatActor_name 11612 11641	Energetic Bear/Crouching Yeti
+T321	threatActor_name 11661 11690	Energetic Bear/Crouching Yeti
+T322	threatActor_name 11707 11736	Energetic Bear/Crouching Yeti
+T323	threatActor_name 11802 11831	Energetic Bear/Crouching Yeti
+T324	threatActor_name 11901 11930	Energetic Bear/Crouching Yeti
+T325	threatActor_name 11990 12019	Energetic Bear/Crouching Yeti
+T326	threatActor_name 12083 12112	Energetic Bear/Crouching Yeti
+T327	threatActor_name 12182 12211	Energetic Bear/Crouching Yeti
+T328	threatActor_name 12277 12306	Energetic Bear/Crouching Yeti
+T329	threatActor_name 12386 12415	Energetic Bear/Crouching Yeti
+T330	threatActor_name 12501 12530	Energetic Bear/Crouching Yeti
+R81	part_of Arg1:T223 Arg2:T293	
+R82	part_of Arg1:T186 Arg2:T294	
+R83	part_of Arg1:T187 Arg2:T295	
+R84	part_of Arg1:T188 Arg2:T296	
+R85	part_of Arg1:T189 Arg2:T297	
+R86	part_of Arg1:T190 Arg2:T298	
+R87	part_of Arg1:T191 Arg2:T299	
+R88	part_of Arg1:T192 Arg2:T300	
+R89	part_of Arg1:T193 Arg2:T301	
+R90	part_of Arg1:T194 Arg2:T302	
+R91	part_of Arg1:T195 Arg2:T303	
+R92	part_of Arg1:T196 Arg2:T304	
+R93	part_of Arg1:T197 Arg2:T305	
+R94	part_of Arg1:T198 Arg2:T306	
+R95	part_of Arg1:T199 Arg2:T307	
+R96	part_of Arg1:T200 Arg2:T308	
+R97	part_of Arg1:T201 Arg2:T309	
+R98	part_of Arg1:T202 Arg2:T310	
+R99	part_of Arg1:T203 Arg2:T311	
+R100	part_of Arg1:T204 Arg2:T312	
+R101	part_of Arg1:T205 Arg2:T313	
+R102	part_of Arg1:T206 Arg2:T314	
+R103	part_of Arg1:T207 Arg2:T315	
+R104	part_of Arg1:T208 Arg2:T316	
+R105	part_of Arg1:T209 Arg2:T317	
+R106	part_of Arg1:T210 Arg2:T318	
+R107	part_of Arg1:T211 Arg2:T319	
+R108	part_of Arg1:T212 Arg2:T320	
+R109	part_of Arg1:T213 Arg2:T321	
+R110	part_of Arg1:T214 Arg2:T322	
+R111	part_of Arg1:T215 Arg2:T323	
+R112	part_of Arg1:T216 Arg2:T324	
+R113	part_of Arg1:T217 Arg2:T325	
+R114	part_of Arg1:T218 Arg2:T326	
+R115	part_of Arg1:T220 Arg2:T328	
+R116	part_of Arg1:T219 Arg2:T327	
+R117	part_of Arg1:T221 Arg2:T329	
+R118	part_of Arg1:T222 Arg2:T330	
+R119	part_of Arg1:T228 Arg2:T289	
+R120	part_of Arg1:T226 Arg2:T290	
+R121	part_of Arg1:T225 Arg2:T291	
+R122	part_of Arg1:T224 Arg2:T292	
+R123	part_of Arg1:T229 Arg2:T289	
+R124	part_of Arg1:T227 Arg2:T290	
+R125	part_of Arg1:T231 Arg2:T291	
+R126	part_of Arg1:T232 Arg2:T292	
+R127	coreference Arg1:T264 Arg2:T274	
+R128	coreference Arg1:T263 Arg2:T274	
+R129	coreference Arg1:T268 Arg2:T274	
+R130	coreference Arg1:T269 Arg2:T274	
+T331	person 4508 4521	the attackers
+R131	use Arg1:T331 Arg2:T121	
+T332	person 3301 3314	the attackers
+T333	sub_activity 3315 3435	scanned different resources to find a server that could be used to establish a foothold for hosting the attackers' tools
+R132	launch Arg1:T332 Arg2:T333	
+T334	person 3107 3120	the attackers
+R133	use Arg1:T334 Arg2:T94	
+R134	use Arg1:T334 Arg2:T97	
+R135	use Arg1:T334 Arg2:T98	
+T335	person 2871 2884	the attackers
+R136	goal Arg1:T335 Arg2:T95	
+T336	person 3536 3549	the attackers
+R137	launch Arg1:T336 Arg2:T99	
+T337	person 3677 3690	the attackers
+T338	sub_activity 3691 3752	went through the list of possible domains matching a given IP
+R138	launch Arg1:T337 Arg2:T338	
+R139	part_of Arg1:T89 Arg2:T88	
+T339	person 1756 1792	Developers of software and equipment

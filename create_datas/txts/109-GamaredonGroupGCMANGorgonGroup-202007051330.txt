@@ -1,0 +1,7 @@
+Unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+Gamaredon Group is a threat group that has been active since at least 2013 and has targeted individuals likely involved in the Ukrainian government .
+GCMAN is a threat group that focuses on targeting banks for the purpose of transferring money to e-currency sevises .
+Gorgon Group is a threat group consisting of members who are suspected to be Pakistan-based or have other connections to Pakistan .
+The group has performed a mix of criminal and targeted attacks , including campaigns against government organizations in the United Kingdom , Spain , Russia , and the United States .

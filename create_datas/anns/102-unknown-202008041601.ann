@@ -1,0 +1,222 @@
+T1	malware 173 179	botnet
+T2	malware 221 227	Emotet
+T3	malware 232 240	Trickbot
+T4	person 139 148	Criminals
+T5	person 300 307	victims
+T6	person 349 371	third-party developers
+R1	attack Arg1:T4 Arg2:T5	
+R2	attack Arg1:T4 Arg2:T6	
+R3	use Arg1:T4 Arg2:T1	
+R4	use Arg1:T4 Arg2:T2	
+R5	use Arg1:T4 Arg2:T3	
+T7	person 383 392	attackers
+T8	sub_activity 436 444	finances
+T9	sub_activity 449 461	IT processes
+T10	industry 449 451	IT
+R6	attack Arg1:T7 Arg2:T8	
+R7	attack Arg1:T7 Arg2:T9	
+T11	malware 480 490	ransomware
+T12	malware 320 330	ransomware
+R8	use Arg1:T4 Arg2:T12	
+R9	use Arg1:T7 Arg2:T11	
+T13	person 729 742	threat actors
+T14	tool 860 876	Active Directory
+T15	person 850 856	victim
+T16	malware 937 947	ransomware
+R10	attack Arg1:T13 Arg2:T15	
+R11	part_of Arg1:T14 Arg2:T15	
+R12	use Arg1:T13 Arg2:T16	
+T17	person 1039 1048	criminals
+T18	person 1069 1077	partners
+R13	part_of Arg1:T18 Arg2:T17	
+T19	malware 1112 1118	botnet
+T20	malware 1126 1136	ransomware
+R14	use Arg1:T17 Arg2:T19	
+R15	use Arg1:T17 Arg2:T20	
+T21	time 1403 1411	May 2020
+T22	time 1393 1398	March
+T23	location 1446 1452	Europe
+T24	malware 1510 1520	ransomware
+T25	threatActor_name 1599 1609	APT groups
+T26	malware 1664 1674	ransomware
+T27	program_language 1720 1723	C++
+R16	use Arg1:T26 Arg2:T27	
+T28	OS_name 1853 1860	Windows
+T29	reference_word 1889 1900	The program
+R17	coreference Arg1:T29 Arg2:T26	
+R18	located Arg1:T24 Arg2:T23	
+T30	tool 1970 1988	Microsoft Exchange
+T31	company 1970 1979	Microsoft
+R19	part_of Arg1:T30 Arg2:T31	
+T32	tool 1993 2003	SQL Server
+R20	part_of Arg1:T32 Arg2:T31	
+R21	attack Arg1:T29 Arg2:T30	
+R22	attack Arg1:T29 Arg2:T32	
+T33	encryption_algo 2059 2062	ECB
+T34	encryption_algo 2048 2055	AES-256
+T35	encryption_algo 2072 2080	RSA-2048
+R23	part_of Arg1:T34 Arg2:T33	
+T36	malware 2197 2207	ransomware
+T37	tool 2213 2229	Mersenne Twister
+R24	use Arg1:T36 Arg2:T37	
+T38	tool 2296 2299	RNG
+R25	use Arg1:T36 Arg2:T38	
+T39	encryption_algo 2444 2447	ECB
+T40	encryption_algo 2420 2439	electronic codebook
+R26	coreference Arg1:T39 Arg2:T40	
+T41	encryption_algo 2463 2466	AES
+T42	encryption_algo 2498 2501	ECB
+T43	encryption_algo 2506 2509	AES
+T44	time 2702 2712	April 2020
+T45	company 2685 2689	Zoom
+T46	person 2646 2671	cybersecurity researchers
+R27	launch Arg1:T46 Arg2:T45	
+R28	occur_time Arg1:T46 Arg2:T44	
+T47	string 2715 2718	VHD
+T48	string 2830 2832	MB
+T49	malware 2839 2849	ransomware
+T50	tool 3054 3074	Mersenne Twister RNG
+T51	malware 3256 3266	ransomware
+T52	reference_word 3313 3315	It
+R29	coreference Arg1:T52 Arg2:T51	
+T53	sub_activity 3336 3362	administrative credentials
+T54	sub_activity 3367 3379	IP addresses
+T55	protocol 3367 3369	IP
+R30	part_of Arg1:T53 Arg2:T52	
+R31	part_of Arg1:T54 Arg2:T52	
+T56	reference_word 3419 3423	them
+R32	coreference Arg1:T56 Arg2:T53	
+R33	coreference Arg1:T56 Arg2:T54	
+T57	person 3396 3402	victim
+R34	attack Arg1:T52 Arg2:T57	
+T58	protocol 3443 3446	SMB
+T59	sub_activity 3443 3454	SMB service
+R35	part_of Arg1:T58 Arg2:T59	
+R36	attack Arg1:T56 Arg2:T59	
+T60	malware 3567 3581	VHD ransomware
+T61	tool 3614 3617	WMI
+R37	attack Arg1:T60 Arg2:T61	
+T62	person 3684 3701	cybercrime groups
+T64	company 3750 3758	Sony SPE
+T63	malware 3761 3768	Shamoon
+T65	malware 3773 3789	OlympicDestroyer
+T66	threatActor_name 3736 3739	APT
+T67	string 3567 3570	VHD
+R39	part_of Arg1:T63 Arg2:T66	
+R40	part_of Arg1:T65 Arg2:T66	
+R38	attack Arg1:T66 Arg2:T64	
+T68	reference_word 3714 3716	it
+R41	coreference Arg1:T68 Arg2:T62	
+T69	malware 4052 4066	VHD ransomware
+T70	string 4052 4055	VHD
+T71	malware 4149 4159	ransomware
+T72	time 4269 4285	two months later
+T73	security_team 4303 4338	Kaspersky ’s Incident Response team
+T74	security_team 4341 4345	GERT
+R42	coreference Arg1:T74 Arg2:T73	
+R43	occur_time Arg1:T73 Arg2:T72	
+T75	string 4458 4461	VHD
+T76	malware 4458 4472	VHD ransomware
+R44	find Arg1:T73 Arg2:T76	
+T77	tool 4584 4587	VPN
+T78	person 4615 4624	attackers
+T79	malware 4673 4681	backdoor
+T80	tool 4739 4762	Active Directory server
+R45	use Arg1:T78 Arg2:T79	
+R46	attack Arg1:T78 Arg2:T80	
+R47	attack Arg1:T78 Arg2:T77	
+T81	malware 4788 4802	VHD ransomware
+T82	string 4788 4791	VHD
+T83	reference_word 4765 4769	They
+R48	coreference Arg1:T83 Arg2:T78	
+R49	use Arg1:T83 Arg2:T81	
+T84	malware 4900 4910	ransomware
+T85	program_language 4954 4960	Python
+R50	use Arg1:T84 Arg2:T85	
+T86	time 5056 5064	10 hours
+R51	occur_time Arg1:T84 Arg2:T86	
+T87	malware 5116 5124	backdoor
+T88	malware 5203 5207	MATA
+T89	malware 5236 5241	Dacls
+R52	coreference Arg1:T89 Arg2:T88	
+R53	part_of Arg1:T87 Arg2:T88	
+T90	time 5246 5256	On July 22
+T91	reference_word 5320 5322	it
+T92	sub_activity 5274 5286	blog article
+R54	release_time Arg1:T92 Arg2:T90	
+R55	coreference Arg1:T91 Arg2:T92	
+T93	reference_word 5363 5366	its
+T94	reference_word 5404 5407	its
+R56	coreference Arg1:T94 Arg2:T93	
+R57	coreference Arg1:T93 Arg2:T88	
+T95	threatActor_name 5421 5428	Lazarus
+T96	malware 5824 5838	VHD ransomware
+T97	string 5824 5827	VHD
+T98	person 5692 5704	threat actor
+T99	person 5712 5718	victim
+R59	attack Arg1:T98 Arg2:T99	
+T100	threatActor_name 5911 5918	Lazarus
+T101	malware 5950 5954	MATA
+T102	malware 5996 6010	VHD ransomware
+T103	string 5996 5999	VHD
+T104	threatActor_name 6041 6048	Lazarus
+R61	part_of Arg1:T102 Arg2:T104	
+R62	part_of Arg1:T96 Arg2:T100	
+R58	part_of Arg1:T94 Arg2:T95	
+R60	part_of Arg1:T101 Arg2:T100	
+T105	threatActor_name 6166 6173	Lazarus
+T106	threatActor_name 6225 6228	APT
+T107	sub_activity 6233 6248	financial crime
+T108	malware 6359 6365	botnet
+R63	part_of Arg1:T105 Arg2:T106	
+R64	part_of Arg1:T105 Arg2:T107	
+R65	use Arg1:T105 Arg2:T108	
+T109	reference_word 6420 6424	they
+R66	coreference Arg1:T109 Arg2:T105	
+T110	reference_word 6545 6549	they
+R67	coreference Arg1:T110 Arg2:T109	
+T111	reference_word 6631 6640	the group
+R68	coreference Arg1:T111 Arg2:T110	
+T112	time 6827 6835	10 hours
+T113	malware 6858 6868	ransomware
+R69	occur_time Arg1:T113 Arg2:T112	
+T114	threatActor_name 7025 7032	Lazarus
+T115	protocol 7215 7217	IP
+T116	sub_activity 7148 7164	spreader utility
+T117	person 7244 7250	victim
+T118	sub_activity 7184 7210	administrative credentials
+R70	part_of Arg1:T118 Arg2:T116	
+T119	sub_activity 7215 7227	IP addresses
+R71	part_of Arg1:T119 Arg2:T116	
+T120	string 7290 7293	IoC
+R72	attack Arg1:T116 Arg2:T117	
+T121	malware 7327 7331	MATA
+T122	string 7419 7422	IoC
+T123	malware 7433 7447	VHD ransomware
+T124	string 7433 7436	VHD
+T125	malware 7485 7499	VHD ransomware
+T126	malware 7537 7551	VHD ransomware
+T127	malware 7589 7603	VHD ransomware
+T128	malware 7641 7655	VHD ransomware
+T129	string 7641 7644	VHD
+T130	string 7589 7592	VHD
+T131	string 7537 7540	VHD
+T132	string 7485 7488	VHD
+T133	sha1 7450 7482	6D12547772B57A6DA2B25D2188451983
+T134	sha1 7502 7534	D0806C9D8BCEA0BD47D80FA004744D7D
+T135	sha1 7554 7586	DD00A8610BB84B54E99AE8099DB1FC20
+T136	sha1 7606 7638	CCC6026ACF7EADADA9ADACCAB70CA4D6
+T137	sha1 7658 7690	EFD4A87E7C5DCBB64B7313A13B4B1012
+T138	protocol 7705 7707	IP
+T139	IP_evil 7709 7722	172.93.184.62
+T140	IP_evil 7733 7746	23.227.199.69
+T141	IP_evil 7757 7769	104.232.71.7
+T142	malware 7723 7727	MATA
+T143	tool 7728 7730	C2
+T144	malware 7747 7751	MATA
+T145	tool 7752 7754	C2
+T146	tool 7775 7777	C2
+T147	malware 7770 7774	MATA
+T148	domain_evil 7780 7797	mnmski.cafe24.com
+T149	malware 7825 7835	ransomware
+T150	threatActor_name 0 7	Lazarus

@@ -1,0 +1,397 @@
+T1	malware 28 36	TrickBot
+T2	time 223 227	2016
+T3	malware 230 238	TrickBot
+T4	reference_word 242 264	an information stealer
+R1	coreference Arg1:T4 Arg2:T3	
+T5	tool 8 13	Mworm
+T6	tool 21 26	Nworm
+R4	first_found_time Arg1:T3 Arg2:T2	
+T7	industry 313 328	criminal groups
+T9	tool 279 294	backdoor access
+R6	use Arg1:T7 Arg2:T9	
+T10	sub_activity 332 356	distribute other malware
+T11	malware 359 367	TrickBot
+T12	tool 373 380	modules
+R8	use Arg1:T11 Arg2:T12	
+T13	sample_function 384 411	perform different functions
+T14	tool 518 520	DC
+T15	tool 498 515	Domain Controller
+T16	OS_name 467 474	Windows
+T19	malware 525 533	TrickBot
+T17	sample_function 438 449	propagating
+T20	tool 549 562	three modules
+R11	use Arg1:T19 Arg2:T20	
+T21	time 593 603	April 2020
+T22	malware 606 614	TrickBot
+T23	tool 664 669	mworm
+R2	use Arg1:T1 Arg2:T5	
+R3	use Arg1:T1 Arg2:T6	
+R12	use Arg1:T22 Arg2:T23	
+R13	occur_time Arg1:T22 Arg2:T21	
+T24	tool 695 700	nworm
+T25	tool 729 734	nworm
+T26	tool 769 771	DC
+T8	attack_goal 270 294	provides backdoor access
+T27	sub_activity 703 713	Infections
+T28	reference_word 778 782	they
+T30	reference_word 879 881	It
+T31	malware 976 984	TrickBot
+T33	malware 1100 1108	TrickBot
+T34	tool 974 1000	a TrickBot executable file
+T35	reference_word 1029 1031	it
+T37	tool 1137 1142	mworm
+T38	sub_activity 1098 1118	A TrickBot infection
+R20	launch Arg1:T37 Arg2:T38	
+T36	tool 1162 1172	system RAM
+R21	located Arg1:T37 Arg2:T36	
+T39	tool 1301 1303	DC
+T40	malware 1306 1314	TrickBot
+T41	reference_word 1336 1338	it
+R22	coreference Arg1:T41 Arg2:T40	
+T42	sample_function 1364 1391	perform different functions
+T43	tool 1352 1360	binaries
+R23	use Arg1:T41 Arg2:T43	
+T44	OS_name 1479 1486	Windows
+T45	tool 1500 1503	EXE
+T46	tool 1520 1524	disk
+R25	located Arg1:T45 Arg2:T46	
+T47	tool 1532 1535	EXE
+T48	malware 1555 1563	TrickBot
+T49	tool 1555 1570	TrickBot loader
+T50	malware 1593 1601	TrickBot
+T51	reference_word 1580 1582	it
+T52	malware 1612 1620	TrickBot
+T53	tool 1658 1662	DLLs
+T54	tool 1668 1672	EXEs
+T55	tool 1612 1628	TrickBot modules
+R29	coreference Arg1:T54 Arg2:T55	
+T57	malware 1731 1739	TrickBot
+T58	tool 1766 1779	system memory
+R30	located Arg1:T57 Arg2:T58	
+T60	tool 1704 1728	infected Windows 10 host
+R31	part_of Arg1:T58 Arg2:T60	
+T61	tool 1792 1815	infected Windows 7 host
+T62	tool 1877 1881	disk
+T63	tool 1855 1862	modules
+R32	located Arg1:T63 Arg2:T62	
+T64	tool 1830 1839	artifacts
+R33	located Arg1:T64 Arg2:T61	
+T65	tool 1890 1899	artifacts
+T66	tool 1904 1922	encrypted binaries
+R34	coreference Arg1:T66 Arg2:T65	
+R18	coreference Arg1:T34 Arg2:T30	
+R19	coreference Arg1:T35 Arg2:T34	
+T67	malware 2024 2032	TrickBot
+T68	malware 1934 1942	TrickBot
+T69	tool 1961 1979	encrypted binaries
+T70	tool 2024 2040	TrickBot modules
+R35	coreference Arg1:T70 Arg2:T69	
+T72	time 2055 2069	September 2019
+T73	malware 2072 2080	TrickBot
+T74	malware 2302 2310	TrickBot
+T75	protocol 2324 2328	HTTP
+T77	tool 2129 2134	mworm
+T78	tool 2137 2143	mshare
+T79	tool 2150 2153	tab
+T80	tool 2221 2223	DC
+T81	tool 2426 2428	DC
+T82	tool 2527 2529	DC
+T83	tool 2547 2549	DC
+T84	protocol 2490 2493	SMB
+T85	OS_name 2467 2474	Windows
+T88	OS_name 2271 2278	Windows
+T89	malware 2378 2386	TrickBot
+T91	protocol 2396 2399	SMB
+T92	malware 2566 2574	TrickBot
+T94	protocol 2588 2592	HTTP
+T95	tool 2324 2332	HTTP URL
+T76	tool 2302 2314	TrickBot EXE
+T93	tool 2566 2578	TrickBot EXE
+T96	tool 2588 2596	HTTP URL
+T97	reference_word 2621 2623	it
+T101	tool 2072 2088	TrickBot modules
+R37	part_of Arg1:T77 Arg2:T101	
+R38	part_of Arg1:T78 Arg2:T101	
+R39	part_of Arg1:T79 Arg2:T101	
+R40	occur_time Arg1:T101 Arg2:T72	
+T103	malware 2687 2695	TrickBot
+T105	tool 2743 2745	DC
+T106	time 2754 2767	February 2020
+T107	tool 2770 2774	URLs
+T108	tool 2788 2801	these modules
+T109	malware 2824 2832	TrickBot
+T110	tool 2824 2842	TrickBot EXE files
+T111	tool 2873 2876	URL
+T112	tool 2935 2938	URL
+T113	tool 2952 2957	mworm
+T114	tool 2996 2999	URL
+T100	reference_word 2156 2160	They
+R41	coreference Arg1:T100 Arg2:T101	
+T116	tool 2262 2285	infected Windows client
+R42	use Arg1:T116 Arg2:T95	
+R24	goal Arg1:T43 Arg2:T42	
+T117	sample_function 2286 2314	retrieves a new TrickBot EXE
+R43	goal Arg1:T95 Arg2:T117	
+T118	OS_name 2348 2355	Windows
+T90	tool 2378 2390	TrickBot EXE
+T98	tool 2339 2362	infected Windows client
+R44	use Arg1:T98 Arg2:T91	
+T119	tool 2458 2481	infected Windows client
+R45	use Arg1:T119 Arg2:T84	
+R46	use Arg1:T83 Arg2:T96	
+T120	reference_word 2609 2615	itself
+R47	coreference Arg1:T120 Arg2:T83	
+R49	coreference Arg1:T97 Arg2:T93	
+T121	tool 2890 2896	mshare
+R50	part_of Arg1:T111 Arg2:T121	
+R51	part_of Arg1:T107 Arg2:T108	
+R52	part_of Arg1:T112 Arg2:T113	
+T122	sample_function 2805 2842	retrieve follow-up TrickBot EXE files
+R54	goal Arg1:T107 Arg2:T122	
+T123	tool 3063 3067	URLs
+T124	tool 3072 3084	IP addresses
+R55	use Arg1:T123 Arg2:T124	
+T125	time 3109 3119	April 2020
+T126	malware 3139 3147	TrickBot
+T127	malware 3181 3189	TrickBot
+T128	tool 3208 3213	mworm
+T129	tool 3260 3265	nworm
+T132	tool 3282 3307	infected Windows 7 client
+R58	located Arg1:T129 Arg2:T132	
+T133	protocol 3310 3314	HTTP
+T134	protocol 3622 3626	HTTP
+T135	malware 3337 3345	TrickBot
+T136	tool 3337 3350	TrickBot EXEs
+T137	tool 3361 3366	nworm
+T138	tool 3414 3419	mworm
+T139	tool 3444 3449	mworm
+T140	malware 3460 3468	TrickBot
+T141	tool 3460 3472	TrickBot EXE
+T142	tool 3452 3455	URL
+T143	tool 3512 3515	URL
+T144	malware 3520 3528	TrickBot
+T145	tool 3520 3532	TrickBot EXE
+T146	tool 3560 3565	mworm
+T147	malware 3578 3586	TrickBot
+T148	tool 3578 3590	TrickBot EXE
+T149	tool 3637 3642	nworm
+T150	malware 3655 3663	TrickBot
+T152	protocol 3731 3735	HTTP
+R59	part_of Arg1:T142 Arg2:T141	
+T153	tool 3504 3509	nworm
+R61	part_of Arg1:T143 Arg2:T145	
+T154	tool 3755 3764	Wireshark
+T155	protocol 3779 3782	TCP
+T156	protocol 3831 3835	HTTP
+T159	tool 3907 3912	mworm
+T160	tool 4018 4020	DC
+T161	malware 3963 3971	TrickBot
+T164	tool 4028 4033	nworm
+T165	tool 4055 4057	DC
+T166	time 4999 5018	January 27th , 2020
+T167	time 5331 5348	March 17th , 2020
+T168	protocol 4639 4643	HTTP
+T169	malware 4305 4313	TrickBot
+T170	malware 4243 4251	TrickBot
+T171	tool 4235 4237	DC
+T172	tool 4132 4134	DC
+T173	malware 4139 4147	TrickBot
+T174	tool 4155 4157	DC
+T175	tool 4200 4206	mshare
+T176	tool 4324 4329	nworm
+T177	tool 4211 4214	tab
+T178	tool 4407 4409	DC
+T179	tool 4296 4298	DC
+T180	malware 4904 4912	TrickBot
+T181	malware 4959 4967	TrickBot
+T182	malware 4752 4760	TrickBot
+T183	sample_name 4886 4901	mor-series gtag
+T184	malware 4491 4499	TrickBot
+T185	malware 5387 5395	TrickBot
+T186	malware 5361 5369	TrickBot
+T187	person 3793 3795	we
+R63	use Arg1:T187 Arg2:T154	
+R64	attack Arg1:T164 Arg2:T165	
+R65	located Arg1:T173 Arg2:T174	
+R67	attack Arg1:T175 Arg2:T171	
+R68	attack Arg1:T177 Arg2:T171	
+T188	tool 4413 4421	a server
+T189	OS_name 4468 4475	Windows
+T190	tool 4534 4538	gtag
+T191	tool 4514 4524	identifier
+R70	coreference Arg1:T190 Arg2:T191	
+T192	reference_word 4541 4545	This
+R72	coreference Arg1:T192 Arg2:T190	
+T193	malware 4594 4602	TrickBot
+T194	tool 4594 4609	TrickBot binary
+T195	tool 4612 4617	Gtags
+T196	malware 4661 4669	TrickBot
+T197	reference_word 4682 4686	They
+R75	coreference Arg1:T197 Arg2:T195	
+T198	tool 4774 4778	gtag
+T199	sample_name 5020 5035	ono-series gtag
+T200	sample_name 5211 5226	red-series gtag
+T201	malware 5046 5054	TrickBot
+T203	tool 5278 5281	EXE
+T204	malware 5298 5306	TrickBot
+T205	sample_name 5298 5316	TrickBot gtag red5
+T206	tool 4926 4932	Emotet
+T207	tool 4989 4995	Emotet
+T208	company 5094 5103	Microsoft
+T209	tool 5084 5120	malicious Microsoft Office documents
+T210	tool 5144 5149	Excel
+T211	tool 5185 5208	English-language emails
+T212	tool 5126 5130	Word
+R78	use Arg1:T201 Arg2:T209	
+R80	part_of Arg1:T210 Arg2:T209	
+R81	use Arg1:T201 Arg2:T211	
+T213	tool 5351 5356	Gtags
+T214	reference_word 5417 5421	They
+R82	coreference Arg1:T214 Arg2:T213	
+T215	sample_name 5437 5452	tot-series gtag
+T216	malware 5455 5463	TrickBot
+T218	tool 5727 5729	DC
+T219	sample_name 5497 5512	jim-series gtag
+T220	malware 5229 5237	TrickBot
+T221	malware 5515 5523	TrickBot
+T222	malware 6220 6228	TrickBot
+T223	malware 5944 5952	TrickBot
+T224	tool 5658 5663	nworm
+T225	malware 5792 5800	TrickBot
+T226	tool 5816 5821	nworm
+T227	tool 5886 5894	Internet
+T229	malware 6030 6038	TrickBot
+T232	tool 6242 6260	Palo Alto Networks
+T233	malware 6298 6306	TrickBot
+T234	tool 6343 6352	AutoFocus
+T235	malware 6369 6377	TrickBot
+T236	malware 6400 6408	TrickBot
+T237	tool 6400 6412	TrickBot tag
+T238	tool 5792 5807	TrickBot binary
+R83	use Arg1:T226 Arg2:T238	
+T239	person 5944 5963	TrickBot developers
+T240	sub_activity 5967 5982	avoid detection
+R84	goal Arg1:T239 Arg2:T240	
+T241	reference_word 6042 6044	it
+R85	coreference Arg1:T241 Arg2:T229	
+T230	company 6179 6188	Microsoft
+T242	person 6242 6270	Palo Alto Networks customers
+R86	attack Arg1:T233 Arg2:T242	
+T243	tool 6314 6340	threat prevention platform
+R87	use Arg1:T242 Arg2:T243	
+T244	person 6343 6358	AutoFocus users
+R88	use Arg1:T244 Arg2:T237	
+T245	sub_activity 6363 6386	track TrickBot activity
+R89	goal Arg1:T237 Arg2:T245	
+R90	occur_time Arg1:T107 Arg2:T106	
+R9	goal Arg1:T12 Arg2:T13	
+R10	part_of Arg1:T17 Arg2:T13	
+R7	goal Arg1:T7 Arg2:T10	
+R91	coreference Arg1:T14 Arg2:T15	
+T18	tool 458 481	infected Windows client
+T228	OS_name 6189 6196	Windows
+R92	part_of Arg1:T228 Arg2:T230	
+T56	OS_name 1713 1723	Windows 10
+T59	OS_name 1801 1810	Windows 7
+T131	OS_name 3291 3300	Windows 7
+R93	located Arg1:T17 Arg2:T18	
+T231	reference_word 630 633	its
+R94	coreference Arg1:T231 Arg2:T22	
+T246	tool 676 686	new module
+R95	coreference Arg1:T24 Arg2:T246	
+R14	use Arg1:T22 Arg2:T246	
+R15	launch Arg1:T25 Arg2:T27	
+R96	coreference Arg1:T28 Arg2:T27	
+T247	tool 942 957	network traffic
+R17	use Arg1:T30 Arg2:T247	
+T248	malware 1445 1453	TrickBot
+R26	coreference Arg1:T49 Arg2:T47	
+R27	coreference Arg1:T51 Arg2:T49	
+T249	tool 1682 1695	system memory
+R97	located Arg1:T53 Arg2:T249	
+R98	located Arg1:T54 Arg2:T249	
+T71	tool 2007 2020	system memory
+R36	located Arg1:T69 Arg2:T71	
+T102	tool 2721 2735	AD environment
+R48	part_of Arg1:T105 Arg2:T102	
+R99	located Arg1:T103 Arg2:T102	
+T104	sub_activity 3139 3157	TrickBot infection
+R56	occur_time Arg1:T104 Arg2:T125	
+T250	tool 3163 3178	lab environment
+R100	located Arg1:T104 Arg2:T250	
+T251	reference_word 3226 3229	its
+R101	coreference Arg1:T251 Arg2:T128	
+T130	tool 3240 3252	new artifact
+R57	coreference Arg1:T129 Arg2:T130	
+T252	tool 3310 3322	HTTP traffic
+R60	part_of Arg1:T252 Arg2:T136	
+R102	launch Arg1:T137 Arg2:T252	
+T253	tool 3396 3403	traffic
+R103	launch Arg1:T138 Arg2:T253	
+T254	tool 3717 3723	binary
+T151	tool 3655 3667	TrickBot EXE
+R104	coreference Arg1:T151 Arg2:T254	
+T255	tool 3731 3743	HTTP traffic
+R105	located Arg1:T254 Arg2:T255	
+T256	tool 3831 3843	HTTP traffic
+T157	tool 3858 3874	old mworm module
+R106	launch Arg1:T157 Arg2:T256	
+T158	tool 3883 3899	new nworm module
+R107	launch Arg1:T158 Arg2:T256	
+T163	tool 3919 3935	new nworm module
+T162	tool 3996 4010	AD environment
+R62	part_of Arg1:T160 Arg2:T162	
+T257	sub_activity 3963 3981	TrickBot infection
+R108	located Arg1:T257 Arg2:T162	
+R66	use Arg1:T175 Arg2:T170	
+R109	use Arg1:T177 Arg2:T170	
+T258	tool 4491 4506	TrickBot binary
+R71	part_of Arg1:T191 Arg2:T258	
+T259	tool 4558 4576	configuration data
+R73	part_of Arg1:T259 Arg2:T194	
+R110	part_of Arg1:T192 Arg2:T259	
+T260	tool 4639 4651	HTTP traffic
+R74	part_of Arg1:T195 Arg2:T260	
+T261	tool 4752 4767	TrickBot binary
+T262	tool 4784 4807	short alphabetic string
+R69	coreference Arg1:T188 Arg2:T178	
+R111	coreference Arg1:T262 Arg2:T198	
+T263	tool 4844 4864	one-up serialization
+R112	coreference Arg1:T263 Arg2:T262	
+T264	sample_name 4959 4978	TrickBot gtag mor84
+R77	occur_time Arg1:T264 Arg2:T166	
+R79	part_of Arg1:T212 Arg2:T209	
+T202	tool 5255 5263	DLL file
+R113	coreference Arg1:T202 Arg2:T220	
+R76	occur_time Arg1:T205 Arg2:T167	
+T265	tool 5361 5378	TrickBot binaries
+R114	part_of Arg1:T213 Arg2:T265	
+T266	tool 5387 5403	TrickBot modules
+R115	use Arg1:T266 Arg2:T213	
+T267	sample_name 5578 5593	lib-series gtag
+T268	tool 5455 5472	TrickBot binaries
+T217	tool 5481 5494	mshare module
+R116	use Arg1:T217 Arg2:T268	
+T269	tool 5515 5532	TrickBot binaries
+T270	tool 5541 5546	nworm
+T271	tool 5557 5566	old mworm
+R117	use Arg1:T270 Arg2:T269	
+R118	use Arg1:T271 Arg2:T269	
+T272	malware 5596 5604	TrickBot
+T273	tool 5596 5613	TrickBot binaries
+T274	tool 5622 5632	tab module
+R119	use Arg1:T274 Arg2:T273	
+R5	goal Arg1:T4 Arg2:T8	
+T275	tool 1633 1655	dynamic link libraries
+R120	coreference Arg1:T53 Arg2:T275	
+R28	coreference Arg1:T275 Arg2:T55	
+T29	tool 855 860	nworm
+R16	coreference Arg1:T30 Arg2:T29	
+T32	tool 1011 1016	mworm
+T87	tool 2234 2240	mshare
+T276	tool 2245 2248	tab
+T86	tool 2439 2444	mworm
+T99	tool 2640 2645	mworm
+T115	tool 3013 3016	tab
+R53	part_of Arg1:T114 Arg2:T115	
+T277	malware 279 287	backdoor

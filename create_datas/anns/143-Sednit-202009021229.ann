@@ -1,0 +1,190 @@
+T1	threatActor_name 14 20	Sednit
+T2	threatActor_name 1759 1765	Sednit
+T3	time 475 483	May 2013
+T4	time 487 498	August 2016
+T6	malware 1776 1783	Xtunnel
+T7	malware 189 196	Xtunnel
+T8	malware 549 556	Xtunnel
+T9	protocol 610 634	Transport Layer Security
+T10	protocol 637 640	TLS
+R1	coreference Arg1:T10 Arg2:T9	
+T11	malware 676 683	Xtunnel
+T12	malware 932 939	Xtunnel
+T13	malware 1057 1064	Xtunnel
+T14	malware 1293 1300	Xtunnel
+T15	malware 2476 2483	Xtunnel
+T16	malware 2679 2686	Xtunnel
+T17	malware 2904 2911	Xtunnel
+T18	malware 3240 3247	Xtunnel
+T19	malware 3173 3180	Xtunnel
+T20	malware 3363 3370	Xtunnel
+T21	malware 4425 4432	Xtunnel
+T22	malware 4486 4493	Xtunnel
+T23	malware 4643 4650	Xtunnel
+T24	malware 5042 5049	Xtunnel
+T25	malware 5297 5304	Xtunnel
+T26	malware 5884 5891	Xtunnel
+T27	malware 5503 5510	Xtunnel
+T28	malware 5707 5714	Xtunnel
+T29	malware 5903 5910	Xtunnel
+T30	malware 5961 5968	Xtunnel
+T31	malware 6097 6104	Xtunnel
+T32	malware 6973 6980	Xtunnel
+T33	malware 7589 7596	Xtunnel
+T34	malware 7248 7255	Xtunnel
+T35	malware 849 856	Xtunnel
+T36	protocol 5063 5066	TCP
+T37	protocol 5385 5388	TCP
+T38	protocol 7279 7282	TCP
+T39	protocol 7428 7431	TCP
+T40	protocol 7412 7415	UDP
+T41	protocol 7478 7481	UDP
+T42	protocol 7822 7825	UDP
+T43	protocol 8109 8112	UDP
+T44	protocol 8055 8058	UDP
+T45	protocol 7952 7955	UDP
+T46	protocol 7980 7983	UDP
+T47	protocol 6675 6677	IP
+T48	protocol 6294 6296	IP
+T49	IP_evil 7521 7534	176.31.112.10
+T50	protocol 2976 2978	IP
+T51	malware 354 361	Xtunnel
+T53	tool 1099 1102	C&C
+T52	tool 274 277	C&C
+T54	tool 1255 1258	C&C
+T55	tool 1427 1430	C&C
+T56	tool 2601 2604	C&C
+T57	tool 2653 2656	C&C
+T58	tool 2765 2768	C&C
+T59	tool 2891 2894	C&C
+T60	tool 2957 2960	C&C
+T61	tool 3189 3192	C&C
+T62	tool 3459 3462	C&C
+T63	tool 3559 3562	C&C
+T64	tool 3818 3821	C&C
+T65	tool 4196 4199	C&C
+T66	tool 4144 4147	C&C
+T67	tool 4351 4354	C&C
+T68	tool 4441 4444	C&C
+T69	tool 4458 4461	C&C
+T70	tool 4614 4617	C&C
+T71	tool 4863 4866	C&C
+T72	tool 5201 5204	C&C
+T73	tool 5583 5586	C&C
+T74	tool 5692 5695	C&C
+T75	tool 5805 5808	C&C
+T76	tool 6137 6140	C&C
+T77	tool 6415 6418	C&C
+T78	tool 6803 6806	C&C
+T79	tool 6483 6486	C&C
+T80	tool 7366 7369	C&C
+T81	tool 7547 7550	C&C
+T82	tool 7450 7453	C&C
+T83	tool 7654 7657	C&C
+T84	tool 8025 8028	C&C
+T85	time 6995 6999	2013
+T86	time 7045 7053	mid-2016
+T87	time 7684 7692	mid-2015
+T88	protocol 6164 6166	IP
+T89	protocol 6373 6375	IP
+T90	protocol 4991 4993	IP
+T91	sample_name 2232 2250	XAPS_OBJECTIVE.pdb
+T92	sample_name 2311 2329	XAPS_OBJECTIVE.pdb
+T93	encryption_algo 2628 2631	RC4
+T5	time 660 669	June 2015
+R2	use Arg1:T2 Arg2:T6	
+T94	security_team 6920 6924	ESET
+R3	find Arg1:T94 Arg2:T32	
+R4	first_found_time Arg1:T32 Arg2:T85	
+T95	time 7300 7311	August 2013
+T96	protocol 7312 7315	UDP
+T97	protocol 7706 7709	UDP
+T98	tool 8066 8069	TPS
+T99	tool 8157 8160	TPS
+T100	tool 7915 7918	TPS
+T101	encryption_algo 3209 3212	RC4
+T102	encryption_algo 3912 3915	RC4
+T103	malware 2055 2059	XAPS
+T104	person 1933 1943	developers
+R5	part_of Arg1:T104 Arg2:T2	
+R6	coreference Arg1:T103 Arg2:T6	
+R7	use Arg1:T104 Arg2:T103	
+R8	part_of Arg1:T91 Arg2:T103	
+R9	part_of Arg1:T92 Arg2:T103	
+R10	first_found_time Arg1:T51 Arg2:T3	
+R11	use Arg1:T8 Arg2:T9	
+T105	person 1793 1803	developers
+R12	part_of Arg1:T105 Arg2:T2	
+T106	sub_activity 1156 1193	creating a “ tunnel ” between the two
+R13	launch Arg1:T13 Arg2:T106	
+T107	sub_activity 2615 2646	establish an RC4-encrypted link
+R14	launch Arg1:T15 Arg2:T107	
+T108	sub_activity 2690 2729	open a tunnel with a designated machine
+R15	launch Arg1:T16 Arg2:T108	
+T109	sub_activity 2776 2809	will be forwarded to this machine
+T110	sub_activity 2866 2901	will be forwarded to the C&C server
+R16	launch Arg1:T16 Arg2:T109	
+R17	launch Arg1:T16 Arg2:T110	
+T111	sub_activity 3115 3140	share a cryptographic key
+R18	launch Arg1:T17 Arg2:T111	
+T112	attack_goal 3145 3199	encrypting the link between Xtunnel and the C&C server
+R19	goal Arg1:T111 Arg2:T112	
+R20	use Arg1:T17 Arg2:T101	
+R21	use Arg1:T7 Arg2:T52	
+R22	use Arg1:T13 Arg2:T53	
+R23	use Arg1:T14 Arg2:T54	
+T113	sub_activity 2912 2967	makes a custom encryption handshake with its C&C server
+R24	launch Arg1:T17 Arg2:T113	
+T114	attack_goal 3115 3140	share a cryptographic key
+R25	goal Arg1:T113 Arg2:T114	
+R26	use Arg1:T15 Arg2:T56	
+R27	use Arg1:T16 Arg2:T57	
+R28	use Arg1:T17 Arg2:T60	
+R29	use Arg1:T19 Arg2:T61	
+R30	use Arg1:T20 Arg2:T62	
+R31	use Arg1:T21 Arg2:T68	
+T115	sub_activity 4207 4253	provides a port number to the infected machine
+R32	launch Arg1:T65 Arg2:T115	
+T116	attack_goal 4267 4286	serve as a fallback
+R33	goal Arg1:T115 Arg2:T116	
+T117	sub_activity 362 404	infected machine serves as a network pivot
+T118	attack_goal 408 424	contact machines
+R34	launch Arg1:T51 Arg2:T117	
+R35	goal Arg1:T117 Arg2:T118	
+R36	use Arg1:T69 Arg2:T22	
+R37	use Arg1:T70 Arg2:T23	
+T119	string 4724 4732	TunnelID
+#1	AnnotatorNotes T119	隧道标识符
+T120	string 4806 4814	TunnelID
+T121	string 5328 5336	TunnelID
+T122	string 5245 5253	TunnelID
+T123	string 6462 6470	TunnelID
+T124	string 6693 6701	TunnelID
+T125	string 6836 6844	TunnelID
+T126	sub_activity 4883 4900	open a new tunnel
+R38	launch Arg1:T71 Arg2:T126	
+R39	use Arg1:T24 Arg2:T36	
+R40	use Arg1:T25 Arg2:T37	
+T127	string 5546 5554	TunnelID
+R41	use Arg1:T27 Arg2:T73	
+R42	use Arg1:T28 Arg2:T74	
+R43	use Arg1:T75 Arg2:T26	
+T128	sub_activity 5055 5077	makes a TCP connection
+R44	launch Arg1:T24 Arg2:T128	
+R45	use Arg1:T31 Arg2:T76	
+T129	sub_activity 6105 6129	reports a 6-byte message
+R46	launch Arg1:T31 Arg2:T129	
+T130	person 6228 6237	developer
+R47	use Arg1:T130 Arg2:T31	
+R48	use Arg1:T34 Arg2:T38	
+R49	use Arg1:T34 Arg2:T96	
+R50	use Arg1:T80 Arg2:T40	
+R51	use Arg1:T82 Arg2:T41	
+R52	use Arg1:T33 Arg2:T81	
+R53	use Arg1:T83 Arg2:T97	
+R54	use Arg1:T84 Arg2:T44	
+T131	person 8079 8089	developers
+R55	use Arg1:T131 Arg2:T98	
+R56	use Arg1:T131 Arg2:T84	
+R57	use Arg1:T64 Arg2:T102	
+R58	use Arg1:T1 Arg2:T7	

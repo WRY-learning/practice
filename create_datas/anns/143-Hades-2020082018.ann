@@ -1,0 +1,300 @@
+T1	threatActor_name 0 5	Hades
+T2	malware 24 41	Olympic Destroyer
+T3	time 170 180	March 2018
+T4	malware 210 227	Olympic Destroyer
+T5	malware 363 380	Olympic Destroyer
+T6	malware 680 697	Olympic Destroyer
+T7	malware 1016 1033	Olympic Destroyer
+T8	malware 1524 1541	Olympic Destroyer
+T9	malware 1953 1970	Olympic Destroyer
+T10	malware 2075 2092	Olympic Destroyer
+T11	malware 4165 4182	Olympic Destroyer
+T12	malware 4807 4824	Olympic Destroyer
+T13	malware 9113 9130	Olympic Destroyer
+T14	malware 9296 9313	Olympic Destroyer
+T15	malware 11164 11181	Olympic Destroyer
+T16	malware 11790 11807	Olympic Destroyer
+T17	threatActor_name 709 714	Hades
+T18	threatActor_name 1355 1360	Hades
+T19	threatActor_name 2058 2063	Hades
+T20	threatActor_name 2427 2432	Hades
+T21	threatActor_name 2588 2593	Hades
+T22	threatActor_name 2865 2870	Hades
+T23	threatActor_name 6519 6524	Hades
+T24	threatActor_name 8661 8666	Hades
+T25	threatActor_name 9267 9272	Hades
+T26	threatActor_name 11701 11706	Hades
+T27	threatActor_name 11782 11787	Hades
+T28	threatActor_name 11944 11949	Hades
+T29	threatActor_name 12002 12007	Hades
+T30	threatActor_name 12065 12070	Hades
+T31	threatActor_name 12128 12133	Hades
+T32	threatActor_name 12195 12200	Hades
+T33	threatActor_name 12258 12263	Hades
+T34	threatActor_name 12301 12306	Hades
+T35	threatActor_name 12336 12341	Hades
+T36	threatActor_name 12382 12387	Hades
+T37	threatActor_name 12424 12429	Hades
+T38	threatActor_name 12467 12472	Hades
+T39	threatActor_name 12514 12519	Hades
+T40	md5 3794 3826	0e7b32d23fbd6d62a593c234bafa2311
+T41	sha1 3827 3867	ff59cb2b4a198d1e6438e020bb11602bd7d2510d
+T42	time 3890 3917	2018-05-14 15:32:17 ( GMT )
+T43	md5 11952 11984	9bc365a16c63f25dfddcbe11da042974
+T44	md5 12010 12042	da93e6651c5ba3e3e96f4ae2dd763d94
+T45	md5 12073 12105	6ccd8133f250d4babefbd66b898739b9
+T46	md5 12136 12168	abe771f280cdea6e7eaf19a26b1a9488
+T47	md5 12203 12235	b60da65b8d3627a89481efb23d59713a
+T48	md5 12266 12298	b94bdb63f0703d32c20f4b2e5500dbbe
+T49	url_evil 12309 12333	79.142.76.40:80/news.php
+T50	url_evil 12344 12379	79.142.76.40:8989/login/process.php
+T51	url_evil 12390 12421	79.142.76.40:8989/admin/get.php
+T52	url_evil 12432 12464	159.148.186.116:80/admin/get.php
+T53	url_evil 12475 12511	159.148.186.116:80/login/process.php
+T54	url_evil 12522 12549	159.148.186.116:80/news.php
+T55	sample_name 11985 11999	Korporativ.doc
+T56	sample_name 12043 12062	Korporativ_2018.doc
+T57	sample_name 12106 12125	corporativ_2018.doc
+T58	sample_name 12169 12192	Scan-2018-03-13.doc.bin
+T59	sample_name 12236 12255	Corporativ_2018.doc
+T60	location 9358 9364	Europe
+T61	location 9367 9373	Russia
+T62	location 9378 9385	Ukraine
+R1	use Arg1:T1 Arg2:T2	
+T63	location 335 360	Pyeongchang , South Korea
+T64	threatActor_name 754 759	Hades
+T65	threatActor_name 1150 1157	Lazarus
+T66	location 1211 1222	North Korea
+T67	protocol 2377 2381	TTPs
+T68	protocol 2020 2024	TTPs
+T69	protocol 2199 2203	TTPs
+T70	protocol 2900 2904	TTPs
+T71	security_team 1814 1827	Kaspersky Lab
+T72	threatActor_name 1650 1657	Lazarus
+T73	string 1087 1098	Rich Header
+R2	located Arg1:T65 Arg2:T66	
+R3	use Arg1:T34 Arg2:T49	
+R4	use Arg1:T35 Arg2:T50	
+R5	use Arg1:T36 Arg2:T51	
+R6	use Arg1:T37 Arg2:T52	
+R7	use Arg1:T38 Arg2:T53	
+R8	use Arg1:T39 Arg2:T54	
+T74	tool 3868 3889	Microsoft Office Word
+T75	sample_name 3918 3939	Spiez CONVERGENCE.doc
+T76	program_language 4096 4099	VBA
+T77	attack_activity 4183 4197	spear-phishing
+T78	attack_activity 4825 4839	spear-phishing
+T79	location 3185 3191	Russia
+T82	industry 3158 3167	financial
+T83	location 3256 3262	Europe
+T84	location 3267 3274	Ukraine
+R9	located Arg1:T82 Arg2:T79	
+T85	attack_activity 3088 3102	spear-phishing
+R14	use Arg1:T17 Arg2:T6	
+R15	first_found_time Arg1:T4 Arg2:T3	
+R16	attack Arg1:T4 Arg2:T63	
+T86	vul_aliases 1691 1705	EternalRomance
+#1	AnnotatorNotes T86	永恒浪漫漏洞
+T87	malware 1752 1757	Netya
+T88	malware 1767 1775	NotPetya
+T89	malware 1760 1766	Expetr
+T90	malware 1782 1791	BadRabbit
+#2	AnnotatorNotes T87	勒索病毒
+T91	threatActor_name 2130 2136	Sofacy
+#3	AnnotatorNotes T91	又名Fancy Bear，俄罗斯APT组织
+R17	use Arg1:T19 Arg2:T10	
+T92	person 3130 3139	attackers
+R18	launch Arg1:T92 Arg2:T85	
+R19	attack Arg1:T92 Arg2:T82	
+R22	attack Arg1:T92 Arg2:T79	
+R23	attack Arg1:T92 Arg2:T83	
+R24	attack Arg1:T92 Arg2:T84	
+T93	program_language 3495 3498	VBA
+T94	tool 3506 3516	Powershell
+T95	program_language 3533 3540	JScript
+T96	tool 3519 3525	MS HTA
+#4	AnnotatorNotes T96	HTML Application (HTA)
+T97	tool 3557 3567	Powershell
+R25	part_of Arg1:T41 Arg2:T75	
+R26	part_of Arg1:T40 Arg2:T75	
+R27	release_time Arg1:T75 Arg2:T42	
+T98	encryption_algo 4577 4580	RC4
+T99	tool 4592 4602	Powershell
+T100	tool 4665 4683	Microsoft OneDrive
+T101	tool 4869 4879	Powershell
+T102	location 4961 4972	Pyeongchang
+T103	tool 5017 5020	HTA
+T104	tool 5047 5057	Powershell
+T105	tool 5108 5118	Powershell
+T106	attack_activity 5151 5165	spear-phishing
+T107	tool 5247 5257	Powershell
+T108	tool 5359 5376	Powershell Empire
+T109	tool 5385 5402	Powershell Empire
+T110	program_language 5468 5474	Python
+T111	tool 5479 5489	Powershell
+T112	url_evil 5954 5980	/components/com_tags/views
+T114	url_evil 6014 6046	/components/com_tags/controllers
+T113	url_evil 5981 6013	/components/com_tags/views/admin
+T115	url_evil 6047 6077	/components/com_finder/helpers
+T116	url_evil 6078 6107	/components/com_finder/views/
+T117	url_evil 6108 6130	/components/com_j2xml/
+T118	url_evil 6131 6167	/components/com_contact/controllers/
+T119	tool 6244 6254	Joomla CMS
+T120	tool 6319 6332	Joomla v1.7.3
+T121	time 6400 6413	November 2011
+R28	release_time Arg1:T120 Arg2:T121	
+T122	location 6532 6538	Russia
+T123	location 6541 6548	Ukraine
+T124	location 6567 6585	European countries
+R29	attack Arg1:T23 Arg2:T122	
+R30	attack Arg1:T23 Arg2:T123	
+R31	attack Arg1:T23 Arg2:T124	
+T125	industry 6655 6664	financial
+T126	location 6675 6681	Russia
+R32	located Arg1:T125 Arg2:T126	
+T127	location 6807 6818	Netherlands
+T128	reference_word 6776 6794	European countries
+T129	location 6821 6828	Germany
+T130	location 6833 6839	France
+T131	location 6858 6865	Ukraine
+T132	location 6870 6876	Russia
+R33	coreference Arg1:T128 Arg2:T127	
+R34	coreference Arg1:T128 Arg2:T129	
+R35	coreference Arg1:T128 Arg2:T130	
+T133	location 7237 7248	Switzerland
+T134	md5 7458 7490	9bc365a16c63f25dfddcbe11da042974
+T135	md5 7506 7538	da93e6651c5ba3e3e96f4ae2dd763d94
+T136	md5 7559 7591	e2e102291d259f054625cc85318b7ef5
+T137	sample_name 7491 7505	Korporativ.doc
+T138	sample_name 7539 7558	Korporativ_2018.doc
+T139	sample_name 7592 7619	E-Mail-Adressliste_2018.doc
+R36	part_of Arg1:T134 Arg2:T137	
+R37	part_of Arg1:T135 Arg2:T138	
+R38	part_of Arg1:T136 Arg2:T139	
+T140	attack_activity 7366 7380	spear-phishing
+T141	location 7322 7331	Salisbury
+T142	government 7264 7280	SPIEZ LABORATORY
+R39	located Arg1:T142 Arg2:T133	
+T143	sample_name 7740 7749	nakaz.zip
+T144	sample_name 7767 7776	nakaz.doc
+T145	reference_word 7797 7806	order.doc
+R40	coreference Arg1:T145 Arg2:T144	
+T146	location 7714 7721	Ukraine
+T147	time 7879 7888	June 14th
+T148	time 8235 8247	11 June 2018
+T149	government 8332 8360	Ukrainian Ministry of Health
+T150	industry 8462 8472	biological
+T151	industry 8477 8504	epizootic threat prevention
+T152	security_team 8779 8820	Kaspersky Intelligence Reporting Services
+T153	function 9071 9088	MultiPage1_Layout
+T154	encryption_algo 9157 9160	MD5
+T155	md5 9162 9194	5ba7ec869c7157efc1e52f5157705867
+T156	attack_activity 9131 9145	spear phishing
+R41	launch Arg1:T13 Arg2:T156	
+R42	part_of Arg1:T155 Arg2:T13	
+R43	part_of Arg1:T153 Arg2:T13	
+R44	use Arg1:T25 Arg2:T14	
+R45	attack Arg1:T25 Arg2:T60	
+R46	attack Arg1:T25 Arg2:T61	
+R47	attack Arg1:T25 Arg2:T62	
+T157	time 9396 9400	2017
+T158	location 9888 9894	Europe
+T159	url 11915 11941	intelreports@kaspersky.com
+R48	part_of Arg1:T43 Arg2:T55	
+R49	part_of Arg1:T44 Arg2:T56	
+R50	part_of Arg1:T46 Arg2:T58	
+R51	part_of Arg1:T47 Arg2:T59	
+R52	part_of Arg1:T48 Arg2:T33	
+R53	part_of Arg1:T55 Arg2:T28	
+R54	part_of Arg1:T56 Arg2:T29	
+R55	part_of Arg1:T57 Arg2:T30	
+R56	part_of Arg1:T58 Arg2:T31	
+R57	part_of Arg1:T59 Arg2:T32	
+R58	use Arg1:T27 Arg2:T16	
+T160	security_team 11861 11902	Kaspersky Intelligence Reporting services
+R59	use Arg1:T160 Arg2:T159	
+T161	person 999 1008	attackers
+R60	part_of Arg1:T161 Arg2:T64	
+R61	use Arg1:T161 Arg2:T7	
+R62	use Arg1:T8 Arg2:T86	
+T162	person 883 892	attackers
+R63	part_of Arg1:T162 Arg2:T64	
+#5	AnnotatorNotes T73	Rich Header是PE文件DOS Header和NT Header之间的一个结构，包含链接库版本信息以及链接器版本。
+R64	use Arg1:T161 Arg2:T73	
+T163	industry 1446 1458	infosecurity
+R65	attack Arg1:T18 Arg2:T163	
+T164	malware 1889 1898	backdoors
+T165	target_crowd 1985 2005	South Korean victims
+R66	attack Arg1:T9 Arg2:T165	
+R67	find Arg1:T71 Arg2:T164	
+R68	find Arg1:T71 Arg2:T9	
+T166	time 2756 2769	May-June 2018
+T167	attack_activity 2788 2802	spear-phishing
+R69	occur_time Arg1:T167 Arg2:T166	
+R70	launch Arg1:T22 Arg2:T167	
+T168	person 2994 3002	attacker
+R71	part_of Arg1:T168 Arg2:T22	
+R72	part_of Arg1:T92 Arg2:T22	
+T169	reference_word 3277 3281	They
+R73	coreference Arg1:T169 Arg2:T92	
+T80	government 3198 3252	biological and chemical threat prevention laboratories
+R10	located Arg1:T80 Arg2:T83	
+R11	located Arg1:T80 Arg2:T84	
+R12	attack Arg1:T92 Arg2:T80	
+R13	use Arg1:T169 Arg2:T93	
+R20	use Arg1:T169 Arg2:T94	
+R21	use Arg1:T169 Arg2:T96	
+R74	use Arg1:T169 Arg2:T95	
+R75	use Arg1:T169 Arg2:T97	
+T81	tool 4070 4080	Powershell
+R76	launch Arg1:T11 Arg2:T77	
+R77	use Arg1:T11 Arg2:T76	
+T170	tool 4517 4535	Invoke-Obfuscation
+R79	launch Arg1:T12 Arg2:T78	
+T171	tool 4236 4246	Powershell
+R78	use Arg1:T11 Arg2:T171	
+T172	target_crowd 4921 4949	Olympic Destroyer ’s victims
+R80	attack Arg1:T12 Arg2:T172	
+R81	located Arg1:T172 Arg2:T102	
+T173	malware 4880 4889	backdoors
+R82	use Arg1:T12 Arg2:T103	
+R83	use Arg1:T12 Arg2:T104	
+R84	attack Arg1:T23 Arg2:T125	
+R85	attack Arg1:T23 Arg2:T128	
+R86	attack Arg1:T23 Arg2:T131	
+R87	attack Arg1:T23 Arg2:T132	
+R88	part_of Arg1:T144 Arg2:T143	
+R89	release_time Arg1:T143 Arg2:T147	
+R90	part_of Arg1:T137 Arg2:T140	
+R91	part_of Arg1:T138 Arg2:T140	
+R92	part_of Arg1:T139 Arg2:T140	
+T174	threatActor_name 10815 10820	Hades
+T175	malware 10823 10840	Olympic Destroyer
+R93	use Arg1:T174 Arg2:T175	
+T176	location 10479 10490	Pyeongchang
+T177	company 9813 9866	bio-chemical threat prevention and research companies
+R95	located Arg1:T177 Arg2:T158	
+R94	attack Arg1:T25 Arg2:T177	
+R96	attack Arg1:T24 Arg2:T151	
+R97	attack Arg1:T24 Arg2:T150	
+R98	attack Arg1:T24 Arg2:T149	
+T178	threatActor_name 8732 8737	Hades
+R99	find Arg1:T152 Arg2:T178	
+R100	use Arg1:T26 Arg2:T15	
+T179	person 11488 11497	attackers
+R101	part_of Arg1:T179 Arg2:T26	
+T180	person 7088 7097	attackers
+R102	part_of Arg1:T180 Arg2:T23	
+T181	person 5772 5781	attackers
+R103	use Arg1:T181 Arg2:T112	
+R104	use Arg1:T181 Arg2:T113	
+R105	use Arg1:T181 Arg2:T114	
+R106	use Arg1:T181 Arg2:T115	
+R107	use Arg1:T181 Arg2:T116	
+R108	use Arg1:T181 Arg2:T117	
+R109	use Arg1:T181 Arg2:T118	
+R110	use Arg1:T23 Arg2:T120	
+R111	part_of Arg1:T120 Arg2:T119	
+T182	time 322 326	2018
+T183	target_crowd 254 321	hit organizers , suppliers and partners of the Winter Olympic Games
+R112	attack Arg1:T4 Arg2:T183	

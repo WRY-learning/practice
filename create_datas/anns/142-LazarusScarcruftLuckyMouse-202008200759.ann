@@ -1,0 +1,120 @@
+T1	threatActor_name 198 216	Lazarus/BlueNoroff
+T2	industry 244 266	financial institutions
+T3	location 267 276	in Turkey
+R1	located Arg1:T2 Arg2:T3	
+R2	goal Arg1:T1 Arg2:T2	
+T4	threatActor_name 546 553	Lazarus
+T5	malware 769 787	Manuscrypt malware
+T6	threatActor_name 810 817	Lazarus
+R3	use Arg1:T6 Arg2:T5	
+T7	security_team 847 854	US-CERT
+T8	time 874 881	in June
+R4	occur_time Arg1:T7 Arg2:T8	
+T9	malware 905 915	Manuscrypt
+T10	malware 926 935	TYPEFRAME
+R5	part_of Arg1:T9 Arg2:T10	
+T11	threatActor_name 1007 1016	Scarcruft
+T12	threatActor_aliases 1033 1041	Group123
+T13	threatActor_aliases 1046 1052	Reaper
+R6	coreference Arg1:T13 Arg2:T11	
+R7	coreference Arg1:T12 Arg2:T11	
+T14	threatActor_name 1073 1082	Scarcruft
+T15	vulnerability_cve 1120 1133	CVE-2018-4878
+R8	attack Arg1:T14 Arg2:T15	
+T16	location 1144 1155	South Korea
+R9	goal Arg1:T14 Arg2:T16	
+T17	malware 1250 1265	Android malware
+T18	vulnerability_cve 1445 1458	CVE-2018-8174
+T19	security_team 1481 1489	Qihoo360
+T20	threatActor_name 1415 1424	Scarcruft
+R10	find Arg1:T19 Arg2:T18	
+T21	threatActor_name 1596 1605	DarkHotel
+T22	threatActor_name 1629 1638	Scarcruft
+T23	threatActor_name 1643 1652	Darkhotel
+T24	time 1664 1668	2016
+T25	threatActor_name 1688 1706	Operation Daybreak
+T26	threatActor_name 1711 1727	Operation Erebus
+T27	sub_activity 1768 1787	same hacked website
+R11	use Arg1:T26 Arg2:T27	
+R12	use Arg1:T25 Arg2:T27	
+T29	vulnerability_cve 1936 1949	CVE-2016-4171
+T30	vulnerability_cve 1952 1965	CVE-2016-4117
+T31	threatActor_name 1976 1985	DarkHotel
+T32	threatActor_name 1988 1997	Scarcruft
+T33	threatActor_name 2000 2009	DarkHotel
+T34	person 2013 2031	Operation Daybreak
+R14	part_of Arg1:T34 Arg2:T33	
+T35	attack_activity 2039 2063	on spear-phishing emails
+R15	use Arg1:T34 Arg2:T35	
+T36	target_crowd 2088 2103	Chinese victims
+R16	attack Arg1:T35 Arg2:T36	
+T37	vul_aliases 2111 2132	Flash Player zero day
+R17	attack Arg1:T35 Arg2:T37	
+T38	vulnerability_cve 2228 2241	CVE-2018-8174
+T39	threatActor_name 2147 2156	Scarcruft
+T40	person 2160 2176	Operation Erebus
+R18	part_of Arg1:T40 Arg2:T39	
+T41	location 2198 2209	South Korea
+R19	attack Arg1:T40 Arg2:T41	
+T42	malware 2305 2315	URLMoniker
+T43	tool 2352 2366	Microsoft Word
+R20	use Arg1:T42 Arg2:T43	
+T44	threatActor_name 2540 2550	LuckyMouse
+T45	threatActor_aliases 2567 2572	APT27
+T46	threatActor_aliases 2577 2591	Emissary Panda
+R21	coreference Arg1:T45 Arg2:T44	
+R22	coreference Arg1:T46 Arg2:T44	
+T47	location 2614 2621	in Asia
+T48	attack_activity 2626 2635	waterhole
+T49	target_crowd 2647 2668	high profile websites
+R23	attack Arg1:T48 Arg2:T49	
+T50	threatActor_name 2686 2696	LuckyMouse
+T51	time 2729 2736	in June
+T52	reference_word 3171 3183	this malware
+T53	counter_measure 3142 3152	EXIF to C2
+T54	reference_word 3106 3108	We
+R24	use Arg1:T54 Arg2:T53	
+T55	program_language 3321 3323	Go
+T56	location 3459 3468	in Europe
+T57	person 3416 3421	actor
+R25	located Arg1:T57 Arg2:T56	
+T58	location 3606 3612	Europe
+T59	location 3617 3624	Ukraine
+T60	location 3532 3541	in Russia
+T61	reference_word 3483 3485	it
+R26	coreference Arg1:T61 Arg2:T57	
+R27	attack Arg1:T61 Arg2:T60	
+T62	industry 3563 3602	chemical threat prevention laboratories
+R28	attack Arg1:T61 Arg2:T62	
+R29	located Arg1:T62 Arg2:T58	
+R30	located Arg1:T62 Arg2:T59	
+T63	time 4609 4613	2017
+T64	time 4624 4628	2018
+T65	time 4891 4901	least 2017
+T66	reference_word 3785 3797	new artefact
+T67	malware 3766 3777	LightNeuron
+R31	coreference Arg1:T66 Arg2:T67	
+T68	industry 3815 3831	Exchange Servers
+R32	attack Arg1:T66 Arg2:T68	
+T69	time 4026 4032	s 2014
+T70	time 4283 4287	2016
+T71	location 4168 4179	Middle East
+T72	location 4184 4196	Central Asia
+T73	person 4137 4144	victims
+R33	located Arg1:T73 Arg2:T71	
+R34	located Arg1:T73 Arg2:T72	
+T74	malware 4370 4377	Taidoor
+T75	malware 4382 4388	Yalink
+T76	time 4317 4327	last April
+T77	reference_word 4338 4343	actor
+R35	launch Arg1:T77 Arg2:T74	
+R36	launch Arg1:T77 Arg2:T75	
+T78	location 4859 4867	Malaysia
+T79	location 4872 4881	Indonesia
+T80	time 4994 5015	Between June and July
+T81	sub_activity 5162 5244	drop a combination of VBS and Powershell scripts using DNS for command and control
+T28	vul_aliases 1832 1840	zero day
+R13	part_of Arg1:T28 Arg2:T27	
+T82	malware 1368 1375	POORWEB
+T83	malware 1351 1359	backdoor
+R37	part_of Arg1:T82 Arg2:T83	

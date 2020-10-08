@@ -1,0 +1,516 @@
+T1	threatActor_name 0 14	Gaza Cybergang
+T2	time 37 41	2017
+R1	first_found_time Arg1:T1 Arg2:T2	
+T3	threatActor_name 153 167	Gaza cybergang
+T4	time 252 256	2012
+T5	location 284 288	MENA
+T6	location 291 314	Middle East North Afric
+R2	coreference Arg1:T6 Arg2:T5	
+T7	threatActor_name 331 345	Gaza cybergang
+T8	government 412 441	government entities/embassies
+T9	industry 444 447	oil
+T10	industry 458 469	media/press
+T11	target_crowd 472 481	activists
+T12	target_crowd 484 495	politicians
+T13	target_crowd 502 511	diplomats
+R6	attack Arg1:T7 Arg2:T8	
+R7	attack Arg1:T7 Arg2:T9	
+R8	attack Arg1:T7 Arg2:T10	
+R9	attack Arg1:T7 Arg2:T11	
+R10	attack Arg1:T7 Arg2:T12	
+R11	attack Arg1:T7 Arg2:T13	
+T14	time 562 570	mid-2017
+T15	location 632 636	MENA
+T16	vulnerability_cve 788 801	CVE 2017-0199
+T17	tool 822 844	Microsoft Access files
+T19	sample_function 894 934	reduce the likelihood of their detection
+T20	time 990 1005	late April 2017
+T21	reference_word 1057 1066	the group
+T22	person 1101 1110	attackers
+T24	location 1200 1204	MENA
+R14	part_of Arg1:T22 Arg2:T21	
+R15	coreference Arg1:T21 Arg2:T7	
+R16	use Arg1:T7 Arg2:T16	
+T25	threatActor_name 1266 1280	Gaza cybergang
+T26	threatActor_name 1283 1297	Gaza cybergang
+T27	person 1298 1307	attackers
+R17	part_of Arg1:T27 Arg2:T26	
+T28	industry 1341 1360	government entities
+T29	location 1364 1368	MENA
+T30	industry 1402 1405	oil
+T31	location 1417 1421	MENA
+T32	vulnerability_cve 1472 1485	CVE 2017-0199
+T33	tool 1511 1517	macros
+T34	tool 1525 1547	Microsoft Access files
+T35	sample_function 1550 1580	enabling lower detection rates
+T36	person 1629 1638	attackers
+T37	tool 1592 1614	Android mobile malware
+R18	attack Arg1:T27 Arg2:T28	
+R19	located Arg1:T28 Arg2:T29	
+R20	located Arg1:T30 Arg2:T31	
+R21	attack Arg1:T27 Arg2:T30	
+R24	located Arg1:T33 Arg2:T34	
+R25	goal Arg1:T33 Arg2:T35	
+R22	use Arg1:T36 Arg2:T32	
+R23	use Arg1:T36 Arg2:T33	
+R26	use Arg1:T36 Arg2:T37	
+R27	coreference Arg1:T36 Arg2:T27	
+T38	url 1671 1735	https://securelist.com/gaza-cybergang-wheres-your-ir-team/72283/
+T39	security_team 1736 1749	Kaspersky Lab
+T40	sample_function 1785 1791	detect
+T41	sample_function 1796 1824	block Gaza cybergang attacks
+R29	goal Arg1:T39 Arg2:T41	
+T42	threatActor_name 1802 1816	Gaza cybergang
+T43	sample_name 1916 1943	HEUR : Trojan.Win32.Generic
+R28	goal Arg1:T39 Arg2:T40	
+T44	sample_name 1852 1883	HEUR : Exploit.MSOffice.Generic
+R31	goal Arg1:T44 Arg2:T40	
+T45	sample_name 1884 1915	HEUR : Trojan.Win32.Cometer.gen
+R30	goal Arg1:T45 Arg2:T40	
+R32	goal Arg1:T43 Arg2:T40	
+T46	sample_name 1944 1975	Trojan-Downloader.Win32.Downeks
+R33	goal Arg1:T46 Arg2:T40	
+T47	sample_name 1976 1999	Trojan-Spy.MSIL.Downeks
+R34	goal Arg1:T47 Arg2:T40	
+T48	sample_name 2000 2012	Win32.Bublik
+R35	goal Arg1:T48 Arg2:T40	
+T49	sample_name 2013 2025	Win32.Agentb
+R36	goal Arg1:T49 Arg2:T40	
+T50	threatActor_name 2041 2055	Gaza cybergang
+T51	reference_word 2151 2155	They
+T52	tool 2179 2200	Remote Access Trojans
+T53	tool 2203 2207	RATs
+T54	sample_function 2213 2237	perform their activities
+T55	tool 2250 2257	Downeks
+T56	tool 2260 2264	Qasa
+T57	tool 2268 2280	Cobaltstrike
+R37	coreference Arg1:T51 Arg2:T50	
+R38	coreference Arg1:T53 Arg2:T52	
+R40	goal Arg1:T52 Arg2:T54	
+R41	use Arg1:T51 Arg2:T55	
+R42	use Arg1:T51 Arg2:T56	
+R43	use Arg1:T51 Arg2:T57	
+T58	tool 2480 2491	Cobaltstrik
+T59	time 2297 2306	June 2017
+T60	person 2323 2332	attackers
+T61	vulnerability_cve 2351 2364	CVE 2017-0199
+T62	sample_function 2393 2414	direct code execution
+T63	tool 2422 2447	Microsoft office document
+R39	first_found_time Arg1:T7 Arg2:T14	
+R45	located Arg1:T7 Arg2:T15	
+R46	use Arg1:T60 Arg2:T61	
+R47	goal Arg1:T61 Arg2:T62	
+R48	use Arg1:T60 Arg2:T58	
+T65	tool 2548 2562	Android Trojan
+T66	person 2572 2581	attackers
+T67	tool 2609 2624	command servers
+T68	time 2628 2638	April 2017
+R49	use Arg1:T66 Arg2:T65	
+R50	located Arg1:T65 Arg2:T67	
+R51	use Arg1:T66 Arg2:T67	
+R52	occur_time Arg1:T60 Arg2:T59	
+R53	occur_time Arg1:T66 Arg2:T68	
+T69	tool 2676 2681	email
+T70	tool 2687 2708	compressed attachment
+T71	tool 2712 2726	download links
+T72	time 2743 2753	March 2017
+T73	person 2756 2758	we
+T74	tool 2773 2784	downloaders
+T75	tool 2788 2814	Microsoft office documents
+T76	tool 2820 2835	embedded macros
+R54	find Arg1:T73 Arg2:T74	
+R55	find Arg1:T73 Arg2:T75	
+R56	located Arg1:T76 Arg2:T75	
+R57	first_found_time Arg1:T74 Arg2:T72	
+R58	first_found_time Arg1:T75 Arg2:T72	
+T78	reference_word 2874 2888	the downloader
+T79	sub_activity 2895 2922	contact a URL or IP address
+T80	sample_function 2926 2953	retrieve the actual payload
+R59	coreference Arg1:T78 Arg2:T74	
+R60	launch Arg1:T78 Arg2:T79	
+R61	goal Arg1:T79 Arg2:T80	
+T81	sub_activity 2974 2982	executed
+T82	tool 2985 2996	the malware
+T83	person 3023 3032	attackers
+T84	reference_word 3045 3049	them
+R62	coreference Arg1:T84 Arg2:T83	
+T85	sample_function 3070 3134	collect files , keystrokes and screenshots from victims ’ device
+T86	person 3118 3125	victims
+R63	use Arg1:T83 Arg2:T82	
+R64	goal Arg1:T82 Arg2:T85	
+R65	attack Arg1:T83 Arg2:T86	
+R66	launch Arg1:T82 Arg2:T81	
+T87	person 3192 3198	victim
+T77	person 2850 2857	victims
+T88	reference_word 3201 3215	the downloader
+T89	sub_activity 3233 3261	retrieve other malware files
+T90	person 3269 3275	victim
+T91	tool 3248 3261	malware files
+T92	reference_word 3312 3323	those files
+R67	attack Arg1:T88 Arg2:T90	
+R68	coreference Arg1:T90 Arg2:T87	
+R69	launch Arg1:T88 Arg2:T89	
+R70	coreference Arg1:T92 Arg2:T91	
+T93	tool 3450 3453	lur
+T94	tool 3465 3478	malware files
+T95	tool 3483 3499	related droppers
+T96	tool 3506 3521	command servers
+T97	threatActor_name 3610 3624	Gaza cybergang
+T98	domain_evil 3639 3662	upgrade.newshelpyou.com
+T99	time 3696 3706	25-07-2017
+T100	sample_name 3707 3719	nvStView.exe
+T101	domain_evil 3720 3734	moreoffer.life
+T102	time 3768 3778	11-05-2017
+T103	sample_name 3779 3799	MOM.InstallProxy.exe
+T104	md5 3663 3695	552796e71f7ff304f91b39f5da46499b
+R71	first_found_time Arg1:T100 Arg2:T99	
+R72	located Arg1:T100 Arg2:T98	
+R73	part_of Arg1:T104 Arg2:T100	
+T105	md5 3735 3767	3ff60c100b67697163291690e0c2c2b7
+R74	located Arg1:T103 Arg2:T101	
+R75	first_found_time Arg1:T103 Arg2:T102	
+R76	part_of Arg1:T105 Arg2:T103	
+T106	domain_evil 3800 3814	moreoffer.life
+T107	md5 3815 3847	f43188accfb6923d62fe265d6d9c0940
+T108	time 3848 3858	21-03-2017
+T109	sample_name 3859 3874	Gcc-Ksa-uae.exe
+R77	located Arg1:T109 Arg2:T106	
+R78	first_found_time Arg1:T109 Arg2:T108	
+R79	part_of Arg1:T107 Arg2:T109	
+T110	domain_evil 3875 3899	signup.updatesforme.club
+T111	md5 3900 3932	7d3426d8eb70e4486e803afb3eeac14f
+T112	time 3933 3943	04-05-2017
+T113	sample_name 3944 3989	Palestinian Retirement Authority Ramallah.exe
+R80	first_found_time Arg1:T113 Arg2:T112	
+R81	located Arg1:T113 Arg2:T110	
+R82	part_of Arg1:T111 Arg2:T113	
+T114	domain_evil 3990 4007	ping.topsite.life
+T115	md5 4008 4040	b68fcf8feb35a00362758fc0f92f7c2e
+T116	time 4041 4051	19-03-2017
+T117	url_evil 4087 4139	http://download.data-server.cloudns.club/indexer.exe
+T118	domain_evil 4140 4162	manual.newphoneapp.com
+T119	md5 4163 4195	86a89693a273d6962825cf1846c3b6ce
+T120	time 4196 4206	02-02-2017
+T121	sample_name 4207 4240	SQLiteDatabaseBrowserPortable.exe
+R83	part_of Arg1:T119 Arg2:T121	
+R84	first_found_time Arg1:T121 Arg2:T120	
+R85	located Arg1:T121 Arg2:T118	
+T122	threatActor_name 4241 4255	Gaza Cybergang
+T123	person 4256 4265	attackers
+R86	part_of Arg1:T123 Arg2:T122	
+T124	sub_activity 4289 4310	evolving their skills
+T125	sub_activity 4369 4384	deliver malware
+T126	sub_activity 4402 4436	adapting social engineering decoys
+R87	launch Arg1:T123 Arg2:T124	
+R88	launch Arg1:T123 Arg2:T125	
+R89	launch Arg1:T123 Arg2:T126	
+T127	time 4491 4499	mid-2017
+T128	person 4506 4515	attackers
+T130	location 4574 4578	MENA
+R90	first_found_time Arg1:T128 Arg2:T127	
+R91	located Arg1:T128 Arg2:T130	
+T131	tool 4668 4681	malware files
+T132	url 4729 4793	https://securelist.com/gaza-cybergang-wheres-your-ir-team/72283/
+T133	tool 4810 4832	Android mobile malware
+T134	person 4853 4862	attackers
+T135	tool 4890 4908	Downeks downloader
+T136	tool 4917 4923	Quasar
+T137	tool 4927 4944	Cobaltstrike RATs
+T138	sample_function 4948 4970	target Windows devices
+T139	reference_word 4982 4986	them
+T140	sample_function 4997 5017	remote access spying
+T141	sample_function 5022 5039	data exfiltration
+R93	use Arg1:T134 Arg2:T133	
+R94	use Arg1:T134 Arg2:T135	
+R95	use Arg1:T134 Arg2:T136	
+R96	use Arg1:T134 Arg2:T137	
+R97	goal Arg1:T135 Arg2:T138	
+R98	goal Arg1:T136 Arg2:T138	
+R99	goal Arg1:T137 Arg2:T138	
+R100	coreference Arg1:T139 Arg2:T134	
+R101	goal Arg1:T138 Arg2:T140	
+R102	goal Arg1:T138 Arg2:T141	
+T142	vulnerability_cve 5100 5113	CVE 2017-0199
+T143	sample_function 5142 5163	direct code execution
+T144	tool 5181 5206	Microsoft office document
+R103	goal Arg1:T142 Arg2:T143	
+T145	tool 5258 5289	Microsoft Access database files
+T146	person 5311 5320	attackers
+T147	sample_function 5324 5356	maintain low levels of detection
+T148	sample_function 5394 5409	deliver malware
+R104	use Arg1:T146 Arg2:T145	
+R105	goal Arg1:T145 Arg2:T147	
+R106	goal Arg1:T145 Arg2:T148	
+T149	person 5447 5456	attackers
+T150	person 5508 5515	victims
+R107	attack Arg1:T149 Arg2:T150	
+T151	person 5609 5618	Attackers
+T152	person 5646 5653	victims
+T153	government 5675 5704	government entities/embassies
+T154	industry 5707 5718	oil and gas
+T155	industry 5721 5732	media/press
+T156	person 5735 5744	activists
+T157	person 5747 5758	politicians
+T158	person 5765 5774	diplomats
+R108	attack Arg1:T151 Arg2:T153	
+R109	attack Arg1:T151 Arg2:T155	
+R110	attack Arg1:T151 Arg2:T154	
+R111	attack Arg1:T151 Arg2:T156	
+R112	attack Arg1:T151 Arg2:T157	
+R113	attack Arg1:T151 Arg2:T158	
+R114	part_of Arg1:T156 Arg2:T152	
+R115	part_of Arg1:T157 Arg2:T152	
+R116	part_of Arg1:T158 Arg2:T152	
+R117	attack Arg1:T151 Arg2:T152	
+T159	threatActor_name 5781 5795	Gaza cybergang
+T161	location 6074 6078	Gaza
+T162	person 6079 6088	employees
+R118	located Arg1:T162 Arg2:T161	
+T163	location 6028 6039	Palestinian
+T164	location 6089 6100	Palestinian
+T165	person 6101 6110	prisoners
+T166	location 6130 6136	Israel
+R119	located Arg1:T165 Arg2:T164	
+T167	location 6168 6173	Qatar
+T168	reference_word 6195 6204	the group
+T169	person 6239 6248	attackers
+R13	coreference Arg1:T168 Arg2:T159	
+R120	part_of Arg1:T169 Arg2:T168	
+T23	md5 6347 6378	6f144be4d4ef9c83bea528a4cd3baf3
+T170	sample_name 6379 6398	Qatar-27-5-2017.rar
+T171	sha2 6399 6463	7fcac2f18a8844e4af9f923891cfb6f637a99195a457b6cdb916926d709c6a04
+T172	sample_name 6464 6478	moreoffer.life
+T173	time 6479 6490	27 May 2017
+R121	part_of Arg1:T23 Arg2:T170	
+R122	part_of Arg1:T171 Arg2:T170	
+R123	coreference Arg1:T172 Arg2:T170	
+R124	first_found_time Arg1:T170 Arg2:T173	
+T174	md5 6493 6525	6d6f34f7cfcb64e44d67638a2f33d619
+T175	sample_name 6526 6538	GAZA2017.mdb
+T176	url_evil 6539 6592	http://download.data-server.cloudns.club/GAZA2017.mdb
+T177	tool 6593 6604	data-server
+T178	domain_evil 6605 6633	cloudns.club/wordindexer.exe
+T179	tool 6634 6645	data-server
+T180	domain_evil 6646 6670	cloudns.club/indexer.exe
+R125	part_of Arg1:T174 Arg2:T175	
+R126	located Arg1:T175 Arg2:T176	
+R127	located Arg1:T177 Arg2:T178	
+R128	located Arg1:T179 Arg2:T180	
+T181	md5 6673 6705	87a67371770fda4c2650564cbb00934d
+T182	time 6706 6716	20-06-2017
+T183	vulnerability_cve 6761 6774	CVE-2017-0199
+T184	tool 6794 6799	email
+T185	sample_function 6805 6841	distributes a malicious RTF document
+R129	goal Arg1:T184 Arg2:T185	
+T186	reference_word 6844 6861	The vulnerability
+T187	tool 6872 6876	code
+T188	vul_aliases 6890 6898	Ole2Link
+T189	sample_function 6924 6972	allows Microsoft Office Word to run remote files
+T190	tool 6931 6952	Microsoft Office Word
+T191	IP_evil 7004 7017	138.68.242.68
+R130	coreference Arg1:T186 Arg2:T183	
+R131	located Arg1:T186 Arg2:T187	
+R132	coreference Arg1:T188 Arg2:T183	
+R133	goal Arg1:T186 Arg2:T189	
+R134	located Arg1:T187 Arg2:T191	
+T192	tool 7024 7042	downloaded payload
+T193	tool 7046 7058	Cobaltstrike
+T194	sample_function 7072 7099	connects to lol.mynetav.org
+T195	sample_function 7103 7138	receive commands from the attackers
+T196	person 7129 7138	attackers
+R135	coreference Arg1:T193 Arg2:T192	
+R136	goal Arg1:T193 Arg2:T194	
+T197	domain_evil 7084 7099	lol.mynetav.org
+R137	goal Arg1:T194 Arg2:T195	
+T198	threatActor_name 7167 7181	Gaza cybergang
+T199	vulnerability_cve 7192 7205	CVE 2017-0199
+T200	tool 7211 7223	Cobaltstrike
+T201	url 7246 7291	http://bobao.360.cn/learning/detail/4193.html
+R138	use Arg1:T198 Arg2:T199	
+R139	use Arg1:T198 Arg2:T200	
+T202	tool 7302 7311	APK files
+T203	person 7341 7350	attackers
+T204	tool 7353 7368	command centers
+T205	time 7385 7395	23-04-2017
+R140	use Arg1:T203 Arg2:T204	
+R141	located Arg1:T202 Arg2:T204	
+R142	first_found_time Arg1:T202 Arg2:T205	
+T206	url_evil 7404 7526	http://alasra-paper.duckdns.org/send/%D9%88%ket-Edition-1.04_ApkHouse.com/Dont-Starve-Pocket-Edition-1.04_ApkHouse.com.apk
+T207	sample_name 7543 7591	Dont-Starve-Pocket-Edition-1.04_ApkHouse.com.apk
+T208	person 7654 7656	We
+T209	tool 7669 7683	android Trojan
+T210	tool 7730 7744	Android Trojan
+T211	location 7756 7760	Gaza
+T212	url_evil 7769 7847	https://securelist.com/breaking-the-weakest-link-of-the-strongest-chain/77562/
+R143	located Arg1:T210 Arg2:T212	
+T213	threatActor_name 7852 7866	Gaza Cybergang
+T214	person 8058 8067	Attackers
+T215	sample_function 8121 8178	minimize their exposure to security products and services
+T216	sub_activity 8081 8104	improving their toolkit
+R144	launch Arg1:T214 Arg2:T216	
+R145	goal Arg1:T216 Arg2:T215	
+T217	security_team 8181 8194	Kaspersky Lab
+T218	security_team 8346 8359	Kaspersky Lab
+T219	person 8360 8371	researchers
+R146	part_of Arg1:T219 Arg2:T218	
+T220	sub_activity 8421 8433	ducate staff
+T221	sample_function 8448 8500	distinguish spear-phishing emails or a phishing link
+T222	attack_activity 8460 8474	spear-phishing
+R147	goal Arg1:T220 Arg2:T221	
+T223	sample_function 8664 8691	analyzing network anomalies
+T224	sample_function 8644 8660	catching attacks
+T225	sub_activity 8536 8580	Use proven corporate grade security solution
+R148	goal Arg1:T225 Arg2:T224	
+R149	goal Arg1:T223 Arg2:T224	
+T226	person 8702 8716	security staff
+T227	reference_word 8785 8789	them
+T228	tool 8894 8898	YARA
+T229	sample_function 8781 8808	arm them with helpful tools
+R150	coreference Arg1:T227 Arg2:T226	
+T230	sub_activity 8694 8762	Provide security staff with access to the latest threat intelligence
+R151	goal Arg1:T230 Arg2:T229	
+T231	sub_activity 8907 8981	Make sure enterprise grade patch management processes are well established
+T232	person 9016 9018	we
+T233	time 9068 9078	March 2017
+T234	tool 9091 9097	decoys
+T235	tool 9130 9142	parent files
+R152	first_found_time Arg1:T234 Arg2:T233	
+R153	first_found_time Arg1:T235 Arg2:T233	
+R154	find Arg1:T232 Arg2:T234	
+R155	find Arg1:T232 Arg2:T235	
+T236	threatActor_name 9144 9158	Gaza cybergang
+T237	md5 9161 9193	b7390bc8c8a9a71a69ce4cc0c928153b
+T238	sample_name 9194 9239	970e6188561d6c5811a8f99075888d5f 5-4-2017.zip
+T239	domain_evil 9240 9254	moreoffer.life
+T240	time 9255 9267	5 April 2017
+R156	part_of Arg1:T237 Arg2:T238	
+R157	located Arg1:T238 Arg2:T239	
+R158	first_found_time Arg1:T238 Arg2:T240	
+R159	use Arg1:T236 Arg2:T238	
+T241	threatActor_name 9270 9284	Gaza cybergang
+T242	md5 9287 9319	f43188accfb6923d62fe265d6d9c0940
+T243	sample_name 9320 9335	Gcc-Ksa-uae.exe
+T244	domain_evil 9336 9350	moreoffer.life
+T245	IP_evil 9353 9366	185.11.146.68
+T246	time 9369 9382	21 March 2017
+R160	use Arg1:T241 Arg2:T243	
+R161	part_of Arg1:T242 Arg2:T243	
+R162	located Arg1:T243 Arg2:T244	
+R163	located Arg1:T243 Arg2:T245	
+R164	first_found_time Arg1:T243 Arg2:T246	
+T247	threatActor_name 9385 9399	Gaza cybergang
+T248	md5 9402 9434	056d83c1c1b5f905d18b3c5d58ff5342
+T249	md5 9435 9467	fb549e0c2fffd390ee7c4538ff30ac3e
+T250	domain_evil 9468 9482	moreoffer.life
+T251	time 9483 9496	16 March 2017
+T252	threatActor_name 9499 9513	Gaza cybergang
+T253	md5 9516 9548	0ee4757ab9040a95e035a667457e4bc6
+T254	time 9549 9558	27-4-2017
+T255	sample_name 9559 9577	Fateh Gaza plo.exe
+T256	domain_evil 9578 9602	signup.updatesforme.club
+T257	time 9603 9616	27 April 2017
+R165	use Arg1:T252 Arg2:T255	
+R166	part_of Arg1:T253 Arg2:T255	
+R167	first_found_time Arg1:T255 Arg2:T254	
+R168	located Arg1:T255 Arg2:T256	
+R169	coreference Arg1:T257 Arg2:T254	
+T258	threatActor_name 9619 9633	Gaza cybergang
+T259	md5 9636 9668	7bef124131ffc2ef3db349b980e52847
+T260	domain_evil 9669 9686	ping.topsite.life
+T261	time 9687 9700	14 March 2017
+T262	threatActor_name 9703 9717	Gaza cybergang
+T263	md5 9720 9752	70d03e34cadb0f1e1bc6f4bf8486e4e8
+T264	domain_evil 9767 9778	duckdns.org
+T265	domain_evil 9779 9796	ping.topsite.life
+T266	time 9797 9810	30 March 2017
+T267	threatActor_name 9813 9827	Gaza cybergang
+T268	md5 9830 9862	67f48fd24bae3e63b29edccc524f4096
+T269	domain_evil 9863 9880	ping.topsite.life
+T270	time 9881 9894	17 April 2017
+T271	threatActor_name 9897 9911	Gaza cybergang
+T272	domain_evil 9914 9928	moreoffer.life
+T273	threatActor_name 9929 9943	Gaza cybergang
+T274	domain_evil 9946 9970	signup.updatesforme.club
+T275	threatActor_name 9971 9985	Gaza cybergang
+T276	domain_evil 9988 10005	ping.topsite.life
+T277	threatActor_name 10006 10020	Gaza cybergang
+T278	domain_evil 10023 10047	alasra-paper.duckdns.org
+T279	threatActor_name 10048 10062	Gaza cybergang
+T280	domain_evil 10065 10089	hamas-wathaq.duckdns.org
+T281	threatActor_name 10090 10104	Gaza cybergang
+T282	domain_evil 10107 10140	download.data-server.cloudns.club
+R170	use Arg1:T271 Arg2:T272	
+R171	use Arg1:T273 Arg2:T274	
+R172	use Arg1:T275 Arg2:T276	
+R173	use Arg1:T277 Arg2:T278	
+R174	use Arg1:T279 Arg2:T280	
+R175	use Arg1:T281 Arg2:T282	
+T283	threatActor_name 10143 10157	Gaza cybergang
+T284	threatActor_name 10206 10220	Gaza cybergang
+T285	threatActor_name 10174 10188	Gaza cybergang
+T286	IP_evil 10191 10205	185.86.149.168
+T287	IP_evil 10160 10173	138.68.242.68
+T288	IP_evil 10223 10236	185.11.146.68
+T289	threatActor_name 10237 10251	Gaza cybergang
+T290	IP_evil 10254 10265	45.32.84.66
+T291	threatActor_name 10266 10280	Gaza cybergang
+T292	IP_evil 10312 10326	107.161.27.158
+T293	threatActor_name 10295 10309	Gaza cybergang
+R176	use Arg1:T293 Arg2:T292	
+T294	IP_evil 10283 10294	45.32.71.95
+R177	use Arg1:T291 Arg2:T294	
+R178	use Arg1:T289 Arg2:T290	
+R179	use Arg1:T284 Arg2:T288	
+R180	use Arg1:T285 Arg2:T286	
+R181	use Arg1:T283 Arg2:T287	
+R182	use Arg1:T258 Arg2:T259	
+R183	use Arg1:T262 Arg2:T263	
+R184	use Arg1:T267 Arg2:T268	
+R185	use Arg1:T258 Arg2:T260	
+R186	use Arg1:T262 Arg2:T264	
+R187	use Arg1:T262 Arg2:T265	
+R188	use Arg1:T267 Arg2:T269	
+T295	threatActor_name 10329 10343	Gaza cybergang
+T296	md5 10346 10378	87a67371770fda4c2650564cbb00934d
+T297	threatActor_name 10379 10393	Gaza cybergang
+T298	md5 10396 10428	4f3b1a2088e473c7d2373849deb4536f
+T299	threatActor_name 10429 10443	Gaza cybergang
+T300	md5 10446 10478	c078743eac33df15af2d9a4f24159500
+T301	threatActor_name 10479 10493	Gaza cybergang
+T302	md5 10496 10528	3ff60c100b67697163291690e0c2c2b7
+T303	threatActor_name 10529 10543	Gaza cybergang
+T304	md5 10546 10578	a3de096598e3c9c8f3ab194edc4caa76
+T305	threatActor_name 10579 10593	Gaza cybergang
+T306	md5 10596 10628	7d3426d8eb70e4486e803afb3eeac14f
+R189	use Arg1:T305 Arg2:T306	
+R190	use Arg1:T303 Arg2:T304	
+R191	use Arg1:T301 Arg2:T302	
+R192	use Arg1:T299 Arg2:T300	
+R193	use Arg1:T297 Arg2:T298	
+R194	use Arg1:T295 Arg2:T296	
+T307	threatActor_name 10631 10645	Gaza cybergang
+T308	sha2 10648 10712	0b6fe466a3ba36895208e754b155a193780c79ba8b5c1c9f02c4f7e479116e5f
+T309	threatActor_name 10713 10727	Gaza cybergang
+T310	sha2 10730 10794	0c4aa50c95c990d5c5c55345626155b87625986881a2c066ce032af6871c426a
+T311	threatActor_name 10795 10809	Gaza cybergang
+T312	sha2 10812 10876	0d235478ae9cc87b7b907181ccd151b618d74955716ba2dbc40a74dc1cdfc4aa
+T313	threatActor_name 10877 10891	Gaza cybergang
+T314	sha2 10894 10958	1f2b128d26a58a572ea1faee2c4d9dc759eb8add16d9ad0547b3f0305fea212a
+T315	threatActor_name 10959 10973	Gaza cybergang
+T316	sha2 10976 11040	205f32cc717c2d82baeff9ff5aa9fc31967b6ae5cde22fafe14aec9c9ec62acc
+T317	threatActor_name 11041 11055	Gaza cybergang
+T318	sha2 11058 11122	284af7a2fafdbff3bbc28b9075f469d2352758b62d182b0e056d29ee74688126
+R195	use Arg1:T307 Arg2:T308	
+R196	use Arg1:T309 Arg2:T310	
+R197	use Arg1:T311 Arg2:T312	
+R198	use Arg1:T313 Arg2:T314	
+R199	use Arg1:T315 Arg2:T316	
+R200	use Arg1:T317 Arg2:T318	
+R3	use Arg1:T7 Arg2:T17	
+R12	goal Arg1:T16 Arg2:T19	
+R44	goal Arg1:T17 Arg2:T19	
+T18	industry 1410 1413	gas
+R4	located Arg1:T18 Arg2:T31	
+T64	industry 452 455	gas
+R5	attack Arg1:T7 Arg2:T64	
+R92	attack Arg1:T27 Arg2:T18	

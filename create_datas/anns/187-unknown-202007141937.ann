@@ -1,0 +1,146 @@
+T1	time 191 209	April 19-24 , 2017
+T2	time 461 469	April 26
+T3	time 370 378	April 24
+T4	time 1264 1272	April 11
+T5	time 2309 2321	January 2017
+T6	security_team 313 334	Morphisec researchers
+T7	security_team 491 545	Israel National Cyber Event Readiness Team ( CERT-IL )
+T9	threatActor_aliases 1010 1025	fileless attack
+T11	sub_activity 1145 1207	install a fileless attack variant of the Helminth Trojan agent
+T12	company 1210 1219	Microsoft
+T14	reference_word 1337 1346	attackers
+T13	security_team 1522 1531	Morphisec
+T15	security_team 1740 1749	Morphisec
+T16	tool 2027 2034	FireEye
+T17	tool 2037 2055	Palo Alto Networks
+T18	tool 2060 2069	Logrhythm
+T19	reference_word 2077 2082	group
+T20	reference_word 2330 2335	group
+T22	sub_activity 2336 2433	used a fake Juniper Networks VPN portal and fake University of Oxford websites to deliver malware
+T23	reference_word 2913 2926	Iranian group
+T24	sub_activity 2927 3046	sent specially crafted Excel and Word files , which contained macros that targeted individuals were convinced to enable
+T25	vulnerability_cve 1126 1139	CVE-2017-0199
+T26	malware 979 985	OilRig
+T27	malware 2828 2834	OilRig
+T30	sha2 3264 3328	042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1
+T31	sha2 3174 3238	5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43
+T32	sha2 3337 3401	BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED
+T33	sha2 4293 4357	042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1
+T34	sha2 4378 4442	BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED
+T35	sha2 4208 4272	5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43
+T36	sha2 3868 3932	a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab
+T28	sha2 3953 4017	2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84
+T29	sha2 4038 4102	832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8
+T37	sha2 4123 4187	d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48
+T38	domain_evil 4463 4482	http://comonscar.in
+T39	IP_evil 4486 4498	82.145.40.46
+T40	IP_evil 4521 4532	80.82.67.42
+T41	security_team 554 560	Marker
+T43	counter_measure 1781 1849	Upon deeper investigation into the installed Helminth fileless agent
+T44	malware 1894 1900	OilRig
+T45	government 2262 2280	Iranian government
+T46	reference_word 2218 2238	hacking organization
+T21	security_team 2450 2458	ClearSky
+T47	reference_word 289 310	Israeli organizations
+R1	first_found_time Arg1:T1 Arg2:T47	
+R2	occur_time Arg1:T6 Arg2:T3	
+T48	counter_measure 418 448	Initial reports of the attacks
+T49	reference_word 937 958	infamous hacker group
+T50	security_team 851 860	Morphisec
+R5	find Arg1:T50 Arg2:T49	
+R6	use Arg1:T49 Arg2:T26	
+R9	use Arg1:T9 Arg2:T11	
+R10	occur_time Arg1:T12 Arg2:T4	
+R11	coreference Arg1:T9 Arg2:T14	
+T51	counter_measure 1220 1260	released the patch for the vulnerability
+R12	use Arg1:T12 Arg2:T51	
+T52	sub_activity 1368 1471	attack on an existing Proof-of-Concept method that was published by researchers after the patch release
+R13	use Arg1:T14 Arg2:T52	
+T53	counter_measure 1477 1519	hunting through known malware repositories
+R14	launch Arg1:T13 Arg2:T53	
+T54	reference_word 1925 1945	Iranian hacker group
+R16	coreference Arg1:T9 Arg2:T54	
+T55	location 1988 1999	Middle East
+T56	target_crowd 1958 1980	financial institutions
+R17	located Arg1:T56 Arg2:T55	
+R18	attack Arg1:T54 Arg2:T56	
+R19	use Arg1:T15 Arg2:T16	
+R20	use Arg1:T43 Arg2:T17	
+R21	use Arg1:T15 Arg2:T18	
+R22	find Arg1:T16 Arg2:T54	
+R23	find Arg1:T17 Arg2:T54	
+R24	find Arg1:T18 Arg2:T54	
+R25	use Arg1:T15 Arg2:T43	
+R26	find Arg1:T43 Arg2:T54	
+R27	coreference Arg1:T9 Arg2:T47	
+R28	coreference Arg1:T54 Arg2:T19	
+R29	coreference Arg1:T19 Arg2:T46	
+R30	coreference Arg1:T46 Arg2:T20	
+R31	occur_time Arg1:T20 Arg2:T5	
+T57	sha2 2483 2547	a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab
+T58	sha2 2567 2631	2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84
+T59	sha2 2641 2705	832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8
+T60	sha2 2715 2779	d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48
+R32	use Arg1:T21 Arg2:T22	
+R33	use Arg1:T23 Arg2:T27	
+T61	url 3082 3101	http://comonscar.in
+T62	IP 3105 3117	82.145.40.46
+T63	IP 3132 3143	80.82.67.42
+T64	vul_aliases 3535 3538	PoC
+T65	reference_word 3438 3459	Iranian threat actors
+R34	coreference Arg1:T23 Arg2:T65	
+R35	coreference Arg1:T20 Arg2:T23
+T67	sample_name 4552 4564	vpsupdate.tk
+T68	sample_name 4585 4600	alenupdate.info
+T69	sample_name 4621 4631	Maralen.tk
+T70	sample_name 4652 4678	GoogleUpdateTasksMachineUI
+T71	sample_name 4699 4717	Google Update Core
+T72	sample_name 4738 4754	Google Sync Core
+T73	threatActor_name 0 57	IRANIAN FILELESS ATTACK INFILTRATES ISRAELI ORGANIZATIONS
+T74	sub_activity 3850 3865	fileless attack
+T75	sub_activity 3935 3950	fileless attack
+T76	sub_activity 4020 4035	fileless attack
+T77	sub_activity 4105 4120	fileless attack
+T78	sub_activity 4190 4205	fileless attack
+T79	sub_activity 4275 4290	fileless attack
+T80	sub_activity 4360 4375	fileless attack
+T81	sub_activity 4445 4460	fileless attack
+T82	sub_activity 4503 4518	fileless attack
+T83	sub_activity 4534 4549	fileless attack
+T84	sub_activity 4567 4582	fileless attack
+T85	sub_activity 4603 4618	fileless attack
+T86	sub_activity 4634 4649	fileless attack
+T87	sub_activity 4681 4696	fileless attack
+T88	sub_activity 4720 4735	fileless attack
+T89	location 475 481	Hebrew
+R37	occur_time Arg1:T48 Arg2:T2	
+R38	located Arg1:T48 Arg2:T89	
+T8	sub_activity 580 660	attack was delivered through compromised email accounts at Ben-Gurion University
+R3	find Arg1:T7 Arg2:T8	
+R4	find Arg1:T41 Arg2:T8	
+T90	location 697 703	Israel
+R39	located Arg1:T8 Arg2:T90	
+T91	location 752 792	Israel ’s Cyber Security Research Center
+T10	sub_activity 1030 1068	delivered via Microsoft Word documents
+R7	use Arg1:T9 Arg2:T10	
+R8	use Arg1:T10 Arg2:T25	
+T92	encryption_algo 2466 2472	SHA256
+T93	sample_name 2475 2481	13.doc
+R40	part_of Arg1:T93 Arg2:T57	
+T94	sample_name 2550 2557	558.doc
+R41	part_of Arg1:T94 Arg2:T58	
+T95	sample_name 2634 2639	1.doc
+R42	part_of Arg1:T95 Arg2:T59	
+T96	sample_name 2708 2713	3.doc
+R43	part_of Arg1:T96 Arg2:T60	
+T97	encryption_algo 3246 3252	SHA256
+T98	sample_name 3255 3263	0011.ps1
+T99	sample_name 3331 3336	1.vbs
+R44	part_of Arg1:T98 Arg2:T30	
+R45	part_of Arg1:T99 Arg2:T32	
+T42	industry 1572 1611	Israeli high-tech development companies
+T100	industry 1614 1663	medical organizations and education organizations
+T101	industry 1666 1713	indicating that they were victims of the attack
+R15	find Arg1:T53 Arg2:T42	
+R46	find Arg1:T53 Arg2:T100	
+R47	find Arg1:T53 Arg2:T101	

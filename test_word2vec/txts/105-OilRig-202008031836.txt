@@ -1,0 +1,143 @@
+OilRig Targets Middle Eastern Telecommunications Organization and Adds Novel C2 Channel with Steganography to Its Inventory .
+Release_Time :  2020-07-22
+Report_URL :  https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/
+While analyzing an attack against a Middle Eastern telecommunications organization , we discovered a variant of an OilRig-associated tool we call RDAT using a novel email-based command and control ( C2 ) channel that relied on a technique known as steganography to hide commands and data within bitmap images attached to emails .
+In May 2020 , Symantec published research on the Greenbug group targeting telecommunications organizations in Southeast Asia , involving attacks made as recently as April 2020 .
+We observed similar tactics and tools associated with attacks on a telecommunications organization in the Middle East in April 2020 , specifically using custom Mimikatz tools , Bitvise , PowerShell downloaders and a custom backdoor we track as RDAT .
+Unit 42 has previously linked Greenbug to OilRig , a threat group we discovered in 2015 .
+We had first seen the RDAT tool used in OilRig 's operations back in 2017 , but we later found a related sample created in 2018 that used a different command and control channel .
+When we analyzed this sample , we found a novel email-based C2 channel used in combination with steganography to exfiltrate data .
+We have been tracking RDAT since 2017 , when we first saw this tool uploaded to a webshell related to the TwoFace webshell discussed in our Striking Oil blog published on September 26 , 2017 .
+RDAT has been under active development since 2017 , resulting in multiple variations of the tool that rely on both HTTP and DNS tunneling for C2 communications .
+In June 2018 , the developer of RDAT added the ability to use Exchange Web Services ( EWS ) to send and receive emails for C2 communications .
+This email-based C2 channel is novel in its design , as it relies on steganography to hide commands and exfiltrates data within BMP images attached to the emails .
+The combination of using emails with steganographic images to carry the data across the C2 can result in this activity being much more difficult to detect and allow for higher chances of defense evasion .
+Palo Alto Networks customers are protected by WildFire and Cortex XDR , which identifies all RDAT samples as malicious , as well as DNS Security and URL Filtering , which identifies and blocks the C2 activity .
+We first discovered the existence of RDAT on October 7 , 2017 , when we observed it being uploaded to a webshell 11 days after we had published our research exposing webshell activity by this adversary .
+We believe the group attempted to use the RDAT payload for continued access to the server once the use of the webshell was exposed .
+In April 2020 , we observed activity involving the potential breach of a telecommunications organization in the Middle East .
+The files associated with this activity included custom Mimikatz samples for dumping credentials , a sample of the Bitvise client we believe was used to create SSH tunnels , and a custom backdoor called RDAT .
+From the initial RDAT sample we collected , we were able to expand the sample set and relate previously seen ISMDOOR samples as well .
+Given the combination of the use of RDAT in OilRig-related webshells , code similarities and tactical similarities , we are confident RDAT is a tool deployed by OilRig .
+Two of the related tools collected had PDB paths similar to ones we had seen in the past .
+The PDB paths were C:\Users\Void\Desktop\dns\client\x64\Release\client.pdb and C:\Users\Void\Desktop\RDAT\client\x64\Release\client.pdb , the latter of which is the basis of the tool name .
+Using the file path of the user in the PDB string of C:\Users\Void\Desktop , we gathered over a dozen samples with that file path , with most of the samples identified as a known OilRig tool called ISMDOOR .
+We also observed PowerShell downloaders attempting to retrieve files from the domain digi.shanx.icu .
+In Symantec 's Greenbug report , once the adversary gained interactive access to target hosts , they were observed executing PowerShell commands to perform post-exploitation activities .
+In one instance , a Powershell script was executed to retrieve RDAT from the C2 apps.vvvnews.com .
+Unfortunately , we could not verify the contents of Nt.dat due to the C2 server http://digi.shanx.icu : 8080 being unavailable at the time of analysis .
+The adversaries compiled the RDAT payloads used in the attacks on the Middle Eastern telecommunications organization on March 1 , 2020 , and configured it to use a domain provided on the command line or the hardcoded domain rsshay.com as its C2 server .
+Unlike previous RDAT samples , this particular sample only uses DNS tunneling for its C2 communications with no HTTP fallback channel .
+This RDAT sample can only use TXT queries in its DNS tunnel and will issue queries structured like the following : <encoded data>.<encoding method , 0 for base64 or 1 for base32><encryption key>.<C2 domain> .
+The encoded data portion of the subdomain is encoded base32 if the actor includes a command line argument 1 – otherwise , it uses base64 .
+The payload also substitutes characters within the base64 encoded subdomain to avoid including characters that are not allowed in domain names , such as = with - , / with _ and + with -a .
+The encoded data in the beacon ( subdomain ) is ciphertext generated using AES and a 16-byte key generated by concatenating two randomly chosen alphanumeric characters that are also present in the subdomain immediately before the C2 domain .
+The payload decodes the response for an answer to the TXT query with base64 and decrypts using the same AES cipher and key as the request .
+The payload attempts to parse the decrypted cleartext using the regular expression "[^ ,]+" to get the command value and the command arguments that are split with a comma .
+The payload then checks the command value using a command handler that has the ability to execute commands and upload and download files .
+0 : Idle .
+1 : Run specified command .
+Creates write and read pipes to issue the command and read the output and sends the results to the C2 over the DNS tunnel .
+2 : Uploads a file to the C2 by reading in a specified file and sending its contents over the DNS tunnel in chunks .
+3 : Downloads a file via the DNS tunnel .
+As shown by the compilation times , this tool has been in development since 2017 , with the most recent sample we collected being compiled in April 2020 .
+The sample compiled in August 2017 was uploaded to a webshell related to TwoFace , while the samples compiled in March 2020 were used in the attack on the Middle Eastern telecommunications organization .
+The RDAT sample compiled in April 2020 was also delivered to the same telecommunications organization , which was configured to use new infrastructure ( sharjatv.com , wwmal.com ) and supported both DNS A and AAAA records for its DNS tunneling C2 channel .
+The most interesting sample we discovered was compiled on July 24 , 2018 .
+This sample included a novel C2 channel that used the Exchange Web Services ( EWS ) API to send and receive emails containing steganographic images as attachments .
+This novel C2 channel supplemented the HTTP and DNS tunneling C2 channels seen in other RDAT samples , all of which we will discuss in detail in the upcoming sections .
+The novel C2 channel in the RDAT sample uses email for a C2 channel by interacting with the local Exchange server with the EWS API .
+There are two hardcoded actor-controlled email addresses : koko@acrlee.com and h76y@acrlee.com .
+These two email addresses are used by the RDAT payload to send and receive emails to facilitate C2 .
+To send emails from the compromised host , the payload uses the email associated with the account logged into the compromised host , as it uses the WinHTTP library to make requests to the API with the "WINHTTP_OPTION_AUTOLOGON_POLICY" field set to 'WINHTTP_AUTOLOGON_SECURITY_LEVEL_LOW' , which automatically attempts to log onto Exchange using the default credentials .
+The actor communicates with the payload by sending emails from one of two email addresses to the email address of the compromised account .
+To receive emails from the actor , the payload will : 
+Initially create an inbox rule to move actor 's emails to the junk folder .
+Continually look in the junk folder for actor-sent emails that have attachments .
+Process attachments for inbound commands hidden within BMP images .
+To communicate with the actor , the payload sends emails from the account logged into the compromised system and performs the following actions : 
+Creates a draft email with the actor-controlled email address in the "To" field .
+Attaches a BMP image with a hidden message or data to exfiltrate to the draft .
+Sends the draft to the actor 's email address .
+To show this channel , we analyzed the outbound HTTP POST requests to the EWS API and took screenshots of the requests .
+The POST requests all have an anomalous "User-Agent" of "firefox" and use Simple Object Access Protocol ( SOAP ) messages to interact with the Exchange server .
+The first request has a SOAP message to create an inbox rule named "ExchangeRule" that moves all inbound emails from the C2 email addresses to the "junkemail" folder .
+The rule name is highlighted in the red box , the condition that includes the actor 's email address in the blue box and the action to move it to the junk folder in the green box .
+The payload will then continually look for new emails from the actor in the junk folder .
+The payload will issue a request to the EWS API to check for unread emails from the actor 's email addresses with an attachment .
+If the payload obtains an email sent by the actor , the payload will process the response to the SOAP request and send additional requests to the EWS API to get the email , the attachment and the contents of the attachment .
+The payload processes the responses to these requests using regular expressions to find specified values within the XML .
+The payload uses the regular expressions to find the following values within the server 's response : 
+Id and ChangeKey to get the specified email .
+AttachmentId Id to get the attachment from the email .
+<t : Content> and </t : Content> to get the contents of the attachment .
+It then saves this content to a file in the %TEMP% folder with a ".bmp" file extension .
+It then issues a SOAP request to delete the processed email .
+This completes the process in which the payload receives inbound communications from the actor .
+To send its beacon and exfiltrate data to the actor , the payload will interact with the EWS API to perform the following three steps : 
+Save a draft email with the actor 's email address in the "To" field .
+Attach the BMP image containing the hidden data to the saved draft email .
+Send the saved draft email .
+To carry out this functionality , the payload creates an email and saves it as a draft .
+This allows it to attach the image containing the hidden data prior to sending the email .
+With the email saved in the drafts folder , the payload will then attach the BMP image to the email using an HTTP POST request to the EWS API .
+The payload issues one last request to the EWS API to send the email draft with the attached BMP image to the actor .
+The payload will receive data from and exfiltrate data to the C2 within email attachments , specifically within the BMP images that use steganography to hide the data within the image .
+The method with which the payload extracts data from the BMP image to receive data from the C2 is the same as its method for hiding data to exfiltrate .
+Depending on the version of Windows , the "guest.bmp" image differs in size and contents .
+The image from Windows 7 is 128×128 pixels and contains an image of a suitcase , while the Windows 10 image is 448×448 pixels and contains a generic user icon .
+To explain how the payload hides data within this image , we must first briefly explain the BMP file format .
+The BMP file format includes file headers and an array of values used to store the red , green and blue color values of each pixel in the image .
+The format of each color value in the array of color values varies depending on the color depth , as 24-bit BMP images will use 3-byte values that are used to specify the intensities of red , blue and green colors for each pixel in the image , while 32-bit images use 4-byte values .
+The RDAT payload can support both 24- and 32-bit images .
+Since both "guest.bmp" images from Windows 7 and 10 are 24-bit images , we observed the payload using the 3-byte color values for each pixel to hide data .
+The payload will modify each pixel 's 3-bytes to transmit one byte of exfiltrated data .
+By spreading the data byte over the 3-bytes for each pixel , the impact on the original image is minor and difficult to visualize .
+To hide the data within the image , the payload will check the color depth of the "guest.bmp" image for either 24- or 32-bit depth , which allows the payload to determine how many bytes per pixel it will need to spread the bits of the hidden data across .
+Using this 24-bit image , the payload will spread the 8-bits of the data byte across these three bytes , specifically by setting the least significant bit values in the pixel bytes to the bit values of the data byte .
+The RDAT sample with the novel EWS C2 channel also had HTTP and DNS tunneling as C2 channels as well , which are very similar to other RDAT samples we collected .
+The HTTP C2 channel uses HTTP POST requests to transmit data to the C2 server .
+The code contains the following two domains : allsecpackupdater.com , tacsent.com .
+It should be noted that the code only attempts to use the tacsent.com domain for its HTTP C2 channel .
+We are unsure why the code contains the allsecpackupdater.com domain as it does not attempt to communicate with it , but it is possible that it is an artifact from a previous version of the tool .
+This domain was previously tied to the OilRig threat group , as ClearSky discovered this domain in 2017 and noted its relation to Greenbug 's ISMDOOR tool .
+The payload encrypts the data sent in the POST request using the AES cipher , specifically in CBC mode .
+To decrypt this data , the data itself is first converted from the URL-safe hexadecimal percent encoded characters to their / , + and = character equivalent .
+After this conversion , the resulting data is decoded using base64 and then decrypted using AES and the value in the From field as a key and initialization vector ( IV ) .
+The payload will check the C2 server 's response to this HTTP POST for a , using a regular expression [^ ,]+ to determine if the C2 provided a command .
+The payload can only exfiltrate 102400 bytes of data at a time , which it uses a field in the exfiltrated response to notify the C2 of the offset of the data so the C2 can reconstruct it .
+The RDAT backdoor has been used by the OilRig threat group for at least three years to target organizations in the Middle East , with the most recent known activity occurring in April 2020 against a telecommunications organization .
+Over the course of three years , this tool has received continued development efforts that have resulted in multiple variations with differences in functionality and available C2 channels .
+The majority of samples used some combination of HTTP and DNS tunneling channels , with the single exception where we discovered the developer leveraging Exchange Web Services to send and receive emails to and from the actor using steganographic image file attachments .
+The use of a novel C2 channel in combination with steganography shows the continued evolution and development of different tactics and techniques by this adversary over time .
+RDAT backdoor : 4ea6da6b35c4cdc6043c3b93bd6b61ea225fd5e1ec072330cb746104d0b0a4ec .
+Custom Mimikatz : e53cc5e62ba15e43877ca2fc1bee16061b4468545d5cc1515cb38000e22dd060 .
+Bitvise client : 476b40796be68a5ee349677274e438aeda3817f99ba9832172d81a2c64b0d4ae .
+PowerShell downloader : 78584dadde1489a5dca0e307318b3d2d49e39eb3987de52e288f9882527078d5 .
+OilRig : RDAT 7395a3ada245df6c8ff1d66fcb54b96ae12961d5fd9b6a57c43a3e7ab83f3cc2 .
+OilRig : RDAT 8f943bc5b20517fea08b2d0acc9afe8990703e9d4f7015b98489703ca51da7eb .
+OilRig : RDAT 8120849fbe85179a16882dd1a12a09fdd3ff97e30c3dfe52b43dd2ba7ed33c2a .
+OilRig : RDAT bcdb63b3520e34992f292bf9a38498f49a9ca045b7b40caab5302c76ca10f035 .
+OilRig : RDAT f42c2b40574dc837b33c1012f7b6f41fcccc5ebf740a2b0af64e2c530418e9e0 .
+OilRig : RDAT fcabb86331cd5e2fa9edb53c4282dfcb16cc3d2cae85aabf1ee3c0c0007e508c .
+OilRig : RDAT 7b5042d3f0e9f077ef2b1a55b5fffab9f07cc856622bf79d56fc752e4dc04b28 .
+OilRig : RDAT ee32bde60d1175709fde6869daf9c63cd3227155e37f06d45a27a2f45818a3dc .
+OilRig : RDAT de3f1cc2d4aac54fbdebd5bd05c9df59b938eb79bda427ae26dedef4309c55a9 .
+OilRig : RDAT 4ea6da6b35c4cdc6043c3b93bd6b61ea225fd5e1ec072330cb746104d0b0a4ec .
+OilRig : RDAT acb50b02ab0ca846025e7ad6c795a80dc6f61c4426704d0f1dd7e195143f5323 .
+OilRig : RDAT 55282007716b2b987a84a790eb1c9867e23ed8b5b89ef1a836cbedaf32982358 .
+OilRig : RDAT ba380e589261781898b1a54c2889f3360db09c61b9155607d7b4d11fcd85bd9d .
+OilRig : RDAT 6322cacf839b9c863f09c8ad9fd0e091501c9ba354730ab4809bb4c076610006 .
+OilRig : RDAT rdmsi.com .
+OilRig : RDAT rsshay.com .
+OilRig : RDAT sharjatv.com .
+OilRig : RDAT wwmal.com .
+OilRig : RDAT allsecpackupdater.com .
+OilRig : RDAT tacsent.com .
+OilRig : RDAT acrlee.com .
+OilRig : RDAT kopilkaorukov.com .
+OilRig : digi.shanx.icu .
+OilRig : tprs-servers.eu .
+OilRig : oudax.com .
+OilRig : kizlarsoroyur.com .
+OilRig : intelligent-finance.site .

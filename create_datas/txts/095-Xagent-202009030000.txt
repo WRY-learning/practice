@@ -1,0 +1,74 @@
+BACKDOOR SPECIALLY COMPILED FOR YOU .
+Release_Time :  2019-01-11 .
+Report_URL : https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf .
+Xagent is developed in C++ with a modular architecture , around a core module named AgentKernel .
+Xagent has been compiled for Windows , Linux and iOS ( at least ) .
+Xagent possesses two different implementations of its C&C communication channel , one over HTTP and the other over emails ( SMTP/POP3 protocols ) .
+Xagent binaries are often compiled for specific targets , with a special choice of modules and communication channels .
+The dates posited in the timeline mainly rely on Xagent compilation timestamps , which we believe have not been tampered with because they match up with our telemetry data .
+These dates may be later than the actual events though , as we do not have all Xagent samples , but enough are present to give a good approximation .
+In particular , we dated the appearance of Xagent as independent malware in November 2012 , but fellow malware researchers reported to us privately that parts of its code were used before that .
+During our investigations , we were able to retrieve the complete Xagent source code for the Linux operating system .
+To the best of our knowledge , this is the first time this Xagent source code has been found and documented by security researchers .
+This source code is a fully working C++ project , which was used by Sednit operators to compile a binary in July 2015 ( at least ) .
+The project contains around 18,000 lines of code among 59 classes ; 
+We believe the Linux source code is derived from the Windows version of Xagent .
+In other words , OS-specific operations have been re-implemented , but the core logic remains the same on both platforms .
+As an example of this lineage , the following code snippet shows some Windows API calls for thread termination commented out by the developers , and replaced with a call to the Linux pthreads interface .
+According to its internal version numbering , this source code is version 2 of Xagent , while currently distributed Windows and Linux binaries are version 3 .
+Nevertheless , there appear to be only minor differences between the two versions , and the source code matches the core logic of the most recent samples on both Windows and Linux platforms .
+Also , the iOS version of Xagent found by Trend Micro — not documented in this white paper — is based on this source code , according to our own analysis .
+Therefore , we decided to present an analysis of Xagent mainly based on the source code , and not on binaries , to ease the explanations .
+In order to facilitate the reading of the source code , we made the following syntactic choices : 
+Parts of the code not relevant to our analysis have been replaced by [… ] As the code is heavily commented by its developers , we decided to leave those comments untouched .
+For the reader this comes at the price of enduring poorly-worded English comments , but this allows a finer understanding of what the developers were thinking .
+Our own comments on the code appear after the snippets , and are indicated by numbered tags .
+When the developers' comments are in Russian , we added the translation in the form of /* Translates to : … */ .
+Commenting out module and channel instantiations is a strategy we previously observed when analyzing Xagent binaries .
+Each sample does indeed come with a specific combination of modules and channels , even though the Xagent kernel is completely capable of managing all of them in parallel ( including multiple channels ) .
+By doing so , operators probably intend to adapt Xagent binaries for specific targets , and avoid exposing the whole Xagent code to security researchers .
+Moreover , operators may still deploy additional modules and channels during execution , as we will explain later .
+The core Xagent functionalities lie in its modules .
+As shown in the startXagent() snippet , Xagent Linux source code contains three modules , plus the kernel which is itself also a module .
+Each Linux Xagent module has an equivalent module in the Windows version , as shown in the fourth column of Table 1 ( Windows names come from Run-Time Type Information ( RTTI ) left in some binaries ) .
+Due to operating system peculiarities , the module implementations differ between Windows and Linux , but their IDs and the commands they accept are the same .
+AgentKernel is the execution manager , and the only module that has to be present in all Xagent binaries .
+In the kernel constructor code and elsewhere , important strings are accessed through a class named Coder , which is a wrapper around an encrypted string .
+The string is then decrypted on-demand by an exclusive-or ( XOR ) with a key defined at the time the Coder object was instantiated .
+As for all modules , the core logic of the kernel lies in its run() method , on which an execution thread has been created by the previously described startWork() method .
+First things first , AgentKernel::run() reports the list of installed modules to the C&C server .
+More precisely , the kernel behaves as if it had received a command called PING_REQUEST from the C&C server ( the kernel's commands will be described in the following section ) .
+The ModuleMsg object is then passed to the AgentKernel::translateToController() method , which takes charge of its encryption , resulting in a CryptRawPacket object .
+The buffer starts with a header composed of the agent ID and a checksum calculated on the rest of the data .
+This checksum is a 2-byte cyclic redundancy check ( CRC ) calculated on the data with a 2-byte pseudo-randomly generated polynomial .
+Then comes the serialized ModuleMsg object followed by an 11-byte value named DATA_TOKEN , both RC4-encrypted .
+The DATA_TOKEN value is hardcoded in the source code and probably serves to check the integrity of the message during decryption by the C&C server .
+The key used for RC4-encryption is the concatenation of a hardcoded 50-byte value and a pseudo-randomly generated 4-byte value , named register and appended to the encrypted data .
+AgentKernel::run() then enters in an infinite loop relaying communications between the modules and the C&C server : 
+It fetches ModuleMsg objects from the modules , which are then transmitted to the C&C server by the process previously described for the initial report .
+For example , the RemoteKeylogger module regularly sends a message containing the captured keystrokes to the C&C server .
+It retrieves CryptRawPacket objects sent by the C&C server from a C++ vector dubbed _get_ questions and filled by the ChannelController::getDataFromServer() method .
+Those objects are decrypted and deserialized into ModuleMsg objects , which are then transmitted to the intended module .
+For example , the C&C server can send a message with the command START for the RemoteKeylogger module , which then begins its keylogging activity .
+AgentKernel accepted commands : 
+GET_AGENT_INFO 1 Reports IDs and settings of modules and channels to the C&C server .
+PING_REQUEST 2 Reports IDs of modules to the C&C server .
+CHANGE_PING_TIMEOUT 31 Sets the parameter defining the amount of time to wait before initially contacting the C&C server to the given value .
+CHANGE_STEP_TIME 32 Sets the parameter defining the amount of time to wait between two attempts to reach the C&C server to the given value .
+SET_PARAMETERS 33 Saves the two previous parameters current values into the LocalStorage SQLite3 database , such that those values will be re-used at next startup .
+CHANGE_CHANNEL 41 Changes the currently selected channel to the channel identified by the given ID ( see next section for details on the channels ) .
+CHANNEL_SET_PARAMETERS 42 Changes the settings of the channel identified by the given ID .
+For example , it may be used to change the C&C server address .
+LOAD_NEW_MODULE 51 Instantiates an IAgentModule object from the given data , and registers this new module with the kernel .
+UNLOAD_MODULE 52 Unloads the module identified by the given ID .
+LOAD_NEW_CHANNEL 53 Instantiates an IAgentChannel object from the given data , and registers this new channel with the kernel .
+UNLOAD_CHANNEL 54 Unloads the channel identified by the given ID .
+UNINSTALL_XAGENT 61 Kills the Xagent process ( no uninstallation procedure implemented ) .
+Xagent version 2 Linux channels : 
+HttpChannel 0x2102 HTTP WinHttp .
+MailChannel 0x2302 SMTP to send emails and POP3 to receive emails ( over TLS ) AgentExternSMTPChannel ( only to send emails ) .
+Each channel is identified by a 2-byte ID similar to the previously described module ID .
+There exists an implementation for the HTTP-based channel on Windows , while we only found a channel to send emails , without the ability to receive emails , on this platform .
+By implementing the IAgentChannel abstract class , the channels provide a getRawPacket() method to fetch a message from the C&C server , and a sendRawPacket() method to send a message to the C&C server .
+As previously explained , those messages are CryptRawPacket objects .
+We describe in this section the implementations of these methods for the two Linux channels .

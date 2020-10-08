@@ -1,0 +1,116 @@
+T1	threatActor_name 0 7	Zebrocy
+T2	threatActor_name 149 156	Zebrocy
+T3	threatActor_name 283 290	Zebrocy
+T4	threatActor_name 293 300	Zebrocy
+T5	threatActor_name 369 376	Zebrocy
+T6	time 410 414	2013
+T7	malware 465 476	BlackEnergy
+T8	threatActor_name 502 509	Zebrocy
+T9	threatActor_name 600 606	Sofacy
+T10	malware 611 613	BE
+T11	threatActor_name 616 623	Zebrocy
+T12	threatActor_name 725 732	Zebrocy
+T13	threatActor_name 804 810	Sofacy
+T14	threatActor_name 813 820	Zebrocy
+T15	malware 856 867	BlackEnergy
+T16	malware 868 876	Sandworm
+T17	malware 950 961	BlackEnergy
+T18	malware 962 972	GreyEnergy
+T19	threatActor_name 1050 1057	Zebrocy
+T20	time 1066 1070	2018
+T21	threatActor_name 975 980	Turla
+T22	threatActor_name 1194 1201	Zebrocy
+T23	threatActor_name 1214 1220	Sofacy
+T24	threatActor_name 1460 1467	Zebrocy
+T25	time 1493 1497	2015
+T26	time 1512 1520	Oct 2015
+T27	threatActor_name 1617 1624	Zebrocy
+T28	threatActor_name 1731 1738	Zebrocy
+T29	threatActor_name 2034 2041	Zebrocy
+T30	threatActor_name 2079 2086	Zebrocy
+T31	malware 2270 2281	BlackEnergy
+T32	malware 2282 2290	Sandworm
+T33	threatActor_name 2329 2335	Sofacy
+T34	threatActor_name 2426 2433	Zebrocy
+T35	threatActor_name 2572 2579	Zebrocy
+T36	security_team 1348 1355	SAS2019
+R2	find Arg1:T36 Arg2:T22	
+R1	find Arg1:T36 Arg2:T23	
+T37	sub_activity 624 642	shares data points
+R3	launch Arg1:T11 Arg2:T37	
+T38	sub_activity 647 692	crosses lines with other clusters of activity
+R4	launch Arg1:T11 Arg2:T38	
+T39	threatActor_name 2634 2641	Zebrocy
+T40	threatActor_name 2784 2791	Zebrocy
+T41	threatActor_name 2962 2969	Zebrocy
+T42	threatActor_name 2986 2992	Sofacy
+T43	threatActor_name 3049 3056	Zebrocy
+T44	time 3018 3027	late 2015
+T45	time 3028 3038	early 2016
+T47	threatActor_name 3075 3082	Zebrocy
+T48	threatActor_name 3178 3185	Zebrocy
+T49	tool 3102 3108	Delphi
+T51	threatActor_name 3218 3225	Zebrocy
+T52	malware 3272 3283	BlackEnergy
+T53	threatActor_name 3323 3330	Zebrocy
+T46	threatActor_name 3587 3594	Zebrocy
+T50	malware 1224 1230	XAgent
+T54	malware 3683 3687	SPLM
+T55	malware 3688 3694	XAgent
+T56	threatActor_name 3720 3726	Sofacy
+T57	threatActor_name 3770 3777	Zebrocy
+T58	malware 3817 3828	BlackEnergy
+T59	threatActor_name 3855 3862	Zebrocy
+T60	malware 3921 3928	Zebrocy
+T61	threatActor_name 4066 4073	Zebrocy
+T62	threatActor_name 4124 4130	Sofacy
+T63	threatActor_name 4135 4142	Zebrocy
+T64	threatActor_name 4172 4179	Zebrocy
+T65	time 3144 3148	2013
+T66	time 3151 3160	late 2015
+T67	time 4342 4351	2013-2015
+T68	malware 4550 4561	BlackEnergy
+T69	threatActor_name 4594 4601	Zebrocy
+T70	malware 4617 4628	BlackEnergy
+T71	malware 4700 4711	BlackEnergy
+T73	malware 4869 4880	BlackEnergy
+T74	malware 4909 4920	BlackEnergy
+T72	time 4998 5010	October 2015
+T75	threatActor_name 5023 5030	Zebrocy
+T76	time 5051 5063	October 2015
+T77	malware 5191 5202	BlackEnergy
+T78	malware 5319 5330	BlackEnergy
+T79	time 5376 5380	2015
+T80	malware 5505 5516	BlackEnergy
+T81	threatActor_name 5561 5568	Zebrocy
+T82	threatActor_name 5627 5634	Zebrocy
+T83	threatActor_name 5770 5776	Sofacy
+T84	threatActor_name 5807 5813	Sofacy
+T85	domain 5831 5844	rammatica.com
+T86	domain 5845 5857	raveston.com
+T87	malware 5893 5904	BlackEnergy
+T88	time 5956 5960	2013
+T89	time 6108 6112	2018
+T90	threatActor_name 6182 6189	Zebrocy
+T91	threatActor_name 6452 6458	Sofacy
+T92	malware 6489 6493	SPLM
+T93	malware 6494 6500	XAgent
+T94	threatActor_name 6583 6590	Zebrocy
+T95	threatActor_name 6876 6883	Zebrocy
+T96	malware 7416 7420	SPLM
+T97	malware 7421 7427	XAgent
+T98	threatActor_name 7465 7472	Zebrocy
+T99	threatActor_name 7610 7617	Zebrocy
+T100	threatActor_name 8046 8053	Zebrocy
+T101	time 8134 8138	2019
+T102	threatActor_name 8610 8617	Zebrocy
+T103	threatActor_name 8695 8701	Sofacy
+T104	time 8705 8715	early 2016
+T105	malware 8784 8795	BlackEnergy
+T106	malware 8835 8846	BlackEnergy
+T107	threatActor_name 8867 8874	Zebrocy
+T108	threatActor_name 9059 9066	Zebrocy
+T109	threatActor_name 9386 9393	Zebrocy
+T110	time 9399 9403	2019
+T111	security_team 9254 9261	SAS2018
+T112	security_team 9266 9273	SAS2019

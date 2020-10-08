@@ -1,0 +1,56 @@
+T1	threatActor_name 79 83	FIN4
+T2	threatActor_name 295 299	FIN4
+T3	threatActor_name 491 495	FIN5
+T4	threatActor_name 791 795	FIN6
+T5	threatActor_aliases 798 803	ITG08
+T6	threatActor_name 806 810	FIN6
+R1	coreference Arg1:T5 Arg2:T4	
+T7	reference_word 621 630	The group
+T8	reference_word 733 742	The group
+T9	reference_word 921 931	This group
+R2	coreference Arg1:T7 Arg2:T3	
+R3	coreference Arg1:T8 Arg2:T3	
+R4	coreference Arg1:T9 Arg2:T6	
+T10	time 288 292	2013
+T11	sub_activity 843 867	stolen payment card data
+R5	use Arg1:T6 Arg2:T11	
+T12	sub_activity 872 890	sold it for profit
+T14	sub_activity 850 867	payment card data
+R7	use Arg1:T6 Arg2:T12	
+T15	sub_activity 974 987	point of sale
+T16	industry 1027 1041	retail sectors
+T17	industry 1011 1022	hospitality
+R8	attack Arg1:T9 Arg2:T15	
+R9	part_of Arg1:T15 Arg2:T17	
+R10	part_of Arg1:T15 Arg2:T16	
+T18	person 757 763	actors
+R11	part_of Arg1:T18 Arg2:T8	
+T19	time 662 666	2008
+T20	industry 688 698	restaurant
+T21	industry 701 707	gaming
+T22	industry 714 719	hotel
+R12	first_found_time Arg1:T7 Arg2:T19	
+R13	attack Arg1:T7 Arg2:T20	
+R14	attack Arg1:T7 Arg2:T21	
+R15	attack Arg1:T7 Arg2:T22	
+T23	sub_activity 554 589	personally identifiable information
+T24	sub_activity 594 618	payment card information
+R16	goal Arg1:T3 Arg2:T23	
+R17	goal Arg1:T3 Arg2:T24	
+T25	sub_activity 89 110	financially-motivated
+R18	goal Arg1:T1 Arg2:T25	
+T26	sub_activity 404 436	capturing credentials authorized
+R19	use Arg1:T2 Arg2:T26	
+T27	sample_function 440 452	access email
+R20	goal Arg1:T26 Arg2:T27	
+T28	sub_activity 463 488	non-public correspondence
+R21	goal Arg1:T2 Arg2:T28	
+T29	industry 182 205	public financial market
+T30	sub_activity 142 166	confidential information
+R22	goal Arg1:T1 Arg2:T30	
+R23	part_of Arg1:T30 Arg2:T29	
+T31	target_crowd 231 270	healthcare and pharmaceutical companies
+R24	attack Arg1:T1 Arg2:T31	
+R25	first_found_time Arg1:T1 Arg2:T10	
+T32	sub_activity 990 993	PoS
+R26	coreference Arg1:T32 Arg2:T15	

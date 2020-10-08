@@ -1,0 +1,212 @@
+T1	time 191 209	April 19-24 , 2017
+T2	industry 289 310	Israeli organizations
+T4	time 370 378	April 24
+T5	security_team 313 322	Morphisec
+T3	time 461 469	April 26
+T6	security_team 491 545	Israel National Cyber Event Readiness Team ( CERT-IL )
+T7	security_team 550 560	The Marker
+T8	security_team 752 792	Israel ’s Cyber Security Research Center
+T10	location 697 703	Israel
+T11	security_team 851 860	Morphisec
+T12	threatActor_aliases 937 958	infamous hacker group
+R5	find Arg1:T11 Arg2:T12	
+T14	attack_activity 1010 1025	fileless attack
+R6	attack Arg1:T14 Arg2:T2	
+T15	malware 1186 1207	Helminth Trojan agent
+T16	sub_activity 1030 1123	delivered via Microsoft Word documents that exploited a former zero-day vulnerability in Word
+T17	vulnerability_cve 1126 1139	CVE-2017-0199
+T18	sub_activity 1142 1207	to install a fileless attack variant of the Helminth Trojan agent
+T19	company 1210 1219	Microsoft
+T20	time 1264 1272	April 11
+T21	counter_measure 1233 1260	patch for the vulnerability
+R7	release_time Arg1:T21 Arg2:T20	
+R8	launch Arg1:T14 Arg2:T18	
+T22	reference_word 1368 1374	attack
+R9	coreference Arg1:T22 Arg2:T14	
+T23	security_team 1522 1531	Morphisec
+T24	industry 1580 1611	high-tech development companies
+T25	industry 1614 1635	medical organizations
+T26	industry 1640 1663	education organizations
+T27	security_team 1740 1749	Morphisec
+T28	sub_activity 1810 1841	compromising the email accounts
+T29	reference_word 1707 1713	attack
+R10	coreference Arg1:T29 Arg2:T14	
+R11	attack Arg1:T14 Arg2:T24	
+R12	attack Arg1:T14 Arg2:T25	
+R13	attack Arg1:T14 Arg2:T26	
+T30	security_team 2081 2088	CERT-IL
+T31	malware 2136 2159	Helminth fileless agent
+T32	attack_activity 2204 2219	OilRig campaign
+T13	attack_activity 979 1003	OilRig malware campaigns
+R2	launch Arg1:T12 Arg2:T13	
+T33	threatActor_aliases 2235 2255	Iranian hacker group
+T34	industry 2268 2290	financial institutions
+T35	location 2298 2309	Middle East
+R14	attack Arg1:T32 Arg2:T34	
+R15	launch Arg1:T33 Arg2:T32	
+R16	located Arg1:T34 Arg2:T35	
+T36	security_team 2337 2344	FireEye
+T37	security_team 2347 2365	Palo Alto Networks
+T38	security_team 2370 2379	Logrhythm
+R17	find Arg1:T36 Arg2:T32	
+R18	find Arg1:T37 Arg2:T32	
+R19	find Arg1:T38 Arg2:T32	
+T40	government 2572 2590	Iranian government
+T41	time 2619 2631	January 2017
+T42	tool 2653 2685	fake Juniper Networks VPN portal
+T43	reference_word 2636 2645	the group
+R21	use Arg1:T43 Arg2:T42	
+T44	tool 2690 2724	fake University of Oxford websites
+R22	use Arg1:T43 Arg2:T44	
+T45	malware 2760 2768	ClearSky
+R23	coreference Arg1:T43 Arg2:T33	
+T46	sha2 2779 2843	a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab
+T47	sha2 2861 2925	2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84
+T48	sha2 2935 2999	832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8
+T49	sha2 3009 3073	d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48
+T50	attack_activity 3122 3137	OilRig campaign
+T51	threatActor_aliases 3203 3220	the Iranian group
+T52	tool 3244 3264	Excel and Word files
+R24	use Arg1:T51 Arg2:T52	
+T53	domain_evil 3353 3372	hxxp://comonscar.in
+T54	IP_evil 3376 3388	82.145.40.46
+T55	IP_evil 3403 3414	80.82.67.42
+T56	malware 4127 4167	Helminth Trojan PowerShell and VBS files
+T57	sha2 4179 4243	042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1
+T58	sha2 4252 4316	BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED
+T59	time 4368 4380	October 2016
+T60	attack_activity 4399 4408	Logrhythm
+T61	malware 4601 4651	Helminth trojan PowerShell and VBS files templates
+T62	sub_activity 3627 3690	the .hta file sends the “ Enter ” key into the Word application
+T63	sub_activity 3789 3826	creating and executing a 1.vbs script
+T64	sub_activity 3843 3893	writes and executes the 0011.ps1 PowerShell script
+T65	sub_activity 3956 4011	kills the original process that activated the .hta file
+T39	reference_word 2524 2548	the hacking organization
+R20	coreference Arg1:T39 Arg2:T33	
+T66	sub_activity 4749 4817	adding a schedule task with a similar name to the Google update task
+T67	sub_activity 5014 5071	executes some of the same commands executed by VBS script
+T68	attack_goal 5349 5435	Download bat script , Execute it and upload the results back to the C&C , Clear traces
+T69	malware 6270 6278	Mimikatz
+T70	attack_goal 6348 6400	gather information from the computer and the network
+T71	counter_measure 6959 7047	In case “ Google Update Core ” or “ Google Sync Core ” exists , those need to be removed
+T72	counter_measure 6778 6845	The scheduled task “ GoogleUpdateTasksMachineUI ” should be removed
+T73	counter_measure 7094 7145	remove it : “ Program Files (x86 )\Microsoft Idle ”
+T74	counter_measure 7228 7328	remove those files : “ %userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup ”
+T75	vulnerability_cve 7450 7463	CVE-2014-4114
+T76	vulnerability_cve 7468 7481	CVE-2014-6352
+T77	vulnerability_cve 7553 7566	CVE-2017-0199
+T78	threatActor_aliases 7666 7691	the Iranian threat actors
+T79	sub_activity 7740 7803	Utilizing a vulnerability PoC immediately after its publication
+T80	sub_activity 7806 7887	Setting up the required infrastructure with multiple domains and delivery servers
+T81	sub_activity 7890 7951	Increasing the sophistication of the delivered Helminth agent
+T82	malware 7937 7951	Helminth agent
+T83	sub_activity 7954 8019	including regeneration of its signatures on the infected computer
+T84	sub_activity 8022 8085	Improving the customized information gathering Mimikatz version
+T85	malware 8069 8077	Mimikatz
+T86	attack_activity 8349 8357	Hancitor
+T87	sha2 8378 8442	a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab
+T88	sha2 8463 8527	2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84
+T89	sha2 8548 8612	832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8
+T90	sha2 8633 8697	d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48
+T91	sha2 8718 8782	5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43
+T92	sha2 8803 8867	042F60714E9347DB422E1A3A471DC0301D205FFBD053A4015D2B509DB92029D1
+T93	sha2 8888 8952	BE7F1D411CC4160BB221C7181DA4370972B6C867AF110C12850CAD77981976ED
+T94	domain_evil 8973 8992	hxxp://comonscar.in
+T95	IP_evil 8996 9008	82.145.40.46
+T96	IP_evil 9031 9042	80.82.67.42
+T97	domain_evil 9062 9074	vpsupdate.tk
+T98	domain_evil 9095 9110	alenupdate.info
+T99	domain_evil 9131 9141	Maralen.tk
+T100	time 5300 5315	April 16 , 2017
+T101	malware 4918 4926	DnE1.Ps1
+T102	url_evil 5598 5660	vpsupdate.tk/index.aspx?id=<random character><randomnumber>[b]
+T103	url_evil 5959 6021	vpsupdate.tk/index.aspx?id=<random character><randomnumber>[u]
+T104	malware 6075 6083	DnE1.Ps1
+T105	malware 6102 6110	DnS1.Ps1
+T106	tool 6164 6184	DNS exchange queries
+R25	use Arg1:T105 Arg2:T106	
+T107	sample_name 6624 6628	A.V.
+T108	sample_name 6631 6639	Firewall
+T109	sample_name 6644 6651	AntiSpy
+T110	sample_name 3478 3487	mshta.exe
+T111	target_crowd 2019 2065	250 individuals in different Israeli companies
+T112	function 1390 1406	Proof-of-Concept
+T113	reference_word 2382 2392	This group
+R26	coreference Arg1:T113 Arg2:T33	
+T114	malware 4654 4662	DnS1.Ps1
+T115	malware 4665 4673	DnE1.Ps1
+T116	malware 4676 4687	backup1.vbs
+T117	sub_activity 6434 6502	handle non-ASCII characters and the validation of the scheduled task
+T118	function 6541 6562	persistency mechanism
+T119	sample_name 9162 9188	GoogleUpdateTasksMachineUI
+T120	sample_name 9209 9227	Google Update Core
+T121	sample_name 9248 9264	Google Sync Core
+T122	target_crowd 1851 1900	high-profile individuals at Ben-Gurion University
+R27	attack Arg1:T28 Arg2:T122	
+T123	attack_activity 3544 3561	The HTA execution
+T124	malware 4040 4055	0011.ps1 script
+T125	reference_word 5004 5013	This file
+R1	coreference Arg1:T125 Arg2:T101	
+T126	domain_evil 5173 5187	vpsupdate[.]tk
+R28	launch Arg1:T14 Arg2:T16	
+T127	OS_name 3494 3501	Windows
+T128	sample_name 6896 6926	GoogleUpdateTask[Machine|User]
+R29	occur_time Arg1:T60 Arg2:T59	
+R30	part_of Arg1:T62 Arg2:T123	
+R31	part_of Arg1:T63 Arg2:T123	
+R32	part_of Arg1:T64 Arg2:T123	
+R33	part_of Arg1:T65 Arg2:T123	
+R34	launch Arg1:T78 Arg2:T79	
+R35	launch Arg1:T78 Arg2:T80	
+R36	launch Arg1:T78 Arg2:T81	
+R37	launch Arg1:T78 Arg2:T83	
+R38	launch Arg1:T78 Arg2:T84	
+T129	malware 3283 3289	macros
+T130	attack_activity 2728 2743	deliver malware
+R39	launch Arg1:T43 Arg2:T130	
+T9	sub_activity 591 635	delivered through compromised email accounts
+R3	find Arg1:T6 Arg2:T9	
+R4	find Arg1:T7 Arg2:T9	
+T131	sample_name 2771 2777	13.doc
+T132	sample_name 2846 2853	558.doc
+T133	sample_name 2854 2859	2.doc
+T134	sample_name 2928 2933	1.doc
+T135	sample_name 3002 3007	3.doc
+R40	part_of Arg1:T46 Arg2:T131	
+R41	part_of Arg1:T47 Arg2:T132	
+R42	part_of Arg1:T47 Arg2:T133	
+R43	part_of Arg1:T48 Arg2:T134	
+R44	part_of Arg1:T49 Arg2:T135	
+T136	counter_measure 1477 1519	hunting through known malware repositories
+R45	launch Arg1:T23 Arg2:T136	
+T137	attack_activity 8360 8375	fileless attack
+T138	attack_activity 8445 8460	fileless attack
+T139	attack_activity 8530 8545	fileless attack
+T140	attack_activity 8615 8630	fileless attack
+T141	attack_activity 8700 8715	fileless attack
+T142	attack_activity 8785 8800	fileless attack
+T143	attack_activity 8870 8885	fileless attack
+T144	attack_activity 8955 8970	fileless attack
+T145	attack_activity 9013 9028	fileless attack
+T146	attack_activity 9044 9059	fileless attack
+T147	attack_activity 9077 9092	fileless attack
+T148	attack_activity 9113 9128	fileless attack
+T149	attack_activity 9144 9159	fileless attack
+T150	attack_activity 9191 9206	fileless attack
+T151	attack_activity 9230 9245	fileless attack
+R46	part_of Arg1:T87 Arg2:T137	
+R47	part_of Arg1:T88 Arg2:T138	
+R48	part_of Arg1:T89 Arg2:T139	
+R49	part_of Arg1:T90 Arg2:T140	
+R50	part_of Arg1:T91 Arg2:T141	
+R51	part_of Arg1:T92 Arg2:T142	
+R52	part_of Arg1:T93 Arg2:T143	
+R53	part_of Arg1:T94 Arg2:T144	
+R54	part_of Arg1:T95 Arg2:T144	
+R55	part_of Arg1:T96 Arg2:T145	
+R56	part_of Arg1:T97 Arg2:T146	
+R57	part_of Arg1:T98 Arg2:T147	
+R58	part_of Arg1:T99 Arg2:T148	
+R59	part_of Arg1:T119 Arg2:T149	
+R60	part_of Arg1:T120 Arg2:T150	
+R61	part_of Arg1:T121 Arg2:T151	

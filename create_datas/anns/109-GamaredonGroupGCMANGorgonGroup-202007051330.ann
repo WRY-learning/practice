@@ -1,0 +1,31 @@
+T1	threatActor_name 79 88	Gamaredon
+T2	threatActor_name 229 234	GCMAN
+T3	threatActor_name 347 353	Gorgon
+T4	time 149 153	2013
+T5	location 206 215	Ukrainian
+T6	government 206 226	Ukrainian government
+R1	attack Arg1:T1 Arg2:T6	
+R2	first_found_time Arg1:T1 Arg2:T4	
+T7	industry 279 284	banks
+T8	attack_activity 304 344	transferring money to e-currency sevises
+R3	attack Arg1:T2 Arg2:T7	
+R4	goal Arg1:T2 Arg2:T8	
+T9	location 424 432	Pakistan
+T10	location 468 476	Pakistan
+T11	reference_word 479 488	The group
+T12	attack_activity 512 541	criminal and targeted attacks
+T13	attack_activity 554 596	campaigns against government organizations
+T14	location 604 618	United Kingdom
+T15	location 621 626	Spain
+T16	location 629 635	Russia
+T17	location 646 659	United States
+R5	coreference Arg1:T11 Arg2:T3	
+R6	launch Arg1:T11 Arg2:T12	
+R7	launch Arg1:T11 Arg2:T13	
+R8	attack Arg1:T11 Arg2:T14	
+R9	attack Arg1:T11 Arg2:T15	
+R10	attack Arg1:T11 Arg2:T16	
+R11	attack Arg1:T11 Arg2:T17	
+T18	person 392 399	members
+R12	located Arg1:T18 Arg2:T9	
+R13	located Arg1:T18 Arg2:T10	

@@ -1,0 +1,50 @@
+T1	time 437 446	late 2014
+T2	time 459 463	2016
+T3	threatActor_name 466 476	FANCY BEAR
+T4	malware 477 484	X-Agent
+T5	threatActor_name 0 9	FancyBear
+T6	person 628 645	Yaroslav Sherstuk
+T7	threatActor_name 1036 1046	FANCY BEAR
+T8	time 1390 1400	March 2017
+T9	target_crowd 1123 1139	Ukrainian troops
+R1	attack Arg1:T7 Arg2:T9	
+T10	person 1518 1528	Henry Boyd
+T11	malware 1769 1776	X-Agent
+T12	threatActor_name 1788 1798	FANCY BEAR
+T13	threatActor_name 2100 2110	FANCY BEAR
+T14	threatActor_name 2169 2179	FANCY BEAR
+T17	threatActor_name 2487 2497	FANCY BEAR
+T18	malware 2506 2513	X-Agent
+T19	malware 2586 2593	X-Agent
+T20	threatActor_name 3105 3115	FANCY BEAR
+T21	time 4007 4020	28 March 2013
+T15	time 2369 2389	June and August 2016
+T16	time 4094 4123	20 February and 13 April 2013
+T22	time 4161 4174	28 April 2013
+T23	time 5641 5656	late April 2013
+T24	time 5400 5404	2016
+T25	malware 7746 7753	X-Agent
+T26	time 7925 7929	2015
+T27	threatActor_name 7930 7940	FANCY BEAR
+T28	malware 7958 7965	X-Agent
+T29	target_crowd 8015 8048	"jailbroken" Apple mobile devices
+R2	goal Arg1:T27 Arg2:T29	
+T30	malware 8066 8073	X-Agent
+T31	threatActor_name 8164 8174	FANCY BEAR
+T32	time 8230 8246	21 December 2014
+T33	time 8399 8408	late 2014
+R3	occur_time Arg1:T27 Arg2:T26	
+T34	time 8496 8511	late-April 2013
+T35	time 8516 8535	early December 2014
+T36	time 9591 9600	late-2014
+T37	time 10052 10070	late December 2014
+T38	time 10578 10593	18 October 2015
+T39	time 12138 12148	March 2017
+T40	person 12266 12276	Henry Boyd
+T41	time 12491 12511	July and August 2014
+T42	time 13171 13191	July and August 2014
+T43	malware 13944 13951	X-Agent
+T44	threatActor_name 14354 14364	FANCY BEAR
+T45	malware 14842 14849	X-Agent
+T46	threatActor_name 14893 14903	FANCY BEAR
+T47	malware 15628 15635	X-Agent

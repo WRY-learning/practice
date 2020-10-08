@@ -1,0 +1,28 @@
+T1	malware 376 382	adware
+T2	malware 240 243	ads
+T3	target_crowd 206 211	users
+T4	malware 494 497	ads
+T5	sub_activity 502 572	be embedded in undeletable system apps and libraries at the code level
+T6	sub_activity 383 420	plants itself in the system partition
+T7	target_crowd 612 617	users
+T8	malware 641 647	adware
+T9	sub_activity 823 854	gains root access on the device
+T10	sub_activity 859 898	installs adware in the system partition
+T11	attack_goal 1309 1341	earn them money from advertising
+T12	malware 1457 1470	CookieStealer
+T13	reference_word 1560 1566	adware
+R1	coreference Arg1:T13 Arg2:T12	
+T14	target_crowd 1638 1716	owners of smartphones and tablets of certain brands in the lower price segment
+T15	malware 1912 1917	Lezok
+T16	malware 1922 1936	Triada Trojans
+T17	reference_word 1943 1949	latter
+R2	coreference Arg1:T17 Arg2:T16	
+T18	sub_activity 2010 2040	directly in libandroid_runtime
+T19	target_crowd 2156 2161	users
+T20	malware 2194 2199	Lezok
+T21	malware 2204 2210	Triada
+T22	malware 2379 2385	Trojan
+T23	sub_activity 2394 2461	hides in the app that handles the graphical interface of the system
+T24	malware 27 33	adware
+T25	sub_activity 2561 2581	delivers its payload
+T26	sub_activity 2602 2648	download and run arbitrary files on the device

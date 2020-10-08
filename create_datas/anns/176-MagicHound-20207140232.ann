@@ -1,0 +1,130 @@
+T1	security_team 188 195	Unit 42
+T2	time 303 311	mid-2016
+T3	threatActor_name 332 343	Magic Hound
+T4	location 263 278	the Middle East
+R2	located Arg1:T3 Arg2:T4	
+R3	find Arg1:T1 Arg2:T3	
+T5	attack_activity 395 404	espionage
+R4	launch Arg1:T3 Arg2:T5	
+T6	reference_word 433 435	it
+R5	coreference Arg1:T6 Arg2:T3	
+T7	industry 480 486	energy
+T8	industry 489 499	government
+T9	industry 506 524	technology sectors
+T10	location 577 589	Saudi Arabia
+R6	located Arg1:T9 Arg2:T10	
+R7	located Arg1:T8 Arg2:T10	
+R8	located Arg1:T7 Arg2:T10	
+T11	reference_word 631 636	their
+R9	coreference Arg1:T11 Arg2:T3	
+T12	reference_word 596 607	adversaries
+R10	coreference Arg1:T12 Arg2:T3	
+T13	threatActor_name 858 869	Magic Hound
+T14	security_team 903 916	Rocket Kitten
+T15	security_team 925 947	Operation Saffron Rose
+T16	security_team 950 968	Ajax Security Team
+T17	security_team 971 996	Operation Woolen-Goldfish
+R11	coreference Arg1:T15 Arg2:T14	
+R12	coreference Arg1:T16 Arg2:T14	
+R13	coreference Arg1:T17 Arg2:T14	
+T18	attack_activity 1042 1053	Newscasters
+R14	launch Arg1:T13 Arg2:T18	
+T19	security_team 1114 1129	Secureworks CTU
+T20	threatActor_name 1200 1211	Magic Hound
+T21	tool 1227 1265	the AutoFocus threat intelligence tool
+R15	use Arg1:T20 Arg2:T21	
+T22	time 1347 1355	May 2016
+T23	tool 1407 1444	open source Python remote access tool
+T24	tool 1393 1401	IRC bots
+T25	tool 1447 1463	malicious macros
+T26	reference_word 1370 1380	themselves
+R19	coreference Arg1:T26 Arg2:T20	
+T27	tool 1621 1680	weaponized Microsoft Office documents with malicious macros
+R16	use Arg1:T26 Arg2:T24	
+R17	use Arg1:T26 Arg2:T23	
+R18	use Arg1:T26 Arg2:T25	
+R20	use Arg1:T26 Arg2:T27	
+T28	time 1847 1859	half of 2016
+T29	threatActor_name 1914 1925	Magic Hound
+T30	malware 1931 1945	Microsoft Word
+T31	malware 1950 1965	Excel documents
+R21	use Arg1:T29 Arg2:T30	
+R22	use Arg1:T29 Arg2:T31	
+T32	threatActor_name 2143 2154	Magic Hound
+T33	tool 2165 2208	regular portable executable ( PE ) payloads
+T34	tool 2211 2219	PE files
+T35	tool 2281 2319	an open source file-less Python remote
+T36	tool 2233 2246	NET Framework
+T37	tool 2249 2274	various forms of IRC bots
+R23	use Arg1:T32 Arg2:T34	
+R24	use Arg1:T32 Arg2:T33	
+R25	use Arg1:T32 Arg2:T36	
+R26	use Arg1:T32 Arg2:T37	
+R27	use Arg1:T32 Arg2:T35	
+T38	tool 2350 2377	weaponized Office documents
+R28	use Arg1:T32 Arg2:T38	
+T39	government 2639 2649	government
+T40	company 2654 2668	energy sectors
+R29	part_of Arg1:T38 Arg2:T39	
+R30	part_of Arg1:T38 Arg2:T40	
+T41	malware 2703 2718	malicious files
+T42	url_evil 2955 2965	ntg-sa.com
+T43	url_evil 3069 3082	mol.com-ho.me
+T44	company 2999 3022	Saudi based information
+R31	attack Arg1:T42 Arg2:T44	
+T45	company 3027 3064	communication technology conglomerate
+R32	attack Arg1:T42 Arg2:T45	
+T46	company 3114 3135	the Ministry of Labor
+R33	attack Arg1:T43 Arg2:T46	
+T47	url 3331 3341	briefl.ink
+T48	url_evil 3178 3191	its.com-ho.me
+T49	attack_activity 3388 3410	spear-phishing attacks
+R34	use Arg1:T48 Arg2:T49	
+T50	industry 3549 3559	government
+T51	industry 3562 3568	energy
+T52	industry 3575 3593	technology sectors
+T53	threatActor_name 3606 3617	Magic Hound
+R35	attack Arg1:T53 Arg2:T52	
+R36	attack Arg1:T53 Arg2:T51	
+R37	attack Arg1:T53 Arg2:T50	
+T54	tool 3715 3733	Windows PowerShell
+R38	use Arg1:T53 Arg2:T54	
+T55	sub_activity 3778 3783	lures
+R39	part_of Arg1:T55 Arg2:T49	
+T56	sub_activity 3894 3991	ranged from documents masquerading as official Saudi government forms to a holiday greetings card
+R40	part_of Arg1:T56 Arg2:T49	
+T57	government 4081 4132	the Ministry of Health and the Ministry of Commerce
+T58	sub_activity 4148 4198	mandatory forms that required macros to be enabled
+T59	tool 4386 4397	downloaders
+T60	tool 4400 4408	droppers
+T61	tool 4411 4418	loaders
+T62	tool 4425 4433	payloads
+T66	tool 4809 4835	Microsoft Office documents
+T67	tool 4838 4865	portable executables ( PE )
+T68	tool 4868 4891	.NET Framework PE files
+T69	tool 4894 4905	Meterpreter
+T70	tool 4908 4916	IRC bots
+T71	tool 4961 4974	Magic Unicorn
+T72	tool 5015 5019	Pupy
+T63	tool 4652 4757	fifty different samples via infrastructure reuse , behavioral matching , and the reuse of a specific file
+T64	threatActor_name 5140 5151	Magic Hound
+T65	tool 5119 5126	IRC bot
+T73	tool 5223 5226	MPK
+R48	use Arg1:T64 Arg2:T65	
+T74	threatActor_name 5333 5346	Rocket Kitten
+R49	use Arg1:T74 Arg2:T73	
+T75	location 5425 5447	the Middle East region
+R50	located Arg1:T74 Arg2:T75	
+T76	threatActor_name 5735 5750	The Magic Hound
+T77	tool 5856 5882	Microsoft Office documents
+T78	tool 5885 5903	specifically Excel
+T79	tool 5908 5950	Word documents containing malicious macros
+T80	location 29 34	Saudi
+T81	threatActor_name 0 11	Magic Hound
+R51	located Arg1:T81 Arg2:T80	
+T82	tool 5101 5103	C2
+R52	use Arg1:T64 Arg2:T82	
+R53	use Arg1:T76 Arg2:T77	
+R54	use Arg1:T76 Arg2:T78	
+R55	use Arg1:T76 Arg2:T79	
+R1	occur_time Arg1:T3 Arg2:T2	

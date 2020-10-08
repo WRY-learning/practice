@@ -1,0 +1,11 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+FIN7: Carbanak Group .
+FIN7 is a financially-motivated threat group that has primarily targeted the U.S. retail , restaurant , and hospitality sectors since mid-2015 .
+They often use point-of-sale malware .
+A portion of FIN7 was run out of a front company called Combi Security .
+FIN7 is sometimes referred to as Carbanak Group , but these appear to be two groups using the same Carbanak malware and are therefore tracked separately .
+FIN8 is a financially motivated threat group known to launch tailored spearphishing campaigns targeting the retail , restaurant , and hospitality industries .
+Gallmaker is a cyberespionage group that has targeted victims in the Middle East and has been active since at least December 2017 .
+The group has mainly targeted victims in the defense , military , and government sectors .

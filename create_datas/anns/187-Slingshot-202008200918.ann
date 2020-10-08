@@ -1,0 +1,42 @@
+T1	time 862 866	2012
+T2	vulnerability_cve 3324 3337	CVE-2007-5633
+T3	vulnerability_cve 3340 3353	CVE-2010-1592
+T4	vulnerability_cve 3356 3369	CVE-2009-0824
+T5	location 3472 3477	Kenya
+T6	location 3480 3485	Yemen
+T7	location 3488 3499	Afghanistan
+T8	location 3502 3507	Libya
+T9	location 3510 3515	Congo
+T10	location 3518 3524	Jordan
+T11	location 3527 3533	Turkey
+T12	location 3536 3540	Iraq
+T13	location 3543 3548	Sudan
+T14	location 3551 3558	Somalia
+T15	location 3563 3571	Tanzania
+T16	time 919 932	February 2018
+T17	threatActor_name 367 376	Slingshot
+T18	malware 469 474	Regin
+T19	malware 450 464	Project Sauron
+T20	threatActor_name 937 946	Slingshot
+T21	threatActor_name 1266 1275	Slingshot
+T22	sub_activity 1276 1359	loads signed vulnerable drivers and runs its own code through their vulnerabilities
+R1	launch Arg1:T21 Arg2:T22	
+T23	threatActor_name 1870 1879	Slingshot
+T24	threatActor_name 1847 1856	Slingshot
+T25	attack_activity 1908 1923	cyber-espionage
+R2	launch Arg1:T23 Arg2:T25	
+T26	sub_activity 1947 2065	collects screenshots , keyboard data , network data , passwords , USB connections , other desktop activity , clipboard
+R3	launch Arg1:T23 Arg2:T26	
+T27	threatActor_name 2491 2500	Slingshot
+T28	threatActor_name 3077 3086	Slingshot
+T29	tool 2999 3007	sniffers
+T30	reference_word 2264 2267	APT
+R4	coreference Arg1:T30 Arg2:T23	
+T31	threatActor_name 2650 2659	Slingshot
+T32	reference_word 2781 2788	malware
+R5	coreference Arg1:T31 Arg2:T32	
+T33	threatActor_name 2926 2935	Slingshot
+T34	sub_activity 2789 2910	exfiltrates data through standard networks channels , hiding the traffic being extracted by hooking legitimate call-backs
+R6	launch Arg1:T32 Arg2:T34	
+T35	sub_activity 2669 2774	disable defragmentation of these specific areas of the hard drive in order to prevent this from happening
+R7	launch Arg1:T31 Arg2:T35	

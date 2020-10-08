@@ -1,0 +1,318 @@
+T1	threatActor_name 0 6	IXESHE
+T2	threatActor_name 179 185	IXESHE
+T3	tool 198 201	C&C
+R1	use Arg1:T2 Arg2:T3	
+T4	location 224 230	Taiwan
+T5	location 239 252	United States
+R2	located Arg1:T3 Arg2:T4	
+R3	located Arg1:T3 Arg2:T5	
+T6	tool 393 396	C&C
+T7	tool 456 459	C&C
+T8	tool 584 587	C&C
+T9	government 642 663	East Asian government
+R4	located Arg1:T8 Arg2:T9	
+T10	tool 788 790	IP
+T11	tool 804 807	C&C
+T12	protocol 921 924	DNS
+T13	tool 1478 1481	C&C
+T14	domain 1561 1575	xxx.xxawan.com
+T15	IP 1626 1643	xx.xxx.114.87:443
+T16	location 1670 1683	United States
+R5	located Arg1:T15 Arg2:T16	
+T17	tool 1862 1865	C&C
+T18	tool 1915 1918	C&C
+T19	IP 2134 2146	xx.xx.x2.202
+T20	location 2163 2172	Guangdong
+T21	location 2175 2180	China
+R6	located Arg1:T19 Arg2:T20	
+R7	part_of Arg1:T20 Arg2:T21	
+T22	tool 2272 2277	HTran
+T23	tool 2281 2286	HTran
+T24	tool 2300 2324	HUC Packet Transmit Tool
+R8	coreference Arg1:T24 Arg2:T23	
+T25	protocol 2365 2368	TCP
+T26	sample_function 2422 2450	keeping the real host hidden
+R9	goal Arg1:T23 Arg2:T26	
+T27	tool 2465 2468	HUC
+T29	tool 2521 2542	Honker Union of China
+R11	coreference Arg1:T29 Arg2:T27	
+T28	person 2564 2569	hacke
+T30	tool 2596 2600	lion
+R10	use Arg1:T28 Arg2:T30	
+T31	tool 2801 2806	HTran
+T32	sample_function 2836 2861	revealing its whereabouts
+R12	goal Arg1:T31 Arg2:T32	
+T33	threatActor_name 3285 3291	IXESHE
+T34	protocol 2963 2967	HTTP
+T35	protocol 2984 2988	HTTP
+T37	location 3355 3360	China
+T38	tool 3410 3415	HTran
+T39	location 3453 3458	China
+T40	tool 3738 3750	Microsoft XP
+T41	tool 3692 3695	C&C
+R13	use Arg1:T41 Arg2:T40	
+T42	tool 3794 3797	C&C
+T43	program_language 3946 3949	C++
+T44	tool 4065 4076	date format
+T45	tool 4089 4103	campaign codes
+R14	use Arg1:T45 Arg2:T44	
+T46	tool 4189 4200	date format
+T47	location 4226 4231	China
+T48	location 4234 4239	Korea
+T49	location 4242 4246	Iran
+T50	location 4249 4254	Japan
+T51	location 4257 4264	Hungary
+T52	location 4267 4276	Lithuania
+T53	location 4287 4300	United States
+R15	located Arg1:T46 Arg2:T47	
+R16	located Arg1:T46 Arg2:T53	
+R17	located Arg1:T46 Arg2:T48	
+R18	located Arg1:T46 Arg2:T49	
+R19	located Arg1:T46 Arg2:T50	
+R20	located Arg1:T46 Arg2:T51	
+R21	located Arg1:T46 Arg2:T52	
+T54	threatActor_name 4501 4507	IXESHE
+T55	threatActor_name 4771 4777	IXESHE
+T56	threatActor_name 5026 5032	IXESHE
+T57	person 4440 4446	attack
+R22	part_of Arg1:T57 Arg2:T54	
+T58	tool 4590 4604	targeted email
+T59	tool 4612 4637	malicious file attachment
+R23	part_of Arg1:T59 Arg2:T58	
+R24	use Arg1:T57 Arg2:T58	
+T60	tool 4645 4662	document exploits
+T61	tool 4676 4685	PDF files
+R25	part_of Arg1:T61 Arg2:T60	
+R26	use Arg1:T57 Arg2:T60	
+T62	sample_function 4691 4723	drop malware into target systems
+R27	goal Arg1:T60 Arg2:T62	
+T63	malware 4731 4738	malware
+R28	use Arg1:T57 Arg2:T63	
+T64	malware 4796 4803	malware
+T65	sample_function 4809 4828	sends a GET request
+T66	tool 4836 4839	C&C
+R29	use Arg1:T57 Arg2:T64	
+R30	goal Arg1:T64 Arg2:T65	
+T67	url_evil 4874 4924	http://[C&C Server]/[ACD] [EW]S[Some Numbers].jsp?
+T68	tool 4956 4976	dynamic DNS services
+R31	use Arg1:T57 Arg2:T68	
+R32	use Arg1:T64 Arg2:T67	
+T69	time 5097 5101	2009
+R33	first_found_time Arg1:T56 Arg2:T69	
+T70	tool 5143 5152	PDF files
+T71	person 5108 5117	attackers
+R34	use Arg1:T71 Arg2:T70	
+T72	tool 5185 5197	Adobe Reader
+T73	tool 5200 5207	Acrobat
+T74	tool 5214 5226	Flash Player
+R35	use Arg1:T71 Arg2:T72	
+R36	use Arg1:T71 Arg2:T74	
+R37	use Arg1:T71 Arg2:T73	
+T75	attack_activity 5254 5262	zero-day
+T76	tool 5263 5271	exploits
+R38	use Arg1:T71 Arg2:T76	
+T77	time 5279 5283	2009
+T78	time 5299 5303	2011
+R39	occur_time Arg1:T75 Arg2:T77	
+R40	occur_time Arg1:T75 Arg2:T78	
+T79	government 5345 5367	East Asian governments
+T80	person 5316 5325	attackers
+R41	attack Arg1:T80 Arg2:T79	
+T81	company 5417 5443	telecommunications company
+T82	company 5448 5473	electronics manufacturers
+R42	attack Arg1:T80 Arg2:T81	
+R43	attack Arg1:T80 Arg2:T82	
+T83	tool 5535 5547	campaign tag
+T84	reference_word 5476 5480	They
+R44	coreference Arg1:T84 Arg2:T80	
+R45	use Arg1:T84 Arg2:T83	
+T85	sample_function 5581 5619	describe when each attack was launched
+R46	goal Arg1:T83 Arg2:T85	
+T87	person 5720 5736	IXESHE attackers
+T88	tool 5766 5786	compromised machines
+R47	use Arg1:T87 Arg2:T88	
+T89	tool 5826 5829	C&C
+T90	tool 5008 5011	C&C
+T91	sample_function 5852 5877	disguise their activities
+R48	goal Arg1:T88 Arg2:T91	
+T92	person 5898 5907	attackers
+T93	tool 5921 5931	proxy tool
+T94	tool 5934 5939	HTran
+T95	sample_function 5954 5978	mask their true location
+R49	use Arg1:T92 Arg2:T93	
+R50	coreference Arg1:T94 Arg2:T93	
+R51	goal Arg1:T93 Arg2:T95	
+T96	threatActor_name 6046 6052	IXESHE
+T97	person 6290 6303	threat actors
+T98	tool 6341 6378	moderately advanced security measures
+R52	use Arg1:T97 Arg2:T98	
+T99	tool 6663 6666	DLP
+T100	tool 6640 6660	data loss prevention
+R53	coreference Arg1:T99 Arg2:T100	
+T101	sample_function 6685 6702	identify the data
+T102	sample_function 6759 6774	context of data
+R54	goal Arg1:T100 Arg2:T101	
+R55	goal Arg1:T100 Arg2:T102	
+T103	tool 6800 6819	Threat intelligence
+T104	tool 6965 7003	external and local threat intelligence
+T105	sub_activity 7134 7153	Enhanced visibility
+T106	sub_activity 7421 7437	Integrity checks
+T107	sub_activity 7604 7632	Empowering the human analyst
+T108	sample_function 6861 6906	identify the tools , tactics , and procedures
+R56	goal Arg1:T103 Arg2:T108	
+T109	sample_function 7045 7059	detect attacks
+R57	goal Arg1:T104 Arg2:T109	
+T110	tool 7156 7160	Logs
+T111	sample_function 7281 7295	provide a view
+R58	goal Arg1:T110 Arg2:T111	
+T113	sample_function 7452 7472	maintain persistence
+T114	sub_activity 7541 7564	Monitoring such changes
+T112	tool 7836 7874	local and external threat intelligence
+T116	sub_activity 7887 7909	Technologies available
+T117	sub_activity 7924 7938	Deep Discovery
+R59	part_of Arg1:T117 Arg2:T116	
+T119	sample_function 7999 8030	defend against targeted threats
+R60	goal Arg1:T116 Arg2:T119	
+T118	sub_activity 8033 8047	Deep Discovery
+T120	sample_function 8057 8095	detects and identifies evasive threats
+T121	sample_function 8113 8139	provides in-depth analysis
+T122	sample_function 8171 8208	prevent , discover , and reduce risks
+R61	goal Arg1:T118 Arg2:T120	
+R62	goal Arg1:T118 Arg2:T121	
+R63	goal Arg1:T118 Arg2:T122	
+T123	sub_activity 8307 8334	Determine the attack vector
+T124	sub_activity 8339 8361	cut off communications
+T125	sub_activity 8384 8421	Determine the scope of the compromise
+T126	tool 8523 8534	Remediation
+T127	tool 1081 1084	C&C
+T128	person 1009 1018	attackers
+T129	sub_activity 8594 8642	fortify affected servers , machines , or devices
+T130	sub_activity 8445 8486	analyzing the data and forensic artifacts
+T131	sub_activity 8906 8966	simulations and exercises using real spear-phishing attempts
+T132	sample_function 8975 8989	test employees
+R64	goal Arg1:T131 Arg2:T132	
+T133	person 8992 9001	Employees
+T134	sample_function 9196 9218	acquire sensitive data
+T136	sub_activity 9260 9311	identifying and protecting confidential information
+T137	sub_activity 9327 9366	Enhanced data protection and visibility
+T138	sample_function 9412 9444	control access to sensitive data
+R65	goal Arg1:T137 Arg2:T138	
+T139	sample_function 9456 9508	monitor and log successful and unsuccessful attempts
+R66	goal Arg1:T137 Arg2:T139	
+T140	sub_activity 9524 9572	Enhanced access control and logging capabilities
+T141	sample_function 9600 9632	locate and investigate anomalies
+T142	sample_function 9635 9655	respond to incidents
+T143	sample_function 9662 9693	initiate remediation strategies
+T144	sample_function 9698 9715	damage assessment
+R67	goal Arg1:T140 Arg2:T141	
+R68	goal Arg1:T140 Arg2:T142	
+R69	goal Arg1:T140 Arg2:T143	
+R70	goal Arg1:T140 Arg2:T144	
+T145	threatActor_name 9801 9807	IXESHE
+T146	company 9753 9764	Trend Micro
+T147	company 9819 9830	Trend Micro
+T148	sample_function 9938 9987	meet the real-time threat management requirements
+R71	goal Arg1:T147 Arg2:T148	
+T149	tool 10037 10040	C&C
+T150	url_evil 10064 10110	http://[C&C Server]/ [ACD] [EW]S[Some Numbers]
+T151	sub_activity 10157 10165	Endpoint
+T152	sub_activity 10168 10176	Titanium
+T153	sub_activity 10179 10207	Worry-Free Business Security
+T154	sub_activity 10210 10220	OfficeScan
+R72	part_of Arg1:T152 Arg2:T151	
+R73	part_of Arg1:T153 Arg2:T151	
+R74	part_of Arg1:T154 Arg2:T151	
+T155	sub_activity 10223 10229	Server
+T156	sub_activity 10248 10257	Messaging
+T157	sub_activity 10232 10245	Deep Security
+R75	part_of Arg1:T157 Arg2:T155	
+T158	sub_activity 10260 10288	InterScan Messaging Security
+R76	part_of Arg1:T158 Arg2:T156	
+T159	sub_activity 10291 10328	ScanMail Suite for Microsoft Exchange
+R77	part_of Arg1:T159 Arg2:T156	
+T160	sub_activity 10331 10338	Network
+T161	sub_activity 10341 10355	Deep Discovery
+R78	part_of Arg1:T161 Arg2:T160	
+T162	sub_activity 10358 10365	Gateway
+T163	sub_activity 10368 10390	InterScan Web Security
+T164	sub_activity 10393 10421	InterScan Messaging Security
+T165	sub_activity 10424 10430	Mobile
+T166	sub_activity 10433 10448	Mobile Security
+R79	part_of Arg1:T163 Arg2:T162	
+R80	part_of Arg1:T164 Arg2:T162	
+R81	part_of Arg1:T166 Arg2:T165	
+T167	tool 10453 10464	TROJ_PIDIEF
+T168	tool 10467 10477	BKDR_PROXY
+T169	tool 10480 10491	TROJ_ DROPR
+T170	tool 10498 10511	TROJ_DEMTRANC
+T171	sub_activity 10564 10572	Endpoint
+T172	sub_activity 10630 10636	Server
+T173	sub_activity 10655 10664	Messaging
+T174	sub_activity 10575 10583	Titanium
+T175	sub_activity 10586 10614	Worry-Free Business Security
+T176	sub_activity 10617 10627	OfficeScan
+T177	sub_activity 10639 10652	Deep Security
+T178	sub_activity 10667 10695	InterScan Messaging Security
+T179	sub_activity 10698 10735	ScanMail Suite for Microsoft Exchange
+R82	part_of Arg1:T174 Arg2:T171	
+R83	part_of Arg1:T175 Arg2:T171	
+R84	part_of Arg1:T176 Arg2:T171	
+R85	part_of Arg1:T177 Arg2:T172	
+R86	part_of Arg1:T178 Arg2:T173	
+R87	part_of Arg1:T179 Arg2:T173	
+T180	sub_activity 10738 10745	Network
+T181	sub_activity 10748 10762	Deep Discovery
+R88	part_of Arg1:T181 Arg2:T180	
+T182	sub_activity 10765 10772	Gateway
+T183	sub_activity 10775 10797	InterScan Web Security
+R89	part_of Arg1:T183 Arg2:T182	
+T184	sub_activity 10800 10828	InterScan Messaging Security
+R90	part_of Arg1:T184 Arg2:T182	
+T185	sub_activity 10831 10837	Mobile
+T186	sub_activity 10840 10855	Mobile Security
+R91	part_of Arg1:T186 Arg2:T185	
+T187	vulnerability_cve 10860 10873	CVE-2009-4324
+T188	vulnerability_cve 10874 10887	CVE-2009-0927
+T189	vulnerability_cve 10888 10901	CVE-2011-0609
+T190	vulnerability_cve 10902 10915	CVE-2011-0611
+T191	vulnerability_cve 10916 10929	CVE-2009-3129
+T192	sub_activity 10971 10977	Server
+T193	sub_activity 10980 10993	Deep Security
+R92	part_of Arg1:T193 Arg2:T192	
+T194	sub_activity 10996 11004	Endpoint
+T195	sub_activity 11007 11057	OfficeScan with Intrusion Defense Firewall Plug-In
+T196	vulnerability_cve 11064 11077	CVE-2009-4324
+R93	part_of Arg1:T195 Arg2:T194	
+T197	vulnerability_cve 11175 11188	CVE-2009-0927
+T198	sub_activity 11136 11168	JavaScript Method Code Execution
+T199	vulnerability_cve 11269 11282	CVE-2011-0609
+T200	sub_activity 11240 11262	Method Buffer Overflow
+T201	vulnerability_cve 11351 11364	CVE-2011-0611
+T202	vulnerability_cve 11438 11451	CVE-2009-3129
+T203	sub_activity 11300 11344	Adobe Flash Player XLS Remote Code Execution
+T204	sub_activity 11383 11431	Restrict Microsoft Office File with Embedded SWF
+T205	sub_activity 11469 11524	Excel Featheader Record Memory Corruption Vulnerability
+T206	person 351 360	attackers
+T207	reference_word 512 516	them
+R94	coreference Arg1:T207 Arg2:T7	
+T208	reference_word 677 682	these
+R95	coreference Arg1:T208 Arg2:T8	
+T209	sample_function 699 725	launching targeted attacks
+R96	goal Arg1:T208 Arg2:T209	
+T210	reference_word 734 736	it
+R97	coreference Arg1:T210 Arg2:T9	
+T211	tool 913 942	dynamic DNS service providers
+T212	tool 946 966	compromised websites
+T213	person 1121 1134	investigators
+T214	person 1321 1334	investigators
+R98	located Arg1:T15 Arg2:T14	
+T215	person 2031 2040	attackers
+T216	reference_word 2604 2613	This tool
+R99	coreference Arg1:T216 Arg2:T30	
+R100	use Arg1:T149 Arg2:T150	
+R101	located Arg1:T38 Arg2:T39	
+T217	person 3334 3340	groups
+R102	located Arg1:T217 Arg2:T33	
+R103	located Arg1:T217 Arg2:T37	
+T36	sub_activity 2820 2833	error message
+R104	goal Arg1:T36 Arg2:T32	

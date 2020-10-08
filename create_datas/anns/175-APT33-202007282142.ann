@@ -1,0 +1,324 @@
+T1	md5 15790 15822	8e67f4c98754a2373a49eaf53425d79a
+T2	md5 15876 15908	c57c5529d91cffef3ec8dadf61c5ffb2
+T3	md5 15941 15973	c02689449a4ce73ec79a52595ab590f6
+T4	md5 16007 16039	59d0d27360c9534d55596891049eb3ef
+T5	md5 16072 16104	797bc06d3e0f5891591b68885d99b4e1
+T6	md5 16137 16169	8e6d5ef3f6912a7c49f8eb6a71e18ee2
+T7	threatActor_name 15784 15789	APT33
+T8	threatActor_name 15870 15875	APT33
+T9	threatActor_name 15935 15940	APT33
+T10	threatActor_name 16001 16006	APT33
+T11	threatActor_name 16066 16071	APT33
+T12	threatActor_name 16131 16136	APT33
+T13	time 15851 15867	2016/10/19 14:26
+T14	time 15918 15932	2014/6/1 11:01
+T15	time 15983 15998	2016/9/18 10:50
+T16	time 16049 16063	2016/3/8 12:34
+T17	time 16114 16128	2015/3/12 5:59
+T18	time 16179 16193	2015/3/12 5:59
+R1	use Arg1:T7 Arg2:T1	
+R3	use Arg1:T9 Arg2:T3	
+R4	use Arg1:T10 Arg2:T4	
+R5	use Arg1:T11 Arg2:T5	
+R6	use Arg1:T12 Arg2:T6	
+R7	occur_time Arg1:T7 Arg2:T13	
+R2	use Arg1:T8 Arg2:T2	
+R8	occur_time Arg1:T8 Arg2:T14	
+R9	occur_time Arg1:T9 Arg2:T15	
+R10	occur_time Arg1:T10 Arg2:T16	
+R11	occur_time Arg1:T11 Arg2:T17	
+R12	occur_time Arg1:T12 Arg2:T18	
+T19	md5 15463 15495	0ccc9ec82f1d44c243329014b82d3125
+T20	md5 15551 15583	fb21f3cea1aa051ba2a45e75d46b98b8
+T21	md5 15619 15651	3e8a4d654d5baa99f8913d8e2bd8a184
+T22	md5 15691 15723	6b41980aa6966dda6c3f68aeeb9ae2e0
+T23	threatActor_name 15757 15762	APT33
+T24	threatActor_name 15685 15690	APT33
+T25	threatActor_name 15613 15618	APT33
+T26	threatActor_name 15545 15550	APT33
+T27	threatActor_name 15457 15462	APT33
+T28	threatActor_name 15149 15154	APT33
+T29	threatActor_name 15214 15219	APT33
+T30	threatActor_name 15279 15284	APT33
+T31	threatActor_name 15344 15349	APT33
+T32	threatActor_name 15141 15146	APT33
+T33	time 15197 15211	2017/1/11 2:20
+T34	time 15262 15276	2016/3/9 23:48
+T35	time 15326 15341	2016/6/29 13:44
+T36	time 15391 15406	2016/5/29 14:11
+T37	time 15525 15542	n/a - timestomped
+T38	time 15593 15610	n/a - timestomped
+T39	time 15663 15682	2016/11/14 21:16:40
+T40	time 15735 15754	2016/11/14 21:16:40
+R13	use Arg1:T27 Arg2:T19	
+R14	use Arg1:T26 Arg2:T20	
+R15	use Arg1:T25 Arg2:T21	
+R16	use Arg1:T24 Arg2:T22	
+R17	occur_time Arg1:T24 Arg2:T40	
+R18	occur_time Arg1:T25 Arg2:T39	
+R19	occur_time Arg1:T26 Arg2:T38	
+R20	occur_time Arg1:T27 Arg2:T37	
+T41	md5 15350 15382	6f1d5c57b3b415edc3767b079999dd50
+R21	use Arg1:T31 Arg2:T41	
+R22	occur_time Arg1:T31 Arg2:T36	
+T42	md5 15285 15317	663c18cfcedd90a3c91a09478f1e91bc
+T43	md5 15220 15252	10f58774cd52f71cd4438547c39b1aa7
+T44	md5 15155 15187	3f5329cf2a829f8840ba6a903f17a1bf
+R23	use Arg1:T28 Arg2:T44	
+R24	use Arg1:T29 Arg2:T43	
+R25	use Arg1:T30 Arg2:T42	
+R26	occur_time Arg1:T28 Arg2:T33	
+R27	occur_time Arg1:T29 Arg2:T34	
+R28	occur_time Arg1:T30 Arg2:T35	
+T45	threatActor_name 14622 14627	APT33
+T46	domain_evil 14671 14691	boeing.servehttp.com
+T47	domain_evil 14694 14710	alsalam.ddns.net
+T48	domain_evil 14713 14729	ngaaksa.ddns.net
+T49	domain_evil 14732 14749	ngaaksa.sytes.net
+T50	domain_evil 14752 14775	vinnellarabia.myftp.org
+T51	threatActor_name 14778 14783	APT33
+T52	domain_evil 14812 14830	managehelpdesk.com
+T53	domain_evil 14842 14862	microsoftupdated.com
+T54	domain_evil 14874 14883	osupd.com
+T55	domain_evil 14895 14916	mywinnetwork.ddns.net
+T56	domain_evil 14927 14942	www.chromup.com
+T57	domain_evil 14954 14977	www.securityupdated.com
+T58	domain_evil 14989 15002	googlmail.net
+T59	domain_evil 15014 15034	microsoftupdated.net
+T60	domain_evil 15046 15067	syn.broadcaster.rocks
+T61	domain_evil 15079 15096	www.googlmail.net
+T62	location 14 21	Iranian
+T63	threatActor_name 39 44	APT33
+T64	industry 53 62	Aerospace
+T65	industry 67 81	Energy Sectors
+R44	located Arg1:T63 Arg2:T62	
+R45	attack Arg1:T63 Arg2:T64	
+R46	attack Arg1:T63 Arg2:T65	
+T67	location 390 397	Iranian
+T66	malware 425 432	SHAMOON
+T68	person 398 403	group
+R47	located Arg1:T68 Arg2:T67	
+T69	malware 439 448	Disttrack
+R49	coreference Arg1:T69 Arg2:T66	
+T70	location 482 494	Persian Gulf
+T71	person 461 474	organizations
+R50	located Arg1:T71 Arg2:T70	
+R51	attack Arg1:T68 Arg2:T71	
+T72	threatActor_name 665 670	APT33
+T73	location 596 603	Iranian
+R52	located Arg1:T72 Arg2:T73	
+T74	threatActor_name 699 704	APT33
+T75	time 787 791	2013
+R53	first_found_time Arg1:T74 Arg2:T75	
+T76	threatActor_name 804 809	APT33
+T78	threatActor_name 1032 1037	APT33
+T79	time 1347 1358	21 at 8 a.m
+T81	threatActor_name 1366 1371	APT33
+T82	location 1453 1466	United States
+T83	location 1469 1481	Saudi Arabia
+T84	location 1486 1497	South Korea
+T85	industry 1385 1398	organizations
+R54	attack Arg1:T81 Arg2:T85	
+R55	located Arg1:T85 Arg2:T82	
+R56	located Arg1:T85 Arg2:T83	
+R57	located Arg1:T85 Arg2:T84	
+T86	threatActor_name 1500 1505	APT33
+T87	industry 1593 1601	military
+T88	industry 1606 1616	commercial
+R58	attack Arg1:T86 Arg2:T87	
+R59	attack Arg1:T86 Arg2:T88	
+T89	time 1721 1729	mid-2016
+T90	time 1744 1748	2017
+T91	threatActor_name 1751 1756	APT33
+T92	location 1771 1775	U.S.
+T93	location 1861 1873	Saudi Arabia
+T94	industry 1796 1805	aerospace
+R60	located Arg1:T94 Arg2:T92	
+R61	attack Arg1:T91 Arg2:T94	
+R62	occur_time Arg1:T91 Arg2:T90	
+R63	occur_time Arg1:T91 Arg2:T89	
+T95	industry 1828 1849	business conglomerate
+R64	located Arg1:T95 Arg2:T93	
+R65	attack Arg1:T91 Arg2:T95	
+T96	threatActor_name 1929 1934	APT33
+T99	time 2037 2045	May 2017
+T100	threatActor_name 2048 2053	APT33
+T77	government 837 855	Iranian government
+T103	security_team 883 890	FireEye
+T104	tool 947 981	FireEye iSIGHT Threat Intelligence
+T97	industry 1951 2015	South Korean company involved in oil refining and petrochemicals
+R66	attack Arg1:T96 Arg2:T97	
+T98	industry 2075 2093	Saudi organization
+T101	industry 2100 2134	South Korean business conglomerate
+R67	attack Arg1:T100 Arg2:T98	
+R68	attack Arg1:T100 Arg2:T101	
+R69	occur_time Arg1:T100 Arg2:T99	
+T102	threatActor_name 2366 2371	APT33
+T105	industry 2416 2440	Saudi Arabia ’s military
+T106	industry 2527 2543	Iran ’s military
+R70	attack Arg1:T102 Arg2:T105	
+R71	attack Arg1:T102 Arg2:T106	
+T107	threatActor_name 3073 3078	APT33
+T108	threatActor_name 3472 3477	APT33
+T109	threatActor_name 4100 4105	APT33
+T110	threatActor_name 4127 4132	APT33
+T111	threatActor_name 4579 4584	APT33
+T112	threatActor_name 6548 6553	APT33
+T113	threatActor_name 4748 4753	APT33
+T114	threatActor_name 6816 6821	APT33
+T115	threatActor_name 8956 8961	APT33
+T116	threatActor_name 11481 11486	APT33
+T117	threatActor_name 10777 10782	APT33
+T118	threatActor_name 12045 12050	APT33
+T119	threatActor_name 12613 12618	APT33
+T120	threatActor_name 12541 12546	APT33
+T121	threatActor_name 12209 12214	APT33
+T122	threatActor_name 12683 12688	APT33
+T123	threatActor_name 13865 13870	APT33
+T124	threatActor_name 13456 13461	APT33
+T125	threatActor_name 13608 13613	APT33
+T126	industry 3103 3116	organizations
+T127	location 3132 3136	Iran
+R72	attack Arg1:T107 Arg2:T126	
+R73	located Arg1:T126 Arg2:T127	
+T128	person 3508 3561	employees whose jobs related to the aviation industry
+R74	attack Arg1:T108 Arg2:T128	
+T129	malware 3644 3675	HTML application ( .hta ) files
+R75	use Arg1:T108 Arg2:T129	
+T130	time 4298 4302	2016
+T131	tool 4195 4210	ALFA TEaM Shell
+T132	tool 4217 4226	ALFASHELL
+R76	coreference Arg1:T132 Arg2:T131	
+R77	use Arg1:T110 Arg2:T131	
+R78	occur_time Arg1:T110 Arg2:T130	
+T133	person 4778 4812	recipients with the default values
+R79	attack Arg1:T113 Arg2:T133	
+T134	email_evil 4961 4982	solevisible@gmail.com
+T135	tool 4887 4897	ALFA Shell
+R80	use Arg1:T135 Arg2:T134	
+T136	threatActor_name 5072 5077	APT33
+T137	industry 5125 5157	Saudi Arabian aviation companies
+T138	industry 5162 5183	Western organizations
+R81	attack Arg1:T136 Arg2:T137	
+R82	attack Arg1:T136 Arg2:T138	
+T139	threatActor_name 5346 5351	APT33
+T140	industry 5494 5500	Boeing
+T141	industry 5503 5527	Alsalam Aircraft Company
+T142	industry 5530 5562	Northrop Grumman Aviation Arabia
+T143	industry 5565 5572	NGAAKSA
+R83	coreference Arg1:T143 Arg2:T142	
+T144	industry 5581 5595	Vinnell Arabia
+T145	domain_evil 5598 5618	boeing.servehttp.com
+T146	domain_evil 5621 5637	alsalam.ddns.net
+T147	domain_evil 5640 5656	ngaaksa.ddns.net
+T148	domain_evil 5659 5676	ngaaksa.sytes.net
+T149	domain_evil 5679 5702	vinnellarabia.myftp.org
+R84	attack Arg1:T139 Arg2:T140	
+R85	attack Arg1:T139 Arg2:T141	
+R86	attack Arg1:T139 Arg2:T142	
+R87	attack Arg1:T139 Arg2:T144	
+T151	government 6623 6641	Iranian government
+R93	attack Arg1:T112 Arg2:T151	
+T150	location 6573 6580	Iranian
+R94	located Arg1:T112 Arg2:T150	
+T152	time 7645 7655	March 2016
+T153	attack_activity 7623 7639	Operation Ababil
+T154	time 7532 7541	2011-2013
+T155	person 7508 7522	Nasr Institute
+T156	person 7311 7322	xman_1365_x
+T157	person 7340 7354	Nasr Institute
+R95	coreference Arg1:T157 Arg2:T156	
+R96	occur_time Arg1:T155 Arg2:T154	
+R97	launch Arg1:T155 Arg2:T153	
+T158	attack_activity 7876 7892	Operation Ababil
+T159	government 7762 7780	Iranian government
+T161	person 7727 7738	individuals
+R98	occur_time Arg1:T161 Arg2:T152	
+R99	launch Arg1:T161 Arg2:T158	
+R100	part_of Arg1:T161 Arg2:T159	
+T160	threatActor_name 8164 8169	APT33
+T162	malware 8241 8251	SHAPESHIFT
+T163	malware 8193 8201	DROPSHOT
+R101	coreference Arg1:T162 Arg2:T163	
+R102	use Arg1:T160 Arg2:T163	
+T164	malware 8285 8295	SHAPESHIFT
+T165	threatActor_name 8397 8402	APT33
+T166	malware 8407 8415	DROPSHOT
+R103	use Arg1:T165 Arg2:T166	
+T167	sample_name 8479 8495	DROPSHOT samples
+T168	sample_name 8518 8528	SHAPESHIFT
+R104	part_of Arg1:T168 Arg2:T167	
+T169	malware 8535 8545	SHAPESHIFT
+T170	malware 8658 8666	DROPSHOT
+T171	malware 8671 8681	SHAPESHIFT
+T172	threatActor_name 8887 8892	APT33
+T173	malware 8897 8907	SHAPESHIFT
+R105	use Arg1:T172 Arg2:T173	
+T174	malware 9010 9018	DROPSHOT
+R106	use Arg1:T115 Arg2:T174	
+T175	malware 9049 9057	DROPSHOT
+T176	person 9080 9104	Iran-based threat groups
+R107	use Arg1:T176 Arg2:T175	
+T177	time 9163 9176	In March 2017
+T178	malware 9221 9229	DROPSHOT
+T179	malware 9293 9300	SHAMOON
+T180	security_team 9179 9188	Kasperksy
+R108	release_time Arg1:T180 Arg2:T177	
+T181	malware 9519 9527	DROPSHOT
+T182	malware 9318 9329	Shamoon 2.0
+T183	malware 9248 9258	Stonedrill
+R109	coreference Arg1:T183 Arg2:T178	
+R110	coreference Arg1:T182 Arg2:T179	
+T184	security_team 9688 9697	Kaspersky
+T185	malware 9756 9763	SHAMOON
+T186	malware 9809 9817	DROPSHOT
+T187	malware 9997 10004	SHAMOON
+T188	threatActor_name 10009 10014	APT33
+T189	threatActor_name 10222 10227	APT33
+T190	malware 10048 10055	SHAMOON
+T191	government 10077 10120	government organizations in the Middle East
+R111	attack Arg1:T190 Arg2:T191	
+T192	threatActor_name 10131 10136	APT33
+T193	industry 10158 10219	commercial organizations both in the Middle East and globally
+R112	attack Arg1:T192 Arg2:T193	
+T194	malware 10408 10415	SHAMOON
+T195	malware 10532 10540	DROPSHOT
+T196	threatActor_name 10557 10562	APT33
+T197	malware 10649 10656	SHAMOON
+T198	industry 10799 10845	organizations involved in aerospace and energy
+R113	attack Arg1:T117 Arg2:T198	
+T199	threatActor_name 11146 11151	APT33
+T200	location 11187 11194	Iranian
+R114	located Arg1:T199 Arg2:T200	
+T201	threatActor_name 11230 11235	APT33
+T202	time 11320 11375	04:30 hours ahead of Coordinated Universal Time ( UTC )
+R115	occur_time Arg1:T201 Arg2:T202	
+T203	time 11531 11571	Iran ’s workweek , Saturday to Wednesday
+R116	occur_time Arg1:T116 Arg2:T203	
+T204	tool 12069 12089	Iranian hacker tools
+R117	use Arg1:T118 Arg2:T204	
+T205	tool 12227 12235	NANOCORE
+T206	tool 12238 12245	NETWIRE
+T207	tool 12252 12262	ALFA Shell
+R118	use Arg1:T121 Arg2:T205	
+R119	use Arg1:T121 Arg2:T206	
+R120	use Arg1:T121 Arg2:T207	
+T208	location 12635 12639	Iran
+R121	located Arg1:T119 Arg2:T208	
+T209	threatActor_name 13017 13022	APT33
+T210	industry 13035 13043	aviation
+R122	attack Arg1:T209 Arg2:T210	
+T211	industry 12733 12796	geographically diverse organizations across multiple industries
+R123	attack Arg1:T122 Arg2:T211	
+T212	reference_word 13242 13247	Their
+R124	coreference Arg1:T212 Arg2:T209	
+T213	industry 13261 13319	multiple holding companies and organizations in the energy
+R125	attack Arg1:T212 Arg2:T213	
+T214	tool 13837 13847	SHAPESHIFT
+R126	use Arg1:T123 Arg2:T214	
+T216	malware 14021 14037	DROPSHOT Dropper
+T217	tool 14123 14133	SHAPESHIFT
+T218	malware 14161 14169	NANOCORE
+T215	tool 14307 14323	NETWIRE Backdoor
+T219	tool 14465 14482	TURNEDUP Backdoor
+R48	attack Arg1:T68 Arg2:T66	

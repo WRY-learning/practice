@@ -1,0 +1,49 @@
+Release_Time : 2018-10-18
+Report_URL : https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf
+McAfee Advanced Threat Research and Anti-Malware Operations teams have discovered another unknown data reconnaissance implant targeting Korean-speaking users .
+We have named this threat Operation Oceansalt based on its similarity to the earlier malware .
+Seasalt , which is related to earlier Chinese hacking operations .
+Oceansalt reuses a portion of code from the Seasalt implant ( circa 2010 ) that is linked to the Chinese hacking group Comment Crew .
+Oceansalt appears to have been part of an operation targeting South Korea , United States , and Canada in a well-focused attack .
+A variation of this malware has been distributed from two compromised sites in South Korea .
+Oceansalt appears to be the first stage of an advanced persistent threat .
+The malware can send system data to a control server and execute commands on infected machines , but we do not yet know its ultimate purpose .
+The Advanced Threat Research team has not previously described this implant in any of our analyses .
+The actions of Comment Crew , also known as APT1 ,were exposed in 2013 in a ground-breaking report on Chinese cyber espionage against the United States .
+This report detailed the inner workings of Comment Crewand its cyber offensive capabilities .
+The consequences of releasing this public report forced the group to either make changes to their techniques or cease their activity altogether .
+Until this analysis , we had observed no new activity related to Comment Crew since they were exposed , but now we find portions of their implant code appearing in new operations targeting South Korea .
+As we investigated this code overlap , we found no evidence that the source code from Comment Crew was ever made public , nor did we find it being sold in underground markets we examined .
+Has Comment Crew returned?
+We think it is unlikely .
+Due to the lack of indications that this is a new Comment Crew campaign , it raises the question of who is responsible .
+Based on our research , we offer a few potential scenarios that could explain the existence of Comment Crew's code in the current actor's malware targeting South Koreans .
+The contents of the malicious documents were written in Korean and contained subjects specifically relating to the finances of projects in South Korea .
+These documents appear to be unique , not found on open-source channels .
+We were not able to determine the source of these documents , suggesting they were created by the actor .
+The metadata in the malicious Microsoft Office documents used in the attacks contains a Korean language code page .
+This data indicates the document contained the Korean-language pack , most likely to ensure the victims could read it .
+We also see a consistent author , which is typical of the techniques of previous campaigns we have analyzed that involved malicious documents targeting South Koreans .
+The Advanced Threat Research team concludes that we have found a new implant family created by an actor targeting Korean-speaking users and using components from Comment Crew's source code .
+Furthermore it is likely that the actor has a good working knowledge of the Korean language .
+During our research we discovered the initial attack vector was spear phishing , with two malicious Korean language Microsoft Excel documents acting as downloaders of this implant .
+According to our document analysis , the targets likely had knowledge of South Korean public infrastructure projects and related financials—a clear indication that the actor focused initially on infrastructure .
+A second round of malicious documents , this time in Microsoft Word , carried the same metadata and author as the Excel documents .
+The content was related to the financials of the Inter-Korean Cooperation Fund .
+The malicious activity first appeared on May 31 , 2018 , in South Korea .
+Further telemetry indicates organizations outside of Korea have fallen victim to this attack ; as of August 14 , the attack had reached multiple industries in Canada and the United States .
+The date of the attack's first appearance in North America is unknown .
+We did not find Office documents affecting targets in Canada and the United States , but our telemetry indicates the threat has also affected systems in North America .
+It is possible the attack on North American companies is part of a separate campaign from the one targeting Koreans , especially because we discovered only a handful of malicious documents and they distributed only one variant of the implant out of several we found .
+Based on our telemetry , the team learned these organizations were in the investment , banking , and agriculture industries .
+Our research suggests the targets were those who would read documents related to South Korea's public construction expenses , Inter-Korean Cooperation fund , or other global financial data .
+One possible motive for the campaign is financial theft .
+These attacks might be a precursor to a much larger attack that could be devastating given the control the attackers have over their infected victims .
+The impact of these operations could be huge : Oceansalt gives the attackers full control of any system they manage to compromise and the network it is connected to .
+A bank's network would be an especially lucrative target .
+Further , the code overlaps with that from a previously reported advanced state-sponsored group .
+The overlap suggests a close collaboration between members of a state-sponsored group and the current actors in conducting cyber operations .
+The campaign to target and compromise victims across the world began in Korea and expanded globally in stages .
+The distribution URLs for the implants were fairly consistent for the malicious documents ; it appears the actor hacked a number of South Korean websites to host the implant code .
+The first wave of attacks began with a malicious document created May 18 , with a last saved date of May 28 .
+The author of this Korean-language document was Lion , whom we will continue to see throughout later documents .

@@ -1,0 +1,32 @@
+FOLLOW THE MONEY : DISSECTING THE OPERATIONS OF THE CYBER CRIME GROUP FIN6 .
+In addition to collecting credentials , FIN6 used publicly available tools to map the internal network and conduct reconnaissance against Active Directory , Structured Query Language ( SQL ) servers and NetBIOS .
+In particular , during the reconnaissance phase they gathered information on systems running SQL instances , dumping schemas for multiple databases and SQL user accounts .
+Specific tools used by FIN6 included Microsoft ’s built-in SQL querying tool ( osql.exe ) , Query Express ( a free , portable graphical SQL client capable of connecting to Microsoft SQL and Oracle databases ) and AdFind , a free command-line tool for querying Active Directory .
+Over the course of one day , for example , the group targeted more than 900 SQL servers to dump reconnaissance information to support further operations .
+Capitalizing on the acquired reconnaissance data , FIN6 began lateral movement using credentials stolen from various systems on which they gathered usernames and password hashes .
+They likely cracked these hashes outside of the target ’s network before using multiple sets of domain admin credentials in combination with remote command execution tools such as PsExec and Remote Command Executor ( RemCom ) throughout the rest of the lateral movement phase .
+To maintain presence and support interactive access in the environment , FIN6 leveraged the publicly available Plink command-line utility ( part of the PuTTY SSH and Telnet suite ) to create SSH tunnels to CnC servers under their control .
+As shown in Figure 2 , they used these SSH tunnels to route Remote Desktop Protocol ( RDP ) traffic and allow for interactive RDP sessions with systems in the target network .
+After locating POS systems within the target ’s environment , FIN6 deployed POS malware that we call TRINITY ( also known as FrameworkPOS ) , with Scheduled Tasks being used for persistence .
+TRINITY runs continuously and targets system processes not listed in its accompanying process blacklist , seeking data that matches payment card track data .
+Once the malware identifies track data , it copies and encodes it to a local file in a subdirectory of the c:\windows\ directory while attempting to conceal these files with .dll or .chm extensions .
+In one particular case — and as an example of scale — FIN6 compromised and deployed TRINITY on around 2,000 systems , resulting in millions of exposed cards .
+The malware first creates mutexes named m_number3 and MuTex-Check and exits if either already exists .
+The malware then continuously iterates over the current process listing and examines the memory space of each process .
+Processes with module names less than five characters are skipped , along with some specific process names that are unlikely to contain payment card information .
+TRINITY logs captured data to disk , typically to a file in %WINDIR%\temp or %WINDIR%\help .
+The malware encodes the data with a simple substitution cipher and single-byte XOR using the OxAA key .
+Finally , to move the stolen payment card data out of the environment , FIN6 used a script to systematically iterate through a list of compromised POS systems , copying the harvested track data files to a numbered “ log ”  file before removing the original data files .
+They then compressed the log files into a ZIP archive and moved the archive through the environment to an intermediary system and then to a staging system .
+From the staging system , they then copied the stolen data to external CnC servers under their control using the FTP command line utility .
+In another case , FIN6 used an alternative extraction method to upload payment card data to a public file sharing service .
+Our analysis of the data sold through this underground vendor indicates that FIN6 ’s compromises are highly profitable to the actors involved , potentially resulting in extensive fraud losses .
+Using iSIGHT Partners ’ collected intelligence , we discovered that the stolen payment card data from these intrusions were sold in an underground card shop .
+This particular shop is advertised on multiple underground cyber crime forums and has offered diverse criminals access to millions of stolen payment cards on a regular basis .
+This closes the loop on the “ lifecycle ”  of cyber criminal activity and exemplifies one of the final stages of cyber crime actors monetizing their stolen data .
+We have identified stolen data from several of FIN6 ’s victims being sold by this vendor as far back as 2014 .
+This connection means that data stolen by FIN6 has almost certainly ended up in the hands of fraud operators across the world , as they buy and exploit payment cards from the underground shop .
+In each case , the stolen data began appearing in the shop within six months of the FIN6 breach .
+While the amount of data sold through the shop varies by breach , in some cases more than 10 million cards associated with a specific FIN6-linked breach have been identified on the shop .
+After being posted , much of the stolen card data is quickly purchased for exploitation .
+Along with the data we have linked to FIN6 , this underground shop has sold data from millions of other cards , which may be linked to breaches perpetrated by other threat actors .

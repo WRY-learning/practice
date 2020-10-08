@@ -1,0 +1,45 @@
+T1	attack_activity 304 318	spear phishing
+T2	reference_word 380 384	They
+R1	coreference Arg1:T2 Arg2:T1	
+T3	program_language 542 545	PHP
+T5	tool 752 762	VBA macros
+T6	tool 773 786	Flash objects
+T7	tool 790 798	PE files
+T8	attack_activity 868 879	GET request
+T9	url 1000 1013	http://evil-*
+T10	attack_activity 1015 1121	This code effectively sent information about the software installed on the victim machine to the attackers
+T12	tool 1340 1352	WordDocument
+T4	string 1656 1670	INCLUDEPICTURE
+T13	string 1897 1911	INCLUDEPICTURE
+T14	tool 2107 2115	‘xTable’
+T15	tool 2120 2126	‘Data’
+T16	tool 2210 2222	WordDocument
+T17	attack_activity 3245 3306	carry out profiling of potential victims for targeted attacks
+T18	security_team 3308 3323	Kaspersky Lab’s
+T19	counter_measure 3354 3405	detect when the technique described in this article
+T20	company 633 642	Microsoft
+T21	tool 633 647	Microsoft Word
+R2	part_of Arg1:T21 Arg2:T20	
+T22	tool 843 847	Word
+T23	company 1161 1170	Microsoft
+T24	tool 1161 1177	Microsoft Office
+R3	part_of Arg1:T24 Arg2:T23	
+T11	tool 1219 1225	Office
+T25	tool 1310 1314	Word
+T26	tool 2358 2376	Microsoft document
+T27	company 2358 2367	Microsoft
+R4	part_of Arg1:T26 Arg2:T27	
+T28	tool 2987 3003	Microsoft Office
+T29	company 2987 2996	Microsoft
+R5	part_of Arg1:T28 Arg2:T29	
+T30	tool 3122 3133	LibreOffice
+T31	tool 3137 3147	OpenOffice
+T32	tool 2935 2939	Word
+T33	OS_name 2944 2951	Windows
+T34	tool 3019 3035	Microsoft Office
+T35	company 3019 3028	Microsoft
+R6	part_of Arg1:T34 Arg2:T35	
+T36	tool 3049 3060	LibreOffice
+T37	tool 3065 3075	OpenOffice
+R7	part_of Arg1:T32 Arg2:T33	
+R8	part_of Arg1:T19 Arg2:T18	

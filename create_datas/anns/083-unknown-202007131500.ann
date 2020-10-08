@@ -1,0 +1,203 @@
+T1	company 139 142	IBM
+T2	malware 23 31	Shamoon2
+T3	malware 220 228	Shamoon2
+T4	malware 1067 1075	Shamoon2
+T5	malware 3967 3975	Shamoon2
+T6	malware 4012 4020	Shamoon2
+T7	malware 4040 4048	Shamoon2
+T8	malware 4064 4072	Shamoon2
+T9	malware 4081 4089	Shamoon2
+T10	malware 4292 4300	Shamoon2
+T11	malware 4525 4533	Shamoon2
+T12	malware 4570 4578	Shamoon2
+T13	malware 4615 4623	Shamoon2
+T14	malware 4660 4668	Shamoon2
+T15	malware 4705 4713	Shamoon2
+T16	malware 4750 4758	Shamoon2
+T17	malware 4778 4786	Shamoon2
+T18	malware 4803 4811	Shamoon2
+T19	malware 4829 4837	Shamoon2
+T20	malware 4853 4861	Shamoon2
+T21	malware 4881 4889	Shamoon2
+T22	malware 4934 4942	Shamoon2
+T23	malware 4967 4975	Shamoon2
+T24	malware 4999 5007	Shamoon2
+T25	malware 5027 5035	Shamoon2
+T26	malware 5070 5078	Shamoon2
+T27	malware 5108 5116	Shamoon2
+T28	location 251 263	Saudi Arabia
+R1	located Arg1:T3 Arg2:T28	
+R2	find Arg1:T1 Arg2:T3	
+T29	attack_activity 337 351	spear phishing
+T30	malware 425 432	Shamoon
+T31	reference_word 435 440	Their
+T32	attack_activity 1491 1505	spear phishing
+T33	attack_activity 1609 1623	spear phishing
+T34	attack_activity 1643 1657	spear phishing
+T35	attack_activity 1674 1688	spear phishing
+T36	attack_activity 1706 1720	spear phishing
+T37	attack_activity 1766 1780	spear phishing
+T38	attack_activity 1806 1820	spear phishing
+T39	md5 1508 1540	2a0df97277ddb361cecf8726df6d78ac
+T40	md5 1541 1573	5e5ea1a67c2538dbc01df28e4ea87472
+T41	md5 1574 1606	d30b8468d16b631cafe458fd94cc3196
+T42	IP_evil 1626 1641	104.218.120.128
+T43	IP_evil 1660 1672	69.87.223.26
+T44	IP_evil 1691 1704	5.254.100.200
+T45	url_evil 1723 1763	analytics-google.org : 69/checkFile.aspx
+T46	url_evil 1783 1803	analytics-google.org
+T47	url_evil 1823 1842	69.87.223.26:8080/p
+T48	company 607 610	IBM
+T49	person 266 277	Researchers
+R3	coreference Arg1:T31 Arg2:T49	
+T50	program_language 620 625	ASERT
+R4	part_of Arg1:T50 Arg2:T48	
+T51	tool 668 670	IP
+R5	find Arg1:T50 Arg2:T51	
+T52	tool 754 764	PowerShell
+T53	company 896 899	IBM
+T54	person 978 1001	end-point investigators
+T55	person 1006 1023	network defenders
+R6	find Arg1:T54 Arg2:T4	
+R7	find Arg1:T55 Arg2:T4	
+T56	company 1199 1202	IBM
+T57	attack_activity 1158 1172	spear phishing
+T58	tool 1242 1245	IPs
+T59	tool 1250 1254	URLs
+R8	use Arg1:T57 Arg2:T58	
+R9	use Arg1:T57 Arg2:T59	
+R10	find Arg1:T56 Arg2:T57	
+T60	company 1376 1379	IBM
+T61	person 1419 1431	gerry.knight
+R11	find Arg1:T60 Arg2:T61	
+T62	tool 1914 1917	IPs
+T63	protocol 1896 1899	DNS
+T64	time 2025 2038	November 2016
+T65	IP_evil 1965 1980	104.218.120.128
+T66	domain_evil 1929 1954	get.adobe.go-microstf.com
+R12	located Arg1:T66 Arg2:T65	
+R13	use Arg1:T62 Arg2:T63	
+R14	occur_time Arg1:T66 Arg2:T64	
+T67	IP_evil 2092 2103	45.63.10.99
+T68	domain_evil 2064 2079	go-microstf.com
+R15	located Arg1:T68 Arg2:T67	
+T69	tool 2181 2184	URL
+T70	tool 2206 2216	PowerShell
+T71	company 2267 2270	IBM
+T72	domain_evil 2280 2317	http://69.87.223.26:8080/eiloShaegae1
+R16	find Arg1:T71 Arg2:T72	
+R17	part_of Arg1:T72 Arg2:T69	
+T73	reference_word 2421 2432	this domain
+R18	coreference Arg1:T73 Arg2:T72	
+T74	tool 2405 2409	IOCs
+R19	part_of Arg1:T74 Arg2:T73	
+T75	md5 2436 2468	83be35956e5d409306a81e88a1dc89fd
+T76	IP_evil 2471 2482	45.63.10.99
+T77	IP_evil 2485 2497	69.87.223.26
+T78	IP_evil 2500 2520	URLs go-microstf.com
+T79	IP_evil 2523 2553	69.87.223.26:8080/eiloShaegae1
+T80	IP_evil 2556 2586	go-microstf.com/checkfile.aspx
+T81	domain_evil 2600 2615	go-microstf.com
+T82	tool 2647 2663	Google Analytics
+R20	use Arg1:T82 Arg2:T81	
+R21	part_of Arg1:T39 Arg2:T32	
+R22	part_of Arg1:T40 Arg2:T32	
+R23	part_of Arg1:T41 Arg2:T32	
+R24	part_of Arg1:T42 Arg2:T33	
+R25	part_of Arg1:T43 Arg2:T34	
+R26	part_of Arg1:T44 Arg2:T35	
+R27	part_of Arg1:T45 Arg2:T36	
+R28	part_of Arg1:T46 Arg2:T37	
+R29	part_of Arg1:T47 Arg2:T38	
+R30	part_of Arg1:T75 Arg2:T73	
+R31	part_of Arg1:T76 Arg2:T73	
+R32	part_of Arg1:T77 Arg2:T73	
+R33	part_of Arg1:T78 Arg2:T73	
+R34	part_of Arg1:T79 Arg2:T73	
+R35	part_of Arg1:T80 Arg2:T73	
+T83	time 2790 2809	September 16 , 2016
+T84	md5 3977 4009	07d6406036d6e06dc8019e3ade6ee7de
+R36	part_of Arg1:T84 Arg2:T5	
+T85	IP_evil 4022 4037	104.238.184.252
+T86	IP_evil 4050 4063	5.254.100.200
+T87	tool 4074 4078	URLs
+T88	IP_evil 4091 4131	analytics-google.org : 69/checkFile.aspx
+R37	part_of Arg1:T85 Arg2:T6	
+T89	tool 3937 3941	IOCs
+R38	part_of Arg1:T86 Arg2:T7	
+R39	part_of Arg1:T87 Arg2:T8	
+R40	part_of Arg1:T88 Arg2:T9	
+T90	md5 4535 4567	2a0df97277ddb361cecf8726df6d78ac
+T91	md5 4580 4612	5e5ea1a67c2538dbc01df28e4ea87472
+T92	md5 4625 4657	d30b8468d16b631cafe458fd94cc3196
+T93	md5 4670 4702	83be35956e5d409306a81e88a1dc89fd
+T94	md5 4715 4747	07d6406036d6e06dc8019e3ade6ee7de
+T95	IP_evil 4760 4775	104.218.120.128
+T96	IP_evil 4788 4800	69.87.223.26
+T97	IP_evil 4813 4826	5.254.100.200
+T98	IP_evil 4839 4850	45.63.10.99
+T99	IP_evil 4863 4878	104.238.184.252
+T100	domain_evil 4891 4931	analytics-google.org : 69/checkFile.aspx
+T101	domain_evil 4944 4964	analytics-google.org
+T102	domain_evil 4977 4996	69.87.223.26:8080/p
+T103	domain_evil 5009 5024	go-microstf.com
+T104	domain_evil 5037 5067	69.87.223.26:8080/eiloShaegae1
+T105	domain_evil 5080 5105	get.adobe.go-microstf.com
+T106	domain_evil 5118 5148	go-microstf.com/checkfile.aspx
+R41	part_of Arg1:T106 Arg2:T27	
+R42	part_of Arg1:T90 Arg2:T11	
+R43	part_of Arg1:T91 Arg2:T12	
+R44	part_of Arg1:T92 Arg2:T13	
+R45	part_of Arg1:T93 Arg2:T14	
+R46	part_of Arg1:T94 Arg2:T15	
+R47	part_of Arg1:T95 Arg2:T16	
+R48	part_of Arg1:T96 Arg2:T17	
+T107	location 4239 4246	Iranian
+T108	location 4320 4327	Iranian
+T109	tool 4509 4514	Saudi
+T110	malware 4498 4505	Shamoon
+T111	tool 4151 4155	IOCs
+R49	part_of Arg1:T97 Arg2:T18	
+R50	part_of Arg1:T98 Arg2:T19	
+R51	part_of Arg1:T99 Arg2:T20	
+R52	part_of Arg1:T100 Arg2:T21	
+R53	part_of Arg1:T101 Arg2:T22	
+R54	part_of Arg1:T102 Arg2:T23	
+R55	part_of Arg1:T103 Arg2:T24	
+R56	part_of Arg1:T104 Arg2:T25	
+R57	part_of Arg1:T105 Arg2:T26	
+T112	time 2927 2939	January 2017
+T113	tool 2776 2786	VirusTotal
+T114	time 2884 2895	mid-October
+T115	IP_evil 3038 3058	analytics-google.org
+T116	sample_name 3117 3125	sloo.exe
+T117	reference_word 3243 3253	the sample
+T118	IP_evil 3269 3284	104.238.184.252
+R58	coreference Arg1:T117 Arg2:T116	
+T119	tool 3293 3303	PowerShell
+R59	use Arg1:T117 Arg2:T118	
+T120	location 3332 3341	Palo Alto
+T121	person 3317 3328	Researchers
+R60	located Arg1:T121 Arg2:T120	
+R61	use Arg1:T115 Arg2:T116	
+T122	location 3595 3604	Palo Alto
+T123	sample_name 3358 3366	sloo.exe
+T124	location 3419 3426	Iranian
+T125	threatActor_name 3471 3482	Magic Hound
+T126	reference_word 3485 3494	The group
+T127	threatActor_name 3495 3506	Magic Hound
+R62	coreference Arg1:T126 Arg2:T127	
+R63	use Arg1:T125 Arg2:T123	
+R64	located Arg1:T125 Arg2:T124	
+T128	threatActor_name 3553 3566	Rocket Kitten
+T129	company 3676 3680	Dell
+T130	person 3681 3692	Secureworks
+R65	part_of Arg1:T130 Arg2:T129	
+T131	company 3751 3754	IBM
+T132	location 3781 3788	Iranian
+T133	company 3814 3818	Dell
+R66	find Arg1:T130 Arg2:T131	
+T134	threatActor_name 3789 3797	PuppyRAT
+R67	find Arg1:T131 Arg2:T134	
+R68	located Arg1:T134 Arg2:T132	
+R69	located Arg1:T10 Arg2:T107	

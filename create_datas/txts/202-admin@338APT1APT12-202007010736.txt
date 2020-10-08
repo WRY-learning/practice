@@ -1,0 +1,10 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+admin@338 is a China-based cyber threat group .
+It has previously used newsworthy events as lures to deliver malware and has primarily targeted organizations involved in financial , economic , and trade policy , typically using publicly available RATs such as PoisonIvy , as well as some non-public backdoors .
+APT1: Comment Crew , Comment Group , Comment Panda .
+APT1 is a Chinese threat group that has been attributed to the 2nd Bureau of the People ’s Liberation Army ( PLA ) General Staff Department ’s ( GSD ) 3rd Department , commonly known by its Military Unit Cover Designator ( MUCD ) as Unit 61398 .
+APT12: IXESHE , DynCalc , Numbered Panda , DNSCALC .
+APT12 is a threat group that has been attributed to China .
+The group has targeted a variety of victims including but not limited to media outlets , high-tech companies , and multiple governments .

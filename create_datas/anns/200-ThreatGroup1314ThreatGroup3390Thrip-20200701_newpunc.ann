@@ -1,0 +1,41 @@
+T1	threatActor_name 82 99	Threat Group-1314
+T2	threatActor_aliases 102 109	TG-1314
+R1	coreference Arg1:T2 Arg2:T1	
+T3	threatActor_name 112 129	Threat Group-1314
+T4	sub_activity 171 200	used  compromised credentials
+T5	sub_activity 204 253	log into a victim ’s remote access infrastructure
+R2	launch Arg1:T3 Arg2:T4	
+R3	goal Arg1:T4 Arg2:T5	
+T6	threatActor_name 256 273	Threat Group-3390
+T7	threatActor_aliases 276 283	TG-3390
+T8	threatActor_aliases 285 299	Emissary Panda
+T9	threatActor_aliases 302 314	BRONZE UNION
+T10	threatActor_aliases 317 322	APT27
+T11	threatActor_aliases 325 335	Iron Tiger
+T12	threatActor_aliases 338 348	LuckyMouse
+R4	coreference Arg1:T6 Arg2:T7	
+R5	coreference Arg1:T6 Arg2:T8	
+R6	coreference Arg1:T6 Arg2:T9	
+R7	coreference Arg1:T6 Arg2:T10	
+R8	coreference Arg1:T6 Arg2:T11	
+R9	coreference Arg1:T6 Arg2:T12	
+T13	threatActor_name 351 368	Threat Group-3390
+T14	sub_activity 412 442	used strategic Web compromises
+T15	sub_activity 446 460	target victims
+R10	launch Arg1:T13 Arg2:T14	
+R11	goal Arg1:T14 Arg2:T15	
+T16	reference_word 463 472	The group
+R12	coreference Arg1:T13 Arg2:T16	
+T17	time 504 508	2010
+R13	first_found_time Arg1:T16 Arg2:T17	
+T18	target_crowd 517 624	targeted organizations in the aerospace ,government ,defense ,technology ,energy ,and manufacturing sectors
+R14	attack Arg1:T17 Arg2:T18	
+T19	threatActor_name 627 632	Thrip
+T20	target_crowd 664 741	targeted satellite communications ,telecoms ,and defense contractor companies
+T21	location 749 772	U.S. and Southeast Asia
+R15	attack Arg1:T19 Arg2:T20	
+R16	located Arg1:T20 Arg2:T21	
+T22	reference_word 775 784	The group
+R17	coreference Arg1:T22 Arg2:T19	
+T23	sub_activity 785 850	uses custom malware as well as “ living off the land ” techniques
+R18	launch Arg1:T22 Arg2:T23	

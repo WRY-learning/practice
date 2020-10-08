@@ -1,0 +1,173 @@
+T1	malware 0 6	ChChes
+T2	sample_function 22 51	Communicates with C&C Servers
+T3	tool 58 72	Cookie Headers
+T4	protocol 40 43	C&C
+R1	goal Arg1:T1 Arg2:T2	
+R2	use Arg1:T1 Arg2:T3	
+T5	time 191 203	October 2016
+T7	target_crowd 260 282	Japanese organisations
+T8	security_team 206 215	JPCERT/CC
+T9	location 454 459	Japan
+T10	tool 290 309	ZIP file attachment
+T11	tool 321 337	executable files
+R3	part_of Arg1:T11 Arg2:T10	
+R4	attack Arg1:T11 Arg2:T7	
+R5	find Arg1:T8 Arg2:T10	
+R6	first_found_time Arg1:T10 Arg2:T5	
+T12	tool 473 489	executable files
+T13	tool 515 519	Word
+T14	malware 615 621	ChChes
+T15	reference_word 560 568	the file
+R7	coreference Arg1:T15 Arg2:T12	
+T16	malware 676 682	ChChes
+T6	tool 726 735	ZIP files
+T17	tool 793 809	executable files
+R8	part_of Arg1:T17 Arg2:T6	
+T18	reference_word 831 835	they
+T19	tool 290 293	ZIP
+T20	tool 726 729	ZIP
+T21	tool 855 859	Word
+R9	coreference Arg1:T18 Arg2:T6	
+T22	tool 849 869	dummy Word documents
+R10	part_of Arg1:T22 Arg2:T18	
+T23	tool 981 1000	dummy Word document
+T24	tool 987 991	Word
+T25	tool 1008 1023	executable file
+T26	tool 1053 1057	Word
+T27	reference_word 1080 1100	this executable file
+T28	malware 1137 1143	ChChes
+R11	coreference Arg1:T27 Arg2:T25	
+T29	security_team 1146 1155	JPCERT/CC
+T30	tool 1174 1190	executable files
+R12	find Arg1:T29 Arg2:T30	
+T31	tool 1257 1276	dummy Word document
+T32	sample_name 1364 1384	Why Donald Trump won
+R13	part_of Arg1:T32 Arg2:T31	
+T33	malware 1461 1467	ChChes
+T34	sample_function 1494 1526	communicates with specific sites
+T35	protocol 1533 1537	HTTP
+T36	sample_function 1541 1569	receive commands and modules
+R14	goal Arg1:T33 Arg2:T34	
+R15	goal Arg1:T34 Arg2:T36	
+R16	use Arg1:T33 Arg2:T35	
+T37	malware 1606 1612	ChChes
+T38	reference_word 1628 1634	itself
+R17	coreference Arg1:T38 Arg2:T37	
+T39	reference_word 1648 1650	it
+T40	sample_function 1676 1710	receiving modules from C&C servers
+T41	sample_function 1715 1741	loading them on the memory
+R18	coreference Arg1:T39 Arg2:T37	
+R19	goal Arg1:T39 Arg2:T40	
+R20	goal Arg1:T39 Arg2:T41	
+T42	protocol 1774 1778	HTTP
+T43	protocol 1699 1702	C&C
+T44	string 1793 1813	/[random string].htm
+T45	tool 1844 1850	Cookie
+T46	protocol 1953 1956	C&C
+T47	program_language 2010 2016	Python
+T48	tool 2043 2049	Cookie
+T49	protocol 2063 2067	HTTP
+T50	malware 2081 2087	ChChes
+T51	malware 2299 2305	ChChes
+T52	malware 2390 2396	ChChes
+T53	sub_activity 2423 2472	identifying the infected machine from C&C servers
+T54	protocol 2461 2464	C&C
+R21	launch Arg1:T52 Arg2:T53	
+T55	malware 2558 2564	ChChes
+T56	sub_activity 2565 2586	sends an HTTP request
+T57	sample_function 2590 2618	receive modules and commands
+R22	launch Arg1:T55 Arg2:T56	
+R23	goal Arg1:T56 Arg2:T57	
+T58	tool 2724 2730	Cookie
+T59	sample_function 2655 2702	following data starting with ‘ B ’ is encrypted
+R24	goal Arg1:T56 Arg2:T59	
+T60	protocol 2828 2831	C&C
+T61	sub_activity 3032 3082	execution results of the received command are sent
+T62	sub_activity 3107 3129	returns to the process
+T63	sample_function 3133 3161	receive modules and commands
+R25	goal Arg1:T62 Arg2:T63	
+T64	target_crowd 575 582	machine
+R26	attack Arg1:T14 Arg2:T64	
+T65	target_crowd 1107 1114	machine
+R27	attack Arg1:T28 Arg2:T65	
+T66	sub_activity 3189 3224	receiving commands from C&C servers
+T67	protocol 3086 3089	C&C
+T68	protocol 3213 3216	C&C
+T69	target_crowd 3231 3248	infected machines
+T70	security_team 3279 3288	JPCERT/CC
+T71	malware 3398 3404	ChChes
+T72	sample_function 3408 3439	Encrypt communication using AES
+T73	sample_function 3442 3464	Execute shell commands
+T74	sample_function 3467 3479	Upload files
+T75	sample_function 3482 3496	Download files
+T76	sample_function 3499 3516	Load and run DLLs
+T77	sample_function 3519 3545	View tasks of bot commands
+T78	encryption_algo 3436 3439	AES
+R28	goal Arg1:T71 Arg2:T72	
+R29	goal Arg1:T71 Arg2:T73	
+R30	goal Arg1:T71 Arg2:T74	
+R31	goal Arg1:T71 Arg2:T75	
+R32	goal Arg1:T71 Arg2:T76	
+R33	goal Arg1:T71 Arg2:T77	
+R34	use Arg1:T71 Arg2:T78	
+R35	find Arg1:T70 Arg2:T72	
+R36	find Arg1:T70 Arg2:T73	
+R37	find Arg1:T70 Arg2:T74	
+R38	find Arg1:T70 Arg2:T75	
+R39	find Arg1:T70 Arg2:T76	
+R40	find Arg1:T70 Arg2:T77	
+T79	sample_function 3599 3634	encrypts the communication with AES
+T80	encryption_algo 3631 3634	AES
+T81	protocol 3736 3739	C&C
+T82	encryption_algo 3786 3789	AES
+T83	malware 3833 3839	ChChes
+T84	time 3909 3921	October 2016
+R41	first_found_time Arg1:T83 Arg2:T84	
+T85	security_team 3979 3988	JPCERT/CC
+T86	malware 4009 4015	ChChes
+T87	reference_word 4044 4055	the malware
+R42	coreference Arg1:T87 Arg2:T86	
+T88	reference_word 4136 4147	The malware
+R43	coreference Arg1:T88 Arg2:T87	
+T89	security_team 4174 4183	JPCERT/CC
+T90	target_crowd 4151 4168	destination hosts
+R44	attack Arg1:T88 Arg2:T90	
+R45	find Arg1:T89 Arg2:T90	
+T91	malware 4420 4426	ChChes
+T92	protocol 4368 4372	HTTP
+T93	malware 4437 4443	ChChes
+T94	sha2 4446 4509	5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa
+T95	malware 4511 4517	ChChes
+T96	malware 4585 4591	ChChes
+T97	malware 4659 4665	ChChes
+T98	malware 4733 4739	ChChes
+T99	malware 4807 4813	ChChes
+T100	malware 4883 4889	ChChes
+T101	malware 4912 4918	ChChes
+T102	malware 4940 4946	ChChes
+T103	malware 4974 4980	ChChes
+T104	malware 5003 5009	ChChes
+T105	malware 5029 5035	ChChes
+T106	sha2 4520 4584	ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145
+T107	sha2 4668 4732	19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b
+T108	sha2 4594 4658	2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910
+T109	sha2 4742 4805	316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6
+T110	sha2 4816 4880	efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057
+R46	part_of Arg1:T94 Arg2:T93	
+R47	part_of Arg1:T106 Arg2:T95	
+R48	part_of Arg1:T108 Arg2:T96	
+R49	part_of Arg1:T107 Arg2:T97	
+R50	part_of Arg1:T109 Arg2:T98	
+R51	part_of Arg1:T110 Arg2:T99	
+T111	domain_evil 4892 4911	area.wthelpdesk.com
+T112	domain_evil 4921 4939	dick.ccfchrist.com
+T113	domain_evil 4949 4973	kawasaki.cloud-maste.com
+T114	domain_evil 4983 5002	kawasaki.unhamj.com
+T115	domain_evil 5012 5028	sakai.unhamj.com
+T116	domain_evil 5038 5059	scorpion.poulsenv.com
+R52	use Arg1:T100 Arg2:T111	
+R53	use Arg1:T101 Arg2:T112	
+R54	use Arg1:T102 Arg2:T113	
+R55	use Arg1:T103 Arg2:T114	
+R56	use Arg1:T104 Arg2:T115	
+R57	use Arg1:T105 Arg2:T116	

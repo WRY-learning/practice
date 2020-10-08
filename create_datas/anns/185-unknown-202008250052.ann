@@ -1,0 +1,24 @@
+T1	tool 1004 1013	sandboxes
+T2	attack_activity 505 523	URLDownloadToFileA
+T3	tool 796 803	sandbox
+T4	tool 1288 1295	sandbox
+T5	function 1381 1398	Get AsyncKeyState
+T6	string 1498 1502	0x01
+T7	string 1505 1509	0x02
+T8	string 1515 1519	0x04
+T9	string 1538 1542	0x01
+T10	string 1598 1602	0x02
+T11	string 1642 1646	0x04
+T12	string 1702 1713	xor edi edi
+T13	string 1806 1813	inc edi
+T14	string 1873 1882	cmp edi,2
+T15	tool 2420 2427	sandbox
+T16	malware 2354 2370	Superhuman speed
+T17	function 2479 2491	GetCursorPos
+T18	function 2590 2602	GetCursorPos
+T19	function 2719 2731	GetCursorPos
+T20	function 2895 2907	GetCursorPos
+T21	string 2959 2992	SUB EDI , DWORD PTR DS : [410F15]
+T22	function 3184 3196	GetCursorPos
+T23	function 3363 3375	GetCursorPos
+T24	tool 3598 3605	sandbox

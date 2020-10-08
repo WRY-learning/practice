@@ -1,0 +1,272 @@
+T1	location 15 26	Netherlands
+T2	location 480 491	Netherlands
+T3	location 238 249	Netherlands
+T4	location 698 709	Netherlands
+T5	location 933 944	Netherlands
+T6	location 1098 1109	Netherlands
+T7	location 3998 4009	Netherlands
+T8	location 4915 4926	Netherlands
+T9	location 4763 4774	Netherlands
+T10	location 5542 5553	Netherlands
+T11	location 6296 6307	Netherlands
+T12	location 7279 7290	Netherlands
+T13	location 7766 7777	Netherlands
+T14	location 8213 8224	Netherlands
+T15	location 8344 8355	Netherlands
+T16	location 8413 8424	Netherlands
+T17	location 8833 8844	Netherlands
+T18	location 8972 8983	Netherlands
+T19	location 9491 9502	Netherlands
+T20	location 10007 10018	Netherlands
+T21	location 9856 9867	Netherlands
+T22	location 10837 10848	Netherlands
+T23	location 10471 10482	Netherlands
+T24	location 10401 10412	Netherlands
+T25	location 10737 10748	Netherlands
+T26	location 11608 11619	Netherlands
+T27	time 134 150	October 4 , 2018
+T28	government 226 230	OPCW
+R1	located Arg1:T28 Arg2:T3	
+T29	threatActor_name 291 297	Sofacy
+T30	threatActor_aliases 314 319	APT28
+T31	threatActor_aliases 323 333	Fancy Bear
+R2	coreference Arg1:T30 Arg2:T29	
+R3	coreference Arg1:T31 Arg2:T29	
+T32	government 157 161	MIVD
+R4	located Arg1:T32 Arg2:T3	
+R5	release_time Arg1:T32 Arg2:T27	
+T33	government 370 374	MIVD
+T34	threatActor_name 457 463	Sofacy
+T35	threatActor_name 614 620	Sofacy
+T36	threatActor_name 5607 5613	Sofacy
+T37	threatActor_name 6097 6103	Sofacy
+T38	threatActor_name 6322 6328	Sofacy
+T39	threatActor_name 6395 6401	Sofacy
+T40	threatActor_name 12306 12312	Sofacy
+T41	government 439 443	OPWC
+T42	person 377 390	four suspects
+R6	attack Arg1:T42 Arg2:T41	
+R7	attack Arg1:T34 Arg2:T2	
+R8	attack Arg1:T29 Arg2:T28	
+T43	location 764 775	Middle-East
+R9	attack Arg1:T35 Arg2:T4	
+T44	company 1395 1421	Kaspersky Security Network
+T45	string 1424 1427	KSN
+R10	coreference Arg1:T45 Arg2:T44	
+T46	tool 1647 1655	sinkhole
+T47	tool 1775 1783	sinkhole
+T48	tool 1965 1973	sinkhole
+T49	tool 1860 1868	sinkhole
+T50	tool 2450 2458	sinkhole
+T51	tool 3238 3246	sinkhole
+T52	tool 3430 3438	sinkhole
+T53	tool 4292 4300	sinkhole
+T54	tool 9398 9406	sinkhole
+T55	tool 11344 11352	sinkhole
+T56	company 1932 1935	KSN
+T57	time 2503 2517	September 2014
+T58	time 2521 2535	September 2018
+T60	location 2821 2829	Romanian
+T61	threatActor_name 2830 2838	anti-sec
+R11	located Arg1:T61 Arg2:T60	
+T62	threatActor_name 4931 4941	BlackOasis
+T63	threatActor_name 5112 5122	BlackOasis
+T64	time 4986 4994	May 2016
+T65	malware 5032 5041	FinFisher
+T66	vul_aliases 5193 5199	0-days
+T67	time 5223 5227	2015
+R12	use Arg1:T63 Arg2:T66	
+R13	first_found_time Arg1:T63 Arg2:T67	
+T68	location 5258 5282	Middle Eastern countries
+T69	reference_word 5295 5300	group
+R14	coreference Arg1:T69 Arg2:T63	
+R15	attack Arg1:T69 Arg2:T68	
+T70	attack_goal 5331 5339	politics
+R16	goal Arg1:T69 Arg2:T70	
+T71	target_crowd 5373 5435	members of the United Nations and regional news correspondents
+T72	reference_word 5360 5362	it
+R17	attack Arg1:T72 Arg2:T71	
+R18	coreference Arg1:T72 Arg2:T69	
+T73	location 5509 5515	Russia
+T74	location 5522 5524	UK
+T75	threatActor_aliases 5630 5640	Pawn Storm
+R19	coreference Arg1:T75 Arg2:T36	
+T76	threatActor_aliases 5643 5653	Fancy Bear
+R20	coreference Arg1:T76 Arg2:T36	
+R21	attack Arg1:T72 Arg2:T73	
+R22	attack Arg1:T72 Arg2:T74	
+R23	attack Arg1:T72 Arg2:T10	
+T77	time 5726 5730	2011
+R24	first_found_time Arg1:T36 Arg2:T77	
+T78	company 5847 5858	Trend Micro
+T79	company 5954 5964	Volkskrant
+T80	reference_word 5995 5997	it
+T81	government 6022 6038	Dutch Ministries
+R25	attack Arg1:T80 Arg2:T81	
+T82	target_crowd 5912 5935	MH17 investigation team
+T83	reference_word 5889 5894	group
+R26	attack Arg1:T83 Arg2:T82	
+R27	coreference Arg1:T80 Arg2:T83	
+R28	coreference Arg1:T83 Arg2:T36	
+R29	find Arg1:T78 Arg2:T83	
+T84	time 6059 6075	October 4 , 2018
+T85	time 6134 6144	April 2018
+T86	government 6164 6168	OPWC
+R30	attack Arg1:T37 Arg2:T86	
+R32	release_time Arg1:T37 Arg2:T84	
+R33	attack Arg1:T38 Arg2:T11	
+T87	malware 6379 6385	Xagent
+R34	use Arg1:T39 Arg2:T87	
+T88	time 6421 6431	April 2018
+T89	malware 6451 6457	Xagent
+T90	time 6482 6493	August 2018
+T91	reference_word 6514 6519	group
+R35	coreference Arg1:T91 Arg2:T39	
+T92	time 6567 6595	from April through June 2018
+R36	use Arg1:T91 Arg2:T89	
+T93	malware 6660 6677	Olympic Destroyer
+T94	location 6744 6755	South Korea
+T95	target_crowd 6715 6740	2018 Winter Olympic Games
+R38	located Arg1:T95 Arg2:T94	
+T96	threatActor_name 6598 6603	Hades
+R39	use Arg1:T96 Arg2:T93	
+R37	attack Arg1:T96 Arg2:T95	
+T97	reference_word 6791 6798	malware
+R40	coreference Arg1:T97 Arg2:T93	
+T98	threatActor_name 6818 6831	Lazarus group
+T99	tool 6857 6861	Yara
+T100	time 7026 7034	May 2018
+T101	government 7056 7060	OPWC
+T102	threatActor_name 7099 7104	Hades
+T103	industry 7140 7162	financial institutions
+T104	industry 7167 7206	chemical threat prevention laboratories
+R41	attack Arg1:T102 Arg2:T103	
+R42	attack Arg1:T102 Arg2:T104	
+R43	attack Arg1:T102 Arg2:T101	
+T105	threatActor_name 7315 7322	Buhtrap
+T106	industry 7357 7379	financial institutions
+T107	attack_goal 7406 7420	stealing money
+R45	attack Arg1:T105 Arg2:T106	
+R46	goal Arg1:T105 Arg2:T107	
+T108	threatActor_name 7534 7541	Buhtrap
+T109	threatActor_name 7742 7749	Buhtrap
+T110	threatActor_name 7560 7568	Carbanak
+T111	threatActor_name 7573 7580	Tyupkin
+T112	industry 7620 7642	financial institutions
+T113	location 7646 7652	Russia
+T114	location 7657 7664	Ukraine
+R47	located Arg1:T112 Arg2:T113	
+R48	located Arg1:T112 Arg2:T114	
+R49	attack Arg1:T108 Arg2:T112	
+R50	attack Arg1:T111 Arg2:T112	
+R51	attack Arg1:T110 Arg2:T112	
+T115	time 7781 7785	2017
+R52	attack Arg1:T109 Arg2:T13	
+R53	first_found_time Arg1:T109 Arg2:T115	
+T116	time 7791 7801	March 2017
+T117	company 7804 7813	WikiLeaks
+T118	threatActor_name 7955 7963	Lamberts
+T119	threatActor_name 8081 8089	Lamberts
+T120	threatActor_name 8387 8395	Lamberts
+T121	threatActor_name 8138 8152	Green Lamberts
+T122	time 8054 8058	2013
+T123	time 8063 8067	2014
+T124	attack_activity 8032 8040	activity
+R54	launch Arg1:T118 Arg2:T124	
+R55	occur_time Arg1:T124 Arg2:T122	
+R56	occur_time Arg1:T124 Arg2:T123	
+T125	location 8263 8267	Iran
+R57	attack Arg1:T120 Arg2:T16	
+T126	threatActor_name 8519 8524	Turla
+T127	threatActor_aliases 8541 8549	Uroboros
+R58	coreference Arg1:T127 Arg2:T126	
+T128	time 8678 8682	2008
+T129	attack_activity 8649 8674	US Central Command attack
+T130	company 8701 8705	RUAG
+T131	location 8710 8715	Swiss
+T132	industry 8716 8724	military
+R59	located Arg1:T130 Arg2:T131	
+R60	located Arg1:T132 Arg2:T131	
+R61	occur_time Arg1:T129 Arg2:T128	
+R62	launch Arg1:T126 Arg2:T129	
+R63	attack Arg1:T126 Arg2:T130	
+T133	threatActor_name 8746 8751	Turla
+T134	threatActor_name 8873 8878	Turla
+T135	threatActor_name 8948 8953	Turla
+T136	government 8768 8778	ministries
+T137	government 8783 8809	governmental organizations
+R64	attack Arg1:T133 Arg2:T136	
+R65	attack Arg1:T133 Arg2:T137	
+R66	attack Arg1:T134 Arg2:T17	
+R67	attack Arg1:T135 Arg2:T18	
+T138	threatActor_name 8986 8991	Gatak
+T139	threatActor_aliases 9026 9037	Stegoloader
+T140	threatActor_aliases 9042 9046	GOLD
+R68	coreference Arg1:T139 Arg2:T138	
+R69	coreference Arg1:T140 Arg2:T138	
+T141	attack_goal 9076 9086	data theft
+T142	attack_activity 9093 9114	watering hole attacks
+R70	launch Arg1:T138 Arg2:T142	
+R71	goal Arg1:T138 Arg2:T141	
+T143	reference_word 9117 9119	It
+T144	time 9151 9155	2015
+T145	attack_goal 9186 9207	intellectual property
+R72	coreference Arg1:T143 Arg2:T138	
+R73	goal Arg1:T143 Arg2:T145	
+R74	first_found_time Arg1:T143 Arg2:T144	
+T146	attack_activity 9233 9254	watering hole attacks
+T147	reference_word 9265 9270	group
+R75	coreference Arg1:T147 Arg2:T143	
+R76	launch Arg1:T147 Arg2:T146	
+T148	time 9508 9512	2015
+T149	industry 9519 9529	Dutch chip
+T150	company 9538 9542	ASML
+T151	threatActor_name 9569 9581	Putter Panda
+R77	attack Arg1:T151 Arg2:T150	
+R78	occur_time Arg1:T151 Arg2:T148	
+R79	part_of Arg1:T150 Arg2:T149	
+T152	company 9584 9588	ASML
+T153	industry 9745 9748	KRO
+T154	company 9799 9803	ASML
+R80	located Arg1:T154 Arg2:T21	
+T155	reference_word 9884 9886	it
+R81	coreference Arg1:T155 Arg2:T154	
+T156	person 9941 9947	actors
+R82	attack Arg1:T156 Arg2:T155	
+R83	located Arg1:T155 Arg2:T20	
+T157	threatActor_name 10021 10032	Animal Farm
+T158	time 10080 10084	2009
+R84	first_found_time Arg1:T157 Arg2:T158	
+T159	target_crowd 10211 10288	governmental organizations , military contractors , activists and journalists
+R85	attack Arg1:T157 Arg2:T159	
+T160	reference_word 10307 10312	group
+R86	coreference Arg1:T160 Arg2:T157	
+T161	location 10334 10359	French speaking countries
+R87	attack Arg1:T160 Arg2:T161	
+R88	attack Arg1:T160 Arg2:T24	
+T162	threatActor_name 10627 10635	Lamberts
+T163	reference_word 10605 10612	country
+R89	attack Arg1:T162 Arg2:T163	
+R90	coreference Arg1:T163 Arg2:T23	
+T164	industry 11469 11477	airlines
+T165	industry 11480 11488	airports
+T166	malware 11949 11966	Olympic Destroyer
+T167	industry 11996 12035	chemical threat prevention laboratories
+T168	government 12054 12058	OPWC
+R91	attack Arg1:T166 Arg2:T167	
+T169	malware 12242 12259	Olympic Destroyer
+R92	find Arg1:T33 Arg2:T42	
+R93	find Arg1:T32 Arg2:T29	
+T170	tool 2796 2799	TOR
+R94	first_found_time Arg1:T62 Arg2:T64	
+T59	string 5085 5089	LEAs
+T171	government 5058 5082	law enforcement agencies
+R95	coreference Arg1:T59 Arg2:T171	
+T172	reference_word 4997 4999	It
+R96	coreference Arg1:T172 Arg2:T62	
+R97	use Arg1:T172 Arg2:T65	
+T173	government 5096 5109	nation states
+R98	attack Arg1:T172 Arg2:T171	
+R99	attack Arg1:T172 Arg2:T173	
+R31	occur_time Arg1:T86 Arg2:T85	
+R44	occur_time Arg1:T101 Arg2:T100	

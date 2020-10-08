@@ -1,0 +1,147 @@
+T1	security_team 197 204	FireEye
+T2	government 281 301	Mongolian government
+T3	target_crowd 313 324	individuals
+T4	malware 338 383	macros in a malicious Microsoft Word document
+T5	malware 412 422	Poison Ivy
+T6	tool 435 453	remote access tool
+T7	tool 456 459	RAT
+R1	coreference Arg1:T7 Arg2:T6	
+R2	part_of Arg1:T5 Arg2:T6	
+T8	attack_activity 223 247	a sophisticated campaign
+R3	find Arg1:T1 Arg2:T8	
+R4	attack Arg1:T8 Arg2:T2	
+T9	function 505 516	key logging
+T10	function 519 543	screen and video capture
+T11	function 546 560	file transfers
+T12	function 563 577	password theft
+T13	function 580 601	system administration
+T14	function 604 620	traffic relaying
+R6	part_of Arg1:T9 Arg2:T7	
+R7	part_of Arg1:T10 Arg2:T7	
+R8	part_of Arg1:T11 Arg2:T7	
+R9	part_of Arg1:T12 Arg2:T7	
+R10	part_of Arg1:T13 Arg2:T7	
+R11	part_of Arg1:T14 Arg2:T7	
+R5	use Arg1:T8 Arg2:T4	
+R12	attack Arg1:T4 Arg2:T3	
+R13	part_of Arg1:T4 Arg2:T5	
+T15	reference_word 659 670	this attack
+R14	coreference Arg1:T15 Arg2:T8	
+T16	tool 727 769	Customized evasion based on victim profile
+T17	attack_goal 824 896	evade AppLocker application whitelisting applied to the targeted systems
+T18	tool 899 933	Fileless execution and persistence
+T19	attack_goal 991 1030	avoid writing an executable to the disk
+T20	attack_goal 1034 1074	avoid detection and forensic examination
+R19	goal Arg1:T19 Arg2:T20	
+T21	reference_word 1077 1089	The campaign
+R20	coreference Arg1:T21 Arg2:T18	
+T22	tool 1107 1140	four stages of PowerShell scripts
+R21	use Arg1:T21 Arg2:T22	
+T23	tool 1196 1211	Decoy documents
+T24	tool 1233 1243	PowerShell
+R23	use Arg1:T23 Arg2:T24	
+T25	sub_activity 1247 1344	download benign documents from the Internet and launch them in a separate Microsoft Word instance
+R24	launch Arg1:T24 Arg2:T25	
+T26	attack_goal 1348 1393	minimize user suspicion of malicious activity
+R25	goal Arg1:T25 Arg2:T26	
+T27	tool 1419 1437	social engineering
+T28	sub_activity 1441 1480	convince users to run an embedded macro
+R26	launch Arg1:T27 Arg2:T28	
+T29	threatActor_aliases 634 651	The threat actors
+R27	launch Arg1:T29 Arg2:T15	
+T30	threatActor_aliases 1396 1413	The threat actors
+R28	use Arg1:T30 Arg2:T27	
+T31	malware 1475 1480	macro
+T32	tool 1486 1509	Microsoft Word document
+R29	part_of Arg1:T31 Arg2:T32	
+T33	sub_activity 1515 1554	launched a malicious PowerShell payload
+R30	launch Arg1:T31 Arg2:T33	
+R31	use Arg1:T30 Arg2:T31	
+T34	malware 1526 1554	malicious PowerShell payload
+T35	threatActor_aliases 1557 1574	The threat actors
+T36	tool 1619 1648	AppLocker whitelisting bypass
+R15	goal Arg1:T16 Arg2:T17	
+R16	use Arg1:T15 Arg2:T16	
+R17	use Arg1:T15 Arg2:T18	
+R18	goal Arg1:T18 Arg2:T19	
+T37	threatActor_aliases 960 973	threat actors
+R22	use Arg1:T37 Arg2:T18	
+R32	use Arg1:T15 Arg2:T23	
+T38	tool 1655 1661	script
+T39	sub_activity 1665 1711	inject shellcode into the userinit.exe process
+R33	use Arg1:T35 Arg2:T36	
+R34	use Arg1:T35 Arg2:T38	
+R35	launch Arg1:T36 Arg2:T39	
+R36	launch Arg1:T38 Arg2:T39	
+T40	malware 1718 1735	malicious payload
+T41	tool 1754 1781	multiple PowerShell scripts
+R37	part_of Arg1:T40 Arg2:T41	
+T42	tool 1932 1940	registry
+T43	tool 1893 1912	PowerShell payloads
+R38	part_of Arg1:T43 Arg2:T42	
+T44	reference_word 1954 1966	the campaign
+R39	coreference Arg1:T44 Arg2:T15	
+T45	tool 1976 2010	Microsoft Word documents via email
+T46	function 2027 2072	contain instructions for logging into webmail
+T47	function 2076 2118	information regarding a state law proposal
+R40	part_of Arg1:T46 Arg2:T45	
+R41	part_of Arg1:T47 Arg2:T45	
+R42	use Arg1:T44 Arg2:T45	
+T48	company 2121 2130	Microsoft
+T50	tool 2165 2174	AppLocker
+T49	tool 2131 2164	application whitelisting solution
+R44	part_of Arg1:T50 Arg2:T48	
+R43	part_of Arg1:T50 Arg2:T49	
+T51	function 2175 2228	prevents unknown executables from running on a system
+R45	part_of Arg1:T51 Arg2:T50	
+T52	time 2234 2244	April 2016
+T53	person 2247 2268	a security researcher
+T54	reference_word 2298 2302	this
+R46	coreference Arg1:T54 Arg2:T50	
+T55	sub_activity 2291 2321	bypass this using regsvr32.exe
+R47	find Arg1:T53 Arg2:T55	
+R48	first_found_time Arg1:T52 Arg2:T55	
+T56	tool 2326 2357	legitimate Microsoft executable
+T57	sample_name 2309 2321	regsvr32.exe
+R49	part_of Arg1:T57 Arg2:T56	
+T58	sample_function 2371 2405	execute in many AppLocker policies
+T59	string 2939 2947	20160509
+T60	string 2912 2923	version2013
+T61	string 2873 2881	StubPath
+T62	vul_aliases 2959 2969	Poison Ivy
+T63	tool 3162 3172	PowerShell
+T64	tool 3177 3233	publicly available security control bypasses and scripts
+R51	use Arg1:T62 Arg2:T63	
+R52	use Arg1:T62 Arg2:T64	
+T65	security_team 3354 3361	FireEye
+T66	tool 3362 3378	HX Exploit Guard
+R53	part_of Arg1:T66 Arg2:T65	
+T67	tool 3384 3407	behavior-based solution
+R54	part_of Arg1:T66 Arg2:T67	
+T68	function 3413 3452	is not affected by the tricks used here
+R55	part_of Arg1:T68 Arg2:T66	
+T69	reference_word 3432 3442	the tricks
+R56	coreference Arg1:T69 Arg2:T62	
+T70	reference_word 3455 3457	It
+R57	coreference Arg1:T70 Arg2:T66	
+T71	counter_measure 3458 3608	detects and blocks this threat at the initial level of the attack cycle when the malicious macro attempts to invoke the first stage PowerShell payload
+T72	reference_word 3477 3488	this threat
+R59	coreference Arg1:T72 Arg2:T69	
+T73	reference_word 3611 3613	HX
+R60	coreference Arg1:T73 Arg2:T70	
+T74	counter_measure 3628 3758	generic detections for the registry persistence , AppLocker bypasses and subsequent stages of PowerShell abuse used in this attack
+T75	company 1321 1330	Microsoft
+T76	company 1486 1495	Microsoft
+T77	company 1976 1985	Microsoft
+T78	tool 2581 2590	AppLocker
+T79	sample_name 2412 2424	regsvr32.exe
+R50	part_of Arg1:T58 Arg2:T57	
+T80	sample_function 2451 2491	download a Windows Script Component file
+R62	part_of Arg1:T80 Arg2:T79	
+T81	OS_name 2462 2469	Windows
+T82	vul_aliases 2813 2823	Poison Ivy
+R63	part_of Arg1:T61 Arg2:T82	
+R64	part_of Arg1:T60 Arg2:T82	
+R65	part_of Arg1:T59 Arg2:T82	
+R58	launch Arg1:T70 Arg2:T71	
+R61	launch Arg1:T73 Arg2:T74	

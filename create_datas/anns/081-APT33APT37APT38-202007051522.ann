@@ -1,0 +1,94 @@
+T3	threatActor_name 89 94	APT33
+T1	threatActor_name 77 82	APT33
+T2	threatActor_aliases 83 88	Elfin
+T4	time 178 182	2013
+T5	location 110 117	Iranian
+T6	industry 335 343	aviation
+T7	industry 348 362	energy sectors
+R2	located Arg1:T3 Arg2:T5	
+T8	location 255 268	United States
+T9	location 270 282	Saudi Arabia
+T10	location 288 299	South Korea
+T11	threatActor_name 364 369	APT37
+T12	threatActor_aliases 370 379	ScarCruft
+T13	threatActor_aliases 381 387	Reaper
+T14	threatActor_aliases 389 397	Group123
+T15	threatActor_aliases 399 410	TEMP.Reaper
+T16	threatActor_name 891 896	APT38
+T17	threatActor_name 411 416	APT37
+T18	threatActor_name 676 681	APT37
+T19	location 432 444	North Korean
+R7	located Arg1:T17 Arg2:T19	
+T20	time 503 507	2012
+T21	location 553 564	South Korea
+T22	location 578 583	Japan
+T23	location 585 592	Vietnam
+T24	location 594 600	Russia
+T25	location 602 607	Nepal
+T26	location 609 614	China
+T27	location 616 621	India
+T28	location 623 630	Romania
+T29	location 632 638	Kuwait
+T30	location 663 674	Middle East
+T31	time 734 743	2016-2018
+T32	attack_activity 745 763	Operation Daybreak
+T33	attack_activity 765 781	Operation Erebus
+T34	attack_activity 783 794	Golden Time
+T35	attack_activity 796 809	Evil New Year
+T36	attack_activity 811 825	Are you Happy?
+T37	attack_activity 827 835	FreeMilk
+T38	attack_activity 837 865	Northern Korean Human Rights
+T39	attack_activity 871 889	Evil New Year 2018
+T40	threatActor_name 898 903	APT38
+T41	location 966 978	North Korean
+R8	located Arg1:T40 Arg2:T41	
+T42	time 1129 1133	2014
+T43	industry 1012 1017	banks
+T44	industry 1022 1044	financial institutions
+R9	first_found_time Arg1:T17 Arg2:T20	
+R10	first_found_time Arg1:T3 Arg2:T4	
+R11	first_found_time Arg1:T40 Arg2:T42	
+T45	reference_word 184 193	The group
+T46	reference_word 509 518	The group
+T47	reference_word 987 996	The group
+R12	launch Arg1:T18 Arg2:T32	
+R13	launch Arg1:T18 Arg2:T33	
+R14	launch Arg1:T18 Arg2:T34	
+R15	launch Arg1:T18 Arg2:T35	
+R16	launch Arg1:T18 Arg2:T36	
+R17	launch Arg1:T18 Arg2:T37	
+R18	launch Arg1:T18 Arg2:T38	
+R22	attack Arg1:T45 Arg2:T6	
+R23	attack Arg1:T45 Arg2:T7	
+R24	attack Arg1:T47 Arg2:T43	
+R25	attack Arg1:T47 Arg2:T44	
+R26	launch Arg1:T18 Arg2:T39	
+R27	attack Arg1:T45 Arg2:T8	
+R28	attack Arg1:T45 Arg2:T9	
+R29	attack Arg1:T45 Arg2:T10	
+R30	attack Arg1:T46 Arg2:T21	
+R31	attack Arg1:T46 Arg2:T22	
+R32	attack Arg1:T46 Arg2:T24	
+R33	attack Arg1:T46 Arg2:T23	
+R34	attack Arg1:T46 Arg2:T25	
+R35	attack Arg1:T46 Arg2:T26	
+R36	attack Arg1:T46 Arg2:T27	
+R37	attack Arg1:T46 Arg2:T28	
+R38	attack Arg1:T46 Arg2:T29	
+R39	attack Arg1:T46 Arg2:T30	
+R40	occur_time Arg1:T32 Arg2:T31	
+R41	occur_time Arg1:T33 Arg2:T31	
+R42	occur_time Arg1:T34 Arg2:T31	
+R43	occur_time Arg1:T35 Arg2:T31	
+R44	occur_time Arg1:T36 Arg2:T31	
+R45	occur_time Arg1:T37 Arg2:T31	
+R46	occur_time Arg1:T38 Arg2:T31	
+R47	occur_time Arg1:T39 Arg2:T31	
+R1	coreference Arg1:T2 Arg2:T1	
+R19	coreference Arg1:T45 Arg2:T3	
+R3	coreference Arg1:T12 Arg2:T11	
+R4	coreference Arg1:T13 Arg2:T11	
+R5	coreference Arg1:T14 Arg2:T11	
+R6	coreference Arg1:T15 Arg2:T11	
+R20	coreference Arg1:T46 Arg2:T17	
+R21	coreference Arg1:T47 Arg2:T40	

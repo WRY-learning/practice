@@ -1,0 +1,86 @@
+T1	target_crowd 170 183	Mexican users
+T2	attack_activity 115 127	Dark Tequila
+R1	attack Arg1:T2 Arg2:T1	
+T4	attack_goal 214 244	stealing financial information
+T5	attack_goal 258 275	login credentials
+R3	goal Arg1:T2 Arg2:T4	
+R4	goal Arg1:T2 Arg2:T5	
+T6	reference_word 651 675	this particular campaign
+R5	coreference Arg1:T6 Arg2:T2	
+T7	industry 705 733	Mexican banking institutions
+T8	target_crowd 684 693	customers
+R6	part_of Arg1:T8 Arg2:T7	
+R7	attack Arg1:T6 Arg2:T8	
+T9	location 843 856	Latin America
+T10	target_crowd 871 878	victims
+T11	location 894 900	Mexico
+R8	located Arg1:T10 Arg2:T11	
+T12	reference_word 903 915	The campaign
+R9	coreference Arg1:T12 Arg2:T2	
+T13	time 947 951	2013
+R10	first_found_time Arg1:T12 Arg2:T13	
+T14	attack_activity 1037 1051	spear-phishing
+T15	attack_activity 1056 1079	infection by USB device
+T16	person 1082 1098	The threat actor
+T17	location 1206 1212	Mexico
+T19	malware 1306 1318	Dark Tequila
+T20	tool 1754 1773	command and control
+T21	tool 2437 2444	Cpanels
+T22	tool 2447 2452	Plesk
+T25	tool 2491 2510	Microsoft Office365
+T26	tool 2513 2536	IBM lotus notes clients
+T27	tool 2539 2551	Zimbra email
+T23	tool 2554 2563	Bitbucket
+T24	company 2566 2572	Amazon
+T28	company 2575 2582	GoDaddy
+T29	tool 2585 2593	Register
+T30	company 2596 2605	Namecheap
+T31	company 2608 2615	Dropbox
+T32	company 2618 2627	Softlayer
+T33	company 2630 2639	Rackspace
+T34	protocol 2752 2755	FTP
+T35	tool 2808 2820	USB infector
+T37	attack_activity 3028 3042	spear-phishing
+T38	security_team 3591 3604	Kaspersky Lab
+T39	malware 3629 3653	Trojan.Win32.DarkTequila
+T40	malware 3685 3697	Dark Tequila
+T41	malware 3767 3779	Dark Tequila
+T42	malware 3849 3861	Dark Tequila
+T43	malware 3895 3907	Dark Tequila
+T44	malware 3965 3977	Dark Tequila
+T45	url_evil 3980 4008	https://75.126.60.251/store/
+T46	url_evil 3910 3962	https://174.37.6.34/98157cdfe45945293201e71acb2394d2
+T47	url_evil 3864 3892	https://46.17.97.12/website/
+T48	sha2 3700 3764	4f49a01e02e8c47d84480f6fb92700aa091133c894821fff83c7502c7af136d9
+T49	sha2 3782 3846	dce2d575bef073079c658edfa872a15546b422ad2b74267d33b386dc7cc85b47
+R11	part_of Arg1:T48 Arg2:T40	
+R12	part_of Arg1:T49 Arg2:T41	
+R13	part_of Arg1:T47 Arg2:T42	
+R14	part_of Arg1:T46 Arg2:T43	
+R15	part_of Arg1:T45 Arg2:T44	
+T50	malware 0 18	Dark Tequila Anejo
+R16	use Arg1:T16 Arg2:T14	
+R17	use Arg1:T16 Arg2:T15	
+T51	reference_word 1423 1436	The malicious
+R18	coreference Arg1:T51 Arg2:T19	
+T3	attack_activity 141 159	malicious campaign
+R2	part_of Arg1:T2 Arg2:T3	
+T18	sub_activity 1695 1703	Module 1
+T36	reference_word 2911 2922	the malware
+T52	malware 3658 3682	Trojan.Win64.DarkTequila
+T53	sub_activity 1919 1927	Module 2
+T54	sub_activity 2294 2302	Module 3
+T55	sub_activity 2663 2671	Module 4
+T56	sub_activity 2793 2801	Module 5
+T57	sub_activity 3190 3198	Module 6
+T58	reference_word 3273 3284	the malware
+T59	reference_word 3158 3169	the malware
+R19	use Arg1:T56 Arg2:T35	
+R20	use Arg1:T55 Arg2:T34	
+R21	use Arg1:T56 Arg2:T37	
+R22	use Arg1:T18 Arg2:T20	
+R23	coreference Arg1:T58 Arg2:T19	
+R24	coreference Arg1:T36 Arg2:T19	
+R25	coreference Arg1:T59 Arg2:T19	
+T60	reference_word 1237 1248	the malware
+R26	coreference Arg1:T60 Arg2:T2	

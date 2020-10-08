@@ -1,0 +1,180 @@
+T1	location 32 43	South Korea
+T2	location 46 50	U.S.
+T3	location 57 63	Canada
+T4	malware 2 21	Operation Oceansalt
+T5	person 86 106	Chinese Hacker Group
+R1	attack Arg1:T4 Arg2:T1	
+R2	attack Arg1:T4 Arg2:T3	
+R3	attack Arg1:T4 Arg2:T2	
+T6	person 516 520	Lion
+T7	security_team 1152 1158	McAfee
+T8	time 1182 1198	August 10 and 14
+T10	industry 1264 1273	Financial
+T13	industry 1346 1364	Telecommunications
+T14	industry 1374 1383	Financial
+T15	industry 1400 1411	Agriculture
+T16	industry 1416 1426	Industrial
+T17	industry 1443 1452	Financial
+T18	industry 1469 1487	Telecommunications
+T19	industry 1497 1506	Financial
+T20	industry 1516 1536	Financial Technology
+T21	industry 1553 1563	Government
+T22	location 1564 1577	United States
+T23	location 1537 1550	United States
+T24	location 1507 1513	Canada
+T25	location 1488 1494	Canada
+T26	location 1453 1466	United States
+T27	location 1427 1440	United States
+T28	location 1384 1397	United States
+T29	location 1365 1371	Canada
+T30	location 1330 1343	United States
+T12	industry 1318 1329	Health Care
+T31	location 1302 1315	United States
+T32	location 1274 1287	United States
+T11	industry 1290 1301	Health Care
+R4	release_time Arg1:T7 Arg2:T8	
+R5	located Arg1:T10 Arg2:T32	
+R6	located Arg1:T11 Arg2:T31	
+R7	located Arg1:T12 Arg2:T30	
+R8	located Arg1:T13 Arg2:T29	
+R9	located Arg1:T14 Arg2:T28	
+R10	located Arg1:T15 Arg2:T27	
+R11	located Arg1:T16 Arg2:T27	
+R12	located Arg1:T17 Arg2:T26	
+R13	located Arg1:T18 Arg2:T25	
+R14	located Arg1:T19 Arg2:T24	
+R15	located Arg1:T20 Arg2:T23	
+R16	located Arg1:T21 Arg2:T22	
+T34	time 1914 1921	June 13
+T35	time 1926 1933	July 17
+T36	location 1979 1990	South Korea
+T37	location 1999 2012	United States
+T38	md5 2015 2047	38216571e9a9364b509e52ec19fae61b
+T39	md5 2050 2082	531dee019792a089a4589c2cce3dac95
+T40	md5 2085 2117	0355C116C02B02C05D6E90A0B3DC107C
+T41	md5 2120 2152	74A50A5705E2AF736095B6B186D38DDF
+T42	md5 2155 2187	45C362F17C5DC8496E97D475562BEC4D
+T43	md5 2190 2222	C1773E9CF8265693F37DF1A39E0CBBE2
+T44	md5 2225 2257	D14DD769C7F53ACEC482347F539EFDF4
+T45	md5 2260 2292	B2F6D9A62C63F61A6B33DC6520BFCCCD
+T46	md5 2295 2327	76C8DA4147B08E902809D1E80D96FBB4
+T47	IP 2457 2470	172.81.132.62
+T48	IP 2471 2486	211.104.160.196
+T49	IP 2487 2501	27.102.112.179
+T50	IP 2502 2515	158.69.131.78
+T51	time 2442 2446	June
+T52	time 2450 2454	July
+T53	IP 2598 2613	211.104.160.196
+T54	location 2638 2648	Costa Rica
+T55	location 2655 2668	United States
+T56	location 2679 2690	Philippines
+R17	located Arg1:T53 Arg2:T54	
+R18	located Arg1:T53 Arg2:T55	
+R19	located Arg1:T53 Arg2:T56	
+T57	IP 2701 2714	158.69.131.78
+T58	location 2752 2765	United States
+T59	location 2770 2776	Canada
+R20	located Arg1:T57 Arg2:T58	
+R21	located Arg1:T57 Arg2:T59	
+T60	time 2829 2841	August 18–21
+T61	security_team 2980 3009	Advanced Threat Research team
+T62	person 3084 3091	victims
+T63	time 3241 3245	2010
+T64	md5 3194 3226	bf4f5b4ff7ed9c7275496c07f9836028
+T65	malware 3248 3257	Oceansalt
+T66	threatActor_name 3486 3498	Comment Crew
+T67	malware 3576 3583	Seasalt
+T68	reference_word 3586 3618	5e0df5b28a349d46ac8cc7d9e5e61a96
+R22	coreference Arg1:T68 Arg2:T67	
+T69	threatActor_name 3625 3637	Comment Crew
+T70	time 3700 3704	2010
+T71	malware 3716 3725	Oceansalt
+T72	person 3716 3731	Oceansalt actor
+T73	malware 3765 3772	Seasalt
+T74	tool 69 80	Source Code
+R23	use Arg1:T4 Arg2:T74	
+R24	part_of Arg1:T74 Arg2:T5	
+T75	attack_activity 210 224	The third wave
+T76	sub_activity 236 249	Word document
+T77	sub_activity 290 301	Excel files
+T78	reference_word 304 316	The document
+R27	coreference Arg1:T78 Arg2:T76	
+T79	target_crowd 359 406	financials of the Inter-Korean Cooperation Fund
+R28	attack Arg1:T75 Arg2:T79	
+T80	reference_word 409 421	The document
+R29	coreference Arg1:T80 Arg2:T78	
+T81	location 469 481	South Korean
+T83	reference_word 535 540	Excel
+T84	reference_word 545 559	Word documents
+R31	coreference Arg1:T84 Arg2:T80	
+R32	coreference Arg1:T83 Arg2:T77	
+R25	part_of Arg1:T76 Arg2:T75	
+R26	part_of Arg1:T77 Arg2:T75	
+T85	reference_word 562 580	This Word document
+R33	coreference Arg1:T85 Arg2:T84	
+T86	location 598 610	South Korean
+T87	reference_word 662 671	this wave
+R34	coreference Arg1:T87 Arg2:T75	
+T88	sub_activity 688 702	Excel document
+T89	sub_activity 791 804	Word document
+R35	part_of Arg1:T88 Arg2:T87	
+R36	part_of Arg1:T89 Arg2:T87	
+T90	location 858 869	South Korea
+T91	person 1002 1009	victims
+T92	attack_activity 1020 1037	Waves One and Two
+T93	malware 649 656	implant
+T94	tool 598 630	South Korean compromised website
+R37	use Arg1:T85 Arg2:T94	
+T95	malware 987 994	implant
+R38	attack Arg1:T95 Arg2:T91	
+T96	reference_word 939 958	malicious documents
+R39	coreference Arg1:T96 Arg2:T89	
+T97	reference_word 1083 1094	the implant
+R40	coreference Arg1:T97 Arg2:T95	
+T9	malware 1584 1601	Oceansalt implant
+T33	malware 1849 1866	Oceansalt implant
+T98	attack_activity 1869 1891	The fifth-wave samples
+R41	occur_time Arg1:T98 Arg2:T34	
+R42	occur_time Arg1:T98 Arg2:T35	
+T99	person 1962 1975	organizations
+R43	located Arg1:T99 Arg2:T36	
+R44	located Arg1:T99 Arg2:T37	
+T100	reference_word 2330 2342	The campaign
+R45	coreference Arg1:T100 Arg2:T98	
+T101	malware 2421 2429	implants
+R46	occur_time Arg1:T101 Arg2:T51	
+R47	occur_time Arg1:T101 Arg2:T52	
+T102	reference_word 2538 2551	this campaign
+R48	coreference Arg1:T102 Arg2:T100	
+T103	malware 2890 2898	implants
+R49	find Arg1:T61 Arg2:T103	
+R50	attack Arg1:T103 Arg2:T62	
+T104	malware 3638 3645	implant
+R51	occur_time Arg1:T104 Arg2:T70	
+R52	occur_time Arg1:T69 Arg2:T70	
+T105	malware 3787 3794	implant
+R53	use Arg1:T72 Arg2:T73	
+T106	malware 3831 3840	Oceansalt
+T107	person 3923 3928	actor
+T108	malware 3942 3949	Seasalt
+R54	use Arg1:T107 Arg2:T108	
+T109	threatActor_name 3876 3888	Comment Crew
+R55	use Arg1:T69 Arg2:T104	
+R56	use Arg1:T109 Arg2:T106	
+T110	reference_word 3984 3996	another acto
+T111	reference_word 3961 3963	it
+R57	coreference Arg1:T111 Arg2:T108	
+T112	reference_word 3976 3980	this
+T113	reference_word 4035 4045	this actor
+R58	coreference Arg1:T113 Arg2:T107	
+R59	coreference Arg1:T110 Arg2:T107	
+R60	coreference Arg1:T112 Arg2:T107	
+T114	malware 4153 4160	Seasalt
+T115	time 4248 4258	July 16–17
+T116	malware 4304 4311	implant
+R61	occur_time Arg1:T116 Arg2:T115	
+T117	person 4446 4451	actor
+T118	malware 4466 4473	Seasalt
+T119	malware 4502 4510	implants
+R62	use Arg1:T117 Arg2:T118	
+R63	attack Arg1:T119 Arg2:T117	

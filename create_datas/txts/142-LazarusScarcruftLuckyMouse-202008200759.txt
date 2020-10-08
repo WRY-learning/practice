@@ -1,0 +1,48 @@
+APT Trends Report Q2 2018 .
+Release_Time : 2018-07-10
+Report_URL : https://securelist.com/apt-trends-report-q2-2018/86487/
+In terms of well-known groups , Asian actors were the most active by far .
+Lazarus/BlueNoroff was suspected of targeting financial institutions in Turkey as part of a bigger cyberespionage campaign .
+The same actor was also suspected of a campaign against an online casino in Latin America that ended in a destructive attack .
+Based on our telemetry , we further observed Lazarus targeting financial institutions in Asia .
+Lazarus has accumulated a large collection of artefacts over the last few years , in some cases with heavy code reuse , which makes it possible to link many newly found sets of activity to this actor .
+One such tool is the Manuscrypt malware , used exclusively by Lazarus in many recent attacks .
+The US-CERT released a warning in June about a new version of Manuscrypt they call TYPEFRAME .
+Possibly even more interesting is the relatively intense activity by Scarcruft , also known as Group123 and Reaper .
+Back in January , Scarcruft was found using a zero-day exploit , CVE-2018-4878 to target South Korea , a sign that the group ’s capabilities were increasing .
+In the last few months , the use of Android malware by this actor has been discovered , as well as a new campaign where it spreads a new backdoor we call POORWEB .
+Initially , there was suspicion that Scarcruft was also behind the CVE-2018-8174 zero day announced by Qihoo360 .
+We were later able to confirm the zero day was actually distributed by a different APT group , known as DarkHotel .
+The overlaps between Scarcruft and Darkhotel go back to 2016 when we discovered Operation Daybreak and Operation Erebus .
+In both cases , attacks leveraged the same hacked website to distribute exploits , one of which was a zero day .
+We were later able to separate these as follows : 
+Operation : Daybreak , Erebus .
+Exploit : CVE-2016-4171 , CVE-2016-4117 .
+Actor : DarkHotel , Scarcruft .
+DarkHotel ’s Operation Daybreak relied on spear-phishing emails predominantly targeting Chinese victims with a Flash Player zero day .
+Meanwhile , Scarcruft ’s Operation Erebus focused primarily on South Korea .
+Analysis of the CVE-2018-8174 exploit used by DarkHotel revealed that the attacker was using URLMoniker to invoke Internet Explorer through Microsoft Word , ignoring any default browser preferences on the victim ’s computer .
+We also observed some relatively quiet groups coming back with new activity .
+A noteworthy example is LuckyMouse ( also known as APT27 and Emissary Panda ) , which abused ISPs in Asia for waterhole attacks on high profile websites .
+We wrote about LuckyMouse targeting national data centers in June .
+Still , the most notable activity during this quarter is the VPNFilter campaign attributed by the FBI to the Sofacy and Sandworm ( Black Energy ) APT groups .
+The campaign targeted a large array of domestic networking hardware and storage solutions .
+It is even able to inject malware into traffic in order to infect computers behind the infected networking device .
+We have provided an analysis on the EXIF to C2 mechanism used by this malware .
+However , we observed how this provided yet another innovation for their arsenal , with the addition of new downloaders written in the Go programming language to distribute Zebrocy .
+we observed new suspected activity by the same actor ( we tentatively called them Hades ) in Europe .
+This time , it seems the targets are financial organizations in Russia , and biological and chemical threat prevention laboratories in Europe and Ukraine .
+One of the most interesting attacks we detected was an implant from Turla ( attributed to this actor with medium confidence ) that we call LightNeuron .
+This new artefact directly targets Exchange Servers and uses legitimate standard calls to intercept emails , exfiltrate data and even send mails on behalf of the victims .
+We believe this actor has been using this technique since maybe as early as 2014 , and that there is a version affecting Unix servers running Postfix and Sendmail .
+So far we have seen victims of this implant in the Middle East and Central Asia .
+One good example would be WhiteWhale , an actor that has been extremely quiet since 2016 .
+We detected a new campaign last April where the actor was distributing both the Taidoor and Yalink malware families .
+This activity was almost exclusively targeting Japanese entities .
+Kimsuky decided to take advantage of this theme to distribute its malware in a new campaign .
+A massive update to its arsenal in late 2017 and early 2018 was mobilized in a new wave of spear-phishing emails .
+We also discovered a new low-sophistication set of activity we call Perfanly , which we couldn´t attribute to any known actor .
+It has been targeting governmental entities in Malaysia and Indonesia since at least 2017 .
+It uses custom multistage droppers as well as freely available tools such as Metasploit .
+Between June and July , we observed a battery of attacks against various institutions in Kuwait .
+These attacks leverage Microsoft Office documents with macros , which drop a combination of VBS and Powershell scripts using DNS for command and control .

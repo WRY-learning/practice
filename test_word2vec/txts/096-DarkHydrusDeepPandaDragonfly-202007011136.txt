@@ -1,0 +1,17 @@
+Unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+DarkHydrus is a threat group that has targeted government agencies and educational institutions in the Middle East since at least 2016 .
+The group heavily leverages open-source tools and custom payloads for carrying out attacks .
+Deep Panda :  Shell Crew , WebMasters , KungFu Kittens , PinkPanther , Black Vine .
+Deep Panda is a suspected Chinese threat group known to target many industries , including government , defense , financial , and telecommunications .
+The intrusion into healthcare company Anthem has been attributed to Deep Panda .
+This group is also known as Shell Crew , WebMasters , KungFu Kittens , and PinkPanther .
+Deep Panda also appears to be known as Black Vine based on the attribution of both group names to the Anthem intrusion .
+Some analysts track Deep Panda and APT19 as the same group , but it is unclear from open source information if the groups are the same .
+Dragonfly :  Energetic Bear .
+Dragonfly is a cyber espionage group that has been active since at least 2011 .
+They initially targeted defense and aviation companies but shifted to focus on the energy sector in early 2013 .
+They have also targeted companies related to industrial control systems .
+A similar group emerged in 2015 and was identified by Symantec as Dragonfly 2.0 .
+There is debate over the extent of the overlap between Dragonfly and Dragonfly 2.0 , but there is sufficient evidence to lead to these being tracked as two separate groups .

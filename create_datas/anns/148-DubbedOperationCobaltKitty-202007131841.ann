@@ -1,0 +1,482 @@
+T1	threatActor_name 0 22	OPERATION COBALT KITTY
+T2	location 46 50	ASIA
+T4	threatActor_name 191 220	Dubbed Operation Cobalt Kitty
+T5	target_crowd 242 260	global corporation
+T6	location 270 274	Asia
+R1	attack Arg1:T4 Arg2:T5	
+R2	located Arg1:T5 Arg2:T6	
+T7	attack_goal 292 333	stealing proprietary business information
+R3	goal Arg1:T4 Arg2:T7	
+T9	target_crowd 366 397	company ’s top-level management
+T10	attack_activity 407 421	spear-phishing
+T11	target_crowd 525 541	senior directors
+T12	target_crowd 494 522	computers of vice presidents
+T13	target_crowd 546 596	other key personnel in the operational departments
+T14	threatActor_name 606 628	Operation Cobalt Kitty
+T15	person 635 644	attackers
+T16	target_crowd 667 685	40 PCs and servers
+R10	attack Arg1:T15 Arg2:T16	
+T17	target_crowd 702 719	domain controller
+T18	target_crowd 722 734	file servers
+T19	target_crowd 737 759	Web application server
+T20	target_crowd 764 779	database server
+R11	part_of Arg1:T17 Arg2:T16	
+R12	part_of Arg1:T18 Arg2:T16	
+R13	part_of Arg1:T19 Arg2:T16	
+R14	part_of Arg1:T20 Arg2:T16	
+T21	person 913 922	attackers
+T22	security_team 975 985	Cybereason
+R15	attack Arg1:T21 Arg2:T22	
+T23	person 1005 1014	adversary
+T24	tool 1107 1140	tools , techniques and procedures
+R16	use Arg1:T23 Arg2:T24	
+T25	reference_word 1143 1147	TTPs
+R17	coreference Arg1:T25 Arg2:T24	
+T26	attack_goal 1169 1191	persist on the network
+R18	goal Arg1:T24 Arg2:T26	
+T27	target_crowd 1239 1247	payloads
+T28	target_crowd 1261 1268	domains
+T29	reference_word 1286 1300	this operation
+R20	attack Arg1:T29 Arg2:T28	
+R21	attack Arg1:T29 Arg2:T27	
+T30	reference_word 1310 1315	which
+R22	coreference Arg1:T30 Arg2:T27	
+R23	coreference Arg1:T30 Arg2:T27	
+T31	person 1436 1445	attackers
+T32	tool 1476 1500	publicly-available tools
+R24	use Arg1:T31 Arg2:T32	
+T33	reference_word 1512 1535	six undocumented custom
+T34	tool 1536 1547	built tools
+R25	coreference Arg1:T33 Arg2:T34	
+T35	reference_word 1550 1555	which
+R26	coreference Arg1:T35 Arg2:T34	
+R27	use Arg1:T31 Arg2:T34	
+T36	security_team 1556 1566	Cybereason
+T37	person 1588 1593	actor
+T38	reference_word 1621 1632	these tools
+R28	coreference Arg1:T38 Arg2:T32	
+R29	coreference Arg1:T38 Arg2:T34	
+T39	tool 1666 1681	DLL sideloading
+R30	use Arg1:T31 Arg2:T39	
+T40	company 1692 1701	Microsoft
+T41	company 1704 1710	Google
+T42	security_team 1715 1737	Kaspersky applications
+R31	attack Arg1:T39 Arg2:T40	
+R32	attack Arg1:T39 Arg2:T41	
+R33	attack Arg1:T39 Arg2:T42	
+T43	reference_word 1754 1758	they
+R34	coreference Arg1:T43 Arg2:T31	
+T45	company 1812 1829	Microsoft Outlook
+T46	attack_goal 1834 1861	command-and-control channel
+T47	attack_goal 1866 1883	data exfiltration
+T48	reference_word 1895 1904	the tools
+R39	coreference Arg1:T48 Arg2:T38	
+T49	threatActor_name 1972 1994	Operation Cobalt Kitty
+T50	security_team 1998 2008	Cybereason
+T51	threatActor_name 2066 2082	OceanLotus Group
+T52	threatActor_aliases 2112 2120	APT-C-00
+T53	threatActor_aliases 2123 2131	SeaLotus
+T54	threatActor_aliases 2136 2141	APT32
+R40	coreference Arg1:T52 Arg2:T51	
+R41	coreference Arg1:T53 Arg2:T51	
+R42	coreference Arg1:T54 Arg2:T51	
+T55	threatActor_name 2177 2199	Operation Cobalt Kitty
+T56	threatActor_name 2207 2223	OceanLotus Group
+T57	security_team 2297 2307	Cybereason
+T58	threatActor_name 2374 2390	OceanLotus Group
+T59	security_team 2601 2611	Cybereason
+T60	security_team 3128 3138	Cybereason
+T61	security_team 3459 3469	Cybereason
+T62	person 3535 3540	actor
+T64	tool 3678 3691	Cobalt Strike
+T65	tool 3694 3705	PowerSploit
+T66	tool 3710 3717	Nishang
+T67	attack_activity 3838 3852	spear-phishing
+T68	sub_activity 3908 3933	weaponized Word documents
+T69	reference_word 3936 3951	These documents
+R43	coreference Arg1:T69 Arg2:T68	
+T70	attack_goal 4080 4107	download secondary payloads
+T71	tool 4292 4295	VBS
+T72	sub_activity 4300 4324	PowerShell-based loaders
+T73	program_language 4347 4359	Visual Basic
+T74	sub_activity 4364 4382	PowerShell scripts
+T76	person 4473 4482	attackers
+T77	person 4329 4338	attackers
+T78	tool 4509 4527	Windows ’ registry
+T79	tool 4530 4538	services
+T80	tool 4543 4558	scheduled tasks
+R45	use Arg1:T76 Arg2:T78	
+R46	use Arg1:T76 Arg2:T79	
+R47	use Arg1:T76 Arg2:T80	
+T81	protocol 5021 5040	command-and-control
+T82	reference_word 5043 5046	C&C
+R48	coreference Arg1:T82 Arg2:T81	
+T83	protocol 5092 5095	C&C
+T84	protocol 5131 5134	C&C
+T85	sub_activity 5154 5172	PowerShell scripts
+T86	security_team 5393 5403	Cybereason
+T87	person 5447 5456	attackers
+T88	tool 5324 5344	Cobalt Strike Beacon
+T89	reference_word 5293 5298	whose
+T90	tool 5281 5290	shellcode
+R49	coreference Arg1:T89 Arg2:T90	
+T91	protocol 5354 5357	C&C
+T94	person 5797 5806	attackers
+T92	sub_activity 5526 5551	PowerShell infrastructure
+T96	tool 5886 5913	Windows Group Policy Object
+T97	reference_word 5916 5919	GPO
+R50	coreference Arg1:T97 Arg2:T96	
+T98	security_team 5926 5936	Cybereason
+T99	sub_activity 6028 6053	PowerShell infrastructure
+T100	person 6080 6089	attackers
+T101	attack_goal 6119 6139	maintain persistence
+T102	attack_goal 6144 6166	continue the operation
+R51	goal Arg1:T100 Arg2:T101	
+R52	goal Arg1:T100 Arg2:T102	
+T103	person 6323 6332	attackers
+T104	attack_goal 6395 6421	deploy on selected targets
+T106	security_team 6689 6698	Kaspersky
+T107	malware 6759 6767	Backdoor
+T108	OS_name 6768 6773	Win32
+T109	malware 6774 6779	Denis
+T110	person 6786 6795	attackers
+T111	attack_goal 6823 6842	remained undetected
+R55	goal Arg1:T110 Arg2:T111	
+T112	vulnerability_cve 7000 7013	DLL hijacking
+T113	vulnerability_cve 7091 7104	DLL hijacking
+T114	reference_word 7166 7180	This technique
+R56	coreference Arg1:T114 Arg2:T113	
+T115	person 7263 7272	attackers
+T116	attack_goal 7276 7291	load a fake DLL
+T117	attack_goal 7296 7322	execute its malicious code
+R57	goal Arg1:T115 Arg2:T116	
+R58	goal Arg1:T115 Arg2:T117	
+T118	person 7531 7540	attackers
+T120	sub_activity 7541 7607	bypassed application whitelisting and legitimate security software
+T121	attack_goal 7627 7683	continue their operations without raising any suspicions
+R59	goal Arg1:T120 Arg2:T121	
+R60	launch Arg1:T118 Arg2:T120	
+T122	protocol 7686 7689	DNS
+T123	protocol 7703 7705	C2
+T124	attack_goal 7730 7766	overcome network filtering solutions
+T125	person 7773 7782	attackers
+R61	goal Arg1:T125 Arg2:T124	
+T126	protocol 7808 7810	C2
+T127	sub_activity 7842 7855	DNS Tunneling
+T128	protocol 7872 7874	C2
+T129	protocol 7921 7924	DNS
+T130	person 7995 8004	attackers
+T131	attack_goal 7955 7988	DNS traffic would not be filtered
+R62	goal Arg1:T130 Arg2:T131	
+T132	attack_goal 8032 8079	communicate with Google and OpenDNS DNS servers
+R63	goal Arg1:T130 Arg2:T132	
+T133	company 8049 8055	Google
+T134	protocol 8068 8071	DNS
+T135	protocol 8172 8175	DNS
+T136	protocol 8269 8272	DNS
+T137	protocol 8287 8289	C2
+T138	company 8359 8365	Google
+T139	protocol 8369 8372	DNS
+T140	protocol 8428 8431	DNS
+T141	protocol 8840 8842	C2
+T142	protocol 8908 8910	C2
+T143	person 9793 9802	attackers
+T144	tool 9819 9827	Mimikatz
+T145	attack_goal 9874 9892	obtain credentials
+R64	use Arg1:T143 Arg2:T144	
+T146	protocol 9920 9924	NTLM
+T147	protocol 9936 9944	Kerberos
+T148	tool 9955 9963	Mimikatz
+T149	person 10075 10084	attackers
+T150	tool 10119 10127	Mimikatz
+T151	attack_goal 10202 10227	evade antivirus detection
+R65	goal Arg1:T144 Arg2:T145	
+T152	tool 10260 10268	Mimikatz
+T153	attack_goal 10359 10379	infect more machines
+T155	tool 10393 10415	Windows built-in tools
+T156	attack_goal 10427 10442	pass-the-ticket
+T157	attack_goal 10447 10468	pass-the-hash attacks
+R70	goal Arg1:T155 Arg2:T156	
+R71	goal Arg1:T155 Arg2:T157	
+T158	person 10535 10544	attackers
+T159	attack_goal 10614 10648	bypassing the security mitigations
+T160	sub_activity 10561 10604	scene and introduced new and improved tools
+R72	launch Arg1:T158 Arg2:T160	
+R73	goal Arg1:T160 Arg2:T159	
+T161	reference_word 10699 10722	These tools and methods
+R74	coreference Arg1:T161 Arg2:T160	
+T162	attack_goal 10746 10790	bypass the PowerShell execution restrictions
+T163	attack_goal 10795 10823	password dumping mitigations
+R75	goal Arg1:T161 Arg2:T162	
+R76	goal Arg1:T161 Arg2:T163	
+T164	security_team 10846 10856	Cybereason
+T165	person 10940 10949	attackers
+T166	attack_goal 11016 11052	spread their tools to other machines
+R77	goal Arg1:T165 Arg2:T166	
+T167	malware 11133 11138	Goopy
+T168	malware 11123 11128	Denis
+T169	tool 11443 11461	HookPasswordChange
+T171	reference_word 11570 11579	this tool
+R79	coreference Arg1:T171 Arg2:T169	
+T172	attack_goal 11602 11627	overcome a password reset
+R80	goal Arg1:T171 Arg2:T172	
+T173	person 11634 11643	attackers
+T174	person 11837 11846	attackers
+T175	reference_word 11865 11867	it
+T176	tool 11666 11703	Customized Windows Credentials Dumper
+R81	coreference Arg1:T175 Arg2:T176	
+R82	use Arg1:T174 Arg2:T175	
+T177	attack_goal 11871 11895	obtain Outlook passwords
+R83	goal Arg1:T175 Arg2:T177	
+T181	tool 11898 11935	Customized Outlook Credentials Dumper
+T182	tool 11986 11994	Mimikatz
+T178	tool 12427 12440	Cobalt Strike
+T179	person 12338 12347	attackers
+T180	sub_activity 12370 12393	fileless infrastructure
+R84	use Arg1:T179 Arg2:T180	
+R85	use Arg1:T179 Arg2:T178	
+T183	reference_word 12459 12463	This
+R86	coreference Arg1:T183 Arg2:T178	
+T184	person 12487 12496	attackers
+T185	threatActor_name 12635 12657	Operation Cobalt Kitty
+T186	location 12728 12732	Asia
+T187	threatActor_name 12760 12776	OceanLotus Group
+T188	reference_word 12795 12803	this APT
+R87	coreference Arg1:T188 Arg2:T185	
+T189	person 12844 12853	attackers
+T190	reference_word 12861 12865	They
+R88	coreference Arg1:T190 Arg2:T189	
+T191	attack_goal 12928 12950	remain under the radar
+T192	sub_activity 12879 12924	changed techniques and upgraded their arsenal
+R89	launch Arg1:T190 Arg2:T192	
+R90	goal Arg1:T192 Arg2:T191	
+T193	reference_word 12963 12967	they
+R91	coreference Arg1:T193 Arg2:T190	
+T194	threatActor_name 13078 13100	Operation Cobalt Kitty
+T195	security_team 13103 13113	Cybereason
+T197	malware 13219 13224	Goopy
+T196	protocol 13235 13239	HTTP
+T198	protocol 13244 13257	DNS Tunneling
+T199	attack_goal 13262 13278	C2 communication
+R92	use Arg1:T197 Arg2:T196	
+R93	use Arg1:T197 Arg2:T198	
+R94	goal Arg1:T196 Arg2:T199	
+R95	goal Arg1:T196 Arg2:T199	
+T201	IP 8347 8354	8.8.8.8
+T202	malware 2346 2354	Backdoor
+T203	OS_name 2355 2360	Win32
+T204	reference_word 1933 1957	indicators of compromise
+T205	tool 1926 1930	IOCs
+R96	coreference Arg1:T204 Arg2:T205	
+T206	malware 9129 9136	Outlook
+T209	person 8925 8934	attackers
+T210	attack_goal 9004 9020	execute commands
+T211	reference_word 9030 9035	their
+R99	coreference Arg1:T211 Arg2:T209	
+T212	attack_goal 9023 9041	deploy their tools
+T213	attack_goal 9046 9065	steal valuable data
+T214	string 9310 9316	$$cpte
+T215	string 9325 9332	$$ecpte
+T216	malware 9232 9247	malicious macro
+T217	sub_activity 9248 9281	scans the victim ’s Outlook inbox
+T218	sub_activity 9286 9307	looks for the strings
+R102	launch Arg1:T216 Arg2:T217	
+R103	launch Arg1:T216 Arg2:T218	
+T219	malware 13313 13320	Outlook
+T200	attack_goal 13325 13341	C2 communication
+T220	attack_goal 13346 13363	data exfiltration
+R104	goal Arg1:T219 Arg2:T200	
+R105	goal Arg1:T219 Arg2:T220	
+T222	company 13443 13452	Microsoft
+T223	company 13455 13461	Google
+T224	security_team 13466 13475	Kaspersky
+T225	malware 9346 9351	macro
+T227	tool 9364 9367	CMD
+T226	sub_activity 9357 9373	open a CMD shell
+T228	sub_activity 9384 9422	execute whatever instruction / command
+T229	malware 9455 9460	macro
+T230	malware 9533 9538	macro
+T232	security_team 13572 13582	Cybereason
+T233	malware 13615 13620	Denis
+T234	malware 2801 2823	Cobalt Kitty Lifecycle
+T235	malware 2850 2882	Cobalt Kitty Attacker ’s Arsenal
+T236	malware 2926 2988	Cobalt Kitty Threat Actor Profile and Indicators of Compromise
+T237	malware 2989 3014	HIGH-LEVEL ATTACK OUTLINE
+T239	tool 4725 4728	VBS
+T238	OS_name 4700 4707	Windows
+T242	OS_name 4753 4760	Windows
+T243	threatActor_name 13677 13693	OceanLotus Group
+T244	location 13889 13893	Asia
+T245	reference_word 13841 13875	one of the most fascinating groups
+R106	coreference Arg1:T245 Arg2:T243	
+T248	security_team 14211 14221	Cybereason
+T249	person 14248 14257	attackers
+T250	sub_activity 14268 14292	invested significant tim
+T251	sub_activity 14308 14340	keeping the operation undetected
+T252	attack_goal 14355 14380	evade antivirus detection
+T253	malware 14429 14433	IOCs
+T254	threatActor_name 14446 14468	Operation Cobalt Kitty
+R107	use Arg1:T254 Arg2:T253	
+T255	attack_goal 14480 14498	emerge in the wild
+R108	goal Arg1:T253 Arg2:T255	
+T257	malware 14615 14619	IOCs
+T260	threatActor_name 14883 14905	Operation Cobalt Kitty
+T261	threatActor_name 14913 14929	OceanLotus Group
+T259	threatActor_name 15033 15049	OceanLotus Group
+T262	threatActor_name 15052 15074	Operation Cobalt Kitty
+T263	company 15496 15503	InfoSec
+T264	threatActor_name 15608 15624	OceanLotus Group
+T3	person 347 352	actor
+R4	attack Arg1:T3 Arg2:T13	
+R5	attack Arg1:T3 Arg2:T9	
+R6	launch Arg1:T3 Arg2:T10	
+R7	attack Arg1:T3 Arg2:T12	
+R8	attack Arg1:T3 Arg2:T11	
+T8	threatActor_name 70 86	OCEANLOTUS GROUP
+T265	security_team 848 875	OPERATION SOFT CELL WEBINAR
+R9	coreference Arg1:T29 Arg2:T26	
+R19	coreference Arg1:T35 Arg2:T32	
+T266	person 2361 2366	Denis
+T44	sub_activity 1771 1798	novel and stealthy backdoor
+T268	protocol 8339 8341	IP
+T270	protocol 11277 11279	C2
+R38	launch Arg1:T43 Arg2:T44	
+R35	attack Arg1:T44 Arg2:T45	
+R36	goal Arg1:T44 Arg2:T46	
+R37	goal Arg1:T44 Arg2:T47	
+T273	person 8614 8623	attackers
+T274	company 8735 8744	Microsoft
+T275	person 9673 9682	attackers
+T63	sub_activity 3595 3631	using customized PowerShell payloads
+T267	sub_activity 3541 3592	operated a fileless PowerShell-based infrastructure
+R110	launch Arg1:T62 Arg2:T267	
+R111	launch Arg1:T62 Arg2:T63	
+R112	use Arg1:T62 Arg2:T64	
+R113	use Arg1:T62 Arg2:T65	
+R114	use Arg1:T62 Arg2:T66	
+T276	reference_word 4059 4064	whose
+R115	coreference Arg1:T276 Arg2:T69	
+R44	goal Arg1:T276 Arg2:T70	
+T277	tool 4117 4137	Cobalt Strike Beacon
+T278	tool 4300 4310	PowerShell
+T279	tool 3561 3571	PowerShell
+T280	tool 3612 3622	PowerShell
+T281	tool 4364 4374	PowerShell
+T75	attack_goal 4404 4433	created under the ProgramData
+R116	use Arg1:T77 Arg2:T73	
+R117	use Arg1:T77 Arg2:T74	
+R118	goal Arg1:T73 Arg2:T75	
+R119	goal Arg1:T74 Arg2:T75	
+T282	OS_name 4509 4516	Windows
+T241	tool 4700 4718	Windows ’ Registry
+T240	tool 4753 4770	Windows ’ Wscript
+T283	tool 4874 4884	PowerShell
+T284	tool 4944 4954	PowerShell
+T285	tool 4968 4988	Cobalt Strike Beacon
+T286	tool 5154 5164	PowerShell
+T287	tool 5213 5223	Metasploit
+T288	tool 5228 5241	Cobalt Strike
+T289	attack_goal 5313 5344	retrieve a Cobalt Strike Beacon
+R120	goal Arg1:T89 Arg2:T289	
+T290	sub_activity 5468 5489	change their approach
+T291	tool 5526 5536	PowerShell
+R121	launch Arg1:T87 Arg2:T290	
+R122	launch Arg1:T87 Arg2:T92	
+T93	tool 5832 5842	PowerShell
+T95	sub_activity 5819 5857	replaced the PowerShell infrastructure
+R123	launch Arg1:T94 Arg2:T95	
+T292	tool 6028 6038	PowerShell
+T293	sub_activity 6333 6371	introduced two sophisticated backdoors
+R53	launch Arg1:T103 Arg2:T293	
+R54	goal Arg1:T293 Arg2:T104	
+R124	launch Arg1:T100 Arg2:T99	
+R125	find Arg1:T106 Arg2:T107	
+R126	find Arg1:T106 Arg2:T108	
+R127	find Arg1:T106 Arg2:T109	
+T105	person 6946 6953	authors
+T271	attack_goal 6909 6931	avoid being discovered
+R128	goal Arg1:T105 Arg2:T271	
+T119	sub_activity 7783 7831	implemented a stealthier C2 communication method
+R129	launch Arg1:T125 Arg2:T119	
+R130	launch Arg1:T125 Arg2:T127	
+T272	protocol 7955 7958	DNS
+T294	company 8060 8067	OpenDNS
+T295	tool 8269 8282	DNS Tunneling
+T296	person 8484 8493	attackers
+T297	sub_activity 8494 8550	harvested credentials stored on the compromised machines
+T298	sub_activity 8555 8581	performed lateral movement
+T299	sub_activity 8586 8607	infected new machines
+R131	launch Arg1:T296 Arg2:T297	
+R132	launch Arg1:T296 Arg2:T298	
+R133	launch Arg1:T296 Arg2:T299	
+T300	sub_activity 8629 8674	introduced a very rare and stealthy technique
+T301	attack_goal 8678 8708	communicate with their servers
+T302	attack_goal 8713 8752	exfiltrate data using Microsoft Outlook
+R134	launch Arg1:T273 Arg2:T300	
+R135	goal Arg1:T300 Arg2:T301	
+R136	goal Arg1:T300 Arg2:T302	
+T303	malware 8745 8752	Outlook
+T304	person 8806 8815	attackers
+T305	attack_goal 8782 8799	remain undetected
+T306	sub_activity 8816 8850	devised a very stealthy C2 channel
+R137	launch Arg1:T304 Arg2:T306	
+R138	goal Arg1:T306 Arg2:T305	
+T307	sub_activity 8935 8982	installed a backdoor macro in Microsoft Outlook
+R97	launch Arg1:T209 Arg2:T307	
+R98	goal Arg1:T307 Arg2:T210	
+R100	goal Arg1:T307 Arg2:T212	
+R101	goal Arg1:T307 Arg2:T213	
+T207	company 8965 8974	Microsoft
+T308	malware 8975 8982	Outlook
+T208	malware 9268 9275	Outlook
+R139	launch Arg1:T225 Arg2:T226	
+R140	launch Arg1:T225 Arg2:T228	
+T231	sub_activity 9461 9491	deletes the message from inbox
+T309	attack_goal 9495 9526	ensure minimal risk of exposure
+R141	launch Arg1:T229 Arg2:T231	
+R142	goal Arg1:T231 Arg2:T309	
+T310	tool 9581 9594	Deleted Items
+T311	attack_goal 9607 9641	find the attacker ’s email address
+T312	attack_goal 9646 9665	sends the data back
+R143	use Arg1:T230 Arg2:T310	
+R144	goal Arg1:T310 Arg2:T311	
+R145	goal Arg1:T310 Arg2:T312	
+T313	person 9616 9624	attacker
+T314	malware 9708 9713	macro
+T315	sub_activity 9719 9761	delete any evidence of the emails received
+T316	sub_activity 9765 9786	sent by the attackers
+R146	launch Arg1:T314 Arg2:T315	
+R147	launch Arg1:T314 Arg2:T316	
+T317	sub_activity 10085 10136	used over 10 different customized Mimikatz payloads
+R66	launch Arg1:T149 Arg2:T317	
+R67	goal Arg1:T317 Arg2:T151	
+R68	goal Arg1:T152 Arg2:T153	
+T269	tool 11225 11256	PowerShell Cobalt Strike Beacon
+T154	tool 11149 11183	PowerShell Restriction Bypass Tool
+T318	tool 11287 11308	PowerShell Obfuscator
+T319	tool 11323 11333	PowerShell
+T320	person 11407 11422	Daniel Bohannon
+T170	sub_activity 11644 11663	modified their tool
+R69	launch Arg1:T173 Arg2:T170	
+T321	OS_name 11677 11684	Windows
+T322	tool 11708 11718	PowerShell
+T323	tool 11790 11800	PowerShell
+T324	malware 11878 11885	Outlook
+T325	malware 11956 11963	Outlook
+T326	tool 11997 12007	PowerShell
+T327	tool 12012 12018	Binary
+T328	tool 12238 12248	PowerShell
+T329	sub_activity 12497 12525	preferred to use known tools
+R78	launch Arg1:T184 Arg2:T329	
+T330	threatActor_name 12706 12724	global corporation
+R148	attack Arg1:T185 Arg2:T330	
+R149	located Arg1:T330 Arg2:T186	
+T331	threatActor_name 13154 13170	OceanLotus Group
+T332	protocol 13262 13264	C2
+T333	protocol 13325 13327	C2
+T221	tool 13387 13390	DLL
+R150	find Arg1:T232 Arg2:T233	
+R151	launch Arg1:T249 Arg2:T250	
+R152	launch Arg1:T249 Arg2:T251	
+R153	goal Arg1:T250 Arg2:T252	
+R154	goal Arg1:T251 Arg2:T252	

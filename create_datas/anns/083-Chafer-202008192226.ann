@@ -1,0 +1,229 @@
+T1	threatActor_name 0 6	Chafer
+T2	malware 12 18	Remexi
+T3	attack_goal 30 75	spy on Iran-based foreign diplomatic entities
+R1	use Arg1:T1 Arg2:T2	
+R2	goal Arg1:T2 Arg2:T3	
+T4	time 195 209	autumn of 2018
+T5	attack_activity 272 296	cyber-espionage campaign
+T6	location 363 367	Iran
+T7	target_crowd 326 353	foreign diplomatic entities
+R3	located Arg1:T7 Arg2:T6	
+R4	attack Arg1:T5 Arg2:T7	
+R5	occur_time Arg1:T5 Arg2:T4	
+T8	person 374 383	attackers
+T9	malware 418 424	Remexi
+R6	use Arg1:T8 Arg2:T9	
+T10	attack_activity 478 503	cyber-espionage operation
+R7	launch Arg1:T8 Arg2:T10	
+T12	threatActor_name 588 594	Chafer
+T13	security_team 573 581	Symantec
+R8	find Arg1:T13 Arg2:T12	
+T14	reference_word 597 608	The malware
+T15	tool 677 684	cookies
+T16	person 729 738	attackers
+T17	tool 755 777	Microsoft technologies
+R9	use Arg1:T16 Arg2:T17	
+T18	malware 820 826	Trojan
+T19	tool 841 858	Windows utilities
+T20	tool 864 913	Microsoft Background Intelligent Transfer Service
+T21	tool 916 920	BITS
+R10	coreference Arg1:T21 Arg2:T20	
+R11	part_of Arg1:T20 Arg2:T19	
+R12	use Arg1:T18 Arg2:T19	
+T22	tool 983 985	C2
+T24	protocol 1048 1052	HTTP
+T25	tool 998 1001	IIS
+R13	use Arg1:T22 Arg2:T25	
+T23	malware 1064 1070	Remexi
+T26	program_language 1090 1112	C programming language
+T27	tool 1117 1129	GCC compiler
+T28	OS_name 1133 1140	Windows
+T29	tool 1148 1153	MinGW
+R14	use Arg1:T23 Arg2:T26	
+R15	use Arg1:T23 Arg2:T27	
+R16	use Arg1:T23 Arg2:T29	
+T30	tool 1194 1208	Qt Creator IDE
+T31	OS_name 1214 1221	Windows
+T32	reference_word 1236 1247	The malware
+T33	encryption_algo 1366 1369	XOR
+T34	encryption_algo 1374 1377	RC4
+R17	use Arg1:T32 Arg2:T33	
+R18	use Arg1:T32 Arg2:T34	
+T35	string 1493 1501	salamati
+T36	security_team 1554 1567	Kaspersky Lab
+T37	malware 1624 1643	Trojan.Win32.Remexi
+T38	malware 1648 1666	Trojan.Win32.Agent
+T39	time 1773 1786	November 2018
+T40	reference_word 1811 1824	this campaign
+T41	malware 1854 1860	Remexi
+R19	use Arg1:T40 Arg2:T41	
+T42	security_team 1892 1900	Symantec
+R20	find Arg1:T42 Arg2:T41	
+T43	time 1909 1913	2015
+R21	release_time Arg1:T42 Arg2:T43	
+T44	time 1962 1972	March 2018
+T45	tool 1995 2007	GCC compiler
+T46	person 1979 1989	developers
+R22	use Arg1:T46 Arg2:T45	
+T47	tool 2026 2031	MinGW
+T48	OS_name 2011 2018	Windows
+R23	use Arg1:T46 Arg2:T47	
+T49	sample_name 2146 2161	operation_reg.c
+T50	sample_name 2168 2184	thread_command.c
+T51	sample_name 2193 2208	thread_upload.c
+T52	tool 2339 2341	C2
+T53	reference_word 2250 2261	the malware
+R24	use Arg1:T53 Arg2:T52	
+T54	tool 2408 2410	C2
+T55	malware 2439 2445	Remexi
+T56	tool 2455 2504	Microsoft Background Intelligent Transfer Service
+R25	use Arg1:T55 Arg2:T56	
+T57	tool 2507 2511	BITS
+R26	coreference Arg1:T57 Arg2:T56	
+T58	tool 2548 2550	C2
+T59	protocol 2556 2560	HTTP
+R27	use Arg1:T58 Arg2:T59	
+R28	use Arg1:T55 Arg2:T58	
+T60	malware 2646 2652	Remexi
+T61	tool 2825 2838	AutoIt script
+T63	reference_word 2890 2901	the malware
+T64	malware 2780 2786	Remexi
+R29	use Arg1:T64 Arg2:T61	
+T65	protocol 2925 2928	FTP
+T66	malware 2904 2916	This dropper
+R30	use Arg1:T66 Arg2:T65	
+T67	protocol 2981 2984	FTP
+T68	malware 3050 3056	Remexi
+T69	attack_goal 3090 3107	gather keystrokes
+T70	attack_goal 3110 3126	take screenshots
+T71	attack_goal 3188 3205	steal credentials
+T72	attack_goal 3208 3238	logons and the browser history
+T73	attack_goal 3245 3268	execute remote commands
+R31	goal Arg1:T68 Arg2:T69	
+R32	goal Arg1:T68 Arg2:T70	
+R33	goal Arg1:T68 Arg2:T73	
+R34	goal Arg1:T68 Arg2:T72	
+R35	goal Arg1:T68 Arg2:T71	
+T74	encryption_algo 3294 3297	XOR
+T75	encryption_algo 3345 3348	RC4
+T76	malware 3412 3418	Remexi
+T77	malware 3665 3671	Remexi
+T78	tool 3710 3729	Microsoft utilities
+R36	use Arg1:T77 Arg2:T78	
+T79	OS_name 3906 3913	Windows
+T80	OS_name 3928 3930	XP
+R37	part_of Arg1:T80 Arg2:T79	
+T81	sample_name 3945 3955	events.exe
+T82	sample_name 3971 3981	XPTask.vbs
+R38	use Arg1:T81 Arg2:T82	
+T85	tool 4484 4486	C2
+T86	reference_word 4665 4676	the malware
+T87	encryption_algo 4682 4685	XOR
+R39	use Arg1:T86 Arg2:T87	
+T88	encryption_algo 4785 4788	RC4
+T89	tool 4819 4839	Windows 32 CryptoAPI
+T90	encryption_algo 4870 4878	MD5 hash
+T91	string 4946 4954	salamati
+T92	reference_word 5207 5218	the malware
+T93	sample_name 5640 5650	events.exe
+T94	sha2 5653 5717	b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31
+T95	md5 5718 5750	c981273c32b581de824e1fd66a19a281
+T96	tool 5751 5763	GCC compiler
+T97	tool 5767 5772	MinGW
+T98	time 5817 5821	1970
+R40	part_of Arg1:T94 Arg2:T93	
+R41	part_of Arg1:T95 Arg2:T93	
+R42	use Arg1:T93 Arg2:T96	
+R43	use Arg1:T93 Arg2:T97	
+T99	threatActor_name 8606 8612	Chafer
+T100	threatActor_name 8562 8568	Chafer
+T101	threatActor_name 8518 8524	Chafer
+T102	threatActor_name 8474 8480	Chafer
+T103	threatActor_name 8430 8436	Chafer
+T104	threatActor_name 8386 8392	Chafer
+T105	threatActor_name 8342 8348	Chafer
+T106	threatActor_name 8298 8304	Chafer
+T107	IP_evil 8615 8629	108.61.189.174
+R44	part_of Arg1:T107 Arg2:T99	
+T108	md5 8307 8339	028515d12e9d59d272a2538045d1f636
+T109	md5 8351 8383	03055149340b7a1fd218006c98b30482
+T110	md5 8395 8427	25469ddaeff0dd3edb0f39bbe1dcdc46
+T111	md5 8439 8471	41b2339950d50cf678c0e5b34e68f537
+T112	md5 8571 8603	1FF40E79D673461CD33BD8B68F8BB5B8
+T113	md5 8527 8559	d3a2b41b1cd953d254c0fc88071e5027
+T114	md5 8483 8515	c6721344af76403e9a7d816502dca1c8
+R45	part_of Arg1:T108 Arg2:T106	
+R46	part_of Arg1:T109 Arg2:T105	
+R47	part_of Arg1:T110 Arg2:T104	
+R48	part_of Arg1:T111 Arg2:T103	
+R49	part_of Arg1:T114 Arg2:T102	
+R50	part_of Arg1:T113 Arg2:T101	
+R51	part_of Arg1:T112 Arg2:T100	
+T115	reference_word 5884 5895	the malware
+T116	tool 5952 5978	Microsoft standard utility
+R52	use Arg1:T115 Arg2:T116	
+T117	sample_name 5934 5941	HCK.cab
+T118	sample_name 6038 6048	config.ini
+T119	encryption_algo 6079 6082	XOR
+T120	sample_function 6159 6169	handlekeys
+T121	sample_function 6176 6189	MouseHookProc
+T122	sample_name 6437 6449	Splitter.exe
+T123	sha2 6452 6516	a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff
+T124	md5 6517 6549	1ff40e79d673461cd33bd8b68f8bb5b8
+T125	time 6550 6577	2017.08.06 11:32:36 ( GMT )
+R53	part_of Arg1:T123 Arg2:T122	
+R54	part_of Arg1:T124 Arg2:T122	
+R55	part_of Arg1:T125 Arg2:T122	
+T126	tool 6683 6705	dynamic linked library
+T127	sample_name 6815 6825	events.exe
+T128	person 6754 6764	developers
+R56	use Arg1:T128 Arg2:T127	
+T129	sample_name 6891 6904	bitsadmin.exe
+T130	tool 6919 6923	BITS
+T131	OS_name 6952 6962	Windows XP
+T132	OS_name 6981 6991	Windows 10
+R57	part_of Arg1:T130 Arg2:T131	
+R58	part_of Arg1:T130 Arg2:T132	
+T133	tool 7161 7163	C2
+T134	target_crowd 7191 7205	users targeted
+T135	malware 7229 7235	Remexi
+R59	attack Arg1:T135 Arg2:T134	
+T136	location 7251 7258	Iranian
+R60	located Arg1:T134 Arg2:T136	
+T137	malware 7356 7362	Remexi
+T138	security_team 7426 7434	Symantec
+T139	threatActor_name 7416 7422	Chafer
+R61	use Arg1:T139 Arg2:T137	
+R62	find Arg1:T138 Arg2:T139	
+T140	string 7489 7497	salamati
+T141	string 7694 7709	Mohamadreza New
+T142	government 7734 7737	FBI
+T143	threatActor_name 7893 7909	Chafer APT group
+T144	time 7943 7947	2015
+R63	first_found_time Arg1:T143 Arg2:T144	
+T145	tool 8002 8005	C&C
+T146	threatActor_name 8092 8098	Chafer
+T147	location 8135 8139	Iran
+R64	attack Arg1:T146 Arg2:T147	
+T148	location 8206 8217	Middle East
+R65	attack Arg1:T146 Arg2:T148	
+R66	use Arg1:T55 Arg2:T54	
+T83	sub_activity 613 634	exfiltrate keystrokes
+T84	sub_activity 637 648	screenshots
+T149	sub_activity 651 671	browser-related data
+T150	sub_activity 699 708	decrypted
+R67	part_of Arg1:T83 Arg2:T14	
+R68	part_of Arg1:T84 Arg2:T14	
+R69	part_of Arg1:T149 Arg2:T14	
+R70	part_of Arg1:T150 Arg2:T14	
+R71	part_of Arg1:T98 Arg2:T93	
+R72	use Arg1:T143 Arg2:T145	
+R73	located Arg1:T30 Arg2:T31	
+R74	located Arg1:T27 Arg2:T28	
+R75	located Arg1:T45 Arg2:T48	
+T62	reference_word 506 518	This malware
+T151	reference_word 1584 1595	the malware
+R76	coreference Arg1:T62 Arg2:T9	
+R77	coreference Arg1:T14 Arg2:T9	
+R78	coreference Arg1:T32 Arg2:T23	
+R79	coreference Arg1:T151 Arg2:T23	

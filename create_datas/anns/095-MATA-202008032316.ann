@@ -1,0 +1,371 @@
+T1	md5 12006 12038	f364b46d8aafff67271d350b8271505a
+T2	md5 12053 12085	85dcea03016df4880cebee9a70de0c02
+T3	md5 12100 12132	1060702fe4e670eda8c0433c5966feee
+T4	md5 12147 12179	7b068dfbea310962361abf4723332b3a
+T5	md5 12194 12226	8e665562b9e187585a3f32923cc1f889
+T6	md5 12241 12273	6cd06403f36ad20a3492060c9dc14d80
+T7	md5 12288 12320	71d8b4c4411f7ffa89919a3251e6e5cb
+T8	md5 12335 12367	a7bda9b5c579254114fab05ec751918c
+T9	md5 12382 12414	e58cfbc6e0602681ff1841afadad4cc6
+T10	md5 12429 12461	7e4e49d74b59cc9cc1471e33e50475d3
+T11	md5 12476 12508	a93d1d5c2cb9c728fda3a5beaf0a0ffc
+T12	md5 13040 13072	fea3a39f97c00a6c8a589ff48bcc5a8c
+T13	md5 12852 12884	1e175231206cd7f80de4f6d86399c079
+T14	md5 12711 12743	b5d85cfaece7da5ed20d8eb2c9fa477c
+T15	md5 12570 12602	7ead1fbba01a76467d63c4a216cf2902
+T16	md5 13228 13260	ca250f3c7a3098964a89d879333ac7c8
+T17	md5 13181 13213	a64b3278cc8f8b75e3c86b6a1faa6686
+T18	md5 13134 13166	582b9801698c0c1614dbbae73c409efb
+T19	md5 13087 13119	2cd1f7f17153880fd80eba65b827d344
+T20	md5 12946 12978	ab2a98d3564c6bf656b8347681ecc2be
+T21	md5 12899 12931	65632998063ff116417b04b65fdebdfb
+T22	md5 12993 13025	e3dee2d65512b99a362a1dbf6726ba9c
+T23	md5 12758 12790	6145fa69a6e42a0bf6a8f7c12005636b
+T24	md5 12805 12837	2b8ff2a971555390b37f75cb07ae84bd
+T25	md5 12664 12696	bf2765175d6fce7069cdb164603bd7dc
+T26	md5 12617 12649	7d80175ea344b1c849ead7ca5a82ac94
+T27	md5 12523 12555	455997E42E20C8256A494FA5556F7333
+T28	md5 13275 13307	ed5458de272171feee479c355ab4a9f3
+T29	md5 13322 13354	f0e87707fd0462162e1aecb6b4a53a89
+T30	md5 13369 13401	f1ca9c730c8b5169fe095d385bac77e7
+T31	md5 13416 13448	f50a0cd229b7bf57fcbd67ccfa8a5147
+T32	md5 13463 13495	bea49839390e4f1eb3cb38d0fcaf897e
+T33	md5 13557 13589	6a066cf853fe51e3398ef773d016a4a8
+T34	md5 13604 13636	228998f29864603fd4966cadd0be77fc
+T35	md5 13510 13542	8910bdaaa6d3d40e9f60523d3a34f914
+T36	md5 13651 13683	da50a7a05abffb806f4a60c461521f41
+T37	md5 13698 13730	ec05817e19039c2f6cc2c021e2ea0016
+T38	IP_evil 13745 13757	104.232.71.7
+T39	IP_evil 14071 14084	198.180.198.6
+T40	IP_evil 13940 13953	172.93.184.62
+T41	IP_evil 14037 14052	192.210.239.122
+T42	IP_evil 14135 14149	216.244.71.233
+T43	IP_evil 14103 14116	209.90.234.34
+T44	IP_evil 13875 13889	111.90.148.132
+T45	IP_evil 13842 13856	111.90.146.105
+T46	IP_evil 13972 13986	172.93.201.219
+T47	IP_evil 14005 14018	185.62.58.207
+T48	IP_evil 13776 13791	107.172.197.175
+T49	IP_evil 13810 13823	108.170.31.81
+T50	IP_evil 13908 13921	172.81.132.41
+T51	IP_evil 14168 14181	23.227.199.53
+T52	IP_evil 14200 14213	23.227.199.69
+T53	IP_evil 14232 14245	23.254.119.12
+T54	IP_evil 14264 14277	67.43.239.146
+T55	IP_evil 14296 14309	68.168.123.86
+T56	malware 12605 12609	MATA
+T57	malware 12276 12280	MATA
+T58	malware 12229 12233	MATA
+T59	malware 12699 12703	MATA
+T60	malware 12464 12468	MATA
+T61	malware 12746 12750	MATA
+T62	malware 12652 12656	MATA
+T63	malware 12793 12797	MATA
+T64	malware 12840 12844	MATA
+T65	malware 12887 12891	MATA
+T66	malware 12934 12938	MATA
+T67	malware 13075 13079	MATA
+T68	malware 13028 13032	MATA
+T69	malware 12981 12985	MATA
+T70	malware 13122 13126	MATA
+T71	malware 12558 12562	MATA
+T72	malware 12511 12515	MATA
+T73	malware 12323 12327	MATA
+T74	malware 12370 12374	MATA
+T75	malware 12417 12421	MATA
+T76	malware 11994 11998	MATA
+T77	malware 12041 12045	MATA
+T78	malware 12088 12092	MATA
+T79	malware 12135 12139	MATA
+T80	malware 12182 12186	MATA
+T81	malware 13686 13690	MATA
+T82	malware 13498 13502	MATA
+T83	malware 13451 13455	MATA
+T84	malware 13404 13408	MATA
+T85	malware 13357 13361	MATA
+T86	malware 13310 13314	MATA
+T87	malware 13263 13267	MATA
+T88	malware 13216 13220	MATA
+T89	malware 13169 13173	MATA
+T90	malware 13639 13643	MATA
+T91	malware 13592 13596	MATA
+T92	malware 13545 13549	MATA
+R1	part_of Arg1:T37 Arg2:T81	
+R2	part_of Arg1:T36 Arg2:T90	
+R3	part_of Arg1:T34 Arg2:T91	
+R4	part_of Arg1:T33 Arg2:T92	
+R5	part_of Arg1:T35 Arg2:T82	
+R6	part_of Arg1:T32 Arg2:T83	
+R7	part_of Arg1:T31 Arg2:T84	
+R8	part_of Arg1:T30 Arg2:T85	
+R9	part_of Arg1:T29 Arg2:T86	
+R10	part_of Arg1:T28 Arg2:T87	
+R11	part_of Arg1:T1 Arg2:T76	
+R12	part_of Arg1:T7 Arg2:T57	
+R13	part_of Arg1:T4 Arg2:T79	
+R14	part_of Arg1:T3 Arg2:T78	
+R15	part_of Arg1:T2 Arg2:T77	
+R16	part_of Arg1:T8 Arg2:T73	
+R17	part_of Arg1:T9 Arg2:T74	
+R18	part_of Arg1:T10 Arg2:T75	
+R19	part_of Arg1:T5 Arg2:T80	
+R20	part_of Arg1:T6 Arg2:T58	
+R21	part_of Arg1:T11 Arg2:T60	
+R22	part_of Arg1:T27 Arg2:T72	
+R23	part_of Arg1:T15 Arg2:T71	
+R24	part_of Arg1:T26 Arg2:T56	
+R25	part_of Arg1:T25 Arg2:T62	
+R26	part_of Arg1:T14 Arg2:T59	
+R27	part_of Arg1:T23 Arg2:T61	
+R28	part_of Arg1:T13 Arg2:T64	
+R29	part_of Arg1:T24 Arg2:T63	
+R30	part_of Arg1:T19 Arg2:T67	
+R31	part_of Arg1:T22 Arg2:T69	
+R32	part_of Arg1:T20 Arg2:T66	
+R33	part_of Arg1:T21 Arg2:T65	
+T93	malware 13733 13737	MATA
+T94	malware 13928 13932	MATA
+T95	malware 14025 14029	MATA
+T96	malware 13960 13964	MATA
+T97	malware 13896 13900	MATA
+T98	malware 13830 13834	MATA
+T99	malware 13798 13802	MATA
+T100	malware 13764 13768	MATA
+T101	malware 13863 13867	MATA
+T102	malware 13993 13997	MATA
+T103	malware 14220 14224	MATA
+T104	malware 14091 14095	MATA
+T105	malware 14059 14063	MATA
+T106	malware 14156 14160	MATA
+T107	malware 14123 14127	MATA
+T108	malware 14188 14192	MATA
+T109	malware 14252 14256	MATA
+T110	malware 14284 14288	MATA
+R34	part_of Arg1:T55 Arg2:T110	
+R35	part_of Arg1:T54 Arg2:T109	
+R36	part_of Arg1:T53 Arg2:T103	
+R37	part_of Arg1:T52 Arg2:T108	
+R38	part_of Arg1:T51 Arg2:T106	
+R39	part_of Arg1:T42 Arg2:T107	
+R40	part_of Arg1:T43 Arg2:T104	
+R41	part_of Arg1:T39 Arg2:T105	
+R42	part_of Arg1:T41 Arg2:T95	
+R43	part_of Arg1:T46 Arg2:T96	
+R44	attack Arg1:T47 Arg2:T102	
+R45	part_of Arg1:T38 Arg2:T93	
+R46	part_of Arg1:T48 Arg2:T100	
+R47	part_of Arg1:T49 Arg2:T99	
+R48	part_of Arg1:T45 Arg2:T98	
+R49	part_of Arg1:T44 Arg2:T101	
+R50	part_of Arg1:T50 Arg2:T97	
+R51	part_of Arg1:T40 Arg2:T94	
+R52	part_of Arg1:T16 Arg2:T88	
+R53	part_of Arg1:T18 Arg2:T70	
+R54	part_of Arg1:T17 Arg2:T89	
+T111	malware 8674 8678	MATA
+T112	malware 10711 10715	MATA
+T113	malware 10563 10567	MATA
+T114	md5 10935 10967	0137f688436c468d43b3e50878ec1a1f
+T115	malware 11594 11598	MATA
+T116	md5 11243 11275	ab09f6a249ca88d1a036eee7a02cdd16
+T117	malware 11020 11024	MATA
+T118	malware 11328 11332	MATA
+T119	malware 0 4	MATA
+T120	malware 10131 10135	MATA
+T121	malware 10239 10243	MATA
+T122	OS_name 8698 8703	macOS
+T123	OS_name 8799 8804	macOS
+T124	malware 525 529	MATA
+T125	malware 514 518	MATA
+T126	tool 587 593	loader
+T127	tool 596 608	orchestrator
+T128	tool 613 620	plugins
+R55	part_of Arg1:T126 Arg2:T124	
+R56	part_of Arg1:T127 Arg2:T124	
+R57	part_of Arg1:T128 Arg2:T124	
+T129	OS_name 670 677	Windows
+T130	OS_name 680 685	Linux
+T131	OS_name 690 695	macOS
+T132	reference_word 623 651	This comprehensive framework
+R58	coreference Arg1:T132 Arg2:T124	
+R59	attack Arg1:T132 Arg2:T129	
+R60	attack Arg1:T132 Arg2:T130	
+R61	attack Arg1:T132 Arg2:T131	
+T133	malware 757 761	MATA
+T134	time 779 789	April 2018
+R62	first_found_time Arg1:T134 Arg2:T133	
+T135	threatActor_aliases 805 814	the actor
+T136	reference_word 822 853	this advanced malware framework
+R63	use Arg1:T135 Arg2:T136	
+R64	coreference Arg1:T136 Arg2:T133	
+T137	attack_activity 878 924	infiltrate corporate entities around the world
+R65	launch Arg1:T135 Arg2:T137	
+T138	malware 1055 1059	MATA
+T139	threatActor_aliases 1122 1131	the actor
+T140	malware 1139 1145	loader
+T141	sub_activity 1157 1194	load the encrypted next-stage payload
+R66	use Arg1:T139 Arg2:T140	
+R67	launch Arg1:T139 Arg2:T141	
+T142	reference_word 1218 1236	the loaded payload
+R68	coreference Arg1:T142 Arg2:T140	
+T144	malware 1310 1322	orchestrator
+T143	malware 1244 1256	orchestrator
+R69	part_of Arg1:T142 Arg2:T143	
+T145	reference_word 1345 1356	This loader
+R70	coreference Arg1:T145 Arg2:T142	
+T146	tool 1365 1385	hardcoded hex-string
+T147	sub_activity 1388 1429	converts it to binary and AES-decrypts it
+R71	use Arg1:T145 Arg2:T146	
+R72	launch Arg1:T145 Arg2:T147	
+T148	attack_goal 1442 1477	obtain the path to the payload file
+R73	goal Arg1:T145 Arg2:T148	
+T149	malware 1485 1491	loader
+T150	tool 1498 1513	hard-coded path
+T151	function 1517 1543	load the encrypted payload
+R74	part_of Arg1:T151 Arg2:T150	
+R75	part_of Arg1:T150 Arg2:T149	
+T152	malware 1607 1613	loader
+T153	sample_name 1745 1782	C:\Windows\System32\wbem\WmiPrvSE.exe
+T154	sample_name 1799 1811	WmiPrvSE.exe
+T155	tool 1825 1850	WMI Provider Host process
+R77	part_of Arg1:T154 Arg2:T155	
+T156	threatActor_aliases 1876 1885	the actor
+T157	malware 1904 1910	loader
+R78	use Arg1:T156 Arg2:T157	
+T158	sub_activity 1890 1955	executed this loader malware from a remote host to move laterally
+R79	launch Arg1:T156 Arg2:T158	
+T159	threatActor_aliases 1985 1994	the actor
+T160	malware 2005 2011	loader
+T161	sub_activity 2015 2062	compromise additional hosts in the same network
+R80	use Arg1:T159 Arg2:T160	
+R81	launch Arg1:T159 Arg2:T161	
+T162	malware 2083 2095	orchestrator
+T163	sample_name 2111 2120	lsass.exe
+R82	part_of Arg1:T162 Arg2:T163	
+R76	part_of Arg1:T152 Arg2:T153	
+T164	malware 2158 2170	orchestrator
+T165	function 2179 2233	loads encrypted configuration data from a registry key
+T166	function 2238 2272	decrypts it with the AES algorithm
+R83	part_of Arg1:T165 Arg2:T164	
+R84	part_of Arg1:T166 Arg2:T164	
+T167	malware 2415 2427	orchestrator
+T168	string 2473 2478	3.1.1
+T169	string 2481 2489	0x030101
+T170	IP_evil 2534 2547	108.170.31.81
+T171	IP_evil 2552 2567	192.210.239.122
+T172	IP_evil 2572 2586	111.90.146.105
+R85	part_of Arg1:T168 Arg2:T167	
+R86	part_of Arg1:T169 Arg2:T167	
+R87	part_of Arg1:T170 Arg2:T167	
+R88	part_of Arg1:T171 Arg2:T167	
+R89	part_of Arg1:T172 Arg2:T167	
+T173	malware 2689 2701	orchestrator
+T174	function 2706 2738	load 15 plugins at the same time
+R90	part_of Arg1:T174 Arg2:T173	
+T175	function 2778 2837	Download the plugin from the specified HTTP or HTTPS server
+T176	function 2840 2901	Load the AES-encrypted plugin file from a specified disk path
+T177	function 2904 2964	Download the plugin file from the current MataNet connection
+T178	reference_word 2765 2774	load them
+R91	coreference Arg1:T178 Arg2:T174	
+R92	part_of Arg1:T175 Arg2:T178	
+R93	part_of Arg1:T176 Arg2:T178	
+R94	part_of Arg1:T177 Arg2:T178	
+T179	malware 3013 3020	MataNet
+T180	tool 3062 3068	TLS1.2
+T181	tool 3104 3118	openssl-1.1.0f
+T182	function 3027 3047	covert communication
+R95	part_of Arg1:T182 Arg2:T180	
+R96	part_of Arg1:T180 Arg2:T181	
+T183	tool 3121 3140	open source library
+R97	part_of Arg1:T181 Arg2:T183	
+T184	malware 3226 3233	MataNet
+T185	tool 3260 3282	random RC4 session key
+R98	use Arg1:T184 Arg2:T185	
+T186	malware 3285 3292	MataNet
+T187	function 3309 3315	client
+T188	function 3320 3331	server mode
+R99	part_of Arg1:T187 Arg2:T186	
+R100	part_of Arg1:T188 Arg2:T186	
+T189	sample_name 3372 3382	c_2910.cls
+T190	sample_name 3412 3422	k_3872.cls
+T191	sample_function 3440 3454	TLS encryption
+T192	reference_word 3337 3348	server mode
+R101	coreference Arg1:T192 Arg2:T188	
+R102	part_of Arg1:T189 Arg2:T192	
+R103	part_of Arg1:T190 Arg2:T192	
+T193	reference_word 3467 3476	this mode
+R105	coreference Arg1:T193 Arg2:T192	
+T194	malware 3497 3504	MataNet
+T195	reference_word 3554 3556	C2
+R106	coreference Arg1:T195 Arg2:T193	
+T196	function 3512 3556	establishes periodic connections with its C2
+R107	part_of Arg1:T196 Arg2:T194	
+T197	string 3713 3718	0x400
+T198	string 3874 3879	0x500
+T199	string 3961 3966	0x601
+T200	string 4002 4007	0x602
+T201	string 4053 4058	0x700
+T202	function 3970 3999	Send configuration data to C2
+T203	function 4011 4050	Download and set new configuration data
+T204	function 3882 3916	 Delete configuration registry key
+T205	function 3921 3958	stop MATA execution until next reboot
+T206	function 3722 3758	Complete the current MataNet session
+T207	function 3763 3785	delay the next session
+R108	part_of Arg1:T206 Arg2:T197	
+R109	part_of Arg1:T207 Arg2:T197	
+R110	part_of Arg1:T204 Arg2:T198	
+R111	part_of Arg1:T205 Arg2:T198	
+R112	part_of Arg1:T203 Arg2:T200	
+R113	part_of Arg1:T202 Arg2:T199	
+T208	function 4062 4109	Send the C2 the infected host basic information
+R114	part_of Arg1:T208 Arg2:T201	
+T209	tool 3579 3598	12-byte-long header
+T210	tool 3565 3572	message
+R115	part_of Arg1:T210 Arg2:T196	
+R116	part_of Arg1:T209 Arg2:T210	
+T211	tool 3661 3675	auxiliary data
+T212	tool 3630 3640	message ID
+R117	part_of Arg1:T212 Arg2:T209	
+R118	part_of Arg1:T211 Arg2:T209	
+R119	part_of Arg1:T197 Arg2:T211	
+R120	part_of Arg1:T198 Arg2:T211	
+R121	part_of Arg1:T199 Arg2:T211	
+R122	part_of Arg1:T200 Arg2:T211	
+R123	part_of Arg1:T201 Arg2:T211	
+T213	malware 3926 3930	MATA
+T214	malware 3743 3750	MataNet
+T215	malware 6171 6175	MATA
+T216	sample_name 4882 4907	MATA_Plug_TestConnect.dll
+T217	sample_name 4997 5019	MATA_Plug_WebProxy.dll
+R104	part_of Arg1:T191 Arg2:T189	
+R124	part_of Arg1:T191 Arg2:T190	
+T218	sample_function 5023 5049	Create a HTTP proxy server
+T219	sample_function 4911 4945	Check TCP connection with given IP
+R125	part_of Arg1:T219 Arg2:T216	
+R126	part_of Arg1:T218 Arg2:T217	
+T220	sample_name 4585 4602	MATA_Plug_Cmd.dll
+T221	sample_name 4729 4750	MATA_Plug_Process.dll
+T222	string 4231 4236	0x701
+T223	function 4240 4278	Send the C2 the configuration settings
+R127	part_of Arg1:T223 Arg2:T222	
+T224	sample_name 5239 5257	MATA_Plug_File.dll
+T225	sample_name 5504 5522	MATA_Plug_Load.dll
+T226	sample_name 5689 5713	MATA_Plug_P2PReverse.dll
+T227	vulnerability_cve 6959 6972	CVE-2019-3396
+T228	malware 6634 6638	MATA
+T229	program_language 6431 6433	C#
+T230	program_language 6437 6440	C++
+T231	OS_name 6541 6546	Linux
+T232	OS_name 6551 6556	macOS
+T233	OS_name 6517 6524	Windows
+T234	malware 6481 6485	MATA
+T235	program_language 6146 6148	C#
+T236	program_language 6161 6164	C++
+T237	malware 7028 7032	MATA
+T238	time 8730 8744	April 8 , 2020
+T239	malware 9797 9801	MATA
+T240	OS_name 9414 9419	macOS
+T241	malware 9420 9424	MATA
+T242	OS_name 11694 11699	macOS
+T243	OS_name 11674 11681	Windows
+T244	OS_name 11684 11689	Linux

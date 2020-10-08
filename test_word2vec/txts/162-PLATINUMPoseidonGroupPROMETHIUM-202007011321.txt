@@ -1,0 +1,10 @@
+Unknown .
+Release_Time :  unknown .
+Report_URL :  https://attack.mitre.org/groups/ .
+PLATINUM is an activity group that has targeted victims since at least 2009 .
+The group has focused on targets associated with governments and related organizations in South and Southeast Asia .
+Poseidon Group is a Portuguese-speaking threat group that has been active since at least 2005 .
+The group has a history of using information exfiltrated from victims to blackmail victim companies into contracting the Poseidon Group as a security firm .
+PROMETHIUM is an activity group that has been active since at least 2012 .
+The group conducted a campaign in May 2016 and has heavily targeted Turkish victims .
+PROMETHIUM has demonstrated similarity to another activity group called NEODYMIUM due to overlapping victim and campaign characteristics .

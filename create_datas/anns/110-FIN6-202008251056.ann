@@ -1,0 +1,25 @@
+T1	threatActor_name 69 73	FIN6
+T2	sub_activity 182 198	money laundering
+T3	tool 299 309	card shops
+T4	tool 317 327	dump shops
+T5	string 393 398	dumps
+T6	reference_word 405 416	These shops
+R1	coreference Arg1:T6 Arg2:T3	
+R2	coreference Arg1:T6 Arg2:T4	
+T7	person 429 438	clientele
+R3	part_of Arg1:T7 Arg2:T6	
+T8	tool 448 466	web-based platform
+R4	use Arg1:T7 Arg2:T8	
+T9	sample_function 470 542	sort through data on thousands or millions of payment cards and purchase
+R5	goal Arg1:T8 Arg2:T9	
+T10	sub_activity 586 602	money laundering
+T11	sub_activity 803 819	money laundering
+T12	threatActor_name 964 968	FIN6
+T13	threatActor_name 1103 1107	FIN6
+T14	location 1220 1233	United States
+T15	threatActor_name 2449 2453	FIN6
+T16	threatActor_name 2531 2535	FIN6
+T17	security_team 3078 3085	FireEye
+T18	security_team 3088 3096	Mandiant
+T19	security_team 3101 3120	iSIGHT intelligence
+T20	threatActor_name 3339 3343	FIN6

@@ -1,0 +1,103 @@
+Gaza Cybergang – updated activity in 2017
+Release_Time : 2017-10-30
+Report_URL : https://securelist.com/gaza-cybergang-updated-2017-activity/82765/
+
+The Gaza cybergang is an Arabic-language , politically-motivated cybercriminal group , operating since 2012 and actively targeting the MENA ( Middle East North Africa ) region .
+The Gaza cybergang ’s attacks have never slowed down and its typical targets include government entities/embassies , oil and gas , media/press , activists , politicians , and diplomats .
+One of the interesting new facts , uncovered in mid-2017 , is its discovery inside an oil and gas organization in the MENA region , infiltrating systems and pilfering data , apparently for more than a year .
+Another interesting finding is the use of the recently discovered CVE 2017-0199 vulnerability , and Microsoft Access files into which the download scripts were embedded to reduce the likelihood of their detection .
+Traces of mobile malware that started to appear from late April 2017 , are also being investigated .
+Recent targets for the group seem to be varied in nature ; the attackers do not appear to be choosing targets selectively , but rather seeking different kinds of MENA intelligence .
+Some of the interesting new updates about the Gaza cybergang : Gaza cybergang attackers have continued their interest in government entities in MENA , New targets identified include oil and gas in MENA , New tools and techniques include : Abuse of the CVE 2017-0199 vulnerability , Usage of macros inside Microsoft Access files , enabling lower detection rates , Possible Android mobile malware being used by attackers .
+Previous published research : https://securelist.com/gaza-cybergang-wheres-your-ir-team/72283/
+Kaspersky Lab products and services successfully detect and block Gaza cybergang attacks , detection names below : 
+HEUR : Exploit.MSOffice.Generic
+HEUR : Trojan.Win32.Cometer.gen
+HEUR : Trojan.Win32.Generic
+Trojan-Downloader.Win32.Downeks
+Trojan-Spy.MSIL.Downeks
+Win32.Bublik
+Win32.Agentb .
+Previously , Gaza cybergang attacks were surprisingly successful in using simple and common tools to achieve their goals .
+They relied on a variety of Remote Access Trojans ( RATs ) to perform their activities , including Downeks , Qasar , Cobaltstrike…
+As recently as June 2017 , however , the attackers started using the CVE 2017-0199 vulnerability which enables direct code execution from a Microsoft office document on non-patched victim systems ( Cobaltstrike payload in this case ) .
+Another finding is a possible Android Trojan that the attackers positioned on one of their command servers in April 2017 .
+In most cases , malware is sent by email as a compressed attachment or download links .
+Starting from March 2017 , we have observed downloaders or Microsoft office documents with embedded macros being sent to victims .
+When opened , the downloader would contact a URL or IP address to retrieve the actual payload .
+Once successfully executed , the malware grants full access to the attackers , providing them with the ability to collect files , keystrokes and screenshots from victims ’ devices .
+If the initial downloaded malware was detected by the victim , the downloader would attempt to retrieve other malware files to the victim ’s device , in the hope that one of those files would work .
+The full list of indicators of compromise ( IOCs ) can be found in Appendix I .
+The list of the most interesting lure content , malware files and related droppers , and command servers can be found in Appendix II .
+Below can be found the list of recent findings related to Gaza cybergang operations : 
+upgrade.newshelpyou.com 552796e71f7ff304f91b39f5da46499b 25-07-2017 nvStView.exe
+moreoffer.life 3ff60c100b67697163291690e0c2c2b7 11-05-2017 MOM.InstallProxy.exe
+moreoffer.life f43188accfb6923d62fe265d6d9c0940 21-03-2017 Gcc-Ksa-uae.exe
+signup.updatesforme.club 7d3426d8eb70e4486e803afb3eeac14f 04-05-2017 Palestinian Retirement Authority Ramallah.exe
+ping.topsite.life b68fcf8feb35a00362758fc0f92f7c2e 19-03-2017 Downloaded by Macro in MDB files : http://download.data-server.cloudns.club/indexer.exe
+manual.newphoneapp.com 86a89693a273d6962825cf1846c3b6ce 02-02-2017 SQLiteDatabaseBrowserPortable.exe
+Gaza Cybergang attackers have been continuously evolving their skills on different levels , using new methods and techniques to deliver malware , in addition to adapting social engineering decoys to regional political and humanitarian incidents .
+In mid-2017 , the attackers were discovered inside an oil and gas organization in the MENA region , infiltrating systems and pilfering data , apparently for more than a year .
+The malware files that were found had been reported previously : https://securelist.com/gaza-cybergang-wheres-your-ir-team/72283/
+While traces of Android mobile malware have been spotted , attackers have continuously used the Downeks downloader and the Quasar or Cobaltstrike RATs to target Windows devices , enabling them to obtain remote access spying and data exfiltration abilities .
+This is now achieved more efficiently using the CVE 2017-0199 vulnerability which enables direct code execution abilities from a Microsoft office document on non-patched victim Windows systems .
+The use of Microsoft Access database files has also enabled the attackers to maintain low levels of detection , as it ’s not an uncommon method to deliver malware .
+These developments have helped the attackers continue their operations , targeting a variety of victims and organizations , sometimes even bypassing defences and persisting for prolonged periods .
+Attackers have continuously targeted victims and organizations in government entities/embassies , oil and gas , media/press , activists , politicians , and diplomats .
+The Gaza cybergang relies increasingly on advanced and up-to-date social engineering techniques with political and humanitarian aspects that directly reflect regional incidents .
+Here is a short list of incidents that were each used multiple times : 
+Palestinian Government not paying salaries to Gaza employees
+Palestinian prisoners ’ hunger strike in Israeli jails
+The political crisis in Qatar .
+Recent targets for the group seem to be varied in nature , the attackers do not appear to be choosing targets selectively , but rather seeking any type of intelligence .
+66f144be4d4ef9c83bea528a4cd3baf3 Qatar-27-5-2017.rar 7fcac2f18a8844e4af9f923891cfb6f637a99195a457b6cdb916926d709c6a04 moreoffer.life 27 May 2017 .
+6d6f34f7cfcb64e44d67638a2f33d619 GAZA2017.mdb http://download.data-server.cloudns.club/GAZA2017.mdb data-server.cloudns.club/wordindexer.exe data-server.cloudns.club/indexer.exe .
+87a67371770fda4c2650564cbb00934d 20-06-2017 .
+The attacks are a typical exploitation of CVE-2017-0199 , starting with an email that distributes a malicious RTF document .
+The vulnerability is in the code that handles Ole2Link embedded objects , which allows Microsoft Office Word to run remote files , downloaded in this case from 138.68.242.68 .
+The downloaded payload is Cobaltstrike , which then connects to lol.mynetav.org to receive commands from the attackers .
+Additional details on the Gaza cybergang ’s use of CVE 2017-0199 with Cobaltstrike , can be found here : http://bobao.360.cn/learning/detail/4193.html
+Traces of APK files have been seen on one of the attackers ’ command centers , starting from 23-04-2017 .
+URL : http://alasra-paper.duckdns.org/send/%D9%88%ket-Edition-1.04_ApkHouse.com/Dont-Starve-Pocket-Edition-1.04_ApkHouse.com.apk
+The file name ( Dont-Starve-Pocket-Edition-1.04_ApkHouse.com.apk ) , is an Android application file hiding as a popular game .
+We believe the android Trojan could be related to a previously investigated Android Trojan around the Gaza strip : https://securelist.com/breaking-the-weakest-link-of-the-strongest-chain/77562/
+The Gaza Cybergang has demonstrated a large number of attacks and advanced social engineering , in addition to active development of attacks , infrastructure and the utilization of new methods and techniques .
+Attackers are actively improving their toolkit in an effort to minimize their exposure to security products and services .
+Kaspersky Lab expects these types of attacks to intensify in the near term , both in terms of quality and quantity .
+In order to protect your company from malware , Kaspersky Lab researchers recommend implementing the following measures : 
+ducate staff to be able to distinguish spear-phishing emails or a phishing link from legitimate emails and links .
+Use proven corporate grade security solution in combination with anti-targeted attacks solutions capable of catching attacks by analyzing network anomalies .
+Provide security staff with access to the latest threat intelligence data , which will arm them with helpful tools for targeted attacks prevention and discovery , such as indicators of compromise and YARA rules .
+Make sure enterprise grade patch management processes are well established and executed .
+In the following , we list the description of malware files found from March 2017 , including decoys used , first dates files seen , parent files…
+Gaza cybergang : b7390bc8c8a9a71a69ce4cc0c928153b 970e6188561d6c5811a8f99075888d5f 5-4-2017.zip moreoffer.life 5 April 2017 .
+Gaza cybergang : f43188accfb6923d62fe265d6d9c0940 Gcc-Ksa-uae.exe moreoffer.life ( 185.11.146.68 ) 21 March 2017 .
+Gaza cybergang : 056d83c1c1b5f905d18b3c5d58ff5342 fb549e0c2fffd390ee7c4538ff30ac3e moreoffer.life 16 March 2017 .
+Gaza cybergang : 0ee4757ab9040a95e035a667457e4bc6 27-4-2017 Fateh Gaza plo.exe signup.updatesforme.club 27 April 2017 .
+Gaza cybergang : 7bef124131ffc2ef3db349b980e52847 ping.topsite.life 14 March 2017 .
+Gaza cybergang : 70d03e34cadb0f1e1bc6f4bf8486e4e8 download-file.duckdns.org ping.topsite.life 30 March 2017 .
+Gaza cybergang : 67f48fd24bae3e63b29edccc524f4096 ping.topsite.life 17 April 2017 .
+Gaza cybergang : moreoffer.life
+Gaza cybergang : signup.updatesforme.club
+Gaza cybergang : ping.topsite.life
+Gaza cybergang : alasra-paper.duckdns.org
+Gaza cybergang : hamas-wathaq.duckdns.org
+Gaza cybergang : download.data-server.cloudns.club .
+Gaza cybergang : 138.68.242.68
+Gaza cybergang : 185.86.149.168
+Gaza cybergang : 185.11.146.68
+Gaza cybergang : 45.32.84.66
+Gaza cybergang : 45.32.71.95
+Gaza cybergang : 107.161.27.158 .
+Gaza cybergang : 87a67371770fda4c2650564cbb00934d
+Gaza cybergang : 4f3b1a2088e473c7d2373849deb4536f
+Gaza cybergang : c078743eac33df15af2d9a4f24159500
+Gaza cybergang : 3ff60c100b67697163291690e0c2c2b7
+Gaza cybergang : a3de096598e3c9c8f3ab194edc4caa76
+Gaza cybergang : 7d3426d8eb70e4486e803afb3eeac14f .
+Gaza cybergang : 0b6fe466a3ba36895208e754b155a193780c79ba8b5c1c9f02c4f7e479116e5f
+Gaza cybergang : 0c4aa50c95c990d5c5c55345626155b87625986881a2c066ce032af6871c426a
+Gaza cybergang : 0d235478ae9cc87b7b907181ccd151b618d74955716ba2dbc40a74dc1cdfc4aa
+Gaza cybergang : 1f2b128d26a58a572ea1faee2c4d9dc759eb8add16d9ad0547b3f0305fea212a
+Gaza cybergang : 205f32cc717c2d82baeff9ff5aa9fc31967b6ae5cde22fafe14aec9c9ec62acc
+Gaza cybergang : 284af7a2fafdbff3bbc28b9075f469d2352758b62d182b0e056d29ee74688126 .

@@ -1,0 +1,328 @@
+T1	security_team 131 158	United States Cyber Command
+T2	threatActor_name 307 315	NewsBeef
+T3	threatActor_aliases 316 321	APT33
+R1	coreference Arg1:T3 Arg2:T2	
+T4	time 295 306	2016 – 2017
+T5	time 729 738	2016-2017
+R3	occur_time Arg1:T2 Arg2:T4	
+T6	threatActor_name 739 747	NewsBeef
+T7	threatActor_aliases 749 754	APT33
+R4	coreference Arg1:T7 Arg2:T6	
+R5	occur_time Arg1:T6 Arg2:T5	
+T8	security_team 766 776	USCYBERCOM
+T9	tool 225 235	VirusTotal
+R2	find Arg1:T1 Arg2:T4	
+T10	tool 780 790	VirusTotal
+T11	threatActor_name 863 870	NewsBee
+T12	time 833 844	January 201
+R6	release_time Arg1:T8 Arg2:T12	
+T13	location 1003 1016	Saudi Arabian
+T14	attack_activity 954 968	spear-phishing
+T15	attack_activity 973 986	watering hole
+R7	attack Arg1:T11 Arg2:T13	
+R8	use Arg1:T11 Arg2:T14	
+R9	use Arg1:T11 Arg2:T15	
+T16	security_team 1049 1059	USCYBERCOM
+T17	time 1111 1119	Dec 2016
+T18	time 1124 1132	Jan 2017
+R10	release_time Arg1:T16 Arg2:T17	
+R11	release_time Arg1:T16 Arg2:T18	
+T19	md5 1134 1171	MD5: d87663ce6a9fc0e8bc8180937b3566b9
+T20	sample_name 1184 1239	jquerycode-download.live/flashplayer23pp_xa_install.exe
+T21	sample_name 1241 1282	querycode-download.live/chrome_update.exe
+T22	OS_name 1295 1298	BSS
+T23	malware 1301 1322	Exploit.Win32.Generic
+T24	malware 1325 1356	Trojan-Downloader.Win32.Powdr.a
+T25	malware 1359 1395	Trojan-Downloader.MSIL.Steamilik.zzo
+T26	md5 1403 1435	9b1a06590b091d300781d8fbee180e75
+T27	sample_name 1448 1491	jquerycode-download.live/citrixreceiver.exe
+T28	sample_name 1492 1538	jquerycode-download.live/citrixcertificate.exe
+T29	sample_name 1539 1582	ntg-sa.com/downloads/citrix_certificate.exe
+T30	OS_name 1595 1598	BSS
+T31	malware 1601 1622	Exploit.Win32.Generic
+T32	malware 1625 1662	Trojan-Downloader.PowerShell.Agent.ah
+T33	malware 1665 1694	DangerousObject.Multi.Generic
+T34	security_team 1727 1740	Cyber Command
+T35	time 1850 1862	January 2017
+T36	time 1958 1962	2015
+T37	tool 1933 1945	BeEF-related
+T38	time 1967 1971	2016
+R12	release_time Arg1:T34 Arg2:T35	
+T39	time 2004 2012	mid-2015
+T40	time 2038 2042	2016
+T41	time 2077 2081	2016
+T42	time 2091 2095	2017
+T43	location 2410 2423	Saudi Arabian
+T44	attack_activity 2362 2375	spearphishing
+T45	attack_activity 2380 2393	watering hole
+T46	threatActor_name 2436 2448	NewsBeef APT
+R19	use Arg1:T46 Arg2:T44	
+R20	use Arg1:T46 Arg2:T45	
+R21	attack Arg1:T46 Arg2:T43	
+T47	threatActor_name 2603 2615	NewsBeef APT
+T48	location 2652 2665	Saudi Arabian
+T49	location 2677 2692	Western targets
+R13	attack Arg1:T47 Arg2:T48	
+R14	attack Arg1:T47 Arg2:T49	
+T50	threatActor_name 2786 2794	NewsBeef
+T51	tool 2843 2873	Browser Exploitation Framework
+R15	use Arg1:T50 Arg2:T51	
+T52	person 1924 1929	group
+R16	coreference Arg1:T52 Arg2:T46	
+R17	occur_time Arg1:T52 Arg2:T36	
+R18	occur_time Arg1:T52 Arg2:T38	
+R22	occur_time Arg1:T52 Arg2:T39	
+R23	occur_time Arg1:T52 Arg2:T40	
+R24	occur_time Arg1:T52 Arg2:T41	
+R25	occur_time Arg1:T52 Arg2:T42	
+T53	time 2902 2916	summer of 2016
+T54	reference_word 2923 2928	group
+R26	coreference Arg1:T54 Arg2:T50	
+T55	tool 2966 2996	macro-enabled Office documents
+T56	tool 2999 3010	PowerSploit
+T57	tool 3021 3034	Pupy backdoor
+R27	use Arg1:T54 Arg2:T55	
+R28	use Arg1:T54 Arg2:T56	
+R29	use Arg1:T54 Arg2:T57	
+T58	threatActor_name 3053 3061	NewsBeef
+T59	attack_activity 3109 3129	spearphishing emails
+T60	attack_activity 3209 3222	watering hole
+R30	use Arg1:T58 Arg2:T59	
+R31	use Arg1:T58 Arg2:T60	
+T61	government 3303 3316	SA government
+R32	attack Arg1:T58 Arg2:T61	
+T63	reference_word 3325 3330	group
+R33	coreference Arg1:T63 Arg2:T58	
+T64	threatActor_name 3538 3546	NewsBeef
+T65	location 3616 3629	Saudi Arabian
+R34	attack Arg1:T64 Arg2:T65	
+T66	tool 3641 3645	BeEF
+T62	tool 3405 3415	JavaScript
+T67	tool 3791 3801	JavaScript
+T68	tool 3905 3915	JavaScript
+T70	threatActor_name 3975 3983	NewsBeef
+T71	tool 4014 4044	macro-enabled Office documents
+T72	tool 4047 4072	poisoned legitimate Flash
+T73	tool 4077 4094	Chrome installers
+T74	tool 4097 4108	PowerSploit
+T75	tool 4115 4125	Pupy tools
+R35	use Arg1:T70 Arg2:T71	
+R36	use Arg1:T70 Arg2:T72	
+R37	use Arg1:T70 Arg2:T73	
+R38	use Arg1:T70 Arg2:T74	
+R39	use Arg1:T70 Arg2:T75	
+T76	threatActor_name 4132 4140	NewsBeef
+T77	attack_activity 4192 4205	spearphishing
+T78	attack_activity 4210 4234	strategic web compromise
+R40	use Arg1:T76 Arg2:T77	
+R41	use Arg1:T76 Arg2:T78	
+T79	attack_activity 4276 4289	spearphishing
+T80	sample_name 4442 4476	Flash , Citrix Client , and Chrome
+T81	time 4753 4771	December 25 , 2016
+T82	threatActor_name 4778 4790	NewsBeef APT
+T83	tool 4830 4856	Microsoft Office documents
+T84	attack_goal 4928 4942	spear-phishing
+R42	use Arg1:T82 Arg2:T83	
+R43	use Arg1:T82 Arg2:T84	
+T85	location 5536 5538	SA
+T86	threatActor_name 5469 5477	NewsBeef
+R44	goal Arg1:T86 Arg2:T85	
+T87	tool 5189 5199	JavaScript
+T88	sub_activity 5206 5253	edirected visitors to NewsBeef-controlled hosts
+R45	goal Arg1:T87 Arg2:T88	
+T89	industry 5571 5624	Government financial and administrative organizations
+T90	industry 5625 5656	Government health organizations
+T91	industry 5657 5696	Engineering and technical organizations
+T92	industry 5697 5746	One British labor related government organization
+T93	security_team 5909 5935	Kaspersky Security Network
+T94	domain 6022 6038	outlook.live.com
+T95	threatActor_name 6157 6165	NewsBeef
+T96	threatActor_name 6277 6285	NewsBeef
+T97	tool 6333 6350	Choopa , LLC , US
+R46	use Arg1:T96 Arg2:T97	
+T98	time 6421 6435	summer of 2016
+R47	occur_time Arg1:T96 Arg2:T98
+T100	company 6574 6599	National Technology Group
+T101	domain 6617 6629	ntg.com[.]sa
+T102	company 6707 6710	NTG
+T103	government 6776 6789	SA government
+T104	company 6808 6828	communications firms
+T105	company 7159 7162	NTG
+T106	threatActor_name 7204 7212	NewsBeef
+R48	part_of Arg1:T105 Arg2:T106	
+T107	time 7303 7316	December 2016
+R49	occur_time Arg1:T106 Arg2:T107	
+T108	sample_name 7493 7552	hxxps://ntg-sa.com/Downloads/flashplayer23pp_xa_install.exe
+T109	sample_name 7553 7604	hxxps://ntg-sa.com/Downloads/Citrix_Certificate.exe
+T110	sample_name 7605 7651	hxxps://ntg-sa.com/Downloads/Chrome_Update.exe
+T111	sample_function 7717 7757	installer drops the file “ install.bat ”
+T113	sample_name 7903 7942	‘http://139.59.46.154:3485/eiloShaegae1
+T115	sample_name 8147 8185	hxxp://139.59.46.154:3485/IMo8oosieVai
+T114	IP_evil 8405 8418	139.59.46.154
+T116	domain_evil 8909 8926	maps.modon.gov.sa
+T117	time 8948 8961	December 2016
+R50	first_found_time Arg1:T116 Arg2:T117	
+T119	time 9014 9031	December 8 , 2016
+T120	IP 9074 9086	45.76.32.252
+T121	domain 9094 9104	ntg-sa.com
+T122	domain 9248 9258	ntg-sa.com
+T123	location 9679 9681	SA
+T124	reference_word 9544 9553	attackers
+R52	attack Arg1:T124 Arg2:T123	
+T125	location 9728 9742	United Kingdom
+R53	located Arg1:T124 Arg2:T125	
+T126	location 9791 9793	SA
+R54	located Arg1:T124 Arg2:T126	
+T127	threatActor_name 10057 10065	NewsBeef
+R55	coreference Arg1:T124 Arg2:T127	
+T128	time 10042 10054	October 2016
+R56	occur_time Arg1:T127 Arg2:T128	
+T129	domain_evil 10172 10215	hxxp://analytics-google.org : 69/Check.aspx
+T130	location 10273 10286	Saudi Arabian
+R57	attack Arg1:T127 Arg2:T130	
+T131	industry 10349 10389	Energy services for industrial processes
+T132	industry 10390 10437	Telecom engineering and implementation services
+T133	industry 10438 10460	Shipping and logistics
+T134	industry 10461 10496	Metal engineering and manufacturing
+T135	industry 10497 10528	Information technology services
+T136	industry 10529 10558	Cement and building materials
+R58	attack Arg1:T127 Arg2:T131	
+R59	attack Arg1:T127 Arg2:T132	
+R60	attack Arg1:T127 Arg2:T133	
+R61	attack Arg1:T127 Arg2:T134	
+R62	attack Arg1:T127 Arg2:T135	
+R63	attack Arg1:T127 Arg2:T136	
+T137	threatActor_name 10669 10677	NewsBeef
+T138	tool 10773 10783	JavaScript
+R64	use Arg1:T137 Arg2:T138	
+T139	tool 10891 10901	JavaScript
+T140	attack_activity 10931 10946	“ watering hole
+T141	tool 11018 11028	JavaScript
+T142	threatActor_name 11109 11121	NewsBeef APT
+T143	tool 11139 11149	JavaScript
+R65	use Arg1:T142 Arg2:T143	
+T144	tool 11301 11311	JavaScript
+T145	url_evil 11492 11526	jquerycodedownload.live/check.aspx
+T146	sample_name 11789 11820	analytics-google.org/check.aspx
+T147	threatActor_name 12039 12047	NewsBeef
+T148	attack_activity 12048 12061	watering hole
+R66	use Arg1:T147 Arg2:T148	
+T149	url_evil 12160 12184	jquerycode-download.live
+T150	url 12228 12247	scsb.gov.sa/portal/
+T151	time 12323 12339	mid-January 2017
+T152	tool 12445 12455	JavaScript
+T153	tool 12472 12482	JavaScript
+T154	tool 12557 12567	JavaScript
+T155	url 12659 12691	www.taqa.com.sa/Scroll-jquery.js
+T156	url 12692 12748	199099.gov.sa/_LAYOUTS/Yesser.NCC/js/jquery-1.7.2.min.js
+T157	OS_name 12864 12895	Windows , Linux , OSX , Android
+T158	program_language 12960 12966	Python
+T159	program_language 13022 13054	PowerSploit , Mimikatz , laZagne
+T160	threatActor_name 13341 13349	NewsBeef
+T161	tool 13315 13328	malicious DLL
+T162	tool 13359 13424	Python code , a Python interpreter , and the MSVC runtime library
+R67	part_of Arg1:T162 Arg2:T161	
+T163	tool 13581 13592	Python code
+T164	tool 13708 13719	Python code
+T165	IP_evil 13884 13902	139.59.46.154:3543
+T166	tool 13809 13820	Python code
+T167	tool 14249 14257	Python C
+T168	threatActor_name 14049 14057	NewsBeef
+T169	sub_activity 14123 14185	commands ( which take the form of modules ) from the C2 server
+R68	goal Arg1:T168 Arg2:T169	
+T170	threatActor_name 14825 14837	NewsBeef APT
+T171	tool 14964 14968	BeEF
+R69	use Arg1:T170 Arg2:T171	
+T172	threatActor_name 15069 15081	NewsBeef APT
+T173	tool 15138 15142	BeEF
+R70	use Arg1:T172 Arg2:T173	
+T174	threatActor_name 15696 15708	NewsBeef APT
+T175	threatActor_name 15838 15846	NewsBeef
+T176	location 15863 15876	Saudi Arabian
+R71	attack Arg1:T175 Arg2:T176	
+T177	government 15935 15949	European Union
+R72	attack Arg1:T175 Arg2:T177	
+T178	industry 16111 16151	connected to Saudi Arabian organizations
+R73	attack Arg1:T175 Arg2:T178	
+T179	security_team 16231 16248	SA security teams
+T180	person 16251 16265	administrators
+T181	person 16272 16282	developers
+R74	part_of Arg1:T180 Arg2:T179	
+R75	part_of Arg1:T181 Arg2:T179	
+T182	md5 16507 16539	f4d18316e367a80e1005f38445421b1f
+T183	md5 16540 16572	638b74a712a7e45efc9bec126b0f2d87
+T184	md5 16573 16605	45b0e5a457222455384713905f886bd4
+T185	md5 16606 16638	19cea065aa033f5bcfa94a583ae59c08
+T186	md5 16639 16671	ecfc0275c7a73a9c7775130ebca45b74
+T187	md5 16672 16704	1b5e33e5a244d2d67d7a09c4ccf16e56
+T188	md5 16705 16737	fa72c068361c05da65bf2117db76aaa8
+T189	md5 17002 17034	f9adf73bf1cdd7cd278e5137d966ddd4
+T190	md5 16738 16770	43fad2d62bc23ffdc6d301571135222c
+T191	md5 16771 16803	ce25f1597836c28cf415394fb350ae93
+T192	md5 16804 16836	03ea9457bf71d51d8109e737158be888
+T193	md5 16837 16869	edfc37461fa66716b53333fd7f841a8e
+T194	md5 16870 16902	623e05dd58d86da76fdfcf9b57032168
+T195	md5 16903 16935	6946836f2feb98d6e8021af6259a02dd
+T196	md5 16936 16968	f4d18316e367a80e1005f38445421b1f
+T197	md5 17332 17364	b34fd14105be23480c44cfdf6eb26807
+T198	md5 17134 17166	45b0e5a457222455384713905f886bd4
+T199	md5 17035 17067	b8373f909fa228c2b6e7d69f065f30fb
+T200	md5 17068 17100	9b1a06590b091d300781d8fbee180e75
+T201	md5 17101 17133	bcafe408567557289003c79f745f7713
+T202	md5 17167 17199	83be35956e5d409306a81e88a1dc89fd
+T203	md5 17200 17232	c2165155fcba5b737ee70354b5244be3
+T204	md5 17233 17265	444c93e736194a01bf3b319e3963d746
+T205	md5 17266 17298	0ed61b6f1008000c6dfcd3d842b21971
+T206	md5 17299 17331	3fb33a2747b39a9b1c5c1e41fade595e
+T207	md5 16969 17001	d87663ce6a9fc0e8bc8180937b3566b9
+T208	url_evil 18982 19001	69.87.223.26:8080/p
+T209	url_evil 17444 17483	moh.com-ho.me/Health_insurance_plan.doc
+T210	url_evil 17484 17531	moh.com-ho.me/Health_insurance_registration.doc
+T211	url_evil 17532 17559	mol.com-ho.me/cv_itworx.doc
+T212	url_evil 17560 17584	mci.com-ho.me/cv_mci.doc
+T213	url_evil 18951 18981	69.87.223.26:8080/eiloShaegae1
+T214	url_evil 18925 18950	69.87.223.26/IMo8oosieVai
+T215	url_evil 18893 18924	139.59.46.154:3485/eiloShaegae1
+T216	url_evil 18866 18892	139.59.46.154/IMo8oosieVai
+T217	url_evil 18832 18865	104.218.120.128:69/checkFile.aspx
+T218	url_evil 18805 18831	104.218.120.128/check.aspx
+T219	url_evil 18771 18804	104.218.120.128/msservice-a-4.exe
+T220	url_evil 18737 18770	104.218.120.128/msservice-a-2.exe
+T221	url_evil 18713 18736	104.218.120.128/pro.bat
+T222	url_evil 18675 18712	taqa.com.sa/arabic/tempdn/cv-taqa.doc
+T223	url_evil 18629 18674	taqa.com.sa/arabic/images/certificate.crt.exe
+T224	url_evil 18590 18628	taqa.com.sa/arabic/resumes/cv-taqa.doc
+T225	url_evil 18552 18589	taqa.com.sa/arabic/resumes/resume.doc
+T226	url_evil 18399 18424	http://itworx.com-ho.me/*
+T227	url_evil 17585 17640	jquerycode-download.live/flashplayer23pp_xa_install.exe
+T228	url_evil 18514 18551	taqa.com.sa/arabic/resumes/resume.doc
+T229	url_evil 18494 18513	http://ntg-sa.com/*
+T230	url_evil 18471 18493	http://mol.com-ho.me/*
+T231	url_evil 18448 18470	http://moh.com-ho.me/*
+T232	url_evil 18425 18447	http://mci.com-ho.me/*
+T233	url_evil 18386 18398	45.32.186.33
+T234	url_evil 18347 18385	http://ntg-sa.com/Password_Policy.xlsm
+T235	url_evil 18310 18346	http://ntg-sa.com/job_titles_mci.doc
+T236	url_evil 18270 18309	http://ntg-sa.com/job_titles_itworx.doc
+T237	url_evil 18237 18269	http://ntg-sa.com/job_titles.doc
+T238	url_evil 18185 18236	http://ntg-sa.com/Health_insurance_registration.doc
+T239	url_evil 18141 18184	http://ntg-sa.com/Health_insurance_plan.doc
+T240	url_evil 18095 18140	http://ntg-sa.com/discount_voucher_codes.xlsm
+T241	url_evil 18066 18094	http://ntg-sa.com/cv_mci.doc
+T242	url_evil 18034 18065	http://ntg-sa.com/cv_itworx.doc
+T243	url_evil 18009 18033	http://ntg-sa.com/cv.doc
+T244	url_evil 19226 19259	104.218.120.128:69/checkFile.aspx
+T245	url_evil 19019 19055	analytics-google.org : 69/check.aspx
+T246	url_evil 19199 19225	104.218.120.128/check.aspx
+T247	url_evil 19168 19198	go-microstf.com/checkFile.aspx
+T248	url_evil 19128 19167	jquerycode-download.live/checkFile.aspx
+T249	url_evil 19092 19127	jquerycode-download.live/check.aspx
+T250	url_evil 19056 19091	analytics-google.org/checkFile.aspx
+T251	url_evil 17962 18008	https://ntg-sa.com/Downloads/Chrome_Update.exe
+T252	url_evil 17902 17961	https://ntg-sa.com/Downloads/flashplayer23pp_xa_install.exe
+T253	url_evil 17850 17901	https://ntg-sa.com/downloads/citrix_certificate.exe
+T254	url_evil 17811 17849	jquerycode-download.live/CheckLog.aspx
+T255	url_evil 17775 17810	jquerycode-download.live/check.aspx
+T256	url_evil 17731 17774	jquerycode-download.live/CitrixReceiver.exe
+T257	url_evil 17688 17730	jquerycode-download.live/chrome_update.exe
+T258	url_evil 17641 17687	jquerycode-download.live/citrixcertificate.exe

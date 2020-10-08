@@ -1,0 +1,162 @@
+T1	time 9 22	Feb. 2 , 2018
+T2	vulnerability_cve 106 119	CVE-2018-4878
+T3	threatActor_name 193 198	APT37
+T4	threatActor_name 0 5	APT37
+T5	threatActor_aliases 201 207	Reaper
+R1	coreference Arg1:T5 Arg2:T3	
+T6	location 137 149	North Korean
+T7	person 25 27	we
+T8	vul_aliases 81 89	zero-day
+R2	coreference Arg1:T8 Arg2:T2	
+T9	security_team 262 289	FireEye iSIGHT Intelligence
+T10	threatActor_name 298 303	APT37
+T11	threatActor_name 367 372	APT37
+T12	vul_aliases 411 419	zero-day
+T13	malware 440 445	wiper
+T14	location 493 507	Northeast Asia
+T15	location 512 523	North Korea
+T16	government 683 706	North Korean government
+T17	person 601 603	We
+T18	security_team 805 832	FireEye iSIGHT Intelligence
+T19	threatActor_name 847 852	APT37
+T20	threatActor_name 903 912	Scarcruft
+T21	threatActor_name 917 925	Group123
+R3	use Arg1:T11 Arg2:T12	
+R4	use Arg1:T11 Arg2:T13	
+T22	reference_word 150 171	cyber espionage group
+R5	coreference Arg1:T22 Arg2:T3	
+R6	located Arg1:T22 Arg2:T6	
+T23	threatActor_name 928 933	APT37
+T24	time 972 976	2012
+R7	first_found_time Arg1:T23 Arg2:T24	
+T25	industry 1006 1032	public and private sectors
+T26	location 1046 1057	South Korea
+R9	attack Arg1:T23 Arg2:T25	
+T27	time 1063 1067	2017
+T28	threatActor_name 1070 1075	APT37
+T29	location 1138 1143	Japan
+T30	location 1146 1153	Vietnam
+T31	location 1162 1173	Middle East
+T32	industry 1231 1240	chemicals
+T33	industry 1243 1254	electronics
+T34	industry 1257 1270	manufacturing
+T35	industry 1273 1282	aerospace
+T36	industry 1285 1295	automotive
+T37	industry 1300 1319	healthcare entities
+R10	attack Arg1:T28 Arg2:T29	
+R11	attack Arg1:T28 Arg2:T30	
+R12	attack Arg1:T28 Arg2:T31	
+R13	attack Arg1:T28 Arg2:T32	
+R14	attack Arg1:T28 Arg2:T33	
+R15	attack Arg1:T28 Arg2:T34	
+R16	attack Arg1:T28 Arg2:T35	
+R17	attack Arg1:T28 Arg2:T36	
+R18	attack Arg1:T28 Arg2:T37	
+T38	threatActor_name 1336 1341	APT37
+T39	person 1322 1324	We
+T40	attack_goal 1364 1476	covert intelligence gathering in support of North Korea ’s strategic military , political and economic interests
+R19	goal Arg1:T38 Arg2:T40	
+T41	location 1520 1532	South Korean
+T42	industry 1533 1560	public and private entities
+T43	threatActor_name 1586 1591	APT37
+T44	location 1670 1681	North Korea
+T45	time 1712 1724	2014 to 2017
+T46	threatActor_name 1727 1732	APT37
+T47	location 1773 1785	South Korean
+T48	government 1773 1796	South Korean government
+T49	industry 1799 1807	military
+T50	industry 1810 1833	defense industrial base
+T51	industry 1840 1852	media sector
+R20	attack Arg1:T46 Arg2:T48	
+R21	attack Arg1:T46 Arg2:T49	
+R22	attack Arg1:T46 Arg2:T50	
+R23	attack Arg1:T46 Arg2:T51	
+T53	location 1894 1900	Korean
+T54	location 1938 1954	Korean peninsula
+T52	time 1987 1991	2017
+T55	threatActor_name 1994 1999	APT37
+T56	company 2011 2033	Middle Eastern company
+R8	attack Arg1:T55 Arg2:T56	
+T57	location 2077 2089	North Korean
+T58	government 2077 2100	North Korean government
+T59	industry 2112 2138	telecommunications service
+T60	target_crowd 2292 2308	general director
+T61	target_crowd 2384 2395	individuals
+T62	target_crowd 2235 2243	involved
+R24	attack Arg1:T55 Arg2:T62	
+R25	attack Arg1:T55 Arg2:T60	
+R26	attack Arg1:T55 Arg2:T61	
+T63	location 2623 2634	North Korea
+T64	target_crowd 2479 2500	North Korean defector
+T65	target_crowd 2505 2535	human rights-related targeting
+T66	threatActor_name 2567 2572	APT37
+R27	attack Arg1:T55 Arg2:T64	
+R28	attack Arg1:T55 Arg2:T65	
+T67	threatActor_name 2637 2642	APT37
+T68	target_crowd 2654 2669	research fellow
+T69	target_crowd 2672 2687	advisory member
+T70	target_crowd 2694 2704	journalist
+R29	attack Arg1:T67 Arg2:T68	
+R30	attack Arg1:T67 Arg2:T69	
+R31	attack Arg1:T67 Arg2:T70	
+T71	location 2731 2743	North Korean
+T72	reference_word 2794 2796	It
+R32	coreference Arg1:T72 Arg2:T67	
+T73	location 3500 3511	North Korea
+T74	location 2824 2829	Japan
+T75	target_crowd 2814 2820	entity
+T76	threatActor_name 2906 2911	APT37
+T77	malware 2924 2933	SLOWDRIFT
+T78	company 2971 2989	Korea Global Forum
+T79	location 3045 3056	South Korea
+T80	industry 2998 3006	academic
+T81	industry 3012 3033	trategic institutions
+R33	attack Arg1:T76 Arg2:T80	
+R34	attack Arg1:T76 Arg2:T81	
+T82	location 3107 3119	South Korean
+T83	location 3155 3166	North Korea
+T84	string 3182 3190	durihana
+T85	threatActor_name 3317 3322	APT37
+T86	location 3273 3285	North Korean
+R35	attack Arg1:T72 Arg2:T75	
+R36	release_time Arg1:T7 Arg2:T1	
+T87	location 3382 3394	North Korean
+T88	location 3450 3464	Middle Eastern
+T89	threatActor_name 3571 3576	APT37
+T90	company 3613 3633	North Korean company
+T91	company 3527 3554	Middle Eastern organization
+R37	attack Arg1:T89 Arg2:T91	
+T92	reference_word 3665 3674	This firm
+T93	threatActor_name 3905 3910	APT37
+T94	protocol 3952 3956	TTPs
+T95	government 3802 3825	North Korean government
+T96	attack_goal 3829 3876	gather information on a former business partner
+T97	reference_word 4003 4023	this espionage group
+R38	coreference Arg1:T97 Arg2:T93	
+R39	coreference Arg1:T92 Arg2:T91	
+T98	time 4029 4037	May 2017
+T99	threatActor_name 4040 4045	APT37
+T100	attack_activity 4082 4096	spear phishing
+T101	target_crowd 4112 4124	board member
+T102	vulnerability_cve 4244 4256	CVE-20170199
+R40	launch Arg1:T99 Arg2:T100	
+R41	occur_time Arg1:T100 Arg2:T98	
+R42	attack Arg1:T99 Arg2:T101	
+T103	company 4278 4287	Microsoft
+T104	threatActor_name 4749 4754	APT37
+T105	threatActor_name 4570 4575	APT37
+T106	vul_aliases 4491 4503	SHUTTERSPEED
+T107	md5 4511 4543	7c2ebfc7960aac6f8d58b37e3f092a9c
+T108	sub_activity 4579 4605	collect system information
+T109	sub_activity 4608 4624	take screenshots
+T110	sub_activity 4629 4687	download additional malicious files to the victim computer
+T111	attack_activity 4724 4738	spear phishing
+T112	location 5139 5151	South Korean
+T113	malware 5330 5335	KARAE
+T114	malware 5340 5347	POORAIM
+T115	location 5238 5250	South Korean
+T116	company 5384 5415	South Korean conservative media
+T117	threatActor_name 5492 5497	APT37
+T118	malware 5545 5550	KARAE
+T119	location 5600 5612	South Korean
+T120	target_crowd 5600 5620	South Korean victims

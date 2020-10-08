@@ -1,0 +1,79 @@
+APT3 Adversary Emulation Plan .
+Release_Time : 2017-09  .
+Report_URL : https://attack.mitre.org/docs/APT3_Adversary_Emulation_Plan.pdf  .
+Group Administrators net localgroup , net group Net localgroup , net group Domain_list_gen.rb , post/windows/gather enum_domain_group_users , auxiliary/scanner/smb/ smb_enumusers T1087 - Account Discovery , T1069 - Permission Groups Discovery .
+Group Power Users net localgroup , net group Net localgroup , net group Domain_list_gen.rb , post/windows/gather enum_domain_group_users , auxiliary/scanner/smb/ smb_enumusers T1087 - Account Discovery , T1069 - Permission Groups Discovery .
+Group Domain Admins net localgroup , net group Net localgroup , net group Domain_list_gen.rb , post/windows/gather enum_domain_group_users , auxiliary/scanner/smb/ smb_enumusers T1087 - Account Discovery , T1069 - Permission Groups Discovery .
+Dump creds from SAM Mimikatz !lsadump : sam Run hashdump , hashdump T1003 - Credential Dumping .
+Inject into LSASS Logonpasswords , hashdump , mimikatz Mimikatz ’s wdigest T1003 -Credential Dumping .
+Dump creds from SAM Mimikatz !lsadump : sam Run hashdump , hashdump T1003 - Credential Dumping .
+Inject into LSASS Logonpasswords , hashdump , mimikatz Mimikatz ’s wdigest T1003 -Credential Dumping .
+SMB Copy net use , copy , xcopy , explorer.exe PsExec T1105 - Remote File Copy .
+Remote Service sc PsExec T1021 - Remote Services .
+Remote Schtasks schtasks , at T1053 - Scheduled Task .
+Account and Permission Groups Discovery shell Dsquery* shell / dsquery T1087 – Account Discovery , T1069 – Permission Groups Discovery .
+Gather credentials from browsers , IM software , databases , memory , and other software Post/windows/gather/credentials/ credential_collector , Post/multi/gather/firefox_creds T1081 - Credentials in Files , T1003 – Credential Dumping .
+ExploitKit-style recon and profiling Software , browser plugins , flash , SharePoint , Adobe PDF reader , Chrome security plugins , Java , Internal IP address N/A since this is used before initial compromise .
+Keylogger Written in JavaScript , only logs what ’s typed while on the page that loads the keylogger JS .
+N/A since this is used before initial compromise .
+APT3 disseminates spam-like phishing campaigns with various payload delivery methods .
+Once on a machine , the actors collect information about the victim such as connected users and analyze it for its value , trying to determine where they landed and what access they have .
+Admin access is an obvious main target due to the increased access it will likely provide .
+The actors then drop multiple backdoors , usually 2-4 on the initial system and 5+ versions within the first few hops , with independent C2 profiles for redundancy Redundant Access – T1108 .
+Next they then dump as many credentials as possible , and quickly continue spreading throughout the network .
+They specifically go after file servers and print servers .
+Once they ’re moved to all the machines they think have value , they collect all the documents they want , package them up and password protect them , and exfiltrate them out of the organization .
+In some cases , however , they ’ve been known to persist within a network for very lengthy periods without ever exfiltrating data .
+The sections below show how APT3 acts through their entire lifecycle .
+Phase 1 documents what happens during initial compromise , phase 2 highlights techniques used during network propagation , and phase 3 documents one way they have been known to perform exfiltration .
+The goal of the Initial Compromise phase is to achieve successful code execution and control of a system within the target environment .
+APT3 primarily conducts initial compromise using spear phishing , delivering implants through both malicious attachments and malicious links .
+They have used new 0-days on multiple browsers .
+They have targeted existing 0-days in Internet Explorer , Windows , and Flash .They have also been known to compromise weakly secured legitimate websites to which users are directed through spear phishing emails .
+APT3 implants issue command and control ( C2 ) traffic as HTTP GET requests that beacon at set intervals .
+The HTTP Cookie field contains information for the C2 server , which responds with a webpage that contains the command encoded within a specific HTML tag .
+APT3 implants have also been known to use custom binary protocols .
+Pirpi.2014 and Pirpi.2015 both contain several kinds of sleep and anti-sandbox strategies that cause the RAT to pause between executions .
+Some of the Pirpi instances have been known to also use SSL for their communications and even include public/private keys within the binaries .
+This level of C2 customization can be achieved with Cobalt Strike ’s malleable C2 profiles , as seen in the accompanying Malleable C2 profile modeled on .
+Many of APT3 ’s open source tools are customized or modified to prevent detection .
+Additionally , APT3 ’s malware uses a series of anti-disassembly techniques , including requiring certain command line parameters to run .
+These are defense evasion techniques that APT3 sets up before getting initial access to the target environment .
+It is recommended to use anti-antivirus ( AV ) capabilities to prevent AV detection of commonly available tools .
+If Sandboxing is a problem , possibly encrypt tools to bypass sandboxing .
+An example of this would be Veil-Evasion or Artifact Kit .
+ATTACK techniques : T1027 – Obfuscated Files or Information , T1045 – Software Packing , T1066 – Indicator Removal from Tools .
+For Initial Compromise , both web server drive-by and malicious attachments are within APT3 ’s tradecraft .
+The Social Engineering Toolkit ( free ) and Cobalt Strike ( paid ) have features that support these methods .
+In late November 2014 an APT3 campaign used a spear phishing email ( see Appendix A ) containing a link to a malicious site .
+The site contained JavaScript that triggered CVE-2014-6332 ( an Internet Explorer exploit ) which launched a VBscript and PowerShell based payload .
+The PowerShell script in turn downloaded and ran a stager which dropped two files , “ doc.exe ” and “ test.exe ” .
+“ doc.exe ” attempts to trigger CVE-2014-4113 ( a Windows Kernel exploit ) and run “ test.exe ” with the resultant elevated privileges .
+“ test.exe ” runs two commands .
+The first command is used to check that the process is running as SYSTEM .
+The second establishes persistence via Schtasks .
+In addition , the implant connected to a command and control server over port 1913 using the SOCKS5 protocol .
+In October 2014 , a downloader like “ test.exe ” was observed to download Pirpi .
+In attacks dating late 2015 to early 2016 APT3 has been known to use a zip archive containing a Windows shortcut file with an Internet Explorer logo .
+Clicking on this link led to a download of APT3 ’s Pirpi RAT .
+In attacks reported in June 2014 , APT3 actors sent a RAR archive as an email attachment .
+It contained a resume and program purported to be written by the job candidate .
+The program , ttcalc.exe , contained a legitimate version of TTCalc but also dropped Pirpi to .
+The bat file will be triggered when the user logged in and would have caused Pirpi to start with rundll32 T1085 – Rundll32 .
+Reported in June 2014 , APT3 actors sent an encrypted self-extracting RAR attachment .
+The RAR contained a trojanized setup program which attempts to drop and run ttcalcBAK.exe another self-extracting RAR which drops a DLL version of the PlugX RAT at : %ALLUSERSPROFILE%\chrome_frame_helper .
+The RAT is loaded via DLL side-loading with a valid version of Chrome T1073 – DLL SideLoading .
+Reported in 2015 , two different APT3 campaigns targeted Flash exploits , CVE-2014-1776 and CVE-2015-3113 .
+In both cases the Flash exploit loaded the payload ( the Pirpi RAT ) from specially crafted GIF images .
+Reported in July 2015 , APT3 used spear phising to direct targets to a compromised site .
+This site had ScanBox installed which was used to profile the victims and in some cases , deliver exploits to selected victims .
+The goal of the Network Propagation phase is to identify and move to desired systems within the target environment with the intention of discovering credentials and documents for exfiltration .
+Publicly reported direct observation of APT3 ’s Network Propagation techniques is almost nonexistent .
+One report that discusses general characteristics of APT3 is , but it is uncertain what data sources were used to compile the listed TTPs .
+Aside from that report we draw conclusions of how APT3 operates based on the capabilities of Pirpi and other tools that they are reported to use .
+There are some persistence techniques that they have used during Initial Compromise that can be applied to Network Propagation .
+Despite this , there are significant gaps in the public knowledge of APT3 ’s tradecraft .
+Where necessary we fill in details with best guesses or recommendations .
+The process within this phase can be described with the below diagram .
+Each step within this phase is broken out by ATT&CK tactic and the corresponding APT3 specific techniques documented in reports .
+A command-line reference for emulating the specific ATT&CK techniques with built-in Windows utilities , Cobalt Strike , and Metasploit can be found in the accompanying “ APT3 Adversary Emulation Field Manual ” .

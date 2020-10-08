@@ -1,0 +1,505 @@
+T1	malware 10 19	AppleJeus
+T2	threatActor_name 22 29	Lazarus
+T3	OS_name 83 88	macOS
+T4	attack_goal 35 58	cryptocurrency exchange
+T5	threatActor_name 194 201	Lazarus
+T6	person 219 231	threat actor
+T7	attack_activity 239 242	APT
+R1	goal Arg1:T2 Arg2:T4	
+T8	tool 64 78	fake installer
+T9	malware 83 96	macOS malware
+R2	use Arg1:T2 Arg2:T8	
+R3	use Arg1:T2 Arg2:T9	
+T10	person 329 337	attacker
+T14	threatActor_name 439 446	Lazarus
+T15	target_crowd 484 489	banks
+R7	part_of Arg1:T6 Arg2:T5	
+R8	attack Arg1:T14 Arg2:T15	
+T18	security_team 574 587	Kaspersky Lab
+T19	threatActor_name 698 705	Lazarus
+T20	target_crowd 662 685	cryptocurrency exchange
+R9	attack Arg1:T19 Arg2:T20	
+T13	target_crowd 746 752	victim
+T17	malware 790 835	trojanized cryptocurrency trading application
+T21	malware 1096 1105	Fallchill
+T22	threatActor_name 1125 1132	Lazarus
+R11	use Arg1:T22 Arg2:T21	
+R6	attack Arg1:T17 Arg2:T13	
+T23	malware 1221 1230	Fallchill
+T24	security_team 1252 1259	US-CERT
+R12	find Arg1:T24 Arg2:T23	
+R13	launch Arg1:T5 Arg2:T7	
+T25	target_crowd 1041 1055	their computer
+R14	attack Arg1:T21 Arg2:T25	
+T26	person 1349 1358	attackers
+T27	OS_name 1437 1442	macOS
+R15	use Arg1:T26 Arg2:T27	
+T28	OS_name 1459 1464	Linux
+T29	OS_name 1590 1595	macOS
+T30	reference_word 1557 1571	this APT group
+R16	attack Arg1:T30 Arg2:T29	
+R17	coreference Arg1:T30 Arg2:T22	
+T31	threatActor_name 1616 1623	Lazarus
+T32	OS_name 1724 1731	Windows
+T33	target_crowd 1664 1681	operating systems
+R18	attack Arg1:T31 Arg2:T33	
+T34	security_team 1754 1767	Kaspersky Lab
+T35	threatActor_name 1988 1995	Lazarus
+T36	malware 2052 2082	cryptocurrency trading program
+R19	use Arg1:T35 Arg2:T36	
+T37	target_crowd 1999 2006	victims
+R20	attack Arg1:T35 Arg2:T37	
+T38	person 2112 2116	user
+T39	reference_word 2127 2139	this program
+R21	coreference Arg1:T39 Arg2:T36	
+R22	attack Arg1:T39 Arg2:T38	
+T40	person 2301 2310	attackers
+T41	malware 2351 2357	trojan
+R23	use Arg1:T40 Arg2:T41	
+T42	company 2492 2505	Celas Limited
+T43	company 2650 2655	Celas
+T44	malware 2471 2486	Celas Trade Pro
+T45	malware 2606 2636	cryptocurrency trading program
+T46	reference_word 2566 2582	This application
+R24	coreference Arg1:T46 Arg2:T45	
+R25	find Arg1:T43 Arg2:T45	
+R26	find Arg1:T42 Arg2:T44	
+T47	person 2694 2698	user
+T48	malware 2718 2737	trading application
+T49	company 2747 2752	Celas
+T50	OS_name 2910 2917	Windows
+T51	md5 2964 2996	9e740241ca2acdc79f30ad2c3f50990a
+T52	time 3100 3119	2018-06-29 01:16:00
+T53	sample_name 3012 3047	celastradepro_win_installer_1.00.00
+R27	attack Arg1:T48 Arg2:T47	
+R28	find Arg1:T49 Arg2:T48	
+T54	malware 3171 3180	installer
+T55	sample_name 3202 3213	Updater.exe
+T56	tool 3232 3243	CheckUpdate
+R29	use Arg1:T54 Arg2:T56	
+T57	tool 3564 3568	jeus
+T58	person 3344 3365	system administrators
+T59	person 3513 3519	writer
+T60	protocol 3652 3656	HTTP
+T61	OS_name 3766 3777	Apple macOS
+T62	malware 3814 3823	AppleJeus
+R30	attack Arg1:T62 Arg2:T61	
+R31	use Arg1:T59 Arg2:T57	
+R32	attack Arg1:T54 Arg2:T55	
+T63	md5 3901 3933	b054a7382adf6b774b15f52d971f3799
+T64	OS_name 3994 4001	Windows
+T65	sample_name 4023 4064	%Program Files%\CelasTradePro\Updater.exe
+T66	company 3991 3993	MS
+T67	time 4080 4103	2018-06-15 10:56:27 UTC
+T68	sample_name 4203 4214	Updater.exe
+T69	person 4233 4239	victim
+T70	OS_name 4729 4739	Windows 10
+T71	person 4764 4770	author
+T72	OS_name 4798 4808	Windows 10
+R33	use Arg1:T71 Arg2:T72	
+R34	use Arg1:T71 Arg2:T70	
+T73	protocol 5232 5236	HTTP
+T74	domain 5261 5295	www.celasllc.com / checkupdate.php
+T75	person 5189 5195	victim
+T77	tool 5831 5835	jeus
+T78	OS_name 4826 4833	Windows
+T79	OS_name 4869 4876	Windows
+T80	OS_name 4909 4916	Windows
+T81	OS_name 4964 4971	Windows
+T82	OS_name 4998 5005	Windows
+T83	person 5354 5363	developer
+T84	IP 25391 25406	185.142.239.173
+T85	IP 25366 25377	80.82.64.91
+T86	IP 25337 25352	185.142.236.226
+T87	IP 25310 25323	196.38.48.121
+T88	domain 25235 25251	www.celasllc.com
+T89	domain 25252 25267	checkupdate.php
+T90	threatActor_name 25224 25231	Lazarus
+T91	threatActor_name 25299 25306	Lazarus
+T92	threatActor_name 25326 25333	Lazarus
+T93	threatActor_name 25355 25362	Lazarus
+T94	threatActor_name 25380 25387	Lazarus
+R36	part_of Arg1:T88 Arg2:T90	
+R37	part_of Arg1:T89 Arg2:T90	
+R38	part_of Arg1:T87 Arg2:T91	
+R39	part_of Arg1:T86 Arg2:T92	
+R40	part_of Arg1:T85 Arg2:T93	
+R41	part_of Arg1:T84 Arg2:T94	
+T95	malware 25164 25173	backdoors
+T96	person 24630 24642	threat actor
+T97	company 24599 24608	Celas LLC
+R42	part_of Arg1:T96 Arg2:T97	
+T98	threatActor_name 24463 24470	Lazarus
+T99	target_crowd 24494 24516	supply chain companies
+T100	reference_word 24530 24532	it
+R43	attack Arg1:T98 Arg2:T99	
+R44	coreference Arg1:T100 Arg2:T98	
+T101	company 24326 24335	Celas LLC
+T102	person 24360 24372	threat actor
+T103	reference_word 24380 24382	it
+R45	part_of Arg1:T102 Arg2:T101	
+R46	coreference Arg1:T103 Arg2:T101	
+T104	threatActor_name 24127 24134	Lazarus
+T105	person 24174 24192	software developer
+T106	person 24233 24256	compromising developers
+R47	part_of Arg1:T106 Arg2:T104	
+R48	part_of Arg1:T105 Arg2:T104	
+T107	person 24042 24055	threat actors
+T108	OS_name 24075 24080	macOS
+R49	use Arg1:T107 Arg2:T108	
+T109	person 23954 23968	advanced users
+T110	person 23971 23990	software developers
+T111	person 23866 23876	developers
+T112	person 23881 23890	engineers
+T113	OS_name 23914 23919	macOS
+R50	use Arg1:T111 Arg2:T113	
+R51	use Arg1:T112 Arg2:T113	
+T114	OS_name 23804 23809	macOS
+T115	person 23824 23829	users
+R52	use Arg1:T115 Arg2:T114	
+T116	company 23846 23858	IT companies
+R53	use Arg1:T116 Arg2:T114	
+T117	threatActor_name 23714 23721	Lazarus
+T118	OS_name 23758 23763	macOS
+R54	attack Arg1:T117 Arg2:T118	
+T119	reference_word 23636 23645	the group
+T120	person 23374 23391	Lazarus APT group
+T121	threatActor_name 23374 23381	Lazarus
+T122	target_crowd 23421 23437	financial sector
+R55	attack Arg1:T121 Arg2:T122	
+R56	coreference Arg1:T119 Arg2:T120	
+T123	protocol 23141 23145	HTTP
+T124	location 23201 23212	North Korea
+T125	malware 23032 23040	backdoor
+T127	malware 22674 22682	backdoor
+T128	time 22698 22708	2018-07-12
+R57	first_found_time Arg1:T127 Arg2:T128	
+T129	malware 22512 22520	backdoor
+T130	person 22462 22474	threat actor
+T131	malware 22432 22440	backdoor
+R58	use Arg1:T130 Arg2:T131	
+T132	security_team 22328 22354	Kaspersky Security Network
+T133	malware 22357 22366	Fallchill
+R59	find Arg1:T132 Arg2:T133	
+T134	malware 22223 22232	Fallchill
+T126	person 22203 22212	attackers
+R60	use Arg1:T126 Arg2:T134	
+T135	md5 22021 22053	94dfcabd8ba5ca94828cd5a88d6ed488
+T136	md5 22076 22108	14b6d24873f19332701177208f85e776
+T137	md5 22131 22163	abec84286df80704b823e698199d89f7
+T138	time 22054 22073	2016-10-24 02:31:18
+T139	time 22109 22128	2017-06-07 06:41:27
+T140	time 22164 22183	2017-01-18 04:29:29
+T141	IP 21916 21929	196.38.48.121
+T142	IP 21932 21947	185.142.236.226
+T143	malware 22009 22018	Fallchill
+R61	use Arg1:T143 Arg2:T141	
+R62	use Arg1:T143 Arg2:T142	
+T144	md5 21812 21844	cd6796f324ecb7cf34bc9bc38ce4e649
+T145	md5 21757 21789	56f5088f488e50999ee6cced1f5dd6aa
+T146	md5 21702 21734	6b061267c7ddeb160368128a933d38be
+T147	md5 21647 21679	cea1a63656fb199dd5ab90528188e87c
+T148	md5 21592 21624	cafda7b3e9a4f86d4bd005075040a712
+T149	md5 21537 21569	c501ea6c56ba9133c3c26a7d5ed4ce49
+T150	md5 21482 21514	5ad7d35f0617595f26d565a3b7ebc6d0
+T151	md5 21427 21459	21694c8db6234df74102e8b5994b7627
+T152	md5 21372 21404	6cb34af551b3fb63df6c9b86900cf044
+T153	md5 21317 21349	81c3a3c5a0129477b59397173fdc0b01
+T154	time 21350 21369	2017-05-26 23:37:04
+T155	time 21405 21424	2017-06-09 17:24:30
+T156	time 21460 21479	2017-11-07 17:54:19
+T157	time 21515 21534	2015-10-24 01:52:11
+T158	time 21570 21589	2017-06-09 03:59:43
+T159	time 21625 21644	2017-11-07 17:54:33
+T160	time 21680 21699	2017-06-12 19:25:31
+T161	time 21735 21754	2017-11-09 17:18:06
+T162	time 21790 21809	2017-06-13 08:17:51
+T163	time 21845 21864	2016-04-17 03:26:56
+T164	malware 21194 21203	Fallchill
+T165	malware 21125 21134	Fallchill
+T166	encryption_algo 21174 21177	RC4
+R63	use Arg1:T165 Arg2:T166	
+T167	malware 20984 20993	Fallchill
+T168	string 21032 21079	DA E1 61 FF 0C 27 95 87 17 57 A4 D6 EA E3 82 2B
+T169	malware 20867 20876	Fallchill
+T170	encryption_algo 20892 20895	RC4
+R64	use Arg1:T169 Arg2:T170	
+T171	location 20862 20864	US
+T172	security_team 20854 20858	CERT
+R65	located Arg1:T172 Arg2:T171	
+T173	security_team 20643 20656	Kaspersky Lab
+T174	malware 20687 20696	Fallchill
+T175	threatActor_name 20716 20723	Lazarus
+T176	target_crowd 20751 20767	financial sector
+R66	find Arg1:T173 Arg2:T174	
+R67	use Arg1:T175 Arg2:T174	
+R68	attack Arg1:T175 Arg2:T176	
+T177	company 20609 20618	Celas LLC
+T178	company 20501 20510	Celas LLC
+T179	company 20236 20245	Celas LLC
+T180	domain 20267 20300	https://www.domains4bitcoins.com/
+T181	domain 20317 20343	https://www.namecheap.com/
+T182	domain 20359 20385	https://www.changeip.com /
+T183	domain 20399 20415	https://njal.la/
+T184	domain 20248 20264	Domains4Bitcoins
+T185	domain 20305 20314	NameCheap
+T186	domain 20348 20356	ChangeIP
+T187	domain 20390 20396	Njalla
+R69	coreference Arg1:T180 Arg2:T184	
+R70	coreference Arg1:T181 Arg2:T185	
+R71	coreference Arg1:T182 Arg2:T186	
+R72	coreference Arg1:T183 Arg2:T187	
+T188	url 20169 20192	https://libertyvps.net/
+T189	url 20154 20165	Liberty VPS
+T190	url 20118 20127	Blackhost
+T191	url 20130 20149	https://black.host/
+R73	coreference Arg1:T191 Arg2:T190	
+R74	coreference Arg1:T188 Arg2:T189	
+T192	company 20105 20114	Celas LLC
+T193	person 19854 19863	providers
+T194	person 19908 19917	customers
+T195	person 19988 19997	customers
+T196	company 19106 19111	Celas
+T198	location 19296 19309	United States
+T199	company 19243 19252	Comodo CA
+R75	located Arg1:T199 Arg2:T198	
+T197	company 18536 18545	Celas LLC
+T200	malware 18590 18599	Fallchill
+T201	government 18663 18672	Celas LLC
+T202	IP 18692 18707	185.142.236.213
+T203	malware 18757 18766	Fallchill
+T204	IP 18789 18802	196.38.48.121
+T205	IP 18847 18862	185.142.236.226
+T206	person 18923 18931	attacker
+T207	IP 18959 18970	80.82.64.91
+T208	IP 19012 19027	185.142.239.173
+T209	malware 18422 18431	Fallchill
+T210	person 18440 18447	authors
+R76	use Arg1:T210 Arg2:T209	
+T211	IP 18333 18348	185.142.236.213
+T212	domain 18318 18330	celasllc.com
+R77	coreference Arg1:T211 Arg2:T212	
+T213	location 18387 18398	Netherlands
+T214	company 18366 18379	Blackhost ISP
+R78	located Arg1:T214 Arg2:T213	
+T215	location 19031 19042	Netherlands
+T216	company 19043 19056	Blackhost Ltd
+R79	located Arg1:T216 Arg2:T215	
+T217	location 18866 18877	Netherlands
+T218	company 18878 18892	Blackhost Ltd.
+R80	located Arg1:T218 Arg2:T217	
+T219	location 18711 18722	Netherlands
+T220	company 18723 18736	Blackhost Ltd
+R81	located Arg1:T220 Arg2:T219	
+T221	location 18806 18818	South Africa
+T222	location 18974 18984	Seychelles
+T223	protocol 18156 18161	WHOIS
+T224	domain 17864 17876	celasllc.com
+T225	protocol 17794 17799	WHOIS
+T226	sample_name 17689 17699	Info.plist
+T227	OS_name 17642 17647	macOS
+T228	person 17487 17497	John Broox
+T229	person 17580 17590	John Broox
+T230	email_evil 17533 17555	johnbroox200@gmail.com
+R82	use Arg1:T228 Arg2:T230	
+R83	use Arg1:T229 Arg2:T227	
+T231	protocol 17384 17389	WHOIS
+T232	domain 17406 17418	celasllc.com
+T233	company 16908 16917	Comodo CA
+T234	protocol 16882 16885	SSL
+R84	use Arg1:T233 Arg2:T234	
+T235	company 16787 16796	Celas LLC
+T236	malware 16825 16855	trojanized trading application
+R85	find Arg1:T235 Arg2:T236	
+T237	threatActor_name 16554 16561	Lazarus
+T238	malware 16562 16571	backdoors
+T239	industry 16620 16625	banks
+T240	industry 16630 16639	financial
+R86	use Arg1:T237 Arg2:T238	
+R87	attack Arg1:T237 Arg2:T239	
+R88	attack Arg1:T237 Arg2:T240	
+T241	malware 16368 16376	backdoor
+T242	IP 16326 16341	185.142.236.226
+T243	IP 16310 16323	196.38.48.121
+T244	function 16011 16014	API
+T245	threatActor_name 15948 15955	Lazarus
+T246	malware 15895 15904	Fallchill
+R89	use Arg1:T245 Arg2:T246	
+T247	attack_activity 15956 15959	APT
+R90	launch Arg1:T245 Arg2:T247	
+T248	malware 15789 15798	Fallchill
+T249	time 15746 15765	2018-03-16 07:15:31
+T250	md5 15597 15629	d7089e6bc8bd137a7241a7ad297f975d
+T251	malware 15453 15461	backdoor
+T252	malware 15291 15299	backdoor
+T253	sample_name 14944 14960	uploadmgrsvc.dll
+T254	md5 14779 14811	d8484469587756ce0d10a09027044808
+T255	malware 14749 14758	Fallchill
+T256	malware 14759 14767	backdoor
+R91	part_of Arg1:T255 Arg2:T256	
+T257	time 14717 14736	2018-01-18 01:56:32
+T258	md5 14502 14534	e1ed584a672cab33af29114576ad6cce
+T259	malware 14466 14475	Fallchill
+T260	malware 14476 14484	backdoor
+R92	part_of Arg1:T259 Arg2:T260	
+T261	malware 13036 13045	Fallchill
+T262	sample_name 13338 13347	msncf.dat
+T263	sample_name 13450 13460	msndll.tmp
+T264	sample_name 13522 13529	svc.dll
+T265	sample_name 13809 13816	svc.dll
+T266	sample_name 14012 14022	msndll.dat
+T267	sample_name 13994 14004	msndll.tmp
+T268	sample_name 14072 14082	msndll.tmp
+T269	sample_name 14085 14094	msncf.dat
+T270	sample_name 14097 14107	msndll.log
+T271	sample_name 12951 12961	msndll.dat
+T272	malware 12898 12907	Fallchill
+T273	malware 12908 12916	backdoor
+R93	part_of Arg1:T272 Arg2:T273	
+T274	malware 12830 12839	Fallchill
+T275	malware 12840 12848	backdoor
+R94	part_of Arg1:T274 Arg2:T275	
+T276	malware 12787 12796	Fallchill
+T277	sample_name 12763 12773	msndll.tmp
+T278	sample_name 12806 12816	msndll.dat
+T279	sample_name 12719 12728	msncf.dat
+T280	OS_name 12520 12527	Windows
+T281	malware 12053 12062	Fallchill
+T282	malware 12063 12071	backdoor
+R95	part_of Arg1:T281 Arg2:T282	
+T283	malware 11974 11980	trojan
+T284	time 11579 11598	2018-04-19 13:30:19
+T285	md5 11393 11425	0a15a33844c9df11f12a4889ae7b7e4b
+T286	security_team 11203 11229	Kaspersky Security Network
+T287	person 11236 11248	threat actor
+T288	malware 11263 11280	malicious payload
+R96	use Arg1:T287 Arg2:T288	
+R97	find Arg1:T286 Arg2:T288	
+T289	time 11109 11113	2018
+T290	threatActor_name 11054 11061	Lazarus
+T291	time 11071 11075	2016
+T292	target_crowd 11095 11100	banks
+R98	attack Arg1:T290 Arg2:T292	
+R99	occur_time Arg1:T290 Arg2:T291	
+T293	protocol 10153 10157	HTTP
+T294	protocol 10282 10286	HTTP
+T295	protocol 10132 10136	HTTP
+T296	OS_name 9937 9942	macOS
+T297	domain 9839 9879	https://www.celasllc.com/checkupdate.php
+T298	protocol 9805 9809	HTTP
+T299	OS_name 9630 9637	Windows
+T300	OS_name 9434 9439	macOS
+T301	OS_name 7437 7442	macOS
+T302	person 7443 7448	users
+T303	company 7451 7460	Celas LLC
+R100	use Arg1:T302 Arg2:T301	
+T304	tool 7524 7535	autoupdater
+T305	reference_word 7650 7652	It
+R101	coreference Arg1:T305 Arg2:T304	
+T306	OS_name 7814 7821	Windows
+T307	md5 7998 8030	48ded52752de9f9b73c6bf9ae81cb429
+T308	time 8176 8188	13 July 2018
+T309	OS_name 8237 8242	macOS
+T310	sample_name 8317 8341	.com.celastradepro.plist
+T311	malware 8200 8216	Cellas Trade Pro
+R102	attack Arg1:T311 Arg2:T309	
+T312	md5 6919 6951	4126e1f34cf282c354e17587bb6e8da3
+T313	md5 6952 6984	0bdb652bbe15942e866083f29fb6dd62
+T314	time 6987 7006	2018-08-03 09:57:29
+T315	time 7007 7025	2018-08-13 0:12:10
+T316	md5 7028 7060	ffae703a1e327380d85880b9037a0aeb
+T317	md5 7061 7093	bbbcf6da5a4c352e8846bf91c3358d5c
+T318	time 7096 7115	2018-08-03 09:50:08
+T319	time 7116 7134	2018-08-11 7:28:08
+T320	time 6862 6875	July 2 , 2018
+T321	time 6696 6706	August 3rd
+T322	time 6722 6733	August 11th
+T323	protocol 6394 6398	HTTP
+T324	encryption_algo 6468 6471	RC4
+T325	protocol 6289 6293	HTTP
+T76	company 5382 5391	Celas LLC
+T12	attack_goal 290 304	cyberespionage
+T326	attack_goal 309 322	cybersabotage
+T11	target_crowd 357 362	banks
+T327	target_crowd 373 392	financial companies
+R4	goal Arg1:T10 Arg2:T12	
+R5	goal Arg1:T10 Arg2:T326	
+R35	attack Arg1:T10 Arg2:T11	
+R103	attack Arg1:T10 Arg2:T327	
+T16	target_crowd 525 549	cryptocurrency exchanges
+T328	target_crowd 554 571	fintech companies
+R10	attack Arg1:T14 Arg2:T16	
+R104	attack Arg1:T14 Arg2:T328	
+T330	reference_word 3380 3382	it
+T329	reference_word 3259 3268	This file
+R105	coreference Arg1:T329 Arg2:T55	
+R106	coreference Arg1:T330 Arg2:T329	
+R107	use Arg1:T66 Arg2:T64	
+T331	sample_name 4170 4180	loader.pdb
+R108	use Arg1:T69 Arg2:T68	
+T332	string 4377 4386	%09d-%05d
+R109	use Arg1:T71 Arg2:T78	
+R110	use Arg1:T71 Arg2:T79	
+R111	use Arg1:T71 Arg2:T80	
+R112	use Arg1:T71 Arg2:T81	
+R113	use Arg1:T71 Arg2:T82	
+T333	encryption_algo 5099 5106	XOR key
+R114	use Arg1:T75 Arg2:T73	
+R115	use Arg1:T75 Arg2:T74	
+R116	part_of Arg1:T83 Arg2:T76	
+T334	malware 7499 7510	trading app
+R117	find Arg1:T303 Arg2:T334	
+T335	sample_name 8114 8153	celastradepro_mac_installer_1.00.00.dmg
+T336	sample_name 8259 8266	Updater
+T337	reference_word 8245 8247	it
+R118	coreference Arg1:T337 Arg2:T311	
+T338	sample_name 8477 8484	Updater
+T339	tool 8509 8520	CheckUpdate
+R119	use Arg1:T338 Arg2:T339	
+T340	tool 8573 8584	CheckUpdate
+T341	reference_word 8732 8734	it
+R120	coreference Arg1:T341 Arg2:T340	
+T342	malware 8852 8866	trojan updater
+R121	use Arg1:T342 Arg2:T341	
+T343	tool 8990 9001	CheckUpdate
+T344	person 9044 9048	user
+T345	person 9052 9065	administrator
+R122	use Arg1:T344 Arg2:T343	
+R123	use Arg1:T345 Arg2:T343	
+T346	malware 9103 9121	trojanized updater
+T347	OS_name 9143 9150	Windows
+R124	attack Arg1:T346 Arg2:T347	
+T348	string 9335 9344	%09d-%06d
+T349	malware 9260 9274	the downloader
+T350	reference_word 9380 9387	the app
+R125	coreference Arg1:T350 Arg2:T349	
+R126	attack Arg1:T350 Arg2:T300	
+T351	encryption_algo 9668 9681	XOR-encrypted
+R127	use Arg1:T351 Arg2:T298	
+T352	encryption_algo 10413 10416	RC4
+R128	use Arg1:T352 Arg2:T294	
+T353	company 11512 11514	MS
+T354	OS_name 11515 11522	Windows
+R129	use Arg1:T353 Arg2:T354	
+T355	sample_name 11556 11563	msn.exe
+R130	part_of Arg1:T281 Arg2:T283	
+R131	part_of Arg1:T277 Arg2:T276	
+R132	part_of Arg1:T278 Arg2:T274	
+R133	occur_time Arg1:T153 Arg2:T154	
+R134	occur_time Arg1:T152 Arg2:T155	
+R135	occur_time Arg1:T151 Arg2:T156	
+R136	occur_time Arg1:T150 Arg2:T157	
+R137	occur_time Arg1:T149 Arg2:T158	
+R138	occur_time Arg1:T148 Arg2:T159	
+R139	occur_time Arg1:T147 Arg2:T160	
+R140	occur_time Arg1:T146 Arg2:T161	
+R141	occur_time Arg1:T145 Arg2:T162	
+R142	occur_time Arg1:T144 Arg2:T163	
+R143	occur_time Arg1:T135 Arg2:T138	
+R144	occur_time Arg1:T136 Arg2:T139	
+R145	occur_time Arg1:T137 Arg2:T140	
+R146	use Arg1:T206 Arg2:T207	
+R147	use Arg1:T206 Arg2:T208	
+R148	use Arg1:T203 Arg2:T204	
+R149	use Arg1:T203 Arg2:T205	
+R150	use Arg1:T201 Arg2:T202	

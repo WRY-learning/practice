@@ -1,0 +1,56 @@
+APT28 : AT THE CENTER OF THE STORM .
+APT28 TARGETING OF POLITICAL ENTITIES AND INTRUSION ACTIVITY : 
+OSCE : NOVEMBER 2016 The OSCE confirmed that it had suffered an intrusion , which a Western intelligence service attributed to APT28 .
+Germany's Christian Democratic Union ( CDU ) : APRIL - MAY 2016 Researchers at Trend Micro observed APT28 establish a fake CDU email server and launch phishing emails against CDU members in an attempt to obtain their email credentials and access their accounts .
+Pussy Riot : AUGUST 2015 APT28 targets Russian rockers and dissidents Pussy Riot via spear-phishing emails .
+NATO , Afghan Ministry of Foreign Affairs , Pakistani Military : JULY 2015 APT28 used two domains ( nato-news.com and bbc-news.org ) to host an Adobe Flash zero-day exploit to target NATO , the Afghan Ministry of Foreign Affairs , and the Pakistani military .
+German Bundestag & Political Parties : JUNE 2015 Germany's Federal Office for Security in Information Technology ( BSI ) announced that APT28 was likely responsible for the spear phishing emails sent to members of several German political parties .
+The head of Germany's domestic intelligence agency , Bundesamt für Verfassungsschutz ( BfV ) , also attributed the June 2015 compromise of the Bundestag's networks to APT28 .
+Kyrgyzstan Ministry of Foreign Affairs : OCTOBER 2014 THROUGH SEPTEMBER 2015 FireEye iSight Intelligence identified changes made to domain name server ( DNS ) records that suggest that APT28 intercepted email traffic from the Kyrgyzstan Ministry of Foreign Affairs after maliciously modifying DNS records of the ministry's authoritative DNS servers .
+Polish Government & Power Exchange websites : JUNE AND SEPTEMBER 2014 APT28 employed "Sedkit" in conjunction with strategic web compromises to deliver "Sofacy" malware on Polish Government websites , and the websites of Polish energy company Power Exchange .
+Since 2014 , APT28 network activity has likely supported information operations designed to influence the domestic politics of foreign nations .
+Some of these operations have involved the disruption and defacement of websites , false flag operations using false hacktivist personas , and the theft of data that was later leaked publicly online .
+APT28 NETWORK ACTIVITY HAS LIKELY SUPPORTED INFORMATION OPERATIONS : 
+World Anti-Doping Agency ( WADA ) : 
+SEPTEMBER 2016 .
+On September 13 , WADA confirmed that APT28 had compromised its networks and accessed athlete medical data .
+On September 12 , 2016 , the "Fancy Bears' Hack Team" persona claimed to have compromised WADA and released athletes' medical records as "proof of American athletes taking doping." .
+U.S. Democratic National Committee ( DNC ) : 
+APRIL – SEPTEMBER 2016 .
+The DNC announced it had suffered a network compromise and that a subsequent investigation found evidence of two breaches , attributed to APT28 and APT29 .
+FireEye analyzed the malware found on DNC networks and determined that it was consistent with our previous observations of APT28 tools .
+In June 2016 , shortly after the DNC's announcement , the Guccifer 2.0 persona claimed responsibility for the DNC breach and leaked documents taken from the organization's network .
+Guccifer 2.0 continued to leak batches of DNC documents through September .
+John Podesta : 
+MARCH – NOVEMBER 2016 .
+Investigators found that John Podesta , Hillary Clinton's presidential campaign chairman , was one of thousands of individuals targeted in a mass phishing scheme using shortened URLs that security researchers attributed to APT28 .
+Throughout October and into early November , WikiLeaks published 34 batches of email correspondence stolen from John Podesta's personal email account .
+Correspondence of other individuals targeted in the same phishing campaign , including former Secretary of State Colin Powell and Clinton campaign staffer William Rinehart , were published on the "DC Leaks" website .
+U.S. Democratic Congressional Campaign Committee ( DCCC ) : 
+MARCH - OCTOBER 2016 .
+In July , the DCCC announced that it was investigating an ongoing "cybersecurity incident" that the FBI believed was linked to the compromise of the DNC .
+House Speaker Nancy Pelosi later confirmed that the DCCC had suffered a network compromise .
+Investigators indicated that the actors may have gained access to DCCC systems as early as March .
+In August , the Guccifer 2.0 persona contacted reporters covering U.S. House of Representative races to announce newly leaked documents from the DCCC pertaining to Democratic candidates .
+From August to October , Guccifer 2.0 posted several additional installments of what appear to be internal DCCC documents on "his" WordPress site .
+TV5Monde : 
+FEBRUARY 2015 , APRIL 2015 .
+In February , FireEye identified CORESHELL traffic beaconing from TV5Monde's network , confirming that APT28 had compromised TV5Monde's network .
+In April 2015 , alleged pro-ISIS hacktivist group CyberCaliphate defaced TV5Monde's websites and social media profiles and forced the company's 11 broadcast channels offline .
+FireEye identified overlaps between the domain registration details of CyberCaliphate's website and APT28 infrastructure .
+Ukrainian Central Election Commission ( CEC ) : 
+MAY 2014 .
+Ukrainian officials revealed that the investigation into the compromise of the CEC's internal network identified malware traced to APT28 .
+During the May 2014 Ukrainian presidential election , purported pro-Russian hacktivists CyberBerkut conducted a series of malicious activities against the CEC including a system compromise , data destruction , a data leak , a distributed denial-of-service ( DDoS ) attack , and an attempted defacement of the CEC website with fake election results .
+As news of the DNC breach spread , APT28 was preparing for another set of operations : countering the condemnation that Russia was facing after doping allegations and a threatened blanket ban of the Russian team from the upcoming Rio Games .
+Russia , like many nations , has long viewed success in the Olympic Games as a source of national prestige and soft power on the world stage .
+The doping allegations and prospective ban from the Games further ostracized Russia , and likely provided motivation to actively counter the allegations by attempting to discredit anti-doping agencies and policies .
+Our investigation of APT28's compromise of WADA's network , and our observations of the surrounding events reveal how Russia sought to counteract a damaging narrative and delegitimize the institutions leveling criticism .
+ALLEGATIONS OF RUSSIAN ATHLETES' WIDESPREAD DOPING : 
+NOV ( 2015 ) : WADA declares the Russian Anti-Doping Agency ( RUSADA ) noncompliant .
+JULY 18 : WADA-commissioned report documents evidence of Russian athletes' widespread doping .
+AUG 4 : Russian athletes were barred from competing in the Olympic Games .
+APT28 COMPROMISES WADA : 
+EARLY AUG : APT28 sends spear phishing emails to WADA employees .
+AUG 10 : APT28 uses a legitimate user account belonging to a Russian athlete to log into WADA's AntiDoping Administration and Management System ( ADAMS ) database .
+AUG 25-SEP 12 : APT28 gains access to an International Olympic Committee account created specifically for the 2016 Olympic Games , and views and downloads athlete data .

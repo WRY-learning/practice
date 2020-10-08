@@ -1,0 +1,6 @@
+T1	person 194 216	Network administrators
+T2	attack_activity 0 14	GRIZZLY STEPPE
+T3	reference_word 241 246	their
+R1	coreference Arg1:T3 Arg2:T1	
+T4	sub_activity 235 269	check their public-facing websites
+R2	launch Arg1:T1 Arg2:T4	

@@ -1,0 +1,13 @@
+Unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+APT39 : Chafer .
+APT39 is an Iranian cyber espionage group that has been active since at least 2014 .
+They have targeted the telecommunication and travel industries to collect personal information that aligns with Iran's national priorities .
+APT41 is a group that carries out Chinese state-sponsored espionage activity in addition to financially motivated activity .
+APT41 has been active since as early as 2012 .
+The group has been observed targeting healthcare , telecom , technology , and video game industries in 14 countries .
+Axiom : Group72 .
+Axiom is a cyber espionage group suspected to be associated with the Chinese government .
+It is responsible for the Operation SMN campaign .
+Though both this group and Winnti Group use the malware Winnti , the two groups appear to be distinct based on differences in reporting on the groups' TTPs and targeting .

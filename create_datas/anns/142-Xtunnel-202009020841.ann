@@ -1,0 +1,19 @@
+T1	OS_name 1514 1521	Windows
+T4	OS_name 2304 2309	Linux
+T6	malware 2587 2594	Dropper
+T9	malware 2885 2892	Payload
+T13	malware 185 192	Xtunnel
+T14	sub_activity 193 217	reports a 6-byte message
+T15	malware 353 360	Xtunnel
+T16	time 375 379	2013
+T17	time 425 433	mid-2016
+T18	reference_word 438 462	the most recent versions
+T19	IP 552 565	176.31.112.10
+T20	time 755 768	February 2013
+T21	malware 674 681	Xtunnel
+T22	malware 791 798	Xtunnel
+T23	time 995 1005	April 2015
+T24	time 1386 1395	July 2015
+T25	malware 1078 1085	Xtunnel
+T26	protocol 1294 1307	HTTP protocol
+T27	malware 1242 1249	Xtunnel

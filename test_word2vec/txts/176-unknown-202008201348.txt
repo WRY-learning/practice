@@ -1,0 +1,49 @@
+HOT KNIVES THROUGH BUTTER:  Evading File-based Sandboxes
+With organizations facing a deluge of cyberattacks , virtual-machine sandboxing has become a popular tool for quickly examining legions of files for suspicious activity .
+These sandboxes provide isolated , virtual environments that monitor the actual behavior of files as they execute .
+In theory , this setup enables security professionals to spot malicious code that evades traditional signature-based defenses .
+But sandboxes are only as good as the analysis that surrounds them .
+By themselves , sandboxes can only monitor and report file activity , not analyze it .
+And unfortunately for organizations that rely on them , the file-based sandboxes used by many vendors are proving oblivious to the latest malware .
+Attackers are using a variety of techniques to slip under the radar of these sandboxes , leaving systems just as vulnerable as they were before .
+Note : The term “ sandboxing ” is a broad concept that includes many forms of isolating code .
+This report focuses on file-based sandboxing that uses instrumented virtual-machine ( VM ) 
+environments to simulate targeted computers , execute unknown files , and monitor those files ’ activity for reporting and analysis .
+The techniques outlined in this report render VM-aware malware invisible to this category of sandboxing .
+Detecting them requires analyzing the context of behavior and correlating disparate phases of an attack through multi-flow analysis— which is how FireEye researchers identified the malware samples outlined in this report .
+This report is an updated version of the report published in February 2014 .
+In this update we have added : 
+New evasion techniques that make use of human interaction to evade file-based sandboxes .
+Under the Configuration section we provide details about techniques that use image files to hide executables with malicious behavior to evade file-based sandboxes .
+Security professionals widely agree that traditional signature-based security measures are toothless against today ’s sophisticated attacks .
+Advanced malware is dynamic and polymorphic , exploiting unknown vulnerabilities to attack through multiple vectors in a coordinated fashion .
+Malware defenses have had to evolve .
+Instead of relying on signatures , automated analysis systems examine malware behavior using sandboxing .
+These self-contained simulated computer environments allow files to execute without doing any real damage .
+Observing the files in these virtual environments , security systems can flag suspicious behavior , such as changes to the operating system or calls to the attacker ’s command-and-control ( CnC ) servers .
+But attackers have evolved , too .
+Mindful that their code may execute in a sandbox before it reaches its target , malware authors are creating VMaware code that hides any telltale behavior until it has reached “ live ” prey .
+Observing no suspicious actions in the sandbox , the security analysis deems the code harmless .
+The key for malware authors is determining whether the code is running in a virtual environment or on a real target machine .
+To that end , malware authors have a developed a variety of techniques .
+File-based sandboxes emulate physical systems , but without a human user .
+Attackers use this key difference to their advantage , creating malware that lies dormant until it detects signs of a human user : a mouse click , intelligent responses to dialog boxes , and the like .
+This section describes these checks in more detail .
+Mouse clicks UpClicker , a trojan analyzed in December 2012 , was among the earliest-discovered malware samples that used mouse clicks to detect human activity .
+A similar , albeit simpler , technique emerged a few months earlier To fool sandboxes , UpClicker establishes communication with malicious CnC servers only after detecting a click of the left mouse button .
+UpClicker is a wrapper around Poison Ivy , a remote access tool ( RAT ) tied extensively to advanced persistent threat ( APT ) attacks .
+This code watches for a left-click on the mouse— more specifically , an up-click , which is where the Trojan gets its name .
+When an up-click occurs , the code calls function UnhookWindowsHookEx to stop monitoring the mouse and then calls the function sub_401170 to execute the malicious code .
+Another APT-related malware file called BaneChant , which surfaced six months after UpClicker , further refined the concept .
+It activates only after three mouse clicks .
+Dialog boxes Another way of detecting a live target is displaying a dialog box that requires the user to respond .
+A common malware technique is using the MessageBox and MessageBoxEx API functions of Windows to create dialog boxes in EXE and DLL files .
+The malware activates only after the user clicks a button .
+In the same way , malware can use JavaScript to open a dialog box within Adobe Acrobat PDF files using the app.alert method documented in the JavaScript for Acrobat API .
+When the user clicks OK , the code uses the app.launchURL method to open a malicious URL .
+To scroll is human7 One malware we discovered lies dormant until the user scrolls to the second page of a Rich Text Format ( RTF ) document .
+So simulating human interaction with random or preprogrammed mouse movements isn’t enough to activate its malicious behavior .
+The rule of two ( clicks )  Another sandbox-evading attack we spotted in recent attacks waits for two or more mouse clicks before executing .
+To thwart earlier evasion techniques that detect human interaction , some sandboxes have begun programming one-time mouse clicks when executing code .
+But most people click mouse buttons many times throughout the day .
+By lying dormant until it detects more than two clicks , the malicious code ensures that the mouse clicks are from an actual person —not a sandbox mimicking one .

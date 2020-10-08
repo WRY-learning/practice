@@ -1,0 +1,37 @@
+FIN10:Anatomy of a Cyber Extortion Operation .
+Meterpreter , short for the Meta-Interpreter , is an advanced payload included in the Metasploit Framework .
+It provides functionality that would otherwise be difficult to implement in assembly by allowing developers to write their own extensions in the form of DLL files that can be uploaded and injected post exploitation .
+Meterpreter and most of its extensions are executed in memory , thus largely evading detection by standard anti-virus .
+Due to its public availability , FireEye iSIGHT Intelligence has observed multiple threat actor groups use Meterpreter in targeted attacks across various industries .
+Threat actors often use PowerShell to write their own malicious utilities , which typically decrease chance of detection by popular endpoint security controls .
+When scripts are executed with PowerShell , the scripts run inside powershell.exe ( locally ) or wsmprovhasost .
+exe ( remotely ) , both of which are often trusted processes .
+PowerShell provides threat actors with the ability to create scripts that exceed the capabilities of a standard Windows shell , batch files and VBS files .
+In the majority of cases , we observed FIN10 leveraging PowerShell Empire ( a pen-testing tool that utilizes PowerShell ) for elevated persistence , mainly by utilizing the Registry and Scheduled Task options ;
+ however , in at least one intrusion , we observed FIN10 use S4U tasks for this purpose , although this method was likely abandoned in favor of PowerShell Empire once it was released .
+In at least one instance , PowerShell Empire was used to install a randomly named service that executed a Meterpreter PowerShell script , which in turn executed malicious .bat files .
+The created batch scripts typically contained PowerShell commands for 32-bit and 64-bit operating systems and upon execution could connect to an attacker command and control ( C2 ) server .
+We have also observed FIN10 using PowerShell to load Metasploit Meterpreter stagers into memory .
+FIN10 routinely leverages Windows Remote Desktop Protocol ( RDP ) to access systems within the environment .
+More specifically , attacker ( s ) leveraged RDP to authenticate to internal systems that were configured to allow ingress RDP connections from systems residing outside organizational firewall perimeters .
+Similarly , we have observed FIN10 , in at least two instances , use single-factor protected VPN to connect remotely to victim networks after stealing credentials .
+In multiple events , FIN10 also leveraged functionality within the PowerShell script Meterpreter backdoor to perform internal reconnaissance and move laterally throughout the environment .
+Further analysis found the attacker ( s ) used Meterpreter functionality to enumerate users on remote systems and execute additional PowerShell functionality .
+In at least one network compromise , attacker ( s ) moved laterally using the Local Administrator account and deployed Metasploit Meterpreter stagers and SplinterRAT instances on targeted systems .
+SplinterRAT is an open-source red team collaboration framework .
+It is a Java-based framework that was publicly available and relatively easy to implement with limited knowledge .
+In addition , SplinterRAT provides capabilities such as file system browsing , file upload and download , execution of shell commands and beaconing in case of communication issues with a C2 server .
+Both the Metasploit related backdoors and SplinterRAT instances were programmed to connect to attacker-controlled C2 servers .
+We have regularly observed FIN10 use scheduled tasks as a persistence mechanism .
+For example , in at least one intrusion we observed FIN10 create a scheduled task named “ C:\Windows\System32\Tasks\Updater ”  , which executed a PowerShell script encoded in the Windows registry .
+The script was configured to communicate with attacker-controlled C2 infrastructure .
+FIN10 routinely deploys destructive batch scripts intended to delete critical system files and shutdown network systems .
+Network degradation activity typically consisted of the attacker ( s ) creating scheduled tasks on multiple systems within the targeted network environment to disrupt the normal operations of those systems by rendering their operating systems unusable .
+In at least two instances , FIN10 created a scheduled task that used the command shown in Figure 2 to delete the Windows directory using the Microsoft robocopy tool on critical systems within the environment .
+While this TTP could potentially be viewed as an attempt by FIN10 to obfuscate malicious activity , the resulting effects of these scheduled tasks were easily detected , suggesting that these activities were intended to lend credence to the perceived threat .
+We believe the primary goal of this threat group is to steal corporate business data , files , records , correspondence and customer PII , and then to extort victim organizations for non-release of the stolen data .
+The threat group posts proof of the stolen data on publicly accessible websites .
+Failure to pay the threat group could result in the public release of stolen data and potential disruption or destruction of the victim ’s information assets and systems .
+In all but one targeted intrusion we have attributed to FIN10 , the attacker ( s ) demanded a variable sum payable in Bitcoin for the non-release of sensitive data obtained during network reconnaissance stages ( See Appendix for sample extortion email ) .
+Requested sums ranged from 100 to 500 Bitcoins ( roughly $124,000 to $620,000 as of mid-April 2017 ) .
+Notably , we identified at least two victims who were issued the same Bitcoin address .

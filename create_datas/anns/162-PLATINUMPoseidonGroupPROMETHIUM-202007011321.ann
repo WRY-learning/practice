@@ -1,0 +1,32 @@
+T1	threatActor_name 85 93	PLATINUM
+T2	threatActor_name 280 294	Poseidon Group
+T3	threatActor_name 533 543	PROMETHIUM
+T4	threatActor_name 694 704	PROMETHIUM
+T5	time 156 160	2009
+R1	first_found_time Arg1:T1 Arg2:T5	
+T6	reference_word 163 172	The group
+R2	coreference Arg1:T6 Arg2:T1	
+T7	location 253 277	South and Southeast Asia
+T8	time 369 373	2005
+T9	time 601 605	2012
+T10	reference_word 608 617	The group
+T11	reference_word 376 385	The group
+R3	coreference Arg1:T11 Arg2:T2	
+R4	coreference Arg1:T10 Arg2:T3	
+T12	threatActor_name 497 511	Poseidon Group
+T13	target_crowd 188 249	targets associated with governments and related organizations
+R5	located Arg1:T13 Arg2:T7	
+R6	attack Arg1:T6 Arg2:T13	
+R7	first_found_time Arg1:T3 Arg2:T9	
+R8	first_found_time Arg1:T2 Arg2:T8	
+T14	time 642 650	May 2016
+R9	occur_time Arg1:T10 Arg2:T14	
+T15	target_crowd 676 691	Turkish victims
+R10	attack Arg1:T10 Arg2:T15	
+T16	threatActor_name 766 775	NEODYMIUM
+T17	sub_activity 403 445	using information exfiltrated from victims
+R11	launch Arg1:T11 Arg2:T17	
+T18	sub_activity 449 475	blackmail victim companies
+R12	goal Arg1:T17 Arg2:T18	
+T19	sub_activity 481 530	contracting the Poseidon Group as a security firm
+R13	goal Arg1:T18 Arg2:T19	

@@ -1,0 +1,141 @@
+Energetic Bear/Crouching Yeti: attacks on servers
+Release_Time : 2018-04-23
+Report_URL : https://securelist.com/energetic-bear-crouching-yeti/85345/
+Energetic Bear/Crouching Yeti is a widely known APT group active since at least 2010 .
+The group tends to attack different companies with a strong focus on the energy and industrial sectors .
+Companies attacked by Energetic Bear/Crouching Yeti are geographically distributed worldwide with a more obvious concentration in Europe and the US .
+In 2016-2017 , the number of attacks on companies in Turkey increased significantly .
+The main tactics of the group include sending phishing emails with malicious documents and infecting various servers .
+The group uses some of the infected servers for auxiliary purposes – to host tools and logs .
+Others are deliberately infected to use them in waterhole attacks in order to reach the group's main targets .
+Recent activity of the group against US organizations was discussed in a US-CERT advisory , which linked the actor to the Russian government , as well as an advisory by the UK National Cyber Security Centre .
+This report by Kaspersky Lab ICS CERT presents information on identified servers that have been infected and used by the group .
+The report also includes the findings of an analysis of several webservers compromised by the Energetic Bear group during 2016 and in early 2017 .
+Victims of the threat actor's attacks were not limited to industrial companies .
+Compromised servers : 
+Russia Opposition political website Waterhole .
+Russia Real estate agency Auxiliary ( collecting user data in the waterhole attack ) .
+Russia Football club Waterhole .
+Russia Developer and integrator of secure automation systems and IS consultant Waterhole .
+Russia Developers of software and equipment Auxiliary ( collecting user data in the waterhole attack , tool hosting ) .
+Russia Investment website Auxiliary ( collecting user data in the waterhole attack ) .
+Ukraine	Electric power sector company Waterhole .
+Ukraine	Bank Waterhole .
+UK	Aerospace company Waterhole .
+Germany	Software developer and integrator Waterhole .
+Germany	Unknown Auxiliary ( collecting user data in the waterhole attack ) .
+Turkey	Oil and gas sector enterprise Waterhole .
+Turkey	Industrial group Waterhole .
+Turkey	Investment group Waterhole .
+Greece	Server of a university Auxiliary ( collecting user data in the waterhole attack ) .
+USA	Oil and gas sector enterprise Waterhole .
+Unknown	Affiliate network site Auxiliary ( collecting user data in the waterhole attack ) .
+All waterhole servers are infected following the same pattern : injecting a link into a web page or JS file with the following file scheme : file://IP/filename.png .
+The link is used to initiate a request for an image , as a result of which the user connects to the remote server over the SMB protocol .
+In this attack type , the attackers' goal is to extract the following data from the session : 
+user IP
+user name
+domain name
+NTLM hash of the user's password .
+In the process of analyzing infected servers , numerous websites and servers were identified that the attackers had scanned with various tools , such as nmap , dirsearch , sqlmap , etc .
+Even though the scanned servers do not necessarily look like potential final victims , it is likely that the attackers scanned different resources to find a server that could be used to establish a foothold for hosting the attackers' tools and , subsequently , to develop the attack .
+Part of the sites scanned may have been of interest to the attackers as candidates for hosting waterhole resources .
+In some cases , the domains scanned were hosted on the same server , sometimes the attackers went through the list of possible domains matching a given IP .
+In most cases , multiple attempts to compromise a specific target were not identified - with the possible exception of sites on the Bump platform , flight tracker servers and servers of a Turkish hotel chain .
+Curiously , the sites scanned included a web developer's website , kashey.ru , and resources links to which were found on this site .
+These may have been links to resources developed by the site's owner : www.esodedi.ru , www.i-stroy.ru , www.saledoor.ru .
+In addition , a custom Python script named ftpChecker.py was found on one of the servers .
+The script was designed to check FTP hosts from an incoming list .
+The following malicious php files were found in different directories in the nginx folder and in a working directory created by the attackers on an infected web servers : 
+ini.php wso shell+ mail f3e3e25a822012023c6e81b206711865 2016-07-01 15:57:38 28786bytes .
+mysql.php wso shell+ mail f3e3e25a822012023c6e81b206711865 2016-06-12 13:35:30 28786bytes .
+opts.php wso shell c76470e85b7f3da46539b40e5c552712 2016-06-12 12:23:28 36623bytes .
+error_log.php wso shell 155385cc19e3092765bcfed034b82ccb 2016-06-12 10:59:39 36636bytes .
+code29.php web shell 1644af9b6424e8f58f39c7fa5e76de51 2016-06-12 11:10:40 10724bytes .
+proxy87.php web shell 1644af9b6424e8f58f39c7fa5e76de51 2016-06-12 14:31:13 10724bytes .
+theme.php wso shell 2292f5db385068e161ae277531b2e114 2017-05-16 17:33:02 133104bytes .
+sma.php PHPMailer 7ec514bbdc6dd8f606f803d39af8883f 2017-05-19 13:53:53 14696bytes .
+media.php wso shell 78c31eff38fdb72ea3b1800ea917940f 2017-04-17 15:58:41 1762986bytes .
+In the table above : 
+Web shell is a script that allows remote administration of the machine .
+WSO is a popular web shell and file manager ( it stands for "Web Shell by Orb" ) that has the ability to masquerade as an error page containing a hidden login form .
+It is available on GitHub : https://github.com/wso-shell/WSO .
+Two of the PHP scripts found , ini.php and mysql.php , contained a WSO shell concatenated with the following email spamming script : https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php .
+All the scripts found are obfuscated .
+One of the web shells was found on the server under two different names ( proxy87.php and code29.php ) .
+It uses the eval function to execute a command sent via HTTP cookies or a POST request .
+A modified sshd with a preinstalled backdoor was found in the process of analyzing the server .
+Patches with some versions of backdoors for sshd that are similar to the backdoor found are available on GitHub , for example : https://github.com/jivoi/openssh-backdoor-kit .
+As a result of replacing the original sshd file with a modified one on the infected server , an attacker can use a 'master password' to get authorized on the remote server , while leaving minimal traces ( compared to an ordinary user connecting via ssh ) .
+In addition , the modified sshd logs all legitimate ssh connections ( this does not apply to the connection that uses the 'master password' ) , including connection times , account names and passwords .
+The log is encrypted and is located at /var/tmp/.pipe.sock .
+After gaining access to the server , the attackers installed the tools they needed at different times .
+Specifically , the following commands for third-party installations were identified on one of the servers : 
+apt install traceroute
+apt-get install nmap
+apt-get install screen
+git clone https://github.com/sqlmapproject/sqlmap.git .
+Additionally , the attackers installed any packages and tools for Python they needed .
+The attackers checked the smbtrap log file on working days .
+In addition , in the process of performing the analysis , an active process was identified that exploited SQL injection and collected data from a database of one of the victims .
+The findings of the analysis of compromised servers and the attackers' activity on these servers are as follows : 
+With rare exceptions , the group's members get by with publicly available tools .
+The use of publicly available utilities by the group to conduct its attacks renders the task of attack attribution without any additional group 'markers' very difficult .
+Potentially , any vulnerable server on the internet is of interest to the attackers when they want to establish a foothold in order to develop further attacks against target facilities .
+In most cases that we have observed , the group performed tasks related to searching for vulnerabilities , gaining persistence on various hosts , and stealing authentication data .
+The diversity of victims may indicate the diversity of the attackers' interests .
+It can be assumed with some degree of certainty that the group operates in the interests of or takes orders from customers that are external to it , performing initial data collection , the theft of authentication data and gaining persistence on resources that are suitable for the attack's further development .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/ftpChecker.py .
+Energetic Bear/Crouching Yeti : /usr/bin/nmap/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/dirsearch/ .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/dirsearch/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/SMBTrap/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/commix/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/subbrute-master/ .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/sqlmap/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/sqlmap-dev/ .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/wpscan/ .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/wpscan/ .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/Sublist3r/ .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/sma.php .
+Energetic Bear/Crouching Yeti : /usr/share/python2.7/theme.php .
+Energetic Bear/Crouching Yeti : /root/theme.php .
+Energetic Bear/Crouching Yeti : /usr/lib/libng/media.php .
+Energetic Bear/Crouching Yeti : /var/tmp/.pipe.sock .
+Energetic Bear/Crouching Yeti : f3e3e25a822012023c6e81b206711865 .
+Energetic Bear/Crouching Yeti : c76470e85b7f3da46539b40e5c552712 .
+Energetic Bear/Crouching Yeti : 155385cc19e3092765bcfed034b82ccb .
+Energetic Bear/Crouching Yeti : 1644af9b6424e8f58f39c7fa5e76de51 .
+Energetic Bear/Crouching Yeti : 2292f5db385068e161ae277531b2e114 .
+Energetic Bear/Crouching Yeti : 7ec514bbdc6dd8f606f803d39af8883f .
+Energetic Bear/Crouching Yeti : 78c31eff38fdb72ea3b1800ea917940f .
+Energetic Bear/Crouching Yeti : rule Backdoored_ssh .
+Energetic Bear/Crouching Yeti : $a1 = "OpenSSH" .
+Energetic Bear/Crouching Yeti : $a2 = "usage : ssh" .
+Energetic Bear/Crouching Yeti : $a3 = "HISTFILE" .
+Energetic Bear/Crouching Yeti : uint32 (0 ) == 0x464c457f and filesize<1000000 and all of ( $a* ) .
+Energetic Bear/Crouching Yeti : cd /tmp .
+Energetic Bear/Crouching Yeti : workdir=428c5fcf495396df04a459e317b70ca2 .
+Energetic Bear/Crouching Yeti : mkdir $workdir .
+Energetic Bear/Crouching Yeti : cd $workdir .
+Energetic Bear/Crouching Yeti : find / -type d -iname smbtrap > find-smbtrap.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname dirsearch > find-dirsearch.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname nmap > find-nmap.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname wpscan > find-wpscan.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname sublist3r > find-sublist3r.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : dpkg -l | grep -E \ (impacket\|pcapy\|nmap\ ) > dpkg-grep.txt .
+Energetic Bear/Crouching Yeti : cp /var/lib/dpkg/info/openssh-server.md5sums .#retrieve initial hash for sshd .
+Energetic Bear/Crouching Yeti : md5sum /usr/sbin/sshd > sshd.md5sum #calculate actual hash for sshd .
+Energetic Bear/Crouching Yeti : cd /tmp .
+Energetic Bear/Crouching Yeti : workdir=428c5fcf495396df04a459e317b70ca2 .
+Energetic Bear/Crouching Yeti : mkdir $workdir .
+Energetic Bear/Crouching Yeti : cd $workdir .
+Energetic Bear/Crouching Yeti : find / -type d -iname smbtrap > find-smbtrap.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname dirsearch > find-dirsearch.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname nmap > find-nmap.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname wpscan > find-wpscan.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : find / -type d -iname sublist3r > find-sublist3r.txt 2>/dev/null .
+Energetic Bear/Crouching Yeti : rpm -qa | grep -E \ (impacket\|pcapy\|nmap\ ) > rpm-grep.txt .
+Energetic Bear/Crouching Yeti : rpm -qa –dump | grep ssh > rpm-qa-dump.txt #retrieve initial hash for sshd .
+Energetic Bear/Crouching Yeti : sha256sum /usr/sbin/sshd > sshd.sha256sum #calculate actual sha256 hash for sshd .
+Energetic Bear/Crouching Yeti : md5sum /usr/sbin/sshd > sshd.md5sum #calculate actual md5 hash for sshd .

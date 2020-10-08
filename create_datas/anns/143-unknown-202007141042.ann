@@ -1,0 +1,401 @@
+T1	malware 42 53	KASPERAGENT
+T2	malware 58 67	MICROPSIA
+T3	location 24 35	Middle East
+T4	security_team 286 309	ClearSky Cyber Security
+T5	person 276 285	Eyal Sela
+T6	security_team 264 271	Unit 42
+T7	security_team 337 355	Palo Alto Networks
+#1	AnnotatorNotes T5	以色列国家网络局的威胁情报分析师。之前曾在ClearSky担任威胁情报主管。
+T8	security_team 388 396	ClearSky
+T9	location 449 460	Middle East
+T10	OS_name 486 503	Microsoft Windows
+T11	malware 535 546	KASPERAGENT
+T12	malware 551 560	MICROPSIA
+T13	OS_name 695 709	Google Android
+T14	malware 733 745	SECUREUPDATE
+T15	malware 750 754	VAMP
+T16	OS_name 780 797	Microsoft Windows
+T17	malware 815 826	KASPERAGENT
+T18	security_team 925 938	Kaspersky Lab
+T19	OS_name 967 984	Microsoft Windows
+T20	malware 1000 1009	MICROPSIA
+T21	OS_name 1157 1171	Google Android
+T22	malware 1187 1199	SECUREUPDATE
+T23	OS_name 1282 1296	Google Android
+T24	malware 1312 1316	VAMP
+T25	security_team 1739 1757	Palo Alto Networks
+T26	security_team 1611 1623	360 security
+T27	malware 1859 1870	KASPERAGENT
+T28	malware 2053 2064	KASPERAGENT
+T29	malware 3984 3995	KASPERAGENT
+T30	malware 4203 4214	KASPERAGENT
+T31	malware 4329 4340	KASPERAGENT
+T32	malware 5041 5052	KASPERAGENT
+T33	malware 5597 5608	KASPERAGENT
+T34	malware 6326 6337	KASPERAGENT
+T35	malware 13322 13333	KASPERAGENT
+T36	malware 13317 13321	VAMP
+T37	malware 13334 13343	MICROPSIA
+T38	malware 13344 13356	SECUREUPDATE
+T39	malware 2093 2102	MICROPSIA
+T40	malware 3861 3870	MICROPSIA
+T41	malware 7545 7554	MICROPSIA
+T42	malware 7838 7847	MICROPSIA
+T43	malware 10339 10348	MICROPSIA
+T44	location 2311 2324	United States
+T45	location 2327 2333	Israel
+T46	location 2336 2359	Palestinian Territories
+T47	location 2366 2371	Egypt
+T48	time 1974 1985	July , 2015
+T49	time 1726 1736	March 2016
+T50	attack_activity 2750 2764	spear phishing
+T51	domain 2867 2873	bit.ly
+T52	attack_activity 3098 3112	spear phishing
+T54	sha2 4614 4678	babd654ef363e0645ce374dd9e2a42afe339c52f1cf17fc2285d8bebd3cfa11e
+T55	sample_name 4798 4819	C:\vault\igfxtray.exe
+T56	sha2 4846 4910	f26caee34184b6a53ecbc0b5ce1f52e17d39af2129561dd6361fb4d4364e2c8b
+T57	protocol 5785 5789	HTTP
+T58	sha2 6357 6421	a52d3e65fe5bbf57bab79b1c5092b66d9650247249b72f667a927f266d09efe6
+T59	sha2 6422 6486	c9ffb81a97a9458f1fc96f35cd187b1d7311479e77d031586abdc3d426da0859
+T60	sha2 6487 6551	7f11e0bbc892a97b7c42416c43fe178ebb240939d9dee70c3c598305ce8a2d4f
+T61	sample_name 7466 7540	C:\Users\Yousef\Desktop\MergeFiles\Loader v0\Loader\obj\Release\Loader.pdb
+T62	sha2 7367 7431	4c1973278a30d1b4ce206eca63676624d234260758a0674d191d338a02914d23
+T63	sha2 7752 7816	6e461a8430f251db38e8911dbacd1e72bce47a89c28956115b702d13ae2b8e3b
+T64	email_evil 10279 10304	adam.swift.2016@gmail.com
+T65	malware 11501 11505	VAMP
+T66	malware 11572 11576	VAMP
+T67	security_team 11566 11569	360
+R1	attack Arg1:T1 Arg2:T3	
+R2	attack Arg1:T2 Arg2:T3	
+R3	part_of Arg1:T5 Arg2:T4	
+R4	use Arg1:T11 Arg2:T10	
+R5	use Arg1:T12 Arg2:T10	
+R6	attack Arg1:T11 Arg2:T9	
+R7	attack Arg1:T12 Arg2:T9	
+R8	use Arg1:T17 Arg2:T16	
+R9	find Arg1:T7 Arg2:T11	
+R10	find Arg1:T8 Arg2:T12	
+R11	use Arg1:T14 Arg2:T13	
+R12	use Arg1:T15 Arg2:T13	
+T68	reference_word 718 720	we
+R13	coreference Arg1:T68 Arg2:T7	
+R14	coreference Arg1:T68 Arg2:T8	
+R15	find Arg1:T68 Arg2:T14	
+R16	find Arg1:T68 Arg2:T15	
+T69	reference_word 757 759	We
+T70	reference_word 943 945	We
+T71	reference_word 1134 1136	We
+T72	reference_word 1258 1260	We
+R17	use Arg1:T20 Arg2:T19	
+R18	use Arg1:T22 Arg2:T21	
+R19	use Arg1:T24 Arg2:T23	
+R20	coreference Arg1:T69 Arg2:T68	
+R22	coreference Arg1:T71 Arg2:T70	
+R23	coreference Arg1:T72 Arg2:T71	
+T73	reference_word 1678 1680	we
+R24	coreference Arg1:T73 Arg2:T72	
+R25	first_found_time Arg1:T27 Arg2:T48	
+R26	release_time Arg1:T25 Arg2:T49	
+T74	reference_word 2013 2015	we
+R27	coreference Arg1:T74 Arg2:T73	
+R28	attack Arg1:T74 Arg2:T28	
+R29	find Arg1:T74 Arg2:T39	
+T75	OS_name 2127 2134	Android
+R30	attack Arg1:T39 Arg2:T44	
+R31	attack Arg1:T39 Arg2:T45	
+R32	attack Arg1:T39 Arg2:T46	
+R33	attack Arg1:T39 Arg2:T47	
+R34	attack Arg1:T28 Arg2:T44	
+R35	attack Arg1:T28 Arg2:T45	
+R36	attack Arg1:T28 Arg2:T46	
+R37	attack Arg1:T28 Arg2:T47	
+T76	reference_word 2810 2812	we
+T77	url_evil 4051 4075	drive.acount-manager.net
+T78	sha2 4133 4197	babf156ede8b5c2e6c961b6ffcccc5eb7a3d283b398370754061613f439d40f9
+R38	part_of Arg1:T78 Arg2:T30	
+T79	reference_word 4263 4265	We
+R39	find Arg1:T79 Arg2:T31	
+R41	part_of Arg1:T54 Arg2:T31	
+T80	tool 4732 4742	mpress.exe
+T81	sample_name 5965 5979	/dad5/town.php
+T82	sample_name 5998 6015	/dad5/addCity.php
+T83	sample_name 6020 6034	/dad5/sign.php
+T84	domain_evil 6599 6619	www.stikerscloud.com
+R42	part_of Arg1:T58 Arg2:T34	
+R43	part_of Arg1:T59 Arg2:T34	
+R44	part_of Arg1:T60 Arg2:T34	
+T85	sample_function 6729 6745	Take screenshots
+T86	sample_function 6746 6771	Recording user keystrokes
+T87	sample_function 6772 6851	Exfiltrate basic environment information such as the username and computer name
+T88	sample_function 6852 6878	Perform arbitrary commands
+T89	sample_function 6879 6965	Enumerate removable drives and copy files of interest to a new folder for exfiltration
+T90	sample_function 6966 7001	Update the malware to a new version
+T91	sample_function 7002 7062	Exfilitrate arbitrary files ( zip compressed and encrypted )
+T92	reference_word 7817 7819	We
+R45	find Arg1:T92 Arg2:T42	
+R46	part_of Arg1:T63 Arg2:T41	
+T93	reference_word 7890 7901	The malware
+R47	coreference Arg1:T93 Arg2:T42	
+T94	sample_name 8507 8519	shortcut.exe
+T96	sample_name 8846 8858	shortcut.exe
+T97	sample_function 8916 8998	Logging of keystrokes to a hardcoded text file and exfiltration to a remote server
+T98	reference_word 8886 8897	the malware
+T99	sample_function 9001 9047	Capturing screenshots of the infected machines
+T100	sample_function 9050 9177	Searching for files with extensions matching Microsoft Office documents and using WinRAR to archive these prior to exfiltration
+T102	domain_evil 13384 13407	mediafreeuploader.co.uk
+T103	domain_evil 13408 13420	appppure.net
+T104	domain_evil 13421 13435	upload404.club
+T105	domain_evil 13436 13449	upload999.net
+T106	domain_evil 13450 13463	upload999.com
+T107	domain_evil 13464 13477	upload999.org
+T108	sha2 13494 13558	2c8a67f8118b6aef159dd280d5998b1c41edb406a1bc8e3960254a9642b6ae4b
+T109	sha2 13575 13639	a72178289bb518f9f100b78e56a9425332bf3a5220a6c5abd3d07c669a5d8b25
+T110	sha2 13656 13720	7fdf2bdc500a8703cceb76a427752ee70164b8283b4df42c5b13ed2124a88dbd
+T111	sha2 13737 13801	6926f430865bd08b621bd1c6581bfe77db3e9891b14f97d00563770186fc5e74
+T112	sha2 13818 13882	46b0f586a646e800ab63d1404a08864fb09aca73a13fd22542a9fce038643219
+T113	sha2 13899 13963	e9050c541859f2fabff6dcd492df02a48dd32d99b1f3e98ef7c14bbb6aa734a2
+T114	sha2 13978 14042	453b9f7aed67f41ec192db3011459e2dd865bb729265c544ee1b8814c6e7dc53
+T115	sha2 14057 14121	c9e55094b84a06b3a40b7df1cd76fc287fdc02a2cdd30af359743bbc23475917
+T116	sha2 14136 14200	a627d2bff74ce07a619cc8fd36294f66eab94b92d41e50b06e63d736ffafd254
+T117	sha2 14215 14279	f70681c7e8ab419fd0938802a823337abad936cccc0ace9ee232f2b874e561f1
+T118	sha2 14294 14358	e3963ee9bf892d3f3eea0620585e2e773a30cf536c73a01dd51d6ce36f4daf5d
+T119	sha2 14373 14437	e2ac3cf79e7267d2e088c3a269aa84fc71fc6073019abb94d16a024d3ad16f3e
+T120	sha2 14455 14519	d909669b000c479b8bdd9f86fa62879a7c8b4dca8cde4f4a404862a4604c52e2
+T121	sha2 14537 14601	b6abeffe986eb38e411a4fe956280e2028d8bef699d9dd3244bde721a99b1dee
+T122	sha2 14619 14683	c1564c56c46146db36ec97afd994c45f3621f39c82cc692adba5b9f6d9a62897
+T123	sha2 14701 14765	c20438ba8c9e008c1e2eb4343f177757fc260437aeac52df61b156671b07ac14
+T124	sha2 14783 14847	5f3b4eddcc72598721b9ca395d1e5881acbd4fc562e09b688b2d42f65d3a4a93
+T125	sha2 14865 14929	544a1c303ef021f0d54e62a6147c7ae9cd0c84265e302f6da5ed08b616e45b78
+T126	sample_name 14946 15039	C:\Users\USA\Documents\Visual Studio 2008\Projects\New folder ( 2 )\kasper\Release\kasper.pdb
+T127	sample_name 15056 15130	C:\Users\Yousef\Desktop\MergeFiles\Loader v0\Loader\obj\Release\Loader.pdb
+T128	sample_name 15147 15254	c:\Users\USA\Documents\Visual Studio 2008\Projects\New folder ( 2 )\s7 – Copy – Copy 19-2-17\Release\s7.pdb
+T129	sample_name 15271 15356	c:\Users\USA\Documents\Visual Studio 2008\Projects\New folder ( 2 )\s7\Release\s7.pdb
+T130	sample_name 15373 15438	C:\Users\Progress\Desktop\Loader v0\Loader\obj\Release\Loader.pdb
+T131	sample_name 15455 15482	D:\Merge\Debug\testproj.pdb
+T132	malware 11168 11180	SECUREUPDATE
+T133	malware 15441 15452	KASPERAGENT
+T134	malware 15359 15370	KASPERAGENT
+T135	malware 15257 15268	KASPERAGENT
+T136	malware 15133 15144	KASPERAGENT
+T137	malware 15042 15053	KASPERAGENT
+T138	malware 14932 14943	KASPERAGENT
+T139	malware 14850 14862	SECUREUPDATE
+T140	url_evil 14768 14780	SECUREUPDATE
+T141	url_evil 14686 14698	SECUREUPDATE
+T142	malware 14604 14616	SECUREUPDATE
+T143	malware 14522 14534	SECUREUPDATE
+T144	malware 14440 14452	SECUREUPDATE
+T145	malware 14361 14370	MICROPSIA
+T146	malware 14282 14291	MICROPSIA
+T147	malware 14203 14212	MICROPSIA
+T148	malware 14124 14133	MICROPSIA
+T149	malware 14045 14054	MICROPSIA
+T150	malware 13966 13975	MICROPSIA
+T151	malware 13885 13896	KASPERAGENT
+T152	malware 13804 13815	KASPERAGENT
+T153	malware 13723 13734	KASPERAGENT
+T154	malware 13642 13653	KASPERAGENT
+T155	malware 13561 13572	KASPERAGENT
+T156	malware 13480 13491	KASPERAGENT
+R49	part_of Arg1:T131 Arg2:T133	
+R50	part_of Arg1:T130 Arg2:T134	
+R51	part_of Arg1:T129 Arg2:T135	
+R52	part_of Arg1:T128 Arg2:T136	
+R53	part_of Arg1:T127 Arg2:T137	
+R54	part_of Arg1:T126 Arg2:T138	
+R55	part_of Arg1:T125 Arg2:T139	
+R56	part_of Arg1:T124 Arg2:T140	
+R57	part_of Arg1:T123 Arg2:T141	
+R58	part_of Arg1:T122 Arg2:T142	
+R59	part_of Arg1:T121 Arg2:T143	
+R60	part_of Arg1:T120 Arg2:T144	
+R61	part_of Arg1:T119 Arg2:T145	
+R62	part_of Arg1:T118 Arg2:T146	
+R63	part_of Arg1:T117 Arg2:T147	
+R64	part_of Arg1:T116 Arg2:T148	
+R65	part_of Arg1:T115 Arg2:T149	
+R66	part_of Arg1:T114 Arg2:T150	
+R67	part_of Arg1:T113 Arg2:T151	
+R68	part_of Arg1:T112 Arg2:T152	
+R69	part_of Arg1:T111 Arg2:T153	
+R70	part_of Arg1:T110 Arg2:T154	
+R71	part_of Arg1:T109 Arg2:T155	
+R72	part_of Arg1:T108 Arg2:T156	
+T157	security_team 12999 13017	Palo Alto Networks
+T158	counter_measure 13083 13165	WildFire and Traps detect all of the malware discussed in this report as malicious
+T159	counter_measure 13168 13242	The C2 domains listed in this report are blocked through Threat Prevention
+T160	counter_measure 13245 13313	AutoFocus customers can monitor this activity by looking at the tags
+T161	sample_function 11718 11741	Ability to record calls
+T162	sample_function 11742 11755	Contact theft
+T163	sample_function 11756 11795	Theft of documents stored on the device
+T164	sample_function 11796 11813	Theft of messages
+R73	part_of Arg1:T161 Arg2:T66	
+R74	find Arg1:T67 Arg2:T65	
+R75	part_of Arg1:T162 Arg2:T66	
+R76	part_of Arg1:T163 Arg2:T66	
+R77	part_of Arg1:T164 Arg2:T66	
+T165	domain_evil 11866 11891	adam.swift.2016@gmail.com
+T166	domain_evil 11907 11919	AppPure.info
+T167	reference_word 11993 11995	we
+T168	reference_word 12338 12340	We
+T169	attack_activity 12904 12920	classic phishing
+#2	AnnotatorNotes T51	.ly是利比亚国家及地区的顶级域名。
+R78	coreference Arg1:T76 Arg2:T74	
+T172	tool 2679 2702	URL shortening services
+T173	tool 2842 2864	URL shortening service
+R84	part_of Arg1:T51 Arg2:T173	
+T174	attack_activity 3501 3515	spear phishing
+T175	reference_word 3337 3339	We
+R86	coreference Arg1:T175 Arg2:T76	
+T177	reference_word 3754 3756	we
+T178	tool 2882 2904	URL shortening service
+T181	reference_word 3561 3563	we
+R94	coreference Arg1:T181 Arg2:T175	
+R89	coreference Arg1:T177 Arg2:T181	
+T182	email_evil 3938 3963	adam.swift.2016@gmail.com
+R96	use Arg1:T40 Arg2:T182	
+R97	use Arg1:T30 Arg2:T77	
+T183	reference_word 4225 4227	us
+R98	coreference Arg1:T183 Arg2:T177	
+R95	coreference Arg1:T79 Arg2:T183	
+T184	tool 5069 5089	Microsoft Visual C++
+R99	use Arg1:T32 Arg2:T184	
+R100	part_of Arg1:T56 Arg2:T55	
+T185	reference_word 4913 4924	The malware
+R101	coreference Arg1:T185 Arg2:T31	
+R102	use Arg1:T79 Arg2:T80	
+T186	reference_word 5189 5200	The malware
+R103	coreference Arg1:T186 Arg2:T32	
+T187	string 5296 5307	MediaSystem
+R104	use Arg1:T187 Arg2:T186	
+T188	reference_word 5312 5323	The malware
+R105	coreference Arg1:T188 Arg2:T186	
+T189	domain_evil 5357 5374	www.mailsinfo.net
+R106	use Arg1:T188 Arg2:T189	
+T190	tool 5615 5621	Chrome
+T191	string 5674 5680	OPAERA
+R107	use Arg1:T33 Arg2:T190	
+T192	tool 5713 5718	Opera
+R108	part_of Arg1:T191 Arg2:T192	
+#3	AnnotatorNotes T191	可能是浏览器Opera的错误拼写。
+#4	AnnotatorNotes T187	键值。
+T193	reference_word 5737 5748	The malware
+R109	coreference Arg1:T193 Arg2:T33	
+R110	use Arg1:T193 Arg2:T57	
+T194	program_language 5865 5868	PHP
+T195	tool 5771 5780	C2 server
+R111	use Arg1:T193 Arg2:T195	
+T196	reference_word 6054 6065	the malware
+R112	coreference Arg1:T196 Arg2:T193	
+R113	part_of Arg1:T81 Arg2:T193	
+R114	part_of Arg1:T82 Arg2:T193	
+R115	part_of Arg1:T83 Arg2:T193	
+T197	sample_function 6676 6726	Theft of passwords for Firefox and Chrome browsers
+T199	tool 7159 7183	Microsoft .NET Framework
+T200	reference_word 7130 7141	the malware
+R128	coreference Arg1:T200 Arg2:T34	
+R129	use Arg1:T200 Arg2:T199	
+R131	part_of Arg1:T62 Arg2:T200	
+R130	part_of Arg1:T61 Arg2:T62	
+T201	tool 7584 7590	Delphi
+R132	use Arg1:T41 Arg2:T201	
+#5	AnnotatorNotes T41	MICROPSIA使用Delphi编写。
+T202	tool 7926 7929	RAR
+T203	tool 8001 8004	UPX
+T204	tool 8026 8029	UPX
+T205	string 7965 7968	EXE
+#6	AnnotatorNotes T205	可执行文件。
+T206	string 8060 8067	SFX RAR
+#7	AnnotatorNotes T206	SelF-eXtracting, SFX即自解压归档文件。
+R133	use Arg1:T93 Arg2:T202	
+R134	use Arg1:T93 Arg2:T203	
+R135	use Arg1:T93 Arg2:T204	
+T207	tool 8428 8434	WinRAR
+T208	domain 8527 8539	optimumx.com
+R137	use Arg1:T93 Arg2:T207	
+T95	tool 8346 8353	OpenSSL
+R138	use Arg1:T93 Arg2:T95	
+T209	reference_word 8683 8694	The malware
+R48	coreference Arg1:T209 Arg2:T93	
+R139	coreference Arg1:T98 Arg2:T209	
+R140	part_of Arg1:T97 Arg2:T98	
+R141	part_of Arg1:T99 Arg2:T98	
+R142	part_of Arg1:T100 Arg2:T98	
+T210	md5 9532 9563	d58ccc009be55ff172a9039bf35cf27
+R143	part_of Arg1:T210 Arg2:T98	
+T211	reference_word 9643 9645	we
+R144	coreference Arg1:T211 Arg2:T92	
+T212	string 9234 9371	Rar.exe a -r -ep1 -v2500k -hpd58ccc009be55ff172a9039bf35cf270 -ta2016-12-11 ProgramData\Recovery\bin\sys\sysTime\LMth_E E:\*.xls E:\*.doc
+T213	string 9378 9515	Rar.exe a -r -ep1 -v2500k -hpd58ccc009be55ff172a9039bf35cf270 -ta2016-12-11 ProgramData\Recovery\bin\sys\sysTime\LMth_E E:\*.xls E:\*.doc
+R145	use Arg1:T212 Arg2:T98	
+R146	use Arg1:T213 Arg2:T98	
+#8	AnnotatorNotes T212	MICROIPSIA所使用的命令。
+#9	AnnotatorNotes T213	MICROIPSIA所使用的命令。
+T101	attack_activity 9849 9880	traditional phishing techniques
+T215	attack_goal 9821 9844	steal their credentials
+T217	tool 9968 9980	Google Drive
+T218	OS_name 10391 10398	Android
+T219	OS_name 10432 10439	Android
+T220	malware 10825 10837	SECUREUPDATE
+T221	reference_word 10804 10806	we
+T222	attack_goal 10701 10733	gain a foothold on to the device
+R153	find Arg1:T221 Arg2:T220	
+R154	goal Arg1:T220 Arg2:T222	
+R155	coreference Arg1:T221 Arg2:T211	
+T224	sha2 10868 10931	6b4d65abf95cfb3cedd39b217ff0e4ee2229ae32aeda5170f34c5a3b9c5a0f3
+T225	reference_word 10854 10856	we
+R158	coreference Arg1:T225 Arg2:T221	
+R159	part_of Arg1:T224 Arg2:T220	
+T226	attack_activity 11123 11131	phishing
+R160	use Arg1:T132 Arg2:T226	
+T227	attack_goal 11201 11228	steal credentials for users
+T228	attack_goal 11231 11325	making them create accounts for these fake apps in addition to the installation of the malware
+R161	attack Arg1:T132 Arg2:T227	
+R162	goal Arg1:T132 Arg2:T228	
+R163	coreference Arg1:T167 Arg2:T225	
+R164	coreference Arg1:T168 Arg2:T167	
+R166	use Arg1:T66 Arg2:T165	
+R167	use Arg1:T66 Arg2:T166	
+T230	tool 12878 12901	URL shortening services
+T231	reference_word 12580 12596	malware families
+R168	coreference Arg1:T231 Arg2:T36	
+R169	coreference Arg1:T231 Arg2:T35	
+R170	coreference Arg1:T231 Arg2:T37	
+R171	coreference Arg1:T231 Arg2:T38	
+R172	use Arg1:T231 Arg2:T230	
+R173	use Arg1:T231 Arg2:T169	
+R175	use Arg1:T157 Arg2:T158	
+R176	use Arg1:T157 Arg2:T159	
+R177	use Arg1:T157 Arg2:T160	
+T233	attack_goal 2551 2587	gain a foothold into target networks
+R179	use Arg1:T43 Arg2:T218	
+R180	use Arg1:T43 Arg2:T219	
+R152	use Arg1:T43 Arg2:T64	
+T235	reference_word 13370 13380	C2 Domains
+R182	coreference Arg1:T235 Arg2:T102	
+R183	coreference Arg1:T235 Arg2:T103	
+R184	coreference Arg1:T235 Arg2:T104	
+R185	coreference Arg1:T235 Arg2:T105	
+R186	coreference Arg1:T235 Arg2:T106	
+R187	coreference Arg1:T235 Arg2:T107	
+R188	use Arg1:T36 Arg2:T235	
+R190	use Arg1:T35 Arg2:T235	
+R191	use Arg1:T37 Arg2:T235	
+R192	use Arg1:T38 Arg2:T235	
+T236	reference_word 11493 11495	we
+R189	coreference Arg1:T236 Arg2:T225	
+T237	reference_word 884 886	we
+R193	coreference Arg1:T237 Arg2:T69	
+R21	coreference Arg1:T70 Arg2:T237	
+R194	part_of Arg1:T94 Arg2:T93	
+R136	use Arg1:T93 Arg2:T208	
+T239	reference_word 11695 11706	the malware
+R116	use Arg1:T34 Arg2:T84	
+R87	coreference Arg1:T239 Arg2:T66	
+T170	reference_word 2642 2652	This group
+R79	coreference Arg1:T170 Arg2:T39	
+R80	coreference Arg1:T170 Arg2:T28	
+R81	use Arg1:T170 Arg2:T172	
+R82	launch Arg1:T170 Arg2:T50	
+R83	goal Arg1:T170 Arg2:T233	
+T171	encryption_algo 4606 4612	SHA256

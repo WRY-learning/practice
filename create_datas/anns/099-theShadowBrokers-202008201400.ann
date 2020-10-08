@@ -1,0 +1,58 @@
+T1	threatActor_name 160 178	the Shadow Brokers
+T2	malware 245 257	DanderSpritz
+T3	malware 262 271	FuzzBunch
+T4	time 107 117	March 2017
+T5	malware 278 287	Fuzzbunch
+T6	attack_goal 344 402	analyze victims , exploit vulnerabilities , schedule tasks
+T7	malware 415 427	DanderSpritz
+T8	attack_goal 453 512	examine already controlled machines and gather intelligence
+T9	counter_measure 588 635	analyze all leaks containing malicious software
+T10	attack_activity 698 717	Lost in Translation
+T11	malware 819 829	DarkPulsar
+T12	reference_word 844 853	this tool
+T13	reference_word 874 876	it
+T14	function 1169 1173	Burn
+T15	function 1196 1208	RawShellcode
+T16	function 1256 1270	EDFStageUpload
+T17	sub_activity 1176 1193	for self-deletion
+T18	sub_activity 1211 1253	to execute arbitrary base-independent code
+T19	sub_activity 1273 1315	Exploit Development Framework Stage Upload
+T20	malware 1342 1354	DanderSpritz
+T21	sub_activity 1355 1387	payloads to the victim ’s memory
+T22	malware 1511 1523	DanderSpritz
+T23	reference_word 1423 1435	this command
+R1	coreference Arg1:T23 Arg2:T16	
+T24	function 1589 1604	DisableSecurity
+T25	sub_activity 1607 1643	for disabling NTLM protocol security
+T26	sub_activity 1797 1850	the system will interpret any arbitrary pair as valid
+T27	reference_word 1659 1671	this command
+R2	coreference Arg1:T27 Arg2:T24	
+T28	function 1907 1921	EnableSecurite
+T29	function 1940 1955	DisableSecurity
+T30	function 1958 1972	UpgradeImplant
+T31	function 2022 2030	PingPong
+T32	sub_activity 1975 2019	for installing a new version of the backdoor
+T33	sub_activity 2033 2055	for test communication
+T34	malware 2140 2149	Fuzzbunch
+T35	malware 2154 2166	DanderSpritz
+T36	malware 2226 2238	DanderSpritz
+T37	attack_activity 2380 2404	cyber-espionage campaign
+R3	first_found_time Arg1:T1 Arg2:T4	
+R4	use Arg1:T1 Arg2:T2	
+R5	use Arg1:T1 Arg2:T3	
+R6	goal Arg1:T5 Arg2:T6	
+R7	goal Arg1:T7 Arg2:T8	
+T38	reference_word 756 765	this leak
+R8	coreference Arg1:T38 Arg2:T10	
+R9	coreference Arg1:T12 Arg2:T11	
+R10	coreference Arg1:T13 Arg2:T11	
+R11	launch Arg1:T14 Arg2:T17	
+R12	launch Arg1:T15 Arg2:T18	
+R13	launch Arg1:T16 Arg2:T19	
+T39	reference_word 1331 1333	it
+R14	coreference Arg1:T39 Arg2:T16	
+R15	launch Arg1:T24 Arg2:T25	
+R16	launch Arg1:T39 Arg2:T21	
+R17	launch Arg1:T30 Arg2:T32	
+R18	launch Arg1:T31 Arg2:T33	
+R19	launch Arg1:T27 Arg2:T26	

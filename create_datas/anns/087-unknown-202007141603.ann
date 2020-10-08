@@ -1,0 +1,170 @@
+T1	industry 45 57	Polish banks
+T2	industry 254 266	Polish banks
+T5	industry 434 446	Polish banks
+T6	target_crowd 481 490	the banks
+T7	sub_activity 507 533	scanning internal networks
+T8	sub_activity 538 559	looking for intruders
+T10	company 747 755	Symantec
+T11	company 758 768	Booz Allen
+T12	company 773 784	BAE Systems
+T9	time 1388 1398	October 5h
+T13	time 1401 1405	2016
+T14	time 1410 1429	February 2nd , 2017
+T15	government 1038 1076	Polish Financial Supervision Authority
+T16	sub_activity 1025 1084	visiting the Polish Financial Supervision Authority website
+T18	person 1316 1329	bank employee
+T20	url_evil 1689 1736	http://sap.misapor.ch/vishop/view.jsp?pagenum=1
+T21	url_evil 1740 1800	http://www.eye-watch.in/design/fancybox/images.jsp?pagenum=1
+T22	sub_activity 1832 1882	performed some initial verification of the visitor
+T24	tool 1908 1921	IP whitelists
+T25	person 1976 1985	attackers
+T26	tool 1932 1948	address classess
+R3	part_of Arg1:T26 Arg2:T24	
+T27	sub_activity 2070 2125	cambio.xap file attacking vulnerable Silverlight plugin
+T28	target_crowd 1875 1882	visitor
+T29	reference_word 2035 2037	it
+T31	tool 2185 2193	DLL file
+T32	tool 2197 2212	cambio.swf file
+T33	tool 2235 2247	Flash plugin
+T36	vulnerability_cve 2347 2360	CVE-2015-8651
+T37	vulnerability_cve 2363 2376	CVE-2016-1019
+T38	vulnerability_cve 2381 2394	CVE-2016-4117
+T40	company 2704 2707	BAE
+T41	person 2886 2895	attackers
+T42	sub_activity 2918 2965	trigger downloading another malicious component
+R8	launch Arg1:T41 Arg2:T42	
+T43	reference_word 2898 2902	they
+R9	coreference Arg1:T43 Arg2:T41	
+T44	tool 2946 2965	malicious component
+T48	tool 3619 3627	DLL file
+T50	tool 3730 3738	CHM file
+T54	tool 3814 3827	%WINDIR%\Help
+T60	tool 4030 4033	RC4
+T61	tool 4049 4055	Spritz
+R20	coreference Arg1:T61 Arg2:T60	
+T62	tool 4141 4151	C&C server
+T65	attack_goal 4388 4416	obtain true C&C IP addresses
+T66	protocol 4400 4403	C&C
+T67	sub_activity 4340 4364	performs a XOR operation
+T68	reference_word 4288 4293	those
+T69	protocol 4525 4528	C&C
+T70	sub_activity 4533 4546	taking orders
+T59	attack_goal 1103 1129	workstation being infected
+T71	tool 1142 1145	RAT
+T72	tool 4423 4439	service.chm file
+T49	sample_name 3641 3654	srservice.dll
+T51	sample_name 3655 3687	e29fe3c181ac9ddbb242688b151f3310
+R12	coreference Arg1:T51 Arg2:T49	
+R14	coreference Arg1:T49 Arg2:T48	
+T52	sample_name 3754 3767	srservice.chm
+R13	coreference Arg1:T52 Arg2:T50	
+T53	sample_name 3768 3800	9216b29114fb6713ef228370cbfe4045
+R15	part_of Arg1:T53 Arg2:T54	
+T57	sample_name 5393 5425	9cc6854bc5e217104734043c89dc4ff8
+T74	sample_name 5134 5166	9914075cc687bdc352ee136ac6579707
+T75	person 469 478	attackers
+R19	launch Arg1:T6 Arg2:T7	
+R25	launch Arg1:T6 Arg2:T8	
+T76	person 1009 1024	a bank employee
+R26	launch Arg1:T76 Arg2:T16	
+R27	goal Arg1:T71 Arg2:T59	
+T77	sub_activity 1337 1369	visit the www.knf.gov.pl website
+R28	launch Arg1:T18 Arg2:T77	
+T17	domain 1347 1361	www.knf.gov.pl
+T78	protocol 4141 4144	C&C
+T80	protocol 4671 4674	C&C
+T19	url 1491 1576	http://www.knf.gov.pl/DefaultDesign/Layouts/KNF2013/resources/accordian-src.js?ver=11
+T81	tool 1482 1488	script
+T23	tool 1803 1831	Attackers' controlled server
+T82	reference_word 1608 1617	this file
+R29	coreference Arg1:T82 Arg2:T81	
+R30	part_of Arg1:T19 Arg2:T81	
+R31	part_of Arg1:T20 Arg2:T82	
+R32	part_of Arg1:T21 Arg2:T82	
+R33	use Arg1:T25 Arg2:T23	
+R2	attack Arg1:T25 Arg2:T28	
+R1	launch Arg1:T25 Arg2:T22	
+R4	coreference Arg1:T29 Arg2:T23	
+T83	tool 2070 2085	cambio.xap file
+T84	tool 2107 2125	Silverlight plugin
+R5	launch Arg1:T29 Arg2:T27	
+T30	sample_name 2128 2160	4cc10ab3f4ee6769e520694a10f611d5
+R35	coreference Arg1:T30 Arg2:T84	
+T34	sample_name 2250 2282	6dffcfa68433f886b2e88fd984b4995a
+T35	sample_name 2285 2317	1f2cd85583a4a56b764ba6429c2155ec
+R6	part_of Arg1:T34 Arg2:T33	
+R7	part_of Arg1:T35 Arg2:T33	
+R34	part_of Arg1:T84 Arg2:T83	
+T85	sub_activity 2038 2067	received one of four exploits
+R36	goal Arg1:T29 Arg2:T85	
+T45	sample_name 2978 2989	perfmon.dat
+R10	coreference Arg1:T44 Arg2:T45	
+T86	reference_word 2992 2994	It
+R37	coreference Arg1:T86 Arg2:T45	
+T87	reference_word 3012 3020	EXE file
+R38	coreference Arg1:T87 Arg2:T86	
+T46	sample_name 3094 3134	bedceafa2109139c793cb158cec9fa48f980ff2b
+T88	tool 3155 3173	infected computers
+T89	reference_word 3205 3214	installer
+R39	coreference Arg1:T89 Arg2:T46	
+T90	reference_word 3244 3246	It
+R40	coreference Arg1:T90 Arg2:T89	
+T91	sample_function 3316 3438	-l :  list of potential services which clould be used by malware , -e [NAME] :  unpacks DLL and CHM files under given NAME
+T92	reference_word 3445 3454	installer
+R41	coreference Arg1:T92 Arg2:T90	
+T47	sample_name 3090 3093	EXE
+R11	coreference Arg1:T46 Arg2:T47	
+T93	tool 3549 3557	DLL file
+T94	tool 3604 3612	CHM file
+R42	coreference Arg1:T53 Arg2:T52	
+T95	tool 3852 3860	CHM file
+T96	tool 3877 3880	DLL
+T55	sample_name 3951 3964	srservice.hlp
+T56	sample_name 3967 3999	8e32fccd70cec634d13795bcb1da85ff
+R17	coreference Arg1:T56 Arg2:T55	
+T97	tool 4503 4506	RAT
+T63	domain_evil 4175 4203	tradeboard.mefound.com : 443
+T64	domain_evil 4206 4235	movis-es.ignorelist.com : 443
+R21	coreference Arg1:T68 Arg2:T63	
+R22	coreference Arg1:T68 Arg2:T64	
+T99	protocol 4381 4383	IP
+T100	reference_word 4496 4498	it
+R23	coreference Arg1:T100 Arg2:T72	
+T101	sub_activity 4507 4528	connecting to the C&C
+R24	launch Arg1:T97 Arg2:T101	
+R43	launch Arg1:T97 Arg2:T70	
+T102	sample_name 4859 4871	explorer.exe
+T103	protocol 5023 5026	C&C
+T73	sample_name 5119 5128	fdsvc.exe
+R44	coreference Arg1:T74 Arg2:T73	
+T58	sample_name 5383 5392	fdsvc.dll
+R16	coreference Arg1:T57 Arg2:T58	
+R18	attack Arg1:T75 Arg2:T5	
+T3	tool 4594 4598	CMDL
+T4	tool 4689 4692	DEL
+T39	tool 4707 4710	DIE
+T79	tool 4722 4725	DIR
+T98	tool 4752 4756	DOWN
+T104	tool 4782 4786	DRIV
+T105	tool 4809 4813	GCFG
+T106	tool 4840 4844	PEEX
+T107	tool 5027 5031	WIPE
+T108	tool 5001 5005	UPLD
+T109	tool 4957 4961	SCFG
+T110	tool 4943 4946	RUN
+T111	tool 4892 4896	PVEW
+T112	tool 4872 4876	PKIL
+T113	sample_function 4601 4688	execute command , write result to temporary file , upload the file to C&C and delete it
+T114	sample_function 4695 4706	remove file
+T115	sample_function 4713 4721	turn off
+T116	sample_function 4728 4751	search files or folders
+T117	sample_function 4759 4781	download and save file
+T118	sample_function 4789 4808	list logical drives
+T119	sample_function 4816 4839	download current config
+T120	sample_function 4847 4871	inject into explorer.exe
+T121	sample_function 4879 4891	kill process
+T122	sample_function 4899 4942	display information about running processes
+T123	sample_function 4949 4956	execute
+T124	sample_function 4964 5000	get new config , encrypt it and save
+T125	sample_function 5008 5026	upload file to C&C
+T126	sample_function 5034 5047	secure delete

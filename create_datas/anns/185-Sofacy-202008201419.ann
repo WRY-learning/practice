@@ -1,0 +1,204 @@
+T1	threatActor_name 116 122	Sofacy
+T2	threatActor_aliases 139 144	APT28
+T3	threatActor_aliases 147 157	Fancy Bear
+T4	threatActor_aliases 164 173	Tsar Team
+T5	time 402 406	2017
+T6	reference_word 396 401	their
+R1	coreference Arg1:T6 Arg2:T1	
+T7	location 554 560	Europe
+T8	location 565 571	the US
+T9	location 628 639	middle east
+T10	location 642 654	central asia
+T11	location 711 716	China
+R2	attack Arg1:T6 Arg2:T7	
+R3	occur_time Arg1:T6 Arg2:T5	
+R4	attack Arg1:T6 Arg2:T8	
+R5	attack Arg1:T6 Arg2:T9	
+R6	attack Arg1:T6 Arg2:T10	
+R7	attack Arg1:T6 Arg2:T11	
+T12	threatActor_name 1121 1127	Sofacy
+T13	malware 1138 1142	SPLM
+T14	malware 1145 1153	GAMEFISH
+T15	malware 1160 1167	Zebrocy
+T16	malware 1250 1254	SPLM
+T17	malware 1306 1310	SPLM
+T18	malware 1348 1355	Zebrocy
+T19	malware 1436 1440	SPLM
+T20	malware 1462 1471	CHOPSTICK
+R8	coreference Arg1:T20 Arg2:T19	
+T21	malware 1501 1507	XAgent
+R9	coreference Arg1:T21 Arg2:T20	
+T22	threatActor_name 1528 1534	Sofacy
+R10	use Arg1:T22 Arg2:T21	
+T23	malware 1645 1651	XAgent
+T24	malware 1743 1749	Fysbis
+T25	OS_name 1716 1721	Linux
+T26	program_language 1835 1847	XAgent C/C++
+T27	time 1774 1778	2016
+R11	first_found_time Arg1:T24 Arg2:T27	
+T28	malware 1868 1882	SPLM/CHOPSTICK
+T29	malware 2111 2115	SPLM
+T30	malware 2135 2144	keylogger
+T31	malware 2147 2158	remoteshell
+T32	malware 2165 2176	filestealer
+R12	part_of Arg1:T30 Arg2:T29	
+R13	part_of Arg1:T31 Arg2:T29	
+R14	part_of Arg1:T32 Arg2:T29	
+T33	malware 2313 2317	SPLM
+T34	malware 2338 2347	keylogger
+T35	malware 2350 2361	filestealer
+T36	malware 2368 2379	remoteshell
+R15	part_of Arg1:T34 Arg2:T33	
+R16	part_of Arg1:T35 Arg2:T33	
+R17	goal Arg1:T36 Arg2:T33	
+T37	malware 2441 2445	SPLM
+T38	protocol 2024 2028	HTTP
+T39	protocol 2052 2055	FTP
+T40	protocol 2074 2078	SMTP
+T41	time 2503 2507	2018
+T42	malware 2567 2576	keylogger
+T43	malware 2579 2589	filesystem
+T44	malware 2596 2607	remoteshell
+T45	malware 2657 2661	SPLM
+T46	time 2684 2697	2016 and 2017
+T47	time 2740 2744	2018
+R18	first_found_time Arg1:T45 Arg2:T46	
+R19	occur_time Arg1:T45 Arg2:T47	
+T48	malware 2819 2825	XAgent
+T49	tool 2855 2862	zebrocy
+T50	program_language 2895 2905	powershell
+T51	tool 2911 2915	.Net
+R20	part_of Arg1:T50 Arg2:T51	
+T52	malware 2926 2930	SPLM
+T53	threatActor_name 2975 2981	Sofacy
+R21	use Arg1:T53 Arg2:T52	
+T54	time 3001 3005	2017
+R22	occur_time Arg1:T53 Arg2:T54	
+T55	malware 3124 3128	SPLM
+T56	malware 3133 3140	Zebrocy
+T57	string 3374 3406	973ff7eb7a5b720c5f6aafe4cd0469d5
+T58	malware 3417 3421	SPLM
+T59	sample_name 3511 3532	“ retranslator ” code
+T60	sample_name 3538 3563	ProcessRetranslator.dll ,
+T61	malware 3648 3652	SPLM
+T62	attack_activity 3662 3684	injection capabilities
+T63	time 3719 3723	2018
+T64	threatActor_name 3104 3113	WhiteBear
+T65	sample_name 3937 3960	ProcessRetranslator.dll
+T66	time 3930 3934	2018
+T67	malware 3794 3798	SPLM
+T68	time 3840 3844	2017
+T69	malware 4498 4502	SPLM
+T70	string 4526 4558	cc9e6578a47182a941a478b276320e06
+T71	malware 4582 4586	SPLM
+T72	tool 4608 4619	DNC network
+T73	time 4623 4627	2016
+T74	sample_name 4664 4672	splm.dll
+R23	part_of Arg1:T74 Arg2:T71	
+T75	program_language 4740 4743	C++
+T76	tool 4785 4799	SPLM/CHOPSTICK
+T77	threatActor_name 5291 5300	WhiteBear
+T78	government 5336 5353	foreign embassies
+T79	industry 5358 5375	MFA organizations
+R24	attack Arg1:T77 Arg2:T78	
+R25	attack Arg1:T77 Arg2:T79	
+T80	time 5390 5400	early 2016
+T81	time 5420 5430	early 2017
+R26	first_found_time Arg1:T77 Arg2:T80	
+R27	occur_time Arg1:T77 Arg2:T81	
+T82	security_team 5445 5450	GReAT
+T83	time 5485 5498	February 2017
+T84	malware 5607 5613	Gayzer
+R28	release_time Arg1:T82 Arg2:T83	
+T85	malware 5658 5674	WhiteAtlas Turla
+T86	threatActor_name 5991 6000	WhiteBear
+T87	malware 6004 6009	Turla
+R29	use Arg1:T86 Arg2:T87	
+T88	tool 6393 6432	.Net , AutoIT , Delphi , and powershell
+T89	threatActor_name 6673 6679	Sofacy
+T90	location 6717 6719	US
+T91	location 6724 6730	Europe
+T92	location 6765 6769	NATO
+R30	attack Arg1:T89 Arg2:T90	
+R31	attack Arg1:T89 Arg2:T91	
+R32	attack Arg1:T89 Arg2:T92	
+T93	time 6990 6994	2017
+T94	time 7004 7008	2018
+T95	threatActor_name 7011 7017	Sofacy
+T96	malware 7169 7183	Mosquito Turla
+T97	malware 7188 7195	Zebrocy
+T98	malware 7207 7214	Zebrocy
+T99	location 7281 7287	Europe
+T100	location 7292 7296	Asia
+T101	malware 7308 7316	Mosquito
+R33	attack Arg1:T101 Arg2:T99	
+R34	attack Arg1:T101 Arg2:T100	
+T102	malware 7337 7341	SPLM
+T103	malware 7413 7417	SPLM
+T104	malware 7481 7485	SPLM
+T105	malware 7431 7438	Zebrocy
+T106	malware 7499 7504	Danti
+T107	malware 7367 7372	Turla
+T108	malware 7396 7400	SPLM
+R35	attack Arg1:T98 Arg2:T99	
+R36	attack Arg1:T98 Arg2:T100	
+T109	threatActor_name 7519 7525	Sofacy
+T110	location 7588 7593	China
+T111	industry 7534 7584	large air-defense related commercial organizations
+R37	part_of Arg1:T111 Arg2:T110	
+T112	malware 7599 7603	SPLM
+R38	use Arg1:T109 Arg2:T112	
+R39	attack Arg1:T112 Arg2:T110	
+T113	malware 7616 7623	Zebrocy
+T114	location 7637 7724	Armenia , Turkey , Kazahkstan , Tajikistan , Afghanistan , Mongolia , China , and Japan
+R40	use Arg1:T109 Arg2:T113	
+R41	attack Arg1:T113 Arg2:T114	
+T115	location 7841 7861	Chinese universities
+T116	reference_word 7820 7826	groups
+R42	coreference Arg1:T116 Arg2:T109	
+R43	goal Arg1:T116 Arg2:T115	
+T117	industry 8080 8164	Chinese conglomerate designs and manufactures aerospace and air defense technologies
+T118	threatActor_name 8266 8272	Sofacy
+T119	location 8402 8407	China
+T120	threatActor_name 8451 8457	Sofacy
+T121	OS_name 8529 8534	Linux
+T122	sample_name 8573 8587	Filesystem.dll
+T123	string 10523 10555	452ed4c80c1d20d111a1dbbd99d649d5
+T124	string 10568 10600	efd8a516820c44ddbf4cc8ed7f30df9c
+T125	string 10613 10645	ff0e4f31a6b18b676b9518d4a748fed1
+T126	string 10659 10691	bd3e9f7e65e18bb9a7c4ff8a8aa3a784
+T127	string 10709 10741	86146d38b738d5bfaff7e85a23dcc53e
+T128	string 10777 10809	f01a9a2d1e31332ed36c1a4d2839f412
+T129	sample_name 8620 8643	ProcessRetranslator.dll
+T130	malware 8687 8691	SPLM
+T131	tool 8747 8757	powershell
+T132	threatActor_name 8897 8903	Sofacy
+T133	malware 9125 9129	SPLM
+T134	sample_name 8938 8950	Grey Lambert
+T135	sample_name 9056 9068	Grey Lambert
+T136	sample_name 8425 8437	Grey Lambert
+T137	sample_function 9069 9137	module on the system to gain access and later injecting SPLM modules
+T138	sample_name 9138 9150	Grey Lambert
+T139	malware 9193 9197	SPLM
+T140	malware 9247 9251	SPLM
+T141	malware 9432 9436	SPLM
+T142	threatActor_name 9494 9500	Sofacy
+T143	threatActor_name 9612 9618	Sofacy
+T144	reference_word 9789 9794	group
+R44	coreference Arg1:T144 Arg2:T143	
+T145	location 9829 9853	central and eastern asia
+R45	attack Arg1:T144 Arg2:T145	
+T146	malware 9912 9916	SPLM
+T147	program_language 10113 10118	C/C++
+T148	threatActor_name 10082 10088	Sofacy
+T149	tool 10122 10126	.Net
+T150	tool 10130 10140	powershell
+T151	tool 10204 10211	nbtscan
+T152	tool 10216 10224	powercat
+T153	time 10364 10368	2018
+T154	tool 10386 10390	.Net
+T155	tool 10393 10399	Delphi
+T156	threatActor_name 10454 10460	Sofacy
+T157	tool 10407 10417	powershell
+T158	time 10497 10501	2018
+T159	malware 2213 2221	backdoor

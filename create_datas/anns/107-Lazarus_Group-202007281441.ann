@@ -1,0 +1,90 @@
+T1	location 0 11	North Korea
+T2	threatActor_name 95 108	Lazarus Group
+T3	attack_goal 35 46	Financially
+R1	goal Arg1:T2 Arg2:T3	
+T4	company 280 290	Proofpoint
+T5	threatActor_name 661 674	Lazarus Group
+T6	threatActor_name 486 499	Lazarus Group
+T7	threatActor_name 1144 1157	Lazarus Group
+T8	threatActor_name 1552 1565	Lazarus Group
+T9	threatActor_name 1957 1970	Lazarus Group
+T10	threatActor_name 2490 2503	Lazarus Group
+T11	threatActor_name 2775 2788	Lazarus Group
+T12	threatActor_name 3203 3216	Lazarus Group
+T13	threatActor_name 3277 3290	Lazarus Group
+T14	sub_activity 354 460	use cryptocurrency-related lures to infect victims with sophisticated backdoors and reconnaissance malware
+R3	find Arg1:T4 Arg2:T6	
+R4	launch Arg1:T6 Arg2:T14	
+T15	malware 574 583	Gh0st RAT
+T16	attack_goal 584 645	to steal credentials for cryptocurrency wallets and exchanges
+R5	use Arg1:T5 Arg2:T15	
+R6	goal Arg1:T5 Arg2:T16	
+T17	attack_goal 675 750	to conduct lucrative operations stealing Bitcoin and other cryptocurrencies
+R7	goal Arg1:T5 Arg2:T17	
+T18	reference_word 753 755	We
+R8	coreference Arg1:T18 Arg2:T4	
+T19	time 1133 1137	2009
+R9	first_found_time Arg1:T7 Arg2:T19	
+T20	time 1276 1291	March 20 , 2013
+T21	location 1302 1313	South Korea
+T22	company 1320 1333	Sony Pictures
+T23	time 1342 1346	2014
+T24	company 1394 1409	Bangladesh Bank
+T25	time 1413 1417	2014
+T26	malware 1459 1467	WannaCry
+T27	reference_word 1540 1545	group
+R10	coreference Arg1:T27 Arg2:T7	
+R11	attack Arg1:T27 Arg2:T21	
+R12	attack Arg1:T27 Arg2:T22	
+R13	attack Arg1:T27 Arg2:T24	
+R14	use Arg1:T27 Arg2:T26	
+T28	industry 1671 1691	information security
+T29	industry 1703 1727	law enforcement agencies
+T30	industry 1734 1755	intelligence agencies
+T31	location 1596 1608	North Korean
+R15	located Arg1:T8 Arg2:T31	
+T32	reference_word 1779 1784	group
+R17	coreference Arg1:T32 Arg2:T8	
+T33	attack_goal 1813 1824	financially
+R18	goal Arg1:T32 Arg2:T33	
+T34	reference_word 3884 3889	group
+T35	industry 1934 1950	cryptocurrencies
+R19	attack Arg1:T32 Arg2:T35	
+T36	malware 2110 2115	wiper
+T37	attack_activity 2095 2107	DDoS botnets
+T38	reference_word 2076 2080	they
+R20	launch Arg1:T38 Arg2:T37	
+R21	use Arg1:T38 Arg2:T36	
+R22	coreference Arg1:T38 Arg2:T9	
+T39	attack_goal 2234 2262	to steal millions of dollars
+R23	goal Arg1:T38 Arg2:T39	
+T40	company 2213 2218	SWIFT
+R24	attack Arg1:T38 Arg2:T40	
+T41	malware 2313 2326	PowerRatankba
+T42	malware 2400 2408	Ratankba
+T43	malware 2435 2448	PowerRatankba
+T44	malware 2579 2587	Ratankba
+R25	use Arg1:T10 Arg2:T44	
+R26	use Arg1:T10 Arg2:T43	
+T45	malware 2821 2834	PowerRatankba
+R27	use Arg1:T11 Arg2:T45	
+T46	malware 2886 2899	PowerRatankba
+T47	tool 3078 3091	point-of-sale
+T48	malware 3121 3132	RatankbaPOS
+T49	malware 3396 3405	Gh0st RAT
+T50	tool 3373 3383	PowerShell
+T51	tool 2331 2341	PowerShell
+R28	use Arg1:T41 Arg2:T51	
+R29	use Arg1:T42 Arg2:T51	
+R30	use Arg1:T49 Arg2:T50	
+T52	location 3470 3482	South Korean
+R31	attack Arg1:T13 Arg2:T52	
+R32	use Arg1:T13 Arg2:T49	
+R33	attack Arg1:T48 Arg2:T47	
+T53	threatActor_name 3781 3788	Lazarus
+R34	coreference Arg1:T34 Arg2:T53	
+T54	industry 4189 4203	cryptocurrency
+T55	tool 4236 4249	point-of-sale
+T56	tool 3439 3452	point-of-sale
+R35	located Arg1:T56 Arg2:T52	
+R2	located Arg1:T2 Arg2:T1	

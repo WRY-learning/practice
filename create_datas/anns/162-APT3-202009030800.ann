@@ -1,0 +1,197 @@
+T1	threatActor_name 0 4	APT3
+T2	threatActor_name 373 377	APT3
+T3	threatActor_name 997 1001	APT3
+T4	threatActor_name 1366 1370	APT3
+T5	threatActor_name 1688 1692	APT3
+T6	threatActor_name 1887 1891	APT3
+T7	threatActor_name 1924 1928	APT3
+T8	location 1897 1902	China
+T9	threatActor_name 2128 2132	APT3
+T10	tool 2241 2243	C2
+T11	threatActor_name 2552 2556	APT3
+T12	threatActor_name 2829 2833	APT3
+T13	threatActor_name 2773 2777	APT3
+T14	threatActor_name 3515 3519	APT3
+T15	threatActor_name 5203 5207	APT3
+T16	tool 2219 2238	command and control
+R1	coreference Arg1:T10 Arg2:T16	
+T17	time 2081 2091	March 2016
+T18	threatActor_aliases 1373 1385	Gothic Panda
+T19	threatActor_aliases 1388 1393	Pirpi
+T20	threatActor_aliases 1396 1404	UPS Team
+T21	threatActor_aliases 1407 1414	Buckeye
+T22	threatActor_aliases 1417 1434	Threat Group-0110
+T23	threatActor_aliases 1437 1444	TG-0110
+T24	tool 5752 5771	Command and Control
+T25	OS_name 3877 3884	Windows
+T26	OS_name 4038 4045	Windows
+T27	OS_name 4183 4190	Windows
+T28	OS_name 3583 3590	Windows
+T29	OS_name 4724 4731	Windows
+T30	OS_name 4319 4326	Windows
+T31	OS_name 4440 4447	Windows
+T32	OS_name 5414 5421	Windows
+T33	OS_name 5512 5519	Windows
+T34	OS_name 6036 6043	windows
+T35	OS_name 6131 6138	windows
+T36	OS_name 6283 6290	windows
+T37	OS_name 6408 6415	windows
+T38	OS_name 6538 6545	windows
+T39	OS_name 7731 7738	Windows
+T40	OS_name 8501 8508	windows
+T41	OS_name 9459 9466	Windows
+T42	OS_name 9502 9509	Windows
+T43	time 2025 2039	September 2016
+T44	location 1968 1970	US
+R2	located Arg1:T6 Arg2:T8	
+T45	industry 1540 1561	Aerospace and Defense
+T46	industry 1564 1592	Construction and Engineering
+T47	industry 1595 1604	High Tech
+T48	industry 1607 1625	Telecommunications
+T49	industry 1628 1642	Transportation
+T50	malware 7471 7476	PlugX
+T51	malware 7515 7520	PlugX
+T52	malware 7373 7378	PlugX
+T53	malware 7494 7499	PlugX
+T54	malware 7717 7722	PlugX
+T55	malware 3978 3983	PlugX
+T56	sample_name 7026 7033	cmd.exe
+T57	sample_name 7194 7201	cmd.exe
+T58	sample_name 7902 7909	cmd.exe
+T59	sample_name 8242 8249	cmd.exe
+T60	sample_name 8638 8645	cmd.exe
+T61	sample_name 8769 8776	cmd.exe
+T62	sample_name 9079 9086	cmd.exe
+T63	sample_name 9020 9027	cmd.exe
+T64	sample_name 5806 5814	file.exe
+T65	sample_name 5795 5802	cmd.exe
+T66	sample_name 5838 5845	cmd.exe
+T67	tool 5939 5942	DLL
+T68	tool 6106 6109	DLL
+T69	protocol 6356 6359	TCP
+T70	OS_name 3481 3488	Windows
+T71	sample_name 5957 5969	Rundll32.exe
+T72	sample_name 5971 5983	filename.dll
+T73	sample_name 6009 6021	filename.dll
+T74	tool 3606 3610	WMIC
+T75	tool 3613 3618	WinRM
+T76	tool 3625 3635	PowerShell
+T77	location 2102 2111	Hong Kong
+T78	protocol 487 491	TTPs
+T79	url 643 667	https://attack.mitre.org
+R3	coreference Arg1:T18 Arg2:T4	
+R4	coreference Arg1:T19 Arg2:T4	
+R5	coreference Arg1:T20 Arg2:T4	
+R6	coreference Arg1:T21 Arg2:T4	
+R7	coreference Arg1:T22 Arg2:T4	
+R8	coreference Arg1:T23 Arg2:T4	
+T80	attack_activity 1460 1476	Clandestine Wolf
+T81	attack_activity 1479 1494	Clandestine Fox
+T82	attack_activity 1497 1517	Operation Double Tap
+T83	attack_goal 1718 1743	exfiltration of documents
+T84	attack_goal 1777 1801	printers and file shares
+R9	goal Arg1:T5 Arg2:T83	
+T85	reference_word 1746 1750	They
+R10	coreference Arg1:T85 Arg2:T5	
+R11	goal Arg1:T85 Arg2:T84	
+T86	attack_goal 1821 1842	intellectual property
+T87	reference_word 1804 1808	They
+R12	coreference Arg1:T87 Arg2:T85	
+R13	goal Arg1:T87 Arg2:T86	
+R14	attack Arg1:T7 Arg2:T44	
+T88	sub_activity 2095 2125	target Hong Kong organizations
+R15	occur_time Arg1:T88 Arg2:T17	
+T89	reference_word 2050 2059	the group
+R16	coreference Arg1:T89 Arg2:T7	
+R17	launch Arg1:T89 Arg2:T88	
+T90	sub_activity 2248 2274	defense evasion techniques
+T91	sub_activity 2202 2238	Initial Setup of command and control
+T92	sub_activity 2281 2307	getting initial compromise
+R18	launch Arg1:T9 Arg2:T91	
+R19	launch Arg1:T9 Arg2:T90	
+R20	launch Arg1:T9 Arg2:T92	
+T93	malware 3812 3817	Pirpi
+T94	threatActor_name 5497 5502	Pirpi
+T95	tool 4431 4439	Mimikatz
+T96	tool 4520 4528	mimikatz
+T97	tool 4409 4417	mimikatz
+T98	tool 4280 4290	PowerShell
+T99	sub_activity 7665 7707	execute , create new files , copy , delete
+T100	tool 4655 4661	PsExec
+T101	tool 5027 5033	Github
+T102	tool 4921 4928	NirSoft
+T103	tool 4873 4883	ChromePass
+T104	sub_activity 2309 2390	Discovery , privilege escalation , lateral movement , persistence , and execution
+T105	sub_activity 2392 2436	Collection , data staging , and exfiltration
+R21	launch Arg1:T9 Arg2:T104	
+R22	launch Arg1:T9 Arg2:T105	
+T106	sub_activity 2834 2889	uses a combination of custom and openly available tools
+R23	launch Arg1:T12 Arg2:T106	
+T107	tool 3857 3860	RAT
+T108	tool 3984 3987	RAT
+T109	tool 3820 3827	SHOTPUT
+T110	tool 4139 4145	OSInfo
+R24	located Arg1:T74 Arg2:T28	
+R25	located Arg1:T75 Arg2:T28	
+R26	located Arg1:T76 Arg2:T28	
+T111	malware 3844 3856	CookieCutter
+R27	part_of Arg1:T111 Arg2:T107	
+R28	part_of Arg1:T55 Arg2:T108	
+T112	tool 9410 9416	Pkgmgr
+T113	tool 9477 9481	Osql
+R29	located Arg1:T113 Arg2:T42	
+T114	tool 3930 3940	MetaSploit
+T115	tool 3953 3966	Cobalt Strike
+T116	tool 4114 4127	Cobalt Strike
+T117	tool 4091 4101	MetaSploit
+R30	located Arg1:T117 Arg2:T26	
+R31	part_of Arg1:T116 Arg2:T26	
+R32	part_of Arg1:T115 Arg2:T25	
+R33	part_of Arg1:T114 Arg2:T25	
+R34	located Arg1:T54 Arg2:T39	
+T118	tool 7748 7761	Cobalt Strike
+T119	tool 5529 5542	Cobalt Strike
+R35	located Arg1:T98 Arg2:T27	
+T120	tool 4821 4831	ChromePass
+T121	tool 4312 4318	pwdump
+T122	function 4244 4251	net use
+T123	function 4254 4264	systeminfo
+T124	function 4267 4270	set
+R36	part_of Arg1:T122 Arg2:T27	
+R37	part_of Arg1:T123 Arg2:T27	
+R38	part_of Arg1:T124 Arg2:T27	
+R39	use Arg1:T110 Arg2:T122	
+R40	use Arg1:T110 Arg2:T123	
+R41	use Arg1:T110 Arg2:T124	
+R42	located Arg1:T121 Arg2:T30	
+T125	tool 4399 4405	pwdump
+R43	located Arg1:T95 Arg2:T31	
+T126	tool 4531 4540	Keylogger
+T127	tool 4599 4608	RemoteCMD
+T128	tool 4664 4671	Dsquery
+T129	tool 4931 4938	Lazagne
+T130	tool 5036 5043	ScanBox
+T131	tool 4541 4550	Keylogger
+T132	tool 4586 4596	keyloggers
+T133	tool 5087 5096	Keylogger
+T134	tool 5076 5086	JavaScript
+T135	tool 9331 9340	keylogger
+R44	launch Arg1:T4 Arg2:T80	
+R45	launch Arg1:T4 Arg2:T81	
+R46	launch Arg1:T4 Arg2:T82	
+T136	reference_word 3754 3758	them
+R47	coreference Arg1:T136 Arg2:T14	
+R48	use Arg1:T136 Arg2:T93	
+R49	use Arg1:T136 Arg2:T111	
+R50	use Arg1:T136 Arg2:T55	
+R51	use Arg1:T15 Arg2:T130	
+R52	attack Arg1:T4 Arg2:T45	
+R53	attack Arg1:T4 Arg2:T46	
+R54	attack Arg1:T4 Arg2:T47	
+R55	attack Arg1:T4 Arg2:T48	
+R56	attack Arg1:T4 Arg2:T49	
+T137	target_crowd 1975 1996	international targets
+R57	attack Arg1:T7 Arg2:T137	
+T138	protocol 5682 5685	ftp
+T139	function 5668 5681	Download file
+T140	protocol 7281 7284	ftp

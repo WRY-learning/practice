@@ -1,0 +1,853 @@
+T1	threatActor_name 4 13	Gamaredon
+T2	threatActor_name 314 323	Gamaredon
+T3	threatActor_name 362 371	Gamaredon
+T4	threatActor_name 434 443	Gamaredon
+T5	threatActor_name 521 530	Gamaredon
+T6	threatActor_name 621 630	Gamaredon
+T7	threatActor_name 1033 1042	Gamaredon
+T8	threatActor_name 1819 1828	Gamaredon
+T9	threatActor_name 2156 2165	Gamaredon
+T10	threatActor_name 8579 8588	Gamaredon
+T11	threatActor_name 6569 6578	Gamaredon
+T12	threatActor_name 16458 16467	Gamaredon
+T13	threatActor_name 25112 25121	Gamaredon
+T14	threatActor_name 25138 25147	Gamaredon
+T15	threatActor_name 25177 25186	Gamaredon
+T16	threatActor_name 25212 25221	Gamaredon
+T17	threatActor_name 25241 25250	Gamaredon
+T18	threatActor_name 25269 25278	Gamaredon
+T19	threatActor_name 25299 25308	Gamaredon
+T20	threatActor_name 25368 25377	Gamaredon
+T21	threatActor_name 25458 25467	Gamaredon
+T22	threatActor_name 25504 25513	Gamaredon
+T23	threatActor_name 25554 25563	Gamaredon
+T24	threatActor_name 25604 25613	Gamaredon
+T25	threatActor_name 25683 25692	Gamaredon
+T26	threatActor_name 25762 25771	Gamaredon
+T27	threatActor_name 25841 25850	Gamaredon
+T28	threatActor_name 25920 25929	Gamaredon
+T29	threatActor_name 25999 26008	Gamaredon
+T30	threatActor_name 26078 26087	Gamaredon
+T31	threatActor_name 26157 26166	Gamaredon
+T32	threatActor_name 26236 26245	Gamaredon
+T33	threatActor_name 26315 26324	Gamaredon
+T34	threatActor_name 26394 26403	Gamaredon
+T35	threatActor_name 26473 26482	Gamaredon
+T36	domain_evil 25124 25135	admin-ru.ru
+T37	domain_evil 25150 25174	adobe.update-service.net
+T38	domain_evil 25189 25209	apploadapp.webhop.me
+T39	domain_evil 25224 25238	brokbridge.com
+T40	domain_evil 25253 25266	cat.gotdns.ch
+T41	domain_evil 25281 25296	check-update.ru
+T42	url_evil 25311 25365	http://childrights.in.ua/public/manager/img/scrdll.ini
+T43	url_evil 25380 25455	http://prestigeclub.frantov.com.ua/press-center/press/chrome-xvnc-v5517.exe
+T44	url_evil 25470 25501	http://umachka.ua/screen/dk.tmp
+T45	url_evil 25516 25551	http://umachka.ua/screen/screen.tmp
+T46	url_evil 25566 25601	http://viberload.ddns.net/viber.nls
+T47	sha2 25616 25680	002aff376ec452ec35ae2930dfbb51bd40229c258611d19b86863c3b0d156705
+T48	sha2 25695 25759	08e69f21c3c60a4a9b78f580c3a55d4cfb74729705b5b7d01c1aecfd58fc49e6
+T49	sha2 25774 25838	0c47cf984afe87a14d0d4c94557864ed19b4cb52783e49ce96ebf9c2f8b52d27
+T50	sha2 25853 25917	0dc1010c3d3766158e2347d10fc78d9223c6e0e3a44aa8a76622aeff7d429ab9
+T51	sha2 25932 25996	0f745512940e0efd8f09c6d862571cba2b98fac9a9f7cf30dedcc08ace43a494
+T52	sha2 26011 26075	145dab86a43835bb37734c16756d6d64d8e5ac6b87c491c57385e27b564136b8
+T53	sha2 26090 26154	026be8a873560f1496c6961f6e36c312bdda01beacb17c4b744f35ee1923d061
+T54	sha2 26169 26233	03c943f5cba11b09b9c3afa0705d4a027e5a9d81b299711740cc5aedfe4b4aa1
+T55	sha2 26248 26312	03e5e99cc8280de4663c4b65bfd26782d4975258808a63a4b20bc068008df7f5
+T56	sha2 26327 26391	059e40ba91b2b2d827c200476fcbd0fad0d43ab198d0c206c996777d27e6de65
+T57	sha2 26406 26470	0669e61e51cf43daa431d52b5461c90bdce1b1bee03b087e4406c30264dcb9a4
+T58	sha2 26485 26549	068b9a9194efacc16cf142814e79b7041b6ab3d671a95bb508dbd30061c324aa
+R1	part_of Arg1:T58 Arg2:T35	
+R2	part_of Arg1:T57 Arg2:T34	
+R3	part_of Arg1:T56 Arg2:T33	
+R4	part_of Arg1:T55 Arg2:T32	
+R5	part_of Arg1:T36 Arg2:T13	
+R6	part_of Arg1:T37 Arg2:T14	
+R7	part_of Arg1:T38 Arg2:T15	
+R8	part_of Arg1:T39 Arg2:T16	
+R9	part_of Arg1:T40 Arg2:T17	
+R10	part_of Arg1:T41 Arg2:T18	
+R11	part_of Arg1:T42 Arg2:T19	
+R12	part_of Arg1:T43 Arg2:T20	
+R13	part_of Arg1:T44 Arg2:T21	
+R14	part_of Arg1:T45 Arg2:T22	
+R15	part_of Arg1:T46 Arg2:T23	
+R16	part_of Arg1:T47 Arg2:T24	
+R17	part_of Arg1:T48 Arg2:T25	
+R18	part_of Arg1:T49 Arg2:T26	
+R19	part_of Arg1:T50 Arg2:T27	
+R20	part_of Arg1:T51 Arg2:T28	
+R21	part_of Arg1:T52 Arg2:T29	
+R22	part_of Arg1:T53 Arg2:T30	
+R23	part_of Arg1:T54 Arg2:T31	
+T59	security_team 164 171	Unit 42
+R24	find Arg1:T59 Arg2:T2	
+T60	time 409 413	2013
+R25	first_found_time Arg1:T3 Arg2:T60	
+T61	sub_activity 558 582	custom-developed malware
+R26	use Arg1:T5 Arg2:T61	
+T62	reference_word 682 710	The custom-developed malware
+R27	coreference Arg1:T62 Arg2:T61	
+T63	sample_function 779 824	downloading and executing additional payloads
+T64	sample_function 858 900	scan system drives for specific file types
+T65	sample_function 918 937	capture screenshots
+T66	sample_function 955 980	remotely execute commands
+R28	goal Arg1:T62 Arg2:T63	
+R29	goal Arg1:T62 Arg2:T64	
+R30	goal Arg1:T62 Arg2:T65	
+R31	goal Arg1:T62 Arg2:T66	
+T67	sub_activity 1072 1091	compromised domains
+T68	sub_activity 1094 1115	dynamic DNS providers
+T69	tool 1140 1170	country code top-level domains
+T70	tool 1173 1179	ccTLDs
+R32	coreference Arg1:T70 Arg2:T69	
+T71	sub_activity 1118 1170	Russian and Ukrainian country code top-level domains
+T72	sub_activity 1188 1213	Russian hosting providers
+R33	use Arg1:T7 Arg2:T67	
+R34	use Arg1:T7 Arg2:T68	
+R35	use Arg1:T7 Arg2:T71	
+R36	use Arg1:T7 Arg2:T72	
+T73	reference_word 1326 1336	this group
+R37	coreference Arg1:T73 Arg2:T7	
+T74	sub_activity 1314 1325	the malware
+R38	part_of Arg1:T74 Arg2:T73	
+T75	reference_word 1408 1419	the malware
+T76	person 1572 1584	LookingGlass
+R39	coreference Arg1:T75 Arg2:T74	
+T78	sub_activity 1450 1463	batch scripts
+T79	tool 1527 1531	wget
+T80	sub_activity 1494 1516	applications and tools
+R40	use Arg1:T75 Arg2:T78	
+R41	use Arg1:T75 Arg2:T80	
+R42	part_of Arg1:T79 Arg2:T80	
+T81	attack_activity 1621 1641	Operation Armageddon
+R43	find Arg1:T76 Arg2:T81	
+T82	target_crowd 1684 1702	Ukrainian military
+T83	target_crowd 1707 1738	national security establishment
+R44	attack Arg1:T81 Arg2:T82	
+R45	attack Arg1:T81 Arg2:T83	
+T77	reference_word 1917 1927	this group
+R46	coreference Arg1:T77 Arg2:T8	
+T84	attack_activity 1965 1985	Operation Armageddon
+R47	launch Arg1:T77 Arg2:T84	
+T85	reference_word 2108 2125	this threat group
+R48	coreference Arg1:T85 Arg2:T77	
+T86	security_team 2178 2186	Symantec
+T87	security_team 2191 2202	Trend Micro
+T88	sha1 3832 3896	a6a44ee854c846f31d15b0ca2d6001fb0bdddc85f17e2e56abb2fa9373e8cfe7
+T89	sha1 3909 3973	b5199a302f053e5e9cb7e82cc1e502b5edbf04699c2839acb514592f2eeabb13
+T90	sha1 3986 4050	3ef3a06605b462ea31b821eb76b1ea0fdf664e17d010c1d5e57284632f339d4b
+T91	time 4099 4103	2014
+T92	tool 4091 4095	wget
+T93	person 4053 4055	We
+R49	use Arg1:T93 Arg2:T92	
+T94	sample_name 3193 3204	setting.exe
+T95	time 2947 2960	April of 2014
+T96	sha1 2854 2918	ca87eb1a21c6d4ffd782b225b178ba65463f73de6f4c736eb135be5864f556dc
+T97	sub_activity 2828 2851	self-extracting archive
+R50	coreference Arg1:T96 Arg2:T97	
+R51	first_found_time Arg1:T97 Arg2:T95	
+T98	time 5227 5242	January of 2015
+T99	sample_name 3159 3166	123.cmd
+T100	tool 3602 3604	C2
+T101	tool 3580 3599	command and control
+T102	tool 3550 3554	wget
+T103	function 3563 3567	POST
+T104	url_evil 4747 4822	hxxp://prestigeclub.frantov.com.ua/press-center/press/chrome-xvnc-v5517.exe
+T105	sha1 5140 5204	cfb8216be1a50aa3d425072942ff70f92102d4f4b155ab2cf1e7059244b99d31
+T106	tool 4920 4922	C2
+T107	tool 17416 17418	C2
+T108	tool 18299 18301	C2
+T109	tool 18354 18356	C2
+T110	IP_evil 18366 18378	195.62.52.93
+T112	tool 19909 19911	C2
+T113	tool 19096 19098	C2
+T114	sha1 24733 24797	598c55b89e819b23eac34547ad02e5cd59e1b8fcb23b5063a251d8e8fae8b824
+T115	sha1 7269 7333	3773ddd462b01f9272656f3150f2c3de19e77199cf5fac1f44287d11593614f9
+T116	sha1 7360 7424	598c55b89e819b23eac34547ad02e5cd59e1b8fcb23b5063a251d8e8fae8b824
+T117	person 2332 2345	threat actors
+T118	sub_activity 2294 2319	first variant of payloads
+R52	use Arg1:T117 Arg2:T118	
+T119	sample_name 2441 2457	TROJ_RESETTER.BB
+T120	sample_name 2462 2478	TROJ_FRAUDROP.EX
+T121	reference_word 2531 2548	this threat group
+T122	tool 2745 2770	Remote Manipulator System
+T124	sample_name 2613 2617	.SFX
+T125	tool 2583 2610	Self-extracting Zip-archive
+R53	coreference Arg1:T124 Arg2:T125	
+R54	use Arg1:T121 Arg2:T125	
+R55	use Arg1:T121 Arg2:T141	
+T126	sub_activity 2658 2670	batch script
+R56	use Arg1:T125 Arg2:T126	
+T127	sub_activity 2683 2732	installed a legitimate remote administration tool
+R57	launch Arg1:T125 Arg2:T127	
+T128	sub_activity 2695 2732	legitimate remote administration tool
+R58	coreference Arg1:T122 Arg2:T128	
+T129	reference_word 3104 3117	this SFX file
+R59	coreference Arg1:T129 Arg2:T97	
+R60	part_of Arg1:T99 Arg2:T129	
+R61	part_of Arg1:T94 Arg2:T129	
+T130	reference_word 3209 3224	This second SFX
+R62	coreference Arg1:T130 Arg2:T94	
+T131	tool 3236 3258	.MSI installer package
+R63	part_of Arg1:T131 Arg2:T130	
+T132	tool 3274 3299	Remote Manipulator System
+T133	sub_activity 3306 3318	batch script
+R64	part_of Arg1:T133 Arg2:T130	
+T134	sub_activity 3265 3299	installs Remote Manipulator System
+R65	goal Arg1:T131 Arg2:T134	
+T135	sub_activity 3325 3349	handles the installation
+R66	goal Arg1:T133 Arg2:T135	
+T136	tool 3412 3416	wget
+T137	tool 3460 3464	wget
+T138	tool 6623 6627	wget
+T139	tool 6695 6699	wget
+T140	tool 15036 15040	wget
+T141	sub_activity 2498 2506	payloads
+T123	sub_activity 3379 3392	batch scripts
+T142	sub_activity 3358 3366	payloads
+T143	sub_activity 4440 4452	batch script
+R67	use Arg1:T142 Arg2:T123	
+R68	use Arg1:T142 Arg2:T136	
+T144	reference_word 3428 3445	The batch scripts
+R69	coreference Arg1:T144 Arg2:T123	
+R70	use Arg1:T144 Arg2:T137	
+T145	sub_activity 3477 3520	download and execute additional executables
+R71	goal Arg1:T137 Arg2:T145	
+T146	reference_word 3523 3534	The scripts
+R72	coreference Arg1:T146 Arg2:T144	
+R73	use Arg1:T146 Arg2:T102	
+T147	sub_activity 3558 3599	send POST requests to command and control
+R74	goal Arg1:T102 Arg2:T147	
+T149	industry 4241 4280	Ukrainian national security and defense
+T150	industry 4283 4331	the Anti-Terrorist Operation Zone in the Ukraine
+T151	industry 4338 4358	Ukrainian patriotism
+T148	industry 4200 4238	presidential administration of Ukraine
+T152	sub_activity 4417 4426	SFX files
+T153	tool 4510 4513	VNC
+T154	tool 4674 4677	VNC
+T155	sub_activity 4388 4396	payloads
+R75	use Arg1:T155 Arg2:T152	
+T156	sub_activity 4460 4470	executable
+R76	goal Arg1:T152 Arg2:T143	
+R77	goal Arg1:T152 Arg2:T156	
+T157	sub_activity 4484 4497	remote access
+R78	goal Arg1:T152 Arg2:T157	
+R79	use Arg1:T157 Arg2:T153	
+T158	protocol 4531 4534	VNC
+T159	sub_activity 4609 4621	batch script
+T160	sub_activity 4829 4841	batch script
+T161	sub_activity 14656 14668	batch script
+T162	sub_activity 4579 4587	SFX file
+T163	sub_activity 4531 4546	VNC exectuables
+R80	located Arg1:T163 Arg2:T162	
+T164	tool 4873 4876	VNC
+T165	sub_activity 4873 4884	VNC program
+R81	use Arg1:T160 Arg2:T165	
+T166	tool 4898 4917	command and control
+T167	tool 4993 4996	VNC
+T168	sub_activity 4993 5010	VNC installations
+T169	location 5014 5033	compromised systems
+R82	located Arg1:T168 Arg2:T169	
+T170	encryption_algo 5091 5094	RC4
+R83	use Arg1:T168 Arg2:T170	
+R84	first_found_time Arg1:T105 Arg2:T98	
+T171	tool 5272 5275	VNC
+T172	sample_name 5331 5343	UltraVNC.ini
+T173	tool 5325 5328	VNC
+R85	coreference Arg1:T106 Arg2:T166	
+T174	sub_activity 5434 5447	Cyrillic file
+T175	sub_activity 5489 5502	batch scripts
+T176	sub_activity 5512 5527	hardcoded paths
+R86	use Arg1:T175 Arg2:T176	
+T177	sub_activity 5583 5591	payloads
+T178	sub_activity 5607 5617	VBS script
+R87	located Arg1:T178 Arg2:T177	
+T179	sub_activity 5624 5643	raises a dialog box
+R88	goal Arg1:T178 Arg2:T179	
+T180	sub_activity 5929 5938	SFX files
+T181	sample_name 5990 6001	ChkFlsh.exe
+R89	part_of Arg1:T181 Arg2:T180	
+T182	sha1 6004 6068	8c9d690e765c7656152ad980edd2200b81d2afceef882ed81287fe212249f845
+T183	reference_word 6073 6089	This application
+R90	coreference Arg1:T183 Arg2:T181	
+R91	coreference Arg1:T182 Arg2:T181	
+T184	person 6107 6127	Ukrainian programmer
+T185	sub_activity 6143 6180	check performance of USB flash drives
+R92	attack Arg1:T183 Arg2:T185	
+T186	person 6200 6209	attackers
+T187	sub_activity 6289 6326	steal or monitor files on USB devices
+T188	reference_word 6267 6269	it
+R93	coreference Arg1:T188 Arg2:T183	
+R94	use Arg1:T186 Arg2:T188	
+R95	goal Arg1:T188 Arg2:T187	
+T189	tool 6410 6413	VNC
+T190	sub_activity 6389 6398	SFX files
+T191	sub_activity 6435 6444	SFX files
+T192	sub_activity 6553 6562	SFX files
+T193	reference_word 7253 7266	This SFX file
+T194	malware 7351 7357	Trojan
+R96	located Arg1:T194 Arg2:T193	
+R97	coreference Arg1:T116 Arg2:T194	
+R98	coreference Arg1:T115 Arg2:T193	
+T195	malware 7444 7454	Pteranodon
+R99	part_of Arg1:T195 Arg2:T194	
+T196	time 7159 7172	February 2016
+T197	sub_activity 8479 8487	SFX file
+T198	reference_word 6356 6372	this application
+R100	coreference Arg1:T198 Arg2:T188	
+T199	tool 6462 6465	VNC
+T200	sub_activity 6501 6515	recent samples
+T201	sub_activity 6535 6548	batch scripts
+R101	use Arg1:T200 Arg2:T201	
+R102	use Arg1:T200 Arg2:T192	
+T202	tool 6630 6653	Remote Manipulator Tool
+T203	sample_name 6664 6675	ChkFlsh.exe
+T204	tool 6656 6659	VNC
+T205	person 6704 6713	attackers
+T206	time 6870 6882	June of 2015
+R103	part_of Arg1:T205 Arg2:T11	
+T207	sub_activity 6731 6759	custom developed downloaders
+R104	use Arg1:T205 Arg2:T207	
+T208	sub_activity 6826 6864	custom developed remote access implant
+T209	tool 6777 6795	Remote Manipulator
+T210	tool 6799 6802	VNC
+T211	malware 6807 6814	malware
+R105	use Arg1:T211 Arg2:T208	
+T212	sample_name 7011 7023	LocalSMS.dll
+T213	sub_activity 6982 6994	SFX implants
+R106	coreference Arg1:T212 Arg2:T213	
+T214	sub_activity 6885 6902	custom downloader
+R107	first_found_time Arg1:T214 Arg2:T206	
+R108	located Arg1:T214 Arg2:T213	
+T215	domain_evil 7062 7086	adobe.update-service.net
+T216	sub_activity 7183 7194	custom tool
+T217	sub_activity 7217 7229	SFX implants
+R109	coreference Arg1:T193 Arg2:T217	
+R110	located Arg1:T216 Arg2:T217	
+T218	malware 7458 7468	Pteranodon
+T219	malware 7481 7489	backdoor
+R111	part_of Arg1:T218 Arg2:T219	
+T220	sample_function 7533 7554	Capturing screenshots
+T221	sample_function 7619 7661	Downloading and executing additional files
+T222	sample_function 7664 7692	Executing arbitrary commands
+R112	goal Arg1:T218 Arg2:T220	
+T223	person 7608 7616	attacker
+R113	coreference Arg1:T218 Arg2:T221	
+R114	goal Arg1:T218 Arg2:T222	
+T224	malware 7733 7743	Pteranodon
+T225	sub_activity 7751 7764	hardcoded URL
+R115	use Arg1:T224 Arg2:T225	
+T226	sub_activity 7769 7788	command and control
+R116	goal Arg1:T225 Arg2:T226	
+T227	domain_evil 7819 7840	msrestore.ru/post.php
+T228	reference_word 7791 7793	It
+R117	coreference Arg1:T228 Arg2:T224	
+T229	function 7800 7804	POST
+R118	use Arg1:T228 Arg2:T229	
+T230	reference_word 7897 7905	the tool
+R119	coreference Arg1:T230 Arg2:T228	
+T231	sha1 8238 8302	f2355a66af99db5f856ebfcfeb2b9e67e5e83fff9b04cdc09ac0fabb4af556bd
+T232	sub_activity 7879 7905	Newer versions of the tool
+T233	sub_activity 7915 7932	hardcoded domains
+T234	sub_activity 7937 7957	multipart boundaries
+T235	sub_activity 7851 7876	static multipart boundary
+R120	use Arg1:T228 Arg2:T235	
+R121	use Arg1:T232 Arg2:T233	
+R122	use Arg1:T232 Arg2:T234	
+T236	malware 8004 8014	Pteranodon
+T237	malware 8059 8069	Pteranodon
+T238	sub_activity 8059 8073	Pteranodon tag
+T239	sub_activity 8220 8235	Javascript file
+R123	coreference Arg1:T231 Arg2:T239	
+T240	time 8319 8335	December of 2016
+T241	url_evil 8362 8402	http://samotsvety.com.ua/files/index.pht
+R124	first_found_time Arg1:T239 Arg2:T240	
+T242	sha1 8490 8554	b2fb7d2977f42698ea92d1576fdd4da7ad7bb34f52a63e4066f158a4b1ffb875
+R125	coreference Arg1:T242 Arg2:T197	
+T243	sub_activity 8579 8601	Gamaredon custom tools
+R126	located Arg1:T243 Arg2:T197	
+T244	sub_activity 8606 8620	related sample
+T245	sha1 8623 8687	e24715900aa5c9de807b0c8f6ba8015683af26c42c66f94bee38e50a34e034c4
+R127	coreference Arg1:T245 Arg2:T244	
+T246	reference_word 8790 8798	the file
+R128	coreference Arg1:T246 Arg2:T244	
+T247	sample_name 8804 8829	AdapterTroubleshooter.exe
+R129	coreference Arg1:T247 Arg2:T246	
+T248	tool 8885 8892	OpenVPN
+T249	sub_activity 8713 8718	Mutex
+T250	sub_activity 8734 8753	larger set of tools
+R130	use Arg1:T244 Arg2:T249	
+R131	use Arg1:T244 Arg2:T250	
+T251	tool 8945 8954	AutoFocus
+T252	reference_word 9020 9030	the sample
+R132	coreference Arg1:T252 Arg2:T246	
+T253	tool 9036 9040	7zip
+T254	sub_activity 9053 9068	virtual machine
+R133	located Arg1:T253 Arg2:T254	
+T255	sha2 9112 9176	400f53a89d08d47f608e1288d9873bf8d421fc7cd642c5e821674f38e07a1501
+T256	sha2 9308 9372	d01df47b6187631c9a93bdad1298439ab1a1c5529b3319f3614b6ec2455e5726
+T257	sha2 9500 9564	f2296bcb6be68dfb330baec2091fb11a42a51928ba057164213580e6ff0e1126
+T258	sample_name 9179 9191	LocalSMS.dll
+T259	time 9192 9216	Wed Apr 29 08:10:30 2015
+T260	sample_name 9375 9388	MpClients.dll
+T261	time 9389 9413	Thu Sep 08 05:01:00 2016
+T262	sample_name 9567 9583	OfficeUpdate.dll
+R134	coreference Arg1:T258 Arg2:T255	
+R135	occur_time Arg1:T255 Arg2:T259	
+R136	coreference Arg1:T260 Arg2:T256	
+R137	occur_time Arg1:T256 Arg2:T261	
+R138	coreference Arg1:T262 Arg2:T257	
+T263	time 9584 9608	Wed Dec 07 09:25:57 2016
+T264	sha2 9611 9675	2ded2f3b5b5b6155ce818893c67887cbfa8b539be6c983e314ccf2177552da20
+T265	sha2 9704 9768	46a39da996b01e26ddd71d51c9704de2aa641cd3443f6fe0e5c485f1cd9fa65d
+T266	sha2 9786 9850	a972ad0ddc00d5c04d9fe26f1748e12008efdd6524c9d2ea4e6c2d3e42d82b7b
+T267	sha2 9867 9931	37c78ee7826d63bb9219de594ed6693f18da5db60e3cbc86795bd10b296f12ac
+T268	sha2 10035 10099	90ba0f95896736b799f8651ef0600d4fa85c6c3e056e54eab5bb216327912edd
+T269	sample_name 10102 10113	wmphost.exe
+T270	sample_name 9933 9948	w inrestore.dll
+T271	sample_name 9853 9864	condirs.cmd
+T272	sample_name 9771 9783	UsrClass.lnk
+R139	occur_time Arg1:T257 Arg2:T263	
+T273	sample_name 9678 9701	SmartArtGraphicsLog.lnk
+R140	coreference Arg1:T273 Arg2:T264	
+R141	coreference Arg1:T272 Arg2:T265	
+R142	coreference Arg1:T271 Arg2:T266	
+R143	coreference Arg1:T270 Arg2:T267	
+R144	coreference Arg1:T269 Arg2:T268	
+T274	time 9949 9973	Mon Jan 09 03:12:39 2017
+R145	occur_time Arg1:T267 Arg2:T274	
+T275	time 10114 10138	Thu Dec 01 08:23:32 2016
+R146	occur_time Arg1:T268 Arg2:T275	
+T276	sample_name 10270 10281	condirs.cmd
+T277	sample_name 10315 10326	condirs.cmd
+T278	sub_activity 10402 10427	Kill and delete processes
+T279	sample_name 10517 10531	winrestore.dll
+T280	sample_name 10642 10658	OfficeUpdate.dll
+T281	OS_name 10799 10809	Windows XP
+T282	OS_name 10813 10822	Windows 7
+T283	OS_name 10854 10864	Windows XP
+T284	sub_activity 10871 10888	Set the directory
+T285	sub_activity 10892 10902	copy files
+T286	sample_name 10956 10968	UsrClass.lnk
+T287	sample_name 11041 11064	SmartArtGraphicsLog.lnk
+T288	OS_name 11156 11165	Windows 7
+T289	sub_activity 11172 11189	Set the directory
+R147	goal Arg1:T284 Arg2:T285	
+T290	sub_activity 11193 11203	copy files
+R148	goal Arg1:T289 Arg2:T290	
+T291	sample_name 11256 11268	UsrClass.lnk
+T292	sample_name 11347 11370	SmartArtGraphicsLog.lnk
+T293	sample_name 11450 11464	winrestore.dll
+T294	sample_name 11524 11535	MSO1234.win
+T295	sample_name 11550 11562	LocalSMS.dll
+T296	sample_name 11622 11633	MSO1567.dls
+T297	sample_name 11649 11665	OfficeUpdate.dll
+T298	sample_name 11725 11736	MSO5678.usb
+T299	sample_name 11752 11765	MpClients.dll
+T300	sample_name 11825 11836	MSO8734.obn
+T301	function 11878 11885	updater
+T302	sample_name 11897 11908	MSO1234.win
+T303	sample_name 11917 11929	rundll32.exe
+T304	sub_activity 11846 11887	Execute the exported function “ updater ”
+R149	launch Arg1:T302 Arg2:T304	
+R150	use Arg1:T302 Arg2:T303	
+T305	sample_name 11991 12002	MSO1567.dls
+T306	function 11969 11979	EntryPoint
+T307	sub_activity 11937 11981	Execute the exported function “ EntryPoint ”
+T308	sample_name 12011 12023	rundll32.exe
+R151	use Arg1:T305 Arg2:T308	
+R152	launch Arg1:T305 Arg2:T307	
+T309	sample_name 12052 12064	UsrClass.lnk
+T310	sample_name 12181 12204	SmartArtGraphicsLog.lnk
+T311	sample_name 12349 12363	winrestore.dll
+T312	sample_name 12372 12388	OfficeUpdate.dll
+T313	sample_name 12446 12457	condirs.cmd
+T314	sub_activity 12492 12520	Schedule the following tasks
+R153	launch Arg1:T313 Arg2:T314	
+T315	function 12540 12553	UpdatesWinRes
+T316	function 12608 12621	UpdatesWinDLL
+T317	function 12678 12694	UpdatesWinUSBOOK
+T318	function 12752 12765	UpdatesWinOBN
+T319	sample_name 12567 12578	MSO1234.win
+T320	sample_name 12635 12646	MSO1567.dls
+T321	sample_name 12708 12719	MSO5678.usb
+T322	sample_name 12779 12790	MSO8734.obn
+T323	sub_activity 12558 12589	invoke “ MSO1234.win ,updater ”
+T324	sub_activity 12626 12660	invoke “ MSO1567.dls ,EntryPoint ”
+T325	sub_activity 12699 12734	invoke “ MSO5678.usb ,StartBackup ”
+T326	sub_activity 12770 12805	invoke “ MSO8734.obn ,bitDefender ”
+R154	goal Arg1:T315 Arg2:T323	
+R155	goal Arg1:T316 Arg2:T324	
+R156	goal Arg1:T317 Arg2:T325	
+R157	goal Arg1:T318 Arg2:T326	
+T327	sample_name 12902 12911	skype.exe
+T328	sample_name 13707 13719	rundll32.exe
+T329	sample_name 13801 13813	rundll32.exe
+T330	function 13664 13675	StartBackup
+T331	function 13758 13769	bitDefender
+T332	sample_name 13687 13698	MSO5678.usb
+T333	sample_name 13781 13792	MSO8734.obn
+T334	sub_activity 13632 13677	Execute the exported function “ StartBackup ”
+T335	sub_activity 13726 13771	Execute the exported function “ bitDefender ”
+R158	launch Arg1:T332 Arg2:T334	
+R159	launch Arg1:T333 Arg2:T335	
+R160	use Arg1:T332 Arg2:T328	
+R161	use Arg1:T333 Arg2:T329	
+T336	sub_activity 13821 13845	Clean up temporary files
+T337	sub_activity 13848 13853	sleep
+T338	sub_activity 13860 13873	delete itself
+T339	person 13941 13949	attacker
+T340	attack_goal 13965 13976	steal files
+T341	attack_goal 13979 13998	capture screenshots
+T342	sub_activity 13886 13892	script
+R162	use Arg1:T339 Arg2:T342	
+T343	attack_goal 14003 14018	evade detection
+R163	goal Arg1:T342 Arg2:T340	
+R164	goal Arg1:T342 Arg2:T341	
+R165	goal Arg1:T342 Arg2:T343	
+T344	tool 16158 16168	VirusTotal
+T345	time 16240 16244	2014
+T346	sub_activity 16077 16085	implants
+T347	reference_word 16194 16208	these implants
+R166	coreference Arg1:T347 Arg2:T346	
+T348	sub_activity 16175 16187	threat group
+R167	use Arg1:T348 Arg2:T347	
+T349	target_crowd 16273 16328	individuals likely involved in the Ukrainian government
+R168	first_found_time Arg1:T348 Arg2:T345	
+R169	attack Arg1:T348 Arg2:T349	
+T350	person 16561 16572	researchers
+T351	company 16576 16594	Palo Alto Networks
+R170	part_of Arg1:T350 Arg2:T351	
+T352	tool 16608 16616	WildFire
+T353	tool 16643 16652	AutoFocus
+R171	use Arg1:T350 Arg2:T353	
+T354	sub_activity 16595 16634	hunt through WildFire execution reports
+R172	launch Arg1:T350 Arg2:T354	
+T355	tool 16867 16876	AutoFocus
+T356	tool 15649 15658	AutoFocus
+T357	tool 17157 17166	AutoFocus
+T358	sub_activity 16891 16931	hunting for malicious activity and files
+T359	person 16974 16983	defenders
+R173	launch Arg1:T359 Arg2:T358	
+T360	sub_activity 16988 17021	identify and building protections
+R174	goal Arg1:T359 Arg2:T360	
+T361	threatActor_name 17171 17185	GamaredonGroup
+T362	company 17188 17206	Palo Alto Networks
+T363	person 17207 17216	customers
+R175	part_of Arg1:T363 Arg2:T362	
+T364	tool 17273 17281	WildFire
+T365	tool 17466 17483	Threat Prevention
+T366	sub_activity 17416 17426	C2 domains
+T367	tool 17345 17350	Traps
+T368	person 17511 17524	Tom Lancaster
+T369	sub_activity 14365 14389	Indicators of Compromise
+T370	sub_activity 14484 14497	batch scripts
+T371	sub_activity 14721 14734	batch scripts
+T372	sub_activity 14750 14764	ping localhost
+R176	part_of Arg1:T372 Arg2:T371	
+T373	sub_activity 14779 14787	sleeping
+T374	sub_activity 14820 14833	named “ cmd ”
+T375	sub_activity 14802 14815	batch scripts
+R177	launch Arg1:T375 Arg2:T374	
+T376	sub_activity 14927 14940	same commands
+T377	sub_activity 14905 14918	batch scripts
+R178	use Arg1:T377 Arg2:T376	
+T378	sub_activity 14945 14981	determining operating system version
+R179	goal Arg1:T376 Arg2:T378	
+T379	sub_activity 14996 15009	early samples
+T380	tool 15043 15051	UltraVNC
+T381	tool 15058 15066	ChkFlash
+R180	use Arg1:T379 Arg2:T140	
+R181	use Arg1:T379 Arg2:T380	
+R182	use Arg1:T379 Arg2:T381	
+T382	sub_activity 15109 15121	custom tools
+T383	sub_activity 15129 15142	latest sample
+R183	use Arg1:T383 Arg2:T382	
+T384	tool 15161 15164	VNC
+T385	sub_activity 15143 15150	Samples
+T386	sub_activity 15174 15206	same configuration and passwords
+R184	use Arg1:T385 Arg2:T384	
+R185	use Arg1:T385 Arg2:T386	
+T387	sub_activity 15400 15422	custom developed tools
+T388	sub_activity 15427 15454	hardcoded network locations
+R186	use Arg1:T387 Arg2:T388	
+T389	sub_activity 15590 15612	pivoting on indicators
+T390	sub_activity 15629 15641	SFX implants
+T391	sub_activity 15602 15612	indicators
+R187	located Arg1:T391 Arg2:T390	
+R188	located Arg1:T390 Arg2:T356	
+T392	sub_activity 15791 15813	SFX dropping resources
+T393	program_language 15862 15865	VBS
+T394	sub_activity 15849 15872	batch and/or VBS script
+R189	launch Arg1:T392 Arg2:T394	
+T395	protocol 15888 15891	SSL
+T396	protocol 15913 15917	IPv4
+T397	sub_activity 15913 15927	IPv4 addresses
+T398	protocol 15952 15956	IPv4
+T399	sub_activity 15952 15966	IPv4 addresses
+T400	sample_name 17686 17700	USBgrabber.dll
+T111	reference_word 17843 17854	the malware
+T401	sub_activity 17855 17876	monitors the computer
+R190	launch Arg1:T111 Arg2:T401	
+T402	sub_activity 17984 18003	creates two mutexes
+T403	reference_word 17972 17983	The malware
+R191	coreference Arg1:T403 Arg2:T111	
+R192	launch Arg1:T403 Arg2:T402	
+T404	sub_activity 18056 18084	creates the following folder
+R193	launch Arg1:T403 Arg2:T404	
+T405	sub_activity 18344 18363	hardcoded C2 server
+R194	coreference Arg1:T110 Arg2:T405	
+T406	protocol 18396 18400	HTTP
+T407	function 18401 18405	POST
+T408	sub_activity 18442 18457	SQLite database
+T409	program_language 18442 18448	SQLite
+T410	reference_word 18415 18426	The malware
+R195	coreference Arg1:T410 Arg2:T403	
+T411	sample_name 18466 18474	asha.dat
+R196	part_of Arg1:T411 Arg2:T408	
+T412	reference_word 18520 18522	it
+T413	reference_word 18648 18650	it
+R197	coreference Arg1:T412 Arg2:T410	
+R198	coreference Arg1:T413 Arg2:T412	
+T414	sub_activity 18523 18534	keeps track
+R199	launch Arg1:T412 Arg2:T414	
+T415	sub_activity 18651 18675	creates a Unicode string
+R200	launch Arg1:T413 Arg2:T415	
+T416	sub_activity 18721 18747	concatenates the file size
+R201	launch Arg1:T413 Arg2:T416	
+T417	reference_word 18775 18777	it
+R202	coreference Arg1:T417 Arg2:T413	
+T418	sub_activity 18787 18800	API functions
+T419	function 18801 18810	MD5Init()
+T420	function 18813 18824	MD5Update()
+T421	function 18829 18839	MD5Final()
+R203	use Arg1:T417 Arg2:T418	
+R204	part_of Arg1:T419 Arg2:T418	
+R205	part_of Arg1:T420 Arg2:T418	
+R206	part_of Arg1:T421 Arg2:T418	
+T422	sub_activity 18843 18861	calculate the hash
+T423	sub_activity 18866 18890	store it in the database
+R207	goal Arg1:T418 Arg2:T422	
+R208	goal Arg1:T418 Arg2:T423	
+T424	url_evil 19921 20051	http://adobe.update-service.net/index.php?comp=WIN-MLABCSUOVJB&id=WIN-MLABCSUOVJB_{826ee360-7139-11de-8d20-808e6f6e6263}1956047236
+T425	function 22817 22821	exec
+T426	function 23085 23093	interval
+T427	function 23201 23209	msfolder
+T428	function 23470 23476	status
+T429	function 23271 23278	command
+T430	sub_activity 19066 19076	downloader
+T431	sub_activity 19083 19105	contacts the C2 server
+R209	launch Arg1:T430 Arg2:T431	
+T432	sub_activity 19109 19128	send some user data
+T433	sub_activity 19133 19150	get an executable
+R210	goal Arg1:T431 Arg2:T432	
+R211	goal Arg1:T430 Arg2:T433	
+T434	program_language 19210 19213	C++
+T435	function 19285 19295	EntryPoint
+T436	malware 19443 19450	malware
+T437	person 19482 19492	local user
+T438	sub_activity 19451 19474	retrieves the temp path
+R212	launch Arg1:T436 Arg2:T438	
+T439	sub_activity 19465 19474	temp path
+R213	located Arg1:T439 Arg2:T437	
+T440	sub_activity 19547 19560	computer name
+T441	sub_activity 19597 19618	hardware profile GUID
+T442	sub_activity 19680 19713	volume serial number of C:\ drive
+T443	sub_activity 19841 19860	create a URL string
+T444	reference_word 19748 19750	it
+R214	coreference Arg1:T444 Arg2:T436	
+R215	launch Arg1:T444 Arg2:T443	
+T445	sub_activity 19894 19918	contacting the C2 server
+R216	goal Arg1:T443 Arg2:T445	
+T446	sub_activity 19850 19860	URL string
+R217	coreference Arg1:T424 Arg2:T446	
+T447	string 20272 20282	frAQBc8Wsa
+T448	sub_activity 20055 20074	create the filename
+T449	reference_word 20117 20128	the malware
+R218	coreference Arg1:T449 Arg2:T444	
+T450	sub_activity 20138 20176	build a random string of 10 characters
+R219	launch Arg1:T449 Arg2:T450	
+R220	goal Arg1:T450 Arg2:T448	
+T451	reference_word 20287 20298	This string
+R221	coreference Arg1:T451 Arg2:T447	
+T452	function 20469 20489	URLDownloadToFileA()
+T453	function 20540 20555	CreateProcess()
+T454	reference_word 20444 20446	it
+R222	coreference Arg1:T454 Arg2:T449	
+R223	use Arg1:T454 Arg2:T452	
+T455	sample_function 20493 20519	download a payload to disk
+R224	goal Arg1:T452 Arg2:T455	
+T456	reference_word 20568 20570	it
+R225	coreference Arg1:T456 Arg2:T454	
+T457	sub_activity 20571 20592	sleeps for 60 seconds
+T458	sub_activity 20600 20623	terminating the payload
+T459	sub_activity 20628 20641	the DLL exits
+R226	launch Arg1:T456 Arg2:T457	
+R227	launch Arg1:T456 Arg2:T458	
+R228	launch Arg1:T456 Arg2:T459	
+T460	sample_name 20693 20705	LocalSMS.dll
+T461	sub_activity 20781 20808	requests a download command
+T462	tool 20818 20820	C2
+T463	malware 21776 21784	backdoor
+T464	malware 21760 21770	Pteranodon
+R229	part_of Arg1:T464 Arg2:T463	
+T465	sub_activity 20801 20808	command
+T466	sub_activity 20847 20865	actual payload URL
+R230	located Arg1:T466 Arg2:T465	
+T467	tool 20943 20950	Winsock
+T468	sub_activity 20901 20914	basic network
+T469	sub_activity 20776 20780	file
+R231	launch Arg1:T469 Arg2:T461	
+T470	reference_word 20891 20893	it
+R232	coreference Arg1:T470 Arg2:T469	
+R233	use Arg1:T470 Arg2:T468	
+R234	use Arg1:T468 Arg2:T467	
+T471	function 21036 21047	bitDefender
+T472	sub_activity 20971 20984	functionality
+R235	located Arg1:T472 Arg2:T471	
+T473	domain_evil 21124 21138	win-restore.ru
+T474	function 21145 21160	gethostbyname()
+T475	reference_word 21052 21054	It
+T476	sub_activity 21055 21071	creates a socket
+T477	sub_activity 21074 21094	requests the address
+R236	coreference Arg1:T475 Arg2:T470	
+R237	launch Arg1:T475 Arg2:T476	
+R238	launch Arg1:T475 Arg2:T477	
+R239	use Arg1:T475 Arg2:T474	
+T478	sub_activity 21216 21249	volume serial number of C:\ drive
+T479	sub_activity 21256 21269	computer name
+T480	sub_activity 21278 21299	hardware profile GUID
+T481	reference_word 21195 21197	it
+R240	use Arg1:T481 Arg2:T478	
+R241	coreference Arg1:T481 Arg2:T475	
+R242	use Arg1:T481 Arg2:T480	
+R243	use Arg1:T481 Arg2:T479	
+T482	function 21355 21361	recv()
+T483	tool 20862 20865	URL
+T484	tool 21468 21471	URL
+T485	sub_activity 21434 21447	received data
+R244	located Arg1:T484 Arg2:T485	
+T486	reference_word 21511 21518	The URL
+T487	function 21597 21616	URLDownloadToFile()
+R245	coreference Arg1:T486 Arg2:T484	
+T488	reference_word 21965 21973	this DLL
+T489	sample_function 21800 21819	capture screenshots
+R246	goal Arg1:T464 Arg2:T489	
+T490	sample_function 21885 21925	uploads the screenshots to the C2 server
+R247	goal Arg1:T464 Arg2:T490	
+T491	function 22013 22020	updater
+T492	reference_word 22036 22038	it
+R248	coreference Arg1:T488 Arg2:T464	
+R249	coreference Arg1:T492 Arg2:T488	
+T493	sub_activity 22039 22069	retrieves the %APPDATA% folder
+R250	launch Arg1:T492 Arg2:T493	
+T494	reference_word 22193 22195	it
+T495	sub_activity 22196 22214	checks if the file
+T496	sub_activity 22274 22288	runs a routine
+T497	sample_function 22295 22328	checks if there is mouse movement
+T498	reference_word 22271 22273	it
+T499	reference_word 22393 22404	the malware
+T500	sub_activity 22405 22429	runs in an infinite loop
+T501	sample_function 22430 22457	checking for mouse movement
+T502	sample_name 22474 22485	desktop.ini
+T503	reference_word 22505 22516	the malware
+T504	sub_activity 22517 22527	creates it
+T505	reference_word 22525 22527	it
+R251	coreference Arg1:T505 Arg2:T502	
+R252	coreference Arg1:T494 Arg2:T492	
+R253	coreference Arg1:T498 Arg2:T494	
+R254	coreference Arg1:T499 Arg2:T498	
+R255	coreference Arg1:T503 Arg2:T499	
+R256	launch Arg1:T494 Arg2:T495	
+R257	launch Arg1:T498 Arg2:T496	
+R258	goal Arg1:T496 Arg2:T497	
+R259	launch Arg1:T499 Arg2:T500	
+R260	goal Arg1:T500 Arg2:T501	
+R261	launch Arg1:T503 Arg2:T504	
+T506	tool 22765 22767	C2
+T507	tool 21916 21918	C2
+T508	sample_function 22848 22878	download and execute a payload
+T509	tool 22886 22889	URL
+R262	goal Arg1:T425 Arg2:T508	
+T510	reference_word 22922 22924	It
+T511	sub_activity 22925 22951	creates a random file path
+T512	sub_activity 22935 22951	random file path
+T513	location 22955 22966	temp folder
+R263	located Arg1:T512 Arg2:T513	
+T514	function 22975 22994	URLDownloadToFile()
+T515	function 22999 23014	CreateProcess()
+R264	coreference Arg1:T510 Arg2:T425	
+R265	launch Arg1:T510 Arg2:T511	
+T516	reference_word 23043 23045	it
+T517	sub_activity 23046 23055	waits 30s
+T518	sub_activity 23060 23082	terminates the payload
+R266	coreference Arg1:T516 Arg2:T510	
+R267	launch Arg1:T516 Arg2:T517	
+R268	launch Arg1:T516 Arg2:T518	
+T519	sample_function 23120 23139	define the interval
+R269	goal Arg1:T426 Arg2:T519	
+T520	sample_function 23225 23267	defines the number of screenshots to creat
+R270	goal Arg1:T427 Arg2:T520	
+T521	sample_function 23516 23553	defines if screenshots should be made
+R271	goal Arg1:T428 Arg2:T521	
+T522	sample_function 23319 23333	execute a file
+T523	sample_name 23432 23439	cmd.exe
+T524	OS_name 23419 23426	Windows
+T525	function 23453 23467	ShellExecute()
+R272	goal Arg1:T429 Arg2:T522	
+T526	sub_activity 23387 23394	variant
+R273	use Arg1:T526 Arg2:T525	
+R274	use Arg1:T526 Arg2:T523	
+T527	sub_activity 23419 23431	Windows tool
+R275	part_of Arg1:T523 Arg2:T527	
+T528	sample_name 23620 23630	asassin1dj
+T529	sub_activity 23606 23611	mutex
+R276	coreference Arg1:T528 Arg2:T529	
+T530	reference_word 23590 23592	it
+R277	coreference Arg1:T530 Arg2:T428	
+T531	sub_activity 23593 23611	checks for a mutex
+R278	launch Arg1:T530 Arg2:T531	
+T532	reference_word 23686 23688	it
+T533	sub_activity 23689 23717	creates the following folder
+T534	sample_name 23850 23861	desktop.ini
+R279	coreference Arg1:T532 Arg2:T530	
+R280	launch Arg1:T532 Arg2:T533	
+T535	sub_activity 23878 23921	creates 24-bit color depth JPEG screenshots
+T536	tool 23973 23978	GDI32
+T537	tool 23983 24004	gdiplus API functions
+T538	reference_word 23864 23866	it
+R281	coreference Arg1:T538 Arg2:T532	
+R282	launch Arg1:T538 Arg2:T535	
+R283	use Arg1:T538 Arg2:T536	
+R284	use Arg1:T538 Arg2:T537	
+T539	reference_word 24153 24155	it
+T540	sub_activity 24156 24173	uploads all files
+R285	coreference Arg1:T539 Arg2:T538	
+R286	launch Arg1:T539 Arg2:T540	
+T541	tool 24207 24209	C2
+T542	tool 24207 24216	C2 server
+T543	domain_evil 24219 24233	win-restore.ru
+R287	coreference Arg1:T543 Arg2:T542	
+T544	reference_word 24245 24247	it
+T545	sub_activity 24248 24269	deletes all the files
+T546	sub_activity 24296 24334	starts a new screenshot creation cycle
+T547	sample_name 24468 24475	vvd.php
+T548	function 24435 24439	POST
+T549	protocol 24440 24444	HTTP
+R288	coreference Arg1:T544 Arg2:T539	
+R289	launch Arg1:T544 Arg2:T545	
+R290	launch Arg1:T544 Arg2:T546	
+T550	reference_word 24490 24492	it
+R291	coreference Arg1:T550 Arg2:T544	
+T551	sample_name 24581 24592	desktop.ini
+T552	tool 24553 24555	C2
+T553	sub_activity 24493 24530	checks if any new command information
+R292	launch Arg1:T550 Arg2:T553	
+T554	sample_name 25078 25089	wmphost.exe
+T555	sub_activity 24805 24809	file
+T556	sub_activity 24810 24831	runs an infinite loop
+R293	launch Arg1:T555 Arg2:T556	
+T557	reference_word 24885 24894	This file
+T558	sample_function 24910 24930	circumvent sandboxes
+R294	coreference Arg1:T557 Arg2:T555	
+R295	goal Arg1:T557 Arg2:T558	

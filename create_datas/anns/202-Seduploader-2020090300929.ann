@@ -1,0 +1,171 @@
+T1	malware 0 11	Seduploader
+T2	malware 156 167	Seduploader
+T3	tool 248 255	dropper
+T4	tool 264 283	per-sistent payload
+R1	part_of Arg1:T3 Arg2:T2	
+R2	part_of Arg1:T4 Arg2:T2	
+T5	malware 312 323	Seduploader
+T6	tool 328 335	payload
+R3	part_of Arg1:T6 Arg2:T5	
+T7	threatActor_name 360 366	Sednit
+R4	use Arg1:T7 Arg2:T5	
+T8	malware 451 462	Seduploader
+T9	malware 498 506	backdoor
+T10	malware 514 521	Sedreco
+T11	malware 525 531	Xagent
+T12	time 534 559	March 2015 to August 2016
+R5	occur_time Arg1:T10 Arg2:T12	
+R6	occur_time Arg1:T11 Arg2:T12	
+T13	malware 629 635	Sedkit
+T14	company 649 665	Microsoft Office
+T15	malware 696 711	phishing emails
+T16	malware 718 737	Seduploader payload
+T17	malware 769 776	Carberp
+T18	tool 863 871	F-Secure
+T19	time 875 889	September 2015
+R7	use Arg1:T16 Arg2:T17	
+R8	first_found_time Arg1:T16 Arg2:T19	
+T20	malware 892 903	Seduploader
+T21	OS_name 926 933	Windows
+T22	OS_name 938 942	OS X
+T23	malware 964 983	Seduploader dropper
+T24	sample_name 1070 1083	jhuhugit.temp
+T25	sample_name 1086 1098	jhuhugit.tmp
+T26	sample_name 1102 1114	jkeyskw.temp
+R9	part_of Arg1:T24 Arg2:T23	
+R10	part_of Arg1:T25 Arg2:T23	
+R11	part_of Arg1:T26 Arg2:T23	
+T27	malware 1148 1167	Seduploader payload
+T28	tool 1218 1228	C&C server
+R12	use Arg1:T27 Arg2:T28	
+T29	malware 1314 1334	Seduploader payloads
+T30	tool 1355 1363	payloads
+T31	malware 1460 1468	droppers
+T32	malware 1577 1588	Seduploader
+T33	malware 1661 1672	Seduploader
+T34	malware 1714 1721	dropper
+T35	tool 1730 1737	payload
+T36	malware 1764 1771	dropper
+T37	threatActor_name 1930 1936	Sednit
+T38	time 1949 1970	the beginning of 2015
+R14	use Arg1:T37 Arg2:T33	
+R15	use Arg1:T37 Arg2:T36	
+T39	tool 1977 1984	payload
+T40	malware 1998 2009	Seduploader
+T41	OS_name 2043 2047	OS X
+T42	OS_name 2031 2038	Windows
+T43	OS_name 2090 2097	Windows
+R16	part_of Arg1:T39 Arg2:T40	
+T44	OS_name 2127 2131	OS X
+T45	time 2199 2208	June 2015
+T46	company 2184 2195	BAE Systems
+T47	malware 2599 2610	Seduploader
+T48	tool 2689 2692	I/O
+T49	time 3042 3046	2014
+T50	threatActor_name 3026 3032	Sednit
+T51	time 3128 3141	December 2015
+T52	malware 3113 3124	Seduploader
+T53	malware 3347 3358	Seduploader
+T54	malware 3651 3662	Seduploader
+T55	malware 3519 3530	Seduploader
+T56	malware 5123 5134	Seduploader
+T57	malware 5589 5600	Seduploader
+T58	malware 5657 5668	Seduploader
+T59	malware 5964 5975	Seduploader
+T60	malware 6351 6362	Seduploader
+T61	malware 7712 7723	Seduploader
+T62	malware 7858 7869	Seduploader
+T63	malware 8307 8318	Seduploader
+T64	malware 8688 8699	Seduploader
+T65	malware 8583 8594	Seduploader
+T66	threatActor_name 5806 5812	Sednit
+T67	tool 3563 3572	C++ class
+R17	use Arg1:T55 Arg2:T67	
+T68	tool 3399 3418	XOR-based algorithm
+T69	malware 3363 3370	dropper
+R18	use Arg1:T69 Arg2:T68	
+T70	tool 3460 3463	API
+T71	OS_name 3452 3459	Windows
+T72	tool 3819 3838	XOR-based algorithm
+T73	tool 3845 3856	10-byte key
+T74	malware 3763 3779	decrypt_in_place
+T75	malware 3859 3880	decrypt_in_new_memory
+T76	malware 4025 4036	get_env_var
+T77	malware 4086 4108	decrypt_embedded_files
+T78	OS_name 4263 4270	Windows
+T79	tool 4271 4274	API
+T80	function 4284 4303	RtlDecompressBuffer
+T81	malware 4375 4387	execute_file
+T82	OS_name 4434 4441	Windows
+R19	use Arg1:T74 Arg2:T72	
+R20	use Arg1:T74 Arg2:T73	
+T83	malware 4642 4653	delete_file
+T84	tool 4705 4708	C++
+T85	malware 4723 4730	dropper
+T86	malware 4926 4933	dropper
+T87	tool 4944 4951	payload
+R21	use Arg1:T86 Arg2:T87	
+T88	tool 5053 5061	UpLoader
+T89	tool 5293 5294	l
+T90	tool 3579 3587	UpLoader
+T91	tool 5193 5196	PDB
+T92	tool 5108 5112	RTTI
+T93	tool 5422 5425	PDB
+T94	tool 5463 5470	REDMINE
+T95	tool 5518 5521	web
+T96	vulnerability_cve 5821 5834	CVE-2015-1701
+T97	vulnerability_cve 5885 5898	CVE-2015-2387
+T98	company 5835 5844	Microsoft
+T99	company 5899 5908	Microsoft
+T100	OS_name 5845 5852	Windows
+T101	OS_name 5909 5916	Windows
+T102	OS_name 5856 5865	Windows 7
+T103	time 5866 5882	March-April 2015
+T104	time 5930 5939	July 2015
+R22	use Arg1:T66 Arg2:T96	
+R23	use Arg1:T66 Arg2:T97	
+R24	occur_time Arg1:T96 Arg2:T103	
+R25	occur_time Arg1:T97 Arg2:T104	
+T105	malware 5980 5987	dropper
+T106	tool 6088 6094	SYSTEM
+T107	tool 6240 6243	IOC
+T108	tool 6428 6438	JavaScript
+T109	sample_name 6455 6467	rundll32.exe
+R26	use Arg1:T109 Arg2:T108	
+T110	tool 6288 6291	Run
+R27	use Arg1:T60 Arg2:T109	
+T111	malware 6515 6529	Win32/Poweliks
+T112	time 6541 6549	mid-2014
+R28	first_found_time Arg1:T111 Arg2:T112	
+T113	OS_name 6620 6627	Windows
+T114	tool 6706 6712	SYSTEM
+T115	tool 6861 6867	SYSTEM
+T116	OS_name 6901 6908	Windows
+T117	tool 6909 6912	COM
+T118	tool 6991 6994	COM
+T119	tool 7047 7065	MMDeviceEnumerator
+T120	malware 7117 7130	Win32/COMpfun
+T121	tool 7146 7153	payload
+T122	tool 7159 7177	Shell Icon Overlay
+T123	tool 7186 7189	COM
+T124	tool 7211 7218	payload
+T125	tool 7272 7277	CLSID
+T126	md5 7296 7332	3543619C-D563-43f7-95EA-4DA7E1CC396A
+T128	tool 7371 7388	Internet Explorer
+T129	tool 7425 7433	BHOinCPP
+T130	OS_name 7481 7488	Windows
+T131	tool 7742 7748	SYSTEM
+R29	use Arg1:T61 Arg2:T131	
+T132	tool 8319 8326	payload
+R30	use Arg1:T63 Arg2:T132	
+T133	tool 8366 8376	C&C server
+R31	use Arg1:T63 Arg2:T133	
+T134	tool 8384 8392	Internet
+T127	tool 8543 8551	Internet
+T135	domain 8645 8655	google.com
+T136	domain 8659 8668	google.ru
+R32	use Arg1:T65 Arg2:T135	
+R33	use Arg1:T65 Arg2:T136	
+T137	tool 8630 8634	HTTP
+T138	company 8610 8616	Google
+R13	part_of Arg1:T35 Arg2:T36	

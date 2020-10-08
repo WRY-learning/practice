@@ -1,0 +1,25 @@
+T1	threatActor_name 0 22	OPERATION COBALT KITTY
+T2	location 45 49	ASIA
+T3	threatActor_name 188 217	Dubbed Operation Cobalt Kitty
+T4	location 268 272	Asia
+T5	attack_goal 290 331	stealing proprietary business information
+T6	tool 405 427	spear-phishing attacks
+T7	threatActor_name 604 626	Operation Cobalt Kitty
+T8	company 929 939	Cybereason
+T9	tool 1069 1094	techniques and procedures
+T10	company 1510 1520	Cybereason
+T11	threatActor_name 1926 1948	Operation Cobalt Kitty
+T12	company 1951 1962	 Cybereason
+T13	threatActor_name 2020 2036	OceanLotus Group
+T14	threatActor_aliases 2066 2074	APT-C-00
+T15	threatActor_aliases 2077 2085	SeaLotus
+T16	threatActor_aliases 2090 2095	APT32
+R1	coreference Arg1:T14 Arg2:T13	
+R2	coreference Arg1:T15 Arg2:T13	
+R3	coreference Arg1:T16 Arg2:T13	
+T17	threatActor_name 2131 2153	Operation Cobalt Kitty
+T18	threatActor_name 2161 2177	OceanLotus Group
+T19	company 2251 2261	Cybereason
+T20	company 2555 2565	Cybereason
+T21	company 3350 3360	Cybereason
+T22	security_team 69 85	OCEANLOTUS GROUP

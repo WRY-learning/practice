@@ -1,0 +1,95 @@
+T1	industry 227 234	defense
+T2	industry 237 244	finance
+T3	industry 247 253	energy
+T4	industry 256 270	pharmaceutical
+T5	industry 273 291	telecommunications
+T6	industry 294 303	high tech
+T7	industry 306 315	education
+T8	industry 318 331	manufacturing
+T9	industry 338 352	legal services
+T10	attack_activity 367 384	phishing campaign
+T11	time 358 362	2017
+T12	time 846 855	July 2018
+T13	time 1052 1056	2016
+T14	time 1159 1163	2004
+T15	location 1093 1097	U.S.
+T18	industry 410 434	law and investment firms
+T19	time 1324 1328	2008
+T20	time 1425 1429	2015
+T21	government 773 840	Russia's Main Intelligence Directorate of the Russian General Staff
+T17	government 856 882	U.S. Department of Justice
+T22	government 1273 1291	Russian government
+T23	threatActor_name 135 140	APT19
+T24	threatActor_name 457 462	APT19
+T25	threatActor_name 721 726	APT28
+T26	threatActor_name 1219 1224	APT29
+T27	threatActor_name 78 83	APT19
+T28	threatActor_aliases 86 92	Codoso
+T29	threatActor_aliases 95 102	C0d0so0
+T30	threatActor_aliases 105 116	Codoso Team
+T31	threatActor_aliases 119 132	Sunshop Group
+T32	threatActor_name 574 579	APT28
+T33	threatActor_aliases 582 595	SNAKEMACKEREL
+T34	threatActor_aliases 598 609	Swallowtail
+T35	threatActor_aliases 612 620	Group 74
+T36	threatActor_aliases 623 629	Sednit
+T37	threatActor_aliases 632 638	Sofacy
+T38	threatActor_aliases 641 651	Pawn Storm
+T39	threatActor_aliases 654 664	Fancy Bear
+T40	threatActor_aliases 667 676	STRONTIUM
+T41	threatActor_aliases 679 688	Tsar Team
+T42	threatActor_aliases 691 708	Threat Group-4127
+T43	threatActor_aliases 711 718	TG-4127
+T44	threatActor_name 1122 1127	APT28
+T45	threatActor_name 1166 1171	APT29
+T46	threatActor_aliases 1174 1181	YTTRIUM
+T47	threatActor_aliases 1184 1193	The Dukes
+T48	threatActor_aliases 1196 1205	Cozy Bear
+T49	threatActor_aliases 1208 1216	CozyDuke
+R1	attack Arg1:T10 Arg2:T18	
+T50	reference_word 896 906	This group
+R3	occur_time Arg1:T50 Arg2:T13	
+T52	attack_goal 1074 1119	interfere with the U.S. presidential election
+T53	reference_word 1331 1341	This group
+T54	government 1369 1398	Democratic National Committee
+T51	target_crowd 934 958	Hillary Clinton campaign
+T55	government 965 994	Democratic National Committee
+T56	government 1005 1048	Democratic Congressional Campaign Committee
+R2	attack Arg1:T50 Arg2:T51	
+R4	attack Arg1:T50 Arg2:T55	
+R5	attack Arg1:T50 Arg2:T56	
+R6	attack Arg1:T53 Arg2:T54	
+T57	threatActor_name 467 477	Deep Panda
+R12	coreference Arg1:T33 Arg2:T32	
+R13	coreference Arg1:T34 Arg2:T32	
+R14	coreference Arg1:T35 Arg2:T32	
+R15	coreference Arg1:T36 Arg2:T32	
+R16	coreference Arg1:T37 Arg2:T32	
+R17	coreference Arg1:T38 Arg2:T32	
+R18	coreference Arg1:T39 Arg2:T32	
+R19	coreference Arg1:T40 Arg2:T32	
+R20	coreference Arg1:T41 Arg2:T32	
+R21	coreference Arg1:T42 Arg2:T32	
+R22	coreference Arg1:T43 Arg2:T32	
+R23	coreference Arg1:T46 Arg2:T45	
+R24	coreference Arg1:T47 Arg2:T45	
+R25	coreference Arg1:T48 Arg2:T45	
+R26	coreference Arg1:T49 Arg2:T45	
+R28	attack Arg1:T23 Arg2:T2	
+R7	attack Arg1:T23 Arg2:T3	
+R29	attack Arg1:T23 Arg2:T4	
+R30	attack Arg1:T23 Arg2:T5	
+R31	attack Arg1:T23 Arg2:T6	
+R32	attack Arg1:T23 Arg2:T7	
+R33	attack Arg1:T23 Arg2:T8	
+R34	attack Arg1:T23 Arg2:T9	
+R35	coreference Arg1:T53 Arg2:T26	
+R8	coreference Arg1:T28 Arg2:T27	
+R9	coreference Arg1:T29 Arg2:T27	
+R10	coreference Arg1:T30 Arg2:T27	
+R11	coreference Arg1:T31 Arg2:T27	
+R27	occur_time Arg1:T44 Arg2:T14	
+R36	coreference Arg1:T50 Arg2:T25	
+R37	occur_time Arg1:T26 Arg2:T19	
+R38	occur_time Arg1:T53 Arg2:T20	
+R39	occur_time Arg1:T10 Arg2:T11	

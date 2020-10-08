@@ -1,0 +1,260 @@
+T1	attack_activity 0 14	CYBER ADVISORY
+T2	location 197 211	United Kingdom
+T3	location 214 216	UK
+R1	coreference Arg1:T3 Arg2:T2	
+T4	person 234 245	Theresa May
+R2	located Arg1:T4 Arg2:T3	
+T5	government 300 314	European Union
+T6	government 317 319	EU
+R3	coreference Arg1:T6 Arg2:T5	
+T7	security_team 324 332	iDefense
+T8	person 333 341	analysts
+R4	part_of Arg1:T8 Arg2:T7	
+T9	threatActor_name 371 384	SNAKEMACKEREL
+R5	find Arg1:T8 Arg2:T9	
+T10	tool 407 420	lure document
+T11	sample_function 424 443	deliver the Zekapab
+T12	malware 436 443	Zekapab
+T13	malware 460 467	Zebrocy
+R6	coreference Arg1:T13 Arg2:T11	
+R7	goal Arg1:T10 Arg2:T11	
+R8	use Arg1:T9 Arg2:T10	
+T14	threatActor_name 492 505	SNAKEMACKEREL
+T15	threatActor_aliases 567 573	Sofacy
+T16	threatActor_aliases 576 586	Pawn Storm
+T17	threatActor_aliases 589 595	Sednit
+T18	threatActor_aliases 598 608	Fancy Bear
+T19	threatActor_aliases 611 616	APT28
+T20	threatActor_aliases 619 627	Group 74
+T21	threatActor_aliases 630 639	Tsar Team
+T22	threatActor_aliases 646 655	Strontium
+R9	coreference Arg1:T15 Arg2:T14	
+R11	coreference Arg1:T17 Arg2:T16	
+R12	coreference Arg1:T18 Arg2:T17	
+R13	coreference Arg1:T19 Arg2:T18	
+R14	coreference Arg1:T20 Arg2:T19	
+R15	coreference Arg1:T21 Arg2:T20	
+R10	coreference Arg1:T16 Arg2:T15	
+R16	coreference Arg1:T22 Arg2:T21	
+T23	threatActor_name 722 735	SNAKEMACKEREL
+T24	government 754 791	Russian military intelligence service
+T25	government 794 797	RIS
+R17	coreference Arg1:T25 Arg2:T24	
+T26	reference_word 842 851	the group
+R18	coreference Arg1:T26 Arg2:T23	
+T27	security_team 954 1010	United Kingdom Defence and Science Technology Laboratory
+T28	security_team 1013 1017	DSTL
+R19	coreference Arg1:T28 Arg2:T27	
+T29	government 1028 1074	United Kingdom Foreign and Commonwealth Office
+T30	government 1077 1080	FCO
+R20	coreference Arg1:T30 Arg2:T29	
+T31	security_team 940 944	OPCW
+T32	security_team 885 937	Organisation for the Prohibition of Chemical Weapons
+R21	coreference Arg1:T31 Arg2:T32	
+R22	attack Arg1:T23 Arg2:T32	
+R23	attack Arg1:T23 Arg2:T27	
+R24	attack Arg1:T23 Arg2:T29	
+R25	attack Arg1:T23 Arg2:T24	
+T33	security_team 1108 1111	RIS
+T34	government 1414 1417	FBI
+T35	threatActor_name 1424 1437	SNAKEMACKEREL
+T36	person 1560 1568	citizens
+T37	location 1527 1540	United States
+R26	located Arg1:T36 Arg2:T37	
+R27	attack Arg1:T35 Arg2:T36	
+T38	attack_activity 1608 1622	spear phishing
+T39	attack_goal 1794 1814	theft of information
+T40	industry 1705 1716	think tanks
+T41	industry 1670 1702	critical infrastructure entities
+T42	target_crowd 1643 1667	government organizations
+T43	target_crowd 1719 1731	universities
+T44	target_crowd 1734 1757	political organizations
+T45	target_crowd 1764 1776	corporations
+R28	goal Arg1:T38 Arg2:T39	
+T46	tool 1838 1856	malicious document
+T47	time 1869 1881	the same day
+T48	government 1891 1904	UK government
+T49	threatActor_name 1979 1992	SNAKEMACKEREL
+T50	sample_function 2066 2100	leverage the latest news headlines
+T51	sample_function 2104 2126	develop lure documents
+T52	sample_function 2130 2156	deliver firststage malware
+T53	malware 2167 2174	Zekapab
+R29	goal Arg1:T50 Arg2:T51	
+R30	goal Arg1:T51 Arg2:T52	
+R31	use Arg1:T49 Arg2:T53	
+R32	occur_time Arg1:T46 Arg2:T47	
+R33	use Arg1:T49 Arg2:T46	
+T54	reference_word 2244 2253	the group
+T55	location 2309 2321	Central Asia
+T56	government 2281 2293	NATO members
+T57	location 2344 2350	Russia
+R34	coreference Arg1:T54 Arg2:T49	
+R35	attack Arg1:T54 Arg2:T56	
+R36	located Arg1:T56 Arg2:T55	
+R37	located Arg1:T56 Arg2:T57	
+T58	government 2392 2416	Russian military service
+T59	reference_word 2436 2445	the group
+R38	coreference Arg1:T59 Arg2:T54	
+T60	reference_word 2527 2529	it
+R39	coreference Arg1:T60 Arg2:T59	
+T61	sample_function 2583 2639	protect the confidentiality , integrity and availability
+T62	security_team 2665 2683	Accenture Security
+T63	person 2727 2740	staff members
+T64	sub_activity 2749 2774	security hygiene training
+T65	sub_activity 2779 2847	deploy intelligence-driven network and host-based defensive measures
+R40	goal Arg1:T64 Arg2:T61	
+R41	goal Arg1:T65 Arg2:T61	
+T66	threatActor_name 2908 2921	SNAKEMACKEREL
+T67	reference_word 2946 2948	It
+R42	coreference Arg1:T67 Arg2:T66	
+T68	industry 3043 3057	military units
+T69	industry 3060 3077	political parties
+T70	government 3149 3171	government departments
+T71	security_team 3126 3146	anti-doping agencies
+T73	government 3118 3121	IOC
+T74	government 3084 3115	International Olympic Committee
+R43	coreference Arg1:T73 Arg2:T74	
+R44	attack Arg1:T67 Arg2:T68	
+R45	attack Arg1:T67 Arg2:T69	
+R46	attack Arg1:T67 Arg2:T74	
+R47	attack Arg1:T67 Arg2:T71	
+R48	attack Arg1:T67 Arg2:T70	
+T72	government 3202 3206	NATO
+T75	government 3211 3213	EU
+T76	location 3248 3261	United States
+T77	reference_word 3294 3303	the group
+R49	coreference Arg1:T77 Arg2:T67	
+T78	threatActor_name 3306 3319	SNAKEMACKEREL
+T79	security_team 3447 3455	iDefense
+T80	security_team 3466 3484	Accenture Security
+T81	threatActor_name 3532 3545	SNAKEMACKEREL
+T82	attack_goal 3667 3676	espionage
+R50	part_of Arg1:T79 Arg2:T80	
+R51	goal Arg1:T81 Arg2:T82	
+T83	security_team 3728 3754	security operations center
+T84	security_team 3757 3760	SOC
+T85	person 3763 3771	analysts
+T86	person 3776 3785	engineers
+T87	person 3788 3824	intelligence analysts and management
+T88	person 3831 3851	executive leadership
+R52	coreference Arg1:T84 Arg2:T83	
+R53	part_of Arg1:T85 Arg2:T84	
+R54	part_of Arg1:T86 Arg2:T84	
+R55	part_of Arg1:T87 Arg2:T84	
+R56	part_of Arg1:T88 Arg2:T84	
+T89	security_team 3854 3857	SOC
+T90	person 3858 3866	analysts
+T91	person 3871 3880	engineers
+T92	tool 3903 3923	detailed information
+T93	tool 3979 4003	indicators of compromise
+T94	tool 4006 4010	IoCs
+R57	coreference Arg1:T94 Arg2:T93	
+T95	sample_function 4016 4056	contain or mitigate the discussed threat
+R58	part_of Arg1:T90 Arg2:T89	
+R59	part_of Arg1:T91 Arg2:T89	
+R60	use Arg1:T90 Arg2:T92	
+R61	use Arg1:T91 Arg2:T92	
+R62	use Arg1:T91 Arg2:T93	
+R63	find Arg1:T91 Arg2:T93	
+R64	goal Arg1:T92 Arg2:T95	
+R65	goal Arg1:T93 Arg2:T95	
+T96	security_team 4090 4093	SOC
+T97	person 4094 4102	analysts
+T98	sample_function 4194 4224	hunting activities for systems
+T99	tool 4115 4151	information provided in the analysis
+T100	tool 4156 4189	mitigation sections of this alert
+R66	part_of Arg1:T97 Arg2:T96	
+R67	use Arg1:T97 Arg2:T99	
+R68	use Arg1:T97 Arg2:T100	
+R69	goal Arg1:T99 Arg2:T98	
+R70	goal Arg1:T100 Arg2:T98	
+T101	person 4266 4274	Analysts
+T102	person 4279 4297	security engineers
+T103	tool 4310 4314	IoCs
+T104	sub_activity 4318 4346	adding them to hunting lists
+T105	tool 4350 4381	Endpoint Detection and Response
+T106	tool 4384 4387	EDR
+T107	tool 4413 4447	network- and host-based blacklists
+T108	sample_function 4451 4457	detect
+T109	sample_function 4462 4532	deny malware implantation and command-and-control ( C2 ) communication
+R72	use Arg1:T101 Arg2:T103	
+R73	use Arg1:T102 Arg2:T103	
+R74	launch Arg1:T101 Arg2:T104	
+R75	launch Arg1:T102 Arg2:T104	
+R76	coreference Arg1:T106 Arg2:T105	
+R77	goal Arg1:T106 Arg2:T108	
+R78	goal Arg1:T106 Arg2:T109	
+R79	goal Arg1:T107 Arg2:T108	
+R80	goal Arg1:T107 Arg2:T109	
+T112	person 4535 4556	Intelligence analysts
+T113	tool 4577 4597	information provided
+T114	sample_function 4615 4647	better inform their own analyses
+R81	use Arg1:T112 Arg2:T113	
+R82	goal Arg1:T113 Arg2:T114	
+T115	reference_word 4650 4665	The information
+R83	coreference Arg1:T115 Arg2:T113	
+T116	sample_function 4680 4744	inform ongoing intelligence analyses and forensic investigations
+T117	sample_function 4776 4796	compromise discovery
+T118	sample_function 4799 4816	damage assessment
+T119	sample_function 4823 4834	attribution
+R84	goal Arg1:T115 Arg2:T116	
+R85	goal Arg1:T115 Arg2:T117	
+R86	goal Arg1:T115 Arg2:T119	
+R87	goal Arg1:T115 Arg2:T118	
+T120	person 4837 4847	Management
+T121	person 4852 4872	executive leadership
+T122	reference_word 4881 4897	this information
+T123	sample_function 4901 4954	assess the risks associated with the threat described
+T124	sample_function 4958 5011	make the appropriate operational and policy decisions
+R88	use Arg1:T120 Arg2:T122	
+R89	use Arg1:T121 Arg2:T122	
+R90	goal Arg1:T122 Arg2:T123	
+R91	goal Arg1:T122 Arg2:T124	
+T125	threatActor_name 5027 5040	SNAKEMACKEREL
+T126	reference_word 5150 5167	this threat group
+R92	coreference Arg1:T126 Arg2:T125	
+T127	tool 5231 5261	lure Microsoft Office document
+T110	malware 5285 5291	Delphi
+T111	malware 5307 5314	Zekapab
+T128	security_team 5373 5381	iDefense
+T129	person 5382 5390	analysts
+R71	part_of Arg1:T129 Arg2:T128	
+T130	sample_function 5278 5334	drop a Delphi version of the Zekapab first-stage malware
+R93	goal Arg1:T127 Arg2:T130	
+R94	find Arg1:T129 Arg2:T127	
+T131	tool 5430 5432	C2
+T132	domain_evil 5440 5454	109.248.148.42
+T133	malware 5486 5493	Zekapab
+R95	located Arg1:T131 Arg2:T132	
+T134	person 5543 5551	analysts
+T135	security_team 5534 5542	iDefense
+R96	part_of Arg1:T134 Arg2:T135	
+T136	location 5680 5682	UK
+T137	government 5691 5693	EU
+T138	sample_name 5746 5768	Brexit 15.11.2018.docx
+T139	md5 5776 5808	405655be03df45881aa88b55603bef1d
+T140	person 5884 5889	Joohn
+T141	company 5902 5911	Grizli777
+T142	time 5930 5949	2018:11:14 14:17:00
+T143	time 5968 5987	2018:11:15 04:50:00
+T144	reference_word 5696 5704	The file
+T145	tool 5587 5605	malicious document
+R97	coreference Arg1:T144 Arg2:T145	
+R98	part_of Arg1:T138 Arg2:T144	
+R99	part_of Arg1:T139 Arg2:T144	
+R100	occur_time Arg1:T144 Arg2:T142	
+T146	company 6017 6026	Grizli777
+T148	sample_function 6086 6136	trick the targeted individual into enabling macros
+T147	person 6143 6152	attackers
+T149	tool 6171 6186	jumbled-up text
+R101	use Arg1:T147 Arg2:T149	
+R102	goal Arg1:T149 Arg2:T148	
+T150	reference_word 6200 6212	The document
+T151	url_evil 6242 6310	http://109.248.148.42/office/thememl/2012/main/attachedTemplate.dotm
+T152	tool 6319 6336	settings.xml.rels
+T153	tool 6375 6388	DOCX document
+R103	located Arg1:T152 Arg2:T153	
+T154	encryption_algo 6498 6504	Base64
+T155	tool 6449 6460	AutoClose()
+T156	tool 6406 6421	macro component
+R104	part_of Arg1:T155 Arg2:T156	

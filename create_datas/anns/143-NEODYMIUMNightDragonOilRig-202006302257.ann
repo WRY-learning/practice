@@ -1,0 +1,75 @@
+T1	threatActor_name 83 92	NEODYMIUM
+T2	threatActor_name 266 276	PROMETHIUM
+T3	threatActor_name 334 343	NEODYMIUM
+T4	threatActor_name 382 392	BlackOasis
+T5	threatActor_name 478 490	Night Dragon
+T6	threatActor_name 609 615	OilRig
+T7	threatActor_aliases 618 622	IRN2
+T8	threatActor_aliases 625 637	HELIX KITTEN
+T9	threatActor_aliases 640 645	APT34
+T10	threatActor_name 648 654	OilRig
+T11	threatActor_aliases 1401 1406	APT34
+T12	threatActor_name 1411 1417	OilRig
+T13	time 143 151	May 2016
+T14	time 765 769	2014
+T15	location 601 606	China
+T16	location 951 962	Middle East
+T17	security_team 1111 1118	FireEye
+T18	target_crowd 177 192	Turkish victims
+T19	industry 831 840	financial
+T20	industry 843 853	government
+T21	industry 856 862	energy
+T22	company 865 873	chemical
+T23	industry 880 898	telecommunications
+T24	attack_activity 998 1018	supply chain attacks
+T25	location 1244 1248	Iran
+T26	target_crowd 709 749	Middle Eastern and international victims
+R1	coreference Arg1:T7 Arg2:T6	
+R3	coreference Arg1:T8 Arg2:T6	
+R2	coreference Arg1:T9 Arg2:T6	
+R5	attack Arg1:T1 Arg2:T18	
+R6	first_found_time Arg1:T10 Arg2:T14	
+R7	attack Arg1:T10 Arg2:T26	
+R4	first_found_time Arg1:T1 Arg2:T13	
+R8	located Arg1:T5 Arg2:T15	
+R9	located Arg1:T19 Arg2:T16	
+R10	located Arg1:T20 Arg2:T16	
+R11	located Arg1:T21 Arg2:T16	
+R12	located Arg1:T23 Arg2:T16	
+T27	government 1166 1184	Iranian government
+T28	reference_word 195 204	The group
+T29	reference_word 424 439	the group names
+R16	coreference Arg1:T29 Arg2:T4	
+R17	coreference Arg1:T29 Arg2:T2	
+T30	reference_word 772 781	The group
+R18	coreference Arg1:T30 Arg2:T10	
+T31	reference_word 976 985	the group
+R24	coreference Arg1:T31 Arg2:T10	
+T32	reference_word 1339 1349	This group
+R25	coreference Arg1:T32 Arg2:T10	
+T33	reference_word 1133 1142	the group
+R13	coreference Arg1:T33 Arg2:T10	
+R14	located Arg1:T33 Arg2:T25	
+R19	attack Arg1:T30 Arg2:T19	
+R20	attack Arg1:T30 Arg2:T20	
+R21	attack Arg1:T30 Arg2:T21	
+R22	attack Arg1:T30 Arg2:T22	
+R23	attack Arg1:T30 Arg2:T23	
+R26	launch Arg1:T31 Arg2:T24	
+T34	attack_goal 1314 1336	nation-state interests
+R27	goal Arg1:T33 Arg2:T34	
+R28	part_of Arg1:T33 Arg2:T27	
+R29	coreference Arg1:T11 Arg2:T32	
+R15	coreference Arg1:T28 Arg2:T1	
+#1	AnnotatorNotes T4	尚未有证据表明BlackOasis是NEODYMIUM的别名
+#2	AnnotatorNotes T2	尚未有证据表明PROMETHIUM是NEODYMIUM的别名
+#3	AnnotatorNotes T28	指代NEODYMIUM
+#4	AnnotatorNotes T29	指代PROMETHIUM和BlackOasis
+#5	AnnotatorNotes T30	指代OilRig
+#6	AnnotatorNotes T31	指代OilRIg
+#7	AnnotatorNotes T33	指代OilRig
+#8	AnnotatorNotes T32	指代OilRig
+#9	AnnotatorNotes T12	如何处理重复出现的实体？
+R30	find Arg1:T17 Arg2:T33	
+T35	attack_goal 1021 1076	leveraging the trust relationship between organizations
+R31	goal Arg1:T31 Arg2:T35	

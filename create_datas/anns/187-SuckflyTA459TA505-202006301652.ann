@@ -1,0 +1,26 @@
+T1	threatActor_name 83 90	Suckfly
+T2	threatActor_name 164 169	TA459
+T3	threatActor_name 302 307	TA505
+T4	time 157 161	2014
+T5	time 384 388	2014
+T6	location 259 265	Russia
+T7	location 268 275	Belarus
+T8	location 278 286	Mongolia
+R1	attack Arg1:T2 Arg2:T6	
+R2	attack Arg1:T2 Arg2:T7	
+R3	attack Arg1:T2 Arg2:T8	
+T9	industry 313 324	financially
+T10	sub_activity 414 441	frequently changing malware
+T11	sub_activity 446 500	driving global trends in criminal malware distribution
+T12	location 200 220	operate out of China
+R4	located Arg1:T2 Arg2:T12	
+T13	location 96 101	China
+R5	located Arg1:T1 Arg2:T13	
+R9	attack Arg1:T10 Arg2:T9	
+R10	first_found_time Arg1:T1 Arg2:T4	
+R11	first_found_time Arg1:T3 Arg2:T5	
+T14	reference_word 395 400	group
+R12	coreference Arg1:T3 Arg2:T14	
+R6	use Arg1:T14 Arg2:T10	
+R7	use Arg1:T14 Arg2:T11	
+R8	attack Arg1:T11 Arg2:T9	

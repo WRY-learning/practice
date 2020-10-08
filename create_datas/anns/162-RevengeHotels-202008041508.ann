@@ -1,0 +1,259 @@
+T1	threatActor_name 7658 7671	RevengeHotels
+T2	threatActor_name 150 163	RevengeHotels
+T3	industry 214 220	hotels
+T4	industry 223 230	hostels
+T5	target_crowd 233 266	hospitality and tourism companies
+T6	location 311 317	Brazil
+R1	located Arg1:T4 Arg2:T6	
+R2	located Arg1:T5 Arg2:T6	
+R3	located Arg1:T3 Arg2:T6	
+R4	attack Arg1:T2 Arg2:T3	
+R5	attack Arg1:T2 Arg2:T4	
+R6	attack Arg1:T2 Arg2:T5	
+T7	location 417 423	Brazil
+T8	location 462 471	Argentina
+T9	location 474 481	Bolivia
+T10	location 484 489	Chile
+T11	location 492 502	Costa Rica
+T12	location 505 511	France
+T13	location 514 519	Italy
+T14	location 522 528	Mexico
+T15	location 531 539	Portugal
+T16	location 542 547	Spain
+T17	location 550 558	Thailand
+T18	location 563 569	Turkey
+T19	target_crowd 348 357	20 hotels
+R7	attack Arg1:T2 Arg2:T19	
+R8	located Arg1:T19 Arg2:T7	
+R9	located Arg1:T19 Arg2:T8	
+R10	located Arg1:T19 Arg2:T9	
+R11	located Arg1:T19 Arg2:T10	
+R12	located Arg1:T19 Arg2:T11	
+R13	located Arg1:T19 Arg2:T12	
+R14	located Arg1:T19 Arg2:T13	
+R15	located Arg1:T19 Arg2:T14	
+R16	located Arg1:T19 Arg2:T18	
+R17	located Arg1:T19 Arg2:T17	
+R18	located Arg1:T19 Arg2:T16	
+R19	located Arg1:T19 Arg2:T15	
+T20	attack_goal 603 653	capture credit card data from guests and travelers
+T21	attack_goal 691 752	credit card data received from popular online travel agencies
+T22	domain 770 781	Booking.com
+T23	company 755 759	OTAs
+T24	company 730 752	online travel agencies
+R20	coreference Arg1:T23 Arg2:T24	
+R21	part_of Arg1:T22 Arg2:T23	
+T25	tool 849 852	PDF
+T26	tool 833 837	Word
+T27	reference_word 584 596	the campaign
+R22	coreference Arg1:T27 Arg2:T2	
+R23	goal Arg1:T27 Arg2:T20	
+R24	goal Arg1:T27 Arg2:T21	
+T28	tool 814 819	email
+T29	tool 840 845	Excel
+R25	use Arg1:T27 Arg2:T28	
+R26	use Arg1:T27 Arg2:T26	
+R27	use Arg1:T27 Arg2:T29	
+R28	use Arg1:T27 Arg2:T25	
+T30	vulnerability_cve 895 908	CVE-2017-0199
+T31	time 1175 1179	2019
+T32	time 1139 1143	2015
+T33	tool 936 946	PowerShell
+T34	program_language 928 931	VBS
+T35	malware 998 1008	RevengeRAT
+T36	malware 1074 1079	ProCC
+T37	malware 1011 1016	NjRAT
+T38	malware 1019 1030	NanoCoreRAT
+T39	malware 1033 1040	888 RAT
+T40	reference_word 882 886	them
+R29	coreference Arg1:T40 Arg2:T27	
+R30	use Arg1:T40 Arg2:T30	
+R31	use Arg1:T40 Arg2:T34	
+R32	use Arg1:T40 Arg2:T33	
+R33	use Arg1:T40 Arg2:T36	
+R34	use Arg1:T40 Arg2:T35	
+R35	use Arg1:T40 Arg2:T37	
+R36	use Arg1:T40 Arg2:T38	
+R37	use Arg1:T40 Arg2:T39	
+T41	reference_word 1107 1116	The group
+R38	coreference Arg1:T41 Arg2:T40	
+R39	first_found_time Arg1:T41 Arg2:T32	
+R40	occur_time Arg1:T41 Arg2:T31	
+T42	industry 1252 1270	hospitality sector
+T43	tool 1340 1348	PaloAlto
+T44	threatActor_name 1414 1427	RevengeHotels
+T45	threatActor_name 1445 1450	ProCC
+T46	sub_activity 1466 1514	use a lot of social engineering in their attacks
+T47	protocol 1715 1718	DNS
+T48	threatActor_name 7709 7722	RevengeHotels
+T49	threatActor_name 7760 7773	RevengeHotels
+T50	threatActor_name 7811 7824	RevengeHotels
+T51	threatActor_name 7862 7875	RevengeHotels
+T52	OS_name 7591 7596	Win32
+T53	md5 7674 7706	74440d5d0e6ae9b9a03d06dd61718f66
+T54	md5 7725 7757	e675bdf6557350a02f15c14f386fcc47
+T55	md5 7776 7808	df632e25c32e8f8ad75ed3c50dd1cd47
+T56	md5 7827 7859	a089efd7dd9180f9b726594bb6cf81ae
+T57	md5 7878 7910	81701c891a1766c51c74bcfaf285854b
+R43	part_of Arg1:T53 Arg2:T1	
+R44	part_of Arg1:T54 Arg2:T48	
+R45	part_of Arg1:T55 Arg2:T49	
+R46	part_of Arg1:T56 Arg2:T50	
+R47	part_of Arg1:T57 Arg2:T51	
+T58	attack_activity 2368 2382	spear-phishing
+R48	attack Arg1:T44 Arg2:T42	
+R49	attack Arg1:T45 Arg2:T42	
+R50	use Arg1:T44 Arg2:T43	
+R51	use Arg1:T45 Arg2:T43	
+T59	reference_word 1453 1465	These groups
+R41	coreference Arg1:T59 Arg2:T44	
+R42	coreference Arg1:T59 Arg2:T45	
+R52	launch Arg1:T59 Arg2:T46	
+T60	reference_word 1785 1789	They
+R53	coreference Arg1:T60 Arg2:T59	
+T61	sub_activity 1795 1837	sell credentials from the affected systems
+R54	use Arg1:T60 Arg2:T47	
+R55	launch Arg1:T60 Arg2:T61	
+T62	attack_goal 1849 1912	other cybercriminals to have remote access to hotel front desks
+R56	goal Arg1:T61 Arg2:T62	
+T63	sub_activity 2399 2430	register typo-squatting domains
+T64	reference_word 2394 2398	They
+T65	reference_word 1971 1983	these groups
+R57	coreference Arg1:T65 Arg2:T60	
+T66	reference_word 2336 2348	these groups
+R58	coreference Arg1:T66 Arg2:T65	
+R59	launch Arg1:T66 Arg2:T58	
+R60	coreference Arg1:T64 Arg2:T66	
+T67	tool 2474 2480	emails
+R61	launch Arg1:T64 Arg2:T63	
+R62	use Arg1:T64 Arg2:T67	
+T68	sub_activity 2433 2467	impersonating legitimate companies
+R63	goal Arg1:T63 Arg2:T68	
+T69	sample_name 3318 3355	Attorneys Associates Reservation.docx
+T70	sample_name 3282 3315	Reserva Advogados Associados.docx
+R64	coreference Arg1:T69 Arg2:T70	
+T71	tool 3375 3379	Word
+R65	part_of Arg1:T69 Arg2:T71	
+T72	sub_activity 3390 3438	drops a remote OLE object via template injection
+R66	launch Arg1:T69 Arg2:T72	
+T73	tool 3405 3408	OLE
+T74	sub_activity 3442 3460	execute macro code
+R67	goal Arg1:T72 Arg2:T74	
+T75	tool 2779 2784	email
+T76	tool 6668 6674	emails
+T77	security_team 7409 7418	Kaspersky
+T78	tool 7233 7243	Google Pay
+T79	company 7233 7239	Google
+T80	tool 7221 7230	Apple Pay
+T81	company 7221 7226	Apple
+T82	threatActor_name 4697 4710	RevengeHotels
+T83	attack_activity 2809 2823	spear-phishing
+T84	location 5921 5930	Argentina
+T85	location 5933 5940	Bolivia
+T86	location 5943 5949	Brazil
+T87	location 5952 5957	Chile
+T88	location 5960 5970	Costa Rica
+T89	location 5973 5979	France
+T90	location 6018 6026	Thailand
+T91	location 6031 6037	Turkey
+T92	location 5999 6007	Portugal
+T93	location 5990 5996	Mexico
+T94	location 5982 5987	Italy
+T95	location 6010 6015	Spain
+T96	tool 3496 3499	OLE
+T97	tool 3518 3528	PowerShell
+T98	sub_activity 3543 3581	download and execute the final payload
+R68	launch Arg1:T97 Arg2:T98	
+T99	sub_activity 2888 2931	misusing the name of a real attorney office
+T100	sub_activity 3005 3034	using a typo-squatting domain
+T101	threatActor_name 3591 3604	RevengeHotels
+T102	sample_name 3641 3645	.NET
+T103	tool 3674 3689	Yoda Obfuscator
+R69	use Arg1:T101 Arg2:T102	
+R70	use Arg1:T103 Arg2:T102	
+T104	malware 3758 3761	RAT
+T105	malware 3762 3772	RevengeRAT
+R71	part_of Arg1:T105 Arg2:T104	
+T106	tool 3824 3837	ScreenBooking
+T107	threatActor_name 3999 4012	RevengeHotels
+T108	attack_goal 3849 3873	capture credit card data
+R72	goal Arg1:T106 Arg2:T108	
+T109	sub_activity 3879 3929	monitors whether the user is browsing the web page
+R73	launch Arg1:T106 Arg2:T109	
+T110	time 3966 3970	2016
+R74	occur_time Arg1:T107 Arg2:T110	
+T111	company 4939 4942	OTA
+T112	sub_activity 4152 4188	merged into a single backdoor module
+T113	attack_goal 4197 4248	collect data from clipboard and capture screenshots
+R75	goal Arg1:T112 Arg2:T113	
+T114	domain 4316 4327	booking.com
+T115	threatActor_name 4561 4566	ProCC
+T116	tool 4604 4610	Delphi
+R76	use Arg1:T115 Arg2:T116	
+T117	attack_goal 4487 4524	steal credit card data from web pages
+T118	malware 7453 7457	HEUR
+T119	malware 7488 7492	HEUR
+T120	malware 7538 7542	HEUR
+T121	malware 7577 7581	HEUR
+T122	malware 7617 7621	HEUR
+T123	threatActor_name 7638 7651	RevengeHotels
+T124	threatActor_name 7597 7610	RevengeHotels
+T125	threatActor_name 7557 7570	RevengeHotels
+T126	threatActor_name 7518 7531	RevengeHotels
+R77	part_of Arg1:T119 Arg2:T126	
+T127	malware 7545 7551	Trojan
+T128	malware 7584 7590	Trojan
+T129	malware 7624 7630	Trojan
+R78	part_of Arg1:T120 Arg2:T127	
+R79	part_of Arg1:T121 Arg2:T128	
+R80	part_of Arg1:T122 Arg2:T129	
+R81	part_of Arg1:T129 Arg2:T123	
+R82	part_of Arg1:T128 Arg2:T124	
+R83	located Arg1:T128 Arg2:T52	
+R84	part_of Arg1:T127 Arg2:T125	
+T130	company 7051 7055	OTAs
+T131	sub_activity 4757 4808	collect data from the clipboard and printer spooler
+T132	sub_activity 4815 4834	capture screenshots
+T133	sub_activity 4912 4933	pull credit card data
+R85	use Arg1:T133 Arg2:T111	
+T134	attack_goal 4972 4992	collect card numbers
+T135	sub_activity 4996 5058	monitoring the clipboard and the documents sent to the printer
+R86	goal Arg1:T135 Arg2:T134	
+T136	sub_activity 5150 5176	infect front desk machines
+T137	attack_goal 5189 5247	capture credentials from the hotel administration software
+R87	goal Arg1:T136 Arg2:T137	
+T138	attack_goal 5264 5289	steal credit card details
+R88	goal Arg1:T137 Arg2:T138	
+T139	sub_activity 5324 5359	sell remote access to these systems
+T140	sub_activity 5362 5408	acting as a concierge for other cybercriminals
+T141	sub_activity 5412 5472	giving them permanent access to steal new data by themselves
+R89	goal Arg1:T141 Arg2:T140	
+T142	tool 7952 7956	YARA
+T143	security_team 8024 8033	Kaspersky
+T144	domain 8063 8089	https://tip.kaspersky.com/
+R90	part_of Arg1:T144 Arg2:T143	
+T145	time 6374 6378	2015
+T146	malware 6701 6704	RAT
+T147	malware 6426 6429	RAT
+T148	location 6615 6628	Latin America
+T149	sample_name 6069 6075	Bit.ly
+T150	tool 5633 5636	i.e
+T151	industry 5724 5742	hospitality sector
+T152	threatActor_name 6310 6323	RevengeHotels
+R91	occur_time Arg1:T152 Arg2:T145	
+R92	use Arg1:T152 Arg2:T147	
+T153	attack_goal 6441 6484	infect businesses in the hospitality sector
+T154	industry 6466 6484	hospitality sector
+R93	goal Arg1:T147 Arg2:T153	
+R94	find Arg1:T77 Arg2:T118	
+R95	attack Arg1:T152 Arg2:T154	
+T155	attack_activity 6653 6667	spear-phishing
+R96	part_of Arg1:T76 Arg2:T155	
+T156	target_crowd 6523 6540	Brazilian victims
+R97	attack Arg1:T152 Arg2:T156	
+R98	attack Arg1:T152 Arg2:T148	
+T157	counter_measure 6998 7055	use a virtual payment card for reservations made via OTAs
+T158	counter_measure 7192 7212	use a virtual wallet
+R99	part_of Arg1:T80 Arg2:T158	
+R100	part_of Arg1:T78 Arg2:T158	
+T159	counter_measure 7278 7323	use a secondary or less important credit card

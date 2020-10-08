@@ -1,0 +1,358 @@
+T1	threatActor_name 0 5	APT28
+T2	threatActor_name 37 42	APT28
+T3	threatActor_name 228 233	APT28
+T4	threatActor_name 336 341	APT28
+T5	threatActor_name 524 529	APT28
+T6	threatActor_name 683 688	APT28
+T7	threatActor_name 1004 1009	APT28
+T8	threatActor_name 1284 1289	APT28
+T9	threatActor_name 1477 1482	APT28
+T10	threatActor_name 1713 1718	APT28
+T11	threatActor_name 1915 1920	APT28
+T12	threatActor_name 2248 2253	APT28
+T13	threatActor_name 2410 2415	APT28
+T14	threatActor_name 2873 2878	APT28
+T15	threatActor_name 2883 2888	APT29
+T16	threatActor_name 3014 3019	APT28
+T17	threatActor_name 3549 3554	APT28
+T18	threatActor_name 4837 4842	APT28
+T19	threatActor_name 5156 5161	APT28
+T20	threatActor_name 5370 5375	APT28
+T21	threatActor_name 5763 5768	APT28
+T22	threatActor_name 6350 6355	APT28
+T23	threatActor_name 6861 6866	APT28
+T24	threatActor_name 6899 6904	APT28
+T25	threatActor_name 6962 6967	APT28
+T26	threatActor_name 7134 7139	APT28
+T27	time 108 121	NOVEMBER 2016
+T28	time 283 299	APRIL - MAY 2016
+T29	time 512 523	AUGUST 2015
+T30	time 673 682	JULY 2015
+T31	time 907 916	JUNE 2015
+T32	time 1333 1368	OCTOBER 2014 THROUGH SEPTEMBER 2015
+T33	time 1689 1712	JUNE AND SEPTEMBER 2014
+T34	time 2355 2369	SEPTEMBER 2016
+T35	time 2375 2387	September 13
+T36	time 2484 2503	September 12 , 2016
+T37	time 2710 2732	APRIL – SEPTEMBER 2016
+T38	time 3031 3040	June 2016
+T39	time 3302 3323	MARCH – NOVEMBER 2016
+T40	time 4705 4718	FEBRUARY 2015
+T41	time 4721 4731	APRIL 2015
+T42	time 3987 4007	MARCH - OCTOBER 2016
+T43	time 4013 4017	July
+T44	time 4360 4366	August
+T45	time 4550 4567	August to October
+T46	time 4737 4745	February
+T47	time 4883 4893	April 2015
+T48	time 5228 5236	MAY 2014
+T49	time 5389 5397	May 2014
+T50	time 6605 6617	NOV ( 2015 )
+T51	time 6786 6791	AUG 4
+T52	time 6691 6698	JULY 18
+T53	time 6887 6896	EARLY AUG
+T54	time 6953 6959	AUG 10
+T55	time 7118 7131	AUG 25-SEP 12
+T56	industry 56 74	POLITICAL ENTITIES
+R1	attack Arg1:T2 Arg2:T56	
+T57	government 101 105	OSCE
+T58	government 126 130	OSCE
+T59	industry 185 213	Western intelligence service
+R2	attack Arg1:T3 Arg2:T58	
+R3	occur_time Arg1:T3 Arg2:T27	
+T60	location 236 245	Germany's
+T61	government 236 272	Germany's Christian Democratic Union
+T62	government 275 278	CDU
+T63	security_team 315 326	Trend Micro
+T64	person 300 311	Researchers
+T65	government 359 362	CDU
+T66	attack_activity 387 402	phishing emails
+T67	government 411 414	CDU
+T68	sub_activity 342 375	establish a fake CDU email server
+T69	sub_activity 380 402	launch phishing emails
+T70	attack_goal 440 470	obtain their email credentials
+T71	attack_goal 475 496	access their accounts
+R4	coreference Arg1:T62 Arg2:T61	
+R5	located Arg1:T61 Arg2:T60	
+R6	part_of Arg1:T64 Arg2:T63	
+R7	find Arg1:T64 Arg2:T4	
+R8	launch Arg1:T4 Arg2:T68	
+R9	launch Arg1:T4 Arg2:T69	
+R10	occur_time Arg1:T4 Arg2:T28	
+R11	attack Arg1:T4 Arg2:T67	
+R12	goal Arg1:T4 Arg2:T70	
+R13	goal Arg1:T4 Arg2:T71	
+T72	person 569 579	Pussy Riot
+T73	person 499 509	Pussy Riot
+R14	attack Arg1:T5 Arg2:T72	
+T74	attack_activity 584 598	spear-phishing
+R15	launch Arg1:T5 Arg2:T74	
+T75	government 608 612	NATO
+T76	government 615 649	Afghan Ministry of Foreign Affairs
+T77	industry 652 670	Pakistani Military
+T78	domain_evil 708 721	nato-news.com
+T79	domain_evil 726 738	bbc-news.org
+T80	company 752 757	Adobe
+T81	tool 752 763	Adobe Flash
+R16	part_of Arg1:T81 Arg2:T80	
+T82	vul_aliases 764 772	zero-day
+T83	sub_activity 744 772	host an Adobe Flash zero-day
+T84	government 791 795	NATO
+T85	government 802 836	Afghan Ministry of Foreign Affairs
+T86	industry 847 865	Pakistani military
+R17	occur_time Arg1:T6 Arg2:T30	
+R18	use Arg1:T6 Arg2:T78	
+R19	use Arg1:T6 Arg2:T79	
+R20	launch Arg1:T6 Arg2:T83	
+R21	attack Arg1:T6 Arg2:T84	
+R22	attack Arg1:T6 Arg2:T85	
+R23	attack Arg1:T6 Arg2:T86	
+T87	government 868 884	German Bundestag
+T88	industry 887 904	Political Parties
+T90	government 983 986	BSI
+T91	government 917 980	Germany's Federal Office for Security in Information Technology
+T89	attack_activity 1041 1055	spear phishing
+T92	industry 1090 1114	German political parties
+R24	coreference Arg1:T90 Arg2:T91	
+R25	occur_time Arg1:T7 Arg2:T31	
+R26	find Arg1:T91 Arg2:T7	
+R27	attack Arg1:T7 Arg2:T92	
+R28	launch Arg1:T7 Arg2:T89	
+T93	government 1129 1167	Germany's domestic intelligence agency
+T94	government 1170 1201	Bundesamt für Verfassungsschutz
+T95	government 1204 1207	BfV
+R29	coreference Arg1:T95 Arg2:T94	
+T96	time 1232 1241	June 2015
+T97	government 1260 1269	Bundestag
+T98	target_crowd 1260 1280	Bundestag's networks
+R30	part_of Arg1:T94 Arg2:T93	
+R31	occur_time Arg1:T8 Arg2:T96	
+R32	attack Arg1:T8 Arg2:T98	
+T99	government 1292 1330	Kyrgyzstan Ministry of Foreign Affairs
+T100	security_team 1369 1376	FireEye
+T101	security_team 1369 1396	FireEye iSight Intelligence
+R33	part_of Arg1:T101 Arg2:T100	
+T102	tool 1445 1448	DNS
+T103	tool 1424 1442	domain name server
+R34	coreference Arg1:T102 Arg2:T103	
+T104	sub_activity 1483 1500	intercepted email
+T105	government 1518 1556	Kyrgyzstan Ministry of Foreign Affairs
+T106	sub_activity 1575 1596	modifying DNS records
+R35	occur_time Arg1:T9 Arg2:T32	
+R36	find Arg1:T101 Arg2:T9	
+R37	launch Arg1:T9 Arg2:T104	
+T107	tool 1495 1500	email
+R38	part_of Arg1:T107 Arg2:T105	
+R39	launch Arg1:T9 Arg2:T106	
+T108	government 1643 1660	Polish Government
+T109	industry 1663 1686	Power Exchange websites
+R40	attack Arg1:T9 Arg2:T99	
+T110	malware 1729 1735	Sedkit
+T111	malware 1795 1801	Sofacy
+T112	government 1814 1831	Polish Government
+T113	industry 1832 1840	websites
+T114	company 1885 1899	Power Exchange
+T115	company 1663 1677	Power Exchange
+R41	part_of Arg1:T113 Arg2:T112	
+R42	part_of Arg1:T113 Arg2:T114	
+R43	use Arg1:T10 Arg2:T110	
+T116	sub_activity 1786 1810	deliver "Sofacy" malware
+R44	launch Arg1:T10 Arg2:T116	
+R45	attack Arg1:T10 Arg2:T113	
+R46	occur_time Arg1:T10 Arg2:T33	
+T117	time 1908 1912	2014
+T118	sub_activity 2090 2127	disruption and defacement of websites
+T119	sub_activity 2130 2151	false flag operations
+T120	sub_activity 2194 2207	theft of data
+R47	first_found_time Arg1:T11 Arg2:T117	
+R48	launch Arg1:T11 Arg2:T118	
+R49	launch Arg1:T11 Arg2:T119	
+R50	launch Arg1:T11 Arg2:T120	
+T121	government 2318 2342	World Anti-Doping Agency
+T122	government 2345 2349	WADA
+R51	coreference Arg1:T122 Arg2:T121	
+T123	government 2390 2394	WADA
+T124	sub_activity 2420 2444	compromised its networks
+T125	sub_activity 2449 2478	accessed athlete medical data
+T126	threatActor_name 2511 2533	Fancy Bears' Hack Team
+T127	government 2571 2575	WADA
+T128	sub_activity 2580 2614	released athletes' medical records
+T129	sub_activity 2559 2575	compromised WADA
+R52	occur_time Arg1:T123 Arg2:T35	
+R53	occur_time Arg1:T121 Arg2:T34	
+R54	find Arg1:T123 Arg2:T13	
+R55	launch Arg1:T13 Arg2:T124	
+R56	launch Arg1:T13 Arg2:T125	
+R57	occur_time Arg1:T126 Arg2:T36	
+R58	launch Arg1:T126 Arg2:T129	
+R59	launch Arg1:T126 Arg2:T128	
+T130	government 2669 2698	Democratic National Committee
+T131	location 2664 2668	U.S.
+R60	located Arg1:T130 Arg2:T131	
+T132	government 2701 2704	DNC
+R61	coreference Arg1:T132 Arg2:T130	
+T133	government 2739 2742	DNC
+R62	attack Arg1:T14 Arg2:T133	
+R63	attack Arg1:T15 Arg2:T133	
+R64	occur_time Arg1:T133 Arg2:T37	
+T134	security_team 2891 2898	FireEye
+T135	government 2929 2932	DNC
+T136	sub_activity 2899 2932	analyzed the malware found on DNC
+R65	launch Arg1:T134 Arg2:T136	
+T137	government 3061 3064	DNC
+T138	threatActor_name 3086 3098	Guccifer 2.0
+T139	government 3138 3141	DNC
+T140	sub_activity 3153 3169	leaked documents
+R66	occur_time Arg1:T138 Arg2:T38	
+R67	attack Arg1:T138 Arg2:T139	
+R68	launch Arg1:T138 Arg2:T140	
+T141	threatActor_name 3210 3222	Guccifer 2.0
+T142	sub_activity 3236 3265	leak batches of DNC documents
+T143	government 3252 3255	DNC
+T144	time 3274 3283	September
+R69	launch Arg1:T141 Arg2:T142	
+R70	occur_time Arg1:T142 Arg2:T144	
+T145	person 3286 3298	John Podesta
+T146	person 3351 3363	John Podesta
+T147	person 3366 3381	Hillary Clinton
+T148	attack_activity 3472 3480	phishing
+T149	time 3557 3599	Throughout October and into early November
+T150	tool 3602 3611	WikiLeaks
+T151	person 3514 3534	security researchers
+T152	person 3326 3339	Investigators
+R71	find Arg1:T152 Arg2:T146	
+T153	tool 3494 3508	shortened URLs
+R72	part_of Arg1:T153 Arg2:T17	
+R73	use Arg1:T148 Arg2:T153	
+R74	attack Arg1:T148 Arg2:T146	
+R75	occur_time Arg1:T148 Arg2:T39	
+T154	person 3669 3681	John Podesta
+T155	sub_activity 3612 3641	published 34 batches of email
+R76	launch Arg1:T150 Arg2:T155	
+R77	occur_time Arg1:T155 Arg2:T149	
+T156	tool 3622 3641	34 batches of email
+R78	part_of Arg1:T156 Arg2:T154	
+T157	attack_activity 3766 3774	phishing
+T158	target_crowd 3733 3744	individuals
+T159	tool 3906 3914	DC Leaks
+T160	government 3803 3821	Secretary of State
+T161	person 3822 3834	Colin Powell
+T162	person 3839 3846	Clinton
+T163	person 3839 3863	Clinton campaign staffer
+T164	person 3864 3880	William Rinehart
+R79	part_of Arg1:T164 Arg2:T163	
+R80	part_of Arg1:T161 Arg2:T160	
+R81	part_of Arg1:T161 Arg2:T158	
+R82	part_of Arg1:T164 Arg2:T158	
+T165	location 3926 3930	U.S.
+T166	government 3931 3974	Democratic Congressional Campaign Committee
+T167	government 3977 3981	DCCC
+R83	located Arg1:T166 Arg2:T165	
+R84	coreference Arg1:T167 Arg2:T166	
+T168	government 4024 4028	DCCC
+T169	government 4110 4113	FBI
+T170	government 4159 4162	DNC
+R85	occur_time Arg1:T168 Arg2:T43	
+R86	occur_time Arg1:T166 Arg2:T42	
+T171	government 4165 4178	House Speaker
+T172	person 4179 4191	Nancy Pelosi
+T173	government 4217 4221	DCCC
+R87	part_of Arg1:T172 Arg2:T171	
+T174	person 4258 4271	Investigators
+T175	person 4291 4297	actors
+T176	government 4324 4328	DCCC
+T177	sub_activity 4307 4336	gained access to DCCC systems
+T178	time 4349 4354	March
+R88	launch Arg1:T175 Arg2:T177	
+R89	occur_time Arg1:T177 Arg2:T178	
+T179	threatActor_name 4373 4385	Guccifer 2.0
+T180	threatActor_name 4570 4582	Guccifer 2.0
+T181	sub_activity 4394 4413	contacted reporters
+T182	government 4428 4451	House of Representative
+T183	location 4423 4427	U.S.
+T184	government 4502 4506	DCCC
+R90	occur_time Arg1:T179 Arg2:T44	
+R91	launch Arg1:T179 Arg2:T181	
+R92	located Arg1:T182 Arg2:T183	
+T185	sub_activity 4583 4621	posted several additional installments
+R93	launch Arg1:T180 Arg2:T185	
+R94	occur_time Arg1:T180 Arg2:T45	
+T186	company 4693 4701	TV5Monde
+T187	security_team 4748 4755	FireEye
+T188	company 4859 4867	TV5Monde
+T189	tool 4859 4877	TV5Monde's network
+R95	attack Arg1:T18 Arg2:T189	
+T190	company 4800 4808	TV5Monde
+T191	tool 4767 4794	CORESHELL traffic beaconing
+R96	part_of Arg1:T191 Arg2:T190	
+R97	find Arg1:T187 Arg2:T191	
+R98	occur_time Arg1:T187 Arg2:T46	
+R99	occur_time Arg1:T186 Arg2:T40	
+R100	occur_time Arg1:T186 Arg2:T41	
+R101	find Arg1:T187 Arg2:T18	
+T192	security_team 5056 5063	FireEye
+T193	government 6620 6624	WADA
+T194	government 6638 6664	Russian Anti-Doping Agency
+T195	government 6667 6673	RUSADA
+T196	tool 6701 6735	WADA-commissioned report documents
+T197	person 6794 6810	Russian athletes
+T198	industry 6845 6858	Olympic Games
+T199	government 6879 6883	WADA
+T200	attack_activity 6911 6925	spear phishing
+T201	government 6936 6940	WADA
+T202	person 6936 6950	WADA employees
+R102	part_of Arg1:T202 Arg2:T201	
+R103	occur_time Arg1:T24 Arg2:T53	
+R104	coreference Arg1:T195 Arg2:T194	
+R105	occur_time Arg1:T193 Arg2:T50	
+R106	occur_time Arg1:T196 Arg2:T52	
+R107	occur_time Arg1:T197 Arg2:T51	
+R108	launch Arg1:T24 Arg2:T200	
+R109	attack Arg1:T24 Arg2:T202	
+T203	tool 6975 6998	legitimate user account
+R110	use Arg1:T25 Arg2:T203	
+R111	occur_time Arg1:T25 Arg2:T54	
+T204	person 7014 7029	Russian athlete
+R112	part_of Arg1:T203 Arg2:T204	
+T205	tool 7049 7096	AntiDoping Administration and Management System
+T206	tool 7099 7104	ADAMS
+R113	coreference Arg1:T206 Arg2:T205	
+R114	attack Arg1:T25 Arg2:T205	
+T207	government 7042 7046	WADA
+R115	part_of Arg1:T205 Arg2:T207	
+T208	government 7159 7190	International Olympic Committee
+T209	sub_activity 7140 7152	gains access
+R116	launch Arg1:T26 Arg2:T209	
+T210	sub_activity 7253 7285	views and downloads athlete data
+R117	launch Arg1:T26 Arg2:T210	
+R118	occur_time Arg1:T26 Arg2:T55	
+T211	company 4953 4961	TV5Monde
+T212	threatActor_name 4930 4944	CyberCaliphate
+R119	occur_time Arg1:T212 Arg2:T47	
+R120	attack Arg1:T212 Arg2:T211	
+T213	threatActor_name 5127 5141	CyberCaliphate
+T214	government 5179 5216	Ukrainian Central Election Commission
+T215	government 5219 5222	CEC
+T216	government 5318 5321	CEC
+T217	threatActor_name 5466 5477	CyberBerkut
+T218	government 5533 5536	CEC
+T219	sub_activity 5549 5566	system compromise
+T220	sub_activity 5569 5585	data destruction
+T221	sub_activity 5590 5599	data leak
+T222	attack_activity 5604 5633	distributed denial-of-service
+T223	attack_activity 5636 5640	DDoS
+R121	coreference Arg1:T223 Arg2:T222	
+T224	government 5687 5690	CEC
+T225	sub_activity 5669 5698	defacement of the CEC website
+R122	coreference Arg1:T215 Arg2:T214	
+R123	occur_time Arg1:T214 Arg2:T48	
+R124	attack Arg1:T20 Arg2:T216	
+R125	occur_time Arg1:T217 Arg2:T49	
+R126	attack Arg1:T217 Arg2:T218	
+R127	launch Arg1:T217 Arg2:T219	
+R128	launch Arg1:T217 Arg2:T220	
+R129	launch Arg1:T217 Arg2:T221	
+R130	launch Arg1:T217 Arg2:T222	
+R131	occur_time Arg1:T217 Arg2:T225	
+T226	government 5743 5746	DNC
+T227	location 5970 5976	Russia

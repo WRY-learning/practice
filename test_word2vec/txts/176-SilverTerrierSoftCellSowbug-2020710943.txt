@@ -1,0 +1,8 @@
+unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+SilverTerrier is a Nigerian threat group that has been seen active since 2014 .
+SilverTerrier mainly targets organizations in high technology , higher education , and manufacturing .
+Operation Soft Cell is a group that is reportedly affiliated with China and is likely state-sponsored .
+The group has operated since at least 2012 and has compromised high-profile telecommunications networks .
+Sowbug is a threat group that has conducted targeted attacks against organizations in South America and Southeast Asia , particularly government entities , since at least 2015 .

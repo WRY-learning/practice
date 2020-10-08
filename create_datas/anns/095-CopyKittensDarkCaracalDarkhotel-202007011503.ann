@@ -1,0 +1,45 @@
+T1	threatActor_name 79 91	CopyKittens 
+T2	threatActor_name 352 364	Dark Caracal
+T3	threatActor_name 510 520	Darkhotel 
+T5	time 166 170	2013
+R2	first_found_time Arg1:T5 Arg2:T1	
+T6	reference_word 173 175	It
+R3	coreference Arg1:T6 Arg2:T1	
+T7	location 209 215	Israel
+T8	location 218 230	Saudi Arabia
+T9	location 233 239	Turkey
+T10	location 246 250	U.S.
+T11	location 253 259	Jordan
+T12	location 266 273	Germany
+T13	target_crowd 189 198	countries
+R4	attack Arg1:T6 Arg2:T13	
+R5	part_of Arg1:T7 Arg2:T13	
+R6	part_of Arg1:T8 Arg2:T13	
+R7	part_of Arg1:T9 Arg2:T13	
+R8	part_of Arg1:T10 Arg2:T13	
+R9	part_of Arg1:T11 Arg2:T13	
+R10	part_of Arg1:T12 Arg2:T13	
+T14	reference_word 276 285	The group
+T15	attack_activity 327 349	Operation Wilted Tulip
+R13	launch Arg1:T14 Arg2:T15	
+T17	government 422 461	General Directorate of General Security
+T19	location 413 421	Lebanese
+R15	located Arg1:T17 Arg2:T19	
+R16	part_of Arg1:T2 Arg2:T17	
+T20	time 503 507	2012
+R17	first_found_time Arg1:T20 Arg2:T2	
+T21	time 574 578	2004
+R18	first_found_time Arg1:T21 Arg2:T3	
+T22	reference_word 581 590	The group
+R19	coreference Arg1:T22 Arg2:T3	
+T23	target_crowd 617 673	hotel and business center Wi‑Fi and physical connections
+T24	target_crowd 685 723	peer-to-peer and file sharing networks
+R20	attack Arg1:T22 Arg2:T23	
+R21	attack Arg1:T22 Arg2:T24	
+T25	attack_activity 757 770	spearphishing
+T26	reference_word 726 736	The actors
+R22	coreference Arg1:T26 Arg2:T3	
+R23	launch Arg1:T26 Arg2:T25	
+R1	coreference Arg1:T14 Arg2:T1	
+T4	government 464 468	GDGS
+R11	coreference Arg1:T4 Arg2:T17	

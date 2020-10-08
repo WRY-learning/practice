@@ -1,0 +1,81 @@
+T1	threatActor_name 0 5	FIN10
+T2	attack_activity 19 44	Cyber Extortion Operation
+T3	security_team 47 54	FireEye
+T4	threatActor_name 167 172	FIN10
+T7	threatActor_name 401 406	FIN10
+T8	location 434 447	North America
+T9	location 467 473	Canada
+T10	threatActor_name 476 481	FIN10
+T11	tool 502 529	publicly-available software
+T12	tool 532 539	scripts
+T13	tool 544 554	techniques
+T14	attack_goal 579 598	victims ’  networks
+R3	use Arg1:T10 Arg2:T11	
+R5	use Arg1:T10 Arg2:T13	
+R6	attack Arg1:T10 Arg2:T14	
+T15	threatActor_name 891 896	FIN10
+T16	tool 942 961	procedures ( TTPs )
+T17	tool 927 937	techniques
+R4	use Arg1:T15 Arg2:T17	
+R7	use Arg1:T15 Arg2:T16	
+T18	location 1040 1053	North America
+T19	location 1073 1079	Canada
+T20	time 1097 1147	at least 2013 and continuing through at least 2016
+R8	located Arg1:T15 Arg2:T18	
+R9	part_of Arg1:T19 Arg2:T18	
+R10	occur_time Arg1:T15 Arg2:T20	
+T21	OS_name 1428 1435	Windows
+R11	attack Arg1:T15 Arg2:T21	
+T22	tool 1557 1561	TTPs
+T23	threatActor_name 1744 1749	FIN10
+R12	use Arg1:T23 Arg2:T22	
+T24	time 1752 1815	Beginning as early as 2013 and continuing through at least 2016
+T25	threatActor_name 1835 1840	FIN10
+T26	location 1871 1884	North America
+T27	location 1904 1910	Canada
+R13	occur_time Arg1:T25 Arg2:T24	
+R14	located Arg1:T25 Arg2:T26	
+R15	part_of Arg1:T27 Arg2:T26	
+T28	industry 1956 1963	casinos
+T29	industry 1968 1974	mining
+R16	attack Arg1:T25 Arg2:T28	
+R17	attack Arg1:T25 Arg2:T29	
+T30	threatActor_name 2035 2040	FIN10
+T31	threatActor_name 2158 2163	FIN10
+T32	malware 2174 2195	spear phishing emails
+R18	use Arg1:T31 Arg2:T32	
+T33	tool 2386 2404	social engineering
+T34	tool 2409 2435	specifically crafted lures
+T35	threatActor_name 2497 2502	FIN10
+R19	use Arg1:T35 Arg2:T33	
+R20	use Arg1:T35 Arg2:T34	
+T36	malware 2754 2768	phishing email
+T38	tool 2848 2851	URL
+T39	malware 2865 2904	malicious HTML Application ( HTA ) file
+T40	malware 2932 2946	phishing email
+T41	tool 2961 2983	employee questionnaire
+T42	tool 2791 2807	holiday schedule
+R21	use Arg1:T36 Arg2:T42	
+R22	use Arg1:T40 Arg2:T41	
+R23	use Arg1:T35 Arg2:T36	
+T43	tool 3016 3066	Word Open XML Macro-Enabled Document file ( DOCM )
+T44	threatActor_name 3084 3089	FIN10
+T45	tool 2999 3002	URL
+R26	use Arg1:T44 Arg2:T40	
+T46	tool 3102 3110	LinkedIn
+R27	use Arg1:T44 Arg2:T46	
+T47	tool 3271 3298	publicly-available software
+T48	tool 3301 3308	scripts
+T49	tool 3313 3323	techniques
+R28	use Arg1:T44 Arg2:T47	
+R29	use Arg1:T44 Arg2:T48	
+R30	use Arg1:T44 Arg2:T49	
+T50	threatActor_name 3370 3375	FIN10
+T51	tool 3381 3392	Meterpreter
+R31	use Arg1:T50 Arg2:T51	
+T52	malware 3535 3580	Splinter Remote Access Trojan ( SplinterRAT )
+R32	use Arg1:T50 Arg2:T52	
+R33	find Arg1:T3 Arg2:T4	
+R1	launch Arg1:T1 Arg2:T2	
+R2	located Arg1:T7 Arg2:T8	
+R34	located Arg1:T7 Arg2:T9	

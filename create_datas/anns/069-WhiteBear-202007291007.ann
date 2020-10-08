@@ -1,0 +1,398 @@
+T1	threatActor_name 12 21	WhiteBear
+T2	time 218 235	mid-February 2017
+T3	threatActor_name 284 293	WhiteBear
+R1	release_time Arg1:T2 Arg2:T3	
+T4	threatActor_name 296 305	WhiteBear
+T5	threatActor_name 487 495	mid-2016
+T6	threatActor_name 529 538	WhiteBear
+T7	threatActor_name 512 517	Turla
+T8	threatActor_name 351 364	Skipper Turla
+R2	release_time Arg1:T5 Arg2:T8	
+T9	tool 561 569	websites
+T10	tool 583 592	satellite
+T11	tool 631 633	C2
+T12	sample_function 609 650	command and control ( C2 ) infrastructure
+R5	use Arg1:T6 Arg2:T9	
+R6	use Arg1:T6 Arg2:T10	
+T13	threatActor_name 675 684	WhiteBear
+T14	threatActor_name 723 728	Turla
+T15	malware 762 771	Kopiluwak
+T16	time 847 860	December 2016
+T17	malware 793 802	KopiLuwak
+R7	release_time Arg1:T16 Arg2:T17	
+T18	threatActor_name 863 872	WhiteBear
+T19	tool 903 910	dropper
+T20	tool 973 981	platform
+T21	sample_function 999 1048	preceded by WhiteAtlas module deployment attempts
+R8	part_of Arg1:T21 Arg2:T20	
+T22	threatActor_name 1098 1103	Turla
+T23	threatActor_name 1132 1141	WhiteBear
+T24	threatActor_name 1358 1364	Sofacy
+T25	threatActor_name 1348 1353	Turla
+T26	time 1381 1389	February
+T27	time 1393 1407	September 2016
+T28	threatActor_name 1410 1419	WhiteBear
+T29	target_crowd 1453 1462	embassies
+T30	attack_goal 1467 1486	consular operations
+R9	attack Arg1:T28 Arg2:T29	
+R10	goal Arg1:T28 Arg2:T30	
+R11	occur_time Arg1:T26 Arg2:T28	
+R12	occur_time Arg1:T27 Arg2:T28	
+T31	threatActor_name 1525 1534	WhiteBear
+T32	target_crowd 1559 1568	embassies
+T33	target_crowd 1573 1612	diplomatic/foreign affair organizations
+R13	attack Arg1:T31 Arg2:T32	
+R14	attack Arg1:T31 Arg2:T33	
+T34	threatActor_name 1625 1634	WhiteBear
+T35	target_crowd 1669 1698	defense-related organizations
+R15	attack Arg1:T34 Arg2:T35	
+T36	time 1704 1713	June 2017
+R16	occur_time Arg1:T36 Arg2:T34	
+T37	threatActor_name 1716 1725	WhiteBear
+T38	tool 1774 1795	spearphishing dropper
+T39	threatActor_name 1937 1947	WhiteAtlas
+T40	threatActor_name 2002 2011	WhiteBear
+T41	tool 2127 2136	pdf files
+T42	attack_activity 2091 2103	spearphished
+T43	reference_word 2081 2090	the group
+R17	coreference Arg1:T43 Arg2:T40	
+R18	launch Arg1:T43 Arg2:T42	
+R19	use Arg1:T43 Arg2:T41	
+T44	tool 2149 2152	pdf
+T45	threatActor_name 2228 2237	WhiteBear
+T46	threatActor_name 2335 2345	WhiteAtlas
+T47	threatActor_name 2501 2511	WhiteAtlas
+T48	threatActor_name 2524 2533	WhiteBear
+T49	government 2553 2562	embassies
+T50	government 2567 2586	diplomatic entities
+R20	attack Arg1:T48 Arg2:T49	
+R21	attack Arg1:T48 Arg2:T50	
+T51	time 2607 2617	early 2016
+R22	occur_time Arg1:T51 Arg2:T48	
+T52	tool 2677 2680	pdf
+T53	tool 2748 2756	droppers
+R23	use Arg1:T48 Arg2:T52	
+R24	use Arg1:T48 Arg2:T53	
+T54	threatActor_name 2781 2790	WhiteBear
+T55	tool 2831 2865	messaging and injection components
+T56	attack_goal 2877 2906	full presence on victim hosts
+T57	sub_activity 2800 2865	implements an elaborate set of messaging and injection components
+R25	launch Arg1:T54 Arg2:T57	
+R26	goal Arg1:T57 Arg2:T56	
+T60	sample_name 3150 3177	The WhiteBear binary loader
+T61	malware 3263 3277	KernelInjector
+T62	string 3608 3618	BINARY 201
+T64	sample_name 3826 3853	“ main orchestrator ”  .dll
+T65	string 4017 4038	IsLoaderAlreadyWork +
+T66	string 4204 4225	IsLoaderAlreadyWork +
+T67	string 3682 3692	BINARY 202
+T68	string 4256 4266	BINARY 201
+T70	reference_word 4370 4380	The loader
+T71	tool 4389 4393	pipe
+T72	string 4403 4452	\.pipeWinsock2CatalogChangeListener-%03x%01x-%01x
+R28	part_of Arg1:T72 Arg2:T71	
+R29	use Arg1:T70 Arg2:T71	
+T73	reference_word 4269 4282	This resource
+R30	coreference Arg1:T73 Arg2:T68	
+T74	reference_word 3859 3869	The loader
+T75	reference_word 4044 4054	The loader
+T76	reference_word 3448 3458	The loader
+T77	string 4509 4519	0xFFFFFFFF
+T78	string 4520 4530	0xEEEEEEEE
+T79	string 4531 4541	0xDDDDDDDD
+T80	reference_word 4751 4759	The pipe
+R31	coreference Arg1:T80 Arg2:T71	
+T81	sample_function 4771 4831	communicate with the target process and the transport module
+R32	part_of Arg1:T81 Arg2:T80	
+T82	reference_word 4836 4846	The loader
+T83	string 4891 4901	BINARY 202
+T84	string 3892 3928	531511FA-190D-5D85-8A4A-279F2F592CC7
+T85	string 4077 4115	531511FA-190D-5D85-8A4A-279F2F592CC7 }
+T86	md5 5083 5115	06bd89448a10aa5c2f4ca46b4709a879
+T87	reference_word 4904 4906	It
+T88	sample_function 4907 4932	finds the running process
+T89	sample_function 4964 4981	copies the buffer
+T90	sample_function 5029 5044	starts its copy
+R33	part_of Arg1:T88 Arg2:T87	
+R34	part_of Arg1:T89 Arg2:T87	
+R35	part_of Arg1:T90 Arg2:T87	
+T91	string 5239 5242	101
+T92	encryption_algo 5245 5248	RSA
+T93	encryption_algo 5273 5276	RSA
+T94	string 5267 5270	102
+T58	md5 2923 2955	b099b82acb860d9a9a571515024b35f0
+T59	string 5288 5291	103
+T95	string 5300 5303	104
+T96	string 5325 5328	105
+T97	string 5344 5369	%HOMEPATH%ntuser.dat.LOG3
+T98	string 5376 5379	106
+T99	string 5554 5557	108
+T100	string 5506 5509	107
+T101	tool 5550 5553	C&C
+T102	tool 5560 5562	C2
+T103	string 5577 5580	109
+T104	string 5676 5679	110
+T105	string 5697 5700	111
+T106	encryption_algo 5756 5759	RSA
+T107	tool 5809 5816	bzip2.4
+T108	encryption_algo 5823 5826	RSA
+T110	threatActor_name 6222 6231	WhiteBear
+T111	sub_activity 6232 6287	copies much of this data to the victim host ’s registry
+T112	sub_activity 6147 6159	storing code
+T113	sub_activity 6162 6178	crypto resources
+T114	sub_activity 6185 6219	configuration data in PE resources
+R27	launch Arg1:T110 Arg2:T112	
+R36	launch Arg1:T110 Arg2:T113	
+R37	launch Arg1:T110 Arg2:T114	
+R38	launch Arg1:T110 Arg2:T111	
+T115	string 6312 6348	629336E3-58D6-633B-5182-576588CF702A
+T116	encryption_algo 6364 6367	RSA
+T117	string 6439 6475	3CDC155D-398A-646E-1021-23047D9B4366
+T118	string 6517 6553	81A03BF8-60AA-4A56-253C-449121D61CAF
+T119	string 6587 6623	31AC34A1-2DE2-36AC-1F6E-86F43772841F
+T120	string 6686 6722	8E9810C5-3014-4678-27EE-3B7A7AC346AF
+T121	string 6753 6789	28E74BDA-4327-31B0-17B9-56A66A818C1D
+T122	string 6820 6856	4A3130BD-2608-730F-31A7-86D16CE66100
+T123	string 6874 6910	119D263D-68FC-1942-3CA3-46B23FA652A0
+T124	tool 6648 6651	C&C
+T125	tool 6740 6743	C&C
+T126	string 6946 6982	1DC12691-2B24-2265-435D-735D3B118A70
+T127	string 7003 7039	6CEE6FE1-10A2-4C33-7E7F-855A51733C77
+T128	string 7062 7098	56594FEA-5774-746D-4496-6361266C40D0
+T129	string 7112 7148	831511FA-190D-5D85-8A4A-279F2F592CC7
+T131	sample_name 7263 7283	%TEMP%KB943729.log .
+T132	tool 7241 7251	FS Storage
+T133	reference_word 7284 7294	The module
+T134	tool 7173 7198	the main WhiteBear module
+R41	coreference Arg1:T133 Arg2:T134	
+T135	sample_function 7295 7338	reads all of its data and binary components
+R40	part_of Arg1:T135 Arg2:T133	
+T136	sample_name 7771 7793	%TEMP%CVRG72B5.tmp.cvr
+T137	sample_name 7794 7816	%TEMP%CVRG1A6B.tmp.cvr
+T138	sample_name 7817 7839	%TEMP%CVRG38D9.tmp.cvr
+T139	sample_name 7840 7857	%TEMP%~DF1E05.tmp
+T140	reference_word 7958 7973	the main module
+T141	sample_function 7974 8006	restarts the transport subsystem
+R42	part_of Arg1:T141 Arg2:T140	
+T142	sample_function 7858 7914	contains the updated body of the loader during an update
+R43	part_of Arg1:T142 Arg2:T139	
+T143	encryption_algo 8258 8261	RSA
+T144	tool 8638 8650	orchestrator
+T145	reference_word 8668 8670	it
+T146	reference_word 8818 8828	the module
+T130	sub_activity 8829 8885	reinstalls a configuration from the resource “ REINSTALL
+R44	launch Arg1:T146 Arg2:T130	
+T147	sample_function 8671 8732	validates that the storage area contains the appropriate data
+T148	tool 9075 9077	c2
+T149	tool 9136 9190	CMessageProcessingSystem::Receive_NO_CONNECT_TO_GAYZER
+T150	string 9264 9300	56594FEA-5774-746D-4496-6361266C40D0
+T151	reference_word 9312 9327	last connection
+R46	coreference Arg1:T151 Arg2:T150	
+T152	tool 9400 9403	C&C
+T153	tool 9435 9438	C&C
+T154	tool 9467 9489	LocalTransport manager
+T155	sample_function 9493 9525	handles named pipe communication
+T156	sample_function 9530 9601	identifies if the packet received is designated to the current instance
+R47	part_of Arg1:T155 Arg2:T154	
+R48	part_of Arg1:T156 Arg2:T154	
+T157	tool 9669 9690	LocalTansport manager
+T158	sample_function 9691 9713	re-encrypts the packet
+T159	sample_function 9716 9729	serializes it
+T160	sample_function 9746 9763	pushes the packet
+R49	part_of Arg1:T158 Arg2:T157	
+R50	part_of Arg1:T159 Arg2:T157	
+R51	part_of Arg1:T160 Arg2:T157	
+T161	tool 9821 9837	NullSessionPipes
+T162	tool 9906 9921	Autorun manager
+T163	sample_function 9951 10000	tracking the way that the malicious module starts
+R52	part_of Arg1:T163 Arg2:T162	
+T164	reference_word 10019 10021	it
+T165	sample_function 10022 10057	maintains several different methods
+R53	part_of Arg1:T165 Arg2:T164	
+R54	coreference Arg1:T164 Arg2:T162	
+T166	tool 10088 10099	LinkAutorun
+T167	sample_function 10114 10137	searches for a LNK file
+T168	sample_function 10164 10180	changes the path
+R55	part_of Arg1:T167 Arg2:T166	
+R56	part_of Arg1:T168 Arg2:T166	
+T169	tool 10270 10292	TaskScheduler20Autorun
+T170	string 10494 10503	%STARTUP%
+T171	tool 10319 10331	ITaskService
+T172	tool 10378 10390	ITaskService
+T173	sample_function 10404 10442	create a new task with a logon trigger
+R57	use Arg1:T169 Arg2:T171	
+R58	use Arg1:T169 Arg2:T172	
+R59	goal Arg1:T172 Arg2:T173	
+T174	tool 10443 10457	StartupAutorun
+T175	tool 10504 10522	ScreenSaverAutorun
+T176	tool 10592 10609	HiddenTaskAutorun
+T177	tool 10641 10655	ITaskScheduler
+R60	use Arg1:T176 Arg2:T177	
+T178	string 10803 10856	HKCUSoftwareMicrosoftWindows NTCurrentVersionWinlogon
+T180	md5 11046 11078	19ce5c912768958aa3ee7bc19b2b032c
+T181	reference_word 11327 11329	It
+T182	reference_word 11261 11283	This transport library
+T183	tool 11432 11444	orchestrator
+T184	sample_function 11404 11424	decrypted and loaded
+R61	part_of Arg1:T184 Arg2:T183	
+T185	reference_word 11494 11520	This C2 interaction module
+T186	reference_word 11553 11555	it
+T187	sample_function 11556 11587	interacts with the orchestrator
+T188	tool 11610 11614	pipe
+R62	attack Arg1:T186 Arg2:T188	
+R63	part_of Arg1:T187 Arg2:T186	
+T189	tool 12177 12179	C2
+T190	tool 11641 11643	C2
+T191	reference_word 11653 11674	the transport library
+T192	tool 11684 11701	system user agent
+T193	tool 11715 11726	Mozilla/4.0
+T194	tool 11742 11750	MSIE 6.0
+R64	use Arg1:T191 Arg2:T192	
+R65	use Arg1:T191 Arg2:T193	
+T195	tool 11809 11811	C2
+T196	reference_word 12056 12066	the module
+T197	sample_function 12067 12101	changes state to , “ CANNOT_WORK ”
+T198	sample_function 12107 12124	notifies the peer
+R66	part_of Arg1:T197 Arg2:T196	
+R67	part_of Arg1:T198 Arg2:T196	
+T199	reference_word 12211 12226	the main module
+T200	IP_evil 15850 15865	169.255.137.203
+T201	IP_evil 15866 15880	217.171.86.137
+T202	IP_evil 15881 15895	66.178.107.140
+T203	md5 15748 15780	b099b82acb860d9a9a571515024b35f0
+T204	md5 15781 15813	19ce5c912768958aa3ee7bc19b2b032c
+T205	md5 15814 15846	06bd89448a10aa5c2f4ca46b4709a879
+T206	domain_evil 15910 15921	soligro.com
+T207	domain_evil 16063 16083	mydreamhoroscope.com
+T208	reference_word 15944 15954	the domain
+R68	coreference Arg1:T208 Arg2:T206	
+T209	threatActor_name 15974 15979	Turla
+T210	malware 15992 16001	KopiLuwak
+R69	launch Arg1:T209 Arg2:T210	
+T211	tool 16017 16019	C2
+R70	use Arg1:T209 Arg2:T208	
+T212	time 15553 15562	2016-2017
+T213	threatActor_name 15563 15572	WhiteBear
+T214	threatActor_name 15584 15589	Turla
+R71	occur_time Arg1:T212 Arg2:T213	
+T215	tool 12328 12330	C2
+T216	tool 12418 12420	C2
+T217	string 12634 12674	InternetRelations::GetInetConnectToGazer
+T218	string 12680 12723	InternetRelations::ReceiveMessageFromCentre
+T219	string 12729 12767	InternetRelations::SendMessageToCentre
+T220	string 12773 12814	PipeRelations::CommunicationTpansportPipe
+T221	reference_word 12818 12828	The module
+T222	sample_name 12857 12879	%TEMP%CVRG38D9.tmp.cvr
+T223	reference_word 12880 12890	The module
+T224	tool 12961 12963	C2
+T225	sample_function 12891 12919	sends a HTTP 1.0 GET request
+R72	part_of Arg1:T225 Arg2:T223	
+T226	tool 13058 13060	C2
+T227	reference_word 13081 13091	the module
+T228	string 13112 13114	10
+T229	string 13122 13142	NO_CONNECT_TO_GAYZER
+R73	coreference Arg1:T229 Arg2:T228	
+T230	encryption_algo 13256 13259	RSA
+T231	encryption_algo 13260 13264	3DES
+T232	tool 13265 13270	BZIP2
+T233	malware 13412 13417	Duqu2
+T234	threatActor_name 13401 13407	Sofacy
+T235	encryption_algo 13382 13386	3DES
+T236	company 13464 13473	Microsoft
+T237	encryption_algo 13482 13485	RSA
+T238	encryption_algo 13556 13559	RSA
+T239	encryption_algo 13584 13588	3DES
+T240	person 13607 13619	threat actor
+R74	use Arg1:T240 Arg2:T239	
+R75	use Arg1:T240 Arg2:T238	
+R76	part_of Arg1:T235 Arg2:T234	
+R77	part_of Arg1:T235 Arg2:T233	
+T241	company 13709 13718	Microsoft
+T242	tool 13732 13735	PVK
+T243	tool 13835 13842	OpenSSL
+T244	threatActor_name 14048 14057	WhiteBear
+T245	person 14267 14273	actors
+T246	sub_activity 14274 14322	assumed its identity to abuse the name and trust
+T247	attack_goal 14337 14387	attain deceptive code-signing digital certificates
+R78	launch Arg1:T245 Arg2:T246	
+R79	goal Arg1:T246 Arg2:T247	
+T248	threatActor_name 14394 14403	WhiteBear
+T249	tool 14404 14406	C2
+T250	threatActor_name 14449 14454	Turla
+T251	tool 14496 14509	the backdoors
+T252	sample_function 14510 14594	callback to a mix of compromised servers and hijacked destination satellite IP hosts
+R80	part_of Arg1:T252 Arg2:T251	
+T253	threatActor_name 14630 14635	Turla
+T254	tool 14649 14651	C2
+T255	IP_evil 14722 14737	169.255.137.203
+T256	location 14738 14749	South Sudan
+T257	company 14750 14755	IPTEC
+T258	company 14758 14762	VSAT
+T259	IP_evil 14763 14777	217.171.86.137
+T260	location 14778 14783	Congo
+T261	company 14784 14809	Global Broadband Solution
+T262	company 14812 14825	Kinshasa VSAT
+T263	IP_evil 14826 14840	66.178.107.140
+T264	company 14858 14868	Africa SES
+T265	company 14869 14889	New Skies Satellites
+T266	threatActor_name 14890 14899	WhiteBear
+T267	government 14986 15013	international organizations
+T268	government 15028 15049	defense organizations
+R81	attack Arg1:T266 Arg2:T267	
+R82	attack Arg1:T266 Arg2:T268	
+T269	location 15098 15104	Europe
+T270	location 15105 15115	South Asia
+T271	location 15116 15128	Central Asia
+T272	location 15129 15138	East Asia
+R83	attack Arg1:T266 Arg2:T269	
+R84	attack Arg1:T266 Arg2:T270	
+R85	attack Arg1:T266 Arg2:T271	
+R86	attack Arg1:T266 Arg2:T272	
+T273	location 15139 15152	South America
+R87	attack Arg1:T266 Arg2:T273	
+T274	threatActor_name 15153 15162	WhiteBear
+T275	time 15224 15233	June 2017
+R88	occur_time Arg1:T275 Arg2:T274	
+T276	threatActor_name 15240 15245	Turla
+T277	reference_word 15311 15319	This one
+T278	industry 15338 15357	diplomatic entities
+T279	government 15377 15406	defense related organizations
+R89	attack Arg1:T277 Arg2:T278	
+R90	attack Arg1:T277 Arg2:T279	
+T280	threatActor_name 15443 15448	Turla
+T281	threatActor_name 15517 15522	Turla
+R91	use Arg1:T18 Arg2:T19	
+R92	use Arg1:T18 Arg2:T20	
+R93	use Arg1:T37 Arg2:T38	
+R94	use Arg1:T54 Arg2:T55	
+T282	company 5885 5894	Microsoft
+T283	reference_word 5948 5958	the loader
+T109	reference_word 7231 7233	it
+R39	coreference Arg1:T109 Arg2:T134	
+T284	sample_function 7373 7403	verifies the integrity of data
+R95	part_of Arg1:T284 Arg2:T133	
+T285	reference_word 7727 7729	It
+T286	sample_function 8771 8794	decrypted and validated
+R45	part_of Arg1:T286 Arg2:T145	
+R96	part_of Arg1:T147 Arg2:T145	
+T287	tool 9776 9780	pipe
+R97	use Arg1:T157 Arg2:T287	
+T288	sample_function 10537 10591	installs as a current screensaver with a hidden window
+R98	part_of Arg1:T288 Arg2:T175	
+T289	security_team 134 143	Kaspersky
+R3	goal Arg1:T9 Arg2:T12	
+T290	tool 1803 1810	Firefox
+T291	encryption_algo 2916 2919	MD5
+T292	time 5172 5191	2002.02.05 17:31:28
+R4	goal Arg1:T10 Arg2:T12	
+T293	time 2990 3009	2002.02.05 17:36:10
+T294	encryption_algo 5076 5079	MD5
+T295	encryption_algo 11039 11042	MD5
+T296	tool 11499 11501	C2
+T297	attack_goal 14957 14983	government foreign affairs
+R99	goal Arg1:T266 Arg2:T297	
+T298	encryption_algo 15744 15747	Md5
+T63	sample_name 3666 3678	explorer.exe
+T69	sample_name 4350 4362	explorer.exe
+T179	sample_name 10870 10882	explorer.exe
+T299	time 11114 11133	2002.02.05 17:58:22

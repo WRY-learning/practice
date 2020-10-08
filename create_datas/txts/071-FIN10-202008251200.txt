@@ -1,0 +1,33 @@
+FIN10:Anatomy of a Cyber Extortion Operation .
+In the first incident Mandiant investigated that was attributed to FIN10 , the attacker ( s ) did not extort the targeted organization .
+However , it is plausible that the group was still in the process of honing its TTPs .
+FIN10 likely uses a combination of copy tools and file transfer utilities to both harvest and stage sensitive data .
+Data exposure is accomplished routinely using openly-accessible websites such as “ pastebin.com , ”  “ justpaste.it , ”  and “ thepiratebay.se .
+ ” We have also observed the group using popular cloud file sharing/ storage solutions , such as Dropbox , to receivestolen data in extortion attempts .
+Links to the leaked data are initially kept private and provided solely to the victim organization as proof of the authenticity of the compromise .
+We have seen FIN10 heavily leverage the “ justpaste.it ”  service for these purposes .
+Attacker ( s ) in all instances utilized a false flag — a term used to describe covert operations that are designed to deceive in such a way that activities appear as though they are being carried out by entities , groups or nations other than those who actually planned and executed them .
+Based on open-source reporting , the attacker ( s ) in at least one intrusion self-identified as the “ Angels_Of_Truth , ”  and claimed the attacks on the victim were in reciprocity for Canada-imposed economic sanctions on Russia .
+The quality of the Russian-language posts , however , was considerably poor and very similar to output obtained from online translating solutions , making it likely the attacker ( s ) are not native Russian speakers and were using this narrative to mislead attribution attempts .
+The attacker ( s ) more commonly used a moniker associated with a Serbian hacktivist group dubbed “ Tesla Team .
+ ” Given the vast differences in external targeting calculus—targeted industry verticals by FIN10 as compared to political organizations , non- governmental organizations and websites of anti-Serb organizations targeted by Tesla Team — and inconsistencies in tradecraft , we doubt that the Serbian hacktivist group Tesla Team ( previously active in 2013 ) is associated with FIN10 .
+In at least one intrusion , we observed the group abandon the moniker Tesla Team in the group ’  s last correspondence to the targeted victim and adopt the moniker “ Anonymous Threat Agent .
+ ” 
+Emphasis in regional targeting of North American-based organizations could possibly suggest the attacker ( s ) familiarity with the region .
+FIN10 also seeks to increase its leverage by sending multiple emails to staff and board members of the victim organizations , notifying them of the breach and potential consequences for nonpayment .
+FIN10 also informs open-source blogs about breaches in a likely effort to publicly expose these breaches and apply additional pressure on affected organizations to acquiesce to extortion demands .
+Alternatively , it is just as plausible FIN10 does this to simply maximize exposure for victims who do not pay .
+Notably , we have also observed the group engage local journalists to publicize these breaches .
+The relative degree of operational success enjoyed by FIN10 makes it highly probable the group will continue to conduct similar extortion-based campaigns at least in the near term .
+Notably , we already have some evidence to suggest FIN10 has targeted additional victims beyond currently confirmed targets .
+Furthermore , while FIN10 is predominantly financially motivated , as evidenced by its preferred monetization technique ( i.e. , extortion ) , it is plausible the group is also motivated , at least in part , by ego .
+For instance , the group ’s willingness to contact cyber security bloggers is likely the result of at least two motivational factors :
+ To further the groups operational objectives , likely by putting increased pressure on targeted victims to acquiesce to now public extortion demands .
+To gain some degree of notoriety and public exposure of the group ’  s campaigns .
+While the secondary motivation may be a necessary byproduct of the first , more primary objective , desire to gain notoriety could potentially influence the group ’  s decision-making calculus .
+Lastly , while FIN10 has seemingly only targeted organizations within two industry verticals , it is possible the group has previously or will in the future expand their regional and industry-specific targeting .
+Historically , we have seen this type of threat activity — cyber attacks resulting in the theft or compromise of sensitive data to be leveraged in extortion plots — affect multiple targeted verticals .
+Responding to disruptive breaches such as FIN10 is challenging and not easy to plan for given the dynamic nature of these attacks and the attacker ( s ) .
+Unlike breaches where a containment plan may be able to stop an attacker from stealing more information , in these disruptive instances the damage may have already been done by the time the attacker ( s ) contacts the victim organization .
+Therefore , a different response to these incidents might be required .
+The following ten lessons from our incident response engagements may help organizations deal with disruptive attacks , including those from groups such as FIN10 .

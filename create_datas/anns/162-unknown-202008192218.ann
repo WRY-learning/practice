@@ -1,0 +1,218 @@
+T1	time 154 165	May 23 2018
+T2	security_team 188 199	Cisco Talos
+T3	malware 238 247	VPNFilter
+R1	find Arg1:T2 Arg2:T3	
+R2	occur_time Arg1:T2 Arg2:T1	
+T4	malware 0 9	VPNFilter
+T5	tool 10 14	EXIF
+R3	part_of Arg1:T4 Arg2:T5	
+T6	tool 18 20	C2
+T7	malware 362 371	VPNFilter
+T8	malware 3376 3385	VPNFilter
+T9	malware 5348 5357	VPNFilter
+T10	malware 5539 5548	VPNFilter
+T11	malware 6591 6600	VPNFilter
+T12	malware 6156 6165	VPNFilter
+T13	time 6855 6859	2014
+T14	encryption_algo 6656 6659	RC4
+T15	government 5602 5605	FBI
+T16	tool 5597 5599	C2
+T17	tool 1376 1378	C2
+T18	tool 1683 1685	C2
+T19	tool 2504 2506	C2
+T20	tool 2967 2969	C2
+T21	tool 3270 3272	C2
+T22	tool 2889 2891	C2
+T23	malware 6612 6623	BlackEnergy
+T24	encryption_algo 769 772	RC4
+T25	reference_word 379 381	It
+R4	coreference Arg1:T25 Arg2:T7	
+T26	sub_activity 382 441	has a redundant , multi-stage command and control mechanism
+R5	launch Arg1:T25 Arg2:T26	
+T27	sub_activity 448 500	uses three different channels to receive information
+R6	part_of Arg1:T27 Arg2:T26	
+T28	reference_word 503 505	It
+R7	coreference Arg1:T28 Arg2:T25	
+T29	sub_activity 506 536	has a multi-stage architecture
+R8	launch Arg1:T28 Arg2:T29	
+T30	reference_word 637 639	It
+R9	coreference Arg1:T30 Arg2:T28	
+T31	sub_activity 640 670	contains a destructive payload
+R10	launch Arg1:T30 Arg2:T31	
+T32	sub_activity 680 732	capable of rendering the infected devices unbootable
+R11	part_of Arg1:T32 Arg2:T31	
+T33	reference_word 735 737	It
+R12	coreference Arg1:T33 Arg2:T30	
+T34	sub_activity 738 787	uses a broken ( or incorrect ) RC4 implementation
+R13	launch Arg1:T33 Arg2:T34	
+T35	malware 828 839	BlackEnergy
+R14	launch Arg1:T35 Arg2:T34	
+T36	tool 858 877	command and control
+T37	tool 412 431	command and control
+T38	tool 899 902	TOR
+R15	use Arg1:T38 Arg2:T36	
+T39	attack_goal 924 979	hard to notice for someone checking the network traffic
+R16	goal Arg1:T36 Arg2:T39	
+T40	tool 1020 1023	C&C
+T41	government 1416 1419	FBI
+T42	encryption_algo 6226 6229	RC4
+T43	encryption_algo 6208 6211	RC4
+T44	sub_activity 1020 1033	C&C mechanism
+T45	reference_word 1104 1118	this mechanism
+R17	coreference Arg1:T45 Arg2:T44	
+T46	sub_activity 1170 1201	visit a number of gallery pages
+T47	domain_evil 1212 1227	photobucket.com
+R18	part_of Arg1:T47 Arg2:T46	
+T48	sub_activity 1232 1269	fetches the first image from the page
+T49	sub_activity 1306 1352	fetching an image file from a hardcoded domain
+T50	domain_evil 1355 1368	toknowall.com
+R19	part_of Arg1:T50 Arg2:T49	
+T51	reference_word 1371 1385	This C2 domain
+R20	coreference Arg1:T51 Arg2:T50	
+R21	find Arg1:T41 Arg2:T51	
+R22	part_of Arg1:T46 Arg2:T45	
+R23	part_of Arg1:T48 Arg2:T45	
+R24	part_of Arg1:T49 Arg2:T45	
+T52	sub_activity 1458 1491	goes into a passive backdoor mode
+T53	sub_activity 1506 1554	processes network traffic on the infected device
+T54	attack_goal 1555 1591	waiting for the attacker ’s commands
+R25	goal Arg1:T53 Arg2:T54	
+R26	part_of Arg1:T53 Arg2:T52	
+R27	part_of Arg1:T52 Arg2:T45	
+T55	tool 1743 1747	EXIF
+T56	protocol 1768 1772	IPv4
+T57	protocol 1826 1829	DNS
+T58	tool 1851 1854	C&C
+T59	tool 2082 2085	C&C
+T60	threatActor_name 2010 2021	BlackEnergy
+T61	domain_evil 1944 1957	toknowall.com
+T62	malware 6781 6792	BlackEnergy
+T63	security_team 6115 6126	Cisco Talos
+T64	malware 6393 6404	BlackEnergy
+T65	malware 6542 6554	Blackenergy2
+T66	time 6483 6487	2010
+T67	government 5915 5918	FBI
+T68	threatActor_name 5856 5867	BlackEnergy
+T69	malware 6169 6180	BlackEnergy
+T70	sub_activity 1683 1717	C2 extraction subroutine is called
+T71	sub_activity 1724 1780	converts the image EXIF coordinates into an IPv4 address
+R28	part_of Arg1:T71 Arg2:T70	
+T72	sub_activity 1914 1959	lookup the hardcoded domain ( toknowall.com )
+T73	sub_activity 2059 2085	using IP addresses for C&C
+R29	launch Arg1:T60 Arg2:T73	
+T74	tool 2169 2173	EXIF
+T75	md5 2223 2255	5f358afee76f2a74b1a3443c6012b27b
+T76	tool 2310 2313	ELF
+T77	protocol 2712 2714	IP
+T78	domain_evil 2772 2785	toknowall.com
+T79	protocol 2647 2651	pDNS
+T80	time 2746 2770	between Jan and Feb 2018
+T81	tool 2892 2895	URL
+T82	time 2801 2820	2018-01-23 11:23:14
+T83	time 2821 2840	2018-02-06 05:50:32
+T84	location 2728 2734	France
+T85	domain_evil 2402 2417	photobucket.com
+T86	domain_evil 2610 2623	toknowall.com
+T87	IP_evil 2786 2800	188.165.218.31
+T88	reference_word 2288 2298	The sample
+R30	coreference Arg1:T88 Arg2:T75	
+T89	tool 2740 2743	OVH
+R31	occur_time Arg1:T78 Arg2:T80	
+R32	occur_time Arg1:T87 Arg2:T80	
+T90	tool 2994 2998	EXIF
+T91	sample_name 2922 2925	JPG
+T92	sample_name 3087 3097	update.jpg
+T93	tool 3041 3050	IrfanView
+T94	tool 3407 3411	EXIF
+T95	tool 3528 3532	EXIF
+T96	tool 3808 3811	GPS
+T97	tool 3647 3651	Exif
+T98	tool 4535 4539	EXIF
+T99	tool 5038 5042	EXIF
+T100	function 4640 4648	sscanf()
+T101	protocol 5296 5298	IP
+T102	tool 5442 5445	C&C
+T103	tool 5341 5344	C&C
+T104	IP_evil 5309 5322	217.12.202.40
+R33	part_of Arg1:T104 Arg2:T9	
+T105	security_team 5407 5418	Cisco Talos
+T106	protocol 5389 5391	IP
+T107	tool 5090 5093	GPS
+T108	tool 5205 5209	EXIF
+T109	tool 4891 4895	EXIF
+T110	reference_word 2664 2675	this domain
+R34	coreference Arg1:T110 Arg2:T86	
+R35	located Arg1:T110 Arg2:T84	
+R36	part_of Arg1:T82 Arg2:T80	
+R37	part_of Arg1:T83 Arg2:T80	
+T111	protocol 3217 3219	IP
+T112	protocol 3273 3275	IP
+T113	sub_activity 3386 3418	implements an actual EXIF parser
+R38	launch Arg1:T8 Arg2:T113	
+T114	attack_goal 3422 3450	get the required information
+R39	goal Arg1:T113 Arg2:T114	
+T115	sub_activity 3464 3496	searches for a binary value 0xE1
+T116	reference_word 3461 3463	it
+R40	coreference Arg1:T116 Arg2:T8	
+R41	launch Arg1:T116 Arg2:T115	
+T117	string 3492 3496	0xE1
+T118	string 3575 3584	0xFF 0xE1
+T119	sub_activity 3533 3586	attribute information begins with a tag “ 0xFF 0xE1 ”
+R42	launch Arg1:T95 Arg2:T119	
+T120	reference_word 3596 3598	it
+R43	coreference Arg1:T120 Arg2:T116	
+T121	reference_word 3656 3667	The malware
+R44	coreference Arg1:T121 Arg2:T120	
+T122	sub_activity 3688 3709	traverses each record
+R45	launch Arg1:T121 Arg2:T122	
+T123	sub_activity 3719 3777	finds the one with a tag ’2 5 88′ ( 0x8825 little endian )
+R46	goal Arg1:T122 Arg2:T123	
+T124	string 3745 3751	2 5 88
+T125	string 3755 3761	0x8825
+R47	coreference Arg1:T125 Arg2:T124	
+T126	tool 3826 3829	IFD
+T127	tool 3869 3872	IFD
+T128	string 4447 4463	97 30 4294967121
+T129	string 4472 4497	4294967178 140 4294967274
+T130	string 4575 4601	4296160226 deg 47′ 54.00 ”
+T131	string 4550 4572	1193143 deg 55′ 21.00″
+T132	sub_activity 4652 4690	convert these strings back to integers
+R48	goal Arg1:T100 Arg2:T132	
+T133	tool 4720 4723	GPS
+T134	protocol 4852 4854	IP
+T135	sub_activity 6810 6833	deployed router malware
+R49	launch Arg1:T62 Arg2:T135	
+R50	occur_time Arg1:T135 Arg2:T13	
+R51	occur_time Arg1:T64 Arg2:T66	
+R52	find Arg1:T63 Arg2:T12	
+R53	find Arg1:T63 Arg2:T69	
+T136	sub_activity 4961 4983	handles the byte order
+T137	reference_word 4948 4950	it
+R54	coreference Arg1:T137 Arg2:T109	
+R55	launch Arg1:T137 Arg2:T136	
+T138	sub_activity 5024 5074	traverses all EXIF records skipping them correctly
+R56	launch Arg1:T137 Arg2:T138	
+R57	part_of Arg1:T104 Arg2:T103	
+R58	part_of Arg1:T104 Arg2:T101	
+T139	tool 5421 5425	IOCs
+T140	threatActor_name 5632 5638	Sofacy
+T141	threatActor_name 5710 5722	Sofacy Group
+T142	threatActor_aliases 5739 5744	apt28
+T143	threatActor_aliases 5747 5755	sandworm
+T144	threatActor_aliases 5758 5765	x-agent
+T145	threatActor_aliases 5768 5778	pawn storm
+T146	threatActor_aliases 5781 5791	fancy bear
+T147	threatActor_aliases 5796 5802	sednit
+R59	coreference Arg1:T142 Arg2:T141	
+R60	coreference Arg1:T143 Arg2:T141	
+R61	coreference Arg1:T144 Arg2:T141	
+R62	coreference Arg1:T145 Arg2:T141	
+R63	coreference Arg1:T146 Arg2:T141	
+R64	coreference Arg1:T147 Arg2:T141	
+T148	threatActor_name 5831 5839	Sandworm
+R65	coreference Arg1:T68 Arg2:T148	
+T149	threatActor_name 5901 5907	Sofacy
+R66	find Arg1:T67 Arg2:T149	
+R67	find Arg1:T67 Arg2:T68	
+R68	use Arg1:T69 Arg2:T43	
+R69	goal Arg1:T57 Arg2:T58	

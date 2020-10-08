@@ -1,0 +1,286 @@
+T1	tool 153 173	Windows Defender ATP
+T3	time 411 424	December 2016
+T4	malware 600 606	Winnti
+T6	time 722 735	February 2016
+T8	malware 768 774	Winnti
+T9	threatActor_name 828 834	BARIUM
+T10	threatActor_name 839 843	LEAD
+R1	use Arg1:T9 Arg2:T8	
+R2	use Arg1:T10 Arg2:T8	
+T11	tool 1071 1114	Windows Defender Advanced Threat Protection
+T12	tool 1117 1137	Windows Defender ATP
+T13	threatActor_name 1173 1179	BARIUM
+T14	threatActor_name 1182 1186	LEAD
+T15	tool 1362 1382	Windows Defender ATP
+T16	tool 1611 1631	Windows Defender ATP
+T17	malware 1942 1948	Winnti
+T18	security_team 1901 1930	Microsoft Threat Intelligence
+T19	security_team 2096 2136	the Microsoft intelligent security graph
+T20	company 2188 2197	Microsoft
+T21	malware 2359 2365	Winnti
+T22	threatActor_name 2370 2376	BARIUM
+T23	threatActor_name 2381 2385	LEAD
+T24	malware 2426 2432	Winnti
+T25	threatActor_name 2439 2445	BARIUM
+T26	threatActor_name 2450 2454	LEAD
+T27	reference_word 2404 2408	they
+R3	coreference Arg1:T27 Arg2:T22	
+R4	coreference Arg1:T27 Arg2:T23	
+T28	threatActor_name 2524 2530	BARIUM
+T29	sub_activity 2553 2705	cultivating relationships with potential victims—particularly those working in Business Development or Human Resources—on various social media platforms
+T30	threatActor_name 2713 2719	BARIUM
+T31	sub_activity 2751 2837	spear-phish the victim using a variety of unsophisticated malware installation vectors
+R9	launch Arg1:T28 Arg2:T29	
+R10	launch Arg1:T30 Arg2:T31	
+T32	target_crowd 2615 2671	those working in Business Development or Human Resources
+T33	tool 2683 2705	social media platforms
+R11	attack Arg1:T28 Arg2:T32	
+R12	use Arg1:T28 Arg2:T33	
+T34	tool 2850 2883	malicious shortcut ( .lnk ) files
+T35	tool 2907 2940	compiled HTML help ( .chm ) files
+T36	tool 2946 2972	Microsoft Office documents
+T37	malware 3042 3055	Win32/Barlaiy
+T38	malware 3213 3219	Winnti
+T39	industry 3298 3315	electronic gaming
+T40	industry 3318 3328	multimedia
+T41	industry 3335 3362	Internet content industries
+T42	company 3404 3424	technology companies
+R16	attack Arg1:T30 Arg2:T39	
+R17	attack Arg1:T30 Arg2:T40	
+R18	attack Arg1:T30 Arg2:T41	
+R19	attack Arg1:T30 Arg2:T42	
+T43	OS_name 1637 1667	the Windows 10 Creators Update
+R13	coreference Arg1:T12 Arg2:T11	
+T44	malware 1310 1316	Winnti
+R5	use Arg1:T30 Arg2:T34	
+R6	use Arg1:T30 Arg2:T35	
+R14	use Arg1:T30 Arg2:T36	
+T45	threatActor_name 3455 3459	LEAD
+T46	threatActor_name 3552 3556	LEAD
+T47	company 3585 3695	Multinational , multi-industry companies involved in the manufacture of textiles , chemicals , and electronics
+T48	company 3698 3722	Pharmaceutical companies
+T49	company 3725 3759	A company in the chemical industry
+T50	target_crowd 3762 3834	University faculty specializing in aeronautical engineering and research
+T51	company 3837 3903	A company involved in the design and manufacture of motor vehicles
+T52	company 3906 3979	A cybersecurity company focusing on protecting industrial control systems
+R15	attack Arg1:T46 Arg2:T47	
+R20	attack Arg1:T46 Arg2:T48	
+R21	attack Arg1:T46 Arg2:T49	
+R22	attack Arg1:T46 Arg2:T50	
+R23	attack Arg1:T46 Arg2:T51	
+R24	attack Arg1:T46 Arg2:T52	
+T53	reference_word 2746 2750	they
+R25	coreference Arg1:T53 Arg2:T30	
+T54	attack_goal 4033 4053	steal sensitive data
+T55	threatActor_name 4008 4012	LEAD
+R26	goal Arg1:T55 Arg2:T54	
+T56	threatActor_name 4127 4131	LEAD
+T57	tool 4674 4687	SQL injection
+T58	threatActor_name 4230 4234	LEAD
+T59	reference_word 4295 4304	The group
+R28	coreference Arg1:T59 Arg2:T58	
+T60	reference_word 4391 4400	the group
+T61	tool 4423 4439	Winnti installer
+R29	use Arg1:T60 Arg2:T61	
+T62	sub_activity 4414 4460	emails a Winnti installer to potential victims
+R30	launch Arg1:T60 Arg2:T62	
+R31	coreference Arg1:T60 Arg2:T58	
+T63	threatActor_name 4582 4586	LEAD
+T64	sub_activity 4587 4800	gains access to a target by brute-forcing remote access login credentials , performing SQL injection , or exploiting unpatched web servers , and then they copy the Winnti installer directly to compromised machines
+R32	launch Arg1:T63 Arg2:T64	
+T65	security_team 4803 4822	Microsoft Analytics
+T66	malware 4834 4840	Winnti
+T67	location 4892 4896	Asia
+T68	location 4899 4905	Europe
+T69	location 4908 4915	Oceania
+T70	location 4918 4933	the Middle East
+T71	location 4940 4957	the United States
+T73	time 5046 5059	December 2016
+T75	protocol 1749 1752	C&C
+T72	protocol 3166 3169	C&C
+T74	malware 5093 5099	Winnti
+T77	malware 5257 5263	Winnti
+T78	sub_activity 5339 5385	masquerading it as a trusted , legitimate file
+T80	time 5433 5437	2015
+T81	sub_activity 5456 5554	named the implant DLL “ ASPNET_FILTER.DLL ” to disguise it as the DLL for the ASP.NET ISAPI Filter
+T83	tool 5999 6019	Windows Defender ATP
+T84	threatActor_name 6104 6108	LEAD
+T85	threatActor_name 6113 6119	BARIUM
+T86	time 6229 6242	December 2016
+T87	malware 6184 6190	Winnti
+T88	security_team 6245 6274	Microsoft Threat Intelligence
+T89	threatActor_name 6318 6322	LEAD
+T90	threatActor_name 6327 6333	BARIUM
+T91	tool 6513 6533	Windows Defender ATP
+T93	tool 6730 6750	Windows Defender ATP
+T94	tool 6906 6926	Windows Defender ATP
+T95	malware 7508 7514	Winnti
+T96	tool 7582 7602	Windows Defender ATP
+T97	tool 7695 7715	Windows Defender ATP
+T99	company 374 397	industrial conglomerate
+T100	reference_word 430 432	it
+R34	coreference Arg1:T100 Arg2:T99	
+T101	sample_function 649 709	giving them persistent access to the conglomerate ’s network
+R36	goal Arg1:T4 Arg2:T101	
+T5	tool 1552 1580	centralized response options
+R35	part_of Arg1:T5 Arg2:T16	
+R37	part_of Arg1:T16 Arg2:T43	
+T7	sample_function 1685 1705	quickly stop threats
+R38	goal Arg1:T5 Arg2:T7	
+R7	use Arg1:T27 Arg2:T24	
+T102	tool 3087 3110	social network profiles
+T103	tool 3113 3149	collaborative document editing sites
+T104	tool 3156 3161	blogs
+T105	sample_function 3224 3241	persistent access
+R8	goal Arg1:T38 Arg2:T105	
+T92	tool 6625 6651	security operations center
+T106	tool 6654 6657	SOC
+R27	coreference Arg1:T106 Arg2:T92	
+T107	attack_goal 4137 4211	steals code-signing certificates to sign its malware in subsequent attacks
+R39	goal Arg1:T56 Arg2:T107	
+T108	tool 4714 4725	web servers
+T109	malware 4751 4757	Winnti
+T110	tool 4630 4660	emote access login credentials
+T111	company 947 956	Microsoft
+R40	use Arg1:T63 Arg2:T110	
+R41	use Arg1:T63 Arg2:T57	
+R42	use Arg1:T63 Arg2:T108	
+R43	use Arg1:T63 Arg2:T109	
+T113	time 4965 4980	last six months
+T114	person 5144 5182	Microsoft Threat Intelligence analysts
+T76	tool 5201 5217	machine learning
+R44	use Arg1:T114 Arg2:T76	
+T115	person 5242 5251	attackers
+R45	use Arg1:T115 Arg2:T77	
+T79	sample_function 5267 5297	maintain access to web servers
+R46	goal Arg1:T77 Arg2:T79	
+T116	sample_function 5305 5335	hid the implant in plain sight
+R47	goal Arg1:T78 Arg2:T116	
+R48	launch Arg1:T115 Arg2:T78	
+T117	person 5446 5455	attackers
+T118	sample_name 5480 5497	ASPNET_FILTER.DLL
+R49	launch Arg1:T117 Arg2:T81	
+T112	person 5811 5832	Microsoft researchers
+T119	tool 5855 5872	anomaly detection
+T120	tool 5877 5904	supervised machine learning
+R50	use Arg1:T112 Arg2:T119	
+R51	use Arg1:T112 Arg2:T120	
+T82	sample_function 5908 5996	reduce the data set and separate meaningful , malware-related anomalies from benign data
+R52	goal Arg1:T119 Arg2:T82	
+R53	goal Arg1:T120 Arg2:T82	
+T121	person 6026 6056	network security professionals
+T122	sample_function 6547 6613	monitors protected systems for such indicators of hostile activity
+T123	sample_function 6618 6687	alerts security operations center ( SOC ) personnel to their presence
+R54	part_of Arg1:T122 Arg2:T91	
+R55	part_of Arg1:T123 Arg2:T91	
+T124	sample_function 6756 6834	features a short summary of the group ’s history , goals , methods , and tools
+T125	sample_function 6842 6874	links to extensive documentation
+R56	part_of Arg1:T124 Arg2:T93	
+R57	part_of Arg1:T125 Arg2:T93	
+T126	sample_function 6946 6982	detecting previously unknown attacks
+R58	part_of Arg1:T126 Arg2:T94	
+T127	sample_function 7376 7505	perform this persistence technique modify the necessary registry keys in ways that do not fit the profile of a legitimate program
+T128	sample_function 7255 7306	register themselves as services during installation
+R59	part_of Arg1:T128 Arg2:T95	
+R60	part_of Arg1:T127 Arg2:T95	
+T129	sample_function 7614 7637	raise behavioral alerts
+R61	part_of Arg1:T129 Arg2:T96	
+T130	sample_function 7716 7832	uses the intelligent security graph to differentiate between suspicious and benign behavior before generating alerts
+R62	part_of Arg1:T130 Arg2:T97	
+T131	sample_function 7643 7692	improve coverage while minimizing false positives
+R63	goal Arg1:T97 Arg2:T131	
+T132	reference_word 7835 7837	It
+R64	coreference Arg1:T132 Arg2:T97	
+T133	sample_function 7838 7988	considers the age of the file , its global prevalence , and the presence and validity of a digital signature along with the method of service creation
+R65	part_of Arg1:T133 Arg2:T132	
+T134	tool 8114 8134	Windows Defender ATP
+T135	sample_function 8135 8179	provides rich , visualized technical context
+R66	part_of Arg1:T135 Arg2:T134	
+T136	person 8210 8223	SOC personnel
+T137	attack_activity 8423 8442	Winnti installation
+T138	tool 8381 8401	Windows Defender ATP
+T139	sub_activity 8449 8481	an installer drops a DLL to disk
+T140	sub_activity 8484 8512	loads the DLL using rundll32
+T141	sub_activity 8515 8540	sets the DLL as a service
+T142	sub_activity 8547 8588	saves a copy of itself in C:\Windows\Help
+R67	part_of Arg1:T139 Arg2:T137	
+R68	part_of Arg1:T140 Arg2:T137	
+R69	part_of Arg1:T141 Arg2:T137	
+R70	part_of Arg1:T142 Arg2:T137	
+T143	sample_function 8410 8442	presents the Winnti installation
+R71	part_of Arg1:T138 Arg2:T143	
+T144	tool 8591 8611	Windows Defender ATP
+T145	sample_function 8612 8702	displays these activities as process trees in a machine timeline for the infected computer
+R72	part_of Arg1:T145 Arg2:T144	
+T146	person 8705 8713	Analysts
+T147	sample_function 8725 8770	extract detailed information from these trees
+T148	OS_name 9035 9065	The Windows 10 Creators Update
+T149	tool 9101 9121	Windows Defender ATP
+R73	part_of Arg1:T149 Arg2:T148	
+T150	person 9140 9152	SOC personne
+T151	sample_function 9132 9212	provide SOC personnel with options for immediate mitigation of a detected threat
+R74	goal Arg1:T149 Arg2:T151	
+T153	person 9221 9229	intruder
+T154	tool 65 85	Windows Defender ATP
+T155	tool 9280 9300	Windows Defender ATP
+T156	sub_activity 9230 9300	compromises a computer that has been onboarded to Windows Defender ATP
+R76	launch Arg1:T153 Arg2:T156	
+T157	person 9303 9316	SOC personnel
+T158	sample_function 9321 9519	isolate the computer from the network , blocking command and control of the implant and preventing attackers from installing additional malware and moving laterally to other computers in the network
+R77	use Arg1:T157 Arg2:T155	
+R78	goal Arg1:T155 Arg2:T158	
+T159	malware 7549 7555	Winnti
+T160	sample_function 9534 9596	connectivity to the Windows Defender ATP service is maintained
+R79	goal Arg1:T155 Arg2:T160	
+T161	location 562 568	German
+T162	person 9635 9648	SOC personnel
+T163	sample_function 9653 9715	direct the infected machine to collect live investigation data
+T164	company 1901 1910	Microsoft
+R80	use Arg1:T162 Arg2:T155	
+T165	company 2100 2109	Microsoft
+R81	goal Arg1:T155 Arg2:T163	
+T166	malware 9923 9937	Winnti implant
+T167	threatActor_name 10001 10007	BARIUM
+T168	protocol 9730 9733	DNS
+T169	threatActor_name 9992 9996	LEAD
+T170	attack_activity 10026 10052	large-scale spear-phishing
+T171	person 10078 10091	SOC personnel
+T172	reference_word 10161 10173	these groups
+R82	coreference Arg1:T172 Arg2:T167	
+R83	coreference Arg1:T172 Arg2:T169	
+T173	tool 10208 10228	Windows Defender ATP
+T174	sample_function 10243 10292	blocking the implant across the entire enterprise
+T175	sample_function 10295 10346	stopping large-scale intrusions in the early stages
+R84	part_of Arg1:T174 Arg2:T173	
+R85	goal Arg1:T173 Arg2:T175	
+T176	tool 10358 10401	enhanced post-breach detection capabilities
+T177	tool 10405 10425	Windows Defender ATP
+R86	part_of Arg1:T176 Arg2:T177	
+T178	person 10428 10441	SOC personnel
+T179	sample_function 10454 10497	reduce this period to hours or even minutes
+R87	use Arg1:T178 Arg2:T176	
+R88	goal Arg1:T176 Arg2:T179	
+T180	person 10559 10567	attacker
+T181	tool 10594 10614	Windows Defender ATP
+T182	sample_function 10615 10695	provides extensive information about activity groups responsible for the attacks
+T183	sample_function 10698 10809	enabling customers to understand aspects of the attack that may not be obtained by network and endpoint sensors
+R89	part_of Arg1:T182 Arg2:T181	
+R90	goal Arg1:T181 Arg2:T183	
+T184	tool 10896 10927	relevant visualized information
+T185	person 10930 10938	analysts
+T186	sample_function 10951 10994	study malware behavior on impacted machines
+R91	use Arg1:T185 Arg2:T184	
+R92	goal Arg1:T184 Arg2:T186	
+T187	OS_name 11093 11108	Creators Update
+T188	tool 11111 11131	Windows Defender ATP
+T189	sample_function 11137 11190	provide additional capabilities for detecting threats
+T190	malware 11199 11205	Winnti
+T191	sample_function 11219 11247	centralized response options
+T192	sample_function 11306 11361	enable fast containment of known attack jump off points
+R93	part_of Arg1:T189 Arg2:T188	
+R94	part_of Arg1:T191 Arg2:T188	
+R95	goal Arg1:T188 Arg2:T190	
+R96	goal Arg1:T188 Arg2:T192	
+T193	location 34 40	German
+T194	location 122 128	German
+R97	occur_time Arg1:T4 Arg2:T6	

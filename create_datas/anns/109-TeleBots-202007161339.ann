@@ -1,0 +1,421 @@
+T1	threatActor_name 0 8	TeleBots
+T2	location 49 56	Ukraine
+R1	attack Arg1:T1 Arg2:T2	
+T3	malware 203 208	Petya
+T4	location 395 402	Ukraine
+T5	malware 450 461	Diskcoder.C
+T6	malware 468 474	ExPetr
+T7	malware 477 485	PetrWrap
+T8	malware 488 493	Petya
+T9	malware 499 507	NotPetya
+R2	coreference Arg1:T6 Arg2:T5	
+R3	coreference Arg1:T7 Arg2:T5	
+R4	coreference Arg1:T8 Arg2:T5	
+R5	coreference Arg1:T9 Arg2:T5	
+T10	time 585 598	December 2016
+T11	company 683 687	ESET
+T12	threatActor_name 705 713	TeleBots
+T13	industry 751 773	financial institutions
+T14	OS_name 780 785	Linux
+T15	malware 801 809	KillDisk
+T16	reference_word 831 836	group
+R6	coreference Arg1:T16 Arg2:T12	
+R7	use Arg1:T15 Arg2:T14	
+R8	attack Arg1:T12 Arg2:T13	
+T17	person 688 699	researchers
+R9	part_of Arg1:T17 Arg2:T11	
+R10	release_time Arg1:T11 Arg2:T10	
+R11	use Arg1:T12 Arg2:T15	
+T18	reference_word 843 848	group
+R12	coreference Arg1:T18 Arg2:T16	
+T19	location 906 913	Ukraine
+T20	OS_name 886 902	computer systems
+R13	attack Arg1:T18 Arg2:T20	
+R14	part_of Arg1:T20 Arg2:T19	
+T21	OS_name 947 970	critical infrastructure
+T22	reference_word 989 994	group
+R15	coreference Arg1:T22 Arg2:T18	
+T23	malware 1029 1040	BlackEnergy
+T24	time 1076 1089	December 2015
+T25	location 1107 1114	Ukraine
+R16	attack Arg1:T23 Arg2:T25	
+R17	occur_time Arg1:T23 Arg2:T24	
+T26	attack_activity 1090 1103	power outages
+R18	launch Arg1:T23 Arg2:T26	
+T27	threatActor_name 1157 1165	TeleBots
+T28	malware 1188 1196	KillDisk
+T29	attack_goal 1208 1276	overwrite files with specific file extensions on the victims ’ disks
+R19	attack Arg1:T28 Arg2:T29	
+T30	threatActor_name 1374 1382	TeleBots
+T31	malware 1395 1403	KillDisk
+T32	time 1438 1451	December 2016
+T33	attack_activity 1493 1518	overwrites targeted files
+R20	use Arg1:T30 Arg2:T31	
+R21	launch Arg1:T31 Arg2:T33	
+T34	person 1701 1715	cybersaboteurs
+T35	malware 1727 1735	KillDisk
+R23	part_of Arg1:T34 Arg2:T35	
+T36	reference_word 1853 1862	attackers
+R24	coreference Arg1:T36 Arg2:T34	
+T37	attack_goal 2045 2079	cause damage to attacked companies
+T38	threatActor_name 2096 2104	TeleBots
+T39	time 2085 2089	2017
+R25	occur_time Arg1:T38 Arg2:T39	
+T40	time 2209 2231	January and March 2017
+T41	threatActor_name 2236 2244	TeleBots
+T42	location 2289 2296	Ukraine
+T43	company 2269 2285	software company
+R26	part_of Arg1:T43 Arg2:T42	
+R27	occur_time Arg1:T41 Arg2:T40	
+R28	attack Arg1:T41 Arg2:T43	
+T44	company 2314 2321	M.E.Doc
+T45	tool 2338 2349	VPN tunnels
+T46	industry 2413 2435	financial institutions
+R29	use Arg1:T41 Arg2:T45	
+R30	attack Arg1:T41 Arg2:T46	
+T47	threatActor_name 2472 2480	TeleBots
+T48	threatActor_name 2639 2647	TeleBots
+T49	program_language 2676 2692	Python/TeleBot.A
+T50	program_language 2720 2726	Python
+T51	program_language 2734 2738	Rust
+R31	use Arg1:T48 Arg2:T49	
+T52	malware 2839 2855	Telegram Bot API
+T53	program_language 2982 2985	VBS
+T54	program_language 3009 3019	script2exe
+T55	program_language 3132 3135	VBS
+T56	IP_evil 3168 3183	130.185.250.171
+T57	domain_evil 3294 3313	transfinance.com.ua
+T58	tool 3403 3413	CredRaptor
+T59	reference_word 3367 3375	attacker
+R32	part_of Arg1:T59 Arg2:T48	
+T60	tool 3437 3445	Plainpwd
+T61	tool 3522 3543	SysInternals ’ PsExec
+R33	use Arg1:T59 Arg2:T58	
+R34	use Arg1:T59 Arg2:T60	
+R35	use Arg1:T59 Arg2:T61	
+T62	threatActor_name 3639 3647	TeleBots
+T63	tool 3682 3708	stolen Windows credentials
+T64	tool 3713 3734	SysInternals ’ PsExec
+R36	use Arg1:T62 Arg2:T63	
+R37	use Arg1:T62 Arg2:T64	
+T65	company 3773 3777	ESET
+T66	malware 3790 3809	Win32/Filecoder.NKH
+T67	reference_word 3833 3843	ransomware
+R38	coreference Arg1:T67 Arg2:T66	
+T68	attack_goal 3857 3862	files
+R39	attack Arg1:T67 Arg2:T68	
+T69	encryption_algo 3922 3929	AES-128
+T70	encryption_algo 3934 3942	RSA-1024
+R40	use Arg1:T67 Arg2:T69	
+R41	use Arg1:T67 Arg2:T70	
+T71	reference_word 3960 3967	malware
+R42	coreference Arg1:T71 Arg2:T67	
+T72	sample_name 3977 3986	.xcrypted
+T73	sub_activity 3968 4028	adds the .xcrypted file extension to already-encrypted files
+R43	launch Arg1:T71 Arg2:T73	
+T74	malware 4062 4079	filecoder malware
+T75	sample_name 4101 4110	readme.tx
+T76	sub_activity 4080 4099	creates a text file
+R44	launch Arg1:T74 Arg2:T76	
+T77	email_evil 4162 4188	openy0urm1nd@protonmail.ch
+T78	threatActor_name 4226 4234	TeleBots
+T79	OS_name 4246 4251	Linux
+R45	use Arg1:T78 Arg2:T79	
+T80	company 4319 4323	ESET
+T81	malware 4336 4354	Python/Filecoder.R
+T82	program_language 4396 4402	Python
+T83	reference_word 4436 4445	attackers
+R46	part_of Arg1:T83 Arg2:T78	
+T84	encryption_algo 4553 4561	RSA-2048
+T85	encryption_algo 4566 4573	AES-256
+R47	use Arg1:T83 Arg2:T84	
+R48	use Arg1:T83 Arg2:T85	
+T86	email_evil 4686 4712	openy0urm1nd@protonmail.ch
+T87	time 4718 4729	18 May 2017
+T88	malware 4797 4820	Win32/Filecoder.AESNI.C
+T89	reference_word 4843 4848	XData
+R49	coreference Arg1:T89 Arg2:T88	
+R50	first_found_time Arg1:T88 Arg2:T87	
+T90	location 4890 4897	Ukraine
+T91	tool 4960 4968	LiveGrid
+T92	company 5035 5042	M.E.Doc
+T93	malware 5113 5136	Win32/Filecoder.AESNI.C
+T94	tool 5312 5324	Mimikatz DLL
+T95	reference_word 5288 5295	malware
+R51	coreference Arg1:T95 Arg2:T93	
+R52	use Arg1:T95 Arg2:T94	
+T96	attack_goal 5341 5412	extract Windows account credentials from the memory of a compromised PC
+T97	tool 5500 5521	SysInternals ’ PsExec
+R53	use Arg1:T95 Arg2:T97	
+T98	location 5862 5869	Ukraine
+T99	company 5881 5885	ESET
+T100	malware 5918 5939	Win32/Filecoder.AESNI
+T101	counter_measure 5886 5913	published a decryption tool
+T102	malware 6062 6067	Petya
+T103	time 6085 6099	27 June , 2017
+R54	occur_time Arg1:T102 Arg2:T103	
+T104	location 6206 6213	Ukraine
+T105	malware 6380 6401	Win32/Diskcoder.Petya
+T106	reference_word 6484 6490	ExPetr
+T107	reference_word 6493 6501	PetrWrap
+T108	reference_word 6504 6509	Petya
+T109	reference_word 6515 6523	NotPetya
+R55	coreference Arg1:T106 Arg2:T105	
+R56	coreference Arg1:T107 Arg2:T105	
+R57	coreference Arg1:T108 Arg2:T105	
+R58	coreference Arg1:T109 Arg2:T105	
+T110	malware 6556 6561	Petya
+T111	malware 6575 6586	Diskcoder.C
+T112	malware 6879 6890	Diskcoder.C
+T113	malware 6933 6938	Petya
+T114	tool 6990 6996	CHKDSK
+T115	tool 7052 7059	CHKDISK
+T116	malware 7065 7076	Diskcoder.C
+T117	encryption_algo 7490 7497	AES-128
+T118	encryption_algo 7502 7510	RSA-2048
+R59	use Arg1:T116 Arg2:T117	
+R60	use Arg1:T116 Arg2:T118	
+T119	time 8145 8158	December 2016
+T120	malware 8116 8124	KillDisk
+T121	reference_word 7639 7646	malware
+R61	coreference Arg1:T121 Arg2:T116	
+R62	occur_time Arg1:T121 Arg2:T119	
+T122	vulnerability_cve 8239 8250	EternalBlue
+T123	reference_word 8178 8185	malware
+R63	use Arg1:T123 Arg2:T122	
+T124	tool 8276 8300	DoublePulsar kernel-mode
+R64	use Arg1:T122 Arg2:T124	
+T125	malware 8352 8366	WannaCryptor.D
+T126	malware 8380 8391	Diskcoder.C
+T127	malware 8425 8448	Win32/Filecoder.AESNI.C
+T128	reference_word 8455 8460	XData
+R65	coreference Arg1:T128 Arg2:T127	
+T129	tool 8576 8597	SysInternals ’ PsExec
+T130	tool 8509 8517	Mimikatz
+R66	use Arg1:T127 Arg2:T130	
+R67	use Arg1:T127 Arg2:T129	
+T131	malware 8823 8835	WannaCryptor
+T132	malware 8881 8892	Diskcoder.C
+T133	vulnerability_cve 8850 8861	EternalBlue
+R68	use Arg1:T132 Arg2:T133	
+T134	attack_goal 8898 8954	against computers within the local network address space
+T135	location 9006 9013	Ukraine
+T136	location 9154 9161	Ukraine
+T137	malware 9169 9180	Diskcoder.C
+T138	malware 9185 9208	Win32/Filecoder.AESNI.C
+T139	tool 9214 9235	a supply-chain attack
+R69	use Arg1:T137 Arg2:T139	
+R70	use Arg1:T138 Arg2:T139	
+T140	malware 9348 9355	M.E.Doc
+T141	company 9429 9436	M.E.Doc
+T142	attack_activity 9516 9529	spearphishing
+T143	reference_word 9495 9504	attackers
+R71	use Arg1:T143 Arg2:T142	
+T144	malware 9698 9721	Win32/Filecoder.AESNI.C
+T145	malware 9842 9853	Diskcoder.C
+T146	sub_activity 9952 10073	Using access to this server , attackers pushed a malicious update that was applied automatically without user interaction
+T147	location 10107 10114	Ukraine
+R72	attack Arg1:T145 Arg2:T147	
+T148	malware 10235 10246	Diskcoder.C
+T149	company 10249 10253	ESET
+T150	tool 10350 10353	PHP
+T151	domain_evil 10387 10403	medoc_online.php
+T152	malware 10437 10444	M.E.Doc
+T153	counter_measure 10327 10362	identified a malicious PHP backdoor
+T154	protocol 10418 10421	FTP
+T155	protocol 10491 10495	HTTP
+T156	malware 10649 10660	Diskcoder.C
+T157	malware 10665 10688	Win32/Filecoder.AESNI.C
+T158	company 10973 10980	M.E.Doc
+T159	tool 11013 11016	VBS
+T160	threatActor_name 11038 11046	TeleBots
+R73	use Arg1:T160 Arg2:T159	
+T161	domain_evil 11124 11140	bankstat.kiev.ua
+T162	malware 11161 11172	Diskcoder.C
+T163	IP_evil 11227 11235	10.0.0.1
+T164	threatActor_name 11240 11248	TeleBots
+T165	location 11322 11329	Ukraine
+R74	attack Arg1:T164 Arg2:T165	
+T166	attack_activity 11343 11363	spearphishing emails
+R75	use Arg1:T164 Arg2:T166	
+T167	threatActor_name 11508 11516	Telebots
+T168	industry 11543 11558	financial secto
+R76	goal Arg1:T167 Arg2:T168	
+T169	location 11617 11624	Ukraine
+T170	attack_goal 11603 11624	businesses in Ukraine
+T171	threatActor_name 11747 11755	TeleBots
+T172	threatActor_name 11781 11789	TeleBots
+T173	threatActor_name 11814 11822	TeleBots
+T174	threatActor_name 11847 11855	TeleBots
+T175	threatActor_name 11880 11888	TeleBots
+T176	threatActor_name 11920 11928	TeleBots
+T177	threatActor_name 11958 11966	TeleBots
+T178	threatActor_name 11997 12005	TeleBots
+T179	threatActor_name 12041 12049	TeleBots
+T180	threatActor_name 12081 12089	TeleBots
+T181	threatActor_name 12119 12127	TeleBots
+T182	threatActor_name 12168 12176	TeleBots
+T183	threatActor_name 12217 12225	TeleBots
+T184	threatActor_name 12275 12283	TeleBots
+T185	threatActor_name 12328 12336	TeleBots
+T186	threatActor_name 12393 12401	TeleBots
+T187	threatActor_name 12502 12510	TeleBots
+T188	threatActor_name 12556 12564	TeleBots
+T189	threatActor_name 12610 12618	TeleBots
+T190	threatActor_name 12664 12672	TeleBots
+T191	threatActor_name 12718 12726	TeleBots
+T192	threatActor_name 12772 12780	TeleBots
+T193	threatActor_name 12826 12834	TeleBots
+T194	threatActor_name 12880 12888	TeleBots
+T195	threatActor_name 12934 12942	TeleBots
+T196	threatActor_name 12988 12996	TeleBots
+T197	threatActor_name 13042 13050	TeleBots
+T198	threatActor_name 13096 13104	TeleBots
+T199	threatActor_name 13150 13158	TeleBots
+T200	threatActor_name 13204 13212	TeleBots
+T201	threatActor_name 13258 13266	TeleBots
+T202	threatActor_name 13312 13320	TeleBots
+T203	threatActor_name 13366 13374	TeleBots
+T204	threatActor_name 13420 13428	TeleBots
+T205	threatActor_name 13474 13482	TeleBots
+T206	threatActor_name 13528 13536	TeleBots
+T207	threatActor_name 13582 13590	TeleBots
+T208	threatActor_name 13636 13644	TeleBots
+T209	threatActor_name 13690 13698	TeleBots
+T210	threatActor_name 14122 14130	TeleBots
+T211	threatActor_name 14068 14076	TeleBots
+T212	threatActor_name 14014 14022	TeleBots
+T213	threatActor_name 13960 13968	TeleBots
+T214	threatActor_name 13906 13914	TeleBots
+T215	threatActor_name 13852 13860	TeleBots
+T216	threatActor_name 13798 13806	TeleBots
+T217	threatActor_name 13744 13752	TeleBots
+T218	domain_evil 12228 12247	transfinance.com.ua
+T219	IP_evil 12255 12270	130.185.250.171
+T220	domain_evil 12286 12302	bankstat.kiev.ua
+T221	domain_evil 12339 12367	www.capital-investing.com.ua
+T222	domain 12404 12420	api.telegram.org
+T223	IP 12428 12443	149.154.167.200
+T224	IP 12446 12461	149.154.167.197
+T225	IP 12464 12479	149.154.167.198
+T226	IP 12482 12497	149.154.167.199
+T227	IP_evil 12375 12388	82.221.131.52
+T228	IP_evil 12310 12323	82.221.128.27
+T229	string 1915 1918	BTC
+T230	string 6316 6319	MBR
+T231	string 6611 6614	MBR
+T232	string 6867 6870	MBR
+T233	string 7140 7143	MBR
+T234	string 7305 7308	MBR
+T235	string 7441 7444	MBR
+T236	string 9089 9092	VPN
+T237	malware 11758 11778	Win32/TeleBot trojan
+T238	malware 11792 11811	VBS/Agent.BB trojan
+T239	malware 11825 11844	VBS/Agent.BD trojan
+R77	part_of Arg1:T237 Arg2:T171	
+R78	part_of Arg1:T238 Arg2:T172	
+R79	part_of Arg1:T239 Arg2:T173	
+T240	malware 11858 11877	VBS/Agent.BE trojan
+R80	part_of Arg1:T240 Arg2:T174	
+T241	malware 11891 11917	Win32/PSW.Agent.ODE trojan
+R81	part_of Arg1:T241 Arg2:T175	
+T242	malware 11931 11955	Win64/PSW.Agent.K trojan
+R82	part_of Arg1:T242 Arg2:T176	
+T243	malware 11969 11994	Python/Filecoder.R trojan
+T244	malware 12008 12038	Win32/Filecoder.AESNI.C trojan
+T245	malware 12052 12078	Win32/Filecoder.NKH trojan
+T246	malware 12092 12116	Win32/Diskcoder.C trojan
+T247	malware 12130 12165	Win64/Riskware.Mimikatz application
+T248	malware 12179 12214	Win32/RiskWare.Mimikatz application
+R83	part_of Arg1:T243 Arg2:T177	
+R84	part_of Arg1:T244 Arg2:T178	
+R85	part_of Arg1:T245 Arg2:T179	
+R86	part_of Arg1:T246 Arg2:T180	
+R87	part_of Arg1:T247 Arg2:T181	
+R88	part_of Arg1:T248 Arg2:T182	
+R89	part_of Arg1:T218 Arg2:T183	
+R90	part_of Arg1:T220 Arg2:T184	
+R91	part_of Arg1:T221 Arg2:T185	
+R92	use Arg1:T186 Arg2:T222	
+R93	coreference Arg1:T219 Arg2:T218	
+R94	coreference Arg1:T228 Arg2:T220	
+R95	coreference Arg1:T227 Arg2:T221	
+R96	coreference Arg1:T223 Arg2:T222	
+R97	coreference Arg1:T224 Arg2:T222	
+R98	coreference Arg1:T225 Arg2:T222	
+R99	coreference Arg1:T226 Arg2:T222	
+T249	sha2 12513 12553	1557E59985FAAB8EE3630641378D232541A8F6F9
+T250	sha2 12567 12607	31098779CE95235FED873FF32BB547FFF02AC2F5
+T251	sha2 14133 14173	D297281C2BF03CE2DE2359F0CE68F16317BF0A86
+T252	sha2 14079 14119	34F917AABA5684FBE56D3C57D48EF2A1AA7CF06D
+T253	sha2 14025 14065	D2C8D76B1B97AE4CB57D0D8BE739586F82043DBD
+R100	part_of Arg1:T251 Arg2:T210	
+R101	part_of Arg1:T252 Arg2:T211	
+R102	part_of Arg1:T253 Arg2:T212	
+T254	sha2 13971 14011	9C694094BCBEB6E87CD8DD03B80B48AC1041ADC9
+T255	sha2 13917 13957	BDD2ECF290406B8A09EB01016C7658A283C407C3
+T256	sha2 13863 13903	AF07AB5950D35424B1ECCC3DD0EEBC05AE7DDB5E
+T257	sha2 13809 13849	1C69F2F7DEE471B1369BF2036B94FDC8E4EDA03E
+T258	sha2 13755 13795	FC68089D1A7DFB2EB4644576810068F7F451D5AA
+T259	sha2 13701 13741	EE9DC32621F52EDC857394E4F509C7D2559DA26B
+T260	sha2 13647 13687	EE275908790F63AFCD58E6963DC255A54FD7512A
+T261	sha2 13593 13633	EAEDC201D83328AF6A77AF3B1E7C4CAC65C05A88
+T262	sha2 13539 13579	77C1C31AD4B9EBF5DB77CC8B9FE9782350294D70
+T263	sha2 13485 13525	759DCDDDA26CF2CC61628611CF14CFABE4C27423
+T264	sha2 13431 13471	8D379585E0A9DB4C65450622CED26C108DC694AB
+T265	sha2 13377 13417	5251EDD77D46511100FEF7EBAE10F633C1C5FC53
+T266	sha2 13323 13363	A4F2FF043693828A46321CCB11C5513F73444E34
+T267	sha2 13269 13309	F4068E3528D7232CCC016975C89937B3C54AD0D1
+T268	sha2 13215 13255	4EAAC7CFBAADE00BB526E6B52C43A45AA13FD82B
+T269	sha2 13161 13201	38E2855E11E353CEDF9A8A4F2F2747F1C5C07FCF
+T270	sha2 13107 13147	56C03D8E43F50568741704AEE482704A4F5005AD
+T271	sha2 12621 12661	CF7B558726527551CDD94D71F7F21E2757ECD109
+T272	sha2 12675 12715	91D955D6AC6264FBD4324DB2202F68D097DEB241
+T273	sha2 12729 12769	DCF47141069AECF6291746D4CDF10A6482F2EE2B
+T274	sha2 12783 12823	4CEA7E552C82FA986A8D99F9DF0EA04802C5AB5D
+T275	sha2 12837 12877	4134AE8F447659B465B294C131842009173A786B
+T276	sha2 12891 12931	698474A332580464D04162E6A75B89DE030AA768
+T277	sha2 12945 12985	00141A5F0B269CE182B7C4AC06C10DEA93C91664
+T278	sha2 12999 13039	271023936A084F52FEC50130755A41CD17D6B3B1
+T279	sha2 13053 13093	D7FB7927E19E483CD0F58A8AD4277686B2669831
+R103	part_of Arg1:T249 Arg2:T187	
+T280	protocol 3154 3157	C&C
+R104	part_of Arg1:T250 Arg2:T188	
+R105	part_of Arg1:T271 Arg2:T189	
+R106	part_of Arg1:T272 Arg2:T190	
+R107	part_of Arg1:T273 Arg2:T191	
+R108	part_of Arg1:T274 Arg2:T192	
+R109	part_of Arg1:T275 Arg2:T193	
+R110	part_of Arg1:T276 Arg2:T194	
+R111	part_of Arg1:T277 Arg2:T195	
+R112	part_of Arg1:T278 Arg2:T196	
+R113	part_of Arg1:T279 Arg2:T197	
+R114	part_of Arg1:T270 Arg2:T198	
+R115	part_of Arg1:T269 Arg2:T199	
+R116	part_of Arg1:T268 Arg2:T200	
+R117	part_of Arg1:T267 Arg2:T201	
+R118	part_of Arg1:T266 Arg2:T202	
+R119	part_of Arg1:T265 Arg2:T203	
+R120	part_of Arg1:T264 Arg2:T204	
+T281	company 6999 7008	Microsoft
+R121	part_of Arg1:T263 Arg2:T205	
+R122	part_of Arg1:T262 Arg2:T206	
+R123	part_of Arg1:T261 Arg2:T207	
+R124	part_of Arg1:T260 Arg2:T208	
+R125	part_of Arg1:T259 Arg2:T209	
+R126	part_of Arg1:T258 Arg2:T217	
+R127	part_of Arg1:T257 Arg2:T216	
+R128	part_of Arg1:T256 Arg2:T215	
+R129	part_of Arg1:T255 Arg2:T214	
+R130	part_of Arg1:T254 Arg2:T213	
+R131	attack Arg1:T3 Arg2:T4	
+R132	use Arg1:T27 Arg2:T28	
+T282	malware 2621 2629	backdoor
+R133	part_of Arg1:T282 Arg2:T49	
+T283	malware 2816 2824	backdoor
+R134	use Arg1:T283 Arg2:T52	
+T284	malware 2950 2958	backdoor
+R135	use Arg1:T284 Arg2:T54	
+T285	malware 3136 3144	backdoor
+T286	location 5099 5106	Ukraine
+R22	occur_time Arg1:T31 Arg2:T32	

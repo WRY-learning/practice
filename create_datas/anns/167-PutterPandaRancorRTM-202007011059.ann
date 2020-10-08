@@ -1,0 +1,30 @@
+T1	threatActor_name 81 93	Putter Panda
+T2	threatActor_aliases 96 100	APT2
+T3	threatActor_aliases 103 112	MSUpdater
+T4	threatActor_name 115 127	Putter Panda
+T6	threatActor_name 265 271	Rancor
+T7	threatActor_name 359 365	Rancor
+T9	threatActor_name 447 450	RTM
+T10	time 512 516	2015
+R6	first_found_time Arg1:T9 Arg2:T10	
+T12	malware 635 641	Trojan
+T11	location 583 615	Russia and neighboring countries
+T13	tool 371 398	politically-motivated lures
+R5	use Arg1:T7 Arg2:T13	
+T14	government 182 262	Unit 61486 of the 12th Bureau of the PLA ’s 3rd General Staff Department ( GSD )
+T18	threatActor_name 661 664	RTM
+T19	target_crowd 548 579	users of remote banking systems
+R11	attack Arg1:T9 Arg2:T19	
+T20	attack_goal 420 444	open malicious documents
+R12	attack Arg1:T7 Arg2:T20	
+T21	reference_word 618 627	The group
+R13	coreference Arg1:T21 Arg2:T9	
+R16	part_of Arg1:T4 Arg2:T14	
+T8	location 334 356	South East Asia region
+R4	attack Arg1:T6 Arg2:T8	
+T5	location 133 140	Chinese
+R3	located Arg1:T4 Arg2:T5	
+R15	attack Arg1:T9 Arg2:T11	
+R1	coreference Arg1:T2 Arg2:T1	
+R2	coreference Arg1:T3 Arg2:T1	
+R7	use Arg1:T21 Arg2:T12	

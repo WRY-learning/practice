@@ -1,0 +1,68 @@
+T1	threatActor_name 83 96	Sandworm Team
+T2	threatActor_aliases 99 106	Quedagh
+T3	threatActor_aliases 109 120	VOODOO BEAR
+T4	threatActor_name 123 136	Sandworm Team
+T5	location 142 149	Russian
+T6	time 210 214	2009
+R1	located Arg1:T4 Arg2:T5	
+T7	reference_word 217 226	The group
+T8	location 246 253	Russian
+T9	threatActor_name 272 285	Sandworm Team
+T10	threatActor_name 407 420	Sandworm Team
+T11	threatActor_name 490 503	Scarlet Mimic
+T12	reference_word 568 578	This group
+T13	government 698 716	Chinese government
+T14	threatActor_name 776 789	Scarlet Mimic
+T15	threatActor_name 866 873	Silence
+T16	location 1041 1047	Russia
+T17	location 1050 1057	Ukraine
+T18	location 1060 1067	Belarus
+T19	location 1070 1080	Azerbaijan
+T20	location 1083 1089	Poland
+T21	location 1094 1104	Kazakhstan
+T22	time 483 487	2015
+T23	time 1000 1009	June 2016
+T24	reference_word 972 981	The group
+R2	first_found_time Arg1:T24 Arg2:T23	
+T25	reference_word 1012 1017	Their
+T26	reference_word 1107 1111	They
+T29	industry 444 467	Ukrainian energy sector
+T30	attack_activity 540 565	minority rights activists
+R5	attack Arg1:T11 Arg2:T30	
+T31	threatActor_name 794 806	Putter Panda
+T32	target_crowd 1164 1216	Russian Central Bank 's Automated Workstation Client
+R6	attack Arg1:T26 Arg2:T32	
+R7	coreference Arg1:T2 Arg2:T1	
+R8	coreference Arg1:T3 Arg2:T1	
+T33	target_crowd 1219 1223	ATMs
+T34	target_crowd 1230 1245	card processing
+R9	attack Arg1:T26 Arg2:T33	
+R10	attack Arg1:T26 Arg2:T34	
+R11	attack Arg1:T25 Arg2:T16	
+R12	attack Arg1:T25 Arg2:T17	
+R13	attack Arg1:T25 Arg2:T18	
+R14	attack Arg1:T25 Arg2:T19	
+R15	attack Arg1:T25 Arg2:T20	
+R16	attack Arg1:T25 Arg2:T21	
+T35	industry 345 371	industrial control systems
+T36	industry 374 379	SCADA
+T37	industry 382 392	government
+T38	industry 399 404	media
+R17	attack Arg1:T9 Arg2:T35	
+R18	attack Arg1:T9 Arg2:T36	
+R19	attack Arg1:T9 Arg2:T37	
+R20	attack Arg1:T9 Arg2:T38	
+R21	first_found_time Arg1:T4 Arg2:T6	
+R22	coreference Arg1:T7 Arg2:T4	
+R23	coreference Arg1:T12 Arg2:T11	
+R24	coreference Arg1:T24 Arg2:T15	
+R27	occur_time Arg1:T10 Arg2:T22	
+T27	industry 924 946	financial institutions
+R3	attack Arg1:T15 Arg2:T27	
+R25	coreference Arg1:T25 Arg2:T24	
+R26	coreference Arg1:T26 Arg2:T25	
+T28	industry 336 342	energy
+T39	location 301 310	Ukrainian
+R28	attack Arg1:T10 Arg2:T29	
+T40	location 444 453	Ukrainian
+R4	attack Arg1:T9 Arg2:T28	

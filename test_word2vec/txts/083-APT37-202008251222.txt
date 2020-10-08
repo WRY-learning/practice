@@ -1,0 +1,20 @@
+APT37 .
+It is possible that APT37 ’s distribution of KARAE malware via torrent websites could assist in creating and maintaining botnets for future distributed denial-of-service ( DDoS ) attacks , or for other activity such as financially motivated campaigns or disruptive operations .
+Disruptive and destructive cyber threat activity , including the use of wiper malware , public leaks of proprietary materials by false hacktivist personas , DDoS attacks and electronic warfare tactics such as GPS signal jamming is consistent with past behavior by other North Korean actors .
+We assess with high confidence that APT37 acts in support of the North Korean government and is primarily based in North Korea .
+This assessment is based on multiple factors , including APT37 ’s targeting profile , insight into the group ’s malware development and probable links to a North Korean individual believed to be the developer of several of APT37 ’s proprietary malware families : 
+An individual we believe to be the developer behind several APT37 malware payloads inadvertently disclosed personal data showing that the actor was operating from an IP address and access point associated with North Korea .
+The compilation times of APT37 malware is consistent with a developer operating in the North Korea time zone ( UTC +8:30 ) and follows what is believed to be a typical North Korean workday .
+The majority of malware compilation times occurred between 10:00 a.m. and 7:00 p.m. , with a dip around noon .
+Additional activity occurred late into the evening .
+This is consistent with media reporting of extremely long hours for North Korean workers .
+The majority of APT37 activity continues to target South Korea , North Korean defectors , and organizations and individuals involved in Korean Peninsula reunification efforts .
+Similarly , APT37 targeting of a Middle Eastern company in 2017 is also consistent with North Korean objectives given the entity ’s extensive relationships inside North Korea .
+North Korea has repeatedly demonstrated a willingness to leverage its cyber capabilities for a variety of purposes , undeterred by notional redlines and international norms .
+Though they have primarily tapped other tracked suspected North Korean teams to carry out the most aggressive actions , APT37 is an additional tool available to the regime , perhaps even desirable for its relative obscurity .
+We anticipate APT37 will be leveraged more and more in previously unfamiliar roles and regions , especially as pressure mounts on their sponsor .
+The slow transformation of regional actors into global threats is well established .
+Minor incidents in Ukraine , the Middle East and South Korea have heralded the threats , which are now impossible to ignore .
+In some cases , the global economy connects organizations to aggressive regional actors .
+In other cases , a growing mandate draws the actor on to the international stage .
+Ignored , these threats enjoy the benefit of surprise , allowing them to extract significant losses on their victims , many of whom have never previously heard of the actor .

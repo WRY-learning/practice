@@ -1,0 +1,978 @@
+T1	location 15 29	Middle Eastern
+T2	threatActor_name 0 6	OilRig
+T3	threatActor_name 357 363	OilRig
+T4	threatActor_name 1043 1049	OilRig
+T5	threatActor_name 1131 1137	OilRig
+T6	threatActor_name 3449 3455	OilRig
+T7	threatActor_name 3918 3924	OilRig
+T8	threatActor_name 3332 3338	OilRig
+T9	threatActor_name 14119 14125	OilRig
+T10	threatActor_name 15054 15060	OilRig
+T11	threatActor_name 16228 16234	OilRig
+T12	threatActor_name 16309 16315	OilRig
+T13	threatActor_name 16390 16396	OilRig
+T14	threatActor_name 16471 16477	OilRig
+T15	threatActor_name 16552 16558	OilRig
+T16	threatActor_name 16633 16639	OilRig
+T17	threatActor_name 16714 16720	OilRig
+T18	threatActor_name 16795 16801	OilRig
+T19	threatActor_name 16876 16882	OilRig
+T20	threatActor_name 16957 16963	OilRig
+T21	threatActor_name 17038 17044	OilRig
+T22	threatActor_name 17119 17125	OilRig
+T23	threatActor_name 17200 17206	OilRig
+T24	threatActor_name 17281 17287	OilRig
+T25	threatActor_name 17362 17368	OilRig
+T26	threatActor_name 17388 17394	OilRig
+T27	threatActor_name 17415 17421	OilRig
+T28	threatActor_name 17444 17450	OilRig
+T29	threatActor_name 17470 17476	OilRig
+T30	threatActor_name 17508 17514	OilRig
+T31	threatActor_name 17536 17542	OilRig
+T32	threatActor_name 17563 17569	OilRig
+T33	threatActor_name 17597 17603	OilRig
+T34	threatActor_name 17623 17629	OilRig
+T35	threatActor_name 17650 17656	OilRig
+T36	threatActor_name 17671 17677	OilRig
+T37	threatActor_name 17700 17706	OilRig
+T38	industry 30 48	Telecommunications
+R1	located Arg1:T38 Arg2:T1	
+R2	attack Arg1:T2 Arg2:T38	
+T39	tool 77 79	C2
+T40	tool 93 106	Steganography
+R3	part_of Arg1:T40 Arg2:T39	
+R4	use Arg1:T2 Arg2:T39	
+T41	location 278 292	Middle Eastern
+T42	industry 293 311	telecommunications
+R5	located Arg1:T42 Arg2:T41	
+T44	tool 419 438	command and control
+T45	tool 441 443	C2
+R6	coreference Arg1:T45 Arg2:T44	
+T46	tool 1331 1333	C2
+T47	tool 1737 1739	C2
+T48	tool 1880 1882	C2
+T49	tool 1917 1919	C2
+T50	tool 2152 2154	C2
+T51	tool 2466 2468	C2
+T52	tool 4313 4315	C2
+T53	tool 4405 4407	C2
+T54	tool 4730 4732	C2
+T55	tool 4828 4830	C2
+T56	tool 5645 5647	C2
+T57	tool 5074 5076	C2
+T58	tool 6247 6249	C2
+T59	tool 6298 6300	C2
+T60	tool 7034 7036	C2
+T61	tool 7151 7153	C2
+T62	tool 7298 7300	C2
+T63	tool 7466 7468	C2
+T64	tool 7349 7351	C2
+T65	tool 7513 7515	C2
+T66	tool 7782 7784	C2
+T67	tool 9339 9341	C2
+T68	tool 11475 11477	C2
+T69	tool 11691 11693	C2
+T70	tool 13488 13490	C2
+T71	tool 13534 13536	C2
+T72	tool 13625 13627	C2
+T73	tool 13684 13686	C2
+T74	tool 13870 13872	C2
+T75	tool 14700 14702	C2
+T76	tool 14802 14804	C2
+T77	tool 14991 14993	C2
+T78	tool 14955 14957	C2
+T79	tool 15424 15426	C2
+T80	tool 15728 15730	C2
+T81	malware 388 392	RDAT
+T82	malware 994 998	RDAT
+T83	malware 1113 1117	RDAT
+T84	malware 1424 1428	RDAT
+T85	malware 1595 1599	RDAT
+T86	malware 1789 1793	RDAT
+T87	malware 2362 2366	RDAT
+T88	malware 2517 2521	RDAT
+T89	malware 2726 2730	RDAT
+T90	malware 3146 3150	RDAT
+T91	malware 3170 3174	RDAT
+T92	malware 3324 3328	RDAT
+T93	malware 3422 3426	RDAT
+T94	malware 4299 4303	RDAT
+T95	malware 4517 4521	RDAT
+T96	malware 4758 4762	RDAT
+T97	malware 4883 4887	RDAT
+T98	malware 6794 6798	RDAT
+T99	malware 7375 7379	RDAT
+T100	malware 7484 7488	RDAT
+T101	malware 7728 7732	RDAT
+T102	malware 12548 12552	RDAT
+T103	malware 13457 13461	RDAT
+T104	malware 13588 13592	RDAT
+T105	malware 15019 15023	RDAT
+T106	malware 15885 15889	RDAT
+T107	malware 16237 16241	RDAT
+T108	malware 16318 16322	RDAT
+T109	malware 16399 16403	RDAT
+T110	malware 16480 16484	RDAT
+T111	malware 16561 16565	RDAT
+T112	malware 16642 16646	RDAT
+T113	malware 16723 16727	RDAT
+T114	malware 16804 16808	RDAT
+T115	malware 16885 16889	RDAT
+T116	malware 16966 16970	RDAT
+T117	malware 17047 17051	RDAT
+T118	malware 17128 17132	RDAT
+T119	malware 17209 17213	RDAT
+T120	malware 17290 17294	RDAT
+T121	malware 17371 17375	RDAT
+T122	malware 17397 17401	RDAT
+T123	malware 17424 17428	RDAT
+T124	malware 17453 17457	RDAT
+T125	malware 17479 17483	RDAT
+T126	malware 17517 17521	RDAT
+T127	malware 17545 17549	RDAT
+T128	malware 17572 17576	RDAT
+T129	sample_function 507 529	hide commands and data
+R7	part_of Arg1:T81 Arg2:T3	
+R8	use Arg1:T81 Arg2:T45	
+T43	tool 490 503	steganography
+R9	goal Arg1:T43 Arg2:T129	
+R10	use Arg1:T45 Arg2:T43	
+T131	time 575 583	May 2020
+T132	time 737 747	April 2020
+T133	security_team 586 594	Symantec
+R12	release_time Arg1:T133 Arg2:T131	
+T134	threatActor_name 621 629	Greenbug
+T135	location 682 696	Southeast Asia
+T136	industry 646 664	telecommunications
+R13	located Arg1:T136 Arg2:T135	
+R14	attack Arg1:T134 Arg2:T136	
+R15	find Arg1:T133 Arg2:T134	
+T138	time 871 881	April 2020
+T139	industry 817 835	telecommunications
+T140	location 856 867	Middle East
+R18	located Arg1:T139 Arg2:T140	
+T141	tool 910 918	Mimikatz
+T142	tool 927 934	Bitvise
+T144	tool 16137 16158	PowerShell downloader
+T145	tool 15968 15983	Custom Mimikatz
+T146	tool 16053 16067	Bitvise client
+T147	tool 3964 3986	PowerShell downloaders
+T148	security_team 1001 1008	Unit 42
+T149	threatActor_name 1031 1039	Greenbug
+T150	time 1084 1088	2015
+R19	first_found_time Arg1:T4 Arg2:T150	
+R20	find Arg1:T148 Arg2:T149	
+T151	time 1160 1164	2017
+R22	use Arg1:T5 Arg2:T83	
+T152	time 1214 1218	2018
+T153	tool 1241 1260	command and control
+T154	reference_word 1288 1299	this sample
+T155	sub_activity 1188 1202	related sample
+R23	first_found_time Arg1:T155 Arg2:T152	
+R24	coreference Arg1:T154 Arg2:T155	
+T156	tool 1367 1380	steganography
+R25	part_of Arg1:T156 Arg2:T143	
+R26	use Arg1:T154 Arg2:T143	
+T157	sub_activity 1384 1399	exfiltrate data
+R27	goal Arg1:T156 Arg2:T157	
+R28	use Arg1:T155 Arg2:T153	
+T158	time 1435 1439	2017
+T159	time 1573 1592	September 26 , 2017
+T160	sub_activity 1113 1151	RDAT tool used in OilRig 's operations
+R29	occur_time Arg1:T160 Arg2:T151	
+T161	time 1640 1644	2017
+T162	protocol 1710 1714	HTTP
+T163	tool 1719 1732	DNS tunneling
+T164	sample_function 1737 1754	C2 communications
+R31	first_found_time Arg1:T84 Arg2:T158	
+T165	sub_activity 1615 1633	active development
+R32	use Arg1:T85 Arg2:T165	
+T166	sub_activity 1660 1679	multiple variations
+R33	part_of Arg1:T166 Arg2:T85	
+R34	use Arg1:T166 Arg2:T162	
+R35	use Arg1:T166 Arg2:T163	
+R36	goal Arg1:T166 Arg2:T164	
+T167	tool 1484 1492	webshell
+R37	located Arg1:T84 Arg2:T167	
+T168	tool 1508 1524	TwoFace webshell
+R38	part_of Arg1:T167 Arg2:T168	
+T169	time 1760 1769	June 2018
+T170	person 1776 1785	developer
+R39	use Arg1:T170 Arg2:T86	
+T171	tool 1843 1846	EWS
+T172	tool 1819 1840	Exchange Web Services
+R40	coreference Arg1:T171 Arg2:T172	
+T173	sample_function 1852 1875	send and receive emails
+R41	goal Arg1:T172 Arg2:T173	
+T174	sample_function 1880 1897	C2 communications
+R42	use Arg1:T170 Arg2:T172	
+T175	reference_word 1900 1927	This email-based C2 channel
+R43	coreference Arg1:T175 Arg2:T48	
+T176	tool 1969 1982	steganography
+T177	sub_activity 1986 1999	hide commands
+T178	sub_activity 2004 2020	exfiltrates data
+T179	tool 2028 2038	BMP images
+R44	use Arg1:T175 Arg2:T176	
+R46	launch Arg1:T176 Arg2:T177	
+R47	launch Arg1:T176 Arg2:T178	
+T180	tool 2269 2287	Palo Alto Networks
+T181	person 2288 2297	customers
+R48	use Arg1:T181 Arg2:T180	
+T182	tool 2315 2323	WildFire
+T183	tool 2328 2338	Cortex XDR
+T185	time 2525 2541	October 7 , 2017
+T186	time 2820 2830	April 2020
+T187	time 4608 4622	March 1 , 2020
+T188	tool 2101 2115	steganographic
+T189	sub_activity 2347 2387	identifies all RDAT samples as malicious
+R49	use Arg1:T183 Arg2:T189	
+R50	use Arg1:T182 Arg2:T189	
+T190	tool 2418 2421	URL
+T191	sub_activity 2440 2477	identifies and blocks the C2 activity
+T192	sub_activity 2401 2413	DNS Security
+T193	sub_activity 2418 2431	URL Filtering
+R51	use Arg1:T193 Arg2:T191	
+R52	use Arg1:T192 Arg2:T191	
+T194	tool 2089 2095	emails
+T196	sub_activity 2101 2122	steganographic images
+R53	first_found_time Arg1:T88 Arg2:T185	
+T197	tool 2646 2654	webshell
+T198	tool 2584 2592	webshell
+R54	located Arg1:T88 Arg2:T198	
+T199	sub_activity 2753 2773	access to the server
+R55	located Arg1:T196 Arg2:T194	
+T200	sub_activity 2126 2154	carry the data across the C2
+R56	launch Arg1:T194 Arg2:T200	
+T201	sub_activity 2699 2704	group
+T202	malware 2726 2738	RDAT payload
+R57	use Arg1:T201 Arg2:T202	
+R58	launch Arg1:T202 Arg2:T199	
+T203	tool 2794 2802	webshell
+T204	location 2929 2940	Middle East
+T205	industry 2890 2908	telecommunications
+R59	located Arg1:T205 Arg2:T204	
+T206	reference_word 2969 2982	this activity
+T207	sub_activity 2878 2921	breach of a telecommunications organization
+R60	occur_time Arg1:T207 Arg2:T186	
+R61	coreference Arg1:T206 Arg2:T207	
+T208	tool 2999 3007	Mimikatz
+T209	sample_function 3020 3039	dumping credentials
+T210	sub_activity 2992 3015	custom Mimikatz samples
+R62	goal Arg1:T210 Arg2:T209	
+T211	tool 3058 3065	Bitvise
+T212	protocol 3103 3106	SSH
+T213	sample_function 3096 3114	create SSH tunnels
+T214	sub_activity 2947 2952	files
+R63	part_of Arg1:T210 Arg2:T214	
+T215	sub_activity 3044 3050	sample
+R64	part_of Arg1:T215 Arg2:T211	
+R65	goal Arg1:T215 Arg2:T213	
+R66	part_of Arg1:T90 Arg2:T214	
+R67	part_of Arg1:T215 Arg2:T214	
+T217	malware 3262 3269	ISMDOOR
+R68	part_of Arg1:T93 Arg2:T6	
+R69	part_of Arg1:T92 Arg2:T8	
+T219	tool 3347 3356	webshells
+R70	part_of Arg1:T219 Arg2:T8	
+T220	tool 3497 3500	PDB
+T221	reference_word 3458 3482	Two of the related tools
+R71	coreference Arg1:T221 Arg2:T92	
+R72	coreference Arg1:T221 Arg2:T219	
+T222	tool 3553 3556	PDB
+T223	tool 3778 3781	PDB
+T224	person 3766 3770	user
+T225	malware 3937 3944	ISMDOOR
+R73	part_of Arg1:T225 Arg2:T7	
+T226	domain_evil 4032 4046	digi.shanx.icu
+T227	sub_activity 3987 4015	attempting to retrieve files
+T228	sub_activity 4010 4015	files
+R74	located Arg1:T228 Arg2:T226	
+R75	launch Arg1:T147 Arg2:T227	
+T229	security_team 4052 4060	Symantec
+T230	threatActor_name 4064 4072	Greenbug
+R76	find Arg1:T229 Arg2:T230	
+T231	person 4091 4100	adversary
+T232	tool 4174 4184	PowerShell
+T233	sub_activity 4155 4193	observed executing PowerShell commands
+T234	sub_activity 4101 4142	gained interactive access to target hosts
+R77	use Arg1:T231 Arg2:T234	
+R78	use Arg1:T231 Arg2:T233	
+T235	domain_evil 4316 4332	apps.vvvnews.com
+T236	tool 4256 4266	Powershell
+R79	part_of Arg1:T235 Arg2:T52	
+R80	located Arg1:T94 Arg2:T235	
+T237	sub_activity 4256 4273	Powershell script
+T238	sub_activity 4278 4303	executed to retrieve RDAT
+R81	launch Arg1:T237 Arg2:T238	
+T239	url_evil 4415 4443	http://digi.shanx.icu : 8080
+T240	sample_name 4387 4393	Nt.dat
+R82	part_of Arg1:T239 Arg2:T53	
+R83	located Arg1:T240 Arg2:T239	
+T241	person 4492 4503	adversaries
+T242	industry 4573 4591	telecommunications
+T243	location 4558 4572	Middle Eastern
+R84	located Arg1:T242 Arg2:T243	
+T244	tool 4517 4530	RDAT payloads
+R85	use Arg1:T241 Arg2:T244	
+T245	domain_evil 4712 4722	rsshay.com
+R86	part_of Arg1:T245 Arg2:T54	
+R87	attack Arg1:T244 Arg2:T242	
+T246	sub_activity 4543 4591	attacks on the Middle Eastern telecommunications
+R88	occur_time Arg1:T246 Arg2:T187	
+T247	tool 4806 4819	DNS tunneling
+T248	protocol 4854 4858	HTTP
+T249	reference_word 4773 4795	this particular sample
+R89	coreference Arg1:T249 Arg2:T244	
+T250	sample_function 4828 4845	C2 communications
+R90	use Arg1:T249 Arg2:T247	
+R91	goal Arg1:T247 Arg2:T250	
+R92	goal Arg1:T172 Arg2:T174	
+T251	reference_word 4878 4894	This RDAT sample
+R93	coreference Arg1:T251 Arg2:T244	
+R94	use Arg1:T244 Arg2:T245	
+T252	tool 4908 4911	TXT
+T253	tool 4927 4937	DNS tunnel
+T254	sub_activity 4908 4919	TXT queries
+R95	use Arg1:T251 Arg2:T254	
+R96	part_of Arg1:T254 Arg2:T253	
+T255	person 5154 5159	actor
+T256	encryption_algo 5140 5146	base32
+T257	encryption_algo 5217 5223	base64
+T258	reference_word 5226 5237	The payload
+R97	coreference Arg1:T258 Arg2:T251	
+T259	encryption_algo 5277 5283	base64
+T260	sub_activity 5099 5128	data portion of the subdomain
+R98	use Arg1:T260 Arg2:T256	
+R99	use Arg1:T260 Arg2:T257	
+T261	sub_activity 5243 5265	substitutes characters
+R100	launch Arg1:T258 Arg2:T261	
+T262	sub_activity 5255 5265	characters
+T263	sub_activity 5277 5301	base64 encoded subdomain
+R101	located Arg1:T262 Arg2:T263	
+T264	encryption_algo 5490 5493	AES
+T265	tool 5711 5714	TXT
+T266	sub_activity 5711 5720	TXT query
+T267	reference_word 5657 5668	The payload
+R102	coreference Arg1:T267 Arg2:T258	
+T268	tool 5439 5445	beacon
+T269	tool 5448 5457	subdomain
+R103	coreference Arg1:T269 Arg2:T268	
+T270	sub_activity 5419 5431	encoded data
+R104	located Arg1:T270 Arg2:T268	
+T271	sub_activity 5463 5483	ciphertext generated
+R105	use Arg1:T270 Arg2:T264	
+R106	launch Arg1:T264 Arg2:T271	
+T272	sub_activity 5500 5521	16-byte key generated
+T273	sub_activity 5525 5582	concatenating two randomly chosen alphanumeric characters
+R107	use Arg1:T270 Arg2:T273	
+R108	launch Arg1:T273 Arg2:T272	
+T274	encryption_algo 5726 5732	base64
+R109	use Arg1:T267 Arg2:T274	
+T275	sub_activity 5669 5689	decodes the response
+R110	goal Arg1:T274 Arg2:T275	
+T276	encryption_algo 5761 5764	AES
+T277	tool 5761 5771	AES cipher
+T278	sub_activity 5737 5745	decrypts
+R111	use Arg1:T267 Arg2:T277	
+R112	goal Arg1:T277 Arg2:T278	
+T279	reference_word 5797 5808	The payload
+T280	reference_word 5970 5981	The payload
+T281	sample_function 5892 5913	get the command value
+T282	sub_activity 5809 5850	attempts to parse the decrypted cleartext
+R113	launch Arg1:T279 Arg2:T282	
+R114	goal Arg1:T282 Arg2:T281	
+T283	sample_function 5922 5939	command arguments
+R115	goal Arg1:T282 Arg2:T283	
+R116	coreference Arg1:T279 Arg2:T267	
+R117	coreference Arg1:T280 Arg2:T279	
+T284	tool 6259 6269	DNS tunnel
+T285	tool 6366 6376	DNS tunnel
+T286	tool 6418 6428	DNS tunnel
+T287	tool 6020 6035	command handler
+T288	sub_activity 5987 6011	checks the command value
+R118	use Arg1:T280 Arg2:T287	
+R119	launch Arg1:T287 Arg2:T288	
+T289	sub_activity 6060 6076	execute commands
+T290	sub_activity 6081 6106	upload and download files
+R120	launch Arg1:T287 Arg2:T289	
+R121	launch Arg1:T287 Arg2:T290	
+T291	function 6109 6110	0
+T292	function 6120 6121	1
+T293	function 6272 6273	2
+T294	function 6389 6390	3
+T295	sub_activity 6124 6145	Run specified command
+R122	goal Arg1:T292 Arg2:T295	
+T296	sub_activity 6148 6176	Creates write and read pipes
+T297	sample_function 6180 6197	issue the command
+R123	goal Arg1:T296 Arg2:T297	
+T298	sub_activity 6202 6217	read the output
+T299	sub_activity 6222 6249	sends the results to the C2
+T300	sub_activity 6304 6331	reading in a specified file
+T301	sample_function 6276 6300	Uploads a file to the C2
+T302	sub_activity 6336 6376	sending its contents over the DNS tunnel
+R124	use Arg1:T293 Arg2:T300	
+R125	use Arg1:T293 Arg2:T302	
+R126	goal Arg1:T302 Arg2:T301	
+T303	sample_function 6393 6409	Downloads a file
+R127	use Arg1:T294 Arg2:T286	
+R128	goal Arg1:T286 Arg2:T303	
+T304	time 6507 6511	2017
+T305	time 6573 6583	April 2020
+T306	time 6609 6620	August 2017
+T307	time 6699 6709	March 2020
+T308	industry 6756 6774	telecommunications
+T309	location 6741 6755	Middle Eastern
+R129	located Arg1:T308 Arg2:T309	
+T310	reference_word 6467 6476	this tool
+R130	coreference Arg1:T310 Arg2:T280	
+T311	sub_activity 6486 6500	in development
+R131	occur_time Arg1:T311 Arg2:T304	
+R132	use Arg1:T310 Arg2:T311	
+T312	sub_activity 6561 6569	compiled
+R133	occur_time Arg1:T312 Arg2:T305	
+T313	sub_activity 6535 6541	sample
+R134	use Arg1:T313 Arg2:T312	
+T314	sub_activity 6590 6596	sample
+T315	sub_activity 6597 6605	compiled
+R135	use Arg1:T314 Arg2:T315	
+R136	occur_time Arg1:T315 Arg2:T306	
+T316	tool 6639 6647	webshell
+T317	tool 6659 6666	TwoFace
+R137	located Arg1:T314 Arg2:T316	
+R138	part_of Arg1:T316 Arg2:T317	
+T318	sub_activity 6679 6686	samples
+T319	sub_activity 6687 6695	compiled
+R139	use Arg1:T318 Arg2:T319	
+R140	occur_time Arg1:T319 Arg2:T307	
+R141	attack Arg1:T318 Arg2:T308	
+T320	sub_activity 6794 6805	RDAT sample
+T321	time 6818 6828	April 2020
+T322	sub_activity 6806 6814	compiled
+R142	use Arg1:T320 Arg2:T322	
+R143	occur_time Arg1:T322 Arg2:T321	
+T323	industry 6860 6878	telecommunications
+T324	domain 6943 6955	sharjatv.com
+T325	domain 6958 6967	wwmal.com
+R144	use Arg1:T323 Arg2:T324	
+R145	use Arg1:T323 Arg2:T325	
+T326	time 7105 7119	July 24 , 2018
+T327	sub_activity 7068 7074	sample
+T328	sub_activity 7093 7101	compiled
+R146	use Arg1:T327 Arg2:T328	
+R147	occur_time Arg1:T328 Arg2:T326	
+T329	tool 6989 6992	DNS
+T330	tool 7020 7033	DNS tunneling
+T331	reference_word 7122 7133	This sample
+R148	coreference Arg1:T331 Arg2:T327	
+T332	reference_word 7287 7308	This novel C2 channel
+T333	tool 7145 7161	novel C2 channel
+R149	coreference Arg1:T332 Arg2:T333	
+R150	part_of Arg1:T333 Arg2:T331	
+T334	tool 7176 7197	Exchange Web Services
+T335	tool 7200 7203	EWS
+R151	coreference Arg1:T335 Arg2:T334	
+T336	tool 7206 7209	API
+R152	part_of Arg1:T336 Arg2:T334	
+R153	use Arg1:T333 Arg2:T336	
+T337	tool 7248 7262	steganographic
+T338	tool 7230 7236	emails
+T339	sub_activity 7248 7269	steganographic images
+R154	part_of Arg1:T339 Arg2:T338	
+T340	sub_activity 7213 7236	send and receive emails
+R155	launch Arg1:T336 Arg2:T340	
+T341	protocol 7326 7330	HTTP
+T342	tool 7335 7348	DNS tunneling
+T343	sub_activity 7375 7387	RDAT samples
+R156	part_of Arg1:T341 Arg2:T343	
+R157	part_of Arg1:T342 Arg2:T343	
+T344	tool 7460 7476	novel C2 channel
+T345	sub_activity 7484 7495	RDAT sample
+R158	located Arg1:T344 Arg2:T345	
+T346	tool 7579 7582	EWS
+T347	tool 7583 7586	API
+R159	part_of Arg1:T347 Arg2:T346	
+T348	tool 7554 7569	Exchange server
+T349	email_evil 7648 7663	koko@acrlee.com
+T350	email_evil 7668 7683	h76y@acrlee.com
+T351	person 7613 7618	actor
+R160	use Arg1:T351 Arg2:T349	
+R161	use Arg1:T351 Arg2:T350	
+T352	reference_word 7686 7711	These two email addresses
+R162	coreference Arg1:T352 Arg2:T349	
+R163	coreference Arg1:T352 Arg2:T350	
+T353	tool 7728 7740	RDAT payload
+R164	use Arg1:T353 Arg2:T352	
+T354	sub_activity 7744 7767	send and receive emails
+R165	goal Arg1:T352 Arg2:T354	
+R166	part_of Arg1:T346 Arg2:T348	
+R167	use Arg1:T344 Arg2:T348	
+T355	person 8162 8167	actor
+T356	reference_word 7830 7841	the payload
+R168	coreference Arg1:T356 Arg2:T353	
+T357	tool 7935 7942	WinHTTP
+T358	tool 7975 7978	API
+T359	tool 8190 8197	payload
+T360	sha2 15901 15965	4ea6da6b35c4cdc6043c3b93bd6b61ea225fd5e1ec072330cb746104d0b0a4ec
+T361	sha2 15986 16050	e53cc5e62ba15e43877ca2fc1bee16061b4468545d5cc1515cb38000e22dd060
+T362	sha2 16070 16134	476b40796be68a5ee349677274e438aeda3817f99ba9832172d81a2c64b0d4ae
+T363	sha2 16161 16225	78584dadde1489a5dca0e307318b3d2d49e39eb3987de52e288f9882527078d5
+R169	part_of Arg1:T360 Arg2:T106	
+R170	part_of Arg1:T361 Arg2:T145	
+R171	part_of Arg1:T362 Arg2:T146	
+R172	part_of Arg1:T363 Arg2:T144	
+R173	part_of Arg1:T107 Arg2:T11	
+R174	part_of Arg1:T108 Arg2:T12	
+R175	part_of Arg1:T109 Arg2:T13	
+R176	part_of Arg1:T110 Arg2:T14	
+R177	part_of Arg1:T111 Arg2:T15	
+R178	part_of Arg1:T112 Arg2:T16	
+R179	part_of Arg1:T113 Arg2:T17	
+R180	part_of Arg1:T114 Arg2:T18	
+R181	part_of Arg1:T115 Arg2:T19	
+R182	part_of Arg1:T116 Arg2:T20	
+R183	part_of Arg1:T117 Arg2:T21	
+R184	part_of Arg1:T118 Arg2:T22	
+R185	part_of Arg1:T119 Arg2:T23	
+R186	part_of Arg1:T120 Arg2:T24	
+R187	part_of Arg1:T121 Arg2:T25	
+R188	part_of Arg1:T122 Arg2:T26	
+R189	part_of Arg1:T123 Arg2:T27	
+R190	part_of Arg1:T124 Arg2:T28	
+R191	part_of Arg1:T125 Arg2:T29	
+R192	part_of Arg1:T126 Arg2:T30	
+R193	part_of Arg1:T127 Arg2:T31	
+R194	part_of Arg1:T128 Arg2:T32	
+T364	tool 7851 7856	email
+R195	use Arg1:T356 Arg2:T364	
+R196	use Arg1:T364 Arg2:T357	
+T365	sub_activity 7954 7978	make requests to the API
+R197	launch Arg1:T357 Arg2:T365	
+T366	sub_activity 7790 7827	send emails from the compromised host
+R198	launch Arg1:T356 Arg2:T366	
+T367	sub_activity 8201 8215	sending emails
+T368	sample_function 8168 8197	communicates with the payload
+R199	use Arg1:T355 Arg2:T367	
+R200	goal Arg1:T367 Arg2:T368	
+T369	person 8325 8330	actor
+T370	tool 8337 8344	payload
+T371	sub_activity 8353 8383	Initially create an inbox rule
+R201	use Arg1:T370 Arg2:T371	
+T372	person 8392 8397	actor
+T373	sample_function 8387 8426	move actor 's emails to the junk folder
+R202	goal Arg1:T371 Arg2:T373	
+T374	sub_activity 8441 8464	look in the junk folder
+T375	tool 8566 8569	BMP
+T376	sub_activity 8511 8551	Process attachments for inbound commands
+R203	use Arg1:T370 Arg2:T374	
+R204	use Arg1:T370 Arg2:T376	
+T377	sub_activity 8566 8576	BMP images
+T378	sub_activity 8535 8551	inbound commands
+R205	part_of Arg1:T378 Arg2:T377	
+T379	person 8603 8608	actor
+T380	tool 8615 8622	payload
+T381	sub_activity 8623 8635	sends emails
+T382	sub_activity 8645 8652	account
+T383	sub_activity 8669 8687	compromised system
+R206	part_of Arg1:T382 Arg2:T383	
+R207	use Arg1:T380 Arg2:T382	
+R208	launch Arg1:T382 Arg2:T381	
+T384	sub_activity 8726 8747	Creates a draft email
+T385	tool 8819 8822	BMP
+T386	person 8911 8916	actor
+T387	sub_activity 8888 8903	Sends the draft
+T388	sub_activity 8819 8828	BMP image
+R209	use Arg1:T380 Arg2:T384	
+T389	sub_activity 8808 8850	Attaches a BMP image with a hidden message
+R210	use Arg1:T380 Arg2:T389	
+R211	use Arg1:T380 Arg2:T387	
+T390	protocol 8984 8988	HTTP
+T391	function 8989 8993	POST
+T392	function 9061 9065	POST
+R212	part_of Arg1:T391 Arg2:T390	
+T393	tool 9010 9013	EWS
+T394	tool 9014 9017	API
+R213	part_of Arg1:T394 Arg2:T393	
+T395	protocol 9131 9160	Simple Object Access Protocol
+T396	protocol 9163 9167	SOAP
+R214	coreference Arg1:T396 Arg2:T395	
+T397	tool 9200 9215	Exchange server
+R215	use Arg1:T392 Arg2:T395	
+T398	sub_activity 9182 9215	interact with the Exchange server
+R216	use Arg1:T395 Arg2:T398	
+T399	protocol 9242 9246	SOAP
+T400	sub_activity 9222 9235	first request
+T401	sub_activity 9242 9254	SOAP message
+R217	part_of Arg1:T401 Arg2:T400	
+T402	sub_activity 9258 9278	create an inbox rule
+R218	launch Arg1:T401 Arg2:T402	
+T403	tool 9286 9298	ExchangeRule
+T404	tool 9268 9278	inbox rule
+R219	coreference Arg1:T403 Arg2:T404	
+T405	tool 9571 9578	payload
+T406	person 9464 9469	actor
+T407	person 9630 9635	actor
+T408	sub_activity 9601 9620	look for new emails
+R220	launch Arg1:T405 Arg2:T408	
+T409	sub_activity 9614 9620	emails
+T410	sub_activity 9643 9654	junk folder
+R221	part_of Arg1:T409 Arg2:T407	
+R222	located Arg1:T409 Arg2:T410	
+T411	sub_activity 9725 9731	emails
+T412	tool 9661 9668	payload
+T413	tool 9697 9700	EWS
+T414	tool 9701 9704	API
+T415	person 9741 9746	actor
+R223	part_of Arg1:T414 Arg2:T413	
+T416	sub_activity 9674 9704	issue a request to the EWS API
+R224	launch Arg1:T412 Arg2:T416	
+R225	part_of Arg1:T411 Arg2:T415	
+T417	sample_function 9708 9731	check for unread emails
+R226	goal Arg1:T416 Arg2:T417	
+T418	tool 9794 9801	payload
+T419	person 9831 9836	actor
+T420	tool 9843 9850	payload
+T421	protocol 9884 9888	SOAP
+T422	sub_activity 9856 9896	process the response to the SOAP request
+R227	launch Arg1:T420 Arg2:T422	
+T423	tool 9933 9936	EWS
+T424	tool 9937 9940	API
+R228	part_of Arg1:T424 Arg2:T423	
+T425	sample_function 9944 9957	get the email
+T426	sub_activity 9901 9940	send additional requests to the EWS API
+R229	launch Arg1:T420 Arg2:T426	
+R230	goal Arg1:T426 Arg2:T425	
+T427	tool 10016 10023	payload
+T428	tool 10138 10145	payload
+T429	program_language 10128 10131	XML
+T430	tool 10748 10751	EWS
+T431	tool 10752 10755	API
+R231	part_of Arg1:T431 Arg2:T430	
+T432	person 10824 10829	actor
+T433	tool 11009 11016	payload
+T434	tool 11285 11288	EWS
+T435	tool 11289 11292	API
+R232	part_of Arg1:T435 Arg2:T434	
+T436	tool 10155 10174	regular expressions
+R233	use Arg1:T428 Arg2:T436	
+T437	sub_activity 10187 10203	following values
+T438	sub_activity 10178 10203	find the following values
+R234	launch Arg1:T436 Arg2:T438	
+T439	tool 10237 10239	Id
+T440	tool 10244 10253	ChangeKey
+T441	tool 10283 10298	AttachmentId Id
+R235	part_of Arg1:T439 Arg2:T437	
+R236	part_of Arg1:T440 Arg2:T437	
+R237	part_of Arg1:T441 Arg2:T437	
+T442	sub_activity 10257 10280	get the specified email
+T443	sub_activity 10302 10335	get the attachment from the email
+R238	launch Arg1:T441 Arg2:T443	
+R239	launch Arg1:T440 Arg2:T442	
+R240	launch Arg1:T439 Arg2:T442	
+T444	tool 10072 10091	regular expressions
+R241	use Arg1:T427 Arg2:T444	
+T445	sub_activity 10110 10116	values
+R242	part_of Arg1:T445 Arg2:T429	
+T446	sub_activity 10095 10116	find specified values
+R243	goal Arg1:T444 Arg2:T446	
+T447	reference_word 10051 10065	these requests
+T448	sub_activity 9884 9896	SOAP request
+T449	sub_activity 9906 9925	additional requests
+R244	coreference Arg1:T447 Arg2:T449	
+R245	coreference Arg1:T447 Arg2:T448	
+T450	protocol 10517 10521	SOAP
+T451	sub_activity 10517 10529	SOAP request
+T452	reference_word 10411 10413	It
+T453	reference_word 10500 10502	It
+R246	coreference Arg1:T452 Arg2:T428	
+R247	coreference Arg1:T453 Arg2:T452	
+T454	sub_activity 10533 10559	delete the processed email
+R248	use Arg1:T453 Arg2:T451	
+R249	launch Arg1:T451 Arg2:T454	
+T455	tool 10602 10609	payload
+T456	person 10651 10656	actor
+T457	tool 10671 10677	beacon
+T458	person 10705 10710	actor
+T459	tool 10717 10724	payload
+T460	sub_activity 10730 10755	interact with the EWS API
+R250	launch Arg1:T459 Arg2:T460	
+T461	sub_activity 10796 10814	Save a draft email
+T462	tool 10878 10881	BMP
+T463	sub_activity 10942 10968	Send the saved draft email
+T464	sub_activity 10867 10887	Attach the BMP image
+R251	launch Arg1:T459 Arg2:T461	
+R252	launch Arg1:T459 Arg2:T464	
+R253	launch Arg1:T459 Arg2:T463	
+T465	sub_activity 11017 11033	creates an email
+R254	use Arg1:T433 Arg2:T465	
+T466	sub_activity 11038 11057	saves it as a draft
+R255	use Arg1:T433 Arg2:T466	
+T467	reference_word 11072 11074	it
+R256	coreference Arg1:T467 Arg2:T433	
+T468	reference_word 11060 11064	This
+R257	coreference Arg1:T468 Arg2:T465	
+R258	coreference Arg1:T468 Arg2:T466	
+T469	sub_activity 11078 11121	attach the image containing the hidden data
+R259	launch Arg1:T467 Arg2:T469	
+T470	tool 11299 11306	payload
+T471	protocol 11260 11264	HTTP
+T472	function 11265 11269	POST
+R260	part_of Arg1:T472 Arg2:T471	
+T473	tool 11228 11231	BMP
+T475	tool 11199 11206	payload
+R261	use Arg1:T475 Arg2:T472	
+T476	sub_activity 11217 11250	attach the BMP image to the email
+R262	launch Arg1:T472 Arg2:T476	
+T474	tool 11338 11341	EWS
+T477	tool 11342 11345	API
+T478	tool 11388 11391	BMP
+T479	person 11405 11410	actor
+R263	part_of Arg1:T477 Arg2:T474	
+T480	tool 11417 11424	payload
+T481	tool 11529 11532	BMP
+T482	sub_activity 11430 11442	receive data
+T483	sub_activity 11452 11467	exfiltrate data
+T484	tool 11549 11562	steganography
+T485	sub_activity 11566 11596	hide the data within the image
+R264	use Arg1:T480 Arg2:T482	
+R265	use Arg1:T480 Arg2:T483	
+R266	use Arg1:T480 Arg2:T484	
+R267	launch Arg1:T484 Arg2:T485	
+T486	sub_activity 11307 11345	issues one last request to the EWS API
+R268	launch Arg1:T470 Arg2:T486	
+T487	sample_function 11349 11369	send the email draft
+R269	goal Arg1:T486 Arg2:T487	
+T488	tool 11625 11632	payload
+T489	tool 11656 11659	BMP
+T490	sample_name 11795 11804	guest.bmp
+T491	OS_name 11780 11787	Windows
+T492	OS_name 11858 11867	Windows 7
+T493	OS_name 11934 11944	Windows 10
+T494	tool 12023 12030	payload
+T495	sub_activity 11656 11665	BMP image
+T496	sub_activity 11642 11646	data
+R270	part_of Arg1:T496 Arg2:T495	
+T497	sub_activity 11633 11646	extracts data
+R271	launch Arg1:T488 Arg2:T497	
+T498	sub_activity 11677 11681	data
+R272	part_of Arg1:T498 Arg2:T69	
+T499	sub_activity 11669 11681	receive data
+R273	part_of Arg1:T490 Arg2:T491	
+T500	reference_word 11843 11852	The image
+R274	coreference Arg1:T500 Arg2:T490	
+R275	part_of Arg1:T500 Arg2:T492	
+R276	part_of Arg1:T500 Arg2:T493	
+T501	reference_word 12049 12059	this image
+R277	coreference Arg1:T501 Arg2:T500	
+T502	tool 12096 12099	BMP
+T503	tool 12118 12121	BMP
+T504	sub_activity 12143 12155	file headers
+T505	sub_activity 12163 12178	array of values
+R278	part_of Arg1:T504 Arg2:T503	
+R279	part_of Arg1:T505 Arg2:T503	
+T506	tool 12548 12560	RDAT payload
+T507	sample_function 12614 12623	guest.bmp
+T508	OS_name 12637 12644	Windows
+T509	tool 12368 12371	BMP
+T510	sub_activity 12361 12378	24-bit BMP images
+T511	sub_activity 12388 12401	3-byte values
+R280	use Arg1:T510 Arg2:T511	
+T512	sub_activity 12510 12523	32-bit images
+T513	sub_activity 12528 12541	4-byte values
+R281	use Arg1:T512 Arg2:T513	
+T514	sub_activity 12658 12671	24-bit images
+R282	part_of Arg1:T507 Arg2:T508	
+R283	part_of Arg1:T507 Arg2:T514	
+T515	tool 12690 12697	payload
+T516	sub_activity 12708 12727	3-byte color values
+T517	sample_function 12746 12755	hide data
+R284	use Arg1:T515 Arg2:T516	
+R285	goal Arg1:T516 Arg2:T517	
+T518	tool 12762 12769	payload
+T519	protocol 13620 13624	HTTP
+T520	sample_function 12807 12844	transmit one byte of exfiltrated data
+T521	sub_activity 12775 12803	modify each pixel 's 3-bytes
+R286	launch Arg1:T518 Arg2:T521	
+R287	goal Arg1:T521 Arg2:T520	
+T522	tool 13019 13026	payload
+T523	sample_function 13062 13071	guest.bmp
+T524	tool 13129 13136	payload
+T525	sub_activity 12982 13012	hide the data within the image
+T526	sub_activity 13032 13078	check the color depth of the "guest.bmp" image
+R288	launch Arg1:T522 Arg2:T526	
+R289	goal Arg1:T526 Arg2:T525	
+T527	tool 13265 13272	payload
+T528	reference_word 13241 13258	this 24-bit image
+R290	coreference Arg1:T528 Arg2:T514	
+R291	use Arg1:T527 Arg2:T528	
+T529	tool 13484 13487	EWS
+T530	protocol 13508 13512	HTTP
+T531	tool 13517 13530	DNS tunneling
+T532	sub_activity 13457 13468	RDAT sample
+T533	sub_activity 13588 13600	RDAT samples
+R292	part_of Arg1:T529 Arg2:T70	
+R293	part_of Arg1:T531 Arg2:T71	
+R294	part_of Arg1:T70 Arg2:T532	
+R295	part_of Arg1:T530 Arg2:T532	
+R296	part_of Arg1:T71 Arg2:T532	
+T534	sub_activity 13278 13312	spread the 8-bits of the data byte
+T535	sample_function 13313 13337	across these three bytes
+R297	launch Arg1:T527 Arg2:T534	
+R298	goal Arg1:T534 Arg2:T535	
+T536	protocol 13641 13645	HTTP
+T537	function 13646 13650	POST
+R299	part_of Arg1:T537 Arg2:T536	
+R300	part_of Arg1:T519 Arg2:T72	
+R301	use Arg1:T72 Arg2:T537	
+T538	sub_activity 13663 13693	transmit data to the C2 server
+R302	launch Arg1:T537 Arg2:T538	
+T539	domain_evil 13742 13763	allsecpackupdater.com
+T540	domain_evil 13766 13777	tacsent.com
+T541	sha2 16242 16306	7395a3ada245df6c8ff1d66fcb54b96ae12961d5fd9b6a57c43a3e7ab83f3cc2
+T542	protocol 13865 13869	HTTP
+T543	domain_evil 13838 13849	tacsent.com
+T544	domain_evil 13923 13944	allsecpackupdater.com
+T545	sub_activity 13700 13704	code
+R303	part_of Arg1:T539 Arg2:T545	
+R304	part_of Arg1:T540 Arg2:T545	
+T546	reference_word 13804 13812	the code
+R305	coreference Arg1:T546 Arg2:T545	
+R306	use Arg1:T546 Arg2:T543	
+R307	part_of Arg1:T542 Arg2:T74	
+R308	part_of Arg1:T543 Arg2:T74	
+T547	reference_word 14080 14091	This domain
+R309	coreference Arg1:T547 Arg2:T544	
+R310	part_of Arg1:T547 Arg2:T9	
+T548	time 14179 14183	2017
+T549	security_team 14144 14152	ClearSky
+T550	reference_word 14164 14175	this domain
+R311	coreference Arg1:T550 Arg2:T544	
+R312	find Arg1:T549 Arg2:T550	
+R313	first_found_time Arg1:T550 Arg2:T548	
+T551	threatActor_name 14210 14218	Greenbug
+T552	malware 14222 14229	ISMDOOR
+R314	part_of Arg1:T552 Arg2:T551	
+R315	part_of Arg1:T550 Arg2:T552	
+T553	tool 14241 14248	payload
+T554	function 14279 14283	POST
+T555	tool 14302 14312	AES cipher
+T556	tool 14331 14334	CBC
+T557	sub_activity 14249 14266	encrypts the data
+R316	use Arg1:T553 Arg2:T555	
+R317	goal Arg1:T555 Arg2:T557	
+T558	sub_activity 14262 14266	data
+T559	reference_word 14353 14362	this data
+R318	coreference Arg1:T559 Arg2:T558	
+T560	reference_word 14365 14373	the data
+T561	tool 14409 14412	URL
+T562	encryption_algo 14418 14429	hexadecimal
+T563	encryption_algo 14561 14567	base64
+T564	tool 14593 14596	AES
+T565	encryption_algo 14642 14663	initialization vector
+T566	encryption_algo 14666 14668	IV
+R319	coreference Arg1:T566 Arg2:T565	
+T567	sub_activity 14577 14586	decrypted
+T568	sub_activity 14605 14628	value in the From field
+R320	goal Arg1:T564 Arg2:T567	
+R321	goal Arg1:T568 Arg2:T567	
+R322	goal Arg1:T565 Arg2:T567	
+R323	coreference Arg1:T560 Arg2:T558	
+T569	tool 14677 14684	payload
+T570	protocol 14730 14734	HTTP
+T571	function 14735 14739	POST
+R324	part_of Arg1:T571 Arg2:T570	
+T572	tool 14830 14837	payload
+T573	location 15130 15141	Middle East
+T574	sub_activity 14690 14721	check the C2 server 's response
+R325	launch Arg1:T569 Arg2:T574	
+R326	use Arg1:T10 Arg2:T105	
+T575	target_crowd 15109 15122	organizations
+R327	located Arg1:T575 Arg2:T573	
+T576	industry 15214 15232	telecommunications
+T577	time 15193 15203	April 2020
+R328	attack Arg1:T10 Arg2:T575	
+R329	attack Arg1:T10 Arg2:T576	
+T578	reference_word 15281 15290	this tool
+R330	coreference Arg1:T578 Arg2:T105	
+T579	sub_activity 14847 14878	exfiltrate 102400 bytes of data
+R331	launch Arg1:T572 Arg2:T579	
+T580	sub_activity 14900 14940	uses a field in the exfiltrated response
+T581	sample_function 14944 14971	notify the C2 of the offset
+R332	launch Arg1:T572 Arg2:T580	
+R333	goal Arg1:T580 Arg2:T581	
+T582	sha2 16323 16387	8f943bc5b20517fea08b2d0acc9afe8990703e9d4f7015b98489703ca51da7eb
+T583	sha2 16404 16468	8120849fbe85179a16882dd1a12a09fdd3ff97e30c3dfe52b43dd2ba7ed33c2a
+T584	sha2 16485 16549	bcdb63b3520e34992f292bf9a38498f49a9ca045b7b40caab5302c76ca10f035
+T585	sha2 16566 16630	f42c2b40574dc837b33c1012f7b6f41fcccc5ebf740a2b0af64e2c530418e9e0
+T586	domain_evil 17606 17620	digi.shanx.icu
+T587	domain_evil 17632 17647	tprs-servers.eu
+T588	domain_evil 17659 17668	oudax.com
+T589	domain_evil 17680 17697	kizlarsoroyur.com
+T590	domain_evil 17709 17733	intelligent-finance.site
+R334	part_of Arg1:T590 Arg2:T37	
+R335	part_of Arg1:T589 Arg2:T36	
+R336	part_of Arg1:T588 Arg2:T35	
+R337	part_of Arg1:T587 Arg2:T34	
+R338	part_of Arg1:T586 Arg2:T33	
+T591	domain_evil 17376 17385	rdmsi.com
+T592	domain_evil 17402 17412	rsshay.com
+T593	domain 17429 17441	sharjatv.com
+T594	domain 17458 17467	wwmal.com
+T595	domain_evil 17577 17594	kopilkaorukov.com
+T596	domain_evil 17484 17505	allsecpackupdater.com
+T597	domain_evil 17522 17533	tacsent.com
+T598	domain_evil 17550 17560	acrlee.com
+R339	part_of Arg1:T591 Arg2:T121	
+R340	part_of Arg1:T595 Arg2:T128	
+R341	part_of Arg1:T598 Arg2:T127	
+R342	part_of Arg1:T597 Arg2:T126	
+R343	part_of Arg1:T596 Arg2:T125	
+R344	attack Arg1:T124 Arg2:T594	
+R345	attack Arg1:T123 Arg2:T593	
+R346	part_of Arg1:T592 Arg2:T122	
+T599	sha2 17295 17359	6322cacf839b9c863f09c8ad9fd0e091501c9ba354730ab4809bb4c076610006
+T600	sha2 17214 17278	ba380e589261781898b1a54c2889f3360db09c61b9155607d7b4d11fcd85bd9d
+T601	sha2 16647 16711	fcabb86331cd5e2fa9edb53c4282dfcb16cc3d2cae85aabf1ee3c0c0007e508c
+T602	sha2 16728 16792	7b5042d3f0e9f077ef2b1a55b5fffab9f07cc856622bf79d56fc752e4dc04b28
+T603	sha2 17133 17197	55282007716b2b987a84a790eb1c9867e23ed8b5b89ef1a836cbedaf32982358
+T604	sha2 17052 17116	acb50b02ab0ca846025e7ad6c795a80dc6f61c4426704d0f1dd7e195143f5323
+T605	sha2 16971 17035	4ea6da6b35c4cdc6043c3b93bd6b61ea225fd5e1ec072330cb746104d0b0a4ec
+T606	sha2 16809 16873	ee32bde60d1175709fde6869daf9c63cd3227155e37f06d45a27a2f45818a3dc
+T607	sha2 16890 16954	de3f1cc2d4aac54fbdebd5bd05c9df59b938eb79bda427ae26dedef4309c55a9
+R347	part_of Arg1:T599 Arg2:T120	
+R348	part_of Arg1:T600 Arg2:T119	
+R349	part_of Arg1:T603 Arg2:T118	
+R350	part_of Arg1:T604 Arg2:T117	
+R351	part_of Arg1:T605 Arg2:T116	
+R352	part_of Arg1:T607 Arg2:T115	
+R353	part_of Arg1:T606 Arg2:T114	
+R354	part_of Arg1:T602 Arg2:T113	
+R355	part_of Arg1:T601 Arg2:T112	
+R356	part_of Arg1:T585 Arg2:T111	
+R357	part_of Arg1:T584 Arg2:T110	
+R358	part_of Arg1:T583 Arg2:T109	
+R359	part_of Arg1:T582 Arg2:T108	
+R360	part_of Arg1:T541 Arg2:T107	
+T608	sub_activity 15414 15435	available C2 channels
+R361	use Arg1:T578 Arg2:T608	
+T609	protocol 15487 15491	HTTP
+T610	tool 15496 15518	DNS tunneling channels
+T611	sub_activity 15454 15461	samples
+T612	person 15571 15580	developer
+T613	tool 15592 15613	Exchange Web Services
+R362	use Arg1:T612 Arg2:T613	
+T614	tool 15669 15683	steganographic
+T615	sub_activity 15669 15694	steganographic image file
+R363	use Arg1:T613 Arg2:T615	
+T616	sub_activity 15617 15640	send and receive emails
+R364	launch Arg1:T615 Arg2:T616	
+R365	use Arg1:T611 Arg2:T609	
+R366	use Arg1:T611 Arg2:T610	
+T617	tool 15759 15772	steganography
+R16	part_of Arg1:T149 Arg2:T4	
+R17	occur_time Arg1:T165 Arg2:T161	
+T130	tool 937 947	PowerShell
+T137	tool 948 959	downloaders
+R11	part_of Arg1:T137 Arg2:T130	
+T143	tool 1319 1341	email-based C2 channel
+T184	sub_activity 2016 2020	data
+R21	located Arg1:T184 Arg2:T179	

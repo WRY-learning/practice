@@ -1,0 +1,13 @@
+Unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+BlackOasis is a Middle Eastern threat group that is believed to be a customer of Gamma Group .
+The group has shown interest in prominent figures in the United Nations , as well as opposition bloggers , activists , regional news correspondents , and think tanks .
+A group known by Microsoft as NEODYMIUM is reportedly associated closely with BlackOasis operations , but evidence that the group names are aliases has not been identified .
+BRONZE BUTLER : REDBALDKNIGHT , Tick .
+BRONZE BUTLER is a cyber espionage group with likely Chinese origins that has been active since at least 2008 .
+The group primarily targets Japanese organizations , particularly those in government , biotechnology , electronics manufacturing , and industrial chemistry .
+Carbanak : Anunak , Carbon Spider .
+Carbanak is a threat group that mainly targets banks .
+It also refers to malware of the same name ( Carbanak ) .
+It is sometimes referred to as FIN7 , but these appear to be two groups using the same Carbanak malware and are therefore tracked separately .

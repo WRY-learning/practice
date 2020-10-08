@@ -1,0 +1,264 @@
+T1	person 32 38	actors
+T2	security_team 244 254	Proofpoint
+T3	attack_activity 312 332	spearphishing attack
+T4	tool 474 494	remote access Trojan
+T5	tool 497 500	RAT
+R1	coreference Arg1:T5 Arg2:T4	
+T6	person 540 546	actors
+T8	attack_activity 598 614	Operation Aurora
+T9	company 648 654	Google
+T10	attack_activity 703 728	Operation Ephemeral Hydra
+T11	company 810 817	FireEye
+T12	person 917 926	Palo Alto
+R2	find Arg1:T2 Arg2:T3	
+R3	use Arg1:T6 Arg2:T4	
+R4	use Arg1:T6 Arg2:T5	
+T14	time 932 941	August 10
+T15	security_team 942 952	Proofpoint
+T16	time 1205 1209	July
+T17	time 1227 1245	Sunday , August 27
+T20	tool 2043 2053	PowerShell
+T7	tool 578 586	9002 RAT
+T23	tool 2209 2227	9002 RAT shellcode
+T24	sample_name 2283 2293	wabmig.exe
+T25	protocol 2415 2419	HTTP
+T26	tool 43 69	fake Game of Thrones leaks
+R6	use Arg1:T1 Arg2:T26	
+T27	tool 2745 2762	PowerShell script
+T28	protocol 3029 3033	HTTP
+T29	protocol 3062 3065	SSL
+T30	tool 2637 2640	JPG
+T31	sample_name 2949 2959	wabmig.exe
+T32	protocol 3077 3080	SSL
+T33	tool 3077 3090	SSL component
+T34	tool 3145 3157	Client_Hello
+T35	tool 3178 3197	Client_Key_Exchange
+R7	part_of Arg1:T34 Arg2:T33	
+R8	part_of Arg1:T35 Arg2:T33	
+T36	tool 3243 3253	Session ID
+T37	tool 3377 3389	Client_Hello
+T38	protocol 3408 3411	SSL
+T39	domain 3423 3437	login.live.com
+T41	protocol 3484 3488	HTTP
+T42	tool 3546 3550	9002
+T43	tool 3484 3496	HTTP traffic
+T44	tool 3501 3509	encoding
+R10	use Arg1:T42 Arg2:T43	
+R11	use Arg1:T42 Arg2:T44	
+T45	protocol 3613 3632	command and control
+T46	protocol 3635 3638	C&C
+T47	protocol 3648 3652	HTTP
+R12	coreference Arg1:T46 Arg2:T45	
+T48	encryption_algo 3832 3858	4-byte XOR version of 9002
+T49	company 3873 3880	FireEye
+R13	find Arg1:T49 Arg2:T48	
+T50	string 4043 4195	\x3A\x42\x46\x41\x53\x41\x39\x41\x46\x2D\x44\x38\x37\x32\x6D\xF1\x51\x4A\xC0\x2D\x3A\x43\x31\x30\x2D\x30\x30\x43\x30\x35\x4A\x4D\x39\xF3\xD3\x38\x2B\x7D
+T51	string 4606 4622	\x17\x05\x15\x20
+T52	tool 4569 4573	9002
+T53	protocol 4710 4713	C&C
+T54	time 4753 4766	May 17 , 2015
+T55	time 4909 4918	July 2017
+T56	tool 2986 2990	9002
+T57	sha2 5040 5104	9e49d214e2325597b6d648780cf8980f4cc16811b21f586308e3e9866f40d1cd
+T58	sha2 5157 5221	bdd695363117ba9fb23a7cbcd484d79e7a469c11ab9a6e2ad9a50c678097f100
+T59	time 5273 5286	July 6 , 2017
+T60	time 5355 5368	July 1 , 2017
+T61	tool 5343 5351	ZIP file
+T62	tool 5375 5386	ZIP package
+T63	tool 5004 5029	LNK PowerShell downloader
+R14	part_of Arg1:T57 Arg2:T63	
+T64	tool 5131 5146	compressed file
+R15	part_of Arg1:T58 Arg2:T64	
+T65	tool 5492 5495	JPG
+T66	sample_name 5661 5675	need help.docx
+T67	time 5886 5896	April 2014
+T68	tool 5907 5927	ZIP compressed files
+T69	tool 6318 6335	packed executable
+T70	tool 6338 6340	PE
+R16	coreference Arg1:T70 Arg2:T69	
+T72	tool 6173 6198	LNK PowerShell downloader
+T73	tool 6362 6372	PowerShell
+T74	sample_name 6391 6396	x.exe
+T75	sample_name 6462 6467	y.exe
+T76	time 6521 6525	2014
+T78	domain_evil 6939 6946	mn1.org
+T79	tool 6970 6973	ZIP
+T80	program_language 6995 6999	Java
+T81	sample_name 7014 7027	PhotoShow.jar
+T83	protocol 7084 7087	C&C
+T84	domain_evil 7091 7101	mx.i26.org
+T85	string 7149 7165	\x28\x02\x13\x20
+T87	time 7314 7332	early- to mid-2014
+T89	time 7379 7383	2014
+T90	time 7388 7392	2017
+T77	time 7586 7590	2017
+T91	time 7621 7625	2014
+T92	time 7556 7560	2014
+T93	time 7700 7704	2017
+T94	time 7709 7713	2014
+T95	time 7752 7756	2014
+T96	threatActor_name 7831 7836	APT17
+T97	tool 7921 7929	9002 RAT
+T98	company 8150 8157	FireEye
+T99	sample_name 8173 8186	PhotoShow.jar
+T100	program_language 8080 8084	Java
+T102	threatActor_aliases 7814 7824	Deputy Dog
+R20	coreference Arg1:T96 Arg2:T102	
+T103	threatActor_aliases 7866 7876	Deputy Dog
+T105	threatActor_aliases 8273 8283	Deputy Dog
+T106	threatActor_aliases 8520 8530	Deputy Dog
+T107	security_team 8824 8834	Proofpoint
+T108	tool 8987 8995	9002 RAT
+T109	attack_activity 0 18	Operation RAT Cook
+R21	launch Arg1:T1 Arg2:T109	
+R5	release_time Arg1:T15 Arg2:T14	
+T111	sample_name 1601 1629	game of thrones preview.docx
+T112	tool 1804 1817	embedded .LNK
+T113	tool 1823 1848	OLE packager shell object
+R24	coreference Arg1:T113 Arg2:T112	
+T114	tool 1974 1987	embedded .LNK
+T115	reference_word 2033 2035	it
+R25	coreference Arg1:T115 Arg2:T114	
+T21	tool 2079 2113	Invoke-Shellcode PowerShell script
+R26	use Arg1:T115 Arg2:T21	
+T116	sample_function 2117 2167	download two files obfuscated using XOR and base64
+R27	goal Arg1:T21 Arg2:T116	
+T117	tool 2327 2331	.LNK
+T118	sample_function 2364 2408	maintain persistence on the infected machine
+R28	goal Arg1:T117 Arg2:T118	
+T119	tool 341 361	Game of Thrones lure
+R9	use Arg1:T3 Arg2:T119	
+T120	tool 368 388	malicious attachment
+T121	sample_function 397 439	offered salacious spoilers and video clips
+R22	goal Arg1:T120 Arg2:T121	
+T13	tool 775 801	Internet Explorer zero-day
+R23	use Arg1:T10 Arg2:T13	
+T127	tool 1551 1556	email
+T18	tool 1568 1593	Microsoft Word attachment
+R29	part_of Arg1:T18 Arg2:T127	
+T129	tool 1661 1669	document
+T130	tool 1677 1681	lure
+R31	use Arg1:T129 Arg2:T130	
+T131	sample_function 1867 1905	executes a malicious PowerShell script
+T132	sample_function 1921 1962	installation of the diskless “ 9002 ” RAT
+R32	goal Arg1:T113 Arg2:T131	
+R33	goal Arg1:T131 Arg2:T132	
+T135	tool 2180 2195	downloaded file
+R35	part_of Arg1:T23 Arg2:T135	
+R36	located Arg1:T23 Arg2:T24	
+T136	tool 2306 2321	downloaded file
+R37	coreference Arg1:T117 Arg2:T136	
+T137	sample_function 2432 2461	retrieve the encoded payloads
+T138	tool 2659 2675	persistence .LNK
+T139	location 2693 2710	Startup directory
+T140	sample_name 2714 2729	UpdateCheck.lnk
+T141	tool 2795 2810	.LNK downloader
+R38	located Arg1:T138 Arg2:T139	
+R39	located Arg1:T140 Arg2:T139	
+R40	part_of Arg1:T27 Arg2:T138	
+T142	reference_word 2862 2864	it
+T143	sample_function 2865 2870	opens
+T144	sample_function 2873 2880	decodes
+T145	sample_function 2887 2927	injects the already downloaded shellcode
+R41	coreference Arg1:T142 Arg2:T138	
+R42	goal Arg1:T142 Arg2:T143	
+R43	goal Arg1:T142 Arg2:T144	
+R44	goal Arg1:T142 Arg2:T145	
+T147	sample_function 3402 3437	mimic SSL traffic to login.live.com
+T148	sample_function 3441 3477	sending that domain in the SNI field
+R46	goal Arg1:T37 Arg2:T148	
+R48	goal Arg1:T37 Arg2:T147	
+R47	goal Arg1:T148 Arg2:T147	
+T151	encryption_algo 3907 3925	dynamic 4-byte XOR
+T152	encryption_algo 3974 3992	dynamic 4-byte XOR
+T153	sample_function 4201 4234	generate a final 256-byte XOR key
+R49	goal Arg1:T152 Arg2:T153	
+T154	sample_function 4240 4262	generate the final key
+T155	sample_function 4326 4351	generate a 256-byte value
+R50	goal Arg1:T155 Arg2:T154	
+T156	sample_function 4386 4434	encoded data are XOR ’ed with the 256-byte value
+T157	sample_function 4438 4473	generate the final 256-byte XOR key
+R51	goal Arg1:T156 Arg2:T157	
+T161	reference_word 4793 4802	this date
+R53	coreference Arg1:T161 Arg2:T54	
+T159	encryption_algo 5032 5038	sha256
+T160	encryption_algo 5149 5155	sha256
+T162	sample_function 5224 5269	uploaded to a malicious file scanning service
+R52	goal Arg1:T64 Arg2:T162	
+R54	first_found_time Arg1:T64 Arg2:T59	
+T164	tool 5396 5423	four copies of the same LNK
+T165	attack_activity 5445 5467	Game of Thrones attack
+R56	part_of Arg1:T164 Arg2:T62	
+R57	use Arg1:T165 Arg2:T164	
+R58	use Arg1:T165 Arg2:T65	
+T166	tool 5619 5622	LNK
+T167	tool 5628 5652	DOCX document attachment
+R59	coreference Arg1:T66 Arg2:T167	
+R60	part_of Arg1:T166 Arg2:T167	
+T71	sample_function 5969 6014	uploaded to a malicious file scanning service
+T170	tool 5949 5963	LNK downloader
+R17	part_of Arg1:T170 Arg2:T68	
+T171	tool 6121 6134	malicious LNK
+T173	sample_function 6414 6444	execute the downloaded payload
+R61	goal Arg1:T70 Arg2:T173	
+T176	string 6608 6618	0xCC9CE694
+T177	tool 6673 6681	LNK file
+T178	tool 6996 7007	ava payload
+R62	part_of Arg1:T178 Arg2:T79	
+R63	coreference Arg1:T81 Arg2:T178	
+T179	sample_function 7044 7076	executes a diskless 9002 variant
+R64	goal Arg1:T81 Arg2:T179	
+T86	string 7433 7443	0xCC9CE694
+T88	tool 7339 7358	malicious LNK files
+T181	sample_name 7562 7583	Party00[1-35].jpg.lnk
+R18	first_found_time Arg1:T181 Arg2:T77	
+T182	sample_name 7597 7618	Party-00[1-5].jpg.lnk
+R19	first_found_time Arg1:T182 Arg2:T91	
+R65	use Arg1:T103 Arg2:T97	
+T101	encryption_algo 7963 7973	4-byte XOR
+R66	use Arg1:T103 Arg2:T101	
+R67	find Arg1:T98 Arg2:T99	
+T184	tool 8881 8886	lures
+T185	person 9052 9062	the actors
+R68	use Arg1:T185 Arg2:T184	
+R69	use Arg1:T185 Arg2:T108	
+R70	goal Arg1:T25 Arg2:T137	
+T123	person 8481 8510	Chinese state-sponsored actor
+R71	part_of Arg1:T123 Arg2:T106	
+T124	attack_activity 547 563	Previous attacks
+R72	part_of Arg1:T8 Arg2:T124	
+R73	part_of Arg1:T10 Arg2:T124	
+T125	person 835 844	APT actor
+R74	find Arg1:T11 Arg2:T125	
+R30	coreference Arg1:T111 Arg2:T18	
+T126	reference_word 5316 5325	the files
+R34	part_of Arg1:T126 Arg2:T61	
+T128	attack_activity 5832 5851	a nexus of activity
+R55	occur_time Arg1:T128 Arg2:T67	
+R75	goal Arg1:T170 Arg2:T71	
+T133	tool 6550 6570	Volume Serial Number
+R76	coreference Arg1:T176 Arg2:T133	
+T149	tool 6627 6647	volume serial number
+R77	located Arg1:T149 Arg2:T177	
+T110	tool 3212 3228	hardcoded values
+R79	part_of Arg1:T36 Arg2:T110	
+T122	tool 8080 8110	Java Reverse Metasploit-Stager
+R80	use Arg1:T98 Arg2:T122	
+T134	sample_function 1682 1708	listing potential spoilers
+R81	goal Arg1:T130 Arg2:T134	
+T146	sample_function 3005 3018	communicating
+R45	goal Arg1:T56 Arg2:T146	
+R82	occur_time Arg1:T126 Arg2:T60	
+R83	first_found_time Arg1:T102 Arg2:T95	
+R84	first_found_time Arg1:T96 Arg2:T95	
+T22	sample_function 3256 3269	stay the same
+R85	goal Arg1:T36 Arg2:T22	
+T40	tool 4018 4037	static 38-byte seed
+R86	coreference Arg1:T50 Arg2:T40	
+T19	tool 7409 7429	Volume Serial Number
+R78	coreference Arg1:T86 Arg2:T19	
+T82	sample_function 9000 9047	open wide doors into corporate data and systems
+R87	goal Arg1:T184 Arg2:T82	
+R88	goal Arg1:T108 Arg2:T82	
+T150	tool 5732 5735	LNK
+T158	tool 7464 7467	LNK

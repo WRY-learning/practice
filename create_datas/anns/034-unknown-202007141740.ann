@@ -1,0 +1,228 @@
+T1	malware 0 11	OSX Malware
+T2	OS_name 0 3	OSX
+T5	malware 234 249	OSX_DOK malware
+T6	malware 279 288	OSX_DOK.C
+T7	OS_name 408 421	Apple ’s OS X
+T8	target_crowd 483 502	Swiss banking users
+T9	malware 446 453	malware
+R2	attack Arg1:T9 Arg2:T8	
+T10	attack_activity 512 529	phishing campaign
+T11	target_crowd 599 603	user
+T12	malware 668 677	OSX_DOK.C
+T4	attack_activity 814 832	Operation Emmental
+T13	malware 746 765	TROJ_WERDLOD Family
+R4	launch Arg1:T12 Arg2:T4	
+T14	malware 918 927	OSX_DOK.C
+T15	email_evil 948 962	phishing email
+R5	launch Arg1:T14 Arg2:T15	
+T16	location 1105 1111	Zurich
+T17	person 1085 1091	police
+T18	reference_word 1177 1182	email
+T19	OS_name 1300 1304	OS X
+T20	tool 1300 1308	OS X app
+T21	OS_name 1358 1365	Windows
+T22	malware 1390 1397	WERDLOD
+T23	target_crowd 1256 1260	user
+T24	malware 1430 1445	Banking Trojans
+T27	tool 1833 1842	App Store
+T28	OS_name 1906 1910	OS X
+T31	tool 2020 2029	utilities
+T32	reference_word 2032 2034	It
+T33	tool 2045 2053	Homebrew
+R10	use Arg1:T32 Arg2:T33	
+T34	tool 2107 2113	Golang
+T35	tool 2118 2121	Tor
+T36	tool 2071 2079	software
+R11	coreference Arg1:T36 Arg2:T33	
+T37	reference_word 2128 2135	malware
+T38	target_crowd 2233 2237	user
+T39	tool 2390 2402	Dokument.app
+T40	tool 2403 2411	Contents
+T41	tool 2412 2417	MacOS
+T42	tool 2418 2426	AppStore
+T43	location 2335 2342	English
+T44	location 2347 2353	German
+T45	tool 2266 2275	App Store
+T46	OS_name 2444 2447	Mac
+T47	OS_name 2472 2475	Mac
+T49	tool 2472 2480	Mac OS X
+T51	reference_word 2553 2560	malware
+T52	person 2582 2591	developer
+T53	company 2702 2704	CA
+T54	time 2684 2688	time
+T55	time 2736 2738	it
+R14	coreference Arg1:T55 Arg2:T54	
+T56	sub_activity 2774 2780	attack
+T57	company 2817 2823	COMODO
+T59	company 2898 2926	COMODO Certificate Authority
+T61	company 3044 3051	Mozilla
+T62	tool 3044 3059	Mozilla Firefox
+T63	company 3063 3069	Google
+T64	tool 3063 3076	Google Chrome
+T65	tool 3093 3101	browsers
+R16	coreference Arg1:T65 Arg2:T64	
+R17	coreference Arg1:T65 Arg2:T62	
+T66	tool 3170 3176	Safari
+T67	person 3227 3235	attacker
+T68	OS_name 3251 3258	Windows
+T69	OS_name 3263 3266	Mac
+T70	sub_activity 3284 3293	spam mail
+R18	attack Arg1:T67 Arg2:T68	
+R19	attack Arg1:T67 Arg2:T69	
+R20	launch Arg1:T67 Arg2:T70	
+T71	time 3298 3310	une 9 , 2017
+R21	first_found_time Arg1:T70 Arg2:T71	
+T72	target_crowd 3464 3468	user
+T73	tool 3422 3429	Dropbox
+R22	use Arg1:T72 Arg2:T73	
+T74	malware 3510 3523	malicious app
+T75	tool 3569 3574	proxy
+T76	tool 3561 3564	tor
+T77	tool 3602 3609	Dropbox
+T79	tool 3658 3665	Dropbox
+T81	tool 3730 3737	proxies
+T82	location 3983 3994	Switzerland
+T84	location 4065 4076	Switzerland
+T85	malware 4083 4095	malware will
+T86	location 4389 4400	Switzerland
+T87	target_crowd 4380 4385	users
+T88	reference_word 4450 4457	malware
+T89	reference_word 4198 4205	malware
+T90	attack_activity 5276 5294	Operation Emmental
+T91	time 6008 6021	June 9 , 2017
+T92	tool 6028 6031	UPX
+T93	malware 5808 5815	malware
+T94	malware 5900 5907	malware
+T95	malware 6090 6097	malware
+T97	tool 6387 6390	UPX
+T98	tool 5789 5792	UPX
+T99	malware 5411 5420	OSX_DOK.C
+T100	tool 6460 6463	UPX
+T101	tool 6311 6314	UPX
+T102	malware 6673 6682	OSX_DOK.C
+T103	OS_name 6696 6699	MAC
+T104	malware 6716 6723	WERDLOD
+T105	malware 6744 6751	malware
+T106	tool 6785 6803	Operation Emmental
+T107	OS_name 6845 6848	OSX
+T108	tool 5628 5639	Executables
+T109	tool 5789 5801	UPX unpacker
+T110	tool 5617 5623	Packer
+T111	malware 5711 5718	malware
+T112	malware 6950 6959	OSX_DOK.C
+T113	OS_name 6976 6979	MAC
+T114	tool 6976 6984	MAC OS X
+T115	malware 7017 7024	WERDLOD
+T116	OS_name 7041 7048	Windows
+T117	malware 7251 7258	WERDLOD
+T118	malware 7263 7272	OSX_DOK.C
+T119	malware 7358 7365	WERDLOD
+T120	tool 7386 7403	Internet Explorer
+T121	tool 7406 7413	Firefox
+T122	tool 7420 7426	Chrome
+T123	malware 7429 7438	OSX_DOK.C
+T124	tool 7456 7462	Safari
+T125	tool 7465 7472	Firefox
+T126	tool 7479 7485	Chrome
+T127	malware 7493 7500	malware
+T128	malware 7551 7558	WERDLOD
+T129	malware 7563 7572	OSX_DOK.C
+T130	malware 7715 7722	WERDLOD
+T131	malware 7829 7838	OSX_DOK.C
+T132	malware 7896 7903	malware
+T133	malware 7933 7940	WERDLOD
+T134	malware 7945 7954	OSX_DOK.C
+T135	location 8025 8036	Switzerland
+T136	industry 7964 7986	financial institutions
+R26	attack Arg1:T134 Arg2:T136	
+R27	attack Arg1:T133 Arg2:T136	
+T137	industry 8016 8021	banks
+R28	attack Arg1:T133 Arg2:T137	
+R29	attack Arg1:T134 Arg2:T137	
+R30	located Arg1:T137 Arg2:T135	
+T138	malware 8064 8071	malware
+T139	malware 8265 8272	malware
+T140	industry 8292 8305	organizations
+R31	attack Arg1:T139 Arg2:T140	
+T141	malware 8347 8354	WERDLOD
+T142	malware 8359 8368	OSX_DOK.C
+T144	attack_activity 8514 8532	Operation Emmental
+T143	attack_activity 8436 8456	Operational Emmental
+R32	launch Arg1:T141 Arg2:T143	
+R33	launch Arg1:T142 Arg2:T143	
+T145	malware 8567 8576	OSX_DOK.C
+T146	OS_name 8611 8614	Mac
+T147	OS_name 8646 8653	Windows
+T148	person 8669 8674	users
+T149	person 8702 8711	attackers
+T150	person 8723 8727	them
+R34	coreference Arg1:T150 Arg2:T148	
+T151	malware 8970 8979	OSX_DOK.C
+T152	person 9061 9066	users
+T153	security_team 9116 9141	Trend Micro Home Security
+T154	OS_name 9146 9149	Mac
+T155	malware 9226 9233	viruses
+T156	malware 9236 9246	ransomware
+T157	malware 9249 9267	malicious websites
+T158	malware 9274 9290	identity thieves
+T159	security_team 9293 9295	It
+R35	coreference Arg1:T159 Arg2:T153	
+T160	security_team 9372 9400	Trend Micro™ Mobile Security
+T161	company 9405 9410	Apple
+T162	tool 9438 9447	App Store
+R36	part_of Arg1:T162 Arg2:T161	
+T163	tool 9405 9418	Apple devices
+T164	url_evil 9509 9513	URLs
+T165	sub_activity 9472 9488	phishing attacks
+T166	security_team 9534 9572	Trend Micro ’s Smart Protection Suites
+T167	security_team 9578 9592	XGen™ security
+T168	tool 9609 9612	Mac
+T170	malware 709 716	WERDLOD
+T172	attack_activity 631 665	Man-in-the- Middle ( MitM ) attack
+R37	launch Arg1:T9 Arg2:T10	
+R38	use Arg1:T9 Arg2:T172	
+R40	located Arg1:T17 Arg2:T16	
+R6	coreference Arg1:T18 Arg2:T15	
+R41	attack Arg1:T22 Arg2:T21	
+T26	attack_activity 1756 1770	phishing email
+T29	attack_activity 2199 2210	MitM attack
+R7	launch Arg1:T37 Arg2:T29	
+R42	attack Arg1:T29 Arg2:T38	
+T173	tool 2444 2452	Mac OS X
+T48	target_crowd 2659 2663	user
+R44	attack Arg1:T51 Arg2:T48	
+R45	coreference Arg1:T48 Arg2:T52	
+T174	tool 3154 3162	browsers
+T175	tool 3263 3271	Mac OS X
+T177	IP 4051 4053	IP
+R47	located Arg1:T87 Arg2:T86	
+T179	target_crowd 4512 4520	visitors
+R48	attack Arg1:T88 Arg2:T179	
+T180	tool 5379 5387	fake app
+T181	tool 5608 5623	Ultimate Packer
+T182	malware 6897 6904	WERDLOD
+R49	coreference Arg1:T105 Arg2:T104	
+R50	use Arg1:T104 Arg2:T106	
+R51	use Arg1:T102 Arg2:T106	
+T50	person 4870 4879	attackers
+T58	target_crowd 4927 4931	user
+T183	attack_activity 4221 4232	MitM attack
+R13	launch Arg1:T89 Arg2:T183	
+T185	person 5074 5082	attacker
+T186	target_crowd 5229 5233	user
+T187	sub_activity 8588 8596	phishing
+R52	coreference Arg1:T6 Arg2:T5	
+T3	sub_activity 32 69	Emmental Hijacks User Network Traffic
+R1	launch Arg1:T2 Arg2:T3	
+T169	security_team 264 275	Trend Micro
+T184	security_team 731 742	Trend Micro
+T171	sample_name 1706 1718	06.2017.docx
+T188	sample_name 1699 1703	docx
+T189	sample_name 1672 1696	Dokument 09.06.2017.docx
+T190	sample_name 1646 1669	Dokument 09.06.2017.zip
+T191	sample_name 1640 1643	zip
+T192	sample_name 1604 1637	Zahlungsinformationen digitec.zip
+T193	sample_name 1565 1601	Zahlungsinformationen 01.06.2017.zip
+R8	coreference Arg1:T32 Arg2:T14	
+R9	coreference Arg1:T37 Arg2:T14	
+R3	coreference Arg1:T51 Arg2:T14	

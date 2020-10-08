@@ -1,0 +1,28 @@
+APT37 .
+APT37 frequently exploits vulnerabilities in Hangul Word Processor ( HWP ) due to the software ’s prevalence in South Korea .
+Further , the group recently demonstrated access to zero-day vulnerabilities ( CVE-2018-0802 ) and has the flexibility to quickly incorporate recently publicized vulnerabilities into spear phishing and strategic web compromise operations .
+These capabilities suggest a high operational tempo and specialized expertise .
+APT37 has repeatedly deployed exploits , especially in Flash , quickly after vulnerabilities are initially publicized ( see Table 1 ) .
+CVE-2016-4117 , CVE-2016-1019 and CVE-2015-3043 were all exploited by APT37 in this way .
+FireEye iSIGHT Intelligence confirmed that since at least November 2017 , APT37 exploited a zero-day Adobe Flash vulnerability , CVE-2018-4878 , to distribute DOGCALL malware to South Korean victims .
+While use and discovery of zero-day exploits over the past several years has expanded beyond a nation-state dominated environment to include commercial vendors of cyber espionage capabilities and sophisticated financially motivated actors , access to zero-day exploits remains a factor in distinguishing sophisticated or well-resourced actors .
+APT37 uses a variety of techniques for command and control .
+They leverage compromised servers , messaging platforms and cloud service providers to avoid detection .
+The group often relies on compromised sites to host second stage malware payloads .
+Over time , APT37 has changed the email providers to set up command and control accounts in a possible attempt to cover their tracks and cause misdirection .
+These tactics have been refined over the years as APT37 evolves to evade network defenders .
+APT37 has used various legitimate platforms as command and control for its malware tools .
+While some early campaigns leveraged POORAIM , which abused AOL Instant Messenger , newer activity deploys DOGCALL , which uses cloud storage APIs such as pCloud and Dropbox .
+APT37 relies on compromised websites to host second stage malware .
+Small websites focused on subjects such as aromatherapy and scuba diving have been leveraged , and were most likely compromised opportunistically and made to host malicious payloads .
+APT37 has improved its operational security over time .
+For example , early 2015 use of SLOWDRIFT involved credentials associated with Korea related mail servers such as “ Daum.net ” .
+Later , in 2015 and early 2016 , APT37 pivoted to different email providers such as Gmail and “ hmamail.com ” in an attempt to anonymize activity .
+Then from mid-2016 onward , APT37 began using @yandex.com and @india.com email accounts -- possibly an attempt to cause misattribution .
+APT37 employs a diverse suite of malware for initial intrusion and exfiltration .
+Their malware is characterized by a focus on stealing information from victims , with many set up to automatically exfiltrate data of interest .
+Figure 4 shows APT37 ’s malware usage over time .
+A full breakdown of the malware we associate with APT37 , along with how it is detected by FireEye devices , is available in the Appendix .
+Along with custom malware used for espionage purposes , APT37 also has access to destructive malware .
+In April 2017 , APT37 targeted South Korean military and government organizations with the DOGCALL backdoor and RUHAPPY wiper malware .
+Although the wiper capability was not used in the identified instance , RUHAPPY can overwrite a machine's Master Boot Record ( MBR ) , causing the system to fail to boot into preconfigured partitions .

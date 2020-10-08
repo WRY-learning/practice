@@ -1,0 +1,149 @@
+T1	threatActor_name 18 32	Energetic Bear
+T2	attack_activity 35 62	Watering Hole Cyber Attacks
+R1	launch Arg1:T1 Arg2:T2	
+T3	threatActor_name 227 241	Energetic Bear
+T4	attack_activity 245 272	Watering Hole Cyber Attacks
+R2	launch Arg1:T3 Arg2:T4	
+T5	government 66 97	Turkish Critical Infrastructure
+R3	attack Arg1:T1 Arg2:T5	
+T6	government 276 307	Turkish Critical Infrastructure
+R4	attack Arg1:T3 Arg2:T6	
+T7	time 351 363	October 20th
+T8	security_team 364 371	US-CERT
+T9	security_team 680 687	US-CERT
+T10	threatActor_name 920 934	Energetic Bear
+T11	threatActor_aliases 943 957	Crouching Yeti
+R5	coreference Arg1:T11 Arg2:T10	
+T12	threatActor_name 983 997	Energetic Bear
+T13	security_team 1045 1054	Kaspersky
+T14	security_team 1061 1067	RiskIQ
+R6	find Arg1:T13 Arg2:T12	
+R7	find Arg1:T14 Arg2:T12	
+T15	tool 1128 1148	web crawling network
+R8	use Arg1:T14 Arg2:T15	
+T16	company 1207 1229	Turkish energy company
+T17	attack_activity 1250 1270	watering hole attack
+R9	goal Arg1:T17 Arg2:T16	
+T18	target_crowd 1281 1287	people
+T19	industry 1304 1335	Turkish critical infrastructure
+R10	part_of Arg1:T18 Arg2:T19	
+R11	goal Arg1:T17 Arg2:T18	
+T20	protocol 1405 1408	SMB
+T21	security_team 1441 1447	RiskIQ
+T22	security_team 2074 2078	CERT
+T23	malware 1409 1438	credential-harvesting malware
+T24	attack_goal 1512 1525	Turkish sites
+T25	attack_activity 1638 1659	Watering hole attacks
+T26	government 1926 1932	Turkey
+T27	threatActor_name 2000 2014	Energetic Bear
+T28	government 1962 1968	Turkey
+R12	goal Arg1:T27 Arg2:T28	
+R13	goal Arg1:T27 Arg2:T26	
+T29	security_team 2141 2148	US-CERT
+T30	threatActor_name 2231 2245	Energetic Bear
+T31	malware 2542 2547	Havex
+T32	reference_word 2381 2386	group
+R14	coreference Arg1:T32 Arg2:T30	
+R15	use Arg1:T32 Arg2:T31	
+T33	security_team 2603 2610	US-CERT
+T34	reference_word 2624 2629	group
+R16	coreference Arg1:T34 Arg2:T30	
+T35	domain 2711 2724	turcas.com.tr
+T37	company 2657 2670	Turcas Petrol
+T36	reference_word 2673 2697	a Turkish energy company
+R17	coreference Arg1:T36 Arg2:T37	
+R18	attack Arg1:T34 Arg2:T37	
+R19	attack Arg1:T34 Arg2:T35	
+T38	time 2729 2737	May 2017
+T39	company 2768 2784	Turcas ’ website
+T40	security_team 2787 2793	RiskIQ
+T41	attack_activity 2808 2821	watering hole
+T42	threatActor_name 2838 2852	Energetic Bear
+R20	launch Arg1:T42 Arg2:T41	
+R21	find Arg1:T40 Arg2:T41	
+R22	first_found_time Arg1:T40 Arg2:T38	
+R23	release_time Arg1:T8 Arg2:T7	
+T43	government 616 623	Russian
+T44	reference_word 646 662	the threat group
+R24	coreference Arg1:T44 Arg2:T10	
+R25	located Arg1:T44 Arg2:T43	
+R26	use Arg1:T23 Arg2:T20	
+T45	tool 2431 2468	programmable logic controller ( PLC )
+T46	threatActor_name 3225 3239	Energetic Bear
+T47	attack_goal 3182 3195	Announcements
+R27	attack Arg1:T46 Arg2:T47	
+T48	security_team 3531 3536	Talos
+T49	protocol 3471 3484	Microsoft SMB
+T50	reference_word 3454 3459	group
+R28	coreference Arg1:T50 Arg2:T46	
+R29	goal Arg1:T50 Arg2:T49	
+T51	attack_activity 3578 3592	spear-phishing
+R30	find Arg1:T48 Arg2:T51	
+T52	attack_activity 3639 3652	watering hole
+R31	find Arg1:T48 Arg2:T52	
+T53	tool 3762 3782	TornadoServer Python
+R32	use Arg1:T52 Arg2:T53	
+T54	company 3861 3874	Turcas Petrol
+T55	company 3998 4011	Turcas Petrol
+T56	threatActor_name 4096 4110	Energetic Bear
+T57	reference_word 4141 4146	group
+R33	coreference Arg1:T57 Arg2:T56	
+T58	government 4196 4214	Russian Federation
+T59	security_team 4278 4285	US-CERT
+T60	protocol 4365 4368	SMB
+T61	security_team 4343 4349	RiskIQ
+T62	IP 4399 4413	184.154.150.66
+T63	IP 4499 4512	103.41.177.58
+T64	domain 4751 4766	turcas_icon.png
+T65	domain 4954 4968	<tag>_icon.png
+T66	domain 4973 4982	<tag>.png
+T67	protocol 4652 4655	SMB
+T68	url 6014 6099	http://www.plantengineering.com/typo3conf/ext/t3s_jslidernews/res/js/jquery.easing.js
+T69	url 6100 6175	http://www.csemag.com/typo3conf/ext/t3s_jslidernews/res/js/jquery.easing.js
+T70	url 6176 6255	http://www.controleng.com/typo3conf/ext/t3s_jslidernews/res/js/jquery.easing.js
+T71	company 5013 5026	Turcas Petrol
+T72	domain 5220 5240	plantengineering.com
+T73	time 5330 5356	a few months in early 2017
+T74	threatActor_name 5431 5445	Energetic Bear
+R34	occur_time Arg1:T74 Arg2:T73	
+T75	tool 5545 5599	/typo3conf/ext/t3s_jslidernews/res/js/jquery.easing.js
+T76	tool 5674 5680	jQuery
+T77	program_language 5688 5698	JavaScript
+T78	protocol 5755 5758	SMB
+T79	tool 5846 5849	DOM
+T80	tool 6488 6493	WHOIS
+T81	tool 6509 6521	PassiveTotal
+T82	domain 6530 6550	plantengineering.com
+T83	company 6563 6576	CFE Media LLC
+R35	part_of Arg1:T82 Arg2:T83	
+T84	domain 6630 6650	srourke@cfemedia.com
+T85	security_team 6784 6790	RiskIQ
+T86	domain 6802 6816	controleng.com
+T87	domain 6819 6839	plantengineering.com
+T88	domain 6846 6856	csemag.com
+R36	find Arg1:T85 Arg2:T86	
+R37	find Arg1:T85 Arg2:T87	
+R38	find Arg1:T85 Arg2:T88	
+T89	threatActor_name 6897 6911	Energetic Bear
+R39	goal Arg1:T89 Arg2:T86	
+R40	goal Arg1:T89 Arg2:T87	
+R41	goal Arg1:T89 Arg2:T88	
+T90	attack_activity 7033 7046	watering hole
+T91	company 7074 7083	CFE Media
+R42	goal Arg1:T90 Arg2:T91	
+T92	company 7128 7137	CFE Media
+R43	goal Arg1:T90 Arg2:T92	
+T93	threatActor_name 7235 7249	Energetic Bear
+T94	protocol 7253 7267	SMB-harvesting
+R44	use Arg1:T93 Arg2:T94	
+T95	time 7281 7297	the end of March
+R45	first_found_time Arg1:T93 Arg2:T95	
+T96	time 7322 7340	the end of January
+T97	security_team 7359 7365	RiskIQ
+T98	time 7429 7472	the beginning of February and the end March
+R46	release_time Arg1:T97 Arg2:T98	
+T99	program_language 7591 7601	JavaScript
+T100	threatActor_name 8027 8041	Energetic Bear
+T101	security_team 8059 8065	RiskIQ
+T102	threatActor_name 8132 8138	RiskIQ
+T103	security_team 8366 8372	RiskIQ

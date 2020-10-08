@@ -1,0 +1,15 @@
+Unknown .		others others
+Release_Time : unknown .		others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+Sandworm Team : Quedagh , VOODOO BEAR .		threatActor_name threatActor_name others threatActor_aliases others threatActor_aliases threatActor_aliases others
+Sandworm Team is a Russian cyber espionage group that has operated since approximately 2009 .		threatActor_name threatActor_name others others location others others others others others others others others time others
+The group likely consists of Russian pro-hacktivists .		reference_word reference_word others others others location others others
+Sandworm Team targets mainly Ukrainian entities associated with energy , industrial control systems , SCADA , government , and media .		threatActor_name threatActor_name others others location others others others industry others industry industry industry others industry others industry others others industry others
+Sandworm Team has been linked to the Ukrainian energy sector attack in late 2015 .		threatActor_name threatActor_name others others others others others industry industry industry others others others time others
+Scarlet Mimic is a threat group that has targeted minority rights activists .		threatActor_name threatActor_name others others others others others others others attack_activity attack_activity attack_activity others
+This group has not been directly linked to a government source , but the group 's motivations appear to overlap with those of the Chinese government .		reference_word reference_word others others others others others others others others others others others others others others others others others others others others others others government government others
+While there is some overlap between IP addresses used by Scarlet Mimic and Putter Panda , it has not been concluded that the groups are the same .		others others others others others others others others others others threatActor_name threatActor_name others threatActor_name threatActor_name others others others others others others others others others others others others others
+Silence is a financially motivated threat actor targeting financial institutions in different countries .		threatActor_name others others others others others others others industry industry others others others others
+The group was first seen in June 2016 .		reference_word reference_word others others others others time time others
+Their main targets reside in Russia , Ukraine , Belarus , Azerbaijan , Poland and Kazakhstan .		reference_word others others others others location others location others location others location others location others location others
+They compromised various banking systems , including the Russian Central Bank 's Automated Workstation Client , ATMs , and card processing .		reference_word others others others others others others others target_crowd target_crowd target_crowd target_crowd target_crowd target_crowd target_crowd others target_crowd others others target_crowd target_crowd others

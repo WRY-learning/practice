@@ -1,0 +1,88 @@
+T1	threatActor_name 81 96	Charming Kitten
+T2	time 174 178	2014
+T3	threatActor_name 705 712	Cleaver
+T4	threatActor_aliases 715 732	Threat Group 2889
+T5	location 347 351	Iran
+T7	location 354 360	the US
+T8	location 363 369	Israel
+T9	location 376 382	the UK
+T10	threatActor_name 385 400	Charming Kitten
+T11	threatActor_name 606 617	Magic Hound
+T15	threatActor_name 745 752	Cleaver
+T16	threatActor_name 917 924	Cleaver
+T18	threatActor_name 970 982	Cobalt Group
+T19	threatActor_aliases 985 996	Cobalt Gang
+T17	threatActor_name 938 967	Threat Group 2889 ( TG-2889 )
+T20	threatActor_name 1015 1027	Cobalt Group
+T21	target_crowd 1096 1118	financial institutions
+T23	target_crowd 1199 1214	card processing
+T24	target_crowd 1217 1232	payment systems
+T25	threatActor_name 1253 1265	Cobalt Group
+T26	location 1295 1309	Eastern Europe
+T27	location 1312 1324	Central Asia
+T28	location 1331 1345	Southeast Asia
+T29	location 1391 1396	Spain
+T30	time 1406 1410	2018
+T31	threatActor_name 1621 1633	Cobalt Group
+T32	malware 1655 1663	Carbanak
+T33	threatActor_name 1678 1686	Carbanak
+R1	release_time Arg1:T1 Arg2:T2	
+R6	attack Arg1:T20 Arg2:T21	
+T34	reference_word 181 185	They
+R10	coreference Arg1:T34 Arg2:T1	
+T35	target_crowd 215 246	individuals of interest to Iran
+T6	location 242 246	Iran
+T36	industry 259 276	academic research
+T37	industry 279 291	human rights
+T38	industry 298 303	media
+R3	attack Arg1:T34 Arg2:T35	
+R11	attack Arg1:T34 Arg2:T36	
+R12	attack Arg1:T34 Arg2:T37	
+R13	attack Arg1:T34 Arg2:T38	
+R14	located Arg1:T35 Arg2:T5	
+R15	located Arg1:T35 Arg2:T7	
+R16	located Arg1:T35 Arg2:T8	
+R17	located Arg1:T35 Arg2:T9	
+T12	company 443 451	Facebook
+T13	sub_activity 418 460	access private email and Facebook accounts
+T14	sub_activity 477 519	establishes a foothold on victim computers
+R2	launch Arg1:T10 Arg2:T13	
+R4	launch Arg1:T10 Arg2:T14	
+T39	reference_word 547 556	The group
+R5	coreference Arg1:T39 Arg2:T10	
+T40	reference_word 676 690	the two groups
+R18	coreference Arg1:T4 Arg2:T3	
+T41	threatActor_aliases 735 742	TG-2889
+R19	coreference Arg1:T41 Arg2:T3	
+T42	person 799 813	Iranian actors
+R20	part_of Arg1:T42 Arg2:T15	
+T43	target_crowd 1237 1250	SWIFT systems
+T44	attack_activity 857 874	Operation Cleaver
+R21	launch Arg1:T15 Arg2:T44	
+R22	coreference Arg1:T19 Arg2:T18	
+T45	threatActor_aliases 999 1012	Cobalt Spider
+R24	coreference Arg1:T45 Arg2:T18	
+R25	coreference Arg1:T41 Arg2:T4	
+R26	coreference Arg1:T45 Arg2:T19	
+T46	reference_word 1121 1130	The group
+R27	coreference Arg1:T46 Arg2:T20	
+T47	target_crowd 1185 1196	ATM systems
+T22	attack_goal 1159 1170	steal money
+R7	goal Arg1:T46 Arg2:T22	
+R8	attack Arg1:T46 Arg2:T47	
+R9	attack Arg1:T46 Arg2:T23	
+R23	attack Arg1:T46 Arg2:T24	
+R28	attack Arg1:T46 Arg2:T43	
+T48	target_crowd 1286 1291	banks
+R29	attack Arg1:T25 Arg2:T48	
+R30	located Arg1:T48 Arg2:T26	
+R31	located Arg1:T48 Arg2:T27	
+R32	located Arg1:T48 Arg2:T28	
+T49	person 1355 1374	the alleged leaders
+R33	part_of Arg1:T49 Arg2:T25	
+T50	reference_word 1417 1426	the group
+R34	coreference Arg1:T50 Arg2:T25	
+T51	reference_word 1456 1465	The group
+T52	attack_goal 1517 1571	use their access to then compromise additional victims
+R36	goal Arg1:T51 Arg2:T52	
+R35	coreference Arg1:T51 Arg2:T50	

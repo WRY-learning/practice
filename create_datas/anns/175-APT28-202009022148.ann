@@ -1,0 +1,243 @@
+T1	threatActor_name 0 5	APT28
+T2	threatActor_name 4264 4269	APT28
+T3	threatActor_name 2650 2655	APT28
+T4	threatActor_name 2789 2794	APT28
+T5	time 200 209	June 2016
+T6	threatActor_name 2004 2009	APT28
+T7	threatActor_name 1092 1097	APT28
+T8	government 1123 1141	Russian Government
+T9	threatActor_name 7237 7242	APT29
+T10	threatActor_name 7227 7232	APT28
+T11	threatActor_name 9192 9197	APT28
+T12	threatActor_name 9515 9520	APT28
+T13	threatActor_name 9726 9731	APT28
+T14	threatActor_name 6608 6613	APT28
+T15	threatActor_name 7902 7907	APT28
+T16	threatActor_name 7368 7373	APT28
+T17	threatActor_name 6765 6770	APT28
+T18	threatActor_name 6480 6485	APT28
+T19	threatActor_name 5514 5519	APT28
+T20	threatActor_name 5321 5326	APT28
+T21	threatActor_name 5750 5755	APT28
+T22	threatActor_name 5956 5961	APT28
+T23	threatActor_name 4560 4565	APT28
+T24	threatActor_name 4718 4723	APT28
+T25	threatActor_name 4371 4378	APT28  
+T26	threatActor_name 3684 3689	APT28
+T27	threatActor_name 3570 3575	APT28
+T28	threatActor_name 3415 3420	APT28
+T29	threatActor_name 3492 3497	APT28
+T30	threatActor_name 3243 3248	APT28
+T31	threatActor_name 2305 2310	APT28
+T32	threatActor_name 1444 1449	APT28
+T33	threatActor_name 1738 1743	APT28
+T34	threatActor_name 2034 2039	APT28
+T35	time 3460 3472	October 2014
+T36	time 5943 5953	Since 2014
+T37	time 6836 6858	On September 12 , 2016
+T38	time 7074 7088	SEPTEMBER 2016
+T40	time 7382 7394	In June 2016
+T42	time 9061 9074	FEBRUARY 2015
+T43	time 9077 9099	APRIL 2015 In February
+T44	security_team 7245 7252	FireEye
+T45	security_team 9414 9421	FireEye
+T46	security_team 9102 9109	FireEye
+T48	time 5369 5405	OCTOBER 2014 THROUGH  SEPTEMBER 2015
+T50	security_team 3475 3482	FireEye
+R1	find Arg1:T50 Arg2:T29	
+R2	release_time Arg1:T50 Arg2:T35	
+T51	security_team 1928 1935	FireEye
+T52	time 1772 1793	On December 29 , 2016
+T53	time 2012 2031	Since at least 2007
+T54	attack_activity 3513 3549	Russia ’s Cyber Espionage Operations
+R3	launch Arg1:T29 Arg2:T54	
+T55	government 3609 3627	Russian Government
+T56	government 1751 1769	Russian Government
+T57	security_team 1800 1831	Department of Homeland Security
+T58	security_team 1834 1837	DHS
+R4	coreference Arg1:T58 Arg2:T57	
+T59	security_team 1844 1875	Federal Bureau of Investigation
+T60	security_team 1878 1881	FBI
+R5	coreference Arg1:T60 Arg2:T59	
+T61	government 1976 1994	Russian Government
+R6	find Arg1:T51 Arg2:T6	
+R7	release_time Arg1:T57 Arg2:T52	
+R8	release_time Arg1:T59 Arg2:T52	
+T62	government 430 448	Russian Government
+T63	government 261 279	Russian Government
+T64	security_team 159 188	Democratic National Committee
+T65	security_team 194 197	DNC
+R9	coreference Arg1:T65 Arg2:T64	
+R10	release_time Arg1:T64 Arg2:T5	
+T66	government 379 383	U.S.
+T67	government 319 325	Russia
+T68	government 662 680	Russian Government
+T69	government 703 707	U.S.
+T70	security_team 616 619	DNC
+T71	government 812 818	Russia
+T72	government 953 971	Russian Government
+T73	time 1472 1493	date to at least 2007
+T74	government 2091 2098	Russian
+R11	occur_time Arg1:T34 Arg2:T53	
+T75	government 2369 2373	U.S.
+T76	government 2376 2382	Europe
+T77	government 2557 2575	Russian Government
+T78	government 2417 2429	Soviet Union
+R12	attack Arg1:T31 Arg2:T75	
+R13	attack Arg1:T31 Arg2:T76	
+R14	attack Arg1:T31 Arg2:T78	
+T79	government 2442 2453	governments
+T80	industry 2458 2468	militaries
+T81	industry 2471 2487	defense attaches
+T82	industry 2490 2504	media entities
+T83	person 2511 2533	dissidents and figures
+R15	attack Arg1:T31 Arg2:T79	
+R16	attack Arg1:T31 Arg2:T80	
+R17	attack Arg1:T31 Arg2:T81	
+R18	attack Arg1:T31 Arg2:T82	
+R19	attack Arg1:T31 Arg2:T83	
+T84	time 2578 2601	Over the past two years
+T85	government 2604 2610	Russia
+T86	attack_activity 2938 2980	conflict in Syria , NATO-Ukraine relations
+T87	attack_activity 2987 3028	European Union refugee and migrant crisis
+T88	attack_activity 3035 3095	2016 Olympics and Paralympics Russian athlete doping scandal
+T89	attack_activity 3098 3158	public accusations regarding Russian state-sponsored hacking
+T90	attack_activity 3169 3200	2016 U.S. presidential election
+T93	industry 3785 3823	European and Eastern  European nations
+T94	security_team 3883 3917	North Atlantic Treaty Organization
+T95	security_team 3920 3924	NATO
+R20	coreference Arg1:T95 Arg2:T94	
+T96	security_team 3936 3988	Organization for Security and Cooperation  in Europe
+T97	security_team 3991 3995	OSCE
+R21	coreference Arg1:T97 Arg2:T96	
+R22	attack Arg1:T26 Arg2:T93	
+R23	attack Arg1:T26 Arg2:T94	
+R24	attack Arg1:T26 Arg2:T96	
+T91	threatActor_name 4075 4080	APT28
+T92	security_team 4161 4165	OSCE
+T98	security_team 4138 4142	OSCE
+T99	time 4143 4156	NOVEMBER 2016
+T100	security_team 6677 6702	World Anti-Doping  Agency
+T101	security_team 6705 6709	WADA
+R25	coreference Arg1:T101 Arg2:T100	
+T102	time 6712 6726	SEPTEMBER 2016
+T103	time 6730 6742	September 13
+T104	security_team 6745 6749	WADA
+R26	find Arg1:T104 Arg2:T17	
+R27	release_time Arg1:T104 Arg2:T103	
+T105	attack_goal 6804 6833	accessed athlete medical data
+R28	goal Arg1:T17 Arg2:T105	
+T47	security_team 6362 6389	FireEye iSIGHT Intelligence
+T107	tool 5767 5773	Sedkit
+T106	time 5725 5749	JUNE AND  SEPTEMBER 2014
+T49	security_team 5406 5433	FireEye iSight Intelligence
+T108	threatActor_aliases 7566 7578	Guccifer 2.0
+T109	threatActor_aliases 7441 7453	Guccifer 2.0
+T110	threatActor_aliases 8729 8741	Guccifer 2.0
+T111	threatActor_aliases 8927 8939	Guccifer 2.0
+T112	government 9538 9576	Ukrainian Central  Election Commission
+T113	government 9579 9582	CEC
+R29	coreference Arg1:T113 Arg2:T112	
+T114	government 8288 8332	Democratic  Congressional Campaign Committee
+T115	government 8335 8339	DCCC
+T116	government 8573 8577	DCCC
+T117	government 8680 8684	DCCC
+R30	coreference Arg1:T115 Arg2:T114	
+T118	government 4272 4309	Germany's Christian  Democratic Union
+T119	government 4312 4315	CDU
+R31	coreference Arg1:T119 Arg2:T118	
+T120	government 4396 4399	CDU
+T121	government 4448 4453	CDU  
+R32	coreference Arg1:T120 Arg2:T118	
+R33	coreference Arg1:T121 Arg2:T118	
+T122	security_team 4951 5015	Germany ’s Federal Office for Security in Information Technology
+T123	security_team 5018 5021	BSI
+R34	coreference Arg1:T123 Arg2:T122	
+T124	threatActor_name 5039 5044	APT28
+T125	time 4318 4334	APRIL - MAY 2016
+R35	release_time Arg1:T118 Arg2:T125	
+R36	find Arg1:T118 Arg2:T25	
+T126	time 4548 4558	AUGUST 201
+T127	url_evil 4743 4756	nato-news.com
+T128	url_evil 4761 4773	bbc-news.org
+T129	government 8378 8382	DCCC
+T130	government 8858 8862	DCCC
+T131	government 9009 9013	DCCC
+T132	government 7027 7056	Democratic National Committee
+T133	government 7059 7062	DNC
+R37	coreference Arg1:T133 Arg2:T132	
+R38	find Arg1:T132 Arg2:T10	
+R39	find Arg1:T132 Arg2:T9	
+T134	government 7093 7096	DNC
+R40	coreference Arg1:T134 Arg2:T132	
+R41	first_found_time Arg1:T132 Arg2:T38	
+T135	security_team 4644 4648	NATO
+T136	government 4651 4686	Afghan Ministry  of Foreign Affairs
+T137	vul_aliases 4787 4807	Adobe Flash zero-day
+T138	security_team 4826 4830	NATO
+R42	use Arg1:T24 Arg2:T127	
+R43	use Arg1:T24 Arg2:T128	
+R44	goal Arg1:T24 Arg2:T137	
+R45	attack Arg1:T24 Arg2:T138	
+T139	time 4708 4717	JULY 2015
+R46	occur_time Arg1:T24 Arg2:T139	
+T140	government 4837 4871	Afghan Ministry of Foreign Affairs
+T141	industry 4882 4900	Pakistani military
+T142	industry 4689 4707	Pakistani Military
+T143	time 4941 4950	JUNE 2015
+T144	government 4903 4940	German Bundestag  & Political Parties
+T145	government 5329 5368	Kyrgyzstan Ministry  of Foreign Affairs
+T146	government 5681 5724	Polish Government & Power Exchange websites
+T147	government 5206 5237	Bundesamt für Verfassungsschutz
+T148	government 5240 5243	BfV
+R47	coreference Arg1:T148 Arg2:T147	
+T149	time 5268 5277	June 2015
+T150	time 7065 7070	APRIL
+T151	government 7415 7418	DNC
+T152	government 7493 7496	DNC
+R48	release_time Arg1:T151 Arg2:T40	
+T153	government 7283 7286	DNC
+R49	find Arg1:T151 Arg2:T109	
+T154	malware 5835 5841	Sofacy
+T155	protocol 5461 5479	domain name server
+T156	protocol 5482 5485	DNS
+R50	coreference Arg1:T156 Arg2:T155	
+T157	government 5555 5593	Kyrgyzstan Ministry of Foreign Affairs
+T158	government 5855 5872	Polish Government
+R51	use Arg1:T21 Arg2:T107	
+R52	occur_time Arg1:T21 Arg2:T106	
+R53	use Arg1:T21 Arg2:T154	
+T159	company 5904 5940	Polish energy company Power Exchange
+R54	attack Arg1:T21 Arg2:T158	
+R55	attack Arg1:T21 Arg2:T159	
+T160	government 7608 7611	DNC
+T161	time 7630 7639	September
+R56	attack Arg1:T108 Arg2:T160	
+R57	occur_time Arg1:T108 Arg2:T161	
+T39	time 7655 7677	MARCH –  NOVEMBER 2016
+T162	government 8515 8518	DNC
+T41	time 8342 8371	MARCH -  OCTOBER 2016 In July
+T163	security_team 8466 8469	FBI
+T164	threatActor_aliases 6867 6890	Fancy Bears ’ Hack Team
+T165	industry 9214 9233	TV5Monde ’s network
+R58	attack Arg1:T11 Arg2:T165	
+R59	find Arg1:T46 Arg2:T11	
+T166	protocol 9992 9996	DDoS
+T167	protocol 9960 9989	distributed denial-of-service
+R60	coreference Arg1:T166 Arg2:T167	
+T168	protocol 5667 5670	DNS
+T169	protocol 5622 5625	DNS
+T170	security_team 6929 6933	WADA
+T171	attack_activity 8432 8454	cybersecurity incident
+R61	find Arg1:T129 Arg2:T171	
+T172	threatActor_aliases 8262 8270	DC Leaks
+R62	first_found_time Arg1:T32 Arg2:T73	
+T173	threatActor_aliases 9286 9300	CyberCaliphate
+T174	industry 9309 9329	TV5Monde ’s websites
+T175	industry 9334 9355	social media profiles
+T176	industry 9360 9411	forced the company ’s 11 broadcast channels offline
+T177	time 9236 9249	In April 2015
+R63	occur_time Arg1:T173 Arg2:T177	
+R64	attack Arg1:T173 Arg2:T174	
+R65	attack Arg1:T173 Arg2:T175	
+R66	attack Arg1:T173 Arg2:T176	

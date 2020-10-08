@@ -1,0 +1,465 @@
+T1	threatActor_name 14 20	Sednit
+T2	threatActor_name 147 153	Sednit
+T3	threatActor_name 411 417	Sednit
+T4	threatActor_name 439 445	Sednit
+T5	threatActor_name 666 672	Sednit
+T6	threatActor_name 878 884	Sednit
+T7	threatActor_name 1013 1019	Sednit
+T8	threatActor_name 1298 1304	Sednit
+T9	threatActor_name 1152 1158	Sednit
+T10	threatActor_name 1890 1896	Sednit
+T11	threatActor_name 2072 2078	Sednit
+T12	threatActor_name 2315 2321	Sednit
+T13	threatActor_name 2519 2525	Sednit
+T14	threatActor_name 2897 2903	Sednit
+T15	threatActor_name 3104 3110	Sednit
+T16	threatActor_name 3523 3529	Sednit
+T17	threatActor_name 3683 3689	Sednit
+T18	threatActor_name 4007 4013	Sednit
+T19	threatActor_name 4264 4270	Sednit
+T20	threatActor_name 13699 13705	Sednit
+T21	threatActor_name 13796 13802	Sednit
+T22	threatActor_name 13983 13989	Sednit
+T23	threatActor_name 9137 9143	Sednit
+T24	threatActor_name 8898 8904	Sednit
+T25	threatActor_name 8508 8514	Sednit
+T26	threatActor_name 8127 8133	Sednit
+T27	threatActor_name 8059 8065	Sednit
+T28	time 8075 8079	2015
+T29	time 7606 7614	May 2016
+T30	threatActor_name 7781 7787	Sednit
+T31	threatActor_name 7215 7221	Sednit
+T32	threatActor_name 6957 6963	Sednit
+T33	threatActor_name 7532 7538	Sednit
+T34	threatActor_name 6654 6660	Sednit
+T35	threatActor_name 6390 6396	Sednit
+T36	threatActor_name 4523 4529	Sednit
+T37	threatActor_name 4720 4726	Sednit
+T38	threatActor_name 4956 4962	Sednit
+T39	threatActor_name 5347 5353	Sednit
+T40	threatActor_name 5305 5311	Sednit
+T41	threatActor_name 5540 5546	Sednit
+T42	threatActor_name 5798 5804	Sednit
+T43	time 2163 2167	2015
+T44	time 472 476	2014
+T45	threatActor_aliases 176 181	APT28
+T46	threatActor_aliases 184 194	Fancy Bear
+T47	threatActor_aliases 199 205	Sofacy
+T48	time 248 252	2004
+R1	coreference Arg1:T45 Arg2:T2	
+R2	coreference Arg1:T46 Arg2:T2	
+R3	coreference Arg1:T47 Arg2:T2	
+T49	sub_activity 299 329	steal confidential information
+T50	person 222 231	attackers
+R4	part_of Arg1:T50 Arg2:T2	
+R5	goal Arg1:T50 Arg2:T49	
+T51	attack_activity 673 681	phishing
+T52	location 745 761	Eastern European
+T53	location 802 811	Ukrainian
+T54	government 822 826	NATO
+T55	location 843 850	Russian
+T56	person 812 819	leaders
+R6	launch Arg1:T5 Arg2:T51	
+T57	person 721 732	individuals
+R7	part_of Arg1:T57 Arg2:T52	
+T58	person 827 836	officials
+T59	person 861 871	dissidents
+R8	part_of Arg1:T59 Arg2:T55	
+R9	part_of Arg1:T58 Arg2:T54	
+R10	part_of Arg1:T56 Arg2:T53	
+R11	attack Arg1:T5 Arg2:T57	
+R12	attack Arg1:T5 Arg2:T56	
+R13	attack Arg1:T5 Arg2:T58	
+R14	attack Arg1:T5 Arg2:T59	
+T60	attack_activity 910 918	phishing
+R15	launch Arg1:T6 Arg2:T60	
+T61	vul_aliases 1131 1136	0-day
+R16	use Arg1:T7 Arg2:T61	
+T62	threatActor_aliases 1337 1342	APT28
+T63	threatActor_aliases 1345 1355	Fancy Bear
+T64	threatActor_aliases 1358 1364	Sofacy
+T65	threatActor_aliases 1367 1377	Pawn Storm
+T66	threatActor_aliases 1380 1389	STRONTIUM
+T67	threatActor_aliases 1394 1403	Tsar Team
+T68	sub_activity 1218 1250	bypass network security measures
+T69	sub_activity 1165 1205	developed particular first-stage malware
+R17	use Arg1:T9 Arg2:T69	
+R18	launch Arg1:T69 Arg2:T68	
+R19	coreference Arg1:T62 Arg2:T8	
+R20	coreference Arg1:T63 Arg2:T8	
+R21	coreference Arg1:T64 Arg2:T8	
+R22	coreference Arg1:T65 Arg2:T8	
+R23	coreference Arg1:T66 Arg2:T8	
+R24	coreference Arg1:T67 Arg2:T8	
+T70	time 1446 1450	2004
+T71	sub_activity 1495 1525	steal confidential information
+R25	launch Arg1:T8 Arg2:T71	
+T72	reference_word 1576 1586	this group
+R26	coreference Arg1:T72 Arg2:T8	
+T73	target_crowd 1659 1681	government departments
+T74	target_crowd 1686 1695	embassies
+R27	attack Arg1:T72 Arg2:T73	
+R28	attack Arg1:T72 Arg2:T74	
+T75	reference_word 1723 1728	their
+R29	coreference Arg1:T75 Arg2:T72	
+T76	government 1767 1805	American Democratic National Committee
+T77	government 1812 1829	German parliament
+T78	company 1864 1872	TV5Monde
+R30	attack Arg1:T75 Arg2:T76	
+R31	attack Arg1:T75 Arg2:T77	
+R32	attack Arg1:T75 Arg2:T78	
+T79	location 1929 1943	Eastern Europe
+T80	vul_aliases 2126 2131	0-day
+R33	use Arg1:T11 Arg2:T80	
+T81	reference_word 2170 2179	the group
+R34	attack Arg1:T10 Arg2:T79	
+T82	vul_aliases 2208 2213	0-day
+R35	use Arg1:T81 Arg2:T82	
+R36	coreference Arg1:T81 Arg2:T11	
+T83	vul_aliases 2252 2257	0-day
+T84	sub_activity 2391 2431	find and weaponize these vulnerabilities
+T85	reference_word 2410 2431	these vulnerabilities
+R37	coreference Arg1:T85 Arg2:T82	
+R38	launch Arg1:T12 Arg2:T84	
+T86	sub_activity 2554 2572	software ecosystem
+R39	part_of Arg1:T86 Arg2:T13	
+T87	malware 2761 2767	Xagent
+T88	reference_word 2628 2642	this ecosystem
+R40	coreference Arg1:T88 Arg2:T86	
+T89	malware 2772 2779	Sedreco
+T90	malware 2807 2824	Downdelph bootkit
+T91	malware 2829 2836	rootkit
+R41	part_of Arg1:T87 Arg2:T88	
+R42	part_of Arg1:T89 Arg2:T88	
+R43	part_of Arg1:T90 Arg2:T88	
+R44	part_of Arg1:T91 Arg2:T88	
+T92	security_team 2865 2869	ESET
+T93	reference_word 3206 3215	the group
+R45	coreference Arg1:T93 Arg2:T15	
+T94	sub_activity 3372 3391	custom network tool
+T95	sample_function 3400 3442	pivot within the compromised organizations
+T96	malware 3321 3328	toolkit
+R46	use Arg1:T93 Arg2:T96	
+R47	goal Arg1:T94 Arg2:T95	
+R48	part_of Arg1:T94 Arg2:T96	
+T97	tool 3466 3476	Downloader
+T98	malware 3649 3656	bootkit
+T99	malware 3663 3670	rootkit
+T100	tool 3565 3571	Delphi
+T101	tool 3572 3582	downloader
+R49	part_of Arg1:T101 Arg2:T100	
+R50	use Arg1:T16 Arg2:T101	
+R51	located Arg1:T98 Arg2:T101	
+R52	located Arg1:T99 Arg2:T101	
+T102	tool 3903 3908	pivot
+T103	malware 4167 4178	Seduploader
+T104	sub_activity 3762 3804	reconnaissance of a newly compromised host
+T105	sub_activity 3856 3871	spy on machines
+T106	sub_activity 3926 3971	allows the operators to reach other computers
+R53	use Arg1:T102 Arg2:T106	
+T107	sub_activity 3693 3701	software
+R54	part_of Arg1:T107 Arg2:T17	
+R55	launch Arg1:T107 Arg2:T104	
+R56	launch Arg1:T107 Arg2:T105	
+R57	part_of Arg1:T103 Arg2:T18	
+T108	tool 4195 4202	dropper
+T109	tool 4222 4229	payload
+R58	part_of Arg1:T108 Arg2:T103	
+R59	part_of Arg1:T109 Arg2:T103	
+T110	location 4285 4292	Russian
+T111	security_team 4460 4464	ESET
+T112	person 4490 4501	researchers
+T113	person 4809 4819	developers
+T114	person 4824 4833	operators
+R60	part_of Arg1:T113 Arg2:T37	
+R61	part_of Arg1:T114 Arg2:T37	
+T115	time 4982 4986	2014
+T116	security_team 5031 5042	Trend Micro
+T117	threatActor_name 5051 5056	APT28
+T118	security_team 5069 5076	FireEye
+R62	find Arg1:T118 Arg2:T117	
+R63	release_time Arg1:T116 Arg2:T115	
+R64	release_time Arg1:T118 Arg2:T115	
+T119	reference_word 5127 5137	this group
+R65	coreference Arg1:T119 Arg2:T38	
+T120	time 5324 5328	2014
+T121	person 5778 5787	defenders
+T122	sub_activity 5791 5816	handle Sednit compromises
+R66	launch Arg1:T121 Arg2:T122	
+T123	security_team 6454 6458	ESET
+T124	tool 6462 6468	GitHub
+T125	tool 6334 6358	indicators of compromise
+T126	tool 6361 6364	IOC
+R67	coreference Arg1:T126 Arg2:T125	
+T127	tool 6435 6438	IOC
+T128	sub_activity 6370 6407	help detect current Sednit infections
+R68	goal Arg1:T126 Arg2:T128	
+T129	tool 6523 6526	IOC
+T130	person 7045 7056	researchers
+T131	reference_word 7322 7327	group
+R69	coreference Arg1:T131 Arg2:T31	
+T133	government 7558 7600	The American Democratic National Committee
+T134	time 7699 7709	April 2015
+T135	company 7685 7693	TV5Monde
+T136	government 7617 7638	The German parliament
+T137	time 7644 7652	May 2015
+R70	attack Arg1:T33 Arg2:T133	
+R71	attack Arg1:T33 Arg2:T136	
+R72	attack Arg1:T33 Arg2:T135	
+T132	attack_activity 8029 8037	phishing
+R73	use Arg1:T27 Arg2:T132	
+R74	occur_time Arg1:T132 Arg2:T28	
+T138	attack_activity 8143 8156	spearphishing
+T139	attack_activity 8176 8184	phishing
+T140	tool 8185 8191	emails
+R75	use Arg1:T139 Arg2:T140	
+T141	sub_activity 7825 7850	international geopolitics
+R76	attack Arg1:T30 Arg2:T141	
+R77	use Arg1:T26 Arg2:T138	
+R78	coreference Arg1:T139 Arg2:T138	
+T142	tool 8203 8210	webmail
+T143	sub_activity 8197 8230	steal webmail account credentials
+R79	goal Arg1:T138 Arg2:T143	
+T144	reference_word 8244 8253	the group
+R80	coreference Arg1:T144 Arg2:T26	
+T145	sub_activity 8254 8278	creates fake login pages
+R81	launch Arg1:T144 Arg2:T145	
+T146	sub_activity 8314 8359	lures the targets into visiting the fake page
+T147	sub_activity 8364 8390	entering their credentials
+R82	launch Arg1:T144 Arg2:T146	
+R83	goal Arg1:T146 Arg2:T147	
+T148	reference_word 8393 8404	This attack
+R84	coreference Arg1:T148 Arg2:T145	
+T149	security_team 8440 8451	Trend Micro
+T150	security_team 8456 8459	PwC
+R85	find Arg1:T149 Arg2:T148	
+R86	find Arg1:T150 Arg2:T148	
+T151	tool 8291 8298	webmail
+T152	sub_activity 8508 8526	Sednit domain name
+T153	reference_word 8559 8561	it
+R87	coreference Arg1:T153 Arg2:T152	
+T154	target_crowd 8542 8549	victims
+T155	tool 8598 8603	Gmail
+T156	sub_activity 8577 8615	redirected to a fake Gmail login panel
+R88	use Arg1:T154 Arg2:T156	
+T157	reference_word 8474 8484	this email
+R89	coreference Arg1:T157 Arg2:T140	
+T158	reference_word 8626 8630	they
+R90	coreference Arg1:T158 Arg2:T154	
+T159	reference_word 8660 8664	they
+R91	coreference Arg1:T159 Arg2:T154	
+T160	sub_activity 8673 8685	log in again
+T161	sub_activity 8698 8717	access the document
+R92	use Arg1:T159 Arg2:T160	
+R93	goal Arg1:T160 Arg2:T161	
+T162	tool 8735 8740	email
+T163	sub_activity 8709 8717	document
+R94	located Arg1:T163 Arg2:T162	
+T164	reference_word 8859 8864	their
+T165	reference_word 8775 8780	their
+R95	coreference Arg1:T165 Arg2:T154	
+T166	company 8830 8836	Google
+T167	tool 8837 8850	Drive webpage
+R96	part_of Arg1:T167 Arg2:T166	
+T168	sub_activity 8801 8850	redirected to the legitimate Google Drive webpage
+T169	sub_activity 8775 8792	their credentials
+R97	use Arg1:T169 Arg2:T168	
+T170	sub_activity 8859 8876	their credentials
+R98	use Arg1:T24 Arg2:T170	
+T171	tool 9078 9083	Gmail
+T172	attack_activity 9221 9229	phishing
+T173	tool 9104 9111	webmail
+T174	sub_activity 9099 9133	fake webmail login panels deployed
+R99	use Arg1:T23 Arg2:T174	
+T175	tool 9283 9288	Bitly
+T176	person 9268 9277	operators
+T177	tool 9304 9308	URLs
+R100	use Arg1:T176 Arg2:T172	
+T178	tool 9248 9255	webmail
+T179	person 9256 9261	users
+R101	use Arg1:T179 Arg2:T178	
+R102	attack Arg1:T176 Arg2:T179	
+R103	use Arg1:T176 Arg2:T175	
+T180	tool 9326 9332	emails
+T181	sub_activity 9292 9332	shorten the URLs contained in the emails
+R104	goal Arg1:T175 Arg2:T181	
+T182	reference_word 9346 9350	they
+R105	coreference Arg1:T182 Arg2:T176	
+T183	tool 9377 9382	Bitly
+T184	sub_activity 9365 9373	accounts
+R106	located Arg1:T184 Arg2:T183	
+T185	sub_activity 9351 9373	created a few accounts
+R107	use Arg1:T182 Arg2:T185	
+T186	attack_activity 9427 9435	phishing
+T187	tool 9436 9440	URLs
+T188	tool 9480 9485	Bitly
+T189	sub_activity 9410 9440	shorten multiple phishing URLs
+R108	goal Arg1:T185 Arg2:T189	
+T190	tool 9701 9706	Bitly
+T191	reference_word 9586 9598	this account
+T192	tool 9558 9562	URLs
+R109	coreference Arg1:T191 Arg2:T184	
+T193	tool 9774 9777	URL
+T194	tool 9811 9816	email
+T195	sub_activity 9811 9824	email address
+T196	sub_activity 9833 9851	name of the target
+R110	part_of Arg1:T195 Arg2:T193	
+R111	part_of Arg1:T196 Arg2:T193	
+T197	tool 10030 10033	URL
+T198	url_evil 10070 10184	http://login.accoounts-google.com/url/?continue=cGFyZXBreWl2QGdtYWlsLmNvbQ==&df=UGFraXN0YW4rRW1iYXNzeStLeWl2&tel=1
+T199	tool 9885 9888	URL
+R112	part_of Arg1:T198 Arg2:T197	
+T200	email_evil 10226 10245	parepkyiv@gmail.com
+T201	encryption_algo 10257 10263	base64
+T202	string 10198 10206	continue
+R113	use Arg1:T200 Arg2:T201	
+R114	part_of Arg1:T200 Arg2:T202	
+T203	string 10276 10278	df
+T204	string 10298 10319	Pakistan+Embassy+Kyiv
+R115	part_of Arg1:T204 Arg2:T203	
+T205	tool 10389 10392	URL
+T207	government 10431 10447	Pakistan Embassy
+T208	location 10451 10455	Kiev
+R116	located Arg1:T207 Arg2:T208	
+T206	reference_word 10458 10466	The list
+R117	coreference Arg1:T206 Arg2:T205	
+T209	tool 10489 10493	URLs
+T210	time 10522 10540	16th of March 2015
+T211	time 10545 10567	14th of September 2015
+T212	sub_activity 10483 10513	4,400 URLs that were shortened
+R118	occur_time Arg1:T212 Arg2:T210	
+R119	occur_time Arg1:T212 Arg2:T211	
+T213	tool 10604 10607	URL
+T214	attack_activity 10790 10798	phishing
+T215	attack_activity 10679 10687	phishing
+T216	tool 10688 10693	email
+R120	use Arg1:T215 Arg2:T216	
+T217	attack_activity 10949 10957	phishing
+T218	tool 10851 10855	URLs
+T219	person 11045 11054	operators
+T220	attack_activity 11184 11192	phishing
+T221	tool 11142 11146	URLs
+T222	reference_word 11204 11212	The list
+R121	coreference Arg1:T222 Arg2:T221	
+T223	tool 11242 11247	email
+T224	sub_activity 11222 11257	1,888 unique target email addresses
+R122	part_of Arg1:T224 Arg2:T222	
+T225	tool 11279 11284	Gmail
+T226	tool 11408 11411	URL
+T227	tool 11457 11462	Bitly
+T228	sub_activity 11384 11437	corresponding shortened URL was clicked at least once
+R123	find Arg1:T227 Arg2:T228	
+T229	tool 11672 11676	URLs
+T230	attack_activity 11768 11773	phish
+T231	tool 11890 11893	URL
+T232	tool 11874 11879	Bitly
+T233	tool 11954 11957	URL
+T234	string 11934 11935	+
+R124	part_of Arg1:T234 Arg2:T233	
+T235	tool 12068 12071	URL
+T236	tool 12173 12176	URL
+T237	sub_activity 12200 12227	display the hour of the day
+T238	sub_activity 12146 12165	know the exact time
+T239	time 12324 12327	9AM
+T240	time 12331 12334	5PM
+T241	location 12433 12442	operators
+T242	location 12342 12357	UTC+3 time zone
+T243	reference_word 12453 12467	this time zone
+R125	coreference Arg1:T243 Arg2:T242	
+R126	located Arg1:T241 Arg2:T243	
+T244	tool 12498 12503	Gmail
+T245	person 12562 12573	individuals
+R127	part_of Arg1:T244 Arg2:T245	
+T246	tool 12629 12634	Gmail
+T247	location 12690 12697	Algeria
+T248	location 12700 12706	Brazil
+T249	location 12709 12717	Colombia
+T250	location 12720 12728	Djibouti
+T251	location 12731 12736	India
+T252	location 12739 12743	Iraq
+T253	location 12760 12770	Kyrgyzstan
+T254	location 12773 12780	Lebanon
+T255	location 12783 12790	Myanmar
+T256	location 12793 12801	Pakistan
+T257	location 12804 12816	South Africa
+T258	location 12819 12831	Turkmenistan
+T259	location 12834 12854	United Arab Emirates
+T260	location 12857 12878	Uzbekistan and Zambia
+T261	location 12746 12757	North Korea
+T262	government 12667 12676	Embassies
+T263	sub_activity 12629 12644	Gmail addresses
+R128	part_of Arg1:T263 Arg2:T262	
+R129	located Arg1:T262 Arg2:T247	
+R130	located Arg1:T262 Arg2:T248	
+R131	located Arg1:T262 Arg2:T249	
+R132	located Arg1:T262 Arg2:T250	
+R133	located Arg1:T262 Arg2:T251	
+R134	located Arg1:T262 Arg2:T252	
+R135	located Arg1:T262 Arg2:T261	
+R136	located Arg1:T262 Arg2:T253	
+R137	located Arg1:T262 Arg2:T254	
+R138	located Arg1:T262 Arg2:T255	
+R139	located Arg1:T262 Arg2:T256	
+R140	located Arg1:T262 Arg2:T257	
+R141	located Arg1:T262 Arg2:T258	
+R142	located Arg1:T262 Arg2:T259	
+R143	located Arg1:T262 Arg2:T260	
+T264	government 12881 12902	Ministries of Defense
+R144	part_of Arg1:T263 Arg2:T264	
+T265	location 12906 12915	Argentina
+T266	location 12918 12928	Bangladesh
+T267	location 12931 12942	South Korea
+T268	location 12945 12951	Turkey
+T269	location 12956 12963	Ukraine
+R145	located Arg1:T264 Arg2:T265	
+R146	located Arg1:T264 Arg2:T266	
+R147	located Arg1:T264 Arg2:T267	
+R148	located Arg1:T264 Arg2:T268	
+R149	located Arg1:T264 Arg2:T269	
+T270	person 12980 12991	individuals
+R150	part_of Arg1:T263 Arg2:T270	
+T271	location 13110 13117	Ukraine
+T272	person 13091 13106	heads of police
+T273	person 13069 13086	Political leaders
+R151	located Arg1:T272 Arg2:T271	
+R152	located Arg1:T273 Arg2:T271	
+T274	person 13120 13127	Members
+T275	government 13131 13135	NATO
+R153	part_of Arg1:T274 Arg2:T275	
+R154	part_of Arg1:T273 Arg2:T270	
+R155	part_of Arg1:T274 Arg2:T270	
+T276	person 13247 13267	political dissidents
+T277	location 13239 13246	Russian
+R156	located Arg1:T276 Arg2:T277	
+T278	government 13166 13189	People 's Freedom Party
+T279	location 13194 13201	Russian
+R157	located Arg1:T278 Arg2:T279	
+T280	person 13151 13158	Members
+R158	part_of Arg1:T280 Arg2:T278	
+R159	part_of Arg1:T280 Arg2:T270	
+R160	part_of Arg1:T277 Arg2:T270	
+T281	company 13271 13285	Shaltay Boltai
+T282	location 13303 13310	Russian
+R161	located Arg1:T281 Arg2:T282	
+R162	part_of Arg1:T281 Arg2:T270	
+T283	person 13374 13385	Journalists
+T284	person 13414 13423	Academics
+T285	industry 13456 13463	Chechen
+T286	location 13397 13411	Eastern Europe
+R163	located Arg1:T283 Arg2:T286	
+R164	part_of Arg1:T283 Arg2:T270	
+R165	part_of Arg1:T284 Arg2:T270	
+R166	part_of Arg1:T285 Arg2:T270	
+T287	location 13630 13644	Eastern Europe
+T288	security_team 13754 13765	Trend Micro
+T289	location 13885 13899	Eastern Europe
+T290	attack_activity 13943 13951	phishing
+T291	target_crowd 13826 13837	individuals
+T292	target_crowd 13842 13855	organizations
+R167	located Arg1:T292 Arg2:T289	
+R168	located Arg1:T291 Arg2:T289	
+R169	attack Arg1:T21 Arg2:T291	
+R170	attack Arg1:T21 Arg2:T292	
+T293	attack_activity 14015 14023	phishing
+R171	use Arg1:T21 Arg2:T290	
+R172	use Arg1:T22 Arg2:T293	

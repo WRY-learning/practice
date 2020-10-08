@@ -1,0 +1,606 @@
+T1	threatActor_name 34 45	Turla Group
+T2	target_crowd 63 84	Russian Organizations
+T3	malware 0 7	AcidBox
+R1	attack Arg1:T1 Arg2:T2	
+T4	time 208 212	2014
+T5	threatActor_name 263 274	Turla Group
+T6	security_team 287 324	Estonian foreign intelligence service
+T7	government 384 387	FSB
+R2	first_found_time Arg1:T5 Arg2:T4	
+T8	tool 34 53	Turla Group Exploit
+R3	use Arg1:T3 Arg2:T8	
+T9	tool 591 604	Windows Vista
+T10	sample_function 608 663	prevent unsigned drivers from loading into kernel space
+T11	threatActor_name 666 671	Turla
+T12	tool 693 710	VirtualBox driver
+T13	tool 713 731	VBoxDrv.sys v1.6.2
+T14	sample_function 737 751	deactivate DSE
+T15	sample_function 756 789	load its unsigned payload drivers
+R4	use Arg1:T11 Arg2:T12	
+R5	coreference Arg1:T13 Arg2:T12	
+R6	goal Arg1:T12 Arg2:T14	
+R7	goal Arg1:T12 Arg2:T15	
+T16	reference_word 832 844	this exploit
+T17	vulnerability_cve 897 910	CVE-2008-3431
+R8	coreference Arg1:T17 Arg2:T16	
+T18	reference_word 913 924	The exploit
+T19	threatActor_name 933 938	Turla
+R9	use Arg1:T19 Arg2:T18	
+T20	reference_word 1040 1063	The other vulnerability
+T21	threatActor_name 1077 1082	Turla
+T22	vulnerability_cve 1146 1159	CVE-2008-3431
+R10	use Arg1:T21 Arg2:T20	
+R11	use Arg1:T21 Arg2:T22	
+T23	time 1225 1229	2014
+T24	time 1346 1359	February 2019
+T25	security_team 1362 1369	Unit 42
+T26	security_team 1433 1440	infosec
+T27	tool 1525 1561	VirtualBox VBoxDrv.sys driver v1.6.2
+T28	tool 1573 1604	all other versions up to v3.0.0
+T29	reference_word 1469 1503	the second unpatched vulnerability
+R12	use Arg1:T29 Arg2:T27	
+R13	use Arg1:T29 Arg2:T28	
+T30	reference_word 1645 1663	this unknown actor
+T31	tool 1674 1705	VirtualBox driver version 2.2.0
+T32	target_crowd 1739 1760	Russian organizations
+T33	time 1764 1768	2017
+R14	use Arg1:T30 Arg2:T31	
+R15	attack Arg1:T30 Arg2:T32	
+R16	occur_time Arg1:T30 Arg2:T33	
+T34	tool 1855 1875	driver version 2.2.0
+T35	reference_word 2099 2109	The actors
+T36	malware 2171 2178	AcidBox
+T37	reference_word 2221 2232	the malware
+T38	tool 2286 2296	VirtualBox
+R17	use Arg1:T35 Arg2:T36	
+R18	coreference Arg1:T37 Arg2:T36	
+T39	reference_word 2310 2321	the malware
+T40	reference_word 2409 2411	it
+T41	reference_word 2492 2504	this malware
+T42	person 2538 2546	attacker
+R19	coreference Arg1:T39 Arg2:T36	
+R20	coreference Arg1:T40 Arg2:T39	
+R21	coreference Arg1:T41 Arg2:T40	
+R22	use Arg1:T42 Arg2:T41	
+T43	reference_word 2594 2596	it
+R23	coreference Arg1:T43 Arg2:T41	
+T44	threatActor_name 2722 2727	Turla
+T45	company 2760 2778	Palo Alto Networks
+T46	tool 2858 2866	WildFire
+T47	reference_word 2878 2890	this malware
+R24	coreference Arg1:T47 Arg2:T43	
+T48	tool 2906 2915	AutoFocus
+T49	person 2779 2788	customers
+T50	person 2916 2925	customers
+T51	malware 2966 2973	AcidBox
+R25	use Arg1:T50 Arg2:T48	
+T54	tool 2999 3017	Adversary Playbook
+T55	time 3065 3078	February 2019
+T56	malware 3107 3114	AcidBox
+T57	encryption_algo 3117 3123	SHA256
+T58	sha2 3125 3189	eb30a1822bd6f503f8151cb04bfd315a62fa67dbfe1f573e6fcfd74636ecedd5
+T59	tool 3204 3214	VirusTotal
+T60	threatActor_name 3262 3267	Turla
+T61	tool 3271 3289	VirtualBox exploit
+R28	use Arg1:T60 Arg2:T61	
+R29	first_found_time Arg1:T56 Arg2:T55	
+R30	part_of Arg1:T58 Arg2:T56	
+R31	located Arg1:T56 Arg2:T59	
+T62	reference_word 3313 3323	the sample
+T63	reference_word 3333 3335	it
+R32	coreference Arg1:T62 Arg2:T56	
+R33	coreference Arg1:T63 Arg2:T62	
+T64	person 3468 3482	our colleagues
+T65	security_team 3486 3492	Dr.Web
+T66	reference_word 3511 3522	this sample
+T67	location 3581 3587	Russia
+T68	time 3596 3600	2017
+R34	part_of Arg1:T64 Arg2:T65	
+R35	coreference Arg1:T66 Arg2:T63	
+R36	occur_time Arg1:T66 Arg2:T68	
+T69	reference_word 3616 3620	they
+T70	reference_word 3656 3679	the same malware family
+R38	coreference Arg1:T70 Arg2:T56	
+R39	coreference Arg1:T69 Arg2:T64	
+T72	reference_word 3682 3711	Two of those usermode samples
+T73	sample_function 3729 3775	load the main worker from the Windows registry
+T74	reference_word 3780 3783	one
+T75	tool 3791 3816	kernelmode payload driver
+T71	tool 3833 3851	main worker sample
+R40	goal Arg1:T72 Arg2:T73	
+R41	coreference Arg1:T75 Arg2:T74	
+R42	located Arg1:T75 Arg2:T71	
+T76	security_team 3878 3887	Kaspersky
+T77	reference_word 3894 3905	the company
+T78	location 3926 3932	Russia
+T79	reference_word 3952 3973	one additional sample
+R43	coreference Arg1:T77 Arg2:T76	
+R44	located Arg1:T77 Arg2:T78	
+R45	find Arg1:T77 Arg2:T79	
+T80	security_team 4055 4059	ESET
+T81	reference_word 4106 4118	this malware
+R46	coreference Arg1:T81 Arg2:T56	
+T82	reference_word 4179 4181	it
+R47	coreference Arg1:T82 Arg2:T81	
+T83	time 4307 4319	May 9 , 2017
+T84	reference_word 4322 4331	This date
+T85	reference_word 4354 4364	the sample
+T86	security_team 4374 4383	Kaspersky
+T87	time 4396 4405	June 2017
+R48	coreference Arg1:T84 Arg2:T83	
+R49	find Arg1:T86 Arg2:T85	
+R50	first_found_time Arg1:T85 Arg2:T87	
+T88	reference_word 4484 4496	this malware
+T89	time 4511 4515	2017
+R51	coreference Arg1:T88 Arg2:T85	
+R52	occur_time Arg1:T88 Arg2:T89	
+T90	malware 4579 4586	AcidBox
+T91	reference_word 4679 4690	the samples
+T92	malware 4804 4810	Remsec
+T93	threatActor_name 4833 4846	ProjectSauron
+R53	part_of Arg1:T92 Arg2:T93	
+T94	program_language 4941 4942	C
+T95	program_language 4943 4946	C++
+T96	tool 4931 4955	MS Visual C/C++ compiler
+T97	tool 5021 5037	3rd party driver
+T98	sample_function 5041 5065	load own unsigned driver
+T99	tool 5068 5072	Zlib
+R54	use Arg1:T92 Arg2:T96	
+R55	use Arg1:T92 Arg2:T97	
+R56	use Arg1:T92 Arg2:T99	
+R57	goal Arg1:T97 Arg2:T98	
+T100	reference_word 5214 5225	the samples
+T101	threatActor_name 5233 5246	ProjectSauron
+T102	reference_word 5326 5352	The original vulnerability
+T103	vulnerability_cve 5366 5379	CVE-2008-3431
+T104	security_team 5393 5406	Core Security
+T105	time 5410 5414	2008
+T106	tool 5428 5439	VBoxDrv.sys
+R58	find Arg1:T104 Arg2:T102	
+R59	first_found_time Arg1:T102 Arg2:T105	
+R60	attack Arg1:T102 Arg2:T106	
+T107	reference_word 5470 5472	It
+R61	coreference Arg1:T107 Arg2:T102	
+T108	reference_word 5541 5558	The vulnerability
+T109	reference_word 5573 5608	the dispatch device control routine
+T110	tool 5616 5638	VBoxDrvNtDeviceControl
+R62	coreference Arg1:T108 Arg2:T107	
+R63	located Arg1:T108 Arg2:T109	
+R64	coreference Arg1:T109 Arg2:T110	
+T111	sample_function 5678 5724	call the usermode DeviceIoControl API function
+T112	sample_function 5729 5799	send one of the following control codes together with a kernel address
+R65	goal Arg1:T110 Arg2:T111	
+R66	goal Arg1:T110 Arg2:T112	
+T113	sub_activity 5855 5907	kernel address is passed down to the control handler
+T114	reference_word 6075 6092	the vulnerability
+T115	security_team 6106 6118	CoreSecurity
+T116	threatActor_name 6135 6140	Turla
+R67	find Arg1:T115 Arg2:T114	
+T117	sub_activity 6254 6299	a random value written to your kernel address
+T118	threatActor_name 6302 6307	Turla
+T119	tool 6303 6318	urla ’s exploit
+T120	sample_function 6319 6344	controls the return value
+T121	sub_activity 6348 6399	overwriting the function pointer of supdrvIOCtlFast
+T122	sample_function 6403 6442	redirect execution to a small shellcode
+R68	goal Arg1:T119 Arg2:T120	
+R69	goal Arg1:T120 Arg2:T122	
+R70	launch Arg1:T119 Arg2:T121	
+T123	tool 6610 6631	patched version 1.6.4
+T124	tool 6671 6689	UserBuffer pointer
+T125	reference_word 6767 6769	it
+T126	sub_activity 6770 6824	checks if the rc variable is equal or bigger than zero
+R71	coreference Arg1:T125 Arg2:T123	
+R72	launch Arg1:T125 Arg2:T126	
+T127	reference_word 6911 6937	the original vulnerability
+T128	sample_function 6941 6967	overwrite a kernel address
+R73	goal Arg1:T127 Arg2:T128	
+T129	reference_word 6980 7003	The other vulnerability
+T130	sample_function 7009 7065	lets you control the function pointer of supdrvIOCtlFast
+R74	goal Arg1:T129 Arg2:T130	
+T131	reference_word 7115 7117	it
+T132	security_team 7139 7152	Core Security
+T133	threatActor_name 7201 7206	Turla
+R75	find Arg1:T133 Arg2:T131	
+R76	coreference Arg1:T131 Arg2:T129	
+T134	threatActor_name 7228 7233	Turla
+T135	tool 7260 7285	VirtualBox driver v.1.6.2
+T136	reference_word 7296 7298	it
+T137	tool 7321 7344	unpatched vulnerability
+R77	use Arg1:T134 Arg2:T135	
+R78	coreference Arg1:T136 Arg2:T134	
+R79	use Arg1:T136 Arg2:T137	
+T138	reference_word 7370 7372	it
+T139	reference_word 7378 7380	it
+T140	security_team 7398 7406	Lastline
+T141	tool 7486 7505	Turla Driver Loader
+R80	coreference Arg1:T138 Arg2:T136	
+R81	coreference Arg1:T139 Arg2:T137	
+R82	use Arg1:T138 Arg2:T139	
+T142	reference_word 7522 7544	the exact same exploit
+T143	tool 7630 7641	VBoxDrv.sys
+R83	use Arg1:T143 Arg2:T142	
+T144	tool 7726 7762	VirtualBox versions smaller than 4.0
+T145	reference_word 7814 7818	they
+R84	coreference Arg1:T145 Arg2:T144	
+T146	tool 7947 7958	the exploit
+T147	sub_activity 7902 7943	some structures and routines have changed
+T148	sample_function 7947 7980	the exploit does not work anymore
+R85	goal Arg1:T147 Arg2:T148	
+T149	reference_word 8038 8040	it
+T150	reference_word 8070 8092	the same vulnerability
+R86	coreference Arg1:T149 Arg2:T144	
+T151	threatActor_name 8168 8173	Turla
+T152	person 8174 8181	authors
+T153	reference_word 8182 8190	themself
+R87	part_of Arg1:T152 Arg2:T151	
+R88	coreference Arg1:T153 Arg2:T152	
+T154	reference_word 8220 8224	They
+T155	tool 8239 8262	old VBoxDrv.sys v.1.6.2
+R89	use Arg1:T154 Arg2:T155	
+T156	reference_word 8301 8312	This driver
+T157	attack_goal 8408 8422	in-game cheats
+R90	coreference Arg1:T156 Arg2:T155	
+R91	goal Arg1:T156 Arg2:T157	
+T158	reference_word 8425 8436	The malware
+T159	tool 8533 8553	64-bit usermode DLLs
+T160	tool 8561 8587	unsigned kernelmode driver
+T161	encryption_algo 8590 8596	SHA256
+T162	sha2 8598 8662	3ef071e0327e7014dd374d96bed023e6c434df6f98cce88a1e7335a667f6749d
+R92	part_of Arg1:T162 Arg2:T160	
+T163	reference_word 8514 8516	we
+R93	find Arg1:T163 Arg2:T159	
+R94	find Arg1:T163 Arg2:T160	
+T164	reference_word 8667 8705	Three out of the four usermode samples
+T165	tool 8743 8777	loaders for the main worker module
+R95	coreference Arg1:T165 Arg2:T164	
+T166	reference_word 8780 8784	They
+R96	coreference Arg1:T166 Arg2:T164	
+T167	reference_word 8871 8884	These loaders
+T168	tool 8900 8926	security support providers
+T169	tool 8937 8940	SSP
+T170	sample_function 8900 8916	security support
+R97	coreference Arg1:T168 Arg2:T167	
+R98	coreference Arg1:T169 Arg2:T168	
+R99	goal Arg1:T167 Arg2:T170	
+T171	tool 8947 8950	SSP
+T172	tool 8956 8959	DLL
+T173	sample_function 8965 9014	exports at least the function SpLsaModeInitialize
+T174	sample_function 9027 9055	provides security mechanisms
+T175	function 8995 9014	SpLsaModeInitialize
+R100	coreference Arg1:T172 Arg2:T171	
+R101	goal Arg1:T172 Arg2:T173	
+R102	goal Arg1:T172 Arg2:T174	
+T176	tool 9147 9151	SSPs
+T177	tool 9164 9171	Windows
+T178	tool 9180 9188	Kerberos
+T179	sample_name 9191 9203	kerberos.dll
+T180	tool 9209 9213	NTLM
+T181	sample_name 9216 9226	msv1_0.dll
+R103	located Arg1:T176 Arg2:T177	
+R104	part_of Arg1:T179 Arg2:T178	
+R105	part_of Arg1:T181 Arg2:T180	
+R106	located Arg1:T178 Arg2:T177	
+R107	located Arg1:T180 Arg2:T177	
+T182	tool 9249 9262	SSP interface
+T183	sample_function 9267 9286	malware persistency
+T184	sample_function 9300 9309	injection
+R108	goal Arg1:T182 Arg2:T183	
+R109	goal Arg1:T182 Arg2:T184	
+T185	sample_function 9333 9353	maintain persistency
+T186	sub_activity 9368 9418	put your SSP DLL into the Windows system directory
+T187	sub_activity 9423 9475	add the name of your DLL to a certain registry value
+T188	tool 9444 9447	DLL
+R110	goal Arg1:T186 Arg2:T185	
+R111	goal Arg1:T187 Arg2:T185	
+T189	sub_activity 9511 9557	gets loaded into the Windows lsass.exe process
+T190	sub_activity 9562 9573	is executed
+T191	tool 9507 9510	DLL
+T192	sample_name 9540 9549	lsass.exe
+T193	tool 9598 9605	SSP DLL
+T194	sample_name 9626 9635	lsass.exe
+T195	sample_function 9598 9635	SSP DLL to be injected into lsass.exe
+T196	sub_activity 9646 9686	call the API function AddSecurityPackage
+T197	function 9668 9686	AddSecurityPackage
+R112	goal Arg1:T196 Arg2:T195	
+T198	tool 9837 9850	SSP interface
+T199	reference_word 9815 9824	a malware
+T200	person 9868 9880	Matt Graeber
+T201	time 9884 9888	2014
+R113	use Arg1:T199 Arg2:T198	
+T202	malware 10028 10035	AcidBox
+T203	tool 10036 10044	SSP DLLs
+T204	reference_word 10047 10051	they
+T205	reference_word 10121 10135	this interface
+T206	sample_function 10140 10149	injection
+T207	sample_function 10184 10195	persistence
+R114	coreference Arg1:T204 Arg2:T203	
+R115	use Arg1:T204 Arg2:T205	
+R116	goal Arg1:T205 Arg2:T206	
+R117	goal Arg1:T205 Arg2:T207	
+T208	reference_word 10198 10212	The three SSPs
+T209	tool 10293 10300	Windows
+T210	sample_name 10303 10313	msv1_0.dll
+T211	sample_name 10316 10325	pku2u.dll
+T212	sample_name 10328 10339	wdigest.dll
+R118	located Arg1:T210 Arg2:T209	
+R119	located Arg1:T211 Arg2:T209	
+R120	located Arg1:T212 Arg2:T209	
+T213	sample_name 10345 10355	msv1_1.dll
+T214	encryption_algo 10358 10364	SHA256
+T215	sha2 10366 10430	b3166c417d49e94f3d9eab9b1e8ab853b58ba59f734f774b5de75ee631a9b66d
+R121	part_of Arg1:T215 Arg2:T213	
+T216	sample_name 10433 10440	pku.dll
+T217	encryption_algo 10443 10449	SHA256
+T218	sha2 10451 10515	3ad20ca49a979e5ea4a5e154962e7caff17e4ca4f00bec7f3ab89275fcc8f58c
+R122	part_of Arg1:T218 Arg2:T216	
+T219	sample_name 10518 10531	windigest.dll
+T220	encryption_algo 10534 10540	SHA256
+T221	sha2 10542 10606	003669761229d3e1db0f5a5b333ef62b3dffcc8e27c821ce9018362e0a2df7e9
+R123	part_of Arg1:T221 Arg2:T219	
+T222	tool 10653 10657	SSPs
+T223	malware 10645 10652	AcidBox
+R124	part_of Arg1:T203 Arg2:T202	
+R125	part_of Arg1:T222 Arg2:T223	
+T224	reference_word 10669 10682	the interface
+T225	sample_function 10687 10698	persistence
+R126	coreference Arg1:T205 Arg2:T198	
+R127	use Arg1:T222 Arg2:T224	
+R128	goal Arg1:T224 Arg2:T225	
+T226	tool 10732 10741	component
+T227	tool 10761 10769	SSP DLLs
+T228	sample_function 10748 10769	installs the SSP DLLs
+R129	goal Arg1:T226 Arg2:T228	
+T229	tool 10822 10835	SSP interface
+T230	sample_function 10848 10857	injection
+T231	sample_name 10863 10872	lsass.exe
+T232	reference_word 10878 10882	they
+T233	sub_activity 10883 10888	check
+T234	reference_word 10960 10967	the one
+T235	tool 10997 11027	sample in the resource section
+R130	goal Arg1:T229 Arg2:T230	
+R131	launch Arg1:T232 Arg2:T233	
+R132	located Arg1:T234 Arg2:T235	
+T236	sample_name 11050 11059	lsass.exe
+T237	malware 11196 11203	AcidBox
+T238	tool 11204 11212	SSP DLLs
+R133	part_of Arg1:T238 Arg2:T237	
+T239	sample_function 11220 11268	oad the main worker module from a registry value
+R134	goal Arg1:T238 Arg2:T239	
+T240	tool 11334 11349	main worker DLL
+T241	tool 11418 11435	missing component
+T242	sub_activity 11350 11376	was stored in the registry
+T243	sample_function 11442 11464	installed the SSP DLLs
+T244	tool 11456 11464	SSP DLLs
+R135	goal Arg1:T241 Arg2:T243	
+T245	reference_word 11487 11505	the three SSP DLLs
+T246	reference_word 11549 11562	those samples
+R136	coreference Arg1:T245 Arg2:T244	
+R137	coreference Arg1:T246 Arg2:T245	
+T247	reference_word 11613 11626	these modules
+T248	reference_word 11744 11748	they
+R138	coreference Arg1:T248 Arg2:T247	
+T249	tool 11676 11694	main worker module
+T250	reference_word 11805 11820	The main worker
+T251	tool 11866 11875	data blob
+T252	tool 11925 11952	CRC32 hash of the data blob
+T253	tool 11956 11976	magic byte sequences
+T254	sample_function 11983 12025	indicate different types of contained data
+R139	located Arg1:T250 Arg2:T251	
+R140	part_of Arg1:T252 Arg2:T251	
+R141	part_of Arg1:T253 Arg2:T251	
+R142	goal Arg1:T253 Arg2:T254	
+T255	reference_word 12038 12053	main worker DLL
+T256	sub_activity 12054 12099	gets decrypted by a SSP DLL from the registry
+T257	sub_activity 12111 12140	XORing the data with key 0xCA
+T258	reference_word 12143 12145	it
+R143	goal Arg1:T257 Arg2:T256	
+R144	coreference Arg1:T258 Arg2:T255	
+T259	reference_word 12187 12189	It
+T260	sub_activity 12201 12233	creating a thread for the module
+T261	reference_word 12282 12297	the main worker
+R145	coreference Arg1:T261 Arg2:T259	
+T262	function 12265 12278	UpdateContext
+R146	launch Arg1:T259 Arg2:T260	
+R147	part_of Arg1:T262 Arg2:T261	
+R148	use Arg1:T259 Arg2:T262	
+T263	reference_word 12321 12343	The main worker module
+T264	sub_activity 12349 12382	loads the unsigned malware driver
+T265	tool 12391 12409	VirtualBox exploit
+T266	sub_activity 12414 12460	waits for commands from one or more components
+R149	launch Arg1:T263 Arg2:T264	
+R150	use Arg1:T263 Arg2:T265	
+R151	launch Arg1:T263 Arg2:T266	
+T267	sample_function 12509 12575	loading of additional payloads from the registry from kernel space
+T268	tool 12580 12590	the driver
+T269	tool 12618 12626	SSP DLLs
+R152	goal Arg1:T268 Arg2:T267	
+R153	goal Arg1:T269 Arg2:T267	
+T270	reference_word 12629 12644	The main worker
+T271	function 12674 12689	InitMainStartup
+T272	function 12694 12707	UpdateContext
+R154	coreference Arg1:T270 Arg2:T263	
+R155	part_of Arg1:T271 Arg2:T270	
+R156	part_of Arg1:T272 Arg2:T270	
+T273	tool 12725 12740	XOR-encoded DLL
+T274	sub_activity 12774 12798	get dynamically resolved
+T275	sub_activity 12803 12807	used
+T276	tool 12881 12888	DllMain
+T277	tool 13023 13041	main worker sample
+T278	tool 13056 13070	icon resources
+R157	part_of Arg1:T278 Arg2:T277	
+T279	sample_name 13094 13096	16
+T280	sample_name 13099 13102	256
+T281	sample_name 13105 13109	4097
+T282	sample_name 13112 13116	8193
+T283	sample_name 13121 13126	12289
+R158	part_of Arg1:T279 Arg2:T278	
+R159	part_of Arg1:T280 Arg2:T278	
+R160	part_of Arg1:T281 Arg2:T278	
+R161	part_of Arg1:T282 Arg2:T278	
+R162	part_of Arg1:T283 Arg2:T278	
+T284	reference_word 13181 13190	the icons
+R163	coreference Arg1:T284 Arg2:T278	
+T285	sub_activity 13308 13341	encrypted with a custom algorithm
+T286	sub_activity 13359 13374	zlib compressed
+T287	tool 13412 13420	SSP DLLs
+T288	program_language 13425 13431	Python
+T289	tool 13425 13438	Python script
+T290	sample_function 13443 13453	decryption
+T291	sample_function 13458 13471	decompression
+R164	goal Arg1:T289 Arg2:T290	
+R165	goal Arg1:T289 Arg2:T291	
+T292	sample_name 13513 13515	16
+T293	sample_name 13520 13523	256
+T294	tool 13532 13553	Windows registry keys
+T295	tool 13571 13609	decryption key for the embedded driver
+T296	tool 13642 13650	payloads
+T297	malware 13695 13702	AcidBox
+T298	tool 13703 13709	driver
+R166	part_of Arg1:T298 Arg2:T297	
+R167	part_of Arg1:T292 Arg2:T294	
+R168	part_of Arg1:T293 Arg2:T294	
+R169	part_of Arg1:T295 Arg2:T294	
+R170	part_of Arg1:T296 Arg2:T294	
+T299	sample_function 13779 13829	verify it is being loaded into the correct process
+T300	sample_name 13841 13845	8193
+T301	tool 13859 13893	unsigned kernelmode payload driver
+T302	encryption_algo 13925 13928	RSA
+R171	part_of Arg1:T301 Arg2:T300	
+T303	reference_word 13931 13941	The driver
+T304	tool 13959 13973	kernelmode DLL
+T305	function 14000 14009	InitEntry
+T306	function 14014 14022	InitExit
+R172	part_of Arg1:T305 Arg2:T304	
+R173	part_of Arg1:T306 Arg2:T304	
+R174	coreference Arg1:T304 Arg2:T303	
+R175	coreference Arg1:T303 Arg2:T301	
+T307	sample_name 14034 14039	12289
+T308	tool 14053 14091	VirtualBox VBoxDrv.sys driver v2.2.0.0
+T309	company 14102 14118	Sun Microsystems
+R176	part_of Arg1:T308 Arg2:T307	
+T310	tool 14201 14210	PE header
+T311	sample_function 14374 14401	attributing malware samples
+R177	goal Arg1:T310 Arg2:T311	
+T312	malware 14415 14422	AcidBox
+T313	malware 14498 14505	AcidBox
+T314	string 14519 14542	NumberOfFunctions value
+T315	string 14591 14610	NumberOfNames value
+R178	part_of Arg1:T314 Arg2:T313	
+R179	part_of Arg1:T315 Arg2:T313	
+T316	tool 14918 14926	DEF file
+T317	sample_function 14965 15005	describe the attributes of your DLL file
+T318	tool 14997 15000	DLL
+R180	goal Arg1:T316 Arg2:T317	
+T319	tool 15023 15031	DEF file
+T320	tool 15153 15175	Visual Studio compiler
+T321	tool 14938 14948	__declspec
+T322	tool 14950 14959	dllexport
+R181	coreference Arg1:T322 Arg2:T321	
+T323	tool 15122 15132	__declspec
+T324	tool 15134 15143	dllexport
+T325	tool 15253 15263	__declspec
+T326	tool 15265 15274	dllexport
+R182	coreference Arg1:T324 Arg2:T323	
+R183	coreference Arg1:T326 Arg2:T325	
+T327	sample_function 15315 15343	export functions by ordinals
+T328	tool 15233 15241	DEF file
+T329	sample_function 15361 15398	redirect functions among other things
+R184	goal Arg1:T328 Arg2:T327	
+R185	goal Arg1:T328 Arg2:T329	
+T330	malware 15507 15514	AcidBox
+T331	person 15574 15580	author
+T332	tool 15588 15596	DEF file
+R186	use Arg1:T331 Arg2:T332	
+T333	person 15689 15695	author
+T334	tool 15703 15712	DEF files
+R187	use Arg1:T333 Arg2:T334	
+T335	person 15911 15917	author
+T336	tool 15985 15989	DLLs
+T337	sub_activity 15992 16023	one export function was removed
+T338	malware 16197 16204	AcidBox
+T339	time 16246 16250	2017
+R188	occur_time Arg1:T338 Arg2:T339	
+T340	reference_word 16284 16286	It
+T341	tool 16300 16318	VirtualBox exploit
+T342	sample_function 16322 16369	disable Driver Signature Enforcement in Windows
+T343	tool 16427 16463	VirtualBox driver VBoxDrv.sys v1.6.2
+T344	threatActor_name 16490 16495	Turla
+T345	reference_word 16498 16514	this new malware
+T346	reference_word 16520 16536	the same exploit
+T347	tool 16563 16581	VirtualBox version
+R189	coreference Arg1:T340 Arg2:T338	
+R190	use Arg1:T340 Arg2:T341	
+R191	goal Arg1:T341 Arg2:T342	
+R192	use Arg1:T344 Arg2:T343	
+R193	coreference Arg1:T345 Arg2:T340	
+R194	coreference Arg1:T346 Arg2:T341	
+R195	use Arg1:T345 Arg2:T346	
+R196	use Arg1:T345 Arg2:T347	
+T348	tool 16649 16656	Windows
+T349	malware 16844 16851	AcidBox
+T350	tool 16925 16953	VirtualBox VBoxDrv.sys 1.6.2
+T351	threatActor_name 16970 16975	Turla
+T352	tool 16979 16986	exploit
+R197	use Arg1:T351 Arg2:T350	
+R198	part_of Arg1:T352 Arg2:T351	
+T353	tool 17031 17045	icon resources
+T354	tool 17060 17073	SSP interface
+T355	sample_function 17078 17089	persistence
+T356	sample_function 17094 17103	injection
+T357	tool 17108 17115	payload
+T358	tool 17131 17147	Windows registry
+R199	located Arg1:T357 Arg2:T358	
+R200	goal Arg1:T354 Arg2:T355	
+R201	goal Arg1:T354 Arg2:T356	
+T359	malware 17221 17228	AcidBox
+T360	tool 17490 17503	Python script
+T361	sample_function 17507 17564	extract the sensitive data appended to the icon resources
+R202	goal Arg1:T360 Arg2:T361	
+T362	security_team 17601 17608	Unit 42
+T363	tool 17612 17618	GitHub
+T364	company 17719 17737	Palo Alto Networks
+T365	person 17738 17747	customers
+T366	reference_word 17767 17779	this malware
+R203	coreference Arg1:T366 Arg2:T359	
+T367	security_team 17818 17826	WildFire
+T368	reference_word 17838 17850	this malware
+R204	coreference Arg1:T368 Arg2:T366	
+T369	tool 17866 17875	AutoFocus
+T370	person 17876 17885	customers
+T372	malware 17929 17936	AcidBox
+T371	security_team 17962 17968	Dr.Web
+T373	security_team 17971 17980	Kaspersky
+T374	security_team 17983 17987	ESET
+T375	security_team 17992 18000	hFireF0X
+T376	threatActor_name 18027 18038	Turla Group
+T377	sample_name 18041 18051	msv1_1.dll
+T378	threatActor_name 18054 18065	Turla Group
+T379	sample_name 18068 18075	pku.dll
+T380	threatActor_name 18078 18089	Turla Group
+T381	sample_name 18092 18105	windigest.dll
+T382	threatActor_name 18108 18119	Turla Group
+T383	sha2 18122 18186	eb30a1822bd6f503f8151cb04bfd315a62fa67dbfe1f573e6fcfd74636ecedd5
+R205	part_of Arg1:T383 Arg2:T382	
+R206	use Arg1:T376 Arg2:T377	
+R207	use Arg1:T378 Arg2:T379	
+R208	use Arg1:T380 Arg2:T381	
+T384	threatActor_name 18189 18200	Turla Group
+T385	sha2 18203 18267	3ef071e0327e7014dd374d96bed023e6c434df6f98cce88a1e7335a667f6749d
+T386	threatActor_name 18270 18281	Turla Group
+T387	sha2 18284 18348	003669761229d3e1db0f5a5b333ef62b3dffcc8e27c821ce9018362e0a2df7e9
+T388	threatActor_name 18351 18362	Turla Group
+T389	sha2 18365 18429	b3166c417d49e94f3d9eab9b1e8ab853b58ba59f734f774b5de75ee631a9b66d
+T390	threatActor_name 18432 18443	Turla Group
+T391	sha2 18446 18510	3ad20ca49a979e5ea4a5e154962e7caff17e4ca4f00bec7f3ab89275fcc8f58c
+T392	threatActor_name 18513 18524	Turla Group
+T393	sha2 18527 18591	78827fa00ea48d96ac9af8d1c1e317d02ce11793e7f7f6e4c7aac7b5d7dd490f
+R209	part_of Arg1:T385 Arg2:T384	
+R210	part_of Arg1:T387 Arg2:T386	
+R211	part_of Arg1:T389 Arg2:T388	
+R212	part_of Arg1:T391 Arg2:T390	
+R213	part_of Arg1:T393 Arg2:T392	
+R26	coreference Arg1:T18 Arg2:T16	
+T52	reference_word 1270 1297	the unpatched vulnerability
+R27	coreference Arg1:T52 Arg2:T20	
+R214	coreference Arg1:T29 Arg2:T52	
+R215	coreference Arg1:T35 Arg2:T30	

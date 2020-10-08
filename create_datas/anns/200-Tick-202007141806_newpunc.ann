@@ -1,0 +1,266 @@
+T1	threatActor_name 1 5	Tick
+T2	threatActor_name 154 158	Tick
+T4	target_crowd 213 226	organizations
+T3	attack_activity 181 204	cyber espionage attacks
+T5	location 234 261	Republic of Korea and Japan
+R1	launch Arg1:T2 Arg2:T3	
+R2	attack Arg1:T3 Arg2:T4	
+R3	located Arg1:T4 Arg2:T5	
+T6	reference_word 282 291	The group
+T7	target_crowd 303 312	companies
+R4	coreference Arg1:T6 Arg2:T2	
+R5	goal Arg1:T6 Arg2:T7	
+T8	reference_word 423 432	The group
+R6	coreference Arg1:T8 Arg2:T2	
+T9	malware 471 477	Daserf
+T10	tool 497 515	multiple commodity
+T11	tool 520 532	custom tools
+T13	tool 569 598	social engineering techniques
+R7	use Arg1:T8 Arg2:T9	
+R8	use Arg1:T8 Arg2:T10	
+R9	use Arg1:T8 Arg2:T11	
+R11	use Arg1:T8 Arg2:T13	
+T14	threatActor_name 611 641	the command and control ( C2 )
+T15	threatActor_name 659 663	Tick
+T16	sub_activity 738 758	keep their anonymity
+T17	tool 680 698	domains registered
+T18	tool 707 734	privacy protection services
+R12	use Arg1:T15 Arg2:T17	
+R13	use Arg1:T15 Arg2:T18	
+T19	sub_activity 779 799	compromised websites
+R14	launch Arg1:T15 Arg2:T16	
+R15	launch Arg1:T15 Arg2:T19	
+T20	tool 825 839	multiple tools
+T21	tool 844 868	anonymous infrastructure
+T22	reference_word 871 875	they
+R16	coreference Arg1:T22 Arg2:T15	
+R17	use Arg1:T22 Arg2:T21	
+R18	use Arg1:T22 Arg2:T20	
+T23	sub_activity 880 887	running
+T24	attack_activity 916 932	attack campaigns
+R19	launch Arg1:T22 Arg2:T23	
+R20	launch Arg1:T22 Arg2:T24	
+T25	reference_word 961 970	adversary
+R21	coreference Arg1:T25 Arg2:T15	
+T26	target_crowd 997 1016	high-profile target
+T27	location 1020 1025	Japan
+R22	attack Arg1:T25 Arg2:T26	
+R23	located Arg1:T26 Arg2:T27	
+T28	malware 1041 1057	malware families
+R24	use Arg1:T25 Arg2:T28	
+T29	threatActor_name 1126 1130	Tick
+T30	time 1152 1156	2016
+R25	first_found_time Arg1:T29 Arg2:T30	
+T31	malware 1206 1212	Daserf
+T32	malware 1291 1297	Daserf
+T33	time 1397 1401	2011
+R26	occur_time Arg1:T32 Arg2:T33	
+T34	malware 1462 1468	Daserf
+T35	malware 1493 1497	9002
+T36	malware 1502 1509	Invader
+T37	reference_word 1512 1525	These threats
+R27	coreference Arg1:T37 Arg2:T36	
+R28	coreference Arg1:T37 Arg2:T35	
+T38	malware 1583 1590	Invader
+T39	function 1733 1767	Logs keystrokes and mouse movement
+T40	function 1768 1788	Captures screenshots
+T41	function 1789 1808	Opens cmd.exe shell
+T42	function 1809 1829	Enumerates processes
+T43	function 1830 1847	Executes programs
+T44	function 1848 1862	Removes itself
+T45	function 1863 1903	Enumerates all opening TCP and UDP ports
+T46	malware 1906 1910	9002
+T47	threatActor_name 2057 2059	C2
+T48	malware 2076 2080	9002
+T49	malware 2084 2090	Daserf
+T50	domain 2265 2288	krjregh.sacreeflame.com
+T51	domain 2289 2311	lywja.healthsvsolu.com
+T52	malware 2501 2507	Daserf
+T53	malware 2643 2650	Invader
+T54	threatActor_name 2675 2677	C2
+T55	malware 2691 2697	Daserf
+T56	threatActor_name 2723 2727	Tick
+T57	vulnerability_cve 2749 2797	Adobe Flash and Microsoft Office vulnerabilities
+R29	use Arg1:T56 Arg2:T57	
+T58	security_team 2700 2708	Symantec
+R30	find Arg1:T58 Arg2:T56	
+T59	security_team 1085 1093	Symantec
+R31	find Arg1:T59 Arg2:T29	
+T60	security_team 1145 1148	LAC
+R32	find Arg1:T60 Arg2:T29	
+T61	security_team 1410 1419	AutoFocus
+T62	security_team 2016 2034	Palo Alto Networks
+R33	find Arg1:T62 Arg2:T46	
+T63	security_team 2159 2166	FireEye
+R34	find Arg1:T63 Arg2:T47	
+R35	find Arg1:T63 Arg2:T49	
+R36	find Arg1:T63 Arg2:T48	
+T64	security_team 2553 2563	VirusTotal
+R37	find Arg1:T64 Arg2:T52	
+T65	location 2574 2579	Japan
+R38	located Arg1:T64 Arg2:T65	
+T12	vulnerability_cve 543 558	vulnerabilities
+R10	use Arg1:T8 Arg2:T12	
+T66	reference_word 2356 2363	malware
+R39	coreference Arg1:T66 Arg2:T48	
+R40	coreference Arg1:T66 Arg2:T49	
+R41	coreference Arg1:T66 Arg2:T38	
+T67	security_team 2800 2811	SecureWorks
+T68	reference_word 2821 2836	adversary group
+R42	coreference Arg1:T68 Arg2:T56	
+T69	vulnerability_cve 2850 2886	previously undisclosed vulnerability
+R43	use Arg1:T68 Arg2:T69	
+T70	target_crowd 2890 2931	Japanese Software Asset Management system
+R44	attack Arg1:T68 Arg2:T70	
+T71	threatActor_name 2959 2963	Tick
+T72	malware 3124 3138	Daserf variant
+T73	location 3099 3104	Japan
+T74	threatActor_name 3167 3169	C2
+T75	malware 3198 3204	Minzen
+T76	location 3296 3301	Japan
+T77	location 3310 3327	Republic of Korea
+T78	reference_word 3251 3257	threat
+R45	coreference Arg1:T78 Arg2:T74	
+T79	security_team 3333 3342	Kaspersky
+T80	security_team 3347 3357	Cybereason
+T81	malware 3376 3382	Minzen
+R46	find Arg1:T79 Arg2:T81	
+R47	find Arg1:T80 Arg2:T81	
+T82	malware 3518 3524	Minzen
+T83	sha2 3543 3607	9374040a9e2f47f7037edaac19f21ff1ef6a999ff98c306504f89a37196074a2
+T84	location 3623 3640	Republic of Korea
+T85	time 2250 2254	2008
+T86	time 2259 2263	2011
+T87	time 2170 2174	2013
+T88	time 1556 1565	July 2012
+T89	time 1570 1580	April 2013
+R48	occur_time Arg1:T47 Arg2:T87	
+R49	occur_time Arg1:T48 Arg2:T87	
+R50	occur_time Arg1:T49 Arg2:T87	
+T90	time 2598 2602	2013
+R51	occur_time Arg1:T52 Arg2:T90	
+T91	time 3644 3657	December 2016
+R52	occur_time Arg1:T82 Arg2:T91	
+T92	reference_word 3737 3739	It
+R53	coreference Arg1:T92 Arg2:T82	
+T93	malware 3881 3894	NamelessHdoor
+T94	malware 3978 3995	Nameless Backdoor
+T95	time 4154 4158	2005
+T96	malware 4175 4192	the NamelessHdoor
+T97	tool 4344 4363	ReflectiveDLLLoader
+T98	malware 4244 4261	Nameless Backdoor
+T99	malware 4416 4433	Nameless Backdoor
+T100	time 4486 4490	2015
+T101	security_team 4475 4482	Cyphort
+R54	find Arg1:T101 Arg2:T99	
+R55	occur_time Arg1:T99 Arg2:T100	
+T102	malware 4561 4568	Invader
+T103	malware 4571 4579	Nioupale
+T104	malware 4594 4599	Hdoor
+T105	reference_word 4541 4548	threats
+R56	coreference Arg1:T105 Arg2:T102	
+R57	coreference Arg1:T105 Arg2:T103	
+R58	coreference Arg1:T105 Arg2:T104	
+T106	target_crowd 4630 4657	Asian financial institution
+T107	malware 4710 4715	Hdoor
+T108	malware 4758 4771	NamelessHdoor
+T109	malware 4915 4924	Gh0st RAT
+T110	malware 5010 5019	Gh0st RAT
+T111	domain 5078 5091	softfix.co.kr
+T112	time 5110 5114	2014
+T113	domain_evil 5137 5155	news.softfix.co.kr
+T114	threatActor_name 5164 5166	C2
+T115	malware 5177 5183	Daserf
+T116	sha2 5194 5258	9c7a34390e92d4551c26a3feb5b181757b3309995acd1f92e0f63f888aa89423
+T117	domain_evil 5283 5300	bbs.softfix.co.kr
+T118	domain_evil 5334 5350	bbs.gokickes.com
+T119	threatActor_name 5379 5381	C2
+T120	malware 5392 5399	Invader
+T121	security_team 5403 5410	Cyphort
+R59	find Arg1:T121 Arg2:T119	
+R60	find Arg1:T121 Arg2:T120	
+T122	domain_evil 5432 5448	www.gokickes.com
+T123	sha2 5497 5561	57e1d3122e6dc88d9eb2989f081de88a0e6864e767281d509ff58834928895fb
+T124	threatActor_name 5457 5459	C2
+T125	malware 5471 5486	Invader variant
+T126	malware 5638 5643	Gh0st
+T127	malware 5756 5771	HomamDownloader
+T128	malware 5800 5806	Daserf
+T129	reference_word 5846 5859	these threats
+R61	coreference Arg1:T129 Arg2:T127	
+R62	coreference Arg1:T129 Arg2:T128	
+T130	malware 5884 5899	HomamDownloader
+T131	malware 6004 6019	HomamDownloader
+T132	threatActor_name 6054 6058	Tick
+T133	reference_word 6091 6100	adversary
+R63	coreference Arg1:T133 Arg2:T132	
+T134	reference_word 6582 6594	the attacker
+R64	coreference Arg1:T134 Arg2:T132	
+T135	malware 6894 6909	HomamDownloader
+T136	threatActor_name 7419 7423	Tick
+T137	target_crowd 7493 7514	various organizations
+R65	attack Arg1:T136 Arg2:T137	
+T138	location 7518 7529	South Korea
+T139	location 7534 7539	Japan
+R66	located Arg1:T137 Arg2:T138	
+R67	located Arg1:T137 Arg2:T139	
+T140	malware 7731 7737	Daserf
+T141	malware 7807 7813	Daserf
+T142	malware 7883 7889	Daserf
+T143	malware 7959 7965	Daserf
+T144	malware 8035 8041	Daserf
+T145	malware 8111 8118	Invader
+T146	malware 8188 8195	Invader
+T147	malware 8265 8272	Invader
+T148	malware 8342 8346	9002
+T149	malware 8414 8418	9002
+T150	malware 8486 8490	9002
+T151	malware 8558 8564	Minzen
+T152	malware 8634 8640	Minzen
+T153	malware 8710 8716	Minzen
+T154	malware 8786 8799	NamelessHdoor
+T155	malware 8869 8888	Gh0stRAt Downloader
+T156	malware 8958 8977	Gh0stRAt Downloader
+T157	malware 9047 9059	Custom Gh0st
+T158	malware 9129 9135	Datper
+T159	malware 9205 9220	HomamDownloader
+T160	threatActor_name 9290 9292	C2
+T161	threatActor_name 9321 9323	C2
+T162	threatActor_name 9352 9354	C2
+T163	threatActor_name 9381 9383	C2
+T164	threatActor_name 9411 9413	C2
+T165	threatActor_name 9440 9442	C2
+T166	threatActor_name 9466 9468	C2
+T167	threatActor_name 9492 9494	C2
+T168	threatActor_name 9516 9518	C2
+T169	threatActor_name 9540 9542	C2
+T170	sha2 7740 7804	04080fbab754dbf0c7529f8bbe661afef9c2cba74e3797428538ed5c243d705a
+T171	sha2 7816 7880	f8458a0711653071bf59a3153293771a6fb5d1de9af7ea814de58f473cba9d06
+T172	sha2 7892 7956	e8edde4519763bb6669ba99e33b4803a7655805b8c3475b49af0a49913577e51
+T173	sha2 7968 8032	21111136d523970e27833dd2db15d7c50803d8f6f4f377d4d9602ba9fbd355cd
+T174	sha2 8044 8108	9c7a34390e92d4551c26a3feb5b181757b3309995acd1f92e0f63f888aa89423
+T175	sha2 8121 8185	0df20ccd074b722d5fe1358b329c7bdebcd7e3902a1ca4ca8d5a98cc5ce4c287
+T176	sha2 8198 8262	e9574627349aeb7dd7f5b9f9c5ede7faa06511d7fdf98804526ca1b2e7ce127e
+T177	sha2 8275 8339	57e1d3122e6dc88d9eb2989f081de88a0e6864e767281d509ff58834928895fb
+T178	sha2 8347 8411	933d66b43b3ce9a572ee3127b255b4baf69d6fdd7cb24da609b52ee277baa76e
+T179	sha2 8419 8483	2bec20540d200758a223a7e8f7b2f98cd4949e106c1907d3f194216208c5b2fe
+T180	sha2 8491 8555	055fe8002de293401852310ae76cb730c570f2037c3c832a52a79b70e2cb7831
+T181	sha2 8567 8631	797d9c00022eaa2f86ddc9374f60d7ad92128ca07204b3e2fe791c08da9ce2b1
+T182	sha2 8643 8707	9374040a9e2f47f7037edaac19f21ff1ef6a999ff98c306504f89a37196074a2
+T183	sha2 8719 8783	26727d139b593486237b975e7bdf93a8148c52d5fb48d5fe540a634a16a6ba82
+T184	sha2 8802 8866	dfc8a6da93481e9dab767c8b42e2ffbcd08fb813123c91b723a6e6d70196636f
+T185	sha2 8891 8955	ce47e7827da145823a6f2b755975d1d2f5eda045b4c542c9b9d05544f3a9b974
+T186	sha2 8980 9044	e34f4a9c598ad3bb243cb39969fb9509427ff9c08e63e8811ad26b72af046f0c
+T187	sha2 9062 9126	8e5a0a5f733f62712b840e7f5051a2bd68508ea207e582a190c8947a06e26f40
+T188	sha2 9138 9202	7d70d659c421b50604ce3e0a1bf423ab7e54b9df361360933bac3bb852a31849
+T189	sha2 9223 9287	a624d2cd6dee3b6150df3ca61ee0f992e2d6b08b3107f5b00f8bf8bcfe07ebe7
+T190	domain_evil 9295 9318	lywjrea.gmarketshop.net
+T191	domain_evil 9326 9349	krjregh.sacreeflame.com
+T192	domain_evil 9357 9378	psfir.sacreeflame.com
+T193	domain_evil 9386 9408	lywja.healthsvsolu.com
+T194	domain_evil 9416 9437	phot.healthsvsolu.com
+T195	domain_evil 9445 9463	blog.softfix.co.kr
+T196	domain_evil 9471 9489	news.softfix.co.kr
+T197	domain_evil 9497 9513	www.gokickes.com
+T198	domain_evil 9521 9537	log.gokickes.com
+T199	domain_evil 9545 9559	sansei.jpn.com

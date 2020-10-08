@@ -1,0 +1,33 @@
+HOT KNIVES THROUGH BUTTER: Evading File-based Sandboxs .
+HOT KNIVES THROUGH BUTTER: Evading File-based Sandboxs .
+If the sandbox does not have the targeted version installed, the malicious flash file is not downloaded, and the sandbox detects no malicious activity .
+The code executes only on systems that have the targeted version—in this case, version 6.0 or later—bypassing sandboxes that do not have a matching version in place .
+Often, malware uses seemingly innocuous files to get past defenses and download a malicious payload . 
+A common approach is hiding iframe HTML elements in an otherwise non-executable file, such as a GIF picture or Acrobat Flash .
+By themselves, these files are not executed and therefore exhibit no suspicious behavior in the sandbox . 
+Instead, they hide data—this data is “unlocked” and executed by a separate file that waits for it on a compromised physical computer .
+The footer is a single-field block indicating the end of the GIF data stream . 
+It normally has a fixed value 0x3B. In many malicious GIF files, an iframe tag is added after the footer .
+Flash is not an HTML rendering engine, so the hidden iframe does nothing when the Flash file is opened in the sandbox . 
+So again, the sandbox detects no malicious behavior .
+In the same way, JPEG files can contain hidden data that flies under the radar of file-based sandboxes . 
+Normally, the PHP command Exif_read_data is used to read images . 
+Another PHP command, preg_ replace, lets programmers find and replace the content of strings . 
+But preg_replace has an option that executes content rather than just searching and replacing . 
+(This option, eval, is triggered with the command modifier “/e/”.) .
+The eval function allows attackers on a compromised website to execute malicious PHP commands hidden in the JPEG header .
+File-based sandboxes typically open JPEG files in a file viewer or Web browser . 
+Absent any PHP commands to execute the hidden code in the sandbox, the JPEG file exhibits no malicious behavior .
+In addition to containing iframe tags, images such as like GIF, PNG can also store hidden executables .  
+The gif file has a single byte xored executable .  
+The key to decode the executable is 0x75 .
+When the image file is moved to a file-based sandbox, the sandbox opens it in an image viewer or Web browser . 
+Because the hidden executable does not run in a Web browser or image viewer, the sandbox never sees any malicious behavior and deems the file benign .  
+Usually, running a dynamic-link library (DLL) file involves using run32dll.exe or loading the DLL in a process that executes it . 
+Some malware uses a different process, requiring specific loaders to execute the DLL . 
+If the required loader is not present, the DLL does not execute and remains undetected by the sandbox .
+The sandbox-evasion techniques outlined so far in this report are hallmarks of advanced malware and APTs . 
+But based on our telemetry data, several classic evasion techniques continue to prove useful to malware writers .
+VMware, a popular virtual-machine tool, is particularly easy to detect because of its distinctive configuration .
+To detect the presence of a VMware-created sandbox, some malware checks for services unique to VMware, including vmicheatbeat, vmci, vmdebug, vmmouse, vmscis, VMTools, vmware, vmx86, vmhgfs, and vmxnet .
+

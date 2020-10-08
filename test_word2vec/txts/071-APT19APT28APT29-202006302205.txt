@@ -1,0 +1,14 @@
+Unknown .
+Release_Time : unknow
+Report_URL : https://attack.mitre.org/groups/
+APT19 ： Codoso , C0d0so0 , Codoso Team , Sunshop Group .
+APT19 is a Chinese-based threat group that has targeted a variety of industries , including defense , finance , energy , pharmaceutical , telecommunications , high tech , education , manufacturing , and legal services .
+In 2017 , a phishing campaign was used to target seven law and investment firms .
+Some analysts track APT19 and Deep Panda as the same group , but it is unclear from open source information if the groups are the same .
+APT28 : SNAKEMACKEREL , Swallowtail , Group 74 , Sednit , Sofacy , Pawn Storm , Fancy Bear , STRONTIUM , Tsar Team , Threat Group-4127 , TG-4127 .
+APT28 is a threat group that has been attributed to Russia's Main Intelligence Directorate of the Russian General Staff by a July 2018 U.S. Department of Justice indictment .
+This group reportedly compromised the Hillary Clinton campaign , the Democratic National Committee , and the Democratic Congressional Campaign Committee in 2016 in an attempt to interfere with the U.S. presidential election .
+APT28 has been active since at least 2004 .
+APT29 : YTTRIUM , The Dukes , Cozy Bear , CozyDuke .
+APT29 is threat group that has been attributed to the Russian government and has operated since at least 2008 .
+This group reportedly compromised the Democratic National Committee starting in the summer of 2015 .

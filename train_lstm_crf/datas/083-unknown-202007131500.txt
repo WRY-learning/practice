@@ -1,0 +1,62 @@
+Additional Insights on Shamoon2 .		others others others malware others
+Release_Time : 2017-02-21 Report_URL : https://www.netscout.com/blog/asert/additional-insights-shamoon2  IBM analysts recently unveiled a first look at how threat actors may have placed Shamoon2 malware on systems in Saudi Arabia .		others others others others others others others others company others others others others others others others others others others others others others malware others others others others location location others
+Researchers showcased a potential malware lifecycle which started with spear phishing and eventually led to the deployment of the disk-wiping malware known as Shamoon .		person others others others others others others others others attack_activity attack_activity others others others others others others others others others others others others malware others
+Their research showcased a set of downloaders and domains that could potentially lead to a more extensive malware distribution campaign .		reference_word others others others others others others others others others others others others others others others others others others others others
+While researching elements in the IBM report , ASERT discovered additional malicious domains , IP addresses , and artifacts .		others others others others others company others others program_language others others others others others tool others others others others others
+The basic functionality of the new documents and their PowerShell components matched what was previously disclosed .		others others others others others others others others others tool others others others others others others others
+For more information on the overall capabilities of the malware , please review IBM's ongoing research .		others others others others others others others others others others others others others company others others others others
+It is our hope that by providing additional indicators , end-point investigators and network defenders will be able to discover and mitigate more Shamoon2 related compromises .		others others others others others others others others others others person person others person person others others others others others others others others malware others others others
+The following new samples were likely delivered via similar spear phishing campaigns as described in IBM's research .		others others others others others others others others others attack_activity attack_activity others others others others company others others others
+All three shared the same IPs and URLs , also provided below .		others others others others others tool others tool others others others others others
+These samples were located by pivoting on document attributes .		others others others others others others others others others others
+In this case , a sample from the IBM report indicated the document author ‘ gerry.knight ’ which led us to the following three additional samples .		others others others others others others others others company others others others others others others person others others others others others others others others others others others
+spear phishing : 2a0df97277ddb361cecf8726df6d78ac 5e5ea1a67c2538dbc01df28e4ea87472 d30b8468d16b631cafe458fd94cc3196 .		attack_activity attack_activity others md5 md5 md5 others
+spear phishing : 104.218.120.128. spear phishing : 69.87.223.26. spear phishing : 5.254.100.200. spear phishing : analytics-google.org : 69/checkFile.aspx .		attack_activity attack_activity others others attack_activity attack_activity others others attack_activity attack_activity others others attack_activity attack_activity others url_evil url_evil url_evil others
+spear phishing : analytics-google.org .		attack_activity attack_activity others url_evil others
+spear phishing : 69.87.223.26:8080/p .		attack_activity attack_activity others url_evil others
+From the previous samples , we performed a passive DNS lookup on the IPs .		others others others others others others others others others protocol others others others tool others
+We found get.adobe.go-microstf.com hosted at 104.218.120.128 around the time this campaign was ongoing , November 2016 .		others others domain_evil others others IP_evil others others others others others others others others time time others
+Researching the domain go-microstf.com , hosted at 45.63.10.99 , revealed yet another iteration of malicious executables .		others others others domain_evil others others others IP_evil others others others others others others others others others
+In this case , a URL used to download the PowerShell component shared a naming convention found in the IBM report , http://69.87.223.26:8080/eiloShaegae1 and connected to the IP address used by the previous three samples .		others others others others others tool others others others others tool others others others others others others others others company others others domain_evil domain_evil domain_evil others others others others others others others others others others others others others
+The following are IOCs related to this domain :  83be35956e5d409306a81e88a1dc89fd .		others others others tool others others reference_word reference_word others md5 others
+45.63.10.99 .		IP_evil others
+69.87.223.26 .		IP_evil others
+URLs go-microstf.com .		IP_evil IP_evil others
+69.87.223.26:8080/eiloShaegae1 .		IP_evil others
+go-microstf.com/checkfile.aspx .		IP_evil others
+The domain go-microstf.com was originally set up to spoof Google Analytics login page .		others others domain_evil others others others others others others tool tool others others others
+Finally , research yielded a relatively unique sample .		others others others others others others others others others
+This particular iteration was submitted to VirusTotal on September 16 , 2016 .		others others others others others others tool others time time time time others
+The majority of samples analyzed to date were submitted no earlier than mid-October , with most being submitted in January 2017 or later .		others others others others others others others others others others others others time others others others others others others time time others others others
+We were able to discover this particular version by diving further into connections to analytics-google.org .		others others others others others others others others others others others others others others IP_evil others
+Unlike newer samples , this one created a unique file ‘ sloo.exe' .		others others others others others others others others others others others sample_name others others
+The file was created at C:\Documents and Settings\Admin\Local Settings\Temp\sloo.exe .		others others others others others others others others others others others others
+In addition to this file , the sample also contacted 104.238.184.252 for the PowerShell executable .		others others others others others others reference_word reference_word others others IP_evil others others tool others others
+Researchers at Palo Alto have attributed sloo.exe and related activities to threat actors of a likely Iranian state-sponsored origin which they ’ve named Magic Hound .		person others location location others others sample_name others others others others others others others others others location others others others others others others others threatActor_name threatActor_name others
+The group Magic Hound is linked via infrastructure and tools to the Rocket Kitten threat actor group although Palo Alto cannot confirm the extent of any relationship between the two groups .		reference_word reference_word threatActor_name threatActor_name others others others others others others others others threatActor_name threatActor_name others others others others location location others others others others others others others others others others others others others
+Dell Secureworks analysts recently concluded that domains discussed in the IBM report were linked to the Iranian PuppyRAT .		company person others others others others others others others others company others others others others others location threatActor_name others
+In addition , Dell analysts have assessed with high-confidence these activities are attributable to Iranian state-sponsored activities .		others others others company others others others others others others others others others others others others others others
+IOCs for this version were :  Shamoon2: 07d6406036d6e06dc8019e3ade6ee7de .		tool others others others others others malware others md5 others
+Shamoon2: 104.238.184.252 .		malware others IP_evil others
+Shamoon2: 5.254.100.200 Shamoon2: URLs .		malware others IP_evil malware others tool others
+Shamoon2: analytics-google.org : 69/checkFile.aspx .		malware others IP_evil IP_evil IP_evil others
+These additional IOCs will hopefully provide more context into the ongoing threat .		others others tool others others others others others others others others others others
+The link to possible Iranian threat actors supports ongoing analysis that Shamoon2 was perpetrated by Iranian state-sponsored threat actors .		others others others others location others others others others others others malware others others others location others others others others
+The last sample discussed may be malware-0 or at least part of the overall development and subsequent deployment of tools used to install Shamoon on Saudi systems .		others others others others others others others others others others others others others others others others others others others others others others others malware others tool others others
+Shamoon2: 2a0df97277ddb361cecf8726df6d78ac .		malware others md5 others
+Shamoon2: 5e5ea1a67c2538dbc01df28e4ea87472 .		malware others md5 others
+Shamoon2: d30b8468d16b631cafe458fd94cc3196 .		malware others md5 others
+Shamoon2: 83be35956e5d409306a81e88a1dc89fd .		malware others md5 others
+Shamoon2: 07d6406036d6e06dc8019e3ade6ee7de .		malware others md5 others
+Shamoon2: 104.218.120.128 .		malware others IP_evil others
+Shamoon2: 69.87.223.26 .		malware others IP_evil others
+Shamoon2: 5.254.100.200 .		malware others IP_evil others
+Shamoon2: 45.63.10.99 .		malware others IP_evil others
+Shamoon2: 104.238.184.252 .		malware others IP_evil others
+Shamoon2: analytics-google.org : 69/checkFile.aspx .		malware others domain_evil domain_evil domain_evil others
+Shamoon2: analytics-google.org .		malware others domain_evil others
+Shamoon2: 69.87.223.26:8080/p .		malware others domain_evil others
+Shamoon2: go-microstf.com .		malware others domain_evil others
+Shamoon2: 69.87.223.26:8080/eiloShaegae1 .		malware others domain_evil others
+Shamoon2: get.adobe.go-microstf.com .		malware others domain_evil others
+Shamoon2: go-microstf.com/checkfile.aspx .		malware others domain_evil others

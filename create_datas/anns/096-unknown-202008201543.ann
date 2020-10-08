@@ -1,0 +1,531 @@
+T1	time 319 323	2018
+T2	time 1010 1014	2018
+T3	threatActor_name 1027 1033	Sofacy
+T4	threatActor_name 1036 1041	Turla
+T5	threatActor_name 1046 1054	CozyBear
+T6	threatActor_name 1057 1063	Sofacy
+T7	malware 1568 1575	Zebrocy
+T8	threatActor_name 1959 1965	Sofacy
+T9	threatActor_name 2194 2200	Sofacy
+T10	threatActor_name 2772 2778	Sofacy
+T11	threatActor_name 6070 6076	Sofacy
+T12	malware 2715 2722	Zebrocy
+T13	threatActor_name 2856 2861	Turla
+T14	time 3662 3675	November 2018
+T15	threatActor_name 3624 3632	CozyDuke
+T16	threatActor_name 3988 3996	CozyDuke
+T17	time 4155 4159	2018
+T18	industry 4378 4385	casinos
+T19	industry 4388 4410	financial institutions
+T20	industry 4415 4431	cryptocurrencies
+T21	malware 4510 4522	ThreatNeedle
+T22	threatActor_name 5652 5657	APT10
+T23	threatActor_name 5639 5647	CozyDuke
+T24	location 6954 6965	Middle East
+T25	location 6920 6935	South East Asia
+T26	location 6972 6987	South East Asia
+T27	threatActor_name 7019 7026	Kimsuky
+T28	threatActor_name 7244 7253	DarkHotel
+T29	threatActor_name 7256 7266	LuckyMouse
+T30	threatActor_name 7277 7282	APT10
+T31	attack_activity 7289 7307	OceanSalt campaign
+T32	threatActor_name 7326 7331	APT10
+T33	threatActor_name 7608 7618	LuckyMouse
+T34	threatActor_name 8008 8017	Scarcruft
+T35	threatActor_name 8186 8195	DarkHotel
+T36	vul_aliases 8217 8222	0-day
+T37	vul_aliases 8067 8072	0-day
+T38	threatActor_name 8435 8440	APT10
+T39	threatActor_name 8360 8369	DarkHotel
+T40	location 8665 8676	Middle East
+T41	threatActor_name 8793 8804	MuddyWaters
+T42	threatActor_name 8827 8835	GazaTeam
+T43	threatActor_name 8838 8851	DesertFalcons
+T44	threatActor_name 8856 8866	StrongPity
+T45	location 8620 8630	South Asia
+T46	threatActor_name 8534 8544	OceanLotus
+T47	location 9031 9042	Middle East
+T48	location 9047 9062	South East Asia
+T49	threatActor_name 9114 9127	ShaggyPanther
+T50	threatActor_name 9130 9140	Sidewinder
+T51	threatActor_name 9143 9157	CardinalLizard
+T52	threatActor_name 9160 9173	TropicTrooper
+T53	threatActor_name 9176 9192	DroppingElephant
+T54	threatActor_name 9195 9201	Rancor
+T55	threatActor_name 9204 9208	Tick
+T56	threatActor_name 9217 9225	NineBlog
+T57	threatActor_name 9228 9234	Flyfox
+T58	threatActor_name 9239 9249	CactusPete
+T61	location 9551 9562	Middle East
+T62	threatActor_name 9582 9594	LazyMerkaats
+T63	threatActor_name 9597 9608	FruityArmor
+T64	threatActor_name 9641 9655	DomesticKitten
+T65	threatActor_name 9626 9636	DarkHydrus
+T66	threatActor_name 9618 9619	a
+T67	threatActor_name 9957 9966	DustSquad
+T68	threatActor_name 9969 9980	ParkingBear
+T69	threatActor_name 9985 9994	Gallmaker
+T70	threatActor_name 10543 10548	APT15
+T71	threatActor_name 10786 10800	TEMP.Periscope
+T72	threatActor_name 11071 11076	Thrip
+T73	security_team 12358 12368	CitizenLab
+T74	malware 11884 11891	Pegasus
+T75	threatActor_aliases 13923 13934	HiddenCobra
+T76	threatActor_name 13913 13920	Lazarus
+R1	coreference Arg1:T75 Arg2:T76	
+T77	time 14433 14442	June 2017
+T78	threatActor_name 17160 17168	Carbanak
+T79	person 149 155	actors
+R2	occur_time Arg1:T79 Arg2:T1	
+T80	attack_activity 16478 16493	Triton / Trisis
+T81	malware 16478 16484	Triton
+T82	malware 16487 16493	Trisis
+T83	vul_aliases 16701 16706	0-day
+T84	person 16688 16693	actor
+R3	use Arg1:T84 Arg2:T83	
+T85	security_team 16722 16729	FireEye
+T86	reference_word 1140 1142	it
+T87	sub_activity 1167 1189	updating their toolset
+R4	coreference Arg1:T86 Arg2:T6	
+R5	launch Arg1:T86 Arg2:T87	
+T88	reference_word 1265 1274	the actor
+R6	coreference Arg1:T88 Arg2:T86	
+T89	malware 1285 1293	Gamefish
+T90	malware 1324 1337	DealersChoice
+T91	sub_activity 1275 1293	deploying Gamefish
+T92	government 1356 1365	embassies
+T93	government 1370 1381	EU agencies
+R7	launch Arg1:T88 Arg2:T91	
+T94	malware 1301 1337	updated version of its DealersChoice
+R8	part_of Arg1:T94 Arg2:T90	
+R9	use Arg1:T88 Arg2:T94	
+R10	attack Arg1:T88 Arg2:T92	
+R11	attack Arg1:T88 Arg2:T93	
+T95	tool 1436 1453	Computrace LoJack
+T96	reference_word 1457 1467	this actor
+T97	attack_goal 1480 1517	deploy its malware on victim machines
+T98	malware 1558 1565	rootkit
+R12	use Arg1:T96 Arg2:T95	
+R13	goal Arg1:T96 Arg2:T97	
+T99	reference_word 1618 1628	this actor
+R14	use Arg1:T99 Arg2:T7	
+T100	malware 1787 1794	Zebrocy
+T101	malware 1787 1804	Zebrocy ’s subset
+R15	part_of Arg1:T101 Arg2:T100	
+T102	tool 1823 1850	custom collector/downloader
+T103	tool 1857 1860	VBA
+T104	sub_activity 1874 1900	anti-sandboxing techniques
+T105	tool 1909 1913	.NET
+R16	goal Arg1:T103 Arg2:T104	
+T106	sub_activity 1760 1804	different improvements for Zebrocy ’s subset
+R17	part_of Arg1:T102 Arg2:T106	
+R18	part_of Arg1:T103 Arg2:T106	
+R19	part_of Arg1:T105 Arg2:T106	
+T107	threatActor_name 2083 2099	OlympicDestroyer
+T108	threatActor_name 2252 2268	OlympicDestroyer
+T109	sub_activity 2252 2275	OlympicDestroyer subset
+R20	part_of Arg1:T109 Arg2:T108	
+T110	location 2279 2285	Europe
+T111	location 2290 2297	Ukraine
+T112	threatActor_name 2366 2371	Hades
+R21	coreference Arg1:T112 Arg2:T109	
+R22	located Arg1:T109 Arg2:T110	
+R23	located Arg1:T109 Arg2:T111	
+T113	vul_aliases 2646 2651	0-day
+T114	threatActor_name 2435 2445	GreyEnergy
+T115	threatActor_name 2503 2514	BlackEnergy
+T116	threatActor_name 2563 2573	GreyEnergy
+T117	malware 2578 2585	Zebrocy
+T118	threatActor_name 2515 2523	Sandworm
+T119	tool 2656 2659	ICS
+T120	sub_activity 2613 2632	same infrastructure
+R24	use Arg1:T116 Arg2:T120	
+R25	use Arg1:T116 Arg2:T113	
+R26	use Arg1:T117 Arg2:T120	
+R27	use Arg1:T117 Arg2:T113	
+T121	threatActor_name 2694 2699	Hades
+T122	sub_activity 2715 2741	Zebrocy subset of activity
+R28	part_of Arg1:T122 Arg2:T10	
+T123	threatActor_name 2804 2815	BlackEnergy
+T125	threatActor_name 2827 2835	Sandworm
+T126	threatActor_name 2816 2826	GreyEnergy
+R29	part_of Arg1:T122 Arg2:T123	
+R30	part_of Arg1:T122 Arg2:T126	
+R31	part_of Arg1:T122 Arg2:T125	
+T127	malware 3004 3015	LightNeuron
+R32	use Arg1:T13 Arg2:T127	
+T128	tool 3028 3036	Exchange
+R33	attack Arg1:T127 Arg2:T128	
+T129	security_team 3143 3147	ESET
+T130	malware 3114 3122	backdoor
+T131	location 3159 3166	Germany
+T132	government 3159 3192	Germany ’s Federal Foreign Office
+T133	time 3196 3200	2017
+T134	industry 3220 3228	entities
+T135	location 3236 3250	European Union
+R34	use Arg1:T13 Arg2:T130	
+R35	find Arg1:T129 Arg2:T130	
+R36	attack Arg1:T130 Arg2:T132	
+R37	located Arg1:T132 Arg2:T131	
+R38	occur_time Arg1:T130 Arg2:T133	
+R39	attack Arg1:T130 Arg2:T134	
+R40	located Arg1:T134 Arg2:T135	
+T136	reference_word 3267 3277	this actor
+T137	malware 3305 3311	Carbon
+T138	malware 3290 3311	variant of its Carbon
+R41	part_of Arg1:T138 Arg2:T137	
+T139	government 3361 3370	embassies
+T140	government 3375 3403	foreign affairs institutions
+R42	coreference Arg1:T136 Arg2:T13	
+R43	use Arg1:T136 Arg2:T138	
+R44	attack Arg1:T136 Arg2:T139	
+R45	attack Arg1:T136 Arg2:T140	
+T141	reference_word 3426 3428	It
+T142	malware 3477 3484	Phoenix
+R46	use Arg1:T141 Arg2:T142	
+T143	sub_activity 3517 3565	transitioning to scripting and open source tools
+R47	launch Arg1:T141 Arg2:T143	
+T144	industry 3699 3709	diplomatic
+T145	industry 3714 3735	governmental entities
+T146	location 3739 3745	Europe
+R48	occur_time Arg1:T15 Arg2:T14	
+R49	attack Arg1:T15 Arg2:T144	
+R50	attack Arg1:T15 Arg2:T145	
+R51	located Arg1:T144 Arg2:T146	
+R52	located Arg1:T145 Arg2:T146	
+T148	tool 3752 3756	TTPs
+R53	coreference Arg1:T141 Arg2:T136	
+T147	reference_word 3952 3963	the malware
+R54	use Arg1:T16 Arg2:T147	
+R55	coreference Arg1:T147 Arg2:T148	
+T149	threatActor_name 4120 4127	Lazarus
+T150	threatActor_name 4132 4142	BlueNoroff
+R56	occur_time Arg1:T149 Arg2:T17	
+R57	occur_time Arg1:T150 Arg2:T17	
+T151	location 4246 4252	Turkey
+T152	location 4270 4274	Asia
+T153	location 4279 4292	Latin America
+T154	reference_word 4197 4207	this group
+R58	coreference Arg1:T154 Arg2:T149	
+R59	coreference Arg1:T154 Arg2:T150	
+R60	attack Arg1:T154 Arg2:T151	
+R61	attack Arg1:T154 Arg2:T152	
+R62	attack Arg1:T154 Arg2:T153	
+T155	reference_word 4463 4465	it
+R63	coreference Arg1:T155 Arg2:T154	
+T156	sub_activity 4478 4522	deploying a new malware we call ThreatNeedle
+R64	launch Arg1:T155 Arg2:T156	
+T157	person 4982 4991	attackers
+T158	industry 5049 5057	security
+T159	sub_activity 5022 5032	techniques
+R65	use Arg1:T158 Arg2:T159	
+T160	sub_activity 5070 5087	attribute attacks
+R66	goal Arg1:T159 Arg2:T160	
+T161	sub_activity 5103 5124	abused that knowledge
+T162	person 5133 5153	security researchers
+R67	launch Arg1:T159 Arg2:T161	
+T163	person 5383 5389	actors
+T164	tool 5548 5552	TTPs
+T165	person 5804 5822	original operators
+T166	attack_goal 5849 5880	make attribution more difficult
+T167	reference_word 5523 5527	they
+R68	coreference Arg1:T167 Arg2:T163	
+R69	goal Arg1:T167 Arg2:T166	
+T168	attack_goal 5910 5953	distract from their real ongoing operations
+R70	goal Arg1:T167 Arg2:T168	
+T169	threatActor_name 5966 5982	OlympicDestroyer
+T170	threatActor_name 6081 6092	BlackEnergy
+T171	threatActor_name 6106 6111	Hades
+T172	sub_activity 6031 6053	new subset of activity
+R71	part_of Arg1:T172 Arg2:T11	
+R72	part_of Arg1:T172 Arg2:T170	
+R73	coreference Arg1:T171 Arg2:T172	
+T173	person 6403 6409	actors
+T174	reference_word 6816 6820	this
+R74	coreference Arg1:T174 Arg2:T173	
+R75	located Arg1:T174 Arg2:T25	
+R76	located Arg1:T174 Arg2:T24	
+R77	located Arg1:T27 Arg2:T26	
+T175	sub_activity 7032 7061	developed a brand new toolset
+T176	time 7074 7095	beginning of the year
+R78	occur_time Arg1:T175 Arg2:T176	
+T177	threatActor_name 7161 7167	WinNTI
+R79	launch Arg1:T27 Arg2:T175	
+R80	launch Arg1:T32 Arg2:T31	
+T178	reference_word 7416 7426	this actor
+R81	coreference Arg1:T178 Arg2:T32	
+T179	reference_word 7699 7701	It
+T180	government 7709 7730	national data centers
+T181	sub_activity 7702 7730	hacked national data centers
+T182	attack_activity 7741 7762	watering-hole attacks
+T183	location 7795 7807	central Asia
+T184	person 7771 7791	high-profile victims
+T185	attack_goal 7734 7791	deploy watering-hole attacks against high-profile victims
+R82	launch Arg1:T179 Arg2:T181	
+R83	goal Arg1:T181 Arg2:T185	
+R84	located Arg1:T184 Arg2:T183	
+T186	person 7836 7879	Chinese security-related software developer
+T187	industry 7836 7869	Chinese security-related software
+T188	location 8000 8005	India
+T189	sub_activity 7907 7940	being behind attacks against Oman
+R85	launch Arg1:T179 Arg2:T189	
+R86	coreference Arg1:T179 Arg2:T33	
+T190	malware 8029 8037	backdoor
+T191	malware 8046 8053	PoorWeb
+R87	part_of Arg1:T191 Arg2:T190	
+T192	sub_activity 8056 8090	deployed a 0-day in their campaign
+T193	time 8098 8119	beginning of the year
+T194	OS_name 8129 8136	Android
+T195	malware 8129 8144	Android malware
+T196	industry 8168 8183	Samsung devices
+R88	use Arg1:T34 Arg2:T191	
+R89	launch Arg1:T34 Arg2:T192	
+R90	occur_time Arg1:T192 Arg2:T193	
+R91	use Arg1:T34 Arg2:T195	
+R92	attack Arg1:T195 Arg2:T196	
+R93	use Arg1:T35 Arg2:T36	
+T197	malware 8378 8383	Konni
+T198	malware 8384 8389	Nokki
+T199	target_crowd 8471 8487	Japanese victims
+R94	attack Arg1:T38 Arg2:T199	
+T200	attack_activity 8571 8585	watering holes
+T201	sub_activity 8562 8616	deployed watering holes targeting high-profile victims
+R95	launch Arg1:T46 Arg2:T201	
+T202	person 8596 8616	high-profile victims
+R96	located Arg1:T202 Arg2:T45	
+T203	tool 8638 8655	new custom stager
+R97	use Arg1:T46 Arg2:T203	
+T204	threatActor_name 8704 8720	Prince of Persia
+T205	threatActor_name 8763 8769	OilRig
+R98	located Arg1:T204 Arg2:T40	
+R99	located Arg1:T205 Arg2:T40	
+T206	person 9093 9105	Asian actors
+R100	part_of Arg1:T49 Arg2:T206	
+R101	part_of Arg1:T50 Arg2:T206	
+R102	part_of Arg1:T51 Arg2:T206	
+R103	part_of Arg1:T52 Arg2:T206	
+R104	part_of Arg1:T53 Arg2:T206	
+R105	part_of Arg1:T54 Arg2:T206	
+R106	part_of Arg1:T55 Arg2:T206	
+R107	part_of Arg1:T56 Arg2:T206	
+R108	part_of Arg1:T57 Arg2:T206	
+R109	part_of Arg1:T58 Arg2:T206	
+T207	reference_word 9428 9432	They
+R110	coreference Arg1:T207 Arg2:T206	
+T208	target_crowd 9494 9541	objectives being governmental and also military
+R111	attack Arg1:T207 Arg2:T208	
+R112	located Arg1:T62 Arg2:T61	
+R113	located Arg1:T63 Arg2:T61	
+R114	located Arg1:T66 Arg2:T61	
+R115	located Arg1:T65 Arg2:T61	
+R116	located Arg1:T64 Arg2:T61	
+T59	threatActor_name 9708 9714	Gorgon
+T60	target_crowd 9767 9793	victims outside the region
+R117	attack Arg1:T59 Arg2:T60	
+T209	target_crowd 9878 9904	eastern European countries
+T210	target_crowd 9909 9932	former Soviet republics
+T211	sub_activity 9823 9843	new sets of activity
+T212	reference_word 9938 9948	this group
+R118	coreference Arg1:T212 Arg2:T211	
+R119	part_of Arg1:T67 Arg2:T212	
+R120	part_of Arg1:T68 Arg2:T212	
+R121	part_of Arg1:T69 Arg2:T212	
+R122	attack Arg1:T211 Arg2:T209	
+R123	attack Arg1:T211 Arg2:T210	
+T213	reference_word 9997 10007	The latter
+R124	coreference Arg1:T213 Arg2:T69	
+T214	government 10034 10052	overseas embassies
+T215	industry 10064 10072	military
+T216	industry 10077 10084	defense
+T217	location 10100 10111	Middle East
+R125	located Arg1:T215 Arg2:T217	
+R126	located Arg1:T216 Arg2:T217	
+R127	attack Arg1:T213 Arg2:T214	
+R128	attack Arg1:T213 Arg2:T215	
+R129	attack Arg1:T213 Arg2:T216	
+T218	industry 10608 10616	military
+T219	industry 10621 10643	technology departments
+T220	government 10651 10653	UK
+R130	part_of Arg1:T218 Arg2:T220	
+R131	part_of Arg1:T219 Arg2:T220	
+T221	industry 10578 10585	company
+T222	sub_activity 10586 10643	providing services to military and technology departments
+R132	launch Arg1:T221 Arg2:T222	
+R133	attack Arg1:T70 Arg2:T221	
+T223	security_team 10667 10674	Intezer
+T224	industry 10826 10848	maritime organizations
+T225	location 10864 10879	South China Sea
+R134	located Arg1:T224 Arg2:T225	
+R135	attack Arg1:T71 Arg2:T224	
+T226	person 10981 10986	actor
+T227	industry 10996 11005	companies
+T228	industry 11017 11030	Italian naval
+T229	industry 11035 11053	defense industries
+R136	attack Arg1:T226 Arg2:T227	
+R137	part_of Arg1:T227 Arg2:T228	
+R138	part_of Arg1:T227 Arg2:T229	
+T230	industry 11114 11147	satellite communication companies
+T231	industry 11152 11173	defense organizations
+T232	location 11181 11183	US
+T233	location 11188 11203	South East Asia
+R139	attack Arg1:T72 Arg2:T230	
+R140	attack Arg1:T72 Arg2:T231	
+R141	located Arg1:T230 Arg2:T232	
+R142	located Arg1:T230 Arg2:T233	
+R143	located Arg1:T231 Arg2:T232	
+R144	located Arg1:T231 Arg2:T233	
+T234	government 11220 11252	US Naval Undersea Warfare Center
+T235	company 11285 11300	Washington Post
+T236	government 11328 11362	Chinese Ministry of State Security
+T237	person 11671 11682	journalists
+T238	person 11685 11694	activists
+T239	person 11697 11717	political dissidents
+T240	industry 11722 11726	NGOs
+T241	sub_activity 11813 11854	provide surveillance tools to governments
+T242	industry 11798 11807	companies
+R145	launch Arg1:T242 Arg2:T241	
+T243	company 11872 11875	NSO
+R146	part_of Arg1:T74 Arg2:T243	
+T244	reference_word 12150 12162	this malware
+T245	target_crowd 12077 12093	Saudi dissidents
+T246	target_crowd 12098 12130	Amnesty International volunteers
+R147	coreference Arg1:T244 Arg2:T74	
+R148	attack Arg1:T244 Arg2:T245	
+R149	attack Arg1:T244 Arg2:T246	
+T247	tool 12264 12269	Linux
+T248	malware 12270 12278	backdoor
+T249	malware 12264 12278	Linux backdoor
+R150	part_of Arg1:T249 Arg2:T248	
+T250	tool 12281 12291	PowerShell
+T251	malware 12281 12300	PowerShell payloads
+T252	company 12406 12414	Sandvine
+T253	company 12419 12429	GammaGroup
+T254	location 12489 12494	Egypt
+T255	location 12497 12503	Turkey
+T256	location 12508 12513	Syria
+T257	tool 12481 12485	ISPs
+T258	sub_activity 12406 12439	Sandvine and GammaGroup artifacts
+R151	located Arg1:T257 Arg2:T254	
+R152	located Arg1:T257 Arg2:T255	
+R153	located Arg1:T257 Arg2:T256	
+R154	use Arg1:T257 Arg2:T258	
+T259	government 12811 12822	governments
+T260	sub_activity 12876 12917	providing details of their investigations
+T261	sub_activity 12926 12969	pointing fingers at the suspected attackers
+R155	launch Arg1:T259 Arg2:T260	
+R156	launch Arg1:T259 Arg2:T261	
+T262	location 13107 13109	US
+T263	location 13114 13119	China
+T264	tool 13069 13094	Obama-era cyber-agreement
+T265	person 13407 13435	Chinese intelligence officer
+T266	government 13361 13363	US
+T267	location 13394 13401	Belgium
+T268	sub_activity 13364 13388	obtained the extradition
+R157	launch Arg1:T266 Arg2:T268	
+T269	sub_activity 13508 13527	steal trade secrets
+T270	sub_activity 13478 13503	commit economic espionage
+T271	industry 13542 13553	US aviation
+T272	industry 13558 13577	aerospace companies
+R158	launch Arg1:T265 Arg2:T270	
+R159	launch Arg1:T265 Arg2:T269	
+T273	government 13584 13586	US
+T274	sub_activity 13592 13637	provided details about a North Korean citizen
+T275	person 13617 13637	North Korean citizen
+T276	threatActor_name 13669 13676	Lazarus
+T277	attack_activity 13703 13728	Sony Entertainment attack
+T278	attack_activity 13733 13750	WannaCry activity
+T279	government 13782 13785	FBI
+R160	launch Arg1:T273 Arg2:T274	
+R161	part_of Arg1:T275 Arg2:T276	
+R162	launch Arg1:T275 Arg2:T277	
+R163	launch Arg1:T275 Arg2:T278	
+T280	government 13821 13828	US Cert
+T281	sub_activity 13864 13898	providing indicators of compromise
+T282	reference_word 13968 13978	this actor
+R164	coreference Arg1:T282 Arg2:T275	
+R165	launch Arg1:T280 Arg2:T281	
+T283	tool 14000 14003	DNC
+T284	government 14015 14017	US
+T285	person 14027 14046	12 Russian citizens
+T286	location 14318 14324	Europe
+T287	government 14089 14126	Russian Main Intelligence Directorate
+R166	part_of Arg1:T285 Arg2:T287	
+T288	sub_activity 14018 14046	indicted 12 Russian citizens
+R167	launch Arg1:T284 Arg2:T288	
+T289	attack_activity 14000 14008	DNC hack
+T290	government 14147 14150	GRU
+T291	person 14129 14143	Seven officers
+R168	part_of Arg1:T291 Arg2:T290	
+T292	government 14232 14256	World Anti-Doping Agency
+T293	sub_activity 14210 14256	retaliate against the World Anti-Doping Agency
+R169	launch Arg1:T291 Arg2:T293	
+T294	government 14327 14329	UK
+T295	government 14446 14468	Russian military units
+T296	government 14348 14381	UK National Cyber Security Center
+T297	attack_activity 14397 14413	not-Petya attack
+R170	occur_time Arg1:T297 Arg2:T77	
+T298	person 14327 14339	UK Officials
+R171	part_of Arg1:T298 Arg2:T294	
+R172	located Arg1:T297 Arg2:T286	
+R173	launch Arg1:T295 Arg2:T297	
+T299	government 14524 14540	US Cyber Command
+T300	attack_activity 14553 14585	‘ information warfare ’ campaign
+R174	launch Arg1:T299 Arg2:T300	
+T301	industry 14604 14622	Russian operatives
+T302	target_crowd 16500 16520	industrial-targeting
+T303	sub_activity 16635 16664	shutting down an oil refinery
+R175	launch Arg1:T84 Arg2:T303	
+R176	part_of Arg1:T84 Arg2:T80	
+T304	reference_word 16732 16742	this actor
+R177	coreference Arg1:T304 Arg2:T84	
+T305	person 17052 17071	Financial attackers
+T306	location 17211 17216	Spain
+T307	attack_activity 17308 17312	Fin7
+T308	reference_word 17340 17344	They
+R178	coreference Arg1:T308 Arg2:T78	
+T309	tool 17372 17382	JavaScript
+T310	malware 17383 17391	backdoor
+T311	malware 17364 17391	Griffon JavaScript backdoor
+R179	part_of Arg1:T311 Arg2:T310	
+T312	industry 17402 17419	restaurant chains
+R180	use Arg1:T308 Arg2:T311	
+R181	attack Arg1:T308 Arg2:T312	
+T313	reference_word 17456 17466	this group
+R182	coreference Arg1:T313 Arg2:T308	
+T314	threatActor_name 17473 17485	CobaltGoblin
+R183	part_of Arg1:T314 Arg2:T313	
+T315	industry 17525 17530	banks
+R184	attack Arg1:T314 Arg2:T315	
+T316	person 15076 15085	attackers
+T317	sub_activity 15105 15140	difficult to find the exploit chain
+T318	sub_activity 15189 15230	difficulty in developing reliable malware
+T319	tool 15357 15360	CPU
+T320	tool 15564 15567	CPU
+T321	vul_aliases 15644 15651	Specter
+T322	vul_aliases 15656 15664	AMDFlaws
+T323	vul_aliases 15635 15643	Meltdown
+T324	person 15728 15737	attackers
+T325	malware 16098 16107	VPNFilter
+T326	industry 16140 16177	networking devices on a massive scale
+R185	attack Arg1:T325 Arg2:T326	
+T327	person 16255 16264	attackers
+T328	sub_activity 16268 16307	infect hundreds of thousands of devices
+R186	use Arg1:T327 Arg2:T325	
+R187	launch Arg1:T327 Arg2:T328	
+T329	attack_activity 16371 16375	MITM
+T330	sub_activity 16310 16350	providing control of the network traffic
+T331	person 16397 16403	actors
+R188	launch Arg1:T325 Arg2:T330	
+R189	launch Arg1:T325 Arg2:T329	
+T332	sub_activity 16404 16427	abusing network devices
+R190	launch Arg1:T331 Arg2:T332	
+T124	person 544 550	actors
+T333	sub_activity 563 583	abort their campaign
+T334	sub_activity 588 609	go into clean-up mode
+R191	launch Arg1:T124 Arg2:T333	
+R192	launch Arg1:T124 Arg2:T334	
+R193	occur_time Arg1:T3 Arg2:T2	
+R194	occur_time Arg1:T4 Arg2:T2	
+R195	occur_time Arg1:T5 Arg2:T2	
+R196	coreference Arg1:T96 Arg2:T88	
+R197	coreference Arg1:T99 Arg2:T96	

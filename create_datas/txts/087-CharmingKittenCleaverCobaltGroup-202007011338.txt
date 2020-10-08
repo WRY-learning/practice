@@ -1,0 +1,17 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/
+Charming Kitten is an Iranian cyber espionage group that has been active since approximately 2014 .
+They appear to focus on targeting individuals of interest to Iran who work in academic research , human rights , and media , with most victims having been located in Iran , the US , Israel , and the UK .
+Charming Kitten usually tries to access private email and Facebook accounts , and sometimes establishes a foothold on victim computers as a secondary objective .
+The group 's TTPs overlap extensively with another group , Magic Hound , resulting in reporting that may not distinguish between the two groups' activities .
+Cleaver : Threat Group 2889 , TG-2889 .
+Cleaver is a threat group that has been attributed to Iranian actors and is responsible for activity tracked as Operation Cleaver .
+Strong circumstantial evidence suggests Cleaver is linked to Threat Group 2889 ( TG-2889 ) .
+Cobalt Group : Cobalt Gang , Cobalt Spider .
+Cobalt Group is a financially motivated threat group that has primarily targeted financial institutions .
+The group has conducted intrusions to steal money via targeting ATM systems , card processing , payment systems and SWIFT systems .
+Cobalt Group has mainly targeted banks in Eastern Europe , Central Asia , and Southeast Asia .
+One of the alleged leaders was arrested in Spain in early 2018 , but the group still appears to be active .
+The group has been known to target organizations in order to use their access to then compromise additional victims .
+Reporting indicates there may be links between Cobalt Group and both the malware Carbanak and the group Carbanak .

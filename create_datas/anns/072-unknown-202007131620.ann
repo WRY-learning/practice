@@ -1,0 +1,372 @@
+T1	location 20 27	KASHMIR
+T2	sample_name 8918 8950	14b9d54f07f3facf1240c5ba89aa2410
+T3	sample_name 8953 8969	googleupdate.exe
+R1	coreference Arg1:T3 Arg2:T2	
+T4	sample_name 8974 9006	2b0bd7e43c1f98f9db804011a54c11d6
+T5	sample_name 9009 9018	malib.dll
+R2	coreference Arg1:T5 Arg2:T4	
+T6	sample_name 9023 9055	feec4b571756e8c015c884cb5441166b
+T7	sample_name 9058 9068	msccvs.dll
+T8	sample_name 9073 9105	84d9d0524e14d9ab5f88bbce6d2d2582
+T9	sample_name 9108 9124	officeupdate.exe
+T10	sample_name 9283 9315	028caf3b1f5174ae092ecf435c1fccc2
+T11	sample_name 9316 9348	7732d5349a0cfa1c3e4bcfa0c06949e4
+T12	sample_name 9349 9381	9909f8558209449348a817f297429a48
+T13	sample_name 9382 9414	63698ddbdff5be7d5a7ba7f31d0d592c
+T14	sample_name 9415 9447	7c4e60685203b229a41ae65eba1a0e10
+T15	sample_name 9448 9480	e2112439121f8ba9164668f54ca1c6af
+T16	domain_evil 9129 9144	khanji.ddns.net
+T17	IP_evil 9145 9158	139.190.6.180
+T18	IP_evil 9159 9171	39.40.141.25
+T19	IP_evil 9172 9187	175.110.165.110
+T20	IP_evil 9188 9200	39.40.44.245
+T21	IP_evil 9201 9213	39.40.67.219
+T22	url_evil 9215 9247	http://pastebin.com/raw/5j4hc8gT
+T23	url_evil 9248 9280	http://pastebin.com/raw/6bwniBtB
+T26	attack_activity 43 57	SPEAR PHISHING
+T24	location 9788 9793	India
+T25	location 1529 1534	Japan
+T27	government 352 383	Indian government organizations
+T29	location 482 489	Kashmir
+T30	attack_activity 505 519	spear phishing
+T31	government 613 616	MEA
+T32	target_crowd 537 546	officials
+T39	government 554 570	Indian Embassies
+R3	part_of Arg1:T32 Arg2:T39	
+T38	government 575 610	Indian Ministry of External Affairs
+R4	part_of Arg1:T32 Arg2:T38	
+R5	coreference Arg1:T31 Arg2:T38	
+T40	attack_goal 633 651	infect the victims
+T41	attack_activity 680 694	spear-phishing
+T42	government 919 950	Indian Ministry of Home Affairs
+T43	government 1059 1083	Minister of Home affairs
+T44	government 1218 1242	Ministry of Home Affairs
+T45	government 1245 1248	MHA
+R6	coreference Arg1:T45 Arg2:T44	
+T46	government 1352 1376	Ministry of Home Affairs
+T47	government 1379 1382	MHA
+R7	coreference Arg1:T47 Arg2:T46	
+T48	time 1410 1431	September 20th , 2016
+T49	government 1511 1525	Indian Embassy
+R8	located Arg1:T49 Arg2:T25	
+T50	attack_activity 1456 1473	Uri terror attack
+T51	attack_activity 1610 1627	Uri terror attack
+T52	government 1646 1649	MHA
+T53	time 1664 1678	Sept 20th,2016
+T55	location 1780 1788	Thailand
+T56	time 1825 1838	Oct 24th,2016
+T57	location 1888 1896	Thailand
+T58	government 1897 1911	Indian embassy
+R10	located Arg1:T58 Arg2:T57	
+T59	government 1957 1992	Indian Ministry of External Affairs
+T62	government 2243 2274	Indian Ministry of Home Affairs
+T63	time 2300 2316	September 1,2016
+T64	location 2343 2351	Thailand
+T65	government 2352 2366	Indian embassy
+R11	located Arg1:T65 Arg2:T64	
+T66	time 2403 2416	Oct 24th,2016
+T67	location 2441 2449	Thailand
+T68	government 2450 2464	Indian embassy
+R12	located Arg1:T68 Arg2:T67	
+T69	government 2510 2545	Indian Ministry of External Affairs
+T70	government 2548 2551	MEA
+R13	coreference Arg1:T70 Arg2:T69	
+T73	government 2675 2699	Ministry of Home Affairs
+T74	location 2800 2808	Thailand
+T75	government 2809 2823	Indian embassy
+R14	located Arg1:T75 Arg2:T74	
+T76	government 2831 2834	MEA
+T77	attack_goal 2934 2972	infect and take control of the systems
+T78	attack_goal 2985 3028	spy on the actions of the Indian Government
+T81	attack_activity 3066 3083	Uri Terror attack
+T82	function 4009 4031	CommandButton1_Click()
+T83	function 4086 4099	Bulbaknopka()
+T84	function 4318 4337	chugnnarabashkoim()
+T86	tool 4476 4486	PowerShell
+T90	malware 4944 4956	njRAT trojan
+T94	tool 5021 5031	macro code
+T95	tool 7204 7224	malicious macro code
+T97	tool 10467 10487	malicious macro code
+T98	tool 10497 10507	macro code
+T91	tool 5042 5059	PowerShell script
+T99	tool 5062 5067	njRAT
+T100	location 5139 5150	middle east
+T101	person 5119 5131	actor groups
+R16	located Arg1:T101 Arg2:T100	
+R17	use Arg1:T101 Arg2:T99	
+T102	tool 5167 5172	njRAT
+T104	tool 7783 7788	njRAT
+T107	tool 8100 8105	njRAT
+T108	tool 8278 8283	njRAT
+T109	tool 10694 10699	njRAT
+T110	sub_activity 5229 5243	log keystrokes
+T111	sub_activity 5246 5267	upload/download files
+T112	sub_activity 5270 5313	access victims web camera , audio recording
+T113	sub_activity 5316 5333	steal credentials
+T114	sub_activity 5336 5356	view victims desktop
+T117	tool 6021 6031	DynamicDNS
+T118	location 6334 6342	Pakistan
+T123	time 6994 7010	July 21st , 2016
+T124	time 7014 7033	September 30 , 2016
+T126	company 7359 7365	Google
+T129	company 7604 7611	YouTube
+T131	company 7692 7697	Skype
+T132	company 7724 7731	YouTube
+T133	company 8053 8060	YouTube
+T134	company 8078 8085	YouTube
+T136	person 8217 8233	espionage actors
+R19	use Arg1:T136 Arg2:T108	
+T138	person 8538 8554	espionage actors
+T140	sub_activity 9563 9592	spoofing legitimate email ids
+T141	sub_activity 9597 9617	using an email theme
+T142	location 9724 9732	Pakistan
+T143	attack_activity 9845 9862	Uri terror attack
+T146	government 9921 9935	Indian Embassy
+T147	government 9940 9950	Indian MEA
+T148	attack_activity 10070 10084	spear phishing
+T149	tool 10743 10754	Dynamic DNS
+T54	government 1762 1776	Indian embassy
+R9	located Arg1:T54 Arg2:T55	
+T151	domain_evil 5982 5997	khanji.ddns.net
+T154	domain_evil 6423 6438	khanji.ddns.net
+T127	company 7412 7419	YouTube
+R25	coreference Arg1:T7 Arg2:T6	
+R26	coreference Arg1:T9 Arg2:T8	
+T150	person 441 450	attackers
+T157	tool 482 526	Kashmir protest themed spear phishing emails
+R27	use Arg1:T150 Arg2:T157	
+T159	person 986 995	Attackers
+T160	person 2104 2113	attackers
+T162	person 2917 2926	attackers
+R30	goal Arg1:T162 Arg2:T77	
+R31	goal Arg1:T162 Arg2:T78	
+T163	sample_name 5528 5544	officeupdate.exe
+T164	sample_name 5596 5612	googleupdate.exe
+T165	sample_name 5615 5624	malib.dll
+T166	sample_name 5629 5639	msccvs.dll
+T167	sample_name 5716 5732	googleupdate.exe
+T168	sample_name 3345 3366	Uri Terror Report.doc
+T169	sample_name 3371 3385	mha-report.doc
+T170	sample_name 3204 3225	Uri Terror Report.doc
+T171	sample_name 3230 3244	mha-report.doc
+T172	sample_name 3729 3750	Uri Terror Report.doc
+T173	sample_name 3753 3767	mha-report.doc
+T174	sample_name 3855 3869	mha-report.doc
+T175	sample_name 4978 4994	officeupdate.exe
+T176	person 5217 5225	attacker
+T28	person 658 667	attackers
+R38	launch Arg1:T28 Arg2:T41	
+T144	sub_activity 6092 6113	change the IP address
+T130	company 7703 7710	Twitter
+T145	person 7645 7655	individual
+T178	tool 7668 7684	specific keyword
+T182	person 9483 9492	Attackers
+R46	launch Arg1:T182 Arg2:T140	
+R47	launch Arg1:T182 Arg2:T141	
+R48	attack Arg1:T150 Arg2:T32	
+T33	tool 680 701	spear-phishing emails
+R39	use Arg1:T28 Arg2:T33	
+R49	located Arg1:T30 Arg2:T29	
+T37	tool 713 727	malicious word
+T85	sample_function 743 760	dropped a malware
+T87	sample_function 772 798	spying on infected systems
+R50	part_of Arg1:T37 Arg2:T33	
+R21	goal Arg1:T37 Arg2:T85	
+R51	goal Arg1:T85 Arg2:T87	
+T120	person 1291 1300	attackers
+T121	sub_activity 881 902	spoofed the email ids
+T122	sub_activity 1301 1320	spoofed an email id
+R56	launch Arg1:T120 Arg2:T122	
+T125	person 2191 2200	Attackers
+T128	sub_activity 2207 2226	spoofed an email id
+R28	launch Arg1:T125 Arg2:T128	
+T155	person 2786 2796	Ambassador
+R29	part_of Arg1:T155 Arg2:T75	
+T158	person 2835 2844	officials
+R40	part_of Arg1:T158 Arg2:T76	
+T161	tool 3112 3134	attached word document
+T183	sample_function 3138 3178	prompts the user to enable macro content
+R22	goal Arg1:T161 Arg2:T183	
+T96	person 3606 3615	attackers
+T186	sub_activity 3874 3892	malicious activity
+T188	sample_name 4115 4136	Uri Terror Report.doc
+T189	sub_activity 4141 4159	malicious activity
+R57	launch Arg1:T174 Arg2:T186	
+R58	launch Arg1:T188 Arg2:T189	
+T93	tool 4358 4378	malicious macro code
+T191	sub_activity 4385 4401	decodes a string
+R59	launch Arg1:T93 Arg2:T191	
+T192	tool 4455 4460	macro
+T193	sub_activity 4466 4493	decodes a PowerShell script
+T194	sample_function 4500 4554	downloads base64 encoded content from the pastebin url
+R60	launch Arg1:T192 Arg2:T193	
+R61	goal Arg1:T193 Arg2:T194	
+T195	sub_activity 4626 4676	decoded to an executable and dropped on the system
+T197	tool 4561 4583	base64 encoded content
+R62	launch Arg1:T197 Arg2:T195	
+T198	tool 4744 4752	Pastebin
+T199	tool 4604 4612	Pastebin
+T200	tool 4542 4550	pastebin
+T201	sample_function 4785 4841	unlikely to trigger any suspicion in security monitoring
+T202	sample_function 4855 4886	bypass reputation based devices
+R63	use Arg1:T94 Arg2:T91	
+T204	tool 5073 5091	Remote Access Tool
+T205	tool 5094 5097	RAT
+R64	coreference Arg1:T205 Arg2:T204	
+T206	person 5193 5201	attacker
+R32	use Arg1:T206 Arg2:T102	
+T207	protocol 5490 5492	c2
+T209	tool 5388 5400	dropped file
+T210	reference_word 5469 5471	it
+R67	coreference Arg1:T210 Arg2:T209	
+T213	sub_activity 5695 5732	executes the dropped googleupdate.exe
+T212	malware 5559 5570	the malware
+T214	sub_activity 5571 5593	drops additional files
+R69	launch Arg1:T212 Arg2:T214	
+R70	launch Arg1:T212 Arg2:T213	
+T215	malware 5748 5755	malware
+T216	sub_activity 5756 5791	makes a connection to the c2 server
+T217	protocol 5782 5784	c2
+T218	sub_activity 5809 5856	sends the system & operating system information
+R71	launch Arg1:T215 Arg2:T216	
+R72	launch Arg1:T215 Arg2:T218	
+T220	protocol 5970 5972	C2
+T221	person 6002 6011	Attackers
+T177	sample_function 6035 6053	host the C2 server
+T222	protocol 6142 6144	C2
+R41	use Arg1:T221 Arg2:T117	
+R73	goal Arg1:T117 Arg2:T177	
+T223	protocol 6188 6190	C2
+T152	protocol 6411 6413	C2
+T153	tool 6566 6574	pastebin
+T224	tool 6666 6688	base64 encoded content
+T225	tool 6703 6711	Pastebin
+R23	located Arg1:T224 Arg2:T225	
+T226	tool 6741 6749	Pastebin
+T227	tool 6848 6870	base64 encoded content
+T228	sample_function 6925 6959	decode and drop malware executable
+R24	goal Arg1:T227 Arg2:T228	
+T229	tool 7381 7389	Pastebin
+T230	tool 7526 7534	Pastebin
+T231	tool 7488 7519	njRAT control panel/builder kit
+T232	person 7439 7448	individua
+T233	reference_word 7581 7596	this individual
+R75	coreference Arg1:T233 Arg2:T232	
+T234	protocol 7789 7791	C2
+T235	tool 7849 7866	njRAT builder kit
+T236	reference_word 7890 7905	this individual
+R45	coreference Arg1:T236 Arg2:T145	
+T237	tool 7930 7947	njRAT builder kit
+T238	sample_function 7951 7975	bypass security products
+R76	use Arg1:T236 Arg2:T237	
+R77	goal Arg1:T237 Arg2:T238	
+T239	reference_word 8005 8020	the builder kit
+T240	reference_word 8034 8049	this individual
+R78	coreference Arg1:T239 Arg2:T237	
+R79	coreference Arg1:T240 Arg2:T236	
+T135	reference_word 8147 8163	this builder kit
+R18	coreference Arg1:T135 Arg2:T239	
+R82	part_of Arg1:T135 Arg2:T107	
+T245	reference_word 8239 8254	this individual
+R83	coreference Arg1:T245 Arg2:T240	
+T246	tool 8364 8372	Pastebin
+T247	reference_word 8319 8334	this individual
+R84	coreference Arg1:T247 Arg2:T245	
+T248	reference_word 8445 8460	this individual
+R85	coreference Arg1:T248 Arg2:T247	
+T139	person 8643 8652	attackers
+T249	reference_word 8681 8696	this individual
+R20	coreference Arg1:T249 Arg2:T248	
+R86	coreference Arg1:T139 Arg2:T138	
+T251	person 9749 9770	cyber espionage group
+T252	attack_goal 9781 9842	spy on India ’s actions related to these Geo-political events
+R87	goal Arg1:T251 Arg2:T252	
+R88	located Arg1:T251 Arg2:T142	
+T254	target_crowd 9951 9959	officals
+R89	part_of Arg1:T254 Arg2:T147	
+T255	protocol 10130 10132	C2
+T256	sample_function 10184 10210	spying on infected systems
+T258	attack_goal 10307 10322	remain stealthy
+T259	attack_goal 10330 10351	gain long-term access
+T260	sub_activity 10355 10407	evading anti-virus , sandbox and security monitoring
+R91	goal Arg1:T260 Arg2:T258	
+R92	goal Arg1:T260 Arg2:T259	
+T262	sample_function 10553 10576	bypass sandbox analysis
+T263	tool 10606 10614	Pastebin
+T264	sample_function 10620 10639	host malicious code
+T265	sample_function 10645 10671	bypass security monitoring
+R95	goal Arg1:T263 Arg2:T264	
+R96	goal Arg1:T264 Arg2:T265	
+T266	sample_function 10713 10731	evading anti-virus
+R97	goal Arg1:T109 Arg2:T266	
+T267	sample_function 10758 10779	host C2 infrastructur
+T268	protocol 10751 10754	DNS
+T269	protocol 10763 10765	C2
+R98	goal Arg1:T149 Arg2:T267	
+R99	goal Arg1:T28 Arg2:T40	
+T61	tool 3402 3412	macro code
+T184	sample_function 3549 3603	Malicious activity is trigged only on user interaction
+T253	reference_word 3629 3643	this technique
+R53	coreference Arg1:T253 Arg2:T184	
+R100	use Arg1:T96 Arg2:T253	
+T185	tool 3979 3989	macro code
+T115	sub_activity 5359 5381	open reverse shell etc
+T80	reference_word 6068 6080	the attacker
+R101	coreference Arg1:T80 Arg2:T221	
+T103	tool 7692 7700	Skype id
+T179	tool 7703 7713	Twitter id
+T180	tool 7724 7740	YouTube username
+R42	use Arg1:T145 Arg2:T178	
+R43	part_of Arg1:T178 Arg2:T103	
+R44	part_of Arg1:T178 Arg2:T179	
+R102	part_of Arg1:T178 Arg2:T180	
+R103	goal Arg1:T198 Arg2:T201	
+R104	goal Arg1:T198 Arg2:T202	
+T105	tool 2123 2153	Jammnu & Kashmir protest theme
+R105	use Arg1:T160 Arg2:T105	
+T106	government 75 91	INDIAN EMBASSIES
+T181	government 96 131	INDIAN MINISTRY OF EXTERNAL AFFAIRS
+T219	tool 8053 8069	YouTube username
+T241	tool 8078 8093	YouTube channel
+R80	use Arg1:T240 Arg2:T219	
+R81	use Arg1:T240 Arg2:T241	
+R55	part_of Arg1:T121 Arg2:T41	
+T242	sample_function 3647 3680	bypass sandbox/automated analysis
+R106	goal Arg1:T184 Arg2:T242	
+R33	launch Arg1:T176 Arg2:T110	
+R34	launch Arg1:T176 Arg2:T111	
+R35	launch Arg1:T176 Arg2:T112	
+R36	launch Arg1:T176 Arg2:T113	
+T116	company 5669 5675	Google
+T72	location 9867 9882	Jammu & Kashmir
+T71	location 2633 2648	Jammu & Kashmir
+T79	location 3038 3053	Jammu & Kashmir
+T60	location 2123 2139	Jammnu & Kashmir
+R37	launch Arg1:T176 Arg2:T114	
+R65	launch Arg1:T176 Arg2:T115	
+R74	launch Arg1:T80 Arg2:T144	
+T34	attack_activity 0 17	URI TERROR ATTACK
+T243	tool 1010 1042	name of the top-ranking official
+R107	use Arg1:T159 Arg2:T243	
+R108	part_of Arg1:T243 Arg2:T43	
+T244	sample_function 8872 8915	detect and investigate this attack campaign
+T250	attack_activity 460 477	Uri terror attack
+T89	tool 4510 4532	base64 encoded content
+R52	use Arg1:T150 Arg2:T250	
+T92	protocol 6044 6046	C2
+T137	protocol 6028 6031	DNS
+R15	goal Arg1:T98 Arg2:T262	
+T119	string 5651 5675	%AllUsersProfile%\Google
+T156	protocol 6227 6229	IP
+T187	protocol 6103 6105	IP
+T190	protocol 6305 6307	IP
+T196	protocol 6351 6353	IP
+R66	part_of Arg1:T254 Arg2:T146	
+R68	located Arg1:T190 Arg2:T118	
+T203	tool 6373 6404	hosting provider infrastructure
+R93	use Arg1:T196 Arg2:T203	
+T88	person 871 880	attackers
+R54	launch Arg1:T88 Arg2:T121	
+R94	use Arg1:T232 Arg2:T231	
+T208	person 10284 10293	attackers
+R90	launch Arg1:T208 Arg2:T260	

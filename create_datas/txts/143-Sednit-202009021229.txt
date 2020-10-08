@@ -1,0 +1,69 @@
+En Route With Sednit Part 2 : Observing the Comings and Goings .
+Release_Time : 2016-10-25 .
+Report_URL : https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf .
+Xtunnel is a network proxy tool that can relay any kind of network traffic between a C&C server on the Internet and an endpoint computer inside a local network .
+An Xtunnel infected machine serves as a network pivot to contact machines that are normally unreachable from the Internet .
+May 2013 to August 2016 ( the time of writing ) .
+Probably still in use .
+Xtunnel implements a custom network protocol encapsulated in Transport Layer Security ( TLS ) protocol .
+Since June 2015 , the Xtunnel code has been heavily obfuscated , but its strings remain unobfuscated .
+While written in English , the strings contain obvious spelling mistakes .
+We have analyzed Xtunnel samples for three years .
+The dates posited in the timeline mainly rely on Xtunnel compilation timestamps that we believe have not been tampered with , because they match up with our telemetry data .
+Xtunnel proxies network traffic between a C&C server on the Internet and a target computer , hence creating a “ tunnel ” between the two .
+Multiple tunnels can be opened at the same time — from the C&C server to several machines — with Xtunnel taking charge of routing the traffic to the intended computer .
+The network link between the Xtunnel-infected machine and the C&C server is encrypted to complicate network detection at the external boundary of the network .
+However , the links with the target computers remain unencrypted to allow any kind of traffic to be sent to the target .
+In particular , it should be emphasized that those target computers are not necessarily under the control of the Sednit group .
+“ Xtunnel ” is the developers name for this software .
+This was determined by the function export table left unremoved by its authors in several samples .
+The developers also forgot to remove program database ( PDB ) file paths , from which we can deduce another internal name , “ XAPS ” .
+Interestingly , those PDB paths sometimes contain words in Russian , such as :
+H:\last version 23.04\UNvisible crypt version XAPS select - копия\XAPS_OBJECTIVE\Release\XAPS_OBJECTIVE.pdb .
+C:\Users\John\Documents\Новая папк\XAPS_OBJECTIVE\Release\XAPS_OBJECTIVE.pdb .
+The word “ копия ” translates to “ copy ” , while “ Новая папк ” means “ New folder ” .
+The logic for traffic proxying remained the same in all Xtunnel samples that we analyzed , which cover a period of three years .
+This core behavior begins with a handshake with the C&C server to establish an RC4-encrypted link .
+The C&C server can then order Xtunnel to open a tunnel with a designated machine , so that any data coming from the C&C server will be forwarded to this machine , and similarly any data coming from the target machine will be forwarded to the C&C server .
+Xtunnel makes a custom encryption handshake with its C&C server , whose IP address and port are either given as command line parameters or hardcoded directly in the program .
+The purpose of this handshake is to share a cryptographic key for encrypting the link between Xtunnel and the C&C server with the RC4 algorithm .
+To do so , the Xtunnel binary contains a Table T composed of 256 rows of 32 bytes each , initially filled with fixed values in the code .
+Xtunnel pseudo-randomly chooses one 32-byte row of T as the cryptographic key to share with the C&C server .
+The actual handshake then starts by sending the offset O in T of the chosen row to the C&C server .
+This message also includes a “ proof ”  that the sender really knows T — that is , the offset sent is not just some random 4-byte value .
+This proof consists of the row located at offset O + 128 ( modulo 256 ) encrypted with the chosen key .
+The C&C then checks the proof and , assuming it is correct , answers OK encrypted with the chosen RC4 key .
+It should be emphasized that the chosen cryptographic key is never sent over the network , only its 4-byte offset in T.
+This prevents traffic decryption by an eavesdropper not knowing the Table and , of course , means the C&C server also knows T.
+Before going further , the C&C server provides a port number to the infected machine , which will serve as a fallback in case the connection closes on the currently used port on the C&C server .
+At this point an encrypted link has been established between Xtunnel and its C&C server .
+The C&C server can then use the Xtunnel infected machine as a pivot to contact local computers that are normally unreachable from the Internet .
+To do so , the C&C server sends messages to Xtunnel beginning ( once decrypted ) with a two-byte tunnel identifier — denoted TunnelID hereafter — and followed by data of arbitrary length .
+When a particular TunnelID value is sent for the first time , it means the C&C server wants to open a new tunnel .
+The information in this first packet contains data about the target machine : either an IP address or a domain name , plus a port number .
+Xtunnel then makes a TCP connection on the designated target and if successful , the tunnel is considered fully opened .
+At this point , each message from the C&C server beginning with the corresponding TunnelID will be forwarded to the target machine by Xtunnel — after having removed TunnelID from the message .
+In other words , any kind of TCP data can be sent through the tunnel .
+On the other side of the tunnel the target machine can also send data , and Xtunnel will prefix it with the associated TunnelID before forwarding it to the C&C server .
+Since in general the size of the data to be transferred is unknown , each communication between C&C server and Xtunnel starts with a 4-byte value containing the number of bytes to be sent .
+Additionally , the C&C server can send the message " is you live ? " [sic] to check the status of Xtunnel , to which Xtunnel answers OK if everything is fine .
+The quality of Xtunnel code is far from being good ; here are two examples of incongruities found in tunneling code :
+After a tunnel has been opened , Xtunnel reports a 6-byte message to the C&C server composed of the IP address and the port of the target machine .
+Except that the developer forgot to increase the memory pointer after writing the IP address in memory , and thus the port overwrites the first two bytes of the IP address .
+Thus , it is likely that the C&C server does not process this message .
+The TunnelID sent by the C&C server happens to be also used as the maximum size of data processed from the received packet , for no obvious reason .
+Consequently , it is impossible , for example , to open a tunnel by IP address with a TunnelID smaller than 7 , because information about the target computer takes 7 bytes .
+We speculate that the C&C server usually chooses large TunnelID values , explaining why this problem has gone unnoticed by the operators .
+ESET researchers have retrieved multiple versions of Xtunnel , starting in 2013 , when it apparently was first deployed , to mid-2016 for the most recent versions .
+This allows us to observe over time the introduction of new features around the core tunneling logic , shedding light on the operator ’s objectives and concerns .
+Xtunnel initially only proxied TCP traffic , but in August 2013 UDP traffic tunneling was introduced .
+To do so , the C&C server can then ask to open a tunnel over UDP rather than TCP .
+Strangely , the C&C server address used for UDP tunneling is hardcoded in the binary ( 176.31.112.10 ) , and any C&C address potentially given as input to Xtunnel is ignored — even in recent samples .
+As this particular C&C server stopped being used mid-2015 , we believe UDP tunneling was a test or a feature needed on a particular target , and is not used anymore .
+In some samples the UDP tunneling code contains a few debug messages , such as :
+i`m wait .
+error 2003 recv from TPS - %d .
+error 2002 send to server UDP - %d .
+recv from client UDP - %d .
+According to those messages , the C&C server is called “ client UDP ” or “ TPS ” by the developers , whereas “ server UDP ” corresponds to the target machine .
+The “ TPS ” acronym remains mysterious to us in this context .

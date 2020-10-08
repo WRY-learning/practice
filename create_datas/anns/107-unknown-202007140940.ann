@@ -1,0 +1,258 @@
+T1	malware 29 40	KASPERAGENT
+T3	malware 193 204	KASPERAGENT
+T4	time 295 311	April – May 2017
+T5	time 348 356	May 2017
+T7	location 512 516	Gaza
+T8	location 618 622	Gaza
+T6	security_team 946 959	ThreatConnect
+T9	time 1052 1056	6/13
+T10	company 1034 1044	AlienVault
+T11	string 1045 1048	OTX
+R2	part_of Arg1:T10 Arg2:T11	
+T12	malware 1059 1070	KASPERAGENT
+T13	company 1074 1083	Microsoft
+T14	OS_name 1084 1091	Windows
+T15	location 1139 1152	United States
+T16	location 1155 1161	Israel
+T18	location 1194 1199	Egypt
+T19	location 1164 1187	Palestinian Territories
+R3	part_of Arg1:T14 Arg2:T13	
+R4	attack Arg1:T12 Arg2:T15	
+T17	time 1206 1215	July 2015
+R5	attack Arg1:T12 Arg2:T16	
+R6	attack Arg1:T12 Arg2:T19	
+R7	attack Arg1:T12 Arg2:T18	
+R8	first_found_time Arg1:T12 Arg2:T17	
+T20	company 162 175	ThreatConnect
+R1	find Arg1:T20 Arg2:T3	
+T2	company 1248 1266	Palo Alto Networks
+T21	security_team 1267 1274	Unit 42
+T22	company 1279 1302	ClearSky Cyber Security
+T23	time 1323 1333	April 2017
+R9	part_of Arg1:T21 Arg2:T2	
+T24	location 1365 1376	Middle East
+T25	malware 1383 1394	KASPERAGENT
+T26	malware 1399 1408	MICROPSIA
+T28	malware 1429 1440	KASPERAGENT
+T30	sample_name 1498 1585	c : UsersUSADocumentsVisual Studio 2008ProjectsNew folder ( 2 ) kasperReleasekasper.pdb
+T27	attack_activity 1631 1645	spear phishing
+T31	malware 1708 1719	KASPERAGENT
+T32	sub_activity 1608 1719	used shortened URLs in spear phishing messages and fake news websites to direct targets to download KASPERAGENT
+T33	domain_evil 1928 1941	mailsinfo.net
+T34	protocol 1880 1884	HTTP
+T35	string 2004 2008	dad5
+T36	program_language 1976 1979	PHP
+T37	sample_function 2073 2118	as a basic reconnaissance tool and downloader
+T38	sample_function 2233 2302	steal passwords , take screenshots , log keystrokes , and steal files
+T39	domain_evil 2401 2417	stikerscloud.com
+T40	malware 2453 2464	KASPERAGENT
+T41	tool 2472 2478	Chrome
+R14	use Arg1:T40 Arg2:T41	
+T43	string 2534 2540	OPAERA
+T44	string 15 21	Opaera
+T45	attack_goal 233 270	decoy Palestinian Authority documents
+R16	goal Arg1:T3 Arg2:T45	
+T46	attack_activity 1341 1357	Targeted Attacks
+R17	located Arg1:T46 Arg2:T24	
+R10	use Arg1:T46 Arg2:T25	
+R11	use Arg1:T46 Arg2:T26	
+R12	occur_time Arg1:T46 Arg2:T23	
+T47	malware 1739 1750	KASPERAGENT
+T48	sample_function 1751 1831	drops the payload and a decoy document that displays Arabic names and ID numbers
+T49	company 2668 2681	ThreatConnect
+T50	security_team 2843 2850	Unit 42
+T51	string 2788 2794	OPAERA
+T53	malware 3047 3058	KASPERAGENT
+T56	sample_name 3346 3358	testproj.exe
+T57	time 3644 3659	March 24 , 2017
+T58	person 3607 3619	Mazen Fuqaha
+T59	government 3585 3590	Hamas
+T60	person 3541 3547	Fuqaha
+T61	tool 3687 3695	VxStream
+T62	sample_name 3747 3759	testproj.exe
+T63	company 3777 3786	Microsoft
+T64	target_crowd 3777 3800	Microsoft Word document
+R13	attack Arg1:T62 Arg2:T64	
+T65	tool 3787 3791	Word
+T66	domain 3828 3842	treestower.com
+R18	find Arg1:T61 Arg2:T62	
+T67	domain_evil 3928 3941	mailsinfo.net
+T68	domain 3845 3854	Malwr.com
+T69	reference_word 3869 3873	site
+R19	coreference Arg1:T69 Arg2:T66	
+T70	attack_activity 3969 3985	Targeted Attacks
+T71	location 3993 4004	Middle East
+T72	malware 4011 4022	KASPERAGENT
+T73	malware 4027 4036	MICROPSIA
+R20	located Arg1:T70 Arg2:T71	
+R21	use Arg1:T70 Arg2:T72	
+R22	use Arg1:T70 Arg2:T73	
+T74	malware 4092 4103	KASPERAGENT
+T75	domain 4126 4140	treestower.com
+T76	government 4258 4263	Hamas
+T77	person 4280 4292	Mazen Fuqaha
+T78	sample_name 4364 4371	vlc.exe
+T79	company 4426 4433	YouTube
+T80	domain_evil 4474 4495	windowsnewupdates.com
+T81	tool 4426 4438	YouTube icon
+R23	use Arg1:T78 Arg2:T81	
+T82	time 4526 4536	late March
+T88	string 5035 5044	imphashes
+T90	string 4880 4887	imphash
+T91	string 4659 4666	imphash
+T83	sample_name 5222 5234	testproj.exe
+T84	sample_function 5235 5295	dropped benign decoy files and started malicious executables
+R24	goal Arg1:T83 Arg2:T84	
+T86	domain_evil 5359 5380	windowsnewupdates.com
+T87	string 5438 5444	OPAERA
+T89	attack_activity 5480 5496	Targeted Attacks
+T92	location 5504 5515	Middle East
+T93	malware 5522 5533	KASPERAGENT
+T94	malware 5538 5547	MICROPSIA
+R25	use Arg1:T89 Arg2:T93	
+R26	use Arg1:T89 Arg2:T94	
+R27	located Arg1:T89 Arg2:T92	
+T95	string 5690 5694	dad5
+T96	string 5764 5770	kasper
+T97	string 2813 2819	kasper
+T98	security_team 5794 5801	Unit 42
+T29	malware 5876 5887	KASPERAGENT
+R29	find Arg1:T98 Arg2:T29	
+T52	government 5971 5992	Palestinian Authority
+T54	location 6052 6063	Middle East
+T55	location 6021 6044	Palestinian Territories
+T85	government 6114 6135	Palestinian Authority
+T99	industry 6271 6283	social media
+T100	industry 6254 6267	news websites
+T101	time 6313 6328	April 10 , 2017
+T102	person 6375 6390	Yahya Al-Sinwar
+T103	government 6397 6402	Hamas
+T104	location 6428 6432	Gaza
+T105	time 6436 6449	February 2017
+R28	part_of Arg1:T102 Arg2:T103	
+R30	located Arg1:T103 Arg2:T104	
+T106	person 6550 6562	Mazen Fuqaha
+T107	company 6647 6660	ThreatConnect
+T108	time 6745 6753	April 23
+T109	person 6805 6820	Yahya al-Sinwar
+T110	government 6887 6892	Fatah
+T111	location 6947 6951	Gaza
+T112	location 6930 6939	West Bank
+R31	located Arg1:T112 Arg2:T111	
+T113	government 6978 6983	Fatah
+T114	protocol 7191 7194	DNS
+T115	IP_evil 7246 7261	195.154.110.237
+T116	domain_evil 7327 7348	windowsnewupdates.com
+T117	tool 7420 7425	DNSDB
+T118	company 7411 7419	Farsight
+T119	time 7580 7584	2016
+T120	location 7665 7681	Gaza , Palestine
+T121	domain_evil 7587 7601	upfile2box.com
+T122	domain_evil 7606 7614	7aga.net
+R32	located Arg1:T121 Arg2:T120	
+R33	located Arg1:T122 Arg2:T120	
+T123	reference_word 7512 7514	IP
+R34	coreference Arg1:T123 Arg2:T115	
+T124	reference_word 7571 7573	IP
+R35	coreference Arg1:T124 Arg2:T123	
+T125	reference_word 7689 7691	IP
+R36	coreference Arg1:T125 Arg2:T124	
+T126	reference_word 7919 7921	IP
+R37	coreference Arg1:T126 Arg2:T125	
+T127	location 7977 7981	Gaza
+R38	located Arg1:T126 Arg2:T127	
+T128	location 8130 8134	Gaza
+T129	location 8757 8761	Gaza
+T130	location 9072 9076	Gaza
+T131	location 9538 9542	Gaza
+T132	location 9741 9745	Gaza
+T133	location 9836 9840	Gaza
+T134	location 10157 10161	Gaza
+T135	location 8393 8416	Palestinian Territories
+T136	reference_word 8528 8532	area
+R39	coreference Arg1:T136 Arg2:T135	
+T137	location 8682 8705	Palestinian Territories
+T138	person 8779 8791	Mazen Fuqaha
+T139	person 8796 8811	Yahya al-Sinwar
+T140	government 8734 8739	Hamas
+R40	located Arg1:T140 Arg2:T129	
+R41	part_of Arg1:T138 Arg2:T140	
+R42	part_of Arg1:T139 Arg2:T140	
+T141	location 8825 8831	Israel
+T142	person 8888 8900	Mazen Fuqaha
+T143	government 8972 8993	Palestinian Authority
+T144	government 8911 8922	Fatah party
+R44	part_of Arg1:T142 Arg2:T140	
+T145	time 9224 9232	February
+T146	person 9152 9167	Yahya al-Sinwar
+T147	government 9079 9084	Hamas
+R45	part_of Arg1:T146 Arg2:T147	
+T148	government 9472 9477	Hamas
+T149	government 9591 9596	Hamas
+R46	part_of Arg1:T77 Arg2:T76	
+T150	government 9276 9299	United Nations ’ Office
+T151	government 9308 9344	Coordination of Humanitarian Affairs
+T152	time 9358 9368	March 2017
+R47	part_of Arg1:T151 Arg2:T150	
+T153	time 9464 9469	April
+R48	located Arg1:T148 Arg2:T131	
+T154	government 9605 9626	Palestinian Authority
+T155	location 9643 9652	West Bank
+R49	located Arg1:T149 Arg2:T131	
+T156	government 9685 9706	Palestinian Authority
+T157	government 10011 10032	Palestinian Authority
+T158	government 8073 8094	Palestinian Authority
+T159	government 357 378	Palestinian Authority
+T160	location 9773 9779	Israel
+T161	reference_word 9915 9927	rival groups
+R43	coreference Arg1:T161 Arg2:T149	
+R50	located Arg1:T161 Arg2:T133	
+T162	time 9946 9949	May
+T163	location 10061 10070	West Bank
+T164	government 10116 10127	Fatah party
+R51	located Arg1:T164 Arg2:T163	
+T165	location 10303 10309	Israel
+T166	location 10314 10323	Palestine
+T167	malware 10364 10375	KASPERAGENT
+R52	located Arg1:T167 Arg2:T166	
+R53	located Arg1:T167 Arg2:T165	
+T168	target_crowd 10594 10627	government employee or contractor
+T169	time 10817 10833	March – May 2017
+T170	malware 10834 10845	Kasperagent
+T171	domain_evil 10865 10886	WindowsNewUpdates.com
+T172	company 10899 10912	ThreatConnect
+T173	government 239 260	Palestinian Authority
+T175	reference_word 1222 1229	malware
+R55	coreference Arg1:T175 Arg2:T12	
+R57	find Arg1:T22 Arg2:T175	
+R56	find Arg1:T21 Arg2:T175	
+R58	release_time Arg1:T21 Arg2:T23	
+R59	release_time Arg1:T22 Arg2:T23	
+T176	industry 1664 1677	news websites
+R15	use Arg1:T40 Arg2:T43	
+T177	reference_word 2534 2540	OPAERA
+T178	tool 2578 2583	Opera
+R60	coreference Arg1:T177 Arg2:T178	
+R61	find Arg1:T50 Arg2:T97	
+R62	find Arg1:T50 Arg2:T51	
+T42	reference_word 2728 2735	samples
+R63	use Arg1:T42 Arg2:T51	
+R64	part_of Arg1:T97 Arg2:T51	
+R65	coreference Arg1:T42 Arg2:T40	
+T179	reference_word 2045 2052	malware
+T174	reference_word 1838 1845	malware
+R54	coreference Arg1:T174 Arg2:T47	
+R66	coreference Arg1:T179 Arg2:T174	
+R68	find Arg1:T98 Arg2:T96	
+T180	reference_word 10557 10564	malware
+R67	attack Arg1:T180 Arg2:T168	
+R69	coreference Arg1:T180 Arg2:T167	
+R70	part_of Arg1:T58 Arg2:T59	
+R71	located Arg1:T52 Arg2:T55	
+R72	located Arg1:T55 Arg2:T54	
+R73	part_of Arg1:T117 Arg2:T118	
+R74	find Arg1:T117 Arg2:T123	
+R75	located Arg1:T124 Arg2:T120	
+R76	located Arg1:T144 Arg2:T129	
+R77	use Arg1:T170 Arg2:T171	
+R78	use Arg1:T1 Arg2:T44	

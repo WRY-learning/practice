@@ -1,0 +1,149 @@
+T1	threatActor_name 1 6	APT28
+T2	threatActor_name 36 41	APT28
+T3	malware 61 70	CHOPSTICK
+T4	malware 73 81	backdoor
+T5	malware 136 144	backdoor
+T6	malware 125 133	EVILTOSS
+T7	malware 84 90	Xagent
+T8	malware 93 98	webhp
+T9	malware 101 105	SPLM
+T10	malware 110 120	.v2 fysbis
+R1	coreference Arg1:T7 Arg2:T3	
+R2	coreference Arg1:T8 Arg2:T3	
+R3	coreference Arg1:T9 Arg2:T3	
+R4	coreference Arg1:T10 Arg2:T3	
+R5	part_of Arg1:T3 Arg2:T4	
+T11	malware 197 205	GAMEFISH
+T12	malware 208 216	backdoor
+T13	malware 262 270	SOURFACE
+T14	malware 324 331	OLDBAIT
+T15	malware 366 375	CORESHELL
+T16	tool 273 283	downloader
+T17	tool 334 354	credential harvester
+T18	tool 378 388	downloader
+R6	part_of Arg1:T6 Arg2:T5	
+R7	part_of Arg1:T11 Arg2:T12	
+R8	part_of Arg1:T13 Arg2:T16	
+R9	part_of Arg1:T14 Arg2:T17	
+R10	part_of Arg1:T15 Arg2:T18	
+T19	malware 147 154	Sedreco
+T20	malware 157 161	AZZY
+T21	malware 164 170	Xagent
+T22	malware 173 186	ADVSTORESHELL
+T23	malware 189 194	NETUI
+T24	malware 219 225	Sednit
+T25	malware 228 239	Seduploader
+T26	malware 242 250	JHUHUGIT
+T27	malware 253 259	Sofacy
+T28	malware 286 312	Older version of CORESHELL
+T29	malware 315 321	Sofacy
+T30	malware 357 363	Sasfis
+T31	malware 391 416	Newer version of SOURFACE
+T32	malware 419 425	Sofacy
+R11	coreference Arg1:T19 Arg2:T6	
+R12	coreference Arg1:T20 Arg2:T6	
+R13	coreference Arg1:T21 Arg2:T6	
+R14	coreference Arg1:T22 Arg2:T6	
+R15	coreference Arg1:T23 Arg2:T6	
+R16	coreference Arg1:T24 Arg2:T11	
+R17	coreference Arg1:T25 Arg2:T11	
+R18	coreference Arg1:T26 Arg2:T11	
+R19	coreference Arg1:T27 Arg2:T11	
+R20	coreference Arg1:T28 Arg2:T13	
+R21	coreference Arg1:T29 Arg2:T13	
+R22	coreference Arg1:T30 Arg2:T14	
+R23	coreference Arg1:T31 Arg2:T15	
+R24	coreference Arg1:T32 Arg2:T15	
+T33	threatActor_name 428 433	APT28
+T34	threatActor_name 718 723	APT28
+T35	vul_aliases 736 744	zero-day
+T36	tool 764 782	Adobe Flash Player
+T37	program_language 785 789	Java
+T38	OS_name 796 803	Windows
+R25	part_of Arg1:T35 Arg2:T36	
+R26	part_of Arg1:T35 Arg2:T37	
+R27	part_of Arg1:T35 Arg2:T38	
+T39	vulnerability_cve 816 829	CVE-2015-1701
+T40	vulnerability_cve 832 845	CVE-2015-2424
+T41	vulnerability_cve 848 861	CVE-2015-2590
+T42	vulnerability_cve 864 877	CVE-2015-3043
+T43	vulnerability_cve 880 893	CVE-2015-5119
+T44	vulnerability_cve 900 913	CVE-2015-7645
+R28	part_of Arg1:T39 Arg2:T35	
+R29	part_of Arg1:T40 Arg2:T35	
+R30	part_of Arg1:T41 Arg2:T35	
+R31	part_of Arg1:T42 Arg2:T35	
+R32	part_of Arg1:T43 Arg2:T35	
+R33	part_of Arg1:T44 Arg2:T35	
+T45	vul_aliases 951 960	zero-days
+T46	tool 1144 1151	Carberp
+T47	tool 1154 1171	PowerShell Empire
+T48	tool 1174 1179	P.A.S
+T49	tool 1182 1190	webshell
+T50	tool 1193 1203	Metasploit
+T51	company 1359 1365	Google
+T52	sub_activity 1359 1383	Google App authorization
+T53	sub_activity 1388 1400	Oauth access
+R34	part_of Arg1:T51 Arg2:T52	
+T54	person 1595 1602	victims
+T55	threatActor_name 1736 1741	APT28
+T56	threatActor_name 1966 1971	APT28
+T57	attack_activity 2068 2089	spear-phishing emails
+T58	threatActor_name 2296 2301	APT28
+T59	attack_activity 2510 2521	SPEAR PHISH
+T60	person 2602 2608	victim
+T61	person 2611 2617	Victim
+T62	sample_name 2699 2731	ARM-NATO_ENGLISH_30_NOV_2016.doc
+T63	vulnerability_cve 2767 2780	CVE-2016-7855
+T64	tool 2745 2756	Adobe Flash
+R35	attack Arg1:T62 Arg2:T64	
+R36	use Arg1:T62 Arg2:T63	
+T65	tool 2794 2802	GAMEFISH
+R37	use Arg1:T62 Arg2:T65	
+R38	use Arg1:T58 Arg2:T59	
+R39	attack Arg1:T58 Arg2:T60	
+R40	attack Arg1:T58 Arg2:T61	
+R41	use Arg1:T56 Arg2:T57	
+T66	domain_evil 2894 2913	theguardiannews.org
+T67	person 3030 3036	Victim
+T68	vulnerability_cve 3162 3175	CVE-2016-7855
+T69	vul_aliases 3142 3161	Flash Vulnerability
+R42	coreference Arg1:T69 Arg2:T68	
+T70	vul_aliases 3180 3201	Windows Vulnerability
+T71	OS_name 3180 3187	Windows
+R43	part_of Arg1:T71 Arg2:T70	
+T72	tool 3142 3147	Flash
+R44	part_of Arg1:T72 Arg2:T69	
+T73	vulnerability_cve 3202 3215	CVE-2016-7255
+R45	coreference Arg1:T70 Arg2:T73	
+T74	vul_aliases 3234 3243	zero days
+T75	person 3266 3273	victims
+R46	attack Arg1:T73 Arg2:T75	
+R47	attack Arg1:T68 Arg2:T75	
+T76	attack_activity 3325 3336	SPEAR-PHISH
+T77	domain_evil 3430 3452	0nedrive-0ffice365.com
+T78	tool 3918 3942	STRATEGIC WEB COMPROMISE
+T79	tool 3945 3948	SWC
+R48	coreference Arg1:T79 Arg2:T78	
+T80	threatActor_name 3581 3586	APT28
+T81	threatActor_name 3811 3816	APT28
+T82	person 3738 3744	Person
+R49	attack Arg1:T80 Arg2:T82	
+T83	person 3660 3667	victims
+R50	attack Arg1:T80 Arg2:T83	
+T84	tool 3827 3832	OAuth
+R51	use Arg1:T81 Arg2:T84	
+T85	tool 4004 4010	iFrame
+T86	tool 4062 4068	iFrame
+T87	time 4190 4194	2014
+T88	government 4160 4177	Polish Government
+T89	location 4160 4166	Polish
+R52	part_of Arg1:T88 Arg2:T89	
+T90	target_crowd 4139 4147	visitors
+R53	occur_time Arg1:T90 Arg2:T87	
+T91	reference_word 4090 4104	this technique
+R55	coreference Arg1:T91 Arg2:T86	
+R56	attack Arg1:T91 Arg2:T90	
+T92	sub_activity 4160 4186	Polish Government websites
+R54	use Arg1:T90 Arg2:T92	
+T93	tool 4312 4335	INTERNET-FACING SERVERS

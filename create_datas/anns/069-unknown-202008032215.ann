@@ -1,0 +1,109 @@
+T1	malware 97 109	WastedLocker
+T2	company 195 203	WildFire
+T3	time 207 215	May 2020
+T4	security_team 57 64	Unit 42
+R1	release_time Arg1:T4 Arg2:T3	
+R2	find Arg1:T4 Arg2:T1	
+R3	release_time Arg1:T2 Arg2:T3	
+T5	location 286 290	U.S.
+T6	reference_word 322 332	the threat
+T7	company 291 303	corporations
+R4	coreference Arg1:T6 Arg2:T1	
+R5	attack Arg1:T6 Arg2:T5	
+R6	attack Arg1:T6 Arg2:T7	
+T8	malware 395 407	WastedLocker
+T9	malware 456 461	Samsa
+T10	malware 464 468	Maze
+T11	malware 471 476	EKANS
+T12	malware 479 483	Ryuk
+T13	malware 486 495	BitPaymer
+T14	malware 602 610	WannaCry
+T15	time 927 941	June 23 , 2020
+T16	security_team 944 953	NCC Group
+T17	malware 1010 1022	WastedLocker
+T18	threatActor_name 1098 1107	Evil Corp
+R7	release_time Arg1:T16 Arg2:T15	
+R9	find Arg1:T16 Arg2:T17	
+R8	find Arg1:T16 Arg2:T18	
+T19	reference_word 1124 1134	this group
+T20	malware 1164 1185	Dridex banking Trojan
+R10	find Arg1:T19 Arg2:T20	
+T21	tool 1269 1278	AutoFocus
+T22	security_team 1281 1288	Unit 42
+T23	person 1334 1340	actors
+T24	malware 1348 1360	WastedLocker
+R11	use Arg1:T22 Arg2:T21	
+T25	sub_activity 1293 1360	identified some possible targets for the actors behind WastedLocker
+R12	launch Arg1:T22 Arg2:T25	
+T26	location 1406 1414	the U.S.
+T27	security_team 1457 1465	Symantec
+T28	time 1469 1483	June 26 , 2020
+R13	release_time Arg1:T28 Arg2:T27	
+T29	reference_word 1363 1392	The majority of organizations
+R14	located Arg1:T29 Arg2:T26	
+R15	find Arg1:T27 Arg2:T29	
+R16	coreference Arg1:T29 Arg2:T23	
+T30	reference_word 1490 1503	organizations
+T31	industry 1543 1574	professional and legal services
+T32	industry 1577 1597	utilities and energy
+T33	industry 1600 1613	manufacturing
+T34	industry 1616 1636	wholesale and retail
+T35	industry 1639 1648	high tech
+T36	industry 1651 1662	engineering
+T37	industry 1665 1689	pharma and life sciences
+T38	industry 1696 1724	transportation and logistics
+T39	location 1788 1806	the United Kingdom
+T40	location 1846 1849	U.S
+T41	company 1741 1782	transportation and logistics organization
+R17	attack Arg1:T30 Arg2:T31	
+R18	attack Arg1:T30 Arg2:T32	
+R19	attack Arg1:T30 Arg2:T33	
+R20	attack Arg1:T30 Arg2:T34	
+R21	attack Arg1:T30 Arg2:T35	
+R22	attack Arg1:T30 Arg2:T36	
+R23	attack Arg1:T30 Arg2:T37	
+R24	attack Arg1:T30 Arg2:T38	
+R25	attack Arg1:T30 Arg2:T41	
+R26	attack Arg1:T30 Arg2:T40	
+R27	attack Arg1:T30 Arg2:T39	
+T42	malware 1887 1899	WastedLocker
+T43	security_team 1912 1920	Symantec
+T44	malware 1982 1994	WastedLocker
+T45	tool 2007 2016	ZIP files
+R28	find Arg1:T43 Arg2:T42	
+R29	use Arg1:T44 Arg2:T45	
+T46	tool 2090 2139	SocGholish JavaScript framework loader components
+R30	part_of Arg1:T46 Arg2:T45	
+T47	sample_function 2145 2233	profile the victim system and use PowerShell to ultimately deploy Cobalt Strike payloads
+R31	part_of Arg1:T47 Arg2:T46	
+T48	tool 2179 2189	PowerShell
+R32	use Arg1:T46 Arg2:T48	
+T49	sample_function 2204 2233	deploy Cobalt Strike payloads
+R33	part_of Arg1:T49 Arg2:T48	
+T50	tool 2245 2266	Cobalt Strike payload
+T51	sample_function 2324 2368	move laterally through the victim ’s network
+T52	sample_function 2373 2424	facilitate the identification of additional systems
+T53	person 2434 2443	attackers
+T54	sub_activity 2448 2474	deploy their main payloads
+R34	launch Arg1:T53 Arg2:T54	
+R35	part_of Arg1:T51 Arg2:T50	
+R36	part_of Arg1:T52 Arg2:T50	
+R37	use Arg1:T53 Arg2:T50	
+T55	malware 2477 2489	WastedLocker
+T56	person 2490 2499	attackers
+R38	use Arg1:T56 Arg2:T55	
+T58	tool 2567 2601	Windows Management Instrumentation
+T59	tool 2614 2620	PsExec
+R39	use Arg1:T56 Arg2:T58	
+R40	use Arg1:T56 Arg2:T59	
+T57	tool 2604 2607	WMI
+R41	coreference Arg1:T57 Arg2:T58	
+T60	person 2692 2701	attackers
+T61	attack_goal 2706 2852	systems that directly affect a victim ’s customer-facing revenue-generating business operations , internal systems of high visibility and high use
+R42	goal Arg1:T60 Arg2:T61	
+T62	attack_goal 2859 2930	systems that contain ( or facilitate the deployment of ) system backups
+R43	goal Arg1:T60 Arg2:T62	
+T63	person 3024 3033	attackers
+T64	sub_activity 3042 3130	deploy the WastedLocker ransomware payload using one or more system management utilities
+R44	launch Arg1:T63 Arg2:T64	
+T65	malware 3053 3065	WastedLocker

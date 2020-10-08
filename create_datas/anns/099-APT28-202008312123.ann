@@ -1,0 +1,105 @@
+T1	threatActor_name 0 5	APT28
+T2	government 75 79	WADA
+T3	government 204 208	WADA
+T4	person 121 129	anpoland
+T5	time 103 108	AUG 9
+T6	time 219 225	AUG 11
+T7	time 230 239	August 11
+T8	person 241 249	anpoland
+T9	attack_activity 273 277	DDoS
+T10	government 312 316	WADA
+T11	time 364 370	SEP 12
+T12	threatActor_name 373 395	Fancy Bears' Hack Team
+T13	tool 482 489	Twitter
+T14	threatActor_name 459 468	Anonymous
+T15	government 510 514	WADA
+T16	tool 620 627	Twitter
+T17	threatActor_name 698 720	Fancy Bears' Hack Team
+T18	time 783 789	SEP 13
+T19	time 914 923	SEP 15-30
+T20	government 791 795	WADA
+T21	threatActor_name 906 911	APT28
+T22	threatActor_name 926 948	Fancy Bears' Hack Team
+T23	location 1060 1068	the U.S.
+T24	threatActor_name 1244 1266	Fancy Bears' Hack team
+T25	threatActor_name 1452 1460	anpoland
+T26	threatActor_name 1466 1488	Fancy Bears' Hack Team
+T27	government 1555 1559	WADA
+T28	government 1600 1615	law enforcement
+T29	location 1664 1670	Russia
+T30	government 1701 1707	WADA's
+T31	location 1720 1728	Russia's
+T32	attack_goal 1685 1757	retaliation for WADA's exposure of Russia's expansive , state-run doping
+T33	location 1803 1810	Russian
+T34	location 1829 1836	Russian
+T35	location 1934 1940	Russia
+T36	time 2008 2012	2014
+T37	threatActor_name 2049 2054	APT28
+T38	location 2075 2082	Russian
+T39	threatActor_name 2119 2124	APT28
+T40	government 2181 2185	WADA
+T41	government 2194 2197	DNC
+T42	time 2232 2236	2016
+T43	location 2237 2241	U.S.
+T44	sub_activity 2296 2338	the theft of internal data - mostly emails
+T45	sub_activity 2370 2415	leaked through multiple forums and propagated
+T46	location 2487 2494	Russian
+T47	attack_goal 2468 2512	advance particular Russian Government aims .
+T48	time 2537 2551	January 7 2017
+T49	location 2558 2563	U.S .
+T50	government 2564 2600	Directorate of National Intelligence
+T51	location 2770 2777	Russian
+T52	attack_activity 2882 2904	information operations
+T53	location 2944 2951	Russian
+T54	location 3100 3104	U.S.
+T55	location 3137 3144	Russian
+T56	time 3271 3275	2017
+T57	location 3323 3330	Germany
+T58	location 3333 3339	France
+T59	location 3350 3361	Netherlands
+T60	time 3438 3442	2014
+T61	threatActor_name 3466 3471	APT28
+T62	location 3487 3494	Russian
+T63	threatActor_name 3620 3625	APT28
+T64	time 3654 3658	2007
+T65	time 3867 3871	2014
+T66	threatActor_name 3881 3886	APT28
+T67	location 3902 3910	Russia's
+T68	threatActor_name 3939 3944	APT28
+T69	threatActor_name 4136 4141	APT28
+T70	threatActor_name 4211 4216	APT28
+T71	time 4267 4271	2007
+T72	sub_activity 4203 4251	allowed APT28 to consistently evolve its toolset
+T73	sub_activity 4274 4334	Use of a formal coding environment in which to develop tools
+T74	sub_activity 4337 4412	allowing the group to create and deploy custom modules within its backdoors
+T75	sub_activity 4415 4461	Incorporation of counter-analysis capabilities
+T76	sub_activity 4472 4522	runtime checks to identify an analysis environment
+T77	sub_activity 4525 4563	obfuscated strings unpacked at runtime
+T78	sub_activity 4587 4631	unused machine instructions to slow analysis
+T79	sub_activity 4634 4677	Code compiled during the normal working day
+T80	sub_activity 4706 4749	within a Russian language build environment
+T81	location 4685 4691	Moscow
+R1	attack Arg1:T1 Arg2:T2	
+R2	first_found_time Arg1:T4 Arg2:T5	
+R3	attack Arg1:T4 Arg2:T3	
+R4	first_found_time Arg1:T8 Arg2:T7	
+R5	launch Arg1:T8 Arg2:T9	
+R6	attack Arg1:T8 Arg2:T10	
+R7	first_found_time Arg1:T12 Arg2:T11	
+R8	part_of Arg1:T12 Arg2:T14	
+T82	sub_activity 521 574	directs readers to a website hosting stolen documents
+R9	attack Arg1:T12 Arg2:T15	
+R10	use Arg1:T12 Arg2:T13	
+R11	use Arg1:T17 Arg2:T16	
+R12	release_time Arg1:T20 Arg2:T18	
+R13	release_time Arg1:T22 Arg2:T19	
+R14	occur_time Arg1:T37 Arg2:T36	
+R15	attack Arg1:T39 Arg2:T40	
+R16	attack Arg1:T39 Arg2:T41	
+R17	goal Arg1:T45 Arg2:T47	
+R18	goal Arg1:T44 Arg2:T47	
+T83	attack_activity 2632 2650	influence campaign
+T84	attack_activity 2660 2678	influence campaign
+R19	release_time Arg1:T50 Arg2:T48	
+R20	first_found_time Arg1:T63 Arg2:T64	
+R22	occur_time Arg1:T72 Arg2:T71	

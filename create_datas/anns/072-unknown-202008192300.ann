@@ -1,0 +1,213 @@
+T1	malware 8 16	TajMahal
+T2	malware 146 154	TajMahal
+T3	malware 799 807	TajMahal
+T4	malware 1051 1059	TajMahal
+T5	malware 1256 1264	TajMahal
+T6	malware 1365 1373	TajMahal
+T7	malware 2405 2413	TajMahal
+T8	malware 3248 3256	TajMahal
+T9	malware 3306 3314	TajMahal
+T10	malware 3334 3342	TajMahal
+T11	malware 3361 3369	TajMahal
+T12	malware 3392 3400	TajMahal
+T13	malware 3424 3432	TajMahal
+T14	malware 3459 3467	TajMahal
+T15	malware 3505 3513	TajMahal
+T16	malware 3551 3559	TajMahal
+T17	malware 3597 3605	TajMahal
+T18	malware 3643 3651	TajMahal
+T19	malware 3689 3697	TajMahal
+T20	malware 3735 3743	TajMahal
+T21	malware 3781 3789	TajMahal
+T22	malware 3827 3835	TajMahal
+T23	malware 3873 3881	TajMahal
+T24	malware 3919 3927	TajMahal
+T25	malware 3965 3973	TajMahal
+T26	malware 4011 4019	TajMahal
+T27	malware 4057 4065	TajMahal
+T28	malware 4103 4111	TajMahal
+T29	malware 4149 4157	TajMahal
+T30	malware 4195 4203	TajMahal
+T31	malware 4241 4249	TajMahal
+T32	time 270 274	2018
+T33	security_team 239 252	Kaspersky Lab
+R1	find Arg1:T33 Arg2:T2	
+R2	first_found_time Arg1:T2 Arg2:T32	
+T34	tool 357 365	Yokohama
+T35	tool 343 348	Tokyo
+T36	reference_word 277 309	This full-blown spying framework
+R3	coreference Arg1:T36 Arg2:T2	
+T37	tool 322 334	two packages
+T38	reference_word 370 372	It
+R5	coreference Arg1:T38 Arg2:T36	
+T39	tool 382 391	backdoors
+T40	tool 394 401	loaders
+T41	tool 404 417	orchestrators
+T42	tool 420 436	C2 communicators
+T43	tool 439 454	audio recorders
+T44	tool 457 467	keyloggers
+T45	tool 470 476	screen
+T46	tool 481 496	webcam grabbers
+R6	part_of Arg1:T39 Arg2:T38	
+R7	part_of Arg1:T40 Arg2:T38	
+R8	part_of Arg1:T41 Arg2:T38	
+R9	part_of Arg1:T42 Arg2:T38	
+R10	part_of Arg1:T43 Arg2:T38	
+R11	part_of Arg1:T44 Arg2:T38	
+R12	part_of Arg1:T45 Arg2:T38	
+R13	part_of Arg1:T46 Arg2:T38	
+T47	tool 499 508	documents
+T48	tool 513 538	cryptography key stealers
+R14	part_of Arg1:T47 Arg2:T38	
+R15	part_of Arg1:T48 Arg2:T38	
+T49	tool 558 570	file indexer
+R16	part_of Arg1:T49 Arg2:T38	
+T50	tool 654 683	encrypted Virtual File System
+T51	tool 622 639	malicious modules
+R17	located Arg1:T51 Arg2:T50	
+T52	sub_activity 819 829	steal data
+R18	launch Arg1:T3 Arg2:T52	
+T53	reference_word 894 896	It
+R19	coreference Arg1:T53 Arg2:T3	
+T54	sub_activity 917 940	steal a particular file
+R20	launch Arg1:T53 Arg2:T54	
+T55	time 1174 1185	August 2013
+T56	time 1213 1223	April 2018
+T57	time 1309 1320	August 2014
+R21	first_found_time Arg1:T5 Arg2:T57	
+T58	tool 1396 1401	Tokyo
+T59	tool 1406 1414	Yokohama
+T60	security_team 1447 1460	Kaspersky Lab
+T61	tool 1515 1520	Tokyo
+T62	tool 1588 1604	Yokohama package
+T63	tool 1365 1382	TajMahal packages
+R22	part_of Arg1:T58 Arg2:T63	
+R23	part_of Arg1:T59 Arg2:T63	
+T64	location 2386 2398	Central Asia
+T65	reference_word 2710 2712	it
+R24	coreference Arg1:T65 Arg2:T7	
+T66	tool 2725 2732	indexer
+T67	tool 2735 2748	emergency C2s
+R25	use Arg1:T65 Arg2:T66	
+R26	use Arg1:T65 Arg2:T67	
+T68	sample_function 2765 2788	stealing specific files
+R27	goal Arg1:T66 Arg2:T68	
+R28	goal Arg1:T67 Arg2:T68	
+T69	tool 3079 3082	VFS
+T70	sample_name 3279 3305	Trojan.Multi.Chaperone.gen
+R29	coreference Arg1:T70 Arg2:T8	
+T71	IP_evil 3317 3331	104.200.30.125
+R30	use Arg1:T9 Arg2:T71	
+T72	IP_evil 3345 3358	50.56.240.153
+R31	use Arg1:T10 Arg2:T72	
+T73	domain_evil 3372 3389	rahasn.webhop.org
+R32	use Arg1:T11 Arg2:T73	
+T74	domain_evil 3403 3421	rahasn.akamake.net
+R33	use Arg1:T12 Arg2:T74	
+T75	domain_evil 3435 3456	rahasn.homewealth.biz
+R34	use Arg1:T13 Arg2:T75	
+T76	sha2 3470 3502	22d142f11cf2a30ea4953e1fffb0fa7e
+T77	sha2 3516 3548	2317d65da4639f4246de200650a70753
+T78	sha2 3562 3594	27612cb03c89158225ca201721ea1aad
+T79	sha2 3608 3640	412956675fbc3f8c51f438c1abc100eb
+T80	sha2 3654 3686	490a140093b5870a47edc29f33542fd2
+T81	sha2 3700 3732	51a7068640af42c3a7c1b94f1c11ab9d
+T82	sha2 3746 3778	533340c54bd25256873b3dca34d7f74e
+T83	sha2 3792 3824	684eca6b62d69ce899a3ec3bb04d0a5b
+T84	sha2 3838 3870	69a19abf5ba56ee07cdd3425b07cf8bf
+T85	sha2 3884 3916	6cfd131fef548fcd60fbcdb59317df8e
+T86	sha2 3930 3962	72dc98449b45a7f1ccdef27d51e31e91
+T87	sha2 3976 4008	7c733607a0932b1b9a9e27cd6ab55fe0
+T88	sha2 4022 4054	7d5265e814843b24fcb3787768129040
+T89	sha2 4068 4100	80c37e062aa4c94697f287352acf2e9d
+T90	sha2 4114 4146	815f1f8a7bc1e6f94cb5c416e381a110
+T91	sha2 4160 4192	a43d3b31575846fa4c3992b4143a06da
+T92	sha2 4206 4238	08e82dc7bae524884b7dc2134942aadb
+T93	sha2 4252 4284	7bcd736a2394fc49f3e27b3987cce640
+R35	part_of Arg1:T76 Arg2:T14	
+R36	part_of Arg1:T77 Arg2:T15	
+R37	part_of Arg1:T78 Arg2:T16	
+R38	part_of Arg1:T79 Arg2:T17	
+R39	part_of Arg1:T80 Arg2:T18	
+R40	part_of Arg1:T81 Arg2:T19	
+R41	part_of Arg1:T83 Arg2:T21	
+R42	part_of Arg1:T82 Arg2:T20	
+R43	part_of Arg1:T84 Arg2:T22	
+R44	part_of Arg1:T85 Arg2:T23	
+R45	part_of Arg1:T86 Arg2:T24	
+R46	part_of Arg1:T88 Arg2:T26	
+R47	part_of Arg1:T87 Arg2:T25	
+R48	part_of Arg1:T89 Arg2:T27	
+R49	part_of Arg1:T90 Arg2:T28	
+R50	part_of Arg1:T91 Arg2:T29	
+R51	part_of Arg1:T92 Arg2:T30	
+R52	part_of Arg1:T93 Arg2:T31	
+T94	tool 4353 4356	VFS
+T95	sample_name 4416 4424	cs64.dll
+T96	sample_function 4425 4464	C2 communication and command processing
+R53	goal Arg1:T95 Arg2:T96	
+T97	sample_name 4496 4504	li64.dll
+T98	sample_name 4579 4587	ad64.dll
+T99	sample_name 4639 4647	le64.dll
+T100	sample_name 4748 4752	dd.m
+T101	sample_name 4824 4832	me64.dll
+T102	sample_name 4880 4888	ma32.dll
+T103	sample_name 4973 4981	ex64.dll
+T104	sample_name 5067 5075	fe64.dll
+T105	sample_name 5146 5154	pd64.dll
+T106	sample_name 5234 5242	sg64.dll
+T107	sample_name 5325 5333	pd64.dll
+T108	sample_name 5413 5421	il32.dll
+T109	sample_function 4515 4553	Collects a large amount of information
+R54	goal Arg1:T97 Arg2:T109	
+T110	time 4687 4698	Mar 27 2014
+T112	tool 4666 4682	LAME mp3 encoder
+T113	tool 4711 4732	AudioRecorder plugins
+R56	use Arg1:T113 Arg2:T112	
+T111	sample_function 4602 4636	Microphone , Voice IP applications
+R55	goal Arg1:T98 Arg2:T111	
+T114	sample_function 4753 4769	MP3 file is sent
+R57	goal Arg1:T100 Arg2:T114	
+T115	sample_function 4833 4877	AudioRecorder for Windows Metro applications
+R58	goal Arg1:T101 Arg2:T115	
+T116	sample_function 4889 4918	AudioRecorder for Windows COM
+R59	goal Arg1:T102 Arg2:T116	
+T117	sample_function 5022 5064	selects target processes and loads plugins
+R60	goal Arg1:T103 Arg2:T117	
+T118	sample_function 5131 5143	reinstalling
+R61	goal Arg1:T104 Arg2:T118	
+T119	sample_function 5155 5167	Provides API
+R62	goal Arg1:T105 Arg2:T119	
+T120	sample_function 5255 5276	managing egress queue
+R63	goal Arg1:T106 Arg2:T120	
+T121	sample_function 5334 5346	Provides API
+R64	goal Arg1:T107 Arg2:T121	
+T122	sample_function 5433 5452	Steals conversation
+R65	goal Arg1:T108 Arg2:T122	
+R66	part_of Arg1:T35 Arg2:T37	
+R67	part_of Arg1:T34 Arg2:T37	
+T123	reference_word 1669 1681	The packages
+R4	coreference Arg1:T123 Arg2:T62	
+T124	sample_function 1772 1790	stealing documents
+R68	goal Arg1:T123 Arg2:T124	
+T125	sample_function 1819 1832	Data gathered
+R69	goal Arg1:T123 Arg2:T125	
+T126	sample_function 1902 1919	Takes screenshots
+R70	goal Arg1:T123 Arg2:T126	
+T127	sample_function 1955 1979	Steals written CD images
+R71	goal Arg1:T123 Arg2:T127	
+T128	sample_function 1993 2007	stealing files
+R72	goal Arg1:T123 Arg2:T128	
+T129	tool 2083 2100	Internet Explorer
+T130	tool 2103 2121	Netscape Navigator
+T131	tool 2124 2131	FireFox
+T132	tool 2136 2148	RealNetworks
+T133	tool 964 967	USB
+T134	tool 990 993	USB
+T135	tool 4919 4937	Hooks IAudioClient
+T136	tool 4940 4958	IAudioRenderClient
+T137	tool 4961 4970	IMMDevice
+T138	tool 5090 5098	Yokohama
+R73	part_of Arg1:T37 Arg2:T36	
+T139	tool 5318 5320	CC
+T140	tool 1935 1952	VoiceIP app audio

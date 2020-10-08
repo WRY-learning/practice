@@ -1,0 +1,367 @@
+T1	threatActor_name 0 10	BlackOasis
+T2	vul_aliases 51 59	zero-day
+R1	use Arg1:T1 Arg2:T2	
+T3	security_team 205 218	Kaspersky Lab
+T4	time 425 442	October 10 , 2017
+T5	company 514 525	Adobe Flash
+T7	tool 445 496	Kaspersky Lab's advanced exploit prevention systems
+R2	use Arg1:T3 Arg2:T7	
+R4	release_time Arg1:T3 Arg2:T4	
+T6	vul_aliases 514 534	Adobe Flash zero day
+R3	find Arg1:T3 Arg2:T6	
+T8	reference_word 584 595	The exploit
+R5	coreference Arg1:T8 Arg2:T6	
+T9	tool 620 645	Microsoft Office document
+T10	company 620 629	Microsoft
+T11	malware 694 700	FinSpy
+R6	use Arg1:T8 Arg2:T9	
+T13	vulnerability_cve 761 775	CVE-2017-11292
+T14	reference_word 758 760	it
+T15	company 739 744	Adobe
+T16	reference_word 728 735	the bug
+R8	coreference Arg1:T16 Arg2:T8	
+R9	coreference Arg1:T14 Arg2:T16	
+T18	threatActor_name 1213 1223	BlackOasis
+T19	threatActor_name 1261 1271	BlackOasis
+T20	vul_aliases 1305 1313	zero day
+T21	vulnerability_cve 1324 1337	CVE-2017-8759
+T22	time 1365 1379	September 2017
+T23	malware 1386 1392	FinSpy
+T24	security_team 1354 1361	FireEye
+R10	coreference Arg1:T20 Arg2:T21	
+T25	vulnerability_cve 1431 1445	CVE-2017-11292
+T26	security_team 1550 1557	FireEye
+T27	tool 1486 1488	C2
+T28	vulnerability_cve 1523 1536	CVE-2017-8759
+R11	first_found_time Arg1:T21 Arg2:T22	
+T17	vulnerability_cve 962 976	CVE-2017-11292
+T29	tool 1386 1400	FinSpy payload
+R16	use Arg1:T28 Arg2:T29	
+R17	use Arg1:T25 Arg2:T29	
+T30	time 1611 1619	May 2016
+T31	company 1650 1661	Adobe Flash
+T32	vul_aliases 1650 1670	Adobe Flash zero day
+T33	time 1676 1689	May 10 , 2016
+T34	company 1692 1697	Adobe
+T35	vulnerability_cve 1726 1739	CVE-2016-4117
+T36	sub_activity 1421 1428	attacks
+R18	use Arg1:T36 Arg2:T25	
+T37	reference_word 1710 1723	vulnerability
+R19	coreference Arg1:T37 Arg2:T35	
+T38	tool 1752 1775	Flash Player 21.0.0.226
+T39	OS_name 1811 1820	Macintosh
+T40	OS_name 1823 1828	Linux
+T41	OS_name 1835 1844	Chrome OS
+T42	OS_name 1801 1808	Windows
+T43	reference_word 1847 1864	The vulnerability
+R20	coreference Arg1:T43 Arg2:T35	
+R21	attack Arg1:T35 Arg2:T38	
+R22	attack Arg1:T35 Arg2:T42	
+R23	attack Arg1:T35 Arg2:T39	
+R24	attack Arg1:T35 Arg2:T40	
+R25	attack Arg1:T35 Arg2:T41	
+T44	security_team 1908 1921	Kaspersky Lab
+T45	reference_word 1963 1981	this vulnerability
+R27	coreference Arg1:T45 Arg2:T43	
+T46	time 2029 2041	May 8 , 2016
+T47	tool 2005 2025	multi scanner system
+R28	use Arg1:T44 Arg2:T47	
+T48	reference_word 2044 2054	The sample
+R30	part_of Arg1:T48 Arg2:T45	
+T50	vulnerability_cve 2100 2113	CVE-2016-4117
+T51	protocol 2162 2165	C&C
+T52	protocol 2237 2240	C&C
+R31	use Arg1:T48 Arg2:T50	
+T49	tool 2280 2308	FinSpy installation packages
+T53	sub_activity 1934 1981	identify a sample exploiting this vulnerability
+R32	launch Arg1:T44 Arg2:T53	
+T54	tool 2332 2358	Kaspersky Security Network
+T55	threatActor_name 2416 2426	BlackOasis
+T56	time 2430 2439	June 2015
+T57	vul_aliases 2451 2459	zero day
+R33	occur_time Arg1:T55 Arg2:T56	
+T58	vulnerability_cve 2489 2502	CVE-2015-5119
+T59	vulnerability_cve 2507 2520	CVE-2016-0984
+T60	time 2545 2554	July 2015
+T61	time 2559 2572	February 2016
+T62	reference_word 2475 2480	Those
+R34	coreference Arg1:T62 Arg2:T57	
+R35	part_of Arg1:T58 Arg2:T62	
+R36	part_of Arg1:T59 Arg2:T62	
+T63	reference_word 2588 2593	These
+R37	coreference Arg1:T63 Arg2:T62	
+T64	tool 2624 2652	FinSpy installation packages
+T65	malware 2624 2630	FinSpy
+T66	malware 2280 2286	FinSpy
+T67	target_crowd 2733 2750	this threat actor
+T70	sub_activity 2724 2750	tracking this threat actor
+T71	threatActor_name 2894 2904	BlackOasis
+T72	time 2945 2954	June 2015
+T73	time 2972 2981	June 2015
+T74	time 3084 3092	Oct 2017
+T75	time 3055 3064	Sept 2017
+T76	time 3028 3036	May 2016
+T77	time 3000 3009	June 2015
+T78	vulnerability_cve 2956 2969	CVE-2015-5119
+T79	vulnerability_cve 3067 3081	CVE-2017-11292
+T80	vulnerability_cve 3039 3052	CVE-2017-8759
+T81	vulnerability_cve 3012 3025	CVE-2016-4117
+T82	vulnerability_cve 2984 2997	CVE-2016-0984
+T83	tool 2929 2938	zero days
+R38	use Arg1:T71 Arg2:T83	
+R39	occur_time Arg1:T71 Arg2:T72	
+R40	part_of Arg1:T78 Arg2:T83	
+R41	part_of Arg1:T82 Arg2:T83	
+R42	part_of Arg1:T81 Arg2:T83	
+R43	part_of Arg1:T80 Arg2:T83	
+R44	part_of Arg1:T79 Arg2:T83	
+T84	tool 3187 3193	e-mail
+T85	tool 3137 3152	Office document
+T86	tool 3265 3278	Flash exploit
+T87	tool 3231 3245	ActiveX object
+R45	part_of Arg1:T86 Arg2:T87	
+T88	tool 3285 3297	Flash object
+T89	program_language 3310 3322	ActionScript
+R46	part_of Arg1:T89 Arg2:T88	
+T90	malware 3407 3413	FinSpy
+T91	url_evil 4014 4052	http://89.45.67.107/rss/5uzosoff0u.iaf
+T92	malware 4153 4159	FinSpy
+T93	url_evil 4167 4197	http://89.45.67.107/rss/mo.exe
+T94	tool 3752 3760	NOP sled
+T95	protocol 4264 4266	IP
+T96	tool 4072 4081	shellcode
+T97	tool 4133 4150	the final payload
+R47	use Arg1:T96 Arg2:T97	
+T98	target_crowd 4239 4249	the victim
+T99	tool 4216 4224	document
+R48	use Arg1:T96 Arg2:T99	
+T101	md5 4372 4404	4a49135d2ecc07085a8b7c5925a36c0a
+T102	malware 4432 4438	FinSpy
+T103	sample_name 4349 4355	mo.exe
+T104	tool 4764 4769	PCODE
+T105	person 4615 4626	researchers
+T106	tool 4863 4868	PCODE
+T107	sample_name 5207 5232	AdapterTroubleshooter.exe
+T108	sample_name 5343 5351	d3d9.dll
+T109	tool 5299 5302	DLL
+T110	tool 5452 5455	DLL
+T111	malware 5473 5479	FinSpy
+T112	tool 5489 5505	Winlogon process
+T114	malware 5654 5660	FinSpy
+T115	tool 5699 5701	C2
+T116	time 5785 5799	September 2017
+T117	vulnerability_cve 5733 5746	CVE-2017-8759
+T118	reference_word 5621 5625	them
+T119	tool 5533 5549	three C2 servers
+R51	coreference Arg1:T118 Arg2:T119	
+T120	security_team 5774 5781	FireEye
+T121	threatActor_name 5858 5868	BlackOasis
+T122	malware 5884 5890	FinSpy
+T68	location 5965 5979	Middle Eastern
+T69	reference_word 6034 6044	the region
+R55	coreference Arg1:T69 Arg2:T68	
+T123	target_crowd 5945 5952	figures
+T124	threatActor_name 5902 5912	BlackOasis
+T125	threatActor_name 2678 2688	BlackOasis
+T126	threatActor_name 1585 1595	BlackOasis
+T127	target_crowd 6071 6100	figures in the United Nations
+T128	target_crowd 6103 6122	opposition bloggers
+T129	target_crowd 6127 6136	activists
+T130	target_crowd 6143 6171	regional news correspondents
+T131	time 6181 6185	2016
+T132	location 6220 6226	Angola
+T133	threatActor_name 6439 6449	BlackOasis
+T134	person 6428 6435	Victims
+T135	location 6498 6504	Russia
+T136	location 6507 6511	Iraq
+T137	location 6514 6525	Afghanistan
+T138	location 6528 6535	Nigeria
+T139	location 6538 6543	Libya
+T140	location 6546 6552	Jordan
+T141	location 6555 6562	Tunisia
+T142	location 6565 6577	Saudi Arabia
+T143	location 6580 6584	Iran
+T144	location 6587 6598	Netherlands
+T145	location 6601 6608	Bahrain
+T146	location 6611 6625	United Kingdom
+T147	location 6630 6636	Angola
+R61	attack Arg1:T133 Arg2:T134	
+T148	company 6670 6681	HackingTeam
+T149	time 6685 6693	mid-2015
+T150	tool 6807 6816	FinFisher
+T151	tool 6889 6907	FinFisher software
+T152	vul_aliases 7079 7087	zero-day
+T153	vul_aliases 6923 6931	zero day
+T154	vulnerability_cve 7102 7116	CVE-2017-11292
+T155	tool 7181 7186	Flash
+T156	tool 7169 7176	killbit
+R64	part_of Arg1:T156 Arg2:T155	
+T157	reference_word 7225 7227	it
+T158	reference_word 7261 7263	it
+T160	tool 7491 7496	Flash
+T161	tool 7408 7415	killbit
+T162	person 7711 7720	customers
+R56	attack Arg1:T124 Arg2:T123	
+R57	part_of Arg1:T127 Arg2:T123	
+R58	part_of Arg1:T128 Arg2:T123	
+R59	part_of Arg1:T129 Arg2:T123	
+R60	part_of Arg1:T130 Arg2:T123	
+T163	sample_name 7873 7900	PDM : Exploit.Win32.Generic
+T164	sample_name 7903 7929	HEUR : Exploit.SWF.Generic
+T165	sample_name 7932 7963	HEUR : Exploit.MSOffice.Generic
+T166	sample_function 7816 7835	against this threat
+R66	goal Arg1:T163 Arg2:T166	
+R67	goal Arg1:T164 Arg2:T166	
+R68	goal Arg1:T165 Arg2:T166	
+T168	sub_activity 6660 6681	attack on HackingTeam
+R62	occur_time Arg1:T168 Arg2:T149	
+R63	use Arg1:T151 Arg2:T153	
+T169	person 7153 7156	one
+R82	use Arg1:T169 Arg2:T156	
+T170	sub_activity 7217 7247	disable it in any applications
+R83	goal Arg1:T169 Arg2:T170	
+R84	coreference Arg1:T157 Arg2:T154	
+R85	coreference Arg1:T158 Arg2:T154	
+T159	tool 7329 7342	Flash objects
+R86	part_of Arg1:T159 Arg2:T155	
+T171	reference_word 7513 7515	it
+R87	coreference Arg1:T171 Arg2:T159	
+T172	tool 7682 7694	whitelisting
+T173	tool 7659 7677	network monitoring
+T174	tool 7646 7656	anti-virus
+T175	tool 7628 7643	access policies
+T176	tool 7775 7793	Kaspersky products
+R88	goal Arg1:T176 Arg2:T166	
+T167	person 7766 7771	Users
+R89	use Arg1:T167 Arg2:T176	
+T177	sample_function 7735 7750	against threats
+R94	goal Arg1:T175 Arg2:T177	
+R90	goal Arg1:T174 Arg2:T177	
+R91	goal Arg1:T173 Arg2:T177	
+R92	goal Arg1:T172 Arg2:T177	
+T178	industry 5965 5988	Middle Eastern politics
+R93	part_of Arg1:T178 Arg2:T123	
+T179	industry 6082 6100	the United Nations
+T181	industry 6301 6304	oil
+T182	attack_goal 6307 6323	money laundering
+T183	person 6414 6425	think tanks
+T184	person 6386 6409	international activists
+T180	tool 6244 6258	lure documents
+T185	attack_goal 6336 6354	illicit activities
+R69	located Arg1:T134 Arg2:T135	
+R70	located Arg1:T134 Arg2:T136	
+R71	located Arg1:T134 Arg2:T137	
+R72	located Arg1:T134 Arg2:T138	
+R73	located Arg1:T134 Arg2:T139	
+R74	located Arg1:T134 Arg2:T140	
+R75	located Arg1:T134 Arg2:T141	
+R76	located Arg1:T134 Arg2:T142	
+R77	located Arg1:T134 Arg2:T143	
+R78	located Arg1:T134 Arg2:T144	
+R79	located Arg1:T134 Arg2:T145	
+R80	located Arg1:T134 Arg2:T146	
+R81	located Arg1:T134 Arg2:T147	
+T186	person 6188 6190	we
+R95	use Arg1:T186 Arg2:T180	
+R96	goal Arg1:T124 Arg2:T181	
+R97	goal Arg1:T124 Arg2:T182	
+R98	goal Arg1:T124 Arg2:T185	
+T187	reference_word 4410 4446	the newest version of FinSpy malware
+R99	coreference Arg1:T187 Arg2:T103	
+T188	industry 4491 4515	law enforcement agencies
+T189	location 4467 4480	nation states
+R100	use Arg1:T189 Arg2:T187	
+R101	use Arg1:T188 Arg2:T187	
+T190	sub_activity 4630 4649	analyze the malware
+R102	goal Arg1:T105 Arg2:T190	
+T191	tool 4564 4577	newer variant
+T192	tool 4706 4721	a custom packer
+R104	find Arg1:T105 Arg2:T191	
+T194	reference_word 4587 4589	it
+R106	coreference Arg1:T194 Arg2:T190	
+T193	sub_activity 4726 4757	virtual machine to execute code
+R103	part_of Arg1:T193 Arg2:T190	
+R105	part_of Arg1:T192 Arg2:T190	
+T195	tool 4777 4792	virtual machine
+R107	part_of Arg1:T104 Arg2:T195	
+T196	tool 4812 4824	aplib packer
+T197	reference_word 4933 4935	it
+R108	coreference Arg1:T197 Arg2:T106	
+T198	sample_function 5284 5335	use the famous DLL search order hijacking technique
+R50	use Arg1:T107 Arg2:T109	
+T199	location 5390 5396	memory
+R109	located Arg1:T108 Arg2:T199	
+T200	sample_function 5466 5505	inject FinSpy into the Winlogon process
+R110	goal Arg1:T110 Arg2:T200	
+T201	tool 5508 5519	The payload
+R111	use Arg1:T201 Arg2:T119	
+T202	sample_function 5562 5594	control and exfiltration of data
+R112	goal Arg1:T119 Arg2:T202	
+T203	tool 5654 5669	FinSpy payloads
+T204	reference_word 5693 5698	these
+R113	coreference Arg1:T204 Arg2:T118	
+T205	tool 3212 3224	the document
+T206	sample_name 3494 3543	com.adobe.tvsdk.mediacore.BufferControlParameters
+T207	tool 3407 3422	FinSpy exploits
+T208	sample_function 3348 3370	extracting the exploit
+R114	goal Arg1:T88 Arg2:T208	
+T209	tool 3377 3392	a custom packer
+R115	use Arg1:T88 Arg2:T209	
+R116	part_of Arg1:T209 Arg2:T207	
+T210	tool 3638 3644	memory
+T211	sample_function 3667 3699	execute a second stage shellcode
+T212	reference_word 3556 3567	the exploit
+T213	reference_word 3584 3586	it
+R117	coreference Arg1:T213 Arg2:T212	
+R118	use Arg1:T213 Arg2:T210	
+T214	sample_function 3592 3630	gain arbitrary read / write operations
+T215	reference_word 3661 3663	it
+R119	coreference Arg1:T215 Arg2:T213	
+R120	goal Arg1:T215 Arg2:T211	
+R121	goal Arg1:T213 Arg2:T214	
+T216	reference_word 3425 3436	The exploit
+R122	located Arg1:T216 Arg2:T206	
+T217	tool 3718 3727	shellcode
+R123	part_of Arg1:T94 Arg2:T217	
+T218	sample_function 3841 3878	avoid detection by antivirus products
+R124	goal Arg1:T94 Arg2:T218	
+T219	tool 3897 3907	NOP blocks
+T220	tool 3915 3926	flash files
+R125	part_of Arg1:T219 Arg2:T220	
+T221	tool 3961 3970	shellcode
+T222	sample_function 3977 4008	download second stage shellcode
+R126	goal Arg1:T221 Arg2:T222	
+R127	part_of Arg1:T221 Arg2:T91	
+R128	part_of Arg1:T97 Arg2:T93	
+T223	sample_function 4124 4150	Download the final payload
+R130	goal Arg1:T96 Arg2:T223	
+T224	sample_function 4200 4249	Download a lure document to display to the victim
+R49	goal Arg1:T96 Arg2:T224	
+T100	sample_function 4269 4288	Execute the payload
+R131	goal Arg1:T96 Arg2:T100	
+T225	sample_function 4293 4318	display the lure document
+R132	goal Arg1:T96 Arg2:T225	
+R129	occur_time Arg1:T78 Arg2:T73	
+R133	occur_time Arg1:T82 Arg2:T77	
+R134	occur_time Arg1:T81 Arg2:T76	
+R135	occur_time Arg1:T80 Arg2:T75	
+R136	occur_time Arg1:T79 Arg2:T74	
+T226	tool 650 667	the final payload
+R7	use Arg1:T8 Arg2:T226	
+T12	tool 672 708	the latest version of FinSpy malware
+R137	coreference Arg1:T12 Arg2:T226	
+T227	sub_activity 2117 2147	download and install a program
+R14	goal Arg1:T48 Arg2:T227	
+T113	encryption_algo 4367 4370	MD5
+R15	find Arg1:T26 Arg2:T28	
+R13	find Arg1:T24 Arg2:T21	
+R26	find Arg1:T120 Arg2:T117	
+R29	occur_time Arg1:T120 Arg2:T116	
+R12	occur_time Arg1:T126 Arg2:T30	
+T228	tool 2153 2172	a remote C&C server
+R52	part_of Arg1:T50 Arg2:T228	
+T229	location 4992 5043	C:\ProgramData\ManagerApp\AdapterTroubleshooter.exe
+T230	location 5046 5082	C:\ProgramData\ManagerApp\15b937.cab
+T231	location 5085 5122	C:\ProgramData\ManagerApp\install.cab
+T232	location 5125 5162	C:\ProgramData\ManagerApp\msvcr90.dll
+T233	location 5165 5199	C:\ProgramData\ManagerApp\d3d9.dll

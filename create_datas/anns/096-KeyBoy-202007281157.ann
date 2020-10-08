@@ -1,0 +1,397 @@
+T1	threatActor_name 4 10	KeyBoy
+T2	threatActor_name 276 282	KeyBoy
+T3	threatActor_name 350 356	KeyBoy
+T4	threatActor_name 5953 5959	KeyBoy
+T5	threatActor_name 6008 6014	KeyBoy
+T6	threatActor_name 8893 8899	KeyBoy
+T7	threatActor_name 9127 9133	KeyBoy
+T8	threatActor_name 9958 9964	KeyBoy
+T10	threatActor_name 11100 11106	KeyBoy
+T11	threatActor_name 11330 11336	KeyBoy
+T12	threatActor_name 11357 11363	KeyBoy
+T13	threatActor_name 11384 11390	KeyBoy
+T14	threatActor_name 11411 11417	KeyBoy
+T15	threatActor_name 11437 11443	KeyBoy
+T16	threatActor_name 11464 11470	KeyBoy
+T17	threatActor_name 11488 11494	KeyBoy
+T18	threatActor_name 11532 11538	KeyBoy
+T19	threatActor_name 11562 11568	KeyBoy
+T20	threatActor_name 11593 11599	KeyBoy
+T21	threatActor_name 11628 11634	KeyBoy
+T22	threatActor_name 11656 11662	KeyBoy
+T23	threatActor_name 11682 11688	KeyBoy
+T24	threatActor_name 11708 11714	KeyBoy
+T25	threatActor_name 11737 11743	KeyBoy
+T26	threatActor_name 11760 11766	KeyBoy
+T27	threatActor_name 11783 11789	KeyBoy
+T28	threatActor_name 11806 11812	KeyBoy
+T29	threatActor_name 11829 11835	KeyBoy
+T30	threatActor_name 11874 11880	KeyBoy
+T31	threatActor_name 11919 11925	KeyBoy
+T32	threatActor_name 11964 11970	KeyBoy
+T33	threatActor_name 12009 12015	KeyBoy
+T34	threatActor_name 12054 12060	KeyBoy
+T35	threatActor_name 12099 12105	KeyBoy
+T36	threatActor_name 12176 12182	KeyBoy
+T37	threatActor_name 12253 12259	KeyBoy
+T38	threatActor_name 12330 12336	KeyBoy
+T39	threatActor_name 12407 12413	KeyBoy
+T40	threatActor_name 12484 12490	KeyBoy
+T41	sha2 12494 12558	5d0aef905c9f8f74bb82eba89c11ec5b27d35e560b5cacf81087fca0775a8bfa
+T42	sha2 12417 12481	12dfb83a3866c93cd1c08652ed0a16a492777355985a973ef50973896795eb34
+T43	sha2 12340 12404	750f4a9ae44438bf053ffb344b959000ea624d1964306e4b3806250f4de94bc8
+T44	sha2 12263 12327	f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92
+T45	sha2 12186 12250	f15d2e9deaeb495fe8a62c05993b9f69bf07331910ed2483e1bab7d31d30231b
+T46	sha2 12109 12173	f21e3b927d269b0622d94c55db9d2808758379aa413c10971fa745cd6e0503c0
+T47	md5 12064 12096	a55b0c98ac3965067d0270a95e60e87e
+T48	md5 12019 12051	7aea7486e3a7a839f49ebc61f1680ba3
+T49	md5 11974 12006	1dbbdd99cb8d7089ab31efb5dcf09706
+T50	md5 11929 11961	64b2ac701a0d67da134e13b2efc46900
+T51	md5 11884 11916	581ddf0208038a90f8bc2cdc75833425
+T52	md5 11839 11871	52d11a0a5142f0b37aa2d288321ba099
+T53	sample_name 11816 11826	netis3.tsp
+T54	sample_name 11793 11803	netis9.tsp
+T55	sample_name 11770 11780	sensr3.dat
+T56	sample_name 11747 11757	sensr9.dat
+T57	email_evil 11718 11734	657603405@qq.com
+T58	domain_evil 11692 11705	mianliu.video
+T59	domain_evil 11666 11679	mianliu.party
+T60	domain_evil 11638 11653	kawayi.zzux.com
+T61	domain_evil 11603 11625	greentree.yourtrap.com
+T62	domain_evil 11572 11590	foxsay.mefound.com
+T63	domain_evil 11542 11559	dumblamb.zzux.com
+T64	url_evil 11498 11529	http://213.183.51.187/debug.dll
+T65	IP_evil 11474 11485	142.4.34.92
+T66	IP_evil 11447 11461	118.163.165.20
+T67	IP_evil 11421 11434	103.86.86.177
+T68	IP_evil 11394 11408	103.215.83.193
+T69	IP_evil 11367 11381	103.215.81.196
+T70	IP_evil 11340 11354	101.200.135.85
+R1	part_of Arg1:T70 Arg2:T11	
+R2	part_of Arg1:T69 Arg2:T12	
+R3	part_of Arg1:T68 Arg2:T13	
+R4	part_of Arg1:T67 Arg2:T14	
+R5	part_of Arg1:T66 Arg2:T15	
+R6	part_of Arg1:T65 Arg2:T16	
+R7	part_of Arg1:T64 Arg2:T17	
+R8	part_of Arg1:T63 Arg2:T18	
+R9	part_of Arg1:T62 Arg2:T19	
+R10	part_of Arg1:T61 Arg2:T20	
+R11	part_of Arg1:T60 Arg2:T21	
+R12	part_of Arg1:T59 Arg2:T22	
+R13	part_of Arg1:T58 Arg2:T23	
+R14	part_of Arg1:T57 Arg2:T24	
+R15	part_of Arg1:T56 Arg2:T25	
+R16	part_of Arg1:T55 Arg2:T26	
+R17	part_of Arg1:T54 Arg2:T27	
+R18	part_of Arg1:T53 Arg2:T28	
+R19	part_of Arg1:T52 Arg2:T29	
+R20	part_of Arg1:T51 Arg2:T30	
+R21	part_of Arg1:T50 Arg2:T31	
+R22	part_of Arg1:T49 Arg2:T32	
+R23	part_of Arg1:T48 Arg2:T33	
+R24	part_of Arg1:T47 Arg2:T34	
+R25	part_of Arg1:T46 Arg2:T35	
+R26	part_of Arg1:T45 Arg2:T36	
+R27	part_of Arg1:T44 Arg2:T37	
+R28	part_of Arg1:T43 Arg2:T38	
+R29	part_of Arg1:T42 Arg2:T39	
+R30	part_of Arg1:T41 Arg2:T40	
+T71	location 342 347	China
+R31	located Arg1:T2 Arg2:T71	
+T72	security_team 395 405	CitizenLab
+T73	time 409 413	2016
+R32	find Arg1:T72 Arg2:T3	
+T74	company 478 487	Microsoft
+T75	company 970 979	Microsoft
+T76	company 2014 2023	Microsoft
+T77	company 2035 2044	Microsoft
+T79	time 508 512	2017
+T80	sample_name 508 530	2017 Q4 Work Plan.docx
+T81	md5 548 580	292843976600e8ad2130224d70356bfc
+T82	time 606 616	2017-10-11
+R35	part_of Arg1:T81 Arg2:T80	
+T83	person 622 626	user
+T84	person 636 641	Admin
+R37	coreference Arg1:T84 Arg2:T83	
+R39	part_of Arg1:T80 Arg2:T190	
+T86	tool 670 680	VirusTotal
+T87	sub_activity 658 680	uploaded to VirusTotal
+T88	person 744 748	user
+T89	location 752 764	South Africa
+R40	located Arg1:T88 Arg2:T89	
+R41	launch Arg1:T88 Arg2:T87	
+T90	security_team 10144 10154	CitizenLab
+T91	security_team 1218 1227	SensePost
+T92	security_team 901 910	SensePost
+T93	tool 1302 1312	PowerShell
+T94	reference_word 779 796	the Word document
+T95	person 929 937	attacker
+T96	reference_word 857 859	it
+R43	coreference Arg1:T96 Arg2:T94	
+T98	tool 970 993	Microsoft Word document
+T99	protocol 1035 1038	DDE
+T100	protocol 1011 1032	Dynamic Data Exchange
+R45	coreference Arg1:T99 Arg2:T100	
+R48	use Arg1:T95 Arg2:T98	
+T102	protocol 1052 1055	DDE
+T103	tool 1161 1165	Word
+T104	tool 1169 1174	Excel
+T105	sub_activity 1085 1104	sending of messages
+T106	sub_activity 1113 1125	applications
+R50	launch Arg1:T106 Arg2:T105	
+T107	sub_activity 1251 1293	fetching or downloading of remote payloads
+T108	reference_word 1230 1234	this
+R51	coreference Arg1:T108 Arg2:T102	
+T109	tool 1372 1377	7-zip
+T110	sample_name 1456 1468	document.xml
+T111	reference_word 1489 1497	this XML
+R53	coreference Arg1:T111 Arg2:T110	
+T112	tool 1565 1575	PowerShell
+T113	sample_name 1632 1644	rundll32.exe
+T114	function 1663 1666	HOK
+T115	sample_name 1693 1702	debug.dll
+T116	md5 1769 1801	64b2ac701a0d67da134e13b2efc46900
+T117	sha1 1816 1856	1bb516d70591a5a0eb55ee71f9f38597f3640b14
+T118	sha2 1873 1937	f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92
+T119	sample_name 1983 2000	InstallClient.dll
+T120	tool 2035 2051	Microsoft Linker
+T121	time 2088 2107	2017-07-06 08:50:10
+R54	part_of Arg1:T116 Arg2:T115	
+R55	part_of Arg1:T117 Arg2:T115	
+R56	part_of Arg1:T118 Arg2:T115	
+R57	coreference Arg1:T119 Arg2:T115	
+R58	release_time Arg1:T115 Arg2:T121	
+T122	sub_activity 1502 1516	remote payload
+T123	sub_activity 1548 1558	downloaded
+T124	sub_activity 1578 1615	moved to the user ’s temporary folder
+T125	sub_activity 1622 1625	run
+T126	reference_word 2110 2125	This DLL serves
+T127	sample_function 2131 2161	dropper for the actual payload
+R59	goal Arg1:T126 Arg2:T127	
+T128	person 2246 2251	actor
+T129	sample_name 2199 2212	InstallClient
+R60	use Arg1:T128 Arg2:T129	
+T130	encryption_algo 2267 2271	Yara
+T131	md5 2338 2370	1dbbdd99cb8d7089ab31efb5dcf09706
+T132	md5 2371 2403	5708e0320879de6f9ac928046b1e4f4e
+T133	md5 2404 2436	a6903d93f9d6f328bcfe3e196fd8c78b
+T134	md5 2437 2469	cf6f333f99ee6342d6735ac2f6a37c1e
+T135	md5 2470 2502	ac9b8c82651eafff9a3bbe7c69d69447
+T136	md5 2503 2535	d6ddecdb823de235dd650c0f7a2f3d8f
+T137	md5 2555 2587	d6ddecdb823de235dd650c0f7a2f3d8f
+T138	sample_name 2605 2622	InstallClient.dll
+R61	coreference Arg1:T126 Arg2:T119	
+T139	reference_word 2649 2651	it
+R62	coreference Arg1:T139 Arg2:T138	
+R63	use Arg1:T137 Arg2:T138	
+T140	function 2837 2842	Insys
+T141	sample_function 2865 2878	simple checks
+R64	goal Arg1:T140 Arg2:T141	
+T142	reference_word 2800 2807	The DLL
+R65	coreference Arg1:T142 Arg2:T139	
+R66	launch Arg1:T142 Arg2:T140	
+T143	function 2991 2995	SSSS
+R67	launch Arg1:T142 Arg2:T143	
+T144	function 3107 3111	SSSS
+T145	sub_activity 3137 3155	Prepare target DLL
+T146	sample_name 3171 3182	rasauto.dll
+T147	sub_activity 3145 3155	target DLL
+R68	part_of Arg1:T146 Arg2:T147	
+T148	sub_activity 3227 3243	Stop the service
+T149	function 3286 3293	takeown
+T150	function 3298 3304	icacls
+T151	sub_activity 3317 3338	gain full permissions
+R69	goal Arg1:T149 Arg2:T151	
+R70	goal Arg1:T150 Arg2:T151	
+T152	OS_name 3377 3384	Windows
+T153	tool 3377 3400	Windows File Protection
+T154	OS_name 3469 3476	Windows
+T155	sample_function 3418 3444	prevents software or users
+R71	goal Arg1:T153 Arg2:T155	
+T156	sub_activity 3369 3400	Disable Windows File Protection
+T157	sub_activity 3486 3513	Suppress any error messages
+T158	OS_name 3519 3526	Windows
+T159	sample_name 3576 3587	rasauto.dll
+T160	sample_name 3610 3623	rasauto32.dll
+T161	sub_activity 3554 3573	Copy the target DLL
+T162	sub_activity 3627 3649	Replace the target DLL
+T163	sub_activity 3659 3673	malware ’s DLL
+T164	sub_activity 3685 3697	time-stomped
+T165	sub_activity 3710 3725	evade detection
+R72	goal Arg1:T164 Arg2:T165	
+T166	sample_name 3767 3774	net.exe
+T167	sample_name 3779 3787	net1.exe
+T168	sub_activity 3729 3760	Start the now malicious service
+T169	sample_name 3897 3901	.tsp
+T170	sub_activity 3796 3828	Create configuration and keylogs
+T171	sub_activity 3921 3936	create a folder
+T172	sub_activity 3974 3989	screen captures
+R73	goal Arg1:T171 Arg2:T172	
+T173	sample_name 4138 4150	DebugLog.TXT
+T174	sub_activity 4041 4071	output debug or error messages
+T175	sub_activity 3996 4003	malware
+R74	launch Arg1:T175 Arg2:T174	
+T176	sub_activity 4284 4301	simple batch file
+R75	use Arg1:T175 Arg2:T176	
+T177	sub_activity 4232 4252	original dropper DLL
+T178	sub_activity 4232 4273	original dropper DLL will then be deleted
+R76	goal Arg1:T176 Arg2:T178	
+T179	reference_word 4382 4393	the malware
+R77	coreference Arg1:T179 Arg2:T175	
+T180	reference_word 4698 4709	the malware
+R78	coreference Arg1:T180 Arg2:T179	
+T181	OS_name 4724 4731	Windows
+T182	tool 4724 4747	Windows File Protection
+T183	sub_activity 4715 4747	disables Windows File Protection
+R79	launch Arg1:T180 Arg2:T183	
+T184	OS_name 5169 5176	Windows
+T185	tool 5204 5211	RasAuto
+T186	tool 5224 5261	Remote Access Auto Connection Manager
+R80	coreference Arg1:T186 Arg2:T185	
+T187	encryption_algo 1758 1761	md5
+T188	encryption_algo 1804 1808	sha1
+T189	encryption_algo 1859 1865	sha256
+R33	first_found_time Arg1:T3 Arg2:T73	
+T190	tool 478 501	Microsoft Word document
+R81	part_of Arg1:T190 Arg2:T74	
+T191	tool 818 824	macros
+R82	use Arg1:T108 Arg2:T93	
+T192	tool 1534 1537	DLL
+R34	release_time Arg1:T80 Arg2:T82	
+R36	coreference Arg1:T94 Arg2:T80	
+R38	launch Arg1:T83 Arg2:T80	
+R42	part_of Arg1:T98 Arg2:T75	
+R46	launch Arg1:T93 Arg2:T107	
+R44	use Arg1:T95 Arg2:T100	
+T78	md5 7657 7689	a55b0c98ac3965067d0270a95e60e87e
+T85	md5 7742 7774	2e04cdf98aead9dd9a5210d7e601cca7
+T97	md5 7830 7862	d6ddecdb823de235dd650c0f7a2f3d8f
+T101	md5 7918 7950	1dbbdd99cb8d7089ab31efb5dcf09706
+T193	md5 7974 8006	581ddf0208038a90f8bc2cdc75833425
+T194	sample_name 7693 7703	ikeext.dll
+T195	sample_name 7778 7789	rasauto.dll
+T196	sample_name 7866 7877	rasauto.dll
+T197	sample_name 7954 7963	sinet.dll
+T198	sample_name 8010 8019	sinet.dll
+T199	tool 7878 7915	Remote Access Auto Connection Manager
+T200	tool 7790 7827	Remote Access Auto Connection Manager
+T201	tool 7704 7739	IKE and AuthIP IPsec Keying Modules
+T202	protocol 7704 7707	IKE
+R47	part_of Arg1:T194 Arg2:T78	
+T203	sample_name 8030 8039	Sinet.dll
+T204	location 8090 8095	China
+T205	tool 8054 8061	SPlayer
+R49	located Arg1:T205 Arg2:T204	
+T206	md5 8098 8130	7d39cef34bdc751e9cf9d46d2f0bef95
+T207	md5 8176 8208	29e44cfa7bcde079e9c7afb23ca8ef86
+T208	tool 8386 8399	Visual Studio
+T209	tool 8424 8426	VS
+R52	coreference Arg1:T209 Arg2:T208	
+T210	reference_word 8356 8366	The latter
+R83	coreference Arg1:T210 Arg2:T207	
+T211	email_evil 9497 9513	657603405@qq.com
+T212	tool 9723 9725	C2
+T213	tool 9345 9352	Maltego
+T214	person 9266 9268	We
+T215	sub_activity 9274 9312	mapped out the complete infrastructure
+R84	launch Arg1:T214 Arg2:T215	
+R85	use Arg1:T214 Arg2:T213	
+T216	domain_evil 9756 9776	Weblogic727.xxuz.com
+T217	domain_evil 9809 9830	Weblogic1709.zzux.com
+T218	time 9779 9789	2017-07-27
+T219	time 9833 9843	2017-09-17
+R86	occur_time Arg1:T217 Arg2:T219	
+R87	occur_time Arg1:T216 Arg2:T218	
+T220	time 10170 10174	2016
+T221	tool 10144 10164	CitizenLab ’s report
+R88	part_of Arg1:T221 Arg2:T90	
+R89	first_found_time Arg1:T221 Arg2:T220	
+T222	tool 10234 10238	DLLs
+T223	tool 10332 10336	DLLs
+T224	reference_word 11173 11184	the threats
+R90	coreference Arg1:T224 Arg2:T10	
+T9	industry 10573 10594	Western organisations
+T225	attack_goal 10608 10636	corporate espionage purposes
+T226	tool 3670 3673	DLL
+T227	tool 3646 3649	DLL
+T228	tool 3570 3573	DLL
+T229	tool 4571 4574	DLL
+T230	tool 4848 4851	DLL
+T231	sub_activity 4837 4873	legitimate DLL was actually replaced
+T232	person 4808 4829	system administrators
+T233	tool 5169 5185	Windows registry
+R91	part_of Arg1:T185 Arg2:T233	
+T234	sample_function 5288 5329	connecting dial-up modems to the internet
+R92	goal Arg1:T185 Arg2:T234	
+T235	sample_name 5391 5402	Dllhost.exe
+T236	tool 5475 5477	C2
+T237	sub_activity 5427 5436	call back
+T238	sub_activity 5440 5485	phone home to a hardcoded range of C2 servers
+R93	launch Arg1:T235 Arg2:T237	
+R94	launch Arg1:T235 Arg2:T238	
+T239	tool 5563 5571	internet
+T240	tool 5575 5578	WAN
+T241	sample_name 5668 5679	dllhost.exe
+T242	tool 5517 5524	Dllhost
+T243	sub_activity 5644 5679	Attaching a debugger to dllhost.exe
+T244	tool 5883 5886	DLL
+T245	sample_function 5682 5727	reveals the keylogger files and configuration
+T246	sample_function 5730 5747	replaced DLL file
+R95	goal Arg1:T243 Arg2:T245	
+R96	goal Arg1:T243 Arg2:T246	
+T247	sample_function 6083 6117	Screen grabbing/taking screenshots
+T248	protocol 6173 6175	IP
+T249	sample_function 6121 6155	Determine public or WAN IP address
+T250	sample_function 6230 6264	Gather extended system information
+T251	sample_function 6344 6374	A ‘ file browser ’ or explorer
+T252	sample_function 6378 6406	Shutdown and reboot commands
+T253	sample_function 6445 6473	Launching interactive shells
+T254	sample_function 6519 6552	Download and upload functionality
+T255	sample_function 6559 6616	Usage of custom SSL libraries for masquerading C2 traffic
+T256	tool 6606 6608	C2
+T257	protocol 6575 6578	SSL
+T258	person 6854 6866	threat actor
+T259	protocol 6879 6882	SSL
+T260	tool 6872 6892	custom SSL libraries
+R98	use Arg1:T258 Arg2:T260	
+T261	tool 6915 6917	C2
+T262	sub_activity 6896 6917	communicate to the C2
+R99	goal Arg1:T260 Arg2:T262	
+T263	tool 7103 7106	DER
+T264	domain_evil 7144 7154	jessma.org
+T265	email_evil 7180 7195	ldcsaa@21cn.com
+T266	tool 7293 7302	HP-Socket
+T267	tool 7318 7359	High Performance TCP/UDP Socket Component
+R100	coreference Arg1:T267 Arg2:T266	
+T268	encryption_algo 7524 7528	Yara
+T269	tool 7550 7553	DLL
+R101	part_of Arg1:T195 Arg2:T85	
+R102	part_of Arg1:T196 Arg2:T97	
+R103	part_of Arg1:T197 Arg2:T101	
+R104	part_of Arg1:T198 Arg2:T193	
+T270	tool 7651 7654	DLL
+R105	goal Arg1:T78 Arg2:T201	
+R106	goal Arg1:T85 Arg2:T200	
+R107	goal Arg1:T196 Arg2:T199	
+T271	md5 8555 8587	29e44cfa7bcde079e9c7afb23ca8ef86
+T272	md5 8991 9023	7aea7486e3a7a839f49ebc61f1680ba3
+T273	encryption_algo 8500 8504	Yara
+T274	reference_word 8480 8482	it
+R108	coreference Arg1:T274 Arg2:T210	
+T275	sub_activity 8487 8509	hit the same Yara rule
+T276	protocol 8613 8616	SSL
+R97	launch Arg1:T274 Arg2:T275	
+T277	tool 8613 8628	SSL certificate
+T278	tool 8674 8692	custom SSL library
+T279	tool 8702 8709	WolfSSL
+R109	coreference Arg1:T279 Arg2:T278	
+T280	protocol 8769 8776	TLS/SSL
+T281	sample_function 8781 8810	embedded devices to the cloud
+R110	goal Arg1:T279 Arg2:T281	
+T282	encryption_algo 8978 8982	Yara
+T283	tool 9054 9064	VirusTotal
+T284	time 9068 9078	2017-08-25
+R111	release_time Arg1:T272 Arg2:T284	
+T285	reference_word 9081 9092	This sample
+T286	security_team 9212 9222	CitizenLab

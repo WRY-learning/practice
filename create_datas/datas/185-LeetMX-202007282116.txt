@@ -1,0 +1,80 @@
+Introducing：leetMX.		others others
+Release_Time :  2017-11-2 .		others others others others
+Report_URL :  https://www.clearskysec.com/leetmx/ .		others others others others others others
+leetMX is a widespread cyber-attack campaign originating from Mexico and focused on targets in Mexico , El Salvador , and other countries in Latin America , such as Guatemala , Argentina and Costa Rica .		threatActor_name others others others others others others others location others others others others others location others location location others others others others others others others others others others location others location others location location others
+It has been operating since November 2016 at least .		reference_word others others others others time time others others others
+We are uncertain of its objectives but estimate it is  criminally motivated .		others others others others others others others others others others others others others
+leetMX infrastructure includes 27 hosts and domains used for malware delivery or for command and control .		threatActor_name others others tool tool tool tool others others others others others others others others others others
+Hundreds of malware samples have been used , most are Remote Access Trojans and keyloggers .		others others tool tool others others others others others others sub_activity sub_activity sub_activity sub_activity sub_activity others
+Interestingly , the attackers camouflage one of their delivery domains by redirecting visitors to El Universal , a major Mexican newspaper .		others others others others others others others others others others others others others others others others others others others others others others
+Below are samples of malicious Office documents delivered to targets .		others others others others tool tool others others others others others
+These documents contain macros that run PowerShell , which downloads and run various payloads from domains and hosts controlled by the attackers .		others others others others others others others others others sample_function sample_function sample_function sample_function sample_function others others others others others others others others others
+Ministerio de Hacienda El Salvador – Declaraciones Pendientes folio 34598.docm Ministerio de Hacienda SV Folio de Aclaracion SVMH2054983.docm Buro de Credito – Reporte Especial Folio de Operacion 438346982.doc SATMX-Folio 46565.xls Servicio de Administracion Tributaria SAT Declaraciones Pendientes Folio de Consulta 45817089.xls .		sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name others
+Other documents used as malware droppers are :  buro de credito reporte de movimientos recientes folio de operacion 3590543.doc buro de credito reporte de movimientos acreditados folio 45665.doc  ministerio de hacienda el salvador consulta de estado de cuenta moroso folio  buro de credito reporte de nuevos cargos folio 273534.doc  Buro de Credito Afilicion de Cargo Automatico Registrado BMX46948964.doc  Buro de Credito Folio de Aprobacion de Nuevos Creditos 593783.xls  Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc  Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc .		others tool others others sample_function sample_function others others sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name others
+Below is an example of a malicious PowerShell code in one of the documents :  The domains and hosts below are all part of the malicious infrastructure , and are used for malware delivery or for command and control .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others
+c0pywins.is-not-certified.com casillas.hicam.net casillas45.hopto.org casillasmx.chickenkiller.com cloudrsaservicesdriveoffic.com cloudsfullversionooficcekey.com dryversdocumentofficescloud.com dryversdocumentsandcustom.com dryversdocumentsandcustomer.com dryversdocumentsandcustoms.com dryversdocumentsandcustomsoft.com dryversdocumentsandfullbmxro.com dryversdocumentsandfullburomxcloud.com dryversdocumentsandfullcloud.com dryversdocumentsandfullcustomsoft.com dryversdocumentsatsettingswins.com dryversdocumentsettingswins.com dryversdocumentsolutionscloud.com k4l1m3r4.publicvm.com mycloudtoolzshop.net opendrivecouldrsafinder.com rsafinderfirewall.com rsapoints.ssl443.org rsaupdatr.jumpingcrab.com rsause.ntdll.net sslwin.moneyhome.biz wins10up.16-b.it .		url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil url_evil others url_evil url_evil others
+Multiple parts of the malicious infrastructure indicate that the attackers are based in Mexico , as depicted in the Maltego graph below .		others others others others others others others others others person others others others location others others others others others others others others others
+( However , the reader should remember that these are only technical indicators and could all be forged ) .		others others others others others others others others others others others others others others others others others others others others
+Dynamic DNS hosts used for command and control were allocated IPs by Mexican internet services providers .		others others others others others others others others others others others others industry industry industry others others
+For example , c0pywins.is-not-certified.com has been allocated addresses by AS8151 Uninet S.A. de C.V. , MX , as can be seen in PassiveTotal :  Malware delivery domain rsafinderfirewall.com redirects to El Universal , a major Mexican newspaper , when visited without the file-path of the malware ( such as rsafinderfirewall.com/Es3tC0deR3name.exe ) :  Physical address in Mexico in multiple domains Whois data :  Registrant Name : hector jesus herrera duron .		others others others others others others others others others others others others others others others location others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others person person person person others
+Registrant Organization : motogplus .		others others others threatActor_aliases others
+Registrant Street : c 29 no 300 .		others others others location location location location others
+Registrant City : merida .		others others others location others
+Registrant State/Province : Chiapas .		others others others location others
+Registrant Postal Code : 97000 .		others others others others others others
+Registrant Country : MX .		others others others others others
+Registrant Phone : +52.9991062881 .		others others others others others
+Attacker IP address in Mexico .		others others others others others others
+In one targeting at least , the attackers used a URL shortening services that publicly displays the IP address of anyone who clicked the shorted URL .		others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The first click – likely the attacker testing the link before spreading it to victims – came from 189.215.52.168 , which belongs to Mexican ISP Cablemas Telecomunicaciones :  In this incident mostly Mexicans were targeted , as can be seen in the table below :  Country URL   clicks .		others others others others others others others others others others others others others others others others others others IP others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Mexico 343 .		others others others
+United States 79 .		others others others others
+El Salvador  67. other 53 .		others others others others others others
+The attackers often use leetspeak alphabet in malware filenames .		others others others others others others others others others others
+Below is a list of malware filenames converted from leet to plain English ( via Universal Leet ( L337 , L33T , 1337 ) Converter ) :  Original filename Conversion from Leet .		others others others others others others others others others others others others others others others others others others others others others others others others others others others sample_name sample_name sample_name sample_name sample_name others
+Ad0v3upd4t3s2o17.exe Adoveupdates2017.exe .		sample_name sample_name others
+0ff1ceval1dKey001[1].exe officevalidKeyooi[i].exe .		sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name sample_name others
+AFDsajgeoi.exe AFDsajgeoi.exe .		sample_name sample_name others
+Ad0v31ns5t411.exe Adoveinsstaii.exe .		sample_name sample_name others
+Off1c3764.exe Officetga.exe .		others others others
+ad0v3upd4t3s2o16[1].exe adoveupdates2016[i].exe .		others others others others others others others others others others others
+sqlwriter.exe sqlwriter.exe .		others others others
+Off1cc3k3ysV4l1d.exe OfficceKeysValid.exe .		others others others
+CudaUtil.exe CudaUtil.exe .		others others others
+Javaupdate2017205.exe Javaupdate201705.exe .		others others others
+USB Flash Security.exe USB Flash Security.exe .		others others others others others others others
+J4v4S3tups00.exe JavaSetupsoo.exe .		others others others
+ad0veupdates2o17.exe adoveupdates2017.exe .		others others others
+0ff1c3v4l1dkey2017.exe officevalidkey2017.exe .		others others others
+Ad0v31n5t411.exe Adoveinstaii.exe .		others others others
+Off1c3v4l1dK3y2017s[1].exe OfficevalidKey2017s[i].exe .		others others others others others others others others others others others
+Javatmp2539891.exe Javatmp2539891.exe .		others others others
+AVGPDTER465.exe AVGPDTER465.exe .		others others others
+K3y2017s.exe Key2017.exe .		others others others
+hp.exe hp.exe .		others others others
+Off1c3v4l1dK3y2017s.exe OfficevalidKey2017.exe .		others others others
+Off1cc3k3yV4l1ds.exe OfficcekeyValids.exe .		others others others
+javaupdates2017.exe javaupdates2017.exe .		others others others
+Serial IO.exe Serial IO.exe .		others others others others others
+0ff1ceval1dKey001.exe officevalidKey001.exe .		others others others
+J4v4upd4t352017s.exe Javaupdates2017s.exe .		others others others
+Jav4upd4t3r4ds.exe JavaUpdaterads.exe .		others others others
+Ad0vs365489.exe Adovs365489.exe .		others others others
+Off1cc3s4dd0ns.exe OfficcesAddons.exe .		others others others
+MSNUNIN.EXE MSNUNIN.EXE .		others others others
+gbrgeidf.exe gbrgeidf.exe .		others others others
+oct04.exe.exe octoa.exe.exe .		others others others
+Off1c3TMP2018.exe OfficeTMP2018.exe .		others others others
+IconToolkit.exe IconToolkit.exe .		others others others
+Ad0v365489.exe Adovegsa89.exe .		others others others
+Es3tC0deR3name.exe EsetCodeRename.exe .		others others others
+J4v4S3tup00.exe JavaSetupoo.exe .		others others others
+J4v4465632.exe Java465632.exe .		others others others
+j4v4updat3s2016.exe javaupdates2016.exe .		others others others
+AVGF1rr3w4ll.exe AVGFirrewall.exe .		others others others
+J4v4mxfullv3rsion.exe Javamxfullversion.exe .		sample_name sample_name others
+0fficeV4lids00.exe officeValidsoo.exe .		sample_name sample_name others
+More then 550 samples used in this campaign are available on VirusTotal .		others others others others others others others others others others others others others
+Most of them are Xtreme RAT variants ( a short analysis by Sophos is available – Troj/Xrat-R , a PCAP is available in pcapanalysis.com ) and iSpy Keylogger .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Indicators of compromise are available for subscribers of the ClearSky threat intelligence service in MISP event number 249 .		others others others others others others others others others others others others others others others others others others others
+Indicators are also available in the following CSV file : LeetMX-indicators.csv and on PassiveTotal .		others others others others others others others others others others others others others others others

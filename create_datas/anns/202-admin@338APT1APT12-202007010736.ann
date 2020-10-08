@@ -1,0 +1,51 @@
+T1	threatActor_name 83 92	admin@338
+T4	target_crowd 253 262	financial
+T5	malware 330 334	RATs
+T6	malware 343 352	PoisonIvy
+T7	malware 371 391	non-public backdoors
+R4	part_of Arg1:T6 Arg2:T5	
+T9	threatActor_name 394 398	APT1
+T11	threatActor_name 447 451	APT1
+T13	location 510 612	2nd Bureau of the People ’s Liberation Army ( PLA ) General Staff Department ’s ( GSD ) 3rd Department
+T16	reference_word 131 133	It
+R11	coreference Arg1:T16 Arg2:T1	
+R13	located Arg1:T11 Arg2:T13	
+T14	threatActor_name 693 698	APT12
+T18	threatActor_name 746 751	APT12
+T20	location 798 803	China
+R15	located Arg1:T18 Arg2:T20	
+T21	reference_word 806 815	The group
+R16	coreference Arg1:T21 Arg2:T18	
+T23	target_crowd 879 892	media outlets
+T10	threatActor_aliases 400 412	Comment Crew
+T17	threatActor_aliases 415 428	Comment Group
+T25	threatActor_aliases 431 444	Comment Panda
+T26	threatActor_aliases 700 706	IXESHE
+T27	threatActor_aliases 709 716	DynCalc
+T28	threatActor_aliases 719 733	Numbered Panda
+T29	threatActor_aliases 736 743	DNSCALC
+R8	coreference Arg1:T10 Arg2:T9	
+R12	coreference Arg1:T17 Arg2:T9	
+R9	coreference Arg1:T25 Arg2:T9	
+R20	coreference Arg1:T26 Arg2:T14	
+R21	coreference Arg1:T27 Arg2:T14	
+R22	coreference Arg1:T28 Arg2:T14	
+R23	coreference Arg1:T29 Arg2:T14	
+R1	use Arg1:T1 Arg2:T5	
+R2	use Arg1:T1 Arg2:T7	
+T2	target_crowd 265 273	economic
+T3	target_crowd 280 292	trade policy
+R3	attack Arg1:T16 Arg2:T4	
+R5	attack Arg1:T16 Arg2:T2	
+R6	attack Arg1:T16 Arg2:T3	
+T8	target_crowd 895 914	high-tech companies
+T12	target_crowd 921 941	multiple governments
+R7	attack Arg1:T21 Arg2:T23	
+R14	attack Arg1:T21 Arg2:T8	
+R17	attack Arg1:T21 Arg2:T12	
+T15	reference_word 680 690	Unit 61398
+R10	coreference Arg1:T15 Arg2:T11	
+T19	location 98 103	China
+R18	located Arg1:T1 Arg2:T19	
+T22	industry 670 674	MUCD
+R19	located Arg1:T22 Arg2:T13	

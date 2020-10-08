@@ -1,0 +1,68 @@
+Project TajMahal – a sophisticated new APT framework .
+Release_Time :  2019-04-10 
+Report_URL :  https://securelist.com/project-tajmahal/90240/
+ ‘TajMahal ’ is a previously unknown and technically sophisticated APT framework discovered by Kaspersky Lab in the autumn of 2018 .
+This full-blown spying framework consists of two packages named ‘ Tokyo ’ and ‘ Yokohama ’ .
+It includes backdoors , loaders , orchestrators , C2 communicators , audio recorders , keyloggers , screen and webcam grabbers , documents and cryptography key stealers , and even its own file indexer for the victim ’s machine .
+We discovered up to 80 malicious modules stored in its encrypted Virtual File System , one of the highest numbers of plugins we ’ve ever seen for an APT toolset .
+Just to highlight its capabilities , TajMahal is able to steal data from a CD burnt by a victim as well as from the printer queue .
+It can also request to steal a particular file from a previously seen USB stick ; next time the USB is connected to the computer , the file will be stolen .
+TajMahal has been developed and used for at least the past five years .
+The first known ‘ legit ’ sample timestamp is from August 2013 , and the last one is from April 2018 .
+The first confirmed date when TajMahal samples were seen on a victim ’s machine is August 2014 .
+We have discovered two different types of TajMahal packages , self-named Tokyo and Yokohama .
+The targeted systems found by Kaspersky Lab were infected with both packages .
+This suggests that Tokyo was used as first stage infection , deploying the fully-functional Yokohama package on interesting victims , and then left in for backup purposes .
+The packages share the same code base , we identified the following interesting features : 
+Capable of stealing documents sent to the printer queue .
+Data gathered for victim recon includes the backup list for Apple mobile devices .
+Takes screenshots when recording VoiceIP app audio .
+Steals written CD images .
+Capable of stealing files previously seen on removable drives once they are available again .
+Steals Internet Explorer , Netscape Navigator , FireFox and RealNetworks cookies .
+If deleted from Frontend file or related registry values , it will reappear after reboot with a new name and startup type .
+So far we have detected a single victim based on our telemetry – a diplomatic entity from a country in Central Asia .
+The TajMahal framework is an intriguing discovery that ’s of great interest , not least for its high level of technical sophistication , which is beyond any doubt .
+The huge amount of plugins that implement a number of features is something we have never before seen in any other APT activity .
+For example , it has its own indexer , emergency C2s , is capable of stealing specific files from external drives when they become available again , etc .
+The question is , why go to all that trouble for just one victim?
+A likely hypothesis is that there are other victims we haven’t found yet .
+This theory is reinforced by the fact that we couldn’t see how one of the files in the VFS was used by the malware , opening the door to the possibility of additional versions of the malware that have yet to be detected .
+Kaspersky Lab products detect the TajMahal APT samples as HEUR : Trojan.Multi.Chaperone.gen
+TajMahal : 104.200.30.125 .
+TajMahal : 50.56.240.153 .
+TajMahal : rahasn.webhop.org .
+TajMahal : rahasn.akamake.net .
+TajMahal : rahasn.homewealth.biz .
+TajMahal : 22d142f11cf2a30ea4953e1fffb0fa7e .
+TajMahal : 2317d65da4639f4246de200650a70753 .
+TajMahal : 27612cb03c89158225ca201721ea1aad .
+TajMahal : 412956675fbc3f8c51f438c1abc100eb .
+TajMahal : 490a140093b5870a47edc29f33542fd2 .
+TajMahal : 51a7068640af42c3a7c1b94f1c11ab9d .
+TajMahal : 533340c54bd25256873b3dca34d7f74e .
+TajMahal : 684eca6b62d69ce899a3ec3bb04d0a5b .
+TajMahal : 69a19abf5ba56ee07cdd3425b07cf8bf .
+TajMahal : 6cfd131fef548fcd60fbcdb59317df8e .
+TajMahal : 72dc98449b45a7f1ccdef27d51e31e91 .
+TajMahal : 7c733607a0932b1b9a9e27cd6ab55fe0 .
+TajMahal : 7d5265e814843b24fcb3787768129040 .
+TajMahal : 80c37e062aa4c94697f287352acf2e9d .
+TajMahal : 815f1f8a7bc1e6f94cb5c416e381a110 .
+TajMahal : a43d3b31575846fa4c3992b4143a06da .
+TajMahal : 08e82dc7bae524884b7dc2134942aadb .
+TajMahal : 7bcd736a2394fc49f3e27b3987cce640 .
+The following table provides the full list of files stored in the VFS with a short description describing what the plugins do : 
+cs64.dll C2 communication and command processing.WatchPoints document stealer .
+li64.dll LocalInfo.Collects a large amount of information , titled “ TAJ MAHAL ” .
+ad64.dll AudioRecorder.Microphone , Voice IP applications .
+le64.dll Open source-based LAME mp3 encoder ( “ Mar 27 2014 ” ) used by AudioRecorder plugins ( adXX.dll ) .
+dd.m MP3 file is sent by AudioRecorder ( adXX.dll ) when cache is cleared .
+me64.dll AudioRecorder for Windows Metro applications .
+ma32.dll AudioRecorder for Windows COM.Hooks IAudioClient , IAudioRenderClient , IMMDevice .
+ex64.dll Orchestrator.Update/install/uninstall , selects target processes and loads plugins .
+fe64.dll Template of “ Yokohama ” Frontend module ; is used for reinstalling .
+pd64.dll Provides API to access configuration settings , working files , egress queue .
+sg64.dll Library for managing egress queue ( files and messages prepared to send to CC ) .
+pd64.dll Provides API to access configuration settings , working files , egress queue .
+il32.dll IM-Stealer.Steals conversation content from chat windows of instant messaging applications .

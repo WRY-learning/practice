@@ -1,0 +1,31 @@
+Russian Bank Offices Hit with Broad Phishing Wave .
+Release_Time :  2017-08-18 .
+Report_URL :  https://community.rsa.com/community/products/netwitness/blog/2017/08/18/russian-bank-offices-hit-with-broad-phishing-wave .
+By far most of the bank-related phishing campaigns described in security advisories and reports consist of bank customers being targeted for their online credentials .
+Much less common is a phishing campaign targeting the banks themselves .
+Perhaps fraudsters know that there are a lot more bank customers than there are banks , and generally banks have a more hardened security posture than the average bank ’s customer .
+In this threat advisory , we describe a Russian-language phishing campaign active during the second week of August 2017 , targeting not the usual banking customers , but the Russian banks themselves .
+And in an unusual reversal of typical bank phishing social engineering tactics , the phishing emails purport to be from the bank ’s customers .
+Consider the following phish delivered to the email address displayed on the bank ’s website .
+A screenshot of another phishing email obtained by RSA FirstWatch , targeting “ Russia bank #2 . ” 
+While this email is part of the same campaign , note that the body text , subject lines , file name , and @mail.com sender email is different from that targeting Russia bank #1 , suggesting at least some manual actor modifications to the phishing email construction .
+RSA FirstWatch identified 23 such attachments in this campaign , all using what appeared to be the exact same EPS exploit .
+The disgruntled banking customer was consistent throughout .
+As of 10 August 2017 , RSA FirstWatch has high confidence that multiple individuals at many Russian banks were targeted with these malicious attachments , and believe this campaign was subsequently brought to the attention of the Central Bank of Russia ’s FinCERT by one or more of the banks being targeted .
+On 17 August 2017 , the day we were finishing up this analysis , a new sample was discovered being deployed , with a different C2 node and slightly different communication .
+FireEye discovered a malicious docx exploiting a zero day vulnerability in Microsoft ’s Encapsulated Postscript ( EPS ) filter , in the summer of 2015 .
+This EPS exploit was assigned CVE-2015-2545 .
+In March 2017 , FireEye observed both nation state and financially motivated actors using EPS zero day exploits assigned as CVE-2017-0261 and CVE-2017-0262 , prior to Microsoft disabling EPS rendering in its Office products with an update in April 2017 .
+This app.xml file contains the same URL to the California Courier website ( www.thecaliforniacourier.com ) , where the text was copied from “ Trump ’s Attack on Syria :  Wrong for so Many Reasons ”  as described by ESET in their exploit analysis .
+Does this suggest that these campaigns and actors are in any way complicit / related ?
+No .
+On the contrary , national interests seem to imply that those particular espionage-focused actors ( i.e . , from the “ Trump ”  campaign ) would almost certainly NOT be involved in broadly exploiting Russian banks a few months later .
+That being said , an alternative hypothesis is that these bank-targeting actors purposely purloined the older espionage related docx files to introduce uncertainty and / or mis-attribution , or even to send a message to defenders or researchers .
+As we 'll see shortly , the attackers also interestingly signed ( commented ) their malware with lyrics from Slipknot 's Snuff .
+With initial AV coverage of these two dozen or so attachments in the single digits out of more than 50 AV vendors , RSA Engineering ’s Kevin Douglas jumped at the chance to flex his deobfuscation skills , and here steps us through our exploit assessment .
+Of particular in this last snippet is the block with the “ forall ”  which is the memory corruption routine unique to the known exploit code for CVE-2017-0262 , and as described in ESETs analysis on the subject .
+With bit-for-bit copy of CVE-2017-0262 exploit code , we have reasonable confidence that the exploit we are dealing with is in fact CVE-2017-0262 .
+The malware performs calls back to 137.74.224.142 , at five second intervals .
+We believe that the actors would not invoke remote control unless they had ruled out nosy researchers .
+Based on Google searches identifying the C2 IP address ( 137.74.224.142 ) as an established Minecraft ( multiplayer game ) server , we suspect it is possible that the host has been compromised by the perpetrators and is being used without the permission of the owner .
+Other previous URL resolutions may be associated with prior customers of the virtual private server .

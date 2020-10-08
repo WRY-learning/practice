@@ -1,0 +1,300 @@
+T1	threatActor_name 0 10	DarkPulsar
+T2	time 97 110	In March 2017
+T3	threatActor_name 117 130	ShadowBrokers
+T4	tool 195 207	DanderSpritz
+T5	tool 212 221	FuzzBunch
+R1	launch Arg1:T3 Arg2:T4	
+R2	launch Arg1:T3 Arg2:T5	
+R3	occur_time Arg1:T3 Arg2:T2	
+T6	tool 224 236	DanderSpritz
+T7	reference_word 346 348	It
+R4	coreference Arg1:T7 Arg2:T6	
+T8	program_language 363 367	Java
+T9	malware 422 429	botnets
+R5	use Arg1:T7 Arg2:T8	
+R6	launch Arg1:T7 Arg2:T9	
+T10	reference_word 501 503	It
+R7	coreference Arg1:T10 Arg2:T7	
+T11	malware 526 535	backdoors
+T12	tool 556 565	FuzzBunch
+T13	person 577 584	victims
+R8	use Arg1:T10 Arg2:T11	
+R9	attack Arg1:T10 Arg2:T13	
+T14	tool 587 596	Fuzzbunch
+T15	reference_word 692 694	It
+R10	coreference Arg1:T15 Arg2:T14	
+T16	tool 721 728	plugins
+T17	sub_activity 741 756	analyze victims
+T18	sub_activity 759 782	exploit vulnerabilities
+T19	sub_activity 785 799	schedule tasks
+R11	use Arg1:T15 Arg2:T16	
+R12	part_of Arg1:T17 Arg2:T16	
+R13	part_of Arg1:T18 Arg2:T16	
+R14	part_of Arg1:T19 Arg2:T16	
+T20	sample_name 879 902	%pluginName%-version.fb
+T21	tool 857 866	FuzzBunch
+T22	sample_name 1014 1038	%pluginName%-version.exe
+T23	sample_name 1121 1145	%pluginName%-version.xml
+T24	tool 1079 1088	FuZZbuNch
+T25	protocol 979 982	XML
+R15	part_of Arg1:T20 Arg2:T21	
+R16	part_of Arg1:T22 Arg2:T21	
+R17	part_of Arg1:T23 Arg2:T21	
+T26	reference_word 949 951	It
+R18	coreference Arg1:T26 Arg2:T21	
+T27	tool 1333 1342	FuzzBunch
+T28	threatActor_name 1666 1675	DarkPulsa
+T29	malware 1747 1755	backdoor
+T30	malware 1764 1777	sipauth32.tsp
+R19	coreference Arg1:T30 Arg2:T29	
+R20	use Arg1:T28 Arg2:T29	
+T31	tool 1507 1516	Fuzzbunch
+T32	tool 1541 1554	ImplantConfig
+R21	use Arg1:T31 Arg2:T32	
+T33	tool 465 475	Metasploit
+T34	tool 1885 1897	RawShellcode
+T35	tool 1878 1882	Burn
+T36	tool 1900 1915	EDFStagedUpload
+T37	tool 1918 1933	DisableSecurity
+T38	tool 1936 1950	EnableSecurity
+T39	tool 1953 1967	UpgradeImplant
+T40	tool 1970 1978	PingPong
+T41	tool 1981 1985	Burn
+T42	tool 1988 2000	RawShellcode
+T43	tool 2003 2017	UpgradeImplant
+T44	tool 2024 2032	PingPong
+T45	malware 2112 2120	backdoor
+T46	threatActor_name 2325 2335	DarkPulsar
+T47	malware 2339 2347	backdoor
+T48	malware 2362 2370	backdoor
+R22	use Arg1:T44 Arg2:T45	
+R23	use Arg1:T43 Arg2:T45	
+R24	use Arg1:T42 Arg2:T45	
+R25	use Arg1:T41 Arg2:T45	
+T49	tool 2502 2505	C&C
+T50	malware 2591 2599	backdoor
+R26	part_of Arg1:T47 Arg2:T46	
+T51	threatActor_name 2684 2694	DarkPulsar
+T52	malware 2695 2703	backdoor
+R27	part_of Arg1:T52 Arg2:T51	
+T53	reference_word 2371 2377	itself
+R28	coreference Arg1:T53 Arg2:T48	
+T54	person 2783 2790	victims
+T55	location 2802 2808	Russia
+T56	location 2811 2815	Iran
+T57	location 2820 2825	Egypt
+R29	located Arg1:T54 Arg2:T55	
+R30	located Arg1:T54 Arg2:T56	
+R31	located Arg1:T54 Arg2:T57	
+T58	OS_name 2848 2855	Windows
+T59	time 2856 2860	2003
+T60	time 2861 2865	2008
+R32	release_time Arg1:T58 Arg2:T59	
+R33	release_time Arg1:T58 Arg2:T60	
+T61	malware 3147 3155	backdoor
+T62	threatActor_name 2966 2975	DarkPulsa
+T63	reference_word 1840 1842	It
+R34	coreference Arg1:T63 Arg2:T28	
+T64	reference_word 1425 1427	it
+R35	coreference Arg1:T64 Arg2:T21	
+T65	industry 2899 2913	nuclear energy
+T66	industry 2916 2934	telecommunications
+T67	industry 2937 2939	IT
+T68	industry 2942 2951	aerospace
+T69	industry 2956 2959	R&D
+T70	function 3204 3208	TSPI
+T71	function 3211 3247	Telephony Service Provider Interface
+R36	coreference Arg1:T71 Arg2:T70	
+T72	malware 3277 3285	backdoor
+T73	function 3372 3376	SSPI
+T74	function 3379 3414	Security Support Provider Interface
+R37	coreference Arg1:T74 Arg2:T73	
+T75	function 3500 3504	SSPI
+T76	function 3509 3513	TSPI
+T77	threatActor_name 3579 3588	DarkPulsa
+R38	use Arg1:T77 Arg2:T75	
+R39	use Arg1:T77 Arg2:T76	
+T78	malware 3787 3795	backdoor
+T79	function 3819 3845	Secur32.AddSecurityPackage
+T80	sample_name 3936 3945	lsass.exe
+T81	threatActor_name 3954 3964	DarkPulsar
+T82	tool 3968 3974	SSP/AP
+R40	use Arg1:T78 Arg2:T79	
+R41	use Arg1:T81 Arg2:T82	
+R42	use Arg1:T81 Arg2:T80	
+T83	function 4009 4028	SpLsaModeInitialize
+T84	threatActor_name 4037 4047	DarkPulsar
+T85	malware 4066 4074	backdoor
+R43	use Arg1:T84 Arg2:T83	
+R44	use Arg1:T84 Arg2:T85	
+T86	function 4089 4107	AddSecurityPackage
+T87	sample_name 4136 4145	lsass.exe
+R45	use Arg1:T87 Arg2:T86	
+T88	reference_word 4148 4150	It
+R46	coreference Arg1:T88 Arg2:T84	
+T89	string 4181 4247	HKLM\Software\Microsoft\Windows\CurrentVersion\Telephony\Providers
+T90	tool 4289 4292	API
+T91	tool 4295 4302	TapiSrv
+T92	tool 4328 4360	Remote Access Connection Manager
+T93	tool 4363 4369	RasMan
+R47	coreference Arg1:T91 Arg2:T90	
+R48	coreference Arg1:T93 Arg2:T92	
+T94	tool 4479 4486	TapiSrv
+T95	function 4493 4522	TSPI_lineNegotiateTSPIVersion
+T96	function 4542 4560	AddSecurityPackage
+T97	sample_name 4590 4599	lsass.exe
+R49	use Arg1:T94 Arg2:T95	
+T98	threatActor_name 4602 4612	DarkPulsar
+R50	part_of Arg1:T96 Arg2:T95	
+T99	function 4664 4686	SpAcceptLsaModeContext
+R51	use Arg1:T98 Arg2:T99	
+T100	threatActor_name 4833 4843	Darkpulsar
+T101	sample_name 4813 4822	lsass.exe
+T102	protocol 4934 4938	NTLM
+T103	sample_name 4913 4923	Msv1_0.dll
+T104	sample_name 4950 4962	Kerberos.dll
+T105	sample_name 4993 5005	Schannel.dll
+T106	protocol 5016 5023	TLS/SSL
+T107	sample_name 5036 5047	Wdigest.dll
+T108	sample_name 5080 5090	Lsasrv.dll
+R52	use Arg1:T100 Arg2:T101	
+T109	threatActor_name 5134 5144	Darkpulsar
+T110	protocol 4973 4981	Kerberos
+R54	part_of Arg1:T103 Arg2:T102	
+R53	part_of Arg1:T104 Arg2:T110	
+R55	part_of Arg1:T105 Arg2:T106	
+T111	protocol 5058 5064	Digest
+R56	part_of Arg1:T107 Arg2:T111	
+T112	protocol 5100 5109	Negotiate
+R57	part_of Arg1:T108 Arg2:T112	
+T113	threatActor_name 5484 5494	DarkPulsar
+T114	reference_word 5285 5287	it
+R58	coreference Arg1:T114 Arg2:T109	
+T115	reference_word 5335 5337	it
+R59	coreference Arg1:T115 Arg2:T114	
+T116	protocol 5749 5752	SMB
+T117	threatActor_name 5761 5771	Darkpulsar
+T118	function 5775 5790	DisableSecurity
+T119	malware 5809 5817	backdoor
+T120	function 5873 5895	SpAcceptLsaModeContext
+R60	use Arg1:T117 Arg2:T118	
+R61	use Arg1:T117 Arg2:T119	
+R62	use Arg1:T117 Arg2:T120	
+T121	threatActor_name 6016 6026	Darkpulsar
+T122	sample_name 6016 6036	Darkpulsar-1.1.0.exe
+T123	sub_activity 6102 6126	one command – one launch
+R63	use Arg1:T122 Arg2:T123	
+T124	threatActor_name 6209 6219	Darkpulsar
+T125	sample_name 6209 6231	Darkpulsar-1.1.0.9.xml
+R64	part_of Arg1:T124 Arg2:T125	
+R65	part_of Arg1:T121 Arg2:T122	
+T126	protocol 6355 6358	SMB
+T127	protocol 6361 6364	NBT
+T128	protocol 6367 6370	SSL
+T129	protocol 6373 6376	RDP
+T130	tool 6452 6459	RSA key
+T131	tool 6483 6490	AES key
+R66	part_of Arg1:T126 Arg2:T125	
+R67	part_of Arg1:T127 Arg2:T125	
+R68	part_of Arg1:T128 Arg2:T125	
+R69	part_of Arg1:T129 Arg2:T125	
+R70	attack Arg1:T125 Arg2:T130	
+R71	use Arg1:T125 Arg2:T131	
+T132	threatActor_name 6493 6503	Darkpulsar
+T133	tool 6493 6509	Darkpulsar-1.1.0
+R72	part_of Arg1:T132 Arg2:T133	
+T134	reference_word 6584 6596	This utility
+R73	coreference Arg1:T134 Arg2:T133	
+T135	tool 6616 6625	Fuzzbunch
+R74	part_of Arg1:T134 Arg2:T135	
+T136	function 6713 6728	DisableSecurity
+T137	tool 6740 6749	Fuzzbunch
+R75	part_of Arg1:T136 Arg2:T137	
+T138	function 6804 6819	DisableSecurity
+T139	tool 6952 6964	DanderSpritz
+T140	tool 7033 7042	FuZZbuNch
+T141	function 7148 7163	DisableSecurity
+T142	function 7168 7182	EnableSecurity
+T143	threatActor_name 7187 7197	DarkPulsar
+T144	tool 7204 7216	DanderSpritz
+T145	tool 7263 7274	PeedleCheap
+R76	part_of Arg1:T142 Arg2:T143	
+R77	part_of Arg1:T141 Arg2:T143	
+T146	malware 7245 7254	backdoors
+R78	use Arg1:T144 Arg2:T146	
+R79	use Arg1:T144 Arg2:T145	
+T147	tool 7329 7340	PeddleCheap
+T148	tool 7356 7368	DanderSpritz
+R80	part_of Arg1:T147 Arg2:T148	
+T149	tool 7481 7493	DanderSpritz
+T150	threatActor_name 7552 7562	DarkPulsar
+T151	tool 7566 7581	EDFStagedUpload
+T152	tool 7666 7679	PCDllLauncher
+T153	tool 7682 7691	Fuzzbunch
+R81	part_of Arg1:T152 Arg2:T153	
+R82	use Arg1:T150 Arg2:T151	
+T154	tool 7716 7727	PeddleCheap
+R83	use Arg1:T152 Arg2:T154	
+T155	tool 7761 7773	DanderSpritz
+T156	tool 7873 7897	PeddleCheap DLL Launcher
+T157	tool 7854 7867	PCDllLauncher
+R84	coreference Arg1:T156 Arg2:T157	
+T158	tool 7915 7927	DanderSpritz
+T159	tool 7957 7968	PeddleCheap
+T160	tool 7973 7982	FuZZbuNch
+T161	threatActor_name 8000 8010	DarkPulsar
+T162	tool 8015 8028	PCDllLauncher
+T163	tool 8058 8067	FuZZbuNch
+T164	tool 8082 8097	EDFStagedUpload
+T165	threatActor_name 8108 8118	DarkPulsar
+R85	part_of Arg1:T160 Arg2:T161	
+R86	use Arg1:T159 Arg2:T160	
+R87	use Arg1:T159 Arg2:T162	
+R88	use Arg1:T159 Arg2:T163	
+R89	use Arg1:T159 Arg2:T164	
+R90	launch Arg1:T159 Arg2:T165	
+R91	use Arg1:T158 Arg2:T159	
+T166	tool 8124 8136	DanderSpritz
+T167	tool 8266 8278	DanderSpritz
+T168	tool 8603 8615	DanderSpritz
+T169	tool 8892 8904	DanderSpritz
+T170	tool 9716 9728	DanderSpritz
+T171	tool 8456 8465	FuZZbuNch
+T172	tool 8589 8598	FuzzBunch
+T173	tool 8799 8808	FuzzBunch
+T174	threatActor_name 9189 9199	DarkPulsar
+T175	tool 9522 9537	EDFStagedUpload
+T176	tool 9737 9748	PeddleCheap
+T177	tool 8415 8428	Pcdlllauncher
+T178	tool 8151 8158	pc_prep
+T179	tool 8161 8184	PeedelCheap Preparation
+R92	coreference Arg1:T179 Arg2:T178	
+R93	use Arg1:T166 Arg2:T178	
+T180	tool 8293 8299	pc_old
+T181	tool 8332 8371	pc_listen -reuse -nolisten -key Default
+R94	coreference Arg1:T181 Arg2:T180	
+R95	use Arg1:T167 Arg2:T180	
+T182	tool 8438 8451	Pcdlllauncher
+R96	launch Arg1:T171 Arg2:T182	
+T183	tool 8542 8549	pc_prep
+R97	use Arg1:T182 Arg2:T183	
+T184	function 8557 8572	ImplantFilename
+R98	use Arg1:T182 Arg2:T184	
+T185	reference_word 8728 8732	them
+R99	coreference Arg1:T185 Arg2:T168	
+R100	coreference Arg1:T185 Arg2:T172	
+T186	sub_activity 8856 8874	attacking a victim
+T187	sub_activity 8837 8851	reconnaissance
+R101	attack Arg1:T173 Arg2:T187	
+R102	attack Arg1:T173 Arg2:T186	
+T188	threatActor_name 8990 9000	DarkPulsar
+T189	malware 9001 9009	backdoor
+R103	part_of Arg1:T189 Arg2:T188	
+T190	sample_name 9699 9708	lsass.exe
+R104	use Arg1:T170 Arg2:T176	
+T191	tool 9768 9781	PcDllLauncher
+R105	use Arg1:T170 Arg2:T191	
+T192	sample_name 9961 9970	lsass.exe
+T193	sha1 9990 10022	96f10cfa6ba24c9ecd08aa6d37993fe4
+T194	string 10037 10072	%SystemRoot%\System32\sipauth32.tsp
+T195	string 10086 10152	HKLM\Software\Microsoft\Windows\CurrentVersion\Telephony\Providers

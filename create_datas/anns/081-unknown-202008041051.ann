@@ -1,0 +1,208 @@
+T1	time 252 265	May 29 , 2020
+T2	security_team 268 275	Unit 42
+T3	person 276 287	researchers
+R1	part_of Arg1:T3 Arg2:T2	
+T4	vulnerability_cve 374 387	CVE-2019-9081
+T5	malware 299 346	a new variant of a hybrid cryptojacking malware
+R2	find Arg1:T2 Arg2:T5	
+R3	release_time Arg1:T2 Arg2:T1	
+T6	malware 474 481	Lucifer
+T7	time 646 660	June 10 , 2020
+T8	time 707 721	June 11 , 2020
+T9	person 667 675	attacker
+T10	sub_activity 724 768	spreading an upgraded version of the malware
+R4	occur_time Arg1:T10 Arg2:T8	
+R5	launch Arg1:T9 Arg2:T10	
+R6	coreference Arg1:T5 Arg2:T6	
+T11	time 817 858	Thursday , June 11 , 2020 10:39:47 PM UTC
+T12	reference_word 948 956	campaign
+R7	coreference Arg1:T12 Arg2:T10	
+T13	malware 976 983	Lucifer
+T14	company 873 891	Palo Alto Networks
+T15	tool 892 916	Next-Generation Firewall
+T16	protocol 1136 1138	C2
+T17	malware 1289 1300	EternalBlue
+T18	malware 1303 1317	EternalRomance
+T19	malware 1324 1336	DoublePulsar
+T20	reference_word 1271 1273	it
+R8	coreference Arg1:T20 Arg2:T13	
+T21	vulnerability_cve 1451 1464	CVE-2014-6287
+T22	vulnerability_cve 1467 1483	CVE-2018-1000861
+T23	vulnerability_cve 1486 1500	CVE-2017-10271
+T24	vulnerability_cve 1534 1548	CVE-2018-20062
+T25	vul_aliases 1503 1531	ThinkPHP RCE vulnerabilities
+R9	coreference Arg1:T25 Arg2:T24	
+T26	vulnerability_cve 1553 1566	CVE-2018-7600
+T27	vulnerability_cve 1569 1582	CVE-2017-9791
+T28	vulnerability_cve 1585 1598	CVE-2019-9081
+T29	vulnerability_cve 1625 1638	CVE-2017-0144
+T30	vulnerability_cve 1641 1654	CVE-2017-0145
+T31	vulnerability_cve 1661 1674	CVE-2017-8464
+T32	vul_aliases 1601 1622	PHPStudy Backdoor RCE
+T33	person 1858 1866	attacker
+T34	reference_word 1683 1698	vulnerabilities
+T35	tool 2044 2060	certutil utility
+T36	person 2021 2029	attacker
+T37	sub_activity 2116 2175	the patches for these vulnerabilities are readily available
+T38	reference_word 2248 2255	malware
+R10	coreference Arg1:T38 Arg2:T13	
+T39	company 2616 2634	Palo Alto Networks
+T40	tool 2635 2660	Next-Generation Firewalls
+T41	person 2877 2891	malware author
+T42	malware 2912 2922	Satan DDoS
+T43	malware 2952 2968	Satan Ransomware
+T44	reference_word 3046 3053	malware
+T45	malware 3165 3172	Lucifer
+T46	malware 3205 3212	Lucifer
+T47	malware 3335 3342	Lucifer
+T48	tool 3469 3508	a UPX-packed x86 version of XMRig 5.5.0
+T49	tool 3545 3584	a UPX-packed x64 version of XMRig 5.5.0
+T50	IP_evil 15408 15422	180.126.161.27
+T51	IP_evil 15448 15461	210.112.41.71
+T52	domain_evil 15483 15502	pool.supportxmr.com
+T53	domain_evil 15529 15552	gulf.moneroocean.stream
+T54	IP_evil 15566 15581	122.112.179.189
+T55	threatActor_name 3650 3664	Equation Group
+T56	malware 3682 3693	EternalBlue
+T57	malware 3698 3712	EternalRomance
+T58	malware 3742 3754	DoublePulsar
+T59	protocol 4039 4041	C2
+T60	reference_word 4012 4019	malware
+R11	coreference Arg1:T60 Arg2:T47	
+T61	protocol 4126 4128	C2
+T62	protocol 4178 4180	C2
+T63	IP_evil 4195 4210	122.112.179.189
+T64	sample_name 4246 4290	\Sessions\1\BaseNamedObjects\122.112.179.189
+T65	reference_word 4297 4304	malware
+R12	coreference Arg1:T65 Arg2:T47	
+T66	tool 4571 4579	schtasks
+T67	reference_word 5033 5040	malware
+R13	coreference Arg1:T67 Arg2:T47	
+T68	reference_word 5101 5108	malware
+R14	coreference Arg1:T68 Arg2:T47	
+T69	protocol 5484 5486	C2
+T70	protocol 5557 5560	TCP
+T71	reference_word 5640 5647	malware
+R15	attack Arg1:T71 Arg2:T47	
+T72	reference_word 5731 5738	malware
+R16	coreference Arg1:T72 Arg2:T47	
+T73	threatActor_aliases 6245 6259	Equation Group
+T74	vul_aliases 6330 6349	SMB vulnerabilities
+T75	reference_word 6426 6433	malware
+R17	coreference Arg1:T75 Arg2:T72	
+T76	protocol 6509 6512	TCP
+T77	reference_word 6721 6728	malware
+R18	coreference Arg1:T77 Arg2:T75	
+T78	reference_word 6930 6937	malware
+R19	coreference Arg1:T78 Arg2:T77	
+T79	protocol 6966 6969	TCP
+T80	reference_word 6987 6989	it
+R20	coreference Arg1:T80 Arg2:T78	
+T81	sub_activity 7022 7072	using its embedded list of usernames and passwords
+T82	reference_word 7103 7110	malware
+R21	coreference Arg1:T82 Arg2:T80	
+T83	tool 7123 7128	shell
+T84	sub_activity 7141 7195	download and execute a replica of itself on the victim
+T85	reference_word 7339 7346	malware
+R22	coreference Arg1:T85 Arg2:T82	
+T86	vul_aliases 7436 7447	EternalBlue
+T87	vul_aliases 7450 7464	EternalRomance
+T88	vul_aliases 7471 7483	DoublePulsar
+T89	tool 7591 7599	certutil
+T90	vulnerability_cve 8006 8019	CVE-2014-6287
+T91	vulnerability_cve 8057 8073	CVE-2018-1000861
+T92	vulnerability_cve 8113 8127	CVE-2017-10271
+T93	reference_word 7675 7682	malware
+R23	coreference Arg1:T93 Arg2:T85	
+T94	reference_word 7825 7832	malware
+R24	coreference Arg1:T94 Arg2:T93	
+T95	vulnerability_cve 8172 8226	ThinkPHP remote code execution ( RCE ) vulnerabilities
+T96	vulnerability_cve 8229 8242	CVE-2018-7600
+T97	vulnerability_cve 8245 8258	CVE-2017-9791
+T98	vulnerability_cve 8261 8274	CVE-2019-9081
+T99	vul_aliases 8277 8324	PHPStudy Backdoor remote code execution ( RCE )
+T100	vul_aliases 8362 8374	ThinkPHP RCE
+T101	tool 8686 8694	certutil
+T102	protocol 8803 8805	C2
+T103	reference_word 8707 8714	malware
+R25	coreference Arg1:T103 Arg2:T94	
+T104	reference_word 8757 8764	malware
+R26	coreference Arg1:T104 Arg2:T103	
+T105	protocol 8893 8896	TCP
+T106	protocol 8917 8919	C2
+T107	reference_word 8867 8874	malware
+R27	coreference Arg1:T107 Arg2:T104	
+T108	reference_word 8947 8954	malware
+R28	coreference Arg1:T108 Arg2:T107	
+T109	protocol 8993 8995	C2
+T110	protocol 9056 9058	C2
+T111	reference_word 9268 9275	malware
+R29	coreference Arg1:T111 Arg2:T108	
+T112	IP 9538 9551	192.168.56.52
+T113	protocol 9671 9673	C2
+T114	protocol 9913 9925	TCP/UDP/HTTP
+T115	protocol 10006 10008	C2
+T116	protocol 10127 10129	C2
+T117	malware 11129 11136	Lucifer
+T118	protocol 11263 11265	C2
+T119	reference_word 11500 11507	malware
+T120	reference_word 11359 11368	version 2
+R30	coreference Arg1:T119 Arg2:T120	
+T121	malware 11116 11136	Version 2 of Lucifer
+R31	coreference Arg1:T120 Arg2:T121	
+T122	function 12455 12475	OutputDebugStringA()
+T123	protocol 12561 12563	C2
+T124	protocol 12601 12603	C2
+T125	vulnerability_cve 12707 12720	CVE-2017-8464
+T126	malware 12932 12952	version 1 of Lucifer
+T127	string 13062 13126	4c729b343ed3186dffdf80a8e3adfea7c2d56a7a06081333030fb4635e09d540
+T128	string 13237 13301	5214f356f2e8640230e93a95633cd73945c38027b23e76bb5e617c71949f8994
+T129	string 13412 13476	ac530d542a755ecce6a656ea6309717ec222c34d7e34c61792f3b350a8a29301
+T130	string 13587 13651	8edbcd63def33827bfd63bffce4a15ba83e88908f9ac9962f10431f571ba07a8
+T131	string 3779 3843	8edbcd63def33827bfd63bffce4a15ba83e88908f9ac9962f10431f571ba07a8
+T132	string 3851 3915	Ac530d542a755ecce6a656ea6309717ec222c34d7e34c61792f3b350a8a29301
+T133	string 3924 3988	5214f356f2e8640230e93a95633cd73945c38027b23e76bb5e617c71949f8994
+T134	reference_word 13669 13678	version 1
+T135	malware 13681 13701	version 2 of Lucifer
+T136	vulnerability_cve 13712 13725	CVE-2017-8464
+T137	vulnerability_cve 13755 13771	CVE-2018-1000861
+T138	vulnerability_cve 13774 13788	CVE-2017-10271
+T139	vulnerability_cve 13795 13808	CVE-2017-9791
+T140	reference_word 13815 13822	malware
+R32	coreference Arg1:T140 Arg2:T135	
+T141	reference_word 11373 11382	version 1
+T142	tool 13851 13854	IPC
+T143	tool 13857 13860	WMI
+T144	tool 13863 13866	SMB
+T145	protocol 13873 13876	FTP
+T146	tool 13927 13932	MSSQL
+T147	protocol 13935 13938	RPC
+T148	tool 13945 13959	network shares
+R33	use Arg1:T140 Arg2:T142	
+R34	use Arg1:T140 Arg2:T143	
+R35	use Arg1:T140 Arg2:T144	
+R36	use Arg1:T140 Arg2:T145	
+R37	use Arg1:T140 Arg2:T146	
+R38	use Arg1:T140 Arg2:T147	
+R39	use Arg1:T140 Arg2:T148	
+T149	sample_name 14014 14043	C:\\ProgramData\\Svchocpu.exe
+T150	sample_name 14055 14088	C:\\ProgramData\\spreadXfghij.exe
+T151	protocol 9821 9823	C2
+T152	protocol 6525 6528	RPC
+T153	protocol 6541 6546	MSSQL
+T154	protocol 14122 14124	C2
+T155	domain_evil 14268 14282	www.yzzswt.com
+T156	protocol 14450 14452	C2
+T157	protocol 14481 14483	C2
+T158	malware 14424 14431	Lucifer
+T159	malware 14514 14521	Lucifer
+T160	company 14988 15006	Palo Alto Networks
+T161	tool 15221 15229	WildFire
+T162	tool 15090 15115	Next-Generation Firewalls
+T163	protocol 15175 15177	C2
+T164	malware 15339 15346	Lucifer
+T165	malware 15353 15357	IoCs
+R40	coreference Arg1:T165 Arg2:T164	
+T166	reference_word 15360 15376	Lucifer Version1
+R41	coreference Arg1:T166 Arg2:T165	
+T167	tool 2539 2549	XMR wallet

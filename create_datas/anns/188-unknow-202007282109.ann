@@ -1,0 +1,219 @@
+T1	malware 43 49	TRITON
+T2	security_team 256 264	Mandiant
+T3	attack_goal 388 424	manipulate industrial safety systems
+T4	malware 687 693	TRITON
+R1	goal Arg1:T4 Arg2:T3	
+R2	find Arg1:T2 Arg2:T4	
+T5	malware 941 947	TRITON
+T6	industry 1038 1064	industrial control systems
+R4	attack Arg1:T5 Arg2:T6	
+T8	malware 1083 1090	Stuxnet
+T9	location 1114 1118	Iran
+T10	time 1122 1126	2010
+R5	occur_time Arg1:T8 Arg2:T10	
+R6	attack Arg1:T8 Arg2:T9	
+T11	threatActor_name 1176 1184	Sandworm
+T12	location 1198 1205	Ukraine
+T13	time 1209 1213	2016
+R7	occur_time Arg1:T11 Arg2:T13	
+R8	attack Arg1:T11 Arg2:T12	
+T14	malware 1215 1221	TRITON
+T15	malware 1376 1382	TRITON
+T16	sample_name 1383 1393	trilog.exe
+T17	sample_name 1435 1446	library.zip
+T18	sample_function 1394 1434	Main executable leveraging libraries.zip
+T19	sample_function 1447 1517	Custom communication library for interaction with Triconex controllers
+R9	part_of Arg1:T16 Arg2:T15	
+R10	part_of Arg1:T18 Arg2:T16	
+R11	part_of Arg1:T19 Arg2:T17	
+T20	malware 1604 1610	TRITON
+T21	sub_activity 1631 1660	reprogram the SIS controllers
+R12	part_of Arg1:T21 Arg2:T20	
+T22	malware 2366 2372	TRITON
+T23	attack_goal 2385 2410	modify application memory
+R13	goal Arg1:T22 Arg2:T23	
+T24	malware 2550 2556	TRITON
+T25	security_team 2684 2691	FireEye
+T26	malware 3341 3347	TRITON
+T27	sub_activity 3362 3394	gaining access to the SIS system
+T28	malware 3533 3539	TRITON
+T29	protocol 3594 3604	TriStation
+R14	use Arg1:T28 Arg2:T29	
+T30	malware 5767 5773	TRITON
+T31	attack_goal 6079 6109	disrupt an operational process
+T32	attack_goal 7832 7860	cause a physical consequence
+T33	sample_function 7998 8020	manipulate the process
+T34	sample_function 8024 8042	shutdown the plant
+T35	protocol 8429 8439	TriStation
+T36	threatActor_name 9203 9216	Sandworm Team
+T37	industry 9235 9246	Western ICS
+R15	attack Arg1:T36 Arg2:T37	
+T38	malware 9306 9312	TRITON
+T39	sample_function 9387 9410	read and write programs
+T40	sample_function 9412 9447	read and write individual functions
+T41	sample_function 9452 9489	query the state of the SIS controller
+R16	part_of Arg1:T39 Arg2:T38	
+R17	part_of Arg1:T40 Arg2:T38	
+R18	part_of Arg1:T41 Arg2:T38	
+T42	sample_name 9554 9564	trilog.exe
+T43	malware 9615 9621	TRITON
+R19	part_of Arg1:T42 Arg2:T43	
+T44	sample_function 9624 9661	extensive reconnaissance capabilities
+R20	part_of Arg1:T44 Arg2:T43	
+T45	malware 9668 9674	TRITON
+T46	sample_function 9711 9752	communicate with Triconex SIS controllers
+R21	part_of Arg1:T46 Arg2:T45	
+T47	sample_function 9759 9781	send specific commands
+T48	sample_function 9790 9821	halt or read its memory content
+T49	sample_function 9827 9850	remotely reprogram them
+R22	part_of Arg1:T47 Arg2:T45	
+R23	part_of Arg1:T48 Arg2:T45	
+R24	part_of Arg1:T49 Arg2:T45	
+T50	malware 9889 9895	TRITON
+T51	security_team 9903 9911	Mandiant
+T52	company 9986 9994	Triconex
+T53	counter_measure 10759 10785	Leverage hardware features
+T54	company 10939 10947	Triconex
+T55	counter_measure 11053 11091	Implement change management procedures
+T56	counter_measure 11156 11184	Use a unidirectional gateway
+T57	counter_measure 11297 11328	Implement strict access control
+T58	counter_measure 11333 11357	application whitelisting
+T59	counter_measure 11440 11467	Monitor ICS network traffic
+T60	malware 11533 11539	TRITON
+T61	OS_name 11599 11616	Microsoft Windows
+T62	tool 11689 11716	Triconex Trilog application
+R25	use Arg1:T60 Arg2:T62	
+T63	sample_function 11747 11761	reviewing logs
+T64	tool 11844 11850	Py2EXE
+T65	program_language 11860 11866	python
+T66	program_language 11918 11924	Python
+T67	sample_name 12111 12121	inject.bin
+T68	sample_name 12152 12161	imain.bin
+T69	sample_name 12303 12313	Trilog.exe
+T70	attack_goal 12365 12412	single IP address of the target Triconex device
+R26	part_of Arg1:T70 Arg2:T69	
+T71	sample_name 12632 12642	trilog.exe
+T72	sample_function 12643 12679	checked the status of the controller
+T73	sample_function 12686 12728	read the configuration information exposed
+T74	protocol 12736 12746	TriStation
+R27	part_of Arg1:T72 Arg2:T71	
+R28	part_of Arg1:T73 Arg2:T71	
+T75	sample_name 12799 12809	trilog.exe
+T76	sample_name 12840 12850	inject.bin
+T77	sample_name 12855 12864	imain.bin
+T78	company 13036 13044	Triconex
+T79	function 13204 13224	SafeAppendProgramMod
+T80	sample_function 13238 13258	reset the controller
+T81	protocol 13289 13299	TriStation
+T82	sample_name 13334 13344	trilog.exe
+T83	sample_function 13358 13397	write a small ‘dummy’ program to memory
+R30	part_of Arg1:T83 Arg2:T82	
+R31	part_of Arg1:T80 Arg2:T82	
+R32	use Arg1:T82 Arg2:T79	
+T84	security_team 13551 13559	Mandiant
+T85	sample_name 13564 13574	trilog.exe
+T86	malware 13937 13943	TRITON
+T87	protocol 13959 13969	TriStation
+T88	sample_name 14075 14079	TsHi
+T89	malware 14220 14226	TRITON
+R33	part_of Arg1:T88 Arg2:T89	
+T90	sample_function 14268 14282	reconnaissance
+T91	sample_function 14287 14293	attack
+R34	part_of Arg1:T90 Arg2:T88	
+R35	part_of Arg1:T91 Arg2:T88	
+T92	sample_name 14486 14492	TsBase
+T93	sample_function 14550 14564	called by TsHi
+T94	protocol 14632 14642	TriStation
+T95	sample_name 14752 14757	TsLow
+T96	protocol 14811 14839	TriStation UDP wire protocol
+T97	sample_name 14845 14851	TsBase
+T98	sample_name 15176 15181	TsLow
+T99	protocol 15385 15395	TriStation
+T100	malware 15510 15516	TRITON
+T101	malware 15630 15636	TRITON
+T102	malware 15749 15755	TRITON
+T103	malware 15869 15875	TRITON
+T104	malware 15990 15996	TRITON
+T105	malware 16113 16119	TRITON
+T106	malware 16233 16239	TRITON
+T107	malware 16351 16357	TRITON
+T108	malware 16470 16476	TRITON
+T109	sample_name 15518 15528	trilog.exe
+T110	sample_name 15638 15647	imain.bin
+T111	sample_name 15757 15767	inject.bin
+T112	sample_name 15877 15888	library.zip
+T113	sample_name 15998 16011	TS_cnames.pyc
+T114	sample_name 16121 16131	TsBase.pyc
+T115	sample_name 16241 16249	TsHi.pyc
+T116	sample_name 16359 16368	TsLow.pyc
+T117	sample_name 16478 16484	sh.pyc
+T118	md5 15530 15562	6c39c3f4a08d3d78f2eb973a94bd7718
+T119	sha2 15564 15628	e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230
+T120	md5 15649 15681	437f135ba179959a580412e564d3107f
+T121	sha2 15683 15747	08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949
+T122	md5 15769 15801	0544d425c7555dc4e9d76b571f31f500
+T123	sha2 15803 15867	5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14
+T124	md5 15890 15922	0face841f7b2953e7c29c064d6886523
+T125	sha2 15924 15988	bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59
+T126	md5 16013 16045	e98f4f3505f05bf90e17554fbc97bba9
+T127	sha2 16047 16111	2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326
+T128	md5 16133 16165	288166952f934146be172f6353e9a1f5
+T129	sha2 16285 16349	758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272
+T130	md5 16251 16283	27c69aa39024d21ea109cc9c9d944a04
+T131	sha2 16167 16231	1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42
+T132	md5 16370 16402	f6b3a73c8c87506acda430671360ce15
+T133	sha2 16404 16468	5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32
+T134	md5 16486 16518	8b675db417cc8b23f4c43f3de5c83438
+T135	sha2 16520 16584	c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1
+R36	part_of Arg1:T109 Arg2:T100	
+R37	part_of Arg1:T118 Arg2:T109	
+R38	part_of Arg1:T119 Arg2:T109	
+R39	part_of Arg1:T110 Arg2:T101	
+R40	part_of Arg1:T120 Arg2:T110	
+R41	part_of Arg1:T121 Arg2:T110	
+R42	part_of Arg1:T111 Arg2:T102	
+R43	part_of Arg1:T122 Arg2:T111	
+R44	part_of Arg1:T123 Arg2:T111	
+R45	part_of Arg1:T112 Arg2:T103	
+R46	part_of Arg1:T124 Arg2:T112	
+R47	part_of Arg1:T125 Arg2:T112	
+R48	part_of Arg1:T113 Arg2:T104	
+R49	part_of Arg1:T126 Arg2:T113	
+R50	part_of Arg1:T127 Arg2:T113	
+R51	part_of Arg1:T114 Arg2:T105	
+R52	part_of Arg1:T128 Arg2:T114	
+R53	part_of Arg1:T131 Arg2:T114	
+R54	part_of Arg1:T115 Arg2:T106	
+R55	part_of Arg1:T130 Arg2:T115	
+R56	part_of Arg1:T129 Arg2:T115	
+R57	part_of Arg1:T116 Arg2:T107	
+R58	part_of Arg1:T132 Arg2:T116	
+R59	part_of Arg1:T133 Arg2:T116	
+R60	part_of Arg1:T117 Arg2:T108	
+R61	part_of Arg1:T134 Arg2:T117	
+R62	part_of Arg1:T135 Arg2:T117	
+R63	part_of Arg1:T27 Arg2:T26	
+R64	goal Arg1:T30 Arg2:T31	
+R69	find Arg1:T51 Arg2:T50	
+T136	counter_measure 10519 10604	segregate safety system networks from process control and information system networks
+T137	person 10364 10376	Asset owners
+R70	use Arg1:T137 Arg2:T136	
+R71	use Arg1:T137 Arg2:T53	
+R72	use Arg1:T137 Arg2:T55	
+R73	use Arg1:T137 Arg2:T56	
+R74	use Arg1:T137 Arg2:T57	
+R75	use Arg1:T137 Arg2:T58	
+R76	use Arg1:T137 Arg2:T59	
+R77	part_of Arg1:T63 Arg2:T62	
+R78	find Arg1:T84 Arg2:T85	
+R79	part_of Arg1:T93 Arg2:T92	
+T138	sample_function 15199 15213	connect method
+R80	part_of Arg1:T138 Arg2:T98	
+T139	protocol 15006 15009	UDP
+T7	malware 10157 10163	TRITON
+T140	malware 8358 8364	TRITON
+R3	goal Arg1:T140 Arg2:T32	
+R65	part_of Arg1:T33 Arg2:T140	
+R66	part_of Arg1:T34 Arg2:T140	
+R67	use Arg1:T140 Arg2:T35	
+R29	use Arg1:T71 Arg2:T74	

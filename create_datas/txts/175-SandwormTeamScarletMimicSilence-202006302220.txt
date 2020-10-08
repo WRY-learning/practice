@@ -1,0 +1,15 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+Sandworm Team : Quedagh , VOODOO BEAR .
+Sandworm Team is a Russian cyber espionage group that has operated since approximately 2009 .
+The group likely consists of Russian pro-hacktivists .
+Sandworm Team targets mainly Ukrainian entities associated with energy , industrial control systems , SCADA , government , and media .
+Sandworm Team has been linked to the Ukrainian energy sector attack in late 2015 .
+Scarlet Mimic is a threat group that has targeted minority rights activists .
+This group has not been directly linked to a government source , but the group 's motivations appear to overlap with those of the Chinese government .
+While there is some overlap between IP addresses used by Scarlet Mimic and Putter Panda , it has not been concluded that the groups are the same .
+Silence is a financially motivated threat actor targeting financial institutions in different countries .
+The group was first seen in June 2016 .
+Their main targets reside in Russia , Ukraine , Belarus , Azerbaijan , Poland and Kazakhstan .
+They compromised various banking systems , including the Russian Central Bank 's Automated Workstation Client , ATMs , and card processing .

@@ -1,0 +1,301 @@
+T1	attack_activity 0 11	ChessMaster
+T2	attack_activity 550 561	ChessMaster
+T3	attack_activity 824 835	ChessMaster
+T4	attack_activity 995 1006	ChessMaster
+T5	attack_activity 1788 1799	ChessMaster
+T6	attack_activity 2543 2554	ChessMaster
+T7	attack_activity 3898 3909	ChessMaster
+T8	attack_activity 6851 6862	ChessMaster
+T9	attack_activity 7424 7435	ChessMaster
+T10	attack_activity 7548 7559	ChessMaster
+T11	attack_activity 5675 5686	ChessMaster
+T12	attack_activity 4679 4690	ChessMaster
+T13	sub_activity 226 248	gathering intelligence
+T14	sub_activity 251 291	using the right social engineering lures
+T15	sub_activity 298 363	exploiting vulnerabilities to laterally moving within the network
+T16	industry 585 601	Japanese academe
+R1	attack Arg1:T2 Arg2:T16	
+T17	target_crowd 604 626	technology enterprises
+R2	attack Arg1:T2 Arg2:T17	
+T18	target_crowd 629 642	media outfits
+T19	target_crowd 645 670	managed service providers
+T20	target_crowd 677 696	government agencies
+R3	attack Arg1:T2 Arg2:T18	
+R4	attack Arg1:T2 Arg2:T19	
+R5	attack Arg1:T2 Arg2:T20	
+T21	threatActor_name 911 917	APT 10
+T22	threatActor_aliases 934 942	menuPass
+T23	threatActor_aliases 945 954	POTASSIUM
+T24	threatActor_aliases 957 968	Stone Panda
+T25	threatActor_aliases 971 981	Red Apollo
+T26	threatActor_aliases 988 992	CVNX
+R6	coreference Arg1:T22 Arg2:T21	
+R7	coreference Arg1:T23 Arg2:T21	
+R8	coreference Arg1:T24 Arg2:T21	
+R9	coreference Arg1:T25 Arg2:T21	
+R10	coreference Arg1:T26 Arg2:T21	
+T28	reference_word 699 701	It
+R11	coreference Arg1:T28 Arg2:T2	
+T30	attack_activity 762 776	spear-phishing
+T31	tool 777 783	emails
+T33	malware 1144 1150	ChChes
+R15	use Arg1:T4 Arg2:T33	
+T34	security_team 1159 1170	Trend Micro
+R16	find Arg1:T34 Arg2:T33	
+T35	string 1182 1193	BKDR_CHCHES
+R17	use Arg1:T34 Arg2:T35	
+R18	part_of Arg1:T35 Arg2:T33	
+T36	tool 1306 1316	PowerShell
+T37	tool 1269 1287	Malicious shortcut
+T38	sub_activity 1269 1301	Malicious shortcut ( LNK ) files
+T39	reference_word 1207 1219	the campaign
+R19	coreference Arg1:T39 Arg2:T4	
+R20	use Arg1:T39 Arg2:T38	
+R21	use Arg1:T39 Arg2:T36	
+T40	tool 1290 1293	LNK
+T41	tool 1323 1326	LNK
+T42	tool 1341 1355	Command Prompt
+T43	tool 1373 1383	PowerShell
+T44	malware 1447 1453	ChChes
+T45	malware 1497 1503	ChChes
+T46	malware 1937 1943	ChChes
+T47	malware 2255 2261	ChChes
+T48	malware 2442 2448	ChChes
+T49	malware 3986 3992	ChChes
+T50	malware 4109 4115	ChChes
+T51	malware 4265 4271	ChChes
+T52	malware 4694 4700	ChChes
+T53	malware 4992 4998	ChChes
+T54	malware 5333 5339	ChChes
+T55	malware 7607 7613	ChChes
+T57	time 7628 7642	July 27 , 2017
+T58	location 7648 7676	Marina Bay Sands , Singapore
+T60	time 4770 4774	2014
+T62	time 7517 7521	2017
+T63	location 7522 7534	Asia Pacific
+T64	location 7537 7542	Japan
+T65	location 7587 7592	Japan
+R23	attack Arg1:T10 Arg2:T65	
+R24	use Arg1:T10 Arg2:T55	
+R25	occur_time Arg1:T10 Arg2:T57	
+R26	located Arg1:T10 Arg2:T58	
+T66	encryption_algo 2120 2123	XOR
+T68	sub_activity 1361 1390	downloads a PowerShell script
+R29	goal Arg1:T42 Arg2:T68	
+T69	sub_activity 1421 1470	drop or reflectively load ChChes into the machine
+R30	goal Arg1:T43 Arg2:T69	
+T70	sub_activity 1525 1548	Self-extracting archive
+T71	tool 4398 4417	command and control
+T72	tool 4420 4423	C&C
+R31	coreference Arg1:T72 Arg2:T71	
+R32	use Arg1:T12 Arg2:T52	
+T73	malware 4735 4741	Emdivi
+T74	tool 4244 4247	C&C
+T75	tool 2507 2510	C&C
+T76	tool 1551 1554	SFX
+R35	coreference Arg1:T76 Arg2:T70	
+T77	tool 1597 1600	EXE
+T78	tool 1630 1633	DLL
+T79	sub_activity 1644 1655	binary file
+T80	sample_name 1658 1662	.BIN
+R36	coreference Arg1:T80 Arg2:T79	
+T81	tool 1770 1773	DLL
+T82	attack_activity 1770 1783	DLL hijacking
+T83	encryption_algo 2115 2117	OR
+R37	coreference Arg1:T66 Arg2:T83	
+T84	encryption_algo 2192 2195	XOR
+T85	malware 5196 5202	Emdivi
+T86	tool 1875 1878	DLL
+T87	sub_activity 1562 1594	archive that drops an executable
+T88	tool 1584 1594	executable
+R38	coreference Arg1:T77 Arg2:T88	
+T89	tool 1607 1627	dynamic-link library
+R39	coreference Arg1:T78 Arg2:T89	
+R42	use Arg1:T39 Arg2:T70	
+R43	use Arg1:T39 Arg2:T87	
+R44	use Arg1:T39 Arg2:T89	
+R45	use Arg1:T39 Arg2:T79	
+T90	sub_activity 1691 1705	malicious code
+R46	part_of Arg1:T90 Arg2:T82	
+T91	reference_word 1319 1332	The LNK files
+R40	coreference Arg1:T91 Arg2:T38	
+R28	use Arg1:T91 Arg2:T42	
+T92	encryption_algo 2168 2171	AES
+T93	threatActor_name 5260 5266	APT 10
+T94	threatActor_aliases 5267 5275	menuPass
+R41	coreference Arg1:T94 Arg2:T93	
+T95	threatActor_name 3360 3366	APT 10
+T96	threatActor_aliases 3367 3375	menuPass
+R47	coreference Arg1:T96 Arg2:T95	
+T97	threatActor_name 3914 3920	APT 10
+T98	threatActor_name 4057 4063	APT 10
+T99	threatActor_aliases 4064 4072	menuPass
+R48	coreference Arg1:T99 Arg2:T98	
+T104	malware 2825 2830	TinyX
+T105	malware 2981 2990	RedLeaves
+T106	sub_activity 1824 1849	load-time dynamic linking
+R49	launch Arg1:T5 Arg2:T106	
+T107	sub_activity 1853 1890	trigger the malicious DLL ’s function
+R50	goal Arg1:T106 Arg2:T107	
+T108	sub_activity 1893 1908	Runtime packers
+R51	launch Arg1:T5 Arg2:T108	
+T109	attack_goal 1966 1982	obfuscate itself
+T110	attack_goal 1987 2002	avoid detection
+R52	goal Arg1:T46 Arg2:T109	
+T111	sub_activity 2046 2057	loader code
+R53	goal Arg1:T46 Arg2:T110	
+R54	use Arg1:T46 Arg2:T111	
+R55	use Arg1:T46 Arg2:T83	
+R56	use Arg1:T46 Arg2:T92	
+T112	sub_activity 2312 2333	Second-stage payloads
+T113	sub_activity 2377 2392	infected system
+R57	use Arg1:T5 Arg2:T112	
+T114	sub_activity 2527 2540	Hacking Tools
+R58	use Arg1:T48 Arg2:T75	
+R59	use Arg1:T6 Arg2:T114	
+T100	tool 2575 2580	email
+T101	tool 6380 6385	email
+T102	tool 6951 6956	email
+R60	use Arg1:T6 Arg2:T100	
+T103	sub_activity 2585 2610	browser password recovery
+T115	sub_activity 2615 2628	dumping tools
+R61	use Arg1:T6 Arg2:T103	
+R62	use Arg1:T6 Arg2:T115	
+T116	sub_activity 2638 2677	misused and modified for their campaign
+T117	reference_word 2663 2677	their campaign
+R63	coreference Arg1:T117 Arg2:T6	
+T118	sub_activity 2690 2717	restore forgotten passwords
+T119	malware 2846 2851	PlugX
+T120	malware 2926 2931	TinyX
+T121	tool 2972 2978	emails
+T122	tool 3732 3738	emails
+T123	malware 3079 3085	Trojan
+T124	attack_activity 2957 2971	spear-phishing
+T125	sub_activity 2957 2978	spear-phishing emails
+R64	located Arg1:T120 Arg2:T125	
+T126	sub_activity 2995 3016	second-stage backdoor
+T127	malware 3088 3091	RAT
+T128	malware 3094 3103	Trochilus
+R65	part_of Arg1:T127 Arg2:T123	
+R66	part_of Arg1:T128 Arg2:T123	
+R67	use Arg1:T117 Arg2:T104	
+R68	use Arg1:T117 Arg2:T105	
+T129	malware 3213 3218	PlugX
+R69	part_of Arg1:T105 Arg2:T126	
+T130	tool 3321 3325	YARA
+T131	malware 3177 3186	RedLeaves
+T132	malware 3234 3243	RedLeaves
+T133	tool 3224 3229	April
+R70	occur_time Arg1:T132 Arg2:T133	
+T134	malware 4339 4344	PlugX
+T135	encryption_algo 7502 7505	RSA
+T136	encryption_algo 4860 4879	Security Identifier
+T137	encryption_algo 4882 4885	SID
+R71	coreference Arg1:T137 Arg2:T136	
+T138	malware 5186 5191	PlugX
+T139	encryption_algo 4467 4469	IP
+T140	malware 5230 5235	PlugX
+T141	malware 5579 5588	backdoors
+T142	tool 6376 6379	web
+T143	string 3258 3266	himawari
+R72	part_of Arg1:T143 Arg2:T132	
+T144	sub_activity 3313 3331	evading YARA rules
+R73	goal Arg1:T132 Arg2:T144	
+T145	attack_activity 3428 3450	Operation Cloud Hopper
+T146	protocol 3510 3535	managed service providers
+T147	protocol 3538 3542	MSPs
+R74	coreference Arg1:T147 Arg2:T146	
+T148	malware 3628 3637	backdoors
+T149	tool 6781 6784	URL
+T150	threatActor_aliases 4619 4628	BlackTech
+R75	launch Arg1:T95 Arg2:T145	
+T151	target_crowd 3466 3509	intermediaries of their targets of interest
+R76	attack Arg1:T145 Arg2:T151	
+R77	coreference Arg1:T146 Arg2:T151	
+T152	sub_activity 3594 3637	multifarious information-stealing backdoors
+R78	use Arg1:T95 Arg2:T152	
+T153	sub_activity 3642 3664	vulnerability exploits
+R79	use Arg1:T95 Arg2:T153	
+T154	attack_activity 3717 3731	spear-phishing
+T155	sub_activity 3717 3738	spear-phishing emails
+T156	sub_activity 3742 3769	attack and infection chains
+R80	use Arg1:T95 Arg2:T155	
+R81	use Arg1:T95 Arg2:T156	
+T157	sub_activity 3787 3840	legitimate or open-source remote administration tools
+T158	sub_activity 3844 3854	steal data
+R82	goal Arg1:T157 Arg2:T158	
+R83	use Arg1:T95 Arg2:T157	
+T159	sub_activity 4195 4212	exclusive packers
+T160	sub_activity 4215 4229	mutual targets
+T161	sub_activity 4232 4262	overlapping C&C infrastructure
+R84	use Arg1:T50 Arg2:T159	
+R85	use Arg1:T50 Arg2:T160	
+R86	use Arg1:T50 Arg2:T161	
+T162	threatActor_aliases 4324 4332	menuPass
+R87	use Arg1:T162 Arg2:T134	
+T163	protocol 4355 4358	DNS
+R88	first_found_time Arg1:T52 Arg2:T60	
+T164	sub_activity 4815 4836	second-stage payloads
+R89	part_of Arg1:T52 Arg2:T164	
+R90	part_of Arg1:T73 Arg2:T164	
+R91	use Arg1:T164 Arg2:T136	
+T165	sub_activity 4914 4953	execute only in their target ’s machine
+R92	goal Arg1:T137 Arg2:T165	
+T166	sub_activity 4999 5060	hides part of the decryption key and payload in registry keys
+T169	attack_activity 5072 5098	harder to reverse engineer
+R93	goal Arg1:T53 Arg2:T169	
+R94	use Arg1:T53 Arg2:T166	
+T170	time 5471 5480	same date
+T171	time 5488 5507	several hours apart
+T172	target_crowd 5611 5617	victim
+R98	attack Arg1:T141 Arg2:T172	
+T173	time 5618 5648	a day after they were compiled
+R99	occur_time Arg1:T141 Arg2:T173	
+T174	industry 5712 5719	systems
+T175	industry 5722 5730	networks
+T176	target_crowd 5733 5756	devices and their users
+R100	attack Arg1:T11 Arg2:T174	
+R101	attack Arg1:T11 Arg2:T175	
+R102	attack Arg1:T11 Arg2:T176	
+T177	industry 6235 6241	system
+T178	industry 6232 6234	IT
+T179	industry 4850 4856	system
+T180	industry 2386 2392	system
+T182	sub_activity 3125 3174	enabling lateral movement in the infected systems
+T181	industry 3167 3174	systems
+R103	launch Arg1:T128 Arg2:T182	
+T183	industry 6561 6568	systems
+T184	industry 6761 6768	systems
+T185	industry 5824 5835	enterprises
+T186	counter_measure 6086 6109	Fine-tune your response
+T187	counter_measure 6175 6191	Defense in depth
+T188	target_crowd 6232 6256	IT/system administrators
+T189	target_crowd 6261 6295	information security professionals
+T190	industry 356 363	network
+T191	industry 6802 6809	network
+T192	industry 6323 6330	network
+T193	sub_activity 6355 6369	mobile devices
+T194	sub_activity 6333 6342	endpoints
+T195	sub_activity 6345 6352	servers
+T196	counter_measure 6522 6549	Reduce their attack surface
+T197	sub_activity 4426 4433	servers
+T198	counter_measure 6552 6598	Keep the systems updated and regularly patched
+T199	counter_measure 6605 6645	enforce the principle of least privilege
+T200	counter_measure 6701 6717	Deploy firewalls
+T201	counter_measure 6679 6698	application control
+T202	counter_measure 6648 6674	Employ behavior monitoring
+T203	counter_measure 6726 6768	intrusion detection and prevention systems
+T204	counter_measure 6781 6799	URL categorization
+T205	counter_measure 6802 6822	network segmentation
+T206	counter_measure 6829 6848	data categorization
+T207	attack_activity 6876 6890	spear-phishing
+R104	launch Arg1:T8 Arg2:T207	
+T208	counter_measure 6926 6964	filter and safeguard the email gateway
+T209	counter_measure 6982 7020	foster a cybersecurity-aware workforce
+T210	target_crowd 7087 7093	victim
+T211	sub_activity 7049 7064	decoy documents
+R105	attack Arg1:T211 Arg2:T210	
+T212	counter_measure 7130 7192	develop proactive incident response and remediation strategies
+R106	goal Arg1:T6 Arg2:T116	
+R12	use Arg1:T30 Arg2:T31	
+R13	launch Arg1:T28 Arg2:T30	

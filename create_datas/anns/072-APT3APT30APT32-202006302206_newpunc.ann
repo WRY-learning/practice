@@ -1,0 +1,83 @@
+T1	threatActor_name 79 83	APT3
+T2	threatActor_aliases 86 98	Gothic Panda
+T3	threatActor_aliases 101 106	Pirpi
+T4	threatActor_aliases 109 117	UPS Team
+T5	threatActor_aliases 120 127	Buckeye
+T6	threatActor_aliases 130 147	Threat Group-0110
+T7	threatActor_aliases 150 157	TG-0110
+T8	threatActor_name 160 164	APT3
+T9	threatActor_name 602 607	APT30
+T10	threatActor_name 788 793	APT32
+T11	threatActor_name 831 836	APT32
+T12	threatActor_aliases 796 804	SeaLotus
+T13	threatActor_aliases 807 817	OceanLotus
+T14	threatActor_aliases 820 828	APT-C-00
+T15	threatActor_name 729 734	APT30
+T16	time 410 419	June 2015
+T17	time 891 895	2014
+T20	location 481 483	US
+T21	location 532 541	Hong Kong
+T22	threatActor_name 570 574	APT3
+T23	location 1077 1084	Vietnam
+T24	location 1087 1102	the Philippines
+T25	location 1105 1109	Laos
+T26	location 1116 1124	Cambodia
+T28	threatActor_name 689 695	Naikon
+R2	first_found_time Arg1:T11 Arg2:T17	
+T29	target_crowd 930 955	private sector industries
+T30	target_crowd 972 991	foreign governments
+T31	target_crowd 994 1003	dissident
+T32	target_crowd 1011 1022	journalists
+T35	reference_word 267 277	This group
+T36	reference_word 737 751	the two groups
+T37	reference_word 422 431	the group
+T38	reference_word 898 907	The group
+T39	reference_word 1204 1213	The group
+R17	attack Arg1:T38 Arg2:T29	
+R18	attack Arg1:T38 Arg2:T30	
+R19	attack Arg1:T38 Arg2:T31	
+R20	attack Arg1:T38 Arg2:T32	
+T40	reference_word 1127 1131	They
+T42	attack_activity 320 345	Operation Clandestine Fox
+T43	attack_activity 348 374	Operation Clandestine Wolf
+T44	attack_activity 381 401	Operation Double Tap
+R29	launch Arg1:T35 Arg2:T42	
+R30	launch Arg1:T35 Arg2:T43	
+R31	launch Arg1:T35 Arg2:T44	
+R32	occur_time Arg1:T37 Arg2:T16	
+T19	security_team 231 264	China's Ministry of StateSecurity
+T45	company 542 547	MITRE
+T18	location 170 175	China
+R1	located Arg1:T8 Arg2:T18	
+T27	location 1232 1239	Vietnam
+R22	located Arg1:T39 Arg2:T27	
+T46	location 231 236	China
+R12	coreference Arg1:T35 Arg2:T8	
+R14	coreference Arg1:T38 Arg2:T11	
+R15	coreference Arg1:T40 Arg2:T38	
+R16	coreference Arg1:T39 Arg2:T40	
+R3	coreference Arg1:T2 Arg2:T1	
+R4	coreference Arg1:T3 Arg2:T1	
+R5	coreference Arg1:T4 Arg2:T1	
+R6	coreference Arg1:T5 Arg2:T1	
+R7	coreference Arg1:T6 Arg2:T1	
+R8	coreference Arg1:T7 Arg2:T1	
+R13	coreference Arg1:T37 Arg2:T35	
+R23	coreference Arg1:T36 Arg2:T28	
+R24	coreference Arg1:T36 Arg2:T15	
+R9	coreference Arg1:T12 Arg2:T10	
+R10	coreference Arg1:T13 Arg2:T10	
+R11	coreference Arg1:T14 Arg2:T10	
+T33	target_crowd 481 491	US victims
+R25	attack Arg1:T37 Arg2:T33	
+T41	tool 1154 1179	strategic web compromises
+R21	use Arg1:T40 Arg2:T41	
+R27	attack Arg1:T38 Arg2:T23	
+R28	attack Arg1:T38 Arg2:T24	
+R33	attack Arg1:T38 Arg2:T25	
+R34	attack Arg1:T38 Arg2:T26	
+T34	target_crowd 505 528	political organizations
+R26	attack Arg1:T37 Arg2:T34	
+R35	located Arg1:T34 Arg2:T21	
+T47	target_crowd 1183 1201	compromise victims
+R36	goal Arg1:T41 Arg2:T47	

@@ -1,0 +1,112 @@
+T1	threatActor_name 258 265	Lazarus
+T2	industry 284 302	financial entities
+T3	threatActor_name 392 399	Lazarus
+T4	sub_activity 531 550	Operation Applejeus
+T5	threatActor_name 580 587	Lazarus
+T6	OS_name 776 781	macOS
+T7	reference_word 741 750	the group
+R1	coreference Arg1:T7 Arg2:T5	
+R2	attack Arg1:T7 Arg2:T6	
+R3	attack Arg1:T1 Arg2:T2	
+T8	industry 316 340	cryptocurrency exchanges
+R4	attack Arg1:T1 Arg2:T8	
+T9	threatActor_name 795 802	Lazarus
+T10	OS_name 1065 1070	macOS
+T11	OS_name 1045 1060	Windows systems
+T12	time 992 1005	November 2018
+T13	threatActor_name 1097 1104	Lazarus
+T14	tool 1023 1033	PowerShell
+T15	url_evil 7379 7447	http://nzssdm.com/assets/wwtm.dat – Windows payload distribution URL
+T16	url_evil 7448 7510	http://nzssdm.com/assets/mt.dat – Mac payload distribution URL
+T17	md5 5936 5968	29a37c6d9fae5664946c6607f351a8dc
+T18	md5 5978 6010	e9a6a945803722be1556fd120ee81199
+T19	md5 6020 6052	a18bc8bc82bca8245838274907e64631
+T20	md5 6081 6113	4345798b2a09fc782901e176bd0c69b6
+T21	md5 6137 6169	cb713385655e9af0a2fc10da5c0256f5
+T22	md5 6179 6211	e6d5363091e63e35490ad2d76b72e851
+T23	md5 6250 6282	Da4981df65cc8b5263594bb71a0720a1
+T24	md5 6315 6347	171b9135540f89bf727b690b9e587a4e
+T25	md5 6357 6389	668d5b5761755c9d061da74cb21a8b75
+T26	md5 6399 6431	ad3f966d48f18b5e7b23a579a926c7e8
+T27	md5 6456 6488	35e38d023b253c0cd9bd3e16afc362a7
+T28	md5 6489 6521	72fe869aa394ef0a62bb8324857770dd
+T29	md5 6522 6554	86d3c1b354ce696e454c42d8dc6df1b7
+T30	md5 6555 6587	5182e7a2037717f2f9bbf6ba298c48fb
+T31	reference_word 1463 1467	They
+R5	coreference Arg1:T31 Arg2:T13	
+T32	tool 1490 1500	PowerShell
+T33	protocol 1541 1543	C2
+T34	tool 1637 1646	WordPress
+T35	protocol 2142 2144	C2
+T36	OS_name 2457 2486	Microsoft Windows Server 2003
+T37	sub_activity 1740 1796	establishing the malware control session with the server
+T38	protocol 2497 2499	C2
+T39	threatActor_name 2533 2540	Lazarus
+T40	OS_name 2581 2586	macOS
+T41	location 2653 2658	China
+T42	location 2666 2680	European Union
+T43	sub_activity 2791 2826	only host malware on rented servers
+T44	sub_activity 2835 2902	hosting C2 scripts for malware communication on compromised servers
+T45	reference_word 2909 2916	malware
+T46	location 3078 3084	Korean
+T47	location 3103 3115	South Korean
+T48	threatActor_name 3151 3158	Lazarus
+T49	company 3103 3126	South Korean businesses
+R6	goal Arg1:T48 Arg2:T49	
+T50	md5 3197 3229	e9a6a945803722be1556fd120ee81199
+T51	company 3325 3330	LAFIZ
+T52	threatActor_name 3419 3426	Lazarus
+T53	time 3476 3480	2017
+T54	domain_evil 3443 3453	lafiz.link
+T55	company 3519 3550	cryptocurrency exchange company
+T56	threatActor_name 3637 3644	Lazarus
+T57	OS_name 3752 3777	32-bit and 64-bit Windows
+T58	domain_evil 3916 3926	nzssdm.com
+T59	md5 4006 4038	668d5b5761755c9d061da74cb21a8b75
+T60	sample_name 4065 4077	battle64.dll
+T61	function 4167 4176	CheckSelf
+T62	string 4236 4242	battle
+T63	vul_aliases 4381 4405	PostScript vulnerability
+T64	url_evil 6646 6697	http://bluecreekrobotics.com/wp-includes/common.php
+T65	url_evil 6698 6748	http://dev.microcravate.com/wp-includes/common.php
+T66	url_evil 6749 6802	http://dev.whatsyourcrunch.com/wp-includes/common.php
+T67	url_evil 6803 6856	http://enterpriseheroes.com.ng/wp-includes/common.php
+T68	url_evil 6857 6910	http://hrgp.asselsolutions.com/wp-includes/common.php
+T69	url_evil 7305 7329	http://115.28.160.20:443
+T70	url_evil 6911 6983	https://baseballcharlemagnelegardeur.com/wp-content/languages/common.php
+T71	url_evil 6984 7036	https://bogorcenter.com/wp-content/themes/index2.php
+T72	url_evil 7037 7090	https://eventum.cwsdev3.bi.com/wp-includes/common.php
+T73	url_evil 7091 7131	https://streamf.ru/wp-content/index2.php
+T74	url_evil 7132 7174	https://towingoperations.com/chat/chat.php
+T75	url_evil 7175 7226	https://vinhsake.com//wp-content/uploads/index2.php
+T76	url_evil 7227 7276	https://www.tangowithcolette.com/pages/common.php
+T77	location 4314 4320	Korean
+T78	location 4523 4534	South Korea
+T79	location 4469 4475	Korean
+T80	target_crowd 4469 4481	Korean users
+T81	person 4850 4855	actor
+T82	threatActor_name 4810 4817	Lazarus
+T83	OS_name 4895 4900	macOS
+R7	part_of Arg1:T81 Arg2:T82	
+T84	person 4735 4750	malicious actor
+R8	part_of Arg1:T84 Arg2:T82	
+T85	OS_name 4766 4771	macOS
+T86	time 497 511	middle of 2018
+T87	person 514 516	we
+R9	release_time Arg1:T4 Arg2:T86	
+T88	threatActor_name 4919 4926	Lazarus
+T89	OS_name 5094 5101	Windows
+T90	OS_name 5106 5111	macOS
+T91	threatActor_name 5161 5168	Lazarus
+T92	industry 5202 5216	cryptocurrency
+T93	industry 5220 5250	technological startup industry
+T94	tool 5465 5475	VirusTotal
+T95	sub_activity 5416 5456	use popular free virus-scanning services
+T96	sub_activity 5367 5403	check new software with an antivirus
+T97	tool 5530 5546	Microsoft Office
+T98	threatActor_name 5655 5662	Lazarus
+T99	threatActor_name 5843 5850	Lazarus
+T100	sub_activity 954 967	new operation
+R10	occur_time Arg1:T100 Arg2:T12	
+T101	attack_goal 343 357	Financial gain
+R11	goal Arg1:T3 Arg2:T101	

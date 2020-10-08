@@ -1,0 +1,74 @@
+T1	location 8 14	Polish
+T2	industry 15 20	banks
+R1	located Arg1:T2 Arg2:T1	
+T3	person 59 68	attackers
+R2	attack Arg1:T3 Arg2:T2	
+T4	location 200 206	Polish
+T5	industry 207 212	banks
+R3	located Arg1:T5 Arg2:T4	
+T6	location 522 528	Poland
+T7	reference_word 440 444	This
+T8	attack_activity 352 376	unusual network activity
+R4	coreference Arg1:T7 Arg2:T8	
+T9	security_team 558 562	SOCs
+T10	location 572 578	Polish
+R5	located Arg1:T9 Arg2:T10	
+T11	location 616 622	Polish
+T12	security_team 1103 1108	SIEMs
+T13	location 1337 1343	Polish
+T14	location 1295 1301	Polish
+T15	url_evil 4903 4950	http://sap.misapor.ch/vishop/view.jsp?pagenum=1
+T16	url_evil 4953 5004	https://www.eye-watch.in/design/fancybox/Pnf.action
+T17	IP_evil 4808 4822	125.214.195.17
+T18	IP_evil 4825 4839	196.29.166.218
+T19	url 4881 4890	knf.gov.p
+R6	part_of Arg1:T15 Arg2:T19	
+R7	part_of Arg1:T16 Arg2:T19	
+T20	md5 4354 4386	C1364BBF63B3617B25B58209E4529D8C
+T21	md5 4388 4420	85D316590EDFB4212049C4490DB08C4B
+T22	md5 4422 4454	1BFBC0C9E0D9CEB5C3F4F6CED6BCFEAE
+T23	sha1 4457 4497	496207DB444203A6A9C02A32AFF28D563999736C
+T24	sha1 4499 4539	4F0D7A33D23D53C0EB8B34D102CDD660FC5323A2
+T25	sha1 4541 4581	BEDCEAFA2109139C793CB158CEC9FA48F980FF2B
+T26	sha2 4584 4648	FC8607C155617E09D540C5030EABAD9A9512F656F16B38682FD50B2007583E9B
+T27	sha2 4650 4714	D4616F9706403A0D5A2F9A8726230A4693E4C95C58DF5C753CCC684F1D3542E2
+T28	sha2 4716 4780	CC6A731E9DAFF84BAE4214603E1C3BAD8D6735B0CBB2A0EC1635B36E6A38CB3A
+T29	industry 636 652	commercial banks
+R8	located Arg1:T29 Arg2:T11	
+T30	malware 695 702	malware
+R9	attack Arg1:T30 Arg2:T29	
+T31	industry 912 917	banks
+T32	malware 935 942	malware
+R10	attack Arg1:T32 Arg2:T31	
+T33	time 890 900	a week ago
+R11	occur_time Arg1:T32 Arg2:T33	
+T34	industry 1070 1075	banks
+T35	url 1378 1392	www.knf.gov.pl
+T36	government 1344 1375	Financial Supervision Authority
+R12	located Arg1:T36 Arg2:T13	
+R13	located Arg1:T36 Arg2:T14	
+T37	tool 1724 1736	PassiveTotal
+T38	time 1829 1839	2016-10-07
+T39	url 1804 1814	knf.gov.pl
+T40	time 1845 1854	yesterday
+R14	release_time Arg1:T37 Arg2:T38	
+R15	release_time Arg1:T37 Arg2:T40	
+T41	url_evil 1915 1999	http://www.knf.gov.pl/DefaultDesign/Layouts/KNF2013/resources/accordian-src.js?ver=1
+T42	malware 2303 2310	malware
+T43	person 2527 2536	attackers
+T44	attack_goal 2585 2604	bank infrastructure
+R16	attack Arg1:T43 Arg2:T44	
+T45	attack_goal 2389 2404	foreign servers
+R17	attack Arg1:T42 Arg2:T45	
+T46	person 3176 3185	attackers
+T47	industry 3270 3275	banks
+R18	attack Arg1:T46 Arg2:T47	
+T48	location 3692 3698	Polish
+T49	industry 3699 3715	financial sector
+R19	located Arg1:T49 Arg2:T48	
+T50	reference_word 3905 3909	they
+T51	person 3803 3812	attackers
+R20	coreference Arg1:T50 Arg2:T51	
+T52	industry 3942 3947	banks
+T53	counter_measure 3969 4027	identify infected machines and suspicious traffic patterns
+R21	use Arg1:T52 Arg2:T53	

@@ -1,0 +1,498 @@
+T1	malware 0 6	Kazuar
+T2	malware 60 66	Kazuar
+T3	security_team 250 257	Unit 42
+T4	malware 296 302	Trojan
+T5	malware 381 387	Kazuar
+T6	malware 401 407	Trojan
+T7	reference_word 390 395	which
+T8	program_language 436 440	.NET
+T9	company 426 435	Microsoft
+T10	person 258 269	researchers
+T11	person 463 469	actors
+T12	malware 536 542	Kazuar
+T13	sub_activity 616 687	remotely load additional plugins to increase the Trojan ’s capabilities
+T15	OS_name 802 805	Mac
+T16	OS_name 809 813	Unix
+T17	malware 899 905	Kazuar
+T18	malware 1031 1037	Kazuar
+T19	threatActor_name 1064 1069	Turla
+T20	threatActor_aliases 1105 1113	Uroburos
+T21	threatActor_aliases 1118 1123	Snake
+T22	government 1171 1180	embassies
+T23	government 1183 1202	defense contractors
+T24	government 1205 1229	educational institutions
+T25	government 1236 1258	research organizations
+T26	threatActor_name 1292 1297	Turla
+T27	malware 1358 1364	Kazuar
+T28	time 1396 1400	2005
+T29	threatActor_name 1440 1445	Turla
+T30	malware 1468 1474	Kazuar
+T31	reference_word 1488 1492	they
+T32	reference_word 1506 1508	it
+T33	malware 1530 1536	Carbon
+T34	malware 1601 1613	Turla Carbon
+T35	sample_function 1655 1710	as a second stage backdoor within targeted environments
+T36	malware 1726 1732	Kazuar
+T37	threatActor_name 1765 1770	Turla
+T38	malware 1784 1790	Kazuar
+T39	program_language 1838 1842	.NET
+T40	malware 1904 1914	ConfuserEx
+T41	tool 1956 1965	NoFuserEx
+T42	tool 1968 1984	ConfuserEx Fixer
+T43	tool 1987 2011	ConfuserEx Switch Killer
+T44	tool 2018 2024	de4d0t
+T45	tool 2095 2100	dnSpy
+T46	tool 2125 2148	Microsoft Visual Studio
+T49	malware 2272 2278	Kazuar
+T51	reference_word 2337 2344	malware
+R2	coreference Arg1:T51 Arg2:T49	
+T52	malware 2468 2474	Trojan
+T53	malware 2510 2516	Kazuar
+T55	string 2610 2646	[username]=>singleton-instance-mutex
+T56	malware 2655 2661	Trojan
+T58	function 2699 2702	XOR
+T59	malware 2759 2765	Kazuar
+T60	string 2847 2855	Global\\
+T61	government 3256 3259	FBI
+T62	government 3264 3267	CIA
+T63	location 3240 3253	United States
+T64	malware 3288 3294	Trojan
+T66	malware 3393 3399	Kazuar
+T67	malware 3589 3595	Kazuar
+T68	sample_name 3574 3577	sys
+T69	sample_function 3578 3691	Files that Kazuar uses for configuration settings , such as the ‘ serv ’ item that stores the C2 server locations
+T70	sample_name 3694 3697	log
+T71	sample_name 3729 3732	plg
+T72	sample_name 3796 3799	tsk
+T73	sample_name 3865 3868	res
+T74	sample_function 3698 3726	Files contain debug messages
+T75	sample_function 3733 3795	Files are plugins used to extend the functionality of Kazuar .
+T76	sample_function 3800 3862	Files that Kazuar will process as commands and their arguments
+T77	sample_function 3869 3932	Files contain the results of the successfully processed tasks .
+T78	malware 3811 3817	Kazuar
+T79	malware 3787 3793	Kazuar
+T80	malware 3937 3943	Trojan
+T81	sub_activity 3944 4187	uses a similar process to create these folder and file names as it uses to generate its mutex , generating an MD5 hash of the name , using XOR on each byte using the volume serial number as a key and generating a GUID based on the ciphertext .
+T82	function 4083 4086	XOR
+T83	string 4297 4311	%LOCALAPPDATA%
+T84	malware 4329 4335	Kazuar
+T85	malware 4371 4377	Kazuar
+T86	malware 4482 4488	Kazuar
+T87	encryption_algo 4552 4560	Rijndael
+T88	malware 4744 4750	Kazuar
+T89	sub_activity 4744 4828	Kazuar 's entry point started in process malware_file_name [2720] as user USERNAME .
+T90	malware 4895 4901	Trojan
+T91	malware 4907 4913	Kazuar
+T92	malware 4945 4951	Kazuar
+T93	reference_word 5072 5078	казуар
+T94	malware 5094 5100	Kazuar
+T95	reference_word 5107 5113	казуар
+T96	location 5183 5193	New Guinea
+T97	location 5198 5207	Australia
+T99	OS_name 5472 5475	Mac
+T100	OS_name 5479 5483	Unix
+T101	malware 5537 5543	Kazuar
+T102	function 5623 5630	install
+T103	program_language 5669 5672	NET
+T104	function 5685 5698	InstallHelper
+T105	reference_word 5591 5598	malware
+T106	reference_word 5753 5760	malware
+T107	reference_word 5855 5861	itself
+T108	reference_word 5721 5728	malware
+T109	reference_word 5916 5923	malware
+T110	OS_name 5954 5961	Windows
+T111	sample_name 6030 6042	explorer.exe
+T112	sample_name 6146 6158	explorer.exe
+T113	reference_word 6178 6185	malware
+T114	function 6210 6216	single
+T115	OS_name 6284 6287	Mac
+T116	OS_name 6291 6295	Unix
+T117	malware 6340 6346	Kazuar
+T118	OS_name 6389 6396	Windows
+T119	OS_name 6425 6428	Mac
+T120	OS_name 6432 6436	Unix
+T121	program_language 6567 6570	NET
+T122	OS_name 6714 6718	Unix
+T123	malware 6738 6744	Kazuar
+T124	OS_name 6767 6770	Mac
+T125	OS_name 6774 6778	Unix
+T126	malware 6865 6871	Kazuar
+T127	malware 6932 6938	Kazuar
+T128	function 6988 6995	Autorun
+T129	OS_name 7027 7034	Windows
+T130	OS_name 7122 7129	Windows
+T131	malware 7593 7599	Kazuar
+T132	malware 7600 7606	Trojan
+T133	sub_activity 7607 7737	initially relies on its command and control channel to allow actors to interact with the compromised system and to exfiltrate data
+T134	malware 7740 7746	Kazuar
+T135	protocol 7804 7808	HTTP
+T136	protocol 7811 7816	HTTPS
+T137	protocol 7819 7822	FTP
+T138	protocol 7826 7830	FTPS
+T139	protocol 7918 7922	HTTP
+T140	protocol 7877 7879	C2
+T141	protocol 7935 7937	C2
+T142	malware 7984 7990	Kazuar
+T143	protocol 7991 7993	C2
+T144	malware 8084 8090	Kazuar
+T145	protocol 8204 8206	C2
+T146	malware 8216 8222	Kazuar
+T147	protocol 8263 8267	HTTP
+T148	malware 8301 8307	Kazuar
+T149	string 8336 8341	agent
+T150	protocol 8369 8373	HTTP
+T151	protocol 8466 8468	C2
+T152	malware 8543 8549	Kazuar
+T153	protocol 8582 8584	C2
+T154	program_language 8629 8632	XML
+T155	program_language 8654 8657	XML
+T156	malware 8691 8697	Kazuar
+T157	string 8715 8719	task
+T158	malware 8938 8944	Kazuar
+T159	malware 9173 9179	Kazuar
+T160	string 9257 9260	log
+T161	string 9296 9299	get
+T162	string 9467 9470	put
+T163	string 9561 9564	cmd
+T164	protocol 9676 9678	C2
+T165	string 9691 9696	sleep
+T166	malware 9697 9703	Trojan
+T167	string 9737 9744	upgrade
+T168	malware 9758 9764	Trojan
+T169	string 9824 9827	old
+T170	string 9887 9894	scrshot
+T171	protocol 10134 10136	C2
+T172	string 10148 10155	camshot
+T173	function 10349 10356	scrshot
+T174	protocol 10397 10399	C2
+T175	string 10411 10415	uuid
+T176	string 10483 10491	interval
+T177	protocol 10583 10585	C2
+T178	string 10606 10612	server
+T179	string 10666 10675	transport
+T180	string 10795 10802	autorun
+T181	malware 10861 10867	Kazuar
+T182	protocol 10622 10624	C2
+T183	malware 10743 10749	Kazuar
+T184	string 10921 10929	DISABLED
+T185	string 10932 10940	WINLOGON
+T186	string 10943 10951	POLICIES
+T187	string 10954 10961	HKCURUN
+T188	string 10964 10971	RUNONCE
+T189	string 10974 10981	LOADKEY
+T190	string 10984 10991	STARTUP
+T191	string 10997 11003	remote
+T192	malware 11077 11083	Kazuar
+T193	protocol 11097 11101	HTTP
+T194	protocol 11188 11192	HTTP
+T195	string 11207 11211	info
+T196	string 11540 11544	copy
+T197	protocol 11611 11613	C2
+T198	string 11691 11695	move
+T199	protocol 11761 11763	C2
+T200	string 11830 11836	remove
+T201	protocol 11875 11877	C2
+T202	string 11992 11999	finddir
+T203	string 12167 12171	kill
+T204	string 12234 12242	tasklisk
+T205	function 12290 12317	select * from Win32_Process
+T206	OS_name 12326 12333	Windows
+T207	function 12366 12412	ps -eo comm ,pid ,ppid ,user ,start ,tty ,args
+T208	OS_name 12450 12454	Unix
+T209	malware 12525 12531	Trojan
+T210	string 12467 12474	suicide
+T211	string 12596 12602	plugin
+T212	string 12768 12775	plugout
+T213	string 12828 12836	pluglist
+T214	attack_goal 314 332	espionage campaign
+T215	function 12755 12760	Start
+T216	string 12908 12911	run
+T217	protocol 13046 13048	C2
+T218	malware 13098 13104	Kazuar
+T219	malware 13197 13204	Trojans
+T220	malware 13244 13250	Kazuar
+T221	function 13438 13446	tasklist
+T222	tool 13468 13471	WMI
+T223	function 13487 13489	ps
+T224	malware 13515 13521	Kazuar
+T225	OS_name 13560 13567	Windows
+T226	OS_name 13572 13576	Unix
+T227	malware 13594 13600	Kazuar
+T228	function 13606 13609	cmd
+T230	OS_name 13660 13667	Windows
+T231	function 13682 13691	/bin/bash
+T232	OS_name 13698 13702	Unix
+T233	malware 13769 13775	Kazuar
+T234	OS_name 13845 13852	Windows
+T235	OS_name 13857 13861	Unix
+T236	malware 13872 13878	Kazuar
+T237	function 13924 13930	plugin
+T238	function 13933 13940	plugout
+T239	function 13945 13953	pluglist
+T240	malware 14030 14036	Kazuar
+T241	malware 14096 14102	Kazuar
+T242	program_language 14180 14183	NET
+T243	malware 14202 14208	Kazuar
+T244	malware 14252 14259	Trojans
+T245	malware 14316 14322	Kazuar
+T246	function 14328 14334	remote
+T247	malware 14460 14466	Trojan
+T248	protocol 14507 14511	HTTP
+T249	malware 14547 14553	Kazuar
+T250	malware 14616 14622	Trojan
+T251	function 14727 14733	remote
+T252	malware 14784 14790	Kazuar
+T253	protocol 14794 14798	HTTP
+T254	function 14926 14938	HttpListener
+T255	function 14899 14907	Prefixes
+T256	protocol 15046 15050	HTTP
+T257	function 15136 15143	OPTIONS
+T258	function 15146 15150	POST
+T259	function 15153 15156	GET
+T260	function 15161 15164	PUT
+T261	malware 15219 15225	Kazuar
+T262	malware 15319 15325	Trojan
+T263	protocol 15334 15336	C2
+T264	malware 15361 15367	Trojan
+T265	protocol 15403 15405	C2
+T266	protocol 15419 15421	C2
+T267	malware 15460 15466	Trojan
+T268	function 15778 15785	OPTIONS
+T269	protocol 15827 15831	HTTP
+T270	function 15848 15852	POST
+T271	protocol 15868 15871	XML
+T272	malware 15892 15898	Kazuar
+T273	protocol 15971 15974	XML
+T274	protocol 16004 16006	C2
+T275	malware 16050 16056	Kazuar
+T276	function 16172 16175	GET
+T277	function 16305 16308	PUT
+T278	protocol 16250 16254	HTTP
+T279	protocol 16324 16327	XML
+T280	malware 16348 16354	Kazuar
+T281	function 16417 16421	POST
+T282	protocol 16523 16527	HTTP
+T283	function 16528 16531	PUT
+T284	OS_name 16683 16687	Unix
+T285	program_language 16724 16727	NET
+T286	malware 16753 16759	Kazuar
+T287	malware 16760 16766	Trojan
+T288	protocol 16944 16948	HTTP
+T289	OS_name 17026 17033	Windows
+T290	OS_name 17038 17042	Unix
+T291	malware 17088 17094	Kazuar
+T292	company 17120 17148	Palo Alto Networks AutoFocus
+T293	malware 17202 17208	Kazuar
+T294	malware 17225 17231	Kazuar
+T295	malware 17301 17307	Kazuar
+T296	malware 17377 17383	Kazuar
+T297	malware 17453 17459	Kazuar
+T298	malware 17529 17535	Kazuar
+T299	malware 17594 17600	Kazuar
+T300	malware 17664 17670	Kazuar
+T301	malware 17716 17722	Kazuar
+T302	malware 17775 17781	Kazuar
+T303	malware 17830 17836	Kazuar
+T304	md5 17234 17298	8490daab736aa638b500b27c962a8250bbb8615ae1c68ef77494875ac9d2ada2
+T305	md5 17310 17374	b51105c56d1bf8f98b7e924aa5caded8322d037745a128781fa0bc23841d1e70
+T306	md5 17386 17450	bf6f30673cf771d52d589865675a293dc5c3668a956d0c2fc0d9403424d429b2
+T307	md5 17462 17526	cd4c2e85213c96f79ddda564242efec3b970eded8c59f1f6f4d9a420eb8f1858
+T311	string 17725 17774	%LOCALAPPDATA%\/[a-f0-9]{32}\/[a-f0-9]{32}\.dll .
+T312	string 17784 17829	%LOCALAPPDATA%\/[a-f0-9]{32}\/[a-f0-9]{32}/ .
+T313	string 17839 17888	%USERPROFILE%\Start Menu\Programs\Startup\*.lnk .
+T308	url_evil 17538 17591	http://gaismustudija.lv/wp-includes/pomo/kontakti.php
+T309	url_evil 17603 17661	http://hcdh-tunisie.org/wp-includes/SimplePie/gzencode.php
+T310	url_evil 17673 17713	http://www.gallen.fi/wp-content/gallery/
+R3	find Arg1:T3 Arg2:T4	
+R4	attack Arg1:T4 Arg2:T214	
+R5	part_of Arg1:T10 Arg2:T3	
+R6	coreference Arg1:T7 Arg2:T5	
+R7	part_of Arg1:T13 Arg2:T12	
+R8	use Arg1:T19 Arg2:T18	
+R9	coreference Arg1:T20 Arg2:T19	
+R10	coreference Arg1:T21 Arg2:T19	
+R11	attack Arg1:T19 Arg2:T22	
+R12	attack Arg1:T19 Arg2:T23	
+R13	attack Arg1:T19 Arg2:T24	
+R14	attack Arg1:T19 Arg2:T25	
+R15	use Arg1:T26 Arg2:T27	
+R16	first_found_time Arg1:T27 Arg2:T28	
+R17	use Arg1:T29 Arg2:T30	
+R18	coreference Arg1:T31 Arg2:T29	
+R19	coreference Arg1:T32 Arg2:T30	
+R20	use Arg1:T29 Arg2:T33	
+R21	part_of Arg1:T35 Arg2:T34	
+R22	use Arg1:T37 Arg2:T36	
+R23	use Arg1:T38 Arg2:T39	
+R24	use Arg1:T38 Arg2:T40	
+T47	person 3193 3207	malware author
+R28	attack Arg1:T47 Arg2:T61	
+R29	attack Arg1:T47 Arg2:T62	
+R30	located Arg1:T62 Arg2:T63	
+R31	located Arg1:T61 Arg2:T63	
+R33	part_of Arg1:T69 Arg2:T68	
+R34	part_of Arg1:T74 Arg2:T70	
+R35	part_of Arg1:T75 Arg2:T71	
+R36	part_of Arg1:T76 Arg2:T72	
+R37	part_of Arg1:T77 Arg2:T73	
+R38	part_of Arg1:T81 Arg2:T80	
+R39	use Arg1:T86 Arg2:T87	
+R40	part_of Arg1:T89 Arg2:T88	
+R41	coreference Arg1:T93 Arg2:T92	
+R42	coreference Arg1:T95 Arg2:T94	
+R43	located Arg1:T95 Arg2:T96	
+R44	located Arg1:T95 Arg2:T97	
+R45	coreference Arg1:T105 Arg2:T101	
+R46	use Arg1:T105 Arg2:T102	
+R47	use Arg1:T105 Arg2:T104	
+R48	use Arg1:T105 Arg2:T103	
+R49	coreference Arg1:T108 Arg2:T105	
+R50	coreference Arg1:T106 Arg2:T101	
+R51	coreference Arg1:T107 Arg2:T106	
+R52	coreference Arg1:T109 Arg2:T106	
+R53	use Arg1:T109 Arg2:T110	
+R54	use Arg1:T113 Arg2:T114	
+R55	attack Arg1:T123 Arg2:T122	
+R56	attack Arg1:T123 Arg2:T124	
+R57	attack Arg1:T123 Arg2:T125	
+R58	attack Arg1:T117 Arg2:T118	
+R59	attack Arg1:T117 Arg2:T119	
+R60	attack Arg1:T117 Arg2:T120	
+R61	use Arg1:T127 Arg2:T128	
+R62	part_of Arg1:T133 Arg2:T131	
+R63	use Arg1:T134 Arg2:T135	
+R64	use Arg1:T134 Arg2:T136	
+R65	use Arg1:T134 Arg2:T137	
+R66	use Arg1:T134 Arg2:T138	
+R67	use Arg1:T134 Arg2:T140	
+R68	use Arg1:T142 Arg2:T143	
+R69	use Arg1:T146 Arg2:T145	
+R70	use Arg1:T146 Arg2:T147	
+R71	use Arg1:T152 Arg2:T153	
+R72	use Arg1:T152 Arg2:T154	
+R73	use Arg1:T156 Arg2:T155	
+R74	use Arg1:T181 Arg2:T184	
+R75	use Arg1:T181 Arg2:T185	
+R76	use Arg1:T181 Arg2:T186	
+R77	use Arg1:T181 Arg2:T187	
+R78	use Arg1:T181 Arg2:T188	
+R79	use Arg1:T181 Arg2:T189	
+R80	use Arg1:T181 Arg2:T190	
+R81	use Arg1:T192 Arg2:T193	
+R82	use Arg1:T192 Arg2:T194	
+R83	use Arg1:T224 Arg2:T223	
+R84	use Arg1:T222 Arg2:T221	
+R85	use Arg1:T224 Arg2:T225	
+R86	use Arg1:T224 Arg2:T226	
+R87	use Arg1:T224 Arg2:T222	
+R88	use Arg1:T227 Arg2:T228	
+T48	sample_name 13646 13653	cmd.exe
+R89	attack Arg1:T227 Arg2:T230	
+R90	use Arg1:T227 Arg2:T231	
+R91	use Arg1:T228 Arg2:T48	
+R92	attack Arg1:T227 Arg2:T232	
+R93	attack Arg1:T233 Arg2:T234	
+R94	attack Arg1:T233 Arg2:T235	
+R95	use Arg1:T236 Arg2:T237	
+R96	use Arg1:T236 Arg2:T238	
+R97	use Arg1:T236 Arg2:T239	
+R98	use Arg1:T241 Arg2:T242	
+R99	use Arg1:T245 Arg2:T246	
+R100	use Arg1:T247 Arg2:T248	
+R101	use Arg1:T252 Arg2:T253	
+T98	person 15023 15028	actor
+R102	use Arg1:T98 Arg2:T256	
+R103	use Arg1:T98 Arg2:T257	
+R104	use Arg1:T98 Arg2:T258	
+R105	use Arg1:T98 Arg2:T259	
+R106	use Arg1:T98 Arg2:T260	
+R107	use Arg1:T262 Arg2:T263	
+R108	use Arg1:T264 Arg2:T265	
+R109	use Arg1:T267 Arg2:T266	
+R110	use Arg1:T268 Arg2:T269	
+R111	use Arg1:T270 Arg2:T271	
+R112	use Arg1:T272 Arg2:T270	
+R113	use Arg1:T276 Arg2:T278	
+R114	use Arg1:T277 Arg2:T279	
+R115	use Arg1:T280 Arg2:T277	
+R116	use Arg1:T283 Arg2:T282	
+R117	use Arg1:T286 Arg2:T284	
+R118	use Arg1:T286 Arg2:T285	
+R119	attack Arg1:T291 Arg2:T290	
+R120	attack Arg1:T291 Arg2:T289	
+R121	part_of Arg1:T304 Arg2:T294	
+R122	use Arg1:T292 Arg2:T293	
+R123	part_of Arg1:T305 Arg2:T295	
+R124	part_of Arg1:T306 Arg2:T296	
+R125	part_of Arg1:T307 Arg2:T297	
+R126	part_of Arg1:T308 Arg2:T298	
+R127	part_of Arg1:T309 Arg2:T299	
+R128	part_of Arg1:T310 Arg2:T300	
+R129	part_of Arg1:T311 Arg2:T301	
+R130	part_of Arg1:T312 Arg2:T302	
+R131	part_of Arg1:T313 Arg2:T303	
+T229	malware 33 41	Backdoor
+T314	malware 93 101	Backdoor
+T315	malware 287 295	backdoor
+T316	reference_word 713 725	this malware
+R1	coreference Arg1:T316 Arg2:T12	
+T14	reference_word 908 910	it
+R132	coreference Arg1:T14 Arg2:T17	
+T50	sub_activity 2667 2689	encrypts this MD5 hash
+R25	launch Arg1:T56 Arg2:T50	
+T54	sub_activity 2517 2536	generates its mutex
+R26	launch Arg1:T53 Arg2:T54	
+T57	sub_activity 2345 2409	initializes by gathering system and malware filename information
+T317	sub_activity 2414 2429	creates a mutex
+R27	launch Arg1:T51 Arg2:T57	
+R133	launch Arg1:T51 Arg2:T317	
+T318	encryption_algo 2587 2590	MD5
+T319	encryption_algo 3089 3092	MD5
+T65	sub_activity 3300 3338	creates a set of folders on the system
+R32	launch Arg1:T64 Arg2:T65	
+T320	sample_function 9261 9291	Logs a specified debug message
+T321	sample_function 9300 9339	Upload files from a specified directory
+T322	sample_function 9471 9542	Writes provided data ( referred to as ‘ payload ’ ) to a specified file
+T323	sample_function 9565 9635	Executes a specified command and writes the output to a temporary file
+T324	sample_function 9697 9731	Trojan sleeps for a specified time
+T325	sample_function 9745 9764	Upgrades the Trojan
+T326	sample_function 9895 9942	Takes a screenshot of the entire visible screen
+R134	goal Arg1:T160 Arg2:T320	
+R135	goal Arg1:T161 Arg2:T321	
+R136	goal Arg1:T162 Arg2:T322	
+R137	goal Arg1:T163 Arg2:T323	
+R138	goal Arg1:T165 Arg2:T324	
+R139	goal Arg1:T167 Arg2:T325	
+R140	goal Arg1:T170 Arg2:T326	
+T327	sample_function 10156 10191	Creates a Window called “ WebCapt ”
+T328	sample_function 10416 10448	Sets the unique agent identifier
+T329	sample_function 10492 10574	Sets the transport intervals , specifically the minimum and maximum time intervals
+T330	sample_function 10613 10660	Sets the C2 servers by providing a list of URLs
+T331	sample_function 10676 10704	Sets the transport processes
+T332	sample_function 10803 10858	Sets the autorun type as discussed earlier in this blog
+R141	goal Arg1:T172 Arg2:T327	
+R142	goal Arg1:T175 Arg2:T328	
+R143	goal Arg1:T176 Arg2:T329	
+R144	goal Arg1:T178 Arg2:T330	
+R145	goal Arg1:T179 Arg2:T331	
+R146	goal Arg1:T180 Arg2:T332	
+T333	sample_function 11004 11022	Sets a remote type
+T334	sample_function 11212 11277	Gathers system information , specifically information referred to
+T335	sample_function 11545 11568	Copies a specified file
+T336	sample_function 11696 11742	Moves a specified file to a specified location
+T337	sample_function 11837 11861	Deletes a specified file
+T338	sample_function 12000 12045	Find a specified directory and list its files
+T339	sample_function 12172 12220	Kills a process by name or by process identifier
+T340	sample_function 12243 12265	List running processes
+R147	goal Arg1:T204 Arg2:T340	
+R148	goal Arg1:T203 Arg2:T339	
+R149	goal Arg1:T200 Arg2:T337	
+R150	goal Arg1:T202 Arg2:T338	
+R151	goal Arg1:T198 Arg2:T336	
+R152	goal Arg1:T196 Arg2:T335	
+R153	goal Arg1:T195 Arg2:T334	
+T341	sample_function 12502 12531	meant to uninstall the Trojan
+T342	sample_function 12603 12620	Installing plugin
+T343	sample_function 12776 12822	Removes a plugin based on the Assembly ’s name
+T344	sample_function 12837 12902	Gets a list of plugins and if they are “ working ” or “ stopped ”
+T345	sample_function 12912 12939	Runs a specified executable

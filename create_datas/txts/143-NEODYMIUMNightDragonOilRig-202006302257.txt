@@ -1,0 +1,13 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+NEODYMIUM is an activity group that conducted a campaign in May 2016 and has heavily targeted Turkish victims .
+The group has demonstrated similarity to another activity group called PROMETHIUM due to overlapping victim and campaign characteristics .
+NEODYMIUM is reportedly associated closely with BlackOasis operations , but evidence that the group names are aliases has not been identified .
+Night Dragon is a campaign name for activity involving a threat group that has conducted activity originating primarily in China .
+OilRig : IRN2 , HELIX KITTEN , APT34 .
+OilRig is a suspected Iranian threat group that has targeted Middle Eastern and international victims since at least 2014 .
+The group has targeted a variety of industries , including financial , government , energy , chemical , and telecommunications , and has largely focused its operations within the Middle East .
+It appears the group carries out supply chain attacks , leveraging the trust relationship between organizations to attack their primary targets .
+FireEye assesses that the group works on behalf of the Iranian government based on infrastructure details that contain references to Iran , use of Iranian infrastructure , and targeting that aligns with nation-state interests .
+This group was previously tracked under two distinct groups , APT34 and OilRig , but was combined due to additional reporting giving higher confidence about the overlap of the activity .

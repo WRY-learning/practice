@@ -1,0 +1,418 @@
+T1	malware 15 24	Shamoon 2
+T2	time 177 190	November 2016
+T3	time 264 268	2012
+T4	malware 269 276	Shamoon
+T5	malware 347 356	Shamoon 2
+T6	location 431 443	Saudi Arabia
+T7	time 475 493	November 17 , 2016
+T8	malware 373 382	Disttrack
+T9	target_crowd 406 427	a single organization
+T12	sub_activity 459 471	wipe systems
+R5	located Arg1:T9 Arg2:T6	
+T13	location 624 636	Saudi Arabia
+T14	time 694 712	November 29 , 2016
+T15	target_crowd 599 620	a second organization
+T16	sub_activity 660 672	wipe systems
+T17	attack_activity 347 388	Shamoon 2 : Return of the Disttrack Wiper
+R6	occur_time Arg1:T17 Arg2:T7	
+R8	located Arg1:T15 Arg2:T13	
+T19	attack_activity 817 830	wiper attacks
+T20	counter_measure 833 868	Virtual Desktop Interface snapshots
+T22	time 927 945	November 17 , 2016
+T26	time 1287 1305	November 17 , 2016
+T27	OS_name 1127 1134	Windows
+T28	company 1429 1435	Huawei
+T29	counter_measure 1526 1537	FusionCloud
+T30	malware 1617 1626	Disttrack
+T32	sample_name 14015 14026	newtvsc.exe
+T33	malware 14004 14013	Shamoon 2
+T34	sample_name 13989 14001	caiaw00f.exe
+T35	malware 13978 13987	Shamoon 2
+T36	sample_name 13963 13975	lxiaw006.exe
+T37	malware 13952 13961	Shamoon 2
+T38	sample_name 13937 13949	cniaw001.exe
+T39	malware 13926 13935	Shamoon 2
+T40	sample_name 13911 13923	lxiaw004.exe
+T41	malware 13900 13909	Shamoon 2
+T42	malware 13874 13883	Shamoon 2
+T43	sample_name 13885 13897	hpiaw001.exe
+T44	sample_name 13858 13871	_s3wcap32.exe
+T45	malware 13847 13856	Shamoon 2
+T46	sample_name 13833 13844	hdvmp32.exe
+T47	malware 13822 13831	Shamoon 2
+T48	sample_name 13807 13819	_mvscdsc.exe
+T49	malware 13796 13805	Shamoon 2
+T50	sample_name 13781 13793	saiaw002.exe
+T51	malware 13770 13779	Shamoon 2
+T52	sample_name 13755 13767	briaw00a.exe
+T53	malware 13744 13753	Shamoon 2
+T54	sample_name 13729 13741	sdwscdrv.exe
+T55	malware 13718 13727	Shamoon 2
+T56	sample_name 13703 13715	kyiaw002.exe
+T57	malware 13692 13701	Shamoon 2
+T58	sample_name 13677 13689	caiaw00d.exe
+T59	malware 13666 13675	Shamoon 2
+T60	sample_name 13651 13663	sdwprint.exe
+T61	malware 13640 13649	Shamoon 2
+T62	sample_name 13625 13637	caiaw00a.exe
+T63	sample_name 13599 13611	pdwmtphw.exe
+T64	sample_name 13573 13585	lxiaw003.exe
+T65	sample_name 13547 13559	caiaw00b.exe
+T66	sample_name 13521 13533	miWApRpl.exe
+T67	sample_name 13495 13507	briaw006.exe
+T68	sample_name 13469 13481	dmwaudio.exe
+T69	sample_name 13444 13455	olvsnap.exe
+T70	sample_name 13418 13430	briaw002.exe
+T71	sample_name 13392 13404	epiaw003.exe
+T73	sample_name 13341 13353	briaw005.exe
+T74	sample_name 13316 13327	usinwb2.exe
+T75	sample_name 13292 13302	olvume.exe
+T76	sample_name 13266 13278	caiaw00i.exe
+T77	sample_name 13240 13252	sbuvideo.exe
+T78	sample_name 13214 13226	caiaw00e.exe
+T79	sample_name 13187 13199	vsfnp7_6.pnf
+T80	sample_name 13159 13173	dcT21x400i.pnf
+T81	sample_name 13134 13145	vdsk911.sys
+T82	sample_name 13106 13120	ntertmgr64.exe
+T83	sample_name 13078 13092	ntertmgr32.exe
+T84	malware 13067 13076	Shamoon 2
+T85	malware 13095 13104	Shamoon 2
+T86	malware 13123 13132	Shamoon 2
+T87	malware 13148 13157	Shamoon 2
+T88	malware 13176 13185	Shamoon 2
+T89	malware 13202 13211	Shamoon 2
+T90	malware 13229 13238	Shamoon 2
+T91	malware 13255 13264	Shamoon 2
+T92	malware 13281 13290	Shamoon 2
+T93	malware 13305 13314	Shamoon 2
+T94	malware 13330 13339	Shamoon 2
+T95	malware 13356 13365	Shamoon 2
+T96	malware 13381 13390	Shamoon 2
+T97	malware 13407 13416	Shamoon 2
+T98	malware 13433 13442	Shamoon 2
+T99	malware 13458 13467	Shamoon 2
+T100	malware 13484 13493	Shamoon 2
+T101	malware 13510 13519	Shamoon 2
+T102	malware 13536 13545	Shamoon 2
+T103	malware 13562 13571	Shamoon 2
+T104	malware 13588 13597	Shamoon 2
+T105	malware 13614 13623	Shamoon 2
+T106	malware 12690 12699	Shamoon 2
+T107	malware 12789 12798	Shamoon 2
+T108	malware 12885 12894	Shamoon 2
+T109	malware 12973 12982	Shamoon 2
+T110	sample_name 13051 13062	vdsk911.sys
+T111	sample_name 9032 9044	pdwmtphw.exe
+T112	sample_name 9045 9057	caiaw00a.exe
+T113	sample_name 9058 9070	sdwprint.exe
+T114	sample_name 9071 9083	caiaw00d.exe
+T115	sample_name 9084 9096	kyiaw002.exe
+T116	sample_name 9097 9109	sdwscdrv.exe
+T117	sample_name 9110 9122	briaw00a.exe
+T118	sample_name 9123 9135	saiaw002.exe
+T119	sample_name 9136 9148	_mvscdsc.exe
+T120	sample_name 9149 9160	hdvmp32.exe
+T121	sample_name 9161 9174	_s3wcap32.exe
+T122	sample_name 9240 9251	newtvsc.exe
+T123	sample_name 9175 9187	hpiaw001.exe
+T124	sample_name 9188 9200	lxiaw004.exe
+T125	sample_name 9201 9213	cniaw001.exe
+T126	sample_name 9214 9226	lxiaw006.exe
+T127	sample_name 9227 9239	caiaw00f.exe
+T128	sample_name 7376 7388	lxiaw003.exe
+T129	sample_name 7363 7375	caiaw00b.exe
+T130	sample_name 7350 7362	miWApRpl.exe
+T131	sample_name 7337 7349	briaw006.exe
+T132	sample_name 7324 7336	dmwaudio.exe
+T133	sample_name 7312 7323	olvsnap.exe
+T134	sample_name 7299 7311	briaw002.exe
+T135	sample_name 7286 7298	epiaw003.exe
+T136	sample_name 7274 7285	fpwwlwf.exe
+T137	sample_name 7261 7273	briaw005.exe
+T138	sample_name 7249 7260	usinwb2.exe
+T139	sample_name 7238 7248	olvume.exe
+T140	sample_name 7225 7237	caiaw00i.exe
+T141	sample_name 7212 7224	sbuvideo.exe
+T142	sample_name 7199 7211	caiaw00e.exe
+T143	malware 12775 12784	Disttrack
+T144	malware 11475 11484	Shamoon 2
+T145	malware 11441 11450	Disttrack
+T146	person 11511 11524	threat actors
+T147	location 11543 11556	Saudi Arabian
+T148	target_crowd 11534 11569	a second Saudi Arabian organization
+R16	attack Arg1:T146 Arg2:T148	
+T149	attack_activity 11432 11458	a second Disttrack payload
+T150	person 11600 11606	actors
+T151	malware 11616 11625	Disttrack
+T153	tool 11451 11458	payload
+T154	person 11827 11840	threat actors
+T155	person 11910 11916	actors
+T156	company 11948 11954	Huawei
+T157	person 12025 12038	threat actors
+T158	malware 12106 12115	Disttrack
+T159	time 12162 12191	November 29 , 2016 at 1:30 AM
+T160	malware 12216 12223	Shamoon
+T162	security_team 12372 12390	Palo Alto Networks
+T163	malware 12424 12433	Disttrack
+T164	malware 12493 12502	Disttrack
+T165	counter_measure 12464 12472	WildFire
+T166	person 12613 12632	AutoFocus customers
+T167	tool 12674 12687	Disttrack tag
+R17	use Arg1:T166 Arg2:T167	
+T168	person 12372 12400	Palo Alto Networks customers
+T169	malware 12674 12683	Disttrack
+T170	malware 12645 12654	Disttrack
+T171	attack_activity 12645 12663	Disttrack activity
+T172	attack_activity 12424 12441	Disttrack payload
+T173	tool 12434 12441	payload
+T174	sample_name 9559 9570	vdsk911.sys
+T175	sample_name 9431 9495	5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a
+T176	sample_name 12984 13048	5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a
+R18	coreference Arg1:T110 Arg2:T176	
+T177	string 12800 12864	efd2f4c3fe4e9f2c9ac680a9c670cca378cef6b8776f2362ed278317bfb1fca8
+T178	string 12896 12960	113525c6bea55fa2a2c6cf406184092d743f9d099535923a12cdd9b9192009c4
+T179	string 12701 12765	010d4517c81bcdc438cb36fdf612274498d08db19bba174462ecbede7d9ce6bb
+T180	reference_word 12963 12968	Wiper
+R19	coreference Arg1:T180 Arg2:T178	
+T181	reference_word 12867 12880	Communication
+T182	reference_word 12768 12784	64-bit Disttrack
+R20	coreference Arg1:T182 Arg2:T179	
+R21	coreference Arg1:T181 Arg2:T177	
+R2	goal Arg1:T17 Arg2:T12	
+T10	person 1194 1207	threat actors
+T11	counter_measure 1467 1505	virtual desktop infrastructure ( VDI )
+R3	use Arg1:T28 Arg2:T11	
+T18	counter_measure 1540 1543	VDI
+T21	malware 1702 1709	Shamoon
+T23	person 1702 1719	Shamoon attackers
+T24	reference_word 1771 1775	they
+R7	coreference Arg1:T24 Arg2:T23	
+T25	target_crowd 1832 1853	targeted organization
+T31	person 1949 1962	organizations
+T183	counter_measure 2055 2058	VDI
+T184	malware 2144 2151	Shamoon
+T185	malware 2280 2289	Disttrack
+T186	malware 2356 2365	Shamoon 2
+T187	malware 2380 2389	Disttrack
+T188	malware 2459 2468	Shamoon 2
+T189	time 2577 2596	November 29 , 2016.
+T190	malware 2650 2659	Shamoon 2
+T191	malware 2606 2615	Disttrack
+T192	malware 2800 2809	Disttrack
+T193	malware 3085 3094	Disttrack
+T194	malware 3231 3240	Disttrack
+T195	tool 3241 3248	payload
+T196	tool 3095 3102	payload
+T197	attack_activity 3085 3102	Disttrack payload
+T198	attack_activity 3231 3248	Disttrack payload
+T199	tool 2810 2817	payload
+T200	attack_activity 2800 2817	Disttrack payload
+T201	tool 2390 2397	payload
+T202	attack_activity 2380 2397	Disttrack payload
+T203	tool 2290 2297	payload
+T204	attack_activity 2280 2297	Disttrack payload
+T205	tool 3687 3694	payload
+T206	malware 3791 3800	Disttrack
+T207	tool 3801 3808	payload
+T208	attack_activity 3791 3808	Disttrack payload
+T209	OS_name 3935 3942	Windows
+T210	attack_activity 4152 4169	Disttrack payload
+T211	malware 4152 4161	Disttrack
+T212	tool 4162 4169	payload
+T213	malware 4183 4192	Shamoon 2
+T214	time 4205 4223	November 17 , 2016
+T215	tool 4128 4135	payload
+T216	attack_activity 4177 4199	first Shamoon 2 attack
+R9	first_found_time Arg1:T216 Arg2:T214	
+T217	person 4417 4430	threat actors
+T218	attack_activity 4627 4644	Disttrack payload
+T219	malware 4627 4636	Disttrack
+T220	tool 4637 4644	payload
+T221	counter_measure 4772 4814	virtualized desktop infrastructure ( VDI )
+T222	company 4762 4768	Huawei
+R10	use Arg1:T222 Arg2:T221	
+T223	counter_measure 4834 4845	FusionCloud
+T224	target_crowd 4874 4895	targeted organization
+T225	company 4934 4940	Huawei
+T226	counter_measure 4941 4944	VDI
+R11	use Arg1:T225 Arg2:T226	
+T227	malware 4955 4962	Shamoon
+T228	person 4955 4969	Shamoon actors
+T229	person 5067 5073	actors
+T230	counter_measure 5173 5176	VDI
+T231	counter_measure 5194 5197	VDI
+T232	malware 5271 5280	Disttrack
+T233	counter_measure 5351 5362	FusionCloud
+T234	OS_name 5377 5382	Linux
+T235	OS_name 5450 5457	Windows
+T236	malware 5463 5472	Disttrack
+T237	malware 5554 5561	Shamoon
+T238	person 5581 5589	attacker
+T239	counter_measure 5615 5618	VDI
+T240	counter_measure 5736 5739	VDI
+T241	counter_measure 5797 5800	VDI
+T242	tool 6007 6014	payload
+T243	sample_name 6147 6161	ntertmgr32.exe
+T244	sample_name 6180 6194	ntertmgr64.exe
+T245	malware 6316 6325	Disttrack
+T246	time 6438 6456	November 17 , 2016
+T247	attack_activity 6408 6425	Disttrack payload
+T248	malware 6408 6417	Disttrack
+T249	tool 6418 6425	payload
+T252	time 6680 6698	November 17 , 2016
+T253	IP 6732 6739	1.1.1.1
+T256	IP 6826 6833	1.1.1.1
+T257	malware 6854 6863	Shamoon 2
+T258	sample_name 7099 7110	netinit.exe
+T260	malware 7015 7024	Disttrack
+T261	malware 7475 7484	Shamoon 2
+T262	sample_name 7554 7569	usbvideo324.pnf
+T263	sample_name 7635 7649	dcT21x400i.pnf
+T264	sample_name 7718 7730	vsfnp7_6.pnf
+T265	sample_name 7780 7793	netimm173.pnf
+T266	person 7885 7897	threat actor
+T267	malware 7938 7947	Shamoon 2
+T268	person 8021 8026	actor
+T269	malware 8101 8110	Disttrack
+T270	tool 8111 8118	payload
+T271	attack_activity 8101 8118	Disttrack payload
+T272	time 8299 8328	November 29 , 2016 at 1:30 AM
+T273	location 8335 8347	Saudi Arabia
+T274	time 8489 8507	November 29 , 2016
+T275	malware 8375 8382	Shamoon
+T276	person 8714 8728	Shamoon actors
+T277	malware 8714 8721	Shamoon
+T278	malware 8864 8873	Disttrack
+T279	tool 12603 12610	payload
+T280	reference_word 11573 11593	this attack campaign
+R12	coreference Arg1:T280 Arg2:T149	
+T281	tool 11626 11633	payload
+T282	attack_activity 11616 11633	Disttrack payload
+R13	launch Arg1:T150 Arg2:T282	
+T284	target_crowd 11647 11681	other systems on the local network
+R15	attack Arg1:T282 Arg2:T284	
+T285	target_crowd 11761 11782	targeted organization
+T152	counter_measure 11989 11992	VDI
+R14	use Arg1:T156 Arg2:T152	
+T283	attack_activity 12106 12121	Disttrack wiper
+T286	sub_activity 12139 12158	overwriting systems
+R22	occur_time Arg1:T283 Arg2:T159	
+R23	goal Arg1:T283 Arg2:T286	
+T161	person 12216 12229	Shamoon actor
+T288	company 10774 10783	Microsoft
+T289	tool 10787 10795	FILETIME
+R24	use Arg1:T288 Arg2:T289	
+T290	time 10870 10886	January 1 , 1601
+T291	malware 10945 10952	Shamoon
+T292	time 11002 11029	August 30 , 2012 at 8:34:29
+T295	domain 11210 11241	binnatova@bsunanotechnology.com
+T296	malware 11300 11307	Shamoon
+T297	time 11347 11351	2012
+T298	person 11368 11373	actor
+T299	company 9735 9752	EldoS Corporation
+T300	sample_name 9793 9803	drdisk.sys
+T301	malware 9832 9841	Disttrack
+T302	tool 9849 9856	payload
+T303	malware 9904 9913	Shamoon 2
+T304	malware 9927 9936	Disttrack
+T305	tool 9937 9944	payload
+T306	attack_activity 9927 9944	Disttrack payload
+T307	attack_activity 9904 9920	Shamoon 2 attack
+T308	attack_activity 10153 10169	Shamoon 2 attack
+T309	malware 10153 10162	Shamoon 2
+T310	time 10271 10300	August 1 and August 20 , 2012
+T293	time 11111 11140	August 1 and August 20 , 2012
+T294	person 10332 10336	blog
+T311	time 10404 10415	August 2012
+T312	reference_word 10526 10537	this attack
+T313	reference_word 10563 10575	first attack
+R25	coreference Arg1:T312 Arg2:T313	
+T314	encryption_algo 9422 9428	SHA256
+T315	reference_word 8545 8556	this attack
+T316	time 8614 8628	in the morning
+T317	target_crowd 8636 8677	the majority of the organization ’s staff
+R26	occur_time Arg1:T315 Arg2:T316	
+R27	attack Arg1:T315 Arg2:T317	
+T318	attack_activity 8375 8390	Shamoon attacks
+T319	time 8405 8436	on a holiday and over a weekend
+T320	time 8463 8483	during the work week
+T321	time 8514 8521	Tuesday
+T322	reference_word 8252 8263	this attack
+T323	sub_activity 8281 8295	wiping systems
+R28	launch Arg1:T322 Arg2:T323	
+R29	occur_time Arg1:T322 Arg2:T272	
+T324	sub_activity 8131 8145	wiping systems
+R30	goal Arg1:T271 Arg2:T324	
+T325	tool 8170 8177	payload
+T326	attack_activity 7938 7954	Shamoon 2 attack
+T327	attack_goal 7962 7986	destroy data and systems
+R31	launch Arg1:T266 Arg2:T326	
+T328	attack_activity 7475 7491	Shamoon 2 attack
+T255	attack_activity 6854 6870	Shamoon 2 attack
+T250	reference_word 6501 6512	this attack
+R32	use Arg1:T233 Arg2:T234	
+T251	target_crowd 4259 4280	targeted organization
+T259	reference_word 3591 3602	this attack
+T329	target_crowd 3624 3644	targeted organizatio
+R33	attack Arg1:T259 Arg2:T329	
+T330	tool 3483 3490	payload
+T331	attack_activity 2650 2666	Shamoon 2 attack
+T332	attack_activity 2459 2475	Shamoon 2 attack
+T333	attack_activity 2144 2158	Shamoon attack
+T334	tool 875 882	payload
+T335	tool 946 953	payload
+T336	attack_activity 269 283	Shamoon attack
+R1	occur_time Arg1:T336 Arg2:T3	
+T338	tool 576 583	payload
+R34	first_found_time Arg1:T336 Arg2:T2	
+R35	attack Arg1:T5 Arg2:T9	
+T337	string 2970 2974	LANG
+T339	string 2956 2962	PKCS12
+T340	string 2942 2947	PKCS7
+T341	sub_activity 3264 3309	spreads to other systems on the local network
+R4	attack Arg1:T198 Arg2:T341	
+T254	reference_word 8930 8932	it
+R36	coreference Arg1:T254 Arg2:T278	
+R37	part_of Arg1:T110 Arg2:T109	
+R38	part_of Arg1:T32 Arg2:T33	
+R39	part_of Arg1:T34 Arg2:T35	
+R40	part_of Arg1:T36 Arg2:T37	
+R41	part_of Arg1:T38 Arg2:T39	
+R42	part_of Arg1:T40 Arg2:T41	
+R43	part_of Arg1:T43 Arg2:T42	
+R44	part_of Arg1:T44 Arg2:T45	
+R45	part_of Arg1:T46 Arg2:T47	
+R46	part_of Arg1:T48 Arg2:T49	
+R47	part_of Arg1:T50 Arg2:T51	
+R48	part_of Arg1:T52 Arg2:T53	
+R49	part_of Arg1:T54 Arg2:T55	
+R50	part_of Arg1:T56 Arg2:T57	
+R51	part_of Arg1:T58 Arg2:T59	
+R52	part_of Arg1:T60 Arg2:T61	
+R53	part_of Arg1:T62 Arg2:T105	
+R54	part_of Arg1:T63 Arg2:T104	
+R55	part_of Arg1:T64 Arg2:T103	
+R56	part_of Arg1:T65 Arg2:T102	
+R57	part_of Arg1:T66 Arg2:T101	
+R58	part_of Arg1:T67 Arg2:T100	
+R59	part_of Arg1:T68 Arg2:T99	
+R60	part_of Arg1:T69 Arg2:T98	
+R61	part_of Arg1:T70 Arg2:T97	
+R62	part_of Arg1:T71 Arg2:T96	
+T72	sample_name 13367 13378	fpwwlwf.exe
+R63	part_of Arg1:T72 Arg2:T95	
+R64	part_of Arg1:T73 Arg2:T94	
+R65	part_of Arg1:T74 Arg2:T93	
+R66	part_of Arg1:T75 Arg2:T92	
+R67	part_of Arg1:T76 Arg2:T91	
+R68	part_of Arg1:T77 Arg2:T90	
+R69	part_of Arg1:T78 Arg2:T89	
+R70	part_of Arg1:T79 Arg2:T88	
+R71	part_of Arg1:T80 Arg2:T87	
+R72	part_of Arg1:T81 Arg2:T86	
+R73	part_of Arg1:T82 Arg2:T85	
+R74	part_of Arg1:T83 Arg2:T84	
+T287	string 2931 2935	X509
+T342	string 2981 2985	MENU
+T343	string 2994 2997	ICO
+T344	string 3031 3034	ICO

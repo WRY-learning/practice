@@ -1,0 +1,241 @@
+T2	location 27 34	Ukraine
+T3	malware 42 55	spearphishing
+T4	tool 61 75	Word documents
+T5	attack_activity 254 267	cyber-attacks
+T6	government 280 296	critical sectors
+T7	location 300 307	Ukraine
+R4	attack Arg1:T5 Arg2:T6	
+R5	located Arg1:T6 Arg2:T7	
+T8	reference_word 342 353	the attacks
+R6	coreference Arg1:T8 Arg2:T5	
+T9	malware 378 397	BlackEnergy Trojans
+R7	use Arg1:T8 Arg2:T9	
+T10	malware 431 442	BlackEnergy
+T11	threatActor_name 493 498	Cr4sh
+R8	part_of Arg1:T10 Arg2:T11	
+T12	time 504 508	2007
+T13	attack_activity 693 705	DDoS attacks
+T14	location 714 721	Georgia
+R9	attack Arg1:T13 Arg2:T14	
+T15	time 725 729	2008
+R10	occur_time Arg1:T13 Arg2:T15	
+T16	person 738 752	unknown actors
+T17	attack_activity 773 785	DDoS attacks
+R11	launch Arg1:T16 Arg2:T17	
+T18	time 812 823	Around 2014
+T19	threatActor_name 851 862	BlackEnergy
+R12	occur_time Arg1:T19 Arg2:T18	
+T20	malware 921 942	SCADA-related plugins
+R13	use Arg1:T19 Arg2:T20	
+T21	target_crowd 946 953	victims
+R14	attack Arg1:T20 Arg2:T21	
+T22	industry 961 964	ICS
+R15	part_of Arg1:T21 Arg2:T22	
+T23	attack_activity 1061 1065	DDoS
+T24	threatActor_name 1123 1138	BlackEnergy APT
+T25	threatActor_name 1182 1197	BlackEnergy APT
+T26	location 1214 1221	Ukraine
+R16	attack Arg1:T25 Arg2:T26	
+T27	time 1234 1248	middle of 2015
+T28	threatActor_name 1291 1302	BlackEnergy
+R17	first_found_time Arg1:T28 Arg2:T27	
+T29	location 1306 1313	Ukraine
+R18	located Arg1:T28 Arg2:T29	
+T30	tool 1323 1338	Excel documents
+R19	use Arg1:T28 Arg2:T30	
+T31	malware 1365 1371	Trojan
+R20	use Arg1:T28 Arg2:T31	
+T32	threatActor_name 1521 1536	BlackEnergy APT
+T33	location 1559 1566	Ukraine
+R21	attack Arg1:T32 Arg2:T33	
+T34	tool 1640 1654	Excel workbook
+T35	tool 1663 1686	Microsoft Word document
+T36	attack_activity 1861 1868	attacks
+T37	government 1881 1897	critical sectors
+R22	attack Arg1:T36 Arg2:T37	
+T38	location 1901 1908	Ukraine
+R23	located Arg1:T37 Arg2:T38	
+T39	security_team 1968 1972	ESET
+T40	security_team 1975 1990	iSIGHT Partners
+T41	reference_word 2013 2024	the attacks
+R24	coreference Arg1:T41 Arg2:T36	
+T42	malware 2054 2073	BlackEnergy Trojans
+R25	use Arg1:T41 Arg2:T42	
+T43	attack_activity 2148 2167	BlackEnergy attacks
+T44	location 2171 2178	Ukraine
+R26	located Arg1:T43 Arg2:T44	
+T45	time 2179 2203	throughout 2014 and 2015
+R27	occur_time Arg1:T43 Arg2:T45	
+T46	security_team 2225 2260	Ukrainian security firm Cys Centrum
+T47	location 2293 2300	Russian
+T48	company 2331 2337	Google
+T49	threatActor_name 2388 2399	BlackEnergy
+T50	security_team 2537 2542	GReAT
+T51	person 2554 2570	Kurt Baumgartner
+T52	person 2575 2589	Maria Garnaeva
+R28	part_of Arg1:T51 Arg2:T50	
+R29	part_of Arg1:T52 Arg2:T50	
+T53	attack_activity 2634 2658	BlackEnergy DDoS attacks
+T54	time 2667 2675	mid-2015
+T55	threatActor_name 2718 2729	BlackEnergy
+R30	occur_time Arg1:T55 Arg2:T54	
+T56	location 2733 2740	Ukraine
+R31	located Arg1:T55 Arg2:T56	
+T57	tool 2750 2765	Excel documents
+R32	use Arg1:T55 Arg2:T57	
+T58	malware 2793 2799	trojan
+R33	use Arg1:T55 Arg2:T58	
+T59	tool 2895 2911	Office documents
+T60	time 2944 2962	in the early 2000s
+T61	tool 2970 2974	Word
+T62	tool 2979 2984	Excel
+R34	part_of Arg1:T61 Arg2:T59	
+R35	part_of Arg1:T62 Arg2:T59	
+T63	company 3125 3134	Microsoft
+T64	attack_activity 3518 3537	attacks BlackEnergy
+T65	location 3546 3553	Ukraine
+R36	attack Arg1:T64 Arg2:T65	
+T66	tool 3629 3643	Excel workbook
+T67	tool 3652 3675	Microsoft Word document
+T68	sample_name 3680 3692	$RR143TB.doc
+T69	md5 3702 3734	e15b36c2e394d599a8ab352159089dd2
+R37	part_of Arg1:T69 Arg2:T68	
+T70	reference_word 3739 3752	This document
+R38	coreference Arg1:T70 Arg2:T68	
+T71	location 3797 3804	Ukraine
+T72	time 3808 3819	Jan 20 2016
+R39	located Arg1:T70 Arg2:T71	
+R40	occur_time Arg1:T70 Arg2:T72	
+T73	reference_word 3854 3856	It
+R41	coreference Arg1:T73 Arg2:T68	
+T74	time 3905 3924	2015-07-27 10:21:00
+R42	part_of Arg1:T74 Arg2:T73	
+T75	government 4206 4219	Pravii Sektor
+T76	location 4268 4275	Ukraine
+R43	located Arg1:T75 Arg2:T76	
+T77	reference_word 4278 4287	The party
+R44	coreference Arg1:T77 Arg2:T75	
+T78	time 4302 4315	November 2013
+T79	tool 4512 4519	oledump
+T80	person 4523 4537	Didier Stevens
+R45	part_of Arg1:T79 Arg2:T80	
+T81	sample_name 4678 4691	vba_macro.exe
+T82	tool 4741 4754	Shell command
+T83	md5 4790 4822	ac2d7f21c826ce0c449481f79138aebd
+T84	sample_name 4761 4774	vba_macro.exe
+R46	part_of Arg1:T83 Arg2:T84	
+T85	malware 4838 4857	BlackEnergy dropper
+T86	tool 4982 4990	rundll32
+T87	sample_name 5239 5252	FONTCACHE.DAT
+T88	md5 5260 5292	3fa9130c9ec44e36e52142f3688313ff
+R47	part_of Arg1:T88 Arg2:T87	
+T89	malware 5313 5338	BlackEnergy ( v3 ) trojan
+T90	tool 5381 5391	C&C server
+R48	use Arg1:T89 Arg2:T90	
+T91	IP_evil 5394 5407	5.149.254.114
+T92	security_team 5482 5486	ESET
+T93	malware 5628 5639	the malware
+T94	protocol 5650 5659	HTTP POST
+R49	use Arg1:T93 Arg2:T94	
+T95	string 5732 5736	b_id
+T96	string 5976 5981	b_gen
+T97	string 6038 6047	301018stb
+T98	company 6096 6099	STB
+T99	url 6104 6125	http://www.stb.ua/ru/
+R50	part_of Arg1:T99 Arg2:T98	
+T100	reference_word 6128 6135	This TV
+R51	coreference Arg1:T100 Arg2:T98	
+T101	attack_activity 6191 6216	BlackEnergy Wiper attacks
+R52	attack Arg1:T101 Arg2:T100	
+T102	time 6220 6232	October 2015
+R53	occur_time Arg1:T101 Arg2:T102	
+T103	threatActor_name 6235 6246	BlackEnergy
+T104	location 6307 6314	Ukraine
+R54	located Arg1:T103 Arg2:T104	
+T105	threatActor_name 6637 6648	BlackEnergy
+T106	industry 6694 6697	ICS
+T107	industry 6700 6706	Energy
+T108	government 6709 6719	government
+T109	industry 6724 6729	media
+T110	location 6733 6740	Ukraine
+R55	located Arg1:T106 Arg2:T110	
+R56	located Arg1:T107 Arg2:T110	
+R57	located Arg1:T108 Arg2:T110	
+R58	located Arg1:T109 Arg2:T110	
+R59	attack Arg1:T105 Arg2:T106	
+R60	attack Arg1:T105 Arg2:T107	
+R61	attack Arg1:T105 Arg2:T108	
+R62	attack Arg1:T105 Arg2:T109	
+T111	company 6741 6760	ICS/SCADA companies
+T112	company 6771 6787	Energy companies
+R63	attack Arg1:T105 Arg2:T111	
+R64	attack Arg1:T105 Arg2:T112	
+T113	threatActor_name 6848 6859	BlackEnergy
+T114	time 6878 6887	June 2014
+R65	first_found_time Arg1:T113 Arg2:T114	
+T115	tool 7414 7428	Word documents
+T116	tool 7442 7447	Excel
+T117	government 7472 7480	ICS-CERT
+T118	tool 7570 7586	Office documents
+T119	tool 7617 7628	Excel files
+R66	part_of Arg1:T119 Arg2:T118	
+T120	tool 7650 7654	Word
+R67	part_of Arg1:T120 Arg2:T118	
+T121	government 7686 7694	ICS-CERT
+T122	tool 7699 7709	PowerPoint
+T124	tool 7776 7790	Word documents
+T125	attack_activity 7806 7817	APT attacks
+R68	use Arg1:T125 Arg2:T124	
+T126	threatActor_name 7845 7850	Turla
+T127	tool 7868 7882	Word documents
+R69	use Arg1:T126 Arg2:T127	
+T128	attack_activity 8099 8118	BlackEnergy attacks
+T129	location 8122 8129	Ukraine
+R70	located Arg1:T128 Arg2:T129	
+T130	threatActor_name 8208 8223	BlackEnergy APT
+T131	security_team 8272 8281	Kaspersky
+T132	security_team 8343 8352	Kaspersky
+T133	malware 8443 8447	HEUR
+T134	threatActor_name 8515 8526	BlackEnergy
+T135	security_team 8573 8582	Kaspersky
+T136	threatActor_name 8746 8757	BlackEnergy
+T137	threatActor_name 8697 8708	BlackEnergy
+T138	threatActor_name 8648 8659	BlackEnergy
+T139	threatActor_name 8599 8610	BlackEnergy
+T140	md5 8613 8645	e15b36c2e394d599a8ab352159089dd2
+T141	md5 8662 8694	ac2d7f21c826ce0c449481f79138aebd
+T142	md5 8711 8743	3fa9130c9ec44e36e52142f3688313ff
+T143	IP_evil 8760 8773	5.149.254.114
+R71	part_of Arg1:T143 Arg2:T136	
+R72	part_of Arg1:T142 Arg2:T137	
+R73	part_of Arg1:T141 Arg2:T138	
+R74	part_of Arg1:T140 Arg2:T139	
+T1	attack_activity 0 23	BlackEnergy APT Attacks
+R1	located Arg1:T1 Arg2:T2	
+R2	use Arg1:T1 Arg2:T3	
+R3	part_of Arg1:T4 Arg2:T3	
+T144	string 6050 6053	STB
+R75	coreference Arg1:T144 Arg2:T98	
+T145	security_team 7739 7750	Cys Centrum
+T123	encryption_algo 3697 3700	md5
+T146	encryption_algo 4785 4788	md5
+T147	encryption_algo 5255 5258	md5
+T148	industry 969 983	energy sectors
+R76	part_of Arg1:T21 Arg2:T148	
+T149	tool 7796 7802	macros
+R77	part_of Arg1:T149 Arg2:T124	
+T150	tool 7888 7894	macros
+R78	part_of Arg1:T150 Arg2:T127	
+T151	tool 7599 7605	macros
+T152	tool 4403 4409	macros
+T153	tool 4131 4137	macros
+T154	tool 2917 2923	macros
+R79	part_of Arg1:T154 Arg2:T59	
+T155	tool 2771 2777	macros
+R80	part_of Arg1:T155 Arg2:T57	
+T156	tool 3232 3238	Macros
+T157	tool 3391 3397	macros
+T158	tool 3003 3009	macros
+T159	tool 1344 1350	macros
+R81	part_of Arg1:T159 Arg2:T30	
+T160	tool 4592 4597	macro

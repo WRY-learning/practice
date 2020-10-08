@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Lstm_Web/.idea/Lstm_Web.iml" filepath="$PROJECT_DIR$/../Lstm_Web/.idea/Lstm_Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../create_datas/.idea/create_datas.iml" filepath="$PROJECT_DIR$/../create_datas/.idea/create_datas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test_word2vec/.idea/test_word2vec.iml" filepath="$PROJECT_DIR$/../test_word2vec/.idea/test_word2vec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/train_lstm_crf.iml" filepath="$PROJECT_DIR$/.idea/train_lstm_crf.iml" />
+    </modules>
+  </component>
+</project>

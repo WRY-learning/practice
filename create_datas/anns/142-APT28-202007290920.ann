@@ -1,0 +1,101 @@
+T1	threatActor_name 296 301	APT28
+T2	security_team 317 323	McAfee
+T3	malware 369 394	a malicious Word document
+R1	find Arg1:T2 Arg2:T3	
+T4	sub_activity 441 480	Dynamic Data Exchange ( DDE ) technique
+R2	use Arg1:T3 Arg2:T4	
+T5	threatActor_name 616 621	APT28
+T6	threatActor_name 870 875	APT28
+T7	threatActor_aliases 892 902	Fancy Bear
+R3	coreference Arg1:T6 Arg2:T7	
+T8	threatActor_name 13 18	APT28
+T9	sub_activity 19 73	Slips Office Malware into Doc Citing NYC Terror Attack
+R4	use Arg1:T8 Arg2:T9	
+T10	sub_activity 929 951	using different themes
+R5	use Arg1:T7 Arg2:T10	
+T11	reference_word 967 969	it
+R6	coreference Arg1:T11 Arg2:T6	
+T12	sub_activity 996 1012	terrorist attack
+R7	use Arg1:T11 Arg2:T12	
+T13	location 1013 1029	in New York City
+R8	located Arg1:T13 Arg2:T12	
+T14	sub_activity 1077 1193	the document contacts a control server to drop the first stage of the malware , Seduploader , onto a victim's system
+R9	use Arg1:T11 Arg2:T14	
+T15	time 1266 1276	October 19
+T16	malware 1157 1168	Seduploader
+R10	occur_time Arg1:T16 Arg2:T15	
+T17	sha1 1412 1452	1c6c700ceebfbe799e115582665105caa03c5c9e
+T18	time 1471 1491	2017-10-27T22:23:00Z
+R11	occur_time Arg1:T17 Arg2:T18	
+T19	url_evil 1570 1621	http://netmediaresources.com/media/resource/vms.dll
+T20	malware 1555 1566	Seduploader
+R12	part_of Arg1:T19 Arg2:T20	
+T21	sha1 1703 1743	4bc722a9b0492a50bd86a1341f02c74c0d773db7
+T22	time 1761 1780	2017-10-31 20:11:10
+R13	occur_time Arg1:T21 Arg2:T22	
+T23	threatActor_name 1834 1839	APT28
+T24	malware 1846 1857	Seduploader
+R14	use Arg1:T23 Arg2:T24	
+T25	threatActor_name 2083 2088	APT28
+T26	malware 2051 2062	Seduploader
+R15	use Arg1:T25 Arg2:T26	
+T27	threatActor_name 2211 2216	APT28
+T28	domain_evil 2164 2178	webviewres.net
+T29	time 2323 2336	on October 25
+R16	occur_time Arg1:T28 Arg2:T29	
+T30	time 2436 2449	on October 29
+R17	occur_time Arg1:T28 Arg2:T30	
+T31	IP_evil 2541 2554	185.216.35.26
+R18	part_of Arg1:T31 Arg2:T28	
+T32	security_team 2627 2633	McAfee
+T33	sub_activity 2643 2682	identified the following related sample
+R19	use Arg1:T32 Arg2:T33	
+T34	sha1 2715 2755	ab354807e687993fbeb1b325eb6e4ab38d428a1e
+T35	time 2773 2792	2017-10-30 23:53:02
+R20	occur_time Arg1:T34 Arg2:T35	
+T36	domain_evil 2812 2838	satellitedeluxpanorama.com
+T37	time 3002 3012	November 5
+T38	IP_evil 2982 2995	89.34.111.160
+T39	domain_evil 2909 2935	satellitedeluxpanorama.com
+R21	part_of Arg1:T38 Arg2:T39	
+R22	occur_time Arg1:T39 Arg2:T37	
+T40	sha1 3038 3078	68c2809560c7623d2307d8797691abf3eafe319a
+T41	attack_activity 3015 3037	The malicious document
+T42	time 3228 3238	October 27
+T43	reference_word 3199 3212	This document
+R23	coreference Arg1:T43 Arg2:T41	
+R24	occur_time Arg1:T43 Arg2:T42	
+T44	sha1 3404 3444	ab354807e687993fbeb1b325eb6e4ab38d428a1e
+T45	sha1 3468 3508	4bc722a9b0492a50bd86a1341f02c74c0d773db7
+T46	sha1 3539 3579	ab354807e687993fbeb1b325eb6e4ab38d428a1e
+T47	malware 3390 3401	Seduploader
+T48	threatActor_name 4648 4653	APT28
+T49	threatActor_name 4732 4737	APT28
+T50	threatActor_name 4818 4823	APT28
+T51	threatActor_name 4897 4902	APT28
+T52	threatActor_name 4970 4975	APT28
+T53	threatActor_name 4994 4999	APT28
+T54	threatActor_name 5025 5030	APT28
+T55	threatActor_name 5048 5053	APT28
+T56	IP_evil 5055 5068	89.34.111.160
+T57	IP_evil 5032 5045	185.216.35.26
+T58	domain_evil 5001 5022	netmediaresources.com
+T59	domain_evil 4977 4991	webviewres.net
+T60	sha1 4655 4695	ab354807e687993fbeb1b325eb6e4ab38d428a1e
+T61	sha1 4739 4779	4bc722a9b0492a50bd86a1341f02c74c0d773db7
+T62	sha1 4825 4865	1c6c700ceebfbe799e115582665105caa03c5c9e
+T63	sha1 4904 4944	68c2809560c7623d2307d8797691abf3eafe319a
+T64	threatActor_name 4562 4567	APT28
+T65	location 4533 4540	Russian
+T66	threatActor_name 4284 4289	APT28
+T67	tool 4323 4333	VBA script
+T68	sub_activity 4388 4401	DDE technique
+R25	use Arg1:T66 Arg2:T68	
+T69	threatActor_name 3990 3995	APT28
+T70	sub_activity 4040 4111	capitalizes on recent events to trick potential victims into infections
+T71	sub_activity 4127 4198	rapidly incorporate new exploitation techniques to increase its success
+R26	use Arg1:T69 Arg2:T70	
+R27	use Arg1:T69 Arg2:T71	
+T72	sha1 3761 3801	4bc722a9b0492a50bd86a1341f02c74c0d773db7
+T73	sha1 3867 3907	8a68f26d01372114f660e32ac4c9117e5d0577f1
+T74	location 3985 3988	U.S

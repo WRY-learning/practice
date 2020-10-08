@@ -1,0 +1,211 @@
+T1	threatActor_name 15 23	Lamberts
+T2	company 171 179	Symantec
+T3	OS_name 208 216	Longhorn
+T4	threatActor_name 301 309	Equation
+T5	threatActor_name 285 298	ProjectSauron
+T6	threatActor_name 277 282	Regin
+T7	threatActor_name 313 318	Duqu2
+T8	company 348 356	Longhorn
+T9	threatActor_name 397 405	Lamberts
+T10	time 464 468	2014
+R1	first_found_time Arg1:T9 Arg2:T10	
+T11	vulnerability_cve 558 571	CVE-2014-4148
+T12	security_team 496 503	FireEye
+R2	attack Arg1:T9 Arg2:T11	
+T13	person 480 490	colleagues
+R3	use Arg1:T13 Arg2:T12	
+R4	find Arg1:T12 Arg2:T11	
+T14	location 690 696	Europe
+T15	malware 617 629	BlackLambert
+T16	target_crowd 659 686	a high profile organization
+R5	attack Arg1:T15 Arg2:T16	
+R6	located Arg1:T16 Arg2:T14	
+T17	threatActor_name 763 771	Lamberts
+T18	vulnerability_cve 1161 1178	( CVE-2014-4148 )
+T19	time 1094 1106	October 2014
+T20	malware 1041 1063	Lambert family malware
+R7	first_found_time Arg1:T20 Arg2:T19	
+T21	company 1114 1121	FireEye
+R8	find Arg1:T21 Arg2:T18	
+T22	company 1231 1240	Microsoft
+T23	malware 1292 1305	Black Lambert
+T24	person 1371 1410	Kaspersky APT Intel Reports subscribers
+T25	malware 1428 1441	Black Lambert
+T26	malware 1692 1705	White Lambert
+T27	malware 1708 1727	While Black Lambert
+T28	malware 1776 1789	White Lambert
+T29	malware 1837 1850	White Lambert
+T30	malware 2034 2047	White Lambert
+T31	malware 2080 2093	Black Lambert
+T32	protocol 1753 1756	C&C
+T33	malware 2156 2169	White Lambert
+T34	malware 2174 2187	Black Lambert
+T35	malware 2246 2258	Blue Lambert
+T36	malware 2272 2284	Blue Lambert
+T37	malware 2415 2428	Black Lambert
+T38	target_crowd 2372 2386	a high profile
+R9	attack Arg1:T36 Arg2:T38	
+R10	attack Arg1:T37 Arg2:T38	
+T39	malware 2556 2569	Green Lambert
+T40	malware 2540 2553	Green Lambert
+T41	malware 2478 2490	Blue Lambert
+T42	reference_word 2530 2532	we
+R11	find Arg1:T42 Arg2:T40	
+T43	reference_word 1682 1684	we
+R12	find Arg1:T43 Arg2:T26	
+T44	malware 2622 2634	Blue Lambert
+T45	malware 2664 2676	Blue Lambert
+T46	malware 2729 2742	Green Lambert
+T47	malware 2880 2893	Green Lambert
+T48	malware 2928 2940	Blue variant
+T49	malware 2956 2979	Blue and Green Lamberts
+T50	malware 3184 3197	Green Lambert
+T51	OS_name 3236 3240	OS X
+R13	attack Arg1:T50 Arg2:T51	
+T52	malware 3252 3265	Green Lambert
+T53	time 3356 3370	September 2014
+T54	reference_word 3309 3313	This
+R14	occur_time Arg1:T54 Arg2:T53	
+T55	OS_name 3377 3381	OS X
+T56	malware 3393 3406	Green Lambert
+R15	part_of Arg1:T56 Arg2:T55	
+T57	OS_name 3456 3463	Windows
+T58	malware 3588 3621	Blue , Black , and Green Lamberts
+T59	malware 3757 3770	White Lambert
+T60	malware 3802 3814	Blue Lambert
+T61	malware 3927 3939	Pink Lambert
+T62	malware 3946 3958	Pink Lambert
+T63	malware 4204 4217	White Lambert
+T64	malware 4272 4302	White and Pink Lambert malware
+T65	malware 4376 4389	White Lambert
+T66	target_crowd 4180 4187	victims
+R16	find Arg1:T66 Arg2:T63	
+T67	malware 4474 4486	Gray Lambert
+T68	threatActor_name 4549 4557	Lamberts
+R17	part_of Arg1:T67 Arg2:T68	
+T69	vulnerability_cve 5115 5128	CVE-2014-4148
+T70	malware 5061 5074	Black Lambert
+T71	malware 4620 4632	Pink Lambert
+T72	malware 4589 4601	Gray Lambert
+T73	malware 4701 4714	White Lambert
+T74	malware 4729 4742	White Lambert
+T75	malware 4745 4757	Gray Lambert
+T76	OS_name 4863 4877	64-bit Windows
+T77	security_team 5012 5021	Kaspersky
+T78	malware 5332 5345	Black Lambert
+T79	malware 6211 6224	Green Lambert
+T80	OS_name 6191 6198	Windows
+R18	part_of Arg1:T79 Arg2:T80	
+T81	OS_name 6078 6082	OS X
+T82	malware 6049 6062	Green Lambert
+T83	location 6101 6107	Russia
+T84	time 6137 6141	2014
+R19	located Arg1:T82 Arg2:T83	
+R20	occur_time Arg1:T82 Arg2:T84	
+T85	malware 5949 5962	Green Lambert
+T86	OS_name 5996 6003	Windows
+T87	malware 5700 5713	Green Lambert
+T88	malware 5753 5765	Blue Lambert
+T89	malware 5504 5516	Blue Lambert
+T90	malware 6445 6458	Green Lambert
+T91	person 6433 6441	droppers
+R21	use Arg1:T91 Arg2:T90	
+T92	tool 6469 6488	ICSsoftware package
+R22	use Arg1:T91 Arg2:T92	
+T93	malware 6871 6884	Black Lambert
+T94	threatActor_name 6771 6789	the Equation group
+T95	tool 6750 6767	Oracle installers
+R23	use Arg1:T94 Arg2:T95	
+T96	malware 7247 7260	White Lambert
+T97	company 7376 7382	Hudson
+T98	malware 7680 7692	Lambert tool
+T99	malware 7728 7741	White Lambert
+T100	OS_name 7899 7913	64-bit Windows
+T101	tool 7976 7993	SiSoftware Sandra
+T102	tool 8038 8086	Turla , ProjectSauron , and Equation 's Grayfish
+T103	malware 8129 8141	Pink Lambert
+T104	malware 8188 8201	White Lambert
+T105	target_crowd 8202 8208	victim
+R24	attack Arg1:T104 Arg2:T105	
+T106	malware 8329 8341	Pink Lambert
+T107	OS_name 8397 8404	Windows
+T108	malware 8448 8460	Pink Lambert
+T109	malware 8569 8581	Pink Lambert
+T110	malware 8616 8629	White Lambert
+T111	target_crowd 8630 8636	victim
+R25	attack Arg1:T110 Arg2:T111	
+T112	malware 8707 8719	Gray Lambert
+T113	malware 8857 8870	White Lambert
+T114	malware 8901 8913	Gray Lambert
+T115	malware 8834 8847	White Lambert
+T116	reference_word 8751 8769	Lamberts ' arsenal
+T117	malware 8975 8987	Gray Lambert
+T118	malware 9006 9018	Pink Lambert
+T119	malware 9034 9046	Gray Lambert
+T120	malware 9106 9119	White Lambert
+T121	malware 9169 9182	White Lambert
+T122	attack_activity 9204 9227	This migration activity
+T123	time 9249 9261	October 2016
+R34	first_found_time Arg1:T122 Arg2:T123	
+T124	malware 9296 9308	Gray Lambert
+T125	sample_name 9313 9324	mwapi32.dll
+R26	part_of Arg1:T124 Arg2:T125	
+T126	sample_name 9329 9343	poolstr.dll 'C
+R27	part_of Arg1:T124 Arg2:T126	
+T127	threatActor_name 9403 9411	Lamberts
+T128	malware 9478 9500	Blue and Green Lambert
+T129	malware 9846 9858	Blue Lambert
+T130	malware 10469 10482	Blue Lamberts
+T131	time 10547 10556	2012-2015
+R28	occur_time Arg1:T130 Arg2:T131	
+T132	malware 10600 10613	Green Lambert
+T133	malware 10781 10794	Black Lambert
+T134	security_team 10893 10900	FireEye
+T135	malware 10765 10778	Green Lambert
+T136	time 10901 10908	in 2014
+R29	find Arg1:T134 Arg2:T136	
+T137	malware 11337 11350	Green Lambert
+T138	time 11587 11594	in 1934
+T139	time 11639 11646	in 1980
+T140	reference_word 11653 11669	Lamberts toolkit
+T141	time 11728 11744	in 2013 and 2014
+R30	occur_time Arg1:T140 Arg2:T141	
+R31	coreference Arg1:T140 Arg2:T137	
+R32	coreference Arg1:T140 Arg2:T133	
+R33	coreference Arg1:T140 Arg2:T130	
+R35	coreference Arg1:T140 Arg2:T118	
+R36	coreference Arg1:T116 Arg2:T115	
+R37	coreference Arg1:T116 Arg2:T113	
+R38	coreference Arg1:T116 Arg2:T114	
+R39	coreference Arg1:T116 Arg2:T109	
+T142	vulnerability_cve 12182 12195	CVE-2014-4148
+T143	malware 12113 12126	Black Lambert
+T144	OS_name 11994 12008	64-bit Windows
+T145	threatActor_name 12285 12290	Regin
+T146	threatActor_name 12293 12306	ProjectSauron
+T147	threatActor_name 12309 12317	Equation
+T148	threatActor_name 12322 12327	Duqu2
+T149	security_team 12544 12553	Kaspersky
+T150	threatActor_name 13065 13073	Lamberts
+T151	threatActor_name 12484 12492	Lamberts
+T152	threatActor_name 12720 12728	Lamberts
+T153	security_team 12928 12937	Kaspersky
+T154	malware 13016 13024	Lamberts
+T155	protocol 2845 2848	C&C
+T156	location 7467 7469	US
+T157	program_language 8421 8424	C++
+T158	protocol 9518 9521	C&C
+T159	protocol 9687 9690	C&C
+T160	protocol 9589 9591	IP
+T161	protocol 9736 9738	IP
+T162	protocol 9644 9646	IP
+T163	vulnerability_cve 533 541	zero day
+R40	coreference Arg1:T11 Arg2:T163	
+T164	vulnerability_cve 12159 12171	TTF zero day
+R41	coreference Arg1:T142 Arg2:T164	
+T165	reference_word 11757 11768	the toolkit
+T166	sub_activity 11874 11921	run plugins in memory without touching the disk
+R42	coreference Arg1:T165 Arg2:T166	
+T167	vulnerability_cve 5092 5112	TTF-exploit zero day
+R43	coreference Arg1:T167 Arg2:T69	
+R44	coreference Arg1:T54 Arg2:T50	

@@ -1,0 +1,134 @@
+APT28
+Release_Time :  2016-10 .
+Report_URL :  https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf
+Sedreco serves as a spying backdoor , whose functionalities can be extended with dynamically loaded plugins .
+It is made up of two distinct components : a dropper and the persistent payload installed by this dropper .
+Alternative Names : AZZY .
+Usage Sedreco is deployed on targets deemed interesting after  a reconnaissance phase .
+It serves for long-term espionage ,  thanks to the numerous commands provided by its payload .
+Known period of activity : May 2012 to July 2016 .
+Probably still in use at the time of writing ( August 2016 ) .
+Known deployment methods : 
+Downloaded by Seduploader 
+Downloaded by Downdelph .
+Distinguishing characteristics ： 
+The Sedreco payload relies on a configuration usually stored  in a registry key named Path , or in a file named msd , and initially  embedded in the Sedreco dropper
+The Sedreco payload creates a mutex named MutYzAz  or AZZYMTX
+The inbound and outbound communications of Sedreco ’s  payload with its C&C server are buffered into two files ,  respectively named __2315tmp.dat and __4964tmp.dat .
+Sedreco has two binary components , a dropper and the spying backdoor usually contained  in this dropper .
+The dropper part of Sedreco has also been used to deploy a different payload :   a lightweight downloader  (not described in this whitepaper ) named msdeltemp.dll by its developers .
+We believe Sedreco was first used in 2012 , while our analysis was performed on samples  compiled mid-2016 .
+The workflow of Sedreco ’s dropper is composed of the five steps presented in Figure 12 .
+While straightforward , this workflow possesses some features worth mentioning::The payload configuration is installed on the system by the dropper , in a file or in a registry key , depending on the sample .
+It means that analyzing a Sedreco payload sample itself will not reveal configuration information , such as the C&C server address  (configuration content  will be described below ) .
+Payload persistence is usually ensured by registering an auto-start entry in the Windows  Registry , but we have observed other methods , like registering the payload as a Shell Icon  Overlay handler COM object .
+During its execution the dropper builds a small report , which is then sent to the C&C server .
+Here is an example of such a report : 
+INST MSD=0 
+INST FL=0 
+INST RUN=0 
+ST DL=0 .
+Each line corresponds to one step of the dropper workflow , as described in Figure 12 .
+The value 0 means success , while there would be an error code returned from the Windows API  GetLastError otherwise .
+In this section we will describe the internal working of the Sedreco payload :  first , its configuration file format ;  second , the commands it can execute ;  then , how it communicates with its C&C server ; and finally , how its functionality can be extended with plugins .
+The first action of Sedreco ’s payload is to retrieve the configuration file previously installed  by the dropper .
+This configuration file consists of a series of variably-sized data fields , preceded  by a header , as described in Figure 13 .
+The configuration is encrypted with a custom algorithm using a 6-byte key stored at its beginning .
+An implementation of this algorithm in Python can be found in ESET ’s GitHub repository .
+Following the key come 10 1-byte fields , each of them containing the size of a corresponding  data field .
+Those data fields contain the following values  (ESET ’s names ) : 
+  Timer1: Time to wait between two attempts to ask the C&C server for a command  to execute  (usually set to 10 minutes ) .
+Timer2: Time to wait between two attempts to exfiltrate data to the C&C server  (usually  set to 10 minutes ) .
+Computer Name :  Computer name to which a pseudo-randomly generated 6-byte value  is appended , plus a two-byte value hardcoded in the dropper .
+C&C1: Domain name of the first C&C server .
+C&C2: Domain name of the second C&C server .
+Operation Name :  4-character string initially hardcoded in the dropper , which likely  identifies the operation or the target .
+So far , we have observed the following values :  rhze ,  rhdn , rhst , rhbp , mtfs , mctf , mtqs .
+We do not know the exact meaning of these values .
+Keylogger MaxBuffer :  Maximum size of the memory buffer where keystrokes are logged ,  before they are dumped to the outbound file  (described below ) .
+Keylogger MaxTimeout :  Maximum time to wait before the logged keystrokes are dumped  to the outbound file  (described below ) .
+Keylogger Flag :  Specify whether to enable the keylogger or not 10 .
+C&C3: Domain name of the third C&C server .
+The next ten data fields are the paths to the plugins that Sedreco will load at startup .
+These fields  are initially empty , and are updated when Sedreco receives a plugin to load from the C&C server .
+Once it is running , Sedreco provides numerous commands to its operators , identified by a number ,  as described in Table 4 .
+Those commands allow the attackers to spy on the target , but also to collect  information on other computers accessible from the compromised machine .
+Number Purpose .
+1 Update configuration value .
+2 Load plugin .
+3 Unload plugin .
+4 Start keylogger .
+5 Stop keylogge .
+6 List directories .
+7 Read file .
+8 Write file .
+9 Delete file or directory .
+10 Enumerate registry key .
+11 Write registry key .
+12 Delete registry key .
+13 List running processes .
+14 Create process .
+15 Terminate process .
+16 List loaded plugins .
+17 Run Windows shell command  ( output temporarily stored in a file  named tmp.dat ) .
+18 List connected devices .
+19 Update Sedreco payload binary on disk .
+20 Read file from a specified offset .
+21 Map network resources .
+22 Run systeminfo Windows shell command .
+23 List files and directories .
+24 Read file  (wrapper for command 6 ) .
+25 Run a given Sedreco command .
+26 Create thread .
+36 Start remote shell over HTTP  ( plugin command , see below ) .
+Interestingly , the commands are registered at runtime by calling an internal function — usually  exported under the name RegisterNewCommand — with the command number and the address  of the command handler .
+For example , Figure 14 shows the registration of the first six commands .
+This mechanism makes Sedreco a flexible backdoor , which includes only the commands in a sample  that are currently needed  (which means in particular that the previous list of commands may  not be complete ) .
+It also allows plugins to easily register new commands , as we will explain later .
+Sedreco communicates with its C&C server in a quite unusual way , pictured in Figure 15 .
+On one hand , Sedreco network threads periodically ask the C&C server for orders , and store them  in an  “inbound file ” .
+Those orders are then fetched and processed by Sedreco core threads .
+On the other  hand , the data to exfiltrate  (logged keystrokes , results of executed commands , etc ) are queued  in an  “outbound file ” ,  and periodically transmitted in bulk to the server by the network threads .
+As this asynchronous communication method limits the number of network contacts with the  C&C server , it might reduce the chance of attracting attention in the target ’s network .
+Moreover ,  using files rather than keeping the data buffered in memory avoids losing the data if the machine  shuts down or loses network connectivity .
+In the following sections , we describe the network communications and the exact format  of the inbound/outbound files .
+Sedreco regularly asks its C&C server for a command to run — usually every 10 minutes .
+The C&C server  domain names are retrieved from the configuration , and they are contacted in their order of appearance  in this configuration  (see configuration format ) .
+In other words , if the first C&C server is up — C&C1  in Figure 13 — the others are never contacted .
+The actual contact is a POST request over HTTP or , depending of the sample , HTTPS , on the URI  /update .
+The body of the request contains the base64-encoding of the data structure picturedThis data structure is encrypted with the 6-byte key stored at the end , using the same algorithm  as that used to encrypt the configuration file .
+The Type field is set to 0 , which distinguishes inbound  from outbound .
+in Figure 16 .
+The C&C server will then answer with the information about a command to run , the commands  being stored in the inbound file by Sedreco network threads .
+The inbound file is usually named  __2315tmp.dat and located in the %TEMP% directory .
+This file consists of a series of variably-sized  entries , each entry containing the information from the C&C server for one command to run , as described in Figure 17 .
+As before , each entry starts with a 6-byte key to decrypt the entry data , again using the same algorithm  used for the configuration .
+Then comes a 4-byte magic value , which , in all the samples we analyzed ,  has to be set to 0x75DF9115 for the command to be executed .
+The entry may also contain the arguments to pass to the command handler .
+Finally , Sedreco core threads process the inbound file to extract and run the commands .
+Sedreco core threads store the output generated by a command execution in the outbound file ,  which is usually named __4964tmp.dat and located in the %TEMP% directory .
+Similarly to the inbound  file , it consists of a series of variably-sized entries , each entry describing one particular command  execution , as shown in Figure 18 .
+Each entry begins with a 32-byte header , containing in particular a 4-byte magic number  (0xB2745DAF ) ,  the command return status code , a timestamp of the command execution  (in a SYSTEMTIME Windows structure ) , and the actual command number .
+Then comes the output data generated  by the command execution , compressed with a custom implementation of the Lempel–Ziv–Welch  ( LZW ) algorithm .
+A source code search engine allowed us to retrieve what we believe  to be the C source code of the LZW algorithm implementation employed  by Sedreco.Figure 19 shows an extract of the compressed data header .
+Sedreco network threads regularly — usually every 10 minutes — fetch the data from the outbound  file and encrypt them with the 3DES algorithm and a hardcoded key .
+The data structure described  in Figure 16 is then appended to the encrypted data , thus acting as a footer .
+In this case , the Type  field is set to 1 .
+Finally , the resulting encrypted data are transmitted to the C&C server by Sedreco network threads .
+An interesting feature of Sedreco is its ability to run external plugins .
+The downloading and execution of those plugins can be requested by the C&C server with command number 1 , while their unloading  can be accomplished with command number 2  (see commands list ) .
+A Sedreco plugin comes as a Windows DLL with two exported functions named Init and UnInit .
+The plugin is loaded in the same address space as Sedreco ’s payload with a call to the Windows API  LoadLibraryA .
+The plugin ’s Init export is then called , with the following structure as its argument .
+This structure contains some helper functions ’ addresses , plus some data addresses , from Sedreco ’s  payload , that the plugin may need during its execution .
+We only found one Sedreco plugin during our investigation .
+Once loaded in memory , this plugin  registers a new command , numbered 36 , as shown in Figure 20 .
+When called by the operators , the newly registered command will open a remote Windows  shell over HTTP .
+When Sedreco exits , the payload unloads all plugins and calls their UnInit exports .
+In the case  of the plugin we retrieved , this export simply unregisters the command it provides , as shown  in Figure 21 .
+Interestingly , parts of the plugin code are shared with the Windows Xagent module named ProcessRetranslatorModule  (see table 1 ) .
+In particular ,  the function in charge of creating a Windows shell process with some communication pipes is exactly the same in both binaries , including some custom error messages such as #EXC_1 Cannot create ExtToProc Pipe! .
+With its ability to register new commands dynamically , Sedreco is a flexible backdoor that has been  used for many years by the Sednit group .
+An interesting feature of Sedreco is the ability to load external plugins .
+As we only found one plugin ,  we hope this report will encourage other researchers to contribute further pieces to the puzzle .
+In particular , it would be interesting to search for other code-sharing cases between Sedreco plugins  and Xagent modules .

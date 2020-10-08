@@ -1,0 +1,172 @@
+T1	malware 20 32	WastedLocker
+T2	security_team 148 155	Unit 42
+T3	malware 188 200	WastedLocker
+R1	find Arg1:T2 Arg2:T3	
+T4	security_team 286 294	WildFire
+T5	time 298 306	May 2020
+R2	release_time Arg1:T4 Arg2:T5	
+R3	release_time Arg1:T2 Arg2:T5	
+T6	location 378 382	U.S.
+T7	company 383 395	corporations
+T8	reference_word 414 424	the threat
+R4	attack Arg1:T8 Arg2:T6	
+R5	attack Arg1:T8 Arg2:T7	
+R6	coreference Arg1:T8 Arg2:T3	
+T9	malware 487 499	WastedLocker
+T10	malware 548 553	Samsa
+T11	malware 556 560	Maze
+T12	malware 563 568	EKANS
+T13	malware 571 575	Ryuk
+T14	malware 578 587	BitPaymer
+T15	malware 695 703	WannaCry
+T16	time 1020 1034	June 23 , 2020
+T17	security_team 1037 1046	NCC Group
+R7	release_time Arg1:T17 Arg2:T16	
+T18	malware 1103 1115	WastedLocker
+T19	threatActor_name 1191 1200	Evil Corp
+R8	find Arg1:T17 Arg2:T18	
+R9	find Arg1:T17 Arg2:T19	
+T20	reference_word 1218 1228	this group
+T21	malware 1258 1279	Dridex banking Trojan
+T22	tool 1363 1372	AutoFocus
+T23	security_team 1375 1382	Unit 42
+R11	use Arg1:T23 Arg2:T22	
+T24	sub_activity 1387 1454	identified some possible targets for the actors behind WastedLocker
+R12	launch Arg1:T23 Arg2:T24	
+T25	person 1428 1434	actors
+T26	malware 1442 1454	WastedLocker
+T27	reference_word 1458 1487	The majority of organizations
+T28	location 1505 1509	U.S.
+R14	located Arg1:T27 Arg2:T28	
+T29	security_team 1552 1560	Symantec
+R15	find Arg1:T29 Arg2:T27	
+T30	time 1564 1578	June 26 , 2020
+R16	release_time Arg1:T29 Arg2:T30	
+T31	reference_word 1582 1599	The organizations
+T32	industry 1639 1670	professional and legal services
+T33	industry 1673 1693	utilities and energy
+T34	industry 1696 1709	manufacturing
+T35	industry 1712 1732	wholesale and retail
+T36	industry 1735 1744	high tech
+T37	industry 1747 1758	engineering
+T38	industry 1761 1785	pharma and life sciences
+T39	industry 1792 1820	transportation and logistics
+T40	company 1837 1878	transportation and logistics organization
+T41	location 1884 1902	the United Kingdom
+T42	location 1938 1945	the U.S
+R17	attack Arg1:T31 Arg2:T32	
+R18	attack Arg1:T31 Arg2:T33	
+R19	attack Arg1:T31 Arg2:T34	
+R20	attack Arg1:T31 Arg2:T35	
+R21	attack Arg1:T31 Arg2:T36	
+R22	attack Arg1:T31 Arg2:T37	
+R23	attack Arg1:T31 Arg2:T38	
+R24	attack Arg1:T31 Arg2:T39	
+R25	attack Arg1:T31 Arg2:T40	
+R26	attack Arg1:T31 Arg2:T41	
+R27	attack Arg1:T31 Arg2:T42	
+T43	malware 1983 1995	WastedLocker
+T44	security_team 2008 2016	Symantec
+R28	find Arg1:T44 Arg2:T43	
+T45	malware 2078 2090	WastedLocker
+T46	tool 2103 2112	ZIP files
+T47	tool 2186 2235	SocGholish JavaScript framework loader components
+R29	part_of Arg1:T47 Arg2:T46	
+R30	use Arg1:T45 Arg2:T46	
+T48	sample_function 2241 2329	profile the victim system and use PowerShell to ultimately deploy Cobalt Strike payloads
+R31	part_of Arg1:T48 Arg2:T47	
+T49	tool 2275 2285	PowerShell
+T50	sample_function 2300 2329	deploy Cobalt Strike payloads
+R32	goal Arg1:T49 Arg2:T50	
+T51	tool 2341 2362	Cobalt Strike payload
+T52	sample_function 2419 2463	move laterally through the victim ’s network
+T53	sample_function 2468 2519	facilitate the identification of additional systems
+T54	person 2529 2538	attackers
+T55	sub_activity 2543 2569	deploy their main payloads
+R33	launch Arg1:T54 Arg2:T55	
+R34	part_of Arg1:T52 Arg2:T51	
+R35	part_of Arg1:T53 Arg2:T51	
+R36	use Arg1:T54 Arg2:T51	
+T56	malware 2573 2585	WastedLocker
+T57	person 2573 2595	WastedLocker attackers
+T58	tool 2663 2697	Windows Management Instrumentation
+T59	tool 2700 2703	WMI
+R37	coreference Arg1:T59 Arg2:T58	
+T60	tool 2710 2716	PsExec
+R38	use Arg1:T57 Arg2:T58	
+R39	use Arg1:T57 Arg2:T60	
+T61	person 2788 2797	attackers
+T62	attack_goal 2802 2897	systems that directly affect a victim ’s customer-facing revenue-generating business operations
+T63	attack_goal 2955 3026	systems that contain ( or facilitate the deployment of ) system backups
+R40	goal Arg1:T61 Arg2:T62	
+R41	goal Arg1:T61 Arg2:T63	
+T64	person 3119 3128	attackers
+T65	sub_activity 3137 3224	deploy the WastedLocker ransomware payload using one or more system management utilitie
+R42	launch Arg1:T64 Arg2:T65	
+T66	malware 3148 3160	WastedLocker
+T67	reference_word 3264 3278	the ransomware
+T68	sample_function 3287 3370	Attempt to elevate execution privileges ( if not already running as Administrator )
+T69	sample_function 3373 3419	Attempt to disable Windows Defender monitoring
+T70	tool 3392 3408	Windows Defender
+T71	sample_function 3422 3459	Delete shadow copies/volume snapshots
+T72	sample_function 3462 3489	Install itself as a service
+T73	sample_function 3492 3574	Once installed , the delivery of the payload is complete and files are overwritten
+R43	part_of Arg1:T68 Arg2:T67	
+R44	part_of Arg1:T69 Arg2:T67	
+R45	coreference Arg1:T67 Arg2:T66	
+R46	part_of Arg1:T71 Arg2:T67	
+R47	part_of Arg1:T72 Arg2:T67	
+R48	part_of Arg1:T73 Arg2:T67	
+T74	reference_word 3578 3592	The ransomware
+T75	tool 3905 3910	email
+T76	domain_evil 4018 4031	PROTONMAIL.CH
+T77	domain_evil 4034 4044	AIRMAIL.CC
+T78	attack_goal 4047 4057	ECLIPSO.CH
+T79	domain_evil 4060 4072	TUTANOTA.COM
+T80	domain_evil 4077 4091	PROTONMAIL.COM
+T81	security_team 4317 4324	Unit 42
+T82	time 4325 4373	during the early stages of the COVID-19 pandemic
+R49	release_time Arg1:T81 Arg2:T82	
+T83	malware 4377 4389	WastedLocker
+T84	tool 4736 4754	Palo Alto Networks
+T85	malware 4772 4784	WastedLocker
+T86	security_team 4809 4817	WildFire
+T87	tool 4866 4882	Cortex XDR Agent
+T88	tool 4891 4918	indicators for WastedLocker
+R50	part_of Arg1:T88 Arg2:T87	
+T92	tool 5149 5174	Next-Generation Firewalls
+T93	tool 5177 5191	DNS Signatures
+T94	sample_function 5192 5243	detect the known command and control ( C2 ) domains
+T95	tool 5287 5293	PAN-DB
+T96	tool 5231 5233	C2
+R54	part_of Arg1:T94 Arg2:T93	
+T97	tool 4921 4943	Anti-Ransomware Module
+T98	sample_function 4947 4987	detect WastedLocker encryption behaviors
+R51	part_of Arg1:T98 Arg2:T97	
+R55	part_of Arg1:T97 Arg2:T87	
+T89	malware 5025 5037	WastedLocker
+T99	tool 4990 5014	Local Analysis detection
+T90	sample_function 5018 5046	detect WastedLocker binaries
+R52	part_of Arg1:T90 Arg2:T99	
+R56	part_of Arg1:T99 Arg2:T87	
+T91	tool 5049 5077	Behavioral Threat Protection
+T100	tool 5080 5083	BTP
+R53	coreference Arg1:T100 Arg2:T91	
+T101	tool 5098 5116	Volume Shadow Copy
+T102	malware 5134 5146	WastedLocker
+R59	part_of Arg1:T92 Arg2:T84	
+R60	part_of Arg1:T87 Arg2:T84	
+T103	tool 5296 5305	AutoFocus
+T104	sample_function 5308 5360	Tracking related activity using the WastedLocker tag
+R61	part_of Arg1:T104 Arg2:T103	
+T105	malware 5344 5356	WastedLocker
+R62	part_of Arg1:T103 Arg2:T84	
+T106	reference_word 602 625	This type of ransomware
+R63	coreference Arg1:T106 Arg2:T9	
+R64	coreference Arg1:T20 Arg2:T19	
+T107	attack_goal 2900 2948	internal systems of high visibility and high use
+R10	goal Arg1:T61 Arg2:T107	
+T108	sample_function 4809 4863	WildFire : all known samples are identified as malware
+R13	part_of Arg1:T108 Arg2:T84	
+T109	sample_function 5049 5146	Behavioral Threat Protection ( BTP ) triggers on Volume Shadow Copy being deleted by WastedLocker
+R57	part_of Arg1:T109 Arg2:T87	

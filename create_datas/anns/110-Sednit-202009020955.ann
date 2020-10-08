@@ -1,0 +1,175 @@
+T1	threatActor_name 14 20	Sednit
+T2	threatActor_name 147 153	Sednit
+T3	threatActor_aliases 176 181	APT28
+T4	threatActor_aliases 184 194	Fancy Bear
+T5	threatActor_aliases 199 205	Sofacy
+R1	coreference Arg1:T3 Arg2:T2	
+R2	coreference Arg1:T4 Arg2:T2	
+R3	coreference Arg1:T5 Arg2:T2	
+T6	time 248 252	2004
+R4	first_found_time Arg1:T2 Arg2:T6	
+T7	sub_activity 299 329	steal confidential information
+R5	launch Arg1:T2 Arg2:T7	
+T8	threatActor_name 411 417	Sednit
+T9	threatActor_name 439 445	Sednit
+T10	time 469 473	2014
+T11	malware 522 531	Downdelph
+T12	malware 606 615	Downdelph
+T13	sample_function 769 795	avoid attracting attention
+R6	goal Arg1:T12 Arg2:T13	
+T14	malware 798 807	Downdelph
+T15	malware 961 970	Downdelph
+T16	malware 880 895	Windows bootkit
+R8	part_of Arg1:T16 Arg2:T14	
+T18	malware 939 950	BlackEnergy
+T19	malware 1039 1054	Windows rootkit
+R9	part_of Arg1:T19 Arg2:T15	
+T17	threatActor_name 1061 1067	Sednit
+T20	threatActor_aliases 1100 1105	APT28
+T21	threatActor_aliases 1108 1118	Fancy Bear
+T22	threatActor_aliases 1121 1127	Sofacy
+T23	threatActor_aliases 1130 1140	Pawn Storm
+T24	threatActor_aliases 1143 1152	STRONTIUM
+T25	threatActor_aliases 1157 1166	Tsar Team
+R7	coreference Arg1:T20 Arg2:T17	
+R10	coreference Arg1:T21 Arg2:T17	
+R11	coreference Arg1:T22 Arg2:T17	
+R12	coreference Arg1:T23 Arg2:T17	
+R13	coreference Arg1:T24 Arg2:T17	
+R14	coreference Arg1:T25 Arg2:T17	
+T26	time 1209 1213	2004
+R15	first_found_time Arg1:T17 Arg2:T26	
+T27	sub_activity 1258 1288	steal confidential information
+R16	launch Arg1:T17 Arg2:T27	
+T28	reference_word 1344 1349	group
+R17	coreference Arg1:T28 Arg2:T17	
+T29	government 1422 1444	government departments
+T30	government 1449 1458	embassies
+R18	attack Arg1:T28 Arg2:T29	
+R19	attack Arg1:T28 Arg2:T30	
+T31	target_crowd 1530 1568	American Democratic National Committee
+R20	attack Arg1:T28 Arg2:T31	
+T32	government 1575 1592	German parliament
+T33	industry 1608 1626	television network
+T34	string 1627 1635	TV5Monde
+R21	part_of Arg1:T34 Arg2:T33	
+R22	attack Arg1:T28 Arg2:T32	
+R23	attack Arg1:T28 Arg2:T33	
+T35	threatActor_name 1653 1659	Sednit
+T36	location 1692 1706	Eastern Europe
+T37	industry 1778 1789	geopolitics
+R24	attack Arg1:T35 Arg2:T37	
+R25	located Arg1:T37 Arg2:T36	
+T38	threatActor_name 1835 1841	Sednit
+T39	vulnerability_cve 1889 1894	0-day
+R26	use Arg1:T38 Arg2:T39	
+T40	time 1926 1930	2015
+T41	reference_word 1933 1942	the group
+R27	coreference Arg1:T41 Arg2:T38	
+T42	vulnerability_cve 1971 1976	0-day
+R28	use Arg1:T41 Arg2:T42	
+T43	vulnerability_cve 1995 2008	CVE-2015-3043
+T44	tool 2011 2016	Flash
+T45	vulnerability_cve 2019 2032	CVE-2015-1701
+T46	sub_activity 2035 2046	Windows LPE
+T47	vulnerability_cve 2049 2062	CVE-2015-2590
+T48	program_language 2065 2069	Java
+T49	vulnerability_cve 2072 2085	CVE-2015-4902
+T50	tool 2088 2113	Java click-to-play bypass
+T51	program_language 2088 2092	Java
+T52	vulnerability_cve 2116 2129	CVE-2015-7645
+T53	tool 2132 2137	Flash
+R29	part_of Arg1:T43 Arg2:T42	
+R30	located Arg1:T43 Arg2:T44	
+R31	part_of Arg1:T45 Arg2:T42	
+R32	part_of Arg1:T45 Arg2:T46	
+R33	part_of Arg1:T47 Arg2:T42	
+R34	use Arg1:T47 Arg2:T48	
+R35	part_of Arg1:T49 Arg2:T42	
+R36	use Arg1:T49 Arg2:T50	
+R37	part_of Arg1:T52 Arg2:T42	
+R38	located Arg1:T52 Arg2:T53	
+T54	vulnerability_cve 2160 2165	0-day
+T55	threatActor_name 2223 2229	Sednit
+T56	threatActor_name 2427 2433	Sednit
+T57	malware 2669 2675	Xagent
+T58	malware 2680 2687	Sedreco
+T59	malware 2696 2705	backdoors
+R39	part_of Arg1:T58 Arg2:T59	
+T60	malware 2767 2776	Downdelph
+T61	malware 2777 2784	bootkit
+T62	malware 2789 2796	rootkit
+R40	part_of Arg1:T61 Arg2:T60	
+R41	part_of Arg1:T62 Arg2:T60	
+R42	use Arg1:T56 Arg2:T57	
+R43	use Arg1:T56 Arg2:T58	
+R44	use Arg1:T56 Arg2:T60	
+T63	threatActor_name 2908 2914	Sednit
+T64	security_team 2876 2880	ESET
+T65	threatActor_name 3118 3124	Sednit
+T66	malware 3337 3344	toolkit
+T67	threatActor_name 3541 3547	Sednit
+T68	malware 3583 3589	Delphi
+T69	malware 3667 3674	bootkit
+T70	malware 3681 3688	rootkit
+R45	part_of Arg1:T69 Arg2:T68	
+R46	part_of Arg1:T70 Arg2:T68	
+T71	threatActor_name 3790 3796	Sednit
+T72	malware 4015 4021	Sedkit
+T73	sub_activity 4024 4041	Email attachments
+T74	sub_activity 4044 4069	Fake webmail login panels
+T75	malware 4094 4113	Seduploader dropper
+T76	malware 4116 4135	Seduploader payload
+T77	malware 4138 4147	Downdelph
+T78	malware 4234 4244	Usbstealer
+T79	malware 4247 4254	Xtunnel
+T80	threatActor_name 4301 4307	Sednit
+T81	time 4320 4324	2014
+T82	malware 4173 4188	Sedreco dropper
+T83	malware 4191 4206	Sedreco payload
+T84	malware 4209 4215	Xagent
+T85	threatActor_name 4337 4343	Sednit
+T86	sub_activity 4416 4458	reconnaissance of a newly compromised host
+T87	reference_word 4380 4404	the first-stage software
+T88	sub_activity 3998 4012	ATTACK METHODS
+T89	sub_activity 4072 4091	FIRST-STAGE MALWARE
+T90	sub_activity 4150 4170	SECOND-STAGE MALWARE
+T91	sub_activity 4218 4231	PIVOT MALWARE
+R47	part_of Arg1:T88 Arg2:T71	
+R48	part_of Arg1:T89 Arg2:T71	
+R49	part_of Arg1:T90 Arg2:T71	
+R50	part_of Arg1:T91 Arg2:T71	
+R51	part_of Arg1:T72 Arg2:T88	
+R52	part_of Arg1:T73 Arg2:T88	
+R53	part_of Arg1:T74 Arg2:T88	
+R54	part_of Arg1:T75 Arg2:T89	
+R55	part_of Arg1:T76 Arg2:T89	
+R56	part_of Arg1:T77 Arg2:T89	
+R57	part_of Arg1:T82 Arg2:T90	
+R58	part_of Arg1:T83 Arg2:T90	
+R59	part_of Arg1:T84 Arg2:T90	
+R60	part_of Arg1:T78 Arg2:T91	
+R61	part_of Arg1:T79 Arg2:T91	
+R62	coreference Arg1:T87 Arg2:T89	
+R63	goal Arg1:T87 Arg2:T86	
+T92	reference_word 4472 4497	the second-stage software
+R64	coreference Arg1:T92 Arg2:T90	
+T93	sub_activity 4510 4544	spy on machines deemed interesting
+R65	goal Arg1:T92 Arg2:T93	
+T94	reference_word 4557 4571	pivot software
+R66	coreference Arg1:T94 Arg2:T91	
+T95	sub_activity 4580 4625	allows the operators to reach other computers
+R67	goal Arg1:T94 Arg2:T95	
+T96	malware 4692 4701	Downdelph
+T97	reference_word 4661 4685	the first-stage software
+R68	part_of Arg1:T96 Arg2:T97	
+R69	coreference Arg1:T97 Arg2:T87	
+T98	threatActor_name 4755 4761	Sednit
+T99	malware 4898 4913	Windows bootkit
+T100	malware 4920 4935	Windows rootkit
+T101	malware 5014 5024	usbstealer
+T102	sample_function 5037 5077	exfiltrate data from air-gapped machines
+R70	goal Arg1:T101 Arg2:T102	
+T103	security_team 5112 5126	WeLiveSecurity
+R71	find Arg1:T103 Arg2:T101	
+T104	security_team 5169 5183	Kaspersky Labs

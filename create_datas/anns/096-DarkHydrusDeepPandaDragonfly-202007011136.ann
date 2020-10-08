@@ -1,0 +1,83 @@
+T1	threatActor_name 79 90	DarkHydrus 
+T2	threatActor_name 1002 1012	Dragonfly 
+T3	threatActor_name 972 981	Dragonfly
+T4	threatActor_name 309 319	Deep Panda
+T5	threatActor_name 393 403	Deep Panda
+T6	threatActor_aliases 323 333	Shell Crew
+T7	threatActor_aliases 336 346	WebMasters
+T8	threatActor_aliases 349 363	KungFu Kittens
+T9	threatActor_aliases 366 377	PinkPanther
+T10	threatActor_aliases 380 390	Black Vine
+T11	threatActor_aliases 653 663	Shell Crew
+T12	location 182 193	Middle East
+T13	time 209 213	2016
+T14	threatActor_aliases 666 676	WebMasters
+T15	threatActor_aliases 679 693	KungFu Kittens
+T16	threatActor_aliases 700 711	PinkPanther
+T17	threatActor_name 714 724	Deep Panda
+T18	threatActor_name 855 865	Deep Panda
+T19	threatActor_name 870 876	APT19 
+T20	threatActor_aliases 985 999	Energetic Bear
+T21	time 1075 1079	2011
+T22	time 1188 1192	2013
+T23	time 1296 1300	2015
+T24	industry 126 145	government agencies
+T25	industry 150 174	educational institutions
+R1	attack Arg1:T1 Arg2:T24	
+R2	attack Arg1:T1 Arg2:T25	
+R3	located Arg1:T24 Arg2:T12	
+R4	located Arg1:T25 Arg2:T12	
+R5	first_found_time Arg1:T1 Arg2:T13	
+T26	sub_activity 244 261	open-source tools
+T27	sub_activity 266 281	custom payloads
+T28	industry 484 494	government
+T29	industry 497 504	defense
+T30	industry 507 516	financial
+T31	industry 523 541	telecommunications
+R8	attack Arg1:T5 Arg2:T28	
+R9	attack Arg1:T5 Arg2:T29	
+R10	attack Arg1:T5 Arg2:T30	
+R11	attack Arg1:T5 Arg2:T31	
+T32	company 582 588	Anthem
+T33	threatActor_name 612 622	Deep Panda
+R12	attack Arg1:T33 Arg2:T32	
+R13	coreference Arg1:T6 Arg2:T4	
+R14	coreference Arg1:T7 Arg2:T4	
+R15	coreference Arg1:T8 Arg2:T4	
+R16	coreference Arg1:T9 Arg2:T4	
+R17	coreference Arg1:T10 Arg2:T4	
+T34	threatActor_aliases 753 763	Black Vine
+T35	company 816 822	Anthem
+R18	coreference Arg1:T34 Arg2:T17	
+R19	attack Arg1:T17 Arg2:T35	
+R20	coreference Arg1:T20 Arg2:T3	
+R21	first_found_time Arg1:T2 Arg2:T21	
+T36	industry 1106 1113	defense
+T37	industry 1118 1126	aviation
+T38	industry 1165 1178	energy sector
+T39	reference_word 1082 1086	They
+R22	coreference Arg1:T39 Arg2:T2	
+R23	attack Arg1:T39 Arg2:T36	
+R24	attack Arg1:T39 Arg2:T37	
+R25	attack Arg1:T39 Arg2:T38	
+R26	first_found_time Arg1:T38 Arg2:T22	
+T40	reference_word 1195 1199	They
+T41	industry 1240 1266	industrial control systems
+R27	attack Arg1:T40 Arg2:T41	
+T42	company 1323 1331	Symantec
+T43	threatActor_name 1335 1348	Dragonfly 2.0
+R28	find Arg1:T42 Arg2:T43	
+R29	first_found_time Arg1:T43 Arg2:T23	
+T44	threatActor_name 1406 1416	Dragonfly 
+T45	threatActor_name 1420 1433	Dragonfly 2.0
+T46	reference_word 216 225	The group
+R30	coreference Arg1:T46 Arg2:T1	
+R6	use Arg1:T46 Arg2:T26	
+R7	use Arg1:T46 Arg2:T27	
+T47	reference_word 625 635	This group
+R31	coreference Arg1:T47 Arg2:T33	
+R32	coreference Arg1:T11 Arg2:T47	
+R33	coreference Arg1:T14 Arg2:T47	
+R34	coreference Arg1:T15 Arg2:T47	
+R35	coreference Arg1:T16 Arg2:T47	
+R36	coreference Arg1:T40 Arg2:T39	

@@ -1,0 +1,150 @@
+T1	government 273 304	Department of Homeland Security
+T2	government 321 352	Federal Bureau of Investigation
+T3	government 455 506	Russian civilian and military intelligence Services
+T4	attack_activity 758 772	GRIZZLY STEPPE
+T5	government 977 1004	U.S. Intelligence Community
+T6	government 1007 1010	DHS
+T7	government 1013 1016	FBI
+T8	industry 1019 1037	the private sector
+T9	government 686 701	U.S. Government
+T10	time 1122 1138	October 7 , 2016
+T11	government 1150 1181	Department of Homeland Security
+T12	person 1190 1198	Director
+T13	government 1202 1244	National Intelligence on Election Security
+R1	part_of Arg1:T12 Arg2:T13	
+T14	government 1343 1358	U.S. government
+T15	government 1264 1267	RIS
+T16	government 927 930	RIS
+T17	reference_word 1247 1260	This activity
+R2	coreference Arg1:T17 Arg2:T4	
+T18	target_crowd 1367 1375	citizens
+R3	attack Arg1:T17 Arg2:T14	
+R4	attack Arg1:T17 Arg2:T18	
+T19	government 1644 1647	RIS
+T20	person 1648 1654	actors
+R5	part_of Arg1:T20 Arg2:T19	
+T21	government 1780 1783	RIS
+T22	person 1784 1790	actors
+R6	part_of Arg1:T22 Arg2:T21	
+T23	person 2207 2231	two different RIS actors
+T24	industry 2269 2289	U.S. political party
+R7	attack Arg1:T23 Arg2:T24	
+T25	government 2177 2192	U.S. Government
+T26	government 2155 2170	U.S. Government
+T27	threatActor_name 2443 2448	APT28
+T28	time 2469 2473	2016
+T29	time 2408 2412	2015
+T30	threatActor_name 2325 2362	Advanced Persistent Threat ( APT ) 29
+R8	first_found_time Arg1:T30 Arg2:T29	
+R9	first_found_time Arg1:T27 Arg2:T28	
+T31	reference_word 2476 2487	Both groups
+R10	coreference Arg1:T31 Arg2:T23	
+T32	threatActor_name 2607 2612	APT29
+T33	threatActor_name 2833 2838	APT28
+T34	threatActor_name 2992 2997	APT28
+T35	person 2998 3004	actors
+R11	part_of Arg1:T35 Arg2:T34	
+T36	industry 2542 2553	think tanks
+T37	government 2515 2539	government organizations
+T38	company 2575 2587	corporations
+T39	industry 2556 2568	universities
+R12	attack Arg1:T31 Arg2:T37	
+R13	attack Arg1:T31 Arg2:T36	
+R14	attack Arg1:T31 Arg2:T39	
+R15	attack Arg1:T31 Arg2:T38	
+T40	sub_activity 2631 2672	crafting targeted spearphishing campaigns
+T41	threatActor_name 3084 3089	APT28
+T42	threatActor_name 3094 3099	APT29
+T43	reference_word 3125 3136	both groups
+R16	coreference Arg1:T43 Arg2:T42	
+R17	coreference Arg1:T43 Arg2:T41	
+T44	reference_word 3201 3213	These groups
+R18	coreference Arg1:T44 Arg2:T43	
+T45	attack_activity 3260 3283	spearphishing campaigns
+R19	launch Arg1:T44 Arg2:T45	
+T46	person 3292 3298	actors
+R20	part_of Arg1:T46 Arg2:T44	
+T47	time 3555 3559	2015
+T48	threatActor_name 3565 3570	APT29
+T49	attack_activity 3571 3593	spearphishing campaign
+T50	target_crowd 3646 3662	1,000 recipients
+T51	target_crowd 3675 3707	multiple U.S. Government victims
+T52	threatActor_name 3710 3715	APT29
+T53	sub_activity 3830 3872	host malware and send spearphishing emails
+R21	launch Arg1:T52 Arg2:T53	
+T54	threatActor_name 3908 3913	APT29
+T55	government 3941 3961	U.S. political party
+R22	attack Arg1:T54 Arg2:T55	
+T56	threatActor_name 4104 4109	APT29
+T57	time 4377 4381	2016
+R23	occur_time Arg1:T49 Arg2:T47	
+R24	launch Arg1:T48 Arg2:T49	
+R25	attack Arg1:T48 Arg2:T50	
+R26	attack Arg1:T48 Arg2:T51	
+T58	threatActor_name 4384 4389	APT28
+T59	reference_word 4406 4426	same political party
+R27	coreference Arg1:T59 Arg2:T55	
+T60	attack_activity 4448 4461	spearphishing
+R28	launch Arg1:T58 Arg2:T60	
+R29	attack Arg1:T58 Arg2:T59	
+R30	occur_time Arg1:T60 Arg2:T57	
+T61	threatActor_name 4589 4594	APT28
+T62	threatActor_name 4658 4663	APT28
+T63	government 4920 4923	RIS
+T64	attack_activity 4952 4975	spearphishing campaigns
+T65	person 4890 4896	Actors
+R31	launch Arg1:T65 Arg2:T64	
+T66	time 5016 5029	November 2016
+T67	reference_word 4988 4991	one
+R32	occur_time Arg1:T67 Arg2:T66	
+R33	launch Arg1:T65 Arg2:T67	
+T68	government 6330 6333	DHS
+T69	government 5761 5764	RIS
+T70	threatActor_name 5155 5160	APT28
+T71	threatActor_name 5161 5166	APT29
+T72	threatActor_name 5167 5176	Agent.btz
+T73	threatActor_name 5177 5191	BlackEnergy V3
+T74	threatActor_name 5192 5208	BlackEnergy2 APT
+T75	threatActor_name 5209 5217	CakeDuke
+T76	threatActor_name 5218 5225	Carberp
+T77	threatActor_name 5226 5235	CHOPSTICK
+T78	threatActor_name 5236 5245	CloudDuke
+T79	threatActor_name 5246 5255	CORESHELL
+T80	threatActor_name 5256 5266	CosmicDuke
+T81	threatActor_name 5267 5275	COZYBEAR
+T82	threatActor_name 5276 5283	COZYCAR
+T83	threatActor_name 5284 5292	COZYDUKE
+T84	threatActor_name 5293 5306	CrouchingYeti
+T85	threatActor_name 5307 5313	DIONIS
+T86	threatActor_name 5314 5323	Dragonfly
+T87	threatActor_name 5324 5338	Energetic Bear
+T88	threatActor_name 5339 5347	EVILTOSS
+T89	threatActor_name 5348 5358	Fancy Bear
+T90	threatActor_name 5359 5369	GeminiDuke
+T91	threatActor_name 5370 5380	GREY CLOUD
+T92	threatActor_name 5381 5391	HammerDuke
+T93	threatActor_name 5392 5402	HAMMERTOSS
+T94	threatActor_name 5403 5407	Have
+T95	threatActor_name 5409 5419	MiniDionis
+T96	threatActor_name 5420 5428	MiniDuke
+T97	threatActor_name 5429 5436	OLDBAIT
+T98	threatActor_name 5437 5446	OnionDuke
+T99	threatActor_name 5447 5467	Operation Pawn Storm
+T100	threatActor_name 5468 5477	PinchDuke
+T101	threatActor_name 5478 5497	Powershell backdoor
+T102	threatActor_name 5498 5505	Quedagh
+T103	threatActor_name 5506 5514	Sandworm
+T104	threatActor_name 5515 5523	SEADADDY
+T105	threatActor_name 5524 5531	Seaduke
+T106	threatActor_name 5532 5538	SEDKIT
+T107	threatActor_name 5539 5545	SEDNIT
+T108	threatActor_name 5546 5553	Skipper
+T109	threatActor_name 5554 5560	Sofacy
+T110	threatActor_name 5561 5569	SOURFACE
+T111	threatActor_name 5570 5582	SYNful Knock
+T112	threatActor_name 5583 5593	Tiny Baron
+T113	threatActor_name 5594 5603	Tsar Team
+T114	threatActor_name 5604 5616	twain_64.dll
+T115	threatActor_name 5644 5663	VmUpgradeHelper.exe
+T116	threatActor_name 5685 5693	Waterbug
+T117	threatActor_name 5694 5701	X-Agent

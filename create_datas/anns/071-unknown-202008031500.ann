@@ -1,0 +1,372 @@
+T1	vulnerability_cve 60 73	CVE-2020-8558
+T2	vulnerability_cve 197 210	CVE-2020-8558
+T3	time 1182 1195	June 1 , 2020
+T4	time 1140 1155	April 18 , 2020
+T5	vulnerability_cve 1424 1437	CVE-2020-8558
+T6	vulnerability_cve 1770 1783	CVE-2020-8558
+T7	time 2066 2080	June 17 , 2020
+T8	vulnerability_cve 1973 1986	CVE-2020-8558
+T9	vulnerability_cve 9356 9369	CVE-2020-8558
+T10	vulnerability_cve 12187 12200	CVE-2020-8558
+T11	vulnerability_cve 12083 12096	CVE-2020-8558
+T12	vulnerability_cve 11244 11257	CVE-2020-8558
+T13	person 562 570	attacker
+T14	sub_activity 602 619	steal information
+T15	sub_activity 622 642	deploy crypto miners
+R1	launch Arg1:T13 Arg2:T14	
+R2	launch Arg1:T13 Arg2:T15	
+T17	reference_word 684 701	The vulnerability
+T18	tool 0 24	Kubernetes Vulnerability
+T19	tool 289 305	Kubernetes nodes
+T20	tool 347 363	Kubernetes nodes
+T21	tool 242 252	kube-proxy
+R4	coreference Arg1:T1 Arg2:T18	
+R5	located Arg1:T2 Arg2:T21	
+R6	part_of Arg1:T21 Arg2:T19	
+T22	tool 412 422	Kubernetes
+T23	person 490 514	unauthenticated attacker
+R9	coreference Arg1:T17 Arg2:T2	
+T26	sample_function 702 715	exposed nodes
+R10	goal Arg1:T17 Arg2:T26	
+T27	tool 1164 1169	patch
+R11	release_time Arg1:T27 Arg2:T3	
+T28	tool 1239 1258	Kubernetes clusters
+T29	tool 1279 1289	Kubernetes
+T31	person 1440 1449	attackers
+R13	use Arg1:T31 Arg2:T5	
+T32	sub_activity 1491 1525	gain full control over the cluster
+T33	sub_activity 1454 1486	gain access to the insecure-port
+R14	launch Arg1:T31 Arg2:T33	
+R15	launch Arg1:T31 Arg2:T32	
+T34	security_team 1543 1567	Kubernetes security team
+T38	reference_word 1645 1658	vulnerability
+R18	coreference Arg1:T38 Arg2:T5	
+T39	tool 1938 1962	Google Kubernetes Engine
+T40	tool 1965 1968	GKE
+R19	coreference Arg1:T40 Arg2:T39	
+T41	tool 1854 1878	Azure Kubernetes Service
+T42	tool 1881 1884	AKS
+R20	coreference Arg1:T42 Arg2:T41	
+T43	tool 1899 1925	Elastic Kubernetes Service
+T44	tool 1928 1931	EKS
+R21	coreference Arg1:T44 Arg2:T43	
+T45	tool 1829 1848	Kubernetes services
+R22	part_of Arg1:T41 Arg2:T45	
+R23	part_of Arg1:T43 Arg2:T45	
+R24	part_of Arg1:T39 Arg2:T45	
+T46	tool 2002 2012	Kubernetes
+T47	company 2122 2134	Prisma Cloud
+T49	tool 2246 2256	kube-proxy
+T50	tool 2302 2320	Kubernetes cluster
+R26	part_of Arg1:T49 Arg2:T50	
+T51	sample_function 2337 2380	manage connectivity among pods and services
+T52	tool 2383 2402	Kubernetes services
+T53	sample_name 2619 2627	10.0.0.1
+T54	tool 2419 2428	clusterIP
+R28	located Arg1:T8 Arg2:T46	
+T61	tool 8087 8091	pods
+R31	part_of Arg1:T54 Arg2:T52	
+T68	tool 2593 2602	clusterIP
+R34	coreference Arg1:T53 Arg2:T68	
+T69	tool 2683 2692	clusterIP
+T70	sample_name 2695 2703	10.0.0.1
+T71	tool 2807 2817	kube-proxy
+T72	sample_function 2832 2854	sets up routing tables
+T73	reference_word 2829 2831	It
+R35	coreference Arg1:T73 Arg2:T71	
+R36	goal Arg1:T73 Arg2:T72	
+T74	sample_function 2915 2950	correctly routed to one of the pods
+R37	goal Arg1:T73 Arg2:T74	
+T75	tool 3042 3045	GKE
+T76	tool 3030 3039	DaemonSet
+T77	tool 3150 3156	Cilium
+T78	sample_function 3193 3215	replace the kube-proxy
+R38	goal Arg1:T77 Arg2:T78	
+T79	tool 3243 3253	kube-proxy
+T80	protocol 3653 3657	IPv4
+T81	IP 3698 3709	127.0.0.0/8
+T82	IP 3726 3735	127.0.0.1
+T83	IP 3736 3751	127.255.255.255
+T84	IP 3776 3785	127.0.0.1
+T85	IP 3959 3968	127.0.0.1
+T86	IP 4038 4047	127.0.0.1
+T87	IP 4116 4127	127.0.0.1/8
+T88	IP 4386 4401	255.255.255.255
+T89	IP 4434 4449	255.255.255.255
+T90	IP 4831 4846	255.255.255.255
+T91	IP 5100 5109	127.0.0.1
+T92	IP 5047 5056	127.0.0.1
+T93	tool 3664 3682	loopback addresses
+T94	tool 3981 4007	loopback network interface
+T95	IP 5483 5494	127.0.0.0/8
+T96	IP 6145 6154	127.0.0.1
+T97	IP 6255 6264	127.0.0.1
+T98	IP 6361 6372	127.0.0.0/8
+T99	IP 6661 6670	127.0.0.1
+T100	IP 7386 7396	10.0.0.0.2
+T101	sample_name 7481 7487	src ip
+T102	sample_name 7500 7506	dst ip
+T103	IP 7490 7498	10.0.0.1
+T104	IP 7509 7518	127.0.0.1
+T105	IP 10577 10586	127.0.0.1
+T106	tool 9580 9583	AKS
+T107	vulnerability_cve 9672 9685	CVE-2020-8558
+R39	part_of Arg1:T81 Arg2:T93	
+T109	sample_function 4507 4525	indicate broadcast
+T110	reference_word 4482 4498	reserved address
+R40	coreference Arg1:T110 Arg2:T89	
+R41	goal Arg1:T110 Arg2:T109	
+T112	attack_goal 4857 4890	routers to broadcast the response
+T113	tool 5602 5612	kube-proxy
+T114	sample_function 5122 5144	internal communication
+T115	tool 4144 4151	martian
+T116	tool 4166 4173	martian
+T117	reference_word 4205 4217	some packets
+R43	coreference Arg1:T117 Arg2:T116	
+T118	sample_function 4252 4263	make claims
+R44	goal Arg1:T117 Arg2:T118	
+T119	tool 4665 4680	Martian packets
+T121	tool 4953 4960	martian
+T122	tool 5157 5175	loopback interface
+T124	tool 5251 5266	martian packets
+T125	tool 5370 5385	martian packets
+T126	tool 4066 4080	route_localnet
+T127	tool 5414 5428	route_localnet
+T128	reference_word 5443 5445	It
+R48	coreference Arg1:T128 Arg2:T127	
+T130	tool 5621 5635	route_localnet
+R49	use Arg1:T113 Arg2:T130	
+T131	sample_function 5639 5654	support a bunch
+T132	tool 5700 5714	route_localnet
+T133	person 5803 5812	attackers
+T134	tool 5848 5862	route_localnet
+R51	use Arg1:T133 Arg2:T134	
+T135	sample_function 5866 5889	perform several attacks
+R52	goal Arg1:T134 Arg2:T135	
+R46	goal Arg1:T122 Arg2:T114	
+R47	goal Arg1:T130 Arg2:T131	
+T136	OS_name 5950 5955	Linux
+T138	tool 6086 6103	Internal services
+T139	sample_function 5976 6012	listen only on a specific IP address
+T140	tool 5963 5972	processes
+R50	goal Arg1:T140 Arg2:T139	
+T141	sample_function 6130 6154	listen only on 127.0.0.1
+R53	goal Arg1:T138 Arg2:T141	
+T143	tool 6298 6312	route_localnet
+T146	sample_function 6537 6574	reach the victim ’s internal services
+T147	tool 6601 6617	malicious packet
+R55	goal Arg1:T147 Arg2:T146	
+T149	tool 6817 6824	layer 2
+T150	sample_function 6850 6866	reach the victim
+R57	goal Arg1:T149 Arg2:T150	
+T151	tool 6947 6961	route_localnet
+T152	person 6969 6978	attackers
+T153	sub_activity 7006 7045	access the victim ’s localhost services
+R58	launch Arg1:T152 Arg2:T153	
+T154	tool 7135 7149	route_localnet
+T155	IP 7193 7202	127.0.0.1
+T156	IP_evil 7333 7341	10.0.0.1
+T36	reference_word 1630 1634	team
+R17	coreference Arg1:T36 Arg2:T34	
+T35	reference_word 1600 1613	vulnerability
+R16	coreference Arg1:T35 Arg2:T5	
+T48	reference_word 2169 2182	vulnerability
+R25	coreference Arg1:T48 Arg2:T8	
+T67	reference_word 2501 2508	service
+R30	coreference Arg1:T67 Arg2:T52	
+R33	part_of Arg1:T68 Arg2:T67	
+T111	person 4783 4791	attacker
+R42	goal Arg1:T111 Arg2:T112	
+T145	person 6514 6522	attacker
+R54	use Arg1:T145 Arg2:T147	
+T148	tool 6783 6801	attacker ’s packet
+R56	use Arg1:T148 Arg2:T149	
+T157	person 7525 7533	attacker
+T158	tool 7634 7648	route_localnet
+T159	person 7656 7665	attackers
+T160	sub_activity 7690 7724	access a host ’s internal services
+R60	launch Arg1:T159 Arg2:T160	
+T162	tool 7776 7786	kube-proxy
+T163	tool 7819 7833	route_localnet
+T164	sample_function 7902 7913	gain access
+T165	tool 7864 7868	host
+R61	goal Arg1:T165 Arg2:T164	
+T166	sample_function 8123 8151	access its internal services
+R62	goal Arg1:T61 Arg2:T166	
+T167	tool 8170 8173	pod
+T168	sample_function 8183 8210	reach the internal services
+R63	goal Arg1:T167 Arg2:T168	
+T169	tool 8328 8338	Kubernetes
+T170	tool 8475 8485	Kubernetes
+T171	person 8405 8407	we
+R64	use Arg1:T171 Arg2:T170	
+T172	sample_function 8417 8444	identify localhost services
+R65	goal Arg1:T170 Arg2:T172	
+T173	tool 8519 8539	Kubenetes API server
+T174	tool 8611 8624	insecure-port
+R66	use Arg1:T173 Arg2:T174	
+T177	sample_function 8734 8765	easily talk with the api-server
+T176	tool 8667 8691	control-plane components
+R68	goal Arg1:T176 Arg2:T177	
+T178	tool 8796 8800	RBAC
+T179	tool 8768 8793	Role-based access control
+R69	coreference Arg1:T178 Arg2:T179	
+T180	tool 8873 8883	Kubernetes
+T181	tool 8992 9002	kube-proxy
+T182	tool 9020 9034	route_localnet
+R70	use Arg1:T181 Arg2:T182	
+T183	sample_function 8909 8936	run the api-server as a pod
+R71	goal Arg1:T180 Arg2:T183	
+T184	reference_word 8966 8968	it
+R72	coreference Arg1:T184 Arg2:T180	
+R73	use Arg1:T184 Arg2:T182	
+T185	tool 9309 9312	GKE
+T186	tool 9315 9318	EKS
+T187	tool 9323 9326	AKS
+T188	tool 9074 9084	Kubernetes
+T189	tool 9131 9136	hosts
+T190	vulnerability_cve 9187 9200	CVE-2020-8558
+R74	use Arg1:T189 Arg2:T190	
+T191	sample_function 9205 9226	ommand the api-server
+R75	goal Arg1:T189 Arg2:T191	
+T192	sample_function 9231 9252	gain complete control
+R76	goal Arg1:T189 Arg2:T192	
+T193	tool 9280 9300	Kubernetes platforms
+R77	part_of Arg1:T185 Arg2:T193	
+R78	part_of Arg1:T186 Arg2:T193	
+R79	part_of Arg1:T187 Arg2:T193	
+T194	tool 9417 9440	cloud service providers
+T195	tool 9443 9447	CSPs
+T196	tool 9460 9475	Microsoft Azure
+R80	part_of Arg1:T196 Arg2:T194	
+R81	coreference Arg1:T195 Arg2:T194	
+T62	tool 9736 9750	malicious pods
+T197	sample_function 9798 9818	carry out the attack
+R82	goal Arg1:T62 Arg2:T197	
+T198	tool 9821 9854	Cloud-hosted Kubernetes offerings
+T199	sample_function 9868 9889	manage the Kubernetes
+R83	goal Arg1:T198 Arg2:T199	
+T200	sample_function 9931 9961	run them on a separate network
+R84	goal Arg1:T198 Arg2:T200	
+T201	tool 10083 10086	CSP
+T202	tool 10267 10270	CSP
+T203	person 10150 10159	attackers
+T205	tool 10318 10333	malicious hosts
+T206	sample_function 10367 10392	access localhost services
+R86	goal Arg1:T205 Arg2:T206	
+T207	tool 10491 10505	route_localnet
+T208	tool 10624 10638	route_localnet
+T209	tool 10663 10673	kube-proxy
+R87	use Arg1:T209 Arg2:T208	
+T210	tool 10419 10430	initial fix
+T211	tool 10455 10462	kubelet
+R88	part_of Arg1:T210 Arg2:T211	
+T212	sample_function 10467 10483	adds mitigations
+R89	goal Arg1:T210 Arg2:T212	
+T213	protocol 10865 10868	UDP
+T214	person 10803 10825	local network attacker
+T215	sub_activity 10832 10844	send packets
+R90	launch Arg1:T214 Arg2:T215	
+T204	attack_activity 11230 11257	vulnerable to CVE-2020-8558
+T216	sub_activity 11275 11303	running a vulnerable version
+R85	part_of Arg1:T216 Arg2:T204	
+T217	tool 11402 11412	kube-proxy
+T218	tool 11435 11442	kubelet
+T219	tool 11465 11475	kube-proxy
+T220	sub_activity 11461 11491	the kube-proxy running on them
+R91	part_of Arg1:T220 Arg2:T204	
+T221	sub_activity 11529 11556	run localhost-only services
+R92	part_of Arg1:T221 Arg2:T204	
+T222	attack_activity 11673 11706	vulnerable to a complete takeover
+T224	sub_activity 11830 11855	api-server runs on a node
+R94	part_of Arg1:T224 Arg2:T222	
+T225	tool 11868 11878	kube-proxy
+T226	sub_activity 12145 12164	patch your clusters
+T227	sub_activity 12317 12353	disable the api-server insecure-port
+T229	tool 12563 12567	RBAC
+T230	company 12611 12642	Palo Alto Networks Prisma Cloud
+T232	string 12832 12843	CAP_NEW_RAW
+T233	string 12387 12398	CAP_NET_RAW
+T234	string 12049 12060	CAP_NET_RAW
+T16	sub_activity 646 681	remove existing services altogether
+R3	launch Arg1:T13 Arg2:T16	
+T223	sub_activity 11752 11804	cluster doesn’t disable the api-server insecure-port
+R12	part_of Arg1:T223 Arg2:T222	
+T37	reference_word 2323 2326	Its
+R95	coreference Arg1:T37 Arg2:T49	
+R27	goal Arg1:T37 Arg2:T51	
+T55	tool 2450 2471	multiple backing pods
+R29	part_of Arg1:T55 Arg2:T52	
+T66	sample_function 2475 2496	enable load balancing
+R96	goal Arg1:T55 Arg2:T66	
+T57	tool 2524 2534	three pods
+R32	part_of Arg1:T57 Arg2:T67	
+T228	reference_word 2547 2550	its
+R97	coreference Arg1:T228 Arg2:T57	
+T231	tool 2555 2565	IP address
+R98	part_of Arg1:T231 Arg2:T228	
+T58	tool 2630 2634	Pods
+T235	sample_function 2663 2692	send packets to its clusterIP
+R99	goal Arg1:T58 Arg2:T235	
+R100	coreference Arg1:T70 Arg2:T69	
+T59	tool 3205 3215	kube-proxy
+T60	tool 3300 3312	sysctl files
+R101	use Arg1:T79 Arg2:T60	
+T237	string 3331 3363	net.ipv4.conf.all.route_localnet
+T236	sample_function 3254 3291	configures several network parameters
+R102	goal Arg1:T60 Arg2:T236	
+T108	tool 3273 3291	network parameters
+R103	part_of Arg1:T237 Arg2:T108	
+T238	tool 3438 3452	route_localnet
+R104	use Arg1:T93 Arg2:T84	
+T239	tool 3877 3884	machine
+T240	sample_function 3888 3903	refer to itself
+T241	reference_word 3844 3849	Those
+R105	coreference Arg1:T241 Arg2:T93	
+R106	use Arg1:T239 Arg2:T241	
+R107	goal Arg1:T241 Arg2:T240	
+T242	tool 3906 3913	Packets
+R108	use Arg1:T242 Arg2:T94	
+T243	sample_function 3948 3968	sent to IP 127.0.0.1
+R109	goal Arg1:T94 Arg2:T243	
+T120	sample_function 4687 4691	hint
+R45	goal Arg1:T119 Arg2:T120	
+T123	sample_function 5446 5466	instructs the kernel
+R110	goal Arg1:T128 Arg2:T123	
+T129	tool 6191 6206	local processes
+T137	sample_function 6211 6229	access the service
+R111	goal Arg1:T129 Arg2:T137	
+T142	sample_function 6324 6356	allows external packets destined
+R112	goal Arg1:T143 Arg2:T142	
+T244	reference_word 6240 6244	they
+R113	coreference Arg1:T244 Arg2:T129	
+T245	sample_function 6249 6264	reach 127.0.0.1
+R114	goal Arg1:T244 Arg2:T245	
+T144	tool 6628 6650	destination IP address
+R115	part_of Arg1:T144 Arg2:T147	
+T246	tool 6679 6702	destination MAC address
+R116	part_of Arg1:T246 Arg2:T147	
+T247	tool 7162 7168	packet
+T248	tool 7175 7189	destination IP
+R117	part_of Arg1:T248 Arg2:T247	
+T249	sample_function 7229 7254	access localhost services
+R118	goal Arg1:T247 Arg2:T249	
+T161	sub_activity 7534 7550	sends the packet
+R59	launch Arg1:T157 Arg2:T161	
+T250	attack_goal 7574 7616	ensure he receives the target ’s responses
+R119	goal Arg1:T161 Arg2:T250	
+T251	string 8287 8298	CAP_NET_RAW
+T252	tool 8287 8309	CAP_NET_RAW capability
+T253	tool 8266 8269	pod
+R120	part_of Arg1:T252 Arg2:T253	
+T254	sample_function 8239 8259	carry out the attack
+R121	goal Arg1:T253 Arg2:T254	
+T255	reference_word 8346 8361	this capability
+R122	coreference Arg1:T255 Arg2:T252	
+T175	string 9762 9773	CAP_NET_RAW
+T256	sample_function 10093 10111	run the api-server
+R67	goal Arg1:T201 Arg2:T256	
+T257	tool 10940 10962	reverse path filtering
+T56	sub_activity 12571 12608	running containers as a non-root user
+T24	sub_activity 518 556	gain complete control over the cluster
+R7	launch Arg1:T23 Arg2:T24	

@@ -1,0 +1,68 @@
+‘Operation Oceansalt’ Attacks South Korea, U.S., and Canada With Source Code From Chinese Hacker Group .
+Release_Time : 2018-10-18
+Report_URL : https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-oceansalt.pdf
+There are a few differences between the two implants in implementation ; these demonstrate that Oceansalt is not simply a recompilation of Seasalt source code.However , these differences also provide evidence that Oceansalt is an evolution of Seasalt .
+Encoding : The Oceansalt implant uses an encoding and decoding mechanism before any data is sent to the control server .
+The Seasalt implant does not use this encoding and sends unencrypted data to the control server .
+Control server address : Oceansalt uses a hardcoded control server address to establish communication.Seasalt parses the control address from its binary by decoding data .
+Based on the executable header information , Seasalt was compiled on March 30 , 2010 .
+Oceansalt was compiled on June 1 , 2018 .
+Highlighting the compilation timestamps is important because , as our preceding analysis demonstrates , the samples have a high degree of code sharing .
+The code used to create the reverse shell in Oceansalt is an exact match with that of Comment Crew ’s Seasalt implant .
+The mechanism for creating the reverse shell ( pipe-based inter-process communication for standard I/O handles ) is also seen in Comment Crew implants such as WebC2-CSON and WebC2-GREENCAT .
+These matches lead us to believe that Oceansalt is based on Seasalt , because it reuses much of the code base developed 10 years ago .
+Seasalt ’s public disclosure in the Comment Crew report does not seem to have discouraged Oceansalt ’s developer .
+We offer a comparative analysis of the following partially obfuscated implants against the initial Oceansalt sample and the Seasalt implant from Comment Crew .
+All the partially obfuscated Oceansalt implants have the following characteristics : 
+All implants were compiled during a three-day period : July 16–18 .
+All implants contain debug statements ( print logs ) written to the log file : C:\Users\Public\Videos\temp.log .
+These debug statements begin with the timestamp and consist of the following keywords at the beginning of the debug message .
+All implants connected to the same control server IP address : 27.102.112.179 .
+Although none of the partially obfuscated implants contain any additional capabilities ( as compared with the initial Oceansalt or Seasalt ) , some of the partially obfuscated implants are missing the reverse-shell capabilities : 
+Comment Crew : C1773E9CF8265693F37DF1A39E0CBBE2 .
+Comment Crew : 0355C116C02B02C05D6E90A0B3DC107C .
+Comment Crew : 74A50A5705E2AF736095B6B186D38DDF .
+Comment Crew : 45C362F17C5DC8496E97D475562BEC4D .
+Comment Crew : D14DD769C7F53ACEC482347F539EFDF4 .
+Comment Crew : B2F6D9A62C63F61A6B33DC6520BFCCCD .
+Comment Crew : 76C8DA4147B08E902809D1E80D96FBB4 .
+We present evidence of source-code sharing between the Oceansalt authors and Comment Crew , based on our comparative analysis of the three sets of samples : Oceansalt , partially obfuscated Oceansalt , and Seasalt .
+There is no possibility the attackers could have reinstrumented Seasalt by simply modifying the control server IP addresses : 
+The mechanism for obtaining the address in Seasalt is different from Oceansalt ’s .
+Seasalt looks for encoded data at the end of the binary , decodes this data into tokens separated by the marker “ $ , ” and obtains the control server information .
+Oceansalt implants have the control server IP addresses and port numbers hardcoded as plaintext strings in the binaries .
+Some of the partially obfuscated Oceansalt implants are missing the reverse-shell capability .
+All other capabilities and command codes are similar .
+Modifying capabilities in this fashion is possible only with access to the source code of Seasalt .
+The presence of these debug strings also indicates that the authors who modified the source code may have used these samples to perform their initial testing before obfuscating and releasing the implants to their victims , without scrubbing the debug strings .
+The Oceansalt implant 531dee019792a089a4589c2cce3dac95 ( compiled June ) contains a few key features that indicate compilation from the source code of Seasalt : 
+Oceansalt is 76KB , a minimal on-disk footprint that is harder to detect than larger malware .
+The implant has a variety of capabilities for capturing data from the victim ’s machine using a structured command system .
+From our research we have determined that this implant is a first-stage component .
+Further stages are downloaded through its commands .
+Oceansalt also supports commands enabling the attacker to take various actions on the victim ’s system .
+Oceansalt starts by trying to connect to its control server at 158.69.131.78:8080 .
+Operates the reverse shell established using the previous command code .
+Contains the commands sent by the control server to the reverse shell that will be executed by cmd.exe on the infected endpoint .
+Once the command has been executed , the output is read from cmd.exe via a pipe and sent to the control server .
+Closes the reverse shell by closing handles to the pipes created for the shell ’s inter-process communication .
+Tests receive and send capabilities of the implant by receiving data ( 0x7 bytes ) from the control server and sending it back .
+Oceansalt has no persistence capabilities to remain on the endpoint after the system reboots .
+This lack suggests other components in the infection chain may ensure persistence and carry out other malicious activities .
+Based on our analysis , the McAfee Advanced Threat Research team has named this global threat Operation Oceansalt .
+This operation has focused on targets in South Korea and other countries with new malware that has roots in Comment Crew activity from 2010 .
+Our research shows that Comment Crew ’s malware in part lives on in different forms employed by another advanced persistent threat group operating primarily against South Korea .
+This research represents how threat actors including nation-states might collaborate on their campaigns .
+McAfee continues to monitor the threat landscape in Asia and around the world to track the evolution of known groups and changes to their techniques .
+Comment Crew : 158.69.131.78 .
+Comment Crew : 172.81.132.62 .
+Comment Crew : 27.102.112.179 .
+Comment Crew : 211.104.160.196 .
+Comment Crew : fc121db04067cffbed04d7403c1d222d376fa7ba .
+Comment Crew : 832d5e6ebd9808279ee3e59ba4b5b0e884b859a5 .
+Comment Crew : be4fbb5a4b32db20a914cad5701f5c7ba51571b7 .
+Comment Crew : 1f70715e86a2fcc1437926ecfaeadc53ddce41c9 .
+Comment Crew : dd3fb2750da3e8fc889cd1611117b02d49cf17f7 .
+Comment Crew : 583879cfaf735fa446be5bfcbcc9e580bf542c8c .
+Comment Crew : ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36 .
+Comment Crew : d72bc671583801c3c65ac1a96bb75c6026e06a73 .

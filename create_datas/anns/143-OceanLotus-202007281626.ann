@@ -1,0 +1,365 @@
+T1	threatActor_name 0 10	OceanLotus
+T2	threatActor_name 947 957	OceanLotus
+T3	threatActor_name 911 921	OceanLotus
+T4	threatActor_name 1279 1289	OceanLotus
+T5	threatActor_name 1582 1592	OceanLotus
+T6	threatActor_name 2721 2731	OceanLotus
+T7	threatActor_name 2962 2972	OceanLotus
+T8	threatActor_name 3152 3162	OceanLotus
+T9	threatActor_name 3420 3430	OceanLotus
+T10	threatActor_name 3600 3610	OceanLotus
+T11	threatActor_name 3576 3586	OceanLotus
+T12	threatActor_name 4156 4166	OceanLotus
+T13	threatActor_name 4301 4311	OceanLotus
+T14	threatActor_name 5880 5890	OceanLotus
+T15	threatActor_name 8006 8016	OceanLotus
+T16	threatActor_name 10104 10114	OceanLotus
+T17	threatActor_name 12651 12661	OceanLotus
+T18	threatActor_name 12789 12799	OceanLotus
+T19	threatActor_name 12898 12908	OceanLotus
+T20	threatActor_name 13147 13157	OceanLotus
+T21	threatActor_name 13403 13413	OceanLotus
+T22	threatActor_name 13430 13440	OceanLotus
+T23	threatActor_name 13812 13822	OceanLotus
+T24	threatActor_name 14315 14325	OceanLotus
+T25	threatActor_name 14426 14436	OceanLotus
+T26	threatActor_name 14736 14746	OceanLotus
+T27	threatActor_name 15463 15473	OceanLotus
+T28	threatActor_name 15688 15698	OceanLotus
+T29	threatActor_name 16459 16469	OceanLotus
+T30	threatActor_name 16584 16594	OceanLotus
+T31	threatActor_name 16815 16825	OceanLotus
+T32	threatActor_name 16990 17000	OceanLotus
+T33	threatActor_name 17322 17332	OceanLotus
+T34	threatActor_name 17018 17028	OceanLotus
+T35	threatActor_name 17820 17830	OceanLotus
+T36	threatActor_name 18301 18311	OceanLotus
+T37	threatActor_name 19208 19218	OceanLotus
+T38	threatActor_name 19653 19663	OceanLotus
+T39	threatActor_name 21347 21357	OceanLotus
+T40	threatActor_name 22202 22212	OceanLotus
+T41	threatActor_name 22492 22502	OceanLotus
+T42	threatActor_name 22746 22756	OceanLotus
+T43	security_team 805 813	Volexity
+T44	security_team 365 373	Volexity
+T45	security_team 1132 1140	Volexity
+T46	security_team 1323 1331	Volexity
+T47	security_team 1461 1469	Volexity
+T48	security_team 2734 2742	Volexity
+T49	security_team 3090 3098	Volexity
+T50	security_team 3860 3868	Volexity
+T51	security_team 4178 4186	Volexity
+T52	security_team 4798 4806	Volexity
+T53	security_team 5860 5868	Volexity
+T54	security_team 6634 6642	Volexity
+T55	security_team 8036 8044	Volexity
+T56	security_team 10266 10274	Volexity
+T57	security_team 12599 12607	Volexity
+T58	security_team 12737 12745	Volexity
+T59	security_team 13553 13561	Volexity
+T60	security_team 13948 13956	Volexity
+T61	security_team 14404 14412	Volexity
+T62	security_team 14115 14123	Volexity
+T63	security_team 15670 15678	Volexity
+T64	security_team 16732 16740	Volexity
+T65	security_team 16958 16966	Volexity
+T66	security_team 17185 17193	Volexity
+T67	security_team 17503 17511	Volexity
+T68	security_team 17639 17647	Volexity
+T69	security_team 18216 18224	Volexity
+T70	security_team 18386 18394	Volexity
+T71	security_team 18935 18943	Volexity
+T72	security_team 19289 19297	Volexity
+T73	security_team 19452 19460	Volexity
+T74	security_team 22180 22188	Volexity
+T75	security_team 22430 22438	Volexity
+T76	security_team 22347 22355	Volexity
+T77	security_team 22723 22731	Volexity
+T78	location 22699 22706	Vietnam
+T79	time 354 362	May 2017
+#1	AnnotatorNotes T1	海莲花，又称APT32，被认为与越南政府有关。
+T80	time 940 944	2015
+T81	security_team 925 936	SkyEye Labs
+R1	find Arg1:T81 Arg2:T3	
+R2	first_found_time Arg1:T3 Arg2:T80	
+#2	AnnotatorNotes T81	360天眼实验室
+T82	threatActor_aliases 974 979	APT32
+R3	coreference Arg1:T82 Arg2:T2	
+T83	location 516 529	Asian nations
+T84	location 536 541	ASEAN
+T87	target_crowd 619 631	human rights
+T88	target_crowd 636 649	civil society
+R4	attack Arg1:T3 Arg2:T88	
+R5	attack Arg1:T3 Arg2:T87	
+T89	time 1302 1306	2015
+R10	first_found_time Arg1:T4 Arg2:T89	
+T90	protocol 2591 2598	SSL/TLS
+T91	tool 2650 2663	Cobalt Strike
+R11	use Arg1:T6 Arg2:T91	
+T92	threatActor_name 2876 2881	Turla
+T93	security_team 2914 2922	Symantec
+T94	threatActor_aliases 2934 2942	Waterbug
+R12	coreference Arg1:T94 Arg2:T92	
+R13	find Arg1:T93 Arg2:T94	
+T95	time 3083 3087	2016
+T96	program_language 3464 3474	JavaScript
+T97	protocol 3492 3496	HTTP
+T98	protocol 3500 3505	HTTPS
+T99	program_language 3611 3621	JavaScript
+T100	program_language 3787 3797	JavaScript
+T101	attack_activity 4053 4067	Spear phishing
+R14	launch Arg1:T12 Arg2:T101	
+T102	location 4649 4656	Vietnam
+T103	location 4664 4675	Philippines
+T104	domain 5429 5438	asean.org
+T105	domain 5439 5452	atr.asean.org
+T106	domain 5453 5474	investasean.asean.org
+T107	domain 5475 5489	www.mfa.gov.kh
+T108	domain 5490 5504	www.moe.gov.kh
+T109	domain 5505 5519	www.mcs.gov.kh
+T110	url 5542 5581	/modules/aseanmail/js/wp-mailinglist.js
+T111	url 5582 5648	/modules/wordpress-popup/inc/external/wpmu-lib/js/wpmu-ui.3.min.js
+T112	url 5671 5683	/jwplayer.js
+T113	url 5684 5710	/other/js/jquery/jquery.js
+T114	url_evil 6564 6631	cloudflare-api.com/ajax/libs/jquery/2.1.3/jquery.min.js?s=1&v=72580
+T115	domain 6852 6861	asean.org
+T116	encryption_algo 6937 6940	MD5
+T117	encryption_algo 6954 6960	base64
+T118	encryption_algo 7313 7316	MD5
+T119	encryption_algo 7839 7845	base64
+T120	program_language 7978 7988	JavaScript
+T121	program_language 8199 8209	JavaScript
+T122	url_evil 8487 8526	http://ad.jqueryclick.com/assets/adv.js
+T123	url_evil 8797 8832	https://health-ray-id.com/robot.txt
+T124	url_evil 9062 9102	/api/<BASE64_ENCODED_DATA>/adFeedback.js
+T125	encryption_algo 9109 9115	base64
+T126	program_language 9763 9773	JavaScript
+T127	url_evil 10620 10661	/sync/<BASE64 _ENCODED_DATA/img_blank.gif
+T128	program_language 10835 10845	JavaScript
+T129	url_evil 11605 11645	/api/<BASE64_ENCODED_DATA>/adFeedback.js
+T130	encryption_algo 11930 11936	base64
+T131	function 12052 12066	e.fn_getjson()
+T132	url_evil 12123 12214	/connect.js?timestamp=59ba12f2eb1e240cd9431624&code=rtp&s1=64c6e32b951adc4f3d5661dba2330141
+T133	function 12418 12428	postShow()
+T134	function 12433 12443	postDown()
+T135	protocol 13009 13014	OAuth
+T136	attack_activity 13856 13870	spear phishing
+R15	launch Arg1:T23 Arg2:T136	
+T137	domain_evil 13883 13907	dload01.s3.amazonaws.com
+T138	domain_evil 13908 13945	download-attachments.s3.amazonaws.com
+R16	use Arg1:T23 Arg2:T137	
+R17	use Arg1:T23 Arg2:T138	
+T139	program_language 13790 13800	JavaScript
+T140	tool 14007 14020	Cobalt Strike
+T141	program_language 15490 15493	PHP
+T142	program_language 15706 15709	PHP
+T143	encryption_algo 16010 16023	base64_decode
+T144	encryption_algo 16102 16105	MD5
+T145	encryption_algo 16113 16116	MD5
+T146	encryption_algo 16169 16172	MD5
+T148	program_language 16542 16552	JavaScript
+T149	domain_evil 17860 17877	a.doulbeclick.org
+T150	domain_evil 17878 17891	ad.adthis.org
+T151	domain_evil 17892 17910	ad.jqueryclick.com
+T152	domain_evil 17911 17928	api.querycore.com
+T153	domain_evil 17929 17983	browser-extension.jdfkmiabjpfjacifcmihfdjhpnjpiick.com
+T154	domain_evil 17984 17994	cdn-js.com
+T155	IP_evil 18013 18026	45.76.147.201
+T156	IP_evil 18027 18039	45.77.39.101
+T157	IP_evil 18040 18053	64.62.174.146
+T158	IP_evil 18054 18066	64.62.174.41
+T159	IP_evil 18067 18080	79.143.87.174
+T160	domain_evil 18081 18095	128.199.227.80
+T161	IP_evil 18114 18155	2001:19f0:4400:48ea : 5400:ff : fe71:3201
+T162	IP_evil 18156 18197	2001:19f0:4400:48fd : 5400:ff : fe71:3202
+T163	domain_evil 18470 18493	ad.linksys-analytic.com
+T164	domain_evil 18494 18516	ads.alternativeads.net
+T165	domain_evil 18517 18534	api.2nd-weibo.com
+T166	domain_evil 18535 18557	api.analyticsearch.org
+T167	domain_evil 18558 18582	api.baiduusercontent.com
+T168	domain_evil 18583 18601	api.disquscore.com
+T169	IP_evil 18620 18632	64.62.174.16
+T170	IP_evil 18633 18645	45.77.39.101
+T171	IP_evil 18647 18660	64.62.174.146
+T172	IP_evil 18661 18673	64.62.174.41
+T173	IP_evil 18674 18687	79.143.87.174
+T174	IP_evil 18688 18702	128.199.227.80
+T175	IP_evil 18725 18766	2001:19f0:4400:48fd : 5400:ff : fe71:3202
+T176	url 20029 20073	https://myaccount.google.com/u/1/permissions
+T177	domain 20472 20495	https://mail.google.com
+T178	url 20750 20796	https://support.google.com/mail/answer/7036019
+T179	location 22530 22537	Vietnam
+R18	located Arg1:T41 Arg2:T179	
+T180	location 69 74	ASEAN
+T181	location 76 89	Asian Nations
+T183	target_crowd 102 121	Human Rights Groups
+T184	target_crowd 127 140	Civil Society
+R19	attack Arg1:T1 Arg2:T180	
+R20	attack Arg1:T1 Arg2:T181	
+R22	attack Arg1:T1 Arg2:T183	
+R23	attack Arg1:T1 Arg2:T184	
+R8	attack Arg1:T3 Arg2:T83	
+R9	attack Arg1:T3 Arg2:T84	
+T185	string 1123 1127	TTPs
+#3	AnnotatorNotes T185	Tactics, Techniques, and Procdeures: 战术，技术和程序
+T186	string 14718 14722	TTPs
+T187	program_language 2117 2127	JavaScript
+T188	program_language 3396 3406	JavaScript
+T189	program_language 5790 5800	JavaScript
+T190	program_language 5919 5929	JavaScript
+T191	program_language 8450 8460	JavaScript
+T192	program_language 10170 10180	JavaScript
+T85	target_crowd 573 616	individuals and organizations tied to media
+R6	attack Arg1:T3 Arg2:T85	
+R7	release_time Arg1:T44 Arg2:T79	
+T86	attack_goal 1617 1669	Massive digital profiling and information collection
+T193	target_crowd 1779 1789	Government
+T194	target_crowd 1792 1800	Military
+T195	target_crowd 1803 1815	Human Rights
+T196	target_crowd 1818 1831	Civil Society
+T197	target_crowd 1834 1839	Media
+T198	target_crowd 1842 1863	State Oil Exploration
+R24	goal Arg1:T5 Arg2:T86	
+R25	attack Arg1:T5 Arg2:T193	
+R26	attack Arg1:T5 Arg2:T194	
+R27	attack Arg1:T5 Arg2:T195	
+R28	attack Arg1:T5 Arg2:T196	
+R29	attack Arg1:T5 Arg2:T197	
+R30	attack Arg1:T5 Arg2:T198	
+T199	attack_goal 2066 2091	steal e-mail and contacts
+R31	goal Arg1:T5 Arg2:T199	
+T200	attack_goal 2228 2243	install malware
+T201	attack_goal 2247 2280	provide access to e-mail accounts
+R32	goal Arg1:T5 Arg2:T200	
+R33	goal Arg1:T5 Arg2:T201	
+T202	company 2480 2487	AddThis
+T203	company 2490 2496	Disqus
+T204	company 2499 2505	Akamai
+T205	company 2508 2513	Baidu
+T206	government 2516 2526	Cloudflare
+T207	company 2529 2537	Facebook
+T208	company 2540 2546	Google
+T209	company 2576 2590	Let ’s Encrypt
+T210	industry 1792 1800	Military
+T211	attack_activity 3970 3984	spear phishing
+T212	attack_goal 4011 4050	install backdoors on the target systems
+R35	launch Arg1:T11 Arg2:T211	
+R34	goal Arg1:T11 Arg2:T212	
+#4	AnnotatorNotes T202	攻击者创建域名模仿合法的公司。
+#5	AnnotatorNotes T91	渗透工具，美国Red Team开发。
+T213	person 4312 4321	attackers
+R36	part_of Arg1:T213 Arg2:T13	
+T214	government 4518 4539	Vietnamese Government
+R37	find Arg1:T53 Arg2:T14	
+T215	tool 9584 9606	fingerprintjs2 library
+T216	protocol 13380 13385	OAuth
+T217	protocol 19726 19731	OAuth
+T218	protocol 10445 10450	OAuth
+T219	counter_measure 20880 20934	Use strong passwords for CMS and system authentication
+T220	counter_measure 20937 21041	Restrict access to the system and CMS functionality as much as possible ( limited users , ACLs , etc . )
+T221	counter_measure 21044 21087	Implement two-factor ( 2FA ) where possible
+T222	counter_measure 21090 21156	Keep operating systems , CMS software , and CMS plugins up-to-date
+T223	counter_measure 21159 21235	Disable or remove any accounts that are no longer needed or are unrecognized
+T224	person 20813 20835	website administrators
+R38	use Arg1:T224 Arg2:T219	
+R39	use Arg1:T224 Arg2:T220	
+R40	use Arg1:T224 Arg2:T221	
+R41	use Arg1:T224 Arg2:T222	
+R42	use Arg1:T224 Arg2:T223	
+T225	person 2384 2392	attacker
+R44	attack Arg1:T225 Arg2:T202	
+R45	attack Arg1:T225 Arg2:T203	
+R46	attack Arg1:T225 Arg2:T204	
+R47	attack Arg1:T225 Arg2:T205	
+R48	attack Arg1:T225 Arg2:T206	
+R49	attack Arg1:T225 Arg2:T207	
+T226	tool 3375 3383	Webshell
+R50	use Arg1:T9 Arg2:T226	
+R51	find Arg1:T49 Arg2:T8	
+R52	use Arg1:T9 Arg2:T188	
+R53	use Arg1:T11 Arg2:T96	
+R54	use Arg1:T10 Arg2:T99	
+T227	target_crowd 3690 3709	website ’s visitors
+R55	attack Arg1:T10 Arg2:T227	
+R56	part_of Arg1:T13 Arg2:T214	
+R57	use Arg1:T14 Arg2:T190	
+R58	use Arg1:T15 Arg2:T120	
+R59	use Arg1:T16 Arg2:T192	
+R60	use Arg1:T16 Arg2:T215	
+R61	find Arg1:T57 Arg2:T17	
+R62	find Arg1:T58 Arg2:T18	
+R63	part_of Arg1:T131 Arg2:T129	
+R64	part_of Arg1:T133 Arg2:T132	
+R65	part_of Arg1:T134 Arg2:T132	
+T228	tool 13502 13519	Internet Explorer
+T229	tool 13522 13528	Chrome
+T230	tool 13535 13542	Firefox
+R66	use Arg1:T23 Arg2:T139	
+R67	find Arg1:T61 Arg2:T25	
+T231	tool 15494 15503	webshells
+R68	use Arg1:T27 Arg2:T141	
+R69	use Arg1:T27 Arg2:T231	
+R70	use Arg1:T28 Arg2:T142	
+R71	find Arg1:T63 Arg2:T28	
+R72	find Arg1:T65 Arg2:T32	
+R73	find Arg1:T64 Arg2:T31	
+R74	find Arg1:T66 Arg2:T33	
+R75	find Arg1:T68 Arg2:T35	
+T232	reference_word 17848 17856	Hostname
+R76	coreference Arg1:T232 Arg2:T149	
+R77	coreference Arg1:T232 Arg2:T150	
+R78	coreference Arg1:T232 Arg2:T151	
+R79	coreference Arg1:T232 Arg2:T152	
+R80	coreference Arg1:T232 Arg2:T153	
+R81	coreference Arg1:T232 Arg2:T154	
+T233	reference_word 17997 18009	IPv4 Address
+R82	coreference Arg1:T233 Arg2:T155	
+R83	coreference Arg1:T233 Arg2:T156	
+R84	coreference Arg1:T233 Arg2:T157	
+R85	coreference Arg1:T233 Arg2:T158	
+R86	coreference Arg1:T233 Arg2:T159	
+R87	coreference Arg1:T233 Arg2:T160	
+T234	reference_word 18098 18110	IPv6 Address
+R88	coreference Arg1:T234 Arg2:T161	
+R89	coreference Arg1:T234 Arg2:T162	
+R90	find Arg1:T69 Arg2:T36	
+R91	use Arg1:T35 Arg2:T232	
+R92	use Arg1:T35 Arg2:T233	
+R93	use Arg1:T35 Arg2:T234	
+T235	reference_word 18458 18466	Hostname
+R94	coreference Arg1:T235 Arg2:T163	
+R95	coreference Arg1:T235 Arg2:T164	
+R96	coreference Arg1:T235 Arg2:T165	
+R97	coreference Arg1:T235 Arg2:T166	
+R98	coreference Arg1:T235 Arg2:T167	
+R99	coreference Arg1:T235 Arg2:T168	
+T236	reference_word 18604 18616	IPv4 Address
+R100	coreference Arg1:T236 Arg2:T169	
+R101	coreference Arg1:T236 Arg2:T170	
+R102	coreference Arg1:T236 Arg2:T171	
+R103	coreference Arg1:T236 Arg2:T172	
+R104	coreference Arg1:T236 Arg2:T173	
+R105	coreference Arg1:T236 Arg2:T174	
+T237	reference_word 18705 18717	IPv6 Address
+R106	coreference Arg1:T237 Arg2:T175	
+R107	use Arg1:T36 Arg2:T235	
+R108	use Arg1:T36 Arg2:T236	
+R109	use Arg1:T36 Arg2:T237	
+R110	find Arg1:T74 Arg2:T40	
+R111	find Arg1:T75 Arg2:T41	
+R112	find Arg1:T77 Arg2:T42	
+R113	find Arg1:T43 Arg2:T3	
+T238	location 789 794	ASEAN
+R114	attack Arg1:T225 Arg2:T208	
+T239	industry 91 100	the Media
+T241	industry 1834 1839	Media
+R21	attack Arg1:T1 Arg2:T239	
+R43	part_of Arg1:T225 Arg2:T6	
+T182	tool 3311 3319	webshell
+R115	use Arg1:T8 Arg2:T182	
+T240	tool 13728 13745	Amazon S3 buckets
+#6	AnnotatorNotes T240	亚马逊云储存服务
+R116	use Arg1:T23 Arg2:T240	
+T147	tool 16335 16348	China Chopper
+R117	use Arg1:T29 Arg2:T147	
+R118	use Arg1:T29 Arg2:T148	

@@ -1,0 +1,137 @@
+T1	security_team 181 188	FireEye
+T3	tool 219 248	Microsoft Office RTF document
+T4	vulnerability_cve 264 277	CVE-2017-8759
+T5	reference_word 330 348	This vulnerability
+T6	vul_aliases 282 327	SOAP WSDL parser code injection vulnerability
+R2	coreference Arg1:T5 Arg2:T6	
+T7	attack_activity 377 450	inject arbitrary code during the parsing of SOAP WSDL definition contents
+T8	security_team 453 461	Mandiant
+T9	tool 473 496	Microsoft Word document
+T10	program_language 573 592	Visual Basic script
+T11	tool 608 627	PowerShell commands
+R3	part_of Arg1:T11 Arg2:T10	
+T12	security_team 630 637	FireEye
+T13	company 683 692	Microsoft
+T14	reference_word 660 677	the vulnerability
+R4	coreference Arg1:T14 Arg2:T5	
+T15	reference_word 782 799	the vulnerability
+R5	coreference Arg1:T15 Arg2:T14	
+R6	find Arg1:T12 Arg2:T14	
+R7	find Arg1:T1 Arg2:T3	
+R8	use Arg1:T3 Arg2:T4	
+R9	launch Arg1:T5 Arg2:T7	
+R10	find Arg1:T8 Arg2:T9	
+R11	use Arg1:T9 Arg2:T10	
+T16	security_team 850 857	FireEye
+T17	md5 978 1010	fe5c4d6bb78e170abf5cf3741868ea4c
+T18	sample_name 958 968	Проект.doc
+R12	part_of Arg1:T17 Arg2:T18	
+T19	target_crowd 1048 1063	Russian speaker
+R13	attack Arg1:T18 Arg2:T19	
+T20	vulnerability_cve 1098 1111	CVE-2017-8759
+T21	reference_word 1114 1126	the document
+R14	coreference Arg1:T21 Arg2:T18	
+R15	use Arg1:T21 Arg2:T20	
+T22	sub_activity 1127 1156	downloads multiple components
+T23	sub_activity 1193 1218	launches a FINSPY payload
+R16	launch Arg1:T21 Arg2:T22	
+R17	launch Arg1:T21 Arg2:T23	
+T24	malware 1204 1210	FINSPY
+T25	md5 1226 1258	a7b990d5f57b244dd17e9a937a41e7f5
+R18	part_of Arg1:T25 Arg2:T24	
+T26	malware 1263 1269	FINSPY
+T27	malware 1297 1306	FinFisher
+T28	malware 1310 1318	WingBird
+R19	part_of Arg1:T27 Arg2:T26	
+R20	part_of Arg1:T28 Arg2:T26	
+T29	function 1362 1378	lawful intercept
+R21	part_of Arg1:T29 Arg2:T26	
+T30	reference_word 1403 1407	this
+R22	coreference Arg1:T30 Arg2:T29	
+T31	malware 1428 1434	FINSPY
+T32	reference_word 1477 1500	this malicious document
+R23	coreference Arg1:T32 Arg2:T21	
+T33	reference_word 1437 1439	we
+R24	coreference Arg1:T33 Arg2:T16	
+T34	target_crowd 1540 1563	Russian-speaking entity
+T35	attack_activity 1568 1592	cyber espionage purposes
+R25	attack Arg1:T35 Arg2:T34	
+R26	use Arg1:T35 Arg2:T32	
+T36	security_team 1620 1627	FireEye
+T37	time 1776 1785	July 2017
+R27	find Arg1:T36 Arg2:T35	
+R28	first_found_time Arg1:T37 Arg2:T35	
+T38	vul_aliases 1790 1818	code injection vulnerability
+T39	tool 1833 1851	WSDL parser module
+T40	tool 1863 1879	PrintClientProxy
+R29	part_of Arg1:T40 Arg2:T39	
+R30	part_of Arg1:T38 Arg2:T39	
+T41	url 1889 1980	http://referencesource.microsoft.com/ - System.Runtime.Remoting/metadata/wsdlparser.cs,6111
+R31	part_of Arg1:T41 Arg2:T40	
+T42	counter_measure 1989 1999	IsValidUrl
+T43	attack_activity 2112 2145	inject and execute arbitrary code
+T44	tool 2069 2082	CRLF sequence
+R32	part_of Arg1:T44 Arg2:T40	
+R33	use Arg1:T43 Arg2:T44	
+T45	string 2239 2278	//base.ConfigureProxy (this.GetType() ,
+T46	security_team 2490 2497	FireEye
+T47	tool 2531 2547	Rich Text Format
+T48	vul_aliases 2582 2595	CVE-2017-0199
+T49	tool 2550 2553	RTF
+T50	sample_name 2984 3002	http[url path].dll
+T51	md5 3620 3652	a7b990d5f57b244dd17e9a937a41e7f5
+T52	sample_name 3602 3610	left.jpg
+T53	malware 3671 3677	FINSPY
+R34	part_of Arg1:T51 Arg2:T52	
+R35	part_of Arg1:T52 Arg2:T53	
+T54	sub_activity 3693 3716	heavily obfuscated code
+T55	sub_activity 3732 3756	built-in virtual machine
+T56	sub_activity 3771 3795	anti-analysis techniques
+T57	reference_word 3680 3682	It
+R36	coreference Arg1:T57 Arg2:T53	
+R37	part_of Arg1:T54 Arg2:T57	
+R38	part_of Arg1:T55 Arg2:T57	
+R39	part_of Arg1:T56 Arg2:T57	
+T58	sample_name 3527 3593	%appdata%\Microsoft\Windows\OfficeUpdte-KB[ 6 random numbers ].exe
+T59	reference_word 3884 3886	it
+R40	coreference Arg1:T59 Arg2:T57	
+T60	sub_activity 3887 3911	parses its own full path
+T61	sub_activity 3916 3974	searches for the string representation of its own MD5 hash
+R41	part_of Arg1:T60 Arg2:T59	
+R42	part_of Arg1:T61 Arg2:T59	
+T62	string 4145 4165	WininetStartupMutex0
+T63	vulnerability_cve 4169 4182	CVE-2017-8759
+T64	vul_aliases 4190 4219	second zero-day vulnerability
+T65	malware 4239 4245	FINSPY
+T66	security_team 4259 4266	FireEye
+R43	find Arg1:T66 Arg2:T65	
+T67	time 4270 4274	2017
+R44	first_found_time Arg1:T67 Arg2:T65	
+R45	use Arg1:T65 Arg2:T63	
+T68	function 4346 4362	lawful intercept
+T69	reference_word 4277 4292	These exposures
+R46	coreference Arg1:T69 Arg2:T63	
+R47	part_of Arg1:T68 Arg2:T69	
+T70	malware 4411 4417	FINSPY
+T71	reference_word 4465 4482	the vulnerability
+R48	coreference Arg1:T71 Arg2:T69	
+T72	vulnerability_cve 4542 4555	CVE-2017-8759
+T73	malware 4798 4804	FINSPY
+T74	time 4685 4695	April 2017
+T75	malware 4675 4681	FINSPY
+T76	vulnerability_cve 4698 4711	CVE-2017-0199
+T77	vul_aliases 4637 4649	the zero day
+R49	coreference Arg1:T64 Arg2:T63	
+R50	coreference Arg1:T49 Arg2:T47	
+R51	use Arg1:T75 Arg2:T77	
+R52	occur_time Arg1:T74 Arg2:T77	
+R53	use Arg1:T75 Arg2:T76	
+T78	sample_name 2894 2901	csc.exe
+T79	sample_name 3211 3218	word.db
+T80	sample_name 3385 3393	left.jpg
+T81	malware 40 46	FINSPY
+T82	vul_aliases 0 8	Zero-Day
+R54	use Arg1:T81 Arg2:T82	
+T83	tool 2200 2213	SOAP response
+T84	tool 2370 2383	CRLF sequence
+R1	part_of Arg1:T4 Arg2:T6	

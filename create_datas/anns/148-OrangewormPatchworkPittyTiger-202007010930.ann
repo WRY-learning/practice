@@ -1,0 +1,46 @@
+T1	threatActor_name 83 93	Orangeworm
+T2	person 123 161	organizations in the healthcare sector
+T4	location 185 191	Europe
+T5	location 198 202	Asia
+T6	time 218 222	2015
+T7	attack_goal 251 270	corporate espionage
+R1	attack Arg1:T1 Arg2:T2	
+R3	attack Arg1:T1 Arg2:T4	
+R4	attack Arg1:T1 Arg2:T5	
+R5	occur_time Arg1:T1 Arg2:T6	
+R6	goal Arg1:T1 Arg2:T7	
+T8	threatActor_name 273 282	Patchwork
+T9	threatActor_aliases 285 302	Dropping Elephant
+T10	threatActor_aliases 305 316	Chinastrats
+T11	threatActor_aliases 319 326	MONSOON
+T12	threatActor_aliases 329 347	Operation Hangover
+R7	coreference Arg1:T9 Arg2:T8	
+R8	coreference Arg1:T10 Arg2:T8	
+R9	coreference Arg1:T11 Arg2:T8	
+R10	coreference Arg1:T12 Arg2:T8	
+T13	threatActor_name 350 359	Patchwork
+T14	time 413 426	December 2015
+R11	first_found_time Arg1:T13 Arg2:T14	
+T15	reference_word 435 444	the group
+T16	reference_word 517 526	the group
+R12	coreference Arg1:T15 Arg2:T13	
+T17	threatActor_name 566 575	Patchwork
+T19	industry 622 632	diplomatic
+T20	industry 637 656	government agencies
+T21	threatActor_name 738 747	Patchwork
+T22	location 806 810	U.S.
+T23	time 832 855	March and April of 2018
+R17	attack Arg1:T21 Arg2:T22	
+R18	occur_time Arg1:T21 Arg2:T23	
+T24	threatActor_name 858 868	PittyTiger
+T25	location 914 919	China
+T26	attack_goal 969 997	maintain command and control
+R19	attack Arg1:T24 Arg2:T25	
+R20	goal Arg1:T24 Arg2:T26	
+T3	location 169 182	United States
+R2	attack Arg1:T1 Arg2:T3	
+R14	attack Arg1:T17 Arg2:T19	
+R15	attack Arg1:T17 Arg2:T20	
+R13	coreference Arg1:T16 Arg2:T15	
+T18	attack_activity 772 785	spearphishing
+R16	launch Arg1:T21 Arg2:T18	

@@ -1,0 +1,288 @@
+T1	threatActor_name 618 630	TwoSail Junk
+T2	threatActor_name 1855 1867	TwoSail Junk
+T3	threatActor_name 5380 5392	TwoSail Junk
+T4	threatActor_name 11105 11117	TwoSail Junk
+T5	threatActor_name 11173 11185	TwoSail Junk
+T6	threatActor_name 11240 11252	TwoSail Junk
+T7	threatActor_name 11308 11320	TwoSail Junk
+T8	threatActor_name 11376 11388	TwoSail Junk
+T9	threatActor_name 11444 11456	TwoSail Junk
+T10	threatActor_name 11511 11523	TwoSail Junk
+T11	threatActor_name 11549 11561	TwoSail Junk
+T12	threatActor_name 11591 11603	TwoSail Junk
+T13	threatActor_name 11640 11652	TwoSail Junk
+T14	threatActor_name 11691 11703	TwoSail Junk
+T15	threatActor_name 11721 11733	TwoSail Junk
+T16	threatActor_name 11753 11765	TwoSail Junk
+T17	threatActor_name 11784 11796	TwoSail Junk
+T18	threatActor_name 11809 11821	TwoSail Junk
+T19	threatActor_name 11835 11847	TwoSail Junk
+T20	threatActor_name 11866 11878	TwoSail Junk
+T21	threatActor_name 11896 11908	TwoSail Junk
+T22	malware 26 34	LightSpy
+T23	OS_name 0 3	iOS
+T24	attack_activity 178 191	watering hole
+T25	time 210 227	January 10 , 2020
+T26	OS_name 252 255	iOS
+T27	OS_name 1668 1671	iOS
+T28	OS_name 4833 4836	iOS
+T29	OS_name 7215 7218	iOS
+T30	OS_name 8263 8266	iOS
+T31	OS_name 9018 9021	iOS
+T32	OS_name 9511 9514	iOS
+T33	OS_name 9519 9526	Android
+T34	malware 9174 9182	LightSpy
+T35	malware 9580 9588	LightSpy
+T36	malware 10929 10937	LightSpy
+T37	malware 309 317	LightSpy
+T38	malware 554 562	LightSpy
+T39	malware 807 815	LightSpy
+T40	malware 1037 1045	LightSpy
+T41	malware 1573 1581	LightSpy
+T42	malware 1885 1893	LightSpy
+T43	malware 2291 2299	LightSpy
+T44	location 378 387	Hong Kong
+T45	malware 974 985	Lotus Elise
+T46	malware 990 995	Evora
+T47	threatActor_name 911 924	Spring Dragon
+T48	threatActor_aliases 925 938	Lotus Blossom
+T49	threatActor_aliases 939 946	Billbug
+T50	threatActor_aliases 948 953	Thrip
+R1	coreference Arg1:T48 Arg2:T47	
+R2	coreference Arg1:T49 Arg2:T47	
+R3	coreference Arg1:T50 Arg2:T47	
+T51	company 1322 1327	Apple
+T52	OS_name 2018 2025	Android
+T53	program_language 1937 1947	javascript
+T54	threatActor_name 2229 2241	SpringDragon
+T55	OS_name 1948 1955	Android
+T56	OS_name 8322 8329	Android
+T57	OS_name 8834 8841	Android
+T58	location 8668 8677	Hong Kong
+T59	location 8730 8739	Hong Kong
+T60	location 5910 5919	Hong Kong
+T61	location 10536 10545	Hong Kong
+T62	protocol 7284 7287	TCP
+T63	security_team 2329 2361	Kaspersky Intelligence Reporting
+T64	time 2511 2528	February 7 , 2020
+T65	time 2557 2571	March 5 , 2020
+T66	tool 2624 2630	WebKit
+T67	time 2645 2662	January 10 , 2020
+T68	function 2883 2890	alert()
+T69	function 2894 2901	print()
+T70	encryption_algo 3496 3499	MD5
+T71	md5 3501 3533	ae439a31b8c5487840f9ad530c5db391
+T72	time 3649 3666	February 7 , 2020
+T73	encryption_algo 3695 3698	MD5
+T74	md5 3700 3732	f70d6b3b44d855c2fb7c662c5334d1d5
+T75	tool 3462 3484	EnvironmentalRecording
+T76	encryption_algo 4365 4368	MD5
+T77	md5 4370 4402	35fd8a6eac382bfc95071d56d4086945
+T78	encryption_algo 4612 4615	MD5
+T79	md5 4617 4649	7b69a20920d3b0e6f0bffeefdce7aa6c
+T80	tool 4324 4333	Screenaaa
+T81	time 4426 4443	January 10 , 2020
+T82	time 4692 4702	February 7
+T83	tool 4794 4803	MMLanScan
+T84	time 5011 5021	February 7
+T85	url_evil 5807 5851	https://appledaily.googlephoto.vip/news.html
+T86	time 5857 5874	January 10 , 2020
+T87	protocol 5968 5972	HTML
+T88	company 5938 5949	Apple Daily
+T89	time 6199 6217	February 18 , 2020
+T90	tool 5581 5589	Telegram
+T91	tool 5603 5612	Instagram
+T92	time 6232 6243	February 18
+T93	attack_activity 6446 6459	watering hole
+T94	domain_evil 6467 6482	googlephoto.vip
+T95	company 6508 6515	GoDaddy
+T96	time 6519 6538	September 24 , 2019
+T97	domain_evil 6636 6662	appledaily.googlephoto.vip
+T98	IP_evil 6710 6722	103.19.9.185
+T99	protocol 6697 6699	IP
+T100	time 6728 6745	January 10 , 2020
+T101	protocol 6957 6964	SSL/TLS
+T102	protocol 6930 6934	HTTP
+T103	protocol 6948 6951	RDP
+T104	location 6797 6806	Singapore
+T105	company 6824 6839	Beyotta Network
+T106	time 7039 7057	December 16 , 2019
+T107	time 7093 7111	December 21 , 2019
+T108	IP_evil 7229 7241	45.134.1.180
+T110	OS_name 7749 7754	linux
+T111	OS_name 7757 7764	windows
+T112	tool 7950 7952	QQ
+T113	tool 7957 7963	Miapoi
+#1	AnnotatorNotes T113	秒拍
+T114	location 8091 8098	Beijing
+T115	location 8071 8087	Tian ’anmen Gate
+T116	location 8204 8211	Beijing
+T117	url_evil 8340 8383	http://app.hkrevolution.club/HKcalander.apk
+T118	encryption_algo 8386 8389	MD5
+T119	md5 8391 8423	77ebb4207835c4f5c4d5dfe8ac4c764d
+T120	tool 8509 8517	Telegram
+T121	tool 8579 8588	Instagram
+T122	time 8603 8616	November 2019
+T123	time 8956 8975	2019-11-04 18:12:33
+T124	domain_evil 9071 9106	http://svr.hkrevolution.club : 8002
+T125	md5 9185 9217	fadff5b601f6fca588007660934129eb
+T126	url_evil 9218 9259	http://movie.poorgoddaay.com/MovieCal.apk
+T127	domain_evil 9260 9293	http://app.poorgoddaay.com : 8002
+T128	time 9294 9313	2019-07-25 21:57:47
+T129	domain_evil 9412 9452	xxinc-media.oss-cn-shenzhen.aliyuncs.com
+T130	md5 9591 9623	5d2b65790b305c186ef7590e5a1f2d6b
+T131	url_evil 9624 9699	https://xxinc-media.oss-cn-shenzhen.aliyuncs.com/calendar-release-1.0.1.apk
+T132	domain_evil 9700 9724	http://45.134.0.123:8002
+T133	time 9725 9744	2020-01-14 18:30:30
+T134	domain_evil 9870 9885	poorgoddaay.com
+T135	domain_evil 10026 10044	zg.poorgoddaay.com
+T136	domain_evil 10045 10064	ns1.poorgoddaay.com
+T137	malware 10131 10136	evora
+T138	tool 10232 10267	Kaspersky Threat Attribution Engine
+T139	threatActor_name 10386 10398	SpringDragon
+T140	reference_word 10270 10274	KTAE
+R4	coreference Arg1:T140 Arg2:T138	
+T141	malware 10444 10449	evora
+T142	threatActor_name 10648 10660	SpringDragon
+T143	threatActor_aliases 10661 10673	LotusBlossom
+T144	threatActor_aliases 10674 10681	Billbug
+R5	coreference Arg1:T143 Arg2:T142	
+R6	coreference Arg1:T144 Arg2:T142	
+T145	threatActor_name 11013 11025	SpringDragon
+T146	threatActor_aliases 11026 11038	LotusBlossom
+T147	threatActor_aliases 11039 11046	Billbug
+R7	coreference Arg1:T146 Arg2:T145	
+R8	coreference Arg1:T147 Arg2:T145	
+T148	malware 11082 11087	evora
+T149	threatActor_name 10910 10922	SpringDragon
+T150	md5 11120 11152	9b248d91d2e1d1b9cd45eb28d8adff71
+T151	time 11155 11168	Jan 10 , 2020
+T152	time 11223 11235	Feb 7 , 2020
+T153	time 11290 11303	Jan 10 , 2020
+T154	time 11358 11371	Jan 10 , 2020
+T155	time 11426 11439	Jan 10 , 2020
+T156	time 11494 11506	Feb 7 , 2020
+T157	OS_name 11541 11544	iOS
+T158	OS_name 11579 11586	Android
+T159	OS_name 11628 11635	Android
+T160	OS_name 11679 11686	Android
+T161	IP_evil 11526 11538	45.134.1.180
+T162	IP_evil 11564 11576	45.134.0.123
+T163	domain_evil 11606 11625	app.poorgoddaay.com
+T164	domain_evil 11655 11676	svr.hkrevolution.club
+T165	IP_evil 11706 11718	45.83.237.13
+T166	domain_evil 11736 11750	messager.cloud
+T167	md5 11188 11220	4fe3ca4a2526088721c5bdf96ae636f4
+T168	md5 11255 11287	e48c1c6fb1aa6c3ff6720e336c62b278
+T169	md5 11323 11355	53acd56ca69a04e13e32f7787a021bb5
+T170	md5 11391 11423	184fbbdb8111d76d3b1377b2768599c9
+T171	md5 11459 11491	bfa6bc2cf28065cfea711154a3204483
+T172	string 11768 11781	change_config
+T173	string 11799 11806	exe_cmd
+T174	string 11824 11832	stop_cmd
+T175	string 11850 11863	get_phoneinfo
+T176	string 11881 11893	get_contacts
+T177	string 11911 11927	get_call_history
+R9	use Arg1:T12 Arg2:T163	
+R10	use Arg1:T12 Arg2:T159	
+R11	use Arg1:T13 Arg2:T164	
+R12	use Arg1:T13 Arg2:T160	
+R13	use Arg1:T14 Arg2:T165	
+R14	use Arg1:T15 Arg2:T166	
+R15	use Arg1:T16 Arg2:T172	
+R16	use Arg1:T17 Arg2:T173	
+R17	use Arg1:T18 Arg2:T174	
+R18	use Arg1:T19 Arg2:T175	
+R19	use Arg1:T20 Arg2:T176	
+R20	use Arg1:T21 Arg2:T177	
+R21	use Arg1:T11 Arg2:T162	
+R22	use Arg1:T11 Arg2:T158	
+R23	use Arg1:T10 Arg2:T161	
+R24	use Arg1:T10 Arg2:T157	
+R25	part_of Arg1:T171 Arg2:T9	
+R26	part_of Arg1:T170 Arg2:T8	
+R27	part_of Arg1:T169 Arg2:T7	
+R28	part_of Arg1:T168 Arg2:T6	
+R29	part_of Arg1:T167 Arg2:T5	
+R30	part_of Arg1:T150 Arg2:T4	
+R31	first_found_time Arg1:T151 Arg2:T150	
+R32	first_found_time Arg1:T152 Arg2:T167	
+R33	first_found_time Arg1:T153 Arg2:T168	
+R34	first_found_time Arg1:T154 Arg2:T169	
+R35	first_found_time Arg1:T155 Arg2:T170	
+R36	first_found_time Arg1:T156 Arg2:T171	
+R37	attack Arg1:T22 Arg2:T23	
+R38	first_found_time Arg1:T24 Arg2:T25	
+R39	attack Arg1:T37 Arg2:T26	
+R41	use Arg1:T1 Arg2:T38	
+R40	attack Arg1:T37 Arg2:T44	
+R42	use Arg1:T47 Arg2:T45	
+R43	use Arg1:T47 Arg2:T46	
+T178	security_team 1106 1116	TrendMicro
+R44	find Arg1:T178 Arg2:T40	
+R45	attack Arg1:T41 Arg2:T27	
+R46	use Arg1:T2 Arg2:T42	
+R47	use Arg1:T2 Arg2:T53	
+R48	attack Arg1:T2 Arg2:T55	
+R49	part_of Arg1:T71 Arg2:T75	
+R50	part_of Arg1:T77 Arg2:T80	
+R51	first_found_time Arg1:T74 Arg2:T72	
+R53	release_time Arg1:T79 Arg2:T82	
+R52	release_time Arg1:T77 Arg2:T81	
+R54	use Arg1:T3 Arg2:T90	
+R55	use Arg1:T3 Arg2:T91	
+R56	use Arg1:T3 Arg2:T85	
+T179	attack_activity 5786 5799	watering hole
+R57	occur_time Arg1:T179 Arg2:T86	
+R58	launch Arg1:T3 Arg2:T179	
+T180	person 5673 5682	attackers
+R59	part_of Arg1:T180 Arg2:T3	
+T181	tool 6111 6114	KSN
+#2	AnnotatorNotes T181	卡巴斯基安全网络（KSN）是一种在线服务的基础架构
+R60	occur_time Arg1:T93 Arg2:T96	
+R62	use Arg1:T145 Arg2:T148	
+R63	use Arg1:T139 Arg2:T141	
+T109	location 7942 7947	China
+#3	AnnotatorNotes T66	浏览器引擎
+R64	attack Arg1:T3 Arg2:T60	
+T182	person 6250 6256	actors
+R65	part_of Arg1:T182 Arg2:T3	
+T183	sub_activity 6306 6411	redirect potential victims to the exploit site as well as the intended legitimate news site from the lure
+R66	launch Arg1:T182 Arg2:T183	
+R67	launch Arg1:T182 Arg2:T93	
+R68	use Arg1:T182 Arg2:T94	
+R69	use Arg1:T182 Arg2:T97	
+R70	use Arg1:T182 Arg2:T98	
+R71	located Arg1:T112 Arg2:T109	
+R72	located Arg1:T113 Arg2:T109	
+T184	tool 7069 7075	Shodan
+T185	string 7177 7188	SeinandColt
+#4	AnnotatorNotes T185	用户名
+T186	tool 7363 7370	Webpack
+R73	located Arg1:T98 Arg2:T104	
+R74	release_time Arg1:T98 Arg2:T100	
+R76	release_time Arg1:T130 Arg2:T133	
+R77	release_time Arg1:T125 Arg2:T128	
+R78	use Arg1:T34 Arg2:T126	
+R79	use Arg1:T34 Arg2:T127	
+R80	use Arg1:T35 Arg2:T131	
+R81	use Arg1:T35 Arg2:T132	
+R82	part_of Arg1:T119 Arg2:T117	
+R61	part_of Arg1:T125 Arg2:T126	
+R75	part_of Arg1:T130 Arg2:T131	
+R83	attack Arg1:T139 Arg2:T61	
+R84	use Arg1:T34 Arg2:T124	
+R85	use Arg1:T34 Arg2:T32	
+R86	attack Arg1:T34 Arg2:T33	
+R87	use Arg1:T35 Arg2:T134	
+R88	use Arg1:T35 Arg2:T135	
+R89	use Arg1:T35 Arg2:T136	
+T187	protocol 1868 1871	RDP
+#5	AnnotatorNotes T187	远程桌面协议
+T188	malware 1981 1986	evora
+T189	url 2374 2400	intelreports@kaspersky.com
+R90	use Arg1:T63 Arg2:T189	
+T190	malware 996 1004	backdoor
+R91	part_of Arg1:T45 Arg2:T190	
+R92	part_of Arg1:T46 Arg2:T190	
+R93	use Arg1:T47 Arg2:T190	

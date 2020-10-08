@@ -1,0 +1,38 @@
+APT37
+On Feb. 2 , 2018 , we published a blog detailing the use of an Adobe Flash zero-day vulnerability ( CVE-2018-4878 ) by a suspected North Korean cyber espionage group that we now track as APT37 ( Reaper ) .
+Recent examination of this group ’s activities by FireEye iSIGHT Intelligence reveals APT37 has expanded its operations in both scope and sophistication .
+APT37 ’s toolset , which includes access to zero-day vulnerabilities and wiper malware , combined with heightened tensions in Northeast Asia and North Korea ’s penchant for norm breaking , means this group should be taken seriously .
+We assess with high confidence that this activity is carried out on behalf of the North Korean government given malware development artifacts and targeting that aligns with North Korean state interests .
+FireEye iSIGHT Intelligence believes that APT37 is aligned with the activity publicly reported as Scarcruft and Group123 .
+APT37 has likely been active since at least 2012 and focuses on targeting the public and private sectors primarily in South Korea .
+In 2017 , APT37 expanded its targeting beyond the Korean peninsula to include Japan , Vietnam and the Middle East , and to a wider range of industry verticals , including chemicals , electronics , manufacturing , aerospace , automotive and healthcare entities .
+We judge that APT37 ’s primary mission is covert intelligence gathering in support of North Korea ’s strategic military , political and economic interests .
+This is based on consistent targeting of South Korean public and private entities and social engineering .
+APT37 ’s recently expanded targeting scope also appears to have direct relevance to North Korea ’s strategic interests .
+From 2014 to 2017 , APT37 targeting concentrated primarily on the South Korean government , military , defense industrial base , and media sector .
+Lure materials typically leveraged the Korean language and featured themes such as Korean peninsula reunification or sanctions .
+In 2017 , APT37 targeted a Middle Eastern company that entered into a joint venture with the North Korean government to provide telecommunications service to the country ( read on for a case study ) .
+At that time , other targets included individuals involved in international affairs and trade issues , the general director of a Vietnamese international trading and transport company , and possibly individuals working with Olympics organizations assisting in securing resources for athletes .
+North Korean defector and human rights-related targeting provides further evidence that APT37 conducts operations aligned with the interests of North Korea .
+APT37 targeted a research fellow , advisory member , and journalist associated with different North Korean human rights issues and strategic organizations .
+It also targeted an entity in Japan associated with the United Nations missions on sanctions and human rights .
+APT37 distributed SLOWDRIFT malware using a lure referencing the Korea Global Forum against academic and strategic institutions located in South Korea .
+Notably , the email was sent from a compromised South Korean institute that conducts studies on North Korea .
+The string “ durihana , ” which is also the name of a Christian missionary organization that works with North Korean defectors , was included in an APT37 weaponized document sent to an individual who works with a North Korean human rights organization .
+CASE STUDY :  Targeting of Middle Eastern Organization with Business ties to North Korea .
+We believe a Middle Eastern organization was targeted by APT37 because it had been involved with a North Korean company and a business deal went bad .
+This firm was targeted shortly after media reports of this schism had gone public .
+The targeting effort may have been an attempt by the North Korean government to gather information on a former business partner .
+The operation exemplifies APT37 ’s tactics , techniques and procedures ( TTPs ) , and reflects the advanced capabilities of this espionage group .
+In May 2017 , APT37 used a bank liquidation letter as a spear phishing lure against a board member of a Middle Eastern financial company .
+The specially crafted email included an attachment containing exploit code for CVE-20170199 , a vulnerability in Microsoft Office that had been disclosed just a month earlier .
+Once opened , the malicious document communicated with a compromised website , most likely to surreptitiously download and install a backdoor called SHUTTERSPEED ( MD5: 7c2ebfc7960aac6f8d58b37e3f092a9c ) .
+The tool would enable APT37 to collect system information , take screenshots and download additional malicious files to the victim computer .
+In addition to the aforementioned spear phishing tactics , APT37 leverages a variety of methods to deliver malware .
+These include strategic web compromises typical of targeted cyber espionage operations , as well as the use of torrent file-sharing sites to distribute malware more indiscriminately .
+Numerous campaigns have employed social engineering tactics tailored specifically to desired targets .
+Lures and websites of particular interest to South Korean organizations ( e.g .
+reunification ) are regularly leveraged in campaigns .
+Multiple South Korean websites were abused in strategic web compromises to deliver newer variants of KARAE and POORAIM malware .
+Identified sites included South Korean conservative media and a news site for North Korean refugees and defectors .
+In one instance , APT37 weaponized a video downloader application with KARAE malware that was indiscriminately distributed to South Korean victims through torrent websites .

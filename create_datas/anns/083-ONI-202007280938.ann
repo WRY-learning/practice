@@ -1,0 +1,291 @@
+T3	attack_activity 55 71	TARGETED ATTACKS
+T4	location 75 80	JAPAN
+T5	malware 87 94	MBR-ONI
+R1	located Arg1:T3 Arg2:T4	
+R2	use Arg1:T3 Arg2:T5	
+T6	security_team 268 278	Cybereason
+T7	malware 321 324	ONI
+T8	company 387 405	Japanese companies
+R3	attack Arg1:T7 Arg2:T8	
+T9	malware 428 442	ONI ransomware
+T11	attack_activity 514 530	targeted attacks
+T12	attack_goal 600 628	encrypt hundreds of machines
+R5	goal Arg1:T11 Arg2:T12	
+T13	security_team 797 807	Cybereason
+T14	malware 853 860	MBR-ONI
+R6	find Arg1:T13 Arg2:T14	
+T15	malware 913 916	ONI
+T16	malware 924 942	bootkit ransomware
+T17	tool 955 966	DiskCryptor
+R9	use Arg1:T16 Arg2:T17	
+T18	malware 1075 1096	Bad Rabbit ransomware
+R10	use Arg1:T18 Arg2:T17	
+T20	location 1160 1165	Japan
+T21	malware 1460 1463	ONI
+T22	security_team 1607 1617	Cybereason
+T23	malware 1659 1662	ONI
+T24	attack_activity 1666 1682	targeted attacks
+T25	location 1686 1691	Japan
+R13	located Arg1:T24 Arg2:T25	
+T26	security_team 1755 1765	Cybereason
+T27	malware 1777 1784	MBR-ONI
+R14	find Arg1:T26 Arg2:T27	
+T28	malware 1789 1807	bootkit ransomware
+R15	coreference Arg1:T28 Arg2:T27	
+T30	malware 1887 1890	ONI
+T31	malware 1895 1902	MBR-ONI
+T32	person 1922 1934	threat actor
+R17	use Arg1:T32 Arg2:T31	
+R18	use Arg1:T32 Arg2:T30	
+T34	malware 2123 2137	ONI ransomware
+T35	company 2146 2164	Japanese companies
+R19	attack Arg1:T34 Arg2:T35	
+T36	attack_activity 2268 2289	Spear-phishing emails
+T37	tool 2310 2326	Office documents
+T38	tool 2355 2370	Ammyy Admin RAT
+R20	part_of Arg1:T37 Arg2:T36	
+T39	tool 2440 2455	Ammyy Admin RAT
+T41	person 2486 2495	attackers
+R23	use Arg1:T41 Arg2:T39	
+T42	tool 2631 2648	domain controller
+T43	tool 2651 2653	DC
+R24	coreference Arg1:T43 Arg2:T42	
+R25	attack Arg1:T41 Arg2:T42	
+T44	malware 2755 2758	ONI
+T45	tool 2769 2781	Group Policy
+T46	tool 2784 2787	GPO
+R27	coreference Arg1:T46 Arg2:T45	
+T47	tool 2928 2940	group policy
+T48	tool 2977 2979	DC
+R28	use Arg1:T47 Arg2:T48	
+T49	malware 3126 3141	ONI binary file
+T50	tool 3167 3169	DC
+R29	use Arg1:T49 Arg2:T50	
+T51	malware 3221 3228	MBR-ONI
+T52	malware 3266 3269	ONI
+T53	malware 3311 3318	MBR-ONI
+T54	tool 3409 3418	AD server
+T55	tool 3423 3435	file servers
+R32	attack Arg1:T53 Arg2:T54	
+R33	attack Arg1:T53 Arg2:T55	
+T56	malware 3454 3461	MBR-ONI
+T57	malware 3632 3639	MBR-ONI
+T60	tool 3780 3789	zip files
+T61	tool 3812 3828	Office documents
+T62	reference_word 3882 3894	the document
+R37	coreference Arg1:T62 Arg2:T61	
+T63	malware 3953 3961	VBScript
+T64	tool 3995 4010	Ammyy Admin RAT
+T65	tool 4030 4041	Ammyy Admin
+T66	tool 4122 4140	Ammyy Admin binary
+T67	security_team 4155 4165	VirusTotal
+T68	sha1 4199 4239	6abfb50b0657e87d8aec594ccc95f2e1b13f355e
+T69	tool 4275 4290	Ammyy Admin RAT
+T70	time 4336 4349	December 2016
+R39	first_found_time Arg1:T69 Arg2:T70	
+T71	tool 4356 4359	RAT
+T72	time 4393 4407	September 2017
+R40	occur_time Arg1:T71 Arg2:T72	
+T73	tool 4491 4502	Ammyy Admin
+T74	person 4658 4670	threat actor
+R41	use Arg1:T74 Arg2:T73	
+T76	tool 4733 4744	Ammyy Admin
+T77	attack_activity 4763 4782	supply-chain attack
+R43	use Arg1:T77 Arg2:T76	
+T78	person 4804 4817	threat actors
+T79	target_crowd 4830 4852	Ammyy Admin ’s website
+R44	attack Arg1:T78 Arg2:T79	
+T80	malware 4913 4916	RAT
+R45	use Arg1:T78 Arg2:T80	
+T81	person 4928 4937	attackers
+T82	tool 5045 5057	file servers
+T83	tool 5060 5079	application servers
+T84	tool 5088 5090	DC
+R46	attack Arg1:T81 Arg2:T82	
+R47	attack Arg1:T81 Arg2:T83	
+R48	attack Arg1:T81 Arg2:T84	
+T85	person 5234 5246	threat actor
+T86	security_team 5256 5259	NSA
+T87	vul_aliases 5275 5286	EternalBlue
+R50	use Arg1:T85 Arg2:T87	
+T89	time 5527 5537	March 2017
+T90	time 5624 5643	July-September 2017
+T91	malware 5648 5651	ONI
+T92	malware 5682 5695	GlobeImposter
+T93	malware 5724 5737	GlobeImposter
+T94	vul_aliases 5775 5787	Eternal Blue
+T95	malware 5816 5829	GlobeImposter
+T96	vul_aliases 5878 5889	EternalBlue
+R52	use Arg1:T95 Arg2:T96	
+T97	person 5951 5960	attackers
+T98	tool 6014 6016	DC
+T99	tool 6021 6045	Active Directory servers
+R53	attack Arg1:T97 Arg2:T98	
+R54	attack Arg1:T97 Arg2:T99	
+T100	tool 6115 6118	GPO
+T101	person 6125 6134	attackers
+R55	use Arg1:T101 Arg2:T100	
+T103	tool 6195 6197	DC
+T104	reference_word 6215 6228	those scripts
+T107	sample_name 6396 6405	clean.bat
+T108	tool 6471 6487	wevtutil command
+R60	use Arg1:T107 Arg2:T108	
+T109	malware 6633 6636	ONI
+T111	sample_name 6655 6665	srvupd.exe
+T112	sample_name 6696 6703	oni.exe
+R61	coreference Arg1:T112 Arg2:T111	
+T113	tool 6739 6741	DC
+T114	malware 6744 6747	ONI
+T115	security_team 7018 7028	Cybereason
+T117	string 7154 7157	ONI
+T118	malware 7162 7165	ONI
+T119	malware 7191 7204	GlobeImposter
+T120	malware 7290 7293	ONI
+T121	sha1 7328 7368	b7d33751d118fab6aedabfdf6a4ddf627e6cab02
+R65	part_of Arg1:T121 Arg2:T120	
+R38	part_of Arg1:T68 Arg2:T66	
+T122	malware 7371 7384	GlobeImposter
+T123	sha1 7419 7459	4a850136af93b9918fb4290a2bf665c4f28201d1
+R66	part_of Arg1:T123 Arg2:T122	
+T124	malware 7517 7520	ONI
+T125	sample_function 7525 7538	encrypt files
+R67	part_of Arg1:T125 Arg2:T124	
+T126	malware 7975 7978	ONI
+T127	malware 7981 7988	MBR-ONI
+T128	malware 8199 8206	MBR-ONI
+T129	malware 8253 8260	MBR-ONI
+T130	malware 8389 8392	ONI
+T131	malware 8685 8692	MBR-ONI
+T132	tool 8456 8459	MBR
+T133	malware 8507 8514	MBR-ONI
+T134	tool 8537 8540	MBR
+R68	attack Arg1:T133 Arg2:T134	
+T135	tool 8620 8631	DiskCryptor
+T136	tool 8656 8662	GitHub
+T137	tool 8785 8796	DiskCryptor
+R70	use Arg1:T131 Arg2:T137	
+T138	malware 9018 9025	MBR-ONI
+T139	tool 9085 9096	DiskCryptor
+T140	tool 9166 9172	GitHub
+T141	tool 9181 9192	DiskCryptor
+R71	located Arg1:T141 Arg2:T140	
+T142	domain 9195 9261	https://github.com/legiar/diskcryptor/blob/master/boot/boot_load.c
+R72	part_of Arg1:T142 Arg2:T140	
+T143	malware 9291 9299	NotPetya
+T144	tool 9795 9806	DiskCryptor
+T145	malware 9857 9867	Bad Rabbit
+R73	use Arg1:T145 Arg2:T144	
+T147	tool 10007 10018	DiskCryptor
+T148	malware 10306 10309	ONI
+T149	malware 10314 10321	MBR-ONI
+T150	malware 10444 10447	ONI
+T151	malware 10452 10459	MBR-ONI
+T152	malware 10749 10752	ONI
+T153	malware 10790 10797	MBR-ONI
+T154	malware 11795 11798	ONI
+T155	malware 11824 11831	MBR-ONI
+T156	person 11851 11863	threat actor
+R75	use Arg1:T156 Arg2:T155	
+R76	use Arg1:T156 Arg2:T154	
+T157	malware 12003 12006	ONI
+T158	malware 12011 12018	MBR-ONI
+T159	attack_activity 12446 12457	ONI attacks
+T160	location 12497 12502	Japan
+R77	located Arg1:T159 Arg2:T160	
+T161	malware 13323 13330	MBR-ONI
+T162	tool 13372 13383	DiskCryptor
+R78	use Arg1:T161 Arg2:T162	
+T163	person 13018 13031	threat actors
+T164	tool 13060 13071	DiskCryptor
+T165	tool 13076 13087	Ammyy Admin
+R79	use Arg1:T163 Arg2:T164	
+R80	use Arg1:T163 Arg2:T165	
+T166	malware 12898 12922	ransomware and/or wipers
+T167	malware 12933 12940	PetWrap
+T168	malware 12943 12948	Mamba
+T169	malware 12951 12957	SamSam
+T170	malware 12960 12968	NotPetya
+T171	malware 12971 12978	Shamoon
+T172	malware 12983 12993	Bad Rabbit
+R81	part_of Arg1:T167 Arg2:T166	
+R82	part_of Arg1:T168 Arg2:T166	
+R83	part_of Arg1:T169 Arg2:T166	
+R84	part_of Arg1:T170 Arg2:T166	
+R85	part_of Arg1:T171 Arg2:T166	
+R86	part_of Arg1:T172 Arg2:T166	
+R12	use Arg1:T24 Arg2:T23	
+T1	location 1418 1426	Japanese
+R4	located Arg1:T21 Arg2:T1	
+R7	find Arg1:T22 Arg2:T24	
+T2	tool 1829 1832	MBR
+T10	security_team 2056 2066	Cybereason
+T19	location 2067 2072	Japan
+R8	located Arg1:T10 Arg2:T19	
+R11	find Arg1:T10 Arg2:T34	
+T29	attack_goal 2661 2695	gain full control over the network
+R16	goal Arg1:T41 Arg2:T29	
+T33	OS_name 3006 3013	Windows
+T40	tool 3665 3683	penetration vector
+T58	attack_activity 3726 3747	spear-phishing emails
+R21	part_of Arg1:T58 Arg2:T40	
+R22	part_of Arg1:T60 Arg2:T58	
+R26	part_of Arg1:T61 Arg2:T60	
+R30	use Arg1:T63 Arg2:T64	
+R31	part_of Arg1:T66 Arg2:T67	
+T59	threatActor_name 4701 4709	Carbanak
+R34	use Arg1:T59 Arg2:T73	
+R35	part_of Arg1:T87 Arg2:T86	
+T75	vulnerability_cve 5488 5496	MS17-010
+R36	release_time Arg1:T75 Arg2:T89	
+R42	use Arg1:T93 Arg2:T94	
+T88	security_team 5900 5903	NSA
+T105	attack_goal 6236 6266	delete event and security logs
+R51	goal Arg1:T104 Arg2:T105	
+T106	malware 6316 6319	ONI
+T173	malware 6320 6327	MBR-ONI
+R58	use Arg1:T104 Arg2:T106	
+R59	use Arg1:T104 Arg2:T173	
+T102	tool 6144 6162	“ wiping ” scripts
+R49	located Arg1:T102 Arg2:T103	
+R56	coreference Arg1:T104 Arg2:T102	
+R57	use Arg1:T101 Arg2:T102	
+T110	malware 6639 6642	ONI
+T174	malware 6643 6650	MBR-ONI
+R62	use Arg1:T110 Arg2:T113	
+R87	use Arg1:T174 Arg2:T113	
+T175	malware 6846 6849	ONI
+T176	location 6872 6880	Japanese
+T177	reference_word 6861 6866	devil
+R88	coreference Arg1:T177 Arg2:T175	
+R89	located Arg1:T175 Arg2:T176	
+T178	location 7007 7015	Japanese
+T179	malware 6953 6962	Oninoy0ru
+R90	coreference Arg1:T179 Arg2:T175	
+R91	located Arg1:T179 Arg2:T178	
+T116	malware 7056 7059	ONI
+R63	find Arg1:T115 Arg2:T116	
+R64	part_of Arg1:T117 Arg2:T116	
+T180	malware 7626 7629	ONI
+T181	tool 7633 7635	PE
+T182	location 7647 7654	Russian
+T183	location 7824 7831	Russian
+T184	location 7901 7908	Russian
+R92	part_of Arg1:T181 Arg2:T180	
+R93	find Arg1:T181 Arg2:T182	
+T185	tool 3929 3934	macro
+T186	person 3836 3847	the victims
+R94	use Arg1:T186 Arg2:T185	
+T187	tool 8071 8094	Active Directory server
+R95	attack Arg1:T27 Arg2:T2	
+T188	program_language 8593 8604	NOP-NOP-JMP
+R69	use Arg1:T135 Arg2:T188	
+R96	part_of Arg1:T188 Arg2:T134	
+R97	located Arg1:T188 Arg2:T136	
+T189	tool 8823 8834	DiskCryptor
+T190	malware 9302 9309	MBR-ONI
+T146	malware 9959 9964	Mamba
+T191	malware 9967 9977	HDDCryptor
+R74	use Arg1:T146 Arg2:T147	
+R98	use Arg1:T191 Arg2:T147	
+T192	malware 10245 10263	bootkit ransomware
+T193	OS_name 11258 11265	Windows

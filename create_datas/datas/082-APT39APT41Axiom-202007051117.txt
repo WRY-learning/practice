@@ -1,0 +1,11 @@
+Unknown .		others others
+Release_Time : unknown Report_URL : https://attack.mitre.org/groups/ APT39 : Chafer .		others others others others others others others others threatActor_name others threatActor_aliases others
+APT39 is an Iranian cyber espionage group that has been active since at least 2014 .		threatActor_name others others others others others others others others others others others others others time others
+They have targeted the telecommunication and travel industries to collect personal information that aligns with Iran's national priorities .		reference_word others others others target_crowd others target_crowd target_crowd others attack_goal attack_goal attack_goal others others others location others others others others
+APT41 is a group that carries out Chinese state-sponsored espionage activity in addition to financially motivated activity .		threatActor_name others others others others others others others others others others others others others others others others others
+APT41 has been active since as early as 2012 .		threatActor_name others others others others others others others time others
+The group has been observed targeting healthcare , telecom , technology , and video game industries in 14 countries .		reference_word reference_word others others others others industry others industry others industry others others industry industry industry others others others others
+Axiom : Group72 .		threatActor_name others threatActor_aliases others
+Axiom is a cyber espionage group suspected to be associated with the Chinese government .		threatActor_name others others others others others others others others others others others others others others
+It is responsible for the Operation SMN campaign .		reference_word others others others others attack_activity attack_activity attack_activity others
+Though both this group and Winnti Group use the malware Winnti , the two groups appear to be distinct based on differences in reporting on the groups' TTPs and targeting .		others others reference_word reference_word others threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others

@@ -1,0 +1,362 @@
+T1	threatActor_name 0 5	APT37
+T2	malware 6 15	CORALDECK
+T3	malware 174 183	CORALDECK
+T4	malware 18 27	CORALDECK
+T5	malware 318 327	CORALDECK
+T6	malware 413 420	DOGCALL
+T7	malware 785 792	DOGCALL
+T8	malware 423 430	DOGCALL
+T9	malware 583 590	DOGCALL
+T10	malware 1166 1173	DOGCALL
+T11	malware 1272 1282	GELCAPSULE
+T12	malware 1373 1383	GELCAPSULE
+T13	malware 1285 1295	GELCAPSULE
+T14	malware 1444 1454	GELCAPSULE
+T15	malware 6916 6924	WINERACK
+T16	malware 1510 1519	HAPPYWORK
+T17	malware 1522 1531	HAPPYWORK
+T18	malware 1935 1944	HAPPYWORK
+T19	malware 1866 1875	HAPPYWORK
+T20	malware 2045 2050	Karae
+T21	malware 2053 2058	Karae
+T22	malware 2364 2369	KARAE
+T23	malware 2548 2553	Karae
+T24	malware 2643 2651	MILKDROP
+T25	malware 2654 2662	MILKDROP
+T26	malware 2740 2748	MILKDROP
+T27	malware 2794 2801	POORAIM
+T28	malware 2804 2811	POORAIM
+T29	malware 2943 2950	POORAIM
+T30	malware 3229 3236	POORAIM
+T31	malware 3462 3469	POORAIM
+T32	malware 3472 3479	POORAIM
+T33	malware 3519 3528	RICECURRY
+T34	malware 3531 3540	RICECURRY
+T35	malware 3723 3732	RICECURRY
+T36	malware 3785 3794	RICECURRY
+T37	malware 3835 3842	RUHAPPY
+T38	malware 3845 3852	RUHAPPY
+T39	malware 3909 3916	DOGCALL
+T40	malware 4190 4197	RUHAPPY
+T41	malware 4246 4258	SHUTTERSPEED
+T42	malware 4261 4273	SHUTTERSPEED
+T43	malware 4395 4407	SHUTTERSPEED
+T44	malware 4505 4517	SHUTTERSPEED
+T45	vulnerability_cve 4647 4660	CVE-2017-0199
+T46	malware 4841 4853	SHUTTERSPEED
+T47	malware 4957 4966	SLOWDRIFT
+T48	malware 4969 4978	SLOWDRIFT
+T49	malware 5190 5199	SLOWDRIFT
+T50	location 5439 5450	South Korea
+T51	malware 5363 5372	SLOWDRIFT
+T52	malware 5520 5529	SLOWDRIFT
+T53	malware 5708 5713	KARAE
+T54	malware 5716 5723	POORAIM
+T55	malware 5728 5735	ZUMKONG
+T56	malware 5738 5747	SLOWDRIFT
+T57	malware 5863 5872	SOUNDWAVE
+T58	malware 5875 5884	SOUNDWAVE
+T59	malware 6135 6144	SOUNDWAVE
+T60	malware 6197 6204	ZUMKONG
+T61	malware 6424 6431	ZUMKONG
+T62	malware 6493 6501	WINERACK
+T63	malware 6504 6512	WINERACK
+T64	malware 1052 1059	DOGCALL
+T65	malware 1036 1043	DOGCALL
+T66	time 866 886	March and April 2017
+T67	location 1921 1932	South Korea
+T68	time 2351 2361	March 2016
+T69	tool 3223 3226	AIM
+T70	time 3379 3383	2014
+T71	location 3331 3343	North Korean
+T72	tool 3948 3951	MBR
+T73	time 5556 5565	June 2017
+T74	malware 6207 6214	ZUMKONG
+T75	sample_function 57 85	searches for specified files
+T76	protocol 154 158	HTTP
+R1	goal Arg1:T4 Arg2:T75	
+T77	tool 34 51	exfiltration tool
+T78	reference_word 102 106	them
+T79	tool 80 85	files
+R3	coreference Arg1:T78 Arg2:T79	
+T80	sample_function 90 137	exfiltrates them in password protected archives
+T81	tool 154 171	HTTP POST headers
+R4	use Arg1:T4 Arg2:T81	
+R5	goal Arg1:T4 Arg2:T80	
+T82	tool 269 278	RAR files
+T83	tool 290 298	WinImage
+T84	tool 303 315	zip archives
+T85	tool 221 227	Winrar
+R6	use Arg1:T3 Arg2:T85	
+T86	attack_goal 231 246	exfiltrate data
+R7	goal Arg1:T3 Arg2:T86	
+T87	tool 242 246	data
+R8	located Arg1:T87 Arg2:T82	
+R9	located Arg1:T87 Arg2:T83	
+R10	located Arg1:T87 Arg2:T84	
+T88	malware 436 444	backdoor
+T89	tool 472 491	encoded binary file
+R11	coreference Arg1:T89 Arg2:T8	
+T90	tool 520 529	shellcode
+T91	sample_function 605 626	capturing screenshots
+R12	goal Arg1:T9 Arg2:T91	
+T92	sample_function 629 647	logging keystrokes
+T93	sample_function 650 703	evading analysis with anti-virtual machine detections
+T94	sample_function 710 739	leveraging cloud storage APIs
+T95	tool 748 753	Cloud
+T96	tool 756 759	Box
+T97	tool 762 769	Dropbox
+T98	tool 776 782	Yandex
+T99	tool 721 739	cloud storage APIs
+R13	part_of Arg1:T95 Arg2:T99	
+R14	part_of Arg1:T96 Arg2:T99	
+R15	part_of Arg1:T97 Arg2:T99	
+R16	part_of Arg1:T98 Arg2:T99	
+R17	goal Arg1:T9 Arg2:T92	
+R18	goal Arg1:T9 Arg2:T93	
+R19	goal Arg1:T9 Arg2:T94	
+T100	government 812 835	South Korean Government
+T101	industry 840 862	military organizations
+R20	attack Arg1:T7 Arg2:T100	
+R21	attack Arg1:T7 Arg2:T101	
+R22	occur_time Arg1:T7 Arg2:T66	
+T102	reference_word 889 900	The malware
+R23	coreference Arg1:T102 Arg2:T7	
+T103	tool 948 961	lure document
+T104	tool 931 942	HWP exploit
+R24	located Arg1:T104 Arg2:T103	
+T105	tool 1016 1023	systems
+R25	attack Arg1:T65 Arg2:T105	
+T106	malware 981 988	RUHAPPY
+R26	located Arg1:T106 Arg2:T105	
+T107	tool 1076 1090	espionage tool
+T108	malware 1093 1100	RUHAPPY
+T109	tool 1118 1128	wiper tool
+R28	coreference Arg1:T109 Arg2:T108	
+T110	attack_goal 1138 1163	render systems inoperable
+R29	goal Arg1:T109 Arg2:T110	
+T111	tool 1301 1311	downloader
+T112	malware 1414 1423	SLOWDRIFT
+T113	person 1427 1433	victim
+T114	tool 1434 1441	systems
+R31	located Arg1:T112 Arg2:T114	
+R32	use Arg1:T12 Arg2:T112	
+R33	attack Arg1:T12 Arg2:T113	
+T115	tool 1537 1557	malicious downloader
+T116	sample_function 1567 1610	download and execute a second-stage payload
+T117	sample_function 1613 1639	collect system information
+T118	sample_function 1646 1690	beacon it to the command and control domains
+T119	time 1850 1863	November 2016
+R35	goal Arg1:T17 Arg2:T116	
+R36	goal Arg1:T17 Arg2:T117	
+R37	goal Arg1:T17 Arg2:T118	
+T120	location 2436 2448	South Korean
+T121	tool 1707 1725	system information
+T122	tool 1737 1750	computer name
+T123	tool 1753 1762	user name
+T124	tool 1765 1797	system manufacturer via registry
+T125	tool 1800 1823	IsDebuggerPresent state
+T126	tool 1830 1844	execution path
+R38	part_of Arg1:T122 Arg2:T121	
+R39	part_of Arg1:T123 Arg2:T121	
+R40	part_of Arg1:T124 Arg2:T121	
+R41	part_of Arg1:T125 Arg2:T121	
+R42	part_of Arg1:T126 Arg2:T121	
+T128	target_crowd 1885 1917	government and financial targets
+R43	located Arg1:T128 Arg2:T67	
+R44	attack Arg1:T19 Arg2:T128	
+T129	location 3276 3288	South Korean
+T131	reference_word 2091 2110	first-stage malware
+R45	coreference Arg1:T131 Arg2:T21	
+T132	malware 2145 2154	backdoors
+T133	sample_function 2159 2185	collect system information
+T134	sample_function 2188 2213	upload and download files
+T135	sample_function 2224 2265	be used to retrieve a secondstage payload
+R46	goal Arg1:T132 Arg2:T133	
+R47	goal Arg1:T132 Arg2:T134	
+R48	goal Arg1:T132 Arg2:T135	
+T136	reference_word 2268 2279	The malware
+R49	coreference Arg1:T136 Arg2:T132	
+T137	attack_goal 2326 2345	command and control
+R50	goal Arg1:T136 Arg2:T137	
+T138	tool 2285 2321	public cloud-based storage providers
+R51	use Arg1:T136 Arg2:T138	
+T139	tool 2402 2431	torrent file-sharing websites
+T140	person 2449 2454	users
+R52	use Arg1:T22 Arg2:T139	
+R53	occur_time Arg1:T22 Arg2:T68	
+R54	attack Arg1:T22 Arg2:T140	
+R55	located Arg1:T140 Arg2:T120	
+T141	reference_word 2480 2491	the malware
+R56	coreference Arg1:T141 Arg2:T22	
+T127	tool 2499 2535	YouTube video downloader application
+R57	use Arg1:T141 Arg2:T127	
+T142	tool 2668 2676	launcher
+T143	malware 2729 2737	backdoor
+T144	sample_function 2682 2713	sets a persistence registry key
+T145	sample_function 2718 2737	launches a backdoor
+T146	malware 2843 2851	backdoor
+T147	company 2880 2883	AOL
+T148	sample_function 2870 2901	leverages AOL Instant Messenger
+T149	attack_goal 2906 2940	command and control communications
+R60	goal Arg1:T28 Arg2:T149	
+T150	sample_function 2989 3019	System information enumeration
+T151	sample_function 3022 3035	File browsing
+T152	sample_function 3038 3067	manipulation and exfiltration
+T153	sample_function 3070 3089	Process enumeration
+T154	sample_function 3092 3106	Screen capture
+T155	sample_function 3109 3123	File execution
+T156	sample_function 3126 3159	Exfiltration of browser favorites
+T157	sample_function 3166 3180	battery status
+R61	goal Arg1:T29 Arg2:T150	
+R62	goal Arg1:T29 Arg2:T157	
+R63	goal Arg1:T29 Arg2:T156	
+R64	goal Arg1:T29 Arg2:T151	
+R65	goal Arg1:T29 Arg2:T152	
+R66	goal Arg1:T29 Arg2:T153	
+R67	goal Arg1:T29 Arg2:T154	
+R68	goal Arg1:T29 Arg2:T155	
+T158	industry 3289 3308	media organizations
+R69	located Arg1:T158 Arg2:T129	
+T159	target_crowd 3344 3366	refugees and defectors
+R70	located Arg1:T159 Arg2:T71	
+R71	occur_time Arg1:T30 Arg2:T70	
+R72	attack Arg1:T30 Arg2:T158	
+R73	attack Arg1:T30 Arg2:T159	
+T160	tool 3313 3318	sites
+R74	attack Arg1:T30 Arg2:T160	
+T161	tool 3398 3403	sites
+T162	attack_activity 3418 3432	watering holes
+T163	attack_goal 3436 3458	deliver newer variants
+R75	use Arg1:T31 Arg2:T161	
+R76	coreference Arg1:T162 Arg2:T161	
+R77	goal Arg1:T31 Arg2:T163	
+T164	tool 3858 3880	destructive wiper tool
+T165	tool 3563 3571	profiler
+T166	program_language 3546 3556	Javascript
+R79	coreference Arg1:T165 Arg2:T34	
+T167	tool 3594 3614	victim's web browser
+T168	sample_function 3580 3614	fingerprint a victim's web browser
+T169	attack_goal 3619 3641	deliver malicious code
+R80	goal Arg1:T34 Arg2:T169	
+R81	use Arg1:T34 Arg2:T168	
+T170	tool 3687 3698	Adobe Flash
+T171	tool 3654 3661	Browser
+T172	tool 3664 3680	operating system
+R82	use Arg1:T35 Arg2:T171	
+R83	use Arg1:T35 Arg2:T172	
+R84	use Arg1:T35 Arg2:T170	
+T173	malware 3770 3782	PluginDetect
+T174	tool 3889 3896	systems
+R85	located Arg1:T39 Arg2:T174	
+R86	located Arg1:T164 Arg2:T174	
+T175	reference_word 3919 3921	It
+R87	coreference Arg1:T175 Arg2:T39	
+T176	attack_goal 3934 3951	overwrite the MBR
+R88	goal Arg1:T175 Arg2:T176	
+T177	attack_goal 3954 3984	causing the system not to boot
+R89	goal Arg1:T175 Arg2:T177	
+T178	tool 3992 4008	victims' systems
+T179	reference_word 4070 4081	The malware
+R90	coreference Arg1:T179 Arg2:T38	
+T180	malware 4126 4133	DOGCALL
+T181	malware 4138 4147	HAPPYWORK
+T182	tool 4165 4168	PDB
+T183	malware 4279 4287	backdoor
+T184	sample_function 4297 4323	collect system information
+T185	sample_function 4326 4345	acquire screenshots
+T186	sample_function 4352 4392	download/execute an arbitrary executable
+R92	goal Arg1:T42 Arg2:T184	
+R93	goal Arg1:T42 Arg2:T185	
+R94	goal Arg1:T42 Arg2:T186	
+T187	tool 4430 4438	argument
+R95	use Arg1:T43 Arg2:T187	
+T188	attack_activity 4568 4582	spear phishing
+T189	tool 4583 4588	email
+R96	use Arg1:T188 Arg2:T189	
+T190	tool 4608 4617	documents
+R97	part_of Arg1:T190 Arg2:T189	
+R98	use Arg1:T190 Arg2:T45	
+T191	reference_word 4629 4646	RTF vulnerability
+R99	coreference Arg1:T191 Arg2:T45	
+T130	company 4751 4773	South Korean companies
+T192	tool 4984 4992	launcher
+T193	tool 5015 5041	cloud based infrastructure
+R101	use Arg1:T192 Arg2:T193	
+T194	reference_word 5044 5046	It
+R102	coreference Arg1:T194 Arg2:T48	
+T195	person 5079 5087	attacker
+T196	sub_activity 5047 5071	sends system information
+R103	launch Arg1:T194 Arg2:T196	
+R104	attack Arg1:T194 Arg2:T195	
+T197	sub_activity 5117 5159	downloads and executes additional payloads
+R105	launch Arg1:T194 Arg2:T197	
+T198	person 5231 5238	victims
+R106	attack Arg1:T49 Arg2:T198	
+T199	tool 5257 5268	TEMP.Reaper
+T200	reference_word 5292 5295	its
+R107	coreference Arg1:T200 Arg2:T199	
+T201	tool 5457 5468	lure emails
+R108	located Arg1:T51 Arg2:T50	
+R109	use Arg1:T51 Arg2:T201	
+T202	tool 5499 5510	HWP exploit
+T203	tool 5474 5483	documents
+R110	use Arg1:T203 Arg2:T202	
+R111	part_of Arg1:T203 Arg2:T201	
+R112	occur_time Arg1:T52 Arg2:T73	
+T204	tool 5571 5585	lure documents
+R113	use Arg1:T52 Arg2:T204	
+T205	reference_word 5642 5657	These documents
+R114	coreference Arg1:T205 Arg2:T204	
+T206	person 5688 5693	actor
+R115	use Arg1:T206 Arg2:T205	
+R116	use Arg1:T206 Arg2:T53	
+R117	use Arg1:T206 Arg2:T54	
+R118	use Arg1:T206 Arg2:T55	
+T207	OS_name 5890 5897	windows
+T208	tool 5904 5927	audio capturing utility
+R119	coreference Arg1:T208 Arg2:T58	
+R120	use Arg1:T208 Arg2:T207	
+T209	reference_word 5947 5949	it
+R121	coreference Arg1:T209 Arg2:T58	
+T210	reference_word 6220 6238	credential stealer
+R122	coreference Arg1:T210 Arg2:T74	
+T211	sample_function 6250 6291	harvesting usernames and passwords stored
+R123	goal Arg1:T74 Arg2:T211	
+T212	tool 6295 6312	Internet Explorer
+T213	tool 6317 6332	Chrome browsers
+R124	use Arg1:T74 Arg2:T212	
+R125	use Arg1:T74 Arg2:T213	
+T214	protocol 6386 6390	HTTP
+T215	person 6373 6381	attacker
+T216	tool 6335 6353	Stolen credentials
+R126	use Arg1:T215 Arg2:T216	
+T217	sample_name 6408 6421	mail.zmail.ru
+R127	use Arg1:T215 Arg2:T217	
+T218	malware 6516 6524	backdoor
+R128	coreference Arg1:T218 Arg2:T63	
+T219	sample_function 6556 6591	user and host information gathering
+T220	sample_function 6594 6626	process creation and termination
+T221	sample_function 6629 6665	filesystem and registry manipulation
+T222	sample_function 6679 6710	the creation of a reverse shell
+T223	sample_name 6743 6755	Wine cmd.exe
+R129	use Arg1:T222 Arg2:T223	
+T224	OS_name 6772 6779	Windows
+T225	sample_function 6764 6803	emulate Windows command prompt commands
+R130	goal Arg1:T223 Arg2:T225	
+R133	occur_time Arg1:T19 Arg2:T119	
+T227	reference_word 2541 2545	lure
+R134	coreference Arg1:T227 Arg2:T127	
+R135	goal Arg1:T25 Arg2:T144	
+R136	goal Arg1:T25 Arg2:T145	
+R137	use Arg1:T102 Arg2:T104	
+R131	part_of Arg1:T8 Arg2:T88	
+R2	part_of Arg1:T4 Arg2:T77	
+R27	part_of Arg1:T64 Arg2:T107	
+R30	part_of Arg1:T13 Arg2:T111	
+R34	part_of Arg1:T17 Arg2:T115	
+R58	part_of Arg1:T25 Arg2:T142	
+R59	part_of Arg1:T28 Arg2:T146	
+R78	part_of Arg1:T38 Arg2:T164	
+R91	part_of Arg1:T42 Arg2:T183	
+R100	part_of Arg1:T48 Arg2:T192	

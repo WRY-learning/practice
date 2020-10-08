@@ -1,0 +1,76 @@
+T1	threatActor_name 83 92	Leviathan
+T2	threatActor_aliases 95 106	TEMP.Jumper
+T3	threatActor_aliases 109 114	APT40
+T4	threatActor_aliases 117 131	TEMP.Periscope
+T5	threatActor_name 134 143	Leviathan
+T6	time 207 211	2013
+T7	reference_word 214 223	The group
+T9	location 481 495	Western Europe
+T10	location 512 527	South China Sea
+T11	threatActor_name 530 543	Lotus Blossom
+T12	threatActor_aliases 546 556	DRAGONFISH
+T13	threatActor_aliases 559 572	Spring Dragon
+T14	threatActor_name 575 588	Lotus Blossom
+T15	location 666 680	Southeast Asia
+T16	industry 625 635	government
+T17	industry 640 648	military
+T18	threatActor_name 683 690	Machete
+T19	threatActor_aliases 693 703	El Machete
+T20	threatActor_name 706 713	Machete
+T21	time 761 765	2010
+T22	location 814 838	Latin American countries
+T23	target_crowd 778 810	high-profile government entities
+T24	industry 242 249	defense
+T25	industry 254 264	government
+T26	industry 335 352	engineering firms
+T27	industry 355 363	shipping
+T28	industry 368 382	transportation
+T29	industry 385 398	manufacturing
+T30	industry 401 408	defense
+T31	industry 411 429	government offices
+T32	industry 436 457	research universities
+R1	coreference Arg1:T2 Arg2:T1	
+R2	coreference Arg1:T3 Arg2:T1	
+R3	coreference Arg1:T4 Arg2:T1	
+R4	first_found_time Arg1:T5 Arg2:T6	
+R5	coreference Arg1:T7 Arg2:T5	
+R8	attack Arg1:T7 Arg2:T26	
+R9	attack Arg1:T7 Arg2:T27	
+R10	attack Arg1:T7 Arg2:T28	
+R11	attack Arg1:T7 Arg2:T29	
+R12	attack Arg1:T7 Arg2:T30	
+R13	attack Arg1:T7 Arg2:T31	
+R14	attack Arg1:T7 Arg2:T32	
+R16	located Arg1:T26 Arg2:T9	
+R17	located Arg1:T26 Arg2:T10	
+R19	located Arg1:T27 Arg2:T9	
+R20	located Arg1:T27 Arg2:T10	
+R23	located Arg1:T28 Arg2:T10	
+R25	located Arg1:T29 Arg2:T9	
+R26	located Arg1:T29 Arg2:T10	
+R28	located Arg1:T30 Arg2:T9	
+R29	located Arg1:T30 Arg2:T10	
+R31	located Arg1:T31 Arg2:T9	
+R32	located Arg1:T31 Arg2:T10	
+R34	located Arg1:T32 Arg2:T9	
+R35	located Arg1:T32 Arg2:T10	
+R36	coreference Arg1:T12 Arg2:T11	
+R37	coreference Arg1:T13 Arg2:T11	
+R42	coreference Arg1:T19 Arg2:T18	
+R43	first_found_time Arg1:T20 Arg2:T21	
+R44	attack Arg1:T20 Arg2:T23	
+R45	located Arg1:T23 Arg2:T22	
+T33	target_crowd 242 278	defense and government organizations
+R6	attack Arg1:T7 Arg2:T33	
+T34	target_crowd 625 662	government and military organizations
+R7	attack Arg1:T14 Arg2:T34	
+R38	located Arg1:T34 Arg2:T15	
+T35	location 465 478	United States
+R15	located Arg1:T26 Arg2:T35	
+R18	located Arg1:T27 Arg2:T35	
+R24	located Arg1:T29 Arg2:T35	
+R27	located Arg1:T28 Arg2:T35	
+R21	located Arg1:T28 Arg2:T9	
+R22	located Arg1:T30 Arg2:T35	
+R30	located Arg1:T32 Arg2:T35	
+R33	located Arg1:T31 Arg2:T35	

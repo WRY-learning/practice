@@ -1,0 +1,244 @@
+T1	threatActor_name 0 6	Cobalt
+T2	industry 219 223	Bank
+T3	industry 346 351	banks
+T4	industry 832 837	banks
+T5	threatActor_name 910 916	Cobalt
+R1	attack Arg1:T5 Arg2:T4	
+R2	attack Arg1:T5 Arg2:T3	
+R3	attack Arg1:T5 Arg2:T2	
+T6	time 960 964	2016
+R4	first_found_time Arg1:T5 Arg2:T6	
+T7	company 1076 1097	Positive Technologies
+T8	threatActor_name 1228 1234	Cobalt
+T9	time 1238 1242	2017
+T10	threatActor_name 1346 1352	Cobalt
+T11	industry 1386 1391	banks
+R5	attack Arg1:T10 Arg2:T11	
+T12	attack_activity 1605 1625	Supply Chain Attacks
+T13	tool 1878 1885	M.E.Doc
+T14	vul_aliases 1909 1917	NotPetya
+R6	use Arg1:T10 Arg2:T12	
+R7	use Arg1:T10 Arg2:T13	
+T15	threatActor_name 1992 1998	Cobalt
+T16	industry 2012 2017	banks
+T17	industry 2020 2039	financial exchanges
+T18	company 2042 2061	insurance companies
+T19	industry 2064 2080	investment funds
+R8	attack Arg1:T15 Arg2:T16	
+R9	attack Arg1:T15 Arg2:T17	
+R10	attack Arg1:T15 Arg2:T18	
+R11	attack Arg1:T15 Arg2:T19	
+T20	sub_activity 2230 2281	opening phishing messages from illegitimate domains
+T21	threatActor_name 2298 2304	Cobalt
+T22	industry 2475 2495	financial regulators
+T23	sub_activity 2314 2343	Actively attaks bank partners
+T24	sub_activity 2424 2447	Sends phishing messages
+T25	sub_activity 2498 2541	Uses various types of malicious attachments
+R12	launch Arg1:T21 Arg2:T23	
+R13	launch Arg1:T21 Arg2:T24	
+R14	launch Arg1:T21 Arg2:T25	
+R15	attack Arg1:T21 Arg2:T22	
+T26	vulnerability_cve 2875 2888	CVE-2017-0199
+T27	vul_aliases 2763 2804	Microsoft Word Intruder 8 exploit builder
+R16	use Arg1:T21 Arg2:T27	
+T28	sub_activity 2891 2941	Uses poorly protected public sites to upload files
+R17	launch Arg1:T21 Arg2:T28	
+T29	sub_activity 2987 3074	Sends phishing messages to both corporate addresses and personal addresses of employees
+R18	launch Arg1:T21 Arg2:T29	
+T30	threatActor_name 3081 3087	Cobalt
+T31	location 3132 3186	the Eastern Europe , Central Asia , and Southeast Asia
+R19	located Arg1:T30 Arg2:T31	
+T32	time 3192 3196	2017
+T33	location 3223 3292	North America , Western Europe , and even South America ( Argentina )
+R20	located Arg1:T30 Arg2:T33	
+T34	threatActor_name 3324 3330	Cobalt
+T35	industry 3383 3399	financial sector
+R21	goal Arg1:T34 Arg2:T35	
+R22	attack Arg1:T34 Arg2:T35	
+T36	industry 3440 3445	banks
+R23	goal Arg1:T34 Arg2:T36	
+T37	industry 3475 3527	financial exchanges , investment funds , and lenders
+R24	attack Arg1:T34 Arg2:T37	
+T38	company 3586 3630	diverse companies with major financial flows
+R25	attack Arg1:T34 Arg2:T38	
+T39	government 3689 3696	FinCERT
+T40	location 3704 3711	Russian
+R26	located Arg1:T39 Arg2:T40	
+T41	time 3806 3810	2017
+T42	threatActor_name 3853 3859	Cobalt
+T43	industry 3828 3846	financial exchange
+R27	attack Arg1:T42 Arg2:T43	
+T44	threatActor_name 4161 4167	Corkow
+T45	time 4183 4187	2016
+T46	company 4198 4218	Russia ’s Energobank
+R28	attack Arg1:T44 Arg2:T46	
+R29	occur_time Arg1:T44 Arg2:T45	
+T47	sub_activity 3870 3893	"pump" or "dump" stocks
+T48	industry 4434 4444	Government
+T49	industry 4445 4461	Telecom/Internet
+T50	industry 4462 4479	Service Providers
+T51	industry 4480 4493	Manufacturing
+T52	industry 4494 4507	Entertainment
+T53	industry 4508 4518	Healthcare
+R30	goal Arg1:T44 Arg2:T48	
+R31	goal Arg1:T44 Arg2:T49	
+R32	goal Arg1:T44 Arg2:T50	
+R33	goal Arg1:T44 Arg2:T51	
+R34	goal Arg1:T44 Arg2:T52	
+R35	goal Arg1:T44 Arg2:T53	
+T54	time 4544 4548	2017
+T55	threatActor_name 4640 4646	Cobalt
+T56	threatActor_name 4869 4875	Cobalt
+T57	government 4884 4923	government organizations and ministries
+R36	attack Arg1:T56 Arg2:T57	
+T58	time 4988 4998	early 2017
+T59	sub_activity 5045 5077	registering illegitimate domains
+T60	threatActor_name 5019 5025	Cobalt
+R37	launch Arg1:T60 Arg2:T59	
+T61	government 5223 5230	FinCERT
+T62	location 5238 5245	Russian
+R38	located Arg1:T61 Arg2:T62	
+T63	time 5485 5489	2017
+T64	threatActor_name 5444 5450	Cobalt
+T65	attack_goal 5594 5637	send phishing messages to partner companies
+R39	goal Arg1:T64 Arg2:T65	
+T66	location 5731 5812	North and South America , Europe , CIS countries , and Central and Southeast Asia
+T67	location 5956 5999	North America , Europe , and Southeast Asia
+R40	located Arg1:T65 Arg2:T66	
+T68	threatActor_name 6088 6094	Cobalt
+T69	threatActor_name 6422 6428	Cobalt
+T70	attack_activity 6538 6563	sending phishing messages
+R41	launch Arg1:T69 Arg2:T70	
+T71	company 6578 6589	other banks
+R42	attack Arg1:T69 Arg2:T71	
+T72	threatActor_name 7069 7075	Cobalt
+T73	attack_activity 6835 6889	registering domain names and sending phishing mailings
+R43	launch Arg1:T69 Arg2:T73	
+T74	tool 7363 7370	dropper
+T75	tool 7468 7475	dropper
+T76	threatActor_name 7546 7552	Cobalt
+T77	malware 7555 7572	the Beacon Trojan
+R44	use Arg1:T76 Arg2:T77	
+T78	function 7487 7528	download and run other malicious software
+R45	use Arg1:T75 Arg2:T78	
+T79	threatActor_name 7684 7690	Cobalt
+T80	threatActor_name 7786 7792	Cobalt
+T81	attack_activity 7821 7868	sending messages with forged sender information
+T82	attack_activity 7942 8012	making sure that messages get delivered by dodging mail server filters
+R46	launch Arg1:T80 Arg2:T81	
+R47	launch Arg1:T80 Arg2:T82	
+T83	attack_activity 8041 8055	spear phishing
+T84	tool 8362 8377	DKIM signatures
+T85	tool 8326 8336	DNS server
+T86	time 8605 8609	2017
+T87	threatActor_name 8614 8620	Cobalt
+T88	company 8648 8689	various companies that partner with banks
+R48	attack Arg1:T87 Arg2:T88	
+R49	occur_time Arg1:T87 Arg2:T86	
+T89	attack_activity 8697 8719	send phishing messages
+R50	launch Arg1:T87 Arg2:T89	
+T90	threatActor_name 9351 9357	Cobalt
+T91	tool 9074 9102	convincing phishing messages
+T92	tool 9192 9209	phishing messages
+T93	attack_activity 9363 9380	phishing mailings
+R51	launch Arg1:T90 Arg2:T93	
+T94	email_evil 9636 9732	internal mailings containing malicious documents supposedly from colleagues , management , or IT
+R52	use Arg1:T90 Arg2:T94	
+T95	industry 9952 9976	banks and their partners
+T96	time 9852 9856	2017
+T97	industry 9801 9840	banks and other financial organizations
+T98	email_evil 9873 9890	phishing messages
+T99	threatActor_name 9896 9902	Cobalt
+R53	launch Arg1:T99 Arg2:T98	
+T100	time 9982 9986	2017
+T101	threatActor_name 9987 9993	Cobalt
+T102	tool 10007 10025	security anxieties
+R54	use Arg1:T101 Arg2:T102	
+T103	location 10231 10237	Russia
+T104	company 10112 10225	VISA , MasterCard , and FinCERT units of the Russian Central Bank and National Bank of the Republic of Kazakhstan
+T105	company 10285 10292	FinCERT
+R55	located Arg1:T105 Arg2:T103	
+T106	threatActor_name 10349 10355	Cobalt
+T107	industry 10319 10338	financial companies
+R56	attack Arg1:T106 Arg2:T107	
+T108	sub_activity 10514 10591	creating counterfeit domains superficially similar to those of real companies
+T109	attack_goal 10658 10702	convince users to open dangerous attachments
+R57	goal Arg1:T108 Arg2:T109	
+T110	sub_activity 10806 10829	structured the mailings
+T111	attack_activity 11099 11107	phishing
+T112	location 11187 11201	North American
+R58	part_of Arg1:T110 Arg2:T111	
+T113	location 11233 11250	U.S. and Canadian
+T114	location 11316 11324	European
+T115	location 11377 11385	European
+T116	location 11441 11449	European
+T117	location 11540 11555	U.S. and Canada
+T118	threatActor_name 11647 11653	Cobalt
+T119	vul_aliases 11690 11696	Beacon
+T121	tool 11769 11782	Cobalt Strike
+R59	part_of Arg1:T119 Arg2:T121	
+R60	use Arg1:T118 Arg2:T119	
+T120	vul_aliases 11789 11795	Trojan
+T122	tool 11836 11851	special dropper
+R61	use Arg1:T120 Arg2:T122	
+T123	attack_activity 12058 12066	phishing
+T124	threatActor_name 12493 12499	Cobalt
+T125	attack_activity 12500 12508	phishing
+T126	company 12556 12565	Microsoft
+T127	email_evil 12556 12580	Microsoft Word documents
+R62	part_of Arg1:T127 Arg2:T125	
+T128	tool 12683 12690	Ancalog
+T129	tool 12695 12726	Microsoft Word Intruder ( MWI )
+T130	vulnerability_cve 13054 13067	CVE-2017-0199
+T131	threatActor_name 12906 12912	Cobalt
+T132	tool 12986 12989	MWI
+R63	use Arg1:T131 Arg2:T132	
+R64	use Arg1:T132 Arg2:T130	
+T133	tool 13245 13248	MWI
+T134	threatActor_name 13215 13221	Cobalt
+R65	use Arg1:T134 Arg2:T133	
+T135	vulnerability_cve 13419 13432	CVE-2017-0199
+T136	tool 13349 13352	MWI
+T137	threatActor_name 13372 13378	Cobalt
+R66	use Arg1:T137 Arg2:T135	
+T138	tool 13435 13438	MWI
+T139	function 13536 13566	create files for mass spamming
+R67	goal Arg1:T138 Arg2:T139	
+T140	tool 13644 13647	MWI
+T141	sub_activity 13785 13828	upload files to vulnerable sites in advance
+T142	sub_activity 13865 13910	downloaded to victim systems during an attack
+T143	counter_measure 14076 14172	block the site or law enforcement may seize server equipment as part of a criminal investigation
+T144	threatActor_name 14275 14281	Cobalt
+T145	attack_activity 14282 14299	phishing messages
+R68	attack Arg1:T144 Arg2:T145	
+T146	counter_measure 14672 14726	available for real-time scanning of encrypted archives
+T147	threatActor_name 14891 14897	Cobalt
+T148	tool 15118 15135	alexusMailer v2.0
+T149	function 15138 15199	a freely available PHP script used to send emails anonymously
+R69	use Arg1:T148 Arg2:T149	
+T150	attack_activity 15021 15038	phishing messages
+R70	attack Arg1:T147 Arg2:T150	
+R71	use Arg1:T150 Arg2:T148	
+T151	function 15222 15410	support for multithreaded sending , a visual editor for messages , import of recipient lists and other fields from files , templates , attaching any number of files to a message , and more
+R72	use Arg1:T148 Arg2:T151	
+T152	tool 15549 15561	alexusMailer
+T153	string 15610 15634	X-PHP-Originating-Script
+T154	threatActor_name 15914 15920	Cobalt
+T155	attack_activity 15973 15981	phishing
+T156	time 16022 16044	at the end of the week
+T157	time 16149 16158	four days
+T158	sub_activity 16074 16145	domain registration to the first phishing mailing with that same domain
+R73	occur_time Arg1:T158 Arg2:T157	
+T159	counter_measure 16293 16346	acting quickly , it was possible to block the domains
+T160	location 16400 16406	Russia
+T161	counter_measure 16450 16558	disabling delegation for all .ru domains and most other top-level domains known to be associated with Cobalt
+T162	vul_aliases 16675 16699	zero-day vulnerabilities
+T163	company 17385 17420	r banks , state-owned organizations
+T164	counter_measure 17455 17570	keep protection of their digital infrastructure current and proactively update their software and operating systems
+T165	counter_measure 17573 17664	Employees must be trained to increase their security awareness and resist phishing attempts
+T166	counter_measure 17678 17801	scanning should go beyond just incoming messages and attachments to include outgoing messages , with retrospective analysis
+T167	threatActor_name 18120 18126	Cobalt
+T168	time 18136 18140	2017
+T169	threatActor_name 18273 18279	Cobalt
+T170	threatActor_name 18360 18366	Cobalt
+R74	occur_time Arg1:T167 Arg2:T168	

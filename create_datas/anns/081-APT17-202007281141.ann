@@ -1,0 +1,53 @@
+T1	threatActor_name 238 243	APT17
+T2	threatActor_name 230 235	APT17
+T3	person 1032 1043	Costin Raiu
+T4	security_team 1058 1108	Global Research and Analysis Team at Kaspersky Lab
+T5	threatActor_name 1943 1948	APT17
+T6	threatActor_name 2091 2096	APT17
+T7	threatActor_aliases 2113 2129	Operation Aurora
+R1	coreference Arg1:T7 Arg2:T6	
+T8	company 730 735	Avast
+T9	threatActor_aliases 2345 2361	Operation Aurora
+R2	coreference Arg1:T9 Arg2:T6	
+T10	time 2373 2377	2009
+R3	first_found_time Arg1:T9 Arg2:T10	
+T11	sub_activity 2217 2237	supply chain attacks
+T12	tool 739 747	CCleaner
+T13	reference_word 2255 2259	they
+R4	coreference Arg1:T13 Arg2:T6	
+T14	string 2678 2742	6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9
+T15	url 2791 2863	http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html
+T16	tool 3279 3293	GetProcAddress
+T17	tool 3349 3361	LoadLibraryA
+T18	tool 3462 3474	VirtualAlloc
+T19	IP_evil 4515 4530	216.126.225.148
+T20	sub_activity 2282 2311	hack CCleaner ’s build server
+R5	launch Arg1:T13 Arg2:T20	
+T21	attack_goal 2324 2342	plant this malware
+R6	goal Arg1:T13 Arg2:T21	
+T22	encryption_algo 1912 1918	base64
+T23	company 364 373	Netsarang
+T24	vul_aliases 327 336	Shadowpad
+T25	tool 892 900	CCleaner
+R7	part_of Arg1:T3 Arg2:T4	
+T26	threatActor_name 1159 1164	APT17
+T27	tool 1543 1559	Intezer Analyze™
+T28	function 4289 4301	IcmpSendEcho
+T29	sub_activity 4253 4273	anti-debug technique
+T30	time 2427 2431	2017
+T31	target_crowd 667 685	millions of people
+R8	attack Arg1:T24 Arg2:T23	
+T32	threatActor_name 1321 1341	Axiom APT 'umbrella'
+T33	tool 1237 1245	CCleaner
+T34	tool 1350 1366	Intezer Analyze™
+T35	threatActor_name 1463 1468	APT17
+T36	tool 1442 1450	CCleaner
+T37	threatActor_name 2601 2615	PLA Unit 61398
+T38	location 2580 2587	Chinese
+R9	located Arg1:T37 Arg2:T38	
+T39	tool 2631 2639	CCleaner
+T40	tool 1198 1206	CCleaner
+T41	threatActor_aliases 576 584	backdoor
+T42	threatActor_aliases 1420 1428	backdoor
+T43	threatActor_aliases 968 976	backdoor
+T44	threatActor_aliases 763 771	backdoor

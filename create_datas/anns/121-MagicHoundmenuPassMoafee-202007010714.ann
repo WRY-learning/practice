@@ -1,0 +1,81 @@
+T1	threatActor_name 83 94	Magic Hound
+T2	threatActor_aliases 97 110	Rocket Kitten
+T3	threatActor_aliases 113 135	Operation Saffron Rose
+T4	threatActor_aliases 138 156	Ajax Security Team
+T5	threatActor_aliases 159 184	Operation Woolen-Goldfish
+T6	threatActor_aliases 187 197	Newscaster
+T7	threatActor_aliases 200 212	Cobalt Gypsy
+T8	threatActor_aliases 215 220	APT35
+T9	threatActor_name 223 234	Magic Hound
+T11	location 299 310	Middle East
+T12	time 339 343	2014
+T13	industry 420 426	energy
+T14	industry 429 439	government
+T15	industry 446 456	technology
+T16	location 517 529	Saudi Arabia
+T17	threatActor_name 532 540	menuPass
+T18	threatActor_aliases 543 554	Stone Panda
+T19	threatActor_aliases 557 562	APT10
+T20	threatActor_aliases 565 575	Red Apollo
+T21	threatActor_name 595 603	menuPass
+T22	threatActor_aliases 578 582	CVNX
+T23	threatActor_aliases 585 592	HOGFISH
+T24	location 653 658	China
+T25	time 699 703	2009
+T26	industry 729 739	healthcare
+T27	industry 742 749	defense
+T28	industry 752 761	aerospace
+T29	industry 768 778	government
+T30	time 838 842	2014
+T31	target_crowd 806 822	Japanese victims
+T32	time 848 852	2016
+T33	time 857 861	2017
+T34	industry 883 911	managed IT service providers
+T35	industry 914 927	manufacturing
+T36	industry 932 948	mining companies
+T37	industry 957 967	university
+T38	threatActor_name 970 976	Moafee
+T39	location 1028 1054	Guandong Province of China
+T40	threatActor_name 1116 1122	Moafee
+T41	threatActor_name 1198 1206	DragonOK
+R1	first_found_time Arg1:T9 Arg2:T12	
+R2	coreference Arg1:T2 Arg2:T1	
+R3	coreference Arg1:T3 Arg2:T1	
+R4	coreference Arg1:T4 Arg2:T1	
+R5	coreference Arg1:T5 Arg2:T1	
+R6	coreference Arg1:T6 Arg2:T1	
+R7	coreference Arg1:T7 Arg2:T1	
+R8	coreference Arg1:T8 Arg2:T1	
+R9	located Arg1:T9 Arg2:T11	
+T43	reference_word 346 355	The group
+R10	coreference Arg1:T43 Arg2:T9	
+R11	attack Arg1:T43 Arg2:T13	
+R12	attack Arg1:T43 Arg2:T14	
+R13	attack Arg1:T43 Arg2:T15	
+R14	located Arg1:T13 Arg2:T16	
+R15	located Arg1:T14 Arg2:T16	
+R16	located Arg1:T15 Arg2:T16	
+R17	coreference Arg1:T18 Arg2:T17	
+R18	coreference Arg1:T19 Arg2:T17	
+R19	coreference Arg1:T20 Arg2:T17	
+R20	coreference Arg1:T22 Arg2:T17	
+R21	coreference Arg1:T23 Arg2:T17	
+R22	first_found_time Arg1:T21 Arg2:T25	
+R23	located Arg1:T21 Arg2:T24	
+T44	reference_word 706 715	The group
+R24	coreference Arg1:T44 Arg2:T21	
+R25	attack Arg1:T44 Arg2:T26	
+R26	attack Arg1:T44 Arg2:T27	
+R27	attack Arg1:T44 Arg2:T28	
+R28	attack Arg1:T44 Arg2:T29	
+R29	attack Arg1:T44 Arg2:T31	
+T45	reference_word 864 873	the group
+R30	coreference Arg1:T45 Arg2:T21	
+R31	attack Arg1:T45 Arg2:T34	
+R32	attack Arg1:T45 Arg2:T35	
+R33	attack Arg1:T45 Arg2:T36	
+R34	attack Arg1:T45 Arg2:T37	
+R35	located Arg1:T38 Arg2:T39	
+R36	occur_time Arg1:T44 Arg2:T30	
+R37	occur_time Arg1:T45 Arg2:T33	
+R38	occur_time Arg1:T45 Arg2:T32	

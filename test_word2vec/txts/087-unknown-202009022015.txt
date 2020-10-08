@@ -1,0 +1,147 @@
+GRIZZLY STEPPE – Russian Malicious Cyber Activity .
+Release_Time : 2016-12-29
+Report_URL : https://us-cert.cisa.gov/sites/default/files/publications/JAR_16-20296A_GRIZZLY%20STEPPE-2016-1229.pdf
+Network administrators are encouraged to check their public-facing websites for the malicious file hashes .
+System owners are also advised to run the Yara signature on any system that is suspected to have been targeted by RIS actors .
+Malicious actors may use a variety of methods to interfere with information systems .
+Some methods of attack are listed below .
+Guidance provided is applicable to many other computer networks .
+Injection Flaws are broad web application attack techniques that attempt to send commands to a browser , database , or other system , allowing a regular user to control behavior .
+The most common example is SQL injection , which subverts the relationship between a webpage and its supporting database , typically to obtain information contained inside the database .
+Another form is command injection , where an untrusted user is able to send commands to operating systems supporting a web application or database .
+See the United States Computer Emergency Readiness Team ( US-CERT ) Publication on SQL Injection for more information .
+Cross-site scripting ( XSS ) vulnerabilities allow threat actors to insert and execute unauthorized code in web applications .
+Successful XSS attacks on websites can provide the attacker unauthorized access .
+For prevention and mitigation strategies against XSS , see US-CERT's Alert on Compromised Web Servers and Web Shells .
+Server vulnerabilities may be exploited to allow unauthorized access to sensitive information .
+An attack against a poorly configured server may allow an adversary access to critical information including any websites or databases hosted on the server .
+See USCERT's Tip on Website Security for additional information .
+A commitment to good cybersecurity and best practices is critical to protecting networks and systems .
+Here are some questions you may want to ask your organization to help prevent and mitigate against attacks .
+Backups : Do we backup all critical information?
+Are the backups stored offline?
+Have we tested our ability to revert to backups during an incident?
+Risk Analysis : Have we conducted a cybersecurity risk analysis of the organization?
+Staff Training : Have we trained staff on cybersecurity best practices?
+Vulnerability Scanning & Patching : Have we implemented regular scans of our network and systems and appropriate patching of known system vulnerabilities?
+Application Whitelisting : Do we allow only approved programs to run on our networks?
+Incident Response : Do we have an incident response plan and have we practiced it?
+Business Continuity : Are we able to sustain business operations without access to certain systems?
+For how long?
+Have we tested this?
+Penetration Testing : Have we attempted to hack into our own systems to test the security of our systems and our ability to defend against attacks?
+DHS encourages network administrators to implement the recommendations below , which can prevent as many as 85 percent of targeted cyber-attacks .
+These strategies are common sense to many , but DHS continues to see intrusions because organizations fail to use these basic measures .
+Patch applications and operating systems – Vulnerable applications and operating systems are the targets of most attacks .
+Ensuring these are patched with the latest updates greatly reduces the number of exploitable entry points available to an attacker .
+Use best practices when updating software and patches by only downloading updates from authenticated vendor sites .
+Application whitelisting – Whitelisting is one of the best security strategies because it allows only specified programs to run while blocking all others , including malicious software .
+Restrict administrative privileges – Threat actors are increasingly focused on gaining control of legitimate credentials , especially those associated with highly privileged accounts .
+Reduce privileges to only those needed for a user's duties .
+Separate administrators into privilege tiers with limited access to other tiers .
+Network Segmentation and Segregation into Security Zones – Segment networks into logical enclaves and restrict host-to-host communications paths .
+This helps protect sensitive information and critical services and limits damage from network perimeter breaches .
+Input validation – Input validation is a method of sanitizing untrusted user input provided by users of a web application , and may prevent many types of web application security flaws , such as SQLi , XSS , and command injection .
+File Reputation – Tune Anti-Virus file reputation systems to the most aggressive setting possible ; some products can limit execution to only the highest reputation files , stopping a wide range of untrustworthy code from gaining control .
+Understanding firewalls – When anyone or anything can access your network at any time , your network is more susceptible to being attacked .
+Firewalls can be configured to block data from certain locations ( IP whitelisting ) or applications while allowing relevant and necessary data through .
+Implement your security incident response and business continuity plan .
+It may take time for your organization's IT professionals to isolate and remove threats to your systems and restore normal operations .
+Meanwhile , you should take steps to maintain your organization's essential functions according to your business continuity plan .
+Organizations should maintain and regularly test backup plans , disaster recovery plans , and business continuity procedures .
+Contact DHS or law enforcement immediately .
+We encourage you to contact DHS NCCIC ( NCCICCustomerService@hq.dhs.gov or 888-282-0870 ) , the FBI through a local field office or the FBI's Cyber Division ( CyWatch@ic.fbi.gov or 855-292-3937 ) to report an intrusion and to request incident response resources or technical assistance .
+Routinely evaluate known and published vulnerabilities , perform software updates and technology refreshes periodically , and audit external-facing systems for known Web application vulnerabilities .
+Take steps to harden both Web applications and the servers hosting them to reduce the risk of network intrusion via this vector .
+Use and configure available firewalls to block attacks .
+Take steps to further secure Windows systems such as installing and configuring
+Microsoft's Enhanced Mitigation Experience Toolkit ( EMET ) and Microsoft AppLocker .
+Monitor and remove any unauthorized code present in any www directories .
+Disable , discontinue , or disallow the use of Internet Control Message Protocol ( ICMP ) and Simple Network Management Protocol ( SNMP ) and response to these protocols as much as possible .
+Remove non-required HTTP verbs from Web servers as typical Web servers and applications only require GET , POST , and HEAD .
+Where possible , minimize server fingerprinting by configuring Web servers to avoid responding with banners identifying the server software and version number .
+Secure both the operating system and the application .
+Update and patch production servers regularly .
+Disable potentially harmful SQL-stored procedure calls .
+Sanitize and validate input to ensure that it is properly typed and does not contain escaped code .
+Consider using type-safe stored procedures and prepared statements .
+Perform regular audits of transaction logs for suspicious activity .
+Perform penetration testing against Web services .
+Ensure error messages are generic and do not expose too much information .
+Implement a Sender Policy Framework ( SPF ) record for your organization's Domain Name System ( DNS ) zone file to minimize risks relating to the receipt of spoofed messages .
+Educate users to be suspicious of unsolicited phone calls , social media interactions , or email messages from individuals asking about employees or other internal information .
+If an unknown individual claims to be from a legitimate organization , try to verify his or her identity directly with the company .
+Do not provide personal information or information about your organization , including its structure or networks , unless you are certain of a person's authority to have the information .
+Do not reveal personal or financial information in social media or email , and do not respond to solicitations for this information .
+This includes following links sent in email .
+Pay attention to the URL of a website .
+Malicious websites may look identical to a legitimate site , but the URL often includes a variation in spelling or a different domain than the valid website ( e.g. , .com vs. .net ) .
+If you are unsure whether an email request is legitimate , try to verify it by contacting the company directly .
+Do not use contact information provided on a website connected to the request ; instead , check previous statements for contact information .
+Information about known phishing attacks is also available online from groups such as the Anti-Phishing Working Group ( http://www.antiphishing.org ) .
+Take advantage of anti-phishing features offered by your email client and web browser .
+Patch all systems for critical vulnerabilities , prioritizing timely patching of software that processes Internet data , such as web browsers , browser plugins , and document readers .
+Reduce privileges to only those needed for a user's duties .
+Restrict users' ability ( permissions ) to install and run unwanted software applications , and apply the principle of " Least Privilege " to all systems and services .
+Restricting these privileges may prevent malware from running or limit its capability to spread through the network .
+Carefully consider the risks before granting administrative rights to users on their own machines .
+Scrub and verify all administrator accounts regularly .
+Configure Group Policy to restrict all users to only one login session , where possible .
+Enforce secure network authentication where possible .
+Instruct administrators to use non-privileged accounts for standard functions such as Web browsing or checking Web mail .
+Segment networks into logical enclaves and restrict host-to-host communication paths .
+Containment provided by enclaving also makes incident cleanup significantly less costly .
+Configure firewalls to disallow RDP traffic coming from outside of the network boundary , except for in specific configurations such as when tunneled through a secondary VPN with lower privileges .
+Audit existing firewall rules and close all ports that are not explicitly needed for business .
+Specifically , carefully consider which ports should be connecting outbound versus inbound .
+Enforce a strict lockout policy for network users and closely monitor logs for failed login activity .
+This can be indicative of failed intrusion activity .
+If remote access between zones is an unavoidable business need , log and monitor these connections closely .
+In environments with a high risk of interception or intrusion , organizations should consider supplementing password authentication with other forms of authentication such as challenge/response or multifactor authentication using biometric or physical tokens .
+Enforce a tiered administrative model with dedicated administrator workstations and separate administrative accounts that are used exclusively for each tier to prevent tools , such as Mimikatz , for credential theft from harvesting domain-level credentials .
+Implement multi-factor authentication ( e.g. , smart cards ) or at minimum ensure users choose complex passwords that change regularly .
+Be aware that some services ( e.g. , FTP , telnet , and .rlogin ) transmit user credentials in clear text .
+Minimize the use of these services where possible or consider more secure alternatives .
+Properly secure password files by making hashed passwords more difficult to acquire .
+Password hashes can be cracked within seconds using freely available tools .
+Consider restricting access to sensitive password hashes by using a shadow password file or equivalent on UNIX systems .
+Replace or modify services so that all user credentials are passed through an encrypted channel .
+Avoid password policies that reduce the overall strength of credentials .
+Policies to avoid include lack of password expiration date , lack of lockout policy , low or disabled password complexity requirements , and password history set to zero .
+Ensure that users are not re-using passwords between zones by setting policies and conducting regular audits .
+Use unique passwords for local accounts for each device .
+Ensure event logging ( applications , events , login activities , security attributes , etc . )
+is turned on or monitored for identification of security issues .
+Configure network logs to provide enough information to assist in quickly developing an accurate determination of a security incident .
+Upgrade PowerShell to new versions with enhanced logging features and monitor the logs to detect usage of PowerShell commands , which are often malware-related .
+Secure logs , potentially in a centralized location , and protect them from modification .
+Prepare an incident response plan that can be rapidly implemented in case of a cyber intrusion .
+DHS offers a variety of resources for organizations to help recognize and address their cybersecurity risks .
+Resources include discussion points , steps to start evaluating a cybersecurity program , and a list of hands-on resources available to organizations .
+For a list of services , visit https://www.us-cert.gov/ccubedvp .
+Other resources include : 
+The Cyber Security Advisors ( CSA ) program bolsters cybersecurity preparedness , risk mitigation , and incident response capabilities of critical infrastructure entities and more closely aligns them with the Federal Government .
+CSAs are DHS personnel assigned to districts throughout the country and territories , with at least one advisor in each of the 10 CSA regions , which mirror the Federal Emergency Management Agency regions .
+For more information , email cyberadvisor@hq.dhs.gov .
+Cyber Resilience Review ( CRR ) is a no-cost , voluntary assessment to evaluate and enhance cybersecurity within critical infrastructure sectors , as well as state , local , tribal , and territorial governments .
+The goal of the CRR is to develop an understanding and measurement of key cybersecurity capabilities to provide meaningful indicators of an entity's operational resilience and ability to manage cyber risk to critical services during normal operations and times of operational stress and crisis .
+Visit https://www.cert.org/resilience/rmm.html to learn more about the CERT Resilience Management Model .
+Enhanced Cybersecurity Services ( ECS ) helps critical infrastructure owners and operators protect their systems by sharing sensitive and classified cyber threat information with Commercial Service Providers ( CSPs ) and Operational Implementers ( OIs ) .
+CSPs then use the cyber threat information to protect CI customers .
+OIs use the threat information to protect internal networks .
+For more information , email ECS_Program@hq.dhs.gov .
+The Cybersecurity Information Sharing and Collaboration Program ( CISCP ) is a voluntary information-sharing and collaboration program between and among critical infrastructure partners and the Federal Government .
+For more information , email CISCP@us-cert.gov .
+The Automated Indicator Sharing ( AIS ) initiative is a DHS effort to create a system where as soon as a company or federal agency observes an attempted compromise , the indicator will be shared in real time with all of our partners , protecting them from that particular threat .
+That means adversaries can only use an attack once , which increases their costs and ultimately reduces the prevalence of cyber-attacks .
+While AIS will not eliminate sophisticated cyber threats , it will allow companies and federal agencies to concentrate more on them by clearing away less sophisticated attacks .
+AIS participants connect to a DHS-managed system in the NCCIC that allows bidirectional sharing of cyber threat indicators .
+A server housed at each participant's location allows each to exchange indicators with the NCCIC .
+Participants will not only receive DHS-developed indicators , but can share indicators they have observed in their own network defense efforts , which DHS will then share with all AIS participants .
+For more information , visit https://www.dhs.gov/ais .
+The Cybersecurity Framework ( Framework ) , developed by the National Institute of Standards and Technology ( NIST ) in collaboration with the public and private sectors , is a tool that can improve the cybersecurity readiness of entities .
+The Framework enables entities , regardless of size , degree of cyber risk , or cyber sophistication , to apply principles and best practices of risk management to improve the security and resiliency of critical infrastructure .
+The Framework provides standards , guidelines , and practices that are working effectively today .
+It consists of three parts—the Framework Core , the Framework Profile , and Framework Implementation Tiers—and emphasizes five functions : Identify , Protect , Detect , Respond , and Recover .
+Use of the Framework is strictly voluntary .
+For more information , visit https://www.nist.gov/cyberframework or email cyberframework@nist.gov .

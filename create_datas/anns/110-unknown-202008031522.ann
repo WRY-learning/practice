@@ -1,0 +1,401 @@
+T1	vulnerability_cve 4 12	zero-day
+T2	sub_activity 25 46	Operation WizardOpium
+T3	time 177 189	October 2019
+T4	attack_activity 212 225	watering-hole
+T5	location 238 249	North Korea
+T6	industry 258 262	news
+T7	tool 301 307	Chrome
+T8	company 294 300	Google
+T9	company 312 321	Microsoft
+T10	OS_name 322 329	Windows
+T11	vulnerability_cve 330 339	zero-days
+R2	occur_time Arg1:T4 Arg2:T3	
+R4	attack Arg1:T4 Arg2:T6	
+R3	located Arg1:T6 Arg2:T5	
+R5	use Arg1:T4 Arg2:T7	
+R6	part_of Arg1:T7 Arg2:T8	
+R7	use Arg1:T4 Arg2:T11	
+R8	located Arg1:T11 Arg2:T10	
+R9	part_of Arg1:T10 Arg2:T9	
+R1	use Arg1:T2 Arg2:T1	
+T12	program_language 481 491	JavaScript
+T13	tool 609 618	shellcode
+T14	tool 623 642	Portable Executable
+T15	tool 645 647	PE
+R10	coreference Arg1:T15 Arg2:T14	
+T16	tool 659 670	WebAssembly
+T17	tool 673 677	WASM
+R11	coreference Arg1:T17 Arg2:T16	
+T18	tool 772 780	WebAudio
+T19	function 781 800	OfflineAudioContext
+R12	part_of Arg1:T19 Arg2:T18	
+T20	company 851 857	Google
+T21	tool 858 864	Chrome
+R13	part_of Arg1:T21 Arg2:T20	
+T22	string 865 877	76.0.3809.87
+R14	part_of Arg1:T22 Arg2:T21	
+T23	string 882 894	77.0.3865.75
+R15	part_of Arg1:T23 Arg2:T21	
+T24	tool 990 998	WebAudio
+T25	company 1083 1089	Google
+T26	tool 1090 1096	Chrome
+R17	part_of Arg1:T26 Arg2:T25	
+T27	vulnerability_cve 1340 1354	CVE-2019-13720
+R16	part_of Arg1:T27 Arg2:T19	
+T28	vulnerability_cve 1423 1437	use-after-free
+T29	vulnerability_cve 1440 1443	UAF
+R18	coreference Arg1:T29 Arg2:T28	
+R19	part_of Arg1:T27 Arg2:T28	
+T30	sub_activity 1493 1544	race condition between the Render and Audio threads
+R20	part_of Arg1:T30 Arg2:T27	
+T31	function 1587 1600	ConvolverNode
+T32	function 1677 1686	SetBuffer
+T33	string 1701 1708	reverb_
+T34	string 1713 1727	shared_buffer_
+T35	sub_activity 1693 1735	destroy reverb_ and shared_buffer_ objects
+R21	launch Arg1:T32 Arg2:T35	
+T36	tool 1910 1920	graph lock
+T37	tool 1925 1937	process lock
+T38	tool 2247 2278	PartitionAlloc memory allocator
+T39	company 2205 2211	Google
+T40	tool 2212 2218	Chrome
+R22	part_of Arg1:T40 Arg2:T39	
+R23	part_of Arg1:T38 Arg2:T40	
+T42	string 2486 2503	SuperPage address
+T43	string 2506 2527	PartitionPage address
+R25	part_of Arg1:T43 Arg2:T46	
+T44	string 2615 2637	PartitionPage metadata
+T45	string 2577 2595	used PartitionPage
+T46	sub_activity 2402 2429	retrieve useful information
+R26	part_of Arg1:T42 Arg2:T46	
+R27	part_of Arg1:T45 Arg2:T46	
+R28	part_of Arg1:T44 Arg2:T46	
+T47	sample_name 2669 2696	partition_alloc_constants.h
+T48	tool 2772 2784	BigInt class
+T49	sample_function 2788 2808	handle 64-bit values
+R29	goal Arg1:T48 Arg2:T49	
+T50	function 2896 2915	OfflineAudioContext
+T51	string 2945 2958	IIRFilterNode
+T52	vulnerability_cve 3100 3103	UAF
+T53	tool 1648 1654	Reverb
+T54	tool 3183 3189	Reverb
+T55	function 3226 3245	OfflineAudioContext
+T56	function 3261 3274	ConvolverNode
+T57	function 3285 3304	ScriptProcessorNode
+T58	sub_activity 3308 3330	start audio processing
+R30	launch Arg1:T57 Arg2:T58	
+T59	function 3335 3346	AudioBuffer
+T60	function 3568 3581	ConvolverNode
+T61	sub_activity 3414 3455	fills the audio channel buffer with zeros
+T62	sub_activity 3458 3482	starts rendering offline
+T63	sub_activity 3504 3560	runs a loop that nullifies and resets the channel buffer
+T64	sub_activity 3602 3615	trigger a bug
+R31	goal Arg1:T63 Arg2:T64	
+T65	function 3639 3644	later
+T66	sub_activity 3659 3686	simulate the Sleep function
+R32	launch Arg1:T65 Arg2:T66	
+T67	sub_activity 3689 3715	suspend the current thread
+R33	launch Arg1:T65 Arg2:T67	
+T68	vulnerability_cve 3956 3959	UAF
+T69	tool 4068 4099	PartitionAlloc memory allocator
+T41	sample_function 4114 4132	exploit mitigation
+R24	goal Arg1:T69 Arg2:T41	
+T70	sample_function 4194 4230	byteswaps the address of the pointer
+T71	sample_function 4250 4294	byteswapped address is added to the FreeList
+R34	goal Arg1:T69 Arg2:T70	
+R35	goal Arg1:T69 Arg2:T71	
+T72	tool 4047 4061	leaked pointer
+T73	tool 4536 4550	leaked pointer
+T74	sample_function 4554 4596	get the address of the SuperPage structure
+R36	goal Arg1:T73 Arg2:T74	
+T75	string 4681 4698	temporary_buffer_
+T76	tool 4713 4739	ReverbConvolverStage class
+T77	function 4780 4798	initialUAFCallback
+T78	tool 4822 4836	leaked pointer
+T79	string 4882 4894	feedforward_
+T80	string 4957 4969	IIRProcessor
+T81	string 4990 5003	IIRFilterNode
+T82	sample_function 4840 4874	get the address of the raw pointer
+R37	goal Arg1:T78 Arg2:T82	
+R38	part_of Arg1:T79 Arg2:T82	
+T83	string 4910 4920	AudioArray
+T84	string 5047 5056	SuperPage
+T85	tool 5088 5094	Chrome
+T86	string 5131 5145	PartitionPages
+T87	function 5181 5199	initialUAFCallback
+T88	string 5400 5411	AudioBuffer
+T89	string 5507 5518	AudioBuffer
+T90	function 5603 5623	getFrequencyResponse
+T91	sub_activity 5629 5665	check if exploitation was successful
+R39	launch Arg1:T90 Arg2:T91	
+T92	tool 5735 5749	Nyquist filter
+T93	function 5987 6003	finalUAFCallback
+T94	sub_activity 6007 6040	allocate the audio channel buffer
+R40	launch Arg1:T93 Arg2:T94	
+T95	sub_activity 6051 6086	reclaim the previously freed memory
+R41	launch Arg1:T93 Arg2:T95	
+T96	sub_activity 6108 6124	repairs the heap
+T97	reference_word 6094 6102	function
+R42	coreference Arg1:T97 Arg2:T93	
+R43	launch Arg1:T97 Arg2:T96	
+T98	sub_activity 6128 6182	prevent possible crashes by allocating various objects
+R44	goal Arg1:T96 Arg2:T98	
+T99	sub_activity 6206 6232	performing defragmentation
+R45	goal Arg1:T96 Arg2:T99	
+T100	function 6272 6286	BigUint64Array
+T101	sub_activity 6312 6352	create an arbitrary read/write primitive
+R46	launch Arg1:T100 Arg2:T101	
+T102	function 6427 6441	collectGarbage
+T103	sub_activity 6456 6492	creates a huge ArrayBuffer in a loop
+R47	launch Arg1:T102 Arg2:T103	
+T104	function 6549 6560	kickPayload
+T105	function 6594 6608	BigUint64Array
+T106	string 6668 6678	AudioArray
+T107	string 6717 6739	PartitionPage metadata
+T108	function 6843 6857	BigUint64Array
+T109	tool 7323 7335	Web Assembly
+T110	tool 7338 7342	WASM
+R48	part_of Arg1:T110 Arg2:T109	
+T111	company 7361 7367	Google
+T112	tool 7368 7374	Chrome
+R49	part_of Arg1:T112 Arg2:T111	
+T113	tool 7405 7417	just-in-time
+T114	tool 7420 7423	JIT
+R50	part_of Arg1:T114 Arg2:T113	
+T115	string 7445 7463	read/write/execute
+T116	string 7466 7469	RWX
+R51	coreference Arg1:T116 Arg2:T115	
+T117	tool 7527 7536	shellcode
+T118	tool 7584 7588	WASM
+T119	tool 7649 7652	JIT
+T120	function 7736 7746	FileReader
+T121	function 7809 7825	FileReaderLoader
+T122	function 8038 8081	getPartitionPageFreeListHeadEntryBySlotSize
+T123	function 8186 8202	FileReaderLoader
+T124	tool 7863 7887	PartitionAlloc allocator
+T125	function 8263 8279	FileReaderLoader
+T126	tool 8373 8377	WASM
+T127	function 8410 8420	FileReader
+T128	function 8482 8492	FileReader
+T129	function 8514 8539	EventTargetWithInlineData
+T130	sub_activity 8560 8595	get the addresses of all its events
+T131	sub_activity 8604 8654	address of the JIT compiled exported WASM function
+T132	tool 8641 8645	WASM
+T133	tool 8619 8622	JIT
+T134	sub_activity 8410 8426	FileReader event
+R52	goal Arg1:T134 Arg2:T130	
+R53	goal Arg1:T134 Arg2:T131	
+R54	launch Arg1:T126 Arg2:T134	
+T135	sub_activity 8120 8159	gets the address of the next free block
+R55	launch Arg1:T122 Arg2:T135	
+T136	tool 8670 8678	stubAddr
+T137	tool 8749 8752	JIT
+T138	tool 8764 8765	S
+T139	sample_function 8736 8775	jumps to the JIT compiled WASM function
+R56	goal Arg1:T136 Arg2:T139	
+T140	tool 8830 8839	shellcode
+T141	function 8883 8926	getPartitionPageFreeListHeadEntryBySlotSize
+T142	sub_activity 8938 8962	find the next free block
+R57	launch Arg1:T141 Arg2:T142	
+T143	string 9022 9033	ArrayBuffer
+T144	tool 9129 9160	arbitrary read/write primitives
+T145	sample_function 9164 9203	get the address of the DataHolder class
+R58	goal Arg1:T144 Arg2:T145	
+T146	tool 9187 9203	DataHolder class
+T147	tool 9318 9326	stubAddr
+T148	string 9389 9399	Uint8Array
+T149	tool 9454 9463	shellcode
+T150	tool 9485 9504	Portable Executable
+T151	tool 9534 9543	shellcode
+T152	sub_activity 9549 9583	prevent the possibility of a crash
+T153	sub_activity 9596 9641	clears the pointer to the top of the FreeList
+R59	goal Arg1:T153 Arg2:T152	
+T154	string 9664 9677	PartitionPage
+T155	tool 9710 9719	shellcode
+T156	tool 9756 9760	WASM
+T157	tool 9776 9785	shellcode
+T158	tool 9814 9816	PE
+T159	tool 9803 9823	Reflective PE loader
+T160	tool 9832 9851	Portable Executable
+T161	company 9949 9955	Google
+T162	tool 9956 9962	Chrome
+R60	part_of Arg1:T162 Arg2:T161	
+T163	tool 9966 9973	sandbox
+R61	part_of Arg1:T163 Arg2:T162	
+T164	OS_name 9992 9999	Windows
+T165	tool 10017 10023	win32k
+R62	located Arg1:T165 Arg2:T164	
+T166	sample_function 10032 10055	elevation of privileges
+R63	goal Arg1:T165 Arg2:T166	
+T167	sample_function 10088 10132	downloading and executing the actual malware
+R64	goal Arg1:T165 Arg2:T167	
+T168	vulnerability_cve 10212 10220	zero-day
+T169	company 10235 10244	Microsoft
+T170	security_team 10245 10269	Security Response Center
+R65	part_of Arg1:T170 Arg2:T169	
+T171	vulnerability_cve 10291 10304	CVE-2019-1458
+R66	find Arg1:T170 Arg2:T171	
+T172	tool 10339 10345	win32k
+T173	OS_name 10416 10430	Windows NT 4.0
+T174	company 10450 10459	Microsoft
+R67	part_of Arg1:T173 Arg2:T174	
+T175	security_team 10556 10565	Kaspersky
+T176	vulnerability_cve 10581 10590	zero-days
+T177	tool 10618 10624	win32k
+R68	find Arg1:T175 Arg2:T176	
+R69	located Arg1:T176 Arg2:T177	
+T178	OS_name 10720 10730	Windows 10
+T179	company 10733 10742	Microsoft
+R70	part_of Arg1:T178 Arg2:T179	
+T180	tool 10821 10827	win32k
+T181	vulnerability_cve 10864 10873	zero-days
+T182	OS_name 10952 10966	Windows 10 RS4
+T183	OS_name 10920 10927	Windows
+R71	part_of Arg1:T182 Arg2:T183	
+T184	company 10910 10919	Microsoft
+R72	part_of Arg1:T183 Arg2:T184	
+T185	sub_activity 11012 11033	Operation WizardOpium
+T186	sub_activity 10973 10995	elevation of privilege
+R73	part_of Arg1:T186 Arg2:T185	
+T187	OS_name 11055 11064	Windows 7
+T188	OS_name 11067 11089	Windows 10 build 10240
+T189	OS_name 11094 11116	Windows 10 build 14393
+T190	company 11153 11159	Google
+T191	tool 11160 11166	Chrome
+R74	part_of Arg1:T191 Arg2:T190	
+T192	tool 11205 11211	Win32k
+T193	tool 11205 11220	Win32k lockdown
+R75	part_of Arg1:T193 Arg2:T191	
+T194	tool 11266 11272	win32k
+T195	counter_measure 11291 11355	disabling access to win32k syscalls from inside Chrome processes
+R76	part_of Arg1:T195 Arg2:T193	
+T196	tool 11374 11380	Win32k
+T197	sample_function 11374 11389	Win32k lockdown
+T198	OS_name 11428 11438	Windows 10
+R77	part_of Arg1:T197 Arg2:T198	
+T199	sub_activity 11472 11493	Operation WizardOpium
+T200	OS_name 11517 11526	Windows 7
+R78	attack Arg1:T199 Arg2:T200	
+T201	vulnerability_cve 11529 11542	CVE-2019-1458
+T202	vulnerability_cve 11549 11578	Arbitrary Pointer Dereference
+R79	part_of Arg1:T201 Arg2:T202	
+T203	tool 11598 11604	win32k
+T204	tool 11641 11657	tagWND structure
+T205	tool 11721 11730	ScrollBar
+T206	tool 11733 11737	Menu
+T207	tool 11740 11747	Listbox
+T208	tool 11750 11756	Switch
+T209	tool 11779 11783	FNID
+T210	tool 11793 11809	tagWND structure
+R80	part_of Arg1:T209 Arg2:T210	
+T211	sample_function 11821 11849	distinguish the type of clas
+R81	goal Arg1:T209 Arg2:T211	
+T212	tool 11916 11932	tagWND structure
+T213	tool 12049 12055	win32k
+T214	function 12085 12101	SetWindowLongPtr
+T215	function 12199 12215	SetWindowLongPtr
+T216	vulnerability_cve 12280 12293	CVE-2010-2744
+T217	vulnerability_cve 12296 12309	CVE-2016-7255
+T218	vulnerability_cve 12316 12329	CVE-2019-0859
+R82	located Arg1:T216 Arg2:T215	
+R83	located Arg1:T217 Arg2:T215	
+R84	located Arg1:T218 Arg2:T215	
+T219	vulnerability_cve 12458 12471	CVE-2019-1458
+T220	function 12502 12518	SetWindowLongPtr
+T221	string 12645 12657	FNID_DESKTOP
+T222	string 12660 12671	FNID_SWITCH
+T223	string 12674 12687	FNID_TOOLTIPS
+T224	string 12699 12721	mpFnid_serverCBWndProc
+T225	function 12930 12947	NtUserMessageCall
+T226	sub_activity 12963 13001	call any system class window procedure
+R85	launch Arg1:T225 Arg2:T226	
+T227	string 13106 13115	WM_CREATE
+T228	string 13351 13360	WM_CREATE
+T229	tool 13378 13382	FNID
+T230	string 13404 13415	FNID_SWITCH
+T231	function 13439 13461	NtUserSetWindowLongPtr
+T232	sub_activity 13482 13520	overwrite the extra data at index zero
+R86	launch Arg1:T231 Arg2:T232	
+T233	sub_activity 13673 13706	set some arbitrary kernel pointer
+T234	reference_word 13634 13651	the vulnerability
+R88	coreference Arg1:T234 Arg2:T219	
+R87	launch Arg1:T234 Arg2:T233	
+T235	function 13783 13800	NtUserMessageCall
+T236	string 13847 13860	WM_ERASEBKGND
+T237	function 13326 13342	xxxSwitchWndProc
+T238	function 13909 13929	xxxPaintSwitchWindow
+T239	sub_activity 13935 13981	increments and decrements a couple of integers
+R89	launch Arg1:T238 Arg2:T239	
+T240	tool 14106 14113	ALT key
+T241	tool 14173 14180	Bitmaps
+T242	tool 14217 14224	Bitmaps
+T243	tool 14366 14388	ASLR bypass techniques
+T244	OS_name 14395 14404	Windows 7
+T245	OS_name 14409 14431	Windows 10 build 10240
+T246	tool 14452 14458	Bitmap
+T247	tool 14495 14525	GdiSharedHandleTable technique
+T248	string 14648 14651	GDI
+T249	sample_function 14614 14659	holds the kernel addresses of all GDI objects
+R90	goal Arg1:T247 Arg2:T249	
+T250	OS_name 14726 14748	Windows 10 build 14393
+T251	reference_word 14701 14710	technique
+R91	coreference Arg1:T251 Arg2:T247	
+R92	located Arg1:T251 Arg2:T250	
+T252	string 14840 14858	Accelerator Tables
+T253	string 14910 14934	Create Accelerator Table
+T254	tool 14980 15003	gSharedInfo HandleTable
+T255	string 15055 15072	Accelerator Table
+T256	tool 15097 15103	Bitmap
+T257	tool 15214 15221	bitmaps
+T258	tool 15303 15316	Switch Window
+T259	function 15345 15367	NtUserSetWindowLongPtr
+T260	tool 15421 15427	Bitmap
+T261	tool 15431 15444	Switch Window
+T262	tool 15458 15465	Bitmaps
+T263	tool 15487 15504	SURFOBJ structure
+T264	function 15587 15607	xxxPaintSwitchWindow
+T265	string 15631 15641	sizlBitmap
+T266	tool 15655 15672	SURFOBJ structure
+T267	tool 15681 15687	Bitmap
+T268	string 15726 15736	sizlBitmap
+T269	function 15850 15863	SetBitmapBits
+T270	tool 15918 15925	SURFOBJ
+T271	tool 15939 15945	Bitmap
+T272	string 15959 15966	pvScan0
+T273	tool 15980 15997	SURFOBJ structure
+T274	tool 16107 16138	arbitrary read/write primitives
+T275	function 16157 16170	GetBitmapBits
+T276	function 16173 16186	SetBitmapBits
+T277	tool 16238 16256	EPROCESS structure
+T278	sample_function 16261 16283	steal the system token
+T279	sample_function 16228 16256	parse the EPROCESS structure
+T280	reference_word 16214 16224	primitives
+R93	coreference Arg1:T280 Arg2:T274	
+R94	goal Arg1:T280 Arg2:T279	
+R95	goal Arg1:T280 Arg2:T278	
+T281	tool 16319 16337	EPROCESS structure
+T282	function 16370 16387	EnumDeviceDrivers
+T283	sub_activity 16289 16337	get the kernel address of the EPROCESS structure
+R96	launch Arg1:T282 Arg2:T283	
+T284	tool 16427 16443	MSDN description
+T285	sample_function 16451 16486	provides a list of kernel addresses
+R97	goal Arg1:T284 Arg2:T285	
+T286	tool 16602 16620	EPROCESS structure
+T287	string 16681 16703	PsInitialSystemProcess
+T288	OS_name 16792 16799	Windows
+T289	OS_name 16814 16841	Windows 10 19H1 build 18362
+R98	part_of Arg1:T289 Arg2:T288	
+T290	sub_activity 17030 17071	downloads and executes the actual malware
+T291	tool 17128 17134	Chrome
+T292	company 17168 17174	Google
+T293	tool 17175 17181	Chrome
+T294	vulnerability_cve 17194 17202	zero-day
+R99	part_of Arg1:T293 Arg2:T292	
+R100	located Arg1:T294 Arg2:T293	
+T295	OS_name 17381 17388	Windows
+T296	tool 17407 17413	Win32k
+T297	tool 17407 17422	Win32k lockdown
+T298	company 17443 17449	Google
+T299	tool 17450 17456	Chrome
+R101	part_of Arg1:T299 Arg2:T298	
+T300	vulnerability_cve 17543 17548	1-day

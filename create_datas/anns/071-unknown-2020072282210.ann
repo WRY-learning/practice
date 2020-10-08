@@ -1,0 +1,347 @@
+T1	threatActor_name 0 9	Dragonfly
+T2	target_crowd 11 32	Western energy sector
+T3	reference_word 59 71	attack group
+R1	coreference Arg1:T3 Arg2:T1	
+R2	attack Arg1:T3 Arg2:T2	
+T4	threatActor_name 326 335	Dragonfly
+T5	location 381 387	Europe
+T6	location 392 405	North America
+T7	target_crowd 364 377	energy sector
+T8	threatActor_name 584 593	Dragonfly
+T9	attack_activity 441 454	cyber attacks
+R3	attack Arg1:T9 Arg2:T7	
+T10	reference_word 596 605	The group
+T11	reference_word 541 550	The group
+R4	coreference Arg1:T11 Arg2:T8	
+R5	coreference Arg1:T10 Arg2:T8	
+T12	time 643 647	2011
+R6	first_found_time Arg1:T10 Arg2:T12	
+T13	time 779 783	2014
+T14	attack_activity 791 817	“ Dragonfly 2.0 ” campaign
+T15	time 856 860	2015
+R7	occur_time Arg1:T14 Arg2:T15	
+T16	security_team 733 741	Symantec
+R8	find Arg1:T16 Arg2:T10	
+R9	release_time Arg1:T16 Arg2:T13	
+T18	reference_word 917 926	the group
+R11	coreference Arg1:T18 Arg2:T10	
+T19	time 1090 1094	2015
+T20	time 1099 1103	2016
+T21	target_crowd 1063 1086	Ukraine ’s power system
+T22	attack_activity 1125 1137	cyber attack
+R12	occur_time Arg1:T22 Arg2:T19	
+R13	occur_time Arg1:T22 Arg2:T20	
+R14	attack Arg1:T22 Arg2:T21	
+T23	location 1315 1333	European countries
+T24	location 1406 1410	U.S.
+R15	located Arg1:T7 Arg2:T5	
+R16	located Arg1:T7 Arg2:T6	
+T25	company 1358 1367	companies
+R17	located Arg1:T25 Arg2:T24	
+T26	company 1289 1306	electricity grids
+R18	located Arg1:T26 Arg2:T23	
+T27	person 1432 1439	hackers
+R19	attack Arg1:T27 Arg2:T25	
+T29	attack_goal 1508 1533	energy facilities operate
+T30	attack_goal 1543 1557	gaining access
+T31	reference_word 1613 1622	the group
+T32	attack_goal 1658 1682	sabotage or gain control
+R23	goal Arg1:T31 Arg2:T32	
+T33	person 1728 1746	Symantec customers
+T34	security_team 1809 1817	Symantec
+T35	security_team 1982 1990	Symantec
+T28	threatActor_name 1446 1461	Dragonfly group
+R20	goal Arg1:T28 Arg2:T29	
+R21	goal Arg1:T28 Arg2:T30	
+R22	coreference Arg1:T31 Arg2:T28	
+T36	threatActor_name 1791 1806	Dragonfly group
+T37	attack_activity 1851 1873	Dragonfly 2.0 campaign
+T38	time 1907 1920	December 2015
+T39	time 1975 1979	2017
+R24	first_found_time Arg1:T37 Arg2:T38	
+R25	find Arg1:T34 Arg2:T37	
+R26	occur_time Arg1:T37 Arg2:T39	
+T40	location 2167 2171	U.S.
+T41	location 2176 2182	Turkey
+T42	threatActor_name 2225 2234	Dragonfly
+T43	attack_activity 2242 2258	earlier campaign
+R27	attack Arg1:T43 Arg2:T41	
+R28	attack Arg1:T43 Arg2:T40	
+R29	launch Arg1:T42 Arg2:T43	
+T44	location 2298 2304	Turkey
+T45	location 2059 2063	U.S.
+T46	location 2066 2072	Turkey
+T47	location 2079 2090	Switzerland
+T48	target_crowd 2038 2051	organizations
+R30	located Arg1:T48 Arg2:T45	
+R31	located Arg1:T48 Arg2:T46	
+R32	located Arg1:T48 Arg2:T47	
+T49	reference_word 2017 2034	attacker activity
+R33	coreference Arg1:T49 Arg2:T37	
+R34	attack Arg1:T49 Arg2:T48	
+T50	time 2419 2423	2011
+T51	time 2428 2432	2014
+T52	attack_activity 2435 2448	Dragonfly 2.0
+T53	tool 2456 2484	variety of infection vectors
+R35	use Arg1:T52 Arg2:T53	
+T54	attack_goal 2501 2512	gain access
+R36	goal Arg1:T53 Arg2:T54	
+T55	sub_activity 2548 2564	malicious emails
+T56	sub_activity 2567 2588	watering hole attacks
+T57	sub_activity 2595 2614	Trojanized software
+R37	part_of Arg1:T55 Arg2:T52	
+R38	part_of Arg1:T56 Arg2:T52	
+R39	part_of Arg1:T57 Arg2:T52	
+T58	security_team 2653 2661	Symantec
+T59	security_team 3375 3383	Symantec
+T60	security_team 4129 4137	Symantec
+T61	security_team 4529 4537	Symantec
+T62	security_team 7587 7595	Symantec
+T63	time 2824 2837	December 2015
+T64	attack_activity 2693 2717	malicious email campaign
+T65	target_crowd 2807 2820	energy sector
+T66	sub_activity 2723 2734	sent emails
+R40	part_of Arg1:T66 Arg2:T64	
+R41	find Arg1:T58 Arg2:T64	
+R42	occur_time Arg1:T64 Arg2:T63	
+R43	attack Arg1:T64 Arg2:T65	
+T67	reference_word 2840 2849	The group
+T68	attack_activity 2877 2902	malicious email campaigns
+T69	time 2910 2914	2016
+T70	time 2924 2928	2017
+R44	occur_time Arg1:T68 Arg2:T69	
+R45	occur_time Arg1:T68 Arg2:T70	
+R46	launch Arg1:T67 Arg2:T68	
+T72	tool 3078 3105	attached malicious document
+T73	time 3212 3216	July
+T74	person 3219 3224	Cisco
+T75	attack_activity 3239 3258	email-based attacks
+T76	target_crowd 3273 3286	energy sector
+R47	attack Arg1:T75 Arg2:T76	
+T77	tool 3310 3318	Phishery
+R48	use Arg1:T75 Arg2:T77	
+R49	find Arg1:T74 Arg2:T75	
+T78	sample_function 3123 3145	leak victims ’ network
+R50	goal Arg1:T72 Arg2:T78	
+T71	time 3348 3352	2017
+T79	tool 3404 3420	Phishery toolkit
+T80	reference_word 3423 3439	Trojan.Phisherly
+R51	coreference Arg1:T80 Arg2:T79	
+T81	tool 3333 3339	emails
+R52	use Arg1:T81 Arg2:T79	
+T82	sample_function 3447 3474	steal victims ’ credentials
+T83	tool 3481 3506	template injection attack
+R54	use Arg1:T79 Arg2:T83	
+R53	goal Arg1:T83 Arg2:T82	
+T84	reference_word 3509 3521	This toolkit
+R55	coreference Arg1:T84 Arg2:T79	
+T85	time 3567 3571	2016
+T86	attack_activity 3585 3609	sending malicious emails
+T87	attack_activity 3636 3657	watering hole attacks
+T88	reference_word 3612 3625	the attackers
+R56	use Arg1:T88 Arg2:T87	
+R57	use Arg1:T88 Arg2:T86	
+T90	tool 3694 3715	compromising websites
+R59	use Arg1:T87 Arg2:T90	
+T92	sub_activity 3829 3846	follow-up attacks
+T93	company 3866 3879	organizations
+R62	attack Arg1:T92 Arg2:T93	
+T94	tool 4007 4017	PowerShell
+T96	tool 3956 3971	Backdoor.Goodor
+R63	use Arg1:T96 Arg2:T94	
+T97	tool 4034 4049	Backdoor.Goodor
+T98	attack_goal 4078 4091	remote access
+T99	person 4059 4072	the attackers
+R65	use Arg1:T99 Arg2:T97	
+R66	goal Arg1:T99 Arg2:T98	
+T100	time 4122 4126	2014
+T101	threatActor_name 4151 4166	Dragonfly group
+T89	attack_goal 3661 3688	harvest network credentials
+R58	goal Arg1:T87 Arg2:T89	
+T91	reference_word 3792 3810	stolen credentials
+R60	coreference Arg1:T91 Arg2:T89	
+R61	use Arg1:T92 Arg2:T91	
+T95	time 4279 4283	2011
+T102	time 4303 4307	2016
+T103	time 4312 4316	2017
+T104	reference_word 4327 4336	the group
+R64	coreference Arg1:T104 Arg2:T101	
+T105	tool 4350 4376	evasion framework Shellter
+R67	use Arg1:T104 Arg2:T105	
+T106	sample_function 4389 4420	develop Trojanized applications
+R68	goal Arg1:T105 Arg2:T106	
+T107	tool 4439 4455	Backdoor.Dorshel
+T108	tool 4572 4607	files masquerading as Flash updates
+T109	sub_activity 4623 4650	install malicious backdoors
+R69	use Arg1:T109 Arg2:T108	
+T110	tool 4689 4707	social engineering
+R70	use Arg1:T109 Arg2:T110	
+T111	sample_name 4842 4866	install_flash_player.exe
+T112	tool 4924 4950	Trojan.Karagany.B backdoor
+T113	person 4969 4978	attackers
+T114	sub_activity 4984 4991	install
+T115	attack_goal 5048 5061	remote access
+T116	attack_goal 5080 5104	install additional tools
+R71	launch Arg1:T113 Arg2:T114	
+R72	goal Arg1:T114 Arg2:T115	
+R73	goal Arg1:T114 Arg2:T116	
+T117	tool 5120 5126	Goodor
+T118	tool 5129 5139	Karagany.B
+T119	tool 5146 5153	Dorshel
+T120	tool 5198 5213	Trojan.Heriplor
+T121	attack_activity 5286 5305	Dragonfly campaigns
+T122	tool 5328 5336	Heriplor
+T123	tool 5341 5357	Karagany Trojans
+T124	attack_activity 5366 5379	Dragonfly 2.0
+R74	use Arg1:T124 Arg2:T123	
+R75	use Arg1:T124 Arg2:T122	
+T125	attack_activity 5415 5434	Dragonfly campaigns
+R76	use Arg1:T125 Arg2:T122	
+R77	use Arg1:T125 Arg2:T123	
+T126	time 5443 5447	2011
+T127	time 5452 5456	2014
+T128	tool 5459 5474	Trojan.Heriplor
+T129	threatActor_name 5528 5537	Dragonfly
+R78	use Arg1:T129 Arg2:T128	
+T130	reference_word 5585 5594	the group
+R79	coreference Arg1:T130 Arg2:T129	
+T131	target_crowd 5613 5634	western energy sector
+R80	attack Arg1:T130 Arg2:T131	
+T132	time 5643 5647	2011
+T133	time 5652 5656	2014
+T134	reference_word 5716 5735	This custom malware
+R81	coreference Arg1:T134 Arg2:T128	
+T135	reference_word 5847 5849	It
+R82	coreference Arg1:T135 Arg2:T128	
+T136	tool 5935 5952	Trojan.Karagany.B
+T137	tool 5972 5987	Trojan.Karagany
+T138	threatActor_name 6019 6028	Dragonfly
+R83	use Arg1:T138 Arg2:T136	
+R84	use Arg1:T138 Arg2:T137	
+T139	tool 6133 6149	Trojan.Karagny.B
+T140	target_crowd 6259 6272	energy sector
+T141	attack_activity 6239 6246	attacks
+R85	attack Arg1:T141 Arg2:T140	
+R86	use Arg1:T141 Arg2:T139	
+T142	attack_activity 5888 5895	attacks
+T143	target_crowd 5919 5932	energy sector
+R87	use Arg1:T142 Arg2:T135	
+R88	attack Arg1:T142 Arg2:T143	
+T144	tool 6297 6312	Trojan.Karagany
+T145	threatActor_name 6363 6372	Dragonfly
+R89	use Arg1:T145 Arg2:T144	
+T146	attack_activity 12436 12449	Dragonfly 2.0
+T147	attack_activity 6958 6981	Dragonfly 2.0 campaigns
+T148	sub_activity 6495 6514	collect information
+T149	sub_activity 6553 6572	acquire credentials
+T150	attack_activity 6404 6420	Sabotage attacks
+R90	part_of Arg1:T148 Arg2:T150	
+R91	part_of Arg1:T149 Arg2:T150	
+T151	sample_name 6650 6657	Stuxnet
+T152	sample_name 6662 6669	Shamoon
+T153	sample_function 6734 6771	administer their destructive payloads
+T154	attack_activity 6787 6806	Dragonfly campaigns
+T155	sub_activity 6898 6909	gain access
+R92	part_of Arg1:T155 Arg2:T154	
+T156	sub_activity 7094 7123	access to operational systems
+R93	part_of Arg1:T156 Arg2:T147	
+T157	tool 7249 7264	screen captures
+T158	reference_word 7298 7307	attackers
+T159	tool 7315 7327	clear format
+R94	use Arg1:T158 Arg2:T159	
+T160	sample_function 7332 7363	naming the screen capture files
+R95	goal Arg1:T159 Arg2:T160	
+T161	threatActor_name 7626 7635	Dragonfly
+T162	reference_word 7696 7698	It
+R96	coreference Arg1:T162 Arg2:T161	
+T163	tool 7784 7801	steal credentials
+T164	target_crowd 7726 7748	targeted organizations
+R97	attack Arg1:T162 Arg2:T164	
+R98	use Arg1:T162 Arg2:T163	
+T165	threatActor_name 7938 7947	Dragonfly
+T166	time 8046 8050	2011
+T167	target_crowd 8009 8022	energy sector
+R99	attack Arg1:T165 Arg2:T167	
+R100	occur_time Arg1:T165 Arg2:T166	
+T168	reference_word 8240 8253	The attackers
+R101	coreference Arg1:T168 Arg2:T165	
+T169	tool 8362 8372	PowerShell
+T170	tool 8375 8381	PsExec
+T171	tool 8388 8397	Bitsadmin
+R102	use Arg1:T168 Arg2:T169	
+R103	use Arg1:T168 Arg2:T170	
+R104	use Arg1:T168 Arg2:T171	
+T172	time 8520 8524	2016
+T173	tool 8473 8489	Phishery toolkit
+T174	tool 8556 8566	Screenutil
+T175	function 8602 8613	CodeProject
+T176	security_team 9654 9662	Symantec
+T177	person 9501 9519	Symantec customers
+T178	attack_activity 9542 9560	Dragonfly activity
+T179	attack_activity 9633 9651	Dragonfly activity
+T180	threatActor_name 9164 9173	Dragonfly
+T181	security_team 9563 9571	Symantec
+T182	tool 9753 9769	Trojan.Phisherly
+T183	tool 9770 9785	Backdoor.Goodor
+T184	tool 9786 9803	Trojan.Karagany.B
+T185	tool 9821 9836	Trojan.Heriplor
+T186	tool 9804 9820	Backdoor.Dorshel
+T187	tool 9837 9851	Trojan.Listrix
+T188	tool 9852 9867	Trojan.Karagany
+T189	security_team 9870 9878	Symantec
+T190	attack_activity 9958 9976	Dragonfly activity
+T191	company 9997 10061	DeepSight Intelligence Managed Adversary and Threat Intelligence
+T192	attack_activity 10121 10134	Dragonfly 2.0
+T193	threatActor_name 10228 10237	Dragonfly
+T194	tool 10256 10274	stolen credentials
+R105	use Arg1:T193 Arg2:T194	
+T195	attack_goal 9262 9282	stealing information
+T196	attack_goal 9289 9303	gaining access
+R106	goal Arg1:T180 Arg2:T195	
+R107	goal Arg1:T180 Arg2:T196	
+T197	attack_goal 9224 9259	compromising numerous organizations
+R108	goal Arg1:T180 Arg2:T197	
+T198	sub_activity 10492 10524	avoid reusing the same passwords
+T199	sub_activity 10550 10599	sharing passwords with others should be forbidden
+T200	sub_activity 10370 10399	at least 8-10 characters long
+T201	sub_activity 10602 10640	Delete unused credentials and profiles
+T202	sub_activity 10645 10702	limit the number of administrative-level profiles created
+T203	sub_activity 10705 10737	Employ two-factor authentication
+T204	sub_activity 10873 10949	Emphasize multiple , overlapping , and mutually supportive defensive systems
+T205	sub_activity 11077 11104	regularly updated firewalls
+T206	sub_activity 11116 11133	gateway antivirus
+T207	sub_activity 11136 11155	intrusion detection
+T208	sub_activity 11159 11177	protection systems
+T210	sub_activity 11240 11270	web security gateway solutions
+T209	sub_activity 11188 11233	website vulnerability with malware protection
+T211	sub_activity 11296 11335	Implement and enforce a security policy
+T212	sub_activity 11413 11439	customer data is encrypted
+T213	sub_activity 11538 11576	Implement SMB egress traffic filtering
+T214	sub_activity 11662 11679	Educate employees
+T215	attack_activity 11704 11725	spear-phishing emails
+T216	sub_activity 11849 11872	A full protection stack
+T217	security_team 11925 11933	Symantec
+T218	counter_measure 11999 12027	Symantec Endpoint Protection
+T219	sub_activity 12040 12069	block malware on the endpoint
+R109	part_of Arg1:T219 Arg2:T218	
+T220	counter_measure 12072 12108	Symantec Messaging Gateway ’s Disarm
+T222	sub_activity 12163 12181	removing malicious
+R110	part_of Arg1:T222 Arg2:T220	
+T221	tool 12348 12380	DeepSight Adversary Intelligence
+T17	sample_function 10766 10805	provide an additional layer of security
+R10	goal Arg1:T203 Arg2:T17	
+T223	sample_function 10808 10870	preventing any stolen credentials from being used by attackers
+R111	goal Arg1:T203 Arg2:T223	
+T224	sample_function 10953 10988	guard against single point failures
+R112	goal Arg1:T204 Arg2:T224	
+T225	sample_function 11601 11659	prevent SMB traffic leaving your network onto the internet
+R113	goal Arg1:T213 Arg2:T225	
+T226	sub_activity 11738 11794	exercising caution around emails from unfamiliar sources
+T227	sub_activity 11799 11846	opening attachments that haven’t been solicited
+R114	part_of Arg1:T226 Arg2:T214	
+R115	part_of Arg1:T227 Arg2:T214	
+T228	sample_function 11882 11911	defend against emailed threat
+R116	goal Arg1:T216 Arg2:T228	
+T229	tool 11925 11954	Symantec Email Security.cloud
+T230	sample_function 11967 11992	block email-borne threats
+R117	goal Arg1:T229 Arg2:T230	

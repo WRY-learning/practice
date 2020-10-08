@@ -1,0 +1,93 @@
+T1	security_team 164 177	Kaspersky Lab
+T2	time 254 258	2017
+T3	time 582 586	2017
+T4	location 612 627	the Middle East
+T5	location 632 653	North Africa ( MENA )
+T6	location 667 676	Palestine
+T7	time 808 812	2018
+T8	location 930 941	MENA region
+T9	attack_activity 873 890	a phishing attack
+T10	target_crowd 905 922	political figures
+R1	attack Arg1:T9 Arg2:T10	
+R2	located Arg1:T10 Arg2:T8	
+T11	threatActor_name 994 1027	low-sophistication Gaza Cybergang
+T12	attack_activity 1030 1049	decoys , file names
+T13	government 1156 1167	parliaments
+T14	government 1170 1177	senates
+T15	government 1180 1197	top state offices
+T16	target_crowd 1202 1211	officials
+T17	target_crowd 1214 1240	political science scholars
+T18	government 1243 1277	military and intelligence agencies
+T19	government 1280 1290	ministries
+T20	industry 1293 1306	media outlets
+T21	industry 1309 1325	research centers
+T22	government 1328 1348	election commissions
+T23	industry 1351 1372	Olympic organizations
+T24	industry 1375 1398	large trading companies
+T25	tool 1470 1484	CMD/PowerShell
+T26	tool 1587 1591	HTTP
+T27	security_team 1603 1616	Kaspersky Lab
+R3	attack Arg1:T12 Arg2:T13	
+R4	attack Arg1:T12 Arg2:T14	
+R5	attack Arg1:T12 Arg2:T15	
+R6	attack Arg1:T12 Arg2:T16	
+R7	attack Arg1:T12 Arg2:T17	
+R8	attack Arg1:T12 Arg2:T18	
+R9	attack Arg1:T12 Arg2:T19	
+R10	attack Arg1:T12 Arg2:T20	
+R11	attack Arg1:T12 Arg2:T21	
+R12	attack Arg1:T12 Arg2:T22	
+R13	attack Arg1:T12 Arg2:T23	
+R14	attack Arg1:T12 Arg2:T24	
+T28	security_team 1698 1709	Cisco Talos
+T29	location 1771 1786	the Middle East
+T30	time 1974 1978	2017
+T31	industry 2493 2499	health
+T32	industry 2502 2508	energy
+T33	industry 2511 2518	justice
+T34	industry 2521 2528	finance
+T35	industry 2472 2490	telecommunications
+T36	location 2574 2597	Palestinian Territories
+T37	location 2600 2605	Egypt
+T38	location 2608 2614	Jordan
+T39	location 2617 2624	the UAE
+T40	location 2627 2639	Saudi Arabia
+T41	location 2642 2650	Djibouti
+T42	location 2653 2658	Qatar
+T43	location 2661 2668	Lebanon
+T44	location 2671 2676	Chile
+T45	location 2679 2686	Somalia
+T46	location 2689 2693	Iraq
+T47	location 2696 2703	Morocco
+T48	location 2706 2711	Syria
+T49	location 2714 2719	India
+T50	location 2722 2726	Iran
+T51	location 2729 2735	Canada
+T52	location 2738 2745	the USA
+T53	location 2748 2754	the UK
+T54	location 2757 2764	Germany
+T55	location 2767 2773	Israel
+T56	location 2776 2787	Afghanistan
+T57	location 2790 2796	Serbia
+T58	location 2799 2805	Russia
+T59	location 2808 2812	Oman
+T60	location 2815 2821	Kuwait
+T61	location 2824 2835	South Korea
+T62	location 2840 2847	Denmark
+T63	location 2940 2955	the Middle East
+T64	time 3286 3290	2018
+T65	threatActor_name 3456 3470	Gaza Cybergang
+T66	threatActor_name 3474 3488	Desert Falcons
+T67	location 3807 3822	the Middle East
+T68	tool 4097 4106	VMProtect
+T70	tool 4298 4302	HTTP
+T71	tool 4462 4466	3DES
+T72	tool 4471 4477	Base64
+T74	tool 4541 4545	3DES
+T75	tool 4550 4556	Base64
+T76	tool 4660 4663	C&C
+T77	tool 4733 4736	C&C
+T69	tool 4326 4329	C&C
+T73	tool 4506 4509	C&C
+T78	tool 4843 4857	CMD/PowerShell
+T79	tool 4957 4961	HTTP

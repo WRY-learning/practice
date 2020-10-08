@@ -1,0 +1,94 @@
+Leviathan: Espionage actor spearphishes maritime and defense targets .
+Release_Time :  2019-01-29
+Report_URL :  https://www.proofpoint.com/us/threat-insight/post/leviathan-espionage-actor-spearphishes-maritime-and-defense-targets
+Proofpoint researchers are tracking an espionage actor targeting organizations and high-value targets in defense and government .
+Active since at least 2014 , this actor has long-standing interest in maritime industries , naval defense contractors , and associated research institutions in the United States and Western Europe .
+Industry targeting : The actor targets defense contractors , universities ( particularly those with military research ties ) , legal organizations and government agencies .
+The actor has particular interest in naval industries including shipbuilding and related research .
+Geographical targeting : Targeting includes United States , Western Europe , and South China Sea .
+Tools : Custom JavaScript malware known as “ Orz ” and “ NanHaiShu ” , Cobalt Strike , the SeDll JavaScript loader , and MockDll dll loader .
+Delivery : Emailed attachments and URLs , often employing a fraudulent lookalike domain and stolen branding .
+Exploitation : Microsoft Excel and Word documents with macros ( sometimes password-protected ) , very recent vulnerabilities such as CVE-2017-0199 and CVE-2017-8759 , and malicious Microsoft Publisher files .
+Installation : JavaScript , JavaScript Scriptlets in XML , HTA , PowerShell , WMI , regsvr32 , Squiblydoo .
+Lateral Movement : The actor sometimes utilizes access at one compromised organization to attack the next .
+For example , compromised email accounts at one organization were used to send the next wave of malicious attachments to potential victims in the same industry .
+Similarly the actor attempts to compromise servers within victim organizations and use them for command and control ( C&C ) for their malware .
+On September 15 and 19 , 2017 , Proofpoint detected and blocked spearphishing emails from this group targeting a US shipbuilding company and a US university research center with military ties .
+Example emails used the subject “ Apply for internship position ” and contained an attachment “ resume.rtf ” .
+Another attachment , “ ARLUAS_FieldLog_2017-08-21.doc ” contained a “ Torpedo recovery experiment ” lure .
+The attachments exploited CVE-2017-8759 which was discovered and documented only five days prior to the campaign .
+Between August 2 and 4 , the actor sent targeted spearphishing emails containing malicious URLs linking to documents to multiple defense contractors .
+Some of this activity was documented and observed by a fellow researcher .
+Many of the documents , C&C domains , and payload domains abused the brand of a major provider of ships , submarines , and other vessels with military applications .
+Some of the documents exploited CVE-2017-0199 to deliver the payload .
+Other documents were Microsoft Publisher files that relied on social engineering .
+The potential victims were lured into starting an embedded PowerPoint presentation , moving the mouse to trigger execution of an embedded JavaScript , and then pressing “ Enable ” in a warning dialog to cause the payload download .
+The Publisher files were poorly crafted , relied on multiple user interactions , and contained multiple grammatical and typographic errors .
+From February to October of 2015 , our colleagues at F-Secure and McAfee reported on campaigns by this actor targeting South China Sea interests .
+During this time , the group utilized Microsoft Excel and Word documents with macros to target the Philippines Department of Justice , APEC organizers , and an international law firm .
+Targeting of these companies is different from that which we typically observe for this actor ; however it still centers around marine and naval issues as related to South China sea politics .
+The period between November 2014 and January 2015 marked one of the earlier instances in which Proofpoint observed persistent exploitation attempts by this actor .
+The actor generally emailed Microsoft Excel documents with malicious macros to US universities with military interests , most frequently related to the Navy .
+The actor also occasionally used macro-laden Microsoft Word documents to target other US research and development organizations with military and intelligence ties during this period .
+Emails were often very simple with a greeting and an attachment .
+On other occasions , it appears that the attackers used highly topical lures based on current events or legitimate documents stolen from previous victims .
+Lure topics included symposia , the Navy , IT , and relevant research .
+The actor continues to : Innovate and modify the code that accomplishes the installation , while the backdoor code remains more static ; Use scripting languages such as JavaScript , JavaScript Scriptlets , VBScript , and XML ; Use simple obfuscation such as base64 , gzip compression , and insertion of garbage characters ; Split functionality of the backdoor & code that establishes persistence for the backdoor into separate files and scripts .
+The “ resume.rtf ” file from the September 19 , 2017 attack retrieves the malicious SOAP WSDL definition named “ readme.txt “ using an anonymous FTP logon to the attacker ’s server .
+This definition in turn downloads a VBScript favicon.ico file , which then creates and runs two JavaScript files in the %TMP% directory .
+The job of the smaller of the two JavaScripts is to establish a system autostart mechanism .
+It accomplishes this by deobfuscating another script , link.js , into %TMP% .
+Link.js in turn creates a shortcut  file "Java (TM ) Platform SE Auto Updater.lnk" in the "Startup" special folder pointing to the main backdoor JavaScript .
+The job of the larger of the two JavaScripts is to download and execute the Cobalt Strike payload .
+It accomplishes this by writing more code to rWug5n0PHUFjDFyb8k.js in the temporary directory , which then runs a PowerShell command ( obfuscated using garbage characters , base64 encoding , and Gzip compression ) .
+The PowerShell is a default Cobalt Strike downloader .
+The malicious script executed by the Microsoft Publisher file downloads and runs yet another JavaScript file , 0.js , hosted on the attacker-controlled server .
+Similar to the previous example ( resume.rtf ) , the 0.js handles the system autostart mechanism via a shortcut file "office 365.lnk" in the "Startup" special folder .
+However , the shortcut abuses the “ Squiblydoo ” technique .
+Moreover , the backdoor is not run directly but via an intermediary SeDll .
+0.js also downloads two additional files from the C&C server ( green.ddd and green.tmp ) The first of these files , green.ddd , is an executable file internally named “ SEDll_Win32.dll ” .
+This is a known backdoor used by this actor since 2014 for the same purpose : decrypting and executing the final JavaScript backdoor “ Orz ” .
+We have observed variants of this JavaScript backdoor used in various campaigns , including those publically reported .
+The actor continues to improve and refine the malware by , for example , wrapping it inside an HTA wrapper .
+Several good descriptions are available  in analyses from fellow researchers .
+Basic functionality includes : Information gathering ( computer name , user name , serial number , proxy server ) ; Downloading from URL ; Executing other JavaScript ; Registry , system , process , directory , file operations ; SafeIE ( change IE settings to reduce warnings about about malware activity ) .
+We observed this backdoor in an August 2017 campaign dropped by the Microsoft Publisher files , as well as much earlier in 2014 .
+We named it due to a variable name “ orz ” , which is changed to “ core ” in the more recent version .
+The actor consistently tweaks and improves this backdoor as well .
+The backdoor is a fairly involved script malware .
+Its functionality includes : Information gathering ( IE version , OS version , OS 64-bit/32-bit , etc ) ; Overwriting registry settings to reduce malware visibility on system ; Download file ; Upload file ; Execute a command with cscript ; Execute JavaScript ; Execute shell command ; Execute a dll ( via an embedded ‘ MockDll' ) ; Get proxy info ; Get process list ; Terminate process ; Get drive info ; GET request to a URL ; POST request to a URL .
+There is an extensive configuration section at the top of the script .
+The "jmpUrlList" provides the initial C&C servers , which are used to determine the secondary C&C server as well as additional commands to execute .
+It is worth noting that the secondary C&C may be the same as the first .
+We have observed attacker-controlled web servers , compromised victim web servers , and Technet and Pastebin web pages used for the initial C&C .
+The initial C&C response is parsed with a regex .
+The backdoor first looks for the secondary encoded C&C server using the "jmpRegex" regex .
+Next , the backdoor looks for additional code to execute using the "codeRegex" regex .
+For additional code , we observed simple code blocks that provide a different upload/download functionality .
+Some versions of the Orz backdoor have 32- and 64-bit embedded DLLs , stored internally as base64 strings .
+Their purpose is to simply run another binary .
+These are used as loaders for future executable payloads , using the well-known process hollowing technique .
+To use the MockDll , the backdoor creates a configuration .ini file .
+After the configuration file is created , the MockDll is executed with regsvr32 .
+MockDll reads the mentioned .ini config file to determine what to execute .
+It can log its execution results into a file specified by the “ outf ” parameter .
+This DLL is used for decrypting and executing another JavaScript backdoor such as Orz .
+The DLL is registered by the installer using regsvr32 .
+The DllRegisterServer export is then called , which performs checks on the commandline parameter .
+If the string “ DR ” is passed as an argument , or if the DLL is running in the active session with a username that is not “ system ” , the final JavaScript backdoor is decoded using a custom base64 alphabet .
+This backdoor has to be present in the same directory as the dll , with a “ .tmp ” file extension .
+The backdoor script is then executed using the IActiveScript and IActiveScriptParse32 COM interfaces .
+If those conditions are not met , it runs the following command line “ "regsvr32 /s \"%s\" DR __CIM__" ” to register the DLL , where %s is the path to the DLL .
+It tries to do this with the current user privileges , but if the privileges cannot be adjusted it defaults to the available execution environment .
+Cobalt Strike : This is a penetration testing tool , The attackers often abuse the free trial version .
+This actor , whose espionage activities primarily focus on targets in the US and Western Europe with military ties , has been active since at least 2014 .
+The tools , techniques , and targets consistently connect their work , particular given their attention to naval and maritime defense interests and use of custom backdoors .
+While defense contractors and academic research centers with military ties should always be cognizant of the potential for cyberattacks , organizations fitting their targeting profiles should be especially wary of legitimate-looking but unsolicited emails from outside entities .
+Appropriate layered defenses at the firewall , email gateway , and endpoint can all help prevent the kinds of lateral movement we have observed with this actor , as well as the compromise and abuse of systems via which this group expands its attack surface to other organizations .
+Leviathan : Resume.rtf , exploiting CVE-2017-8759 , cdf6e2e928a89cbb857e688055a25e37a8d8b8b90530bd52c8548fb544f66f1f .
+Leviathan : ARLUAS_FieldLog_2017-08-21.doc , exploiting CVE-2017-8759 , c7fa6f27ec4f4142ae591f2dd7c63d046431945f03c87dbed88d79f55180a46d .
+Leviathan : ftp://185.106.120.206/pub/readme.txt , Resume.rtf , downloading scripts .
+Leviathan : http://185.106.120.206/favicon.ico , Resume.rtf , downloading scripts .
+Leviathan : Favicon.ico , 39c952c7e14b6be5a9cb1be3f05eafa22e1115806e927f4e2dc85d609bc0eb36 .
+Leviathan : Cobalt Strike , 5860ddc428ffa900258207e9c385f843a3472f2fbf252d2f6357d458646cf362 .
+Leviathan : 20170720_final_pm_app-2.doc , ced7ca9625543d3d3d09f70223cc19f0d99e21792854452df5ba84b3a59d17b8 .

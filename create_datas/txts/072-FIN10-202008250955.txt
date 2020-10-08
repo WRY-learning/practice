@@ -1,0 +1,37 @@
+FIN10:Anatomy of a Cyber Extortion Operation .
+Just because someone claimed they hacked you doesn’t necessarily make it true .
+Empty extortion attempts are not uncommon .
+Examine your environment for evidence of compromise before considering to pay the ransom .
+Usually FIN10 provides data as proof ( see the ‘ Data Exposure ’ section ) , so confirm that the data is real and determine if it came from your environment .
+Humans can be unpredictable and they may react out of emotion .
+Carefully consider how an attacker will react to your action or inaction .
+They can become more aggressive if they get upset .
+They may back down and allow for more time if they believe you are trying to meet their demands .
+You need to validate and scope the breach as quickly as possible .
+This may require the team working nights and weekends , so be careful of fatigue and burnout .
+You may need to approve emergency change requests within short order .
+It ’s easy to get distracted .
+Evaluate whether the tasks you are taking on will help mitigate , detect , respond to or contain the attack .
+Remember that you ’re racing against the clock .
+Focus on the must-haves instead of the nice-to-haves and understand that you may need to deploy a number of temporary solutions to address the attack .
+Attackers do not always expect a response .
+If you decide to respond , limit the interactions and carefully consider everything you say .
+Consider involving law enforcement and legal counsel in all communications .
+You will need forensic , legal and public relations support to get through a disruptive breach .
+Identify partners before the breach and get them on retainer .
+Understand that paying the ransom may be the right option , but there are no guarantees the attacker (s) won’t come back for more money or simply leak the data anyway .
+Include experts in the decision-making process and understand the risks associated with all options .
+Most organizations have mature backup policies so they can recover quickly in the event of a system failure .
+However , it ’s common for the systems containing backups to be part of the same environment compromised by the attacker .
+Tighten access to your backup environment to mitigate the risk of an attacker accessing the system using compromised credentials and destroying your backups .
+Regardless of the outcome , you should ensure that attackers such as FIN10 cannot come back in and do more damage .
+You also don’t want a second attacker targeting you because they think you are willing to pay a ransom .
+Ensure you understand the full extent of the breach and implement both tactical and strategic actions to prevent future attackersfrom gaining access .
+Don’t forget to  operationalize and enhance the temporarysolutions that were deployed to immediately address the attack.Conduct penetration testing and Red Team assessments to validate your security controls , identify vulnerabilities and fix them immediately .
+Although FireEye has observed FIN10 primarily targeting casinos and mining organizations in North America ( with a focus on Canada ) , all organizations from around the world must be prepared to detect and respond to threats from this group and other bad actors .
+We believe the primary goal of FIN10 is to steal corporate business data , files , records , correspondence and customer PII for the purposes of extorting victim organizations for the non-release of the stolen data .
+Enterprises that are contacted by a group claiming to have their data will want to carefully assess if an incident has actually occurred .
+In the case of FIN10 , we have observed them posting proof of the stolen data on publicly accessible websites .
+When dealing with these types of extortion-based attacks , we strongly recommend that organizations work quickly , stay focused , considerall options and potentially involve forensic , legal , law enforcement and public relations experts  before taking any actions or communicating with the threat actor .
+Strong segmentation and controls over backups will help organizations to quickly recover from a breach .
+Additionally , when the incident has been resolved organizations should focus on broader security improvements and ensuring the threat actor cannot come back in a different way .

@@ -1,0 +1,48 @@
+HOT KNIVES THROUGH BUTTER : Evading File-based Sandboxes .
+With this information , Pushdo easily cancels process notifications to security software .
+The malware determines the Windows build number using the NtBuildNumber function .
+For Windows XP , the build numbers are 2600 (32-bit ) and 3790 (64-bit ) .
+The malware gets the runtime address for PsSetCreateProcessNotifyRoutine .
+The jmp op-code is 2 bytes long .
+Therefore , runtime address of PsSetCreateProcess NotifyRoutine ( in memory ) is jmp PsSetCreateProcessNotifyRoutine + 2 .
+The malware linearly scans the assembly code for 0xBF followed 5 bytes later by 0x57 .
+The value immediately after the 0xBF is the internal PspCreateProcessNotifyRoutine address .
+From there , the malware simply walks the PsCreateProcessNotifyRoutine pointer and NULLs out all callback objects .
+For Windows XP , the operation code 0xBF is “ mov edi , ” and 0x57 is “ push edi. ” 
+Malicious downloaders typically contain code to make an HTTP request to a server controlled by the attacker and download the malware payload .
+Many file-based sandboxes are configured with no connection to the Internet .
+A malicious downloader observed in such a sandbox would make an HTTP request but fail to download the malware .
+So the sandbox detects only the HTTP request—not the actual malware download and ensuing malicious activity .
+Many sandboxes assign a predefined name to files during execution .
+Attackers can avoid detection by having their code determine whether it is running under one of these names and , if so , terminate before exhibiting any telltale behavior .
+Here , the code calls Windows ’ GetModuleFilenameW() function to retrieve its own file path .
+It then checks for the string “ sample ” ( a common name assigned to modules running in a sandbox ) in that path .
+If “ sample ” appears , the malware aborts .
+Every computer hard drive has a volume serial number , typically assigned when formatting the drive .
+This four-byte value is generated from a combination of the date and time of the format operation .
+So chances are small that any two given volumes will have the same serial number .
+But many sandboxes are virtualized copies of one another , including the volume serial number created when the original system image was created .
+Malware can detect the presence of many sandboxes by checking whether the volume serial number of the machine it is running on matches that of widely used VMs .
+The function retrieves information about the file system and volume associated with the specified root directory .
+The instruction “ cmp DWORD PTR [EBP-8] , 0CD1A40 ” compares the volume number retrieved by GetVolumeInformation() with the volume number of a known file-based sandbox .
+If it finds a match , the malware terminates .
+File-based sandbox are usually set up to execute file samples one after another , and VMs do not normally reboot during analysis .
+With this in mind , attackers are deploying malware that does nothing overtly suspicious until after a reboot .
+Because the sandbox does not reboot during analysis , it observes no malicious behavior .
+One example of this technique is Terminator RAT , which has appeared in a variety of campaigns .
+Terminator works as follows : 
+Attacks usually start with a weaponized Microsoft Word document which drops the malicious executable DW20.exe when opened .
+DW20.exe creates two working folders , “ %UserProfile%\Microsoft ” and “ %AppData%\2019. ” The “ Microsoft ” folder stores Terminator ’s configurations and executable files ( svchost_.exe and sss.exe ) , and the “ 2019 ” folder stores related shortcut link files .
+The malware then sets “ 2019 ” as Windows ’ startup folder ( files in this folder run automatically when Windows starts up ) by modifying the following registry value .
+DWE20.exe deletes itself from the PC ’s hard drive and terminates .
+Only after the computer restarts—triggering the malware shortcuts placed in the “ 2019 ” folder that is now set as the Windows startup folder—does the malware begin its dirty work .
+In theory , code executed in a sandbox should run the same way it does on a physical computer .
+In reality , most sandboxes have telltale characteristics , enabling attackers to include features into their malware that check for these virtual environments .
+This section explains some of those checks in detail .
+Many malicious files are set to execute only in certain versions of applications or operating systems .
+These self-imposed limitations are not always attempts to evade sandboxes specifically ; many seek to exploit a flaw present only in a specific version of an application , for example .
+But the effect is often the same .
+All sandboxes have predefined configurations .
+If a given configuration lacks a particular combination of operating systems and applications , some malware will not execute , evading detection .
+The version number of the Flash player installed on the system is an input ( variable v ) to the getUrl() function .
+The code makes a GET request to a high-risk domain to download a malicious file , f.swf , to exploit a flaw in a specific version of Flash .

@@ -1,0 +1,199 @@
+A Slice of 2017 Sofacy Activity .		others others others others threatActor_name others others
+Rlease_Time : 2018-02-20 .		others others others others
+Report_URL : https://securelist.com/a-slice-of-2017-sofacy-activity/83930/ .		others others others others others others
+Sofacy , also known as APT28 , Fancy Bear , and Tsar Team , is a highly active and prolific APT .		threatActor_name others others others others threatActor_name others threatActor_name threatActor_name others others threatActor_name threatActor_name others others others others others others others others others
+From their high volume 0day deployment to their innovative and broad malware set , Sofacy is one of the top groups that we monitor , report , and protect against .		others others others others others others others others others others others others others others threatActor_name others others others others others others others others others others others others others others others others
+2017 was not any different in this regard .		time others others others others others others others others
+Our private reports subscription customers receive a steady stream of YARA , IOC , and reports on Sofacy , our most reported APT for the year .		others others others others others others others others others others others others others others others others others threatActor_name others others others others others others others others others
+This high level of cyber-espionage activity goes back years .		others others others others others others others others others others
+In 2011-2012 , the group used a relatively tiny implant ( known as “ Sofacy ” or SOURFACE ) as their first stage malware , which at the time had similarities with the old Miniduke implants .		others time others others others others others others others others others others others others threatActor_name others others others others others others others others others others others others others others others others others others others threatActor_name others others
+This made us believe the two groups were connected , although it looks they split ways at a certain point , with the original Miniduke group switching to the CosmicDuke implant in 2014 .		others others others others others others others others others others others others others others others others others others others others others others others others threatActor_name others others others others threatActor_name others others others others
+The division in malware was consistent and definitive at that point .		others others others others others others others others others others others others
+In 2013 , the Sofacy group expanded their arsenal and added more backdoors and tools , including CORESHELL , SPLM ( aka Xagent , aka CHOPSTICK ) , JHUHUGIT ( which is built with code from the Carberp sources ) , AZZY ( aka ADVSTORESHELL , NETUI , EVILTOSS , and spans across 4-5 generations ) and a few others .		others time others others threatActor_name others others others others others others others others others others others others malware others malware others others malware others others malware others others malware others others others others others others others others others others others others malware others others others others others others others others others others others others others others others others others others others
+We ’ve seen quite a few versions of these implants , which were relatively widespread at some point or still are .		others others others others others others others others others others others others others others others others others others others others others others others
+In 2015 we noticed another wave of attacks which took advantage of a new release of the AZZY implant , largely undetected by antivirus products .		others time others others others others others others others others others others others others others others others malware others others others others others others others others
+The new wave of attacks included a new generation of USB stealers deployed by Sofacy , with initial versions dating to February 2015 .		others others others others others others others others others others others others others others threatActor_name others others others others others others time time others
+It appeared to be geared exclusively towards high profile targets .		others others others others others others others others others others others
+Sofacy ’s reported presence in the DNC network alongside APT29 brought possibly the highest level of public attention to the group ’s activities in 2016 , especially when data from the compromise was leaked and"weaponized" .		threatActor_name others others others others others others others others others threatActor_name others others others others others others others others others others others others others others others time others others others others others others others others others others others others others others
+And later 2016 , their focus turned towards the Olympics ’ and the World Anti-Doping Agency ( WADA ) and Court of Arbitration for Sports ( CAS ) , when individuals and servers in these organizations were phished and compromised .		others others threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+In a similar vein with past CyberBerkut activity , attackers hid behind anonymous activist groups like “ anonpoland ” , and data from victimized organizations were similarly leaked and"weaponized" .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+This write-up will survey notables in the past year of 2017 Sofacy activity , including their targeting , technology , and notes on their infrastructure .		others others others others others others others others others others time threatActor_name others others others others others others others others others others others others others others
+No one research group has 100% global visibility , and our collected data is presented accordingly .		others others others others others others others others others others others others others others others others others others
+Here , external APT28 reports on 2017 Darkhotel-style activity in Europe and Dealer ’s Choice spearphishing are of interest .		others others others threatActor_name others others time sub_activity sub_activity others others others others others others others others others others others others
+From where we sit , 2017 Sofacy activity starts with a heavy focus on NATO and Ukrainian partners , coinciding with lighter interest in Central Asian targets , and finishing the second half of the year with a heavy focus on Central Asian targets and some shift further East .		others others others others others time threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The beginning of 2017 began with a slow cleanup following the Dealer ’s Choice campaign , with technical characteristics documented by our colleagues at Palo Alto in several stages at the end of 2016 .		others others others time others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others time others
+The group spearphished targets in several waves with Flash exploits leading to their carberp based JHUHUGIT downloaders and further stages of malware .		reference_word reference_word others others others others others others others others others others others others others malware others others others others others others others
+It seems that many folks did not log in and pull down their emails until Jan 2017 to retrieve the Dealer ’s Choice spearphish .		others others others others others others others others others others others others others others others time time others others others others others others others others others
+Throughout these waves , we observed that the targets provided connection , even tangential , to Ukraine and NATO military and diplomatic interests .		others others others others others others others others others others others others others others others others others others others others others others others others
+In multiple cases , Sofacy spoofs the identity of a target , and emails a spearphish to other targets of interest .		others others others others others others others others others others others others others others others others others others others others others others
+The global reach that coincided with this focus on NATO and the Ukraine couldn’t be overstated .		others others others others others others others others others others others others others others others others others others others
+Our KSN data showed spearphishing targets geolocated across the globe into 2017 .		others others others others others others others others others others others time others
+DealersChoice emails , like the one above , that we were able to recover from third party sources provided additional targeting insight , and confirmed some of the targeting within our KSN data :  TR , PL , BA , AZ , KR , LV , GE , LV , AU , SE , BE .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Sofacy kicked off the year deploying two 0day in a spearphish document , both a Microsoft Office encapsulated postscript type confusion exploit ( abusing CVE-2017-0262 ) and an escalation of privilege use-after-free exploit ( abusing CVE-2017-0263 ) .		threatActor_name others others others others others others others others others others others others others others others others others others others others others others others vulnerability_cve others others others others others others others others others others vulnerability_cve others others
+The group attempted to deploy this spearphish attachment to push a small 30kb backdoor known as GAMEFISH to targets in Europe at the beginning of 2017 .		reference_word reference_word others others others others others others others others others others others others others others others others others others others others time time time time others
+They took advantage of the Syrian military conflict for thematic content and file naming “ Trump ’s_Attack_on_Syria_English.docx ” .		others others others others others others others others others others others others others others others others others others others others
+Again , this deployment was likely a part of their focus on NATO targets .		others others others others others others others others others others others others others others others
+Meanwhile in early-to-mid 2017 , SPLM/CHOPSTICK/XAgent detections in Central Asia provided a glimpse into ongoing focus on ex-Soviet republics in Central Asia .		others others time time others others others others others others others others others others others others others others others others others others others
+These particular detections are interesting because they indicate an attempted selective 2nd stage deployment of a backdoor maintaining filestealer , keylogger , and remoteshell functionality to a system of interest .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+As the latest revision of the backdoor , portions of SPLM didn’t match previous reports on SPLM/XAgent while other similarities were maintained .		others others others others others others others others others others malware others others others others others others others others others others others others others others
+SPLM 64-bit modules already appeared to be at version 4 of the software by May of the year .		malware others others others others others others others others others others others others others others others others others others
+Targeting profiles included defense related commercial and military organizations , and telecommunications .		others others others others others others others others others others others others others
+Targeting included TR , KZ , AM , KG , JO , UK , UZ .		others others others others others others others others others others others others others others others others
+Since mid-November 2015 , the threat actor referred to as “ Sofacy ” or “ APT28 ” has been utilizing a unique payload and delivery mechanism written in Delphi and AutoIT .		others time time others others others others others others others others threatActor_name others others others threatActor_name others others others others others others others others others others others others security_team others security_team others
+We collectively refer to this package and related activity as “ Zebrocy ” and had written a few reports on its usage and development by June 2017 – Sofacy developers modified and redeployed incremented versions of the malware .		others others others others others others others others others others others threatActor_name others others others others others others others others others others others others others time time others threatActor_name others others others others others others others others others others
+The Zebrocy chain follows a pattern : spearphish attachment -> compiled Autoit script ( downloader ) -> Zebrocy payload .		others threatActor_name others others others others others others others others others others others others others others others others others threatActor_name others others
+In some deployments , we observed Sofacy actively developing and deploying a new package to a much smaller , specific subset of targets within the broader set .		others others others others others others threatActor_name others others others others others others others others others others others others others others others others others others others others others
+Targeting profiles , spearphish filenames , and lures carry thematic content related to visa applications and scanned images , border control administration , and various administrative notes .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Targeting appears to be widely spread across the Middle East , Europe , and Asia :  Business accounting practices and standards Science and engineering centers Industrial and hydrochemical engineering and standards/certification Ministry of foreign affairs Embassies and consulates National security and intelligence agencies Press services Translation services NGO – family and social service Ministry of energy and industry .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+We identified new MSIL components deployed by Zebrocy .		others others others others others others others threatActor_name others
+While recent Zebrocy versioning was 7.1 , some of the related Zebrocy modules that drop file-stealing MSIL modules we call Covfacy were v7.0 .		others others threatActor_name others others others others others others others others threatActor_name others others others others others others others others others others others others
+The components were an unexpected inclusion in this particular toolset .		others others others others others others others others others others others
+For example , one sent out to a handful of countries identifies network drives when they are added to target systems , and then RC4-like-encrypts and writes certain file metadata and contents to a local path for later exfiltration .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The stealer searches for files 60mb and less with these extensions :  .doc .docx .xls .xlsx .ppt .pptx .exe .zip .rar .		others others others others others others others others others others others others others others others others others others others others others others
+At execution , it installs an application-defined Windows hook .		others others others others others others others others others others
+The hook gets windows messages indicating when a network drive has been attached .		others others others others others others others others others others others others others others
+Upon adding a network drive , the hook calls its “ RecordToFile ” file stealer method .		others others others others others others others others others others others others others others others others others
+Zebrocy spearphishing targets : AF , AM , AU , AZ , BD , BE , CN , DE , ES , FI , GE , IL , IN , JO , KW , KG , KZ , LB , LT , MN , MY , NL , OM , PK , PO , SA , ZA , SK , SE , CH , TJ , TM , TR , UA , UAE , UK , US , UZ .		threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+SPLM / CHOPSTICK components deployed throughout 2017 were native 64-bit modular C++ Windows COM backdoors supporting http over fully encrypted TLSv1 and TLSv1.2 communications , mostly deployed in the second half of 2017 by Sofacy .		threatActor_name others threatActor_name others others others time others others others others others others others others others others others others others others others others others others others others others others others others others time others threatActor_name others
+Earlier SPLM activity deployed 32-bit modules over unencrypted http ( and sometimes smtp ) sessions .		others malware others others others others others others others others others others others others others others
+In 2016 we saw fully functional , very large SPLM/X-Agent modules supporting OS X .		others time others others others others others others others others others others others others others
+The executable module continues to be part of a framework supporting various internal and external components communicating over internal and external channels , maintaining slightly morphed encryption and functionality per deployment .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Sofacy selectively used SPLM/CHOPSTICK modules as second stage implants to high interest targets for years now .		threatActor_name others others others others others others others others others others others others others others others others
+In a change from previous compilations , the module was structured and used to inject remote shell , keylogger , and filesystem add-ons into processes running on victim systems and maintaining functionality that was originally present within the main module .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The newer SPLM modules are deployed mostly to Central Asian based targets that may have a tie to NATO in some form .		others others malware others others others others others others others others others others others others others others others others others others others others
+These targets include foreign affairs government organizations both localized and abroad , and defense organizations ’ presence localized , located in Europe and also located in Afghanistan .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+One outlier SPLM target profile within our visibility includes an audit and consulting firm in Bosnia and Herzegovina .		others others malware others others others others others others others others others others others others others others others others
+Minor changes and updates to the code were released with these deployments , including a new mutex format and the exclusive use of encrypted HTTP communications over TLS .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The compiled code itself already is altered per deployment in multiple subtle ways , in order to stymie identification and automated analysis and accommodate targeted environments .		others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Strings ( c2 domains and functionality , error messages , etc ) are custom encrypted per deployment .		others others others others others others others others others others others others others others others others others others
+This subset of SPLM / CHOPSTICK activity leads into several small surprises that take us into 2018 , to be discussed in further detail at SAS 2018 .		others others others malware others malware others others others others others others others others others others time others others others others others others others others others time others
+The group demonstrates malleability and innovation in maintaining and producing familiar SPLM functionality , but the pragmatic and systematic approach towards producing undetected or difficult-to-detect malware continues .		others others others others others others others others others others others malware others others others others others others others others others others others others others others others others
+Changes in the second stage SPLM backdoor are refined , making the code reliably modular .		others others others others others malware others others others others others others others others others others
+Sofacy set up and maintained multiple servers and c2 for varying durations , registering fairly recognizable domains with privacy services , registrars that accept bitcoin , fake phone numbers , phony individual names , and 1 to 1 email address to domain registration relationships .		threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Some of this activity and patterns were publicly disclosed , so we expect to see more change in their process in 2018 .		others others others others others others others others others others others others others others others others others others others others others time others
+Also , throughout the year and in previous years , researchers began to comment publicly on Sofacy ’s fairly consistent infrastructure setup .		others others others others others others others others others others others others others others others others threatActor_name others others others others others others others
+As always , attackers make mistakes and give away hints about what providers and registrars they prefer .		others others others others others others others others others others others others others others others others others others
+It ’s interesting to note that this version of SPLM implements communications that are fully encrypted over HTTPS .		others others others others others others others others others others malware others others others others others others others others others
+As an example , we might see extraneous data in their SSL/TLS certificates that give away information about their provider or resources .		others others others others others others others others others others others others others others others others others others others others others others others
+Leading up to summer 2017 , infrastructure mostly was created with PDR and Internet Domain Service BS Corp , and their resellers .		others others others others time others others others others others others others others others others others others others others others others others others
+Hosting mostly was provided at Fast Serv Inc and resellers , in all likelihood related to bitcoin payment processing .		others others others others others others others others others others others others others others others others others others others others
+Accordingly , the server side certificates appear to be generated locally on VPS hosts that exclusively are paid for at providers with bitcoin merchant processing .		others others others others others others others others others others others others others others others others others others others others others others others others others others
+One certificate was generated locally on what appeared to be a HP-UX box , and another was generated on “ 8569985.securefastserver.com ” with an email address “ root@8569985.securefastserver.com ” , as seen here for their nethostnet.com domain .		others others others others others others others others others others others others others others others others others others others others domain others others others others others others others others domain others others others others others others others domain domain others
+This certificate configuration is ignored by the malware .		others others others others others others others others others
+In addition to other ip data , this data point suggested that Qhoster at https://www.qhoster.com was a VPS hosting reseller of choice at the time .		others others others others others others others others others others others others others others url url url others others others others others others others others others others others
+It should be noted that the reseller accepted Alfa Click , PayPal , Payza , Neteller , Skrill , WebMoney , Perfect Money , Bitcoin , Litecoin , SolidTrust Pay , CashU , Ukash , OKPAY , EgoPay , paysafecard , Alipay , MG , Western Union , SOFORT Banking , QIWI , Bank transfer for payment .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+Sofacy , one of the most active APT we monitor , continues to spearphish their way into targets , reportedly widely phishes for credentials , and infrequently participates in server side activity ( including host compromise with BeEF deployment , for example ) .		threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+KSN visibility and detections suggests a shift from their early 2017 high volume NATO spearphish targeting towards the middle east and Central Asia , and finally moving their focus further east into late 2017 .		others others others others others others others others others others time others others others others others others others others others others others others others others others others others others others others others others time others
+Their operational security is good .		others others others others others others
+Their campaigns appear to have broken out into subsets of activity and malware involving GAMEFISH , Zebrocy , and SPLM , to name a few .		others others others others others others others others others others others others others others others others threatActor_name others others malware others others others others others others
+Their evolving and modified SPLM/CHOPSTICK/XAgent code is a long-standing part of Sofacy activity , however much of it is changing .		others others others others others others others others others others others threatActor_name others others others others others others others others others
+We ’ll cover more recent 2018 change in their targeting and the malware itself at SAS 2018 .		others others others others others others time others others others others others others others others others others time others
+With a group like Sofacy , once their attention is detected on a network , it is important to review logins and unusual administrator access on systems , thoroughly scan and sandbox incoming attachments , and maintain two factor authentication for services like email and vpn access .		others others others others threatActor_name others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+In order to identify their presence , not only can you gain valuable insight into their targeting from intelligence reports and gain powerful means of detections with hunting tools like YARA , but out-of-band processing with a solution like KATA is important .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+8f9f697aa6697acee70336f66f295837 .		sha2 others
+1a4b9a6b321da199aa6d10180e889313 .		sha2 others
+842454b48f5f800029946b1555fba7fc .		sha2 others
+d4a5d44184333442f5015699c2b8af28 .		sha2 others
+1421419d1be31f1f9ea60e8ed87277db .		sha2 others
+b1d1a2c64474d2f6e7a5db71ccbafa31 .		sha2 others
+953c7321c4959655fdd53302550ce02d .		sha2 others
+57601d717fcf358220340675f8d63c8a .		sha2 others
+02b79c468c38c4312429a499fa4f6c81 .		sha2 others
+85cd38f9e2c9397a18013a8921841a04 .		sha2 others
+f8e92d8b5488ea76c40601c8f1a08790 .		sha2 others
+66b4fb539806ce27be184b6735584339 .		sha2 others
+e8e1fcf757fe06be13bead43eaa1338c .		sha2 others
+953c7321c4959655fdd53302550ce02d .		sha2 others
+aa2aac4606405d61c7e53140d35d7671 .		sha2 others
+85cd38f9e2c9397a18013a8921841a04 .		sha2 others
+57601d717fcf358220340675f8d63c8a .		sha2 others
+16e1ca26bc66e30bfa52f8a08846613d .		sha2 others
+f8e92d8b5488ea76c40601c8f1a08790 .		sha2 others
+b137c809e3bf11f2f5d867a6f4215f95 .		sha2 others
+237e6dcbc6af50ef5f5211818522c463 .		sha2 others
+88009adca35560810ec220544e4fb6aa .		sha2 others
+2163a33330ae5786d3e984db09b2d9d2 .		sha2 others
+02b79c468c38c4312429a499fa4f6c81 .		sha2 others
+842454b48f5f800029946b1555fba7fc .		sha2 others
+d4a5d44184333442f5015699c2b8af28 .		sha2 others
+b88633376fbb144971dcb503f72fd192 .		sha2 others
+8f9f697aa6697acee70336f66f295837 .		sha2 others
+b6f77273cbde76896a36e32b0c0540e1 .		sha2 others
+1a4b9a6b321da199aa6d10180e889313 .		sha2 others
+1421419d1be31f1f9ea60e8ed87277db .		sha2 others
+1a4b9a6b321da199aa6d10180e889313 .		sha2 others
+9b10685b774a783eabfecdb6119a8aa3 .		sha2 others
+aa34fb2e5849bff4144a1c98a8158970 .		sha2 others
+aced5525ba0d4f44ffd01c4db2730a34 .		sha2 others
+b1d1a2c64474d2f6e7a5db71ccbafa31 .		sha2 others
+b924ff83d9120d934bb49a7a2e3c4292 .		sha2 others
+cdb58c2999eeda58a9d0c70f910d1195 .		sha2 others
+d4a5d44184333442f5015699c2b8af28 .		sha2 others
+d6f2bf2066e053e58fe8bcd39cb2e9ad .		sha2 others
+34dc9a69f33ba93e631cd5048d9f2624 .		sha2 others
+1c6f8eba504f2f429abf362626545c79 .		sha2 others
+139c9ac0776804714ebe8b8d35a04641 .		sha2 others
+e228cd74103dc069663bb87d4f22d7d5 .		sha2 others
+bed5bc0a8aae2662ea5d2484f80c1760 .		sha2 others
+8c3f5f1fff999bc783062dd50357be79 .		sha2 others
+5882a8dd4446abd137c05d2451b85fea .		sha2 others
+296c956fe429cedd1b64b78e66797122 .		sha2 others
+82f06d7157dd28a75f1fbb47728aea25 .		sha2 others
+9a975e0ddd32c0deef1318c485358b20 .		sha2 others
+529424eae07677834a770aaa431e6c54 .		sha2 others
+4cafde8fa7d9e67194d4edd4f2adb92b .		sha2 others
+f6b2ef4daf1b78802548d3e6d4de7ba7 .		sha2 others
+ede5d82bb6775a9b1659dccb699fadcb .		sha2 others
+116d2fc1665ce7524826a624be0ded1c .		sha2 others
+20ff290b8393f006eaf4358f09f13e99 .		sha2 others
+4b02dfdfd44df3c88b0ca8c2327843a4 .		sha2 others
+c789ec7537e300411d523aef74407a5e .		sha2 others
+0b32e65caf653d77cab2a866ee2d9dbc .		sha2 others
+27faa10d1bec1a25f66e88645c695016 .		sha2 others
+647edddf61954822ddb7ab3341f9a6c5 .		sha2 others
+2f04b8eb993ca4a3d98607824a10acfb .		sha2 others
+9fe3a0fb3304d749aeed2c3e2e5787eb .		sha2 others
+62deab0e5d61d6bf9e0ba83d9e1d7e2b .		sha2 others
+86b607fe63c76b3d808f84969cb1a781 .		sha2 others
+f62182cf0ab94b3c97b0261547dfc6cf .		sha2 others
+504182aaa5575bb38bf584839beb6d51 .		sha2 others
+d79a21970cad03e22440ea66bd85931f .		sha2 others
+nethostnet.com .		domain_evil others
+hostsvcnet.com .		domain_evil others
+etcrem.net .		domain_evil others
+movieultimate.com .		domain_evil others
+newfilmts.com .		domain_evil others
+fastdataexchange.org .		domain_evil others
+liveweatherview.com .		domain_evil others
+analyticsbar.org .		domain_evil others
+analyticstest.net .		domain_evil others
+lifeofmentalservice.com .		domain_evil others
+meteost.com .		domain_evil others
+righttopregnantpower.com .		domain_evil others
+kiteim.org .		domain_evil others
+adobe-flash-updates.org .		domain_evil others
+generalsecurityscan.com .		domain_evil others
+globalresearching.org .		domain_evil others
+lvueton.com .		domain_evil others
+audiwheel.com .		domain_evil others
+online-reggi.com .		domain_evil others
+fsportal.net .		domain_evil others
+netcorpscanprotect.com .		domain_evil others
+mvband.net .		domain_evil others
+mvtband.net .		domain_evil others
+viters.org .		domain_evil others
+treepastwillingmoment.com .		domain_evil others
+sendmevideo.org .		others others
+satellitedeluxpanorama.com .		domain_evil others
+ppcodecs.com .		domain_evil others
+encoder-info.tk .		domain_evil others
+wmdmediacodecs.com .		domain_evil others
+postlkwarn.com .		domain_evil others
+shcserv.com .		domain_evil others
+versiontask.com .		domain_evil others
+webcdelivery.com .		domain_evil others
+miropc.org .		domain_evil others
+securityprotectingcorp.com .		domain_evil others
+uniquecorpind.com .		domain_evil others
+appexsrv.net .		domain_evil others
+adobeupgradeflash.com .		domain_evil others

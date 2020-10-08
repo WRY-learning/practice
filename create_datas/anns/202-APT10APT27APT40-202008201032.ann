@@ -1,0 +1,287 @@
+T1	security_team 195 200	GReAT
+T2	time 673 680	Q1 2019
+T3	domain 828 854	intelreports@kaspersky.com
+T4	malware 943 952	ShadowPad
+T5	malware 955 963	CCleaner
+T6	malware 968 974	ExPetr
+T7	time 1162 1169	January
+T8	attack_activity 1236 1260	ASUS Live Update Utility
+R1	first_found_time Arg1:T8 Arg2:T7	
+T9	tool 1293 1297	BIOS
+T10	tool 1300 1304	UEFI
+T11	company 1329 1333	ASUS
+T12	attack_activity 1380 1402	Operation ShadowHammer
+T13	malware 1414 1422	backdoor
+T14	tool 1614 1627	MAC addresses
+T15	tool 1683 1696	MAC addresses
+T16	malware 1706 1716	Trojanized
+T17	tool 1825 1838	MAC addresses
+T18	tool 1967 1980	MAC addresses
+R2	use Arg1:T16 Arg2:T15	
+T19	location 2291 2298	Ukraine
+T20	location 2389 2395	German
+T21	threatActor_name 1983 2006	Russian-speaking groups
+R3	attack Arg1:T21 Arg2:T19	
+R4	attack Arg1:T21 Arg2:T20	
+T22	threatActor_name 2631 2637	Sofacy
+T23	threatActor_name 2641 2646	Hades
+T24	location 2809 2817	Virginia
+T25	industry 2914 2935	Washington think tank
+T26	company 2823 2832	Microsoft
+T27	company 3055 3064	Microsoft
+T28	time 3265 3276	mid-January
+T29	threatActor_name 3309 3314	Turla
+T30	government 3355 3367	Turkmenistan
+T31	government 3372 3382	Tajikistan
+R5	attack Arg1:T29 Arg2:T30	
+R6	attack Arg1:T29 Arg2:T31	
+T32	malware 3425 3445	KopiLuwak JavaScript
+T33	tool 3456 3460	.NET
+T34	malware 3480 3491	Topinambour
+T35	reference_word 3497 3509	aka Sunchoke
+R7	coreference Arg1:T35 Arg2:T34	
+T36	malware 3536 3547	Topinambour
+T37	tool 3623 3627	.NET
+T38	tool 3776 3786	JavaScript
+T39	tool 3789 3793	.NET
+T40	tool 3798 3808	PowerShell
+T41	malware 3885 3892	Zebrocy
+T42	malware 4069 4076	Zebrocy
+T43	location 4133 4145	Central Asia
+T44	location 4228 4243	the Middle East
+T45	time 4263 4276	February 2019
+T46	location 4317 4323	Crimea
+T47	tool 4420 4430	VPN-client
+T48	attack_activity 4661 4684	Chinese-speaking threat
+T49	time 4765 4769	2019
+R8	occur_time Arg1:T48 Arg2:T49	
+T50	time 4772 4799	In the early months of 2019
+T51	attack_activity 4802 4818	Chinese-speaking
+R9	occur_time Arg1:T51 Arg2:T50	
+T52	location 4913 4928	South East Asia
+R10	located Arg1:T51 Arg2:T52	
+T53	location 4983 4985	US
+T54	threatActor_name 5143 5148	APT10
+T55	location 4958 4965	Chinese
+T56	location 5204 5211	Chinese
+T57	threatActor_name 5253 5263	CactusPete
+T58	reference_word 5266 5280	aka LoneRanger
+T59	reference_word 5283 5294	Karma Panda
+T60	reference_word 5301 5311	Tonto Team
+R11	coreference Arg1:T58 Arg2:T57	
+R12	coreference Arg1:T59 Arg2:T57	
+R13	coreference Arg1:T60 Arg2:T57	
+T61	location 5345 5357	South Korean
+T62	location 5360 5368	Japanese
+T63	location 5371 5373	US
+T64	location 5380 5389	Taiwanese
+T65	time 5411 5432	2012 – 2014 timeframe
+R14	located Arg1:T57 Arg2:T61	
+R15	located Arg1:T57 Arg2:T62	
+R16	located Arg1:T57 Arg2:T63	
+R17	located Arg1:T57 Arg2:T64	
+R18	occur_time Arg1:T57 Arg2:T65	
+T66	time 5590 5594	2018
+T67	time 1025 1029	2019
+T68	time 3169 3173	2019
+T69	location 3174 3182	European
+T70	tool 5643 5647	Word
+T71	tool 5652 5667	Equation Editor
+T72	threatActor_name 5708 5717	DarkHotel
+T73	tool 5718 5726	VBScript
+T74	industry 5796 5800	GSEC
+T75	industry 5805 5808	WCE
+T76	malware 5776 5784	Mimikatz
+R19	use Arg1:T72 Arg2:T73	
+R20	use Arg1:T72 Arg2:T76	
+R21	attack Arg1:T72 Arg2:T74	
+R22	attack Arg1:T72 Arg2:T75	
+T77	malware 6006 6014	backdoor
+T78	malware 5934 5943	backdoors
+T79	time 6129 6148	at least April 2018
+T80	reference_word 6266 6271	APT27
+T81	reference_word 6244 6261	aka EmissaryPanda
+T82	attack_activity 6195 6208	SpoiledLegacy
+T83	threatActor_name 6221 6241	LuckyMouse APT group
+R23	coreference Arg1:T81 Arg2:T83	
+R24	coreference Arg1:T80 Arg2:T83	
+R25	launch Arg1:T83 Arg2:T82	
+T84	malware 6333 6346	Cobalt Strike
+T85	malware 6351 6361	Metasploit
+T86	malware 6491 6514	spear-phishing messages
+T87	malware 5607 5620	spear-phishes
+T88	malware 8372 8386	watering-holes
+T89	malware 8391 8405	spear-phishing
+T90	threatActor_name 6579 6589	LuckyMouse
+T91	malware 6728 6735	Trojans
+T92	threatActor_name 6927 6932	APT40
+T93	company 6911 6918	FireEye
+T94	location 6940 6947	Chinese
+T95	threatActor_name 7000 7014	TEMP.Periscope
+T96	threatActor_name 7017 7026	Leviathan
+T97	threatActor_name 7031 7042	TEMP.Jumper
+R26	located Arg1:T92 Arg2:T94	
+R27	located Arg1:T95 Arg2:T94	
+R28	located Arg1:T96 Arg2:T94	
+R29	located Arg1:T97 Arg2:T94	
+T98	company 7058 7065	FireEye
+T99	location 7117 7122	China
+T100	time 7161 7174	at least 2013
+R30	first_found_time Arg1:T92 Arg2:T100	
+T101	industry 7200 7211	engineering
+T102	industry 7214 7228	transportation
+T103	industry 7233 7240	defence
+T104	company 7333 7340	FireEye
+T105	location 7460 7468	Cambodia
+T106	location 7471 7478	Belgium
+T107	location 7481 7488	Germany
+T108	location 7491 7500	Hong Kong
+T109	location 7507 7518	Philippines
+T110	location 7521 7529	Malaysia
+T111	location 7532 7538	Norway
+T112	location 7541 7553	Saudi Arabia
+T113	location 7556 7567	Switzerland
+T114	location 7570 7587	the United States
+T115	location 7592 7610	the United Kingdom
+T116	threatActor_name 7663 7668	APT10
+T117	location 7681 7686	Japan
+T118	malware 7746 7752	Emdivi
+T119	threatActor_name 7782 7793	BlueTermite
+R31	use Arg1:T119 Arg2:T118	
+R32	attack Arg1:T116 Arg2:T117	
+T120	time 7951 7958	January
+T121	threatActor_name 7995 8012	Transparent Tribe
+T122	reference_word 8025 8037	aka PROJECTM
+T123	reference_word 8042 8056	MYTHIC LEOPARD
+R33	coreference Arg1:T122 Arg2:T121	
+R34	coreference Arg1:T123 Arg2:T121	
+T124	location 8104 8112	Pakistan
+T125	location 8150 8156	Indian
+T126	time 8179 8187	February
+T127	location 8263 8268	India
+T128	malware 8613 8624	Netwire RAT
+T129	threatActor_name 8763 8773	OceanLotus
+T130	malware 8850 8858	KerrDown
+T131	company 8876 8885	Palo Alto
+T132	company 9000 9004	ESET
+T133	OS_name 9076 9082	Mac OS
+T134	time 9088 9096	mid-2018
+T135	attack_activity 9115 9134	Operation AppleJeus
+T136	malware 9275 9285	backdoored
+T137	OS_name 9396 9402	Mac OS
+T138	time 9578 9600	at least November 2018
+T139	tool 9618 9628	PowerShell
+T140	OS_name 9640 9647	Windows
+T141	OS_name 9660 9666	Mac OS
+T142	threatActor_name 9167 9174	Lazarus
+R35	launch Arg1:T142 Arg2:T135	
+R36	occur_time Arg1:T135 Arg2:T134	
+R37	use Arg1:T142 Arg2:T136	
+R38	attack Arg1:T142 Arg2:T137	
+T143	threatActor_name 9418 9425	Lazarus
+R39	use Arg1:T143 Arg2:T139	
+R40	occur_time Arg1:T143 Arg2:T138	
+R41	attack Arg1:T143 Arg2:T140	
+R42	attack Arg1:T143 Arg2:T141	
+T144	threatActor_name 9703 9710	Lazarus
+T145	threatActor_name 9780 9787	Kimsuky
+T146	location 9891 9902	South Korea
+T147	location 9946 9957	South Asian
+T148	threatActor_name 9958 9964	Bitter
+T149	malware 10009 10024	ArtraDownloader
+T150	company 10028 10037	Palo Alto
+T151	malware 10058 10074	BitterRat Trojan
+T152	location 10102 10114	Saudi Arabia
+T153	location 10119 10127	Pakistan
+R43	located Arg1:T148 Arg2:T147	
+R44	use Arg1:T148 Arg2:T149	
+R45	find Arg1:T150 Arg2:T149	
+R46	find Arg1:T131 Arg2:T130	
+R47	use Arg1:T148 Arg2:T151	
+T154	location 10197 10208	Middle East
+T155	threatActor_name 10339 10345	Chafer
+T156	threatActor_name 10350 10356	Bitter
+T157	threatActor_name 10395 10399	Gaza
+T158	threatActor_name 10409 10419	MuddyWater
+T159	time 10583 10587	2018
+T160	malware 10621 10631	FinSpy iOS
+T161	malware 10670 10683	FinSpy Mobile
+T162	company 10747 10756	FinFisher
+T163	OS_name 10770 10773	iOS
+T164	malware 10759 10765	FinSpy
+T165	company 11031 11040	FinFisher
+T166	location 11236 11245	Indonesia
+T167	location 11250 11258	Mongolia
+T168	time 11344 11353	June 2018
+T169	OS_name 11319 11326	Android
+T170	vul_aliases 11518 11526	DirtyCow
+T171	vulnerability_cve 11537 11550	CVE-2016-5195
+R48	coreference Arg1:T170 Arg2:T171	
+T172	OS_name 11569 11572	iOS
+T173	malware 11662 11669	Threema
+T174	malware 11672 11678	Signal
+T175	malware 11681 11689	Whatsapp
+T176	malware 11694 11702	Telegram
+T177	time 11806 11814	February
+T178	reference_word 11821 11824	AEP
+T179	tool 11827 11855	Automatic Exploit Prevention
+R49	coreference Arg1:T178 Arg2:T179	
+T180	OS_name 11916 11923	Windows
+T181	sample_name 12134 12144	win32k.sys
+T182	company 12170 12179	Microsoft
+T183	time 12183 12194	22 February
+T184	vulnerability_cve 12253 12266	CVE-2019-0797
+T185	company 12269 12278	Microsoft
+T186	time 12299 12312	12 March 2019
+T188	location 12325 12338	Kaspersky Lab
+T189	person 12351 12368	Vasiliy Berdnikov
+T190	person 12373 12384	Boris Larin
+R50	located Arg1:T189 Arg2:T188	
+R51	located Arg1:T190 Arg2:T188	
+T187	threatActor_name 12518 12529	FruityArmor
+T191	threatActor_name 12534 12541	SandCat
+T192	threatActor_name 12544 12555	FruityArmor
+T193	threatActor_name 12603 12610	SandCat
+T194	OS_name 12741 12750	Windows 8
+T195	OS_name 12754 12764	Windows 10
+T196	threatActor_name 12785 12796	FrutiyArmor
+T197	threatActor_name 12801 12808	SandCat
+T198	malware 13279 13289	LockerGoga
+T199	company 13326 13332	Altran
+T200	company 13335 13346	Norsk Hydro
+T201	malware 13509 13519	LockerGoga
+T202	location 14336 14351	South East Asia
+T203	threatActor_name 14524 14540	Russian-speaking
+T204	threatActor_name 14681 14697	Chinese-speaking
+T205	attack_activity 15017 15029	ShadowHammer
+T206	tool 15304 15317	MAC addresses
+R52	use Arg1:T205 Arg2:T206	
+R53	located Arg1:T145 Arg2:T146	
+R54	use Arg1:T12 Arg2:T13	
+R55	use Arg1:T8 Arg2:T9	
+R56	use Arg1:T8 Arg2:T10	
+R57	use Arg1:T57 Arg2:T87	
+R58	use Arg1:T57 Arg2:T70	
+R59	use Arg1:T57 Arg2:T71	
+R60	first_found_time Arg1:T82 Arg2:T79	
+R61	use Arg1:T83 Arg2:T84	
+R62	use Arg1:T83 Arg2:T85	
+R63	use Arg1:T83 Arg2:T86	
+R64	located Arg1:T92 Arg2:T99	
+R65	attack Arg1:T92 Arg2:T101	
+R66	attack Arg1:T92 Arg2:T102	
+R67	attack Arg1:T92 Arg2:T103	
+R68	use Arg1:T129 Arg2:T130	
+R69	first_found_time Arg1:T160 Arg2:T159	
+R70	part_of Arg1:T160 Arg2:T161	
+R71	located Arg1:T161 Arg2:T162	
+R72	located Arg1:T165 Arg2:T166	
+R73	located Arg1:T165 Arg2:T167	
+T207	tool 11633 11651	Instant Messengers
+R74	use Arg1:T173 Arg2:T207	
+R75	use Arg1:T174 Arg2:T207	
+R76	use Arg1:T175 Arg2:T207	
+R77	use Arg1:T176 Arg2:T207	
+T208	OS_name 12003 12010	Windows
+R78	attack Arg1:T198 Arg2:T199	
+R79	attack Arg1:T198 Arg2:T200	

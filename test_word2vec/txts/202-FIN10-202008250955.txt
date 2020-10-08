@@ -1,0 +1,26 @@
+FIN10:Anatomy of a Cyber Extortion Operation .
+FireEye has identified a set of financially motivated intrusion operations being carried out by an actor we have dubbed FIN10 .
+Within these clusters of activity , the attacker ( s ) have compromised organizations ’  networks and sought to monetize this illicit access by exfiltrating sensitive data and extorting victim organizations .
+We have observed FIN10 targeting organizations in North America , predominately in Canada .
+FIN10 primarily relies on publicly-available software , scripts and techniques to gain a foothold into victims ’  networks .
+The threat group then posts proof of the stolen data on publicly accessible websites .
+Failure to pay the threat group could result in the public release of stolen data and potential disruption or destruction of the victim ’  s information assets and systems .
+In this report , we describe FIN10 ’  s activities and tactics , techniques and procedures ( TTPs ) , and provide a glimpse into how they execute their operations .
+occurring in North America — predominately in Canada — dating back to at least 2013 and continuing through at least 2016 , in which the attacker ( s ) have compromised organizations ’  networks and sought to monetize this illicit access by exfiltrating sensitive data and extorting victim organizations .
+In some cases , when the extortion demand was not met , the attacker ( s ) destroyed production Windows systems by deleting critical operating system files and then shutting down the impacted systems .
+Based on near parallel TTPs used by the attacker ( s ) across these targeted intrusions , we believe these clusters of activity are linked to a single , previously unobserved actor or group that we have dubbed FIN10 .
+Beginning as early as 2013 and continuing through at least 2016 , we have observed FIN10 target organizations based in North America – predominately in Canada .
+Targeted organizations have primarily been casinos and mining organizations .
+In the majority of intrusions attributed to FIN10 , there was insufficient evidence to determine the initial infection vector .
+However , in at least two intrusions , FIN10 leveraged spear phishing emails with malicious attachments , making it plausible that this methodology was used across all breaches .
+In both instances where the initial compromise was identified , the attacker ( s ) used social engineering and specifically crafted lures to entice victims to click on a link that directed them to a FIN10-controlled server .
+The server hosted malicious artifacts that ultimately executed code on one or more systems .
+In these instances , the malicious code were downloaders that beaconed out to attacker-controlled infrastructure .
+In one intrusion , the phishing email referenced an updated holiday schedule for organizational staff .
+The embedded URL pointed to a malicious HTML Application ( HTA ) file .
+In another intrusion , a phishing email referenced an employee questionnaire .
+The embedded URL pointed to a Word Open XML Macro-Enabled Document file ( DOCM ) file .
+Of note , FIN10 likely uses LinkedIn — among other social media and public data sources — to support the crafting of phishing emails that appear legitimate .
+The attacker ( s ) primarily relied on publicly-available software , scripts and techniques to gain a foothold into victims ’  networks .
+FIN10 used Meterpreter as the primary method of establishing an initial foothold within victim environments .
+However , in one case , we also observed the group use Splinter Remote Access Trojan ( SplinterRAT ) .

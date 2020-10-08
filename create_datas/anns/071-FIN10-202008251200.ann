@@ -1,0 +1,98 @@
+T1	threatActor_name 0 5	FIN10
+T2	attack_activity 19 44	Cyber Extortion Operation
+R1	launch Arg1:T1 Arg2:T2	
+T3	company 69 77	Mandiant
+T4	threatActor_name 114 119	FIN10
+T5	threatActor_name 5289 5294	FIN10
+T6	threatActor_name 4709 4714	FIN10
+T7	threatActor_name 4267 4272	FIN10
+T8	threatActor_name 2992 2997	FIN10
+T9	threatActor_name 3216 3221	FIN10
+T10	threatActor_name 3395 3400	FIN10
+T11	threatActor_name 3490 3495	FIN10
+T12	reference_word 122 134	the attacker
+R2	coreference Arg1:T12 Arg2:T4	
+T13	reference_word 215 224	the group
+R3	coreference Arg1:T13 Arg2:T4	
+T15	threatActor_name 271 276	FIN10
+T16	tool 306 316	copy tools
+T17	tool 321 344	file transfer utilities
+R5	use Arg1:T15 Arg2:T16	
+R6	use Arg1:T15 Arg2:T17	
+T18	sample_function 353 385	harvest and stage sensitive data
+R7	goal Arg1:T17 Arg2:T18	
+R8	goal Arg1:T16 Arg2:T18	
+T19	domain 471 483	pastebin.com
+T20	domain 491 503	justpaste.it
+T21	domain 515 530	thepiratebay.se
+T22	reference_word 558 567	the group
+T23	tool 582 619	cloud file sharing/ storage solutions
+R9	use Arg1:T22 Arg2:T23	
+T25	sample_function 643 661	receivestolen data
+R10	goal Arg1:T23 Arg2:T25	
+T24	tool 630 637	Dropbox
+R11	part_of Arg1:T24 Arg2:T23	
+T26	threatActor_name 847 852	FIN10
+T27	domain 876 888	justpaste.it
+T28	person 921 929	Attacker
+T29	tool 964 974	false flag
+R12	use Arg1:T28 Arg2:T29	
+T30	person 1245 1257	the attacker
+T31	reference_word 1315 1330	Angels_Of_Truth
+R13	coreference Arg1:T31 Arg2:T30	
+T32	location 1435 1441	Russia
+T33	location 1398 1404	Canada
+T34	person 1724 1736	The attacker
+T35	reference_word 1824 1834	Tesla Team
+T36	threatActor_name 1790 1814	Serbian hacktivist group
+T37	threatActor_name 1929 1934	FIN10
+T38	time 2186 2190	2013
+T39	threatActor_name 2212 2217	FIN10
+T40	government 1950 1973	political organizations
+T41	target_crowd 1976 2007	non- governmental organizations
+R15	attack Arg1:T37 Arg2:T40	
+R16	attack Arg1:T37 Arg2:T41	
+T42	threatActor_name 2060 2070	Tesla Team
+R14	coreference Arg1:T35 Arg2:T36	
+T43	target_crowd 2012 2047	websites of anti-Serb organizations
+R17	attack Arg1:T42 Arg2:T43	
+T44	threatActor_name 2127 2151	Serbian hacktivist group
+T45	reference_word 2152 2162	Tesla Team
+R18	coreference Arg1:T45 Arg2:T44	
+T46	reference_word 2260 2269	the group
+R19	coreference Arg1:T46 Arg2:T39	
+T47	reference_word 2386 2408	Anonymous Threat Agent
+R20	coreference Arg1:T47 Arg2:T39	
+T48	location 2449 2463	North American
+T49	threatActor_name 2556 2561	FIN10
+T50	threatActor_name 2755 2760	FIN10
+T51	tool 2601 2624	sending multiple emails
+T52	sample_function 2576 2597	increase its leverage
+R21	use Arg1:T49 Arg2:T51	
+R22	goal Arg1:T51 Arg2:T52	
+T55	attack_goal 2932 2949	extortion demands
+R23	goal Arg1:T50 Arg2:T55	
+T53	attack_goal 3011 3035	simply maximize exposure
+R24	goal Arg1:T8 Arg2:T53	
+T54	reference_word 3247 3256	the group
+R25	coreference Arg1:T54 Arg2:T9	
+T56	reference_word 3097 3106	the group
+R26	coreference Arg1:T56 Arg2:T8	
+T57	attack_goal 3513 3534	financially motivated
+R27	goal Arg1:T11 Arg2:T57	
+T58	reference_word 3702 3711	the group
+R28	coreference Arg1:T58 Arg2:T11	
+T59	attack_goal 3823 3867	To further the groups operational objectives
+R29	goal Arg1:T58 Arg2:T59	
+T60	attack_goal 3974 4026	To gain some degree of notoriety and public exposure
+R30	goal Arg1:T58 Arg2:T60	
+T61	target_crowd 4301 4344	organizations within two industry verticals
+R31	attack Arg1:T7 Arg2:T61	
+T62	attack_activity 4524 4537	cyber attacks
+T63	attack_goal 4612 4627	extortion plots
+R32	goal Arg1:T62 Arg2:T63	
+T64	attack_goal 4630 4664	affect multiple targeted verticals
+R33	goal Arg1:T62 Arg2:T64	
+T65	threatActor_name 2290 2300	Tesla Team
+T66	location 1643 1650	Russian
+T14	protocol 264 268	TTPs

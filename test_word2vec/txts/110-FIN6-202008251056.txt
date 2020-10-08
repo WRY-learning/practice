@@ -1,0 +1,22 @@
+Follow the Money: Dissecting the Operations of the Cyber Crime Group FIN6 .
+Underground communities dealing in stolen card data exist across the world and are a major facilitator of money laundering operations .
+A large number of these communities take the form of illicit e-commerce sites called “ card shops ” or “ dump shops ” ( criminals refer to stolen card-present transaction data as “ dumps ” ) .
+These shops allow their clientele to use a web-based platform to sort through data on thousands or millions of payment cards and purchase exactly the types they want based on their money launderingcapabilities .
+These data are then added to the client ’s cart for checkout , similar to a legitimate website .
+Subsequently , customers use the card information they have purchased for many different money laundering schemes , such as buying and reselling gift cards or electronics .
+Our analysis of the data sold through this underground vendor indicates that FIN6 ’s compromises are highly profitable to the actors involved , potentially resulting in extensive fraud losses .
+For instance , in one FIN6-linked breach the vendor was advertising nearly than 20 million cards .
+These cards were predominantly from the United States and selling for an average of $21 .
+So the total return for the shop — if all the data was sold at full price — could have been about $400 million .
+In reality , the shop would typically only make a fraction of this figure since not all the data would be sold ( laundering stolen cards is typically much harder than stealing them ) , buyers want the newest data they can get ( data that has been on the shop for a while loses its value ) and the shop offers discounts based on various criteria .
+Still , a fraction of $400 million is a significant sum .
+In turn , cyber criminals purchasing the data would expect to make more than they paid for the cards by conducting fraudulent transactions using those cards .
+Not all of the data sold on this particular card shop has been tied to an identified compromise or specific cyber criminal group .
+Additionally , as is often the case with prominent cyber criminal vendors , it is not yet clear how the operators of the underground site are linked to the actors who steal the data the shop sells .
+The vendor has sold large amounts of card data with varied characteristics , so it is possible the shop operators maintain relationships with more than one data provider .
+FIN6 members could include some of the operators behind this shop ; alternately , FIN6 could be selling stolen data to the operators of this site .
+Good threat intelligence comes from a combination of factors .
+It requires visibility into the threat landscape , including both a broad view ( the ability to identify activity across a range of countries , industries and organizations ) and a deep view ( the ability to gather detailed information about how threat actors operate ) .
+It also requires skilled analysts who are able to review , fuse and understand the available data .
+In this case , the combined intelligence from FireEye , Mandiant and iSIGHT intelligence teams was able to not only identify malicious activity aimed at stealing payment card data , but also provide a detailed window into that activity from compromise through monetization of the stolen data .
+The story of FIN6 shows how real-world threat actors operate , providing a glimpse not only into the technical details of the compromise , but also into the human factor as well ; namely , the interactions between different criminals or criminal groups , and how it is not just data being bartered or sold in the underground , but also tools , credentials and access .

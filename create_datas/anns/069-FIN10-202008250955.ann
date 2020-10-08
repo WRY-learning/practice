@@ -1,0 +1,126 @@
+T1	threatActor_name 0 5	FIN10
+T2	attack_activity 19 44	Cyber Extortion Operation
+R1	launch Arg1:T1 Arg2:T2	
+T3	malware 47 58	Meterpreter
+T4	malware 75 91	Meta-Interpreter
+R2	coreference Arg1:T4 Arg2:T3	
+T5	tool 309 312	DLL
+R3	use Arg1:T3 Arg2:T5	
+T6	malware 373 384	Meterpreter
+T7	security_team 526 553	FireEye iSIGHT Intelligence
+T8	malware 600 611	Meterpreter
+T9	person 567 595	multiple threat actor groups
+R4	find Arg1:T7 Arg2:T9	
+R5	use Arg1:T9 Arg2:T8	
+T10	person 660 673	Threat actors
+T11	tool 684 694	PowerShell
+R6	use Arg1:T10 Arg2:T11	
+T12	tool 997 1007	PowerShell
+T13	sample_function 1051 1150	create scripts that exceed the capabilities of a standard Windows shell , batch files and VBS files
+R7	part_of Arg1:T13 Arg2:T12	
+T14	threatActor_name 1192 1197	FIN10
+T15	tool 1209 1226	PowerShell Empire
+R8	use Arg1:T14 Arg2:T15	
+T16	tool 1322 1361	the Registry and Scheduled Task options
+R9	use Arg1:T14 Arg2:T16	
+T17	threatActor_name 1415 1420	FIN10
+T18	tool 1425 1428	S4U
+R10	use Arg1:T17 Arg2:T18	
+T19	tool 1576 1593	PowerShell Empire
+R11	use Arg1:T17 Arg2:T19	
+T20	sample_function 1606 1638	install a randomly named service
+R12	goal Arg1:T19 Arg2:T20	
+T21	threatActor_name 1945 1950	FIN10
+T22	tool 1957 1967	PowerShell
+R13	use Arg1:T21 Arg2:T22	
+T23	sample_function 1971 2018	load Metasploit Meterpreter stagers into memory
+R14	goal Arg1:T22 Arg2:T23	
+T24	threatActor_name 2021 2026	FIN10
+T25	tool 2047 2078	Windows Remote Desktop Protocol
+R15	use Arg1:T24 Arg2:T25	
+T26	sample_function 2090 2127	access systems within the environment
+R16	goal Arg1:T25 Arg2:T26	
+T27	tool 2081 2084	RDP
+R17	coreference Arg1:T27 Arg2:T25	
+T28	person 2150 2158	attacker
+T29	tool 2175 2178	RDP
+T30	sample_function 2182 2214	authenticate to internal systems
+R18	use Arg1:T28 Arg2:T29	
+R19	goal Arg1:T29 Arg2:T30	
+T31	threatActor_name 2365 2370	FIN10
+T32	tool 2405 2432	single-factor protected VPN
+T33	sample_function 2436 2471	connect remotely to victim networks
+R20	goal Arg1:T32 Arg2:T33	
+R21	use Arg1:T31 Arg2:T32	
+T34	threatActor_name 2522 2527	FIN10
+T35	tool 2568 2585	PowerShell script
+T36	tool 2586 2606	Meterpreter backdoor
+R22	part_of Arg1:T36 Arg2:T35	
+R23	use Arg1:T34 Arg2:T35	
+T37	sample_function 2610 2687	perform internal reconnaissance and move laterally throughout the environment
+R24	goal Arg1:T35 Arg2:T37	
+T38	person 2717 2725	attacker
+T39	malware 2737 2748	Meterpreter
+R25	use Arg1:T38 Arg2:T39	
+T40	sample_function 2766 2847	enumerate users on remote systems and execute additional PowerShell functionality
+R26	goal Arg1:T39 Arg2:T40	
+T41	person 2887 2895	attacker
+T42	tool 2924 2955	the Local Administrator account
+T43	sub_activity 2960 3045	deployed Metasploit Meterpreter stagers and SplinterRAT instances on targeted systems
+R27	launch Arg1:T41 Arg2:T43	
+R28	use Arg1:T41 Arg2:T42	
+T44	tool 3048 3059	SplinterRAT
+T45	program_language 3121 3125	Java
+R29	part_of Arg1:T45 Arg2:T44	
+T46	tool 3242 3253	SplinterRAT
+T47	sample_function 3284 3304	file system browsing
+T48	sample_function 3307 3331	file upload and download
+T49	sample_function 3334 3361	execution of shell commands
+T50	sample_function 3366 3424	beaconing in case of communication issues with a C2 server
+T51	tool 3415 3417	C2
+R30	part_of Arg1:T47 Arg2:T46	
+R31	part_of Arg1:T48 Arg2:T46	
+R32	part_of Arg1:T49 Arg2:T46	
+R33	part_of Arg1:T50 Arg2:T46	
+T52	tool 3436 3464	Metasploit related backdoors
+T53	tool 3469 3480	SplinterRAT
+T54	sample_function 3510 3551	connect to attacker-controlled C2 servers
+R34	goal Arg1:T52 Arg2:T54	
+R35	goal Arg1:T53 Arg2:T54	
+T55	tool 3541 3543	C2
+T56	threatActor_name 3581 3586	FIN10
+T57	threatActor_name 3688 3693	FIN10
+T58	string 3726 3759	C:\Windows\System32\Tasks\Updater
+T59	tool 3703 3717	scheduled task
+T60	sample_function 3771 3831	executed a PowerShell script encoded in the Windows registry
+R36	part_of Arg1:T60 Arg2:T59	
+R37	use Arg1:T57 Arg2:T59	
+T61	reference_word 3834 3844	The script
+T62	tool 3900 3902	C2
+R38	coreference Arg1:T61 Arg2:T59	
+T63	threatActor_name 3920 3925	FIN10
+T64	sub_activity 3936 3969	deploys destructive batch scripts
+T65	attack_goal 3982 4039	delete critical system files and shutdown network systems
+R39	goal Arg1:T64 Arg2:T65	
+R40	launch Arg1:T63 Arg2:T64	
+T66	threatActor_name 4324 4329	FIN10
+T67	tool 4340 4354	scheduled task
+T68	sample_function 4398 4460	delete the Windows directory using the Microsoft robocopy tool
+R41	use Arg1:T66 Arg2:T67	
+R42	goal Arg1:T67 Arg2:T68	
+T69	tool 4437 4460	Microsoft robocopy tool
+T70	protocol 4517 4520	TTP
+T71	threatActor_name 4566 4571	FIN10
+T72	sample_function 4575 4603	obfuscate malicious activity
+R43	goal Arg1:T70 Arg2:T72	
+R44	use Arg1:T71 Arg2:T70	
+T73	reference_word 4797 4814	this threat group
+T74	attack_goal 4821 4902	steal corporate business data , files , records , correspondence and customer PII
+R45	goal Arg1:T73 Arg2:T74	
+T75	reference_word 4982 4998	The threat group
+R46	coreference Arg1:T73 Arg2:T71	
+R47	coreference Arg1:T75 Arg2:T71	
+T76	threatActor_name 5292 5297	FIN10
+T77	reference_word 5300 5312	the attacker
+R48	coreference Arg1:T77 Arg2:T76	
+T79	time 5576 5590	mid-April 2017

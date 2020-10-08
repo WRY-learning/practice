@@ -1,0 +1,568 @@
+T2	malware 25 33	SunOrcal
+T1	security_team 177 184	Unit 42
+T3	malware 234 240	Reaver
+T4	malware 273 281	SunOrcal
+R1	find Arg1:T1 Arg2:T3	
+T5	person 255 264	attackers
+R2	use Arg1:T5 Arg2:T4	
+T6	time 342 346	2013
+T7	malware 292 300	SunOrcal
+T8	malware 9293 9301	SunOrcal
+T9	malware 9416 9424	SunOrcal
+T10	malware 9633 9641	SunOrcal
+T11	malware 9747 9755	SunOrcal
+T12	malware 9855 9863	SunOrcal
+T13	malware 9946 9954	SunOrcal
+T14	malware 11517 11525	SunOrcal
+T15	malware 11596 11604	SunOrcal
+T16	malware 11675 11683	SunOrcal
+T17	malware 11754 11762	SunOrcal
+T18	malware 11833 11841	SunOrcal
+T19	malware 11912 11920	SunOrcal
+T20	malware 11944 11952	SunOrcal
+T21	malware 11976 11984	SunOrcal
+T22	malware 12008 12016	SunOrcal
+T23	malware 12039 12047	SunOrcal
+T24	malware 12068 12076	SunOrcal
+T25	malware 599 605	Reaver
+T26	malware 1672 1678	Reaver
+T27	sample_name 1720 1729	Reaver.v1
+T28	sample_name 1732 1741	Reaver.v2
+T29	sample_name 1748 1757	Reaver.v3
+T30	sample_name 1760 1769	Reaver.v1
+T31	malware 1968 1974	Reaver
+T32	sample_name 2958 2967	Reaver.v2
+T33	malware 3128 3134	Reaver
+T34	sample_name 3415 3424	Reaver.v1
+T35	sample_name 3536 3545	Reaver.v2
+T36	sample_name 3880 3889	Reaver.v2
+T37	sample_name 4774 4783	Reaver.v2
+T38	sample_name 4899 4908	Reaver.v2
+T39	sample_name 4911 4920	Reaver.v3
+T40	sample_name 5263 5272	Reaver.v3
+T41	malware 5606 5612	Reaver
+T42	sample_name 5615 5624	Reaver.v3
+T43	malware 6205 6211	Reaver
+T44	malware 6324 6330	Reaver
+T45	malware 7034 7040	Reaver
+T46	malware 7391 7397	Reaver
+T47	malware 8071 8077	Reaver
+T48	malware 8253 8259	Reaver
+T49	malware 8475 8481	Reaver
+T50	malware 8766 8772	Reaver
+T51	malware 9338 9344	Reaver
+T52	malware 9259 9265	Reaver
+T53	malware 9523 9529	Reaver
+T54	malware 10122 10128	Reaver
+T55	sample_name 10637 10646	Reaver.v1
+T56	sample_name 10717 10726	Reaver.v2
+T57	sample_name 10797 10806	Reaver.v2
+T58	sample_name 10877 10886	Reaver.v3
+T59	sample_name 10957 10966	Reaver.v3
+T60	sample_name 11037 11046	Reaver.v3
+T61	sample_name 11117 11126	Reaver.v3
+T62	sample_name 11197 11206	Reaver.v3
+T63	sample_name 11277 11286	Reaver.v3
+T64	sample_name 11357 11366	Reaver.v3
+T65	sample_name 11437 11446	Reaver.v3
+T66	tool 395 398	C2s
+T67	tool 1439 1441	C2
+T68	tool 6611 6613	C2
+T69	tool 9425 9427	C2
+T70	tool 9569 9571	C2
+T71	tool 9622 9624	C2
+T72	tool 9815 9817	C2
+T73	tool 9840 9842	C2
+T74	tool 10541 10543	C2
+T75	time 434 438	2010
+T76	time 500 504	2016
+T77	tool 709 712	CPL
+T78	sub_activity 362 370	metadata
+R3	located Arg1:T78 Arg2:T66	
+R4	goal Arg1:T7 Arg2:T78	
+R5	first_found_time Arg1:T7 Arg2:T75	
+T79	reference_word 441 455	The new family
+R6	coreference Arg1:T79 Arg2:T3	
+R7	first_found_time Arg1:T79 Arg2:T76	
+T80	tool 685 698	Control panel
+T81	tool 651 664	final payload
+R8	use Arg1:T25 Arg2:T81	
+R9	part_of Arg1:T81 Arg2:T80	
+R10	part_of Arg1:T81 Arg2:T77	
+T82	reference_word 792 806	this technique
+T83	company 765 783	Palo Alto Networks
+R11	coreference Arg1:T82 Arg2:T81	
+T84	sub_activity 1005 1017	Five Poisons
+T85	reference_word 1087 1091	They
+R12	coreference Arg1:T85 Arg2:T84	
+T86	government 1043 1061	Chinese government
+T87	person 1099 1106	Uyghurs
+R13	attack Arg1:T84 Arg2:T86	
+T88	location 1139 1153	East Turkestan
+T89	person 1169 1177	Tibetans
+T90	location 1213 1220	Tibetan
+T91	person 1236 1260	Falun Gong practitioners
+T92	person 1299 1330	Supporters of Chinese democracy
+T93	location 1277 1283	Taiwan
+T94	person 1263 1296	Supporters of Taiwan independence
+R14	part_of Arg1:T87 Arg2:T85	
+R15	part_of Arg1:T89 Arg2:T85	
+R16	part_of Arg1:T91 Arg2:T85	
+R17	part_of Arg1:T94 Arg2:T85	
+R18	part_of Arg1:T92 Arg2:T85	
+T95	person 1337 1346	attackers
+T96	time 1407 1420	November 2017
+T97	security_team 1564 1571	Unit 42
+T98	company 1545 1563	Palo Alto Networks
+R19	part_of Arg1:T97 Arg2:T98	
+T99	sub_activity 1587 1604	10 unique samples
+T100	sub_activity 1609 1632	three distinct variants
+R20	find Arg1:T97 Arg2:T99	
+R21	find Arg1:T97 Arg2:T100	
+R22	part_of Arg1:T100 Arg2:T26	
+R23	part_of Arg1:T27 Arg2:T100	
+R24	part_of Arg1:T28 Arg2:T100	
+R25	part_of Arg1:T29 Arg2:T100	
+R26	occur_time Arg1:T95 Arg2:T96	
+T101	sub_activity 1439 1456	C2 infrastructure
+R27	use Arg1:T95 Arg2:T101	
+T102	protocol 1819 1823	HTTP
+T103	tool 1801 1808	payload
+T104	tool 1881 1888	payload
+R28	use Arg1:T103 Arg2:T102	
+T105	sub_activity 1828 1849	network communication
+R29	goal Arg1:T102 Arg2:T105	
+R30	part_of Arg1:T103 Arg2:T30	
+T106	protocol 1903 1906	TCP
+T107	sub_activity 1923 1941	this communication
+R31	use Arg1:T104 Arg2:T106	
+R32	goal Arg1:T106 Arg2:T107	
+T108	tool 2010 2026	SeDebugPrivilege
+T109	sub_activity 2045 2060	running process
+T110	sub_activity 1999 2036	enable the SeDebugPrivilege privilege
+R33	launch Arg1:T31 Arg2:T110	
+R34	goal Arg1:T110 Arg2:T109	
+T112	sha2 10730 10794	98eb5465c6330b9b49df2e7c9ad0b1164aa5b35423d9e80495a178eb510cdc1c
+T113	sha2 10890 10954	18ac3b14300ecfeed4b64a844c16dccb06b0e3513d0954d6c6182f2ea14e4c92
+T114	sha2 10810 10874	05ddbd0506ec95fb460b3994e5b21cdb0418ba4aa406374ca1b91249349b7640
+T115	domain_evil 11924 11941	www.tashdqdxp.com
+T111	domain_evil 11956 11973	www.weryhstui.com
+T116	reference_word 2095 2106	the malware
+R35	coreference Arg1:T116 Arg2:T30	
+T117	domain_evil 11988 12005	www.fyoutside.com
+T118	sha2 11845 11909	cb7c0cf1750baaa11783e93369230ee666b9f3da7298e4d1bb9a07af6a439f2f
+T119	sha2 11766 11830	38ea33dab0ba2edd16ecd98cba161c550d1036b253c8666c4110d198948329fb
+T120	sha2 11687 11751	58312fb742ce881e040e1b5b8555f00a402b8dd4fc886acaae2f862040b3bfc5
+T121	sha2 10650 10714	d560f44188fb56d3abb11d9508e1167329470de19b811163eb1167534722e666
+T122	sha2 10970 11034	c0f8bb77284b96e07cab1c3fab8800b1bbd030720c74628c4ee5666694ef903d
+T123	sha2 11050 11114	9213f70bce491991c4cbbbd7dc3e67d3a3d535b965d7064973b35c50f265e59b
+T124	sha2 11130 11194	26c234c73e2c3448589c7d4a0cf17f615ad3666541a4e611e2d8b77637205bcf
+T125	domain_evil 12020 12036	www.olinaodi.com
+T126	IP_evil 12051 12065	104.148.70.217
+T127	IP_evil 12080 12094	98.126.156.210
+T128	sha2 11210 11274	ae9f158e4886cfdbfb4f1b3b25707d05f6fd873d0be9d8e7334a2c28741228ee
+T129	sha2 11290 11354	1fcda755e8fa23d27329e4bc0443a82e1c1e9a6c1691639db256a187365e4db1
+T130	sha2 11370 11434	c906250e0a4c457663e37119ebe1efa1e4b97eef1d975f383ac3243f9f09908c
+T131	sha2 11450 11514	1813f10bcf74beb582c824c64fff63cb150d178bef93af81d875ca84214307a1
+T132	sha2 11529 11593	799139b5278dc2ac24279cc6c3db44f4ef0ea78ee7b721b0ace38fd8018c51ac
+T133	sha2 11608 11672	81d887fefdbb0219647991c2b7bddf45c2fede4dc6fc18408f1706e0279615b2
+T134	tool 6589 6608	Command and Control
+R36	coreference Arg1:T68 Arg2:T134	
+T135	sub_activity 749 756	malware
+R37	find Arg1:T83 Arg2:T135	
+R38	use Arg1:T135 Arg2:T82	
+T136	sample_function 2138 2161	store any dropped files
+R39	goal Arg1:T116 Arg2:T136	
+T137	reference_word 2234 2236	it
+R40	coreference Arg1:T137 Arg2:T116	
+T138	sub_activity 2249 2299	load and decrypt and embedded bitmap resource file
+R41	launch Arg1:T137 Arg2:T138	
+T139	sample_name 2442 2452	Applet.cpl
+T140	sample_name 2390 2402	WUpdate.~tmp
+R42	located Arg1:T140 Arg2:T139	
+T141	person 2605 2609	user
+T142	tool 2647 2663	SeDebugPrivilege
+T143	reference_word 2513 2524	The malware
+T144	sub_activity 2537 2559	identify the file path
+R43	launch Arg1:T143 Arg2:T144	
+T145	reference_word 2702 2716	this privilege
+R44	coreference Arg1:T145 Arg2:T142	
+T146	sub_activity 2772 2806	reading the following registry key
+T147	sample_function 2736 2768	common startup folder is queried
+R45	launch Arg1:T143 Arg2:T146	
+R46	goal Arg1:T146 Arg2:T147	
+R47	coreference Arg1:T143 Arg2:T137	
+T148	person 2984 2988	user
+T149	sub_activity 3009 3044	querying the following registry key
+T150	sample_function 2973 3005	obtain the user's startup folder
+R48	launch Arg1:T32 Arg2:T149	
+R49	goal Arg1:T149 Arg2:T150	
+T151	sub_activity 3147 3193	write a shortcut file to '%TEMP%\~WUpdate.lnk'
+R50	launch Arg1:T33 Arg2:T151	
+T152	sub_activity 3155 3168	shortcut file
+T153	reference_word 3196 3205	This file
+R51	coreference Arg1:T153 Arg2:T152	
+T154	reference_word 3321 3339	This shortcut file
+R52	coreference Arg1:T154 Arg2:T152	
+T155	sample_name 3239 3257	Windows Update.lnk
+R53	located Arg1:T153 Arg2:T155	
+T156	sample_name 3386 3396	Applet.cpl
+R54	use Arg1:T154 Arg2:T156	
+T157	sample_name 3443 3455	~WUpdate.lnk
+R55	use Arg1:T34 Arg2:T157	
+T158	tool 3525 3528	CPL
+T159	sample_function 3486 3533	loading the recently dropped malicious CPL file
+R56	goal Arg1:T157 Arg2:T159	
+T160	tool 3581 3597	SeDebugPrivilege
+T161	sub_activity 3570 3607	enable the SeDebugPrivilege privilege
+R57	launch Arg1:T35 Arg2:T161	
+T162	sample_function 3616 3631	running process
+R58	goal Arg1:T161 Arg2:T162	
+T163	reference_word 3668 3679	the malware
+R59	coreference Arg1:T163 Arg2:T35	
+T164	sub_activity 3711 3734	store any dropped files
+R60	launch Arg1:T163 Arg2:T164	
+T165	encryption_algo 3942 3945	XOR
+T166	sample_name 4105 4116	winhelp.cpl
+T167	sample_function 3902 3926	decrypt an embedded file
+T168	sub_activity 3942 3965	XOR obfuscation routine
+R61	use Arg1:T36 Arg2:T168	
+R62	goal Arg1:T168 Arg2:T167	
+T169	sub_activity 3913 3926	embedded file
+T170	reference_word 3968 3977	This file
+T171	reference_word 4047 4055	the file
+T172	reference_word 4169 4178	this file
+R63	coreference Arg1:T170 Arg2:T169	
+R64	coreference Arg1:T171 Arg2:T169	
+R65	coreference Arg1:T172 Arg2:T169	
+R66	located Arg1:T171 Arg2:T166	
+T173	sample_name 4205 4216	Update.~tmp
+T174	sub_activity 4195 4233	original 'Update.~tmp' file is deleted
+R67	use Arg1:T36 Arg2:T174	
+T175	reference_word 4250 4261	the malware
+R68	coreference Arg1:T175 Arg2:T36	
+T176	sample_function 4267 4300	identify the correct startup path
+T177	sub_activity 4311 4355	same technique witnessed in earlier variants
+R69	use Arg1:T175 Arg2:T177	
+R70	goal Arg1:T177 Arg2:T176	
+T178	sample_name 4439 4450	~Update.lnk
+T179	sample_name 4490 4506	Windows help.lnk
+R71	located Arg1:T178 Arg2:T179	
+T180	sample_name 4635 4646	winhelp.cpl
+T181	reference_word 4570 4588	This shortcut file
+R72	coreference Arg1:T181 Arg2:T178	
+R73	use Arg1:T181 Arg2:T180	
+T182	reference_word 4655 4657	It
+R74	coreference Arg1:T182 Arg2:T181	
+T183	tool 4686 4689	CPL
+T184	sample_name 4741 4752	control.exe
+T185	reference_word 4681 4694	this CPL file
+R75	coreference Arg1:T185 Arg2:T180	
+T186	company 4722 4731	Microsoft
+T187	OS_name 4732 4739	Windows
+R76	located Arg1:T184 Arg2:T187	
+R77	part_of Arg1:T187 Arg2:T186	
+R78	use Arg1:T182 Arg2:T184	
+R79	use Arg1:T184 Arg2:T185	
+T188	sample_name 4802 4813	~Update.lnk
+T189	tool 4883 4886	CPL
+T190	sub_activity 4856 4891	recently dropped malicious CPL file
+R80	use Arg1:T37 Arg2:T188	
+R81	use Arg1:T188 Arg2:T190	
+T191	tool 4956 4972	SeDebugPrivilege
+T192	sub_activity 4945 4982	enable the SeDebugPrivilege privilege
+T193	sample_function 4991 5006	running process
+R82	launch Arg1:T39 Arg2:T192	
+R83	goal Arg1:T192 Arg2:T193	
+T194	reference_word 5043 5054	the malware
+R84	coreference Arg1:T194 Arg2:T39	
+T195	sub_activity 5086 5109	store any dropped files
+R85	launch Arg1:T194 Arg2:T195	
+T196	company 5303 5312	Microsoft
+T197	tool 5313 5320	Cabinet
+T198	tool 5323 5326	CAB
+R86	coreference Arg1:T198 Arg2:T197	
+R87	part_of Arg1:T197 Arg2:T196	
+T199	reference_word 5384 5401	This cabinet file
+T200	sub_activity 5294 5333	embedded Microsoft Cabinet ( CAB ) file
+R88	coreference Arg1:T199 Arg2:T200	
+T201	sub_activity 5410 5458	extracted to the previously identified file path
+R89	launch Arg1:T199 Arg2:T201	
+T202	reference_word 5477 5494	this cabinet file
+R90	coreference Arg1:T202 Arg2:T199	
+T203	sample_name 5557 5568	winhelp.cpl
+T204	company 5508 5517	Microsoft
+T205	tool 5518 5531	Control Panel
+R91	part_of Arg1:T205 Arg2:T204	
+T206	sub_activity 5508 5536	Microsoft Control Panel item
+R92	part_of Arg1:T203 Arg2:T206	
+R93	part_of Arg1:T206 Arg2:T202	
+T207	sub_activity 5630 5663	query the necessary registry keys
+R94	part_of Arg1:T42 Arg2:T41	
+R95	use Arg1:T42 Arg2:T207	
+T208	sub_activity 5667 5708	determine the correct startup path to use
+R96	use Arg1:T207 Arg2:T208	
+T209	sub_activity 5721 5734	shortcut file
+T210	reference_word 5891 5909	This shortcut file
+T211	sample_name 5781 5792	~Update.lnk
+T212	sample_name 5871 5887	Windows help.lnk
+R97	located Arg1:T209 Arg2:T211	
+R98	located Arg1:T209 Arg2:T212	
+R99	coreference Arg1:T210 Arg2:T209	
+T213	sample_name 5930 5941	control.exe
+R100	use Arg1:T210 Arg2:T213	
+T214	sample_name 6013 6024	winhelp.cpl
+T215	tool 6000 6003	CPL
+T216	sub_activity 5990 6008	malicious CPL file
+R101	part_of Arg1:T214 Arg2:T216	
+R102	use Arg1:T213 Arg2:T214	
+T217	reference_word 6038 6049	the malware
+R103	coreference Arg1:T217 Arg2:T42	
+T218	sample_name 6061 6072	winhelp.cpl
+R104	use Arg1:T217 Arg2:T218	
+T219	function 6256 6265	CPlApplet
+T220	function 6268 6281	DllEntryPoint
+T221	tool 6190 6193	CPL
+T222	sub_activity 6180 6201	malicious CPL payload
+R105	part_of Arg1:T222 Arg2:T43	
+R106	part_of Arg1:T219 Arg2:T222	
+R107	part_of Arg1:T220 Arg2:T222	
+T223	function 6293 6302	CPlApplet
+T224	tool 6363 6379	SeDebugPrivilege
+T225	reference_word 6415 6426	The malware
+R108	coreference Arg1:T225 Arg2:T44	
+R109	use Arg1:T44 Arg2:T223	
+T226	encryption_algo 6502 6505	XOR
+T227	sub_activity 6495 6513	simple XOR routine
+R110	use Arg1:T225 Arg2:T227	
+T228	sample_function 6439 6486	decrypt and embedded configuration of 128 bytes
+R111	goal Arg1:T227 Arg2:T228	
+T229	sub_activity 6460 6486	configuration of 128 bytes
+T230	reference_word 6560 6578	this configuration
+R112	coreference Arg1:T230 Arg2:T229	
+T231	sub_activity 6582 6622	Remote Command and Control ( C2 ) server
+R113	part_of Arg1:T231 Arg2:T230	
+T232	sub_activity 6625 6636	Remote port
+R114	part_of Arg1:T232 Arg2:T230	
+T233	tool 6639 6650	Sleep timer
+R115	part_of Arg1:T233 Arg2:T230	
+T234	reference_word 6653 6664	The malware
+R116	coreference Arg1:T234 Arg2:T225	
+T235	protocol 6716 6720	HTTP
+T236	sample_function 6677 6711	communicate with the remote server
+T237	function 6721 6724	GET
+T238	function 6729 6733	POST
+R117	part_of Arg1:T237 Arg2:T235	
+R118	part_of Arg1:T238 Arg2:T235	
+R119	use Arg1:T234 Arg2:T235	
+R120	goal Arg1:T235 Arg2:T236	
+T239	encryption_algo 6786 6800	base64-encoded
+R121	part_of Arg1:T115 Arg2:T19	
+R122	part_of Arg1:T111 Arg2:T20	
+R123	part_of Arg1:T117 Arg2:T21	
+R124	part_of Arg1:T125 Arg2:T22	
+R125	part_of Arg1:T126 Arg2:T23	
+R126	part_of Arg1:T127 Arg2:T24	
+R127	part_of Arg1:T118 Arg2:T18	
+R128	part_of Arg1:T119 Arg2:T17	
+R129	part_of Arg1:T120 Arg2:T16	
+R130	part_of Arg1:T133 Arg2:T15	
+R131	part_of Arg1:T132 Arg2:T14	
+R132	part_of Arg1:T131 Arg2:T65	
+R133	part_of Arg1:T130 Arg2:T64	
+R134	part_of Arg1:T121 Arg2:T55	
+R135	part_of Arg1:T112 Arg2:T56	
+R136	part_of Arg1:T114 Arg2:T57	
+R137	part_of Arg1:T113 Arg2:T58	
+R138	part_of Arg1:T122 Arg2:T59	
+R139	part_of Arg1:T123 Arg2:T60	
+R140	part_of Arg1:T124 Arg2:T61	
+R141	part_of Arg1:T128 Arg2:T62	
+R142	part_of Arg1:T129 Arg2:T63	
+T240	tool 7019 7022	CPL
+T241	sub_activity 7009 7030	malicious CPL payload
+R143	part_of Arg1:T241 Arg2:T45	
+T242	function 7087 7098	ServiceMain
+T243	function 7101 7110	CPlApplet
+T244	function 7113 7126	DllEntryPoint
+R144	part_of Arg1:T242 Arg2:T241	
+R145	part_of Arg1:T243 Arg2:T241	
+R146	part_of Arg1:T244 Arg2:T241	
+T245	sample_function 6887 6908	Get drive information
+T246	sample_function 6911 6921	Read files
+T247	reference_word 6871 6883	this payload
+T248	sample_function 6924 6935	Write files
+T249	sample_function 6938 6950	Delete files
+T250	sample_function 6953 6963	Move files
+T251	sample_function 6966 6981	Spawn processes
+T252	sample_function 6984 7002	Create directories
+R147	part_of Arg1:T245 Arg2:T247	
+R148	part_of Arg1:T246 Arg2:T247	
+R149	part_of Arg1:T248 Arg2:T247	
+R150	part_of Arg1:T249 Arg2:T247	
+R151	part_of Arg1:T250 Arg2:T247	
+R152	part_of Arg1:T251 Arg2:T247	
+R153	part_of Arg1:T252 Arg2:T247	
+T253	function 7671 7684	DllEntryPoint
+T254	function 7168 7181	DllEntryPoint
+T255	reference_word 7134 7145	the malware
+R154	coreference Arg1:T255 Arg2:T45	
+R155	use Arg1:T255 Arg2:T254	
+T256	sub_activity 7258 7286	decompressing a blob of data
+R156	launch Arg1:T254 Arg2:T256	
+T257	sub_activity 7331 7349	key/value pairings
+R157	use Arg1:T46 Arg2:T257	
+T258	sub_activity 7293 7310	decompressed data
+R158	part_of Arg1:T257 Arg2:T258	
+T259	reference_word 7405 7416	the malware
+T260	sub_activity 7489 7522	function with an integer argument
+R159	coreference Arg1:T259 Arg2:T46	
+T261	sub_activity 7427 7464	retrieve one of these decoded strings
+R160	use Arg1:T259 Arg2:T260	
+R161	use Arg1:T260 Arg2:T261	
+T262	string 7619 7624	10001
+T263	sample_name 7654 7663	ole32.dll
+T264	function 7772 7782	WSAStartup
+T265	tool 7728 7744	SeDebugPrivilege
+T266	sub_activity 7706 7754	attempt to obtain the SeDebugPrivilege privilege
+R162	launch Arg1:T253 Arg2:T266	
+R163	use Arg1:T253 Arg2:T264	
+T267	sub_activity 7787 7810	future network activity
+R164	goal Arg1:T264 Arg2:T267	
+T268	function 7822 7831	CPlApplet
+T269	sub_activity 7920 7962	same compression algorithm used previously
+T270	sample_function 7870 7909	decompressing an embedded configuration
+R165	use Arg1:T268 Arg2:T269	
+R166	goal Arg1:T269 Arg2:T270	
+T271	sub_activity 8125 8145	delete this new file
+T272	sub_activity 8083 8097	move this file
+R167	launch Arg1:T47 Arg2:T272	
+R168	launch Arg1:T47 Arg2:T271	
+T273	sub_activity 8009 8038	original dropped malware file
+T274	reference_word 8088 8097	this file
+T275	reference_word 8132 8145	this new file
+R169	coreference Arg1:T274 Arg2:T273	
+R170	coreference Arg1:T275 Arg2:T273	
+T276	sub_activity 8270 8297	install itself as a service
+R171	launch Arg1:T48 Arg2:T276	
+T277	sub_activity 8317 8357	running with SeDebugPrivilege privileges
+R172	use Arg1:T48 Arg2:T277	
+T278	tool 8330 8346	SeDebugPrivilege
+T279	sub_activity 8495 8522	collect various information
+R173	launch Arg1:T49 Arg2:T279	
+T280	sub_activity 8576 8589	Computer name
+T281	sub_activity 8503 8522	various information
+T282	target_crowd 8532 8546	victim machine
+R174	part_of Arg1:T281 Arg2:T282	
+T283	sub_activity 8592 8612	Volume serial number
+T284	tool 8643 8646	CPU
+T285	sub_activity 8643 8652	CPU speed
+T286	company 8615 8624	Microsoft
+T287	OS_name 8625 8632	Windows
+R175	part_of Arg1:T287 Arg2:T286	
+T288	sub_activity 8615 8640	Microsoft Windows version
+T289	sub_activity 8655 8669	ANSI code page
+T290	encryption_algo 8655 8659	ANSI
+T291	sub_activity 8672 8721	OEM code page identifier for the operating system
+T292	sub_activity 8724 8763	Physical and virtual memory information
+R176	part_of Arg1:T280 Arg2:T281	
+R177	part_of Arg1:T283 Arg2:T281	
+R178	part_of Arg1:T288 Arg2:T281	
+R179	part_of Arg1:T285 Arg2:T281	
+R180	part_of Arg1:T289 Arg2:T281	
+R181	part_of Arg1:T291 Arg2:T281	
+R182	part_of Arg1:T292 Arg2:T281	
+T293	reference_word 8782 8791	this data
+R183	coreference Arg1:T293 Arg2:T281	
+T294	tool 8854 8867	remote server
+T295	sub_activity 8773 8791	encrypts this data
+T296	encryption_algo 8813 8816	XOR
+T297	sub_activity 8801 8820	incremental XOR key
+R184	use Arg1:T50 Arg2:T297	
+R185	use Arg1:T297 Arg2:T295	
+T298	sub_activity 8825 8867	uploads it to the configured remote server
+R186	launch Arg1:T50 Arg2:T298	
+T299	reference_word 8898 8907	this data
+R187	coreference Arg1:T299 Arg2:T293	
+T300	reference_word 8925 8936	the malware
+R188	coreference Arg1:T300 Arg2:T50	
+T301	encryption_algo 8979 8985	DWORDs
+T302	sub_activity 8975 8985	two DWORDs
+T303	reference_word 8988 9000	These DWORDs
+R189	coreference Arg1:T303 Arg2:T302	
+T304	sub_activity 9016 9029	major command
+T305	sub_activity 9036 9047	sub-command
+R190	part_of Arg1:T304 Arg2:T303	
+R191	part_of Arg1:T305 Arg2:T303	
+T306	reference_word 9099 9111	this payload
+T307	sample_function 9115 9136	Get drive information
+T308	sample_function 9139 9151	Modify files
+T309	sample_function 9154 9172	Modify directories
+T310	sample_function 9175 9190	Modify registry
+T311	sample_function 9193 9206	Spawn process
+T312	sample_function 9209 9226	Terminate process
+T313	sample_function 9229 9244	Modify services
+T314	sample_function 9247 9256	Kill self
+R192	part_of Arg1:T307 Arg2:T306	
+R193	part_of Arg1:T308 Arg2:T306	
+R194	part_of Arg1:T309 Arg2:T306	
+R195	part_of Arg1:T310 Arg2:T306	
+R196	part_of Arg1:T311 Arg2:T306	
+R197	part_of Arg1:T312 Arg2:T306	
+R198	part_of Arg1:T313 Arg2:T306	
+R199	part_of Arg1:T314 Arg2:T306	
+T315	domain_evil 9430 9447	www.fyoutside.com
+T316	protocol 9478 9481	DNS
+T317	tool 9502 9505	C2s
+T318	sub_activity 9470 9489	passive DNS overlap
+R200	part_of Arg1:T318 Arg2:T317	
+T319	tool 9366 9369	zip
+T320	domain_evil 9547 9564	www.tashdqdxp.com
+T321	domain_evil 9594 9611	www.weryhstui.com
+T322	IP_evil 9708 9722	98.126.156.210
+R201	part_of Arg1:T321 Arg2:T71	
+R202	part_of Arg1:T320 Arg2:T70	
+R203	use Arg1:T10 Arg2:T321	
+R204	use Arg1:T53 Arg2:T320	
+R205	use Arg1:T9 Arg2:T315	
+R206	part_of Arg1:T315 Arg2:T69	
+T323	sub_activity 9366 9375	zip files
+R207	located Arg1:T323 Arg2:T315	
+T324	sub_activity 9334 9352	two Reaver samples
+R208	part_of Arg1:T324 Arg2:T323	
+R209	part_of Arg1:T324 Arg2:T52	
+R210	coreference Arg1:T322 Arg2:T321	
+R211	coreference Arg1:T322 Arg2:T320	
+T325	domain_evil 9780 9797	www.fyoutside.com
+T326	sub_activity 9747 9763	SunOrcal samples
+R212	use Arg1:T326 Arg2:T325	
+R213	part_of Arg1:T325 Arg2:T72	
+T327	sub_activity 9855 9871	SunOrcal samples
+T328	domain_evil 9906 9922	www.olinaodi.com
+R214	use Arg1:T327 Arg2:T328	
+R215	part_of Arg1:T328 Arg2:T73	
+T329	person 9929 9938	attackers
+R216	use Arg1:T329 Arg2:T13	
+T330	sub_activity 10043 10072	developing new custom malware
+R217	launch Arg1:T329 Arg2:T330	
+T331	sample_function 10076 10101	use against their targets
+R218	use Arg1:T330 Arg2:T331	
+T332	time 10008 10012	2010
+T333	time 9990 9994	2013
+R219	first_found_time Arg1:T329 Arg2:T332	
+T334	time 10175 10179	2016
+R220	first_found_time Arg1:T54 Arg2:T334	
+T335	reference_word 10258 10260	It
+R221	coreference Arg1:T335 Arg2:T54	
+T336	tool 10297 10310	final payload
+T337	tool 10319 10322	CPL
+R222	located Arg1:T336 Arg2:T337	
+T338	company 10348 10366	Palo Alto Networks
+R223	part_of Arg1:T336 Arg2:T335	
+T339	person 10439 10448	attackers
+T340	time 10509 10522	November 2017
+T341	reference_word 10454 10467	both families
+R224	use Arg1:T339 Arg2:T341	
+R225	coreference Arg1:T341 Arg2:T54	
+R226	coreference Arg1:T341 Arg2:T13	
+R227	occur_time Arg1:T339 Arg2:T340	

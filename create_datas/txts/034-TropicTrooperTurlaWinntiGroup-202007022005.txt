@@ -1,0 +1,15 @@
+Unknown .
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+Tropic Trooper : KeyBoy .
+Tropic Trooper is an unaffiliated threat group that has led targeted campaigns against targets in Taiwan , the Philippines , and Hong Kong .
+Tropic Trooper focuses on targeting government , healthcare , transportation , and high-tech industries and has been active since 2011 .
+Turla : Waterbug , WhiteBear , VENOMOUS BEAR , Snake , Krypton .
+Turla is a Russian-based threat group that has infected victims in over 45 countries , spanning a range of industries including government , embassies , military , education , research and pharmaceutical companies since 2004 .
+Heightened activity was seen in mid-2015 .
+Turla is known for conducting watering hole and spearphishing campaigns and leveraging in-house tools and malware .
+Turla ’s espionage platform is mainly used against Windows machines , but has also been seen used against macOS and Linux machines .
+Winnti Group : Blackfly .
+Winnti Group is a threat group with Chinese origins that has been active since at least 2010 .
+The group has heavily targeted the gaming industry , but it has also expanded the scope of its targeting .
+Some reporting suggests a number of other groups , including Axiom , APT17 , and Ke3chang , are closely linked to Winnti Group .

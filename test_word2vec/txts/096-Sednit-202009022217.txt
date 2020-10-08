@@ -1,0 +1,59 @@
+En Route with Sednit Part 2 : Observing the Comings and Goings .
+Release_Time : 2016-10
+Report_URL : https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part-2.pdf
+The HttpChannel::getRawPacket() method is implemented as a HTTP GET request—the message from the server being then in the HTTP answer body—while HttpChannel::sendRawPacket() is an HTTP POST request , whose body contains the message .
+The C&C IP address is hardcoded in the associated header file HttpChannel.h .
+Roughly summarized , this URL is a series of pseudo-randomly chosen parameters associated with pseudo-randomly generated values , except for a special parameter called mark .
+This special parameter ( whose value is set to ai in the Linux source code ) is associated with a so-called token , which is a 20-byte value .
+In this token , the Key is pseudo-randomly generated , while URL_TOKEN is hardcoded in the source code and probably serves to check the integrity of the message by the C&C server .
+The bodies of the POST requests , and of the responses to GET requests , follow exactly the same format as the token , except that they contain a CryptRawPacket object in place of the agent ID .
+Also , the hardcoded value is a different one , called DATA_TOKEN by the developers .
+The MailChannel object is an implementation of Xagent communication channel over emails , where messages are sent and received as attachments to emails .
+During an investigation , we discovered the source code of a proxy server employed to relay traffic between Xagent infected computers using MailChannel ( dubbed “ agents ” hereafter ) and a C&C server .
+This source code was left in an open directory on the proxy server , which was then indexed by the Google search engine .
+The proxy code is a set of Python scripts containing more than 12,200 lines of code among 14 files .
+It also contains some log files indicating it was in use from April 2015 to June 2015 .
+As can be seen from the files ’ names , the proxy is actually more than a simple relay of communications : it translates the email channel protocol from the agents into HTTP requests for the C&C server .
+Therefore , we decided to include this proxy in our analysis of the email communication channel .
+The proxy source code contains a few unused instructions related to agents communicating over HTTP , i.e. using HttpChannel rather than MailChannel .
+Nevertheless , the main class responsible for relaying HTTP traffic from agents—named W3Server—is absent and its instantiation has been commented out .
+Similar to Xagent , the operators therefore seem to deploy the components of the proxy server only if needed , and this one was intended to relay MailChannel traffic only .
+The MailChannel::sendRawPacket() method is in charge of sending CryptRawPacket objects as email attachments .
+For that purpose , the code contains an SMTP server address with an email address and a password to log in , plus a recipient email address to which the emails will be sent .
+Depending on the sample , this recipient email address may belong to a freemail provider , a custom Sednit domain , or even a hacked target .
+Building a C&C protocol over email brings at least two problems for the operators : they need to be able to distinguish Xagent emails from unrelated emails in the inbox ( like spam emails ) , and they need to bypass spam filters .
+To do so , they implemented a protocol named P2Scheme ( and dubbed “ P2 ” hereafter ) , which defines the format of the emails .
+This protocol is described as a “ level 2 protocol ” by the developers , and defines the following email fields : 
+In this format , the Key is pseudo-randomly generated , while SUBJ_TOKEN is a 7-byte value hardcoded in the source code and strangely containing the string “ china ” ( prefixed with bytes 0x550xAA ) .
+This specific subject serves to distinguish Xagent emails from unrelated emails in an inbox , as we will explain .
+The email body and the attachment name are the base64 encodings of pseudo-randomly generated values .
+The boundary value , used to separate a MIME multipart message in parts , is a pseudorandomly generated value .
+Nevertheless , in practice only the boundary is actually generated with the P2 protocol , as the code to generate the others fields has been commented out in the Linux source code .
+Instead , these fields are set to fixed values , likely chosen to avoid attracting attention from Georgian targets : 
+the email subject is set to piradi nomeri , which refers to a national ID number in Georgian .
+the email body is set to gamarjoba , which means hello in Georgian .
+the attachment name is set to detaluri_X.dat , where X is the current time ( detaluri means detailed in Georgian ) .
+Georgian institutions are well-known targets of the Sednit group , as documented by FireEye in 2014 .
+Once the email has been built , the CryptRawPacket object is added as an attachment .
+Finally , the email is sent with the SMTP protocol over TLS to the recipient email address ( exfil@example.com ) .
+It will be retrieved by the proxy server , and the message will be forwarded to the C&C server , as we will describe below .
+In the other direction , the MailChannel::getRawPacket() method retrieves emails containing messages from the C&C server with the POP3 protocol over TLS .
+The email address to receive messages is a different one than the one used to send messages ( orders@example.com ) .
+For each received email , the method checks that the subject is set to piradi nomeri and , if so , instantiates a CryptRawPacket object from the attachment , which is then transmitted to the intended module .
+The MailServer.py script manages the communications by emails with the agents .
+To do so , it regularly fetches emails from the inbox agents have sent their messages to ( exfil@example.com ) .
+The script then checks for each email whether the subject matches the P2 protocol ; that is , if once decoded it contains the SUBJ_TOKEN value .Alternatively , it checks whether the subject is set to piradi nomeri , which is the case with the Linux source code as we just explained .
+If the subject is valid , MailServer.py stores the email attachment into a “ FROM ” folder associated with the sender agent , using a custom format defined in a class named P3Scheme .
+This format , dubbed “ level 3 protocol ” , is a variation for the HTTP token : namely , the length of Junk is set to 9 and the hardcoded value is different .
+The script LocalStorage.py manages a storage with a “ FROM ” and “ TO ” folder for each agent that sent an email to the monitored inbox ( the agent ID being retrieved from the CryptRawPacket attached to the email ) .
+The second important script is w3s.py , which manages the HTTP communications with the C&C server .
+For all known agents , the script retrieves the messages dropped in the “ FROM ” folder , and sends them to the C&C server in the body of a HTTP POST request .
+The values XAS_IP and XAS_GATE are respectively the C&C server address and URL path , while SERVER_UID is a 4-byte value identifying the proxy server .
+The P3_Scheme.pack_service_data() method encodes data following the previously-described P3 format .
+In the other direction , the w3s.py script regularly sends a HTTP GET request to the C&C server , on the URL previously described , for all known agents .
+The body of the C&C answer is a message encoded with the P3 protocol that will be stored in the “ TO ” folder .
+Then , the MailServer.py script will retrieve the message and attach it to an email following the P2 protocol , which will be sent to the agent .
+From the log files contained in the proxy open folder , we can infer that it was a Windows server configured in the Russian language ( Python console error messages were output in Russian language ) .
+Xagent is a well-designed backdoor that has become the flagship espionage malware of the Sednit group over the past few years .
+The ability to communicate over HTTP or via emails make it a versatile tool for the operators .
+Moreover , the existence of Xagent versions for Windows , Linux and iOS shows the importance of this backdoorin their arsenal.We speculate that there are versions for others platforms , likeAndroid .

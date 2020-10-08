@@ -1,0 +1,284 @@
+T1	threatActor_name 14 20	Sednit
+T2	threatActor_name 223 229	Sednit
+T3	threatActor_name 747 753	Sednit
+T4	threatActor_name 1034 1040	Sednit
+T5	threatActor_name 1473 1479	Sednit
+T6	threatActor_name 1606 1612	Sednit
+T7	threatActor_name 2947 2953	Sednit
+T8	threatActor_name 3042 3048	Sednit
+T9	threatActor_name 4528 4534	Sednit
+T10	threatActor_name 9011 9017	Sednit
+T11	threatActor_name 9101 9107	Sednit
+T12	threatActor_name 9319 9325	Sednit
+T13	threatActor_name 10222 10228	Sednit
+T14	threatActor_name 10076 10082	Sednit
+T15	threatActor_name 10766 10772	Sednit
+T16	threatActor_name 11336 11342	Sednit
+T17	threatActor_name 11669 11675	Sednit
+T18	threatActor_name 11937 11943	Sednit
+T19	sub_activity 318 343	fake webmail login panels
+R1	launch Arg1:T2 Arg2:T19	
+T20	attack_activity 585 599	phishing email
+T21	attack_activity 3739 3753	phishing email
+T22	attack_activity 5638 5652	phishing email
+T23	attack_activity 663 678	phishing emails
+T24	attack_activity 3639 3654	phishing emails
+T25	attack_activity 4535 4550	phishing emails
+T26	attack_activity 7409 7424	phishing emails
+T27	attack_activity 11631 11646	phishing emails
+R2	launch Arg1:T3 Arg2:T23	
+T28	malware 907 916	Downdelph
+T29	vul_aliases 1091 1096	0-day
+R3	use Arg1:T4 Arg2:T29	
+T30	vulnerability_cve 1256 1269	CVE-2009-3129
+T31	vulnerability_cve 1295 1308	CVE-2010-3333
+T32	vulnerability_cve 1333 1346	CVE-2012-0158
+T33	vulnerability_cve 1371 1384	CVE-2013-2729
+T34	vulnerability_cve 1415 1428	CVE-2014-1761
+T35	vulnerability_cve 1503 1516	CVE-2015-1641
+T36	vulnerability_cve 1548 1561	CVE-2015-2424
+T37	vulnerability_cve 1636 1649	CVE-2016-4117
+T38	tool 1277 1292	Microsoft Excel
+T39	company 1316 1325	Microsoft
+T40	company 1277 1286	Microsoft
+T42	company 1354 1363	Microsoft
+T43	company 1436 1445	Microsoft
+T44	company 1524 1533	Microsoft
+T45	company 1569 1578	Microsoft
+T46	company 2273 2282	Microsoft
+T47	tool 1316 1330	Microsoft Ofce
+T48	tool 1354 1368	Microsoft Ofce
+T49	company 1392 1397	Adobe
+T50	tool 1392 1412	Adobe Acrobat Reader
+T51	vul_aliases 1451 1456	0-day
+T52	vul_aliases 1584 1589	0-day
+T53	vul_aliases 8612 8617	0-day
+T54	vul_aliases 8680 8685	0-day
+T55	vul_aliases 8755 8760	0-day
+T56	vul_aliases 8911 8916	0-day
+T57	company 8743 8748	Adobe
+T58	company 8818 8823	Adobe
+T59	company 8899 8904	Adobe
+T60	company 1657 1662	Adobe
+T61	tool 1657 1675	Adobe Flash Player
+T62	tool 1436 1450	Microsoft Word
+T63	tool 1524 1538	Microsoft Word
+T64	tool 1569 1583	Microsoft Ofce
+R4	located Arg1:T30 Arg2:T38	
+R5	located Arg1:T31 Arg2:T47	
+R6	located Arg1:T32 Arg2:T48	
+R7	located Arg1:T33 Arg2:T50	
+R8	located Arg1:T34 Arg2:T62	
+R9	located Arg1:T35 Arg2:T63	
+R10	located Arg1:T36 Arg2:T64	
+R11	located Arg1:T37 Arg2:T61	
+R13	use Arg1:T6 Arg2:T36	
+T41	malware 1763 1774	Seduploader
+T65	location 1878 1885	Russian
+T66	location 1886 1888	EU
+T67	vulnerability_cve 2139 2152	CVE-2015-1641
+T68	malware 2461 2472	Seduploader
+T69	person 2721 2726	Putin
+T70	string 2680 2683	RTF
+T71	string 2111 2114	RTF
+T72	vulnerability_cve 2887 2900	CVE-2015-1641
+T73	time 2929 2939	April 2016
+R14	use Arg1:T7 Arg2:T72	
+R15	first_found_time Arg1:T72 Arg2:T73	
+T74	company 3120 3124	ESET
+T75	time 3140 3154	September 2014
+T76	reference_word 3099 3101	It
+T77	malware 3090 3096	Sedkit
+T78	malware 3386 3392	Sedkit
+T79	malware 3525 3531	Sedkit
+T80	malware 3684 3690	Sedkit
+R16	use Arg1:T8 Arg2:T77	
+R17	find Arg1:T74 Arg2:T76	
+R18	coreference Arg1:T76 Arg2:T77	
+R19	first_found_time Arg1:T76 Arg2:T75	
+T81	attack_activity 3337 3357	watering hole attack
+T82	location 3241 3247	Poland
+R20	located Arg1:T81 Arg2:T82	
+T83	attack_activity 3538 3559	watering hole attacks
+T84	target_crowd 3483 3490	targets
+R21	attack Arg1:T83 Arg2:T84	
+R22	goal Arg1:T84 Arg2:T79	
+T85	target_crowd 3605 3612	targets
+R23	attack Arg1:T24 Arg2:T85	
+R24	goal Arg1:T85 Arg2:T80	
+T86	time 3759 3769	March 2016
+R25	occur_time Arg1:T21 Arg2:T86	
+T87	company 3805 3813	Stratfor
+T88	reference_word 3777 3782	email
+R26	coreference Arg1:T88 Arg2:T21	
+T89	company 4019 4027	Stratfor
+T90	domain 3985 3997	stratfor.com
+R28	part_of Arg1:T90 Arg2:T89	
+T91	company 4119 4127	Stratfor
+T92	company 4399 4407	Stratfor
+T93	string 4235 4240	51586
+R29	launch Arg1:T9 Arg2:T25	
+T94	malware 4674 4680	Sedkit
+T95	malware 4758 4764	Sedkit
+T96	malware 6006 6012	Sedkit
+T97	malware 7199 7205	Sedkit
+T98	malware 7945 7951	Sedkit
+T99	malware 8226 8232	Sedkit
+T100	malware 7989 7995	Sedkit
+T101	malware 8078 8084	Sedkit
+T102	malware 8630 8636	Sedkit
+T103	malware 8698 8704	Sedkit
+T104	malware 8773 8779	Sedkit
+T105	malware 8929 8935	Sedkit
+T106	malware 10205 10211	Sedkit
+T107	malware 11988 11994	Sedkit
+T108	time 4687 4691	2015
+R30	first_found_time Arg1:T94 Arg2:T108	
+T109	string 4375 4382	Sratfor
+T110	domain 4792 4807	theguardian.com
+T111	domain 4772 4791	theguardiannews.org
+T112	domain 4897 4920	worldpoliticsreview.com
+T113	domain 4872 4896	worldpoliticsreviews.com
+T114	domain 5025 5041	hufngtonpost.com
+T115	domain 5004 5024	worldpostjournal.com
+T116	domain 5139 5150	reuters.com
+T117	domain 5121 5138	reuters-press.com
+T118	domain 5222 5232	unian.info
+T119	domain 5206 5221	unian-news.info
+T120	location 4946 4957	North Korea
+T121	government 4931 4935	ISIS
+T122	location 5077 5081	NATO
+T123	location 5070 5076	Russia
+T124	location 5153 5159	Russia
+T125	location 5166 5172	Turkey
+T126	location 5235 5239	Iraq
+T127	location 5264 5269	Paris
+T128	attack_activity 5320 5328	phishing
+T129	company 5899 5916	Russian companies
+T130	program_language 6143 6153	JavaScript
+T131	time 6254 6264	March 2015
+T132	program_language 6325 6335	JavaScript
+T133	program_language 6569 6579	JavaScript
+T134	program_language 6693 6703	JavaScript
+T135	program_language 11047 11057	JavaScript
+T136	program_language 10925 10935	JavaScript
+T137	sample_function 6486 6531	Collect information on the visitor ’s browser
+T138	sample_function 6451 6483	Collect the visitor ’s time zone
+T139	sample_function 6609 6653	Collect information on the visitor ’s screen
+T140	sample_function 6730 6775	Collect the list of installed browser plugins
+T141	tool 6814 6834	Internet Explorer 11
+T142	protocol 6908 6912	HTTP
+T143	protocol 6913 6917	POST
+T144	vulnerability_cve 8235 8248	CVE-2013-1347
+T145	vulnerability_cve 8285 8298	CVE-2013-3897
+T146	vulnerability_cve 8335 8348	CVE-2014-1510
+T147	vulnerability_cve 8371 8384	CVE-2014-1511
+T148	vulnerability_cve 8407 8420	CVE-2014-1776
+T149	vulnerability_cve 8458 8471	CVE-2014-6332
+T150	tool 8256 8275	Internet Explorer 8
+T151	tool 8306 8325	Internet Explorer 8
+T152	tool 8356 8363	Firefox
+T153	tool 8392 8399	Firefox
+T154	tool 8428 8448	Internet Explorer 11
+T155	tool 8479 8496	Internet Explorer
+R27	located Arg1:T144 Arg2:T150	
+R31	located Arg1:T145 Arg2:T151	
+R32	located Arg1:T146 Arg2:T152	
+R33	located Arg1:T147 Arg2:T153	
+R34	located Arg1:T148 Arg2:T154	
+R35	located Arg1:T149 Arg2:T155	
+T156	company 8559 8576	Ukrainian company
+T157	tool 8515 8529	MacKeeper OS X
+R36	part_of Arg1:T157 Arg2:T156	
+T158	vulnerability_cve 8586 8599	CVE-2015-2590
+T159	vulnerability_cve 8654 8667	CVE-2015-4902
+T160	vulnerability_cve 8722 8735	CVE-2015-3043
+T161	vulnerability_cve 8797 8810	CVE-2015-5119
+T162	vulnerability_cve 8878 8891	CVE-2015-7645
+T163	tool 8607 8611	Java
+T164	tool 8675 8679	Java
+T165	tool 8743 8754	Adobe Flash
+T166	tool 8818 8829	Adobe Flash
+T167	tool 8899 8910	Adobe Flash
+R37	located Arg1:T161 Arg2:T166	
+R38	located Arg1:T158 Arg2:T163	
+R39	located Arg1:T159 Arg2:T164	
+R40	located Arg1:T160 Arg2:T165	
+R41	located Arg1:T162 Arg2:T167	
+R42	coreference Arg1:T53 Arg2:T158	
+R43	coreference Arg1:T54 Arg2:T159	
+R44	use Arg1:T102 Arg2:T158	
+R45	use Arg1:T103 Arg2:T159	
+R46	use Arg1:T104 Arg2:T160	
+R47	use Arg1:T105 Arg2:T162	
+T168	malware 9036 9047	Seduploader
+R48	use Arg1:T10 Arg2:T168	
+T169	vulnerability_cve 9249 9262	CVE-2014-6332
+R49	use Arg1:T12 Arg2:T169	
+T170	vulnerability_cve 9429 9442	CVE-2014-6332
+T171	time 9461 9469	May 2014
+T172	tool 9530 9547	Internet Explorer
+T173	security_team 9476 9487	IBM X-Force
+R50	first_found_time Arg1:T170 Arg2:T171	
+R51	find Arg1:T173 Arg2:T170	
+R52	located Arg1:T170 Arg2:T172	
+T174	tool 9640 9657	Internet Explorer
+T175	program_language 9658 9666	VBScript
+R53	use Arg1:T174 Arg2:T175	
+T176	reference_word 9597 9610	vulnerability
+R54	located Arg1:T176 Arg2:T174	
+R55	coreference Arg1:T176 Arg2:T170	
+T177	company 9476 9479	IBM
+T178	tool 9879 9896	Internet Explorer
+T179	tool 10952 10969	Internet Explorer
+T180	string 9902 9910	SafeMode
+R56	part_of Arg1:T180 Arg2:T178	
+T181	program_language 9933 9941	VBScript
+R57	use Arg1:T178 Arg2:T181	
+T182	reference_word 9854 9867	vulnerability
+R58	located Arg1:T182 Arg2:T178	
+R59	coreference Arg1:T182 Arg2:T176	
+T183	time 10120 10132	October 2015
+T184	time 10260 10273	February 2016
+T185	string 10390 10398	SafeMode
+T186	program_language 10578 10586	VBScript
+T187	program_language 11205 11213	VBScript
+T188	location 10857 10860	USA
+T189	time 10861 10865	2014
+T190	company 10848 10856	BlackHat
+R60	located Arg1:T190 Arg2:T188	
+R61	occur_time Arg1:T190 Arg2:T189	
+T191	person 10902 10909	Yang Yu
+R62	use Arg1:T179 Arg2:T136	
+R63	part_of Arg1:T191 Arg2:T190	
+T192	company 11180 11188	BlackHat
+R64	launch Arg1:T17 Arg2:T27	
+T193	vul_aliases 11787 11792	0-day
+T194	vul_aliases 12233 12238	0-day
+R65	use Arg1:T18 Arg2:T107	
+T195	reference_word 12200 12203	kit
+R66	coreference Arg1:T195 Arg2:T107	
+R67	use Arg1:T195 Arg2:T194	
+R68	part_of Arg1:T38 Arg2:T40	
+R69	part_of Arg1:T47 Arg2:T39	
+R70	part_of Arg1:T48 Arg2:T42	
+R71	part_of Arg1:T50 Arg2:T49	
+R72	part_of Arg1:T62 Arg2:T43	
+R73	coreference Arg1:T51 Arg2:T34	
+R74	part_of Arg1:T63 Arg2:T44	
+R75	part_of Arg1:T64 Arg2:T45	
+R76	coreference Arg1:T52 Arg2:T36	
+R77	part_of Arg1:T61 Arg2:T60	
+R12	use Arg1:T5 Arg2:T34	
+T196	industry 1964 1988	Ukrainian Academic Union
+R78	use Arg1:T71 Arg2:T67	
+T197	tool 2273 2287	Microsoft Ofce
+R79	part_of Arg1:T197 Arg2:T46	
+T198	OS_name 2340 2347	Windows
+T199	tool 2367 2372	Offce
+R80	part_of Arg1:T199 Arg2:T46	
+T200	string 2186 2190	DLLs
+T201	string 2251 2254	DLL
+T202	string 2417 2420	DLL
+R81	use Arg1:T68 Arg2:T202	
+R82	use Arg1:T197 Arg2:T201	

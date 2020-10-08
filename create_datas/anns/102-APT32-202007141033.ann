@@ -1,0 +1,814 @@
+T1	threatActor_name 35 40	APT32
+T2	target_crowd 59 78	Global Corporations
+R1	attack Arg1:T1 Arg2:T2	
+T3	person 212 218	actors
+T4	security_team 239 246	FireEye
+T5	threatActor_name 250 255	APT32
+T6	threatActor_aliases 258 274	OceanLotus Group
+R2	coreference Arg1:T6 Arg2:T5	
+T7	government 387 406	foreign governments
+R3	attack Arg1:T5 Arg2:T7	
+T8	threatActor_name 16199 16204	APT32
+T9	IP_evil 16207 16221	103.53.197.202
+R4	part_of Arg1:T9 Arg2:T8	
+T10	reference_word 989 997	the team
+T11	security_team 971 978	FireEye
+R5	coreference Arg1:T10 Arg2:T11	
+T12	target_crowd 409 419	dissidents
+T13	target_crowd 426 437	journalists
+T14	company 312 336	private sector companies
+T15	security_team 440 447	FireEye
+T16	threatActor_name 462 467	APT32
+T17	sub_activity 496 518	fully-featured malware
+T18	sub_activity 541 569	commercially-available tools
+T19	security_team 763 770	FireEye
+T20	sub_activity 774 782	Mandiant
+T21	time 923 933	March 2017
+T22	counter_measure 1009 1035	Community Protection Event
+T23	counter_measure 1038 1041	CPE
+T24	sub_activity 1074 1102	Mandiant incident responders
+T25	security_team 1105 1125	FireEye as a Service
+T26	security_team 1128 1132	FaaS
+T27	security_team 1137 1164	FireEye iSight Intelligence
+T28	security_team 1171 1198	FireEye product engineering
+T29	threatActor_name 1229 1234	APT32
+T30	target_crowd 1216 1223	clients
+T31	security_team 1271 1278	FireEye
+T32	target_crowd 1349 1358	customers
+T33	threatActor_name 1405 1410	APT32
+T34	security_team 1695 1702	FireEye
+T35	threatActor_name 1754 1759	APT32
+T36	time 1777 1781	2014
+T37	security_team 1784 1791	FireEye
+T38	threatActor_name 1805 1810	APT32
+T39	location 1868 1875	Vietnam
+T40	industry 1879 1892	manufacturing
+T41	sub_activity 1895 1912	consumer products
+T42	industry 1919 1938	hospitality sectors
+T43	threatActor_name 1982 1987	APT32
+T44	sub_activity 2009 2036	peripheral network security
+T45	company 2041 2079	technology infrastructure corporations
+T46	security_team 2132 2139	FireEye
+T47	threatActor_name 2163 2168	APT32
+T48	time 2174 2178	2014
+T49	time 2283 2287	2016
+T50	time 2440 2448	mid-2016
+T51	time 2627 2631	2016
+T52	time 2640 2644	2017
+T53	location 2183 2191	European
+T54	location 2270 2277	Vietnam
+T55	company 2192 2203	corporation
+T56	industry 2343 2359	network security
+T57	industry 2362 2387	technology infrastructure
+T58	industry 2390 2397	banking
+T59	industry 2404 2420	media industries
+T60	company 2290 2331	Vietnamese and foreign-owned corporations
+T61	location 753 760	Vietnam
+T62	location 625 635	Vietnamese
+T63	security_team 2464 2471	FireEye
+T64	threatActor_name 2497 2502	APT32
+T65	location 2612 2619	Vietnam
+T66	industry 2537 2564	global hospitality industry
+T67	target_crowd 2565 2574	developer
+T68	sub_activity 2451 2458	malware
+T69	location 2667 2671	U.S.
+T70	location 2676 2686	Philippine
+T71	location 2735 2742	Vietnam
+T72	company 2667 2717	U.S. and Philippine consumer products corporations
+T73	threatActor_name 2822 2827	APT32
+T74	threatActor_name 2764 2769	APT32
+T75	tool 2853 2869	malware families
+T76	time 2890 2894	2014
+T77	time 2895 2899	2014
+T78	time 2900 2904	2015
+T79	time 2905 2909	2016
+T80	time 2910 2914	2016
+T81	time 2915 2919	2016
+T82	time 2920 2924	2016
+T83	time 2925 2929	2016
+T84	time 2930 2934	2016
+T85	location 2946 2953	Vietnam
+T86	location 2955 2962	Germany
+T87	location 2964 2971	Vietnam
+T88	location 2973 2984	Philippines
+T89	location 2986 2993	Vietnam
+T90	location 2995 3006	Philippines
+T91	location 3008 3013	China
+T92	location 3015 3022	Vietnam
+T93	location 3024 3037	United States
+T94	industry 3050 3066	Network Security
+T95	industry 3068 3081	Manufacturing
+T96	industry 3083 3088	Media
+T97	industry 3090 3107	Consumer products
+T98	industry 3109 3116	Banking
+T99	industry 3118 3143	Technology Infrastructure
+T100	industry 3145 3156	Hospitality
+T101	industry 3158 3163	Media
+T102	industry 3165 3182	Consumer Products
+T103	malware 3194 3204	WINDSHIELD
+T104	malware 3206 3216	WINDSHIELD
+T105	malware 3218 3228	WINDSHIELD
+T106	malware 3230 3238	KOMPROGO
+T107	malware 3239 3249	WINDSHIELD
+T108	malware 3250 3259	SOUNDBITE
+T109	malware 3268 3278	WINDSHIELD
+T110	malware 3280 3290	WINDSHIELD
+T111	malware 3260 3266	BEACON
+T112	malware 3292 3302	WINDSHIELD
+T113	malware 3304 3314	WINDSHIELD
+T114	malware 3316 3324	KOMPROGO
+T115	malware 3325 3335	WINDSHIELD
+T116	malware 3336 3345	SOUNDBITE
+T117	malware 3346 3352	BEACON
+T118	location 3423 3430	Vietnam
+T119	threatActor_name 3433 3438	APT32
+T120	government 3457 3476	foreign governments
+T121	target_crowd 3490 3511	Vietnamese dissidents
+T122	target_crowd 3516 3527	journalists
+T123	time 3543 3547	2013
+T124	security_team 3622 3652	Electronic Frontier Foundation
+T125	target_crowd 3668 3679	journalists
+T126	target_crowd 3682 3691	activists
+T127	target_crowd 3694 3704	dissidents
+T128	target_crowd 3711 3719	bloggers
+T129	time 3737 3741	2013
+T130	threatActor_name 3781 3786	APT32
+T131	sub_activity 3745 3752	malware
+T132	time 3803 3807	2014
+T133	threatActor_name 3810 3815	APT32
+T134	sample_name 3861 3923	Plans to crackdown on protesters at the Embassy of Vietnam.exe
+T135	location 3912 3919	Vietnam
+T136	location 3993 4007	Southeast Asia
+T137	target_crowd 3970 3989	Vietnamese diaspora
+T138	attack_activity 3828 3853	spear-phishing attachment
+T139	threatActor_name 4025 4030	APT32
+T140	government 4085 4105	national legislature
+T141	location 4066 4081	Western country
+T142	time 4111 4115	2015
+T143	security_team 4118 4129	SkyEye Labs
+T144	location 4170 4177	Chinese
+T145	company 4183 4192	Qihoo 360
+T146	government 4303 4322	government agencies
+T147	industry 4325 4344	research institutes
+T148	industry 4347 4364	maritime agencies
+T149	industry 4367 4383	sea construction
+T150	company 4390 4410	shipping enterprises
+T151	person 4471 4483	perpetrators
+T152	sub_activity 4498 4505	malware
+T153	threatActor_name 4560 4565	APT32
+T154	sub_activity 4520 4534	infrastructure
+T155	time 4571 4575	2015
+T156	time 4580 4584	2016
+T158	security_team 4648 4655	FireEye
+T159	threatActor_name 4681 4686	APT32
+T157	time 4692 4696	2017
+T160	person 4747 4752	actor
+T161	person 4223 4236	threat actors
+T163	target_crowd 4823 4839	Vietnam diaspora
+T164	location 4843 4852	Australia
+T162	target_crowd 4864 4884	government employees
+T165	location 4892 4903	Philippines
+T166	threatActor_name 4934 4939	APT32
+T167	sub_activity 4954 4970	ActiveMime files
+T168	threatActor_name 5152 5157	APT32
+T169	person 5158 5164	actors
+T170	attack_activity 5215 5236	spear-phishing emails
+T171	threatActor_name 5239 5244	APT32
+T172	person 5245 5251	actors
+T173	target_crowd 5321 5328	victims
+T174	sub_activity 5413 5423	ActiveMime
+T175	reference_word 5340 5349	the files
+T176	reference_word 5071 5091	the initialized file
+R6	coreference Arg1:T175 Arg2:T174	
+T177	reference_word 4909 4914	their
+T178	reference_word 5482 5493	These files
+T179	threatActor_name 5610 5615	APT32
+T180	sub_activity 5642 5652	ActiveMime
+T181	encryption_algo 5666 5669	MD5
+T182	sample_name 5672 5693	2017年员工工资性津贴额统计报告.doc
+T183	sample_name 5789 5802	Thong tin.doc
+T184	sample_name 5855 5874	Phan Vu Tutn CV.doc
+T185	sample_name 5912 5941	Ke hoach cuu tro nam 2017.doc
+T186	sample_name 6000 6024	Instructions to GSIS.doc
+T187	sample_name 6062 6095	Hoi thao truyen thong doc lap.doc
+T188	sample_name 6154 6197	Giấy yêu cầu bồi thường mới 2016 - hằng.doc
+T189	sample_name 6258 6286	Hoa don chi tiet tien no.doc
+T190	sample_name 6340 6368	Thu moi tham du Hoi luan.doc
+T191	sample_name 6436 6475	Danh sach nhan vien vi pham ky luat.doc
+T192	sample_name 6544 6570	Nội-dung-quảng-cáo.doc
+T193	sample_name 6640 6664	HĐ DVPM-VTC 31.03.17.doc
+T194	encryption_algo 6706 6712	Base64
+T195	md5 5820 5852	ce50e544430e7265a45fab5a1f31e529
+T196	md5 5877 5909	4f761095ca51bfbbf4496a4964e41d4f
+T197	md5 5965 5997	e9abe54162ba4572c770ab043f576784
+T198	md5 6027 6059	fba089444c769700e47c6b44c362f96b
+T199	md5 5754 5786	5458a2e4d784abb1a1127263bd5006b5
+T200	md5 6119 6151	f6ee4b72d6d42d0c7be9172be2b817c1
+T201	md5 6223 6255	aa1f85de3e4d33f31b4f78968b29f175
+T202	md5 6305 6337	5180a8d9325a417f2d8066f9226a5154
+T203	md5 6401 6433	f6ee4b72d6d42d0c7be9172be2b817c1
+T204	md5 6509 6541	6baafffa7bf960dec821b627f9653e44
+T205	md5 6605 6637	471a2e7341f2614b715dc89e803ffcac
+T206	md5 6667 6699	f1af6bb36cdf3cff768faee7919f0733
+T207	sample_name 5695 5749	2017 Statistical Report on Staff Salary and Allowances
+T208	sample_name 5804 5815	Information
+T209	sample_name 5943 5960	2017 Bailout Plan
+T210	sample_name 6097 6114	Traditional Games
+T211	sample_name 6199 6218	New 2016 Claim Form
+T212	sample_name 6288 6300	Debt Details
+T213	sample_name 6370 6396	Collection of Participants
+T214	sample_name 6477 6504	List of Employee Violations
+T215	sample_name 6572 6600	Internal Content Advertising
+R7	coreference Arg1:T207 Arg2:T182	
+R8	part_of Arg1:T199 Arg2:T182	
+R9	coreference Arg1:T208 Arg2:T183	
+R10	part_of Arg1:T195 Arg2:T183	
+R11	part_of Arg1:T196 Arg2:T184	
+R12	coreference Arg1:T209 Arg2:T185	
+R13	part_of Arg1:T197 Arg2:T185	
+R14	part_of Arg1:T198 Arg2:T186	
+R15	coreference Arg1:T210 Arg2:T187	
+R16	part_of Arg1:T200 Arg2:T187	
+R17	coreference Arg1:T211 Arg2:T188	
+R18	part_of Arg1:T201 Arg2:T188	
+R19	coreference Arg1:T212 Arg2:T189	
+R20	part_of Arg1:T202 Arg2:T189	
+R21	coreference Arg1:T213 Arg2:T190	
+R22	part_of Arg1:T203 Arg2:T190	
+R23	coreference Arg1:T214 Arg2:T191	
+R24	part_of Arg1:T204 Arg2:T191	
+R25	coreference Arg1:T215 Arg2:T192	
+R26	part_of Arg1:T205 Arg2:T192	
+R27	part_of Arg1:T206 Arg2:T193	
+T216	IP_evil 16222 16236	104.237.218.70
+T217	IP_evil 16237 16251	104.237.218.72
+T218	IP_evil 16262 16274	185.157.79.3
+T219	IP_evil 16275 16289	193.169.245.78
+T220	IP_evil 16290 16305	193.169.245.137
+T221	IP_evil 16316 16330	23.227.196.210
+T222	domain_evil 16331 16347	24.datatimes.org
+T223	IP_evil 16348 16359	80.255.3.87
+T224	domain_evil 16369 16386	blog.docksugs.org
+T225	domain_evil 16387 16403	blog.panggin.org
+T226	domain_evil 16404 16423	contay.deaftone.com
+T227	domain_evil 16434 16455	check.paidprefund.org
+T228	domain_evil 16456 16469	datatimes.org
+T229	domain_evil 16470 16482	docksugs.org
+T230	domain_evil 16493 16512	economy.bloghop.org
+T231	domain_evil 16513 16527	emp.gapte.name
+T232	domain_evil 16528 16544	facebook-cdn.net
+T233	domain_evil 16555 16571	gap-facebook.com
+T234	domain_evil 16572 16586	gl-appspot.org
+T235	domain_evil 16587 16604	help.checkonl.org
+T236	domain_evil 16615 16630	high.expbas.net
+T237	domain_evil 16631 16646	high.vphelp.net
+T238	domain_evil 16647 16666	icon.torrentart.com
+T239	domain_evil 16677 16699	images.chinabytes.info
+T240	domain_evil 16700 16714	imaps.qki6.com
+T241	domain_evil 16715 16731	img.fanspeed.net
+T242	threatActor_name 16254 16259	APT32
+T243	threatActor_name 16308 16313	APT32
+T244	threatActor_name 16361 16366	APT32
+T245	threatActor_name 16426 16431	APT32
+T246	threatActor_name 16485 16490	APT32
+T247	threatActor_name 16547 16552	APT32
+T248	threatActor_name 16607 16612	APT32
+T249	threatActor_name 16669 16674	APT32
+T250	threatActor_name 16734 16739	APT32
+T251	threatActor_name 16795 16800	APT32
+T252	threatActor_name 16863 16868	APT32
+T253	threatActor_name 16917 16922	APT32
+T254	threatActor_name 16976 16981	APT32
+T255	threatActor_name 17031 17036	APT32
+T256	threatActor_name 17081 17086	APT32
+T257	threatActor_name 17140 17145	APT32
+T258	threatActor_name 17192 17197	APT32
+T259	domain_evil 16742 16759	job.supperpow.com
+T260	domain_evil 16760 16774	lighpress.info
+T261	domain_evil 16775 16792	menmin.strezf.com
+T262	domain_evil 16803 16825	mobile.pagmobiles.info
+T263	domain_evil 16826 16845	news.lighpress.info
+T264	domain_evil 16846 16860	notificeva.com
+T265	domain_evil 16871 16882	nsquery.net
+T266	domain_evil 16883 16898	pagmobiles.info
+T267	domain_evil 16899 16914	paidprefund.org
+T268	domain_evil 16925 16942	push.relasign.org
+T269	domain_evil 16943 16955	relasign.org
+T270	domain_evil 16956 16973	share.codehao.net
+T271	domain_evil 16984 17000	seri.volveri.net
+T272	domain_evil 17001 17013	ssl.zin0.com
+T273	domain_evil 17014 17028	static.jg7.org
+T274	domain_evil 17039 17054	syn.timeizu.net
+T275	domain_evil 17055 17066	teriava.com
+T276	domain_evil 17067 17078	timeizu.net
+T277	domain_evil 17089 17103	tonholding.com
+T278	domain_evil 17104 17119	tulationeva.com
+T279	domain_evil 17120 17137	untitled.po9z.com
+T280	domain_evil 17148 17165	update-flashs.com
+T281	domain_evil 17166 17177	vieweva.com
+T282	domain_evil 17178 17189	volveri.net
+T283	domain_evil 17200 17210	vphelp.net
+T284	domain_evil 17211 17228	yii.yiihao126.net
+T285	domain_evil 17229 17243	zone.apize.net
+R28	part_of Arg1:T216 Arg2:T8	
+R29	part_of Arg1:T217 Arg2:T8	
+T286	sub_activity 6721 6731	ActiveMime
+T287	sub_activity 6755 6763	OLE file
+T288	sub_activity 6937 6948	Gmail-theme
+T289	threatActor_name 7083 7088	APT32
+T290	OS_name 7133 7140	Windows
+T291	threatActor_name 7246 7251	APT32
+T292	person 7252 7261	operators
+T293	threatActor_name 7605 7610	APT32
+T294	threatActor_name 7708 7713	APT32
+T295	sub_activity 7830 7840	ActiveMime
+T297	reference_word 7786 7809	this tracking technique
+T298	sub_activity 7282 7298	novel techniques
+T299	threatActor_name 7982 7987	APT32
+T300	sub_activity 8040 8050	ActiveMime
+T301	threatActor_name 8098 8103	APT32
+T302	company 8177 8191	Microsoft Word
+T303	security_team 8338 8346	Mandiant
+T304	threatActor_name 8372 8377	APT32
+T305	attack_goal 8405 8432	track the public IP address
+T306	threatActor_name 8510 8515	APT32
+T307	sub_activity 8770 8785	scheduled tasks
+T308	reference_word 8855 8885	The first named scheduled task
+T309	reference_word 9081 9112	The second named scheduled task
+T310	threatActor_name 9027 9032	APT32
+T311	protocol 9128 9131	XML
+T313	sub_activity 8961 8974	COM scriptlet
+T312	attack_goal 6865 6912	trick users into launching the malicious macros
+T314	attack_goal 7501 7537	track who opened the phishing emails
+T315	attack_goal 7540 7556	viewed the links
+T316	attack_goal 7563 7589	downloaded the attachments
+T317	program_language 9172 9182	JavaScript
+T318	sample_function 9273 9283	PowerShell
+T319	threatActor_name 9341 9346	APT32
+T320	sub_activity 9494 9523	Windows Scheduled Maintenance
+T321	target_crowd 9544 9555	Casey Smith
+T322	counter_measure 9560 9570	Squiblydoo
+T323	sub_activity 9710 9723	COM scriptlet
+T324	sample_name 9727 9731	.sct
+T325	sub_activity 9726 9747	".sct" file extension
+T326	domain_evil 9801 9823	images.chinabytes.info
+T327	time 5695 5699	2017
+T328	time 5933 5937	2017
+T329	time 5943 5947	2017
+T330	time 6182 6186	2016
+T331	time 6203 6207	2016
+T332	sub_activity 9779 9790	Meterpreter
+T333	sub_activity 9826 9837	Meterpreter
+T334	malware 9850 9870	Cobalt Strike BEACON
+T336	IP_evil 9904 9915	80.255.3.87
+T337	sample_function 9926 9938	Safebrowsing
+T338	sub_activity 10012 10026	scheduled task
+T339	sub_activity 10034 10051	Scheduled Defrags
+T340	protocol 10089 10092	XML
+T341	time 10137 10150	June 2 , 2016
+T342	sample_name 10175 10184	mshta.exe
+T343	threatActor_name 10221 10226	APT32
+T344	sub_activity 10273 10283	PowerShell
+T345	domain_evil 10336 10352	blog.panggin.org
+T346	domain_evil 10355 10372	share.codehao.net
+T347	domain_evil 10379 10396	yii.yiihao126.net
+T348	threatActor_name 10414 10419	APT32
+T349	security_team 10511 10519	Mandiant
+T350	threatActor_name 10574 10579	APT32
+T351	sub_activity 10652 10696	PowerShell-based tools and shellcode loaders
+T352	person 10702 10717	Daniel Bohannon
+T353	sub_activity 10721 10749	Invoke-Obfuscation framework
+T354	threatActor_name 10752 10757	APT32
+T355	vulnerability_cve 10924 10937	CVE-2016-7255
+T356	threatActor_name 10866 10871	APT32
+T357	OS_name 10958 10965	Windows
+T358	sub_activity 10958 10972	Windows hotfix
+T359	threatActor_name 11002 11007	APT32
+T360	sub_activity 11024 11034	McAfee ePO
+T361	reference_word 11064 11069	their
+T362	sub_activity 11157 11160	ePO
+T363	protocol 11190 11195	SPIPE
+T364	threatActor_name 11207 11212	APT32
+T365	threatActor_name 11327 11332	APT32
+T366	threatActor_name 11584 11589	APT32
+T367	threatActor_name 11713 11718	APT32
+T368	threatActor_name 11858 11862	PT32
+T369	threatActor_name 11963 11968	APT32
+T370	sub_activity 11518 11530	DLL filename
+T371	malware 11807 11817	WINDSHIELD
+T372	malware 11820 11828	KOMPROGO
+T373	malware 11831 11840	SOUNDBITE
+T374	malware 11847 11854	PHOREAL
+T375	malware 11931 11951	Cobalt Strike BEACON
+T376	malware 12104 12114	WINDSHIELD
+T377	malware 12181 12191	WINDSHIELD
+T378	malware 12286 12296	WINDSHIELD
+T379	malware 12323 12333	WINDSHIELD
+T380	malware 12374 12384	WINDSHIELD
+T381	malware 12493 12503	WINDSHIELD
+T382	malware 12607 12617	WINDSHIELD
+T383	malware 12663 12673	WINDSHIELD
+T384	malware 12698 12708	WINDSHIELD
+T385	malware 12730 12738	KOMPROGO
+T386	malware 12819 12827	KOMPROGO
+T387	malware 12857 12865	KOMPROGO
+T388	malware 12885 12893	KOMPROGO
+T389	malware 12918 12926	KOMPROGO
+T390	malware 12980 12989	SOUNDBITE
+T391	malware 13020 13029	SOUNDBITE
+T392	malware 13051 13060	SOUNDBITE
+T393	malware 13077 13086	SOUNDBITE
+T394	malware 13115 13124	SOUNDBITE
+T395	malware 13173 13182	SOUNDBITE
+T396	malware 13206 13215	SOUNDBITE
+T397	malware 13242 13251	SOUNDBITE
+T398	malware 13285 13292	PHOREAL
+T399	malware 13324 13331	PHOREAL
+T400	malware 13359 13366	PHOREAL
+T401	malware 13395 13402	PHOREAL
+T402	malware 13429 13436	PHOREAL
+T403	malware 13458 13465	PHOREAL
+T404	malware 13482 13506	BEACON ( Cobalt Strike )
+T405	malware 13596 13620	BEACON ( Cobalt Strike )
+T406	malware 13669 13693	BEACON ( Cobalt Strike )
+T407	malware 13725 13749	BEACON ( Cobalt Strike )
+T408	malware 13786 13810	BEACON ( Cobalt Strike )
+T409	malware 13840 13864	BEACON ( Cobalt Strike )
+T410	malware 13947 13971	BEACON ( Cobalt Strike )
+T411	malware 14037 14061	BEACON ( Cobalt Strike )
+T412	sub_activity 12139 12141	C2
+T413	protocol 12163 12166	TCP
+T414	sub_activity 12210 12213	C2s
+T415	sub_activity 12117 12136	Command and control
+T416	sub_activity 12257 12259	C2
+T417	sub_activity 12992 12994	C2
+T418	protocol 13014 13017	DNS
+T420	sub_activity 13295 13297	C2
+T421	protocol 13317 13321	ICMP
+T422	protocol 13706 13714	Kerberos
+T423	sub_activity 13893 13895	C2
+T424	tool 14014 14024	Metasploit
+T425	protocol 14064 14067	SMB
+T426	sub_activity 14132 14134	C2
+T427	tool 12904 12907	WMI
+T419	threatActor_name 14159 14164	APT32
+T428	person 14165 14174	operators
+T429	security_team 14309 14355	The FireEye iSIGHT Intelligence MySIGHT Portal
+T430	threatActor_name 14451 14456	APT32
+T431	security_team 14424 14432	Mandiant
+T432	security_team 14624 14631	FireEye
+T433	threatActor_name 14646 14651	APT32
+T434	location 14692 14702	Vietnamese
+T435	threatActor_name 14771 14776	APT32
+T436	security_team 14792 14799	FireEye
+T437	threatActor_name 14947 14952	APT32
+T438	threatActor_name 15245 15250	APT32
+T439	location 15311 15325	Southeast Asia
+T440	government 15360 15371	Governments
+T441	sub_activity 15334 15347	public sector
+T442	target_crowd 15374 15385	journalists
+T443	target_crowd 15392 15423	members of the Vietnam diaspora
+T444	location 15407 15414	Vietnam
+T445	person 15460 15466	actors
+T446	location 15472 15477	China
+T447	location 15480 15484	Iran
+T448	location 15487 15493	Russia
+T449	location 15500 15511	North Korea
+T450	security_team 15587 15594	FireEye
+T451	threatActor_name 15597 15602	APT32
+T452	threatActor_name 15688 15693	APT32
+T453	person 15954 15960	public
+T454	security_team 16160 16167	FireEye
+T455	threatActor_name 16188 16193	APT32
+T456	sub_activity 16194 16196	C2
+R30	part_of Arg1:T218 Arg2:T242	
+R31	part_of Arg1:T219 Arg2:T242	
+R32	part_of Arg1:T220 Arg2:T242	
+R33	part_of Arg1:T221 Arg2:T243	
+R34	part_of Arg1:T222 Arg2:T243	
+R35	part_of Arg1:T223 Arg2:T243	
+R36	part_of Arg1:T224 Arg2:T244	
+R37	part_of Arg1:T225 Arg2:T244	
+R38	part_of Arg1:T226 Arg2:T244	
+R39	part_of Arg1:T227 Arg2:T245	
+R40	part_of Arg1:T228 Arg2:T245	
+R41	part_of Arg1:T229 Arg2:T245	
+R42	part_of Arg1:T230 Arg2:T246	
+R43	part_of Arg1:T231 Arg2:T246	
+R44	part_of Arg1:T232 Arg2:T246	
+R45	part_of Arg1:T233 Arg2:T247	
+R46	part_of Arg1:T234 Arg2:T247	
+R47	part_of Arg1:T235 Arg2:T247	
+R48	part_of Arg1:T236 Arg2:T248	
+R49	part_of Arg1:T237 Arg2:T248	
+R50	part_of Arg1:T238 Arg2:T248	
+R51	part_of Arg1:T239 Arg2:T249	
+R52	part_of Arg1:T240 Arg2:T249	
+R53	part_of Arg1:T241 Arg2:T249	
+R54	part_of Arg1:T259 Arg2:T250	
+R55	part_of Arg1:T260 Arg2:T250	
+R56	part_of Arg1:T261 Arg2:T250	
+R57	part_of Arg1:T262 Arg2:T251	
+R58	part_of Arg1:T263 Arg2:T251	
+R59	part_of Arg1:T264 Arg2:T251	
+R60	part_of Arg1:T265 Arg2:T252	
+R61	part_of Arg1:T266 Arg2:T252	
+R62	part_of Arg1:T267 Arg2:T252	
+R63	part_of Arg1:T268 Arg2:T253	
+R64	part_of Arg1:T269 Arg2:T253	
+R65	part_of Arg1:T270 Arg2:T253	
+R66	part_of Arg1:T271 Arg2:T254	
+R67	part_of Arg1:T272 Arg2:T254	
+R68	part_of Arg1:T273 Arg2:T254	
+R69	part_of Arg1:T274 Arg2:T255	
+R70	part_of Arg1:T275 Arg2:T255	
+R71	part_of Arg1:T276 Arg2:T255	
+R72	part_of Arg1:T277 Arg2:T256	
+R73	part_of Arg1:T278 Arg2:T256	
+R74	part_of Arg1:T279 Arg2:T256	
+R75	part_of Arg1:T280 Arg2:T257	
+R76	part_of Arg1:T281 Arg2:T257	
+R77	part_of Arg1:T282 Arg2:T257	
+R78	part_of Arg1:T283 Arg2:T258	
+R79	part_of Arg1:T284 Arg2:T258	
+R80	part_of Arg1:T285 Arg2:T258	
+R81	coreference Arg1:T456 Arg2:T415	
+R82	located Arg1:T445 Arg2:T446	
+R83	located Arg1:T445 Arg2:T447	
+R84	located Arg1:T445 Arg2:T448	
+R85	located Arg1:T445 Arg2:T449	
+R86	attack Arg1:T438 Arg2:T440	
+R87	attack Arg1:T438 Arg2:T439	
+R88	attack Arg1:T438 Arg2:T441	
+R89	attack Arg1:T438 Arg2:T442	
+R90	attack Arg1:T438 Arg2:T443	
+R91	located Arg1:T443 Arg2:T444	
+R92	attack Arg1:T433 Arg2:T434	
+R93	coreference Arg1:T426 Arg2:T415	
+R94	coreference Arg1:T412 Arg2:T415	
+R95	coreference Arg1:T414 Arg2:T415	
+R96	coreference Arg1:T416 Arg2:T415	
+R97	coreference Arg1:T417 Arg2:T415	
+R98	coreference Arg1:T420 Arg2:T415	
+R99	coreference Arg1:T423 Arg2:T415	
+R100	part_of Arg1:T428 Arg2:T419	
+R101	attack Arg1:T411 Arg2:T425	
+R102	attack Arg1:T411 Arg2:T426	
+R103	use Arg1:T410 Arg2:T424	
+R104	attack Arg1:T409 Arg2:T423	
+R105	attack Arg1:T406 Arg2:T422	
+R106	attack Arg1:T398 Arg2:T420	
+R107	attack Arg1:T398 Arg2:T421	
+R108	attack Arg1:T390 Arg2:T417	
+R109	attack Arg1:T390 Arg2:T418	
+R110	use Arg1:T388 Arg2:T427	
+R111	attack Arg1:T377 Arg2:T414	
+R112	attack Arg1:T377 Arg2:T416	
+R113	attack Arg1:T376 Arg2:T415	
+R114	attack Arg1:T376 Arg2:T413	
+R115	use Arg1:T368 Arg2:T375	
+R116	use Arg1:T367 Arg2:T371	
+R117	use Arg1:T367 Arg2:T372	
+R118	use Arg1:T367 Arg2:T373	
+R119	use Arg1:T367 Arg2:T374	
+T457	sub_activity 11347 11355	backdoor
+R120	use Arg1:T365 Arg2:T457	
+R121	use Arg1:T365 Arg2:T370	
+T458	sub_activity 11422 11454	Unicode no-break space character
+R122	part_of Arg1:T458 Arg2:T457	
+T459	sub_activity 11545 11581	non-printing OS command control code
+R123	part_of Arg1:T459 Arg2:T370	
+R124	attack Arg1:T359 Arg2:T360	
+R125	coreference Arg1:T361 Arg2:T359	
+R126	attack Arg1:T359 Arg2:T362	
+R127	attack Arg1:T359 Arg2:T363	
+R128	use Arg1:T356 Arg2:T355	
+T460	vul_aliases 10893 10921	privilege escalation exploit
+R129	coreference Arg1:T460 Arg2:T355	
+R130	attack Arg1:T356 Arg2:T358	
+R131	part_of Arg1:T358 Arg2:T357	
+R132	use Arg1:T350 Arg2:T353	
+R133	attack Arg1:T350 Arg2:T351	
+R134	part_of Arg1:T353 Arg2:T352	
+R135	find Arg1:T349 Arg2:T350	
+T461	reference_word 10153 10169	This second task
+R136	use Arg1:T286 Arg2:T194	
+R137	part_of Arg1:T287 Arg2:T286	
+R138	goal Arg1:T286 Arg2:T312	
+T462	sub_activity 7133 7154	Windows error message
+R139	use Arg1:T289 Arg2:T462	
+R140	part_of Arg1:T462 Arg2:T290	
+R141	part_of Arg1:T292 Arg2:T291	
+T296	reference_word 7324 7329	their
+T463	reference_word 7369 7374	their
+R143	coreference Arg1:T296 Arg2:T291	
+R144	coreference Arg1:T463 Arg2:T291	
+R142	use Arg1:T291 Arg2:T298	
+R145	goal Arg1:T291 Arg2:T314	
+R146	goal Arg1:T291 Arg2:T315	
+R147	goal Arg1:T291 Arg2:T316	
+R148	coreference Arg1:T297 Arg2:T298	
+T464	reference_word 7824 7829	their
+R149	coreference Arg1:T464 Arg2:T294	
+R150	use Arg1:T299 Arg2:T300	
+R151	attack Arg1:T301 Arg2:T302	
+R152	find Arg1:T303 Arg2:T304	
+R153	goal Arg1:T304 Arg2:T305	
+R154	coreference Arg1:T308 Arg2:T307	
+R155	coreference Arg1:T309 Arg2:T307	
+R156	use Arg1:T308 Arg2:T313	
+R157	use Arg1:T309 Arg2:T311	
+T465	sub_activity 9172 9193	JavaScript code block
+R158	part_of Arg1:T317 Arg2:T465	
+R159	use Arg1:T309 Arg2:T465	
+R160	part_of Arg1:T318 Arg2:T465	
+T466	sub_activity 9559 9588	"Squiblydoo" App Whitelisting
+R162	part_of Arg1:T322 Arg2:T466	
+R163	part_of Arg1:T466 Arg2:T321	
+R161	attack Arg1:T320 Arg2:T466	
+R164	part_of Arg1:T324 Arg2:T325	
+R165	coreference Arg1:T325 Arg2:T323	
+R166	part_of Arg1:T326 Arg2:T332	
+T467	reference_word 9689 9698	this task
+R167	attack Arg1:T467 Arg2:T323	
+R168	attack Arg1:T467 Arg2:T332	
+R169	coreference Arg1:T467 Arg2:T320	
+R170	use Arg1:T333 Arg2:T334	
+R171	attack Arg1:T333 Arg2:T336	
+R172	use Arg1:T333 Arg2:T337	
+R173	coreference Arg1:T339 Arg2:T338	
+R174	use Arg1:T338 Arg2:T340	
+R175	occur_time Arg1:T338 Arg2:T341	
+R176	coreference Arg1:T461 Arg2:T338	
+R177	use Arg1:T461 Arg2:T342	
+R178	attack Arg1:T461 Arg2:T344	
+R179	use Arg1:T461 Arg2:T345	
+R180	use Arg1:T461 Arg2:T346	
+R181	use Arg1:T461 Arg2:T347	
+R182	find Arg1:T4 Arg2:T5	
+R183	find Arg1:T4 Arg2:T3	
+R184	attack Arg1:T5 Arg2:T14	
+R185	attack Arg1:T5 Arg2:T12	
+R186	attack Arg1:T5 Arg2:T13	
+R187	find Arg1:T15 Arg2:T16	
+R188	use Arg1:T16 Arg2:T17	
+R189	attack Arg1:T16 Arg2:T62	
+R190	launch Arg1:T16 Arg2:T18	
+T335	company 713 725	corporations
+R191	located Arg1:T335 Arg2:T61	
+R192	part_of Arg1:T20 Arg2:T19	
+R193	attack Arg1:T16 Arg2:T335	
+R194	launch Arg1:T11 Arg2:T22	
+R195	coreference Arg1:T23 Arg2:T22	
+R196	release_time Arg1:T11 Arg2:T21	
+R197	coreference Arg1:T26 Arg2:T25	
+R198	attack Arg1:T29 Arg2:T30	
+R199	launch Arg1:T11 Arg2:T24	
+R200	launch Arg1:T11 Arg2:T25	
+R201	launch Arg1:T11 Arg2:T27	
+R202	launch Arg1:T11 Arg2:T28	
+R203	attack Arg1:T33 Arg2:T32	
+R204	find Arg1:T37 Arg2:T38	
+R205	attack Arg1:T38 Arg2:T40	
+R206	attack Arg1:T38 Arg2:T41	
+R207	attack Arg1:T38 Arg2:T42	
+R208	located Arg1:T40 Arg2:T39	
+R209	located Arg1:T41 Arg2:T39	
+R210	located Arg1:T42 Arg2:T39	
+R211	release_time Arg1:T37 Arg2:T36	
+R212	goal Arg1:T43 Arg2:T44	
+R213	goal Arg1:T43 Arg2:T45	
+R214	located Arg1:T55 Arg2:T53	
+R215	occur_time Arg1:T47 Arg2:T48	
+R216	attack Arg1:T47 Arg2:T55	
+T468	sub_activity 2244 2266	manufacturing facility
+R217	located Arg1:T468 Arg2:T54	
+R218	attack Arg1:T47 Arg2:T468	
+R219	occur_time Arg1:T47 Arg2:T49	
+R221	attack Arg1:T47 Arg2:T60	
+R222	attack Arg1:T47 Arg2:T56	
+R223	attack Arg1:T47 Arg2:T57	
+R224	attack Arg1:T47 Arg2:T58	
+R225	attack Arg1:T47 Arg2:T59	
+R220	occur_time Arg1:T63 Arg2:T50	
+R227	use Arg1:T64 Arg2:T68	
+R226	find Arg1:T63 Arg2:T68	
+R229	attack Arg1:T64 Arg2:T67	
+R231	part_of Arg1:T66 Arg2:T67	
+R228	located Arg1:T67 Arg2:T65	
+R230	attack Arg1:T74 Arg2:T72	
+R232	located Arg1:T72 Arg2:T71	
+R233	occur_time Arg1:T74 Arg2:T52	
+R234	occur_time Arg1:T74 Arg2:T51	
+R235	use Arg1:T73 Arg2:T75	
+T469	sub_activity 3395 3409	private sector
+R242	located Arg1:T469 Arg2:T118	
+R243	attack Arg1:T119 Arg2:T469	
+R244	attack Arg1:T119 Arg2:T120	
+R245	attack Arg1:T119 Arg2:T121	
+R246	attack Arg1:T119 Arg2:T122	
+R247	occur_time Arg1:T119 Arg2:T123	
+R248	use Arg1:T130 Arg2:T131	
+T470	sub_activity 3757 3764	tactics
+R249	use Arg1:T130 Arg2:T470	
+R250	occur_time Arg1:T130 Arg2:T129	
+R251	attack Arg1:T130 Arg2:T128	
+R252	attack Arg1:T130 Arg2:T127	
+R253	attack Arg1:T130 Arg2:T126	
+R254	attack Arg1:T130 Arg2:T125	
+R255	find Arg1:T124 Arg2:T130	
+R236	use Arg1:T133 Arg2:T138	
+R237	part_of Arg1:T134 Arg2:T138	
+R238	attack Arg1:T133 Arg2:T137	
+R239	located Arg1:T137 Arg2:T136	
+R240	occur_time Arg1:T133 Arg2:T132	
+T471	time 4018 4022	2014
+R241	attack Arg1:T139 Arg2:T140	
+R256	located Arg1:T140 Arg2:T141	
+R257	occur_time Arg1:T139 Arg2:T471	
+R258	part_of Arg1:T143 Arg2:T145	
+R259	located Arg1:T145 Arg2:T144	
+R260	attack Arg1:T161 Arg2:T146	
+R261	attack Arg1:T161 Arg2:T147	
+R262	attack Arg1:T161 Arg2:T148	
+R263	attack Arg1:T161 Arg2:T149	
+R264	attack Arg1:T161 Arg2:T150	
+T472	sub_activity 4257 4271	Chinese public
+R265	attack Arg1:T161 Arg2:T472	
+T473	reference_word 4441 4451	the report
+T474	sub_activity 4206 4212	report
+R266	launch Arg1:T145 Arg2:T474	
+R267	part_of Arg1:T161 Arg2:T474	
+R268	coreference Arg1:T473 Arg2:T474	
+T475	reference_word 4413 4428	The information
+R269	coreference Arg1:T475 Arg2:T161	
+R270	use Arg1:T151 Arg2:T152	
+R271	use Arg1:T151 Arg2:T154	
+R272	part_of Arg1:T152 Arg2:T153	
+R273	part_of Arg1:T154 Arg2:T153	
+T476	industry 4591 4607	Vietnamese media
+R274	attack Arg1:T159 Arg2:T476	
+R275	find Arg1:T158 Arg2:T159	
+R276	release_time Arg1:T158 Arg2:T156	
+R277	release_time Arg1:T158 Arg2:T155	
+T477	reference_word 4776 4780	they
+T478	sub_activity 4699 4725	social engineering content
+R278	use Arg1:T160 Arg2:T478	
+R279	coreference Arg1:T477 Arg2:T478	
+R280	attack Arg1:T160 Arg2:T163	
+R281	located Arg1:T163 Arg2:T164	
+R282	attack Arg1:T160 Arg2:T162	
+R283	located Arg1:T162 Arg2:T165	
+R284	occur_time Arg1:T160 Arg2:T157	
+R285	coreference Arg1:T177 Arg2:T166	
+R286	use Arg1:T166 Arg2:T167	
+R287	coreference Arg1:T176 Arg2:T167	
+R288	part_of Arg1:T169 Arg2:T168	
+R289	part_of Arg1:T172 Arg2:T171	
+R290	use Arg1:T168 Arg2:T170	
+R291	attack Arg1:T171 Arg2:T173	
+R292	coreference Arg1:T178 Arg2:T174	
+T479	string 5355 5359	.doc
+T480	string 5425 5429	.mht
+R293	located Arg1:T94 Arg2:T85	
+R294	located Arg1:T95 Arg2:T86	
+R295	located Arg1:T96 Arg2:T87	
+R296	located Arg1:T97 Arg2:T88	
+R297	located Arg1:T98 Arg2:T89	
+R298	located Arg1:T99 Arg2:T90	
+R299	located Arg1:T100 Arg2:T91	
+R300	located Arg1:T101 Arg2:T92	
+R301	located Arg1:T102 Arg2:T93	
+R302	occur_time Arg1:T73 Arg2:T76	
+R303	occur_time Arg1:T73 Arg2:T77	
+R304	occur_time Arg1:T73 Arg2:T78	
+R305	occur_time Arg1:T73 Arg2:T79	
+R306	occur_time Arg1:T73 Arg2:T80	
+R307	occur_time Arg1:T73 Arg2:T81	
+R308	occur_time Arg1:T73 Arg2:T82	
+R309	occur_time Arg1:T73 Arg2:T83	
+R310	occur_time Arg1:T73 Arg2:T84	
+R311	attack Arg1:T73 Arg2:T94	
+R312	attack Arg1:T73 Arg2:T95	
+R313	attack Arg1:T73 Arg2:T96	
+R314	attack Arg1:T73 Arg2:T97	
+R315	attack Arg1:T73 Arg2:T98	
+R316	attack Arg1:T73 Arg2:T99	
+R317	attack Arg1:T73 Arg2:T100	
+R318	attack Arg1:T73 Arg2:T101	
+R319	attack Arg1:T73 Arg2:T102	
+R320	use Arg1:T73 Arg2:T103	
+R321	use Arg1:T73 Arg2:T104	
+R322	use Arg1:T73 Arg2:T105	
+R323	use Arg1:T73 Arg2:T106	
+R324	use Arg1:T73 Arg2:T107	
+R325	use Arg1:T73 Arg2:T108	
+R326	use Arg1:T73 Arg2:T111	
+R327	use Arg1:T73 Arg2:T109	
+R328	use Arg1:T73 Arg2:T110	
+R329	use Arg1:T73 Arg2:T112	
+R330	use Arg1:T73 Arg2:T113	
+R331	use Arg1:T73 Arg2:T114	
+R332	use Arg1:T73 Arg2:T115	
+R333	use Arg1:T73 Arg2:T116	
+R334	use Arg1:T73 Arg2:T117	

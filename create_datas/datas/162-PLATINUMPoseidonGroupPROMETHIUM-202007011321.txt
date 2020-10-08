@@ -1,0 +1,10 @@
+Unknown .		others others
+Release_Time :  unknown .		others others others others
+Report_URL :  https://attack.mitre.org/groups/ .		others others others others others others
+PLATINUM is an activity group that has targeted victims since at least 2009 .		threatActor_name others others others others others others others others others others others time others
+The group has focused on targets associated with governments and related organizations in South and Southeast Asia .		reference_word reference_word others others others target_crowd target_crowd target_crowd target_crowd target_crowd target_crowd target_crowd others location location location location others
+Poseidon Group is a Portuguese-speaking threat group that has been active since at least 2005 .		threatActor_name threatActor_name others others others others others others others others others others others others time others
+The group has a history of using information exfiltrated from victims to blackmail victim companies into contracting the Poseidon Group as a security firm .		reference_word reference_word others others others others sub_activity sub_activity sub_activity sub_activity sub_activity others sub_activity sub_activity sub_activity others sub_activity sub_activity threatActor_name threatActor_name sub_activity sub_activity sub_activity sub_activity others
+PROMETHIUM is an activity group that has been active since at least 2012 .		threatActor_name others others others others others others others others others others others time others
+The group conducted a campaign in May 2016 and has heavily targeted Turkish victims .		reference_word reference_word others others others others time time others others others others target_crowd target_crowd others
+PROMETHIUM has demonstrated similarity to another activity group called NEODYMIUM due to overlapping victim and campaign characteristics .		threatActor_name others others others others others others others others threatActor_name others others others others others others others others

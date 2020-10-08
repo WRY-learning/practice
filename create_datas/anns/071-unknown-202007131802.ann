@@ -1,0 +1,610 @@
+T1	malware 0 7	Downeks
+T2	malware 12 22	Quasar RAT
+T3	target_crowd 63 74	Governments
+R1	attack Arg1:T2 Arg2:T3	
+R2	attack Arg1:T1 Arg2:T3	
+T4	company 237 290	Palo Alto Networks Traps Advanced Endpoint Protection
+T5	attack_activity 374 382	DustySky
+T6	attack_activity 385 393	DustySky
+T8	threatActor_name 444 464	Gaza Cybergang group
+T9	attack_goal 488 522	government interests in the region
+R3	launch Arg1:T8 Arg2:T6	
+T10	tool 589 615	Remote Access Tool ( RAT )
+T11	malware 876 883	Downeks
+T12	malware 952 958	Quasar
+T13	tool 961 964	RAT
+T14	malware 967 974	Downeks
+T15	malware 3014 3021	Downeks
+T16	malware 3131 3138	Downeks
+T17	malware 3271 3278	Downeks
+T18	malware 3943 3950	Downeks
+T19	malware 4125 4132	Downeks
+T20	malware 14706 14713	Downeks
+T21	malware 14829 14836	Downeks
+T22	malware 14899 14906	Downeks
+T23	malware 15449 15456	Downeks
+T24	malware 16032 16039	Downeks
+T25	malware 16992 16999	Downeks
+T26	malware 17115 17122	Downeks
+T27	malware 17162 17169	Downeks
+T28	malware 17232 17239	Downeks
+T29	malware 17542 17549	Downeks
+T30	malware 17750 17757	Downeks
+T31	malware 18304 18311	Downeks
+T32	malware 18505 18512	Downeks
+T33	malware 18771 18778	Downeks
+T34	malware 19188 19195	Downeks
+T35	malware 19295 19302	Downeks
+T36	malware 19307 19313	Quasar
+T37	malware 19372 19379	Downeks
+T38	malware 19384 19390	Quasar
+T39	malware 19654 19661	Downeks
+T40	tool 1221 1224	RAT
+T41	malware 1176 1182	Quasar
+T42	reference_word 1105 1107	It
+R4	coreference Arg1:T42 Arg2:T14	
+T43	tool 1335 1338	RAT
+T44	tool 980 1000	third party websites
+T45	sample_name 1559 1571	f-secure.exe
+T46	sample_name 1675 1687	HD_Audio.exe
+T47	sample_name 1792 1804	HD_Audio.exe
+T48	sample_function 1004 1051	determine the external IP of the victim machine
+T49	sample_function 1066 1091	determine victim location
+T50	tool 1097 1102	GeoIP
+R5	use Arg1:T14 Arg2:T44	
+R6	use Arg1:T14 Arg2:T50	
+R7	goal Arg1:T44 Arg2:T48	
+R8	goal Arg1:T50 Arg2:T49	
+T51	sub_activity 1113 1134	drops decoy documents
+T52	sample_function 1152 1173	camouflage the attack
+R9	goal Arg1:T51 Arg2:T52	
+R10	launch Arg1:T42 Arg2:T51	
+T53	sample_name 1897 1904	sim.exe
+T55	time 1506 1520	September 2016
+T54	malware 1433 1439	Quasar
+T56	tool 1440 1443	RAT
+T57	person 1400 1419	Unit 42 researchers
+R11	find Arg1:T57 Arg2:T54	
+T58	malware 2035 2041	Quasar
+T59	malware 1541 1547	Quasar
+T60	reference_word 1523 1525	We
+R12	coreference Arg1:T60 Arg2:T57	
+T61	person 1231 1240	attackers
+T7	reference_word 469 474	group
+R13	coreference Arg1:T7 Arg2:T8	
+R14	goal Arg1:T7 Arg2:T9	
+T62	time 2084 2088	2016
+T63	malware 2204 2210	Quasar
+T64	malware 2297 2303	Quasar
+T65	sub_activity 2754 2794	delivered to the victim via email or web
+T66	sample_name 2810 2874	Joint Ministerial Council between the GCC and the EU Council.exe
+T67	sample_name 3046 3053	ati.exe
+T68	sub_activity 2993 3030	extracts an embedded Downeks instance
+T70	sub_activity 3205 3235	installation of the Quasar RAT
+T71	malware 3225 3231	Quasar
+T73	person 3625 3634	attackers
+T74	malware 3581 3588	Dowenks
+T75	malware 3593 3599	Quasar
+T76	location 3701 3715	Middle Eastern
+T77	attack_activity 3920 3928	DustySky
+T78	tool 3650 3664	decoy document
+T79	reference_word 3747 3751	them
+R15	coreference Arg1:T79 Arg2:T78	
+T80	time 4223 4236	December 2015
+T81	time 4267 4274	January
+T82	malware 3966 3972	Quasar
+T83	protocol 3973 3975	C2
+T84	malware 4148 4154	Quasar
+T85	protocol 4155 4157	C2
+T86	malware 4342 4348	Quasar
+T88	malware 4515 4521	Quasar
+T89	tool 4556 4559	RAT
+T90	tool 4590 4594	xRAT
+T91	person 4619 4625	MaxXor
+T92	malware 4667 4673	Quasar
+T93	malware 4778 4784	Quasar
+T94	protocol 4853 4855	C2
+T95	domain_evil 4865 4884	app.progsupdate.com
+T96	IP_evil 4905 4918	185.141.25.68
+T97	domain 1651 1672	hnoor.newphoneapp.com
+T98	domain 1767 1789	manual.newphoneapp.com
+T99	domain 1982 2003	hnoor.newphoneapp.com
+T100	malware 4940 4946	Quasar
+T101	reference_word 5076 5083	malware
+R16	coreference Arg1:T101 Arg2:T100	
+T103	tool 5167 5195	Google Desktop once unpacked
+T104	tool 5225 5229	Netz
+T105	tool 5771 5784	deobfuscation
+T106	malware 5971 5977	Quasar
+T107	malware 6001 6007	Quasar
+T108	malware 6195 6201	Quasar
+T109	encryption_algo 6265 6273	ECB mode
+T110	encryption_algo 6278 6291	PKCS7 padding
+T111	encryption_algo 6649 6655	SHA256
+T112	encryption_algo 6667 6670	MD5
+T121	encryption_algo 6309 6315	SHA256
+T125	encryption_algo 6696 6711	RijndaelManaged
+T126	encryption_algo 6244 6259	RijndaelManaged
+T127	encryption_algo 6723 6726	AES
+T128	encryption_algo 6751 6759	ECB mode
+T129	malware 6791 6797	Quasar
+T130	tool 6811 6832	NetSerializer library
+T131	reference_word 5243 5264	.NET Framework packer
+T132	function 6025 6040	Settings object
+T133	function 6136 6145	ISCHECKIP
+T134	function 6150 6165	INSTARTUPFOLDER
+T135	sample_function 6838 6889	handles serialization of high level IPacket objects
+R20	use Arg1:T129 Arg2:T130	
+T136	malware 7405 7419	quasar 1.2.0.0
+T137	malware 7505 7527	Quasar version 1.1.0.0
+T138	malware 7674 7696	Quasar version 1.3.0.0
+T139	malware 7601 7616	Quasar versions
+T140	malware 8144 8150	Quasar
+T141	tool 8151 8154	RAT
+T142	function 8912 8915	API
+T143	domain 9858 9877	app.progsupdate.com
+T102	tool 5089 5113	fake version information
+R17	use Arg1:T101 Arg2:T102	
+T144	sub_activity 9192 9235	Translate on the fly the objects the server
+T145	sub_activity 9348 9364	Copy the content
+T146	sub_activity 9473 9500	Serialize the client object
+T147	sub_activity 9619 9655	Translate the client response object
+T148	sub_activity 9798 9826	Return the translated object
+T149	sub_activity 9712 9729	Copy the contents
+T150	sub_activity 9546 9571	Deserialize the decrypted
+T151	IP 9898 9911	185.141.25.68
+T152	protocol 9919 9922	TCP
+T153	function 10055 10068	GetSystemInfo
+T154	sub_activity 10085 10118	serialized into a stream of bytes
+T155	sub_activity 10022 10068	translated to an IPacket of type GetSystemInfo
+T156	sub_activity 9935 9961	The server sends a command
+T157	sub_activity 10125 10153	stream of bytes is encrypted
+T158	sub_activity 10231 10267	bytes is sent over TCP to the client
+T159	sub_activity 10274 10313	client receives and decrypts the packet
+T160	sub_activity 10327 10377	deserializes the packet into IPacket GetSystemInfo
+T161	function 10356 10377	IPacket GetSystemInfo
+T162	sub_activity 10384 10424	relevant handler of the client is called
+T163	sub_activity 10427 10458	collects the system information
+T164	function 10495 10516	GetSystemInfoResponse
+T165	sample_function 10625 10638	Serialization
+T166	sample_function 10643 10668	Encryption framework code
+T167	person 10874 10882	attacker
+T169	sub_activity 11000 11022	Get system information
+T170	sub_activity 11025 11040	Get file system
+T171	sub_activity 11043 11076	Upload / download / execute files
+T172	sub_activity 11079 11094	Startup manager
+T173	sub_activity 11097 11114	Open task manager
+T174	sub_activity 11117 11139	Kill / start processes
+T175	sub_activity 11142 11155	Edit registry
+T176	sub_activity 11158 11171	Reverse Proxy
+T177	sub_activity 11174 11205	Shutdown / restart the computer
+T178	sub_activity 11208 11238	Open remote desktop connection
+T179	sub_activity 11241 11287	Observe the desktop and actions of active user
+T180	sub_activity 11290 11336	Issue remote mouse clicks and keyboard strokes
+T181	sub_activity 11339 11356	Password stealing
+T182	sub_activity 11359 11382	Retrieve Keylogger logs
+T183	sub_activity 11385 11398	Visit website
+T184	sub_activity 11401 11422	Display a message box
+T185	malware 11640 11646	Quasar
+T186	tool 11647 11650	RAT
+T187	protocol 11651 11653	C2
+T188	malware 11848 11854	Quasar
+T189	tool 11855 11858	RAT
+T190	protocol 12016 12018	C2
+T191	malware 12111 12117	Quasar
+T192	tool 12118 12121	RAT
+T193	tool 12287 12290	RAT
+T194	malware 12253 12259	Quasar
+T195	tool 12352 12355	RAT
+T196	domain 19683 19702	downloadtesting.com
+T197	domain 19705 19720	gameoolines.com
+T198	domain 19723 19739	onlinesoft.space
+T199	tool 8144 8154	Quasar RAT
+T200	domain 19742 19757	newphoneapp.com
+T201	reference_word 8180 8184	this
+R22	coreference Arg1:T201 Arg2:T199	
+T202	domain 19760 19775	gamestoplay.bid
+T203	domain 19778 19790	smartsftp.pw
+T204	sample_function 8560 8569	serialize
+T205	sample_function 8574 8600	encrypt the communications
+T206	tool 8661 8671	our server
+T207	tool 8230 8251	out-of-the-box server
+T208	tool 8532 8538	server
+T209	tool 8636 8642	server
+T210	sample_function 8712 8723	communicate
+R23	goal Arg1:T206 Arg2:T210	
+T211	tool 8757 8763	server
+T212	sample_function 8768 8785	load the assembly
+T213	sample_function 8803 8843	find the relevant functions and password
+R24	goal Arg1:T211 Arg2:T212	
+R25	goal Arg1:T212 Arg2:T213	
+T214	tool 11640 11650	Quasar RAT
+T215	tool 11848 11858	Quasar RAT
+T216	tool 12111 12121	Quasar RAT
+R26	goal Arg1:T208 Arg2:T204	
+R27	goal Arg1:T208 Arg2:T205	
+T217	company 19247 19265	Palo Alto Networks
+T218	target_crowd 19247 19275	Palo Alto Networks customers
+R28	attack Arg1:T35 Arg2:T218	
+R29	attack Arg1:T36 Arg2:T218	
+T219	sha2 19793 19857	3053e1e8df7e525ef98a77190cefce258aea365e2998425ecc8e139230680156
+T220	sha2 19860 19924	f19bc664558177b7269f52edcec74ecdb38ed2ab9e706b68d9cbb3a53c243dec
+T221	sha2 19927 19991	0d235478ae9cc87b7b907181ccd151b618d74955716ba2dbc40a74dc1cdfc4aa
+T222	sha2 19994 20058	96c1346351a53c865afef5e087a8cbcf8e28d652fbc083a93399a8b94328d456
+T223	sha2 20061 20125	15abd32342e87455b73f1e2ecf9ab10331600eb4eae54e1dfc25ba2f9d8c2e8a
+T224	sha2 20128 20192	b66e5af52fd4d802f64788692b3eafe6b5ff61cea09c06a237a96b6cdb90b41a
+T225	malware 19485 19491	Quasar
+T226	protocol 19581 19584	DNS
+T227	tool 19337 19345	WildFire
+T228	sample_function 19355 19365	classifies
+R30	goal Arg1:T227 Arg2:T228	
+T229	tool 19414 19419	Traps
+T230	sample_function 19420 19467	detects and blocks malicious behavior exhibited
+R31	goal Arg1:T229 Arg2:T230	
+T231	protocol 19502 19504	C2
+T232	tool 19505 19512	servers
+T233	sample_function 19372 19411	Downeks and Quasar samples as malicious
+R32	goal Arg1:T228 Arg2:T233	
+T234	sample_function 19513 19523	associated
+T235	sample_function 19563 19595	Threat Prevention DNS signatures
+R33	goal Arg1:T232 Arg2:T234	
+R34	goal Arg1:T234 Arg2:T235	
+T236	tool 19598 19617	AutoFocus customers
+T237	sample_function 19622 19643	monitor this activity
+R35	goal Arg1:T236 Arg2:T237	
+T238	tool 19666 19675	QuasarRAT
+T239	protocol 18804 18806	C2
+R36	use Arg1:T33 Arg2:T239	
+T240	protocol 18999 19001	C2
+T241	protocol 19163 19165	C2
+T242	sub_activity 18842 18847	Check
+T243	sub_activity 19004 19028	Kill any running process
+T244	sub_activity 19044 19076	delete the associated executable
+T245	sub_activity 19099 19117	sends various info
+T246	protocol 18408 18410	C2
+T247	tool 18558 18578	registry “ run ” key
+T248	tool 18589 18620	shortcut in the start-up folder
+R37	use Arg1:T32 Arg2:T247	
+R38	use Arg1:T32 Arg2:T248	
+T249	sample_function 18522 18538	host persistence
+R39	goal Arg1:T247 Arg2:T249	
+R40	goal Arg1:T248 Arg2:T249	
+T250	malware 18669 18676	Dowenks
+T251	attack_goal 18677 18711	assesses the victim ’s external IP
+T252	tool 18721 18733	HTTP request
+R41	use Arg1:T250 Arg2:T252	
+R42	goal Arg1:T252 Arg2:T251	
+T253	url_evil 18737 18768	http://www.myexternalip.com/raw
+T254	OS_name 18447 18450	WMI
+T255	function 18467 18478	displayName
+T256	function 18484 18500	AntivirusProduct
+T257	function 18447 18456	WMI query
+T258	reference_word 18413 18415	It
+R43	coreference Arg1:T258 Arg2:T31	
+R44	use Arg1:T258 Arg2:T257	
+T259	sha2 17924 17948	1FABFBFF0000065132F71D94
+T260	sha2 17988 18004	000206511FABFBFF
+T261	sha2 18034 18058	1FABFBFF0000065132F71D94
+T262	protocol 17340 17342	C2
+T263	tool 1433 1443	Quasar RAT
+T264	tool 1347 1350	RAT
+T265	attack_goal 1286 1299	hide the tool
+T266	sub_activity 1303 1327	changing the source code
+T267	tool 666 669	RAT
+T69	domain_evil 3163 3185	dw.downloadtesting.com
+T268	sub_activity 3147 3159	POST request
+R46	goal Arg1:T268 Arg2:T69	
+T72	domain_evil 3336 3358	dw.downloadtesting.com
+T269	tool 3309 3335	previously-observed server
+R48	use Arg1:T17 Arg2:T269	
+R49	coreference Arg1:T72 Arg2:T269	
+T270	sha2 3401 3465	15abd32342e87455b73f1e2ecf9ab10331600eb4eae54e1dfc25ba2f9d8c2e8a
+T271	sha2 3476 3540	9a8d73cb7069832b9523c55224ae4153ea529ecc50392fef59da5b5d1db1c740
+T272	sha2 2119 2183	1ac624aaf6bbc2e3b966182888411f92797bd30b6fcce9f8a97648e64f13506f
+T273	sha2 2366 2430	99a7cb43fb2898810956b6137d803c8f97651e23f9f13e91887f188749bd5e8f
+T274	sha2 2887 2951	0d235478ae9cc87b7b907181ccd151b618d74955716ba2dbc40a74dc1cdfc4aa
+T275	sha2 3064 3128	f19bc664558177b7269f52edcec74ecdb38ed2ab9e706b68d9cbb3a53c243dec
+T276	sha2 4448 4512	4393ff391396cdfd229517dd98aa7faecad04da479fe8ca322f035ceee363273
+R50	use Arg1:T73 Arg2:T75	
+R51	use Arg1:T73 Arg2:T74	
+T87	protocol 4403 4405	C2
+T277	reference_word 5355 5361	packer
+R52	coreference Arg1:T277 Arg2:T104	
+T278	tool 5614 5626	.NET reactor
+T279	sample_name 5582 5592	the sample
+T120	sha2 5809 5873	d773b12894d4a0ffb0df328e7e1aa4a7112455e88945a10471650e503eecdb3d
+T113	attack_activity 2056 2062	attack
+R54	occur_time Arg1:T113 Arg2:T62	
+T114	protocol 17227 17229	C2
+T115	protocol 17150 17152	C2
+T116	protocol 16115 16117	C2
+T280	attack_activity 2672 2684	attack chain
+R55	part_of Arg1:T65 Arg2:T280	
+R56	part_of Arg1:T68 Arg2:T280	
+T281	protocol 16231 16233	C2
+T282	protocol 16292 16294	C2
+T283	protocol 16579 16581	C2
+R45	part_of Arg1:T268 Arg2:T280	
+T284	protocol 16781 16783	C2
+R47	part_of Arg1:T70 Arg2:T280	
+T117	sha2 1574 1638	99a7cb43fb2898810956b6137d803c8f97651e23f9f13e91887f188749bd5e8f
+T118	sha2 1690 1754	0c4aa50c95c990d5c5c55345626155b87625986881a2c066ce032af6871c426a
+R57	part_of Arg1:T117 Arg2:T45	
+R58	part_of Arg1:T118 Arg2:T46	
+T285	sha2 1807 1871	86bd78b4c8c94c046d927fb29ae0b944bf2a8513a378b51b3977b77e59a52806
+R59	part_of Arg1:T285 Arg2:T47	
+T286	sha2 1905 1969	723108103ccb4c166ad9cdff350de6a898489f1dac7eeab23c52cd48b9256a42
+R60	part_of Arg1:T286 Arg2:T53	
+T287	person 770 779	attackers
+T288	tool 12328 12331	RAT
+T119	tool 3943 3961	Downeks downloader
+T289	tool 3966 3991	Quasar C2 infrastructures
+T290	tool 4125 4143	Downeks downloader
+T291	tool 4148 4174	Quasar C2 infrastructure s
+R18	use Arg1:T101 Arg2:T103	
+T292	sample_name 4960 4985	VMFvdCsC7RFqerZinfV0sxJFo
+R61	located Arg1:T292 Arg2:T100	
+T293	protocol 4086 4088	IP
+T294	protocol 10250 10253	TCP
+R62	coreference Arg1:T131 Arg2:T104	
+T295	sample_function 5362 5387	decompresses the resource
+T296	sample_function 5411 5428	load the assembly
+T297	sample_function 5431 5451	find its Entry point
+T298	sample_function 5458 5467	Invoke it
+R63	goal Arg1:T277 Arg2:T295	
+R64	goal Arg1:T277 Arg2:T296	
+R65	goal Arg1:T277 Arg2:T297	
+R66	goal Arg1:T277 Arg2:T298	
+T299	sample_function 5470 5492	Extracting the payload
+T300	protocol 18897 18899	IP
+R67	goal Arg1:T277 Arg2:T299	
+T301	protocol 12192 12194	IP
+T302	tool 5597 5607	obfuscated
+R53	use Arg1:T278 Arg2:T302	
+R68	goal Arg1:T302 Arg2:T279	
+T303	sample_function 5980 6007	The configuration of Quasar
+R69	located Arg1:T303 Arg2:T132	
+T304	reference_word 6087 6093	itself
+R70	coreference Arg1:T304 Arg2:T132	
+R71	part_of Arg1:T109 Arg2:T126	
+R72	part_of Arg1:T110 Arg2:T126	
+T305	string 6395 6419	6y7u^Y&U6y7u^Y&U6y7u^Y&U
+T306	string 6600 6606	567%^&
+T307	string 6613 6622	zxc!@#ASD
+T308	tool 6899 6916	client and server
+R19	use Arg1:T308 Arg2:T135	
+T309	sample_function 6924 6935	communicate
+R73	goal Arg1:T308 Arg2:T309	
+R74	use Arg1:T130 Arg2:T308	
+T310	string 7569 7579	Encryption
+T311	string 7623 7635	Cryptography
+R75	use Arg1:T139 Arg2:T311	
+R76	use Arg1:T137 Arg2:T310	
+T313	sample_function 7741 7768	stopped saving the password
+T312	sample_function 7697 7734	changed the encryption key generation
+R77	use Arg1:T138 Arg2:T312	
+R78	use Arg1:T138 Arg2:T313	
+T314	sample_function 7830 7846	names of objects
+R79	use Arg1:T138 Arg2:T314	
+T315	sample_function 7849 7854	files
+R80	use Arg1:T138 Arg2:T315	
+T316	sample_function 7917 7945	modification to cryptography
+T317	sample_function 7950 7963	serialization
+T318	tool 7991 8012	serialization library
+T319	sample_function 9129 9167	server commands to get the file system
+R81	use Arg1:T163 Arg2:T164	
+T320	sample_function 6942 6955	serialization
+T321	sample_function 10963 10996	Quasar server GUI for each client
+T168	tool 10963 10980	Quasar server GUI
+R21	use Arg1:T167 Arg2:T321	
+R82	part_of Arg1:T169 Arg2:T321	
+R83	part_of Arg1:T170 Arg2:T321	
+R84	part_of Arg1:T171 Arg2:T321	
+T322	tool 11429 11440	file system
+T323	sample_function 11450 11480	underling handlers and IPacket
+T324	tool 3232 3235	RAT
+R85	part_of Arg1:T172 Arg2:T321	
+R86	part_of Arg1:T173 Arg2:T321	
+R87	part_of Arg1:T174 Arg2:T321	
+R88	part_of Arg1:T175 Arg2:T321	
+R89	part_of Arg1:T176 Arg2:T321	
+R90	part_of Arg1:T177 Arg2:T321	
+R91	part_of Arg1:T178 Arg2:T321	
+R92	part_of Arg1:T179 Arg2:T321	
+R93	part_of Arg1:T180 Arg2:T321	
+R94	part_of Arg1:T181 Arg2:T321	
+R95	part_of Arg1:T182 Arg2:T321	
+R96	part_of Arg1:T183 Arg2:T321	
+R97	part_of Arg1:T184 Arg2:T321	
+T325	reference_word 2297 2310	Quasar sample
+T326	sample_name 4342 4355	Quasar sample
+T327	tool 19 22	RAT
+T328	reference_word 4630 4641	This sample
+R98	coreference Arg1:T328 Arg2:T326	
+T329	reference_word 5198 5209	This sample
+T330	reference_word 6212 6222	The sample
+R99	use Arg1:T330 Arg2:T126	
+T331	reference_word 6366 6376	the sample
+T332	reference_word 7115 7125	The sample
+T333	reference_word 7343 7353	The sample
+T334	reference_word 7772 7782	the sample
+T335	reference_word 7660 7671	this sample
+T336	person 11772 11789	a second attacker
+T337	sample_function 11793 11805	install code
+R100	use Arg1:T336 Arg2:T337	
+T338	attack_activity 11952 11977	Double Edged Sword Attack
+T339	sub_activity 12137 12165	use the known encryption key
+T340	sub_activity 12099 12133	changed our Quasar RAT source code
+T341	sub_activity 12175 12202	send fake victim IP address
+T342	reference_word 12044 12048	this
+R101	coreference Arg1:T342 Arg2:T338	
+T343	malware 12531 12537	Quasar
+T344	tool 12531 12544	Quasar server
+T345	tool 12253 12266	Quasar server
+T346	tool 12556 12575	File Manager window
+T347	sample_function 12603 12622	select victim files
+R102	part_of Arg1:T344 Arg2:T346	
+R103	goal Arg1:T346 Arg2:T347	
+T348	sample_function 12629 12652	trigger file operations
+R104	goal Arg1:T346 Arg2:T348	
+T349	company 5129 5138	Microsoft
+T350	sample_name 12775 12815	clients\user_name@machine_name_ipaddress
+T351	malware 12820 12826	Quasar
+T352	tool 12820 12833	Quasar server
+T353	malware 13130 13136	Quasar
+T354	tool 13130 13143	Quasar server
+T355	sample_function 13144 13162	retrieves the name
+R105	goal Arg1:T354 Arg2:T355	
+T356	sample_function 13210 13220	not verify
+T357	sample_name 13286 13308	..\..\ secret_info.doc
+T358	malware 13381 13387	Quasar
+T359	tool 13381 13394	Quasar server
+T360	malware 13402 13408	Quasar
+T361	tool 13402 13415	Quasar server
+T363	sample_function 3812 3835	unique metadata details
+T364	sample_function 3838 3849	file writes
+T365	sample_function 3852 3871	registry operations
+T366	sample_function 3878 3906	fake common program metadata
+R108	use Arg1:T79 Arg2:T363	
+R109	use Arg1:T79 Arg2:T364	
+R110	use Arg1:T79 Arg2:T365	
+R111	use Arg1:T79 Arg2:T366	
+T367	sample_function 3756 3780	the same mutex structure
+R106	use Arg1:T79 Arg2:T367	
+T362	sample_function 3789 3807	the same fake icon
+R107	use Arg1:T79 Arg2:T362	
+T368	sample_function 13453 13478	requested from the victim
+T369	sample_function 13421 13436	not even verify
+R112	goal Arg1:T361 Arg2:T369	
+R113	coreference Arg1:T368 Arg2:T369	
+T370	person 13539 13547	attacker
+T371	tool 13498 13521	the File Manager window
+R114	use Arg1:T370 Arg2:T371	
+T372	malware 13554 13560	Quasar
+T373	tool 13554 13567	Quasar server
+T374	tool 13594 13597	RAT
+T376	tool 13681 13695	RAT Server GUI
+T375	malware 13783 13789	Quasar
+T377	tool 13783 13796	Quasar server
+T378	malware 13881 13887	Quasar
+T379	tool 14441 14444	RAT
+T380	tool 14313 14316	RAT
+T381	protocol 16131 16135	HTTP
+T382	malware 14127 14133	Quasar
+T123	sha2 15815 15879	4dcf5bd2c7a5822831d9f22f46bd2369c4c9df17cc99eb29975b5e8ae7e88606
+T124	sha2 15890 15954	905f6a62749ca6f0fd33345d6a8b1831d87e9fd1f81a59cd3add82643b367693
+T384	sha2 15965 16029	c885f09b10feb88d7d176fe1a01ed8b480deb42324d2bb825e96fe1408e2a35f
+T385	tool 14961 14965	.NET
+T386	tool 13893 13907	.NET Framework
+T387	sample_function 13919 13952	loading multiple DLLs upon launch
+R115	goal Arg1:T386 Arg2:T387	
+T388	malware 13984 13990	Quasar
+T389	location 4600 4606	German
+T390	sample_name 13969 13979	dnsapi.dll
+T391	sample_name 13009 13033	secret_info.doc ( 20KB )
+T393	sample_name 9980 10002	Get System Information
+T392	tool 13984 13997	Quasar server
+T394	malware 14365 14371	Quasar
+T395	sample_function 14050 14093	using this technique to replace server DLLs
+R116	use Arg1:T392 Arg2:T395	
+T397	sample_name 14163 14173	dnsapi.dll
+T396	person 14105 14113	attacker
+T398	malware 15050 15057	Downeks
+R117	use Arg1:T396 Arg2:T382	
+T399	malware 14245 14251	Quasar
+T400	tool 14245 14258	Quasar client
+T401	reference_word 14297 14299	it
+R118	coreference Arg1:T401 Arg2:T400	
+T402	malware 14306 14312	Quasar
+T403	tool 14306 14316	Quasar RAT
+T404	tool 14365 14378	Quasar server
+T405	sample_function 14396 14427	control that attacker ’s server
+R119	goal Arg1:T379 Arg2:T405	
+T406	sample_name 14469 14481	shfolder.dll
+T407	person 14563 14571	attacker
+T408	sample_function 14612 14629	infect the server
+R120	goal Arg1:T406 Arg2:T408	
+T409	malware 15077 15102	new .NET Downeks versions
+T410	reference_word 15179 15191	.NET version
+R121	coreference Arg1:T410 Arg2:T409	
+T411	reference_word 15245 15258	these samples
+T412	target_crowd 15281 15304	Hebrew-speaking targets
+R122	goal Arg1:T411 Arg2:T412	
+T413	malware 15307 15319	Downeks .NET
+T122	string 15339 15354	SharpDownloader
+R123	coreference Arg1:T122 Arg2:T413	
+T414	string 15361 15366	Sharp
+R124	coreference Arg1:T414 Arg2:T413	
+T415	program_language 15424 15426	C#
+T416	tool 15639 15642	DOC
+T417	tool 15647 15650	PDF
+T418	tool 15476 15498	masquerades with icons
+T419	tool 15501 15510	filenames
+T420	tool 15515 15565	metadata imitating popular legitimate applications
+R125	use Arg1:T23 Arg2:T418	
+R126	use Arg1:T23 Arg2:T419	
+R127	use Arg1:T23 Arg2:T420	
+T421	malware 15707 15718	Downeks.NET
+T422	tool 15741 15745	Yano
+T423	tool 15574 15592	VMware workstation
+T424	tool 15597 15605	CCleaner
+T425	tool 15786 15804	the de4dot utility
+R128	use Arg1:T421 Arg2:T425	
+R129	use Arg1:T421 Arg2:T422	
+T426	tool 16115 16124	C2 server
+T427	sample_function 16131 16149	HTTP POST requests
+R130	use Arg1:T426 Arg2:T427	
+T428	reference_word 16090 16092	It
+R131	coreference Arg1:T428 Arg2:T24	
+T429	reference_word 16152 16154	It
+R132	coreference Arg1:T429 Arg2:T24	
+T430	reference_word 16200 16202	it
+R133	coreference Arg1:T430 Arg2:T24	
+T431	reference_word 16245 16247	it
+R134	coreference Arg1:T431 Arg2:T24	
+T432	sample_function 16155 16179	runs in an infinite loop
+T433	sub_activity 16203 16233	requests a command from the C2
+T434	sub_activity 16248 16272	sleeps for a time period
+R135	part_of Arg1:T433 Arg2:T432	
+R136	part_of Arg1:T434 Arg2:T432	
+T435	function 16384 16388	POST
+T436	tool 16480 16484	json
+T437	tool 16408 16412	json
+R138	use Arg1:T437 Arg2:T435	
+T438	tool 16579 16588	C2 server
+T439	sample_function 16604 16619	the same format
+T440	sample_function 16624 16657	serialization/encryption/encoding
+R137	use Arg1:T438 Arg2:T439	
+R139	use Arg1:T438 Arg2:T440	
+T441	malware 16695 16702	Downeks
+T442	tool 16781 16791	C2 servers
+T443	sample_function 16866 16874	download
+T444	sample_function 17012 17042	instructed to execute binaries
+T445	sub_activity 16953 16989	the URL of the file to be downloaded
+R140	part_of Arg1:T445 Arg2:T443	
+T446	tool 17150 17159	C2 server
+T447	sample_function 17181 17203	self-update capability
+T448	string 17362 17365	wth
+T450	tool 17263 17282	the “ img ” command
+R141	use Arg1:T28 Arg2:T450	
+T449	sample_function 17286 17311	capture the victim screen
+R142	goal Arg1:T450 Arg2:T449	
+T451	sample_function 17316 17342	transmit it back to the C2
+R143	goal Arg1:T450 Arg2:T451	
+T452	malware 17416 17428	Downeks .NET
+T453	string 17374 17377	qlt
+T454	string 17390 17395	width
+T455	string 17404 17411	quality
+T456	string 17453 17460	Appdata
+T457	string 17570 17585	Appdata\Roaming
+T458	string 17606 17620	SD{new line} 0
+T459	string 17627 17629	SD
+T460	string 17647 17662	SharpDownloader
+T461	tool 17790 17805	Appdata\Roaming
+R144	use Arg1:T30 Arg2:T461	
+T462	sample_function 17772 17786	creates a file
+R145	goal Arg1:T461 Arg2:T462	
+T463	tool 17901 17905	.NET
+T383	encryption_algo 2111 2117	SHA256
+T464	encryption_algo 2358 2364	SHA256
+R146	goal Arg1:T266 Arg2:T265	

@@ -1,0 +1,12 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+Magic Hound : Rocket Kitten , Operation Saffron Rose , Ajax Security Team , Operation Woolen-Goldfish , Newscaster , Cobalt Gypsy , APT35 .
+Magic Hound is an Iranian-sponsored threat group operating primarily in the Middle East that dates back as early as 2014 .
+The group behind the campaign has primarily targeted organizations in the energy , government , and technology sectors that are either based or have business interests in Saudi Arabia .
+menuPass : Stone Panda , APT10 , Red Apollo , CVNX , HOGFISH .
+menuPass is a threat group that appears to originate from China and has been active since approximately 2009 .
+The group has targeted healthcare , defense , aerospace , and government sectors , and has targeted Japanese victims since at least 2014 .
+In 2016 and 2017 , the group targeted managed IT service providers , manufacturing and mining companies , and a university .
+Moafee is a threat group that appears to operate from the Guandong Province of China .
+Due to overlapping TTPs , including similar custom tools , Moafee is thought to have a direct or indirect relationship with the threat group DragonOK .

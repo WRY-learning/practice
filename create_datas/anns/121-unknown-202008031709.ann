@@ -1,0 +1,407 @@
+T1	malware 24 36	PhantomLance
+T2	time 156 165	July 2019
+T3	malware 193 208	backdoor trojan
+T4	malware 446 458	PhantomLance
+R2	part_of Arg1:T4 Arg2:T3	
+T7	time 509 522	December 2015
+R3	first_found_time Arg1:T4 Arg2:T7	
+T8	time 602 606	2016
+T9	time 763 780	November 6 , 2019
+T10	location 212 223	Google Play
+R4	located Arg1:T3 Arg2:T10	
+T11	company 795 801	Google
+T12	attack_activity 942 966	OceanLotus APT campaigns
+T13	malware 1060 1075	macOS backdoors
+T14	malware 1107 1124	Windows backdoors
+T15	attack_activity 1030 1046	Android campaign
+T16	security_team 1454 1472	Blackberry Cylance
+T17	tool 1387 1395	Firebase
+T18	malware 2515 2522	spyware
+T19	attack_goal 2530 2558	gather sensitive information
+R5	goal Arg1:T18 Arg2:T19	
+T20	sub_activity 2625 2636	geolocation
+T21	sub_activity 2639 2648	call logs
+T22	sub_activity 2651 2665	contact access
+T23	sub_activity 2670 2680	SMS access
+R6	part_of Arg1:T20 Arg2:T18	
+R7	part_of Arg1:T21 Arg2:T18	
+R8	part_of Arg1:T22 Arg2:T18	
+R9	part_of Arg1:T23 Arg2:T18	
+T24	malware 3193 3222	the latest Google Play sample
+T25	encryption_algo 3225 3228	MD5
+T26	md5 3230 3262	2e06bbc26611305b28b40349a600f95c
+R10	part_of Arg1:T26 Arg2:T24	
+T27	time 3711 3715	2019
+T28	location 3690 3701	Google Play
+T29	reference_word 3632 3644	this version
+R11	coreference Arg1:T29 Arg2:T24	
+T30	tool 3652 3669	Google ’s filters
+T31	tool 3560 3595	official Google marketplace filters
+R12	located Arg1:T29 Arg2:T28	
+R13	occur_time Arg1:T29 Arg2:T27	
+T32	function 4163 4173	setUidMode
+T33	tool 4268 4279	Android SDK
+T34	tool 4625 4640	Browser Cleaner
+T35	time 4759 4775	2019 and earlier
+T36	malware 4785 4796	the samples
+T37	location 4812 4829	Google Play Store
+T38	time 4833 4846	November 2019
+R14	located Arg1:T36 Arg2:T37	
+R15	occur_time Arg1:T36 Arg2:T38	
+T39	time 5037 5041	2019
+T40	encryption_algo 5251 5264	AES algorithm
+T41	malware 5125 5146	malicious payload APK
+R16	use Arg1:T41 Arg2:T40	
+T42	sample_name 5676 5698	com.android.play.games
+T43	malware 5627 5645	Version 2 payloads
+R17	part_of Arg1:T42 Arg2:T43	
+T44	md5 5873 5905	65d399e6a77acf7e63ba771877f96f8e
+T45	md5 5918 5950	6bf9b834d841b13348851f2dc033773e
+T46	md5 5963 5995	8d5c64fdaae76bb74831c0543a7865c3
+T47	md5 6008 6040	3285ae59877c6241200f784b62531694
+T48	md5 6052 6084	e648a2cc826707aec33208408b882e31
+T49	tool 6310 6321	Android API
+T50	malware 6374 6400	signing Version 2 payloads
+T51	tool 6352 6364	certificates
+R23	part_of Arg1:T51 Arg2:T50	
+T52	string 6452 6470	0xa4ed88e620b8262e
+T53	string 6626 6644	0xd47c08706d440384
+R24	part_of Arg1:T52 Arg2:T51	
+R25	part_of Arg1:T53 Arg2:T51	
+T54	md5 6403 6435	6bf9b834d841b13348851f2dc033773e
+T55	md5 6495 6527	65d399e6a77acf7e63ba771877f96f8e
+T56	md5 6577 6609	8d5c64fdaae76bb74831c0543a7865c3
+T57	md5 6647 6679	3285ae59877c6241200f784b62531694
+T58	md5 6704 6736	e648a2cc826707aec33208408b882e31
+R26	part_of Arg1:T54 Arg2:T51	
+R27	part_of Arg1:T55 Arg2:T51	
+R28	part_of Arg1:T56 Arg2:T51	
+R29	part_of Arg1:T57 Arg2:T51	
+R30	part_of Arg1:T58 Arg2:T51	
+T59	string 6692 6701	Ventoplex
+T60	string 6483 6492	Lotvolron
+T61	string 6961 6970	Ventoplex
+R31	coreference Arg1:T61 Arg2:T59	
+T62	malware 7041 7053	PhantomLance
+T63	time 7068 7082	the early 2020
+R32	first_found_time Arg1:T62 Arg2:T63	
+T64	encryption_algo 7204 7207	AES
+T65	tool 7292 7310	Google ’s Firebase
+R33	use Arg1:T62 Arg2:T64	
+R34	use Arg1:T62 Arg2:T65	
+T66	malware 7505 7533	PhantomLance ’s Firebase API
+T67	tool 7591 7609	AES decryption key
+T68	tool 7564 7568	JSON
+T69	string 7624 7636	code_disable
+R35	part_of Arg1:T67 Arg2:T68	
+R36	part_of Arg1:T69 Arg2:T68	
+T70	malware 7701 7712	the dropper
+T71	tool 7730 7748	AES decryption key
+T72	string 7787 7791	code
+T73	tool 7878 7886	Firebase
+T74	string 7932 7944	conf_disable
+T75	string 7983 7995	code_disable
+T76	sample_name 8274 8278	data
+T77	malware 8182 8202	second-stage payload
+T78	encryption_algo 8205 8208	MD5
+T79	md5 8210 8242	83cd59e3ed1ba15f7a8cadfe9183e156
+R37	part_of Arg1:T79 Arg2:T77	
+R38	part_of Arg1:T76 Arg2:T77	
+T80	md5 8288 8320	7048d56d923e049ca7f3d97fb5ba9812
+R39	part_of Arg1:T80 Arg2:T76	
+T81	encryption_algo 8283 8286	MD5
+T82	md5 8507 8539	c399d93146f3d12feb32da23b75304ba
+T83	encryption_algo 8502 8505	MD5
+T84	tool 8622 8632	C2 servers
+T85	malware 8571 8583	PhantomLance
+R40	use Arg1:T85 Arg2:T84	
+T86	domain_evil 8635 8652	cloud.anofrio.com
+T87	domain_evil 8655 8672	video.viodger.com
+T88	domain_evil 8675 8691	api.anaehler.com
+R41	part_of Arg1:T86 Arg2:T84	
+R42	part_of Arg1:T88 Arg2:T84	
+R43	part_of Arg1:T87 Arg2:T84	
+T89	malware 8701 8716	third-stage APK
+T90	sample_name 8766 8774	data.raw
+T91	tool 8962 8970	daemon.c
+R44	use Arg1:T90 Arg2:T91	
+R45	part_of Arg1:T90 Arg2:T89	
+T92	tool 9035 9045	MarsDaemon
+T93	time 9211 9215	2019
+T94	time 9408 9425	from 2016 to 2018
+T95	encryption_algo 10142 10145	MD5
+T96	malware 10650 10667	Version 3 payload
+T97	sample_name 10698 10722	com.android.process.gpsp
+R46	part_of Arg1:T97 Arg2:T96	
+T98	string 10769 10781	CN=Ventoplex
+T99	string 10911 10918	10.2.98
+T100	string 5906 5915	5.10.6084
+T101	string 5951 5960	5.10.6090
+T102	string 5996 6005	5.10.9018
+T103	string 6041 6050	5.10.9018
+T104	string 6085 6094	5.10.9018
+R47	part_of Arg1:T100 Arg2:T43	
+R48	part_of Arg1:T101 Arg2:T43	
+R49	part_of Arg1:T104 Arg2:T43	
+R50	part_of Arg1:T102 Arg2:T43	
+R51	part_of Arg1:T103 Arg2:T43	
+T105	md5 10954 10986	243e2c6433815f2ecc204ada4821e7d6
+T106	sample_name 11255 11266	BuildConfig
+T107	tool 11604 11606	С2
+T108	company 11802 11808	Google
+T109	malware 11750 11773	com.zimice.browserturbo
+T110	malware 11816 11835	com.physlane.opengl
+T111	location 11946 11957	Google Play
+T112	malware 11906 11928	malicious applications
+R52	located Arg1:T112 Arg2:T111	
+T113	domain 12137 12157	https://apkcombo.com
+T114	domain 12160 12180	https://apk.support/
+T115	domain 12183 12202	https://apkpure.com
+T116	domain 12205 12231	https://apkpourandroid.com
+T117	tool 12406 12432	end-user license agreement
+T118	tool 12435 12439	EULA
+R53	coreference Arg1:T118 Arg2:T117	
+T119	tool 12365 12379	Github account
+R54	part_of Arg1:T117 Arg2:T119	
+T120	company 12492 12498	Google
+T121	tool 12578 12582	EULA
+T122	domain 13245 13275	https://apkpure.ai/ads-skipper
+T123	tool 13231 13242	Ads Skipper
+R55	part_of Arg1:T122 Arg2:T123	
+T124	location 13283 13290	ApkPure
+R56	part_of Arg1:T123 Arg2:T124	
+T125	tool 13612 13621	С2 server
+T126	malware 13857 13869	PhantomLance
+T127	domain_evil 14071 14082	osloger.biz
+T128	domain_evil 14106 14117	log4jv.info
+T129	domain_evil 14141 14157	sqllitlever.info
+T130	domain_evil 14181 14192	anofrio.com
+T131	domain_evil 14216 14228	anaehler.com
+T132	domain_evil 14252 14263	viodger.com
+R57	part_of Arg1:T127 Arg2:T126	
+R58	part_of Arg1:T128 Arg2:T126	
+R59	part_of Arg1:T129 Arg2:T126	
+R60	part_of Arg1:T130 Arg2:T126	
+R61	part_of Arg1:T132 Arg2:T126	
+R62	part_of Arg1:T131 Arg2:T126	
+T133	malware 14292 14304	PhantomLance
+T134	tool 14371 14381	C2 servers
+R63	use Arg1:T133 Arg2:T134	
+T135	IP_evil 14575 14589	188.166.203.57
+T136	company 14610 14622	DigitalOcean
+T137	tool 14672 14683	Domaintools
+R64	part_of Arg1:T135 Arg2:T133	
+T138	malware 14876 14888	PhantomLance
+T139	threatActor_name 14936 14946	OceanLotus
+T140	domain_evil 14965 14979	browsersyn.com
+T141	tool 15005 15007	C2
+T142	encryption_algo 15051 15054	MD5
+T143	md5 15056 15088	b1990e19efaf88206f7bffe9df0d9419
+R65	part_of Arg1:T143 Arg2:T140	
+T144	threatActor_name 15128 15142	OceanLotus APT
+R66	part_of Arg1:T140 Arg2:T144	
+T145	domain_evil 15145 15160	cerisecaird.com
+T146	threatActor_name 15235 15245	OceanLotus
+R67	part_of Arg1:T145 Arg2:T146	
+T147	attack_activity 15284 15301	infection attacks
+T148	location 15324 15329	India
+T149	location 15332 15339	Vietnam
+T150	location 15342 15352	Bangladesh
+T151	location 15355 15364	Indonesia
+R68	located Arg1:T147 Arg2:T148	
+R69	located Arg1:T147 Arg2:T149	
+R70	located Arg1:T147 Arg2:T150	
+R71	attack Arg1:T147 Arg2:T151	
+T152	time 15385 15389	2016
+R72	first_found_time Arg1:T147 Arg2:T152	
+T153	location 15523 15528	Nepal
+T154	location 15531 15538	Myanmar
+T155	location 15543 15551	Malaysia
+T156	location 15584 15594	South Asia
+T157	tool 16029 16042	Flash plugins
+T158	location 16113 16120	Vietnam
+T159	url_evil 16147 16201	https://apk.support/app-en/com.codedexon.churchaddress
+T160	location 16286 16293	Vietnam
+T161	attack_activity 16441 16465	PhantomLance ’s activity
+T162	threatActor_name 16516 16530	OceanLotus APT
+T163	time 16536 16544	May 2019
+T164	security_team 16547 16557	Antiy Labs
+T165	attack_activity 16604 16628	Android malware campaign
+R73	find Arg1:T164 Arg2:T165	
+R74	release_time Arg1:T164 Arg2:T163	
+T166	threatActor_name 16663 16677	OceanLotus APT
+T167	time 16819 16832	December 2014
+T168	location 16968 16975	Vietnam
+T169	location 17041 17046	China
+T170	attack_activity 17184 17211	email spearphishing attacks
+T171	tool 17177 17180	SMS
+T172	time 17288 17301	December 2017
+T173	malware 17253 17260	malware
+R75	occur_time Arg1:T173 Arg2:T172	
+T174	time 17346 17350	2018
+T175	time 17474 17491	late 2014 to 2017
+T176	attack_activity 17617 17644	OceanLotus Android campaign
+T177	md5 17652 17684	0e7c2adda3bc65242a365ef72b91f3a8
+R76	part_of Arg1:T177 Arg2:T176	
+T178	encryption_algo 17647 17650	MD5
+T179	malware 17746 17758	PhantomLance
+T180	encryption_algo 17772 17775	MD5
+T181	md5 17777 17809	243e2c6433815f2ecc204ada4821e7d6
+T182	malware 18236 18248	PhantomLance
+T183	attack_activity 18308 18335	OceanLotus Android campaign
+T184	malware 18375 18390	macOS backdoors
+T185	threatActor_name 18417 18427	OceanLotus
+R78	part_of Arg1:T184 Arg2:T185	
+T186	malware 18734 18747	macOS payload
+T187	md5 18755 18787	306d3ed0a7c899b5ef9d0e3c91f05193
+R79	part_of Arg1:T187 Arg2:T186	
+T188	encryption_algo 18750 18753	MD5
+T189	time 18796 18806	early 2018
+R80	occur_time Arg1:T186 Arg2:T189	
+T190	malware 18882 18897	Android malware
+T191	malware 19128 19146	OceanLotus malware
+T192	tool 19204 19214	C2 servers
+R81	use Arg1:T191 Arg2:T192	
+T193	malware 19316 19334	OceanLotus Windows
+T194	md5 19377 19409	0d5c03da348dce513bf575545493f3e3
+T195	domain_evil 19410 19433	mine.remaariegarcia.com
+T196	domain_evil 19434 19458	egg.stralisemariegar.com
+T197	domain_evil 19459 19475	api.anaehler.com
+T198	md5 19499 19531	d1eb52ef6c2445c848157beaba54044f
+T199	domain_evil 19532 19548	sadma.knrowz.com
+T200	domain_evil 19549 19566	ckoen.dmkatti.com
+T201	domain_evil 19567 19584	itpk.mostmkru.com
+T202	md5 19625 19657	306d3ed0a7c899b5ef9d0e3c91f05193
+T203	domain_evil 19658 19676	ssl.arkouthrie.com
+T204	domain_evil 19677 19694	s3.hiahornber.com
+T205	domain_evil 19695 19713	widget.shoreoa.com
+T206	malware 19476 19496	PhantomLance Android
+R82	part_of Arg1:T194 Arg2:T206	
+R83	part_of Arg1:T195 Arg2:T206	
+R84	part_of Arg1:T196 Arg2:T206	
+R85	part_of Arg1:T197 Arg2:T206	
+T207	malware 19585 19622	OceanLotus Android campaign 2014-2017
+R86	part_of Arg1:T198 Arg2:T207	
+R87	part_of Arg1:T199 Arg2:T207	
+R88	part_of Arg1:T200 Arg2:T207	
+R89	part_of Arg1:T201 Arg2:T207	
+T208	malware 19714 19739	OceanLotus MacOS backdoor
+R90	part_of Arg1:T202 Arg2:T208	
+R91	part_of Arg1:T203 Arg2:T208	
+R92	part_of Arg1:T204 Arg2:T208	
+R93	part_of Arg1:T205 Arg2:T208	
+T209	md5 19742 19774	51f9a7d4263b3a565dec7083ca00340f
+T210	domain_evil 19775 19799	ps.andreagahuvrauvin.com
+T211	domain_evil 19800 19827	paste.christienollmache.xyz
+T212	domain_evil 19828 19854	att.illagedrivestralia.xyz
+T213	malware 19855 19882	OceanLotus Windows backdoor
+R94	part_of Arg1:T209 Arg2:T213	
+R95	part_of Arg1:T210 Arg2:T213	
+R96	part_of Arg1:T211 Arg2:T213	
+R97	part_of Arg1:T212 Arg2:T213	
+T214	location 19990 19997	Vietnam
+T215	target_crowd 19971 19978	victims
+R98	located Arg1:T215 Arg2:T214	
+T216	malware 20032 20044	PhantomLance
+T217	malware 20049 20071	OceanLotus for Windows
+T218	attack_activity 20112 20132	old Android campaign
+T219	malware 20137 20152	MacOS backdoors
+T220	malware 20225 20237	PhantomLance
+T221	threatActor_name 20243 20253	OceanLotus
+T222	attack_activity 20183 20199	Android activity
+T223	attack_activity 20202 20220	campaign 2014-2017
+R99	part_of Arg1:T223 Arg2:T222	
+R100	part_of Arg1:T220 Arg2:T222	
+T224	attack_activity 20311 20328	Android campaigns
+T225	security_team 20372 20382	Antiy Labs
+T226	attack_activity 20347 20359	the activity
+R101	find Arg1:T225 Arg2:T226	
+T227	threatActor_name 20428 20438	OceanLotus
+T228	time 20445 20449	2017
+T229	malware 20456 20468	PhantomLance
+T230	time 20493 20503	since 2016
+R102	occur_time Arg1:T229 Arg2:T230	
+T231	domain_evil 21071 21087	api.anaehler.com
+T232	domain_evil 21029 21053	egg.stralisemariegar.com
+T233	domain_evil 20988 21011	mine.remaariegarcia.com
+T234	md5 20688 20720	2e06bbc26611305b28b40349a600f95c
+T235	md5 20738 20770	b1990e19efaf88206f7bffe9df0d9419
+T236	md5 20788 20820	7048d56d923e049ca7f3d97fb5ba9812
+T237	md5 20838 20870	a330456d7ca25c88060dc158049f3298
+T238	md5 20888 20920	a097b8d49386c8aab0bb38bbfdf315b2
+T239	md5 20938 20970	7285f44fa75c3c7a27bbb4870fc0cdca
+T240	malware 20673 20685	PhantomLance
+T241	malware 20723 20735	PhantomLance
+T242	malware 20773 20785	PhantomLance
+T243	malware 20823 20835	PhantomLance
+T244	malware 20873 20885	PhantomLance
+T245	malware 20923 20935	PhantomLance
+T246	malware 20973 20985	PhantomLance
+T247	malware 21014 21026	PhantomLance
+T248	malware 21056 21068	PhantomLance
+R103	part_of Arg1:T234 Arg2:T240	
+R104	part_of Arg1:T235 Arg2:T241	
+R105	part_of Arg1:T236 Arg2:T242	
+R106	part_of Arg1:T237 Arg2:T243	
+R107	part_of Arg1:T231 Arg2:T248	
+R108	part_of Arg1:T232 Arg2:T247	
+R109	part_of Arg1:T233 Arg2:T246	
+R110	part_of Arg1:T238 Arg2:T244	
+R111	part_of Arg1:T239 Arg2:T245	
+R112	release_time Arg1:T3 Arg2:T2	
+T249	location 675 686	Google Play
+T250	malware 544 559	related samples
+R113	part_of Arg1:T250 Arg2:T4	
+R114	first_found_time Arg1:T250 Arg2:T8	
+R115	located Arg1:T250 Arg2:T249	
+T251	malware 700 714	latest samples
+R116	part_of Arg1:T251 Arg2:T4	
+T252	location 745 759	Android market
+R117	located Arg1:T251 Arg2:T252	
+R118	occur_time Arg1:T251 Arg2:T9	
+T253	time 1369 1373	2020
+T254	malware 1343 1365	latest sample deployed
+R119	occur_time Arg1:T254 Arg2:T253	
+R120	use Arg1:T254 Arg2:T17	
+T255	malware 4090 4101	the malware
+R121	use Arg1:T255 Arg2:T32	
+R122	part_of Arg1:T60 Arg2:T51	
+R123	part_of Arg1:T59 Arg2:T51	
+T256	tool 10755 10766	certificate
+R124	part_of Arg1:T98 Arg2:T256	
+R125	use Arg1:T96 Arg2:T256	
+R77	part_of Arg1:T181 Arg2:T179	
+R126	coreference Arg1:T121 Arg2:T117	
+T257	time 14083 14093	2015-12-09
+T258	time 14094 14104	2019-12-01
+R127	first_found_time Arg1:T127 Arg2:T257	
+R128	occur_time Arg1:T127 Arg2:T258	
+T259	time 14118 14128	2015-12-09
+T260	time 14129 14139	2019-11-26
+R129	first_found_time Arg1:T128 Arg2:T259	
+R130	occur_time Arg1:T128 Arg2:T260	
+T261	time 14158 14168	2015-12-09
+T262	time 14169 14179	2019-11-26
+R131	first_found_time Arg1:T129 Arg2:T261	
+R132	occur_time Arg1:T129 Arg2:T262	
+T263	time 14193 14203	2017-05-16
+T264	time 14204 14214	2020-03-30
+R133	first_found_time Arg1:T130 Arg2:T263	
+R134	occur_time Arg1:T130 Arg2:T264	
+T265	time 14229 14239	2017-05-16
+T266	time 14240 14250	2020-03-30
+R135	first_found_time Arg1:T131 Arg2:T265	
+R136	occur_time Arg1:T131 Arg2:T266	
+T267	time 14264 14274	2017-05-16
+T268	time 14275 14285	2020-04-07
+R137	first_found_time Arg1:T132 Arg2:T267	
+R138	occur_time Arg1:T132 Arg2:T268	
+T269	security_team 168 175	Dr .Web
+T5	time 2390 2399	late 2019
+T6	time 2407 2411	2017
+R1	part_of Arg1:T44 Arg2:T100	
+R18	part_of Arg1:T45 Arg2:T101	
+R19	part_of Arg1:T46 Arg2:T102	
+R20	part_of Arg1:T47 Arg2:T103	
+R21	part_of Arg1:T48 Arg2:T104	
+R22	find Arg1:T269 Arg2:T3	

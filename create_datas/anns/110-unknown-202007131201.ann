@@ -1,0 +1,121 @@
+T1	malware 5 16	BlackEnergy
+T2	malware 20 26	ExPetr
+T4	malware 147 155	Wannacry
+T5	malware 268 276	Wannacry
+T6	company 279 285	Google
+T7	person 289 299	Neel Mehta
+R2	part_of Arg1:T7 Arg2:T6	
+T8	sub_activity 323 336	code fragment
+R3	find Arg1:T7 Arg2:T8	
+T9	malware 511 517	ExPetr
+T10	malware 518 523	Petya
+T11	malware 534 541	malware
+R4	part_of Arg1:T10 Arg2:T11	
+R5	part_of Arg1:T9 Arg2:T11	
+T12	malware 568 574	ExPetr
+T13	malware 675 681	ExPetr
+T14	malware 717 728	BlackEnergy
+T15	malware 732 740	KillDisk
+T16	time 758 771	2015 and 2016
+T17	sub_activity 568 583	ExPetr outbreak
+R6	occur_time Arg1:T17 Arg2:T16	
+T18	threatActor_name 778 789	BlackEnergy
+T19	vulnerability_cve 866 874	zero day
+R7	use Arg1:T18 Arg2:T19	
+T20	attack_goal 944 955	ICS systems
+R8	attack Arg1:T18 Arg2:T20	
+T21	location 1009 1016	Ukraine
+T22	time 1040 1044	2015
+T23	reference_word 958 962	They
+R9	coreference Arg1:T23 Arg2:T18	
+T24	sub_activity 1017 1034	power grid attack
+R10	occur_time Arg1:T24 Arg2:T22	
+R11	located Arg1:T24 Arg2:T21	
+R12	launch Arg1:T23 Arg2:T24	
+T25	malware 1234 1240	ExPetr
+T26	threatActor_name 1278 1284	BE APT
+T27	time 1294 1298	2015
+R13	use Arg1:T26 Arg2:T25	
+R14	first_found_time Arg1:T25 Arg2:T27	
+T28	malware 1300 1306	ExPetr
+T29	sub_activity 1309 1313	.3ds
+T30	sub_activity 1316 1319	.7z
+T31	sub_activity 1322 1328	.accdb
+T32	sub_activity 1331 1334	.ai
+T33	sub_activity 1338 1341	asp
+T34	sub_activity 1345 1349	aspx
+R15	part_of Arg1:T29 Arg2:T28	
+R16	part_of Arg1:T30 Arg2:T28	
+R17	part_of Arg1:T31 Arg2:T28	
+R18	part_of Arg1:T32 Arg2:T28	
+R19	part_of Arg1:T33 Arg2:T28	
+R20	part_of Arg1:T34 Arg2:T28	
+T35	time 1352 1356	2015
+T36	malware 1357 1368	BlackEnergy
+T37	sub_activity 1384 1388	.csr
+T38	sub_activity 1392 1395	csv
+T39	sub_activity 1399 1402	dat
+T40	sub_activity 1406 1409	db3
+T41	sub_activity 1413 1416	db4
+R21	part_of Arg1:T37 Arg2:T36	
+R22	part_of Arg1:T38 Arg2:T36	
+R23	part_of Arg1:T39 Arg2:T36	
+R24	part_of Arg1:T40 Arg2:T36	
+R25	part_of Arg1:T41 Arg2:T36	
+R26	first_found_time Arg1:T36 Arg2:T35	
+T42	malware 1538 1559	BE destructive module
+T43	malware 1823 1834	BlackEnergy
+T44	malware 1839 1845	ExPetr
+T45	tool 2114 2118	YARA
+T46	malware 2139 2145	ExPetr
+T47	malware 2150 2161	BlackEnergy
+T48	sample_function 2127 2168	detect both ExPetr and BlackEnergy wipers
+R27	goal Arg1:T45 Arg2:T48	
+T49	malware 1974 1980	ExPetr
+T50	malware 1985 1996	BlackEnergy
+T51	security_team 2017 2035	Palo Alto Networks
+T52	sub_activity 2211 2234	similar extensions list
+T53	sub_activity 2243 2259	code responsible
+T54	sub_activity 2264 2312	parsing the file system for encryption or wiping
+R28	part_of Arg1:T52 Arg2:T54	
+R29	part_of Arg1:T53 Arg2:T54	
+T55	malware 2540 2551	BlackEnergy
+T56	malware 3048 3059	BlackEnergy
+T57	malware 3060 3068	KillDisk
+T58	malware 3084 3090	ExPetr
+R30	part_of Arg1:T15 Arg2:T14	
+R31	part_of Arg1:T57 Arg2:T56	
+T59	function 3154 3160	wcscmp
+T60	sub_activity 3220 3263	check if the filename is the current folder
+R32	goal Arg1:T59 Arg2:T60	
+T61	string 3728 3731	exe
+T62	string 3732 3733	/
+T63	string 3736 3737	f
+T64	string 3740 3747	ComSpec
+T65	string 3750 3772	InitiateSystemShutdown
+T66	tool 3826 3830	YARA
+T67	malware 3851 3862	BlackEnergy
+T68	malware 3867 3873	ExPetr
+T69	sub_activity 3940 3997	generate false positives or catch other unrelated malware
+R33	part_of Arg1:T61 Arg2:T69	
+R34	part_of Arg1:T62 Arg2:T69	
+R35	part_of Arg1:T63 Arg2:T69	
+R36	part_of Arg1:T64 Arg2:T69	
+R37	part_of Arg1:T65 Arg2:T69	
+T70	tool 4223 4227	Yara
+T71	malware 4601 4607	ExPetr
+T72	malware 4608 4613	Petya
+T73	malware 4696 4704	Wannacry
+T74	sub_activity 4671 4692	Bangladesh Bank Heist
+T76	threatActor_name 4748 4755	Lazarus
+T77	md5 4971 5035	027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745
+T78	md5 5043 5107	11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80
+T79	md5 5110 5174	5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6
+T80	md5 5177 5241	F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95
+T81	malware 4962 4968	ExPetr
+T82	malware 5038 5040	BE
+R38	part_of Arg1:T77 Arg2:T81	
+R39	part_of Arg1:T78 Arg2:T82	
+R40	part_of Arg1:T79 Arg2:T82	
+R41	part_of Arg1:T80 Arg2:T82	
+T83	target_crowd 1208 1224	extensions lists

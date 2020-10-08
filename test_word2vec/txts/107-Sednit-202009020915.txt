@@ -1,0 +1,110 @@
+En Route with Sednit .
+Release_Time :  2016-10 .
+Report_URL :  https :  //www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part1.pdf .
+In this section , we will describe the two main attack methods used by the Sednit group to deploy its malicious software .
+We already discussed the third attack method — fake webmail login panels — in the previous section .
+The frst method is to lure the target into opening an email attachment , while the second one relies on the target visiting a website containing a custom exploit kit .
+In both cases , the lure itself is usually a phishing email .
+As with many other cyber espionage actors , sending targeted phishing emails with malicious attachments is one of the main attack vectors of the Sednit group .
+Sometimes those attachments are simply executables , and no exploits are used .
+It is , for example , the case for the most recent deployment of Downdelph , a pretty surprising operation that we will describe in the third part of this whitepaper .
+On the other hand , the Sednit group also uses exploits , and in some cases even 0-day exploits , with its email attachments .
+The list of vulnerabilities exploited with this attack method is described in Table 1 , to the best of our knowledge .
+CVE-2009-3129 [ 18 ] Microsoft Excel .
+CVE-2010-3333 [ 19 ] Microsoft Ofce .
+CVE-2012-0158 [ 20 ] Microsoft Ofce .
+CVE-2013-2729 [ 21 ] Adobe Acrobat Reader .
+CVE-2014-1761 [ 22 ] Microsoft Word 0-day at the time the Sednit group used it [ 23 ] .
+CVE-2015-1641 [ 24 ] Microsoft Word [ 25 ] .
+CVE-2015-2424 [ 26 ] Microsoft Ofce 0-day at the time the Sednit group used it [ 27 ] .
+CVE-2016-4117 [ 78 ] Adobe Flash Player [ 77 ] .
+The malware usually dropped by those exploits for the last two years has been Seduploader ’s payload , as shown in Figure 2 .
+The subject of the email can be translated to " The aggravation of Russian-EU relations " , while the body roughly translates to :  The address of the " Ukrainian Academic Union " is the correct one [ 28 ] , while the sender email address was created by the attackers using a freemail provider .
+The RTF attachment exploits the CVE-2015-1641 vulnerability [ 24 ] to drop two DLLs on the system , as described by Prevenity [ 25 ] .
+The frst DLL loads each time a Microsoft Ofce application is executed , by registering it under a Windows Registry key named Offce Test ( see IOC section for details ) .
+This DLL in turn loads the second one , which is Seduploader ’s payload .
+Interestingly , the decoy document was apparently wrongly embedded when building the exploit , and thus fails to open .
+From the attachment name , we can speculate that it was supposed to be an RTF version of a news article entitled " Putin Is Being Pushed to Abandon His Conciliatory Approach to the West and Prepare for War " [ 29 ] .
+This particular case is one among a series of attacks using the CVE-2015-1641 vulnerability launched from April 2016 by the Sednit group [ 30 ] ( more details in the IOC section ) .
+The second main attack method of the Sednit group is an exploit kit , which we named Sedkit .
+It was discovered by ESET researchers in September 2014 [ 23 ] .
+At this time , several websites belonging to a large fnancial institution in Poland were modifed to automatically redirect the visitors to the exploit kit — also known as a watering hole attack [ 31 ] .
+The workﬂow of the Sedkit exploit kit has stayed the same since its frst appearance .
+As previously explained , the targets were initially attracted to visit Sedkit via a watering hole attacks .
+But since then , the usual way to lure the targets has been to send targeted phishing emails containing a URL pointing to Sedkit .
+Figure 10 shows an example of such a targeted phishing email from March 2016 .
+This email supposedly comes from Stratfor [ 32 ] , an intelligence company providing regular reports on geopolitics .
+While the email signature and sender address are correct , the domain name in the URL is not — stratfor.com being the legitimate Stratfor domain name .
+Also , the URI path closely resembles the path of an existing article on the Stratfor website ( / weekly / ruthless-andsober-syria ) , the only difference being the insertion of an ID number ( 51586 ) , which likely identifes the target .
+The attentive reader may have noticed that the email body text contains a typing mistake :  " Sratfor " rather than " Stratfor " , indicating that this text was not copied but manually written by the attackers .
+Such typing mistakes are common in Sednit phishing emails .
+Using legitimate news articles as lures , with URLs mimicking the real ones , is the usual way of attracting visitors to Sedkit since 2015 .
+Table 2 shows some recent examples of news articles mimicked by Sedkit URLs .
+theguardiannews.org theguardian.com " West ’s military advantage is being eroded , report warns " .
+worldpoliticsreviews.com worldpoliticsreview.com " Despite ISIS Attacks , North Korea Remains the ` Varsity ` of Global Threats " .
+worldpostjournal.com hufngtonpost.com " Taking War Seriously :  a Russia-NATO Showdown Is No Longer Just Fiction " .
+reuters-press.com reuters.com " Russia warns Turkey over Aegean warship incident " .
+unian-news.info unian.info " Iraq warns of attacks before Paris assault " .
+These news articles not only serve as phishing clickbait , but also as a way to hide the exploitation attempt .
+Indeed , the visitor will be redirected to the real news article after having been exploited .
+Visitors not selected for exploitation , as explained below , will also be redirected .
+Thus , the target will be left under the impression that the phishing email was actually legitimate .
+In order to be effective , the lure needs to be related to the target ’s interests .
+While in most cases we analyzed the lure was a news article about geopolitics , we also found a few cases using websites of legitimate Russian companies as lures .
+Once the target clicks on the phishing URL , the browser is redirected to the Sedkit landing page .
+The purpose of this page is to build a report of the visitor ’s machine .
+To do so , it contains over 200 lines of JavaScript code ( once beautifed ) that collect various data .
+The landing page code has stayed the same since March 2015 , and an annotated , beautifed extract is shown below .
+The JavaScript comments are from the developers , while the variable string_of_json is the actual report built as a JSON object .
+Collect the visitor ’s time zone .
+Collect information on the visitor ’s browser by enumerating the properties of the JavaScript ’s navigator object [ 33 ] .
+Collect information on the visitor ’s screen , by enumerating the properties of the JavaScript ’s screen object [ 34 ] .
+Collect the list of installed browser plugins , with specifc methods in the case of Internet Explorer 11 , and with generic methods otherwise .
+The report is then sent within an HTTP POST request to a URI hardcoded in the landing page code .
+This hardcoded URI path is different each time the landing page is visited , and only works for a limited amount of time .
+This probably serves to prevent security researchers from sending specially crafted reports directly to Sedkit servers , in order to collect the exploits .
+The only way ( we know of ) to visit the exploit kit is to pass through a landing page URL frst , which can be difcult due to the limited distribution of the phishing emails containing those URLs .
+Again , these landing page URLs are active for a short time .
+Then , depending on the report , the visitor may receive a suitable exploit , or be redirected to the legitimate website the email lure was based on , as shown in Figure 9 .
+Given the amount of information contained in the report , the operators can very precisely select the visitors to exploit , and those to flter out .
+The exact logic behind this selection is unknown to us , and remains one of the major open questions regarding Sedkit .
+Landing page visitors matching the Sedkit operators ’  criteria then receive an exploit suitable for their machines .
+Since Sedkit ’s frst appearance , numerous exploits have been added .
+Table 3 lists the exploited vulnerabilities we have observed during our tracking of Sedkit .
+CVE-2013-1347 [ 35 ] Internet Explorer 8 [ 23 ] .
+CVE-2013-3897 [ 36 ] Internet Explorer 8 [ 23 ] .
+CVE-2014-1510 [ 37 ] Firefox None .
+CVE-2014-1511 [ 38 ] Firefox None .
+CVE-2014-1776 [ 39 ] Internet Explorer 11 [ 23 ] .
+CVE-2014-6332 [ 40 ] Internet Explorer See below .
+N / A MacKeeper OS X cleaning tool developed by a Ukrainian company [ 41 ] .
+CVE-2015-2590 [ 42 ] Java 0-day at the time Sedkit used it [ 44 ] .
+CVE-2015-4902 [ 43 ] Java 0-day at the time Sedkit used it [ 44 ] .
+CVE-2015-3043 [ 45 ] Adobe Flash 0-day at the time Sedkit used it [ 46 ] .
+CVE-2015-5119 [ 47 ] Adobe Flash Revamped from Hacking Team leaked data [ 48 ] .
+CVE-2015-7645 [ 49 ] Adobe Flash 0-day at the time Sedkit used it [ 50 ] .
+The end goal of these exploits is to download and execute Sednit malware , usually Seduploader ’s dropper .
+Most of these exploits and their use by Sednit have already been documented , as mentioned in the " Reference " column of Table 3 .
+Nevertheless , we will describe the specifc case of the CVE-2014-6332 vulnerability exploitation , as it is a good example of Sednit ’s abilities , and to the best of our knowledge has not been documented previously .
+The vulnerability CVE-2014-6332 was discovered in May 2014 by an IBM X-Force security researcher [ 51 ] , and affected Internet Explorer versions 3 through 11 .
+Roughly summarized , the vulnerability is an integer overﬂow in the Internet Explorer VBScript engine that allowed arbitrary read / write in memory .
+Soon after the disclosure , a proof-of-concept was released by a Chinese security researcher [ 52 ] .
+The proof-of-concept used the vulnerability to disable Internet Explorer ’s " SafeMode " , so that arbitrary VBScript code could be executed .
+Numerous miscreants then integrated revamped versions of this proof-of-concept into their toolsets , and the Sednit group was no exception .
+Indeed , in October 2015 a simple revamped version of the original proof-of-concept was added to Sedkit .
+But the Sednit group went one step further in February 2016 by deploying a different exploit for this vulnerability .
+This time the purpose of the exploit was not to disable " SafeMode " , but rather to write a Return-Oriented Programming ( ROP ) shellcode in memory , and to execute it .
+To do so , the exploit developers implemented numerous helper functions in VBScript , resulting in over 400 lines of code .
+We did not fnd any re-use of this code by other groups of attackers , leading us to believe it was specifcally developed by , or for , the Sednit group .
+Parts of this code seem to have been inspired by a presentation at BlackHat USA 2014 , where a security researcher named Yang Yu published some JavaScript code related to Internet Explorer exploitation [ 53 ] .
+As an example of that , Figure 12 shows one particular JavaScript function published on one of his slides .
+In other words , the exploit developers re-implemented some of the ideas of the BlackHat presentation in VBScript , and implemented the ROP part themselves .
+We believe this is a good example of the technical abilities available to the Sednit group .
+The developers were able to understand a complex exploit well enough to make their own version .
+We can speculate that the purpose of that was to bypass some security products .
+It also shows that these developers are following technical security publications .
+From personalized phishing emails to exploit kits , the Sednit group invested a lot of effort into its attack methods over the last two years .
+In particular , the number of 0-day exploits available to the group is surprisingly high , showing a signifcant resources at their disposal .
+One major open question regarding the Sednit attack methods concerns the crawling of the Sedkit exploit kit .
+Indeed , the exact logic of the operators in accepting a visitor as a target remains unknown to us , and probably depends on their objectives at that moment .
+Given the fact that the exploit kit has been the home of several 0-day exploits in the past , the ability to receive an exploit from it would surely be interesting from a research perspective .

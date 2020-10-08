@@ -1,0 +1,45 @@
+CYBER ADVISORY .
+Release_Time : 2018-11-29
+Report_URL : https://www.accenture.com/t20181129T203820Z__w__/us-en/_acnmedia/PDF-90/Accenture-snakemackerel-delivers-zekapab-malware.pdf#zoom=50
+
+As the United Kingdom ( UK ) Prime Minister Theresa May announced the initial BREXIT draft agreement with the European Union ( EU ) , iDefense analysts identified a new campaign by SNAKEMACKEREL using a BREXIT-themed lure document to deliver the Zekapab ( also known as Zebrocy ) first-stage malware .
+SNAKEMACKEREL is an espionage-motivated cyber threat group , also known as Sofacy , Pawn Storm , Sednit , Fancy Bear , APT28 , Group 74 , Tsar Team , and Strontium .
+Both the British and Dutch governments have publicly attributed SNAKEMACKEREL activities to the Russian military intelligence service ( RIS )1 and have linked specific cyberattacks to the group , including the targeting of the Organisation for the Prohibition of Chemical Weapons ( OPCW )2 , the United Kingdom Defence and Science Technology Laboratory ( DSTL ) and the United Kingdom Foreign and Commonwealth Office ( FCO ) .
+In foreign countries , RIS actors conducted damaging and/or disruptive cyberattacks , including attacks on critical infrastructure networks .
+In some cases , RIS actors “ masqueraded as third parties , hiding behind false online personas designed to cause the victim to misattribute the source of the attack. ” 
+According to the FBI , the SNAKEMACKEREL threat group "is part of an ongoing campaign of cyber-enabled operations directed at the United States government and its citizens .
+These cyber operations have included spear phishing campaigns targeting government organizations , critical infrastructure entities , think tanks , universities , political organizations , and corporations , leading to the theft of information .
+The creation of this malicious document , coming on the same day that the UK government announced an initial agreed draft of the BREXIT agreement , suggests that SNAKEMACKEREL is a group that pays close attention to political affairs and is able to leverage the latest news headlines to develop lure documents to deliver firststage malware , such as Zekapab , to its intended targets .
+The theme also reflects the targeting of the group which primarily focuses on NATO members , countries in Central Asia and those neighboring Russia .
+Given the assumed association with the Russian military service , it is clear that the group has significant resources to target and compromise organizations .
+As a result , it requires extra investment in defensive measures .
+To protect the confidentiality , integrity and availability of business operations , Accenture Security recommends that organizations ensure their staff members receive security hygiene training and deploy intelligence-driven network and host-based defensive measures .
+Despite the public reporting and government accusations , SNAKEMACKEREL remains highly active .
+It is behind a large number of cyberattacks targeting global aerospace and defense contractors , military units , political parties , the International Olympic Committee ( IOC ) , anti-doping agencies , government departments and various other verticals .
+NATO and EU member countries , as well as the United States , are of particular interest to the group .
+SNAKEMACKEREL operations continue to be some of the most far-reaching and sophisticated cyber espionage and intelligence campaigns to date .
+iDefense , part of Accenture Security , is providing information about this reported SNAKEMACKEREL campaign to highlight the modus operandi of a highly active threat group that is targeting institutions , presumably for espionage purposes .
+This intelligence alert is relevant for security operations center ( SOC ) analysts and engineers , intelligence analysts and management , and executive leadership .
+SOC analysts and engineers can use this alert ’s detailed information pertaining to the workings of the malware families and indicators of compromise ( IoCs ) to contain or mitigate the discussed threat through monitoring or blocking .
+SOC analysts can use the information provided in the analysis and mitigation sections of this alert for hunting activities for systems that may have been compromised already .
+Analysts and security engineers can use the IoCs by adding them to hunting lists on Endpoint Detection and Response ( EDR ) solutions , as well as network- and host-based blacklists to detect and deny malware implantation and command-and-control ( C2 ) communication .
+Intelligence analysts may want to use the information provided in this alert to better inform their own analyses .
+The information can also help inform ongoing intelligence analyses and forensic investigations , particularly with respect to compromise discovery , damage assessment , and attribution .
+Management and executive leadership may use this information to assess the risks associated with the threat described to make the appropriate operational and policy decisions .
+Knowledge of SNAKEMACKEREL's tactics , techniques , and procedures ( TTPs ) helps to better inform detection and response to attacks by this threat group .
+This report provides a technical overview of a BREXIT-themed lure Microsoft Office document that is used to drop a Delphi version of the Zekapab first-stage malware which has been previously reported by iDefense analysts .
+However , additional research on the C2 server 109.248.148.42 revealed a new .NET version of Zekapab that is designed for the same purpose .
+iDefense analysts recently came across the following malicious document that is purportedly related to the recent BREXIT negotiations between the UK and the EU .
+The file has the following metadata : 
+Filename : Brexit 15.11.2018.docx .
+MD5: 405655be03df45881aa88b55603bef1d .
+File size : 18.9 KB ( 19354 bytes ) .
+Author : USER .
+Last modified by : Joohn .
+Company : Grizli777 .
+Creation date : 2018:11:14 14:17:00 .
+Modified date : 2018:11:15 04:50:00 .
+Of note , the Company name Grizli777 is indicative of a cracked version of  Microsoft Word .
+To trick the targeted individual into enabling macros , the attackers deliberately used jumbled-up text as content .
+The document loads malicious content from http://109.248.148.42/office/thememl/2012/main/attachedTemplate.dotm via the settings.xml.rels component that is embedded within the DOCX document .
+The downloaded macro component includes a function called AutoClose() as well as two payloads embedded via Base64 encoded strings .

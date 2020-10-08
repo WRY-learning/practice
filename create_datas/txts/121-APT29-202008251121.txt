@@ -1,0 +1,35 @@
+APT29 .
+The HAMMERTOSS backdoor generates and looks for a different Twitter handle each day .
+It uses an algorithm to generate the daily handle , such as “ 234Bob234 ” , before attempting to visit the corresponding Twitter page .
+If the threat group has not registered that day ’s handle , HAMMERTOSS will wait until the next day and look for a different handle .
+HAMMERTOSS visits the associated Twitter account and looks for a tweet with a URL and a hashtag that indicates the location and minimum size of an image file .
+HAMMERTOSS visits the URL and obtains an image .
+The image looks normal , but actually contains hidden and encrypted data using steganography .
+HAMMERTOSS decrypts the hidden data to obtain commands .
+HAMMERTOSS processes the decrypted commands , which may instruct the malware to conduct reconnaissance , execute commands via PowerShell , or upload data to a cloud storage service .
+HAMMERTOSS contains an algorithm that generates Twitter handles telling the malware to visit a specific Twitter handle on a specific day .
+A Twitter handle is a user ID associated with Twitter ’s website .
+For instance , FireEye ’s Twitter handle , @FireEye , has a URL : https://www.twitter.com/ fireeye .
+The HAMMERTOSS algorithm uses a basename , like “ Bob , ” and appends and prepends three CRC32 values based on the current date .
+An example , may be 1abBob52b , which would have the URL : https://www.twitter.com/1abBob52b .
+HAMMERTOSS visits the Twitter URL related to its daily Twitter handle .
+For instance , on July 29 , it may look for a handle 1abBob52b ( https://twitter.com/1abBob52b ) .
+APT29 ’s operator registers the handle .
+HAMMERTOSS goes to the Twitter page and looks for a tweet that provides instructions on the next phase of the process .
+APT29 ’s operator does not register the handle .
+HAMMERTOSS waits until the next day to begin the process again .
+APT29 ’s operator chooses to register a particular day ’s Twitter handle using the same algorithm ahead of the anticipated communication .
+HAMMERTOSS first looks for instructions on Twitter .
+The malware contains an algorithm that generates a daily Twitter handle , which is an account user ID .
+To create the handles , the algorithm employs a basename , such as “ Bob , ” and appends and prepends three CRC32 values based on the date .
+For example , “ 1abBob52b ” would have the URL : https://twitter.com/1abBob52b .
+Each HAMMERTOSS sample will create a different Twitter handle each day .
+APT29 knows the algorithm used to generate the handles and chooses to register a Twitter handle and post obfuscated instructions to the handle ’s URL before the malware attempts to query it .
+If a particular day ’s handle is not registered and the URL for that day is not found , HAMMERTOSS will wait until the next day to attempt to communicate with another handle .
+APT29 typically configures HAMMERTOSS to communicate within certain restrictions , such as only checking the Twitter handle on weekdays or after a specified start date .
+This allows the malware to blend in to “ normal ” traffic during the victim ’s work week or to remain dormant for a period of time before activating .
+If APT29 ’s operator has registered that particular day ’s handle , he will tweet a URL and hashtag .
+URL : In the case above , the tweet instructs HAMMERTOSS to download the content hosted at the specified URL , including any images on the page .
+In the example we will discuss later , the tweet included a URL on GitHub .
+Hashtag : The tweet also contains a hashtag with information to allow HAMMERTOSS to extract encrypted instructions from an image file .
+The hashtag indicates that the hidden data is offset 101 bytes into the image file and the characters to be used for decryption are docto .

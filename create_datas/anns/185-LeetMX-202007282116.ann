@@ -1,0 +1,90 @@
+T1	threatActor_name 12 18	leetMX
+T2	threatActor_name 100 106	leetMX
+T3	location 162 168	Mexico
+R1	located Arg1:T2 Arg2:T3	
+T4	location 195 201	Mexico
+T5	location 204 215	El Salvador
+R2	attack Arg1:T2 Arg2:T4	
+R3	attack Arg1:T2 Arg2:T5	
+T6	location 265 274	Guatemala
+T7	location 277 286	Argentina
+T8	location 291 301	Costa Rica
+R4	attack Arg1:T2 Arg2:T6	
+R5	attack Arg1:T2 Arg2:T7	
+R6	attack Arg1:T2 Arg2:T8	
+T9	reference_word 304 306	It
+R7	coreference Arg1:T9 Arg2:T2	
+T10	time 332 345	November 2016
+R8	first_found_time Arg1:T9 Arg2:T10	
+T11	threatActor_name 435 441	leetMX
+T12	sub_activity 596 632	Remote Access Trojans and keyloggers
+T13	sample_name 994 1072	Ministerio de Hacienda El Salvador – Declaraciones Pendientes folio 34598.docm
+T14	sample_name 1073 1135	Ministerio de Hacienda SV Folio de Aclaracion SVMH2054983.docm
+T15	sample_name 1136 1203	Buro de Credito – Reporte Especial Folio de Operacion 438346982.doc
+T16	sample_name 1204 1225	SATMX-Folio 46565.xls
+T17	sample_name 1226 1323	Servicio de Administracion Tributaria SAT Declaraciones Pendientes Folio de Consulta 45817089.xls
+T18	tool 797 813	malicious Office
+T19	sample_function 906 940	downloads and run various payloads
+R10	goal Arg1:T18 Arg2:T19	
+T20	tool 1332 1341	documents
+T21	sample_function 1350 1366	malware droppers
+R11	attack Arg1:T20 Arg2:T21	
+T22	sample_name 1374 1453	buro de credito reporte de movimientos recientes folio de operacion 3590543.doc
+T23	sample_name 1454 1520	buro de credito reporte de movimientos acreditados folio 45665.doc
+T24	sample_name 1522 1598	ministerio de hacienda el salvador consulta de estado de cuenta moroso folio
+T25	sample_name 1600 1657	buro de credito reporte de nuevos cargos folio 273534.doc
+T26	sample_name 1659 1731	Buro de Credito Afilicion de Cargo Automatico Registrado BMX46948964.doc
+T27	sample_name 1733 1798	Buro de Credito Folio de Aprobacion de Nuevos Creditos 593783.xls
+T28	sample_name 1800 1870	Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc
+T29	sample_name 1872 1942	Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc
+T30	sub_activity 2115 2158	malware delivery or for command and control
+T31	url_evil 2161 2190	c0pywins.is-not-certified.com
+T32	url_evil 2191 2209	casillas.hicam.net
+T33	url_evil 2210 2230	casillas45.hopto.org
+T34	url_evil 2231 2259	casillasmx.chickenkiller.com
+T35	url_evil 2260 2290	cloudrsaservicesdriveoffic.com
+T36	tool 466 486	27 hosts and domains
+R9	use Arg1:T11 Arg2:T36	
+T37	tool 554 569	malware samples
+R12	use Arg1:T11 Arg2:T37	
+R13	goal Arg1:T37 Arg2:T12	
+T38	url_evil 2291 2322	cloudsfullversionooficcekey.com
+T39	location 3011 3017	Mexico
+T40	url_evil 2323 2354	dryversdocumentofficescloud.com
+T41	url_evil 2355 2384	dryversdocumentsandcustom.com
+T42	url_evil 2385 2416	dryversdocumentsandcustomer.com
+T43	url_evil 2417 2447	dryversdocumentsandcustoms.com
+T44	url_evil 2448 2481	dryversdocumentsandcustomsoft.com
+T45	url_evil 2840 2865	rsaupdatr.jumpingcrab.com
+T46	url_evil 2692 2725	dryversdocumentsolutionscloud.com
+T47	url_evil 2482 2514	dryversdocumentsandfullbmxro.com
+T48	url_evil 2515 2553	dryversdocumentsandfullburomxcloud.com
+T49	url_evil 2554 2586	dryversdocumentsandfullcloud.com
+T50	url_evil 2587 2624	dryversdocumentsandfullcustomsoft.com
+T51	url_evil 2625 2659	dryversdocumentsatsettingswins.com
+T52	url_evil 2660 2691	dryversdocumentsettingswins.com
+T53	url_evil 2726 2747	k4l1m3r4.publicvm.com
+T54	url_evil 2748 2768	mycloudtoolzshop.net
+T55	url_evil 2769 2796	opendrivecouldrsafinder.com
+T56	url_evil 2797 2818	rsafinderfirewall.com
+T57	url_evil 2819 2839	rsapoints.ssl443.org
+T58	url_evil 2867 2882	sause.ntdll.net
+T59	url_evil 2883 2903	sslwin.moneyhome.biz
+T60	url_evil 2904 2920	wins10up.16-b.it
+T61	person 2988 2997	attackers
+R14	located Arg1:T61 Arg2:T39	
+T62	industry 3238 3263	Mexican internet services
+T63	location 3381 3383	MX
+T64	person 3707 3733	hector jesus herrera duron
+T65	threatActor_aliases 3762 3771	motogplus
+T66	location 3794 3805	c 29 no 300
+T67	location 3826 3832	merida
+T68	location 3863 3870	Chiapas
+T69	IP 4249 4263	189.215.52.168
+T70	sample_name 4694 4732	Original filename Conversion from Leet
+T71	sample_name 4735 4776	Ad0v3upd4t3s2o17.exe Adoveupdates2017.exe
+T72	sample_name 4779 4828	0ff1ceval1dKey001[1].exe officevalidKeyooi[i].exe
+T73	sample_name 4831 4860	AFDsajgeoi.exe AFDsajgeoi.exe
+T74	sample_name 4863 4898	Ad0v31ns5t411.exe Adoveinsstaii.exe
+T75	sample_name 6300 6337	0fficeV4lids00.exe officeValidsoo.exe
+T76	sample_name 6254 6297	J4v4mxfullv3rsion.exe Javamxfullversion.exe

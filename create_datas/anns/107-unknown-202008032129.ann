@@ -1,0 +1,444 @@
+T2	malware 521 525	MATA
+T3	malware 532 536	MATA
+T4	malware 764 768	MATA
+T5	malware 1062 1066	MATA
+T6	malware 3989 3993	MATA
+T7	malware 6233 6237	MATA
+T8	malware 6345 6349	MATA
+T9	malware 6543 6547	MATA
+T10	malware 6696 6700	MATA
+T11	malware 7090 7094	MATA
+T12	malware 6913 6917	MATA
+T13	malware 7610 7614	MATA
+T14	malware 7936 7940	MATA
+T15	malware 8003 8007	MATA
+T16	malware 8296 8300	MATA
+T17	malware 8774 8778	MATA
+T18	malware 9521 9525	MATA
+T19	OS_name 9515 9520	macOS
+T20	malware 9901 9905	MATA
+T21	malware 10235 10239	MATA
+T22	malware 10343 10347	MATA
+T23	malware 11434 11438	MATA
+T24	malware 10668 10672	MATA
+T25	malware 10816 10820	MATA
+T26	malware 10872 10876	MATA
+T27	malware 11125 11129	MATA
+T28	malware 11700 11704	MATA
+T29	malware 13220 13224	MATA
+T30	malware 13564 13568	MATA
+T31	malware 14005 14009	MATA
+T32	industry 180 182	IT
+T33	industry 187 189	OT
+T35	industry 430 456	Threat Intelligence Portal
+T36	OS_name 677 684	Windows
+T37	OS_name 697 702	macOS
+T38	OS_name 687 692	Linux
+T39	reference_word 649 658	framework
+R1	coreference Arg1:T39 Arg2:T3	
+R2	attack Arg1:T39 Arg2:T36	
+R3	attack Arg1:T39 Arg2:T38	
+R4	attack Arg1:T39 Arg2:T37	
+T40	time 786 796	April 2018
+R5	occur_time Arg1:T4 Arg2:T40	
+T41	OS_name 1043 1050	Windows
+T42	OS_name 4210 4217	Windows
+T43	OS_name 6579 6586	Windows
+T44	OS_name 6905 6912	Windows
+T45	OS_name 7928 7935	Windows
+T46	OS_name 8080 8087	Windows
+T47	OS_name 11781 11788	Windows
+T48	OS_name 12169 12176	Windows
+T49	OS_name 13212 13219	Windows
+T50	OS_name 13558 13563	Linux
+T51	OS_name 13718 13723	Linux
+T52	OS_name 13797 13802	Linux
+T53	OS_name 11791 11796	Linux
+T54	OS_name 9607 9612	Linux
+T55	OS_name 8279 8284	Linux
+T56	OS_name 8053 8058	Linux
+T57	OS_name 7997 8002	Linux
+T58	OS_name 7546 7551	Linux
+T59	OS_name 7618 7623	Linux
+T60	OS_name 6935 6940	Linux
+T61	OS_name 7069 7074	Linux
+T62	OS_name 6603 6608	Linux
+T63	OS_name 6613 6618	macOS
+T64	OS_name 8798 8803	macOS
+T65	OS_name 8899 8904	macOS
+T66	OS_name 11801 11806	macOS
+T67	OS_name 13999 14004	macOS
+T68	encryption_algo 1422 1425	AES
+T69	encryption_algo 1579 1582	AES
+T70	sample_name 1753 1790	C:\Windows\System32\wbem\WmiPrvSE.exe
+T71	sample_name 1808 1820	WmiPrvSE.exe
+T72	tool 1834 1837	WMI
+T73	sample_name 2121 2130	lsass.exe
+T74	encryption_algo 2270 2273	AES
+T75	IP_evil 2569 2582	108.170.31.81
+T76	IP_evil 2590 2605	192.210.239.122
+T77	IP_evil 2613 2627	111.90.146.105
+T78	malware 2556 2558	C2
+T79	malware 3598 3600	C2
+T80	malware 4057 4059	C2
+T81	malware 4125 4127	C2
+T82	malware 4300 4302	C2
+T83	malware 8686 8688	C2
+T84	malware 11585 11587	C2
+T85	malware 11276 11278	C2
+T86	malware 11620 11622	C2
+T87	malware 14107 14109	C2
+T88	IP_evil 14121 14133	104.232.71.7
+T89	IP_evil 14141 14156	107.172.197.175
+T90	IP_evil 14164 14177	108.170.31.81
+T91	IP_evil 14185 14199	111.90.146.105
+T92	IP_evil 14207 14221	111.90.148.132
+T93	IP_evil 14229 14242	172.81.132.41
+T94	IP_evil 14485 14498	68.168.123.86
+T95	IP_evil 14464 14477	67.43.239.146
+T96	IP_evil 14443 14456	23.254.119.12
+T97	IP_evil 14422 14435	23.227.199.69
+T98	IP_evil 14401 14414	23.227.199.53
+T99	IP_evil 14379 14393	216.244.71.233
+T100	IP_evil 14358 14371	209.90.234.34
+T101	IP_evil 14337 14350	198.180.198.6
+T102	IP_evil 14314 14329	192.210.239.122
+T103	IP_evil 14293 14306	185.62.58.207
+T104	IP_evil 14271 14285	172.93.201.219
+T105	IP_evil 14250 14263	172.93.184.62
+T106	protocol 2858 2862	HTTP
+T107	protocol 2866 2871	HTTPS
+T108	encryption_algo 2890 2893	AES
+R6	use Arg1:T78 Arg2:T75	
+R7	use Arg1:T78 Arg2:T76	
+R8	use Arg1:T78 Arg2:T77	
+R9	attack Arg1:T5 Arg2:T41	
+T109	string 2987 2994	MataNet
+T110	string 3054 3061	MataNet
+T111	string 3268 3275	MataNet
+T112	string 3327 3334	MataNet
+T113	string 3541 3548	MataNet
+T114	string 3809 3816	MataNet
+T115	tool 3145 3159	openssl-1.1.0f
+T116	protocol 3103 3109	TLS1.2
+T117	encryption_algo 3309 3312	RC4
+R10	use Arg1:T111 Arg2:T117	
+T118	sample_name 3414 3424	c_2910.cls
+T119	sample_name 3455 3465	k_3872.cls
+T120	encryption_algo 3484 3487	TLS
+R11	use Arg1:T120 Arg2:T119	
+R12	use Arg1:T120 Arg2:T118	
+T121	string 3782 3787	0x400
+T122	string 3940 3945	0x500
+T123	string 4024 4029	0x601
+T124	string 4062 4067	0x602
+T125	string 4110 4115	0x700
+T126	string 4285 4290	0x701
+T127	sample_name 4662 4679	MATA_Plug_Cmd.dll
+T128	sample_name 4686 4693	cmd.exe
+T129	sample_name 4706 4720	powershell.exe
+T130	sample_function 4760 4803	receive the output of the command execution
+R13	goal Arg1:T129 Arg2:T130	
+R14	goal Arg1:T128 Arg2:T130	
+R15	use Arg1:T127 Arg2:T128	
+R16	use Arg1:T127 Arg2:T129	
+T131	string 5793 5800	MataNet
+T132	sample_name 4806 4827	MATA_Plug_Process.dll
+T133	sample_function 4828 4953	Manipulate process ( listing process , killing process , creating process , creating process with logged-on user session ID )
+R17	goal Arg1:T132 Arg2:T133	
+T134	sample_name 4956 4980	MATA_Plug_TestConnect.dl
+T135	sample_function 4982 5036	Check TCP connection with given IP :  port or IP range
+R18	goal Arg1:T134 Arg2:T135	
+T136	sample_name 5069 5091	MATA_Plug_WebProxy.dll
+T137	sample_function 5092 5118	Create a HTTP proxy server
+R19	goal Arg1:T136 Arg2:T137	
+T138	protocol 5101 5105	HTTP
+T139	protocol 5241 5245	HTTP
+T140	protocol 4988 4991	TCP
+T141	protocol 5153 5156	TCP
+T142	protocol 5837 5840	TCP
+T143	protocol 8422 8425	TCP
+T144	sample_name 5308 5326	MATA_Plug_File.dll
+T145	sample_function 5327 5567	Manipulate files ( write received data to given file , send given file after LZNT1 compression , compress given folder to %TEMP%\~DESKTOP[8random hex].ZIP and send , wipe given file , search file , list file and folder , timestomping file )
+R20	goal Arg1:T144 Arg2:T145	
+T146	sample_name 5570 5588	MATA_Plug_Load.dll
+T147	encryption_algo 5404 5409	LZNT1
+T148	sample_function 5589 5749	Inject DLL file into the given process using PID and process name , or inject XORed DLL file into given process , optionally call export function with arguments
+R21	goal Arg1:T146 Arg2:T148	
+T149	sample_name 5752 5776	MATA_Plug_P2PReverse.dll
+T150	sample_function 5777 5896	Connect between MataNet server on one side and an arbitrary TCP server on the other , then forward traffic between them
+R22	goal Arg1:T149 Arg2:T150	
+T151	sample_name 6016 6034	MATA_Plug_WebProxy
+T152	person 6103 6116	Matt McKnight
+T153	string 6046 6073	Proxy-agent :  matt-dot-net
+R23	use Arg1:T151 Arg2:T153	
+T154	person 6178 6182	Matt
+T155	person 6061 6065	matt
+T156	program_language 6208 6210	C#
+T157	program_language 6223 6226	C++
+R24	use Arg1:T154 Arg2:T156	
+T158	protocol 6296 6299	SSL
+T159	person 6415 6419	Matt
+T160	program_language 6493 6495	C#
+T161	program_language 6499 6502	C++
+T162	reference_word 6456 6463	malware
+R25	use Arg1:T162 Arg2:T161	
+R26	coreference Arg1:T162 Arg2:T8	
+T163	malware 0 4	MATA
+R27	attack Arg1:T9 Arg2:T43	
+R28	attack Arg1:T9 Arg2:T62	
+R29	attack Arg1:T9 Arg2:T63	
+T1	vulnerability_cve 7021 7034	CVE-2019-3396
+T164	tool 6991 7011	Atlassian Confluence
+T165	tool 7052 7057	socat
+R32	part_of Arg1:T1 Arg2:T164	
+R33	attack Arg1:T11 Arg2:T61	
+T166	location 7149 7154	China
+T167	company 7177 7183	Netlab
+T168	reference_word 7230 7237	malware
+R35	located Arg1:T167 Arg2:T166	
+R36	find Arg1:T167 Arg2:T168	
+T169	string 7408 7427	/proc/%pid%/cmdline
+T170	string 7458 7475	/flash/bin/mountd
+T171	string 7493 7510	/flash/bin/mountd
+R37	part_of Arg1:T58 Arg2:T171	
+R38	attack Arg1:T13 Arg2:T59	
+T172	reference_word 7591 7595	path
+R39	coreference Arg1:T172 Arg2:T171	
+T173	encryption_algo 7808 7811	AES
+T174	sample_name 8107 8120	MATA_Plug_Cmd
+T175	sample_name 8135 8149	MATA_Plug_File
+T176	sample_name 8167 8184	MATA_Plug_Process
+T177	sample_name 8199 8220	MATA_Plug_TestConnect
+T178	sample_name 8242 8262	MATA_Plug_P2PReverse
+T179	sample_name 8223 8241	plugin_reverse_p2p
+T180	sample_name 8187 8198	plugin_test
+T181	sample_name 8152 8166	plugin_process
+T182	sample_name 8123 8134	plugin_file
+T183	sample_name 8097 8106	/bin/bash
+R40	attack Arg1:T16 Arg2:T55	
+T184	OS_name 8521 8543	Bloomberg Professional
+T185	OS_name 8480 8497	MikroTik RouterOS
+T186	company 8816 8826	VirusTotal
+T187	time 8830 8844	April 8 , 2020
+R41	find Arg1:T64 Arg2:T17	
+R42	release_time Arg1:T64 Arg2:T187	
+T188	tool 8985 8992	MinaOTP
+T189	tool 9015 9023	TinkaOTP
+T190	string 9071 9077	Mach-O
+T191	tool 9156 9168	TinkaOTP.app
+T192	string 9356 9362	Mach-o
+R43	attack Arg1:T18 Arg2:T19	
+T193	sample_name 9669 9681	plugin_socks
+T194	reference_word 9635 9637	it
+R44	coreference Arg1:T194 Arg2:T18	
+R45	part_of Arg1:T193 Arg2:T194	
+R46	attack Arg1:T194 Arg2:T54	
+T195	sample_name 9693 9705	plugin_socks
+T196	sample_name 9732 9750	plugin_reverse_p2p
+T197	location 10001 10007	Poland
+T198	location 10010 10017	Germany
+T199	location 10020 10026	Turkey
+T200	location 10029 10034	Korea
+T201	location 10037 10042	Japan
+T202	location 10047 10052	India
+T203	government 10132 10160	software development company
+T204	government 10166 10184	e-commerce company
+T205	government 10192 10217	internet service provider
+T206	attack_goal 10397 10488	find the victim ’s databases and execute several database queries to acquire customer lists
+T207	malware 10696 10710	VHD ransomware
+T208	threatActor_name 10848 10855	Lazarus
+R48	use Arg1:T208 Arg2:T25	
+T209	sample_name 10918 10928	c_2910.cls
+T210	sample_name 10933 10943	k_3872.cls
+R49	part_of Arg1:T209 Arg2:T305	
+R50	part_of Arg1:T210 Arg2:T305	
+T211	malware 10994 11004	Manuscrypt
+T212	md5 11040 11072	0137f688436c468d43b3e50878ec1a1f
+T213	md5 11349 11381	ab09f6a249ca88d1a036eee7a02cdd16
+T214	md5 12187 12219	f364b46d8aafff67271d350b8271505a
+T215	md5 12220 12252	85dcea03016df4880cebee9a70de0c02
+T216	md5 12253 12285	1060702fe4e670eda8c0433c5966feee
+T217	md5 12286 12318	7b068dfbea310962361abf4723332b3a
+T218	md5 12319 12351	8e665562b9e187585a3f32923cc1f889
+T219	md5 12352 12384	6cd06403f36ad20a3492060c9dc14d80
+T220	md5 12385 12417	71d8b4c4411f7ffa89919a3251e6e5cb
+T221	md5 12418 12450	a7bda9b5c579254114fab05ec751918c
+T222	md5 12451 12483	e58cfbc6e0602681ff1841afadad4cc6
+T223	md5 12484 12516	7e4e49d74b59cc9cc1471e33e50475d3
+T224	md5 12517 12549	a93d1d5c2cb9c728fda3a5beaf0a0ffc
+T225	md5 12550 12582	455997E42E20C8256A494FA5556F7333
+T226	md5 12583 12615	7ead1fbba01a76467d63c4a216cf2902
+T227	md5 12616 12648	7d80175ea344b1c849ead7ca5a82ac94
+T228	md5 12649 12681	bf2765175d6fce7069cdb164603bd7dc
+T229	md5 12682 12714	b5d85cfaece7da5ed20d8eb2c9fa477c
+T230	md5 12715 12747	6145fa69a6e42a0bf6a8f7c12005636b
+T231	md5 12748 12780	2b8ff2a971555390b37f75cb07ae84bd
+T232	md5 12781 12813	1e175231206cd7f80de4f6d86399c079
+T233	md5 12814 12846	65632998063ff116417b04b65fdebdfb
+T234	md5 12847 12879	ab2a98d3564c6bf656b8347681ecc2be
+T235	md5 12880 12912	e3dee2d65512b99a362a1dbf6726ba9c
+T236	md5 12913 12945	fea3a39f97c00a6c8a589ff48bcc5a8c
+T237	md5 12946 12978	2cd1f7f17153880fd80eba65b827d344
+T238	md5 12979 13011	582b9801698c0c1614dbbae73c409efb
+T239	md5 13012 13044	a64b3278cc8f8b75e3c86b6a1faa6686
+T240	md5 13045 13077	ca250f3c7a3098964a89d879333ac7c8
+T241	md5 13078 13110	ed5458de272171feee479c355ab4a9f3
+T242	md5 13111 13143	f0e87707fd0462162e1aecb6b4a53a89
+T243	md5 13144 13176	f1ca9c730c8b5169fe095d385bac77e7
+T244	md5 13177 13209	f50a0cd229b7bf57fcbd67ccfa8a5147
+T245	md5 13227 13259	bea49839390e4f1eb3cb38d0fcaf897e
+T246	md5 13272 13304	8910bdaaa6d3d40e9f60523d3a34f914
+T247	md5 13317 13349	6a066cf853fe51e3398ef773d016a4a8
+T248	md5 13352 13384	228998f29864603fd4966cadd0be77fc
+T249	md5 13387 13419	da50a7a05abffb806f4a60c461521f41
+T250	md5 13422 13454	ec05817e19039c2f6cc2c021e2ea0016
+T251	sample_name 13260 13269	rdata.dat
+T252	sample_name 13305 13314	sdata.dat
+T253	md5 13571 13603	859e7e9a11b37d355955f85b9a305fec
+T254	md5 13616 13648	80c0efb9e129f7f9b05a783df6959812
+T255	md5 13673 13705	d2f94e178c254669fb9656d5513356d2
+T256	sample_name 13604 13613	mdata.dat
+T257	sample_name 13649 13658	ldata.dat
+T258	sample_name 13661 13670	mdata.dat
+T259	sample_name 13706 13715	mdata.dat
+T260	md5 13740 13772	982bf527b9fe16205fea606d1beed7fa
+T261	sample_name 13773 13782	hdata.dat
+T262	md5 13811 13843	e883bf5fd22eb6237eb84d80bbcf2ac9
+T263	tool 13803 13808	SoCat
+T264	sample_name 13844 13853	sdata.dat
+T265	OS_name 13878 13898	Atlassian Confluence
+T266	sample_name 13941 13949	check.vm
+T267	sample_name 13992 13996	r.vm
+T268	sample_name 13952 13956	r.vm
+T269	md5 13908 13940	a99b7ef095f44cf35453465c64f0c70c
+T270	md5 13959 13991	199b4c116ac14964e9646b2f27595156
+T271	md5 14012 14044	81f8f0526740b55fe484c42126cd8396
+T272	md5 14060 14092	f05437d510287448325bac98a1378de1
+T273	sample_name 14045 14057	TinkaOTP.dmg
+T274	sample_name 14093 14104	SubMenu.nib
+R51	part_of Arg1:T272 Arg2:T274	
+R52	part_of Arg1:T271 Arg2:T273	
+R53	part_of Arg1:T270 Arg2:T267	
+R54	attack Arg1:T31 Arg2:T67	
+R55	part_of Arg1:T269 Arg2:T266	
+R56	part_of Arg1:T269 Arg2:T268	
+R57	part_of Arg1:T262 Arg2:T264	
+R58	part_of Arg1:T263 Arg2:T52	
+R59	part_of Arg1:T260 Arg2:T261	
+R60	part_of Arg1:T255 Arg2:T259	
+R61	part_of Arg1:T254 Arg2:T257	
+R62	part_of Arg1:T254 Arg2:T258	
+R63	part_of Arg1:T253 Arg2:T256	
+R64	attack Arg1:T30 Arg2:T50	
+R65	part_of Arg1:T245 Arg2:T251	
+R66	part_of Arg1:T246 Arg2:T252	
+R67	attack Arg1:T29 Arg2:T49	
+T275	government 11092 11099	US-CERT
+R68	part_of Arg1:T210 Arg2:T211	
+R69	part_of Arg1:T209 Arg2:T211	
+R70	find Arg1:T275 Arg2:T212	
+R71	part_of Arg1:T212 Arg2:T211	
+T276	malware 11268 11271	C2s
+T277	malware 11327 11337	Manuscrypt
+R72	part_of Arg1:T213 Arg2:T277	
+T278	malware 11460 11470	Manuscrypt
+T279	malware 11492 11500	backdoor
+R73	part_of Arg1:T278 Arg2:T279	
+R74	attack Arg1:T28 Arg2:T47	
+R75	attack Arg1:T28 Arg2:T53	
+R76	attack Arg1:T28 Arg2:T66	
+T280	attack_goal 11921 11973	steals customer databases and distributes ransomware
+T281	reference_word 11881 11883	it
+R77	coreference Arg1:T281 Arg2:T28	
+T34	string 371 375	TTPs
+T282	malware 594 600	loader
+T283	malware 603 615	orchestrator
+T284	malware 620 627	plugins
+R79	part_of Arg1:T282 Arg2:T3	
+R80	part_of Arg1:T283 Arg2:T3	
+R81	part_of Arg1:T284 Arg2:T3	
+T285	malware 1146 1152	loader
+T286	malware 1307 1313	loader
+T287	malware 1729 1735	loader
+T288	malware 1358 1364	loader
+R82	use Arg1:T288 Arg2:T68	
+T289	malware 1493 1499	loader
+T290	malware 1615 1621	loader
+R83	use Arg1:T70 Arg2:T287	
+T291	malware 1914 1920	loader
+T292	malware 2015 2021	loader
+T293	malware 12177 12183	Loader
+R84	attack Arg1:T293 Arg2:T48	
+T294	malware 1252 1264	orchestrator
+T295	malware 1318 1330	orchestrator
+T296	malware 2093 2105	orchestrator
+R85	part_of Arg1:T296 Arg2:T73	
+T297	malware 2169 2181	orchestrator
+R86	use Arg1:T297 Arg2:T74	
+T298	malware 2426 2438	orchestrator
+T299	malware 2730 2742	orchestrator
+T300	malware 4426 4438	orchestrator
+T301	malware 4554 4566	orchestrator
+T302	malware 6918 6930	orchestrator
+R87	part_of Arg1:T302 Arg2:T12	
+T303	malware 7095 7107	orchestrator
+R88	part_of Arg1:T303 Arg2:T11	
+T304	malware 7941 7953	orchestrator
+R89	part_of Arg1:T304 Arg2:T14	
+T305	malware 10877 10889	orchestrator
+R90	part_of Arg1:T305 Arg2:T26	
+R91	attack Arg1:T304 Arg2:T45	
+R34	coreference Arg1:T168 Arg2:T303	
+R31	attack Arg1:T302 Arg2:T60	
+R30	attack Arg1:T302 Arg2:T44	
+T306	malware 2755 2762	plugins
+T307	malware 7139 7146	plugins
+T308	malware 8038 8045	plugins
+T309	OS_name 8030 8037	Windows
+R92	attack Arg1:T15 Arg2:T57	
+R93	attack Arg1:T308 Arg2:T309	
+T310	malware 10364 10371	plugins
+R94	part_of Arg1:T310 Arg2:T22	
+T311	person 336 347	adversaries
+R96	use Arg1:T311 Arg2:T34	
+T312	attack_goal 379 397	infiltrate systems
+R97	goal Arg1:T311 Arg2:T312	
+T313	person 225 236	adversaries
+R98	attack Arg1:T313 Arg2:T33	
+R99	attack Arg1:T313 Arg2:T32	
+T314	person 816 821	actor
+T315	reference_word 851 860	framework
+R100	coreference Arg1:T315 Arg2:T4	
+R101	use Arg1:T314 Arg2:T315	
+T316	attack_goal 885 931	infiltrate corporate entities around the world
+R102	goal Arg1:T314 Arg2:T316	
+T317	person 1133 1138	actor
+R103	use Arg1:T317 Arg2:T285	
+T318	person 1890 1895	actor
+R104	use Arg1:T318 Arg2:T291	
+T319	person 1999 2004	actor
+R105	use Arg1:T319 Arg2:T292	
+T320	person 10070 10075	actor
+R106	attack Arg1:T320 Arg2:T203	
+R107	attack Arg1:T320 Arg2:T204	
+R108	attack Arg1:T320 Arg2:T205	
+T321	person 10259 10264	actor
+R109	use Arg1:T321 Arg2:T21	
+T322	person 10378 10383	actor
+R110	use Arg1:T322 Arg2:T310	
+R111	goal Arg1:T322 Arg2:T206	
+T323	person 11827 11832	actor
+T325	reference_word 11862 11871	framework
+R47	coreference Arg1:T325 Arg2:T28	
+R95	use Arg1:T323 Arg2:T281	
+R112	part_of Arg1:T325 Arg2:T323	
+R78	goal Arg1:T323 Arg2:T280	
+T324	tool 5596 5599	DLL
+T326	tool 5667 5676	XORed DLL
+T327	string 5634 5637	PID
+R113	use Arg1:T146 Arg2:T327	
+R114	attack Arg1:T146 Arg2:T324	
+R115	attack Arg1:T146 Arg2:T326	
+T328	tool 4503 4506	DLL
+R116	use Arg1:T301 Arg2:T328	

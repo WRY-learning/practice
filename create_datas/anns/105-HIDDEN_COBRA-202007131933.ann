@@ -1,0 +1,803 @@
+T1	threatActor_name 8 20	HIDDEN COBRA
+T2	location 23 34	North Korea
+R1	located Arg1:T1 Arg2:T2	
+T4	tool 38 64	DDoS Botnet Infrastructure
+R2	use Arg1:T1 Arg2:T4	
+T6	location 736 747	North Korea
+T7	attack_activity 751 780	distributed denial-of-service
+T8	attack_activity 783 787	DDoS
+R3	coreference Arg1:T8 Arg2:T7	
+T9	sub_activity 0 5	Alert
+T10	government 281 312	Federal Bureau of Investigation
+T11	government 315 318	FBI
+R4	coreference Arg1:T11 Arg2:T10	
+T12	sub_activity 164 179	Technical Alert
+T13	sub_activity 182 184	TA
+R5	coreference Arg1:T13 Arg2:T12	
+T14	reference_word 153 179	This joint Technical Alert
+R6	coreference Arg1:T14 Arg2:T9	
+T15	government 233 264	Department of Homeland Security
+T16	government 267 270	DHS
+R7	coreference Arg1:T16 Arg2:T15	
+T17	reference_word 323 333	This alert
+R8	coreference Arg1:T17 Arg2:T14	
+R9	part_of Arg1:T14 Arg2:T15	
+R10	part_of Arg1:T14 Arg2:T10	
+T18	person 407 413	actors
+T19	location 421 433	North Korean
+T20	location 530 547	the United States
+T21	industry 459 464	media
+T22	industry 467 476	aerospace
+T23	industry 479 488	financial
+T24	target_crowd 495 526	critical infrastructure sectors
+T25	sub_activity 334 360	provides technical details
+R11	use Arg1:T17 Arg2:T25	
+T26	sub_activity 343 360	technical details
+T27	sub_activity 368 373	tools
+T28	sub_activity 378 392	infrastructure
+R12	part_of Arg1:T26 Arg2:T27	
+R13	part_of Arg1:T26 Arg2:T28	
+R14	use Arg1:T18 Arg2:T27	
+R15	use Arg1:T18 Arg2:T28	
+R16	located Arg1:T18 Arg2:T19	
+R17	attack Arg1:T18 Arg2:T21	
+R18	attack Arg1:T18 Arg2:T22	
+R19	attack Arg1:T18 Arg2:T23	
+R20	attack Arg1:T18 Arg2:T24	
+R21	part_of Arg1:T21 Arg2:T20	
+R22	part_of Arg1:T22 Arg2:T20	
+R23	part_of Arg1:T23 Arg2:T20	
+R24	part_of Arg1:T24 Arg2:T20	
+T29	government 603 606	DHS
+T30	government 611 614	FBI
+T31	location 576 580	U.S.
+T32	protocol 626 643	Internet Protocol
+T33	protocol 646 648	IP
+R25	coreference Arg1:T33 Arg2:T32	
+T34	malware 706 718	DeltaCharlie
+T35	sub_activity 651 660	addresses
+R26	find Arg1:T30 Arg2:T35	
+R27	find Arg1:T29 Arg2:T35	
+T36	tool 790 811	botnet infrastructure
+T38	sub_activity 679 694	malware variant
+R28	use Arg1:T35 Arg2:T32	
+R29	use Arg1:T38 Arg2:T35	
+R30	coreference Arg1:T34 Arg2:T38	
+R31	use Arg1:T34 Arg2:T36	
+R32	located Arg1:T36 Arg2:T6	
+T39	reference_word 814 824	This alert
+R33	coreference Arg1:T39 Arg2:T17	
+T40	tool 834 858	indicators of compromise
+T41	tool 861 865	IOCs
+R34	coreference Arg1:T41 Arg2:T40	
+R35	part_of Arg1:T40 Arg2:T39	
+T42	sub_activity 870 890	malware descriptions
+R36	part_of Arg1:T42 Arg2:T39	
+T43	sub_activity 893 911	network signatures
+R37	part_of Arg1:T43 Arg2:T39	
+T44	sub_activity 918 934	host-based rules
+R38	part_of Arg1:T44 Arg2:T39	
+T45	location 994 1006	North Korean
+T46	government 994 1017	North Korean government
+R39	located Arg1:T46 Arg2:T45	
+T47	person 951 960	defenders
+T48	sub_activity 938 960	help network defenders
+R40	use Arg1:T39 Arg2:T48	
+T49	sub_activity 961 976	detect activity
+R41	goal Arg1:T48 Arg2:T49	
+T50	sub_activity 968 976	activity
+R42	launch Arg1:T46 Arg2:T50	
+T51	location 1024 1028	U.S.
+T52	government 581 591	Government
+R43	located Arg1:T52 Arg2:T31	
+T53	government 1029 1039	Government
+R44	located Arg1:T53 Arg2:T51	
+T54	location 1086 1098	North Korean
+T55	government 1086 1109	North Korean government
+R45	located Arg1:T55 Arg2:T54	
+T56	threatActor_name 1113 1125	HIDDEN COBRA
+T57	sub_activity 1054 1078	malicious cyber activity
+R46	launch Arg1:T55 Arg2:T57	
+R47	coreference Arg1:T56 Arg2:T57	
+R48	find Arg1:T53 Arg2:T56	
+T58	threatActor_name 1160 1172	HIDDEN COBRA
+T59	url 1190 1225	https://www.us-cert.gov/hiddencobra
+T60	person 1231 1236	users
+T61	person 1240 1254	administrators
+T62	threatActor_name 1293 1305	HIDDEN COBRA
+T63	sub_activity 1266 1278	custom tools
+T64	government 1372 1432	National Cybersecurity Communications and Integration Center
+T65	government 1435 1440	NCCIC
+T66	government 1450 1453	FBI
+T67	government 1368 1371	DHS
+R49	coreference Arg1:T65 Arg2:T64	
+R50	part_of Arg1:T63 Arg2:T62	
+R51	find Arg1:T61 Arg2:T63	
+R52	find Arg1:T60 Arg2:T63	
+T68	sub_activity 1484 1530	given highest priority for enhanced mitigation
+R53	use Arg1:T61 Arg2:T68	
+R54	use Arg1:T60 Arg2:T68	
+T69	sub_activity 1454 1465	Cyber Watch
+T70	sub_activity 1468 1475	CyWatch
+R55	coreference Arg1:T70 Arg2:T69	
+R56	part_of Arg1:T69 Arg2:T66	
+R57	part_of Arg1:T64 Arg2:T67	
+T71	reference_word 1533 1543	This alert
+T72	reference_word 1956 1966	This alert
+R58	coreference Arg1:T72 Arg2:T71	
+R59	coreference Arg1:T71 Arg2:T39	
+T73	protocol 1555 1557	IP
+T74	tool 1555 1567	IP addresses
+T75	malware 1600 1612	DeltaCharlie
+T76	sub_activity 1544 1567	identifies IP addresses
+R60	use Arg1:T71 Arg2:T76	
+T77	sub_activity 1578 1585	systems
+R61	part_of Arg1:T74 Arg2:T77	
+R62	located Arg1:T75 Arg2:T77	
+T78	sub_activity 1625 1661	provides descriptions of the malware
+R63	use Arg1:T71 Arg2:T78	
+T79	sub_activity 1666 1695	associated malware signatures
+R64	use Arg1:T71 Arg2:T79	
+T80	government 1698 1701	DHS
+T81	government 1706 1709	FBI
+T82	protocol 1733 1735	IP
+T83	reference_word 1727 1745	these IP addresses
+R65	coreference Arg1:T83 Arg2:T74	
+T84	tool 1733 1745	IP addresses
+T85	sample_function 1749 1782	enable network defense activities
+T86	sub_activity 1714 1745	distributing these IP addresses
+R66	use Arg1:T81 Arg2:T86	
+R67	use Arg1:T80 Arg2:T86	
+R68	goal Arg1:T86 Arg2:T85	
+T87	sample_function 1787 1802	reduce exposure
+R69	goal Arg1:T86 Arg2:T87	
+T89	sub_activity 1810 1842	DDoS command-and-control network
+T90	government 1845 1848	FBI
+T91	threatActor_name 1874 1886	HIDDEN COBRA
+T92	threatActor_name 2481 2493	HIDDEN COBRA
+T93	threatActor_name 2802 2814	HIDDEN COBRA
+T94	threatActor_name 3085 3097	HIDDEN COBRA
+T95	threatActor_name 3230 3242	HIDDEN COBRA
+T96	threatActor_name 7238 7250	HIDDEN COBRA
+T97	threatActor_name 6970 6982	HIDDEN COBRA
+T98	threatActor_name 6824 6836	HIDDEN COBRA
+T99	threatActor_name 6018 6030	HIDDEN COBRA
+T100	threatActor_name 5254 5266	HIDDEN COBRA
+T101	threatActor_name 4808 4820	HIDDEN COBRA
+T102	threatActor_name 3737 3749	HIDDEN COBRA
+T103	threatActor_name 4068 4080	HIDDEN COBRA
+T104	protocol 1908 1910	IP
+T105	tool 1908 1920	IP addresses
+T106	person 1887 1893	actors
+R70	part_of Arg1:T106 Arg2:T91	
+T107	sub_activity 1925 1953	further network exploitation
+R71	use Arg1:T106 Arg2:T105	
+R72	launch Arg1:T105 Arg2:T107	
+R73	find Arg1:T90 Arg2:T106	
+T108	location 2017 2029	North Korean
+T109	government 2017 2040	North Korean government
+R74	located Arg1:T109 Arg2:T108	
+T110	time 2223 2239	August 23 , 2017
+T111	government 2242 2245	DHS
+T112	sub_activity 2258 2281	Malware Analysis Report
+T113	sub_activity 1976 1996	technical indicators
+T114	sub_activity 2071 2097	suggested response actions
+R75	part_of Arg1:T114 Arg2:T72	
+R76	part_of Arg1:T113 Arg2:T72	
+T115	sub_activity 2041 2057	cyber operations
+R77	launch Arg1:T109 Arg2:T115	
+R78	part_of Arg1:T113 Arg2:T115	
+T116	location 2202 2206	U.S.
+T117	government 2207 2217	Government
+R79	located Arg1:T117 Arg2:T116	
+T118	sub_activity 2120 2153	recommended mitigation techniques
+R80	part_of Arg1:T118 Arg2:T72	
+T119	sub_activity 2284 2296	MAR-10132963
+R81	coreference Arg1:T119 Arg2:T112	
+R82	release_time Arg1:T111 Arg2:T110	
+T120	sub_activity 2160 2184	information on reporting
+R83	part_of Arg1:T120 Arg2:T72	
+T121	sub_activity 2246 2281	published a Malware Analysis Report
+R84	use Arg1:T111 Arg2:T121	
+T122	time 2474 2478	2009
+T123	person 2494 2500	actors
+R85	part_of Arg1:T123 Arg2:T92	
+T124	person 2815 2821	actors
+T125	person 3098 3104	actors
+T126	person 3243 3249	actors
+T127	person 3750 3756	actors
+R86	part_of Arg1:T124 Arg2:T93	
+R87	part_of Arg1:T125 Arg2:T94	
+R88	part_of Arg1:T126 Arg2:T95	
+R89	part_of Arg1:T127 Arg2:T102	
+T128	person 5267 5273	actors
+R90	part_of Arg1:T128 Arg2:T100	
+T129	sub_activity 2304 2334	examines malware functionality
+R91	use Arg1:T112 Arg2:T129	
+T130	sample_function 2338 2368	provide detailed code analysis
+R92	goal Arg1:T129 Arg2:T130	
+T131	sub_activity 2435 2439	TTPs
+R93	goal Arg1:T129 Arg2:T131	
+T132	sub_activity 2395 2432	tactics , techniques , and procedures
+R94	coreference Arg1:T131 Arg2:T132	
+T133	target_crowd 2571 2578	victims
+T134	sub_activity 2538 2578	target and compromise a range of victims
+R95	launch Arg1:T123 Arg2:T134	
+R96	occur_time Arg1:T134 Arg2:T122	
+T135	sub_activity 2586 2596	intrusions
+R97	launch Arg1:T123 Arg2:T135	
+T136	sample_function 2618 2638	exfiltration of data
+T137	sample_function 2662 2682	disruptive in nature
+R98	goal Arg1:T135 Arg2:T136	
+R99	goal Arg1:T135 Arg2:T137	
+T138	threatActor_name 2739 2746	Lazarus
+T139	threatActor_name 2757 2775	Guardians of Peace
+T140	government 2778 2781	DHS
+T141	government 2786 2789	FBI
+T142	reference_word 2722 2735	this activity
+R100	coreference Arg1:T142 Arg2:T134	
+T143	sub_activity 2790 2821	assess that HIDDEN COBRA actors
+R101	use Arg1:T141 Arg2:T143	
+R102	use Arg1:T140 Arg2:T143	
+T144	sub_activity 2822 2859	will continue to use cyber operations
+R103	use Arg1:T124 Arg2:T144	
+T145	sub_activity 2904 2924	strategic objectives
+T146	sub_activity 2877 2899	government 's military
+R104	goal Arg1:T144 Arg2:T146	
+R105	goal Arg1:T144 Arg2:T145	
+T147	person 2927 2941	Cyber analysts
+T148	sub_activity 2960 2982	review the information
+R106	use Arg1:T147 Arg2:T148	
+T149	sub_activity 2971 2982	information
+T150	sample_function 3009 3051	detect signs of malicious network activity
+T151	reference_word 2995 3005	this alert
+R107	coreference Arg1:T151 Arg2:T72	
+R108	part_of Arg1:T149 Arg2:T151	
+R109	goal Arg1:T148 Arg2:T150	
+T152	tool 4821 4827	botnet
+T153	tool 3113 3125	DDoS botnets
+T154	tool 3128 3138	keyloggers
+T155	tool 3141 3160	remote access tools
+T156	tool 3163 3167	RATs
+R110	coreference Arg1:T156 Arg2:T155	
+R111	use Arg1:T125 Arg2:T153	
+T5	malware 3176 3181	wiper
+R112	use Arg1:T125 Arg2:T154	
+R113	use Arg1:T125 Arg2:T155	
+R114	use Arg1:T125 Arg2:T5	
+T88	malware 3258 3266	Destover
+T157	malware 3269 3282	Wild Positron
+T158	malware 3283 3289	Duuzer
+R115	coreference Arg1:T158 Arg2:T157	
+T159	malware 3296 3303	Hangman
+R116	use Arg1:T126 Arg2:T88	
+R117	use Arg1:T126 Arg2:T157	
+R118	use Arg1:T126 Arg2:T159	
+T160	government 3306 3309	DHS
+T161	reference_word 3453 3465	these actors
+R119	coreference Arg1:T161 Arg2:T126	
+T162	sub_activity 3334 3349	Alert TA14-353A
+R120	part_of Arg1:T162 Arg2:T160	
+T163	malware 3431 3435	worm
+R121	use Arg1:T161 Arg2:T163	
+T164	protocol 3402 3422	server message block
+T165	protocol 3425 3428	SMB
+R122	coreference Arg1:T165 Arg2:T164	
+T166	reference_word 3529 3539	this group
+R123	coreference Arg1:T166 Arg2:T161	
+T167	government 3580 3583	DHS
+T168	location 3641 3653	North Korean
+T169	sub_activity 3654 3668	cyber activity
+R124	located Arg1:T169 Arg2:T168	
+T170	company 3821 3830	Microsoft
+T171	sub_activity 3831 3848	operating systems
+R125	part_of Arg1:T171 Arg2:T170	
+R126	attack Arg1:T127 Arg2:T171	
+T172	reference_word 3883 3902	these older systems
+R127	coreference Arg1:T172 Arg2:T171	
+T173	person 3917 3923	actors
+T174	sub_activity 3855 3879	multiple vulnerabilities
+R128	located Arg1:T174 Arg2:T172	
+R129	use Arg1:T173 Arg2:T174	
+T175	reference_word 3956 3968	These actors
+R130	coreference Arg1:T175 Arg2:T173	
+T176	company 3984 3989	Adobe
+T177	tool 3990 4002	Flash player
+R131	part_of Arg1:T177 Arg2:T176	
+T178	sub_activity 4003 4018	vulnerabilities
+R132	use Arg1:T175 Arg2:T178	
+R133	located Arg1:T178 Arg2:T177	
+T179	sample_function 4022 4065	gain initial entry into users' environments
+R134	goal Arg1:T178 Arg2:T179	
+T180	sub_activity 4097 4112	vulnerabilities
+T181	sub_activity 4113 4143	affecting various applications
+R135	use Arg1:T103 Arg2:T180	
+R136	use Arg1:T180 Arg2:T181	
+T182	reference_word 4146 4167	These vulnerabilities
+R137	coreference Arg1:T182 Arg2:T180	
+T183	vulnerability_cve 4179 4192	CVE-2015-6585
+T184	vulnerability_cve 4233 4246	CVE-2015-8651
+T185	vulnerability_cve 4304 4317	CVE-2016-0034
+T186	vulnerability_cve 4370 4383	CVE-2016-1019
+T187	vulnerability_cve 4432 4445	CVE-2016-4117
+R138	part_of Arg1:T183 Arg2:T182	
+R139	part_of Arg1:T184 Arg2:T182	
+R140	part_of Arg1:T185 Arg2:T182	
+R141	part_of Arg1:T186 Arg2:T182	
+R142	part_of Arg1:T187 Arg2:T182	
+T188	tool 4195 4216	Hangul Word Processor
+T189	tool 4249 4267	Adobe Flash Player
+T190	tool 4320 4341	Microsoft Silverlight
+T191	tool 4386 4404	Adobe Flash Player
+T192	tool 4448 4466	Adobe Flash Player
+R143	located Arg1:T183 Arg2:T188	
+R145	located Arg1:T185 Arg2:T190	
+R146	located Arg1:T186 Arg2:T191	
+R147	located Arg1:T187 Arg2:T192	
+R144	located Arg1:T184 Arg2:T189	
+T193	government 4494 4497	DHS
+T194	company 4598 4603	Adobe
+T195	tool 4604 4609	Flash
+T196	company 4613 4622	Microsoft
+T197	tool 4623 4634	Silverlight
+R148	part_of Arg1:T195 Arg2:T194	
+R149	part_of Arg1:T197 Arg2:T196	
+T198	government 4659 4662	DHS
+T199	tool 4728 4732	IOCs
+T200	protocol 4766 4768	IP
+T201	tool 4766 4778	IP addresses
+T202	reference_word 4747 4757	this alert
+T203	sub_activity 4733 4757	provided with this alert
+R150	use Arg1:T199 Arg2:T203	
+R151	part_of Arg1:T201 Arg2:T202	
+T204	sub_activity 4821 4842	botnet infrastructure
+R152	use Arg1:T101 Arg2:T204	
+R153	part_of Arg1:T201 Arg2:T204	
+T205	malware 4859 4871	DeltaCharlie
+R154	coreference Arg1:T205 Arg2:T204	
+T206	malware 4878 4890	DeltaCharlie
+T207	attack_activity 4891 4895	DDoS
+T208	security_team 4927 4934	Novetta
+T209	time 4944 4948	2016
+R155	release_time Arg1:T208 Arg2:T209	
+T211	reference_word 4988 5000	This malware
+R156	coreference Arg1:T211 Arg2:T206	
+T212	protocol 5014 5016	IP
+T213	tool 5014 5026	IP addresses
+T214	sub_activity 4528 4554	upgrade these applications
+T215	tool 6031 6035	IOCs
+T216	attack_activity 38 42	DDoS
+T217	attack_activity 1810 1814	DDoS
+T218	attack_activity 3113 3117	DDoS
+T219	attack_activity 5236 5240	DDoS
+T220	attack_activity 5606 5610	DDoS
+T3	sample_name 5058 5062	.csv
+T37	sample_name 5067 5072	.stix
+T221	tool 4896 4899	bot
+R157	find Arg1:T208 Arg2:T221	
+R158	use Arg1:T211 Arg2:T213	
+T210	tool 5110 5113	IPs
+R159	part_of Arg1:T213 Arg2:T3	
+R160	part_of Arg1:T213 Arg2:T37	
+T222	target_crowd 5173 5180	victims
+T223	sub_activity 5182 5190	networks
+T224	reference_word 5136 5147	the malware
+R161	coreference Arg1:T224 Arg2:T211	
+R162	use Arg1:T222 Arg2:T223	
+R163	located Arg1:T224 Arg2:T223	
+T225	malware 5218 5230	DeltaCharlie
+R164	use Arg1:T128 Arg2:T225	
+T226	sub_activity 5236 5245	DDoS tool
+R165	part_of Arg1:T225 Arg2:T226	
+T227	security_team 5310 5317	Novetta
+R166	find Arg1:T227 Arg2:T225	
+T228	malware 5399 5411	DeltaCharlie
+T229	protocol 5511 5513	IP
+T230	tool 5511 5523	IP addresses
+T231	sample_name 5538 5542	.csv
+T232	sample_name 5547 5552	.stix
+R167	part_of Arg1:T230 Arg2:T231	
+R168	part_of Arg1:T230 Arg2:T232	
+R169	use Arg1:T228 Arg2:T230	
+T233	malware 5588 5600	DeltaCharlie
+T234	sub_activity 5606 5615	DDoS tool
+R170	part_of Arg1:T233 Arg2:T234	
+T235	tool 5637 5655	Domain Name System
+T236	tool 5658 5661	DNS
+R171	coreference Arg1:T236 Arg2:T235	
+T237	protocol 5674 5695	Network Time Protocol
+T238	protocol 5698 5701	NTP
+R172	coreference Arg1:T238 Arg2:T237	
+T239	tool 5718 5735	Carrier Grade NAT
+T240	tool 5738 5741	CGN
+R173	coreference Arg1:T240 Arg2:T239	
+T241	sub_activity 5637 5671	Domain Name System ( DNS ) attacks
+T242	sub_activity 5674 5711	Network Time Protocol ( NTP ) attacks
+T243	sub_activity 5718 5751	Carrier Grade NAT ( CGN ) attacks
+R174	launch Arg1:T233 Arg2:T241	
+R175	launch Arg1:T233 Arg2:T242	
+R176	launch Arg1:T233 Arg2:T243	
+T244	reference_word 5754 5765	The malware
+R177	coreference Arg1:T244 Arg2:T233	
+T245	target_crowd 5778 5785	victims
+T246	malware 6047 6059	DeltaCharlie
+T247	sub_activity 5840 5863	downloading executables
+T248	sub_activity 5866 5896	changing its own configuration
+T249	sub_activity 5766 5794	operates on victims' systems
+R178	use Arg1:T244 Arg2:T249	
+T250	sub_activity 5899 5924	updating its own binaries
+T251	sub_activity 5927 5956	terminating its own processes
+T252	sub_activity 5963 6015	activating and terminating denial-of-service attacks
+R179	use Arg1:T244 Arg2:T247	
+R180	use Arg1:T244 Arg2:T248	
+R181	use Arg1:T244 Arg2:T250	
+R182	use Arg1:T244 Arg2:T251	
+R183	use Arg1:T244 Arg2:T252	
+T253	sample_name 6097 6101	.csv
+T254	sample_name 6106 6111	.stix
+R184	part_of Arg1:T215 Arg2:T246	
+R185	use Arg1:T99 Arg2:T246	
+R186	part_of Arg1:T215 Arg2:T253	
+R187	part_of Arg1:T215 Arg2:T254	
+T255	government 6134 6137	DHS
+T256	government 6142 6145	FBI
+T257	person 6161 6183	network administrators
+T258	protocol 6195 6197	IP
+T259	tool 6195 6207	IP addresses
+T260	tool 6283 6286	IPs
+T261	sub_activity 6275 6305	add the IPs to their watchlist
+R188	use Arg1:T257 Arg2:T261	
+T262	sub_activity 6184 6207	review the IP addresses
+R189	use Arg1:T257 Arg2:T262	
+T263	tool 6249 6253	YARA
+T264	tool 6224 6242	network signatures
+T265	tool 6210 6221	file hashes
+T266	protocol 6438 6440	IP
+T267	tool 6438 6450	IP addresses
+T268	protocol 6504 6506	IP
+T269	tool 6504 6516	IP addresses
+T270	target_crowd 6453 6466	organizations
+T271	sub_activity 6517 6555	attempting to connect to their systems
+R190	use Arg1:T269 Arg2:T271	
+T272	sub_activity 6397 6429	reviewing network perimeter logs
+R191	use Arg1:T270 Arg2:T272	
+R192	find Arg1:T270 Arg2:T271	
+T273	protocol 6596 6598	IP
+T274	tool 6596 6608	IP addresses
+T275	tool 6762 6766	YARA
+T276	sub_activity 6407 6429	network perimeter logs
+R193	part_of Arg1:T276 Arg2:T267	
+T277	person 6727 6733	owners
+T278	person 6837 6843	actors
+T279	person 6983 6989	actors
+T280	person 7251 7257	actors
+R194	part_of Arg1:T278 Arg2:T98	
+R195	part_of Arg1:T279 Arg2:T97	
+R196	part_of Arg1:T280 Arg2:T96	
+T281	sub_activity 6754 6785	run the YARA tool on any system
+R197	use Arg1:T277 Arg2:T281	
+T282	tool 6779 6785	system
+T283	tool 6720 6726	System
+R198	use Arg1:T277 Arg2:T283	
+R199	attack Arg1:T278 Arg2:T282	
+T284	person 6618 6624	owners
+T285	tool 6611 6617	system
+R200	use Arg1:T284 Arg2:T285	
+T286	sub_activity 6563 6608	reviewing the traffic from these IP addresses
+R201	use Arg1:T284 Arg2:T286	
+T287	tool 6868 6886	network signatures
+T288	tool 6891 6907	host-based rules
+T289	sub_activity 6935 6953	malicious activity
+R202	launch Arg1:T279 Arg2:T289	
+T290	reference_word 7101 7117	These signatures
+R203	coreference Arg1:T290 Arg2:T287	
+T291	reference_word 7122 7127	rules
+R204	coreference Arg1:T291 Arg2:T288	
+T292	sample_function 6928 6953	detect malicious activity
+R205	goal Arg1:T288 Arg2:T292	
+R206	goal Arg1:T287 Arg2:T292	
+T293	sample_function 7146 7165	supplement analysis
+R207	goal Arg1:T291 Arg2:T293	
+R208	goal Arg1:T290 Arg2:T293	
+T294	sub_activity 7273 7290	network intrusion
+T295	sub_activity 7307 7314	impacts
+R209	part_of Arg1:T295 Arg2:T294	
+T296	sub_activity 7452 7496	loss of sensitive or proprietary information
+T297	reference_word 7411 7418	impacts
+R210	coreference Arg1:T297 Arg2:T295	
+R211	part_of Arg1:T296 Arg2:T297	
+T298	sub_activity 7499 7531	disruption to regular operations
+T299	sub_activity 7595 7642	potential harm to an organization 's reputation
+T300	sub_activity 7534 7550	financial losses
+R212	part_of Arg1:T298 Arg2:T297	
+R213	part_of Arg1:T300 Arg2:T297	
+R214	part_of Arg1:T299 Arg2:T297	
+T301	person 7645 7667	Network administrators
+T302	sub_activity 7686 7721	apply the following recommendations
+R215	use Arg1:T301 Arg2:T302	
+T304	person 8024 8033	attackers
+T305	sub_activity 7976 8016	Patch applications and operating systems
+T306	reference_word 7900 7929	these basic security measures
+R216	part_of Arg1:T305 Arg2:T306	
+T303	sub_activity 7799 7820	mitigation strategies
+R217	coreference Arg1:T306 Arg2:T303	
+T307	sub_activity 8372 8400	Use application whitelisting
+T308	sub_activity 8563 8597	Restrict administrative privileges
+T309	sub_activity 9868 9888	Understand firewalls
+R218	part_of Arg1:T307 Arg2:T306	
+R219	part_of Arg1:T308 Arg2:T306	
+T310	sub_activity 9573 9611	Use stringent file reputation settings
+T311	sub_activity 9161 9175	Validate input
+T312	sub_activity 8898 8914	Segment networks
+T313	sub_activity 8919 8953	segregate them into security zones
+R220	part_of Arg1:T309 Arg2:T306	
+R221	part_of Arg1:T310 Arg2:T306	
+R222	part_of Arg1:T311 Arg2:T306	
+R223	part_of Arg1:T312 Arg2:T306	
+R224	part_of Arg1:T313 Arg2:T306	
+T314	tool 8069 8086	operating systems
+T315	sub_activity 8041 8064	vulnerable applications
+R225	attack Arg1:T304 Arg2:T315	
+R226	attack Arg1:T304 Arg2:T314	
+T316	person 8245 8253	attacker
+T318	sub_activity 8343 8369	authenticated vendor sites
+T320	tool 8302 8309	patches
+T321	tool 8289 8297	software
+R227	located Arg1:T320 Arg2:T318	
+R228	located Arg1:T321 Arg2:T318	
+T317	reference_word 8463 8465	it
+T319	sub_activity 8376 8400	application whitelisting
+R229	coreference Arg1:T317 Arg2:T319	
+T322	sub_activity 8466 8503	allows only specified programs to run
+R230	use Arg1:T317 Arg2:T322	
+T323	malware 8542 8560	malicious software
+T324	sub_activity 8510 8529	blocking all others
+R231	use Arg1:T317 Arg2:T324	
+T325	sub_activity 8523 8529	others
+R232	part_of Arg1:T323 Arg2:T325	
+T326	person 8607 8613	actors
+T327	sub_activity 8642 8683	gaining control of legitimate credentials
+R233	goal Arg1:T326 Arg2:T327	
+T328	sub_activity 8697 8751	credentials associated with highly privileged accounts
+T329	sub_activity 8661 8683	legitimate credentials
+R234	part_of Arg1:T328 Arg2:T329	
+T330	person 8799 8803	user
+T331	sub_activity 8754 8771	Reduce privileges
+T332	person 8825 8839	administrators
+T333	sub_activity 8866 8895	limited access to other tiers
+T334	sub_activity 8816 8860	Separate administrators into privilege tiers
+R235	part_of Arg1:T331 Arg2:T306	
+T335	sub_activity 8956 8994	Segment networks into logical enclaves
+T336	sub_activity 8999 9041	restrict host-to-host communications paths
+T337	reference_word 9044 9048	This
+R236	coreference Arg1:T337 Arg2:T336	
+R237	coreference Arg1:T337 Arg2:T335	
+T338	sub_activity 9055 9106	protect sensitive information and critical services
+T339	sub_activity 9113 9126	limits damage
+R238	use Arg1:T337 Arg2:T338	
+R239	use Arg1:T337 Arg2:T339	
+T340	sub_activity 9178 9194	Input validation
+T341	person 9249 9254	users
+R240	use Arg1:T341 Arg2:T340	
+T342	sub_activity 9260 9275	web application
+R241	use Arg1:T341 Arg2:T342	
+T343	program_language 9480 9505	Structured Query Language
+T344	program_language 9508 9511	SQL
+R242	coreference Arg1:T344 Arg2:T343	
+T345	sub_activity 9291 9307	input validation
+T346	sub_activity 9384 9435	reducing the probability of successful exploitation
+T347	sample_function 9312 9346	protect against the security flaws
+R243	goal Arg1:T345 Arg2:T347	
+R244	use Arg1:T345 Arg2:T346	
+T348	sub_activity 9480 9523	Structured Query Language ( SQL ) injection
+T349	sub_activity 9526 9546	cross-site scripting
+T350	sub_activity 9553 9570	command injection
+T351	sub_activity 9438 9454	Types of attacks
+R245	part_of Arg1:T348 Arg2:T351	
+R246	part_of Arg1:T349 Arg2:T351	
+R247	part_of Arg1:T350 Arg2:T351	
+T352	sub_activity 9438 9471	Types of attacks possibly averted
+R248	use Arg1:T345 Arg2:T351	
+T353	sub_activity 9722 9741	anti-virus products
+T354	sub_activity 9655 9674	anti-virus software
+T355	sub_activity 9746 9761	limit execution
+R249	use Arg1:T353 Arg2:T355	
+T356	sub_activity 9801 9844	stopping a wide range of untrustworthy code
+T357	sample_function 9850 9865	gaining control
+T358	sub_activity 9840 9844	code
+R250	goal Arg1:T358 Arg2:T357	
+R251	goal Arg1:T355 Arg2:T356	
+T359	protocol 10047 10049	IP
+T360	tool 10047 10062	IP whitelisting
+T361	tool 9891 9900	Firewalls
+T362	tool 9879 9888	firewalls
+T363	sub_activity 9901 9917	provide security
+T364	sample_function 9921 9965	make your network less susceptible to attack
+R252	use Arg1:T361 Arg2:T363	
+R253	goal Arg1:T363 Arg2:T364	
+T365	reference_word 9968 9972	They
+R254	coreference Arg1:T365 Arg2:T361	
+T366	sub_activity 9994 10021	block data and applications
+T367	sub_activity 10073 10117	allowing relevant and necessary data through
+R255	use Arg1:T365 Arg2:T366	
+R256	use Arg1:T365 Arg2:T367	
+T368	sub_activity 10000 10004	data
+T369	sub_activity 10009 10021	applications
+R257	part_of Arg1:T369 Arg2:T360	
+R258	part_of Arg1:T368 Arg2:T360	
+T370	sub_activity 10123 10154	protect against code injections
+T371	person 10175 10191	system operators
+T372	protocol 10899 10932	Internet Control Message Protocol
+T373	protocol 10935 10939	ICMP
+T374	protocol 10946 10980	Simple Network Management Protocol
+T375	protocol 10983 10987	SNMP
+R259	coreference Arg1:T373 Arg2:T372	
+R260	coreference Arg1:T375 Arg2:T374	
+R261	goal Arg1:T371 Arg2:T370	
+T376	sub_activity 10209 10253	evaluate known and published vulnerabilities
+T377	sub_activity 10269 10293	perform software updates
+T378	sub_activity 10298 10318	technology refreshes
+T379	tool 10331 10354	external-facing systems
+T380	sub_activity 10325 10354	audit external-facing systems
+R262	use Arg1:T371 Arg2:T376	
+R263	use Arg1:T371 Arg2:T377	
+R264	use Arg1:T371 Arg2:T378	
+R265	use Arg1:T371 Arg2:T380	
+T381	person 10399 10403	They
+T382	sub_activity 14454 14487	Prepare an incident response plan
+T383	sample_function 14500 14520	rapidly administered
+R266	goal Arg1:T382 Arg2:T383	
+T385	sub_activity 10444 10472	harden both web applications
+T386	sub_activity 10481 10501	servers hosting them
+T387	sample_function 10505 10541	reduce the risk of network intrusion
+R267	use Arg1:T381 Arg2:T385	
+R268	use Arg1:T381 Arg2:T386	
+R269	goal Arg1:T385 Arg2:T387	
+R270	goal Arg1:T386 Arg2:T387	
+T384	tool 10588 10597	firewalls
+T388	sub_activity 10560 10597	Use and configure available firewalls
+T389	sample_function 10601 10614	block attacks
+R271	goal Arg1:T388 Arg2:T389	
+T390	tool 10704 10742	Enhanced Mitigation Experience Toolkit
+T391	tool 10745 10749	EMET
+R272	coreference Arg1:T391 Arg2:T390	
+T392	tool 10766 10775	AppLocker
+T393	company 10756 10765	Microsoft
+T394	company 10691 10700	Microsoft
+R273	part_of Arg1:T390 Arg2:T394	
+R274	part_of Arg1:T392 Arg2:T393	
+T395	tool 10638 10653	Windows systems
+T396	sample_function 10631 10653	secure Windows systems
+R275	goal Arg1:T390 Arg2:T396	
+R276	goal Arg1:T392 Arg2:T396	
+T397	protocol 11031 11035	HTTP
+T398	sub_activity 10778 10818	Monitor and remove any unauthorized code
+T399	sub_activity 10834 10849	www directories
+T400	sub_activity 10814 10818	code
+R277	part_of Arg1:T400 Arg2:T399	
+T401	tool 11047 11058	web servers
+T402	sub_activity 11012 11041	Remove unnecessary HTTP verbs
+T403	sub_activity 11031 11041	HTTP verbs
+R278	part_of Arg1:T403 Arg2:T401	
+T404	tool 11069 11080	web servers
+T405	function 11111 11114	GET
+T406	function 11117 11121	POST
+T407	function 11128 11132	HEAD
+R279	use Arg1:T404 Arg2:T405	
+R280	use Arg1:T404 Arg2:T406	
+R281	use Arg1:T404 Arg2:T407	
+T408	tool 11198 11209	web servers
+T409	sub_activity 11152 11182	minimize server fingerprinting
+T410	sub_activity 11186 11209	configuring web servers
+R282	use Arg1:T410 Arg2:T409	
+T411	sample_function 11213 11242	avoid responding with banners
+R283	goal Arg1:T409 Arg2:T411	
+T412	sub_activity 11351 11386	Update and patch production servers
+T413	sub_activity 11296 11328	Secure both the operating system
+T414	sub_activity 11456 11483	Sanitize and validate input
+T416	sub_activity 11524 11553	does not contain escaped code
+T417	sub_activity 11487 11519	ensure that it is properly typed
+T415	sub_activity 11399 11453	Disable potentially harmful SQL-stored procedure calls
+R284	use Arg1:T414 Arg2:T417	
+T418	tool 11715 11727	web services
+T419	sub_activity 11730 11763	Ensure error messages are generic
+T420	sub_activity 11684 11727	Perform penetration testing on web services
+T421	person 11805 11821	System operators
+T422	sub_activity 10416 10440	take the following steps
+T423	sub_activity 10425 10440	following steps
+R285	use Arg1:T381 Arg2:T422	
+R286	part_of Arg1:T388 Arg2:T423	
+R287	part_of Arg1:T398 Arg2:T423	
+R288	part_of Arg1:T402 Arg2:T423	
+R289	part_of Arg1:T413 Arg2:T423	
+T424	sub_activity 11625 11681	Audit transaction logs regularly for suspicious activity
+T425	sub_activity 11565 11598	using type-safe stored procedures
+R290	part_of Arg1:T412 Arg2:T423	
+R291	part_of Arg1:T415 Arg2:T423	
+R292	part_of Arg1:T414 Arg2:T423	
+R293	part_of Arg1:T425 Arg2:T423	
+R294	part_of Arg1:T419 Arg2:T423	
+R295	part_of Arg1:T420 Arg2:T423	
+R296	part_of Arg1:T424 Arg2:T423	
+T426	sub_activity 11838 11853	following steps
+R297	use Arg1:T421 Arg2:T426	
+T427	sub_activity 11857 11909	limit permissions , privileges , and access controls
+R298	goal Arg1:T426 Arg2:T427	
+T428	sub_activity 11912 11929	Reduce privileges
+T429	sub_activity 12070 12110	apply the principle of "Least Privilege"
+T430	sub_activity 11974 11997	Restrict users' ability
+R299	part_of Arg1:T430 Arg2:T426	
+R300	part_of Arg1:T428 Arg2:T426	
+R301	part_of Arg1:T429 Arg2:T426	
+T431	person 11957 11961	user
+T432	person 11983 11988	users
+T433	tool 12094 12109	Least Privilege
+T434	reference_word 12153 12169	these privileges
+R302	coreference Arg1:T434 Arg2:T433	
+T435	sub_activity 12141 12169	Restricting these privileges
+T436	sample_function 12174 12202	prevent malware from running
+T437	sample_function 12206 12236	limit its capability to spread
+R303	goal Arg1:T435 Arg2:T436	
+R304	goal Arg1:T435 Arg2:T437	
+T438	person 12329 12334	users
+T439	person 12380 12393	administrator
+T440	sub_activity 12359 12402	Scrub and verify all administrator accounts
+R305	part_of Arg1:T440 Arg2:T426	
+T441	person 12454 12459	users
+T442	sub_activity 12415 12437	Configure Group Policy
+R306	part_of Arg1:T442 Arg2:T426	
+T443	sub_activity 12505 12542	Enforce secure network authentication
+R307	part_of Arg1:T443 Arg2:T426	
+T444	sub_activity 12562 12616	Instruct administrators to use non-privileged accounts
+T445	sub_activity 12621 12639	standard functions
+T446	sub_activity 12648 12660	web browsing
+T447	sub_activity 12664 12680	checking webmail
+R308	part_of Arg1:T446 Arg2:T445	
+R309	part_of Arg1:T447 Arg2:T445	
+R310	part_of Arg1:T444 Arg2:T426	
+T448	sub_activity 12683 12699	Segment networks
+T449	sub_activity 14379 14416	Secure logs in a centralized location
+T450	sub_activity 14421 14451	protect them from modification
+T451	tool 14225 14235	PowerShell
+T452	tool 14323 14333	PowerShell
+T453	protocol 12892 12915	Remote Desktop Protocol
+T454	protocol 12918 12921	RDP
+R311	coreference Arg1:T454 Arg2:T453	
+T455	tool 13058 13081	virtual private network
+T456	tool 13084 13087	VPN
+R312	coreference Arg1:T456 Arg2:T455	
+T457	sub_activity 12794 12803	enclaving
+T458	tool 13129 13137	firewall
+T459	sub_activity 13129 13143	firewall rules
+T460	sub_activity 14217 14251	Upgrade PowerShell to new versions
+T461	sub_activity 14287 14303	monitor the logs
+T462	sample_function 14307 14342	detect usage of PowerShell commands
+R313	goal Arg1:T461 Arg2:T462	
+T463	sub_activity 14079 14101	Configure network logs
+T464	sub_activity 14155 14191	developing an accurate determination
+R314	goal Arg1:T463 Arg2:T464	
+T465	person 13847 13863	System operators
+T466	sub_activity 13878 13908	these secure logging practices
+R315	use Arg1:T465 Arg2:T466	
+R316	part_of Arg1:T463 Arg2:T466	
+T467	sub_activity 13911 13931	Ensure event logging
+T468	sample_function 14043 14076	identification of security issues
+R317	goal Arg1:T467 Arg2:T468	
+R318	part_of Arg1:T467 Arg2:T466	
+R319	part_of Arg1:T460 Arg2:T466	
+R320	part_of Arg1:T449 Arg2:T466	
+R321	part_of Arg1:T382 Arg2:T466	
+T469	sub_activity 13148 13163	close all ports
+T470	sub_activity 13114 13143	Audit existing firewall rules
+T471	person 13347 13352	users
+T472	sub_activity 13303 13334	Enforce a strict lockout policy
+T473	sub_activity 13365 13403	monitor logs for failed login activity
+R322	part_of Arg1:T448 Arg2:T426	
+T474	sub_activity 13783 13844	multifactor authentication using biometric or physical tokens
+T475	sub_activity 13680 13717	supplementing password authentication
+T476	target_crowd 13650 13663	organizations
+R323	use Arg1:T476 Arg2:T474	
+R324	goal Arg1:T474 Arg2:T475	
+R325	part_of Arg1:T472 Arg2:T426	
+R326	part_of Arg1:T473 Arg2:T426	
+T477	sub_activity 12860 12879	Configure firewalls

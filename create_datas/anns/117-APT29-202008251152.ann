@@ -1,0 +1,84 @@
+T1	threatActor_name 13 18	APT29
+T2	threatActor_name 659 664	APT29
+T3	malware 117 127	HAMMERTOSS
+T4	malware 361 371	HAMMERTOSS
+T5	malware 641 651	HAMMERTOSS
+T6	malware 714 724	HAMMERTOSS
+T7	malware 886 896	HAMMERTOSS
+T8	md5 1024 1056	d3109c83e07dd5d7fe032dc80c581d08
+T9	sha1 1079 1119	42e6da9a08802b5ce5d1f754d4567665637b47bc
+T10	domain 1262 1291	http://www.doctorhandbook.com
+T11	malware 1294 1304	HAMMERTOSS
+T12	threatActor_name 1428 1433	APT29
+T13	malware 1845 1855	HAMMERTOSS
+T14	malware 2319 2329	HAMMERTOSS
+T15	malware 3071 3081	HAMMERTOSS
+T16	malware 2926 2936	HAMMERTOSS
+T17	malware 2473 2483	HAMMERTOSS
+T18	tool 579 586	Twitter
+T19	tool 46 53	Twitter
+R1	use Arg1:T1 Arg2:T19	
+T20	reference_word 63 67	they
+R2	coreference Arg1:T20 Arg2:T1	
+T21	reference_word 101 108	The URL
+T22	reference_word 173 184	The hashtag
+T23	sub_activity 81 84	URL
+T24	sub_activity 91 98	hashtag
+R3	launch Arg1:T1 Arg2:T23	
+R4	launch Arg1:T1 Arg2:T24	
+R5	coreference Arg1:T21 Arg2:T23	
+R6	coreference Arg1:T22 Arg2:T24	
+R7	use Arg1:T2 Arg2:T5	
+R8	use Arg1:T5 Arg2:T18	
+T25	tool 779 786	Twitter
+R9	use Arg1:T6 Arg2:T25	
+T26	tool 940 950	VirusTotal
+R10	use Arg1:T7 Arg2:T26	
+T27	tool 957 964	Twitter
+T28	tool 1059 1069	VirusTotal
+T29	time 1173 1187	April 3 , 2015
+T30	tool 1197 1204	Twitter
+T31	domain 1212 1236	twitter.com/3c6Diallo7f0
+R11	part_of Arg1:T31 Arg2:T30	
+T32	reference_word 380 391	the hashtag
+R12	coreference Arg1:T32 Arg2:T22	
+T33	tool 1347 1354	Twitter
+R13	use Arg1:T11 Arg2:T33	
+T34	malware 1519 1529	HAMMERTOSS
+R14	use Arg1:T12 Arg2:T34	
+T35	reference_word 1587 1596	the group
+R15	coreference Arg1:T35 Arg2:T12	
+T36	tool 1645 1652	Twitter
+T37	malware 1690 1698	MiniDuke
+T38	malware 1717 1725	backdoor
+T39	OS_name 1703 1710	Windows
+T40	location 1745 1752	Russian
+R16	part_of Arg1:T37 Arg2:T38	
+R17	located Arg1:T37 Arg2:T40	
+R18	use Arg1:T37 Arg2:T39	
+R19	use Arg1:T37 Arg2:T36	
+T41	malware 1764 1770	Sninfs
+T42	malware 1780 1789	Flashback
+T43	OS_name 1794 1797	Mac
+T44	malware 1804 1812	backdoor
+R20	use Arg1:T41 Arg2:T36	
+R21	use Arg1:T42 Arg2:T36	
+R22	use Arg1:T42 Arg2:T43	
+R23	part_of Arg1:T42 Arg2:T44	
+T45	malware 1815 1823	MiniDuke
+T46	tool 1874 1881	Twitter
+R24	use Arg1:T45 Arg2:T46	
+R25	use Arg1:T13 Arg2:T46	
+T47	malware 1970 1980	HAMMERTOSS
+T48	tool 1990 2006	InternetExplorer
+R26	use Arg1:T47 Arg2:T48	
+T49	malware 2072 2082	HAMMERTOSS
+T50	tool 2097 2113	InternetExplorer
+R27	use Arg1:T49 Arg2:T50	
+T51	tool 2368 2375	Twitter
+R28	use Arg1:T14 Arg2:T51	
+T52	tool 2525 2541	Internet Explore
+R29	use Arg1:T17 Arg2:T52	
+T53	person 3027 3033	victim
+T54	reference_word 3159 3161	It
+R30	coreference Arg1:T54 Arg2:T15	

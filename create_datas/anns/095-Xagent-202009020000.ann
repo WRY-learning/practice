@@ -1,0 +1,159 @@
+T1	malware 163 169	Xagent
+T2	malware 307 313	Xagent
+T3	reference_word 432 434	It
+R1	coreference Arg1:T3 Arg2:T2	
+T4	malware 1655 1661	Xagent
+T5	malware 2333 2339	Xagent
+T6	malware 1541 1547	Xagent
+T7	malware 854 860	Xagent
+T8	malware 952 958	Xagent
+T9	malware 1020 1026	Xagent
+T10	malware 1168 1174	Xagent
+T11	malware 1337 1343	Xagent
+T12	malware 3046 3052	Xagent
+T13	malware 3225 3231	Xagent
+T14	malware 2748 2754	Xagent
+T15	malware 4057 4063	Xagent
+T16	malware 4174 4180	Xagent
+T17	malware 4397 4403	Xagent
+T18	malware 4329 4335	Xagent
+T19	malware 4560 4566	Xagent
+T20	malware 4644 4650	Xagent
+T21	malware 4753 4759	Xagent
+T22	malware 5194 5200	Xagent
+T23	malware 8820 8826	Xagent
+T24	malware 8881 8887	Xagent
+T25	function 197 219	spying functionalities
+R2	part_of Arg1:T25 Arg2:T1	
+T26	function 228 245	keystroke logging
+R3	part_of Arg1:T26 Arg2:T1	
+T27	function 250 267	file exfiltration
+R4	part_of Arg1:T27 Arg2:T1	
+T28	malware 175 191	modular backdoor
+R5	part_of Arg1:T1 Arg2:T28	
+T29	reference_word 290 304	SPLM CHOPSTICK
+R6	coreference Arg1:T29 Arg2:T2	
+T30	threatActor_aliases 346 358	Sednit group
+T31	malware 321 338	flagship backdoor
+R7	part_of Arg1:T2 Arg2:T31	
+R8	use Arg1:T30 Arg2:T31	
+T32	reference_word 487 500	the operators
+R9	coreference Arg1:T32 Arg2:T30	
+T33	time 625 638	November 2012
+T34	time 642 653	August 2016
+T35	reference_word 536 538	it
+R12	coreference Arg1:T35 Arg2:T3	
+R10	first_found_time Arg1:T33 Arg2:T35	
+R11	release_time Arg1:T34 Arg2:T35	
+T36	sub_activity 736 759	Downloaded by Downdelph
+T37	sub_activity 762 782	Downloaded by Sedkit
+T38	sub_activity 785 815	Dropped by Seduploader dropper
+T39	sub_activity 818 851	Downloaded by Seduploader payload
+T40	program_language 877 880	C++
+R13	part_of Arg1:T7 Arg2:T40	
+T41	tool 888 908	modular architecture
+R14	part_of Arg1:T7 Arg2:T41	
+T42	tool 920 949	core module named AgentKernel
+R15	part_of Arg1:T42 Arg2:T7	
+T43	OS_name 981 988	Windows
+T44	OS_name 991 996	Linux
+T45	OS_name 1001 1004	iOS
+R16	part_of Arg1:T8 Arg2:T43	
+R17	part_of Arg1:T8 Arg2:T44	
+R18	part_of Arg1:T8 Arg2:T45	
+T46	tool 1074 1077	C&C
+T47	tool 1078 1099	communication channel
+R19	part_of Arg1:T46 Arg2:T47	
+T48	protocol 1111 1115	HTTP
+T49	tool 1135 1141	emails
+T50	protocol 1144 1148	SMTP
+T51	protocol 1149 1153	POP3
+R20	part_of Arg1:T51 Arg2:T49	
+R21	part_of Arg1:T50 Arg2:T49	
+R22	part_of Arg1:T46 Arg2:T9	
+R23	part_of Arg1:T48 Arg2:T46	
+R24	part_of Arg1:T49 Arg2:T46	
+T52	time 1688 1701	November 2012
+R25	first_found_time Arg1:T52 Arg2:T4	
+T53	malware 1873 1879	Xagent
+T54	malware 1984 1990	Xagent
+T55	OS_name 1900 1905	Linux
+R26	part_of Arg1:T53 Arg2:T55	
+T56	program_language 2095 2098	C++
+R27	part_of Arg1:T54 Arg2:T56	
+T57	time 2167 2176	July 2015
+T58	OS_name 2535 2542	Windows
+T59	OS_name 2642 2647	Linux
+T60	OS_name 2797 2802	Linux
+T61	OS_name 2785 2792	Windows
+T62	OS_name 2990 2997	Windows
+T63	OS_name 3008 3017	platforms
+R28	part_of Arg1:T12 Arg2:T62	
+R29	part_of Arg1:T12 Arg2:T63	
+R30	part_of Arg1:T14 Arg2:T61	
+R31	part_of Arg1:T14 Arg2:T60	
+R32	part_of Arg1:T14 Arg2:T59	
+R33	part_of Arg1:T14 Arg2:T58	
+T64	OS_name 3031 3034	iOS
+R34	part_of Arg1:T12 Arg2:T64	
+T65	tool 3971 3977	module
+T66	tool 3982 4004	channel instantiations
+R35	part_of Arg1:T66 Arg2:T15	
+R36	part_of Arg1:T65 Arg2:T15	
+T67	tool 4135 4142	modules
+T68	tool 4147 4155	channels
+R37	part_of Arg1:T68 Arg2:T16	
+R38	part_of Arg1:T67 Arg2:T16	
+T70	tool 4267 4275	channels
+T69	reference_word 4229 4233	them
+R40	coreference Arg1:T69 Arg2:T67	
+R39	part_of Arg1:T70 Arg2:T16	
+T71	tool 4484 4491	modules
+T72	tool 4496 4504	channels
+R41	part_of Arg1:T71 Arg2:T19	
+R42	part_of Arg1:T72 Arg2:T19	
+T73	tool 4594 4601	modules
+R43	part_of Arg1:T73 Arg2:T19	
+T74	OS_name 4651 4656	Linux
+R44	part_of Arg1:T20 Arg2:T74	
+T75	tool 4684 4691	modules
+T76	tool 4703 4709	kernel
+R45	part_of Arg1:T75 Arg2:T20	
+R46	part_of Arg1:T76 Arg2:T20	
+T77	tool 4733 4739	module
+R47	part_of Arg1:T76 Arg2:T77	
+T78	OS_name 4747 4752	Linux
+R48	part_of Arg1:T21 Arg2:T78	
+T79	tool 4785 4791	module
+T80	OS_name 4860 4867	Windows
+R49	part_of Arg1:T79 Arg2:T21	
+R50	part_of Arg1:T21 Arg2:T80	
+T81	tool 4989 4995	module
+T82	tool 5602 5612	C&C server
+T83	tool 5636 5642	kernel
+T84	tool 6075 6083	checksum
+T85	tool 6122 6125	CRC
+T86	tool 6096 6119	cyclic redundancy check
+R51	part_of Arg1:T85 Arg2:T86	
+T87	tool 6749 6759	C&C server
+T88	tool 7345 7355	C&C server
+T89	program_language 7105 7108	C++
+T90	tool 7087 7097	C&C server
+R52	part_of Arg1:T90 Arg2:T89	
+T91	tool 8916 8927	HttpChannel
+T92	tool 8950 8961	MailChannel
+T93	protocol 8935 8939	HTTP
+T94	protocol 8993 8997	POP3
+T95	protocol 8969 8973	SMTP
+T96	tool 9277 9283	emails
+T97	tool 7639 7649	C&C server
+T98	tool 7581 7591	C&C server
+T99	tool 7026 7036	C&C server
+T100	tool 5712 5722	C&C server
+T101	tool 8384 8394	C&C server
+T102	tool 9469 9479	C&C server
+T103	tool 9536 9546	C&C server
+T104	tool 6845 6855	C&C server
+T105	tool 7762 7772	C&C server
+T106	tool 7903 7913	C&C server
+T107	tool 6452 6462	C&C server

@@ -1,0 +1,82 @@
+T1	government 182 188	Russia
+T2	government 366 373	Russian
+T3	time 598 602	2008
+T4	government 875 880	China
+T5	target_crowd 198 208	cyberspace
+T6	time 1573 1577	2007
+T7	government 1694 1700	Russia
+T8	location 1729 1735	Moscow
+T9	location 1740 1742	St
+T10	threatActor_name 2035 2040	APT28
+T11	threatActor_name 2043 2048	APT28
+T12	threatActor_name 2193 2198	APT28
+T13	threatActor_name 2383 2388	APT28
+T14	threatActor_name 2629 2634	APT28
+T15	time 2897 2901	2007
+T16	government 2757 2764	Russian
+T17	threatActor_name 2904 2909	APT28
+T18	threatActor_name 3186 3191	APT28
+T19	threatActor_name 3297 3302	APT28
+T20	threatActor_name 3585 3590	APT28
+T21	threatActor_name 4119 4124	APT28
+T22	threatActor_name 4260 4265	APT28
+T23	threatActor_name 4372 4377	APT28
+T24	threatActor_name 4518 4523	APT28
+T25	threatActor_name 4567 4572	APT28
+T26	threatActor_name 4719 4724	APT28
+T27	location 4867 4875	Caucasus
+T28	time 5355 5359	2011
+T29	location 5767 5775	Caucasus
+T30	location 5796 5803	Chechen
+T31	location 4212 4220	Caucasus
+T32	government 4655 4662	Russian
+T33	location 5211 5219	Caucasus
+T34	threatActor_name 5295 5300	APT28
+T35	threatActor_name 5483 5488	APT28
+T36	government 5052 5060	Georgian
+T37	location 5129 5135	Moscow
+T38	time 5176 5180	2008
+T39	threatActor_name 5362 5367	APT28
+T40	government 5440 5448	Georgian
+T41	government 5610 5618	Georgian
+T42	government 1466 1473	Georgia
+T43	government 1476 1492	Eastern European
+T44	security_team 1526 1557	European security organizations
+T45	government 211 217	Russia
+T46	time 469 473	2008
+T47	target_crowd 458 465	Georgia
+T48	sub_activity 415 428	cyber attacks
+R1	launch Arg1:T2 Arg2:T48	
+R2	attack Arg1:T48 Arg2:T47	
+R3	occur_time Arg1:T47 Arg2:T46	
+T49	government 516 522	Moscow
+T50	government 542 545	U.S
+T51	government 684 690	Russia
+T52	target_crowd 2088 2099	governments
+T53	target_crowd 2102 2112	militaries
+T54	target_crowd 2119 2127	security
+T55	government 2172 2179	Russian
+R4	attack Arg1:T11 Arg2:T52	
+R5	attack Arg1:T11 Arg2:T53	
+R6	attack Arg1:T11 Arg2:T54	
+T56	location 2242 2249	Georgia
+T57	government 2418 2434	Eastern European
+T58	security_team 2451 2473	security organizations
+T59	target_crowd 2654 2665	individuals
+R7	attack Arg1:T14 Arg2:T59	
+T60	security_team 2828 2832	NATO
+T61	security_team 2841 2845	OSCE
+R8	attack Arg1:T16 Arg2:T60	
+R9	attack Arg1:T16 Arg2:T61	
+T62	attack_activity 3596 3616	spearphishing emails
+R10	use Arg1:T20 Arg2:T62	
+T63	attack_activity 3983 4002	spearphishing lures
+R11	launch Arg1:T21 Arg2:T63	
+R12	occur_time Arg1:T17 Arg2:T15	
+R13	occur_time Arg1:T39 Arg2:T28	
+T64	threatActor_aliases 5583 5592	the group
+R14	coreference Arg1:T35 Arg2:T64	
+T65	security_team 5619 5655	Ministry of Internal Affairs ( MIA )
+T66	security_team 5664 5691	Ministry of Defense ( MOD )
+R15	attack Arg1:T64 Arg2:T65	
+R16	attack Arg1:T64 Arg2:T66	

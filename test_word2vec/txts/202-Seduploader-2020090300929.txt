@@ -1,0 +1,73 @@
+Seduploader : Target Confirmation .
+Release_Time : unknown .
+Report_URL : https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part1.pdf .
+Seduploader serves as reconnaissance malware .
+It is made up of two distinct components : a dropper and the per-sistent payload installed by this dropper .
+Seduploader ’ s payload is a downloader used by Sednit ' s operators as reconnaissance malware .
+If the victim is considered interesting , Seduploader is instructed to download a spying backdoor , like Sedreco or Xagent .
+March 2015 to August 2016 ( the time of this writing ) .
+Probably still in use .
+Downloaded by Sedkit .
+Dropped by Microsoft Office exploits attached to targeted phishing emails .
+The Seduploader payload borrows parts of its code from Carberp—an infamous malware family whose partial source code was made public—as documented by F-Secure in September 2015 .
+Seduploader has been compiled for Windows and OS X ( at least ) .
+Older Seduploader dropper samples contain an unusual anti-analysis trick based on large temporary files ( named jhuhugit.temp , jhuhugit.tmp or jkeyskw.temp depending on the version ) .
+The Seduploader payload implements three different methods to contact its C&C server .
+The dates posited in the timeline mainly rely on the compilation timestamps of the Seduploader payloads.We believe that the payloads ’ timestamps were not tampered with , because they match our telemetry data , as opposed to the droppers ’ timestamps .
+The dates in the timeline may be later than the actual events though , as we do not have all Seduploader samples—but enough are present to give a good approximation .
+We define Seduploader as a two-binary component , comprising a dropper and the payload usually contained in this dropper.While those two have sometimes been used independently of each other , they usually are deployed together and remain the most-used first-stage malware of the Sednit group since the beginning of 2015 .
+The payload component of Seduploader has been compiled forWindows and OS X , but our analysis is based solely on the Windows version .
+Nevertheless , the OS X version is very similar , and has been described by BAE Systems in June 2015 .
+While pretty straightforward , it has some interesting details that we will describe in this section .
+This code allocates a small memory buffer B and sets its tenth byte to the value 42 .
+It then writes and reads one million times into a newly created temporary file1 . After that operation , it checks whether the tenth byte of B still contains the value 42 .
+If this is not the case , Seduploader terminates its execution .
+This code primarily serves to delay execution with I/O intensive operations , in order to exhaust security products ’ analysis limits .
+It may also detect security software emulators that wrongly implement memory management , and hence are unable to maintain the correct state of B due to the number of operations performed .
+This technique was present in another dropper employed by the Sednit group in 2014 , which we have not seen since then .
+This trick disappeared from Seduploader in December 2015—probably because it was easy to spot and could be used to detect the malware .
+It was then replaced by a more common anti-analysis technique based on time measurement .
+Additionally , important strings in Seduploader ’ s dropper are encrypted with a simple XOR-based algorithm , and the addresses of important Windows API functions are resolved dynamically .
+The core logic of Seduploader ’ s dropper is implemented in a C++ class named UpLoader by its developers .
+This class has evolved several times since Seduploader ’ s first appearance , and its last known version contains the eight methods described in Table 4 .
+decrypt_in_place Decrypts the given data using a simple XOR-based algorithm and a 10-byte key .
+decrypt_in_new_memory Decrypts the given data using the same algorithm as decrypt_in_place , except that the result is written into a newly allocated memory buffer .
+get_env_var Retrieves the value of an environment variable .
+decrypt_embedded_files Decrypts one or more embedded files , with some metadata ( names and location in which to drop them ) .
+decompress Decompresses a given memory area using Windows API function RtlDecompressBuffer .
+drop Writes the content of a given memory area into a file on disk .
+execute_file Executes a given file , which can be either a Windows library , whose export named init will then be called , or an executable .
+If the current process runs at system integrity level , it ensures that the child process runs at the same integrity level .
+delete_file Deletes a given file from the system .
+Using those C++ methods , the dropper decrypts and decompresses its embedded payload , which consists of one or more files .
+It then drops the files on disk and executes them .
+Finally , before removing itself from the machine , the dropper makes the payload persistent , as we will describe in the following sections .
+We know the developers named this class UpLoader because they left Run-Time Type Information ( RTTI ) in some Seduploader samples .
+Additionally , the following program database ( PDB ) path overlooked by the developers in one sample , indicates that the binary itself is named Uploader : D:\REDMINE\JOINER\HEADER_PAYLOAD\header_payload\Uploader\Release\Uploader.pdb .
+The significance of other parts of this PDB path remain obscure , except for the REDMINE part , which may refer to a project management web application .
+Before making the payload persistent on the system , Seduploader may execute local privilege escalation exploits .
+Since Seduploader ’ s first appearance , the two vulnerabilities described in Table 5 have been exploited , and both were unpatched when first used by the Sednit group .
+CVE-2015-1701 Microsoft Windows <= Windows 7 March-April 2015 .
+CVE-2015-2387 Microsoft Windows all versions July 2015 .
+Since its inception , Seduploader ’ s dropper has employed a variety of persistence methods for its payload , some of them only when running with SYSTEM privileges ( thanks to the previously mentioned exploits ) .
+Here are the most common persistence methods we observed ( details are given in the IOC section ) : 
+Register the payload under the Run registry key .While this is essentially a classic method , Seduploader employs a uncommon trick to write into the registry by executing JavaScript code within the rundll32.exe process .
+This technique was first seen in the Win32/Poweliks malware in mid-2014 , and has since been documented in detail .
+Register the payload as a Windows service that will run at startup .
+This method is used only when running with SYSTEM privileges .
+Register the payload as a scheduled task that will run each time the current user logs in .
+This method is used only when running with SYSTEM privileges .
+Replace a legitimateWindows COM object with the payload , so that it will be loaded in any process using that COM object .
+The exact hijacked object is a class named MMDeviceEnumerator .
+This technique has also been seen in the malware Win32/COMpfun .
+Register the payload as a Shell Icon Overlay handler COM object , so that the payload will be loaded each time a user logs in .
+The chosen CLSID of this object ( {3543619C-D563-43f7-95EA-4DA7E1CC396A} ) is already legitimately used in an Internet Explorer plug-in open-source project named “ BHOinCPP ” , probably to confuse defenders .
+Register a Windows shell script under the registry key HKCU\Environment\UserInitMprLogonScript , which will run the payload at startup .
+This is also a documented technique , yet not well known .
+This method is usually the preferred one when Seduploader does not run with SYSTEM privileges .
+The diversity of these persistence methods shows the intensity of the development effort behind Seduploader , and that its developers have a good grasp of the current literature , as several of these techniques seem to have been inspired by other malware .
+This binary can be roughly described as a first-stage reconnaissance tool , probably used to distinguish security researchers performing analysis from real targets .
+In this section we describe the workflow of this payload as found in the most recent version .
+The first operation of the Seduploader payload is to find a reliable way to reach its C&C server on the Internet , which may be difficult depending on the network setup of the compromised organization .
+To test whether the compromised machine is connected to the Internet without attracting attention , Seduploader tries to reach Google servers over HTTP , usually google.com or google.ru .
+This part of the Seduploader code changed several times over the last year and currently contains three possible means of communication .

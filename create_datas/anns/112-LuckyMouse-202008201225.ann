@@ -1,0 +1,223 @@
+T1	threatActor_name 0 10	LuckyMouse
+T2	malware 17 43	malicious NDISProxy driver
+T3	industry 64 82	Chinese IT company
+R1	part_of Arg1:T2 Arg2:T1	
+T4	time 194 204	March 2018
+T5	malware 270 276	Trojan
+T6	attack_activity 224 242	several infections
+R2	occur_time Arg1:T6 Arg2:T4	
+R3	use Arg1:T6 Arg2:T5	
+T7	tool 427 436	NDISProxy
+T8	reference_word 455 466	this driver
+R4	coreference Arg1:T8 Arg2:T7	
+T9	company 520 544	Chinese company LeagSoft
+T11	government 668 675	CN-CERT
+T12	reference_word 856 867	The malware
+R6	coreference Arg1:T12 Arg2:T7	
+T13	program_language 916 919	C++
+T14	OS_name 1020 1027	Windows
+T15	malware 1100 1106	Trojan
+T16	tool 1161 1170	NDISProxy
+T17	malware 1203 1209	Trojan
+T18	protocol 1246 1269	Remote Desktop Protocol
+T19	protocol 1272 1275	RDP
+R7	coreference Arg1:T19 Arg2:T18	
+T20	tool 1319 1321	C2
+R8	use Arg1:T17 Arg2:T20	
+T21	malware 1360 1370	C++ Trojan
+T22	protocol 1381 1386	HTTPS
+R9	use Arg1:T21 Arg2:T22	
+T23	tool 1479 1481	C2
+T24	tool 1693 1695	C2
+T25	protocol 1791 1805	SOCKS tunneler
+T26	person 1763 1772	operators
+R10	use Arg1:T26 Arg2:T25	
+T27	tool 1871 1873	C2
+R11	use Arg1:T26 Arg2:T27	
+T28	tool 1895 1919	Scanline network scanner
+T29	reference_word 1876 1880	They
+R12	coreference Arg1:T29 Arg2:T26	
+R13	use Arg1:T29 Arg2:T28	
+T30	malware 2000 2014	spread malware
+T31	reference_word 1988 1992	they
+R14	use Arg1:T31 Arg2:T30	
+T32	threatActor_name 2145 2155	LuckyMouse
+T33	tool 2113 2122	NDISProxy
+R15	use Arg1:T32 Arg2:T33	
+T34	security_team 2158 2171	Kaspersky Lab
+T35	time 2393 2403	March 2018
+T36	malware 2324 2331	dropper
+T37	attack_activity 2341 2354	this campaign
+R16	use Arg1:T37 Arg2:T36	
+R17	occur_time Arg1:T37 Arg2:T35	
+T38	attack_activity 2438 2452	spear phishing
+T39	attack_activity 2454 2478	r watering hole activity
+T40	encryption_algo 2596 2599	MD5
+T41	md5 2608 2640	dacedff98035f80711c61bc47e83b61d
+T42	malware 2586 2595	Installer
+T43	md5 2641 2673	9dc209f66da77858e362e624d0be86b3
+T44	md5 2674 2706	3cbeda2c5ac41cca0b0d60376a2b2511
+R18	part_of Arg1:T44 Arg2:T42	
+R19	part_of Arg1:T43 Arg2:T42	
+R20	part_of Arg1:T41 Arg2:T42	
+T45	time 2750 2769	2018.03.26 04:16:00
+T46	time 2770 2789	2018.03.26 04:16:00
+R21	part_of Arg1:T45 Arg2:T42	
+R22	part_of Arg1:T46 Arg2:T42	
+T47	OS_name 2918 2931	Windows Vista
+T48	encryption_algo 3029 3032	DES
+T49	protocol 3111 3115	HTTP
+T50	protocol 3118 3123	HTTPS
+T51	protocol 3126 3129	SMB
+T52	protocol 3132 3137	POP3S
+T53	protocol 3148 3152	PPTP
+T54	protocol 3157 3160	RDP
+T55	tool 3140 3145	MSSQL
+T56	string 3221 3227	[test]
+T57	malware 3264 3271	malware
+R23	part_of Arg1:T56 Arg2:T57	
+T58	sample_name 3371 3395	Global\Door-ndisproxy-mn
+T59	sample_name 3461 3473	ndisproxy-mn
+T60	string 3529 3542	door detected
+T61	sample_name 3548 3556	load.log
+T62	malware 3512 3519	dropper
+R24	part_of Arg1:T60 Arg2:T62	
+T63	tool 3595 3604	NDISProxy
+T64	encryption_algo 3687 3690	DES
+T65	malware 3642 3655	The installer
+R25	use Arg1:T65 Arg2:T64	
+T66	malware 3725 3731	Trojan
+T67	malware 3992 3998	Driver
+T68	encryption_algo 3999 4002	MD5
+T69	md5 4044 4076	d21de00f981bb6b5094f9c3dfa0be533
+T70	md5 4077 4109	a2eb59414823ae00d53ca05272168006
+T71	md5 4110 4142	493167e85e45363d09495d0841c30648
+T72	md5 4143 4175	ad07b44578fa47e7de0df42a8b7f8d2d
+R26	part_of Arg1:T70 Arg2:T67	
+R27	part_of Arg1:T72 Arg2:T67	
+R28	part_of Arg1:T71 Arg2:T67	
+R29	part_of Arg1:T69 Arg2:T67	
+T73	time 4191 4210	2018.03.29 07:33:58
+T74	time 4211 4230	2018.03.29 07:33:52
+T75	time 4231 4250	2018.03.26 04:15:28
+T76	time 4251 4270	2018.03.26 04:15:21
+T77	time 4271 4290	2017.11.08 08:04:50
+R30	part_of Arg1:T73 Arg2:T67	
+R31	part_of Arg1:T77 Arg2:T67	
+R32	part_of Arg1:T74 Arg2:T67	
+R33	part_of Arg1:T75 Arg2:T67	
+R34	part_of Arg1:T76 Arg2:T67	
+T78	malware 4465 4468	RAT
+T79	protocol 4523 4526	RDP
+T80	company 4599 4607	VeriSign
+T81	company 4611 4619	LeagSoft
+T82	malware 4539 4550	The drivers
+T83	tool 4704 4707	DLP
+R35	part_of Arg1:T83 Arg2:T81	
+T84	malware 4722 4733	This driver
+T85	program_language 4788 4789	C
+R36	use Arg1:T84 Arg2:T85	
+T86	tool 4857 4863	GitHub
+R37	use Arg1:T84 Arg2:T86	
+T87	tool 4931 4949	Parse HTTP packets
+T88	tool 4877 4900	Driver memory injection
+T89	tool 4901 4930	NDIS network filtering driver
+T90	url 4983 5020	https://github.com/DarthTon/Blackbone
+T91	tool 5021 5049	Microsoft Windows Driver Kit
+T92	tool 5052 5055	WDK
+T93	url 5157 5194	https://github.com/nodejs/http-parser
+R38	part_of Arg1:T90 Arg2:T88	
+R39	coreference Arg1:T92 Arg2:T91	
+R40	part_of Arg1:T93 Arg2:T87	
+R41	part_of Arg1:T91 Arg2:T89	
+T94	malware 5379 5385	Trojan
+T95	tool 5435 5444	Blackbone
+R42	use Arg1:T94 Arg2:T95	
+T96	tool 5465 5474	NDISProxy
+T97	protocol 5554 5557	RDP
+T98	malware 5684 5690	Trojan
+T99	function 5756 5771	DeviceIoControl
+R43	use Arg1:T98 Arg2:T99	
+T100	protocol 5908 5911	RDP
+T101	protocol 5955 5958	TCP
+T102	tool 6003 6005	C2
+T103	malware 5977 5983	Trojan
+R44	use Arg1:T103 Arg2:T102	
+T104	sha2 6018 6082	c69121a994ea8ff188510f41890208625710870af9a06b005db817934b517bc1
+T105	time 6139 6158	2018.03.26 04:15:48
+R45	part_of Arg1:T104 Arg2:T103	
+R46	part_of Arg1:T105 Arg2:T103	
+T106	malware 6174 6177	RAT
+T107	tool 6198 6214	NDISProxy driver
+T108	reference_word 6380 6392	this malware
+R47	coreference Arg1:T108 Arg2:T106	
+T109	malware 6436 6442	Trojan
+T110	malware 6462 6465	RAT
+R48	part_of Arg1:T109 Arg2:T110	
+T111	program_language 6603 6606	C++
+T112	malware 6772 6778	Trojan
+T113	tool 6784 6799	HTTP Server API
+T114	protocol 6810 6815	HTTPS
+R49	use Arg1:T112 Arg2:T113	
+T115	person 6880 6889	attackers
+T116	malware 6862 6868	Trojan
+R50	use Arg1:T115 Arg2:T116	
+T117	protocol 6953 6966	SOCKS tunnels
+T118	tool 6976 6978	C2
+R51	use Arg1:T115 Arg2:T118	
+R52	use Arg1:T115 Arg2:T117	
+T119	malware 7101 7107	Trojan
+T120	tool 7114 7126	HTTPS server
+T121	protocol 7156 7168	SOCKS tunnel
+T122	tool 7221 7223	C2
+R53	use Arg1:T119 Arg2:T121	
+T123	protocol 7209 7211	IP
+R54	use Arg1:T119 Arg2:T122	
+T124	reference_word 7265 7278	this campaign
+T125	company 7288 7323	Middle Asian governments ’ entities
+R55	goal Arg1:T124 Arg2:T125	
+T126	person 7366 7399	Chinese-speaking LuckyMouse actor
+T127	attack_activity 7428 7436	campaign
+T128	tool 7447 7461	NDISProxy tool
+R56	use Arg1:T126 Arg2:T128	
+R57	launch Arg1:T126 Arg2:T127	
+T129	IP_evil 7650 7663	103.75.190.28
+T130	malware 7714 7724	LuckyMouse
+T131	tool 7725 7727	C2
+T132	person 7618 7631	the attackers
+R58	part_of Arg1:T129 Arg2:T132	
+R59	use Arg1:T132 Arg2:T130	
+R60	use Arg1:T132 Arg2:T131	
+T133	tool 7861 7871	Metasploit
+T134	tool 7875 7887	CobaltStrike
+T135	malware 7901 7908	malware
+T136	malware 7935 7938	RAT
+R61	part_of Arg1:T136 Arg2:T135	
+T137	tool 8027 8033	GitHub
+T138	location 8142 8154	Central Asia
+T139	government 8196 8229	Shanghai Cooperation Organization
+T140	encryption_algo 8392 8398	Hashes
+T141	md5 8422 8454	9dc209f66da77858e362e624d0be86b3
+T142	md5 8455 8487	dacedff98035f80711c61bc47e83b61d
+T143	malware 8490 8497	Drivers
+T144	md5 8501 8533	8e6d87eadb27b74852bd5a19062e52ed
+T145	md5 8534 8566	d21de00f981bb6b5094f9c3dfa0be533
+T146	md5 8567 8599	a2eb59414823ae00d53ca05272168006
+T147	md5 8633 8665	ad07b44578fa47e7de0df42a8b7f8d2d
+T148	md5 8600 8632	493167e85e45363d09495d0841c30648
+R62	part_of Arg1:T144 Arg2:T143	
+R63	part_of Arg1:T146 Arg2:T143	
+R64	part_of Arg1:T145 Arg2:T143	
+R65	part_of Arg1:T148 Arg2:T143	
+R66	part_of Arg1:T147 Arg2:T143	
+T149	md5 8768 8800	3a97d9b6f17754dcd38ca7fc89caab04
+T150	IP_evil 8836 8849	213.109.87.58
+T151	malware 8402 8421	Droppers-installers
+R67	part_of Arg1:T141 Arg2:T151	
+R68	part_of Arg1:T142 Arg2:T151	
+T152	reference_word 8068 8081	This campaign
+R69	located Arg1:T152 Arg2:T138	
+T10	location 601 609	Shenzhen
+T153	location 612 621	Guangdong
+R5	located Arg1:T9 Arg2:T10	
+R70	part_of Arg1:T10 Arg2:T153	

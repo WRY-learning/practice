@@ -1,0 +1,103 @@
+T1	threatActor_aliases 0 5	APT28
+T2	malware 127 134	Sedreco
+T3	malware 282 289	dropper
+T4	malware 335 342	dropper
+R1	part_of Arg1:T3 Arg2:T2	
+T5	malware 365 369	AZZY
+R2	coreference Arg1:T5 Arg2:T2	
+T6	malware 378 386	Sedreco 
+T7	time 582 590	May 2012
+T8	time 594 603	July 2016
+T9	time 653 664	August 2016
+T10	malware 711 722	Seduploader
+R3	first_found_time Arg1:T6 Arg2:T7	
+R4	occur_time Arg1:T6 Arg2:T8	
+T11	malware 788 796	Sedreco 
+T12	tool 870 874	Path
+T13	tool 896 899	msd
+T15	malware 953 961	Sedreco 
+T16	malware 1054 1061	Sedreco
+T19	malware 1178 1186	Sedreco 
+T20	malware 1216 1224	dropper 
+R7	part_of Arg1:T20 Arg2:T19	
+T21	malware 1275 1282	dropper
+T22	malware 1289 1297	dropper 
+T23	malware 1305 1313	Sedreco 
+T24	sample_name 1434 1447	msdeltemp.dll
+T25	malware 1479 1487	Sedreco 
+T26	time 1505 1509	2012
+R8	first_found_time Arg1:T25 Arg2:T26	
+T28	malware 1593 1600	Sedreco
+T29	malware 1807 1814	dropper
+T30	malware 2298 2306	dropper 
+T31	tool 2622 2634	Windows API 
+T32	malware 2721 2729	Sedreco 
+T33	malware 2957 2964	Sedreco
+T34	malware 3043 3050	dropper
+T35	program_language 3321 3328	Python 
+T36	tool 3352 3359	GitHub 
+T38	malware 4754 4762	Sedreco 
+T39	malware 4842 4850	Sedreco 
+T40	malware 4919 4927	Sedreco 
+T41	tool 5556 5569	Windows shell
+T42	sample_name 5623 5631	 tmp.dat
+T43	tool 5674 5682	Sedreco 
+T44	tool 5791 5804	Windows shell
+T45	malware 5903 5911	Sedreco 
+T46	protocol 5967 5972	HTTP 
+T47	malware 6311 6319	Sedreco 
+T48	malware 6585 6593	Sedreco 
+T49	malware 6689 6697	Sedreco 
+T50	malware 6846 6853	Sedreco
+T51	malware 7543 7551	Sedreco 
+T52	protocol 7950 7955	HTTP 
+T53	protocol 7986 7991	HTTPS
+T54	malware 8464 8472	Sedreco 
+T55	sample_name 8526 8538	_2315tmp.dat
+T56	string 8978 8989	0x75DF9115 
+T57	malware 9106 9114	Sedreco 
+T58	malware 9186 9194	Sedreco 
+T59	sample_name 9306 9317	4964tmp.dat
+T60	string 9614 9624	0xB2745DAF
+T61	tool 9706 9725	 SYSTEMTIME Windows
+T62	encryption_algo 9883 9909	 Lempel–Ziv–Welch  ( LZW )
+T63	encryption_algo 10021 10025	LZW 
+T64	malware 10063 10070	Sedreco
+T65	malware 10130 10138	Sedreco 
+T66	encryption_algo 10258 10263	3DES 
+T67	malware 10526 10534	Sedreco 
+T68	malware 10824 10832	Sedreco 
+T69	sample_name 10850 10861	Windows DLL
+T70	tool 11002 11013	Windows API
+T71	tool 11013 11027	  LoadLibraryA
+T72	malware 10964 10971	Sedreco
+T73	malware 11212 11219	Sedreco
+T74	malware 11300 11308	Sedreco 
+T75	protocol 11542 11546	HTTP
+T76	tool 11521 11536	 Windows  shell
+T77	malware 11554 11562	Sedreco 
+T78	tool 11848 11873	ProcessRetranslatorModule
+T79	tool 11820 11834	Windows Xagent
+T80	tool 11946 11959	Windows shell
+T81	malware 12291 12299	Sedreco 
+T82	malware 12557 12565	Sedreco 
+T83	malware 12578 12585	Xagent 
+T84	malware 12177 12185	Sedreco 
+R10	part_of Arg1:T31 Arg2:T32	
+T37	string 4197 4201	rhze
+T18	sample_name 1164 1175	4964tmp.dat
+T17	sample_name 1146 1158	2315tmp.dat 
+R5	part_of Arg1:T17 Arg2:T16	
+R6	part_of Arg1:T18 Arg2:T16	
+T27	time 1570 1574	2016
+R9	first_found_time Arg1:T25 Arg2:T27	
+T14	malware 933 941	Sedreco 
+T85	malware 941 948	dropper
+R11	part_of Arg1:T70 Arg2:T72	
+R12	part_of Arg1:T71 Arg2:T72	
+T86	string 4205 4209	rhdn
+T87	string 4240 4244	mtqs
+T88	string 4233 4237	mctf
+T89	string 4226 4230	mtfs
+T90	string 4219 4223	rhbp
+T91	string 4212 4216	rhst

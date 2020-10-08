@@ -1,0 +1,11 @@
+HOT KNIVES THROUGH BUTTER: Evading File-based Sandboxes
+As much as sandboxes try to mimic the physical computers they are protecting , these virtual environments are configured to a defined set of parameters .
+Cyber attackers , aware of these configurations , have learned to sidestep them .
+With a multitude of file samples to examine , file-based sandboxes typically monitor files for a few minutes and , in the absence of any suspicious behavior , move on to the next file .
+That provides malware makers a simple evasion
+strategy : wait out the sandbox .
+By adding extended sleep calls , the malware refrains from any suspicious behavior throughout the monitoring process .
+Trojan Nap , uncovered in February 2013,8 takes this approach .
+The trojan is tied to the Kelihos Botnet , which Microsoft and Kaspersky had declared dismantled in 2011 .
+File-based sandboxes spot suspicious malware activity by monitoring all of the processes occurring in the operating system .
+Many sandboxes are configured to do this using a Microsoft-provided kernel routine called PsSetCreateProcessNotifyRoutine .

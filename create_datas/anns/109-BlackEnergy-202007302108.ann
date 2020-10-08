@@ -1,0 +1,265 @@
+T1	threatActor_name 0 11	BlackEnergy
+T2	industry 49 69	Ukrainian news media
+T3	industry 74 82	electric
+R1	attack Arg1:T1 Arg2:T2	
+R2	attack Arg1:T1 Arg2:T3	
+T4	threatActor_name 297 308	BlackEnergy
+T5	time 357 361	2007
+T6	time 389 393	2014
+T7	threatActor_name 435 446	BlackEnergy
+T8	time 450 454	2014
+T9	location 475 482	Ukraine
+T10	location 487 493	Poland
+R3	occur_time Arg1:T7 Arg2:T8	
+R4	attack Arg1:T7 Arg2:T9	
+R5	attack Arg1:T7 Arg2:T10	
+R6	first_found_time Arg1:T4 Arg2:T5	
+R7	occur_time Arg1:T4 Arg2:T6	
+T11	attack_activity 498 530	BlackEnergy PowerPoint Campaigns
+R8	launch Arg1:T7 Arg2:T11	
+T12	time 615 619	2015
+T13	company 622 626	ESET
+T14	threatActor_name 660 671	BlackEnergy
+T15	malware 736 744	KillDisk
+T17	malware 660 678	BlackEnergy trojan
+R9	use Arg1:T15 Arg2:T17	
+T16	industry 774 804	Ukrainian news media companies
+T18	industry 821 846	electrical power industry
+R10	attack Arg1:T15 Arg2:T16	
+R11	attack Arg1:T15 Arg2:T18	
+T19	threatActor_name 890 901	BlackEnergy
+T20	company 910 914	ESET
+T21	time 931 935	2015
+T22	malware 953 961	KillDisk
+T24	protocol 1041 1044	SSH
+T25	threatActor_name 1143 1154	BlackEnergy
+R13	find Arg1:T20 Arg2:T22	
+T27	malware 1041 1053	SSH backdoor
+R14	find Arg1:T20 Arg2:T27	
+T28	domain 1331 1351	threatintel@eset.com
+T29	threatActor_name 6417 6428	BlackEnergy
+T30	threatActor_name 6448 6459	BlackEnergy
+T31	threatActor_name 6476 6487	BlackEnergy
+T32	threatActor_name 6508 6519	BlackEnergy
+T33	threatActor_name 6538 6549	BlackEnergy
+T34	threatActor_name 6566 6577	BlackEnergy
+T35	threatActor_name 6595 6606	BlackEnergy
+T36	threatActor_name 6653 6664	BlackEnergy
+T37	threatActor_name 6711 6722	BlackEnergy
+T38	threatActor_name 6769 6780	BlackEnergy
+T39	threatActor_name 6827 6838	BlackEnergy
+T40	threatActor_name 6885 6896	BlackEnergy
+T41	threatActor_name 6943 6954	BlackEnergy
+T42	threatActor_name 7001 7012	BlackEnergy
+T43	threatActor_name 7059 7070	BlackEnergy
+T44	threatActor_name 7117 7128	BlackEnergy
+T45	threatActor_name 7175 7186	BlackEnergy
+T46	threatActor_name 7233 7244	BlackEnergy
+T47	threatActor_name 7291 7302	BlackEnergy
+T48	threatActor_name 7349 7360	BlackEnergy
+T49	threatActor_name 7407 7418	BlackEnergy
+T50	threatActor_name 7465 7476	BlackEnergy
+T51	threatActor_name 7523 7534	BlackEnergy
+T52	threatActor_name 7581 7592	BlackEnergy
+T53	threatActor_name 7639 7650	BlackEnergy
+T54	threatActor_name 8393 8404	BlackEnergy
+T55	threatActor_name 8335 8346	BlackEnergy
+T56	threatActor_name 8277 8288	BlackEnergy
+T57	threatActor_name 8219 8230	BlackEnergy
+T58	threatActor_name 8161 8172	BlackEnergy
+T59	threatActor_name 8103 8114	BlackEnergy
+T60	threatActor_name 8045 8056	BlackEnergy
+T61	threatActor_name 7987 7998	BlackEnergy
+T62	threatActor_name 7929 7940	BlackEnergy
+T63	threatActor_name 7871 7882	BlackEnergy
+T64	threatActor_name 7813 7824	BlackEnergy
+T65	threatActor_name 7755 7766	BlackEnergy
+T66	threatActor_name 7697 7708	BlackEnergy
+T67	IP_evil 6432 6445	5.149.254.114
+T68	IP_evil 6463 6473	5.9.32.230
+T69	IP_evil 6491 6505	31.210.111.154
+T70	IP_evil 6523 6535	88.198.25.92
+T71	IP_evil 6553 6563	146.0.74.7
+T72	IP_evil 6581 6592	188.40.8.72
+R15	use Arg1:T29 Arg2:T67	
+R16	use Arg1:T30 Arg2:T68	
+R17	use Arg1:T31 Arg2:T69	
+R18	use Arg1:T32 Arg2:T70	
+R19	use Arg1:T33 Arg2:T71	
+R20	use Arg1:T34 Arg2:T72	
+T73	sha1 6610 6650	AA67CA4FB712374F5301D1D2BAB0AC66107A4DF1
+T74	sha1 6668 6708	4C424D5C8CFEDF8D2164B9F833F7C631F94C5A4C
+T75	sha1 6726 6766	896FCACFF6310BBE5335677E99E4C3D370F73D96
+T76	sha1 6784 6824	069163E1FB606C6178E23066E0AC7B7F0E18506B
+T77	sha1 6842 6882	0B4BE96ADA3B54453BD37130087618EA90168D72
+T78	sha1 6900 6940	1A716BF5532C13FA0DC407D00ACDC4A457FA87CD
+T79	sha1 6958 6998	1A86F7EF10849DA7D36CA27D0C9B1D686768E177
+T80	sha1 7016 7056	1CBE4E22B034EE8EA8567E3F8EB9426B30D4AFFE
+T81	sha1 7074 7114	20901CC767055F29CA3B676550164A66F85E2A42
+T82	sha1 7132 7172	2C1260FD5CEAEF3B5CB11D702EDC4CDD1610C2ED
+T83	sha1 7190 7230	2D805BCA41AA0EB1FC7EC3BD944EFD7DBA686AE1
+T84	sha1 7248 7288	4BC2BBD1809C8B66EECD7C28AC319B948577DE7B
+T85	sha1 8408 8448	166D71C63D0EB609C4F77499112965DB7D9A51BB
+T86	sha1 8350 8390	72D0B326410E1D0705281FDE83CB7C33C67BC8CA
+T87	sha1 8292 8332	F3E41EB94C4D72A98CD743BBB02D248F510AD925
+T88	sha1 8234 8274	6D6BA221DA5B1AE1E910BBEAA07BD44AFF26A7C0
+T89	sha1 8176 8216	8AD6F88C5813C2B4CD7ABAB1D6C056D95D6AC569
+T90	sha1 8118 8158	16F44FAC7E8BC94ECCD7AD9692E6665EF540EEC4
+T91	sha1 8060 8100	E5A2204F085C07250DA07D71CB4E48769328D7DC
+T92	sha1 8002 8042	E40F0D402FDCBA6DD7467C1366D040B02A44628C
+T93	sha1 7944 7984	E1C2B28E6A35AEADB508C60A9D09AB7B1041AFB8
+T94	sha1 7886 7926	D91E6BB091551E773B3933BE5985F91711D6AC3B
+T95	sha1 7828 7868	CD07036416B3A344A34F4571CE6A1DF3CBB5783F
+T96	sha1 7770 7810	C7E919622D6D8EA2491ED392A0F8457E4483EAE9
+T97	sha1 7712 7752	BE319672A87D0DD1F055AD1221B6FFD8C226A6E2
+T98	sha1 7654 7694	BD87CF5B66E36506F1D6774FD40C2C92A196E278
+T99	sha1 7596 7636	B05E577E002C510E7AB11B996A1CD8FE8FDADA0C
+T100	sha1 7538 7578	A9ACA6F541555619159640D3EBC570CDCDCE0A0D
+T101	sha1 7480 7520	A427B264C1BD2712D1178912753BAC051A7A2F6C
+T102	sha1 7422 7462	84248BC0AC1F2F42A41CFFFA70B21B347DDC70E9
+T103	sha1 7364 7404	672F5F332A6303080D807200A7F258C8155C54AF
+T104	sha1 7306 7346	502BD7662A553397BBDCFA27B585D740A20C49FC
+R21	part_of Arg1:T73 Arg2:T35	
+R22	part_of Arg1:T74 Arg2:T36	
+R23	part_of Arg1:T75 Arg2:T37	
+R24	part_of Arg1:T76 Arg2:T38	
+R25	part_of Arg1:T77 Arg2:T39	
+R26	part_of Arg1:T78 Arg2:T40	
+R27	part_of Arg1:T79 Arg2:T41	
+R28	part_of Arg1:T80 Arg2:T42	
+R29	part_of Arg1:T81 Arg2:T43	
+R30	part_of Arg1:T82 Arg2:T44	
+R31	part_of Arg1:T83 Arg2:T45	
+R32	part_of Arg1:T84 Arg2:T46	
+R33	part_of Arg1:T104 Arg2:T47	
+R34	part_of Arg1:T103 Arg2:T48	
+R35	part_of Arg1:T102 Arg2:T49	
+R36	part_of Arg1:T101 Arg2:T50	
+R37	part_of Arg1:T100 Arg2:T51	
+R38	part_of Arg1:T99 Arg2:T52	
+R39	part_of Arg1:T98 Arg2:T53	
+R40	part_of Arg1:T97 Arg2:T66	
+R41	part_of Arg1:T96 Arg2:T65	
+R42	part_of Arg1:T95 Arg2:T64	
+R43	part_of Arg1:T94 Arg2:T63	
+R44	part_of Arg1:T93 Arg2:T62	
+R45	part_of Arg1:T92 Arg2:T61	
+R46	part_of Arg1:T91 Arg2:T60	
+R47	part_of Arg1:T90 Arg2:T59	
+R48	part_of Arg1:T89 Arg2:T58	
+R49	part_of Arg1:T88 Arg2:T57	
+R50	part_of Arg1:T87 Arg2:T56	
+R51	part_of Arg1:T86 Arg2:T55	
+R52	part_of Arg1:T85 Arg2:T54	
+T105	threatActor_name 1381 1392	BlackEnergy
+T106	threatActor_name 1585 1596	BlackEnergy
+T107	tool 1750 1758	F-Secure
+T108	threatActor_name 1667 1678	BlackEnergy
+T109	threatActor_name 1765 1776	BlackEnergy
+T110	malware 1765 1784	BlackEnergy malware
+T111	program_language 1792 1795	XML
+T112	string 1841 1844	DLL
+R53	use Arg1:T110 Arg2:T111	
+T113	tool 1876 1879	C&C
+T114	threatActor_name 1894 1905	BlackEnergy
+T115	sample_name 1937 1945	build_id
+T116	sample_function 1991 2043	identify individual infections or infection attempts
+T117	threatActor_name 2051 2062	BlackEnergy
+T118	malware 2051 2070	BlackEnergy malware
+R54	part_of Arg1:T115 Arg2:T114	
+T119	time 2252 2256	2015
+T120	string 2508 2511	SMI
+T121	time 2617 2621	2014
+T122	time 2751 2755	2015
+T23	malware 19 30	SSHBearDoor
+T26	threatActor_name 1184 1195	BlackEnergy
+T123	string 2260 2266	2015en
+T124	string 2269 2274	khm10
+T125	string 2277 2282	khelm
+T126	string 2285 2295	2015telsmi
+T127	string 2298 2304	2015ts
+T128	string 2307 2314	2015stb
+T129	string 2317 2323	kiev_o
+T130	string 2326 2333	brd2015
+T131	string 2336 2347	11131526kbp
+T132	string 2350 2360	02260517ee
+T133	string 2363 2374	03150618aaa
+T134	string 2377 2388	11131526trk
+T135	string 2463 2473	2015telsmi
+T136	string 2545 2551	2015en
+T137	threatActor_name 2643 2654	BlackEnergy
+T138	malware 2643 2661	BlackEnergy trojan
+T139	threatActor_name 2760 2771	BlackEnergy
+T140	threatActor_name 2811 2822	BlackEnergy
+T141	tool 2811 2832	BlackEnergy component
+T142	company 2845 2849	ESET
+R12	use Arg1:T139 Arg2:T141	
+T143	malware 2862 2880	Win32/KillDisk.NBB
+T144	malware 2883 2901	Win32/KillDisk.NBC
+T145	malware 2906 2924	Win32/KillDisk.NBD
+T146	attack_goal 2987 3096	damage to data stored on the computer :  it overwrites documents with random data and makes the OS unbootable
+R55	find Arg1:T142 Arg2:T143	
+R56	find Arg1:T142 Arg2:T144	
+R57	find Arg1:T142 Arg2:T145	
+R58	goal Arg1:T141 Arg2:T146	
+T147	time 3202 3215	November 2015
+T148	security_team 3191 3198	CERT-UA
+T149	threatActor_name 3152 3163	BlackEnergy
+T150	tool 3130 3138	KillDisk
+R59	use Arg1:T149 Arg2:T150	
+R60	release_time Arg1:T148 Arg2:T147	
+T151	target_crowd 3249 3269	news media companies
+R61	attack Arg1:T149 Arg2:T151	
+T152	time 3303 3307	2015
+R62	occur_time Arg1:T149 Arg2:T152	
+T153	company 3249 3259	news media
+T154	malware 3486 3504	Win32/KillDisk.NBB
+T155	target_crowd 3526 3541	media companies
+R63	attack Arg1:T154 Arg2:T155	
+T156	attack_goal 3561 3608	destroying various types of files and documents
+R64	goal Arg1:T154 Arg2:T156	
+T157	tool 3753 3761	KillDisk
+T158	location 3816 3823	Ukraine
+T159	industry 3796 3812	energy companies
+R65	located Arg1:T159 Arg2:T158	
+R66	attack Arg1:T157 Arg2:T159	
+T160	sample_function 3944 4054	it accepts a command line argument , to set a specific time delay when the destructive payload should activate
+T161	sample_function 4065 4134	deletes Windows Event Logs :  Application , Security , Setup , System
+T162	tool 4353 4361	KillDisk
+T163	industry 4386 4420	electricity distribution companies
+R67	part_of Arg1:T160 Arg2:T157	
+R68	part_of Arg1:T161 Arg2:T157	
+T164	sample_function 4244 4293	delete system files to make the system unbootable
+T165	attack_goal 4500 4527	sabotage industrial systems
+R69	goal Arg1:T162 Arg2:T165	
+R70	part_of Arg1:T164 Arg2:T162	
+T166	tool 4567 4575	KillDisk
+T167	sample_name 4666 4675	komut.exe
+T168	sample_name 4678 4693	sec_service.exe
+T169	sample_name 4779 4788	komut.exe
+T170	company 4847 4860	ASEM Ubiquity
+T171	string 4934 4937	ICS
+T172	OS_name 4905 4931	Industrial control systems
+R71	coreference Arg1:T171 Arg2:T172	
+T173	company 4948 4954	ELTIMA
+T174	reference_word 5021 5028	malware
+R72	coreference Arg1:T174 Arg2:T166	
+T175	reference_word 5136 5143	malware
+R73	coreference Arg1:T175 Arg2:T174	
+T176	threatActor_name 5226 5237	BlackEnergy
+T177	protocol 5382 5385	SSH
+T178	tool 5400 5412	Dropbear SSH
+R74	use Arg1:T176 Arg2:T178	
+T179	protocol 5439 5442	SSH
+T180	program_language 5476 5479	VBS
+T181	person 5456 5465	attackers
+R75	part_of Arg1:T181 Arg2:T176	
+T182	tool 5476 5484	VBS file
+R76	use Arg1:T181 Arg2:T182	
+T183	sample_name 5644 5656	dropbear.exe
+T184	protocol 5724 5727	SSH
+T185	person 5837 5846	attackers
+T186	protocol 6015 6018	SSH
+T187	tool 6073 6085	Dropbear SSH
+T188	company 6342 6346	ESET
+T189	malware 6388 6414	Win32/SSHBearDoor.A trojan

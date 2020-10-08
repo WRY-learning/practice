@@ -1,0 +1,179 @@
+T1	threatActor_name 0 5	Turla
+T2	threatActor_aliases 190 203	Venomous Bear
+T3	threatActor_aliases 206 214	Waterbug
+T4	threatActor_aliases 221 229	Uroboros
+T5	location 237 244	Russian
+T6	time 279 283	2014
+T7	time 317 321	2004
+T8	threatActor_name 168 173	Turla
+R1	coreference Arg1:T2 Arg2:T8	
+R2	located Arg1:T8 Arg2:T5	
+R3	first_found_time Arg1:T8 Arg2:T6	
+R4	coreference Arg1:T3 Arg2:T8	
+R5	coreference Arg1:T4 Arg2:T8	
+T9	government 413 431	government-related
+T10	government 398 408	diplomatic
+T11	location 458 473	the Middle East
+T12	location 476 483	Central
+T13	location 488 501	Far East Asia
+T14	location 504 510	Europe
+T15	location 513 536	North and South America
+T16	location 541 567	former Soviet bloc nations
+R6	attack Arg1:T8 Arg2:T10	
+R7	attack Arg1:T8 Arg2:T9	
+R8	located Arg1:T10 Arg2:T11	
+R9	located Arg1:T10 Arg2:T12	
+R10	located Arg1:T10 Arg2:T13	
+R11	located Arg1:T10 Arg2:T14	
+R12	located Arg1:T10 Arg2:T15	
+R13	located Arg1:T10 Arg2:T16	
+R14	located Arg1:T9 Arg2:T11	
+R15	located Arg1:T9 Arg2:T12	
+R16	located Arg1:T9 Arg2:T13	
+R17	located Arg1:T9 Arg2:T14	
+R18	located Arg1:T9 Arg2:T15	
+R19	located Arg1:T9 Arg2:T16	
+T17	time 570 574	2019
+T18	threatActor_name 588 593	Turla
+T19	malware 683 694	Topinambour
+T20	malware 699 711	aka Sunchoke
+R20	coreference Arg1:T20 Arg2:T19	
+R21	use Arg1:T18 Arg2:T19	
+T21	malware 851 862	Topinambour
+T22	time 957 961	2019
+R22	first_found_time Arg1:T21 Arg2:T22	
+T23	government 994 1006	governmental
+T27	malware 1193 1202	KopiLuwak
+T28	program_language 1313 1325	.php scripts
+T29	tool 1276 1285	WordPress
+T30	string 1470 1480	TrumpTower
+T31	string 1527 1536	RocketMan
+T32	string 1615 1625	MiamiBeach
+T34	attack_activity 1803 1822	Topinambour dropper
+T35	counter_measure 1892 1910	Softether VPN 4.12
+T36	counter_measure 1919 1927	psiphon3
+T37	counter_measure 1954 1964	activators
+T38	tool 1935 1951	Microsoft Office
+T39	company 1935 1944	Microsoft
+R26	part_of Arg1:T38 Arg2:T39	
+R27	part_of Arg1:T37 Arg2:T38	
+T40	tool 2027 2040	Windows shell
+T41	tool 1997 2007	.NET shell
+T42	tool 1969 1980	The dropper
+R28	part_of Arg1:T41 Arg2:T42	
+T43	tool 2107 2138	virtual private servers ( VPS )
+T44	protocol 2086 2089	SMB
+T45	tool 2230 2243	Windows shell
+R29	part_of Arg1:T44 Arg2:T43	
+T46	protocol 2283 2286	SMB
+T47	tool 2348 2352	VPSs
+T48	location 2368 2380	South Africa
+R30	located Arg1:T47 Arg2:T48	
+T49	IP_evil 2440 2447	197.168
+T50	IP 2534 2541	192.168
+T52	protocol 2650 2654	IPv6
+T53	protocol 2677 2681	IPv4
+T51	tool 2802 2812	JavaScript
+T54	tool 2815 2819	.NET
+T55	tool 2824 2834	PowerShell
+T56	OS_name 2951 2958	Windows
+T57	tool 3169 3179	PowerShell
+T58	malware 3244 3254	JavaScript
+T59	sha2 3447 3511	8bcf125b442f86d24789b37ce64d125b54668bc4608f49828392b5b66e364284
+T60	md5 3516 3548	110195ff4d7298ba9a186335c55b2d1f
+T61	tool 3282 3286	.NET
+T62	tool 3324 3334	PowerShell
+T63	time 3558 3577	2018.09.10 12:08:14
+T64	sample_name 3615 3630	topinambour.exe
+T65	function 3888 3903	make_some_noise
+T66	function 3987 3995	unpack_o
+T67	protocol 4364 4367	TCP
+T68	string 4326 4331	DWORD
+T69	tool 4252 4265	Windows shell
+T70	sample_name 4559 4569	cmd.exe /c
+T71	tool 4493 4506	Windows shell
+T72	OS_name 4252 4259	Windows
+R31	part_of Arg1:T69 Arg2:T72	
+T73	OS_name 4493 4500	Windows
+R32	part_of Arg1:T71 Arg2:T73	
+T75	tool 4657 4666	KopiLuwak
+T74	OS_name 2027 2034	Windows
+R33	part_of Arg1:T40 Arg2:T74	
+T76	tool 4689 4693	.NET
+T77	protocol 4764 4767	SMB
+T78	location 4800 4812	South Africa
+T79	tool 4793 4796	VPS
+R34	located Arg1:T79 Arg2:T78	
+T80	tool 4854 4867	Windows shell
+T81	OS_name 4854 4861	Windows
+R35	part_of Arg1:T80 Arg2:T81	
+T82	IP_evil 4930 4943	197.168.0.247
+T83	IP_evil 4998 5011	197.168.0.247
+T84	malware 5121 5130	KopiLuwak
+T85	tool 5142 5152	JavaScript
+T86	tool 5463 5466	RC4
+T87	tool 5843 5846	RC4
+T88	tool 5934 5940	stager
+T89	string 6327 6343	bYVAoFGJKj7rfs1M
+T90	OS_name 6379 6386	Windows
+T91	encryption_algo 6579 6611	01a8cbd328df18fd49965d68e2879433
+T92	tool 6670 6685	WordPress-based
+T93	tool 7346 7356	JavaScript
+T94	tool 7451 7461	JavaScript
+T95	function 7725 7750	success get_parse_command
+T96	tool 7669 7679	JavaScript
+T97	OS_name 7820 7827	Windows
+T98	tool 7891 7895	.NET
+T99	tool 7951 7961	JavaScript
+T100	tool 8002 8011	RocketMan
+T101	string 8104 8114	TrumpTower
+T102	url_evil 8383 8422	http://<config_ip> : <config_port>/file
+T103	url_evil 8528 8569	http://<config_ip> : <config_port>/update
+T104	url_evil 8769 8808	http://<config_ip> : <config_port>/exit
+T105	string 8862 8872	RocketMan!
+T106	tool 8978 8988	PowerShell
+T107	string 9049 9062	TimesNewRoman
+T108	tool 9249 9263	.NET RocketMan
+T109	tool 9417 9440	KopiLuwak ’s PowerShell
+T110	tool 9445 9459	.NET analogues
+T111	tool 9535 9545	JavaScript
+T112	OS_name 9567 9574	Windows
+T113	string 9930 9940	RocketMan!
+T114	string 9947 9957	TrumpTower
+T115	string 9965 9980	make_some_noise
+T116	tool 10047 10056	KopiLuwak
+T117	threatActor_name 10118 10123	Turla
+R36	part_of Arg1:T116 Arg2:T117	
+T118	url_evil 10202 10241	http://<config_ip> : <config_port>/file
+T119	url_evil 10242 10283	http://<config_ip> : <config_port>/update
+T120	url_evil 10284 10323	http://<config_ip> : <config_port>/exit
+T121	sha1 10326 10358	47870ff98164155f088062c95c448783
+T122	sha1 10359 10391	2c1e73da56f4da619c4c53b521404874
+T123	sha1 10392 10424	6acf316fed472300fa50db54fa6f3cbc
+T124	sha1 10425 10457	9573f452004b16eabd20fa65a6c2c1c4
+T125	sha1 10458 10490	3772a34d1b731697e2879bef54967332
+T126	sha1 10491 10523	d967d96ea5d0962e08844d140c2874e0
+T127	sha1 10524 10556	a80bbd753c07512b31ab04bd5e3324c2
+T128	sha1 10557 10589	37dc2eb8ee56aeba4dbd4cf46f87ae9a
+T129	sha1 10590 10622	710f729ab26f058f2dbf08664edb3986
+T130	IP_evil 10625 10637	197.168.0.73
+T131	IP_evil 10638 10650	197.168.0.98
+T132	IP_evil 10651 10664	197.168.0.212
+T133	IP_evil 10665 10678	197.168.0.243
+T134	IP_evil 10679 10692	197.168.0.247
+T135	IP_evil 10693 10706	197.168.0.250
+T136	tool 818 822	.NET
+R37	attack Arg1:T18 Arg2:T23	
+T137	encryption_algo 1508 1522	RC4 encryption
+T33	tool 1423 1427	.NET
+R23	part_of Arg1:T30 Arg2:T33	
+R24	part_of Arg1:T31 Arg2:T33	
+R25	part_of Arg1:T32 Arg2:T33	
+T25	tool 1034 1038	.NET
+T138	tool 1080 1090	JavaScript
+T24	malware 1091 1097	Trojan
+R38	part_of Arg1:T24 Arg2:T138	
+T139	tool 1156 1166	PowerShell
+T26	malware 1167 1173	Trojan
+R39	part_of Arg1:T26 Arg2:T139	
+T140	malware 1070 1079	KopiLuwak

@@ -1,0 +1,34 @@
+T1	threatActor_name 82 89	Taidoor
+T2	time 141 145	2009
+T4	threatActor_name 200 210	TEMP.Veles
+T5	threatActor_name 224 235	TEMP.Veles 
+T6	threatActor_aliases 213 221	XENOTIME
+T9	attack_goal 389 425	manipulate industrial safety systems
+T8	malware 348 354	TRITON
+T10	threatActor_name 428 445	The White Company
+T11	time 521 538	2017 through 2018
+T12	location 653 661	Pakistan
+T13	sub_activity 558 576	espionage campaign
+T14	attack_activity 584 601	Operation Shaheen
+R2	first_found_time Arg1:T1 Arg2:T2	
+R8	part_of Arg1:T13 Arg2:T14	
+T15	reference_word 310 319	The group
+R4	coreference Arg1:T6 Arg2:T4	
+R5	coreference Arg1:T15 Arg2:T5	
+R10	use Arg1:T15 Arg2:T8	
+R11	goal Arg1:T15 Arg2:T9	
+T16	reference_word 541 550	the group
+R6	coreference Arg1:T16 Arg2:T10	
+R9	launch Arg1:T16 Arg2:T14	
+R12	attack Arg1:T14 Arg2:T12	
+T3	location 177 183	Taiwan
+R1	attack Arg1:T1 Arg2:T3	
+T7	location 240 246	Russia
+R3	attack Arg1:T5 Arg2:T7	
+R7	occur_time Arg1:T14 Arg2:T11	
+T17	attack_goal 284 307	critical infrastructure
+R13	attack Arg1:T5 Arg2:T17	
+T18	government 612 622	government
+T19	government 627 649	military organizations
+R14	located Arg1:T18 Arg2:T12	
+R15	located Arg1:T19 Arg2:T12	

@@ -1,0 +1,63 @@
+T1	threatActor_name 79 89	BlackOasis
+T2	reference_word 174 183	The group
+T3	reference_word 342 349	A group
+T4	location 95 109	Middle Eastern
+R1	located Arg1:T1 Arg2:T4	
+T5	company 160 171	Gamma Group
+T6	time 660 664	2008
+T7	target_crowd 227 245	the United Nations
+T8	target_crowd 259 278	opposition bloggers
+T9	target_crowd 281 290	activists
+T10	target_crowd 293 321	regional news correspondents
+T11	tool 328 339	think tanks
+R2	coreference Arg1:T2 Arg2:T1	
+R3	attack Arg1:T2 Arg2:T7	
+R4	attack Arg1:T2 Arg2:T8	
+R5	attack Arg1:T2 Arg2:T9	
+R6	attack Arg1:T2 Arg2:T10	
+R7	attack Arg1:T2 Arg2:T11	
+T12	company 359 368	Microsoft
+T13	threatActor_name 420 430	BlackOasis
+T14	reference_word 462 471	the group
+T15	threatActor_name 516 529	BRONZE BUTLER
+T16	threatActor_aliases 532 545	REDBALDKNIGHT
+T17	threatActor_aliases 548 552	Tick
+R8	coreference Arg1:T16 Arg2:T15	
+R9	coreference Arg1:T17 Arg2:T15	
+T18	threatActor_name 555 568	BRONZE BUTLER
+T20	location 608 615	Chinese
+R11	located Arg1:T18 Arg2:T20	
+R12	first_found_time Arg1:T18 Arg2:T6	
+T21	threatActor_aliases 372 381	NEODYMIUM
+R13	use Arg1:T1 Arg2:T5	
+R14	coreference Arg1:T3 Arg2:T21	
+R15	find Arg1:T12 Arg2:T3	
+R16	coreference Arg1:T14 Arg2:T21	
+T22	reference_word 667 676	The group
+R17	coreference Arg1:T22 Arg2:T18	
+T23	location 695 703	Japanese
+T24	government 742 752	government
+T25	industry 755 768	biotechnology
+T26	industry 771 796	electronics manufacturing
+T27	industry 803 823	industrial chemistry
+R18	located Arg1:T24 Arg2:T23	
+R19	located Arg1:T25 Arg2:T23	
+R20	located Arg1:T26 Arg2:T23	
+R21	located Arg1:T27 Arg2:T23	
+R22	attack Arg1:T22 Arg2:T24	
+R23	attack Arg1:T22 Arg2:T25	
+R24	attack Arg1:T22 Arg2:T26	
+R25	attack Arg1:T22 Arg2:T27	
+T28	threatActor_name 826 834	Carbanak
+T29	threatActor_aliases 837 843	Anunak
+T30	threatActor_aliases 846 859	Carbon Spider
+R26	coreference Arg1:T29 Arg2:T28	
+R27	coreference Arg1:T30 Arg2:T28	
+T31	threatActor_name 862 870	Carbanak
+T32	industry 909 914	banks
+R28	attack Arg1:T31 Arg2:T32	
+T33	malware 962 970	Carbanak
+T34	threatActor_name 1006 1010	FIN7
+T35	malware 1062 1071	Carbanak 
+R29	use Arg1:T34 Arg2:T35	
+R30	use Arg1:T31 Arg2:T33	

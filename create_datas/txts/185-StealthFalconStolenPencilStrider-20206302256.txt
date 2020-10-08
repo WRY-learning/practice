@@ -1,0 +1,9 @@
+unknow
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+Stealth Falcon is a threat group that has conducted targeted spyware attacks against Emirati journalists , activists , and dissidents since at least 2012 .
+Circumstantial evidence suggests there could be a link between this group and the United Arab Emirates ( UAE ) government , but that has not been confirmed .
+Stolen Pencil is a threat group likely originating from DPRK that has been active since at least May 2018 .
+The group appears to have targeted academic institutions , but its motives remain unclear .
+Strider : ProjectSauron .
+Strider is a threat group that has been active since at least 2011 and has targeted victims in Russia , China , Sweden , Belgium , Iran , and Rwanda .

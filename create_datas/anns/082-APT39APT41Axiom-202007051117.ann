@@ -1,0 +1,49 @@
+T1	threatActor_name 96 101	APT39
+T2	time 174 178	2014
+R1	first_found_time Arg1:T1 Arg2:T2	
+T3	reference_word 181 185	They
+R2	coreference Arg1:T3 Arg2:T1	
+T4	target_crowd 204 221	telecommunication
+T5	attack_goal 247 275	collect personal information
+R3	attack Arg1:T3 Arg2:T4	
+R4	goal Arg1:T3 Arg2:T5	
+T6	location 293 297	Iran
+T7	threatActor_name 322 327	APT41
+T8	threatActor_name 447 452	APT41
+T9	time 487 491	2012
+R5	first_found_time Arg1:T8 Arg2:T9	
+T10	reference_word 494 503	The group
+R6	coreference Arg1:T10 Arg2:T8	
+T11	target_crowd 226 243	travel industries
+R7	attack Arg1:T3 Arg2:T11	
+T12	industry 204 221	telecommunication
+T13	industry 226 243	travel industries
+T14	industry 532 542	healthcare
+T15	industry 545 552	telecom
+T16	industry 555 565	technology
+T17	industry 572 593	video game industries
+T18	target_crowd 532 542	healthcare
+T19	target_crowd 545 552	telecom
+T20	target_crowd 555 565	technology
+T21	target_crowd 572 593	video game industries
+R8	attack Arg1:T10 Arg2:T18	
+R9	attack Arg1:T10 Arg2:T19	
+R10	attack Arg1:T10 Arg2:T20	
+R11	attack Arg1:T10 Arg2:T21	
+T22	threatActor_name 79 84	APT39
+T23	threatActor_aliases 87 93	Chafer
+R12	coreference Arg1:T23 Arg2:T22	
+T24	threatActor_name 612 617	Axiom
+T25	threatActor_aliases 620 627	Group72
+T26	threatActor_name 630 635	Axiom
+T27	reference_word 720 722	It
+T28	attack_activity 746 768	Operation SMN campaign
+R13	coreference Arg1:T27 Arg2:T26	
+R14	launch Arg1:T27 Arg2:T28	
+T29	reference_word 783 793	this group
+T30	threatActor_name 798 804	Winnti
+T31	malware 827 832	Winnt
+R15	coreference Arg1:T29 Arg2:T27	
+R17	use Arg1:T29 Arg2:T31	
+R18	use Arg1:T30 Arg2:T31	
+R20	coreference Arg1:T25 Arg2:T24	

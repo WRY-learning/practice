@@ -1,0 +1,207 @@
+T1	threatActor_name 0 5	Turla
+T2	malware 26 35	KopiLuwak
+T3	security_team 253 263	Proofpoint
+T4	threatActor_name 353 358	Turla
+T5	malware 371 388	.NET/MSIL dropper
+T6	malware 421 433	JS/KopiLuwak
+T7	time 808 828	October of this year
+T8	location 832 849	Hamburg , Germany
+T9	time 882 890	mid-July
+T10	threatActor_name 957 962	Turla
+T11	target_crowd 982 998	G20 participants
+T12	target_crowd 1066 1077	journalists
+T13	target_crowd 1084 1096	policymakers
+T14	threatActor_name 1099 1104	Turla
+T15	time 1213 1217	2008
+T16	government 1180 1209	United States Central Command
+T17	threatActor_name 1234 1239	Turla
+T18	company 1265 1269	RUAG
+T19	security_team 1333 1343	GovCERT.ch
+T20	security_team 1456 1466	Proofpoint
+T21	threatActor_name 1651 1656	Turla
+T22	attack_activity 1692 1706	spear phishing
+T23	attack_activity 1716 1729	watering hole
+T24	target_crowd 1939 1948	diplomats
+T25	target_crowd 1951 1958	experts
+T26	target_crowd 2045 2056	journalists
+T27	security_team 2145 2155	Proofpoint
+T28	threatActor_name 8043 8048	Turla
+T29	threatActor_name 8076 8081	Turla
+T30	threatActor_name 8151 8156	Turla
+T31	threatActor_name 8193 8198	Turla
+T32	threatActor_name 8268 8273	Turla
+T33	threatActor_name 8337 8342	Turla
+T34	threatActor_name 8412 8417	Turla
+T35	threatActor_name 8505 8510	Turla
+T36	threatActor_name 8580 8585	Turla
+T37	threatActor_name 8604 8609	Turla
+T38	threatActor_name 8692 8697	Turla
+T39	sha2 8084 8148	7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b
+T40	sha2 8201 8265	1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19
+T41	sha2 8345 8409	5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185
+T42	sha2 8513 8577	c978da455018a73ddbc9e1d2bf8c208ad3ec2e622850f68ef6b0aae939e5d2ab
+T43	url_evil 8612 8689	hxxp://www.huluwa.uk/wp-content/plugins/woocommerce/includes/class-wc-log.php
+T44	url_evil 8700 8822	hxxp://tresor-rare.com.hk/wp-content/plugins/wordpress-seo/vendor/xrstf/composer-php52/lib/xrstf/Composer52/LogsLoader.php
+R1	part_of Arg1:T39 Arg2:T29	
+R2	part_of Arg1:T40 Arg2:T31	
+R3	part_of Arg1:T41 Arg2:T33	
+R4	part_of Arg1:T42 Arg2:T35	
+R5	part_of Arg1:T43 Arg2:T37	
+R6	part_of Arg1:T44 Arg2:T38	
+T45	security_team 8014 8023	CERT-Bund
+T46	sub_activity 7886 7903	exfiltrating data
+T47	sub_activity 7906 7937	downloading additional payloads
+T48	sub_activity 7944 7972	executing arbitrary commands
+T49	OS_name 7667 7674	Windows
+T50	threatActor_name 7553 7558	Turla
+T51	reference_word 7989 7994	actor
+R7	coreference Arg1:T51 Arg2:T50	
+T52	program_language 7039 7042	RC4
+T53	program_language 7186 7189	RC4
+T54	sub_activity 7258 7287	exfiltrating files to the C&C
+T55	sub_activity 7299 7356	downloading files and saving them to the infected machine
+R8	use Arg1:T4 Arg2:T5	
+R9	use Arg1:T4 Arg2:T6	
+T56	malware 605 612	dropper
+T57	sub_activity 622 680	delivered with a benign and possibly stolen decoy document
+T58	malware 856 863	dropper
+R10	first_found_time Arg1:T58 Arg2:T9	
+T59	malware 1362 1371	KopiLuwak
+T60	malware 1417 1429	MSIL dropper
+R11	find Arg1:T20 Arg2:T60	
+T61	malware 1537 1546	KopiLuwak
+R12	launch Arg1:T21 Arg2:T22	
+R13	launch Arg1:T21 Arg2:T23	
+T62	malware 2126 2135	KopiLuwak
+T63	malware 2266 2278	MSIL dropper
+T64	sub_activity 2287 2358	dropping and executing both a PDF decoy and a Javascript ( JS ) dropper
+T65	malware 2333 2358	Javascript ( JS ) dropper
+T66	malware 2404 2414	JS dropper
+T67	sub_activity 2498 2562	decrypt and execute the actual KopiLuwak backdoor in memory only
+T68	security_team 2568 2578	Proofpoint
+T69	location 3530 3547	Hamburg , Germany
+T70	attack_activity 2847 2867	watering hole attack
+T71	string 3057 3116	c:\LocalDisc_D\MyProjects\Runer\Runer\obj\Release\Runer.pdb
+T72	malware 2874 2896	KopiLuwak MSIL dropper
+T73	malware 3185 3192	dropper
+T74	string 3219 3228	%APPDATA%
+T75	sample_name 3340 3401	Save the Date G20 Digital Economy Taskforce 23 24 October.pdf
+T76	security_team 3550 3560	Proofpoint
+T77	industry 3990 4038	Federal Ministry for Economic Affairs and Energy
+T79	sub_activity 4406 4430	creates a scheduled task
+T80	malware 4393 4399	Scr.js
+T78	malware 4227 4233	Scr.js
+T82	malware 4725 4734	KopiLuwak
+T83	program_language 4780 4783	RC4
+T84	sample_name 4843 4866	appidpolicyconverter.js
+T85	malware 4876 4882	Scr.js
+T86	string 4991 5074	C:\Users\[executing user]\AppData\Roaming\Microsoft\Protect\appidpolicyconverter.js
+T87	malware 5088 5094	Scr.js
+T88	sub_activity 5095 5143	executes various commands to fingerprint details
+T89	malware 5196 5205	KopiLuwak
+T90	string 5474 5502	%programfiles%\Kaspersky Lab
+T91	string 5512 5547	%programfiles (x86 )%\Kaspersky Lab
+T92	malware 5323 5330	dropper
+T93	domain 5559 5573	www.google.com
+T94	security_team 5656 5665	Kaspersky
+T95	string 5818 5852	%appdata%\Microsoft\Protect\~~.tmp
+T96	sample_name 5861 5884	appidpolicyconverter.js
+T97	string 6006 6022	gwVAj83JsiqTz5fG
+T98	malware 6061 6070	KopiLuwak
+T99	malware 6200 6209	KopiLuwak
+T100	security_team 6223 6232	Kaspersky
+T101	protocol 6359 6368	HTTP POST
+T102	protocol 6418 6422	HTTP
+T103	protocol 6525 6534	HTTP POST
+T104	string 6692 6708	Prc1MHxF_VB0ht7S
+T105	string 6764 6769	ridid
+T106	string 6801 6817	Prc1MHxF_VB0ht7S
+T107	string 7069 7101	01a8cbd328df18fd49965d68e2879433
+T108	malware 8588 8601	KopiLuwak C&C
+R14	part_of Arg1:T108 Arg2:T36	
+T109	sample_name 8439 8500	Save the Date G20 Digital Economy Taskforce 23 24 October.pdf
+T110	malware 8276 8334	KopiLuwak JavaScript Decryptor “ appidpolicyconverter.js ”
+R16	part_of Arg1:T110 Arg2:T32	
+T111	malware 8159 8190	KopiLuwak JS Dropper “ Scr.js ”
+T112	malware 8051 8073	KopiLuwak MSIL Dropper
+R15	part_of Arg1:T112 Arg2:T28	
+R17	part_of Arg1:T111 Arg2:T30	
+T113	malware 7848 7857	KopiLuwak
+T114	malware 7733 7751	JavaScript dropper
+T115	malware 7827 7836	KopiLuwak
+T116	sub_activity 7752 7781	profiles the victim ’s system
+T117	sub_activity 7784 7807	establishes persistence
+T118	sub_activity 7814 7845	installs the KopiLuwak backdoor
+T119	security_team 7412 7421	Kaspersky
+T120	malware 7230 7239	KopiLuwak
+T121	malware 2203 2215	MSIL dropper
+T123	reference_word 520 525	group
+R18	coreference Arg1:T123 Arg2:T4	
+R19	find Arg1:T3 Arg2:T4	
+T124	malware 2989 3001	MSIL dropper
+T125	malware 3310 3316	Scr.js
+T126	string 3804 3815	BE.D4.113.1
+T127	attack_goal 4336 4390	fingerprint the infected system and set up persistence
+T128	sub_activity 6124 6142	executed with eval
+R20	attack Arg1:T10 Arg2:T11	
+R21	attack Arg1:T10 Arg2:T12	
+R22	attack Arg1:T10 Arg2:T13	
+R23	attack Arg1:T21 Arg2:T24	
+R24	attack Arg1:T21 Arg2:T25	
+R25	attack Arg1:T21 Arg2:T26	
+R26	find Arg1:T27 Arg2:T62	
+R27	find Arg1:T27 Arg2:T121	
+T129	sample_name 3012 3021	Runer.exe
+T130	attack_activity 67 84	G20-themed attack
+R28	launch Arg1:T1 Arg2:T130	
+R29	use Arg1:T1 Arg2:T2	
+R30	attack Arg1:T14 Arg2:T16	
+R31	attack Arg1:T17 Arg2:T18	
+T131	tool 2744 2762	malicious document
+T132	tool 2765 2805	compressed package attached to an e-mail
+T133	sub_activity 4298 4332	running all the necessary commands
+T134	attack_goal 6831 6881	encode the infected system ’s OS installation date
+T122	malware 2710 2722	MSIL payload
+R32	part_of Arg1:T131 Arg2:T122	
+R33	part_of Arg1:T132 Arg2:T122	
+T135	sub_activity 2426 2474	installs a JS decryptor onto an infected machine
+R34	launch Arg1:T63 Arg2:T64	
+R35	launch Arg1:T66 Arg2:T135	
+R36	launch Arg1:T66 Arg2:T67	
+R37	launch Arg1:T78 Arg2:T133	
+R38	goal Arg1:T78 Arg2:T127	
+R39	launch Arg1:T80 Arg2:T79	
+T136	attack_goal 4457 4468	persistence
+R40	goal Arg1:T80 Arg2:T136	
+R41	launch Arg1:T87 Arg2:T88	
+R42	launch Arg1:T98 Arg2:T128	
+R43	launch Arg1:T120 Arg2:T54	
+R44	launch Arg1:T120 Arg2:T55	
+R45	launch Arg1:T114 Arg2:T116	
+R46	launch Arg1:T114 Arg2:T117	
+R47	launch Arg1:T114 Arg2:T118	
+R48	launch Arg1:T113 Arg2:T46	
+R49	launch Arg1:T113 Arg2:T47	
+R50	launch Arg1:T113 Arg2:T48	
+R51	part_of Arg1:T84 Arg2:T82	
+T81	sample_name 4647 4670	appidpolicyconverter.js
+T137	string 4671 4682	FileTypeXML
+T138	string 4683 4699	gwVAj83JsiqTz5fG
+T139	reference_word 4749 4765	second parameter
+R52	coreference Arg1:T139 Arg2:T137	
+R53	use Arg1:T82 Arg2:T83	
+T140	sub_activity 4791 4829	decrypt the encrypted JS backdoor code
+R54	launch Arg1:T82 Arg2:T140	
+R55	part_of Arg1:T71 Arg2:T124	
+T141	program_language 36 46	JavaScript
+T142	sub_activity 4883 4947	decodes a large base64 blob containing the JS backdoor decryptor
+R56	launch Arg1:T85 Arg2:T142	
+T143	malware 5255 5266	backdoor JS
+R57	part_of Arg1:T109 Arg2:T34	
+T144	location 1049 1063	member nations
+R58	attack Arg1:T10 Arg2:T144	
+T145	tool 3776 3788	creator tool
+R59	launch Arg1:T56 Arg2:T57	
+T146	industry 1274 1298	Swiss technology company
+R60	part_of Arg1:T18 Arg2:T146	
+R61	find Arg1:T19 Arg2:T17	

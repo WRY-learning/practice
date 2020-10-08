@@ -1,0 +1,15 @@
+Follow the Money : Dissecting the Operations of the Cyber Crime Group FIN6 .
+Reports on payment card intrusions and theft are often fragmentary .
+The focus is on various pieces of the attack and less about capturing the end-to-end cycle of compromise , data theft , illicit sale and use .
+The full scope of attacker activity traditionally occurs beyond the view of any one group of investigators .
+Incident response teams may have visibility into the technical aspects of the breach itself , while cyber crime researchers monitor the movement and sale of stolen data in the criminal underground .
+FireEye Threat Intelligence and iSIGHT Partners recently combined our research to illuminate the activities of one particular threat group : FIN6 .
+This combined insight has provided unique and extensive visibility into FIN6's operations , from initial intrusion to the methods used to navigate the victims' networks to the sale of the stolen payment card data in an underground marketplace .
+In this report , we describe FIN6's activities and tactics , techniques and procedures ( TTPs ) , and provide a glimpse into the criminal ecosystem that supports the "payoff" for their operations .
+FIN6 is a cyber criminal group intent on stealing payment card data for monetization .
+In 2015 , FireEye Threat Intelligence supported several Mandiant Consulting investigations in the hospitality and retail sectors where FIN6 actors had aggressively targeted and compromised pointof-sale ( POS ) systems , making off with millions of payment card numbers .
+Through iSIGHT , we learned that the payment card numbers stolen by FIN6 were sold on a "card shop" - an underground criminal marketplace used to sell or exchange payment card data .
+FIREEYE INTELLIGENCE TRACKS targeted Financial threats ( known as "FIN" groups ) capable of using a wide range of tools and tactics during their computer network intrusions .
+These groups employ a high level of planning , organization and task management to accomplish their goals .
+The threat actors generally target a particular demographic or type of organization , and their goal is financial gain from the data they steal .
+They may profit through direct sale of stolen data ( such as payment cards or personally identifiable information ) , unauthorized transfer of funds ( such as with stolen bank account or bank routing credentials ) ; or insider trading ( based on the theft of nonpublic business information ) .

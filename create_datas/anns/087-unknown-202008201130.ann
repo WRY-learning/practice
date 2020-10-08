@@ -1,0 +1,271 @@
+T1	time 143 155	October 2018
+T2	security_team 158 162	ESET
+T3	time 440 444	2015
+T4	malware 0 10	GreyEnergy
+T5	malware 26 33	Zebrocy
+T6	malware 223 233	GreyEnergy
+T7	malware 275 286	BlackEnergy
+T9	malware 295 306	BlackEnergy
+T11	location 409 418	Ukrainian
+T10	malware 317 325	Sandworm
+R1	coreference Arg1:T10 Arg2:T9	
+T13	malware 499 509	GreyEnergy
+T14	malware 652 662	GreyEnergy
+T16	malware 690 697	Zebrocy
+T17	malware 704 711	Zebrocy
+T18	malware 860 867	Zebrocy
+T19	malware 1230 1237	Zebrocy
+T20	malware 1140 1147	Zebrocy
+T21	malware 1324 1331	Zebrocy
+T22	malware 2400 2407	Zebrocy
+T23	malware 2772 2779	Zebrocy
+T24	malware 3234 3241	Zebrocy
+T25	malware 3524 3531	Zebrocy
+T26	malware 3644 3651	Zebrocy
+T27	malware 3735 3742	Zebrocy
+T28	malware 3828 3835	Zebrocy
+T29	malware 4275 4282	Zebrocy
+T8	malware 1809 1819	GreyEnergy
+T30	malware 2415 2425	GreyEnergy
+T31	malware 2485 2495	GreyEnergy
+T32	malware 2623 2633	GreyEnergy
+T33	malware 3219 3229	GreyEnergy
+T34	malware 3432 3442	GreyEnergy
+T35	malware 3656 3666	GreyEnergy
+T36	malware 3720 3730	GreyEnergy
+T37	malware 3784 3794	GreyEnergy
+T38	malware 3855 3865	GreyEnergy
+T39	malware 4219 4229	GreyEnergy
+T40	malware 4287 4297	GreyEnergy
+T42	threatActor_name 4252 4258	Sofacy
+T43	time 782 799	mid-November 2015
+T44	encryption_algo 1410 1413	MD5
+T45	tool 1741 1743	C2
+T46	vulnerability_cve 2553 2567	CVE-2017-11882
+T47	time 3352 3361	June 2018
+T48	time 3577 3584	June 28
+T49	time 3493 3507	June 21 , 2018
+T50	tool 3595 3597	C2
+T51	time 3746 3755	June 2018
+T52	time 3839 3848	June 2018
+T54	md5 1418 1450	7f20f7fbce9deee893dbce1a1b62827d
+T55	program_language 1163 1166	VBA
+T57	md5 1453 1485	170d2721b91482e5cabf3d2fec091151
+T58	md5 1488 1520	eae0b8997c82ebd93e999d4ce14dedf5
+T59	md5 1523 1555	a5cbf5a131e84cd2c0a11fca5ddaa50a
+T60	md5 1558 1590	c9e1b0628ac62e5cb01bf1fa30ac8317
+T61	IP_evil 1261 1275	193.23.181.151
+T62	location 903 918	the Middle East
+T63	location 921 927	Europe
+T64	location 932 936	Asia
+T65	string 1108 1111	APT
+T66	time 1130 1139	July 2018
+T67	tool 1597 1600	URL
+T68	url_evil 1653 1728	http://193.23.181.151/help-desk/remote-assistant-service/PostId.php?q={hex}
+T69	malware 1826 1835	FELIXROOT
+R2	coreference Arg1:T69 Arg2:T8	
+T70	security_team 1858 1865	FireEye
+T71	sample_name 1980 1991	Seminar.rtf
+T72	vulnerability_cve 2002 2015	CVE-2017-0199
+T73	url_evil 2072 2105	http://193.23.181.151/Seminar.rtf
+T74	vulnerability_cve 2154 2168	CVE-2017-11882
+T75	sample_name 2197 2208	Seminar.rtf
+T76	url_evil 2274 2348	http://193.23.181.151/ministerstvo-energetiki/seminars/2019/06/Seminar.rtf
+T77	IP_evil 2429 2442	185.217.0.124
+T78	sample_name 2583 2594	Seminar.rtf
+T79	tool 2807 2809	C2
+T80	tool 3000 3003	URL
+T81	url_evil 3006 3080	http://185.217.0.124/help-desk/remote-assistant-service/PostId.php?q={hex}
+T82	tool 3193 3196	C2s
+T84	IP_evil 3176 3189	185.217.0.124
+T83	IP_evil 3157 3171	193.23.181.151
+T85	sample_name 3399 3410	Seminar.rtf
+T86	IP_evil 3693 3707	193.23.181.151
+T87	IP_evil 3758 3771	185.217.0.124
+T90	malware 3866 3877	BlackEnergy
+T41	threatActor_name 750 756	Sofacy
+T15	threatActor_name 669 675	Sofacy
+T91	sha2 2811 2843	7f20f7fbce9deee893dbce1a1b62827d
+T92	sha2 2846 2878	170d2721b91482e5cabf3d2fec091151
+T93	sha2 2881 2913	3803af6700ff4f712cd698cee262d4ac
+T94	sha2 2916 2948	e3100228f90692a19f88d9acb620960d
+T95	sha2 2643 2675	78734cd268e5c9ab4184e1bbe21a6eb9
+T96	sha2 2108 2140	4de5adb865b5198b4f2593ad436fceff
+T97	sha2 1931 1963	11227eca89cc053fb189fac3ebf27497
+R3	part_of Arg1:T97 Arg2:T71	
+T98	tool 2056 2064	document
+R4	part_of Arg1:T96 Arg2:T98	
+T99	reference_word 211 215	they
+R5	coreference Arg1:T99 Arg2:T2	
+T100	reference_word 260 271	a successor
+R6	coreference Arg1:T100 Arg2:T6	
+R7	release_time Arg1:T2 Arg2:T1	
+T101	sub_activity 393 436	attacks against Ukrainian energy facilities
+R9	launch Arg1:T10 Arg2:T101	
+R10	occur_time Arg1:T101 Arg2:T3	
+T103	reference_word 481 484	its
+T104	location 585 592	Ukraine
+T105	target_crowd 546 556	industrial
+T106	target_crowd 561 572	ICS targets
+R12	located Arg1:T106 Arg2:T104	
+R13	located Arg1:T105 Arg2:T104	
+R14	attack Arg1:T13 Arg2:T105	
+R15	attack Arg1:T13 Arg2:T106	
+T12	security_team 595 617	Kaspersky Lab ICS CERT
+T108	reference_word 846 849	its
+T109	person 850 857	victims
+R16	part_of Arg1:T16 Arg2:T14	
+R17	part_of Arg1:T16 Arg2:T15	
+R18	find Arg1:T12 Arg2:T16	
+R19	occur_time Arg1:T41 Arg2:T43	
+R20	coreference Arg1:T108 Arg2:T41	
+R21	attack Arg1:T41 Arg2:T109	
+R22	located Arg1:T18 Arg2:T62	
+R23	located Arg1:T18 Arg2:T63	
+R24	located Arg1:T18 Arg2:T64	
+T110	attack_goal 974 992	government-related
+R25	goal Arg1:T18 Arg2:T110	
+T111	tool 1108 1124	APT Intel report
+T112	tool 1332 1339	samples
+R28	occur_time Arg1:T20 Arg2:T66	
+T113	tool 1159 1189	new VBA anti-sandboxing tricks
+R29	use Arg1:T20 Arg2:T113	
+T114	tool 1367 1373	server
+R30	use Arg1:T112 Arg2:T114	
+T115	sample_function 1377 1407	download additional components
+R31	goal Arg1:T112 Arg2:T115	
+T116	tool 1397 1407	components
+R32	part_of Arg1:T54 Arg2:T116	
+R33	part_of Arg1:T57 Arg2:T116	
+R34	part_of Arg1:T58 Arg2:T116	
+R35	part_of Arg1:T59 Arg2:T116	
+R36	part_of Arg1:T60 Arg2:T116	
+R37	use Arg1:T112 Arg2:T67	
+T117	sample_function 1609 1633	download additional data
+R38	goal Arg1:T67 Arg2:T117	
+R39	coreference Arg1:T68 Arg2:T67	
+R40	use Arg1:T8 Arg2:T45	
+R41	find Arg1:T70 Arg2:T8	
+T119	sub_activity 1770 1805	spearphishing email attachment sent
+R42	launch Arg1:T8 Arg2:T119	
+R43	use Arg1:T71 Arg2:T72	
+T120	sample_name 2018 2029	Seminar.rtf
+R44	located Arg1:T98 Arg2:T73	
+R45	use Arg1:T98 Arg2:T74	
+T121	person 2259 2266	victims
+T122	tool 2234 2240	server
+R46	located Arg1:T75 Arg2:T122	
+R47	use Arg1:T121 Arg2:T76	
+R48	use Arg1:T120 Arg2:T98	
+T123	tool 2186 2194	document
+R49	coreference Arg1:T75 Arg2:T123	
+R50	located Arg1:T75 Arg2:T76	
+R51	located Arg1:T117 Arg2:T68	
+T124	sha2 2507 2539	a541295eca38eaa4fde122468d633083
+R55	use Arg1:T78 Arg2:T46	
+T126	tool 2780 2787	samples
+T127	protocol 2697 2700	SMB
+T129	tool 2634 2640	sample
+R57	part_of Arg1:T95 Arg2:T129	
+T130	tool 2697 2705	SMB link
+T131	tool 2797 2803	server
+R59	use Arg1:T126 Arg2:T131	
+R60	goal Arg1:T131 Arg2:T79	
+R61	part_of Arg1:T91 Arg2:T79	
+R62	part_of Arg1:T92 Arg2:T79	
+R63	part_of Arg1:T93 Arg2:T79	
+R64	part_of Arg1:T94 Arg2:T79	
+R65	coreference Arg1:T81 Arg2:T80	
+T132	reference_word 2951 2955	They
+T133	sub_activity 2956 2980	retrieve additional data
+R66	goal Arg1:T132 Arg2:T133	
+R67	use Arg1:T132 Arg2:T80	
+T134	tool 3116 3127	two samples
+R68	use Arg1:T134 Arg2:T83	
+R69	use Arg1:T134 Arg2:T84	
+R70	goal Arg1:T134 Arg2:T82	
+T136	location 3311 3321	Kazakhstan
+T137	company 3287 3307	industrial companies
+R71	located Arg1:T137 Arg2:T136	
+T138	reference_word 3331 3335	them
+R73	coreference Arg1:T138 Arg2:T137	
+R74	occur_time Arg1:T138 Arg2:T47	
+T139	tool 3443 3449	sample
+R76	use Arg1:T26 Arg2:T50	
+R77	use Arg1:T35 Arg2:T50	
+R78	use Arg1:T36 Arg2:T86	
+R79	use Arg1:T27 Arg2:T86	
+R80	occur_time Arg1:T27 Arg2:T51	
+R81	occur_time Arg1:T36 Arg2:T51	
+R82	use Arg1:T37 Arg2:T87	
+T88	time 3795 3820	between May and June 2018
+R83	occur_time Arg1:T37 Arg2:T88	
+R84	use Arg1:T28 Arg2:T87	
+R85	occur_time Arg1:T28 Arg2:T52	
+T89	attack_activity 1770 1783	spearphishing
+T118	tool 1784 1789	email
+R86	use Arg1:T89 Arg2:T118	
+T142	attack_activity 2471 2484	spearphishing
+T125	tool 2485 2504	GreyEnergy document
+R54	use Arg1:T142 Arg2:T125	
+R87	part_of Arg1:T124 Arg2:T125	
+T128	attack_activity 3242 3255	spearphishing
+T135	tool 3256 3265	documents
+R72	use Arg1:T128 Arg2:T135	
+R88	attack Arg1:T135 Arg2:T137	
+T140	attack_activity 3366 3379	spearphishing
+T143	tool 3380 3388	document
+R75	use Arg1:T140 Arg2:T143	
+R89	coreference Arg1:T139 Arg2:T143	
+T144	person 3966 3972	victim
+T145	industry 3855 3883	GreyEnergy/BlackEnergy actor
+T146	reference_word 4080 4083	its
+T147	reference_word 4030 4040	This actor
+R90	coreference Arg1:T146 Arg2:T147	
+T148	sub_activity 4073 4108	update its tools and infrastructure
+R91	launch Arg1:T147 Arg2:T148	
+T149	sub_activity 4121 4165	avoid detection , tracking , and attribution
+R93	goal Arg1:T147 Arg2:T149	
+R92	attack Arg1:T145 Arg2:T144	
+T150	reference_word 4019 4021	it
+R94	coreference Arg1:T150 Arg2:T145	
+T151	sub_activity 3943 3983	penetrating into their victim's networks
+T152	sub_activity 3988 4027	exploiting any vulnerabilities it finds
+R95	goal Arg1:T145 Arg2:T151	
+R96	goal Arg1:T145 Arg2:T152	
+R97	coreference Arg1:T147 Arg2:T150	
+R98	part_of Arg1:T29 Arg2:T42	
+T153	reference_word 4311 4323	these groups
+R99	coreference Arg1:T153 Arg2:T29	
+R100	coreference Arg1:T153 Arg2:T40	
+T154	reference_word 4430 4436	groups
+R101	coreference Arg1:T154 Arg2:T153	
+T155	reference_word 4518 4522	they
+R103	coreference Arg1:T155 Arg2:T154	
+T53	tool 4453 4477	C2 server infrastructure
+R102	use Arg1:T154 Arg2:T53	
+R11	coreference Arg1:T103 Arg2:T13	
+R104	located Arg1:T9 Arg2:T11	
+T102	industry 609 617	ICS CERT
+R8	find Arg1:T111 Arg2:T20	
+T107	tool 2359 2365	server
+R105	coreference Arg1:T77 Arg2:T107	
+R106	use Arg1:T22 Arg2:T107	
+R107	use Arg1:T30 Arg2:T107	
+R52	use Arg1:T125 Arg2:T46	
+T156	reference_word 2597 2610	This document
+R56	located Arg1:T129 Arg2:T130	
+R58	attack Arg1:T135 Arg2:T138	
+T157	attack_activity 3532 3545	spearphishing
+T158	tool 3546 3554	document
+R108	use Arg1:T157 Arg2:T158	
+T141	reference_word 4058 4061	its
+R109	coreference Arg1:T141 Arg2:T147	
+T159	reference_word 485 496	predecessor
+R110	coreference Arg1:T159 Arg2:T9	
+T160	tool 1192 1199	details
+R27	part_of Arg1:T160 Arg2:T111	
+R111	part_of Arg1:T61 Arg2:T160	
+T56	tool 1238 1248	C2 servers
+R26	part_of Arg1:T56 Arg2:T160	
+R53	coreference Arg1:T156 Arg2:T125	

@@ -1,0 +1,103 @@
+Octopus-infested seas of Central Asia : Russian-language actor exploits hype over Telegram ban in Central Asia .		others others others location location others others person others others others sub_activity sub_activity others location location others
+Release_Time : 2018-10-15 Report_URL : https://securelist.com/octopus-infested-seas-of-central-asia/88200/ For the last two years we have been monitoring a Russian-language cyberespionage actor that focuses on Central Asian users and diplomatic entities .		others others others others others others others others others others others others others others others others others others others others person others others others location location person others sub_activity sub_activity others
+We named the actor DustSquad and have provided private intelligence reports to our customers on four of their campaigns involving custom Android and Windows malware .		others others reference_word reference_word threatActor_name others others others others others others others others others others others others others others others others OS_name others OS_name others others
+In this blogpost we cover a malicious program for Windows called Octopus that mostly targets diplomatic entities .		others others others others others others others others others OS_name others malware others others others sub_activity sub_activity others
+The name was originally coined by ESET in 2017 after the 0ct0pus3.php script used by the actor on their old C2 servers .		reference_word reference_word others others others others security_team others time others others sample_name sub_activity sub_activity sub_activity sub_activity person others others others tool others others
+We also started monitoring the malware and , using Kaspersky Attribution Engine based on similarity algorithms , discovered that Octopus is related to DustSquad , something we reported in April 2018 .		others others others others reference_word reference_word others others others security_team tool tool others others others others others others others malware others others others threatActor_name others others others others others time time others
+In our telemetry we tracked this campaign back to 2014 in the former Soviet republics of Central Asia ( still mostly Russian-speaking ) , plus Afghanistan .		others others others others others reference_word reference_word others others time others others location location location others location location others others others others others others others location others
+In the case of Octopus , DustSquad used Delphi as their programming language of choice , which is unusual for such an actor .		others others others others malware others threatActor_name others program_language others others others others others others others others others others others others others person others
+Among others exceptions are the Russian-language Zebrocy ( Sofacy's Delphi malware ) , the Hindi-language DroppingElephant and the Turkish-language StrongPity .		others others others others others others malware others threatActor_name others program_language others others others others others malware others others others malware others
+Although we detected Octopus victims that were also infected with Zebrocy/Sofacy , we didn't find any strong similarities and we don't consider the two actors to be related .		others others others malware target_crowd others others others others others others others others others others others others others others others others others others others others others others others others others others
+In April 2018 we discovered a new Octopus sample pretending to be Telegram Messenger with a Russian interface .		others time time others others others others malware others sub_activity sub_activity sub_activity tool tool others others others others others
+We couldn't find any legitimate software that this malware appears to be impersonating ; in fact , we don't believe it exists .		others others others others others others others others reference_word reference_word others others others others others others others others others others others others others others others
+The Trojan uses third-party Delphi libraries like The Indy Project for JSON-based C2 communications and TurboPower Abbrevia ( sourceforge.net/projects/tpabbrevia ) for compression .		reference_word reference_word others tool program_language tool others sub_activity sub_activity sub_activity others others tool sample_function others tool tool others others others others sub_activity others
+Malware persistence is basic and achieved via the system registry .		reference_word sample_function others others others others others others sub_activity sub_activity others
+The server side uses commercial hosting in different countries with .php scripts deployed .		others tool others others sub_activity sub_activity others others others others sub_activity sub_activity others others
+Kaspersky Lab products detect the Octopus Trojan as Trojan.Win32.Octopus.gen .		security_team security_team others others others malware others others malware others
+The attackers used the potential Telegram ban in Kazakhstan to push its dropper as an alternative communication software for the political opposition .		others person others others others sub_activity sub_activity others location others others others others others others others others others others others others others others
+This actor previously used spear phishing to spread malware .		reference_word reference_word others others attack_activity attack_activity others sub_activity sub_activity others
+dvkmailer.zip : 979eff03faeaeea5310df53ee1a2fc8e .		sample_name others md5 others
+CsvHelper.dll : d6e813a393f40c7375052a15e940bc67 .		sample_name others md5 others
+Telegram Messenger.exe : 664a15bdc747c560c11aa0cf1a7bf06e .		sample_name sample_name others md5 others
+TelegramApi.dll : 87126c8489baa8096c6f30456f5bef5e .		sample_name others md5 others
+Settings.json : d41d8cd98f00b204e9800998ecf8427e .		sample_name others md5 others
+Before any user interaction , inside the FormCreate() function the launcher checks for a file named TelegramApi.dll in the same directory .		others others person others others others others function others others others others tool sub_activity sub_activity sub_activity sub_activity sub_activity sample_name others others others others others
+If it exists , the launcher copies the network module to the startup directory as Java.exe and runs it .		others others others others others tool sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others sample_name others others others others
+Delphi Visual Component Library ( VCL ) programs are based on event handlers for form elements .		program_language tool tool tool others tool others sub_activity others others others others others others others others others
+Such programs are extremely large , but all this code is mostly used to handle the visual components and run-time libraries .		reference_word reference_word others others others others others others reference_word reference_word others others others others sample_function sample_function sample_function sample_function others sample_function sample_function others
+There are only three programmer-defined handlers for controlling elements inside the Octopus launcher .		others others others sub_activity sub_activity sub_activity others sample_function sample_function others others malware tool others
+Makes the network module persistent via Startup directory and runs it .		others others sub_activity sub_activity others others others others others others others others
+Button1Click() : Shows the explorer dialog window to choose the "mailing file" .		function others others others sub_activity sub_activity sub_activity sub_activity sub_activity others sub_activity sub_activity others sub_activity sub_activity others others
+DateTimePicker1Click() : Shows calendar to select the "mailing date" .		function others others others sub_activity sub_activity others sub_activity sub_activity others sub_activity sub_activity others others
+TelegramApi.dll : 87126c8489baa8096c6f30456f5bef5e .		sample_name others md5 others
+Despite the file extension , this network module is a self-sufficient portable executable file and not a dynamic-link library .		others others others others others reference_word reference_word reference_word others others sub_activity sub_activity sub_activity sub_activity others others others others others others
+The first sample checks for files with names like 1?????????		others sub_activity sub_activity others others others others others others others others others others others others others others others others
+.		others
+* in the user's temporary folder and deletes any files it finds .		others others others person others others others others sub_activity sub_activity sub_activity sub_activity sub_activity others
+Then it creates .profiles.ini in the Application Data directory where the malware stores its log .		others reference_word sub_activity sample_name others others sub_activity sub_activity sub_activity others others others others others others others
+All network modules consist of hardcoded IP addresses belonging to commercial web-hosting services based in different countries .		others sub_activity sub_activity others others tool protocol tool others others sub_activity sub_activity sub_activity others others others others others
+The operators simply deploy their first-stage .php script in them , which will check the connection and get the actual C2 server domain name using an HTTP GET request .		others person others sub_activity sub_activity sub_activity sub_activity sub_activity others reference_word others others others sub_activity sub_activity sub_activity others sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others others protocol function others others
+The network module checks against a 32-digit hardcoded victim id and sends the gathered data to the C2 using a HTTP POST request .		reference_word reference_word reference_word sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others others protocol function others others
+In terms of programming , this id is strange , because the malware simultaneously 'fingerprints' its victim with an MD5 hash of its system data .		others others others others others others others others others others others others others others others others others others others others encryption_algo others others others others others others
+All communication with the C2s is based on JSON-formatted data and the HTTP protocol .		others sub_activity sub_activity sub_activity tool others others others sub_activity sub_activity others others protocol others others
+For that , the developers used The Indy Project ( indyproject.org ) publicly available library as well as the third-party TurboPower Abbrevia for compression .		others others others others person others sub_activity sub_activity sub_activity others sample_name others others others sub_activity others others others others others tool tool others sub_activity others
+After all the initial HTTP GET requests , the malware starts to gather JSON-formatted system data .		others others others others protocol function others others reference_word reference_word others others sub_activity sub_activity sub_activity sub_activity others
+For all the fixed drives in the system , the network module stores the disk name and size , as well as computer and user name , Windows directory , host IP , etc .		others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others others
+The 'id' field is the victim's fingerprint for which the malware actively uses the Windows Management Instrumentation mechanism .		others others others others others others others others others others others others others others others others OS_name tool tool others others
+Besides the Trojan itself , the Octopus developers used the password dumping utility fgdump .		others others others others others others malware person others others others others others tool others
+Political entities in Central Asia have been targeted throughout 2018 by different actors , including IndigoZebra , Sofacy ( with Zebrocy malware ) and most recently by DustSquad ( with Octopus malware ) .		target_crowd target_crowd others location location others others others others time others others person others others threatActor_name others threatActor_name others others malware others others others others others others threatActor_name others others malware others others others
+From our experience we can say that the interest shown by threat actors in this region is now high , and the traditional 'players' have been joined by relative newcomers like DustSquad that have sprung up locally .		others others others others others others others others others others others others person others reference_word reference_word others others others others others others others others others others others others others others others others threatActor_name others others others others others others
+DustSquad : 87126c8489baa8096c6f30456f5bef5e .		threatActor_name others md5 others
+DustSquad : ee3c829e7c773b4f94b700902ea3223c .		threatActor_name others md5 others
+DustSquad : 38f30749a87dcbf156689300737a094e .		threatActor_name others md5 others
+DustSquad : 6e85996c021d55328322ce8e93b31088 .		threatActor_name others md5 others
+DustSquad : 7c0050a3e7aa3172392dcbab3bb92566 .		threatActor_name others md5 others
+DustSquad : 2bf2f63c927616527a693edf31ecebea .		threatActor_name others md5 others
+DustSquad : d9ad277eb23b6268465edb3f68b12cb2 .		threatActor_name others md5 others
+DustSquad : 031e4900715564a21d0217c22609d73f .		threatActor_name others md5 others
+DustSquad : 1610cddb80d1be5d711feb46610f8a77 .		threatActor_name others md5 others
+DustSquad : 1ce9548eae045433a0c943a07bb0570a .		threatActor_name others md5 others
+DustSquad : 3a54b3f9e9bd54b4098fe592d805bf72 .		threatActor_name others md5 others
+DustSquad : 546ab9cdac9a812aab3e785b749c89b2 .		threatActor_name others md5 others
+DustSquad : 5cbbdce774a737618b8aa852ae754251 .		threatActor_name others md5 others
+DustSquad : 688854008f567e65138c3c34fb2562d0 .		threatActor_name others md5 others
+DustSquad : 6fda541befa1ca675d9a0cc310c49061 .		threatActor_name others md5 others
+DustSquad : 73d5d104b34fc14d32c04b30ce4de4ae .		threatActor_name others md5 others
+DustSquad : 88ad67294cf53d521f8295aa1a7b5c46 .		threatActor_name others md5 others
+DustSquad : a90caeb6645b6c866ef60eb2d5f2d0c5 .		threatActor_name others md5 others
+DustSquad : ae4e901509b05022bbe7ef340f4ad96c .		threatActor_name others md5 others
+DustSquad : ca743d10d27277584834e72afefd6be8 .		threatActor_name others md5 others
+DustSquad : ce45e69eac5c55419f2c30d9a8c9104b .		threatActor_name others md5 others
+DustSquad : df392cd03909ad5cd7dcea83ee6d66a0 .		threatActor_name others md5 others
+DustSquad : e149c1da1e05774e6b168b6b00272eb4 .		threatActor_name others md5 others
+DustSquad : f625ba7f9d7577db561d4a39a6bb134a .		threatActor_name others md5 others
+DustSquad : fc8b5b2f0b1132527a2bcb5985c2fe6b .		threatActor_name others md5 others
+DustSquad : f7b1503a48a46e3269e6c6b537b033f8 .		threatActor_name others md5 others
+DustSquad : 4f4a8898b0aa4507dbb568dca1dedd38 .		threatActor_name others md5 others
+DustSquad : 85.93.31.141 .		threatActor_name others IP_evil others
+DustSquad : 104.223.20.136 .		threatActor_name others IP_evil others
+DustSquad : 5.8.88.87 .		threatActor_name others IP_evil others
+DustSquad : 103.208.86.237 .		threatActor_name others IP_evil others
+DustSquad : 185.106.120.240 .		threatActor_name others IP_evil others
+DustSquad : 204.145.94.101 .		threatActor_name others IP_evil others
+DustSquad : 5.188.231.101 .		threatActor_name others IP_evil others
+DustSquad : 103.208.86.238 .		threatActor_name others IP_evil others
+DustSquad : 185.106.120.27 .		threatActor_name others IP_evil others
+DustSquad : 204.145.94.10 .		threatActor_name others IP_evil others
+DustSquad : hovnanflovers.com DustSquad : latecafe.in .		threatActor_name others domain_evil threatActor_name others domain_evil others
+DustSquad : certificatesshop.com .		threatActor_name others domain_evil others
+DustSquad : blondehairman.com .		threatActor_name others domain_evil others
+DustSquad : porenticofacts.com .		threatActor_name others domain_evil others
+DustSquad : 148.251.185.168 .		threatActor_name others IP_evil others
+DustSquad : 185.106.120.46 .		threatActor_name others IP_evil others
+DustSquad : 185.106.120.47 .		threatActor_name others IP_evil others
+DustSquad : 46.249.52.244 .		threatActor_name others IP_evil others
+DustSquad : 5.255.71.84 .		threatActor_name others IP_evil others
+DustSquad : 5.255.71.85 .		threatActor_name others IP_evil others
+DustSquad : 88.198.204.196 .		threatActor_name others IP_evil others
+DustSquad : 92.63.88.142 .		threatActor_name others IP_evil others
+DustSquad : giftfromspace.com .		threatActor_name others domain_evil others
+DustSquad : mikohanzer.website .		threatActor_name others domain_evil others
+DustSquad : humorpics.download .		threatActor_name others domain_evil others
+DustSquad : desperados20.es .		threatActor_name others domain_evil others
+DustSquad : prom3.biz.ua .		threatActor_name others domain_evil others

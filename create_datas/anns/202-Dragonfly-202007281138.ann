@@ -1,0 +1,107 @@
+T1	threatActor_name 10 19	Dragonfly
+T2	time 230 241	September 6
+T3	person 244 252	Symantec
+T4	threatActor_name 278 287	Dragonfly
+T5	company 324 340	energy companies
+R1	attack Arg1:T4 Arg2:T5	
+T6	time 441 445	2014
+T7	attack_activity 387 400	Dragonfly 2.0
+T8	time 466 470	2014
+T9	threatActor_name 483 492	Dragonfly
+T10	reference_word 684 696	The campaign
+T11	company 705 721	energy companies
+R2	coreference Arg1:T10 Arg2:T9	
+R3	attack Arg1:T10 Arg2:T11	
+T12	malware 753 774	spear-phishing emails
+R4	use Arg1:T10 Arg2:T12	
+T13	malware 832 838	Trojan
+R5	use Arg1:T10 Arg2:T13	
+T14	malware 854 861	Trojans
+T15	threatActor_name 950 959	Dragonfly
+T16	industry 982 995	energy sector
+T17	security_team 1016 1027	McAfee Labs
+T18	security_team 1036 1060	Advanced Threat Research
+T19	industry 1106 1120	pharmaceutical
+T20	industry 1123 1132	financial
+T21	industry 1139 1149	accounting
+R6	attack Arg1:T15 Arg2:T16	
+R7	attack Arg1:T15 Arg2:T19	
+R8	attack Arg1:T15 Arg2:T20	
+R9	attack Arg1:T15 Arg2:T21	
+T22	malware 1448 1462	spear phishing
+T23	malware 1465 1479	watering holes
+T24	tool 1498 1523	supply-chain technologies
+T25	malware 1635 1643	backdoor
+T26	company 2186 2192	McAfee
+T27	malware 2288 2294	Trojan
+T28	time 2302 2306	2017
+T29	md5 2352 2384	da9d8c78efe0c6c8be70e6b857400fb1
+T30	sha2 2396 2460	fc54d8afd2ce5cb6cc53c46783bf91d0dd19de604308d536827320826bc36ed9
+T31	time 2548 2557	July 2013
+T32	md5 2575 2607	4bfdda1a5f21d56afdc2060b9ce5a170
+T33	sha2 2619 2683	07bd08b07de611b2940e886f453872aa8d9b01f9d3c61d872d6cfe8cde3b50d4
+T34	sample_name 2696 2702	fl.exe
+T35	time 2805 2809	2013
+T36	time 2846 2850	2013
+T37	time 2965 2969	2017
+T38	time 3045 3049	2013
+T39	malware 3024 3032	backdoor
+T40	time 3087 3091	2017
+T41	malware 3092 3100	backdoor
+T42	tool 3141 3151	TeamViewer
+T43	tool 3396 3406	TeamViewer
+T44	company 3428 3434	Crysys
+T45	malware 3497 3504	TeamSpy
+T46	string 3559 3591	708ceccae2c27e32637fd29451aef4a5
+T47	time 3659 3686	2011:09:07 – 09:27:58+01:00
+T48	malware 3691 3698	TeamSpy
+T49	target_crowd 3732 3767	political and human right activists
+T50	location 3782 3816	Commonwealth of Independent States
+T51	location 3849 3865	eastern European
+R10	located Arg1:T49 Arg2:T50	
+R11	located Arg1:T49 Arg2:T51	
+R12	attack Arg1:T48 Arg2:T49	
+T52	threatActor_name 4047 4056	Dragonfly
+T53	malware 4008 4015	TeamSpy
+T54	malware 4103 4110	TeamSpy
+T55	threatActor_name 4135 4144	Dragonfly
+T56	time 4211 4215	2017
+T57	malware 4299 4310	BlackEnergy
+T58	malware 4385 4396	BlackEnergy
+T59	time 4409 4413	2016
+T60	time 4460 4464	2017
+T61	attack_activity 4438 4447	Dragonfly
+R13	occur_time Arg1:T58 Arg2:T59	
+R14	occur_time Arg1:T61 Arg2:T60	
+T62	malware 4684 4695	BlackEnergy
+T63	location 4746 4753	Ukraine
+T64	time 4757 4774	October 31 , 2015
+T65	malware 4831 4849	BlackEnergy Trojan
+R15	located Arg1:T62 Arg2:T63	
+R16	first_found_time Arg1:T62 Arg2:T64	
+T66	malware 4970 4981	BlackEnergy
+T67	threatActor_name 4986 4995	Dragonfly
+T68	OS_name 5216 5223	Windows
+T69	malware 5374 5383	backdoors
+T70	threatActor_name 5730 5739	Dragonfly
+T71	threatActor_name 5867 5876	Dragonfly
+T72	time 6062 6066	2015
+T73	location 6081 6090	Ukrainian
+T74	malware 6107 6118	BlackEnergy
+T75	security_team 6171 6178	Intezer
+R17	occur_time Arg1:T74 Arg2:T72	
+R18	first_found_time Arg1:T7 Arg2:T6	
+T76	time 352 356	2017
+R19	occur_time Arg1:T4 Arg2:T76	
+R20	occur_time Arg1:T9 Arg2:T8	
+T77	reference_word 1362 1371	the group
+R21	coreference Arg1:T77 Arg2:T15	
+R22	use Arg1:T77 Arg2:T22	
+R23	use Arg1:T77 Arg2:T23	
+R24	use Arg1:T77 Arg2:T24	
+R25	occur_time Arg1:T27 Arg2:T28	
+R27	use Arg1:T41 Arg2:T42	
+T78	encryption_algo 2345 2348	MD5
+T79	encryption_algo 2385 2392	SHA-256
+T80	encryption_algo 2568 2571	MD5
+T81	encryption_algo 2608 2615	SHA-256

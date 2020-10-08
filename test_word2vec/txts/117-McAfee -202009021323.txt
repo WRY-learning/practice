@@ -1,0 +1,62 @@
+‘ Operation Oceansalt ’ Attacks South Korea , U.S. , and Canada With Source Code From Chinese Hacker Group .
+Release_Time : 2018-10-18 .
+Report_URL : file:///C:/Users/86188/Desktop/rp-operation-oceansalt.pdf .
+The third wave included a Word document with the same type of macro code as the Excel files .
+The document contained fake information related to the financials of the Inter-Korean Cooperation Fund .
+The document was created at the same time as the attacks on South Korean public infrastructure officials .
+Lion authored both Excel and Word documents .
+This Word document used a different South Korean compromised website to distribute the implant .
+In this wave , an additional Excel document appeared with telephone numbers and contact information connected to the content of the Word document .
+We identified a small number of targets outside of South Korea , as the attacks expanding their scope .
+We have yet to identify the malicious documents involved in delivering this implant to the victims .
+Because Waves One and Two contained different distribution servers for the implant , we expect this wave had its own as well .
+According to McAfee telemetry data between August 10 and 14 , these North American targets fall within several industries :
+ Financial United States .
+Health Care United States .
+Health Care United States .
+Telecommunications Canada .
+Financial United States .
+Agriculture and Industrial United States .
+Financial United States .
+Telecommunications Canada .
+Financial Canada .
+Financial Technology United States .
+Government United States .
+The Oceansalt implant was not limited to just one sample .
+We discovered additional variants using different control servers .
+As we continued to investigate , we found more samples , though obfuscated to avoid detection .
+The samples were all identical to the initial Oceansalt implant .
+The fifth-wave samples were compiled between June 13 and July 17 and were submitted to us by organizations in South Korea and the United States .
+38216571e9a9364b509e52ec19fae61b .
+531dee019792a089a4589c2cce3dac95 .
+0355C116C02B02C05D6E90A0B3DC107C .
+74A50A5705E2AF736095B6B186D38DDF .
+45C362F17C5DC8496E97D475562BEC4D .
+C1773E9CF8265693F37DF1A39E0CBBE2 .
+D14DD769C7F53ACEC482347F539EFDF4 .
+B2F6D9A62C63F61A6B33DC6520BFCCCD .
+76C8DA4147B08E902809D1E80D96FBB4 .
+The campaign employed multiple control servers .
+We observed the following IP addresses in implants dating from June to July .
+172.81.132.62
+211.104.160.196
+27.102.112.179
+158.69.131.78 .
+Our telemetry shows this campaign is operational in several countries .
+Address 211.104.160.196 indicates infections in Costa Rica , the United States , and the Philippines .
+Address 158.69.131.78 reveals additional infections in the United States and Canada .
+These machines resided in numerous countries from August 18–21 .
+Because this operation involves multifunction implants , these machines are likely to be part of a larger covert listener network .
+The Advanced Threat Research team has observed this kind of targeting in similar operations that compromise victims as control server relays .
+Our initial investigation into earlier similar samples led us to a variant—bf4f5b4ff7ed9c7275496c07f9836028 , compiled in 2010 .
+Oceansalt uses portions of code from this sample ;  their overall similarity is 21% .
+The reused code is unique , is not considered a common library or common code , and serves reconnaissance and control .
+The misclassified sample used a Comment Crew domain .
+Further investigation revealed the misclassified sample is 99% like Seasalt ( 5e0df5b28a349d46ac8cc7d9e5e61a96 ) , a Comment Crew implant reported to have been used in their operations around 2010 .
+Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant .
+Based on the overall techniques , Oceansalt is unlikely to signal a rebirth of Comment Crew , raising the question of how the actor obtained the Seasalt code .
+Was it provided to this or another actor , or was it leaked and discovered by this actor ?
+We have been unable to find any evidence in underground or public forums that suggest the source code of Seasalt has been leaked or made available .
+We discovered another batch of samples compiled on July 16–17 that are obfuscated and essentially the same implant , with minor changes such as the control servers .
+Some of the samples are missing reverse-shell functionality , indicating that this actor has access to Seasalt source code and can compile implants from the original source .
+This could demonstrate is a level of collaboration between two nation-states on their cyber offensive programs .

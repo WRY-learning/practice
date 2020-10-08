@@ -1,0 +1,339 @@
+T1	threatActor_name 14 20	Sednit
+T2	malware 151 162	Seduploader
+T3	protocol 179 183	HTTP
+T4	string 184 188	POST
+T5	tool 200 206	Google
+T6	string 240 243	URI
+R1	use Arg1:T2 Arg2:T6	
+R2	part_of Arg1:T4 Arg2:T3	
+T7	protocol 258 262	HTTP
+T8	string 404 407	URI
+T9	tool 423 429	Google
+T10	malware 505 516	Seduploader
+T11	malware 584 595	Seduploader
+T12	protocol 617 621	HTTP
+T13	tool 720 723	C&C
+T14	malware 778 789	Seduploader
+T15	malware 922 933	Seduploader
+T16	protocol 1039 1041	IP
+T17	IP_evil 1065 1074	127.0.0.1
+T18	IP_evil 1079 1094	169.254.155.178
+T19	protocol 1109 1111	IP
+T20	reference_word 1102 1111	second IP
+R3	coreference Arg1:T20 Arg2:T18	
+T21	protocol 1131 1135	IPv4
+T22	IP 1155 1166	169.254.0.0
+R4	part_of Arg1:T22 Arg2:T21	
+R5	part_of Arg1:T20 Arg2:T22	
+T23	protocol 1249 1251	IP
+T24	protocol 1264 1268	DHCP
+T25	protocol 1498 1502	HTTP
+T26	malware 1621 1632	Seduploader
+T27	protocol 1655 1657	IP
+T28	protocol 1670 1673	TCP
+T29	malware 1755 1766	Seduploader
+T30	tool 1816 1823	Firefox
+R6	use Arg1:T29 Arg2:T30	
+T31	tool 1879 1886	Firefox
+T32	sample_name 1905 1912	pref.js
+R7	part_of Arg1:T32 Arg2:T31	
+T33	reference_word 2045 2047	It
+T34	reference_word 1865 1867	It
+R8	coreference Arg1:T34 Arg2:T29	
+R9	use Arg1:T34 Arg2:T31	
+T35	string 1927 1945	network.proxy.http
+T36	string 1950 1973	network.proxy.http_port
+R10	part_of Arg1:T35 Arg2:T32	
+R11	part_of Arg1:T36 Arg2:T32	
+R12	coreference Arg1:T33 Arg2:T34	
+T37	OS_name 2096 2103	Windows
+T38	string 2117 2155	HKCU\Control Panel\Desktop\WeelScrInit
+R13	part_of Arg1:T38 Arg2:T37	
+R14	use Arg1:T33 Arg2:T37	
+T39	malware 2245 2251	Sedkit
+R15	use Arg1:T33 Arg2:T39	
+T40	malware 2308 2314	Sedkit
+T41	tool 2331 2338	Firefox
+R16	attack Arg1:T40 Arg2:T41	
+T42	vulnerability_cve 2342 2355	CVE-2014-1510
+R17	use Arg1:T40 Arg2:T42	
+T43	string 2391 2402	WeelScrInit
+T44	protocol 2423 2427	HTTP
+T45	string 2434 2452	ProxyAuthorization
+R18	part_of Arg1:T45 Arg2:T44	
+T46	protocol 2516 2520	HTTP
+T47	reference_word 2516 2526	HTTP field
+R19	coreference Arg1:T47 Arg2:T45	
+T48	malware 2680 2691	Seduploader
+T49	protocol 2701 2705	HTTP
+T50	string 2706 2710	POST
+R20	part_of Arg1:T50 Arg2:T49	
+T51	tool 2722 2728	Google
+R21	use Arg1:T48 Arg2:T51	
+T52	tool 2844 2851	Firefox
+T53	threatActor_name 2885 2891	Sednit
+T54	tool 3197 3204	Firefox
+T55	program_language 3235 3238	C++
+R22	use Arg1:T53 Arg2:T52	
+R23	use Arg1:T53 Arg2:T55	
+T56	malware 3280 3291	Seduploader
+T57	malware 3403 3414	Seduploader
+T58	function 3610 3615	ROL 7
+R24	use Arg1:T57 Arg2:T58	
+T59	string 3679 3689	0x250DFA8F
+T60	string 3723 3733	0x7712FEAE
+T61	string 3756 3766	0xBD3CC33A
+T62	string 3794 3804	0x7A38EBF3
+T63	string 3823 3833	0x4A36ABF3
+T64	sample_name 3690 3702	iexplore.exe
+T65	sample_name 3734 3745	firefox.exe
+T66	sample_name 3767 3777	chrome.exe
+T67	sample_name 3805 3814	opera.exe
+T68	sample_name 3834 3845	browser.exe
+T69	tool 3703 3720	Internet Explorer
+T70	tool 3746 3753	Firefox
+T71	tool 3778 3784	Google
+T72	tool 3815 3820	Opera
+T73	tool 3846 3860	Yandex Browser
+R25	part_of Arg1:T64 Arg2:T69	
+R26	part_of Arg1:T59 Arg2:T69	
+R27	part_of Arg1:T65 Arg2:T70	
+R28	part_of Arg1:T60 Arg2:T70	
+R29	part_of Arg1:T61 Arg2:T71	
+R30	part_of Arg1:T66 Arg2:T71	
+R31	part_of Arg1:T67 Arg2:T72	
+R32	part_of Arg1:T62 Arg2:T72	
+R33	part_of Arg1:T68 Arg2:T73	
+R34	part_of Arg1:T63 Arg2:T73	
+T74	malware 3895 3906	Seduploader
+T75	string 3917 3926	shellcode
+T76	function 3981 4006	CreateRemoteThreadWindows
+T77	string 4007 4010	API
+R35	part_of Arg1:T76 Arg2:T77	
+R36	use Arg1:T74 Arg2:T76	
+T78	string 4018 4027	shellcode
+T79	malware 4135 4146	Seduploader
+T80	tool 4045 4051	Google
+T81	string 4226 4229	API
+T82	string 4135 4154	Seduploader process
+T83	function 4218 4245	Windows API OpenFileMapping
+T84	tool 4218 4225	Windows
+R37	use Arg1:T82 Arg2:T83	
+T85	malware 4325 4336	Seduploader
+T86	malware 4462 4473	Seduploader
+T87	tool 4796 4803	Windows
+T88	string 4817 4865	HKLM\SYSTEM\CurrentControlSet\Services\Disk\Enum
+R38	part_of Arg1:T88 Arg2:T87	
+T89	protocol 5397 5401	HTTP
+T90	string 5402 5406	POST
+R39	part_of Arg1:T90 Arg2:T89	
+T91	tool 5445 5448	C&C
+T92	time 5525 5533	May 2015
+T93	protocol 5894 5898	HTTP
+T94	string 5899 5903	POST
+R40	part_of Arg1:T94 Arg2:T93	
+T95	tool 6106 6109	C&C
+T96	tool 5867 5870	C&C
+T97	protocol 6171 6175	HTTP
+T98	string 6176 6180	POST
+R41	part_of Arg1:T98 Arg2:T97	
+T99	tool 6335 6338	C&C
+T100	string 6413 6416	API
+T101	protocol 6435 6439	HTTP
+T102	string 6440 6444	POST
+R42	part_of Arg1:T102 Arg2:T101	
+T103	function 6400 6412	GetLastError
+T104	malware 6595 6604	Downdelph
+T105	malware 6667 6678	Seduploader
+T106	malware 6683 6692	Downdelph
+T107	malware 6888 6895	Sedreco
+T108	malware 6899 6905	Xagent
+T109	threatActor_name 6936 6942	Sednit
+R43	part_of Arg1:T108 Arg2:T109	
+R44	part_of Arg1:T107 Arg2:T109	
+T110	threatActor_name 7032 7038	Sednit
+T111	malware 6972 6983	Seduploader
+R45	use Arg1:T110 Arg2:T111	
+T112	tool 7228 7231	C&C
+T113	tool 7367 7370	C&C
+T114	malware 7256 7267	Seduploader
+T115	person 7688 7696	operator
+T116	threatActor_name 7681 7687	Sednit
+R46	part_of Arg1:T115 Arg2:T116	
+T117	malware 7871 7882	Seduploader
+T118	threatActor_name 8091 8097	Sednit
+T119	vulnerability_cve 8143 8148	0-day
+T120	reference_word 8124 8129	group
+R47	coreference Arg1:T120 Arg2:T118	
+T121	vulnerability_cve 8167 8189	Hacking Team data leak
+R48	part_of Arg1:T119 Arg2:T121	
+T122	string 8323 8331	BlackHat
+T123	vulnerability_cve 8264 8277	CVE-2014-6332
+R49	use Arg1:T120 Arg2:T123	
+T124	malware 8401 8412	Seduploader
+R50	attack Arg1:T120 Arg2:T124	
+T125	threatActor_name 8441 8447	Sednit
+T126	OS_name 8786 8791	Linux
+T127	string 8832 8841	WordPress
+T128	target_crowd 8641 8667	Eastern European embassies
+R51	attack Arg1:T125 Arg2:T128	
+R52	use Arg1:T125 Arg2:T127	
+T129	tool 8861 8867	Zimbra
+R53	attack Arg1:T125 Arg2:T129	
+T130	threatActor_name 8928 8934	Sednit
+T131	vulnerability_cve 9102 9115	CVE-2015-1641
+T132	vulnerability_cve 9144 9157	CVE-2015-2424
+T133	threatActor_name 9078 9084	Sednit
+T134	threatActor_name 9120 9126	Sednit
+T135	threatActor_name 9162 9168	Sednit
+T136	threatActor_name 9215 9221	Sednit
+T137	threatActor_name 9268 9274	Sednit
+T138	threatActor_name 9321 9327	Sednit
+T139	threatActor_name 9374 9380	Sednit
+T140	threatActor_name 9416 9422	Sednit
+T141	threatActor_name 9451 9457	Sednit
+T142	threatActor_name 9508 9514	Sednit
+T143	threatActor_name 9606 9612	Sednit
+T144	threatActor_name 9630 9636	Sednit
+T145	threatActor_name 9661 9667	Sednit
+T146	threatActor_name 9690 9696	Sednit
+T147	threatActor_name 9716 9722	Sednit
+T148	threatActor_name 9743 9749	Sednit
+T149	threatActor_name 9776 9782	Sednit
+T150	threatActor_name 9810 9816	Sednit
+T151	threatActor_name 9835 9841	Sednit
+T152	threatActor_name 9864 9870	Sednit
+T153	threatActor_name 9893 9899	Sednit
+T154	threatActor_name 9918 9924	Sednit
+T155	threatActor_name 9946 9952	Sednit
+T156	threatActor_name 9974 9980	Sednit
+T157	threatActor_name 10002 10008	Sednit
+T158	threatActor_name 10030 10036	Sednit
+T159	threatActor_name 10058 10064	Sednit
+T160	threatActor_name 10085 10091	Sednit
+T161	threatActor_name 11529 11535	Sednit
+T162	threatActor_name 11493 11499	Sednit
+T163	threatActor_name 11465 11471	Sednit
+T164	threatActor_name 11437 11443	Sednit
+T165	threatActor_name 11410 11416	Sednit
+T166	threatActor_name 11383 11389	Sednit
+T167	threatActor_name 11355 11361	Sednit
+T168	threatActor_name 11315 11321	Sednit
+T169	threatActor_name 11285 11291	Sednit
+T170	threatActor_name 11256 11262	Sednit
+T171	threatActor_name 11229 11235	Sednit
+T172	threatActor_name 11198 11204	Sednit
+T173	threatActor_name 11155 11161	Sednit
+T174	threatActor_name 11098 11104	Sednit
+T175	threatActor_name 11038 11044	Sednit
+T176	threatActor_name 10986 10992	Sednit
+T177	threatActor_name 10934 10940	Sednit
+T178	threatActor_name 10900 10906	Sednit
+T179	threatActor_name 10839 10845	Sednit
+T180	threatActor_name 10814 10820	Sednit
+T181	threatActor_name 10789 10795	Sednit
+T182	threatActor_name 10763 10769	Sednit
+T183	threatActor_name 10716 10722	Sednit
+T184	threatActor_name 10664 10670	Sednit
+T185	threatActor_name 10618 10624	Sednit
+T186	threatActor_name 10593 10599	Sednit
+T187	threatActor_name 10540 10546	Sednit
+T188	threatActor_name 10487 10493	Sednit
+T189	threatActor_name 10434 10440	Sednit
+T190	threatActor_name 10381 10387	Sednit
+T191	threatActor_name 10328 10334	Sednit
+T192	threatActor_name 10275 10281	Sednit
+T193	threatActor_name 10222 10228	Sednit
+T194	threatActor_name 10169 10175	Sednit
+T195	threatActor_name 10141 10147	Sednit
+T196	threatActor_name 10113 10119	Sednit
+R54	part_of Arg1:T131 Arg2:T133	
+R55	part_of Arg1:T132 Arg2:T134	
+T197	sha2 9172 9212	76053b58643d0630b39d8c9d3080d7db5d017020
+T198	sha2 9225 9265	9b276a0f5fd824c3dff638c5c127567c65222230
+T199	sha2 9278 9318	e7f7f6caaede6cc29c2e7e4888019f2d1be37cef
+T200	sha2 9331 9371	ef755f3fa59960838fa2b37b7dedce83ce41f05c
+R56	part_of Arg1:T197 Arg2:T135	
+R57	part_of Arg1:T198 Arg2:T136	
+R58	part_of Arg1:T199 Arg2:T137	
+R59	part_of Arg1:T200 Arg2:T138	
+T201	sample_name 9384 9413	Exercise_Noble_Partner_16.rtf
+T202	sample_name 9426 9448	Iran_nuclear_talks.rtf
+T203	sample_name 9461 9505	Putin_Is_Being_Pushed_to_Prepare_for_War.rtf
+T204	sample_name 9518 9603	Statement by the Spokesperson of European Union on the latest developments in eastern
+T205	sample_name 9616 9627	Ukraine.rtf
+R60	part_of Arg1:T201 Arg2:T139	
+R61	part_of Arg1:T202 Arg2:T140	
+R62	part_of Arg1:T203 Arg2:T141	
+R63	part_of Arg1:T204 Arg2:T142	
+R64	part_of Arg1:T205 Arg2:T143	
+T206	domain_evil 9640 9658	aljazeera-news.com
+R65	part_of Arg1:T206 Arg2:T144	
+T207	domain_evil 9671 9687	ausameetings.com
+R66	part_of Arg1:T207 Arg2:T145	
+T208	domain_evil 9700 9713	bbc-press.org
+T209	domain_evil 9726 9740	cnnpolitics.eu
+T210	domain_evil 9753 9773	dailyforeignnews.com
+T211	domain_evil 9786 9807	dailypoliticsnews.com
+T212	domain_evil 9820 9832	defenceiq.us
+T213	domain_evil 9845 9861	defencereview.eu
+T214	domain_evil 9874 9890	diplomatnews.org
+R67	part_of Arg1:T214 Arg2:T152	
+R68	part_of Arg1:T213 Arg2:T151	
+R69	part_of Arg1:T212 Arg2:T150	
+R70	part_of Arg1:T211 Arg2:T149	
+R71	part_of Arg1:T210 Arg2:T148	
+R72	part_of Arg1:T209 Arg2:T147	
+R73	part_of Arg1:T208 Arg2:T146	
+T215	sha2 10179 10219	015425010bd4cf9d511f7fcd0fc17fc17c23eec1
+T216	sha2 10232 10272	0f7893e2647a7204dbf4b72e50678545573c3a10
+T217	sha2 10285 10325	10686cc4e46cf3ffbdeb71dd565329a80787c439
+T218	sha2 10338 10378	17661a04b4b150a6f70afdabe3fd9839cc56bee8
+T219	sha2 10391 10431	21835aafe6d46840bb697e8b0d4aac06dec44f5b
+T220	sha2 10444 10484	2663eb655918c598be1b2231d7c018d8350a0ef9
+T221	sha2 10497 10537	2c86a6d6e9915a7f38d119888ede60b38ab1d69d
+T222	sha2 10550 10590	351c3762be9948d01034c69aced97628099a90b0
+R74	part_of Arg1:T215 Arg2:T194	
+R75	part_of Arg1:T216 Arg2:T193	
+R76	part_of Arg1:T217 Arg2:T192	
+R77	part_of Arg1:T218 Arg2:T191	
+R78	part_of Arg1:T219 Arg2:T190	
+R79	part_of Arg1:T220 Arg2:T189	
+R80	part_of Arg1:T221 Arg2:T188	
+R81	part_of Arg1:T222 Arg2:T187	
+T223	sample_name 10603 10615	amdcache.dll
+T224	sample_name 10628 10661	api-ms-win-core-advapi-l1-1-0.dll
+T225	sample_name 10674 10713	api-ms-win-downlevel-profile-l1-1-0.dll
+T226	sample_name 10726 10760	api-ms-win-samcli-dnsapi-0-0-0.dll
+R82	part_of Arg1:T223 Arg2:T186	
+R83	part_of Arg1:T224 Arg2:T185	
+R84	part_of Arg1:T225 Arg2:T184	
+R85	part_of Arg1:T226 Arg2:T183	
+T227	sample_name 10773 10786	jhuhugit.temp
+T228	sample_name 10799 10811	jhuhugit.tmp
+T229	sample_name 10824 10836	jkeyskw.temp
+R86	part_of Arg1:T227 Arg2:T182	
+R87	part_of Arg1:T228 Arg2:T181	
+R88	part_of Arg1:T229 Arg2:T180	
+T230	domain_evil 11208 11226	swsupporttools.com
+T231	domain_evil 11239 11253	www.capisp.com
+T232	domain_evil 11266 11282	www.dataclen.org
+T233	domain_evil 11295 11312	www.mscoresvw.com
+T234	domain_evil 11325 11352	www.windowscheckupdater.net
+T235	domain_evil 11365 11380	www.acledit.com
+T236	domain_evil 11393 11407	www.biocpl.org
+T237	domain_evil 11420 11434	www.wscapi.com
+T238	domain_evil 11447 11462	www.tabsync.net
+T239	domain_evil 11503 11526	www.winupdatesysmic.com
+T240	domain_evil 11475 11490	www.storsvc.org
+R89	part_of Arg1:T239 Arg2:T162	
+R90	part_of Arg1:T240 Arg2:T163	
+R91	part_of Arg1:T238 Arg2:T164	
+R92	part_of Arg1:T237 Arg2:T165	
+R93	part_of Arg1:T236 Arg2:T166	
+R94	part_of Arg1:T235 Arg2:T167	
+R95	part_of Arg1:T234 Arg2:T168	
+R96	part_of Arg1:T233 Arg2:T169	
+R97	part_of Arg1:T232 Arg2:T170	
+R98	part_of Arg1:T231 Arg2:T171	
+R99	part_of Arg1:T230 Arg2:T172	

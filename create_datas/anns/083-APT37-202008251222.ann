@@ -1,0 +1,78 @@
+T1	threatActor_name 0 5	APT37
+T2	threatActor_name 28 33	APT37
+T3	malware 53 58	KARAE
+T4	threatActor_name 2410 2415	APT37
+T5	location 2676 2687	South Korea
+T8	attack_activity 443 447	DDoS
+T9	tool 495 498	GPS
+T10	location 556 568	North Korean
+R3	use Arg1:T10 Arg2:T8	
+R4	use Arg1:T10 Arg2:T9	
+T11	threatActor_name 614 619	APT37
+T12	location 643 655	North Korean
+T13	location 693 704	North Korea
+T14	government 643 666	North Korean government
+R5	located Arg1:T11 Arg2:T13	
+T15	threatActor_name 764 769	APT37
+T16	reference_word 806 815	the group
+T17	threatActor_name 930 935	APT37
+T18	location 863 875	North Korean
+R6	coreference Arg1:T16 Arg2:T15	
+R7	located Arg1:T14 Arg2:T12	
+T19	threatActor_name 1031 1036	APT37
+R8	part_of Arg1:T17 Arg2:T18	
+T20	tool 1137 1139	IP
+T21	location 1181 1192	North Korea
+T22	threatActor_name 1220 1225	APT37
+T23	location 1282 1293	North Korea
+T24	tool 1306 1309	UTC
+T25	location 1363 1375	North Korean
+T26	time 1445 1455	10:00 a.m.
+T27	time 1460 1469	7:00 p.m.
+T28	location 1618 1630	North Korean
+T29	threatActor_name 1657 1662	APT37
+T30	location 1692 1703	South Korea
+T31	location 1706 1718	North Korean
+T32	location 1777 1793	Korean Peninsula
+T33	threatActor_name 1830 1835	APT37
+T34	location 1851 1865	Middle Eastern
+T35	time 1877 1881	2017
+T36	location 1906 1918	North Korean
+T37	location 1981 1992	North Korea
+T38	company 1851 1873	Middle Eastern company
+R13	attack Arg1:T33 Arg2:T38	
+R14	located Arg1:T38 Arg2:T34	
+R15	occur_time Arg1:T33 Arg2:T35	
+R16	attack Arg1:T36 Arg2:T38	
+T39	location 1995 2006	North Korea
+T40	reference_word 2177 2181	they
+R17	coreference Arg1:T40 Arg2:T39	
+T41	threatActor_name 2290 2295	APT37
+R18	use Arg1:T40 Arg2:T41	
+T42	location 2646 2653	Ukraine
+T43	location 2656 2671	the Middle East
+R19	attack Arg1:T4 Arg2:T42	
+R20	attack Arg1:T4 Arg2:T43	
+R21	attack Arg1:T4 Arg2:T5	
+T7	attack_activity 180 184	DDoS
+T44	tool 71 87	torrent websites
+R2	use Arg1:T2 Arg2:T44	
+R22	part_of Arg1:T3 Arg2:T2	
+T6	attack_activity 148 177	distributed denial-of-service
+R1	coreference Arg1:T7 Arg2:T6	
+T45	attack_goal 141 218	future distributed denial-of-service ( DDoS ) attacks , or for other activity
+R23	goal Arg1:T2 Arg2:T45	
+R24	use Arg1:T14 Arg2:T11	
+T46	person 1105 1114	the actor
+R25	use Arg1:T46 Arg2:T20	
+R26	part_of Arg1:T46 Arg2:T19	
+T47	malware 1220 1233	APT37 malware
+R9	occur_time Arg1:T47 Arg2:T26	
+R27	occur_time Arg1:T47 Arg2:T27	
+T48	target_crowd 1719 1728	defectors
+T49	target_crowd 1735 1764	organizations and individuals
+R10	located Arg1:T48 Arg2:T31	
+R11	located Arg1:T48 Arg2:T30	
+R12	attack Arg1:T29 Arg2:T48	
+R28	located Arg1:T49 Arg2:T32	
+R29	attack Arg1:T29 Arg2:T49	

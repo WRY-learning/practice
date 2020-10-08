@@ -1,0 +1,54 @@
+T1	time 176 184	May 2018
+T2	md5 1394 1426	51df2597faa3fce38a4c5ae024f97b1c
+T3	md5 1480 1512	2d108ff3a735dea1d1fdfa430f37fab2
+T4	md5 1552 1584	7ed754a802f0b6a1740a99683173db73
+T5	OS_name 239 246	Android
+T6	target_crowd 268 284	Israeli citizens
+T7	tool 287 304	Kaspersky spyware
+T8	threatActor_aliases 203 211	campaign
+R1	attack Arg1:T8 Arg2:T6	
+R2	first_found_time Arg1:T8 Arg2:T1	
+T9	security_team 878 889	Bitdefender
+T10	tool 1229 1233	YARA
+T11	md5 1624 1656	3b89e5cd49c05ce6dc681589e6c368d9
+T12	IP_evil 1465 1479	188.165.28.251
+T13	IP_evil 1537 1551	188.165.49.205
+T14	IP_evil 1609 1623	188.165.49.205
+T15	IP_evil 1683 1697	185.141.60.213
+T16	tool 1755 1760	Smali
+T17	threatActor_aliases 1738 1747	attackers
+R3	use Arg1:T17 Arg2:T16	
+T19	tool 1938 1943	Smali
+T20	sub_activity 1890 1914	add their malicious code
+R5	use Arg1:T17 Arg2:T19	
+R6	launch Arg1:T17 Arg2:T20	
+T21	time 2222 2226	2016
+T22	time 2287 2291	2017
+T23	time 2273 2277	2018
+T24	sub_activity 2168 2196	first development activities
+R7	launch Arg1:T17 Arg2:T24	
+R8	first_found_time Arg1:T24 Arg2:T21	
+T25	sub_activity 2237 2263	main distribution campaign
+R9	occur_time Arg1:T25 Arg2:T23	
+R10	launch Arg1:T17 Arg2:T25	
+T26	location 2841 2845	Iran
+T27	threatActor_name 1308 1318	ViceLeaker
+R11	coreference Arg1:T27 Arg2:T17	
+T28	tool 2875 2880	Smali
+T29	IP_evil 3071 3085	185.51.201.133
+T30	threatActor_name 2708 2718	ViceLeaker
+R12	located Arg1:T30 Arg2:T26	
+T31	domain_evil 3182 3194	iliageram.ir
+T32	threatActor_name 3214 3224	ViceLeaker
+T33	threatActor_aliases 3269 3278	attackers
+R13	coreference Arg1:T32 Arg2:T33	
+T34	security_team 3406 3415	Kaspersky
+T35	threatActor_name 3450 3460	ViceLeaker
+T36	time 3665 3669	2018
+T37	OS_name 3780 3787	Android
+T38	counter_measure 313 381	caught the signal of an attack from the device of one of the victims
+R14	launch Arg1:T7 Arg2:T38	
+T39	tool 2083 2088	Smali
+T40	malware 1700 1722	To backdoor legitimate
+T18	tool 1874 1882	Baksmali
+R4	use Arg1:T17 Arg2:T18	

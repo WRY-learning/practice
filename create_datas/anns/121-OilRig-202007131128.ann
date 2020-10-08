@@ -1,0 +1,531 @@
+T1	threatActor_name 0 6	OilRig
+T2	malware 12 19	ISMDoor
+T3	threatActor_name 49 57	Greenbug
+R1	use Arg1:T1 Arg2:T2	
+T4	security_team 226 233	Unit 42
+T5	threatActor_name 302 308	OilRig
+T6	threatActor_name 367 375	GreenBug
+T7	company 378 386	Symantec
+T8	time 424 436	January 2017
+T9	malware 520 527	ISMDoor
+R2	release_time Arg1:T7 Arg2:T8	
+T10	reference_word 405 415	this group
+R3	coreference Arg1:T10 Arg2:T5	
+R4	use Arg1:T10 Arg2:T9	
+T11	time 533 542	July 2017
+T12	time 660 671	August 2016
+T13	threatActor_name 641 647	OilRig
+T14	location 572 586	Middle Eastern
+T15	target_crowd 587 610	technology organization
+R5	located Arg1:T15 Arg2:T14	
+R6	attack Arg1:T13 Arg2:T15	
+R7	occur_time Arg1:T13 Arg2:T12	
+T16	threatActor_name 737 743	OilRig
+T17	tool 873 882	Clayslide
+T18	threatActor_name 981 987	OilRig
+T19	tool 1012 1021	Clayslide
+T20	malware 1074 1082	Helminth
+R8	use Arg1:T18 Arg2:T19	
+T21	malware 1145 1159	ISMDoor Trojan
+T22	malware 1220 1228	ISMAgent
+T23	time 1231 1248	On July 16 , 2017
+T24	threatActor_name 1278 1284	OilRig
+T25	sha2 1473 1537	3eb14b6705179590f0476d3d3cbd71665e7c1935ecac3df7b876edc9bd7641b6
+T26	tool 1452 1457	Excel
+T27	tool 1560 1570	Excel file
+T28	tool 1622 1631	Clayslide
+T29	threatActor_name 1663 1669	OilRig
+R9	use Arg1:T29 Arg2:T28	
+T30	tool 1745 1754	Clayslide
+T31	tool 2106 2116	Excel file
+T32	malware 2070 2085	malicious macro
+T33	company 2231 2237	Citrix
+T35	sha2 2978 3042	52366b9ab2eb1d77ca6719a40f4779eb302dca97a832bd447abf10512dc51ed9
+T37	sample_name 2862 2870	B642.txt
+T38	sample_name 3051 3067	servicereset.exe
+T39	malware 3127 3134	ISMDoor
+T40	malware 3152 3160	ISMAgent
+T42	malware 3261 3269	VBScript
+T43	sample_name 3294 3310	servicereset.exe
+R10	occur_time Arg1:T24 Arg2:T23	
+T44	sample_name 3406 3426	OfficeServicesStatus
+T45	tool 3629 3638	Clayslide
+T46	sha2 3649 3713	5ac939a5426db8614165bd8b6a02d3e8d9f167379c6ed28025bf3b37f1aea902
+T47	time 3740 3749	June 2017
+T48	malware 3801 3809	ISMAgent
+T49	tool 3876 3885	Clayslide
+T50	malware 3918 3926	ISMAgent
+T51	time 3957 3966	June 2016
+T52	tool 4004 4013	Clayslide
+T53	time 4020 4029	June 2017
+T54	tool 4040 4049	Clayslide
+T55	sample_name 4069 4093	OfficeServicesStatus.vbs
+T57	tool 4112 4130	ISMAgent Clayslide
+T58	tool 4390 4399	Clayslide
+T60	threatActor_name 4473 4479	OilRig
+T61	time 4501 4510	June 2017
+T62	tool 4559 4568	Clayslide
+T63	time 4624 4629	April
+T64	tool 4713 4722	Clayslide
+T65	malware 4778 4786	ISMAgent
+T66	malware 4798 4806	Helminth
+T67	time 4740 4749	June 2017
+T68	tool 4928 4937	Clayslide
+T69	sha2 5011 5075	52366b9ab2eb1d77ca6719a40f4779eb302dca97a832bd447abf10512dc51ed9
+T70	time 5095 5104	June 2016
+T71	malware 5139 5146	ISMDoor
+T72	protocol 5165 5178	DNS tunneling
+T73	protocol 5187 5189	C2
+R11	find Arg1:T4 Arg2:T5	
+T74	time 5210 5222	May 1 , 2017
+T75	tool 5314 5316	C2
+T76	protocol 5276 5289	DNS tunneling
+T77	threatActor_name 16200 16206	OilRig
+T78	threatActor_name 16275 16281	OilRig
+T79	tool 16478 16480	C2
+T80	tool 16542 16544	C2
+T81	tool 16087 16089	C2
+T82	threatActor_name 18355 18361	OilRig
+T83	threatActor_name 18658 18664	OilRig
+T84	threatActor_name 18709 18715	OilRig
+T85	threatActor_name 19495 19501	OilRig
+T86	threatActor_name 19571 19577	OilRig
+T87	threatActor_name 19647 19653	OilRig
+T88	threatActor_name 19723 19729	OilRig
+T89	threatActor_name 19799 19805	OilRig
+T90	threatActor_name 19875 19881	OilRig
+T91	threatActor_name 19903 19909	OilRig
+T92	threatActor_name 19934 19940	OilRig
+T93	threatActor_name 19969 19975	OilRig
+T94	threatActor_name 19994 20000	OilRig
+T95	threatActor_name 20025 20031	OilRig
+T96	threatActor_name 20051 20057	OilRig
+T97	threatActor_name 20080 20086	OilRig
+T98	threatActor_name 20109 20115	OilRig
+T99	threatActor_name 20141 20147	OilRig
+T100	tool 5684 5686	C2
+T101	tool 5885 5887	C2
+T102	malware 5616 5624	ISMAgent
+T103	tool 6256 6258	C2
+T104	malware 5833 5841	ISMAgent
+T105	tool 6725 6727	C2
+T106	tool 7154 7156	C2
+T107	tool 7390 7392	C2
+T108	tool 7604 7606	C2
+T109	tool 16724 16726	C2
+T110	tool 16676 16683	C2 URLs
+T111	tool 16859 16861	C2
+T112	tool 16803 16805	C2
+T113	tool 17031 17033	C2
+T114	tool 17210 17212	C2
+T116	malware 17275 17283	ISMAgent
+T117	tool 17329 17331	C2
+T118	tool 17413 17416	URL
+T119	tool 18146 18148	C2
+T120	protocol 18205 18216	DNS queries
+T122	protocol 18011 18024	DNS tunneling
+T123	protocol 17821 17834	DNS tunneling
+T124	malware 17568 17585	PowerShell script
+T125	malware 17755 17763	ISMAgent
+T126	protocol 15752 15765	DNS tunneling
+T127	protocol 15864 15877	DNS tunneling
+T128	protocol 15992 16005	DNS tunneling
+T129	malware 15601 15618	PowerShell script
+T134	tool 13835 13837	C2
+T137	protocol 13864 13877	DNS tunneling
+T139	protocol 11301 11312	DNS queries
+T140	protocol 5359 5372	DNS tunneling
+T141	malware 5601 5609	ISMAgent
+T142	protocol 6755 6768	DNS tunneling
+T143	protocol 6775 6788	DNS tunneling
+T144	malware 6957 6965	ISMAgent
+T145	protocol 7681 7694	DNS tunneling
+T147	protocol 9350 9373	DNS tunneling technique
+T149	protocol 9730 9741	DNS queries
+T150	tool 9822 9828	DNS C2
+T153	protocol 10534 10545	DNS queries
+T154	protocol 10694 10705	DNS queries
+T159	tool 15787 15789	C2
+T161	tool 14109 14111	C2
+T162	tool 13659 13661	C2
+T164	tool 12935 12937	C2
+T165	tool 12655 12657	C2
+T166	tool 12479 12481	C2
+T167	tool 12017 12019	C2
+T168	malware 11765 11773	ISMAgent
+T169	tool 11843 11845	C2
+T171	tool 11502 11504	C2
+T172	malware 11428 11436	ISMAgent
+T174	tool 11205 11207	C2
+T175	tool 11060 11062	C2
+T176	tool 10988 10990	C2
+T177	tool 10569 10571	C2
+T178	tool 10417 10419	C2
+T180	tool 10361 10372	HTTP C2 URL
+T181	protocol 10210 10214	IPv6
+T182	tool 10141 10143	C2
+T183	tool 9887 9889	C2
+T184	protocol 9745 9749	IPv6
+T186	tool 9675 9677	C2
+T187	tool 9557 9559	C2
+T188	tool 9378 9380	C2
+T189	tool 9137 9139	C2
+T190	tool 8761 8763	C2
+T191	tool 8567 8569	C2
+T192	tool 14322 14324	C2
+T193	tool 14436 14438	C2
+T194	tool 8236 8242	C2 URL
+T195	tool 8357 8359	C2
+T196	tool 8249 8251	C2
+T197	tool 8035 8037	C2
+T198	tool 8051 8058	HTTP C2
+T199	tool 7796 7798	C2
+T201	malware 7537 7545	ISMAgent
+T202	tool 7649 7651	C2
+T203	malware 19465 19473	ISMAgent
+T204	malware 18689 18697	ISMAgent
+T205	malware 17892 17900	ISMAgent
+T206	malware 16919 16927	ISMAgent
+T207	malware 16794 16802	ISMAgent
+T208	malware 16353 16361	ISMAgent
+T209	malware 16072 16080	ISMAgent
+T210	malware 14667 14675	ISMAgent
+T211	malware 14599 14607	ISMAgent
+T212	malware 14011 14019	ISMAgent
+T213	malware 13730 13738	ISMAgent
+T214	malware 13557 13565	ISMAgent
+T215	malware 13401 13409	ISMAgent
+T216	malware 13167 13175	ISMAgent
+T217	malware 12979 12987	ISMAgent
+T218	malware 12908 12916	ISMAgent
+T219	malware 12646 12654	ISMAgent
+T220	malware 12459 12467	ISMAgent
+T221	malware 11982 11990	ISMAgent
+T222	malware 9332 9340	ISMAgent
+T223	malware 8813 8821	ISMAgent
+T224	malware 7133 7141	ISMAgent
+T225	malware 5262 5269	ISMDoor
+T226	malware 5513 5520	ISMDoor
+T227	malware 6852 6859	ISMDoor
+T228	malware 6970 6977	ISMDoor
+T229	malware 7146 7153	ISMDoor
+T230	malware 13207 13214	ISMDoor
+T231	malware 13464 13471	ISMDoor
+T232	malware 13597 13604	ISMDoor
+T233	malware 13704 13711	ISMDoor
+T234	malware 14261 14268	ISMDoor
+T235	malware 14414 14428	ISMDoor Trojan
+T236	malware 14612 14619	ISMDoor
+T237	malware 14862 14869	ISMDoor
+T238	sha2 14891 14955	aa52dcaf6df43c6aa872fe0f73725f61e082d32c33fc976741d4eca17679533d
+T239	sha2 15123 15187	ca8cec08b4c74cf68c71a39176bfc8ee1ae4372f98f75c892706b2648b1e7530
+T240	company 5225 5239	Arbor Networks
+R12	release_time Arg1:T240 Arg2:T74	
+R13	part_of Arg1:T25 Arg2:T26	
+R14	use Arg1:T71 Arg2:T72	
+R15	use Arg1:T225 Arg2:T76	
+T245	string 6209 6210	^
+T246	string 6334 6338	%%%%
+T248	string 6430 6434	%%%%
+T59	malware 4446 4461	Helminth Trojan
+T241	sample_name 6577 6587	TimeUpdate
+T242	protocol 6737 6750	HTTP requests
+T243	protocol 7057 7061	IPv6
+T244	tool 7406 7410	GUID
+T249	protocol 7558 7562	HTTP
+R16	use Arg1:T201 Arg2:T249	
+T250	string 7771 7774	www
+T251	tool 7724 7731	HTTP C2
+R17	use Arg1:T201 Arg2:T145	
+T252	protocol 7887 7889	IP
+T253	protocol 7917 7921	HTTP
+T254	malware 506 512	Trojan
+T255	malware 1058 1064	Trojan
+T258	malware 6020 6026	Trojan
+T259	malware 5958 5964	Trojan
+T260	malware 5974 5980	Trojan
+T261	malware 6175 6181	Trojan
+T262	malware 6664 6670	Trojan
+T263	malware 6497 6503	Trojan
+T264	malware 7345 7351	Trojan
+T265	malware 7491 7497	Trojan
+T266	malware 7426 7432	Trojan
+T267	malware 7753 7759	Trojan
+T268	malware 8174 8180	Trojan
+T269	malware 7858 7864	Trojan
+T270	malware 8852 8858	Trojan
+T271	malware 8417 8423	Trojan
+T272	malware 8514 8520	Trojan
+T273	malware 9001 9007	Trojan
+T274	malware 9215 9221	Trojan
+T275	malware 9769 9775	Trojan
+T276	malware 9706 9712	Trojan
+T277	malware 9532 9538	Trojan
+T278	malware 9957 9963	Trojan
+T279	malware 9850 9856	Trojan
+T280	malware 14544 14550	Trojan
+T281	malware 11353 11359	Trojan
+T282	malware 11113 11119	Trojan
+T283	malware 10906 10912	Trojan
+T284	malware 10801 10807	Trojan
+T285	malware 10326 10332	Trojan
+T286	malware 10478 10484	Trojan
+R18	use Arg1:T269 Arg2:T252	
+T287	domain_evil 8007 8026	ntpupdateserver.com
+T288	domain_evil 8105 8128	www.ntpupdateserver.com
+T289	IP_evil 8151 8164	142.54.179.90
+T290	string 8204 8213	http : /w
+R19	use Arg1:T268 Arg2:T290	
+T292	sample_name 8442 8449	cmd.exe
+R20	use Arg1:T271 Arg2:T292	
+T295	protocol 8584 8601	HTTP POST request
+T296	tool 8607 8610	URL
+R21	use Arg1:T272 Arg2:T295	
+T298	protocol 8617 8634	HTTP POST request
+T299	string 8677 8687	myboundary
+T300	string 8724 8727	a.a
+T301	tool 8958 8961	URL
+T302	function 9028 9046	URLDownloadToFileA
+R22	use Arg1:T273 Arg2:T302	
+T305	tool 9326 9329	URL
+R23	use Arg1:T222 Arg2:T147	
+T307	protocol 9400 9404	HTTP
+T308	tool 10005 10009	GUID
+T309	string 10043 10049	n.n.c.
+T310	IP_evil 10224 10265	a67d : 0db8:a2a1:7334:7654:4325:0370:2aa3
+T312	IP_evil 10743 10786	a67d : 0db8:85a3:4325:7654:8a2a : 0370:7334
+T313	company 11407 11421	Arbor Networks
+T314	tool 11483 11492	Clayslide
+R27	part_of Arg1:T172 Arg2:T314	
+R28	use Arg1:T314 Arg2:T171	
+T315	domain_evil 11512 11531	ntpupdateserver.com
+T317	protocol 11573 11575	IP
+T318	domain_evil 11608 11631	www.ntpupdateserver.com
+T319	domain_evil 11679 11701	ns1.ntupdateserver.com
+T320	domain_evil 11706 11729	ns2.ntpupdateserver.com
+T316	domain_evil 11856 11879	Microsoft-publisher.com
+T321	domain_evil 12029 12045	adobeproduct.com
+T322	protocol 12066 12071	WHOIS
+T323	email_evil 12100 12126	paul.mcalister[at]mail.com
+T324	protocol 12193 12198	WHOIS
+T325	protocol 12307 12312	WHOIS
+T326	email_evil 12384 12405	bolips[at]outlook.com
+T327	threatActor_name 12472 12478	OilRig
+T328	protocol 12676 12678	IP
+T329	domain_evil 13018 13034	adobeproduct.com
+T330	protocol 13649 13653	HTTP
+T331	protocol 13744 13748	HTTP
+R29	use Arg1:T213 Arg2:T331	
+T332	string 13993 13999	n.n.c.
+T334	string 14500 14508	M : GAC?
+T335	tool 15085 15094	Clayslide
+T336	time 15195 15209	September 2016
+T337	tool 15297 15306	Clayslide
+T338	malware 15255 15270	Helminth script
+R34	part_of Arg1:T338 Arg2:T335	
+R35	first_found_time Arg1:T335 Arg2:T336	
+T339	tool 15393 15402	Clayslide
+T340	malware 15375 15380	macro
+R36	part_of Arg1:T339 Arg2:T340	
+T341	malware 15522 15527	macro
+T342	tool 15541 15549	VBScript
+T344	malware 15646 15661	Helminth script
+T345	malware 15678 15695	PowerShell script
+T346	protocol 15734 15747	HTTP requests
+R37	use Arg1:T345 Arg2:T346	
+R38	use Arg1:T345 Arg2:T126	
+T347	protocol 15813 15826	HTTP requests
+T348	malware 15904 15912	Helminth
+T349	tool 15950 15959	Clayslide
+T350	protocol 15974 15987	HTTP requests
+T351	malware 16029 16046	PowerShell script
+R39	use Arg1:T351 Arg2:T350	
+R40	use Arg1:T351 Arg2:T128	
+T352	domain_evil 16122 16140	mslicensecheck.com
+T353	security_team 16181 16190	LogRhythm
+R41	find Arg1:T353 Arg2:T352	
+T354	protocol 16303 16305	IP
+T355	malware 16405 16422	PowerShell script
+T356	function 16378 16382	doIt
+R42	use Arg1:T355 Arg2:T356	
+T357	string 16619 16628	/action2/
+T358	reference_word 16586 16599	This function
+R43	coreference Arg1:T358 Arg2:T356	
+R44	use Arg1:T358 Arg2:T357	
+T359	string 16635 16645	/response/
+T360	string 16654 16662	/upload/
+R45	use Arg1:T358 Arg2:T359	
+R46	use Arg1:T358 Arg2:T360	
+T361	protocol 16695 16699	HTTP
+R47	use Arg1:T358 Arg2:T361	
+T362	string 16938 16939	#
+T363	tool 17058 17061	URL
+T364	protocol 17308 17321	HTTP requests
+T365	tool 17358 17361	URL
+R48	use Arg1:T364 Arg2:T365	
+T366	tool 17647 17655	HTTP URL
+T367	string 17688 17689	=
+T368	string 17696 17697	/
+T369	string 17706 17707	+
+R49	use Arg1:T124 Arg2:T366	
+T370	malware 17855 17872	PowerShell script
+T373	string 18078 18079	=
+T374	string 18096 18097	+
+T375	string 18086 18087	/
+T376	protocol 18181 18192	DNS queries
+R51	part_of Arg1:T374 Arg2:T376	
+R52	part_of Arg1:T375 Arg2:T376	
+R53	part_of Arg1:T373 Arg2:T376	
+T377	string 18238 18239	%
+T378	string 18315 18316	-
+T379	string 18323 18326	-s-
+T380	string 18335 18338	-p-
+T381	malware 18709 18723	OilRig toolset
+R54	part_of Arg1:T204 Arg2:T381	
+T382	location 18828 18839	Middle East
+T383	security_team 19177 19195	Palo Alto Networks
+T384	security_team 19299 19307	WildFire
+T385	tool 19312 19317	Traps
+T386	tool 19399 19413	IPS signatures
+T387	security_team 19426 19435	AutoFocus
+T388	tool 19478 19487	Clayslide
+T389	sha2 19504 19568	3eb14b6705179590f0476d3d3cbd71665e7c1935ecac3df7b876edc9bd7641b6
+T390	sha2 19580 19644	5ac939a5426db8614165bd8b6a02d3e8d9f167379c6ed28025bf3b37f1aea902
+T391	sha2 19656 19720	bbfc05177e5e29b3c8c4ef0148969d07e6239140da5bff57473c32409e76c070
+T392	sha2 19808 19872	af4d8604d0cd09b8dc01dbafc33c6d240d356cad366f9917192a2725e0121a0d
+T393	sha2 19732 19796	52366b9ab2eb1d77ca6719a40f4779eb302dca97a832bd447abf10512dc51ed9
+T394	domain_evil 19884 19900	Adobeproduct.com
+T395	domain_evil 19912 19931	ntpupdateserver.com
+T396	domain_evil 19943 19966	microsoft-publisher.com
+T397	domain_evil 19978 19991	Miedafire.com
+T398	domain_evil 20003 20022	tatavpnservices.com
+T399	domain_evil 20034 20048	chrome-dns.com
+T400	domain_evil 20060 20077	fireeyeupdate.com
+T401	domain_evil 20089 20106	cache-service.net
+T402	domain_evil 20118 20138	level3-resolvers.net
+T403	domain_evil 20150 20168	Mslicensecheck.com
+R55	part_of Arg1:T389 Arg2:T85	
+R56	part_of Arg1:T390 Arg2:T86	
+R57	part_of Arg1:T391 Arg2:T87	
+R58	part_of Arg1:T393 Arg2:T88	
+R59	part_of Arg1:T392 Arg2:T89	
+R60	part_of Arg1:T394 Arg2:T90	
+R61	part_of Arg1:T395 Arg2:T91	
+R62	part_of Arg1:T396 Arg2:T92	
+R63	part_of Arg1:T397 Arg2:T93	
+R64	part_of Arg1:T398 Arg2:T94	
+R65	part_of Arg1:T399 Arg2:T95	
+R66	part_of Arg1:T400 Arg2:T96	
+R67	part_of Arg1:T403 Arg2:T99	
+R68	part_of Arg1:T402 Arg2:T98	
+R69	part_of Arg1:T401 Arg2:T97	
+R70	use Arg1:T10 Arg2:T254	
+T404	tool 759 781	their existing toolset
+R71	use Arg1:T16 Arg2:T404	
+R72	use Arg1:T16 Arg2:T17	
+T256	sample_name 1877 1889	Incompatible
+T405	reference_word 1844 1846	it
+R73	coreference Arg1:T405 Arg2:T27	
+R74	part_of Arg1:T256 Arg2:T405	
+R75	part_of Arg1:T32 Arg2:T31	
+T406	reference_word 2119 2128	The macro
+R76	coreference Arg1:T406 Arg2:T32	
+R77	part_of Arg1:T33 Arg2:T406	
+T407	sample_name 2664 2672	Paltofp1
+R79	part_of Arg1:T38 Arg2:T39	
+R80	part_of Arg1:T38 Arg2:T40	
+T408	tool 3328 3340	command line
+R82	use Arg1:T42 Arg2:T408	
+R83	part_of Arg1:T46 Arg2:T45	
+R84	first_found_time Arg1:T45 Arg2:T47	
+R85	first_found_time Arg1:T54 Arg2:T53	
+R86	part_of Arg1:T55 Arg2:T54	
+R87	part_of Arg1:T55 Arg2:T57	
+T56	sample_name 4323 4335	Incompatible
+R88	part_of Arg1:T56 Arg2:T54	
+T257	reference_word 4497 4517	the June 2017 sample
+R89	coreference Arg1:T257 Arg2:T54	
+T409	tool 4528 4537	artifacts
+R90	part_of Arg1:T409 Arg2:T257	
+R91	use Arg1:T262 Arg2:T242	
+R92	use Arg1:T262 Arg2:T142	
+R93	use Arg1:T266 Arg2:T244	
+R94	use Arg1:T267 Arg2:T250	
+T410	protocol 7819 7828	DNS query
+R95	use Arg1:T267 Arg2:T410	
+R96	use Arg1:T268 Arg2:T194	
+R97	part_of Arg1:T296 Arg2:T295	
+R98	part_of Arg1:T299 Arg2:T298	
+R99	part_of Arg1:T300 Arg2:T298	
+T291	protocol 9299 9308	HTTP POST
+R100	part_of Arg1:T305 Arg2:T291	
+R101	use Arg1:T274 Arg2:T291	
+T294	protocol 9571 9582	DNS queries
+R24	use Arg1:T277 Arg2:T294	
+R102	use Arg1:T276 Arg2:T149	
+R103	use Arg1:T276 Arg2:T184	
+T185	protocol 9868 9879	DNS queries
+R104	use Arg1:T279 Arg2:T185	
+R105	part_of Arg1:T309 Arg2:T308	
+R106	use Arg1:T278 Arg2:T308	
+R107	use Arg1:T182 Arg2:T310	
+R25	use Arg1:T285 Arg2:T180	
+T179	protocol 10462 10471	DNS query
+R108	use Arg1:T285 Arg2:T179	
+R26	use Arg1:T286 Arg2:T153	
+T146	protocol 10887 10899	DNS requests
+T148	protocol 10931 10940	DNS query
+R109	use Arg1:T283 Arg2:T148	
+T151	protocol 11141 11152	DNS queries
+R110	use Arg1:T282 Arg2:T151	
+T152	tool 11263 11273	DNS server
+T155	IP_evil 11329 11343	IPv6 addresses
+R111	use Arg1:T152 Arg2:T155	
+T138	tool 11744 11750	DNS C2
+R112	use Arg1:T218 Arg2:T164	
+T156	tool 13005 13014	C2 domain
+R113	use Arg1:T217 Arg2:T156	
+T131	protocol 13487 13500	DNS tunneling
+R114	use Arg1:T231 Arg2:T131	
+T132	protocol 13620 13633	DNS tunneling
+R30	use Arg1:T232 Arg2:T132	
+T133	protocol 13775 13788	DNS tunneling
+R31	use Arg1:T213 Arg2:T133	
+T136	protocol 14062 14075	DNS tunneling
+R32	use Arg1:T212 Arg2:T136	
+T157	tool 14030 14041	HTTP C2 URL
+T135	protocol 14454 14467	DNS tunneling
+R33	use Arg1:T235 Arg2:T135	
+T130	protocol 13266 13279	DNS tunneling
+T158	tool 14796 14817	command execution via
+R115	use Arg1:T210 Arg2:T158	
+R116	part_of Arg1:T238 Arg2:T237	
+R117	part_of Arg1:T239 Arg2:T335	
+T160	sample_name 15462 15474	Incompatible
+R118	use Arg1:T340 Arg2:T160	
+R50	use Arg1:T370 Arg2:T123	
+T163	malware 17973 17990	PowerShell script
+T115	malware 17253 17270	PowerShell script
+T121	malware 18045 18062	PowerShell script
+T170	malware 15423 15440	PowerShell script
+R119	part_of Arg1:T9 Arg2:T254	
+R120	part_of Arg1:T310 Arg2:T181	
+T173	protocol 10729 10733	IPv6
+R121	part_of Arg1:T312 Arg2:T173	
+T200	function 16823 16827	doIt
+T247	person 1251 1257	actors
+R122	part_of Arg1:T20 Arg2:T255	
+T297	attack_activity 557 566	an attack
+R123	occur_time Arg1:T297 Arg2:T11	
+R124	attack Arg1:T297 Arg2:T15	
+R128	use Arg1:T60 Arg2:T59	
+T304	attack_activity 696 707	this attack
+R129	coreference Arg1:T304 Arg2:T297	
+T306	attack_activity 3543 3553	the attack
+T311	target_crowd 3566 3589	technology organization
+R130	attack Arg1:T306 Arg2:T311	
+T333	attack_activity 3091 3102	this attack
+R131	use Arg1:T333 Arg2:T38	
+T371	attack_activity 7973 7984	this attack
+R132	use Arg1:T371 Arg2:T287	
+R78	part_of Arg1:T35 Arg2:T38	

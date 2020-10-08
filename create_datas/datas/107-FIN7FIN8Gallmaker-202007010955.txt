@@ -1,0 +1,11 @@
+Unknown .		others others
+Release_Time : unknown .		others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+FIN7: Carbanak Group .		threatActor_name others threatActor_aliases threatActor_aliases others
+FIN7 is a financially-motivated threat group that has primarily targeted the U.S. retail , restaurant , and hospitality sectors since mid-2015 .		threatActor_name others others others others others others others others others others location industry others industry others others industry others others time others
+They often use point-of-sale malware .		reference_word others others tool others others
+A portion of FIN7 was run out of a front company called Combi Security .		others others others threatActor_name others others others others others others others others company company others
+FIN7 is sometimes referred to as Carbanak Group , but these appear to be two groups using the same Carbanak malware and are therefore tracked separately .		threatActor_name others others others others others threatActor_aliases threatActor_aliases others others others others others others others others others others others malware others others others others others others others
+FIN8 is a financially motivated threat group known to launch tailored spearphishing campaigns targeting the retail , restaurant , and hospitality industries .		threatActor_name others others attack_goal others others others others others others others attack_activity others others others industry others industry others others industry others others
+Gallmaker is a cyberespionage group that has targeted victims in the Middle East and has been active since at least December 2017 .		threatActor_name others others others others others others others others others others location location others others others others others others others time time others
+The group has mainly targeted victims in the defense , military , and government sectors .		others reference_word others others others others others others industry others industry others others industry others others

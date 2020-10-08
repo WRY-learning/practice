@@ -1,0 +1,533 @@
+T1	threatActor_name 0 21	Gaza Cybergang Group1
+T2	attack_activity 33 45	SneakyPastes
+R1	launch Arg1:T1 Arg2:T2	
+T3	threatActor_name 166 185	Gaza Cybergang (s )
+T4	location 272 276	MENA
+T5	location 279 303	Middle East North Africa
+R2	coreference Arg1:T5 Arg2:T4	
+T6	location 330 353	Palestinian Territories
+R3	part_of Arg1:T6 Arg2:T4	
+R4	attack Arg1:T3 Arg2:T4	
+T7	attack_activity 382 410	Gaza Cybergang ’s activities
+T8	sub_activity 413 446	separation of roles and campaigns
+R5	part_of Arg1:T8 Arg2:T7	
+T9	reference_word 505 527	the gang ’s activities
+R6	coreference Arg1:T9 Arg2:T7	
+T10	time 689 693	2018
+T11	location 809 820	MENA region
+T12	reference_word 708 718	this group
+T13	threatActor_name 937 951	Gaza Cybergang
+T14	threatActor_name 955 976	Gaza Cybergang Group1
+T15	threatActor_name 1024 1032	MoleRATs
+R7	coreference Arg1:T15 Arg2:T14	
+R8	part_of Arg1:T14 Arg2:T13	
+T16	threatActor_name 1036 1057	Gaza Cybergang Group2
+T17	threatActor_name 1138 1159	Gaza Cybergang Group3
+T18	threatActor_name 1121 1135	Desert Falcons
+T19	attack_activity 1232 1252	Operation Parliament
+R9	launch Arg1:T17 Arg2:T19	
+T20	reference_word 1255 1265	The groups
+R10	coreference Arg1:T20 Arg2:T13	
+R11	part_of Arg1:T16 Arg2:T13	
+R12	part_of Arg1:T17 Arg2:T13	
+T21	md5 12416 12448	B3a472f81f800b32fe6595f44c9bf63b
+T22	time 12449 12457	Feb 2016
+T23	domain_evil 12574 12592	en.gameoolines.com
+T24	IP_evil 12595 12609	185.117.72.190
+T25	md5 12614 12646	Df3f3ad279ca98f947214ffb3c91c514
+T26	md5 12647 12679	e8a29c7a6f6c0140152ca8a01e336b37
+T27	time 12680 12690	March 2016
+T28	domain_evil 12691 12713	dw.downloadtesting.com
+T29	IP_evil 12716 12730	185.117.75.105
+T30	md5 12735 12767	f9bcc21fbb40247167c8c85ed6ef56e3
+T31	time 12768 12778	March 2016
+T32	domain_evil 12779 12794	Dl.topgamse.com
+T33	IP_evil 12797 12808	45.63.97.44
+T34	md5 12813 12845	D9dbb65a42ffe0575f0e99f7498a593e
+T35	time 12846 12856	April 2016
+R13	first_found_time Arg1:T21 Arg2:T22	
+R14	first_found_time Arg1:T25 Arg2:T27	
+R15	first_found_time Arg1:T26 Arg2:T27	
+R16	use Arg1:T21 Arg2:T23	
+R17	use Arg1:T21 Arg2:T24	
+T36	government 12496 12531	Turkish Ministry of Foreign Affairs
+T37	location 12535 12542	Russian
+T38	location 12566 12571	Syria
+R18	use Arg1:T25 Arg2:T28	
+R19	use Arg1:T25 Arg2:T29	
+R20	use Arg1:T26 Arg2:T28	
+R21	use Arg1:T26 Arg2:T29	
+R22	first_found_time Arg1:T30 Arg2:T31	
+T39	domain_evil 12941 12959	en.gameoolines.com
+T40	IP_evil 12962 12976	185.117.72.190
+T41	sample_function 12925 12938	important.exe
+T42	government 12871 12892	Saudi Foreign Affairs
+T43	md5 12981 13013	221EEF8511169C0496BBC79F96E84A4A
+T44	md5 13171 13203	62DF4BC3738BE5AD4892200A1DC6B59A
+R23	first_found_time Arg1:T34 Arg2:T35	
+R24	use Arg1:T34 Arg2:T39	
+R25	use Arg1:T34 Arg2:T40	
+T45	time 13014 13024	April 2016
+T46	location 13049 13054	Saudi
+R26	first_found_time Arg1:T43 Arg2:T45	
+T47	domain_evil 13127 13149	dw.downloadtesting.com
+T48	IP_evil 13152 13166	185.117.75.105
+R27	use Arg1:T43 Arg2:T47	
+R28	use Arg1:T43 Arg2:T48	
+T49	md5 13213 13245	55d33d9da371fdfe7871f2479621444a
+R29	part_of Arg1:T49 Arg2:T44	
+T50	time 13246 13254	May 2016
+T51	location 13314 13319	Saudi
+T52	domain_evil 13338 13360	dw.downloadtesting.com
+T53	IP_evil 13363 13377	185.117.75.105
+R30	use Arg1:T44 Arg2:T52	
+R31	use Arg1:T44 Arg2:T53	
+R32	first_found_time Arg1:T44 Arg2:T50	
+T54	md5 13390 13422	E686FFA90B2BFB567547F1C0DAD1AE0B
+T55	md5 13459 13491	CE5AA4956D4D0D66BED361DDD7DB1A3B
+T56	md5 13528 13560	4F34902C9F458008BAE26BFA5C1C00DA
+T57	md5 13597 13629	535F8EA65969A84A68CEAF88778C6176
+T58	md5 13666 13698	E8A29C7A6F6C0140152CA8A01E336B37
+T59	md5 13735 13767	E782610BF209E81ECC42CA94B9388580
+T60	threatActor_name 12311 12325	Desert Falcons
+T61	attack_activity 12341 12361	Operation Parliament
+T62	reference_word 12328 12334	Group2
+R33	coreference Arg1:T62 Arg2:T60	
+T63	reference_word 12364 12370	Group3
+R34	coreference Arg1:T63 Arg2:T61	
+T64	person 12134 12147	The attackers
+T65	tool 12185 12227	advanced tools , techniques and procedures
+R35	use Arg1:T64 Arg2:T65	
+T66	threatActor_name 11739 11753	Gaza Cybergang
+T67	location 11786 11797	MENA region
+R36	attack Arg1:T66 Arg2:T67	
+T68	location 12110 12121	Palestinian
+T69	threatActor_name 11377 11398	Gaza Cybergang Group1
+T70	sample_function 1326 1358	deploy common tools and commands
+R37	goal Arg1:T20 Arg2:T70	
+T71	threatActor_name 1457 1463	Group1
+T72	threatActor_name 1540 1546	Group2
+T73	tool 1479 1485	script
+T74	sample_function 1489 1513	infect a specific victim
+T75	malware 1519 1526	malware
+R38	use Arg1:T71 Arg2:T73	
+R39	part_of Arg1:T75 Arg2:T72	
+R40	use Arg1:T73 Arg2:T75	
+R41	goal Arg1:T75 Arg2:T74	
+T78	threatActor_name 1619 1633	Desert Falcons
+T79	threatActor_name 1636 1642	Group2
+R42	coreference Arg1:T79 Arg2:T78	
+T80	attack_activity 1649 1669	Operation Parliament
+T81	threatActor_name 1672 1678	Group3
+R43	launch Arg1:T81 Arg2:T80	
+T76	threatActor_name 1714 1720	Group2
+T77	threatActor_name 1726 1740	Desert Falcons
+T82	threatActor_name 1570 1576	Group2
+T83	threatActor_name 1581 1587	Group3
+R44	coreference Arg1:T76 Arg2:T77	
+T84	threatActor_name 1760 1766	Group3
+T85	attack_activity 1768 1788	Operation Parliament
+R45	launch Arg1:T84 Arg2:T85	
+T86	threatActor_name 1834 1866	Gaza Cybergang Group2 and Group3
+T87	threatActor_name 1979 2000	Gaza Cybergang Group1
+T88	tool 2115 2126	paste sites
+R46	use Arg1:T87 Arg2:T88	
+T89	attack_activity 2153 2165	SneakyPastes
+R47	use Arg1:T89 Arg2:T88	
+T90	sample_function 2190 2238	sneak a remote access Trojan ( RAT ) or multiple
+R48	goal Arg1:T87 Arg2:T90	
+T91	attack_activity 2287 2305	employing phishing
+T92	reference_word 2263 2272	The group
+R49	coreference Arg1:T92 Arg2:T87	
+R50	launch Arg1:T92 Arg2:T91	
+T93	tool 2313 2335	several chained stages
+R51	use Arg1:T91 Arg2:T93	
+T94	sample_function 2339 2354	evade detection
+T95	sample_function 2359 2373	extend command
+T96	sample_function 2378 2402	control server lifetimes
+R52	goal Arg1:T93 Arg2:T94	
+R53	goal Arg1:T93 Arg2:T95	
+R54	goal Arg1:T93 Arg2:T96	
+T97	attack_activity 2433 2445	SneakyPastes
+T98	government 2462 2481	government entities
+T99	industry 2484 2493	education
+T100	industry 2496 2509	media outlets
+T101	target_crowd 2512 2523	journalists
+T102	target_crowd 2526 2535	activists
+R55	attack Arg1:T97 Arg2:T98	
+R56	attack Arg1:T97 Arg2:T99	
+T103	target_crowd 2538 2568	political parties or personnel
+T104	target_crowd 2571 2593	healthcare and banking
+R57	attack Arg1:T97 Arg2:T100	
+R58	attack Arg1:T97 Arg2:T101	
+R59	attack Arg1:T97 Arg2:T102	
+R60	attack Arg1:T97 Arg2:T103	
+R61	attack Arg1:T97 Arg2:T104	
+T105	threatActor_name 2640 2661	Gaza Cybergang Group1
+T106	time 2685 2694	2018/2019
+T107	tool 2705 2730	techniques and procedures
+T108	time 2766 2774	Jan 2018
+T109	time 2779 2787	Jan 2019
+T110	sample_function 2790 2812	Historical checkpoints
+T111	sample_function 2817 2845	politicized graphical decoys
+T112	sample_function 2875 2899	indicators of compromise
+T113	time 2969 2973	2018
+T114	threatActor_name 3013 3034	Gaza Cybergang Group1
+T115	target_crowd 3045 3078	embassies and political personnel
+R63	attack Arg1:T114 Arg2:T115	
+T116	threatActor_name 3081 3102	Gaza Cybergang Group1
+T117	tool 3127 3149	limited infrastructure
+T118	tool 3157 3184	open-source type of toolset
+R64	use Arg1:T116 Arg2:T117	
+R65	use Arg1:T116 Arg2:T118	
+T119	sample_function 3254 3284	Palestinian political problems
+R66	goal Arg1:T116 Arg2:T119	
+T120	person 3287 3300	The attackers
+T121	tool 3315 3336	chained attack stages
+R67	use Arg1:T120 Arg2:T121	
+T122	sample_function 3340 3361	evade quick detection
+T123	sample_function 3366 3403	hide the communication infrastructure
+R68	goal Arg1:T121 Arg2:T122	
+R69	goal Arg1:T121 Arg2:T123	
+T124	tool 3655 3662	toolset
+T125	protocol 3670 3674	TTPs
+T126	tool 3677 3691	infrastructure
+T127	tool 3694 3734	action on objectives and the victimology
+T128	threatActor_name 3846 3860	Gaza Cybergang
+T129	tool 3866 3895	disposable emails and domains
+T130	sample_function 3896 3920	as the phishing platform
+T131	person 3931 3942	the victims
+R70	use Arg1:T128 Arg2:T129	
+R71	goal Arg1:T129 Arg2:T130	
+R72	attack Arg1:T128 Arg2:T131	
+T132	tool 3950 3962	pastebin.com
+T133	tool 3965 3975	github.com
+T134	tool 3978 3989	mailimg.com
+T135	tool 3992 4002	upload.cat
+T136	tool 4005 4018	dev-point.com
+T137	tool 4023 4031	pomf.cat
+T139	tool 4111 4129	RAT implementation
+T140	sample_function 4143 4188	communicates with the corresponding C2 server
+R79	goal Arg1:T139 Arg2:T140	
+T141	tool 4242 4252	PowerShell
+T142	program_language 4255 4258	VBS
+T143	program_language 4261 4263	JS
+T144	sample_name 4210 4226	several implants
+R80	use Arg1:T144 Arg2:T141	
+R81	use Arg1:T144 Arg2:T142	
+R82	use Arg1:T144 Arg2:T143	
+T145	sample_function 4270 4307	dotnet for resilience and persistence
+R83	goal Arg1:T144 Arg2:T145	
+T146	tool 4343 4361	dotnet application
+T147	tool 4373 4389	several commands
+T148	tool 4398 4415	directory listing
+R84	use Arg1:T146 Arg2:T147	
+R85	part_of Arg1:T148 Arg2:T147	
+T149	tool 4418 4428	screenshot
+R86	part_of Arg1:T149 Arg2:T147	
+T150	tool 4431 4439	compress
+R87	part_of Arg1:T150 Arg2:T147	
+T151	tool 4442 4448	upload
+R88	part_of Arg1:T151 Arg2:T147	
+T152	reference_word 4457 4459	It
+R89	coreference Arg1:T152 Arg2:T146	
+T153	tool 4465 4504	creates random long string folder names
+R90	use Arg1:T152 Arg2:T153	
+T154	sample_function 4528 4565	host the collected files per category
+R91	goal Arg1:T153 Arg2:T154	
+T155	person 4631 4647	The threat actor
+T157	attack_goal 4696 4721	deployed additional tools
+T158	attack_goal 4726 4751	data collection functions
+R93	goal Arg1:T155 Arg2:T157	
+R94	goal Arg1:T155 Arg2:T158	
+T159	attack_activity 4840 4855	Phishing emails
+T160	attack_goal 4960 4993	lure the intended type of victims
+T156	md5 5995 6026	92dd0f16e8ae274d83ba1d0d5b2e342
+T161	md5 5909 5941	e686ffa90b2bfb567547f1c0dad1ae0b
+T162	threatActor_name 5548 5569	Gaza Cybergang Group1
+T163	tool 5095 5113	disposable domains
+T164	tool 5118 5124	emails
+T165	attack_activity 5179 5194	phishing emails
+T166	tool 5205 5230	links to external domains
+T167	sample_function 5234 5258	download the first stage
+R92	use Arg1:T165 Arg2:T166	
+R96	goal Arg1:T166 Arg2:T167	
+T168	sample_function 5382 5401	download a RAR file
+T169	sample_function 5457 5475	execute afterwards
+T170	tool 5659 5669	PowerShell
+T171	tool 5672 5675	VBS
+T172	tool 5678 5697	.NET app downloader
+T173	sample_name 5601 5608	samples
+T174	tool 5627 5634	methods
+R97	part_of Arg1:T170 Arg2:T174	
+R98	part_of Arg1:T171 Arg2:T174	
+R99	part_of Arg1:T172 Arg2:T174	
+R100	use Arg1:T173 Arg2:T174	
+T175	tool 5756 5770	persistent RAT
+T176	sample_function 5776 5787	steals data
+T177	sample_function 5792 5819	uploads it to the C2 server
+R101	goal Arg1:T175 Arg2:T176	
+R102	goal Arg1:T175 Arg2:T177	
+T178	sample_name 5885 5901	3amadi_hamas.zip
+T179	sample_name 1950 1976	intelreports@kaspersky.com
+T180	reference_word 6034 6049	sample ZIP file
+T181	tool 6134 6144	executable
+R104	use Arg1:T180 Arg2:T181	
+T182	tool 6155 6177	compiled AutoIt script
+R105	coreference Arg1:T182 Arg2:T181	
+T183	tool 6228 6238	executable
+T184	function 6323 6330	AppData
+T185	function 6335 6342	Startup
+T186	sample_function 6251 6277	download a couple of files
+R106	goal Arg1:T183 Arg2:T186	
+T187	sample_function 6374 6407	invokes the first downloaded file
+R107	goal Arg1:T183 Arg2:T187	
+T188	person 6521 6533	threat actor
+T189	attack_goal 6544 6570	achieve stable persistence
+R108	goal Arg1:T188 Arg2:T189	
+T190	attack_goal 6636 6651	exfiltrate data
+R109	goal Arg1:T188 Arg2:T190	
+T191	tool 6818 6824	chains
+T192	sample_function 6828 6843	avoid detection
+T193	sample_function 6848 6869	protect the C2 server
+R110	goal Arg1:T191 Arg2:T192	
+R111	goal Arg1:T191 Arg2:T193	
+T194	reference_word 6872 6876	They
+R112	coreference Arg1:T194 Arg2:T191	
+T195	tool 6895 6917	persistence mechanisms
+T196	tool 6922 6941	simple instructions
+R113	part_of Arg1:T195 Arg2:T194	
+T197	tool 6974 6985	VBS scripts
+R114	part_of Arg1:T196 Arg2:T194	
+T198	tool 6988 7006	PowerShell scripts
+T199	tool 7015 7023	software
+T200	tool 7090 7101	dotnet apps
+T201	tool 7110 7113	RAT
+T202	sample_function 7172 7192	download and execute
+T203	sample_function 7195 7203	compress
+T204	sample_function 7206 7213	encrypt
+T205	sample_function 7216 7222	upload
+T206	sample_function 7225 7243	search directories
+R115	goal Arg1:T201 Arg2:T202	
+R116	goal Arg1:T201 Arg2:T206	
+R117	goal Arg1:T201 Arg2:T203	
+R118	goal Arg1:T201 Arg2:T204	
+T207	person 7256 7268	threat actor
+T208	tool 7302 7305	RAT
+R119	goal Arg1:T201 Arg2:T205	
+T209	sample_function 7411 7435	search for specific file
+R120	use Arg1:T207 Arg2:T208	
+R121	goal Arg1:T208 Arg2:T209	
+T210	tool 7317 7344	Razy/NeD worm/Wonder Botnet
+R122	coreference Arg1:T210 Arg2:T208	
+T211	sample_function 7506 7529	compressed in RAR files
+T212	sample_function 7638 7670	encrypted and uploaded to the C2
+R123	goal Arg1:T208 Arg2:T211	
+R124	goal Arg1:T208 Arg2:T212	
+T213	function 7673 7680	KEYWORD
+T214	sample_function 7683 7710	Downloads encrypted strings
+T215	tool 7916 7928	POST command
+R125	goal Arg1:T213 Arg2:T214	
+T216	sample_function 7888 7907	uploading to the C2
+T217	sample_name 7944 7956	FeedBack.php
+R127	goal Arg1:T215 Arg2:T216	
+T218	sample_name 7961 7973	FeedBack.php
+T219	tool 7998 8008	User-Agent
+T220	sample_function 8011 8025	saves the data
+T221	sample_function 8062 8081	stores the metadata
+R126	use Arg1:T218 Arg2:T219	
+R128	goal Arg1:T219 Arg2:T220	
+R129	goal Arg1:T219 Arg2:T221	
+T222	function 8126 8129	KEY
+T223	tool 8132 8139	Trigger
+T224	tool 8186 8198	POST command
+T225	sample_function 8143 8177	upload all data gathered to the C2
+R130	use Arg1:T223 Arg2:T224	
+R131	goal Arg1:T224 Arg2:T225	
+T226	sample_name 8226 8233	Log.php
+T227	tool 8258 8268	User-Agent
+T228	sample_function 8271 8285	saves the data
+T229	sample_function 8321 8340	stores the metadata
+R132	use Arg1:T226 Arg2:T227	
+R133	goal Arg1:T227 Arg2:T228	
+R134	goal Arg1:T227 Arg2:T229	
+T230	function 8385 8389	KEYS
+T231	sample_function 8392 8414	Deletes the file named
+R135	goal Arg1:T230 Arg2:T231	
+T232	function 8472 8480	REUPLOAD
+T233	sample_function 8483 8522	Re-uploads recent data to the C2 server
+T234	tool 8529 8533	POST
+R136	use Arg1:T232 Arg2:T234	
+R137	goal Arg1:T234 Arg2:T233	
+T235	function 8566 8575	RESTARTME
+T236	sample_function 8578 8614	Restarts the RAT application process
+R138	goal Arg1:T235 Arg2:T236	
+T237	function 8617 8622	BLOCK
+T238	function 8706 8712	SCREEN
+T239	function 8870 8873	LAN
+T240	sample_function 8625 8656	Creates a file in the Temp path
+T241	sample_function 8691 8703	kill the RAT
+R139	goal Arg1:T237 Arg2:T240	
+R140	goal Arg1:T237 Arg2:T241	
+T243	function 9067 9071	LANS
+T244	function 9142 9145	USB
+T245	function 9290 9294	USBS
+T246	function 9365 9367	HD
+T247	function 9509 9512	HDS
+T248	function 9582 9590	SHUTDOWN
+T249	function 9635 9642	RESTART
+T250	function 9684 9695	PROCANDSOFT
+T251	function 9836 9844	DEL-TEMP
+T252	function 9902 9905	RAR
+T253	function 10085 10089	RARM
+T254	function 10270 10274	RARW
+T255	function 10454 10458	KILL
+T256	sample_function 10461 10483	Kills system processes
+R141	goal Arg1:T255 Arg2:T256	
+T257	sample_function 10277 10294	Creates RAR files
+T258	sample_function 10372 10400	uploads RAR to the C2 server
+T259	tool 10409 10421	POST command
+R142	goal Arg1:T254 Arg2:T257	
+R143	use Arg1:T254 Arg2:T259	
+R144	goal Arg1:T259 Arg2:T258	
+T260	tool 10225 10237	POST command
+T261	sample_function 10188 10216	uploads RAR to the C2 server
+T262	sample_function 10092 10109	Creates RAR files
+T263	sample_function 9908 9925	Creates RAR files
+T264	sample_function 10003 10031	uploads RAR to the C2 server
+T265	tool 10040 10052	POST command
+R145	goal Arg1:T253 Arg2:T262	
+R146	use Arg1:T253 Arg2:T260	
+R147	goal Arg1:T260 Arg2:T261	
+R148	goal Arg1:T252 Arg2:T263	
+R149	use Arg1:T252 Arg2:T265	
+R150	goal Arg1:T265 Arg2:T264	
+T266	sample_function 9847 9864	Deletes all files
+R151	goal Arg1:T251 Arg2:T266	
+T267	sample_function 9698 9724	Lists all active processes
+T268	sample_function 9729 9751	all installed software
+T269	sample_function 9756 9792	uploads the results to the C2 server
+T270	tool 9801 9813	POST command
+R152	goal Arg1:T250 Arg2:T267	
+R153	goal Arg1:T250 Arg2:T268	
+R154	use Arg1:T250 Arg2:T270	
+R155	goal Arg1:T270 Arg2:T269	
+T271	tool 9670 9681	cmd /r /t 0
+T272	sample_function 9645 9663	Reboots the system
+R156	use Arg1:T249 Arg2:T271	
+R157	goal Arg1:T271 Arg2:T272	
+T273	tool 9621 9632	cmd /s /t 0
+T274	sample_function 9593 9614	Shuts down the system
+R158	use Arg1:T248 Arg2:T273	
+R159	goal Arg1:T273 Arg2:T274	
+T275	sample_function 9515 9531	Deletes the file
+T276	sample_function 9561 9579	reverse the effect
+R161	goal Arg1:T247 Arg2:T276	
+T277	sample_function 9370 9401	Creates a file in the Temp path
+T278	tool 9471 9479	hd.test1
+T279	sample_function 9483 9506	identify logical drives
+R162	goal Arg1:T246 Arg2:T277	
+R163	use Arg1:T246 Arg2:T278	
+R164	goal Arg1:T278 Arg2:T279	
+T280	sample_function 9297 9313	Deletes the file
+T281	tool 9329 9340	USB command
+T282	tool 9547 9557	HD command
+R160	use Arg1:T247 Arg2:T282	
+R165	use Arg1:T245 Arg2:T281	
+R166	goal Arg1:T282 Arg2:T275	
+T283	sample_function 9344 9362	reverse the effect
+R167	goal Arg1:T245 Arg2:T283	
+R168	goal Arg1:T281 Arg2:T280	
+T284	sample_function 9148 9179	Creates a file in the Temp path
+T285	tool 9249 9258	Remo.test
+T286	sample_function 9262 9287	identify removable drives
+R169	goal Arg1:T244 Arg2:T284	
+R170	use Arg1:T244 Arg2:T285	
+R171	goal Arg1:T285 Arg2:T286	
+T287	sample_function 9074 9090	Deletes the file
+T288	tool 9106 9117	LAN command
+T289	sample_function 9121 9139	reverse the effect
+R172	goal Arg1:T243 Arg2:T289	
+R173	use Arg1:T243 Arg2:T288	
+R174	goal Arg1:T288 Arg2:T287	
+T242	sample_function 8876 8907	Creates a file in the Temp path
+T290	reference_word 8975 8979	this
+T291	tool 9001 9035	unloaded feature/module of the RAT
+R175	goal Arg1:T239 Arg2:T242	
+T292	sample_function 8947 8965	spread through LAN
+T293	tool 8886 8890	file
+R176	coreference Arg1:T290 Arg2:T293	
+R177	goal Arg1:T239 Arg2:T292	
+T294	sample_function 8715 8737	Takes a PNG screenshot
+T295	sample_function 8761 8791	names the file with timestamps
+T296	sample_function 8799 8826	uploads it to the C2 server
+T297	tool 8833 8837	POST
+R179	goal Arg1:T238 Arg2:T294	
+R180	goal Arg1:T238 Arg2:T295	
+R178	coreference Arg1:T291 Arg2:T290	
+R181	use Arg1:T238 Arg2:T297	
+R182	goal Arg1:T297 Arg2:T296	
+T298	time 10489 10493	2018
+T299	person 10500 10512	threat actor
+T300	tool 10539 10548	C2 server
+T301	IP_evil 10551 10564	192.169.7.250
+R183	use Arg1:T299 Arg2:T300	
+R184	coreference Arg1:T301 Arg2:T300	
+T302	sample_function 10571 10606	rotated a multitude of domain names
+R185	goal Arg1:T299 Arg2:T302	
+T303	tool 10698 10708	free sites
+T304	reference_word 10645 10652	attacks
+R186	attack Arg1:T304 Arg2:T303	
+T305	attack_activity 10796 10810	phishing email
+T306	tool 10843 10869	disposable email providers
+R187	use Arg1:T305 Arg2:T306	
+T307	tool 10878 10892	bit-degree.com
+T308	tool 10895 10909	mail4gmail.com
+T309	tool 10912 10943	careless-whisper.com and others
+R188	part_of Arg1:T307 Arg2:T306	
+R189	part_of Arg1:T308 Arg2:T306	
+R190	part_of Arg1:T309 Arg2:T306	
+T310	location 11060 11083	Palestinian Territories
+T311	location 11131 11137	Jordan
+T312	location 11140 11146	Israel
+T313	location 11154 11161	Lebanon
+T315	government 2450 2459	embassies
+R191	attack Arg1:T97 Arg2:T315	
+T314	government 11225 11234	embassies
+T316	government 11237 11256	government entities
+T317	industry 11259 11268	education
+T318	industry 11271 11284	media outlets
+T319	target_crowd 11287 11298	journalists
+T320	target_crowd 11301 11310	activists
+T321	target_crowd 11313 11343	political parties or personnel
+T322	industry 11346 11356	healthcare
+T323	industry 11361 11368	banking
+T324	sample_function 11592 11612	continuous targeting
+T325	sample_function 11617 11634	high malleability
+R192	goal Arg1:T69 Arg2:T324	
+R193	goal Arg1:T69 Arg2:T325	
+T326	reference_word 11846 11857	The attacks
+R194	coreference Arg1:T326 Arg2:T66	
+T327	reference_word 12029 12040	the attacks
+R195	coreference Arg1:T327 Arg2:T66	
+T328	attack_goal 12044 12069	extend into other regions
+R196	goal Arg1:T327 Arg2:T328	
+T329	attack_goal 12098 12131	complicated Palestinian situation
+R197	goal Arg1:T327 Arg2:T329	
+T330	sample_function 4587 4611	encrypting and uploading
+R198	goal Arg1:T152 Arg2:T330	
+T331	tool 7838 7844	Winrar
+T332	tool 8035 8038	RAR
+T333	tool 8418 8440	tempPath + “ ky ” file
+T334	sample_name 8214 8221	log.php
+T335	sample_name 8549 8561	FeedBack.php
+T336	sample_name 8672 8678	Block~
+T337	sample_name 8853 8865	FeedBack.php
+T338	sample_name 9824 9831	log.php
+T339	sample_name 10068 10080	FeedBack.php
+T340	sample_name 10253 10265	FeedBack.php
+T341	sample_name 10437 10449	FeedBack.php
+T138	reference_word 4936 4941	These
+R62	coreference Arg1:T138 Arg2:T159	
+R73	coreference Arg1:T138 Arg2:T160	
+R74	coreference Arg1:T180 Arg2:T178	

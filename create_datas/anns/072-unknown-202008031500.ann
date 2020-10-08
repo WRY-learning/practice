@@ -1,0 +1,201 @@
+T2	time 163 181	February 24 , 2020
+T3	security_team 184 193	Palo Alto
+T4	company 256 262	AvertX
+T5	person 211 222	researchers
+T6	reference_word 229 244	vulnerabilities
+R1	find Arg1:T5 Arg2:T6	
+R2	part_of Arg1:T5 Arg2:T3	
+R3	first_found_time Arg1:T6 Arg2:T2	
+T7	company 410 416	AvertX
+T8	company 340 346	AvertX
+T9	tool 611 633	network video recorder
+T10	tool 636 639	NVR
+R4	coreference Arg1:T10 Arg2:T9	
+T11	vulnerability_cve 745 759	CVE-2020-11625
+T12	vulnerability_cve 780 794	CVE-2020-11624
+T13	vulnerability_cve 825 839	CVE-2020-11623
+T14	vul_aliases 761 777	User enumeration
+T15	vul_aliases 796 822	Weak password requirements
+T16	vul_aliases 841 877	Exposed dangerous method or function
+R5	coreference Arg1:T14 Arg2:T11	
+R6	coreference Arg1:T15 Arg2:T12	
+R7	coreference Arg1:T16 Arg2:T13	
+T17	person 938 947	Attackers
+T19	person 1315 1324	Attackers
+T21	tool 1462 1473	IoT devices
+T22	person 1816 1825	attackers
+T23	tool 1844 1855	IoT botnets
+T24	tool 1715 1734	default credentials
+T25	reference_word 1866 1870	them
+R10	coreference Arg1:T25 Arg2:T24	
+R11	use Arg1:T22 Arg2:T25	
+R12	use Arg1:T23 Arg2:T25	
+T26	sample_function 1874 1903	gain access to the IoT device
+R13	goal Arg1:T25 Arg2:T26	
+T27	person 1906 1915	Attackers
+T28	protocol 1944 1987	universal asynchronous receiver-transmitter
+T29	protocol 1990 1994	UART
+R14	coreference Arg1:T29 Arg2:T28	
+T30	reference_word 2054 2058	they
+R15	coreference Arg1:T30 Arg2:T27	
+T31	sub_activity 2063 2106	access and modify additional configurations
+T32	sub_activity 2109 2132	reset the configuration
+R16	launch Arg1:T30 Arg2:T31	
+R17	launch Arg1:T30 Arg2:T32	
+T33	company 2177 2183	AvertX
+T34	company 2271 2277	AvertX
+T35	protocol 2350 2354	UART
+T36	time 2442 2446	2020
+T37	tool 2522 2533	IoT devices
+T38	security_team 2712 2721	Palo Alto
+T39	person 2731 2740	customers
+R18	part_of Arg1:T39 Arg2:T38	
+T40	tool 2790 2825	ML-Powered Next-Generation Firewall
+T41	tool 2832 2844	IoT Security
+T42	sample_function 2745 2781	protected from these vulnerabilities
+R19	goal Arg1:T40 Arg2:T42	
+R20	goal Arg1:T41 Arg2:T42	
+T43	tool 2880 2884	NGFW
+T45	tool 2898 2912	user interface
+T46	tool 2915 2917	UI
+R22	coreference Arg1:T46 Arg2:T45	
+T47	location 3184 3224	ISAPI/Security/sessionLogin/capabilities
+T48	person 3522 3531	attackers
+T49	sub_activity 3535 3565	enumerate legitimate usernames
+R23	launch Arg1:T48 Arg2:T49	
+T50	person 3854 3867	administrator
+T51	tool 3912 3918	device
+R24	use Arg1:T50 Arg2:T51	
+T52	person 3980 3994	administrators
+T53	tool 4017 4033	default password
+T54	tool 4036 4046	admin/1234
+R25	coreference Arg1:T54 Arg2:T53	
+R26	use Arg1:T52 Arg2:T53	
+T55	counter_measure 2291 2324	a patch for these vulnerabilities
+R27	use Arg1:T34 Arg2:T55	
+T56	tool 3955 3961	device
+T57	reference_word 4066 4068	it
+R28	coreference Arg1:T57 Arg2:T56	
+R29	use Arg1:T52 Arg2:T54	
+T58	protocol 4145 4149	UART
+T59	sample_function 4172 4192	access to diagnostic
+T60	sample_function 4197 4226	configuration functionalities
+T62	protocol 4369 4373	UART
+T64	person 4331 4340	attackers
+T65	protocol 4468 4472	UART
+T66	protocol 4613 4617	UART
+T67	tool 4639 4651	Attify Badge
+T69	reference_word 4722 4724	it
+R35	coreference Arg1:T69 Arg2:T67	
+T70	protocol 4784 4787	SPI
+T71	protocol 4790 4794	JTAG
+T72	protocol 4797 4800	I2C
+T73	protocol 4805 4809	UART
+R36	use Arg1:T69 Arg2:T70	
+R37	use Arg1:T69 Arg2:T71	
+R38	use Arg1:T69 Arg2:T72	
+R39	use Arg1:T69 Arg2:T73	
+T74	reference_word 4812 4814	It
+R40	coreference Arg1:T74 Arg2:T69	
+T75	reference_word 4851 4853	it
+R41	coreference Arg1:T75 Arg2:T74	
+T76	protocol 5011 5015	UART
+T77	tool 4961 4976	screen terminal
+T78	tool 5024 5043	baud rate of 115200
+R42	use Arg1:T77 Arg2:T78	
+T80	vulnerability_cve 5588 5603	vulnerabilities
+T81	sample_function 5624 5645	compromise the device
+R43	goal Arg1:T80 Arg2:T81	
+T82	person 5727 5736	attackers
+T83	person 5876 5885	attackers
+T84	tool 5933 5952	default credentials
+R44	use Arg1:T83 Arg2:T84	
+T85	sample_function 5899 5926	find and compromise cameras
+R45	goal Arg1:T84 Arg2:T85	
+T86	protocol 5982 5986	UART
+T87	person 6012 6021	attackers
+T88	sub_activity 6060 6094	extract information off the device
+T89	sub_activity 6097 6124	change configuration values
+T90	sub_activity 6134 6162	render the device inoperable
+R46	launch Arg1:T87 Arg2:T88	
+R47	launch Arg1:T87 Arg2:T89	
+R48	launch Arg1:T87 Arg2:T90	
+T91	sub_activity 2142 2170	render the camera inoperable
+R49	launch Arg1:T30 Arg2:T91	
+T92	tool 5183 5199	several commands
+T93	sample_function 5217 5235	obtain information
+R50	goal Arg1:T92 Arg2:T93	
+T94	company 6165 6171	AvertX
+T95	company 6277 6283	AvertX
+T96	counter_measure 6213 6229	released a patch
+R51	use Arg1:T94 Arg2:T96	
+T97	counter_measure 6288 6314	removed the UART connector
+T98	counter_measure 6319 6341	disabled the interface
+R52	use Arg1:T95 Arg2:T97	
+R53	use Arg1:T95 Arg2:T98	
+T99	security_team 6386 6395	Palo Alto
+T100	company 6444 6450	AvertX
+T101	tool 6501 6536	ML-Powered Next-Generation Firewall
+T102	sample_function 6559 6590	identifying brute force attacks
+R54	goal Arg1:T101 Arg2:T102	
+T103	tool 6616 6628	IoT Security
+T104	tool 6664 6668	NGFW
+T105	sample_function 6677 6704	detects brute force attacks
+R55	goal Arg1:T103 Arg2:T105	
+T1	tool 27 44	AvertX IP Cameras
+T106	tool 256 273	AvertX IP cameras
+T107	company 27 33	AvertX
+R57	located Arg1:T6 Arg2:T106	
+T109	tool 340 357	AvertX IP cameras
+T111	attack_goal 1009 1041	facilitating brute-force attacks
+T20	tool 1373 1389	default password
+R9	use Arg1:T19 Arg2:T20	
+T112	sample_function 1342 1359	access the camera
+R60	goal Arg1:T20 Arg2:T112	
+T61	sample_function 4241 4280	system information that can be modified
+T68	tool 4701 4710	FTDI chip
+R34	use Arg1:T67 Arg2:T68	
+T113	tool 4826 4839	microUSB port
+T114	sample_function 4860 4877	connected to a PC
+R61	goal Arg1:T113 Arg2:T114	
+T115	tool 3159 3172	login request
+T116	reference_word 3270 3272	it
+R62	coreference Arg1:T116 Arg2:T115	
+T117	tool 3383 3396	login request
+T118	reference_word 3473 3475	it
+R63	coreference Arg1:T118 Arg2:T117	
+T119	tool 2177 2194	AvertX IP cameras
+T120	counter_measure 2338 2364	removed the UART connector
+T121	counter_measure 2369 2391	disabled the interface
+R64	use Arg1:T34 Arg2:T120	
+R65	use Arg1:T34 Arg2:T121	
+T122	tool 5469 5485	AvertX IP camera
+T79	company 5469 5475	AvertX
+T123	sub_activity 5740 5767	perform brute force attacks
+R66	launch Arg1:T82 Arg2:T123	
+T124	tool 672 686	SD memory card
+T125	sample_function 5655 5675	render it inoperable
+R67	goal Arg1:T80 Arg2:T125	
+T126	tool 6444 6461	AvertX IP cameras
+T127	sample_function 6594 6613	block or alert them
+R68	goal Arg1:T102 Arg2:T127	
+T128	tool 4107 4122	login.js script
+T44	protocol 6300 6304	UART
+T129	tool 4145 4159	UART interface
+R21	goal Arg1:T129 Arg2:T59	
+R30	goal Arg1:T129 Arg2:T60	
+R31	goal Arg1:T129 Arg2:T61	
+T130	tool 4369 4383	UART interface
+T131	tool 4468 4483	UART interfaces
+T132	tool 4613 4627	UART interface
+T133	tool 5982 5996	UART interface
+T134	tool 6708 6719	IoT devices
+T108	reference_word 0 17	3 Vulnerabilities
+R32	located Arg1:T108 Arg2:T1	
+T110	reference_word 304 325	Three vulnerabilities
+R56	located Arg1:T110 Arg2:T109	
+T18	sub_activity 961 1006	enumerate the usernames of IP camera accounts
+R8	goal Arg1:T18 Arg2:T111	
+R58	launch Arg1:T17 Arg2:T18	
+T63	reference_word 4283 4310	This security vulnerability
+R33	use Arg1:T64 Arg2:T63	

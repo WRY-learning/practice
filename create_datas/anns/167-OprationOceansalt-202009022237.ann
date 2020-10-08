@@ -1,0 +1,100 @@
+T1	security_team 121 186	McAfee Advanced Threat Research and Anti-Malware Operations teams
+T2	sub_activity 219 246	data reconnaissance implant
+R1	find Arg1:T1 Arg2:T2	
+T3	target_crowd 257 278	Korean-speaking users
+R2	attack Arg1:T2 Arg2:T3	
+T4	malware 307 326	Operation Oceansalt
+T5	malware 443 452	Oceansalt
+T6	malware 577 586	Oceansalt
+T7	attack_activity 376 383	Seasalt
+T8	time 511 515	2010
+T9	threatActor_name 562 574	Comment Crew
+T10	attack_activity 487 502	Seasalt implant
+T11	tool 460 477	a portion of code
+R3	use Arg1:T5 Arg2:T11	
+R4	part_of Arg1:T11 Arg2:T10	
+R5	launch Arg1:T9 Arg2:T10	
+T12	location 639 650	South Korea
+T13	location 653 666	United States
+T14	location 673 679	Canada
+T15	location 786 797	South Korea
+T16	threatActor_name 1134 1146	Comment Crew
+T17	threatActor_aliases 1163 1167	APT1
+T18	time 1185 1189	2013
+R6	first_found_time Arg1:T16 Arg2:T18	
+R7	first_found_time Arg1:T17 Arg2:T18	
+T19	location 1257 1270	United States
+T20	sub_activity 891 927	send system data to a control server
+T21	sub_activity 932 969	execute commands on infected machines
+T22	security_team 1018 1051	The Advanced Threat Research team
+T23	threatActor_name 1316 1328	Comment Crew
+T24	threatActor_name 1578 1590	Comment Crew
+T25	threatActor_name 1909 1921	Comment Crew
+T26	threatActor_name 1802 1814	Comment Crew
+T27	location 1702 1713	South Korea
+T28	tool 1633 1663	portions of their implant code
+R8	part_of Arg1:T28 Arg2:T24	
+R9	attack Arg1:T24 Arg2:T27	
+T29	threatActor_name 2174 2186	Comment Crew
+T30	target_crowd 2235 2248	South Koreans
+R10	attack Arg1:T29 Arg2:T30	
+T31	location 2390 2401	South Korea
+T32	company 2614 2623	Microsoft
+T33	tool 2614 2630	Microsoft Office
+T34	target_crowd 2972 2985	South Koreans
+T35	security_team 2988 3021	The Advanced Threat Research team
+T36	target_crowd 3102 3123	Korean-speaking users
+T37	threatActor_name 3150 3162	Comment Crew
+T38	sub_activity 3051 3071	a new implant family
+T39	time 3921 3934	May 31 , 2018
+T40	location 3940 3951	South Korea
+T41	company 3848 3877	Inter-Korean Cooperation Fund
+T42	tool 3720 3734	Microsoft Word
+T43	company 3720 3729	Microsoft
+T44	tool 3781 3786	Excel
+T45	tool 3389 3404	Microsoft Excel
+T46	company 3389 3398	Microsoft
+T47	attack_activity 3337 3351	spear phishing
+T48	location 4007 4012	Korea
+T49	location 4189 4202	North America
+T50	time 4055 4064	August 14
+T51	location 4113 4119	Canada
+T52	location 4124 4141	the United States
+T53	tool 4232 4238	Office
+T54	location 4270 4276	Canada
+T55	location 4281 4298	the United States
+T56	location 4369 4382	North America
+T57	target_crowd 4493 4500	Koreans
+T58	industry 4727 4737	investment
+T59	industry 4740 4747	banking
+T60	industry 4754 4765	agriculture
+T61	location 4860 4871	South Korea
+T62	company 4905 4934	Inter-Korean Cooperation fund
+T63	attack_goal 5010 5025	financial theft
+T64	location 5718 5723	Korea
+T65	time 6040 6046	May 28
+T66	person 6097 6101	Lion
+T67	time 6005 6011	May 18
+T68	sub_activity 5871 5911	hacked a number of South Korean websites
+T69	sub_activity 5915 5936	host the implant code
+R11	goal Arg1:T68 Arg2:T69	
+T70	attack_activity 5227 5236	Oceansalt
+T71	threatActor_name 2008 2020	Comment Crew
+T72	tool 5758 5779	The distribution URLs
+T73	tool 2743 2767	the Korean-language pack
+R12	attack Arg1:T6 Arg2:T12	
+R13	attack Arg1:T6 Arg2:T13	
+R14	attack Arg1:T6 Arg2:T14	
+T74	malware 800 809	Oceansalt
+T75	reference_word 875 886	The malware
+R15	coreference Arg1:T75 Arg2:T74	
+R16	launch Arg1:T75 Arg2:T20	
+R17	launch Arg1:T75 Arg2:T21	
+T76	reference_word 1423 1432	the group
+R18	coreference Arg1:T76 Arg2:T23	
+T77	tool 2672 2697	Korean language code page
+T78	industry 3548 3562	infrastructure
+T79	industry 3584 3594	financials
+T80	industry 3650 3664	infrastructure
+T81	tool 5978 5996	malicious document
+R19	occur_time Arg1:T81 Arg2:T67	

@@ -1,0 +1,10 @@
+Name of the report for Dragonfly2.0DragonOKDustStorm
+Release_Time : unknown
+Report_URL : https://attack.mitre.org/groups/
+Dragonfly 2.0 : Berserk Bear .
+Dragonfly 2.0 is a suspected Russian group that has targeted government entities and multiple U.S. critical infrastructure sectors since at least March 2016 .
+There is debate over the extent of overlap between Dragonfly 2.0 and Dragonfly , but there is sufficient evidence to lead to these being tracked as two separate groups .
+DragonOK is a threat group that has targeted Japanese organizations with phishing emails .
+Due to overlapping TTPs , including similar custom tools , DragonOK is thought to have a direct or indirect relationship with the threat group Moafee .
+It is known to use a variety of malware , including Sysget / HelloBridge , PlugX , PoisonIvy , FormerFirstRat , NFlog , and NewCT .
+Dust Storm is a threat group that has targeted multiple industries in Japan , South Korea , the United States , Europe , and several Southeast Asian countries .

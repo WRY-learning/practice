@@ -1,0 +1,9 @@
+Unknow .		others others
+Release_Time : unknown .		others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+Taidoor is a threat group that has operated since at least 2009 and has primarily targeted the Taiwanese government .		threatActor_name others others others others others others others others others others time others others others others others others others others
+TEMP.Veles ： XENOTIME .		threatActor_name others threatActor_aliases others
+TEMP.Veles is a Russia-based threat group that has targeted critical infrastructure .		threatActor_name others others others others others others others others attack_goal attack_goal others
+The group has been observed utilizing TRITON , a malware framework designed to manipulate industrial safety systems .		reference_word reference_word others others others others malware others others others others others others attack_goal attack_goal attack_goal attack_goal others
+The White Company is a likely state-sponsored threat actor with advanced capabilities .		threatActor_name threatActor_name threatActor_name others others others others others others others others others others
+From 2017 through 2018 , the group led an espionage campaign called Operation Shaheen targeting government and military organizations in Pakistan .		others time time time others reference_word reference_word others others sub_activity sub_activity others attack_activity attack_activity others government others government government others location others

@@ -1,0 +1,171 @@
+T1	threatActor_name 0 5	APT37
+T2	threatActor_name 8 13	APT37
+T3	tool 53 74	Hangul Word Processor
+T4	tool 77 80	HWP
+T5	reference_word 90 102	the software
+T6	location 120 131	South Korea
+T7	tool 34 49	vulnerabilities
+R1	located Arg1:T7 Arg2:T3	
+R2	coreference Arg1:T4 Arg2:T3	
+R3	coreference Arg1:T5 Arg2:T4	
+R4	use Arg1:T2 Arg2:T7	
+T8	reference_word 144 153	the group
+T9	attack_activity 186 194	zero-day
+T10	vulnerability_cve 213 226	CVE-2018-0802
+T11	attack_activity 317 331	spear phishing
+R5	part_of Arg1:T10 Arg2:T9	
+R6	use Arg1:T8 Arg2:T10	
+R7	coreference Arg1:T8 Arg2:T2	
+T12	threatActor_name 454 459	APT37
+T13	tool 509 514	Flash
+T14	vulnerability_cve 590 603	CVE-2016-4117
+T15	vulnerability_cve 606 619	CVE-2016-1019
+T16	vulnerability_cve 624 637	CVE-2015-3043
+T17	threatActor_name 660 665	APT37
+R9	use Arg1:T17 Arg2:T14	
+R10	use Arg1:T17 Arg2:T15	
+R11	use Arg1:T17 Arg2:T16	
+T18	security_team 680 707	FireEye iSIGHT Intelligence
+T19	time 738 751	November 2017
+T20	threatActor_name 754 759	APT37
+T21	attack_activity 772 780	zero-day
+T22	tool 781 792	Adobe Flash
+T23	vulnerability_cve 809 822	CVE-2018-4878
+T24	sample_function 828 878	distribute DOGCALL malware to South Korean victims
+T25	malware 839 846	DOGCALL
+T26	person 858 878	South Korean victims
+R8	first_found_time Arg1:T23 Arg2:T19	
+R12	use Arg1:T20 Arg2:T23	
+R13	located Arg1:T23 Arg2:T22	
+R14	find Arg1:T18 Arg2:T23	
+R15	goal Arg1:T23 Arg2:T24	
+T27	attack_activity 908 916	zero-day
+T28	attack_activity 1132 1140	zero-day
+T29	threatActor_name 1226 1231	APT37
+T30	tool 1265 1284	command and control
+R16	use Arg1:T29 Arg2:T30	
+T31	reference_word 1287 1291	They
+T32	tool 1301 1320	compromised servers
+T33	tool 1323 1342	messaging platforms
+T34	tool 1347 1370	cloud service providers
+T35	sample_function 1374 1389	avoid detection
+R17	use Arg1:T31 Arg2:T32	
+R18	use Arg1:T31 Arg2:T33	
+R19	use Arg1:T31 Arg2:T34	
+R20	goal Arg1:T32 Arg2:T35	
+R21	goal Arg1:T33 Arg2:T35	
+R22	goal Arg1:T34 Arg2:T35	
+R23	coreference Arg1:T31 Arg2:T29	
+T36	reference_word 1392 1401	The group
+T37	tool 1418 1435	compromised sites
+T38	sample_function 1439 1473	host second stage malware payloads
+R24	use Arg1:T36 Arg2:T37	
+R25	goal Arg1:T37 Arg2:T38	
+R26	coreference Arg1:T36 Arg2:T31	
+T39	threatActor_name 1488 1493	APT37
+T40	sub_activity 1498 1525	changed the email providers
+T41	sample_function 1529 1564	set up command and control accounts
+T42	tool 1536 1555	command and control
+T43	sample_function 1590 1608	cover their tracks
+T44	sample_function 1613 1631	cause misdirection
+R27	launch Arg1:T39 Arg2:T40	
+R28	goal Arg1:T40 Arg2:T41	
+R29	goal Arg1:T41 Arg2:T43	
+R30	goal Arg1:T41 Arg2:T44	
+T45	threatActor_name 1684 1689	APT37
+T46	threatActor_name 1727 1732	APT37
+T47	tool 1750 1770	legitimate platforms
+T48	sample_function 1774 1793	command and control
+R31	use Arg1:T46 Arg2:T47	
+R32	goal Arg1:T47 Arg2:T48	
+T49	malware 1855 1862	POORAIM
+T50	tool 1878 1899	AOL Instant Messenger
+T51	malware 1925 1932	DOGCALL
+T52	tool 1946 1964	cloud storage APIs
+T53	tool 1973 1979	pCloud
+T54	tool 1984 1991	Dropbox
+R33	use Arg1:T49 Arg2:T50	
+R34	use Arg1:T51 Arg2:T52	
+R35	part_of Arg1:T53 Arg2:T52	
+R36	part_of Arg1:T54 Arg2:T52	
+T55	threatActor_name 1994 1999	APT37
+T56	tool 2010 2030	compromised websites
+T57	sample_function 2034 2059	host second stage malware
+R37	use Arg1:T55 Arg2:T56	
+R38	goal Arg1:T56 Arg2:T57	
+T58	tool 2062 2076	Small websites
+T59	sample_function 2220 2243	host malicious payloads
+R39	goal Arg1:T58 Arg2:T59	
+T60	threatActor_name 2246 2251	APT37
+T61	time 2322 2326	2015
+T62	tool 2334 2343	SLOWDRIFT
+T63	location 2381 2386	Korea
+T64	tool 2395 2407	mail servers
+R40	occur_time Arg1:T62 Arg2:T61	
+T65	domain 2418 2426	Daum.net
+R41	located Arg1:T64 Arg2:T63	
+T66	time 2442 2446	2015
+T67	time 2451 2461	early 2016
+T68	threatActor_name 2464 2469	APT37
+T69	tool 2515 2520	Gmail
+T70	domain 2527 2538	hmamail.com
+T71	sample_function 2558 2576	anonymize activity
+R42	use Arg1:T68 Arg2:T69	
+R43	use Arg1:T68 Arg2:T70	
+R44	occur_time Arg1:T69 Arg2:T66	
+R45	occur_time Arg1:T70 Arg2:T67	
+R46	goal Arg1:T69 Arg2:T71	
+R47	goal Arg1:T70 Arg2:T71	
+T72	time 2589 2597	mid-2016
+T73	threatActor_name 2607 2612	APT37
+T74	email_evil 2625 2636	@yandex.com
+T75	email_evil 2641 2651	@india.com
+T76	sample_function 2693 2713	cause misattribution
+R48	use Arg1:T73 Arg2:T74	
+R49	use Arg1:T73 Arg2:T75	
+R50	goal Arg1:T74 Arg2:T76	
+R51	goal Arg1:T75 Arg2:T76	
+T77	threatActor_name 2716 2721	APT37
+T78	sample_function 2761 2778	initial intrusion
+T79	sample_function 2783 2795	exfiltration
+T80	reference_word 2798 2811	Their malware
+T81	sample_function 2843 2876	stealing information from victims
+T82	sample_function 2899 2940	automatically exfiltrate data of interest
+R52	goal Arg1:T80 Arg2:T82	
+R53	goal Arg1:T82 Arg2:T81	
+T83	threatActor_name 2958 2963	APT37
+T84	reference_word 3013 3024	the malware
+T85	threatActor_name 3043 3048	APT37
+T86	reference_word 3066 3068	it
+T87	security_team 3084 3091	FireEye
+R54	find Arg1:T87 Arg2:T86	
+R55	coreference Arg1:T86 Arg2:T84	
+R56	use Arg1:T85 Arg2:T84	
+R57	coreference Arg1:T84 Arg2:T80	
+T88	threatActor_name 3189 3194	APT37
+T89	tool 3144 3158	custom malware
+T90	attack_goal 3168 3186	espionage purposes
+R58	goal Arg1:T89 Arg2:T90	
+R59	use Arg1:T88 Arg2:T89	
+T91	tool 3214 3233	destructive malware
+R60	use Arg1:T88 Arg2:T91	
+T92	time 3239 3249	April 2017
+T93	threatActor_name 3252 3257	APT37
+T94	industry 3267 3288	South Korean military
+T95	government 3293 3317	government organizations
+T96	malware 3327 3334	DOGCALL
+T97	malware 3335 3343	backdoor
+T98	malware 3348 3355	RUHAPPY
+R61	part_of Arg1:T97 Arg2:T96	
+R62	attack Arg1:T93 Arg2:T94	
+R63	attack Arg1:T93 Arg2:T95	
+R64	use Arg1:T93 Arg2:T97	
+R65	use Arg1:T93 Arg2:T98	
+T99	malware 3444 3451	RUHAPPY
+T100	sample_function 3456 3496	overwrite a machine's Master Boot Record
+T101	sample_function 3519 3571	system to fail to boot into preconfigured partitions
+T102	tool 3478 3496	Master Boot Record
+T103	tool 3499 3502	MBR
+R66	coreference Arg1:T103 Arg2:T102	
+R67	goal Arg1:T99 Arg2:T100	
+R68	goal Arg1:T100 Arg2:T101	

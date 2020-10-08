@@ -1,0 +1,63 @@
+T1	threatActor_name 83 89	Group5
+T2	reference_word 183 192	The group
+R1	coreference Arg1:T2 Arg2:T1	
+T3	target_crowd 206 252	individuals connected to the Syrian opposition
+R2	goal Arg1:T2 Arg2:T3	
+T4	attack_activity 257 270	spearphishing
+T5	attack_activity 275 289	watering holes
+R3	launch Arg1:T2 Arg2:T4	
+R4	launch Arg1:T2 Arg2:T5	
+T6	threatActor_name 335 341	Group5
+T7	malware 374 393	remote access tools
+T8	malware 396 400	RATs
+R5	coreference Arg1:T8 Arg2:T7	
+T9	malware 405 410	njRAT
+T11	malware 440 451	Android RAT
+T12	malware 454 463	DroidJack
+R6	use Arg1:T6 Arg2:T7	
+R7	use Arg1:T6 Arg2:T9	
+T10	malware 415 423	NanoCore
+R8	use Arg1:T6 Arg2:T10	
+R9	use Arg1:T6 Arg2:T11	
+R10	use Arg1:T6 Arg2:T12	
+T13	sub_activity 466 474	Honeybee
+T14	target_crowd 526 556	humanitarian aid organizations
+R11	goal Arg1:T13 Arg2:T14	
+T15	location 580 587	Vietnam
+T16	location 590 599	Singapore
+T17	location 602 611	Argentina
+T18	location 614 619	Japan
+T19	location 622 631	Indonesia
+T20	location 638 644	Canada
+R12	located Arg1:T14 Arg2:T15	
+R13	located Arg1:T14 Arg2:T16	
+R14	located Arg1:T14 Arg2:T17	
+R15	located Arg1:T14 Arg2:T18	
+R16	located Arg1:T14 Arg2:T19	
+R17	located Arg1:T14 Arg2:T20	
+T21	time 685 699	August of 2017
+T22	time 719 732	February 2018
+R18	occur_time Arg1:T13 Arg2:T21	
+R19	occur_time Arg1:T13 Arg2:T22	
+T23	threatActor_name 735 741	Group7
+T24	threatActor_aliases 744 749	APT15
+T25	threatActor_aliases 752 758	Mirage
+T26	threatActor_aliases 761 772	Vixen Panda
+T27	threatActor_aliases 775 779	GREF
+T28	threatActor_aliases 782 796	Playful Dragon
+T29	threatActor_aliases 799 807	RoyalAPT
+R20	coreference Arg1:T24 Arg2:T23	
+R21	coreference Arg1:T25 Arg2:T23	
+R22	coreference Arg1:T26 Arg2:T23	
+R23	coreference Arg1:T27 Arg2:T23	
+R24	coreference Arg1:T28 Arg2:T23	
+R25	coreference Arg1:T29 Arg2:T23	
+T30	threatActor_name 810 819	Ke3chang 
+T31	threatActor_name 883 892	Ke3chang 
+T32	location 875 880	China
+T33	industry 936 939	oil
+T34	industry 942 952	government
+T35	industry 955 963	military
+R26	attack Arg1:T31 Arg2:T33	
+R27	attack Arg1:T31 Arg2:T34	
+R28	attack Arg1:T31 Arg2:T35	

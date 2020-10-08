@@ -1,0 +1,56 @@
+T1	threatActor_name 70 74	FIN6
+T2	threatActor_name 1188 1192	FIN6
+T3	threatActor_name 738 742	FIN6
+T4	threatActor_name 1614 1618	FIN6
+T5	threatActor_name 1410 1414	FIN6
+T6	threatActor_name 1019 1023	FIN6
+T7	threatActor_name 817 821	FIN6
+T8	person 307 315	attacker
+T10	security_team 597 604	FireEye
+T11	security_team 629 644	iSIGHT Partners
+R1	find Arg1:T11 Arg2:T3	
+R2	find Arg1:T10 Arg2:T3	
+T12	sub_activity 522 566	monitor the movement and sale of stolen data
+T13	person 510 521	researchers
+R3	use Arg1:T13 Arg2:T12	
+T14	sub_activity 921 957	sale of the stolen payment card data
+R4	launch Arg1:T7 Arg2:T14	
+T15	target_crowd 896 903	victims
+T16	sub_activity 905 913	networks
+R5	part_of Arg1:T16 Arg2:T15	
+R6	attack Arg1:T7 Arg2:T16	
+T17	sub_activity 1229 1272	stealing payment card data for monetization
+R7	goal Arg1:T2 Arg2:T17	
+T18	tool 1079 1083	TTPs
+T19	tool 1041 1076	tactics , techniques and procedures
+R8	coreference Arg1:T18 Arg2:T19	
+R9	part_of Arg1:T19 Arg2:T6	
+T20	time 1278 1282	2015
+T21	security_team 1285 1292	FireEye
+T9	security_team 1331 1350	Mandiant Consulting
+T22	tool 1464 1476	pointof-sale
+T23	tool 1479 1482	POS
+R10	coreference Arg1:T23 Arg2:T22	
+T24	security_team 1554 1560	iSIGHT
+T25	sub_activity 1495 1543	making off with millions of payment card numbers
+T27	person 1415 1421	actors
+R11	part_of Arg1:T27 Arg2:T5	
+R12	attack Arg1:T27 Arg2:T22	
+R13	launch Arg1:T27 Arg2:T25	
+T28	industry 1373 1384	hospitality
+T29	industry 1389 1395	retail
+R14	attack Arg1:T27 Arg2:T29	
+R15	attack Arg1:T27 Arg2:T28	
+T30	sub_activity 1635 1644	card shop
+T31	sub_activity 1692 1726	sell or exchange payment card data
+R16	use Arg1:T4 Arg2:T30	
+R17	goal Arg1:T30 Arg2:T31	
+T32	security_team 1729 1756	FIREEYE INTELLIGENCE TRACKS
+T33	reference_word 1904 1916	These groups
+T34	sub_activity 1796 1799	FIN
+R18	coreference Arg1:T33 Arg2:T34	
+T35	person 2023 2029	actors
+T36	reference_word 2158 2162	They
+R19	coreference Arg1:T36 Arg2:T35	
+T37	sub_activity 2116 2144	financial gain from the data
+R20	goal Arg1:T35 Arg2:T37	

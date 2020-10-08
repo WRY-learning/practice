@@ -1,0 +1,230 @@
+T1	malware 265 272	Zebrocy
+T2	malware 490 497	Zebrocy
+T3	malware 651 658	Zebrocy
+T4	malware 3517 3524	Zebrocy
+T5	malware 2377 2384	Zebrocy
+T6	malware 781 788	Zebrocy
+T7	malware 1182 1189	Zebrocy
+T8	malware 1483 1490	Zebrocy
+T9	malware 1018 1025	Zebrocy
+T10	malware 410 417	Zebrocy
+T11	malware 376 383	Zebrocy
+T12	malware 858 865	Zebrocy
+T13	malware 1968 1975	Zebrocy
+T14	malware 13545 13552	Zebrocy
+T15	malware 13403 13410	Zebrocy
+T16	malware 11210 11217	Zebrocy
+T17	malware 9798 9805	Zebrocy
+T18	malware 9759 9766	Zebrocy
+T19	malware 12892 12899	Zebrocy
+T20	malware 13161 13168	Zebrocy
+T21	malware 13257 13264	Zebrocy
+T22	malware 13316 13323	Zebrocy
+T23	malware 10918 10925	Zebrocy
+T24	malware 11322 11329	Zebrocy
+T25	malware 11678 11685	Zebrocy
+T26	malware 12148 12155	Zebrocy
+T27	malware 12138 12145	Zebrocy
+T28	malware 9547 9554	Zebrocy
+T29	malware 9481 9488	Zebrocy
+T30	malware 9458 9465	Zebrocy
+T31	malware 9376 9383	Zebrocy
+T32	malware 9277 9284	Zebrocy
+T33	malware 9074 9081	Zebrocy
+T34	malware 9028 9035	Zebrocy
+T35	malware 8906 8913	Zebrocy
+T36	malware 8859 8866	Zebrocy
+T37	malware 8988 8995	Zebrocy
+T38	malware 9329 9336	Zebrocy
+T39	malware 8392 8399	Zebrocy
+T40	malware 7531 7538	Zebrocy
+T41	malware 7433 7440	Zebrocy
+T42	malware 7392 7399	Zebrocy
+T43	malware 7332 7339	Zebrocy
+T44	malware 7272 7279	Zebrocy
+T45	malware 7190 7197	Zebrocy
+T46	malware 7143 7150	Zebrocy
+T47	malware 5586 5593	Zebrocy
+T48	malware 5509 5516	Zebrocy
+T49	malware 4719 4726	Zebrocy
+T50	malware 4684 4691	Zebrocy
+T51	malware 3763 3770	Zebrocy
+T52	malware 3062 3069	Zebrocy
+T53	malware 2971 2978	Zebrocy
+T54	time 1093 1102	June 2018
+T55	time 1308 1315	October
+T56	time 2166 2170	2018
+T57	time 1509 1513	2018
+T58	time 475 479	2015
+T59	time 3051 3059	May 2018
+T60	time 6326 6338	mid-May 2018
+T61	time 10940 10944	2018
+T62	IP_evil 13330 13343	80.255.12.252
+T63	IP_evil 13344 13357	89.37.226.148
+T64	IP_evil 13358 13371	46.183.218.34
+T65	IP_evil 13372 13386	185.77.131.110
+T66	IP_evil 13387 13400	92.114.92.128
+T67	md5 7155 7187	333d2b9e99b36fb42f9e79a2833fad9c
+T68	sha2 7205 7269	fcf03bf5ef4babce577dd13483391344e957fd2c855624c9f0573880b8cba62e
+T69	time 880 897	October 11 , 2018
+T70	md5 8871 8903	3c58ed6913593671666283cb7315dec3
+T71	sha2 8921 8985	96c3700ad639faa85982047e05fbd71c3dfd502b09f9860685498124e7dbaa46
+T72	md5 9341 9373	2f83acae57f040ac486eca5890649381
+T73	sha2 9391 9455	f9e96b2a453ff8922b1e858ca2d74156cb7ba5e04b3e936b77254619e6afa4e8
+T74	md5 13281 13313	333d2b9e99b36fb42f9e79a2833fad9c
+T75	location 152 158	Mexico
+T76	location 143 149	Cancun
+R1	part_of Arg1:T76 Arg2:T75	
+T77	security_team 163 184	Masha and these Bears
+T78	attack_activity 222 237	Sofacy activity
+T79	sub_activity 312 316	SPLM
+T80	sub_activity 317 323	XAgent
+T81	attack_activity 324 339	Sofacy activity
+R2	part_of Arg1:T80 Arg2:T81	
+R3	part_of Arg1:T79 Arg2:T81	
+R4	located Arg1:T77 Arg2:T76	
+R5	find Arg1:T77 Arg2:T78	
+R6	find Arg1:T77 Arg2:T1	
+T82	vul_aliases 448 463	Sofacy backdoor
+R7	part_of Arg1:T10 Arg2:T82	
+R8	first_found_time Arg1:T58 Arg2:T10	
+T83	location 710 719	Singapore
+T84	reference_word 622 624	we
+R9	coreference Arg1:T84 Arg2:T77	
+T85	time 702 706	2019
+R10	find Arg1:T84 Arg2:T3	
+R11	release_time Arg1:T85 Arg2:T3	
+R12	located Arg1:T84 Arg2:T83	
+T86	security_team 740 749	Palo Alto
+R13	find Arg1:T86 Arg2:T6	
+R14	first_found_time Arg1:T69 Arg2:T12	
+T87	tool 1038 1071	Layered Spearphishing Attachments
+T88	tool 1076 1090	Go Downloaders
+R15	first_found_time Arg1:T54 Arg2:T88	
+R16	first_found_time Arg1:T54 Arg2:T87	
+R17	part_of Arg1:T87 Arg2:T9	
+R18	part_of Arg1:T88 Arg2:T9	
+T89	time 1216 1229	May 10 , 2018
+T90	tool 1190 1203	Go downloader
+R19	part_of Arg1:T90 Arg2:T7	
+R20	release_time Arg1:T89 Arg2:T90	
+T91	time 1263 1266	May
+T92	tool 1348 1361	Go downloader
+T93	tool 1371 1373	C2
+T94	government 1406 1418	organization
+T95	location 1395 1405	Kyrgyzstan
+R21	located Arg1:T94 Arg2:T95	
+T96	attack_activity 1259 1272	the May event
+T97	attack_activity 1304 1321	the October event
+R22	attack Arg1:T97 Arg2:T94	
+R23	attack Arg1:T96 Arg2:T94	
+R24	use Arg1:T97 Arg2:T92	
+R25	use Arg1:T97 Arg2:T93	
+R26	use Arg1:T96 Arg2:T92	
+R27	use Arg1:T96 Arg2:T93	
+T98	reference_word 1446 1467	the exact same system
+R28	coreference Arg1:T98 Arg2:T93	
+R29	part_of Arg1:T98 Arg2:T8	
+R30	release_time Arg1:T57 Arg2:T98	
+T99	time 1804 1808	2018
+T100	time 1934 1938	2018
+T101	sub_activity 2174 2178	SPLM
+T102	sub_activity 2179 2185	XAgent
+T103	sub_activity 2116 2120	SPLM
+T104	sub_activity 2121 2127	XAgent
+T105	sub_activity 2060 2066	XAgent
+T106	sub_activity 2055 2059	SPLM
+R31	part_of Arg1:T106 Arg2:T13	
+R32	part_of Arg1:T105 Arg2:T13	
+R33	release_time Arg1:T100 Arg2:T13	
+T107	reference_word 2242 2254	this malware
+R34	coreference Arg1:T107 Arg2:T5	
+R35	part_of Arg1:T101 Arg2:T107	
+R36	part_of Arg1:T102 Arg2:T107	
+R37	part_of Arg1:T104 Arg2:T107	
+R38	part_of Arg1:T103 Arg2:T107	
+R39	release_time Arg1:T56 Arg2:T104	
+R40	release_time Arg1:T56 Arg2:T103	
+R41	release_time Arg1:T56 Arg2:T101	
+R42	release_time Arg1:T56 Arg2:T102	
+T108	target_crowd 2407 2453	Central Asian government related organizations
+R43	attack Arg1:T5 Arg2:T108	
+T109	target_crowd 2461 2471	in-country
+T110	target_crowd 2476 2492	remote locations
+R44	part_of Arg1:T109 Arg2:T108	
+R45	part_of Arg1:T110 Arg2:T108	
+T111	target_crowd 2508 2544	new middle eastern diplomatic target
+R46	attack Arg1:T5 Arg2:T111	
+T112	reference_word 2568 2572	they
+R47	coreference Arg1:T112 Arg2:T5	
+T113	tool 2620 2638	variety of scripts
+T114	tool 2643 2655	managed code
+R48	part_of Arg1:T113 Arg2:T112	
+R49	part_of Arg1:T114 Arg2:T112	
+T115	malware 2684 2708	spearphishing components
+T116	tool 2714 2753	LNK file maintaining powershell scripts
+T117	tool 2760 2814	Go-implemented system information collector/downloader
+R50	part_of Arg1:T115 Arg2:T116	
+R51	part_of Arg1:T115 Arg2:T117	
+T118	program_language 2933 2935	Go
+R52	part_of Arg1:T117 Arg2:T118	
+T119	target_crowd 3083 3107	Central Asian government
+R53	attack Arg1:T52 Arg2:T119	
+T120	reference_word 3138 3160	this new Go downloader
+R54	coreference Arg1:T120 Arg2:T117	
+R55	part_of Arg1:T120 Arg2:T52	
+R56	release_time Arg1:T59 Arg2:T52	
+T121	sample_name 3212 3222	30-144.arj
+T122	tool 3181 3191	attachment
+T123	tool 3225 3243	compressed archive
+T124	tool 3249 3268	older archiver type
+R57	part_of Arg1:T123 Arg2:T124	
+R58	part_of Arg1:T121 Arg2:T123	
+R59	part_of Arg1:T121 Arg2:T122	
+R60	part_of Arg1:T122 Arg2:T120	
+T125	tool 3287 3290	Rar
+T126	tool 3291 3297	WinRAR
+T127	tool 3280 3284	7zip
+R61	part_of Arg1:T124 Arg2:T127	
+R62	part_of Arg1:T124 Arg2:T125	
+R63	part_of Arg1:T124 Arg2:T126	
+T128	sample_name 3327 3337	30-144.exe
+T129	tool 3418 3431	Word document
+T130	time 3510 3514	June
+T131	target_crowd 3583 3606	Central Asian countries
+R64	attack Arg1:T4 Arg2:T131	
+R65	occur_time Arg1:T130 Arg2:T4	
+T132	sample_name 3658 3692	2018-05-Invitation-Letter (1 ).rar
+T133	sample_name 3694 3732	2018-05-Invitation-Letter (pril ).docx
+T134	string 3609 3655	diplomatic organizations with a similar scheme
+T135	tool 3545 3564	half-dozen accounts
+R66	use Arg1:T4 Arg2:T135	
+R67	part_of Arg1:T134 Arg2:T135	
+R68	part_of Arg1:T132 Arg2:T135	
+R69	part_of Arg1:T133 Arg2:T135	
+T136	sample_name 7448 7466	30-276 (pril ).exe
+R70	part_of Arg1:T67 Arg2:T46	
+R71	part_of Arg1:T68 Arg2:T45	
+R72	part_of Arg1:T136 Arg2:T41	
+R73	part_of Arg1:T70 Arg2:T36	
+R74	part_of Arg1:T71 Arg2:T35	
+R75	part_of Arg1:T72 Arg2:T38	
+R76	part_of Arg1:T73 Arg2:T31	
+R77	part_of Arg1:T74 Arg2:T21	
+R78	part_of Arg1:T62 Arg2:T22	
+R79	part_of Arg1:T63 Arg2:T22	
+R80	part_of Arg1:T64 Arg2:T22	
+R81	part_of Arg1:T65 Arg2:T22	
+R82	part_of Arg1:T66 Arg2:T22	
+T137	url_evil 13418 13542	/technet-support/library/online-service-description.php?id_name=XXXXX /software-apptication/help-support-apl/getidpolapl.php
+R83	part_of Arg1:T137 Arg2:T15	
+T138	sample_name 13578 13596	30-276 (pril ).exe
+T139	sample_name 13597 13616	30-144- (copy ).exe
+T140	sample_name 13617 13645	Embassy Note No.259.docx.lnk
+T141	sample_name 13646 13680	2018-05-Invitation-Letter (1 ).rar
+T142	sample_name 13682 13720	2018-05-Invitation-Letter (pril ).docx
+R84	part_of Arg1:T138 Arg2:T14	
+R85	part_of Arg1:T139 Arg2:T14	
+R86	part_of Arg1:T140 Arg2:T14	
+R87	part_of Arg1:T141 Arg2:T14	
+R88	part_of Arg1:T142 Arg2:T14	

@@ -1,0 +1,209 @@
+T1	malware 217 224	Shamoon
+T2	time 493 506	November 2016
+T3	time 511 523	January 2017
+T4	location 432 442	Gulf state
+T5	security_team 249 318	IBM X-Force Incident Response and Intelligence Services ( IRIS ) team
+T6	location 623 635	Saudi Arabia
+T7	reference_word 459 472	These attacks
+T8	sub_activity 400 423	Shamoon malware attacks
+R1	coreference Arg1:T7 Arg2:T8	
+R2	occur_time Arg1:T7 Arg2:T2	
+R3	occur_time Arg1:T7 Arg2:T3	
+T10	location 653 664	Gulf states
+T11	malware 667 674	Shamoon
+T12	attack_goal 690 718	destroy computer hard drives
+T13	malware 1025 1032	Shamoon
+T14	security_team 1114 1126	X-Force IRIS
+T15	malware 1187 1194	Shamoon
+R4	goal Arg1:T11 Arg2:T12	
+T16	sub_activity 1243 1260	Shamoon incidents
+T17	tool 1330 1353	X-Force IRIS responders
+R5	find Arg1:T5 Arg2:T8	
+T9	security_team 1727 1739	X-Force IRIS
+T18	location 1942 1954	Saudi Arabia
+T19	tool 1640 1650	PowerShell
+T20	malware 2273 2280	Shamoon
+T21	security_team 2436 2448	X-Force IRIS
+T22	malware 2469 2476	Shamoon
+T23	malware 2638 2645	Shamoon
+T24	tool 2721 2731	PowerShell
+T25	attack_activity 2822 2836	spear phishing
+T26	tool 2906 2922	Microsoft Office
+T27	tool 2997 3007	PowerShell
+T28	malware 3416 3423	Shamoon
+T29	sample_name 3625 3638	cv_itworx.doc
+T30	md5 3660 3692	45b0e5a457222455384713905f886bd4
+T31	sha1 3717 3781	528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62
+T32	security_team 3545 3557	X-Force IRIS
+T33	url_evil 3811 3845	http://mol.com-ho.me/cv_itworx.doc
+T34	domain_evil 3923 3936	mol.com-ho.me
+T35	protocol 3957 3962	WHOIS
+T36	time 4021 4033	October 2016
+T37	domain_evil 4008 4017	com-ho.me
+T38	attack_activity 4770 4784	spear phishing
+T39	sample_name 4160 4166	cv.doc
+T40	sample_name 4204 4217	cv_itworx.doc
+T41	sample_name 4255 4265	cv_mci.doc
+T42	sample_name 4303 4330	discount_voucher_codes.xlsm
+T43	sample_name 4368 4393	Health_insurance_plan.doc
+T44	sample_name 4431 4464	Health_insurance_registration.doc
+T45	sample_name 4502 4516	job_titles.doc
+T46	sample_name 4554 4575	job_titles_itworx.doc
+T47	sample_name 4613 4631	job_titles_mci.doc
+T48	sample_name 4669 4689	Password_Policy.xlsm
+T49	government 4922 4925	MCI
+T50	security_team 4906 4913	IT Worx
+T51	security_team 4952 4959	IT Worx
+T52	government 5048 5051	MCI
+T53	government 5055 5106	Saudi Arabia ’s Ministry of Commerce and Investment
+R6	coreference Arg1:T49 Arg2:T53	
+R7	coreference Arg1:T52 Arg2:T53	
+T54	attack_activity 5149 5163	spear phishing
+T55	security_team 5266 5278	X-Force IRIS
+T56	md5 5526 5558	43fad2d62bc23ffdc6d301571135222c
+T57	sha1 5570 5634	e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6
+T58	sample_name 5496 5517	job_titles_itworx.doc
+T59	url_evil 5651 5674	http://briefl.ink/qhtma
+T60	url_evil 5440 5462	briefl.ink/{a-z0-9}[5]
+T61	malware 5744 5751	Shamoon
+T62	md5 4169 4201	f4d18316e367a80e1005f38445421b1f
+T63	md5 4220 4252	45b0e5a457222455384713905f886bd4
+T64	md5 4268 4300	f4d18316e367a80e1005f38445421b1f
+T65	md5 4333 4365	19cea065aa033f5bcfa94a583ae59c08
+T66	md5 4396 4428	ecfc0275c7a73a9c7775130ebca45b74
+T67	md5 4467 4499	1b5e33e5a244d2d67d7a09c4ccf16e56
+T68	md5 4519 4551	fa72c068361c05da65bf2117db76aaa8
+T69	md5 4578 4610	43fad2d62bc23ffdc6d301571135222c
+T70	md5 4634 4666	ce25f1597836c28cf415394fb350ae93
+T71	md5 4692 4724	03ea9457bf71d51d8109e737158be888
+T72	url_evil 5887 5897	ntg-sa.com
+T73	url_evil 6162 6177	maps-modon.club
+T74	url_evil 5909 5919	ntg-sa.com
+T75	url_evil 6184 6199	maps-modon.club
+T76	url 5954 5964	ntg.sa.com
+T77	string 6027 6030	NTG
+T78	url 6224 6241	maps.modon.gov.sa
+T79	company 6273 6308	Saudi Industrial Property Authority
+T80	url_evil 6544 6554	ntg-sa.com
+T81	security_team 6430 6442	X-Force IRIS
+T82	tool 6670 6680	PowerShell
+T83	tool 6824 6834	PowerShell
+T84	url_evil 7686 7717	http://45.76.128.165:4443/0w0O6
+T85	url_evil 6900 6938	http://139.59.46.154:3485/eiloShaegae1
+T86	tool 6997 7005	Pupy RAT
+T87	function 7089 7101	VirtualAlloc
+T88	function 7128 7134	memset
+T90	protocol 1575 1577	C2
+T91	function 7213 7225	CreateThread
+T92	protocol 6695 6697	C2
+T93	tool 7228 7238	Metasploit
+T94	sample_function 7289 7358	developing and executing exploit code against a remote target machine
+R8	part_of Arg1:T94 Arg2:T93	
+T95	encryption_algo 7386 7395	DWORD XOR
+T96	function 7589 7601	VirtualAlloc
+T97	function 7612 7628	InternetReadFile
+T98	tool 7757 7767	PowerShell
+T99	function 7782 7807	invoke-expression ( iex )
+T100	tool 7856 7866	PowerShell
+T101	tool 6870 6880	PowerShell
+T102	function 7901 7915	DownloadFile()
+T103	protocol 5685 5688	DNS
+T104	function 7940 7958	URLDownloadToFileA
+T105	tool 8122 8132	Metasploit
+T106	sample_name 8258 8272	ntertmgr32.exe
+T107	sample_name 8275 8289	ntertmgr64.exe
+T108	sample_name 8294 8305	vdsk911.sys
+T109	security_team 8614 8626	X-Force IRIS
+T110	location 8809 8821	Saudi Arabia
+T111	malware 8874 8881	Shamoon
+T112	malware 8993 9000	Shamoon
+R9	use Arg1:T14 Arg2:T17	
+T89	sample_function 722 782	wiping the master boot record ( MBR ) and data irretrievably
+R10	part_of Arg1:T89 Arg2:T11	
+T113	person 2449 2460	researchers
+R11	part_of Arg1:T113 Arg2:T21	
+T114	person 1740 1751	researchers
+R12	part_of Arg1:T114 Arg2:T9	
+T115	person 228 239	Researchers
+R13	part_of Arg1:T115 Arg2:T5	
+R14	attack Arg1:T7 Arg2:T6	
+R15	attack Arg1:T7 Arg2:T10	
+T116	person 888 906	forensics analysts
+T117	person 1476 1485	attackers
+R16	use Arg1:T117 Arg2:T19	
+T118	person 2626 2631	actor
+R17	use Arg1:T118 Arg2:T23	
+T119	person 2805 2814	Attackers
+T120	target_crowd 2846 2855	employees
+R18	launch Arg1:T119 Arg2:T25	
+R19	attack Arg1:T119 Arg2:T120	
+T121	sub_activity 2822 2842	spear phishing email
+T122	reference_word 2885 2894	The email
+R20	coreference Arg1:T122 Arg2:T121	
+T123	sub_activity 2951 2988	Opening the attachment from the email
+R21	part_of Arg1:T123 Arg2:T25	
+R22	use Arg1:T123 Arg2:T27	
+T124	person 3069 3078	Attackers
+T125	person 3170 3179	attackers
+T126	person 3295 3304	Attackers
+R23	coreference Arg1:T126 Arg2:T125	
+R24	coreference Arg1:T125 Arg2:T124	
+R25	coreference Arg1:T124 Arg2:T119	
+T127	person 3395 3404	attackers
+R26	coreference Arg1:T127 Arg2:T126	
+R27	use Arg1:T127 Arg2:T28	
+T128	malware 3448 3455	Shamoon
+T129	malware 9 16	Shamoon
+T130	person 3852 3863	researchers
+R28	part_of Arg1:T30 Arg2:T29	
+R29	part_of Arg1:T31 Arg2:T29	
+R30	part_of Arg1:T29 Arg2:T33	
+R31	find Arg1:T32 Arg2:T29	
+R32	part_of Arg1:T62 Arg2:T39	
+R33	part_of Arg1:T63 Arg2:T40	
+R34	part_of Arg1:T64 Arg2:T41	
+R35	part_of Arg1:T65 Arg2:T42	
+R36	part_of Arg1:T66 Arg2:T43	
+R37	part_of Arg1:T68 Arg2:T45	
+R38	part_of Arg1:T67 Arg2:T44	
+R39	part_of Arg1:T69 Arg2:T46	
+R40	part_of Arg1:T70 Arg2:T47	
+R41	part_of Arg1:T71 Arg2:T48	
+T131	location 5040 5045	Egypt
+T132	security_team 4972 5022	global software professional services organization
+R42	coreference Arg1:T50 Arg2:T132	
+R43	coreference Arg1:T51 Arg2:T132	
+R44	located Arg1:T132 Arg2:T131	
+T133	person 5279 5290	researchers
+R45	part_of Arg1:T133 Arg2:T55	
+R46	find Arg1:T133 Arg2:T60	
+R47	part_of Arg1:T56 Arg2:T58	
+R48	part_of Arg1:T57 Arg2:T58	
+R49	part_of Arg1:T58 Arg2:T59	
+R50	coreference Arg1:T74 Arg2:T72	
+R51	coreference Arg1:T75 Arg2:T73	
+R52	part_of Arg1:T78 Arg2:T79	
+T134	person 6463 6475	threat actor
+T135	person 6738 6750	threat actor
+R53	coreference Arg1:T135 Arg2:T134	
+T136	tool 6605 6617	Flash player
+T137	sub_activity 6782 6796	macro executes
+R54	use Arg1:T137 Arg2:T83	
+T138	sample_function 7010 7057	publicly available cross-platform remote access
+R55	part_of Arg1:T138 Arg2:T86	
+T139	time 8802 8806	2016
+T140	company 5985 6004	Namer Trading Group
+R56	part_of Arg1:T76 Arg2:T140	
+T141	malware 6845 6858	The first one
+T142	malware 7065 7082	The second script
+R57	use Arg1:T142 Arg2:T87	
+R58	use Arg1:T142 Arg2:T88	
+R59	use Arg1:T141 Arg2:T101	
+T143	malware 8122 8147	Metasploit ’s Meterpreter
+R60	use Arg1:T143 Arg2:T106	
+R61	use Arg1:T143 Arg2:T107	
+R62	use Arg1:T143 Arg2:T108	
+T144	malware 8338 8345	Shamoon
+T145	government 8472 8516	Saudi ’s General Authority of Civil Aviation
+T146	sub_activity 7883 7888	macro
+R63	part_of Arg1:T102 Arg2:T146	

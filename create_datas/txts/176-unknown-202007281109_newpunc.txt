@@ -1,0 +1,29 @@
+An (un)documented Word feature abused by attackers
+Release_Time : September 18, 2017. 9:00 am
+Report_URL :https://securelist.com/an-undocumented-word-feature-abused-by-attackers/81899/
+A little while back we were investigating the malicious activities of the Freakyshelly targeted attack and came across spear phishing emails that had some interesting documents attached to them.
+They were in OLE2 format and contained no macros, exploits or any other active content. However, a close inspection revealed that they contained several links to PHP scripts located on third-party web resources.
+When we attempted to open these files in Microsoft Word, we found that the application addressed one of the links. 
+The document contains no active content, no VBA macros, embedded Flash objects or PE files.
+However, when the user opens the document, Word sends the following GET request to one of the internal links.
+So we opened the original document used in the attack, replaced the suspicious links with http://evil-*.
+This code effectively sent information about the software installed on the victim machine to the attackers, including info about which version of Microsoft Office was installed.
+We decided to examine why Office followed that link, and how these links can be identified in documents.
+The text in Word documents resides in the WordDocument stream in a ‘raw state’, i.e. it contains no formatting except so-called fields.
+The fields tell Word that a certain segment of the text must be presented in a specific way; for example, it is thanks to these fields that we can see active links to other pages of the document, URL links, etc.
+The field INCLUDEPICTURE indicates that an image is attached to certain characters in the text.
+The 0x13 byte (marked in red) in front of this field indicates that the ‘raw’ text ends there and a field description begins.
+The link to the image in the INCLUDEPICTURE field should be in ASCII format, but in this case it is in Unicode, so Word ignores the link.
+The properties of characters are stored in a two-level table within document streams under the names ‘xTable’ and ‘Data’.
+In the actual document, these bytes are located at offsets 0xB29 – 0xB2C, but the WordDocument stream begins with offset 0x200, and the character offsets are specified relative to its beginning.
+Forms are described in a different Microsoft document: [MS-ODRAW]: Office Drawing Binary File Format.
+The value 0x0000000E resolves into a combination of three flags:
+msoblipflagURL 0x00000002.
+msoblipflagDoNotSave 0x00000004.
+msoblipflagLinkToFile 0x00000008.
+This indicates that additional data should be attached to the form (it is highlighted in yellow in the screenshot), and that this data constitutes a URL that leads to the actual content of the form.
+Also, there is a ‘do not save’ flag, which prevents this content from being saved to the actual document when it is opened.
+We should note that besides Word for Windows, this ‘feature’ is also present in Microsoft Office for iOS and in Microsoft Office for Android; LibreOffice and OpenOffice do not have it.
+If this document is opened in LibreOffice or OpenOffice, the malicious link is not called.
+This is a complex mechanism that the bad guys have created to carry out profiling of potential victims for targeted attacks.
+Kaspersky Lab’s security products are able to detect when the technique described in this article is used in Microsoft Word documents, and to find links embedded in a document using the same technique.

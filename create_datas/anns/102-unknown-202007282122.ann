@@ -1,0 +1,194 @@
+T1	location 44 55	Middle East
+T3	location 248 259	Middle East
+T4	time 281 289	February
+T5	time 294 306	October 2017
+T6	threatActor_name 338 348	MuddyWater
+T7	threatActor_aliases 318 325	Unit 42
+R1	coreference Arg1:T7 Arg2:T6	
+T8	threatActor_name 503 513	MuddyWater
+T9	threatActor_name 627 631	FIN7
+T10	threatActor_name 736 740	FIN7
+T11	sub_activity 699 708	espionage
+T12	threatActor_name 755 765	MuddyWater
+T2	location 796 818	Middle Eastern nations
+T13	location 923 928	India
+T14	location 937 940	USA
+T15	reference_word 575 587	the activity
+T16	threatActor_name 943 953	MuddyWater
+T17	tool 1012 1022	PowerShell
+T18	sub_activity 1029 1049	first stage backdoor
+T19	sub_activity 1060 1070	POWERSTATS
+R2	attack Arg1:T6 Arg2:T3	
+R3	occur_time Arg1:T6 Arg2:T4	
+R4	occur_time Arg1:T6 Arg2:T5	
+R5	coreference Arg1:T15 Arg2:T8	
+R6	launch Arg1:T15 Arg2:T11	
+R7	attack Arg1:T12 Arg2:T2	
+R8	attack Arg1:T12 Arg2:T13	
+R9	attack Arg1:T12 Arg2:T14	
+R10	use Arg1:T16 Arg2:T17	
+R11	use Arg1:T16 Arg2:T18	
+R12	coreference Arg1:T19 Arg2:T18	
+T20	threatActor_name 1113 1123	MuddyWater
+T21	reference_word 1134 1146	the activity
+R13	coreference Arg1:T21 Arg2:T20	
+T22	security_team 1217 1261	The Palo Alto Networks Unit 42 research team
+T23	location 1362 1375	Saudi Arabian
+T24	counter_measure 1411 1423	MalwareBytes
+T25	sub_activity 1295 1310	malicious files
+R14	find Arg1:T22 Arg2:T25	
+R15	launch Arg1:T24 Arg2:T23	
+T26	counter_measure 1482 1491	Morphisec
+T27	reference_word 1494 1507	These attacks
+T28	company 1563 1570	Twitter
+T29	time 1631 1635	2017
+T30	reference_word 1587 1599	The activity
+T31	location 1741 1753	Saudi Arabia
+T32	location 1756 1760	Iraq
+T33	location 1763 1769	Israel
+T34	location 1772 1792	United Arab Emirates
+T35	location 1795 1802	Georgia
+T36	location 1805 1810	India
+T37	location 1813 1821	Pakistan
+T38	location 1824 1830	Turkey
+T39	location 1833 1836	USA
+T40	sub_activity 1990 2014	bypass security controls
+T41	sub_activity 2019 2032	enable macros
+T42	sub_activity 1839 1862	The malicious documents
+R16	coreference Arg1:T27 Arg2:T25	
+R17	coreference Arg1:T30 Arg2:T27	
+R18	occur_time Arg1:T30 Arg2:T29	
+R19	attack Arg1:T30 Arg2:T31	
+R20	attack Arg1:T30 Arg2:T32	
+R21	attack Arg1:T30 Arg2:T33	
+R22	attack Arg1:T30 Arg2:T34	
+R23	attack Arg1:T30 Arg2:T35	
+R24	attack Arg1:T30 Arg2:T36	
+R25	attack Arg1:T30 Arg2:T37	
+R26	attack Arg1:T30 Arg2:T38	
+R27	attack Arg1:T30 Arg2:T39	
+R28	launch Arg1:T42 Arg2:T40	
+R29	launch Arg1:T42 Arg2:T41	
+T43	threatActor_name 2256 2266	MuddyWater
+T44	time 2295 2299	2017
+T45	location 2326 2337	Middle East
+T46	threatActor_name 2576 2586	MuddyWater
+R30	occur_time Arg1:T43 Arg2:T44	
+R31	attack Arg1:T43 Arg2:T45	
+T47	time 2766 2774	Nov 2017
+T48	time 2818 2826	Oct 2017
+T49	time 2947 2955	Sep 2017
+T50	time 3039 3047	Aug 2017
+T51	time 3127 3135	Jul 2017
+T52	time 3252 3260	Jun 2017
+T53	time 3320 3328	May 2017
+T54	time 3407 3415	Mar 2017
+T55	time 3440 3448	Feb 2017
+T56	sample_name 2785 2796	Telenor.doc
+T57	sample_name 2829 2842	Circulars.doc
+T58	government 2777 2784	The NSA
+T59	sample_name 2843 2853	dollar.doc
+T60	location 2807 2815	Pakistan
+T61	government 2854 2891	Pakistan Federal Investigation Agency
+T62	location 2929 2935	Turkey
+T63	location 2936 2944	Pakistan
+T64	sample_name 2993 3029	Kaspersky Security solution 2017.doc
+T65	sample_name 3050 3079	The United Arab Emirates.docm
+T66	sample_name 3138 3166	Requirements of the Sago.doc
+T67	sample_name 3167 3186	CommIT-Document.doc
+T68	sample_name 3187 3211	Confidential letters.doc
+T69	sample_name 3298 3310	RFP_VOIP.doc
+T70	sample_name 3331 3338	RFP.doc
+T71	sample_name 3339 3354	Requirement.doc
+T72	sample_name 3418 3427	court.doc
+T73	sample_name 3451 3478	CERT-Audit-20172802-GEO.xls
+T74	target_crowd 2892 2926	CV of Middle Eastern Civil Servant
+T75	government 2958 2992	Iraq National Intelligence Service
+T76	target_crowd 3080 3108	Iraq Commission of Integrity
+T77	government 3263 3297	Iraq Kurdistan Regional Government
+T78	government 3355 3389	Iraq Kurdistan Regional Government
+T79	location 3032 3036	Iraq
+T80	location 3111 3124	Arab Emirates
+T81	location 3214 3226	Saudi Arabia
+T82	location 3227 3240	Arab Emirates
+T83	location 3241 3249	Pakistan
+T84	location 3313 3317	Iraq
+T85	location 3392 3399	Georgia
+T86	location 3400 3404	Iraq
+T87	location 3430 3437	Georgia
+T88	location 3481 3488	Georgia
+R32	occur_time Arg1:T46 Arg2:T47	
+R33	attack Arg1:T46 Arg2:T58	
+R34	use Arg1:T46 Arg2:T56	
+R35	attack Arg1:T46 Arg2:T60	
+R36	occur_time Arg1:T46 Arg2:T48	
+R37	use Arg1:T46 Arg2:T57	
+R38	use Arg1:T46 Arg2:T59	
+R39	attack Arg1:T46 Arg2:T61	
+R40	attack Arg1:T46 Arg2:T74	
+R41	attack Arg1:T46 Arg2:T62	
+R42	attack Arg1:T46 Arg2:T63	
+R43	occur_time Arg1:T46 Arg2:T49	
+R44	attack Arg1:T46 Arg2:T75	
+R45	use Arg1:T46 Arg2:T64	
+R46	attack Arg1:T46 Arg2:T79	
+T89	threatActor_name 3548 3558	MuddyWater
+R48	occur_time Arg1:T89 Arg2:T55	
+R49	occur_time Arg1:T89 Arg2:T54	
+R50	occur_time Arg1:T89 Arg2:T53	
+R51	occur_time Arg1:T89 Arg2:T52	
+R52	occur_time Arg1:T89 Arg2:T51	
+R53	attack Arg1:T89 Arg2:T88	
+R54	use Arg1:T89 Arg2:T73	
+R55	attack Arg1:T89 Arg2:T87	
+R56	use Arg1:T89 Arg2:T72	
+R57	attack Arg1:T89 Arg2:T85	
+R58	attack Arg1:T89 Arg2:T86	
+R59	attack Arg1:T89 Arg2:T78	
+R60	use Arg1:T89 Arg2:T71	
+R61	use Arg1:T89 Arg2:T70	
+R62	attack Arg1:T89 Arg2:T84	
+R63	use Arg1:T89 Arg2:T69	
+R64	attack Arg1:T89 Arg2:T77	
+R65	use Arg1:T89 Arg2:T66	
+R66	use Arg1:T89 Arg2:T67	
+R67	use Arg1:T89 Arg2:T68	
+R68	attack Arg1:T89 Arg2:T81	
+R69	attack Arg1:T89 Arg2:T82	
+R70	attack Arg1:T89 Arg2:T83	
+R47	occur_time Arg1:T46 Arg2:T50	
+R71	use Arg1:T46 Arg2:T65	
+R72	attack Arg1:T46 Arg2:T76	
+R73	attack Arg1:T46 Arg2:T80	
+T90	sub_activity 3517 3531	lure documents
+R74	use Arg1:T89 Arg2:T90	
+T91	reference_word 3576 3591	these documents
+R75	coreference Arg1:T91 Arg2:T90	
+T92	tool 3691 3701	PowerShell
+T93	counter_measure 3735 3744	Morphisec
+T94	counter_measure 3749 3761	MalwareBytes
+T95	counter_measure 3785 3795	POWERSTATS
+R76	coreference Arg1:T95 Arg2:T94	
+T96	sub_activity 3691 3710	PowerShell backdoor
+R77	part_of Arg1:T92 Arg2:T96	
+R78	use Arg1:T91 Arg2:T96	
+R79	find Arg1:T93 Arg2:T96	
+R80	find Arg1:T94 Arg2:T96	
+T97	company 4166 4172	GitHub
+T98	threatActor_name 4220 4230	MuddyWater
+T99	tool 4447 4465	Invoke-Obfuscation
+T100	tool 4437 4444	Lazagne
+T101	tool 4426 4434	Mimikatz
+T102	tool 4412 4423	Meterpreter
+T103	threatActor_name 4399 4409	MuddyWater
+R81	use Arg1:T103 Arg2:T102	
+R82	use Arg1:T103 Arg2:T101	
+R83	use Arg1:T103 Arg2:T100	
+R84	use Arg1:T103 Arg2:T99	
+T104	company 4540 4546	GitHub
+T105	counter_measure 4593 4603	POWERSTATS
+T106	person 4516 4529	the attackers
+T107	person 2235 2248	The attackers
+R85	part_of Arg1:T107 Arg2:T43	
+R86	use Arg1:T106 Arg2:T104	
+R87	use Arg1:T106 Arg2:T105	

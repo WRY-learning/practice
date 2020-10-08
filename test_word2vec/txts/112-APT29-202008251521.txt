@@ -1,0 +1,31 @@
+HAMMERTOSS : Stealthy Tactics Define a Russian Cyber Threat Group
+HAMMERTOSS downloads the image from the specified URL , retrieves the image from Internet Explorer ’s browser cache , and begins the process of decryption .
+Though the image looks normal , it contains appended and encrypted content .
+HAMMERTOSS decrypts the image using a hard-coded key appended with the characters obtained from the tweet in Stage 2 .
+We have observed only a few APT groups using steganography .
+HAMMERTOSS uses steganography by appending data to an image file after the image ’s end of file marker .
+This technique would be readily detectable if someone was checking for it .
+However , the appended data is encrypted , so even if detected , the investigator would be unable to decrypt the data without key material from two sources : the malware binary and the current tweet .
+Indicative of APT29 ’s discipline , the group ensures that if network defenders discover the images , the defenders still require the malware sample , corresponding Twitter handle , and tweet with the additional key material to decrypt the tool ’s instructions .
+All of the samples we have observed have used different encryption keys to decrypt the appended content .
+APT29 ’s operator creates the cloud storage account and can obtain the victim ’s data from the cloud storage service .
+HAMMERTOSS may issue other follow on commands : powershell -ExecutionPolicy bypass -WindowStyle hidden – encodedCommand .
+HAMMERTOSS is capable of uploading victim data to a cloud storage service .
+The encrypted data in the image may include instructions to execute commands via PowerShell , execute a direct command or file , or save an executable to disk and execute it .
+In several cases , the commands directed HAMMERTOSS to upload information from victim networks to accounts on cloud storage services using login credentials received in Stage 4 .
+In our GitHub example , the decrypted data instructed the backdoor to obtain a list of running tasks—reconnaissance on the victim network—and upload it to a specific account on a cloud storage service using the login credentials .
+APT29 can then easily obtain the extracted information from the cloud storage service at their convenience .
+HAMMERTOSS undermines network defenders ’ ability to identify Twitter accounts used for CnC , discern malicious network traffic from legitimate activity , and locate the malicious payloads downloaded by the malware .
+Identifying daily potential Twitter accounts requires network defenders to have access to the associated HAMMERTOSS binary and to reverse engineer it to identify the basename and the algorithm used to create the potential accounts .
+Monitoring malicious tweets from these accounts is difficult as each sample is capable of generating hundreds of potential Twitter accounts annually , and APT29 may only register a small number of those accounts for CnC .
+Employing legitimate web services that are widely allowed in organizations ’ networks— some of which use Secure Sockets Layer connections that ensure the communications are encrypted—makes it harder for network defenders to discern between malicious and legitimate traffic .
+Using steganography and varying the image size makes the target payload—the image containing the appended , encoded commands—less predictable .
+Even if the network defenders are able to predict or identify the target payloads , they need the associated HAMMERTOSS sample and relevant tweet containing the related encryption key information to decrypt the contents .
+HAMMERTOSS illustrates APT29 ’s ability to adapt quickly during operations to avoid detection and removal .
+For example , if an organization blocks access to GitHub , APT29 could easily redirect HAMMERTOSS to download an image with encrypted instructions from another website .
+Similarly , if an organization starts monitoring Twitter activity on their network , APT29 could easily switch to using the Uploader variant of HAMMERTOSS , which does not use Twitter and communicates directly to a specified URL .
+If an organization identifies the handle generation algorithm and attempts to research old Twitter accounts , tweets , or secondary URLs , APT29 could easily delete previously used accounts or the locations where images were stored .
+While each technique in HAMMERTOSS is not new , APT29 has combined them into a single piece of malware .
+Individually , each technique offers some degree of obfuscation for the threat group ’s activity .
+In combination , these techniques make it particularly hard to identify HAMMERTOSS or spot malicious network traffic ; determine the nature and purpose of the binary ; discern the malware ’s CnC method and predict its CnC accounts ; capture and decode second-stage CnC information ; and pinpoint and decrypt the image files containing malware commands .
+This makes HAMMERTOSS a powerful backdoor at the disposal of one of the most capable threat groups we have observed .

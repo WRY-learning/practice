@@ -1,0 +1,126 @@
+Introducing：leetMX.
+Release_Time :  2017-11-2 .
+Report_URL :  https://www.clearskysec.com/leetmx/ .
+leetMX is a widespread cyber-attack campaign originating from Mexico and focused on targets in Mexico , El Salvador , and other countries in Latin America , such as Guatemala , Argentina and Costa Rica .
+It has been operating since November 2016 at least .
+We are uncertain of its objectives but estimate it is  criminally motivated .
+leetMX infrastructure includes 27 hosts and domains used for malware delivery or for command and control .
+Hundreds of malware samples have been used , most are Remote Access Trojans and keyloggers .
+Interestingly , the attackers camouflage one of their delivery domains by redirecting visitors to El Universal , a major Mexican newspaper .
+Below are samples of malicious Office documents delivered to targets .
+These documents contain macros that run PowerShell , which downloads and run various payloads from domains and hosts controlled by the attackers .
+Ministerio de Hacienda El Salvador – Declaraciones Pendientes folio 34598.docm
+Ministerio de Hacienda SV Folio de Aclaracion SVMH2054983.docm
+Buro de Credito – Reporte Especial Folio de Operacion 438346982.doc
+SATMX-Folio 46565.xls
+Servicio de Administracion Tributaria SAT Declaraciones Pendientes Folio de Consulta 45817089.xls .
+Other documents used as malware droppers are : 
+buro de credito reporte de movimientos recientes folio de operacion 3590543.doc
+buro de credito reporte de movimientos acreditados folio 45665.doc 
+ministerio de hacienda el salvador consulta de estado de cuenta moroso folio 
+buro de credito reporte de nuevos cargos folio 273534.doc 
+Buro de Credito Afilicion de Cargo Automatico Registrado BMX46948964.doc 
+Buro de Credito Folio de Aprobacion de Nuevos Creditos 593783.xls 
+Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc 
+Buro de Credito – Folio de Afilicion a Cargo Automatico 3274398BMX.doc .
+Below is an example of a malicious PowerShell code in one of the documents : 
+The domains and hosts below are all part of the malicious infrastructure , and are used for malware delivery or for command and control .
+c0pywins.is-not-certified.com
+casillas.hicam.net
+casillas45.hopto.org
+casillasmx.chickenkiller.com
+cloudrsaservicesdriveoffic.com
+cloudsfullversionooficcekey.com
+dryversdocumentofficescloud.com
+dryversdocumentsandcustom.com
+dryversdocumentsandcustomer.com
+dryversdocumentsandcustoms.com
+dryversdocumentsandcustomsoft.com
+dryversdocumentsandfullbmxro.com
+dryversdocumentsandfullburomxcloud.com
+dryversdocumentsandfullcloud.com
+dryversdocumentsandfullcustomsoft.com
+dryversdocumentsatsettingswins.com
+dryversdocumentsettingswins.com
+dryversdocumentsolutionscloud.com
+k4l1m3r4.publicvm.com
+mycloudtoolzshop.net
+opendrivecouldrsafinder.com
+rsafinderfirewall.com
+rsapoints.ssl443.org
+rsaupdatr.jumpingcrab.com
+rsause.ntdll.net
+sslwin.moneyhome.biz
+wins10up.16-b.it .
+Multiple parts of the malicious infrastructure indicate that the attackers are based in Mexico , as depicted in the Maltego graph below .
+( However , the reader should remember that these are only technical indicators and could all be forged ) .
+Dynamic DNS hosts used for command and control were allocated IPs by Mexican internet services providers .
+For example , c0pywins.is-not-certified.com has been allocated addresses by AS8151 Uninet S.A. de C.V. , MX , as can be seen in PassiveTotal : 
+Malware delivery domain rsafinderfirewall.com redirects to El Universal , a major Mexican newspaper , when visited without the file-path of the malware ( such as rsafinderfirewall.com/Es3tC0deR3name.exe ) : 
+Physical address in Mexico in multiple domains Whois data : 
+Registrant Name : hector jesus herrera duron .
+Registrant Organization : motogplus .
+Registrant Street : c 29 no 300 .
+Registrant City : merida .
+Registrant State/Province : Chiapas .
+Registrant Postal Code : 97000 .
+Registrant Country : MX .
+Registrant Phone : +52.9991062881 .
+Attacker IP address in Mexico .
+In one targeting at least , the attackers used a URL shortening services that publicly displays the IP address of anyone who clicked the shorted URL .
+The first click – likely the attacker testing the link before spreading it to victims – came from 189.215.52.168 , which belongs to Mexican ISP Cablemas Telecomunicaciones : 
+In this incident mostly Mexicans were targeted , as can be seen in the table below : 
+Country URL   clicks .
+Mexico 343 .
+United States 79 .
+El Salvador  67.
+other 53 .
+The attackers often use leetspeak alphabet in malware filenames .
+Below is a list of malware filenames converted from leet to plain English ( via Universal Leet ( L337 , L33T , 1337 ) Converter ) : 
+Original filename Conversion from Leet .
+Ad0v3upd4t3s2o17.exe Adoveupdates2017.exe .
+0ff1ceval1dKey001[1].exe officevalidKeyooi[i].exe .
+AFDsajgeoi.exe AFDsajgeoi.exe .
+Ad0v31ns5t411.exe Adoveinsstaii.exe .
+Off1c3764.exe Officetga.exe .
+ad0v3upd4t3s2o16[1].exe adoveupdates2016[i].exe .
+sqlwriter.exe sqlwriter.exe .
+Off1cc3k3ysV4l1d.exe OfficceKeysValid.exe .
+CudaUtil.exe CudaUtil.exe .
+Javaupdate2017205.exe Javaupdate201705.exe .
+USB Flash Security.exe USB Flash Security.exe .
+J4v4S3tups00.exe JavaSetupsoo.exe .
+ad0veupdates2o17.exe adoveupdates2017.exe .
+0ff1c3v4l1dkey2017.exe officevalidkey2017.exe .
+Ad0v31n5t411.exe Adoveinstaii.exe .
+Off1c3v4l1dK3y2017s[1].exe OfficevalidKey2017s[i].exe .
+Javatmp2539891.exe Javatmp2539891.exe .
+AVGPDTER465.exe AVGPDTER465.exe .
+K3y2017s.exe Key2017.exe .
+hp.exe hp.exe .
+Off1c3v4l1dK3y2017s.exe OfficevalidKey2017.exe .
+Off1cc3k3yV4l1ds.exe OfficcekeyValids.exe .
+javaupdates2017.exe javaupdates2017.exe .
+Serial IO.exe Serial IO.exe .
+0ff1ceval1dKey001.exe officevalidKey001.exe .
+J4v4upd4t352017s.exe Javaupdates2017s.exe .
+Jav4upd4t3r4ds.exe JavaUpdaterads.exe .
+Ad0vs365489.exe Adovs365489.exe .
+Off1cc3s4dd0ns.exe OfficcesAddons.exe .
+MSNUNIN.EXE MSNUNIN.EXE .
+gbrgeidf.exe gbrgeidf.exe .
+oct04.exe.exe octoa.exe.exe .
+Off1c3TMP2018.exe OfficeTMP2018.exe .
+IconToolkit.exe IconToolkit.exe .
+Ad0v365489.exe Adovegsa89.exe .
+Es3tC0deR3name.exe EsetCodeRename.exe .
+J4v4S3tup00.exe JavaSetupoo.exe .
+J4v4465632.exe Java465632.exe .
+j4v4updat3s2016.exe javaupdates2016.exe .
+AVGF1rr3w4ll.exe AVGFirrewall.exe .
+J4v4mxfullv3rsion.exe Javamxfullversion.exe .
+0fficeV4lids00.exe officeValidsoo.exe .
+More then 550 samples used in this campaign are available on VirusTotal .
+Most of them are Xtreme RAT variants ( a short analysis by Sophos is available – Troj/Xrat-R , a PCAP is available in pcapanalysis.com ) and iSpy Keylogger .
+Indicators of compromise are available for subscribers of the ClearSky threat intelligence service in MISP event number 249 .
+Indicators are also available in the following CSV file : LeetMX-indicators.csv and on PassiveTotal .

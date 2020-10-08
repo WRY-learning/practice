@@ -1,0 +1,42 @@
+T1	threatActor_name 80 94	Stealth Falcon
+T2	time 229 233	2012
+R1	first_found_time Arg1:T1 Arg2:T2	
+T4	reference_word 299 309	this group
+R3	coreference Arg1:T1 Arg2:T4	
+T6	threatActor_name 394 407	Stolen Pencil
+T5	location 450 454	DPRK
+T7	time 491 499	May 2018
+R5	part_of Arg1:T6 Arg2:T5	
+R6	first_found_time Arg1:T6 Arg2:T7	
+T9	reference_word 502 511	The group
+R7	coreference Arg1:T6 Arg2:T9	
+T10	target_crowd 537 558	academic institutions
+R8	attack Arg1:T9 Arg2:T10	
+T11	attack_goal 584 591	unclear
+R9	goal Arg1:T9 Arg2:T11	
+T12	threatActor_name 594 601	Strider
+T13	threatActor_aliases 604 619	ProjectSauron .
+R10	coreference Arg1:T12 Arg2:T13	
+T14	threatActor_name 620 627	Strider
+T15	time 682 686	2011
+R11	first_found_time Arg1:T14 Arg2:T15	
+T16	location 715 721	Russia
+T17	location 724 729	China
+T18	location 732 738	Sweden
+T19	location 741 748	Belgium
+T20	location 751 755	Iran
+T21	location 762 768	Rwanda
+R12	attack Arg1:T14 Arg2:T16	
+R13	attack Arg1:T14 Arg2:T17	
+R14	attack Arg1:T14 Arg2:T18	
+R15	attack Arg1:T14 Arg2:T19	
+R16	attack Arg1:T14 Arg2:T20	
+R17	attack Arg1:T14 Arg2:T21	
+T3	target_crowd 157 184	against Emirati journalists
+T22	target_crowd 187 196	activists
+T23	target_crowd 203 213	dissidents
+R2	attack Arg1:T1 Arg2:T3	
+R18	attack Arg1:T1 Arg2:T22	
+R19	attack Arg1:T1 Arg2:T23	
+T8	government 318 357	United Arab Emirates ( UAE ) government
+R4	part_of Arg1:T4 Arg2:T8	

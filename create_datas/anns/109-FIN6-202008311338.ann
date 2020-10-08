@@ -1,0 +1,104 @@
+T1	threatActor_name 70 74	FIN6
+T2	threatActor_name 117 121	FIN6
+T3	program_language 234 259	Structured Query Language
+T4	tool 262 265	SQL
+R1	coreference Arg1:T4 Arg2:T3	
+T5	protocol 280 287	NetBIOS
+R2	use Arg1:T2 Arg2:T3	
+R3	use Arg1:T2 Arg2:T5	
+T6	attack_goal 215 231	Active Directory
+T7	tool 383 386	SQL
+T8	tool 442 445	SQL
+T9	person 338 342	they
+R5	part_of Arg1:T9 Arg2:T2	
+T10	threatActor_name 485 489	FIN6
+T11	tool 521 524	SQL
+T12	sample_name 541 549	osql.exe
+T13	tool 598 601	SQL
+T14	tool 644 647	SQL
+T15	tool 634 643	Microsoft
+T16	attack_goal 722 738	Active Directory
+T17	tool 499 508	Microsoft
+R6	part_of Arg1:T11 Arg2:T17	
+R7	use Arg1:T10 Arg2:T12	
+T18	tool 554 567	Query Express
+T19	tool 652 658	Oracle
+R8	use Arg1:T10 Arg2:T18	
+R4	goal Arg1:T2 Arg2:T6	
+T20	tool 675 681	AdFind
+R9	use Arg1:T10 Arg2:T20	
+T21	reference_word 788 793	group
+R10	coreference Arg1:T21 Arg2:T10	
+T22	tool 817 820	SQL
+T23	attack_goal 813 828	900 SQL servers
+R11	goal Arg1:T21 Arg2:T23	
+T24	threatActor_name 947 951	FIN6
+T25	reference_word 1293 1299	RemCom
+T26	tool 1267 1290	Remote Command Executor
+R12	coreference Arg1:T25 Arg2:T26	
+T27	tool 1256 1262	PsExec
+R13	use Arg1:T24 Arg2:T27	
+R14	use Arg1:T24 Arg2:T26	
+T28	threatActor_name 1427 1431	FIN6
+T29	tool 1465 1491	Plink command-line utility
+R15	use Arg1:T28 Arg2:T29	
+T30	tool 1506 1511	PuTTY
+T31	protocol 1512 1515	SSH
+T32	protocol 1520 1526	Telnet
+T33	protocol 1545 1548	SSH
+T34	tool 1560 1563	CnC
+T35	sub_activity 1538 1571	create SSH tunnels to CnC servers
+R16	goal Arg1:T28 Arg2:T35	
+T36	protocol 1633 1636	SSH
+T37	protocol 1654 1677	Remote Desktop Protocol
+T38	reference_word 1680 1683	RDP
+R17	coreference Arg1:T38 Arg2:T37	
+T39	protocol 1720 1723	RDP
+T40	person 1617 1621	they
+R18	part_of Arg1:T40 Arg2:T28	
+T41	tool 1633 1644	SSH tunnels
+R19	use Arg1:T40 Arg2:T41	
+T42	tool 1785 1788	POS
+T43	threatActor_name 1832 1836	FIN6
+T44	tool 1846 1849	POS
+T45	malware 1871 1878	TRINITY
+T46	reference_word 1895 1907	FrameworkPOS
+R20	coreference Arg1:T46 Arg2:T45	
+R21	use Arg1:T43 Arg2:T45	
+T47	malware 1962 1969	TRINITY
+R22	use Arg1:T43 Arg2:T47	
+T48	sample_function 1992 2016	targets system processes
+R23	part_of Arg1:T48 Arg2:T47	
+T49	reference_word 2161 2163	it
+R24	coreference Arg1:T49 Arg2:T47	
+T50	threatActor_name 2374 2378	FIN6
+T51	malware 2404 2411	TRINITY
+R25	use Arg1:T50 Arg2:T51	
+T52	malware 2865 2872	TRINITY
+T53	reference_word 2962 2969	malware
+R26	coreference Arg1:T53 Arg2:T52	
+T54	string 3037 3040	XOR
+T55	string 3051 3055	OxAA
+R27	use Arg1:T53 Arg2:T55	
+T56	threatActor_name 3134 3138	FIN6
+T57	tool 3209 3212	POS
+T58	tool 3374 3377	ZIP
+T59	person 3332 3336	They
+R28	part_of Arg1:T59 Arg2:T56	
+R29	use Arg1:T59 Arg2:T58	
+T60	person 3515 3519	they
+R30	coreference Arg1:T60 Arg2:T59	
+T61	tool 3560 3563	CnC
+T62	protocol 3602 3605	FTP
+R31	use Arg1:T60 Arg2:T62	
+T63	threatActor_name 3647 3651	FIN6
+T64	threatActor_name 3830 3834	FIN6
+T65	tool 3953 3967	iSIGHT Partner
+T66	person 3996 3998	we
+R32	use Arg1:T66 Arg2:T65	
+T67	threatActor_name 4492 4496	FIN6
+T68	time 4549 4553	2014
+T69	person 4445 4447	We
+T70	threatActor_name 4598 4602	FIN6
+T71	threatActor_name 4982 4986	FIN6
+T72	threatActor_name 5164 5168	FIN6

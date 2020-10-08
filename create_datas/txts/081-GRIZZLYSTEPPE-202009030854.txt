@@ -1,0 +1,44 @@
+GRIZZLY STEPPE – Russian Malicious Cyber Activity
+Release_Time : 2016-12-29
+Report_URL : https://us-cert.cisa.gov/sites/default/files/publications/JAR_16-20296A_GRIZZLY%20STEPPE-2016-1229.pdf
+This Joint Analysis Report ( JAR ) is the result of analytic efforts between the Department of Homeland Security ( DHS ) and the Federal Bureau of Investigation ( FBI ) .
+This document provides technical details regarding the tools and infrastructure used by the Russian civilian and military intelligence Services ( RIS ) to compromise and exploit networks and endpoints associated with the U.S. election , as well as a range of U.S. Government , political , and private sector entities .
+The U.S. Government is referring to this malicious cyber activity by RIS as GRIZZLY STEPPE .
+Previous JARs have not attributed malicious cyber activity to specific countries or threat actors .
+However , public attribution of these activities to RIS is supported by technical indicators from the U.S. Intelligence Community , DHS , FBI , the private sector , and other entities .
+This determination expands upon the Joint Statement released October 7 , 2016 , from the Department of Homeland Security and the Director of National Intelligence on Election Security .
+This activity by RIS is part of an ongoing campaign of cyber-enabled operations directed at the U.S. government and its citizens .
+These cyber operations have included spearphishing campaigns targeting government organizations , critical infrastructure entities , think tanks , universities , political organizations , and corporations leading to the theft of information .
+In foreign countries , RIS actors conducted damaging and/or disruptive cyber-attacks , including attacks on critical infrastructure networks .
+In some cases , RIS actors masqueraded as third parties , hiding behind false online personas designed to cause the victim to misattribute the source of the attack .
+This JAR provides technical indicators related to many of these operations , recommended mitigations , suggested actions to take in response to the indicators provided , and information on how to report such incidents to the U.S. Government .
+The U.S. Government confirms that two different RIS actors participated in the intrusion into a U.S. political party .
+The first actor group , known as Advanced Persistent Threat ( APT ) 29 , entered into the party’s systems in summer 2015 , while the second , known as APT28 , entered in spring 2016 .
+Both groups have historically targeted government organizations , think tanks , universities , and corporations around the world .
+APT29 has been observed crafting targeted spearphishing campaigns leveraging web links to a malicious dropper ; once executed , the code delivers Remote Access Tools ( RATs ) and evades detection using a range of techniques .
+APT28 is known for leveraging domains that closely mimic those of targeted organizations and tricking potential victims into entering legitimate credentials .
+APT28 actors relied heavily on shortened URLs in their spearphishing email campaigns .
+Once APT28 and APT29 have access to victims , both groups exfiltrate and analyze information to gain intelligence value .
+These groups use this information to craft highly targeted spearphishing campaigns .
+These actors set up operational infrastructure to obfuscate their source infrastructure , host domains and malware for targeting organizations , establish command and control nodes , and harvest credentials and other valuable information from their targets .
+In summer 2015 , an APT29 spearphishing campaign directed emails containing a malicious link to over 1,000 recipients , including multiple U.S. Government victims .
+APT29 used legitimate domains , to include domains associated with U.S. organizations and educational institutions , to host malware and send spearphishing emails .
+In the course of that campaign , APT29 successfully compromised a U.S. political party .
+At least one targeted individual activated links to malware hosted on operational infrastructure of opened attachments containing malware .
+APT29 delivered malware to the political party’s systems , established persistence , escalated privileges , enumerated active directory accounts , and exfiltrated email from several accounts through encrypted connections back through operational infrastructure .
+In spring 2016 , APT28 compromised the same political party , again via targeted spearphishing .
+This time , the spearphishing email tricked recipients into changing their passwords through a fake webmail domain hosted on APT28 operational infrastructure .
+Using the harvested credentials , APT28 was able to gain access and steal content , likely leading to the exfiltration of information from multiple senior party members .
+The U.S. Government assesses that information was leaked to the press and publicly disclosed .
+Actors likely associated with RIS are continuing to engage in spearphishing campaigns , including one launched as recently as November 2016 , just days after the U.S. election .
+Reported Russian Military and Civilian Intelligence Services ( RIS ) Alternate Names : APT28 APT29 Agent.btz BlackEnergy V3 BlackEnergy2 APT CakeDuke Carberp CHOPSTICK CloudDuke CORESHELL CosmicDuke COZYBEAR COZYCAR COZYDUKE CrouchingYeti DIONIS Dragonfly Energetic Bear EVILTOSS Fancy Bear GeminiDuke GREY CLOUD HammerDuke HAMMERTOSS Havex MiniDionis MiniDuke OLDBAIT OnionDuke Operation Pawn Storm PinchDuke Powershell backdoor Quedagh Sandworm SEADADDY Seaduke SEDKIT SEDNIT Skipper Sofacy SOURFACE SYNful Knock Tiny Baron Tsar Team twain_64.dll ( 64-bit X-Agent implant ) VmUpgradeHelper.exe ( X-Tunnel implant ) Waterbug X-Agent .
+Indicators of Compromise ( IOCs ) : IOCs associated with RIS cyber actors are provided within the accompanying .csv and .stix files of JAR-16-20296 .
+Yara Signature : rule PAS_TOOL_PHP_WEB_KIT  {  meta :  description = " PAS TOOL PHP WEB KIT FOUND " strings :  $php = " <?php " $base64decode = /\= ' base ' \.\ (\d+\*\d+\ )\.'_de'\ .
+'code'/  $strreplace = " (str_replace ( "  $md5 = " .substr (md5 (strrev ( "  $gzinflate = " gzinflate "  $cookie = " _COOKIE "  $isset = " isset "  condition : ( filesize > 20KB and filesize < 22KB ) and  #cookie == 2 and  #isset == 3 and  all of them  } 
+Actions to Take Using Indicators : DHS recommends that network administrators review the IP addresses , file hashes , and Yara signature provided and add the IPs to their watchlist to determine whether malicious activity has been observed within their organizations .
+The review of network perimeter netflow or firewall logs will assist in determining whether your network has experienced suspicious activity .
+When reviewing network perimeter logs for the IP addresses , organizations may find numerous instances of these IPs attempting to connect to their systems .
+Upon reviewing the traffic from these IPs , some traffic may correspond to malicious activity , and some may correspond to legitimate activity .
+Some traffic that may appear legitimate is actually malicious , such as vulnerability scanning or browsing of legitimate public facing services ( e.g. , HTTP , HTTPS , FTP ) .
+Connections from these IPs may be performing vulnerability scans attempting to identify websites that are vulnerable to cross-site scripting ( XSS ) or Structured Query Language ( SQL ) injection attacks .
+If scanning identified vulnerable sites , attempts to exploit the vulnerabilities may be experienced .

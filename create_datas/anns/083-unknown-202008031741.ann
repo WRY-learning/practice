@@ -1,0 +1,136 @@
+T1	company 31 37	D-Link
+T2	time 191 209	February 28 , 2020
+T3	security_team 212 240	Palo Alto Networks ’ Unit 42
+T4	company 291 297	D-Link
+T5	company 409 415	D-Link
+T6	vulnerability_cve 846 860	CVE-2020-13782
+T7	vulnerability_cve 948 962	CVE-2020-13786
+T8	vulnerability_cve 1002 1016	CVE-2020-13785
+T9	vulnerability_cve 1181 1195	CVE-2020-13787
+T10	vulnerability_cve 1120 1134	CVE-2020-13783
+T11	vulnerability_cve 1051 1065	CVE-2020-13784
+T12	attack_activity 926 943	Command Injection
+T13	attack_activity 964 990	Cross-Site Request Forgery
+T14	attack_activity 993 997	CSRF
+R2	coreference Arg1:T14 Arg2:T13	
+T15	person 1341 1356	malicious users
+T16	tool 1400 1407	cookies
+R3	attack Arg1:T15 Arg2:T16	
+R4	part_of Arg1:T6 Arg2:T5	
+R5	part_of Arg1:T9 Arg2:T5	
+R6	part_of Arg1:T11 Arg2:T5	
+R7	part_of Arg1:T10 Arg2:T5	
+R8	part_of Arg1:T8 Arg2:T5	
+R9	part_of Arg1:T7 Arg2:T5	
+T17	reference_word 1434 1438	they
+R10	coreference Arg1:T17 Arg2:T15	
+T18	attack_goal 1480 1492	file sharing
+T19	attack_goal 1522 1554	upload arbitrary malicious files
+T20	attack_goal 1557 1581	download sensitive files
+T21	attack_goal 1587 1609	delete essential files
+R11	goal Arg1:T17 Arg2:T18	
+R12	goal Arg1:T17 Arg2:T19	
+R13	goal Arg1:T17 Arg2:T20	
+R14	goal Arg1:T17 Arg2:T21	
+T22	attack_activity 1680 1704	denial of service attack
+T23	reference_word 1612 1616	They
+R15	coreference Arg1:T23 Arg2:T15	
+R16	launch Arg1:T23 Arg2:T22	
+T24	tool 1634 1640	cookie
+R17	use Arg1:T23 Arg2:T24	
+T25	tool 1746 1755	Firewalls
+T26	security_team 1711 1729	Palo Alto Networks
+R18	part_of Arg1:T25 Arg2:T26	
+T27	sample_name 1912 1922	cgibin.exe
+T28	sample_name 2000 2011	scandir.sgi
+T29	tool 2220 2226	cookie
+T30	tool 2366 2372	cookie
+T31	person 2391 2399	attacker
+R19	attack Arg1:T31 Arg2:T30	
+T32	attack_activity 2481 2485	CSRF
+T33	tool 2550 2569	session information
+T34	attack_goal 2573 2615	gain access to password-protected portions
+T35	person 2507 2515	attacker
+R20	use Arg1:T35 Arg2:T33	
+R21	goal Arg1:T35 Arg2:T34	
+T36	attack_activity 2757 2761	CSRF
+T37	attack_activity 2716 2733	command injection
+R22	use Arg1:T37 Arg2:T36	
+T38	sample_name 2935 2950	folder_view.php
+T39	person 3457 3465	attacker
+T40	attack_activity 3508 3526	brute force attack
+R23	launch Arg1:T39 Arg2:T40	
+T41	encryption_algo 3855 3863	MD5 HMAC
+T42	encryption_algo 3656 3664	MD5 HMAC
+T43	encryption_algo 3909 3926	hashing algorithm
+T44	attack_goal 3981 4010	determine the actual password
+T45	person 3968 3976	attacker
+T46	attack_activity 4027 4045	brute force attack
+R24	launch Arg1:T45 Arg2:T46	
+R25	goal Arg1:T46 Arg2:T44	
+T47	tool 4144 4150	cookie
+T48	person 4197 4205	attacker
+T49	attack_goal 4271 4299	determine the session cookie
+R26	goal Arg1:T48 Arg2:T49	
+T50	tool 4399 4405	cookie
+T51	sample_function 4508 4525	get_random_string
+T52	protocol 4791 4796	HTTPS
+T53	attack_activity 4916 4928	CSRF attacks
+T54	person 4846 4854	attacker
+R27	launch Arg1:T54 Arg2:T53	
+T55	sample_name 4935 4950	tools_admin.php
+T56	program_language 5273 5277	HTML
+T57	sample_name 5303 5316	adv_gzone.php
+T58	protocol 5449 5473	Wired Equivalent Privacy
+T59	protocol 5476 5479	WEP
+R28	coreference Arg1:T59 Arg2:T58	
+T60	time 5508 5512	2004
+T61	company 5776 5782	D-Link
+T62	attack_goal 6017 6039	run arbitrary commands
+T63	attack_goal 6042 6057	exfiltrate data
+T64	attack_goal 6060 6074	upload malware
+T65	attack_goal 6077 6114	delete data or steal user credentials
+T66	protocol 6293 6298	HTTPS
+T67	protocol 6185 6189	HTTP
+T68	security_team 6301 6319	Palo Alto Networks
+T69	tool 6380 6389	Firewalls
+T70	tool 6395 6420	threat prevention license
+R29	part_of Arg1:T70 Arg2:T69	
+R30	part_of Arg1:T69 Arg2:T68	
+T71	company 6593 6599	D-Link
+T72	protocol 6696 6701	HTTPS
+T73	vulnerability_cve 6998 7012	CVE-2020-13782
+T74	vulnerability_cve 7161 7175	CVE-2020-13783
+T75	vulnerability_cve 7629 7643	CVE-2020-13787
+T76	vulnerability_cve 7523 7537	CVE-2020-13786
+T77	vulnerability_cve 7413 7427	CVE-2020-13785
+T78	vulnerability_cve 7283 7297	CVE-2020-13784
+T79	url 7097 7158	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13782
+T80	url 7219 7280	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13783
+T81	url 7349 7410	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13784
+T82	url 7459 7520	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13785
+T83	url 7565 7626	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13786
+T84	url 7692 7753	https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13787
+T85	attack_activity 7077 7094	Command Injection
+T86	attack_activity 7538 7564	Cross-Site Request Forgery
+R32	use Arg1:T86 Arg2:T76	
+R31	use Arg1:T85 Arg2:T73	
+R33	part_of Arg1:T84 Arg2:T75	
+R34	part_of Arg1:T83 Arg2:T76	
+R35	part_of Arg1:T82 Arg2:T77	
+R36	part_of Arg1:T81 Arg2:T78	
+R37	part_of Arg1:T80 Arg2:T74	
+R38	part_of Arg1:T79 Arg2:T73	
+T87	reference_word 5971 5992	These vulnerabilities
+R39	use Arg1:T62 Arg2:T87	
+R40	use Arg1:T63 Arg2:T87	
+R41	use Arg1:T64 Arg2:T87	
+R42	use Arg1:T65 Arg2:T87	
+R43	use Arg1:T13 Arg2:T7	
+R44	use Arg1:T12 Arg2:T6	
+T88	attack_activity 6728 6745	hijacking attacks
+R1	first_found_time Arg1:T3 Arg2:T2	
+T89	malware 3315 3322	malware
+T90	attack_activity 7013 7074	Improper Neutralization of Special Elements Used in a Command
+R45	use Arg1:T90 Arg2:T73	
+R46	coreference Arg1:T85 Arg2:T90	

@@ -1,0 +1,49 @@
+T1	threatActor_name 122 135	Dragonfly 2.0
+T2	threatActor_aliases 138 150	Berserk Bear
+R1	coreference Arg1:T2 Arg2:T1	
+T3	threatActor_name 153 166	Dragonfly 2.0
+T4	location 182 189	Russian
+T6	location 247 251	U.S.
+T7	government 252 283	critical infrastructure sectors
+T8	time 299 309	March 2016
+T9	threatActor_name 363 376	Dragonfly 2.0
+T10	threatActor_name 381 390	Dragonfly
+T12	threatActor_name 482 490	DragonOK
+T14	location 527 535	Japanese
+T15	government 536 549	organizations
+T16	attack_activity 555 570	phishing emails
+T17	protocol 592 596	TTPs
+T19	threatActor_name 632 640	DragonOK
+T20	threatActor_name 716 722	Moafee
+T29	threatActor_name 857 867	Dust Storm
+T31	location 927 932	Japan
+T32	location 935 946	South Korea
+T33	location 949 966	the United States
+T34	location 969 975	Europe
+T35	location 990 1015	Southeast Asian countries
+T36	industry 913 923	industries
+R2	located Arg1:T3 Arg2:T4	
+R5	located Arg1:T7 Arg2:T6	
+R6	first_found_time Arg1:T3 Arg2:T8	
+R9	attack Arg1:T3 Arg2:T7	
+R10	located Arg1:T15 Arg2:T14	
+R11	attack Arg1:T12 Arg2:T15	
+R12	use Arg1:T12 Arg2:T16	
+R16	use Arg1:T19 Arg2:T17	
+R30	located Arg1:T36 Arg2:T31	
+R31	located Arg1:T36 Arg2:T32	
+R32	located Arg1:T36 Arg2:T33	
+R33	located Arg1:T36 Arg2:T34	
+R34	located Arg1:T36 Arg2:T35	
+T37	government 214 233	government entities
+R15	use Arg1:T20 Arg2:T17	
+R14	attack Arg1:T29 Arg2:T36	
+T5	malware 800 805	PlugX
+T13	malware 808 817	PoisonIvy
+T18	malware 820 834	FormerFirstRat
+T21	malware 837 842	NFlog
+T22	malware 849 854	NewCT
+T11	malware 777 783	Sysget
+T23	malware 786 797	HelloBridge
+R4	coreference Arg1:T23 Arg2:T11	
+R7	attack Arg1:T3 Arg2:T37	

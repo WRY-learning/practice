@@ -1,0 +1,31 @@
+ViceLeaker Operation: mobile espionage targeting Middle East
+Release_Time :  2017-12-4 .
+Report_URL :  https://securelist.com/fanning-the-flames-viceleaker-operation/90877/
+In May 2018 , we discovered a campaign targeting dozens of mobile Android devices belonging to Israeli citizens .
+Kaspersky spyware sensors caught the signal of an attack from the device of one of the victims ; and a hash of the APK involved ( Android application ) was tagged in our sample feed for inspection .
+Once we looked into the file , we quickly found out that the inner-workings of the APK included a malicious payload , embedded in the original code of the application .
+This was an original spyware program , designed to exfiltrate almost all accessible information .
+During the course of our research , we noticed that we were not the only ones to have found the operation .
+Researchers from Bitdefender also released an analysis of one of the samples in a blogpost .
+Although something had already been published , we decided to do something different with the data we acquired .
+The following month , we released a private report on our Threat Intelligence Portal to alert our clients about this newly discovered operation and began writing YARA rules in order to catch more samples .
+We decided to call the operation “ ViceLeaker ” , because of strings and variables in its code .
+MD5	Package	Compiler	C2
+51df2597faa3fce38a4c5ae024f97b1c	com.xapps.SexGameForAdults	dexlib 2.x	188.165.28.251
+2d108ff3a735dea1d1fdfa430f37fab2	com.psiphon3	dexlib 2.x	188.165.49.205
+7ed754a802f0b6a1740a99683173db73	com.psiphon3	dexlib 2.x	188.165.49.205
+3b89e5cd49c05ce6dc681589e6c368d9	ir.abed.dastan	dexlib 2.x	185.141.60.213 .
+To backdoor legitimate applications , attackers used a Smali injection technique – a type of injection that allows attackers to disassemble the code of original app with the Baksmali tool , add their malicious code , and assemble it with Smali .
+As a result , due to such an unusual compilation process , there were signs in the dex file that point to dexlib , a library used by the Smali tool to assemble dex files .
+As we know from our investigation , traces of the first development activities were found at the end of 2016 , but the main distribution campaign began in 2018 ( end of 2017 ) .
+Based on our detection statistics , the main infection vector is the spread of Trojanized applications directly to victims via Telegram and WhatsApp messengers .
+Even when we originally thought this was a backdoored version of the Conversations app , used to infect victims , we didn´t discovered anything malicious in it .
+This brought to us the hypothesis that this might be a version used by the group behind ViceLeaker for internal communication or for other , unclear purposes .
+All the detections of this backdoored app were geolocated in Iran .
+During the analysis of the Smali injected apps and their C2 server infrastructure we hadn’t found any interesting clues , but things changed when we looked at the C2 server of the linked Conversations messenger .
+It uses “ 185.51.201.133 ” as a main C2 address , and there is only one domain that is hosted on this dedicated server – iliageram.ir .
+The operation of ViceLeaker is still ongoing , as is our research .
+The attackers have taken down their communication channels and are probably looking for ways to assemble their tools in a different manner .
+Kaspersky detects and blocks samples of the ViceLeaker operation using the following verdict : Trojan-Spy.AndroidOS.ViceLeaker .
+Actually , we are currently investigating whether this group might also be behind a large-scale web-oriented attack at the end of 2018 using code injection and exploiting SQL vulnerabilities .
+Even when this would not be directly related to the Android malware described in this blogpost , it would be an indicator of wider capabilities and objectives of this actor .

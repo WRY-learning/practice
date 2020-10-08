@@ -1,0 +1,434 @@
+T1	time 123 136	For two years
+T2	security_team 190 199	Kaspersky
+R1	release_time Arg1:T2 Arg2:T1	
+T3	malware 877 885	TajMahal
+T4	time 952 967	last five years
+R2	first_found_time Arg1:T3 Arg2:T4	
+T5	tool 1627 1632	Tokyo
+T6	tool 1641 1649	Yokohama
+T7	industry 1669 1678	computers
+R3	attack Arg1:T6 Arg2:T7	
+R4	attack Arg1:T5 Arg2:T7	
+T8	person 1725 1734	attackers
+T9	tool 1740 1745	Tokyo
+R5	use Arg1:T8 Arg2:T9	
+T10	tool 1808 1816	Yokohama
+R6	use Arg1:T8 Arg2:T10	
+T11	target_crowd 1828 1847	interesting victims
+R7	attack Arg1:T8 Arg2:T11	
+T12	location 1999 2011	Central Asia
+T13	vul_aliases 2403 2425	zero-day vulnerability
+T14	time 2372 2381	On May 14
+T15	security_team 2384 2386	FT
+R8	find Arg1:T15 Arg2:T13	
+R9	release_time Arg1:T15 Arg2:T14	
+T16	counter_measure 3500 3547	WhatsApp released patches for the vulnerability
+T17	time 3551 3557	May 13
+R10	occur_time Arg1:T16 Arg2:T17	
+T18	malware 3604 3611	Pegasus
+T19	company 3627 3646	Israeli company NSO
+R11	use Arg1:T19 Arg2:T18	
+T20	OS_name 3255 3280	Android prior to 2.19.134
+T21	OS_name 3305 3329	Android prior to 2.19.44
+T22	OS_name 3345 3365	iOS prior to 2.19.51
+T23	OS_name 3390 3410	iOS prior to 2.19.51
+T24	OS_name 3426 3457	Windows Phone prior to 2.18.348
+T25	OS_name 3475 3497	Tizen prior to 2.18.15
+T26	threatActor_name 3979 3993	RANA institute
+T27	threatActor_name 3955 3960	Hades
+T28	threatActor_name 3996 4001	Hades
+T29	threatActor_name 4031 4050	Sofacy threat actor
+T30	malware 4083 4100	Olympic Destroyer
+T31	malware 4114 4120	ExPetr
+T32	attack_activity 4170 4182	Macron leaks
+T33	security_team 4221 4235	Hidden Reality
+T34	attack_activity 4276 4315	Iranian entity named the RANA institute
+R12	find Arg1:T33 Arg2:T34	
+T35	time 4185 4202	Earlier this year
+R13	release_time Arg1:T33 Arg2:T35	
+T36	sample_function 1486 1527	steal specific files from external drives
+T37	threatActor_name 4591 4596	Hades
+T38	tool 4768 4775	Zebrocy
+T39	sample_function 4786 4817	adding new tools to its arsenal
+R14	goal Arg1:T38 Arg2:T39	
+T40	tool 4874 4881	Zebrocy
+T41	tool 4903 4916	Python script
+T42	reference_word 4933 4943	PythocyDbg
+R15	coreference Arg1:T42 Arg2:T41	
+R16	use Arg1:T40 Arg2:T41	
+T43	government 4955 4999	Southeast Asian foreign affairs organization
+R17	attack Arg1:T40 Arg2:T43	
+T44	time 5118 5131	In early 2019
+T45	tool 5134 5141	Zebrocy
+T46	sample_function 5277 5324	can be compiled down to JavaScript or C targets
+R18	occur_time Arg1:T45 Arg2:T44	
+R19	goal Arg1:T45 Arg2:T46	
+T47	tool 5462 5469	Zebrocy
+T48	tool 5336 5351	Nim downloaders
+R20	use Arg1:T47 Arg2:T48	
+T49	attack_activity 5849 5890	March events involving Pakistan and India
+T50	person 5790 5799	The group
+R21	attack Arg1:T50 Arg2:T49	
+T51	government 6018 6043	Central Asian governments
+R22	attack Arg1:T50 Arg2:T51	
+T52	time 6164 6177	In April 2019
+T53	malware 6198 6249	COMpfun-related targeted campaign using new malware
+R23	first_found_time Arg1:T53 Arg2:T52	
+T54	security_team 6252 6284	The Kaspersky Attribution Engine
+T55	malware 6351 6358	COMpfun
+R24	find Arg1:T54 Arg2:T55	
+T56	malware 6385 6392	COMpfun
+T57	sample_function 6396 6416	used as a downloader
+R25	goal Arg1:T56 Arg2:T57	
+T58	threatActor_name 6663 6672	Turla APT
+T59	malware 6592 6599	COMPfun
+T60	malware 6772 6780	Reductor
+T61	sample_function 6718 6769	RAT functions ( upload , download , execute files )
+R26	goal Arg1:T60 Arg2:T61	
+T62	sample_function 6870 6898	marking outbound TLS traffic
+T63	sample_function 6817 6865	manipulating installed digital root certificates
+R27	goal Arg1:T60 Arg2:T63	
+R28	goal Arg1:T60 Arg2:T62	
+T64	malware 7098 7106	Reductor
+T65	reference_word 6938 6949	The malware
+R29	coreference Arg1:T65 Arg2:T60	
+T66	sample_function 6950 6981	adds embedded root certificates
+T67	sample_function 7005 7044	allows operators to add additional ones
+R30	goal Arg1:T65 Arg2:T66	
+R31	goal Arg1:T65 Arg2:T67	
+T68	malware 7504 7512	Reductor
+T69	sample_function 7513 7589	adds the victims ’ unique encrypted hardware- and software-based identifiers
+R32	goal Arg1:T68 Arg2:T69	
+T70	threatActor_name 7710 7715	Turla
+T71	malware 7739 7745	Tunnus
+T72	sample_function 7790 7802	run commands
+T73	sample_function 7806 7826	perform file actions
+T74	sample_function 7853 7879	send the results to its C2
+R33	goal Arg1:T71 Arg2:T72	
+R34	goal Arg1:T71 Arg2:T73	
+R35	goal Arg1:T71 Arg2:T74	
+T75	time 8050 8060	last March
+T76	attack_activity 8023 8041	Tunnus ’s activity
+R36	first_found_time Arg1:T76 Arg2:T75	
+T77	security_team 8107 8111	ESET
+T78	tool 8130 8140	PowerShell
+T79	threatActor_name 8163 8168	Turla
+R37	use Arg1:T79 Arg2:T78	
+R38	find Arg1:T77 Arg2:T78	
+T80	tool 8288 8298	PowerShell
+T81	sample_function 8379 8414	load a wide range of custom malware
+R39	goal Arg1:T80 Arg2:T81	
+T82	reference_word 8261 8278	this threat actor
+R40	use Arg1:T82 Arg2:T80	
+R41	coreference Arg1:T82 Arg2:T79	
+T83	tool 8477 8487	PowerShell
+T84	tool 8502 8514	RPC backdoor
+T85	tool 8519 8532	PowerStallion
+R42	part_of Arg1:T84 Arg2:T83	
+R43	part_of Arg1:T85 Arg2:T83	
+T86	attack_activity 8591 8632	targeted attacks in a series of campaigns
+T87	security_team 8559 8567	Symantec
+R44	find Arg1:T87 Arg2:T86	
+T88	time 8702 8725	over the past 18 months
+R45	occur_time Arg1:T87 Arg2:T88	
+T89	threatActor_name 8867 8873	OilRig
+T90	threatActor_name 8914 8922	Waterbug
+T91	threatActor_aliases 8939 8944	Turla
+T92	threatActor_aliases 8947 8952	Snake
+T93	threatActor_aliases 8955 8963	Uroburos
+T94	threatActor_aliases 8966 8979	Venomous Bear
+T95	threatActor_aliases 8984 8991	KRYPTON
+R46	coreference Arg1:T91 Arg2:T90	
+R47	coreference Arg1:T92 Arg2:T90	
+R48	coreference Arg1:T93 Arg2:T90	
+R49	coreference Arg1:T94 Arg2:T90	
+R50	coreference Arg1:T95 Arg2:T90	
+T96	threatActor_name 9062 9068	OilRig
+T97	threatActor_aliases 9075 9082	Crambus
+R51	coreference Arg1:T97 Arg2:T96	
+T98	security_team 9102 9110	Symantec
+T99	threatActor_name 9124 9129	Turla
+R52	find Arg1:T98 Arg2:T99	
+T100	government 9168 9193	Middle Eastern government
+R53	attack Arg1:T99 Arg2:T100	
+T101	threatActor_name 9199 9205	OilRig
+R54	attack Arg1:T101 Arg2:T100	
+T102	time 9478 9501	Over the last 18 months
+T103	government 9508 9510	UK
+T104	person 9559 9574	Russian hackers
+R55	release_time Arg1:T103 Arg2:T102	
+R56	find Arg1:T103 Arg2:T104	
+T105	government 10176 10182	the EU
+T106	counter_measure 10192 10308	passed new laws that will make it possible for EU member states to impose economic sanctions against foreign hackers
+T107	security_team 10330 10359	Microstep Intelligence Bureau
+T108	government 10411 10431	Ukrainian government
+T109	threatActor_name 10459 10468	Gamaredon
+R57	attack Arg1:T109 Arg2:T108	
+R58	release_time Arg1:T107 Arg2:T109	
+T110	location 10560 10567	Ukraine
+T111	malware 10574 10581	Pterodo
+T112	person 10495 10504	the group
+R59	use Arg1:T112 Arg2:T111	
+T113	industry 10525 10556	a number of state organizations
+R60	located Arg1:T113 Arg2:T110	
+R61	attack Arg1:T111 Arg2:T113	
+T114	location 10811 10818	Ukraine
+T115	attack_goal 10773 10807	targeted attacks against elections
+T116	time 10631 10639	February
+T117	person 10642 10655	the attackers
+R62	occur_time Arg1:T117 Arg2:T116	
+R63	goal Arg1:T117 Arg2:T115	
+R64	located Arg1:T115 Arg2:T114	
+T118	threatActor_name 10880 10896	SixLittleMonkeys
+T119	malware 10928 10943	Microcin Trojan
+T120	tool 10950 10953	RAT
+T121	tool 10967 10974	HawkEye
+R65	coreference Arg1:T121 Arg2:T120	
+T122	government 11022 11055	government bodies in Central Asia
+T123	tool 11690 11742	Secure Channel ( Schannel ) Windows security package
+T124	malware 11669 11680	the malware
+R66	use Arg1:T124 Arg2:T123	
+T125	security_team 11745 11749	ESET
+T126	malware 11791 11796	Plead
+T127	sample_function 11831 11895	using compromised routers and man-in-the-middle ( MITM ) attacks
+T128	time 11899 11904	April
+R67	find Arg1:T125 Arg2:T126	
+R68	goal Arg1:T126 Arg2:T127	
+R69	release_time Arg1:T125 Arg2:T128	
+T129	location 11950 11956	Taiwan
+T130	malware 11969 11974	Plead
+T131	threatActor_name 12104 12119	BlackTech group
+T132	security_team 12017 12028	Trend Micro
+T133	location 12162 12166	Asia
+R70	find Arg1:T132 Arg2:T131	
+T134	security_team 12169 12173	ESET
+T135	vulnerability_cve 12419 12432	CVE-2019-0604
+T136	vulnerability_cve 12840 12853	CVE-2017-0144
+T137	vulnerability_cve 12999 13012	CVE-2019-0604
+T138	threatActor_name 12230 12240	LuckyMouse
+T139	security_team 12262 12271	Palo Alto
+R71	find Arg1:T139 Arg2:T138	
+T140	tool 12320 12330	SharePoint
+T141	location 12385 12396	Middle East
+R72	use Arg1:T138 Arg2:T140	
+T142	government 12342 12377	compromise government organizations
+R73	attack Arg1:T138 Arg2:T142	
+R74	located Arg1:T141 Arg2:T142	
+T143	malware 12887 12898	EternalBlue
+T144	time 12908 12919	in the 2017
+T145	attack_activity 12920 12936	WannaCry attacks
+R75	attack Arg1:T143 Arg2:T145	
+R76	occur_time Arg1:T143 Arg2:T144	
+T146	security_team 13058 13102	Saudi Arabian National Cyber Security Center
+T147	security_team 13111 13145	Canadian Center for Cyber Security
+T148	government 13212 13230	Chinese government
+T149	time 13148 13157	Last year
+T150	government 13252 13254	US
+T151	time 13257 13263	In May
+T152	government 13270 13294	US Department of Justice
+T153	attack_activity 13375 13391	2015 data breach
+T154	person 13306 13358	Chinese national for a series of computer intrusions
+T155	location 13592 13599	Iranian
+T156	threatActor_name 14036 14042	OilRig
+T157	threatActor_name 13813 13825	Sofacy/Hades
+T158	threatActor_name 13957 13962	apt34
+T159	time 13834 13842	In March
+T160	time 14305 14312	2014-18
+T161	tool 13995 14003	Telegram
+T162	threatActor_name 14546 14552	OilRig
+T163	time 14636 14647	On April 22
+T164	location 14622 14633	Middle East
+T165	threatActor_name 14679 14688	Bl4ck_B0X
+T166	threatActor_name 14990 14999	Bl4ck_B0X
+T167	threatActor_name 14845 14855	MuddyWater
+T168	threatActor_name 15075 15085	MuddyWater
+T170	threatActor_name 15357 15366	Bl4ck_B0X
+T169	threatActor_name 15425 15435	MuddyWater
+T171	threatActor_name 15588 15610	Iranian RANA institute
+T172	threatActor_name 16379 16391	Sofacy/Hades
+T173	threatActor_name 16447 16457	Muddywater
+T174	security_team 16565 16573	ClearSky
+T175	threatActor_name 16612 16622	MuddyWater
+T176	malware 16666 16676	POWERSTATS
+R77	find Arg1:T174 Arg2:T175	
+T177	time 16637 16641	2018
+R78	release_time Arg1:T174 Arg2:T177	
+R79	find Arg1:T174 Arg2:T176	
+T178	security_team 16698 16709	Cisco Talos
+T179	time 16687 16695	In April
+T180	threatActor_name 16740 16750	BlackWater
+T181	threatActor_name 16773 16783	MuddyWater
+R80	release_time Arg1:T178 Arg2:T179	
+R81	attack Arg1:T178 Arg2:T180	
+R82	attack Arg1:T178 Arg2:T181	
+T182	tool 17024 17034	PowerShell
+T183	tool 17046 17054	FruityC2
+T184	threatActor_name 17474 17484	MuddyWater
+T185	malware 17546 17559	POWERSTATS v3
+T186	tool 17513 17538	PowerShell-based backdoor
+T187	security_team 17448 17459	Trend Micro
+R83	find Arg1:T187 Arg2:T184	
+R84	use Arg1:T184 Arg2:T186	
+T188	threatActor_name 18473 18478	APT33
+T189	threatActor_aliases 18485 18490	Elfin
+R85	coreference Arg1:T189 Arg2:T188	
+T190	time 18148 18152	2016
+T191	government 17772 17790	Turkish government
+T192	location 17757 17763	Jordan
+T193	threatActor_name 17937 17944	ZooPark
+T194	sample_function 18005 18039	stealing data from Android devices
+R86	goal Arg1:T193 Arg2:T194	
+T195	threatActor_name 18673 18678	APT33
+T196	security_team 18606 18614	Symantec
+T197	time 18618 18623	March
+R87	release_time Arg1:T196 Arg2:T197	
+T198	security_team 18641 18656	Recorded Future
+T199	malware 19312 19317	njRAT
+T200	threatActor_name 19361 19366	APT33
+T201	malware 19398 19403	njRAT
+T202	security_team 19530 19557	Iranian Revolutionary Guard
+T203	time 19885 19889	2017
+T204	security_team 19896 19903	UK NCSC
+T205	security_team 19906 19936	National Cyber Security Centre
+R88	coreference Arg1:T205 Arg2:T204	
+T206	threatActor_name 20109 20114	APT35
+T207	threatActor_aliases 20121 20131	Phosphorus
+T208	threatActor_aliases 20136 20151	Charming Kitten
+R89	coreference Arg1:T207 Arg2:T206	
+R90	coreference Arg1:T208 Arg2:T206	
+T209	location 20087 20094	Iranian
+R91	located Arg1:T206 Arg2:T209	
+T210	security_team 20447 20498	US Cybersecurity and Infrastructure Security Agency
+T211	security_team 20501 20505	CISA
+R92	coreference Arg1:T211 Arg2:T210	
+T212	tool 20634 20657	destructive wiper tools
+T213	industry 20590 20627	US industries and government agencies
+T214	security_team 20699 20703	CISA
+T215	sample_function 21064 21096	stealing application source code
+T216	threatActor_name 20971 20978	Lazarus
+R93	goal Arg1:T216 Arg2:T215	
+T217	threatActor_name 21116 21123	Lazarus
+T218	threatActor_name 21176 21186	BlueNoroff
+T219	threatActor_name 21193 21200	Lazarus
+T220	industry 21270 21330	bank in Central Asia and a crypto-currency business in China
+T221	industry 21234 21256	financial institutions
+R94	coreference Arg1:T218 Arg2:T221	
+R95	attack Arg1:T218 Arg2:T220	
+R96	coreference Arg1:T219 Arg2:T218	
+T222	threatActor_name 21368 21377	ScarCruft
+T223	threatActor_name 21521 21530	ScarCruft
+T224	tool 21479 21485	ROKRAT
+R97	use Arg1:T222 Arg2:T224	
+T225	location 21617 21633	Korean Peninsula
+R98	attack Arg1:T223 Arg2:T225	
+T226	threatActor_name 21804 21813	ScarCruft
+T227	threatActor_name 21960 21969	ScarCruft
+T228	threatActor_name 21974 21983	DarkHotel
+T229	security_team 22041 22045	ESET
+T230	OS_name 22199 22205	Mac OS
+T231	security_team 22418 22452	US Department of Homeland Security
+T232	security_team 22455 22458	DHS
+R99	coreference Arg1:T232 Arg2:T231	
+T233	OS_name 22070 22076	Mac OS
+T234	threatActor_name 22093 22103	OceanLotus
+T235	tool 22136 22146	VirusTotal
+R100	use Arg1:T234 Arg2:T235	
+R101	find Arg1:T229 Arg2:T234	
+T236	tool 22474 22480	Trojan
+T237	tool 22506 22514	HOPLIGHT
+T238	government 22535 22558	North Korean government
+R102	coreference Arg1:T237 Arg2:T236	
+R103	find Arg1:T231 Arg2:T236	
+T239	threatActor_name 23447 23455	PLATINUM
+T240	location 23354 23378	South and Southeast Asia
+T241	vulnerability_cve 24058 24071	CVE-2019-0708
+T242	security_team 23980 23989	Microsoft
+T243	time 23971 23977	May 14
+R104	release_time Arg1:T242 Arg2:T243	
+T244	vul_aliases 24020 24055	Remote Code Execution vulnerability
+T245	OS_name 24187 24196	Windows 7
+T246	OS_name 24199 24221	Windows Server 2008 R2
+T247	OS_name 24224 24243	Windows Server 2008
+T248	OS_name 24248 24284	some unsupported versions of Windows
+T249	OS_name 24297 24309	Windows 2003
+T250	OS_name 24314 24324	Windows XP
+R105	part_of Arg1:T249 Arg2:T248	
+R106	part_of Arg1:T250 Arg2:T248	
+T251	vulnerability_cve 24447 24460	CVE-2019-0708
+T252	security_team 25007 25024	Malwarebytes Labs
+T253	attack_activity 25131 25201	JavaScript libraries were tampered with and injected with web skimmers
+R107	find Arg1:T252 Arg2:T253	
+T254	time 24985 24989	June
+R108	release_time Arg1:T252 Arg2:T254	
+T255	security_team 26273 26279	Dragos
+T256	threatActor_name 26298 26306	XENOTIME
+T257	threatActor_name 26334 26340	TRISIS
+T258	threatActor_aliases 26347 26353	TRITON
+T259	threatActor_aliases 26358 26363	HatMa
+R109	coreference Arg1:T259 Arg2:T257	
+R110	coreference Arg1:T258 Arg2:T257	
+T260	industry 26379 26416	Saudi Arabian petro-chemical facility
+R111	attack Arg1:T256 Arg2:T260	
+R112	find Arg1:T255 Arg2:T256	
+T261	time 26420 26424	2017
+R113	release_time Arg1:T255 Arg2:T261	
+T262	security_team 26743 26749	Dragos
+T263	time 26795 26799	2018
+T264	time 26838 26842	2019
+T265	malware 26892 26898	FinSpy
+T266	OS_name 26903 26910	Android
+T267	OS_name 26915 26918	iOS
+T268	reference_word 26845 26847	We
+R114	coreference Arg1:T268 Arg2:T262	
+T269	time 26934 26942	mid-2018
+R115	find Arg1:T268 Arg2:T265	
+R116	release_time Arg1:T268 Arg2:T269	
+T270	attack_activity 27132 27141	WikiLeaks
+T271	time 27195 27199	2011
+T272	time 27239 27243	2012
+R117	first_found_time Arg1:T270 Arg2:T271	
+R118	first_found_time Arg1:T270 Arg2:T272	
+T273	security_team 27257 27266	Kaspersky
+T274	OS_name 27394 27397	iOS
+T275	OS_name 27402 27409	Android
+T276	OS_name 27662 27669	Android
+T277	OS_name 27805 27808	iOS
+T278	threatActor_name 28681 28693	Sofacy/Hades
+T279	malware 29037 29043	FinSpy
+T280	malware 1420 1427	malware
+T281	tool 1465 1468	C2s
+R119	use Arg1:T280 Arg2:T281	
+R120	goal Arg1:T280 Arg2:T36	
+T282	reference_word 970 974	This
+T283	malware 1033 1042	backdoors
+R121	coreference Arg1:T282 Arg2:T3	
+T284	tool 1045 1052	loaders
+T285	tool 1055 1068	orchestrators
+T286	tool 1071 1087	C2 communicators
+T287	tool 1090 1105	audio recorders
+T288	tool 1108 1118	keyloggers
+T289	tool 1121 1127	screen
+T290	tool 1132 1147	webcam grabbers
+T291	tool 1150 1159	documents
+T292	tool 1166 1191	cryptography key stealers
+R122	use Arg1:T282 Arg2:T283	
+R123	use Arg1:T282 Arg2:T284	
+R124	use Arg1:T282 Arg2:T285	
+R125	use Arg1:T282 Arg2:T286	
+R126	use Arg1:T282 Arg2:T287	
+R127	use Arg1:T282 Arg2:T288	
+R128	use Arg1:T282 Arg2:T289	
+R129	use Arg1:T282 Arg2:T290	
+R130	use Arg1:T282 Arg2:T291	
+R131	use Arg1:T282 Arg2:T292	
+T293	tool 1445 1452	indexer
+R132	use Arg1:T280 Arg2:T293	
+T294	time 839 847	In April
+T295	tool 2237 2240	VFS
+T296	tool 2429 2437	WhatsApp
+T297	tool 1867 1872	Tokyo
+T298	tool 3283 3291	WhatsApp
+T299	tool 3413 3421	WhatsApp
+T300	tool 2883 2891	WhatsApp
+T301	sample_function 2918 2982	take control of the application and execute arbitrary code in it
+R133	goal Arg1:T300 Arg2:T301	

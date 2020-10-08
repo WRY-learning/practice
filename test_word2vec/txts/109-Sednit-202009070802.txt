@@ -1,0 +1,139 @@
+En Route with Sednit .
+Release_Time : 2016-10 .
+Report_URL : https://www.welivesecurity.com/wp-content/uploads/2016/10/eset-sednit-part1.pdf .
+First , Seduploader simply sends an HTTP POST request to Google with a pseudo-randomly-generated URI path .
+If the HTTP status code in the answer is either 200 ( OK ) or 404 ( Not Found ) —the most likely answer because there is little chance the pseudo-random URI path exists on Google websites—the network connection is assumed to be working .
+In this event , Seduploader initialization continues to the next step .
+On the other hand , if Seduploader receives a different HTTP status code , it means the connection has been blocked ( and hence any later attempt to reach the C&C server will also likely be blocked ) .
+In this case , Seduploader tries an alternative method to establish the network link , as described in the next two sections .
+Before testing the connection , Seduploader checks if the computer has a working network interface .
+To do so , it searches for an interface with an IP address different from 127.0.0.1 and 169.254.155.178 .
+This second IP address belongs to IPv4 Link-Local network 169.254.0.0/16 , from which an address is randomly chosen by a computer failing to receive an IP address via DHCP protocol[75] .
+Therefore , it makes very little sense to check for a particularIP address in this network , as all addresses have the same probability of being chosen .
+Some organizations force their computers to pass through an HTTP proxy to access the Internet , which may explain why the previous direct connection did not work .
+To use the proxy , Seduploader needs to retrieve its IP address and TCP port number , plus some credentials , if needed .
+To retrieve this information , Seduploader searches for proxy configuration settings in the Firefox browser , via the two following steps :
+ It parses the Firefox preference file ( pref.js ) to find the network.proxy.http and network.proxy.http_port fields , respectively , containing the proxy address and port number .
+It retrieves the proxy credentials from the custom Windows registry key HKCU\Control Panel\Desktop\WeelScrInit .
+Interestingly , this registry key was created during the exploitation of the target by Sedkit .
+For example , the following code snippet comes from a Sedkit exploit against Firefox
+ ( CVE-2014-1510 [37] ) , and sets the registry key WeelScrInit to the value of the HTTP field ProxyAuthorization , after a request has been made to download the payload .
+This HTTP field contains the credentials for proxy basic authentication , and can be reused for multiple requests [76] .
+Once the proxy information has been retrieved , Seduploader sends an HTTP POST request to Google via the proxy and checks the answer status code , in the same way as previously described .
+We speculate that only Firefox is currently implemented because Sednit operators have had trouble establishing an Internet connection on specific targets using this browser , while the code injection technique described below was good enough for other browsers .
+The proxy information retrieval code has been built so that it could possibly be extended to other browsers than Firefox , with the use of an abstract C++ class .
+If the proxy method also fails , Seduploader injects some code into a running browser , which may allow it to bypass network security products .
+To do so , Seduploader waits for the user to launch a browser , by regularly enumerating the running processes and comparing the hash of their names with some hardcoded values .
+The hash function is a simple series of ROL 7 operations , and Table 6 shows the list of targeted browsers .
+0x250DFA8F iexplore.exe Internet Explorer .
+0x7712FEAE firefox.exe Firefox .
+0xBD3CC33A chrome.exe Google Chrome .
+0x7A38EBF3 opera.exe Opera .
+0x4A36ABF3 browser.exe Yandex Browser .
+If a browser is found running , Seduploader injects a shellcode into its memory , and creates a thread in it with the CreateRemoteThreadWindows API .
+This shellcode tries to contact Google in a way similar to that described above , and communicates the result back to the Seduploader process through shared memory .
+This shared memory is created with the Windows API OpenFileMapping and bears a hardcoded , random-looking name .
+If all the tested methods fail , Seduploader will try all the methods again , until there is a working Internet connection .
+Once the network link has been established , Seduploader builds a report on the compromised machine in the form of id=XXXXXX&w=… .
+The id parameter contains the serial number of the hard drive and serves to identify the machine , while the w parameter contains the actual report with the following information :
+ List of running processes .
+Hard drive information extracted from Windows registry key HKLM\SYSTEM\CurrentControlSet\Services\Disk\Enum ( preceded by disk= ) .
+Build identifier , which is a hardcoded 4-byte value ( preceded by build= ) .
+Optional field named inject indicating whether the network link was established through browser injection .
+The report is then encrypted with a simple algorithm :  a pseudo-randomly-generated 4-byte value is XORed with a hardcoded 4-byte value ( different in each sample ) , and serves as a key to XOR the data .
+The encrypted data are then appended to the key .
+Finally , the resulting encrypted data are sent as the body of an HTTP POST request .
+All communications with the C&C server are sent in the same manner .
+The build identifier was introduced in May 2015 .
+Between then and writing this report we have seen 10 different values .
+After the initialization step , the code enters its main loop , as described in Figure 15 .
+This loop comprises the following steps :
+ Establish the network link , with the same tests as executed during initialization .
+Download a configuration file from the C&C server , by sending an HTTP POST request with id=XXXXXX&c=1 in the body ( before encryption ) .
+This configuration file provides information on how to retrieve and execute an additional payload .
+Download a payload executable from the C&C server , according to the configuration file , by sending an HTTP POST request with id=XXXXXX&f=<file name> in the body ( before encryption ) .
+Run the payload executable , according to the configuration file .
+Report to the C&C server the return code of the execution ( retrieved with the GetLastError API ) , by sending an HTTP POST request with id=XXXXXX&l=<error code> .
+Downloading a configuration file first , so as then to fetch a payload binary :  this is also the workflow of Downdelph , described in the third part of this whitepaper .
+Moreover , Seduploader and Downdelph share some wording in their configuration files , which may indicate that the same developers are behind the two components .
+According to our observations , the payload binary is usually either Sedreco or Xagent , the spying backdoors of the Sednit group .
+Over the last year , Seduploader became the most-used first-stage malware of the Sednit group .
+During this time , this component has been under intense development , for example by adding persistence methods to the dropper , or improving the payload ’s ability to contact its C&C server .
+The purpose of Seduploader is twofold .
+First , it serves to establish a network link between the compromised machine and the C&C server , bypassing possible network security measures .
+Second , it serves to check that the infected computer belongs to an intended target ( and in particular , does not belong to a security researcher ) .
+We do not know the exact logic used to select certain computers as being interest .
+We speculate that Sednit operators know quite precisely the target ’s environment in many cases , because they had already infected computers belonging to the same organization in the past .
+Hence the simple Seduploader report is informative enough to select real targets .
+The attack methods and malware described in this first part of our whitepaper demonstrate the technical abilities and the review of the literature of the Sednit group .
+For example , the group revamped the 0-day exploits from the Hacking Team data leak only a few days after their release , created a brand new exploit for the CVE-2014-6332 vulnerability based on a presentation at the BlackHat conference , and regularly integrated novel persistence methods into Seduploader .
+The attack methods of the Sednit group are not limited to those described in this whitepaper .
+In particular , we know from several investigations that they have :
+ Trojanized some legitimate private applications used in some Eastern European embassies , so that the employees would be infected with spying malware when running the modified executable .
+Hacked into some Linux servers using a known vulnerability for WordPress .
+Hacked into some Zimbra webmail servers using a known vulnerability .
+Overall , the Sednit group is always looking for new ways to approach its targets , both with opportunistic strategies and by developing its own original methods .
+Sednit :  Win32/Exploit.CVE-2015-1641.H .
+Sednit :  Win32/Exploit.CVE-2015-2424.A .
+Sednit :  76053b58643d0630b39d8c9d3080d7db5d017020 .
+Sednit :  9b276a0f5fd824c3dff638c5c127567c65222230 .
+Sednit :  e7f7f6caaede6cc29c2e7e4888019f2d1be37cef .
+Sednit :  ef755f3fa59960838fa2b37b7dedce83ce41f05c .
+Sednit :  Exercise_Noble_Partner_16.rtf .
+Sednit :  Iran_nuclear_talks.rtf .
+Sednit :  Putin_Is_Being_Pushed_to_Prepare_for_War.rtf .
+Sednit :  Statement by the Spokesperson of European Union on the latest developments in eastern .
+Sednit :  Ukraine.rtf .
+Sednit :  aljazeera-news.com .
+Sednit :  ausameetings.com .
+Sednit :  bbc-press.org .
+Sednit :  cnnpolitics.eu .
+Sednit :  dailyforeignnews.com .
+Sednit :  dailypoliticsnews.com .
+Sednit :  defenceiq.us .
+Sednit :  defencereview.eu .
+Sednit :  diplomatnews.org .
+Sednit :  OSX/Agent.AE .
+Sednit :  Win32/Agent.XBZ .
+Sednit :  Win32/Agent.XIA .
+Sednit :  Win32/Agent.XIJ .
+Sednit :  Win32/Agent.XIO .
+Sednit :  Win32/Agent.XFK .
+Sednit :  Win32/Sednit.Z .
+Sednit :  Win32/Sednit.AA .
+Sednit :  Win32/Sednit.AB .
+Sednit :  Win32/Sednit.AC .
+Sednit :  015425010bd4cf9d511f7fcd0fc17fc17c23eec1 .
+Sednit :  0f7893e2647a7204dbf4b72e50678545573c3a10 .
+Sednit :  10686cc4e46cf3ffbdeb71dd565329a80787c439 .
+Sednit :  17661a04b4b150a6f70afdabe3fd9839cc56bee8 .
+Sednit :  21835aafe6d46840bb697e8b0d4aac06dec44f5b .
+Sednit :  2663eb655918c598be1b2231d7c018d8350a0ef9 .
+Sednit :  2c86a6d6e9915a7f38d119888ede60b38ab1d69d .
+Sednit :  351c3762be9948d01034c69aced97628099a90b0 .
+Sednit :  amdcache.dll .
+Sednit :  api-ms-win-core-advapi-l1-1-0.dll .
+Sednit :  api-ms-win-downlevel-profile-l1-1-0.dll .
+Sednit :  api-ms-win-samcli-dnsapi-0-0-0.dll .
+Sednit :  jhuhugit.temp .
+Sednit :  jhuhugit.tmp .
+Sednit :  jkeyskw.temp .
+Sednit :  HKCU\Software\Microsoft\Office test\Special\Perf .
+Sednit :  //dfc01ell6zsq3-ufhhf .
+Sednit :  \BaseNamedObjects\513AbTAsEpcq4mf6TEacB .
+Sednit :  \BaseNamedObjects\ASLIiasiuqpssuqkl713h .
+Sednit :  \BaseNamedObjects\B5a20F03e6445A6987f8EC87913c9 .
+Sednit :  \BaseNamedObjects\sSbydFdIob6NrhNTJcF89uDqE2 .
+Sednit :  ASijnoKGszdpodPPiaoaghj8127391 .
+Sednit :  swsupporttools.com .
+Sednit :  www.capisp.com .
+Sednit :  www.dataclen.org .
+Sednit :  www.mscoresvw.com .
+Sednit :  www.windowscheckupdater.net .
+Sednit :  www.acledit.com .
+Sednit :  www.biocpl.org .
+Sednit :  www.wscapi.com .
+Sednit :  www.tabsync.net .
+Sednit :  www.storsvc.org .
+Sednit :  www.winupdatesysmic.com .
+Sednit :  D:\REDMINE\JOINER\HEADER_PAYLOAD\header_payload\Uploader\Release\Uploader.pdb .

@@ -1,0 +1,10 @@
+Unknown .
+Release_Time : unknown .
+Report_URL : https://attack.mitre.org/groups/ .
+Leviathan : TEMP.Jumper , APT40 , TEMP.Periscope .
+Leviathan is a cyber espionage group that has been active since at least 2013 .
+The group generally targets defense and government organizations , but has also targeted a range of industries including engineering firms , shipping and transportation , manufacturing , defense , government offices , and research universities in the United States , Western Europe , and along the South China Sea .
+Lotus Blossom : DRAGONFISH , Spring Dragon .
+Lotus Blossom is a threat group that has targeted government and military organizations in Southeast Asia .
+Machete : El Machete .
+Machete is a group that has been active since at least 2010 , targeting high-profile government entities in Latin American countries .

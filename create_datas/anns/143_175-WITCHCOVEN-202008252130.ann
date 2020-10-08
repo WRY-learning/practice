@@ -1,0 +1,393 @@
+T1	time 3984 3997	November 2015
+T2	malware 1392 1402	WITCHCOVEN
+T3	malware 3220 3230	WITCHCOVEN
+T4	malware 3207 3217	WITCHCOVEN
+T5	malware 3533 3543	WITCHCOVEN
+T6	malware 3862 3872	WITCHCOVEN
+T7	malware 4049 4059	WITCHCOVEN
+T8	malware 4326 4336	WITCHCOVEN
+T9	malware 4841 4851	WITCHCOVEN
+T10	malware 5374 5384	WITCHCOVEN
+T11	malware 6181 6191	WITCHCOVEN
+T12	malware 8075 8085	WITCHCOVEN
+T13	malware 9213 9223	WITCHCOVEN
+T14	malware 10029 10039	WITCHCOVEN
+T15	malware 10519 10529	WITCHCOVEN
+T16	malware 10594 10604	WITCHCOVEN
+T17	malware 10816 10826	WITCHCOVEN
+T18	malware 11605 11615	WITCHCOVEN
+T19	malware 11726 11736	WITCHCOVEN
+T20	malware 11841 11851	WITCHCOVEN
+T21	malware 12115 12125	WITCHCOVEN
+T22	malware 13034 13044	WITCHCOVEN
+T23	malware 12762 12772	WITCHCOVEN
+T24	malware 14961 14971	WITCHCOVEN
+T25	malware 17637 17647	WITCHCOVEN
+T26	malware 20576 20586	WITCHCOVEN
+T27	malware 23303 23313	WITCHCOVEN
+T28	malware 23499 23509	WITCHCOVEN
+T29	malware 23766 23776	WITCHCOVEN
+T30	malware 25164 25174	WITCHCOVEN
+T31	malware 25971 25981	WITCHCOVEN
+T32	protocol 6293 6297	HTTP
+T33	protocol 6543 6547	HTTP
+T34	protocol 6664 6668	HTTP
+T35	protocol 6252 6256	HTTP
+T36	protocol 10181 10185	HTTP
+T37	protocol 10768 10772	HTTP
+T38	protocol 12054 12058	HTTP
+T39	protocol 12138 12142	HTTP
+T40	protocol 12212 12216	HTTP
+T41	protocol 12201 12203	IP
+T42	protocol 12349 12353	HTTP
+T43	protocol 12518 12522	HTTP
+T44	protocol 25793 25797	HTTP
+T45	encryption_algo 25202 25205	MD5
+T46	md5 25208 25240	634438A50AE1990C4F8636801C410460
+T47	government 21370 21385	U.S. government
+T48	location 22039 22052	United States
+T49	location 22057 22062	Spain
+T50	location 22076 22082	Vienna
+T51	location 22087 22095	Brussels
+T52	time 22949 22960	August 2014
+T53	security_team 22961 22970	Kaspersky
+T54	time 23021 23033	January 2015
+T55	security_team 23034 23042	Symantec
+T56	program_language 25257 25267	JavaScript
+R1	release_time Arg1:T53 Arg2:T52	
+R2	release_time Arg1:T55 Arg2:T54	
+T57	attack_goal 460 501	collect information from website visitors
+T58	sub_activity 384 446	analyze , and report data from the web-on compromised websites
+R3	goal Arg1:T58 Arg2:T57	
+T59	sub_activity 546 581	amassed vast amounts of information
+T60	target_crowd 601 636	visitors to over 100 websites-sites
+R4	attack Arg1:T59 Arg2:T60	
+T61	attack_goal 692 732	gain access to their collective audience
+R5	goal Arg1:T59 Arg2:T61	
+T62	industry 875 885	e-commerce
+T63	sub_activity 902 955	allow malicious actors to identify and target victims
+R6	launch Arg1:T62 Arg2:T63	
+T64	company 25652 25657	Adobe
+T65	company 25682 25687	Adobe
+T66	company 25708 25713	Adobe
+T67	tool 25658 25667	Shockwave
+R7	part_of Arg1:T67 Arg2:T64	
+T68	tool 25688 25693	Flash
+R8	part_of Arg1:T68 Arg2:T65	
+T69	tool 25714 25720	Reader
+R9	part_of Arg1:T69 Arg2:T66	
+T70	company 25735 25744	Microsoft
+T71	tool 25745 25751	Office
+R10	part_of Arg1:T71 Arg2:T70	
+T72	company 25767 25773	Oracle
+T73	program_language 25774 25778	Java
+T74	person 1111 1124	Threat actors
+T75	sub_activity 1125 1164	use web analytics and open source tools
+R11	launch Arg1:T74 Arg2:T75	
+T76	attack_goal 1168 1209	collect information about desired victims
+T77	target_crowd 1194 1209	desired victims
+R12	goal Arg1:T75 Arg2:T76	
+T78	attack_goal 1264 1297	infect them with targeted malware
+R13	goal Arg1:T75 Arg2:T78	
+T79	reference_word 1271 1275	them
+R14	coreference Arg1:T79 Arg2:T77	
+T80	protocol 3000 3004	HTML
+T81	reference_word 1300 1316	The perpetrators
+R15	coreference Arg1:T81 Arg2:T74	
+T82	sub_activity 1317 1340	alter specific websites
+R16	launch Arg1:T81 Arg2:T82	
+T83	attack_goal 1344 1402	redirect visitors to a profiling script we call WITCHCOVEN
+R17	goal Arg1:T82 Arg2:T83	
+T84	reference_word 1405 1416	This script
+R18	coreference Arg1:T84 Arg2:T2	
+T85	sub_activity 1417 1472	collects detailed information about the user's computer
+R19	launch Arg1:T84 Arg2:T85	
+T86	sub_activity 1477 1512	installs a persistent tracking tool
+R20	launch Arg1:T84 Arg2:T86	
+T87	tool 1526 1537	supercookie
+T88	sub_activity 1605 1648	identify the user's computer moving forward
+T89	threatActor_name 17031 17036	APT28
+T90	threatActor_name 16877 16881	APT3
+T91	vul_aliases 15901 15909	zero-day
+T92	malware 11944 11954	WITCHCOVEN
+T93	program_language 11707 11711	Java
+T94	security_team 22803 22817	Kaspersky Labs
+T95	security_team 22820 22828	Symantec
+T96	security_team 22835 22850	iSIGHT Partners
+T97	location 21423 21429	Russia
+T98	location 21432 21447	the Middle East
+T99	location 21452 21458	Africa
+T100	location 21617 21623	Europe
+T101	location 21628 21645	the United States
+T102	location 21486 21492	Europe
+T103	location 22398 22405	Ukraine
+T104	location 22409 22432	the Republic of Georgia
+T105	location 22777 22800	the Republic of Georgia
+T106	time 23224 23228	2015
+T107	threatActor_aliases 23061 23069	Waterbug
+T108	tool 5115 5127	PluginDetect
+#1	AnnotatorNotes T107	Waterbug间谍组织（又名Turla）
+T109	program_language 5133 5143	JavaScript
+R21	use Arg1:T108 Arg2:T109	
+T110	government 23844 23854	government
+T111	industry 23832 23841	Education
+T112	industry 23857 23875	financial services
+T113	industry 23878 23884	energy
+T114	industry 23895 23908	entertainment
+R22	attack Arg1:T29 Arg2:T111	
+R23	attack Arg1:T29 Arg2:T110	
+R24	attack Arg1:T29 Arg2:T112	
+R25	attack Arg1:T29 Arg2:T113	
+R26	attack Arg1:T29 Arg2:T114	
+T115	tool 5231 5235	Java
+T116	tool 5238 5243	Flash
+T117	tool 5246 5252	Reader
+T118	tool 5259 5268	Shockwave
+T119	tool 25294 25300	jQuery
+T120	program_language 25301 25311	JavaScript
+R27	part_of Arg1:T119 Arg2:T120	
+R28	find Arg1:T108 Arg2:T115	
+R29	find Arg1:T108 Arg2:T116	
+R30	find Arg1:T108 Arg2:T117	
+R31	find Arg1:T108 Arg2:T118	
+T121	tool 5433 5443	evercookie
+R32	use Arg1:T10 Arg2:T121	
+T123	tool 5825 5837	supercookies
+T124	tool 5902 5916	zombie cookies
+T125	malware 22987 22991	Epic
+T126	threatActor_name 22992 22997	Turla
+R33	coreference Arg1:T107 Arg2:T126	
+R34	use Arg1:T126 Arg2:T125	
+R35	find Arg1:T55 Arg2:T107	
+R36	find Arg1:T53 Arg2:T126	
+T127	tool 5789 5800	evercookies
+R37	coreference Arg1:T123 Arg2:T127	
+R38	coreference Arg1:T124 Arg2:T127	
+T128	tool 5448 5458	evercookie
+#2	AnnotatorNotes T126	更多该组织信息可在Mitre上找到
+T129	tool 5717 5728	evercookies
+T130	tool 5985 5995	evercookie
+T131	function 6027 6072	identify and track a specific website visitor
+R39	goal Arg1:T130 Arg2:T131	
+T132	tool 6135 6145	evercookie
+T133	protocol 16537 16539	IP
+T135	vul_aliases 15977 15985	zero-day
+T136	tool 12465 12470	Flash
+T137	tool 5013 5029	Microsoft Office
+T138	vul_aliases 17113 17121	zero-day
+T139	tool 5097 5104	ActiveX
+T134	vul_aliases 16925 16939	Flash zero-day
+R40	use Arg1:T90 Arg2:T134	
+T140	protocol 10924 10926	IP
+R41	use Arg1:T89 Arg2:T138	
+T141	vul_aliases 17449 17457	zero-day
+T142	tool 4891 4904	detect Office
+T143	tool 25545 25558	detect Office
+T144	tool 7740 7745	Flash
+T145	tool 11713 11718	Flash
+T146	tool 11588 11604	Microsoft Office
+T147	reference_word 1662 1672	the actors
+R42	coreference Arg1:T147 Arg2:T84	
+T148	sub_activity 1673 1699	analyze the collected data
+R43	launch Arg1:T147 Arg2:T148	
+T149	sub_activity 1703 1724	identify unique users
+T150	sub_activity 1729 1776	pair them with information about their computer
+T151	reference_word 1734 1738	them
+T152	target_crowd 1712 1724	unique users
+R44	coreference Arg1:T151 Arg2:T152	
+R45	goal Arg1:T148 Arg2:T149	
+R46	goal Arg1:T148 Arg2:T150	
+R47	occur_time Arg1:T7 Arg2:T1	
+T153	protocol 3694 3698	HTML
+T154	sub_activity 6309 6334	track a visitor's actions
+T155	tool 6298 6305	cookies
+R48	part_of Arg1:T155 Arg2:T32	
+R49	goal Arg1:T155 Arg2:T154	
+T156	time 2079 2098	Beginning last year
+T157	person 2115 2127	cyber actors
+T158	sub_activity 2195 2242	monitor the online activities of Internet users
+R50	launch Arg1:T157 Arg2:T158	
+R51	occur_time Arg1:T158 Arg2:T156	
+T159	reference_word 2359 2384	these cyber threat actors
+R52	coreference Arg1:T159 Arg2:T157	
+T160	sub_activity 2389 2427	building profiles of potential victims
+R53	launch Arg1:T159 Arg2:T160	
+T161	sub_activity 2432 2486	learning about the vulnerabilities in users' computers
+R54	launch Arg1:T159 Arg2:T161	
+R55	part_of Arg1:T46 Arg2:T30	
+R56	use Arg1:T30 Arg2:T56	
+T162	tool 3402 3413	supercookie
+T163	tool 7657 7668	supercookie
+T164	tool 7881 7892	supercookie
+T165	tool 25838 25849	supercookie
+T166	tool 4923 4953	Browser Exploitation Framework
+T167	tool 7117 7123	cookie
+T168	tool 5653 5659	cookie
+T169	tool 7683 7689	cookie
+T170	tool 6548 6555	cookies
+T171	tool 6652 6659	cookies
+T172	tool 6669 6676	cookies
+T173	tool 6895 6902	cookies
+T174	tool 7357 7364	cookies
+T175	tool 7453 7460	cookies
+T176	tool 7477 7484	cookies
+T177	tool 7778 7785	cookies
+T178	tool 7746 7753	cookies
+T179	tool 7598 7605	cookies
+T180	tool 7632 7639	cookies
+T181	tool 8052 8059	cookies
+T182	tool 8679 8686	cookies
+T183	tool 9094 9101	cookies
+T184	tool 24591 24598	cookies
+T185	tool 5549 5556	cookies
+T186	tool 5624 5631	cookies
+T187	sub_activity 5540 5602	creating cookies in multiple storage locations on the computer
+T188	sub_activity 5605 5631	recreating deleted cookies
+T189	sub_activity 5693 5728	attempting to propagate evercookies
+T122	sub_activity 5474 5513	create " extremely persistent cookies "
+R57	goal Arg1:T128 Arg2:T122	
+R58	part_of Arg1:T187 Arg2:T122	
+R59	part_of Arg1:T188 Arg2:T122	
+R60	part_of Arg1:T189 Arg2:T122	
+T190	tool 5483 5511	extremely persistent cookies
+R61	use Arg1:T178 Arg2:T144	
+T191	function 6257 6261	POST
+T192	tool 16925 16930	Flash
+T193	company 15129 15134	Adobe
+T194	tool 15135 15140	Flash
+R62	part_of Arg1:T194 Arg2:T193	
+T195	attack_activity 16795 16821	Operation Clandestine Wolf
+R63	launch Arg1:T90 Arg2:T195	
+T196	location 21232 21240	the U.S.
+T197	location 21245 21251	Europe
+T198	vul_aliases 15356 15364	zero-day
+T199	sub_activity 2546 2565	track their clients
+T200	sub_activity 2668 2690	identify their victims
+T201	sub_activity 2978 3009	modify the underlying HTML code
+T202	reference_word 2730 2753	The cyber threat actors
+R64	coreference Arg1:T202 Arg2:T159	
+T203	sub_activity 2695 2727	tailor future infection attempts
+R65	goal Arg1:T199 Arg2:T200	
+R66	goal Arg1:T199 Arg2:T203	
+T204	location 21332 21349	the United States
+T205	reference_word 3070 3087	This modification
+R67	coreference Arg1:T205 Arg2:T201	
+T206	sub_activity 3097 3135	redirects visitors to a second website
+R68	launch Arg1:T205 Arg2:T206	
+T207	sub_activity 3231 3257	executes in the background
+R69	launch Arg1:T3 Arg2:T207	
+T208	sub_activity 3289 3347	capturing the visitor's computer and browser configuration
+T209	sub_activity 3352 3395	placing a highly persistent tracking cookie
+R70	part_of Arg1:T162 Arg2:T209	
+R71	launch Arg1:T3 Arg2:T208	
+R72	launch Arg1:T3 Arg2:T209	
+T210	target_crowd 3572 3589	unsuspecting user
+T211	sub_activity 3590 3637	visits any of the over 100 compromised websites
+R73	launch Arg1:T210 Arg2:T211	
+T212	sub_activity 3732 3800	quietly redirects the user's browser to a second compromised website
+R74	part_of Arg1:T153 Arg2:T212	
+T213	reference_word 3750 3758	the user
+R75	coreference Arg1:T213 Arg2:T210	
+T214	sub_activity 3888 3913	uses profiling techniques
+T215	sub_activity 3917 3946	collect technical information
+R76	launch Arg1:T6 Arg2:T214	
+R77	goal Arg1:T214 Arg2:T215	
+T216	tool 24684 24695	TOR browser
+T217	industry 21751 21767	energy discovery
+T218	industry 21770 21780	production
+T219	industry 21787 21797	technology
+T220	person 21693 21699	actors
+T221	person 21082 21088	actors
+T222	target_crowd 21139 21149	executives
+T223	target_crowd 21152 21161	diplomats
+T224	target_crowd 21164 21184	government officials
+T225	target_crowd 21189 21207	military personnel
+R78	attack Arg1:T221 Arg2:T222	
+R79	attack Arg1:T221 Arg2:T223	
+R80	attack Arg1:T221 Arg2:T224	
+R81	attack Arg1:T221 Arg2:T225	
+R82	part_of Arg1:T221 Arg2:T26	
+R83	located Arg1:T225 Arg2:T196	
+R84	located Arg1:T225 Arg2:T197	
+R85	located Arg1:T224 Arg2:T196	
+R86	located Arg1:T224 Arg2:T197	
+R87	located Arg1:T223 Arg2:T196	
+R88	located Arg1:T223 Arg2:T197	
+R89	located Arg1:T222 Arg2:T196	
+R90	located Arg1:T222 Arg2:T197	
+R91	attack Arg1:T220 Arg2:T217	
+R92	attack Arg1:T220 Arg2:T218	
+R93	attack Arg1:T220 Arg2:T219	
+T226	attack_goal 21118 21133	collecting data
+R94	goal Arg1:T221 Arg2:T226	
+T227	person 13206 13212	actors
+R95	use Arg1:T227 Arg2:T22	
+T228	attack_activity 16957 16979	Operation Russian Doll
+R96	launch Arg1:T89 Arg2:T228	
+T229	person 15601 15607	actors
+T230	malware 15627 15636	backdoors
+R97	use Arg1:T229 Arg2:T230	
+R98	use Arg1:T229 Arg2:T24	
+T231	person 15271 15277	actors
+R99	use Arg1:T231 Arg2:T24	
+R100	use Arg1:T231 Arg2:T198	
+T232	attack_activity 18527 18541	spear-phishing
+T233	person 17498 17504	actors
+R101	use Arg1:T233 Arg2:T25	
+T234	person 18986 18992	actors
+T235	person 19212 19218	actors
+T236	person 19764 19770	actors
+T237	person 20036 20042	actors
+T238	person 20381 20387	actors
+R102	use Arg1:T238 Arg2:T26	
+T239	person 4109 4115	actors
+R103	use Arg1:T239 Arg2:T7	
+T240	person 8914 8920	actors
+R104	use Arg1:T240 Arg2:T13	
+T241	person 10215 10221	actors
+R105	use Arg1:T241 Arg2:T14	
+T242	person 10537 10543	actors
+T243	person 10625 10631	actors
+R106	use Arg1:T242 Arg2:T15	
+R107	use Arg1:T243 Arg2:T16	
+T244	person 11175 11181	actors
+T245	person 11390 11396	actors
+R108	use Arg1:T245 Arg2:T18	
+R109	use Arg1:T245 Arg2:T146	
+T246	person 12748 12754	actors
+R110	use Arg1:T246 Arg2:T23	
+T247	person 13859 13865	actors
+T248	attack_goal 13902 13984	collected data based on their targeting criteria , searching for potential victims
+R111	goal Arg1:T247 Arg2:T248	
+T249	person 14343 14349	actors
+T250	person 14837 14843	actors
+T251	person 14597 14603	actors
+T252	person 16047 16053	actors
+R112	use Arg1:T252 Arg2:T135	
+T253	person 24142 24148	actors
+R113	use Arg1:T253 Arg2:T29	
+T254	attack_goal 24153 24199	collecting information about potential targets
+R114	goal Arg1:T253 Arg2:T254	
+T255	security_team 23189 23195	iSIGHT
+R115	release_time Arg1:T255 Arg2:T106	
+R116	find Arg1:T255 Arg2:T27	
+R117	launch Arg1:T233 Arg2:T232	
+T256	target_crowd 22002 22031	Diplomats and business people
+R118	attack Arg1:T220 Arg2:T256	
+R119	located Arg1:T256 Arg2:T48	
+R120	located Arg1:T256 Arg2:T49	
+R121	located Arg1:T256 Arg2:T50	
+R122	located Arg1:T256 Arg2:T51	
+T257	target_crowd 22292 22327	Latin American government officials
+T258	target_crowd 22330 22349	European economists
+T259	target_crowd 22352 22381	Individuals and organizations
+R123	located Arg1:T259 Arg2:T103	
+R124	located Arg1:T259 Arg2:T104	
+R125	attack Arg1:T220 Arg2:T257	
+R126	attack Arg1:T220 Arg2:T258	
+R127	attack Arg1:T220 Arg2:T259	
+T260	target_crowd 22163 22229	Individuals involved in issues of energy policy and climate change
+R128	attack Arg1:T220 Arg2:T260	
+T261	sub_activity 6839 6886	providers host content across multiple websites
+T262	sub_activity 6907 6937	track users across those sites
+R129	launch Arg1:T173 Arg2:T262	

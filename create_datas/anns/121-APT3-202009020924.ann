@@ -1,0 +1,206 @@
+T1	threatActor_name 0 4	APT3
+T2	tool 159 173	net localgroup
+T3	tool 176 185	net group
+T4	tool 186 200	Net localgroup
+T5	tool 203 212	net group
+T6	tool 401 415	net localgroup
+T7	tool 418 427	net group
+T8	tool 428 442	Net localgroup
+T9	tool 445 454	net group
+T10	tool 645 659	net localgroup
+T11	tool 662 671	net group
+T12	tool 672 686	Net localgroup
+T13	tool 689 698	net group
+T14	tool 1617 1625	browsers
+T15	tool 1628 1639	IM software
+T16	tool 1642 1651	databases
+T17	program_language 1962 1966	Java
+T18	tool 1878 1893	browser plugins
+T19	tool 1896 1901	flash
+T20	tool 1904 1914	SharePoint
+T21	tool 1917 1933	Adobe PDF reader
+T22	tool 1936 1959	Chrome security plugins
+T23	program_language 2061 2071	JavaScript
+T24	program_language 2141 2143	JS
+R1	coreference Arg1:T24 Arg2:T23	
+T25	malware 2040 2049	Keylogger
+R2	use Arg1:T25 Arg2:T23	
+T26	threatActor_name 2197 2201	APT3
+T27	attack_activity 2225 2243	phishing campaigns
+R3	launch Arg1:T26 Arg2:T27	
+T28	person 2565 2575	The actors
+T29	malware 2595 2604	backdoors
+R4	use Arg1:T28 Arg2:T29	
+T30	tool 2702 2704	C2
+R5	use Arg1:T28 Arg2:T30	
+T31	attack_goal 2893 2905	file servers
+T32	attack_goal 2910 2923	print servers
+T33	reference_word 2866 2870	They
+R6	coreference Arg1:T33 Arg2:T28	
+R7	attack Arg1:T33 Arg2:T31	
+R8	attack Arg1:T33 Arg2:T32	
+T34	threatActor_name 3283 3287	APT3
+T35	threatActor_name 3663 3667	APT3
+T36	attack_activity 3712 3726	spear phishing
+R9	launch Arg1:T35 Arg2:T36	
+T37	malware 3762 3783	malicious attachments
+T38	malware 3788 3803	malicious links
+R10	use Arg1:T35 Arg2:T37	
+R11	use Arg1:T35 Arg2:T38	
+T39	vul_aliases 3825 3831	0-days
+T40	reference_word 3806 3810	They
+R12	coreference Arg1:T40 Arg2:T35	
+R13	use Arg1:T40 Arg2:T39	
+T41	vul_aliases 3883 3889	0-days
+T42	tool 3893 3910	Internet Explorer
+R14	part_of Arg1:T41 Arg2:T42	
+T43	reference_word 3855 3859	They
+R15	coreference Arg1:T43 Arg2:T35	
+R16	use Arg1:T43 Arg2:T41	
+T44	OS_name 3913 3920	Windows
+T45	tool 3927 3932	Flash
+R17	part_of Arg1:T41 Arg2:T45	
+R18	part_of Arg1:T41 Arg2:T44	
+T46	attack_activity 4045 4066	spear phishing emails
+R19	launch Arg1:T43 Arg2:T46	
+T47	threatActor_name 4069 4073	APT3
+T48	tool 4089 4108	command and control
+T49	tool 4111 4113	C2
+R20	coreference Arg1:T49 Arg2:T48	
+T50	protocol 4127 4144	HTTP GET requests
+R21	use Arg1:T47 Arg2:T48	
+T51	tool 4180 4191	HTTP Cookie
+T52	tool 4227 4236	C2 server
+T53	program_language 4321 4325	HTML
+T54	threatActor_name 4332 4336	APT3
+T55	malware 4400 4410	Pirpi.2014
+T56	malware 4415 4425	Pirpi.2015
+T57	malware 4505 4508	RAT
+T58	malware 4551 4556	Pirpi
+T59	protocol 4595 4598	SSL
+R22	use Arg1:T58 Arg2:T59	
+T60	tool 4697 4699	C2
+T61	tool 4735 4748	Cobalt Strike
+T62	tool 4762 4764	C2
+T63	tool 4814 4816	C2
+T64	threatActor_name 4846 4850	APT3
+T65	malware 4937 4952	APT3 ’s malware
+T66	threatActor_name 5103 5107	APT3
+T67	tool 5291 5301	Sandboxing
+T68	tool 5350 5360	sandboxing
+T69	tool 5326 5339	encrypt tools
+T70	tool 5391 5403	Veil-Evasion
+T71	tool 5407 5419	Artifact Kit
+R23	part_of Arg1:T70 Arg2:T69	
+R24	part_of Arg1:T71 Arg2:T69	
+T72	threatActor_name 5637 5641	APT3
+T73	sub_activity 5604 5625	malicious attachments
+T74	sub_activity 5580 5599	web server drive-by
+R25	use Arg1:T72 Arg2:T74	
+R26	use Arg1:T72 Arg2:T73	
+T75	tool 5662 5688	Social Engineering Toolkit
+T76	tool 5702 5715	Cobalt Strike
+T77	time 5771 5789	late November 2014
+T78	threatActor_name 5793 5797	APT3
+T79	attack_activity 5814 5834	spear phishing email
+R27	use Arg1:T78 Arg2:T79	
+R28	occur_time Arg1:T78 Arg2:T77	
+T80	program_language 5913 5923	JavaScript
+T81	vulnerability_cve 5939 5952	CVE-2014-6332
+T82	vul_aliases 5958 5983	Internet Explorer exploit
+R29	part_of Arg1:T81 Arg2:T82	
+T83	tool 6003 6011	VBscript
+T84	tool 6016 6026	PowerShell
+T85	tool 6047 6057	PowerShell
+T86	sample_name 6129 6136	doc.exe
+T87	sample_name 6145 6153	test.exe
+T88	sample_name 6160 6167	doc.exe
+T89	vulnerability_cve 6190 6203	CVE-2014-4113
+R30	use Arg1:T88 Arg2:T89	
+T91	sample_name 6243 6251	test.exe
+T92	sample_name 6297 6305	test.exe
+T93	tool 6442 6450	Schtasks
+R32	use Arg1:T92 Arg2:T93	
+T94	tool 6494 6520	command and control server
+T95	protocol 6546 6561	SOCKS5 protocol
+T96	reference_word 6467 6478	the implant
+R33	use Arg1:T96 Arg2:T94	
+R34	use Arg1:T94 Arg2:T95	
+T97	time 6567 6579	October 2014
+T98	sample_name 6602 6610	test.exe
+T99	malware 6638 6643	Pirpi
+T100	time 6669 6687	2015 to early 2016
+T101	threatActor_name 6688 6692	APT3
+T102	tool 6772 6789	Internet Explorer
+T103	OS_name 6742 6749	Windows
+T104	reference_word 6649 6656	attacks
+R35	launch Arg1:T101 Arg2:T104	
+R36	occur_time Arg1:T104 Arg2:T100	
+T105	threatActor_name 6840 6844	APT3
+T106	malware 6848 6857	Pirpi RAT
+R37	part_of Arg1:T106 Arg2:T105	
+T107	reference_word 6863 6870	attacks
+T108	time 6883 6892	June 2014
+R38	occur_time Arg1:T107 Arg2:T108	
+T109	person 6895 6906	APT3 actors
+T110	tool 6914 6917	RAR
+T111	tool 6717 6720	zip
+R39	use Arg1:T101 Arg2:T111	
+R40	use Arg1:T109 Arg2:T110	
+T112	sample_name 7046 7056	ttcalc.exe
+T113	tool 7093 7099	TTCalc
+T114	malware 7117 7122	Pirpi
+R41	part_of Arg1:T113 Arg2:T112	
+T115	malware 7205 7210	Pirpi
+T116	tool 7225 7233	rundll32
+R42	use Arg1:T115 Arg2:T116	
+T117	time 7265 7274	June 2014
+T118	person 7277 7288	APT3 actors
+T119	tool 7323 7326	RAR
+R43	use Arg1:T118 Arg2:T119	
+R44	occur_time Arg1:T118 Arg2:T117	
+T120	malware 7360 7384	trojanized setup program
+T121	reference_word 7340 7347	The RAR
+R45	coreference Arg1:T121 Arg2:T119	
+R46	part_of Arg1:T120 Arg2:T121	
+T122	sample_name 7416 7429	ttcalcBAK.exe
+T123	malware 7491 7500	PlugX RAT
+T124	tool 7472 7475	DLL
+T125	tool 7454 7457	RAR
+T126	tool 7609 7615	Chrome
+T127	malware 7546 7553	The RAT
+T128	tool 7624 7639	DLL SideLoading
+T129	tool 7568 7571	DLL
+T130	time 7654 7658	2015
+T131	attack_activity 7675 7689	APT3 campaigns
+T132	vul_aliases 7699 7713	Flash exploits
+R47	use Arg1:T131 Arg2:T132	
+T133	vulnerability_cve 7716 7729	CVE-2014-1776
+T134	vulnerability_cve 7734 7747	CVE-2015-3113
+R48	use Arg1:T131 Arg2:T134	
+R49	use Arg1:T131 Arg2:T133	
+T135	vul_aliases 7768 7781	Flash exploit
+R50	part_of Arg1:T133 Arg2:T132	
+R51	part_of Arg1:T134 Arg2:T132	
+T90	vul_aliases 6208 6230	Windows Kernel exploit
+R31	part_of Arg1:T89 Arg2:T90	
+T136	malware 7803 7816	the Pirpi RAT
+T137	tool 7842 7845	GIF
+T138	time 7867 7876	July 2015
+T139	threatActor_name 7879 7883	APT3
+T140	attack_activity 7889 7902	spear phising
+R52	use Arg1:T139 Arg2:T140	
+R53	occur_time Arg1:T139 Arg2:T138	
+T141	tool 7959 7966	ScanBox
+T142	threatActor_name 8308 8312	APT3
+T143	threatActor_name 8424 8428	APT3
+T144	threatActor_name 8561 8565	APT3
+T145	malware 8604 8609	Pirpi
+R54	part_of Arg1:T145 Arg2:T144	
+T146	threatActor_name 8856 8860	APT3
+T147	threatActor_name 9104 9108	APT3
+T148	tool 9068 9074	ATT&CK
+T149	tool 9205 9211	ATT&CK
+T150	threatActor_name 9323 9327	APT3
+T151	tool 9257 9270	Cobalt Strike
+T152	tool 9237 9254	Windows utilities

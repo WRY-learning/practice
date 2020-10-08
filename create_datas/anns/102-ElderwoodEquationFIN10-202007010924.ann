@@ -1,0 +1,57 @@
+T1	threatActor_name 79 88	Elderwood
+T2	threatActor_aliases 91 105	Elderwood Gang
+T3	threatActor_aliases 108 121	Beijing Group
+T4	threatActor_aliases 124 136	Sneaky Panda
+R1	coreference Arg1:T2 Arg2:T1	
+R2	coreference Arg1:T3 Arg2:T1	
+R3	coreference Arg1:T4 Arg2:T1	
+T6	time 234 238	2009
+T7	threatActor_name 445 453	Equation
+T8	threatActor_name 655 660	FIN10
+T10	time 765 769	2013
+T11	time 778 782	2016
+T12	threatActor_name 139 148	Elderwood
+T13	reference_word 284 293	The group
+T14	reference_word 530 539	The group
+T15	reference_word 785 794	The group
+T16	company 239 245	Google
+T17	government 307 328	defense organizations
+T18	industry 331 357	supply chain manufacturers
+T19	industry 422 442	IT service providers
+R4	coreference Arg1:T13 Arg2:T12	
+R5	coreference Arg1:T14 Arg2:T7	
+R6	coreference Arg1:T15 Arg2:T8	
+T20	sub_activity 666 687	financially motivated
+T21	sub_activity 265 281	Operation Aurora
+T22	sub_activity 360 372	human rights
+T24	target_crowd 409 413	NGOs
+T25	target_crowd 377 406	nongovernmental organizations
+R7	coreference Arg1:T24 Arg2:T25	
+T23	malware 508 527	remote access tools
+T26	vul_aliases 556 573	zero-day exploits
+T27	sub_activity 610 652	overwrite the firmware of hard disk drives
+T28	target_crowd 719 732	organizations
+T29	attack_goal 840 860	extort organizations
+R8	goal Arg1:T8 Arg2:T20	
+R9	attack Arg1:T8 Arg2:T28	
+T31	location 736 749	North America
+R11	located Arg1:T28 Arg2:T31	
+R12	occur_time Arg1:T8 Arg2:T10	
+R13	occur_time Arg1:T8 Arg2:T11	
+T30	sub_activity 800 811	stolen data
+T32	target_crowd 829 836	victims
+R14	use Arg1:T15 Arg2:T30	
+R15	goal Arg1:T15 Arg2:T29	
+R16	part_of Arg1:T30 Arg2:T32	
+R17	use Arg1:T14 Arg2:T26	
+R18	use Arg1:T14 Arg2:T27	
+R19	use Arg1:T7 Arg2:T23	
+R21	occur_time Arg1:T12 Arg2:T6	
+R22	attack Arg1:T12 Arg2:T16	
+R23	attack Arg1:T12 Arg2:T21	
+R24	attack Arg1:T13 Arg2:T17	
+R25	attack Arg1:T13 Arg2:T18	
+R26	attack Arg1:T13 Arg2:T22	
+R27	attack Arg1:T13 Arg2:T25	
+R28	attack Arg1:T13 Arg2:T19	
+R10	attack Arg1:T15 Arg2:T32	

@@ -1,0 +1,55 @@
+T1	threatActor_name 83 87	FIN7
+T2	threatActor_aliases 89 103	Carbanak Group
+R1	coreference Arg1:T2 Arg2:T1	
+T3	threatActor_name 106 110	FIN7
+T4	attack_goal 116 127	financially
+R2	goal Arg1:T3 Arg2:T4	
+T5	location 183 187	U.S.
+T6	industry 188 194	retail
+T7	industry 197 207	restaurant
+T8	industry 214 225	hospitality
+T9	time 240 248	mid-2015
+R3	located Arg1:T6 Arg2:T5	
+R4	located Arg1:T7 Arg2:T5	
+R5	located Arg1:T8 Arg2:T5	
+R6	attack Arg1:T3 Arg2:T6	
+R7	attack Arg1:T3 Arg2:T7	
+R8	attack Arg1:T3 Arg2:T8	
+R9	first_found_time Arg1:T3 Arg2:T9	
+T10	reference_word 251 255	They
+R10	coreference Arg1:T10 Arg2:T3	
+T11	tool 266 279	point-of-sale
+R11	use Arg1:T10 Arg2:T11	
+T12	threatActor_name 303 307	FIN7
+T13	company 346 360	Combi Security
+R12	part_of Arg1:T13 Arg2:T12	
+T14	threatActor_name 363 367	FIN7
+T15	threatActor_aliases 396 410	Carbanak Group
+R13	coreference Arg1:T15 Arg2:T14	
+T16	malware 462 470	Carbanak
+R14	use Arg1:T15 Arg2:T16	
+R15	use Arg1:T14 Arg2:T16	
+T17	threatActor_name 518 522	FIN8
+T18	attack_goal 528 539	financially
+R16	goal Arg1:T17 Arg2:T18	
+T19	attack_activity 588 601	spearphishing
+R17	launch Arg1:T17 Arg2:T19	
+T20	industry 626 632	retail
+T21	industry 635 645	restaurant
+T22	industry 652 663	hospitality
+R18	attack Arg1:T17 Arg2:T20	
+R19	attack Arg1:T17 Arg2:T21	
+R20	attack Arg1:T17 Arg2:T22	
+T23	threatActor_name 677 686	Gallmaker
+T24	location 746 757	Middle East
+T25	time 793 806	December 2017
+R21	attack Arg1:T23 Arg2:T24	
+R22	first_found_time Arg1:T23 Arg2:T25	
+T26	reference_word 813 818	group
+R23	coreference Arg1:T26 Arg2:T23	
+T27	industry 854 861	defense
+T28	industry 864 872	military
+T29	industry 879 889	government
+R24	attack Arg1:T26 Arg2:T27	
+R25	attack Arg1:T26 Arg2:T28	
+R26	attack Arg1:T26 Arg2:T29	

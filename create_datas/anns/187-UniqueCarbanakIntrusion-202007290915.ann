@@ -1,0 +1,57 @@
+T1	time 437 454	early-to-mid-2017
+T2	threatActor_name 589 597	CARBANAK
+T3	threatActor_name 625 633	CARBANAK
+T4	threatActor_name 932 940	CARBANAK
+T5	threatActor_name 1260 1268	CARBANAK
+T6	vulnerability_cve 1758 1771	CVE-2017-5638
+T7	threatActor_name 2988 2996	CARBANAK
+T8	threatActor_name 3405 3413	CARBANAK
+T9	threatActor_name 3284 3292	CARBANAK
+T10	threatActor_aliases 614 618	FIN7
+T11	time 740 753	November 2017
+T12	encryption_algo 220 223	RSA
+T13	encryption_algo 713 716	RSA
+T15	industry 1037 1044	banking
+T16	industry 1047 1056	financial
+T17	industry 1059 1070	hospitality
+T18	industry 1077 1097	restaurant verticals
+R1	attack Arg1:T4 Arg2:T15	
+R2	attack Arg1:T4 Arg2:T16	
+R3	attack Arg1:T4 Arg2:T17	
+R4	attack Arg1:T4 Arg2:T18	
+T19	attack_activity 1293 1309	phishing attacks
+R5	use Arg1:T5 Arg2:T19	
+T20	threatActor_aliases 1416 1425	attackers
+R6	coreference Arg1:T5 Arg2:T20	
+T21	sub_activity 1504 1618	establish staging points and internal network paths , harvest credentials , and move towards their intended target
+R7	launch Arg1:T20 Arg2:T21	
+T22	OS_name 1854 1859	Linux
+T23	tool 1730 1743	Apache Struts
+R8	part_of Arg1:T6 Arg2:T23	
+R9	use Arg1:T20 Arg2:T23	
+T24	target_crowd 1844 1871	client ’s Linux environment
+R10	attack Arg1:T23 Arg2:T24	
+T25	encryption_algo 2113 2116	RSA
+T26	OS_name 2183 2188	Linux
+T27	OS_name 2193 2200	Windows
+T28	threatActor_aliases 2220 2229	attackers
+T29	tool 2264 2316	modified versions of legitimate administrative tools
+T30	tool 2369 2406	common network file acquisition tools
+T31	tool 2319 2362	commonly used penetration testing utilities
+R11	use Arg1:T28 Arg2:T29	
+R12	use Arg1:T28 Arg2:T30	
+R13	use Arg1:T28 Arg2:T31	
+T14	security_team 505 511	RSA IR
+T32	threatActor_aliases 2130 2136	actors
+R16	find Arg1:T25 Arg2:T32	
+T33	encryption_algo 2496 2508	XOR encoding
+T34	target_crowd 2183 2213	Linux and Windows environments
+R14	attack Arg1:T32 Arg2:T34	
+T35	tool 2575 2578	SSH
+T36	threatActor_aliases 2475 2484	attackers
+R15	coreference Arg1:T5 Arg2:T32	
+R17	coreference Arg1:T32 Arg2:T28	
+R18	coreference Arg1:T28 Arg2:T36	
+R19	use Arg1:T36 Arg2:T33	
+R20	use Arg1:T36 Arg2:T35	
+T37	security_team 2683 2689	RSA IR

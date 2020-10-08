@@ -1,0 +1,58 @@
+T1	threatActor_name 83 91	Molerats
+T2	threatActor_aliases 94 112	Operation Molerats
+T3	threatActor_aliases 115 129	Gaza Cybergang
+T4	threatActor_name 313 323	MuddyWater
+T5	threatActor_aliases 326 334	Seedworm
+T6	threatActor_aliases 337 348	TEMP.Zagros
+T7	threatActor_name 351 361	MuddyWater
+T8	threatActor_name 749 755	Naikon
+T9	threatActor_name 1065 1070	APT30
+T10	time 211 215	2012
+T11	threatActor_name 132 140	Molerats
+T12	location 266 277	Middle East
+T13	location 280 286	Europe
+T14	location 293 310	the United States
+T15	location 368 375	Iranian
+T16	location 417 439	Middle Eastern nations
+T17	location 464 472	European
+T18	location 477 499	North American nations
+T20	threatActor_name 1025 1031	Naikon
+T21	threatActor_name 659 663	FIN7
+R1	first_found_time Arg1:T11 Arg2:T10	
+R2	attack Arg1:T11 Arg2:T12	
+R3	attack Arg1:T11 Arg2:T13	
+R4	attack Arg1:T11 Arg2:T14	
+R5	located Arg1:T7 Arg2:T15	
+R6	attack Arg1:T7 Arg2:T16	
+R7	attack Arg1:T7 Arg2:T17	
+R8	attack Arg1:T7 Arg2:T18	
+T19	location 809 828	the South China Sea
+T22	target_crowd 794 801	targets
+T23	government 541 559	telecommunications
+T24	government 562 588	government ( IT services )
+T25	government 595 606	oil sectors
+T26	location 868 975	Chinese People ’s Liberation Army ’s ( PLA ) Chengdu Military Region Second Technical Reconnaissance Bureau
+R13	located Arg1:T8 Arg2:T26	
+R16	coreference Arg1:T4 Arg2:T5	
+R17	coreference Arg1:T4 Arg2:T6	
+T28	reference_word 831 840	The group
+R9	attack Arg1:T8 Arg2:T22	
+R18	coreference Arg1:T28 Arg2:T8	
+R14	coreference Arg1:T3 Arg2:T1	
+R15	coreference Arg1:T2 Arg2:T1	
+T27	reference_word 218 227	The group
+R19	coreference Arg1:T27 Arg2:T11	
+T29	reference_word 502 511	The group
+R20	coreference Arg1:T29 Arg2:T7	
+T30	reference_word 623 633	this group
+R21	coreference Arg1:T30 Arg2:T4	
+T31	reference_word 670 679	the group
+R22	coreference Arg1:T31 Arg2:T7	
+T32	reference_word 1077 1087	two groups
+R23	coreference Arg1:T32 Arg2:T9	
+R24	coreference Arg1:T32 Arg2:T20	
+T33	sub_activity 649 655	linked
+R25	use Arg1:T30 Arg2:T33	
+R10	attack Arg1:T29 Arg2:T23	
+R11	attack Arg1:T29 Arg2:T24	
+R12	attack Arg1:T29 Arg2:T25	

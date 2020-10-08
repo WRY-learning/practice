@@ -1,0 +1,180 @@
+T1	threatActor_name 265 269	APT3
+T2	threatActor_name 286 289	UPS
+T3	attack_activity 321 346	Operation Clandestine Fox
+T4	person 441 446	actor
+T5	time 487 505	November 19 , 2014
+T6	industry 525 538	organizations
+T7	person 545 553	attacker
+T8	vulnerability_cve 599 612	CVE-2014-6332
+T9	vulnerability_cve 617 630	CVE-2014-4113
+T10	vulnerability_cve 633 646	CVE-2014-6332
+T11	vulnerability_cve 760 773	CVE-2014-4113
+T12	time 673 683	2014-11-11
+T13	OS_name 693 700	Windows
+T14	time 845 855	2014-10-14
+T15	vulnerability_cve 869 882	CVE-2014-6332
+T16	threatActor_name 1122 1126	APT3
+T17	attack_activity 1231 1249	phishing campaigns
+T19	vulnerability_cve 1953 1966	CVE-2014-6332
+T21	vulnerability_cve 2459 2472	CVE-2014-6332
+T23	time 2832 2852	2014-11-19 08:55:10Z
+T24	sha1 2867 2899	6b8611f8148a6b51e37fd68e75b6a81c
+T25	sample_name 2953 2960	doc.exe
+T26	sample_name 2965 2973	test.exe
+T27	OS_name 3036 3043	Windows
+T28	sample_name 3118 3125	doc.exe
+T29	vulnerability_cve 3141 3154	CVE-2014-4113
+T30	sample_name 3192 3200	test.exe
+T31	md5 3297 3329	492a839a3bf9c61b7065589a18c5aa8d
+T32	sha1 3344 3376	9342d18e7d315117f23db7553d59a9d1
+T33	md5 3401 3433	744a17a3bc6dbd535f568ef1e87d8b9a
+T34	time 3449 3469	2014-11-19 08:25:45Z
+T35	sha1 3484 3516	2fab77a3ff40e4f6d9b5b7e813c618e4
+T36	md5 3534 3566	5c08957f05377004376e6a622406f9aa
+T37	time 3581 3601	2014-11-18 10:49:23Z
+T38	sha1 3616 3648	f34d5f2d4577ed6d9ceec516c1f5a744
+T39	sample_name 4250 4258	test.exe
+T40	OS_name 4270 4277	Windows
+T41	IP_evil 4592 4607	192.157.198.103
+T42	IP_evil 4786 4800	192.184.60.229
+T43	sample_name 5803 5815	notepad1.exe
+T44	sample_name 5820 5832	notepad2.exe
+T45	time 6166 6179	On October 28
+T46	threatActor_name 6194 6198	APT3
+T47	IP_evil 6369 6382	198.55.115.71
+T48	threatActor_name 6606 6610	APT3
+T49	domain_evil 6621 6641	inform.bedircati.com
+T50	domain_evil 6644 6660	pn.lamb-site.com
+T51	IP_evil 6663 6676	210.109.99.64
+T52	IP_evil 6683 6697	192.184.60.229
+T53	domain_evil 6750 6765	securitywap.com
+T54	domain_evil 6881 6896	securitywap.com
+T55	time 6897 6907	2014-11-17
+T56	time 6908 6918	2014-11-20
+T57	IP_evil 6919 6933	192.184.60.229
+T58	domain_evil 6935 6954	www.securitywap.com
+T59	time 6955 6965	2014-11-17
+T60	time 6966 6976	2014-11-20
+T61	IP_evil 6977 6991	192.184.60.229
+T62	domain_evil 7012 7033	join.playboysplus.com
+T63	IP_evil 7080 7095	104.151.248.173
+T64	threatActor_name 7139 7143	APT3
+T65	domain_evil 7206 7227	join.playboysplus.com
+T66	time 7228 7238	2014-11-21
+T67	time 7239 7249	2014-11-21
+T68	IP_evil 7250 7265	104.151.248.173
+T69	domain_evil 7267 7282	walterclean.com
+T70	time 7283 7293	2014-11-18
+T71	time 7294 7304	2014-11-20
+T72	IP_evil 7305 7320	104.151.248.173
+T73	domain_evil 7322 7341	www.walterclean.com
+T74	time 7342 7352	2014-11-18
+T75	time 7353 7363	2014-11-20
+T76	IP_evil 7364 7379	104.151.248.173
+T77	threatActor_name 7438 7442	APT3
+T78	domain_evil 7458 7473	walterclean.com
+T79	threatActor_name 7537 7541	APT3
+T80	vulnerability_cve 4080 4093	CVE-2014-4113
+T82	company 7747 7750	Fox
+T83	attack_activity 386 399	spearphishing
+R1	launch Arg1:T3 Arg2:T83	
+R2	attack Arg1:T4 Arg2:T6	
+R4	attack Arg1:T7 Arg2:T8	
+R5	attack Arg1:T7 Arg2:T9	
+T18	md5 2765 2797	5a0c4e1925c76a959ab0588f683ab437
+T20	tool 2008 2018	PowerShell
+T22	function 2092 2102	runmumaa()
+T84	function 2182 2194	ShellExecute
+T85	sample_name 2196 2210	powershell.exe
+T86	sample_name 2361 2372	install.exe
+T87	sample_name 2379 2390	install.exe
+T88	sample_name 2409 2420	install.exe
+T89	sample_name 2711 2722	install.exe
+T90	sample_name 3713 3724	install.exe
+T91	sample_name 3805 3812	doc.exe
+T92	sample_name 3889 3897	test.exe
+T93	sample_name 3792 3802	MShell.pdb
+T94	sample_name 3878 3886	4113.pdb
+T95	sample_name 3986 3996	Client.pdb
+T96	sample_name 4040 4048	4113.pdb
+T97	sample_name 4287 4294	cmd.exe
+R6	use Arg1:T39 Arg2:T97	
+T98	sample_name 5363 5375	notepad1.exe
+T99	sample_name 5497 5511	newnotepad.exe
+T100	sample_name 5666 5677	notepad.exe
+T101	sample_name 5769 5781	notepad2.exe
+T102	sample_name 5913 5927	newnotepad.exe
+T103	sample_name 6050 6058	note.txt
+T104	attack_activity 6211 6224	spearphishing
+R7	launch Arg1:T46 Arg2:T104	
+T105	sample_name 6523 6537	newnotepad.exe
+T106	md5 6544 6576	8849538ef1c3471640230605c2623c67
+T107	company 6829 6832	Fox
+T109	attack_activity 6807 6832	Operation Clandestine Fox
+T110	company 343 346	Fox
+T111	attack_activity 7725 7750	Operation Clandestine Fox
+T112	time 186 204	November 21 , 2014
+R10	coreference Arg1:T2 Arg2:T1	
+R3	first_found_time Arg1:T10 Arg2:T12	
+R11	first_found_time Arg1:T11 Arg2:T14	
+T113	person 1134 1139	actor
+T114	vulnerability_cve 1177 1185	zero-day
+R12	first_found_time Arg1:T104 Arg2:T45	
+T115	vulnerability_cve 7570 7578	zero-day
+T116	reference_word 7103 7105	IP
+R13	coreference Arg1:T116 Arg2:T63	
+R14	use Arg1:T64 Arg2:T116	
+R16	part_of Arg1:T29 Arg2:T28	
+R17	part_of Arg1:T30 Arg2:T28	
+T117	sample_name 3275 3282	doc.exe
+R18	part_of Arg1:T31 Arg2:T117	
+T118	sample_name 3379 3386	doc.exe
+T119	sample_name 2911 2922	install.exe
+R19	part_of Arg1:T18 Arg2:T89	
+R20	occur_time Arg1:T89 Arg2:T23	
+R21	part_of Arg1:T24 Arg2:T89	
+R22	part_of Arg1:T33 Arg2:T118	
+R23	occur_time Arg1:T118 Arg2:T34	
+R24	part_of Arg1:T35 Arg2:T118	
+R25	part_of Arg1:T36 Arg2:T118	
+R26	occur_time Arg1:T118 Arg2:T37	
+R27	part_of Arg1:T38 Arg2:T118	
+T120	vulnerability_cve 7827 7835	zero-day
+T121	vulnerability_cve 7911 7919	zero-day
+R28	part_of Arg1:T106 Arg2:T105	
+T122	tool 7499 7518	command and control
+T123	malware 6468 6476	Backdoor
+T124	program_language 6500 6505	Pirpi
+T125	malware 6468 6493	Backdoor.APT.CookieCutter
+T126	program_language 1986 1994	VBScript
+R32	use Arg1:T126 Arg2:T20	
+T127	url_evil 2325 2372	http://www.playboysplus.com/install/install.exe
+T129	url_evil 2546 2587	http://www.exploit-db.com/exploits/35230/
+T128	tool 6481 6493	CookieCutter
+R29	coreference Arg1:T124 Arg2:T125	
+R8	part_of Arg1:T49 Arg2:T48	
+R9	part_of Arg1:T50 Arg2:T48	
+R30	part_of Arg1:T51 Arg2:T48	
+T108	protocol 6698 6700	IP
+T131	protocol 6402 6408	SOCKS5
+T132	malware 7486 7491	Plugx
+T133	malware 7494 7498	Kaba
+R31	part_of Arg1:T78 Arg2:T77	
+R33	use Arg1:T78 Arg2:T132	
+R34	use Arg1:T78 Arg2:T133	
+R35	use Arg1:T78 Arg2:T122	
+R36	use Arg1:T79 Arg2:T115	
+T81	tool 4020 4023	PDB
+T134	tool 3693 3696	PDB
+T135	tool 3749 3762	Visual Studio
+T136	tool 3837 3850	Visual Studio
+T137	tool 3922 3935	Visual Studio
+T138	protocol 4571 4577	SOCKS5
+T139	protocol 4614 4617	TCP
+T140	protocol 4652 4658	SOCKS5
+T141	protocol 4804 4807	TCP
+T142	protocol 4953 4955	IP
+T143	protocol 6868 6870	IP
+T144	vulnerability_cve 8056 8064	zero-day
+T145	url_evil 1565 1601	hxxp://join.playboysplus.com/signup/
+T130	tool 8163 8167	IOCs

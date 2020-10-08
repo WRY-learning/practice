@@ -1,0 +1,73 @@
+T1	attack_activity 36 44	Phishing
+T3	person 326 340	bank customers
+T2	attack_activity 251 269	phishing campaigns
+T4	attack_activity 409 426	phishing campaign
+T5	person 468 478	fraudsters
+T6	person 510 524	bank customers
+T10	person 788 805	banking customers
+T7	person 615 639	average bank ’s customer
+T9	time 731 761	the second week of August 2017
+T11	target_crowd 816 829	Russian banks
+T12	attack_activity 886 894	phishing
+T13	person 967 984	bank ’s customers
+T15	attack_activity 1010 1015	phish
+T17	encryption_algo 1133 1136	RSA
+T18	company 1137 1147	FirstWatch
+T16	attack_activity 1106 1120	phishing email
+T19	location 1162 1168	Russia
+T14	attack_activity 928 943	phishing emails
+T20	reference_word 1188 1198	this email
+R3	coreference Arg1:T20 Arg2:T16	
+T21	location 1344 1350	Russia
+T22	target_crowd 1162 1176	Russia bank #2
+T23	target_crowd 1344 1358	Russia bank #1
+R4	attack Arg1:T16 Arg2:T22	
+T24	attack_activity 1420 1433	phishing emai
+T8	attack_activity 682 716	Russian-language phishing campaign
+R1	occur_time Arg1:T8 Arg2:T9	
+R2	attack Arg1:T8 Arg2:T11	
+R5	launch Arg1:T3 Arg2:T2	
+R6	launch Arg1:T13 Arg2:T14	
+T25	encryption_algo 1450 1453	RSA
+T26	company 1454 1464	FirstWatch
+T27	person 1590 1606	banking customer
+T28	time 1641 1655	10 August 2017
+T29	encryption_algo 1658 1661	RSA
+T30	company 1662 1672	FirstWatch
+T31	location 1881 1887	Russia
+T32	time 1947 1961	17 August 2017
+T33	company 2193 2202	Microsoft
+T34	time 2254 2268	summer of 2015
+T35	vulnerability_cve 2301 2314	CVE-2015-2545
+T36	time 2320 2330	March 2017
+T37	company 2484 2493	Microsoft
+T38	time 2559 2569	April 2017
+T39	attack_activity 2411 2419	zero day
+T40	vulnerability_cve 2459 2472	CVE-2017-0262
+T41	vulnerability_cve 2441 2454	CVE-2017-0261
+T42	location 2619 2629	California
+T43	domain 2648 2676	www.thecaliforniacourier.com
+T44	person 2714 2719	Trump
+T45	location 2733 2738	Syria
+T46	person 2863 2869	actors
+T48	person 3205 3226	bank-targeting actors
+T47	person 2985 3009	espionage-focused actors
+T49	person 3367 3376	defenders
+T50	person 3380 3391	researchers
+T51	person 3422 3431	attackers
+T52	person 3658 3671	Kevin Douglas
+T53	encryption_algo 3639 3642	RSA
+T54	vulnerability_cve 3924 3937	CVE-2017-0262
+T55	vulnerability_cve 4017 4030	CVE-2017-0262
+T56	vulnerability_cve 4124 4137	CVE-2017-0262
+T57	IP 4175 4189	137.74.224.142
+T58	person 4239 4245	actors
+T59	person 4309 4320	researchers
+T60	company 4332 4338	Google
+T61	IP 4380 4394	137.74.224.142
+T62	person 4652 4661	customers
+T63	attack_activity 2167 2175	zero day
+T65	person 2372 2400	financially motivated actors
+R8	use Arg1:T65 Arg2:T41	
+R9	use Arg1:T65 Arg2:T40	
+T64	company 2787 2791	ESET

@@ -1,0 +1,90 @@
+T1	threatActor_name 83 90	Kimsuky
+T2	threatActor_aliases 93 108	Velvet Chollima
+T3	threatActor_name 111 118	Kimsuky
+T4	time 192 206	September 2013
+R2	first_found_time Arg1:T3 Arg2:T4	
+T6	threatActor_name 393 406	Lazarus Group
+T7	threatActor_aliases 409 421	HIDDEN COBRA
+T8	threatActor_aliases 424 442	Guardians of Peace
+T9	threatActor_aliases 445 449	ZINC
+T10	threatActor_aliases 452 466	NICKEL ACADEMY
+T11	threatActor_name 469 482	Lazarus Group
+T13	time 600 604	2009
+T14	time 644 657	November 2014
+T15	company 691 718	Sony Pictures Entertainment
+T16	threatActor_name 1395 1405	Bluenoroff
+T17	threatActor_name 1408 1413	APT37
+T18	threatActor_name 1420 1425	APT38
+T19	threatActor_name 1551 1560	Leafminer
+T20	threatActor_aliases 1563 1570	Raspite
+T21	threatActor_name 1573 1582	Leafminer
+T22	location 1589 1596	Iranian
+T23	government 1682 1693	Middle East
+T24	time 1709 1719	early 2017
+T26	government 240 257	Korean think tank
+T25	target_crowd 269 297	DPRK/nuclear-related targets
+T27	company 349 390	Korea Hydro & Nuclear Power Co.compromise
+T28	reference_word 304 309	group
+R5	coreference Arg1:T28 Arg2:T29	
+T29	reference_word 213 218	group
+R6	coreference Arg1:T29 Arg2:T3	
+R7	attack Arg1:T29 Arg2:T26	
+R8	attack Arg1:T29 Arg2:T25	
+R9	coreference Arg1:T7 Arg2:T6	
+R10	coreference Arg1:T8 Arg2:T6	
+R11	coreference Arg1:T9 Arg2:T6	
+R12	coreference Arg1:T10 Arg2:T6	
+R13	coreference Arg1:T2 Arg2:T1	
+T30	reference_word 563 568	group
+R14	coreference Arg1:T30 Arg2:T11	
+T31	security_team 772 779	Novetta
+T33	attack_activity 747 768	Operation Blockbuster
+R15	coreference Arg1:T20 Arg2:T19	
+T32	threatActor_name 798 811	Lazarus Group
+T34	malware 863 878	Operation Flame
+T35	malware 881 899	Operation 1Mission
+T36	malware 902 916	Operation Troy
+T37	malware 919 928	DarkSeoul
+T38	malware 935 951	Ten Days of Rain
+R16	use Arg1:T32 Arg2:T34	
+R17	use Arg1:T32 Arg2:T35	
+R18	use Arg1:T32 Arg2:T36	
+R19	use Arg1:T32 Arg2:T37	
+R20	use Arg1:T32 Arg2:T38	
+T39	threatActor_name 969 982	Lazarus Group
+T40	time 957 966	late 2017
+T41	malware 988 996	KillDisk
+R22	use Arg1:T39 Arg2:T41	
+T42	target_crowd 1044 1057	online casino
+R23	attack Arg1:T39 Arg2:T42	
+T43	location 1067 1082	Central America
+T44	location 1083 1095	North Korean
+T45	threatActor_name 1167 1180	Lazarus Group
+T46	threatActor_name 1263 1276	Lazarus Group
+T47	location 1316 1327	North Korea
+T48	location 1355 1367	North Korean
+T49	threatActor_name 1535 1548	Lazarus Group
+R24	located Arg1:T21 Arg2:T22	
+R25	attack Arg1:T21 Arg2:T23	
+T51	location 533 545	North Korean
+R27	located Arg1:T42 Arg2:T43	
+T5	location 124 136	North Korean
+R1	located Arg1:T3 Arg2:T5	
+R3	located Arg1:T11 Arg2:T51	
+T12	government 533 556	North Korean government
+R31	part_of Arg1:T11 Arg2:T12	
+R4	first_found_time Arg1:T30 Arg2:T13	
+R32	find Arg1:T31 Arg2:T33	
+T50	attack_activity 670 682	wiper attack
+R33	launch Arg1:T30 Arg2:T50	
+R34	occur_time Arg1:T50 Arg2:T14	
+R35	attack Arg1:T50 Arg2:T15	
+R36	part_of Arg1:T50 Arg2:T33	
+R21	located Arg1:T46 Arg2:T47	
+R37	located Arg1:T45 Arg2:T44	
+T52	target_crowd 1628 1638	government
+T53	target_crowd 1657 1674	business entities
+R26	located Arg1:T52 Arg2:T23	
+R28	located Arg1:T53 Arg2:T23	
+R29	occur_time Arg1:T39 Arg2:T40	
+R30	occur_time Arg1:T21 Arg2:T24	

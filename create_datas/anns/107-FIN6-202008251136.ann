@@ -1,0 +1,137 @@
+T1	threatActor_name 70 74	FIN6
+T2	threatActor_name 798 802	FIN6
+T3	threatActor_name 1065 1069	FIN6
+T4	threatActor_name 867 871	FIN6
+T5	threatActor_name 1252 1256	FIN6
+T6	threatActor_name 1358 1362	FIN6
+T7	threatActor_name 1967 1971	FIN6
+T8	threatActor_name 2439 2443	FIN6
+T9	threatActor_name 2553 2557	FIN6
+T10	threatActor_name 2731 2735	FIN6
+T11	threatActor_name 3033 3037	FIN6
+T12	threatActor_name 3221 3225	FIN6
+T13	threatActor_name 3700 3704	FIN6
+T14	malware 77 84	GRABNEW
+T15	malware 101 111	NEVERQUEST
+T16	malware 116 123	VAWTRAK
+R1	coreference Arg1:T15 Arg2:T14	
+R2	coreference Arg1:T16 Arg2:T14	
+T17	time 141 145	2013
+R3	first_found_time Arg1:T14 Arg2:T17	
+T18	malware 380 387	GRABNEW
+T19	malware 1013 1020	GRABNEW
+T20	malware 1162 1169	GRABNEW
+T21	malware 1208 1215	GRABNEW
+T22	malware 650 657	GRABNEW
+T23	malware 1411 1418	GRABNEW
+T24	malware 1373 1380	GRABNEW
+T25	malware 1830 1837	GRABNEW
+T26	malware 420 428	backdoor
+R4	part_of Arg1:T18 Arg2:T26	
+T27	sample_function 400 419	credential-stealing
+T28	sample_function 434 447	form-grabbing
+T29	sample_function 480 514	inject code into specifc web pages
+R5	part_of Arg1:T27 Arg2:T18	
+R6	part_of Arg1:T28 Arg2:T18	
+R7	part_of Arg1:T29 Arg2:T18	
+T30	sample_function 534 560	mimic a valid login prompt
+T31	attack_goal 591 615	facilitate banking fraud
+R8	part_of Arg1:T30 Arg2:T18	
+R9	goal Arg1:T18 Arg2:T31	
+T33	malware 720 728	PoSeidon
+T34	malware 748 754	Backoﬀ
+T35	tool 755 758	POS
+T36	company 838 846	Mandiant
+R14	use Arg1:T3 Arg2:T19	
+T37	attack_goal 1219 1249	capture valid user credentials
+T38	person 1191 1196	actor
+R15	use Arg1:T38 Arg2:T21	
+R16	goal Arg1:T38 Arg2:T37	
+R17	use Arg1:T38 Arg2:T20	
+R18	use Arg1:T6 Arg2:T24	
+R19	use Arg1:T6 Arg2:T23	
+T39	threatActor_name 1643 1647	FIN2
+T40	sub_activity 1650 1752	leverage several existing Citadel compromises to deploy their custom tools and expand within a network
+T41	attack_goal 1756 1787	compromise payment card systems
+R20	launch Arg1:T39 Arg2:T40	
+R21	goal Arg1:T40 Arg2:T41	
+T42	tool 1871 1874	POS
+T43	tool 1981 1984	POS
+T44	tool 1920 1923	POS
+T45	company 1801 1811	Proofpoint
+T46	malware 1892 1902	AbaddonPOS
+R22	find Arg1:T45 Arg2:T25	
+T47	malware 2006 2013	TRINITY
+R24	coreference Arg1:T46 Arg2:T25	
+R25	use Arg1:T7 Arg2:T47	
+T48	tool 2473 2483	Metasploit
+R27	use Arg1:T8 Arg2:T48	
+T49	tool 2565 2575	Metasploit
+T50	tool 2576 2586	PowerShell
+R28	part_of Arg1:T50 Arg2:T49	
+R29	use Arg1:T9 Arg2:T49	
+T51	attack_goal 2597 2658	download and execute shellcode and to set up a local listener
+T52	tool 2821 2831	Metasploit
+T53	tool 2773 2781	HARDTACK
+T54	tool 2786 2795	SHIPBREAD
+T55	malware 2856 2864	backdoor
+R33	use Arg1:T10 Arg2:T53	
+R34	use Arg1:T10 Arg2:T54	
+T56	attack_goal 2846 2864	establish backdoor
+R35	goal Arg1:T10 Arg2:T56	
+T57	malware 2982 2985	CnC
+T58	reference_word 2919 2924	tools
+R36	coreference Arg1:T58 Arg2:T53	
+R37	coreference Arg1:T58 Arg2:T54	
+R38	use Arg1:T58 Arg2:T57	
+T59	attack_goal 3000 3030	download and execute shellcode
+R39	goal Arg1:T58 Arg2:T59	
+T60	OS_name 3081 3088	Windows
+T61	OS_name 3267 3274	Windows
+T62	OS_name 3405 3412	Windows
+R30	goal Arg1:T9 Arg2:T51	
+T63	malware 3209 3218	backdoors
+T64	tool 3275 3293	Credentials Editor
+R40	part_of Arg1:T64 Arg2:T61	
+R41	use Arg1:T12 Arg2:T64	
+T65	attack_goal 3298 3344	privilege escalation and credential harvesting
+R42	goal Arg1:T12 Arg2:T65	
+R43	use Arg1:T12 Arg2:T63	
+T66	company 3395 3404	Microsoft
+R44	part_of Arg1:T62 Arg2:T66	
+T67	vulnerability_cve 3526 3539	CVE-2013-3660
+T68	vulnerability_cve 3542 3555	CVE-2011-2005
+T69	vulnerability_cve 3560 3573	CVE-2010-4398
+T70	reference_word 3511 3516	tools
+T71	reference_word 3379 3384	tools
+R45	coreference Arg1:T71 Arg2:T64	
+R46	coreference Arg1:T70 Arg2:T71	
+T72	attack_goal 3446 3487	compromise privileged account credentials
+T73	reference_word 3413 3428	vulnerabilities
+R47	coreference Arg1:T73 Arg2:T67	
+R48	coreference Arg1:T73 Arg2:T68	
+R49	coreference Arg1:T73 Arg2:T69	
+R50	use Arg1:T71 Arg2:T73	
+R51	goal Arg1:T71 Arg2:T72	
+R52	use Arg1:T70 Arg2:T67	
+R53	use Arg1:T70 Arg2:T68	
+R54	use Arg1:T70 Arg2:T69	
+T74	tool 3673 3683	Metasploit
+R55	use Arg1:T13 Arg2:T74	
+T75	tool 3729 3744	PsExec NTDSGRAB
+T76	tool 3715 3725	Metasploit
+R56	part_of Arg1:T75 Arg2:T76	
+R57	part_of Arg1:T75 Arg2:T74	
+R58	use Arg1:T13 Arg2:T75	
+T77	sample_name 3804 3812	ntds.dit
+T78	sample_name 3776 3801	Active Directory database
+R59	coreference Arg1:T77 Arg2:T78	
+T79	attack_goal 3755 3801	obtain a copy of the Active Directory database
+R60	goal Arg1:T13 Arg2:T79	
+T80	tool 700 703	POS
+R10	use Arg1:T33 Arg2:T80	
+R11	use Arg1:T34 Arg2:T35	
+R12	use Arg1:T34 Arg2:T80	
+R13	use Arg1:T33 Arg2:T35	
+R23	use Arg1:T47 Arg2:T43	
+R26	use Arg1:T47 Arg2:T44	

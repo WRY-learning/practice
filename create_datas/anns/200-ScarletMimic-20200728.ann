@@ -1,0 +1,446 @@
+T1	threatActor_name 0 12	ScarletMimic
+T2	security_team 243 250	Unit 42
+T3	threatActor_name 338 351	Scarlet Mimic
+T4	threatActor_name 910 923	Scarlet Mimic
+T5	threatActor_name 1218 1231	Scarlet Mimic
+T6	threatActor_name 1414 1427	Scarlet Mimic
+T7	government 760 778	Chinese government
+T8	attack_goal 1693 1717	government organizations
+T9	attack_goal 1721 1740	high-tech companies
+T10	threatActor_name 1893 1906	Scarlet Mimic
+T11	target_crowd 1931 1937	Uyghur
+T12	target_crowd 1942 1949	Tibetan
+T13	target_crowd 2023 2030	Tibetan
+T14	target_crowd 2049 2056	Uyghurs
+T15	target_crowd 2061 2074	Turkic Muslim
+T16	threatActor_name 2353 2366	Scarlet Mimic
+T17	threatActor_name 2388 2401	Scarlet Mimic
+T18	threatActor_name 2615 2628	Scarlet Mimic
+T19	threatActor_name 2696 2709	Scarlet Mimic
+T20	malware 2780 2785	FakeM
+T21	attack_goal 2728 2734	center
+T22	security_team 2817 2828	Trend Micro
+T23	time 2832 2836	2013
+T24	malware 2851 2856	FakeM
+T25	malware 3040 3045	FakeM
+T26	time 3119 3123	2013
+R1	attack Arg1:T19 Arg2:T21	
+R2	use Arg1:T21 Arg2:T20	
+R3	first_found_time Arg1:T23 Arg2:T24	
+R4	first_found_time Arg1:T26 Arg2:T25	
+R5	attack Arg1:T10 Arg2:T11	
+R6	attack Arg1:T10 Arg2:T12	
+R7	attack Arg1:T10 Arg2:T13	
+R8	attack Arg1:T10 Arg2:T14	
+R9	attack Arg1:T10 Arg2:T15	
+R10	attack Arg1:T6 Arg2:T8	
+R11	attack Arg1:T5 Arg2:T9	
+R12	find Arg1:T2 Arg2:T3	
+T27	threatActor_name 3200 3213	Scarlet Mimic
+T28	malware 3293 3298	FakeM
+T29	threatActor_name 3434 3447	Scarlet Mimic
+T30	threatActor_name 3584 3596	Scarlet Mimi
+T31	threatActor_name 3912 3925	Scarlet Mimic
+T32	attack_activity 4264 4278	spear-phishing
+T33	attack_activity 3611 3625	spear-phishing
+T34	attack_activity 3630 3643	watering hole
+R13	attack Arg1:T30 Arg2:T33	
+R14	attack Arg1:T30 Arg2:T34	
+T35	threatActor_name 4735 4748	Scarlet Mimic
+T36	time 4794 4798	2015
+R15	occur_time Arg1:T35 Arg2:T36	
+T37	attack_goal 4856 4872	Muslim activists
+T38	attack_goal 4914 4932	Russian government
+T39	person 4937 4969	Russian President Vladimir Putin
+R16	attack Arg1:T35 Arg2:T37	
+R17	attack Arg1:T35 Arg2:T38	
+R18	attack Arg1:T35 Arg2:T39	
+T40	security_team 5159 5186	Palo Alto Networks WildFire
+T41	security_team 5388 5409	Cyber Threat Alliance
+T42	threatActor_name 5518 5531	Scarlet Mimic
+T43	malware 5614 5620	Trojan
+T44	attack_activity 5682 5712	deploys spear-phishing e-mails
+T45	reference_word 5534 5544	This group
+T46	reference_word 5662 5671	The group
+R19	coreference Arg1:T45 Arg2:T42	
+R20	coreference Arg1:T46 Arg2:T42	
+R21	use Arg1:T45 Arg2:T43	
+R22	launch Arg1:T46 Arg2:T44	
+T47	attack_activity 5716 5734	infect its targets
+R23	goal Arg1:T44 Arg2:T47	
+T48	time 5821 5825	2013
+T49	attack_activity 5768 5817	watering hole ( strategic web compromise ) attack
+R24	launch Arg1:T46 Arg2:T49	
+T50	security_team 6014 6021	Unit 42
+T51	location 6208 6226	northwestern China
+T52	threatActor_name 6243 6256	Scarlet Mimic
+T53	malware 6823 6828	FakeM
+T54	threatActor_name 6876 6889	Scarlet Mimic
+T55	reference_word 6947 6957	this group
+R25	coreference Arg1:T55 Arg2:T54	
+T56	time 6983 6987	2013
+T57	security_team 6993 7004	Trend Micro
+T58	malware 7022 7034	FakeM Trojan
+R26	find Arg1:T57 Arg2:T55	
+R27	occur_time Arg1:T56 Arg2:T55	
+T59	threatActor_name 7066 7079	Scarlet Mimic
+T60	malware 7183 7190	Trojans
+T61	reference_word 7134 7138	They
+R28	coreference Arg1:T61 Arg2:T59	
+T62	reference_word 7240 7252	The attacker
+R29	coreference Arg1:T62 Arg2:T59	
+R30	use Arg1:T60 Arg2:T59	
+T63	attack_activity 7253 7282	sends a spear-phishing e-mail
+R31	launch Arg1:T63 Arg2:T59	
+T64	malware 7646 7652	Trojan
+T65	threatActor_name 8298 8311	Scarlet Mimic
+T66	threatActor_name 8529 8552	Operation Lotus Blossom
+T67	vulnerability_cve 8662 8675	CVE-2012-0158
+T68	vulnerability_cve 8676 8689	CVE-2010-3333
+T69	threatActor_name 8604 8616	Scarlet Mimi
+T70	vulnerability_cve 8690 8703	CVE-2010-2883
+T71	vulnerability_cve 8704 8717	CVE-2010-2572
+T72	vulnerability_cve 8718 8731	CVE-2009-3129
+T73	threatActor_name 8747 8760	Scarlet Mimic
+T74	malware 8848 8853	FakeM
+T75	security_team 8888 8895	Unit 42
+T76	malware 8927 8932	FakeM
+T77	malware 8949 8954	MNKit
+T78	malware 8957 8962	WingD
+T79	malware 8967 8980	Tran Duy Linh
+R32	find Arg1:T75 Arg2:T76	
+R33	find Arg1:T75 Arg2:T77	
+R34	find Arg1:T75 Arg2:T78	
+R35	find Arg1:T75 Arg2:T79	
+T80	threatActor_name 9080 9093	Scarlet Mimic
+T81	threatActor_name 10223 10236	Scarlet Mimic
+T82	attack_goal 10488 10510	New York Times article
+R36	attack Arg1:T81 Arg2:T82	
+T83	time 10549 10561	July of 2015
+T84	threatActor_name 10649 10662	Scarlet Mimic
+T85	security_team 10757 10789	Russian Federal Security Service
+T86	attack_goal 10978 11010	Russian President Vladimir Putin
+T87	attack_goal 11014 11026	Adolf Hitler
+R37	attack Arg1:T84 Arg2:T86	
+R38	attack Arg1:T84 Arg2:T87	
+R39	find Arg1:T85 Arg2:T84	
+T88	attack_goal 11175 11217	Islamic Country Muslim Religion Conference
+T89	reference_word 11055 11068	threat actors
+R40	coreference Arg1:T89 Arg2:T84	
+R41	attack Arg1:T89 Arg2:T88	
+T90	threatActor_name 11520 11533	Scarlet Mimic
+T91	time 11593 11597	2013
+T92	reference_word 11600 11609	the group
+R42	coreference Arg1:T92 Arg2:T90	
+R43	occur_time Arg1:T91 Arg2:T90	
+T93	attack_activity 11619 11641	a watering hole attack
+R44	launch Arg1:T92 Arg2:T93	
+T94	attack_activity 11725 11742	The watering hole
+T95	vulnerability_cve 12076 12089	CVE-2012-4969
+T96	time 12134 12148	September 2012
+R45	first_found_time Arg1:T96 Arg2:T95	
+T97	reference_word 12245 12258	threat groups
+R46	coreference Arg1:T97 Arg2:T90	
+T98	time 12351 12363	January 2013
+T99	malware 12394 12399	FakeM
+T100	malware 12470 12475	FakeM
+T101	malware 12636 12641	FakeM
+T102	malware 12790 12795	FakeM
+T103	threatActor_name 12881 12894	Scarlet Mimic
+T104	malware 12863 12868	FakeM
+T105	malware 12897 12902	FakeM
+T106	malware 12968 12973	FakeM
+T107	malware 13088 13093	FakeM
+T108	reference_word 13020 13033	Threat actors
+R47	coreference Arg1:T108 Arg2:T103	
+T109	threatActor_name 13255 13268	Scarlet Mimic
+T110	malware 13289 13294	FakeM
+T111	security_team 13198 13205	Unit 42
+T112	malware 13580 13585	FakeM
+T113	malware 13784 13789	FakeM
+T114	malware 14157 14162	FakeM
+T115	time 14311 14315	2009
+T116	time 14342 14346	2014
+T117	time 14376 14380	2014
+T119	malware 14476 14490	BrutishCommand
+T120	malware 14495 14507	SubtractThis
+T121	malware 14771 14776	FakeM
+T122	person 14814 14825	Trend Micro
+T123	person 14857 14868	Trend Micro
+T124	malware 14901 14906	FakeM
+T125	security_team 14844 14854	whitepaper
+T126	time 14917 14934	January 17 , 2013
+T127	malware 15011 15016	FakeM
+T128	malware 15059 15064	FakeM
+T129	person 15343 15354	Trend Micro
+T130	malware 15578 15583	FakeM
+T131	time 15775 15789	September 2009
+T132	time 15981 15994	February 2013
+T133	domain_evil 15915 15940	press.ufoneconference.com
+T134	time 16034 16047	February 2013
+T135	malware 16087 16092	FakeM
+T136	time 16141 16155	September 2009
+T137	malware 16370 16375	FakeM
+T138	malware 14465 14473	FakeFish
+T118	malware 16490 16495	FakeM
+T139	malware 16256 16268	CrypticConvo
+T140	malware 16604 16609	FakeM
+T141	malware 16717 16722	FakeM
+T142	person 16844 16855	Trend Micro
+T143	malware 17137 17142	FakeM
+T144	malware 17217 17222	FakeM
+T145	security_team 17225 17232	Unit 42
+T146	malware 17273 17278	FakeM
+T147	malware 17412 17417	FakeM
+T148	malware 17647 17652	FakeM
+T149	malware 17824 17829	FakeM
+T150	time 17873 17877	2013
+T151	person 17858 17869	Trend Micro
+R48	find Arg1:T151 Arg2:T149	
+R49	occur_time Arg1:T150 Arg2:T149	
+T152	malware 18116 18121	FakeM
+T153	security_team 18338 18345	Unit 42
+T154	malware 18466 18471	FakeM
+T155	time 18588 18600	October 2013
+T156	security_team 18603 18610	FireEye
+T157	tool 18047 18050	MSN
+T158	tool 18055 18062	Yahoo !
+T159	security_team 18837 18844	Unit 42
+T160	tool 18983 18986	MSN
+T161	tool 18989 18994	Yahoo
+T162	malware 19122 19127	FakeM
+T163	malware 19270 19275	FakeM
+T164	security_team 19302 19329	Palo Alto Networks WildFire
+T165	security_team 19548 19555	Unit 42
+T166	malware 19643 19648	FakeM
+T167	malware 19699 19704	FakeM
+T168	time 20341 20350	July 2015
+T169	threatActor_name 20353 20366	Scarlet Mimic
+T170	government 20419 20436	Russian governmen
+T171	security_team 20608 20615	Unit 42
+T172	malware 20700 20705	FakeM
+T173	malware 20821 20826	FakeM
+T174	security_team 21038 21045	Unit 42
+T175	malware 21113 21118	FakeM
+T176	malware 21216 21221	FakeM
+T177	malware 21389 21394	FakeM
+T178	malware 21518 21523	FakeM
+T179	malware 21653 21658	FakeM
+T180	malware 23363 23368	FakeM
+T181	security_team 23380 23387	Unit 42
+T182	malware 23469 23474	FakeM
+T183	security_team 23577 23584	Unit 42
+T184	malware 23639 23644	FakeM
+T185	malware 23763 23768	FakeM
+T186	malware 23987 23992	FakeM
+T187	time 23998 24011	February 2013
+T188	security_team 24014 24024	AlienVault
+T189	malware 24502 24507	FakeM
+T190	security_team 24798 24805	Unit 42
+T191	malware 25777 25782	FakeM
+T192	malware 25960 25965	FakeM
+T193	malware 26000 26005	FakeM
+T194	malware 26603 26608	FakeM
+T195	malware 26676 26681	FakeM
+T196	security_team 26843 26850	Unit 42
+T197	security_team 26552 26559	Unit 42
+T198	malware 26990 26995	FakeM
+T199	threatActor_name 27035 27048	Scarlet Mimic
+T200	malware 30960 30965	FakeM
+T201	malware 30830 30835	FakeM
+T202	malware 31322 31327	FakeM
+T203	malware 31350 31355	FakeM
+T204	malware 31520 31525	FakeM
+T205	domain 31645 31660	xsldmt@xj163.cn
+T206	domain 31712 31725	yourturbe.org
+T207	domain 31728 31747	websurprisemail.com
+T208	domain 31752 31764	googmail.org
+T209	malware 31941 31946	FakeM
+T210	security_team 32218 32225	Unit 42
+T211	domain 33066 33085	lenovositegroup.com
+T212	domain 33088 33107	ufoneconference.com
+T213	domain 33114 33133	websurprisemail.com
+T214	IP 33175 33189	118.193.212.12
+T215	IP 33192 33207	210.206.219.241
+T216	IP 33214 33228	59.188.239.117
+T217	IP 33350 33364	95.154.204.198
+T218	threatActor_name 33367 33380	Scarlet Mimic
+T219	domain 33794 33814	muslim.islamhood.net
+T220	IP 33848 33862	59.188.239.117
+T221	IP 33964 33976	68.71.35.135
+T222	IP 34056 34070	59.188.239.117
+T223	IP 34125 34137	68.71.35.135
+T224	security_team 34232 34239	Unit 42
+T225	time 34409 34413	2014
+T226	time 34654 34658	2013
+T227	time 34871 34888	January 12 , 2016
+T228	threatActor_name 35135 35148	Scarlet Mimic
+T229	security_team 35248 35255	Unit 42
+T230	threatActor_name 35282 35295	Scarlet Mimic
+T231	threatActor_name 35363 35376	Scarlet Mimic
+T232	time 35461 35465	2009
+T233	security_team 36053 36074	Cyber Threat Alliance
+T234	security_team 36190 36238	Palo Alto Networks AutoFocus threat intelligence
+T235	security_team 36241 36250	AutoFocus
+T236	threatActor_name 36294 36307	Scarlet Mimic
+T237	threatActor_name 36379 36391	ScarletMimic
+T238	malware 36392 36397	FakeM
+T239	threatActor_name 36466 36479	Scarlet Mimic
+T240	security_team 36819 36827	WildFire
+T241	sha2 37115 37179	12dedcdda853da9846014186e6b4a5d6a82ba0cf61d7fa4cbe444a010f682b5d
+T242	sha2 37209 37273	33e50c44804d4838dba6627b08210029ff9106fa7fd16cd7255271e153f58b05
+T243	sha2 37303 37367	3d9bd26f5bd5401efa17690357f40054a3d7b438ce8c91367dbf469f0d9bd520
+T244	sha2 37397 37461	5182dc8667432d76a276dc4f864cdfcef3e481783ebaf46d3b1397080b798f4a
+T245	sha2 37491 37555	523ad50b498bfb5ab688d9b1958c8058f905b634befc65e96f9f947e40893e5b
+T246	sha2 37585 37649	5dade00db195087aa336ce190b5fd1c22992c49556c623b42a9f742d73241a7f
+T247	sha2 37679 37743	7156f6416e7116e52f9c67f4e716b1dbea17387e61009c7f2825debbbb4dcb73
+T248	sha2 37773 37837	79aca57905cca1e56b0cedf48a4d81812639c333ee6532d90a074d64b3852d6f
+T249	sha2 37867 37931	879edf0417c4a9759040b51bf83b2fc918a6644a7c29a52252003a63036aea5c
+T250	sha2 37961 38025	9b77bbb620f50632fae17c40c7469fc93ffdbc4136a6d893a9a10a44bc435da5
+T251	sha2 38055 38119	a1b7fe2acdb7a5b0c52b7c1960cfad531a7ca85b602fc90044c57a2b2531699f
+T252	sha2 38149 38213	a268cc4931781d1d8094a4f8f596c2de3d662f2581c735b0810ff0ecefe3f859
+T253	sha2 38243 38307	a4abbcfdbf4a6c52349a843eac0396e6d8abb05f1324223980d824629a42ef7a
+T254	sha2 38337 38401	a569f3b02a4be99e0b4a9f1cff43115da803f0660dd4df114b624316f3f63dc6
+T255	sha2 38431 38495	b4c1e9c99f861a4dd7654dcc3548ab5ddc15ee5feb9690b9f716c4849714b20d
+T256	sha2 38525 38589	bbdedcfe789641e7f244700e8c028ef51094b66508f503876eb0d6aa16df6aa8
+T257	sha2 38619 38683	c7b9e6b5ab07e6da404af9894c8422d9a0c9586334ddc0a3c1ea6bf23ef97fb2
+T258	sha2 38713 38777	caeace73a17e220634525d2a4117525fd60cb86a06873c86571e89d156f8d72d
+T259	sha2 38807 38871	caf76e19a2681dd000c96d8389afc749e774c083aef09f023d4f42fbc49d4d3d
+T260	sha2 38901 38965	e96097826179a66cc3061be0f99f7b55cc9692a6378b5c4364699327823098ab
+T261	sha2 38995 39059	f511b13341c9fb4ec9ecfcfe5a5813b964c362d7c709c402ead4e010d857bf6c
+T262	sha2 39089 39153	fa08a498da0b31e77669d51a28dff166d84983fa6af693063c08f312fdce93e3
+T263	sha2 39183 39247	df9872d1dc1dbb101bf83c7e7d689d2d6df09966481a365f92cd451ef55f047d
+T264	sha2 39270 39334	0aab09bf0db30a4be28d19475082fd5e7f75879bf9029fdd8dfc3a1e1f072b0c
+T265	sha2 39357 39421	2e1472a65a8df43c8bc9b0aff954fbc1a093c4214f6a718a08e1321db83ca683
+T266	sha2 39444 39508	3209ab95ca7ee7d8c0140f95bdb61a37d69810a7a23d90d63ecc69cc8c51db90
+T267	sha2 39531 39595	41948c73b776b673f954f497e09cc469d55f27e7b6e19acb41b77f7e64c50a33
+T268	sha2 39618 39682	4a4dfffae6fc8be77ac9b2c67da547f0d57ffae59e0687a356f5105fdddc88a3
+T269	sha2 39705 39769	5154511a439bb367b7dd56232eb15281cb6dc4d64ea3a06e7fbbe6b176e385d4
+T270	sha2 39792 39856	5fae5750797ebe7e7a6a6919a7d66deffb141ec28737bd72a1f7da8edd330b60
+T271	sha2 39879 39943	aa8a302a53bd39b2d2a6e3d8497575e2a5f9757b248e34c8e0821ce9eee5cc32
+T272	sha2 39966 40030	b3c9bb22fa1bc358dc23a1a4bdaf85ad1add4d812b107b7ab887affbf689933a
+T273	sha2 40053 40117	cd506679fd32dab16dee6fbf1cfdfe0836e092a4f5669418a199d99c9cd33abd
+T274	sha2 40140 40204	d1dd4469c7b5c462e5ff2dcef5d22775250e9ebf395f65da624f18ea7144e173
+T275	sha2 40227 40291	d698008e417da867d02e2f5cdcc80ff92af753dd585fada42fc611c2d7332c3a
+T276	sha2 40319 40383	53af257a42a8f182e97dcbb8d22227c27d654bea756d7f34a80cc7982b70aa60
+T277	sha2 40411 40475	9adda3d95535c6cf83a1ba08fe83f718f5c722e06d0caff8eab4a564185971c5
+T278	sha2 40503 40567	53cecc0d0f6924eacd23c49d0d95a6381834360fbbe2356778feb8dd396d723e
+T279	sha2 40595 40659	631fc66e57acd52284aba2608e6f31ba19e2807367e33d8704f572f6af6bd9c3
+T280	sha2 40687 40751	7bfbf49aa71b8235a16792ef721b7e4195df11cb75371f651595b37690d108c8
+T281	sha2 40779 40843	7c9421a4605decfa1b3e22addbca98d86ea757dcd8ff8e075d13228c99618637
+T282	sha2 40871 40935	202975d10ba417cf441e8f9986d2496807fe39e057d3226ec3b2713f0c218cd8
+T283	sha2 40963 41027	22e7517d8996e92998eb996416f9d8ef06b3b1c220c1a5d29ccd5aaef7b10c72
+T284	sha2 41055 41119	435df30d139ccbe5ce4e5ca6fe072e42e96d5ea1efd5317deebce462ecccc7ab
+T285	sha2 41147 41211	47d9ba5f7bf70c5d2b7a832e070957cc7ebdcfd0a6ee75851df16dc45971ce8a
+T286	sha2 41239 41303	4a3d0df9fa198a7ebe45db5239d22067e74924b1aace52029b3acc9b51af691e
+T287	sha2 41331 41395	4d539f638ed476ca08da838cdfbf710dae82b582256d60a009e9d304f6822e65
+T288	sha2 41423 41487	be0e8da7e261ec7d08eaa78e79ceb1be47c324b8e142097bf6569f9471c98a4e
+T289	sha2 41515 41579	c30d03750458bb5f2b03d6bd399ffca6d378a3adb5a74bee3b6ba4b982dbf273
+T290	sha2 41607 41671	cc7db456825e266849090b6fa95a94ad8c4c717712b610b0d39077af5222f4be
+T291	sha2 41699 41763	d6d2a77f8ed2fe9fed9ee6dcb4cc0b339ba47a575c717c35815243c752d8f60c
+T292	sha2 41791 41855	db8338e6b883fdceaa02c10ad683547a26ae32e0d4641cc24c7bd3b45154abb0
+T293	sha2 41883 41947	e8e5ecf525c5259651bfbdf1923215729ec67658225eca1b02519f5f6279eacb
+T294	sha2 41975 42039	ec4deb761b09ddc706804ef669836cf4b199f1d74b14ad623a6f6cc2f38190b8
+T295	sha2 42067 42131	669ce0975c133d54e414dbf1de546aed742e76fe3e60568e2bd4747b7e0f8b70
+T296	sha2 42159 42223	0d77f5f1d4c0f02fb88ac33fa365b17d28d1521cea59329ca4b3dd0b7031a60e
+T297	sha2 42251 42315	363d9557861fab2d83d04847b967996361e670e571b335c7a535bc6278cba149
+T298	sha2 42343 42407	7fb2c37431fd7b05414b134732ba0b29cd7dad17fc176627ee0815aac60c1ab9
+T299	sha2 42435 42499	77e4ef9e08f1095487b4fa27492b4c9b8e833f29598f99a0d10f7c85b4254761
+T300	sha2 42527 42591	a4ffca5f1c3d9c21629fa98a1e91121d954ab9347e86ac3c9613dae61bf30393
+T301	sha2 42619 42683	428121c421bf81a0d689014cf21ec7951b0c32add86198e06f7d636981f68755
+T302	sha2 42711 42775	a195f564aa2fb66db119e2fbec93e319a973e5cf50fbf9fc08bd81f9b7ee8af8
+T303	sha2 42803 42867	c1e8ff8ebe3754bc7d14509ef3678edf7551d876d3fa847d07d469c09bceae91
+T304	sha2 42895 42959	53238f67ac7e4cc27264efbacc8712bd97a5775feaf633c63adaa0785d038e8a
+T305	sha2 42987 43051	508a7cab0f2a69ba66e92e86817a49ecd1b9c8ae11a995147944995fc868dfad
+T306	sha2 43079 43143	fb60d14de4dba022f11437845d465a661d0c78d3d097a38770816f06992bf0af
+T307	sha2 43171 43235	6fe33c672fd30bba9bbc89dc7d88993d8783382c9f9c510677b1bb068a5f1e51
+T308	sha2 43263 43327	6a1c7999b4ba92899d3364fc729d0f052680be5a71dd0f13cbabdb19b82bf858
+T309	sha2 43355 43419	5db51f2f7c31de7d165ec4892ae7dcedaa036caedeef718b57953d7935582f04
+T310	sha2 43447 43510	27167a9d63f5ddc68a12decb1a1e0a2a29c72fe0681dca2c4f3d169f048a9d3
+T311	sha2 43539 43603	6f10c892133b5dac6c40cfe77ca32b42572bc56909481b236080dfc143ef9afd
+T312	sha2 43631 43695	de12cd8d11478d17342c60239837c1afcc9fee72df6ffdf9943802640d43f77a
+T313	sha2 43723 43787	0f2db64b8283b76d49c9bb272beafab8323f941b6dc3888b42ff02f08634d016
+T314	sha2 43806 43870	19bbee954ac1a21595e63cb86d1a596236aed353804aec5cb8adfa62e70280d3
+T315	sha2 43889 43953	a9f0bddc3d3516af8355e8ac17309528cd018347e5f56a347c14da0a83b0028a
+T316	sha2 43972 44036	00bb399c429e0f1f7de751103fe92b5f820d1686d01662a08583b7a94aaed94e
+T317	sha2 44060 44124	03004ccc23033a09532bea7dfa08c8dfa85814a15f5e3aedb924a028bcd6f908
+T318	sha2 44144 44208	071c34b9701dd84f9590ba899a8af3eeec228a928f2d98a80dbc780e396ee01a
+T319	sha2 44228 44292	d1f0658bbb15ab2bccc210d7e1f21b96e14ae22de8494ca95b12e182f3d0f693
+T320	sha2 44312 44376	9ff687a813a5cb5ff10374c86f852534c1aa3e5a221123214bf52b2ff455a5da
+T321	sha2 44396 44460	8c423506c0c7ebe1e61071374ecf0806463a02a2100b5daa1bd942129ff8a235
+T322	sha2 44480 44544	91e36e720477146f1a0c050d3bc74bc6683a03e7631317ded3c598a10465dcc8
+T323	sha2 44564 44628	c981db20d588ba2d0f437b4e5459e7c6763f52a97841450c94591ca28a9a2d69
+T324	sha2 44648 44712	95dba004f949e44cb447246f3d2420b01db4541d0e4fa7b00d798f38a3d251e4
+T325	domain 44745 44760	aaa123.spdns.de
+T326	domain 44793 44808	admin.spdns.org
+T327	domain 44841 44864	detail43.myfirewall.org
+T328	domain 44897 44913	economy.spdns.de
+T329	domain 44946 44981	firewallupdate.firewall-gateway.net
+T330	domain 45014 45048	intersecurity.firewall-gateway.com
+T331	domain 45081 45111	kaspersky.firewall-gateway.net
+T332	domain 45144 45182	kasperskysecurity.firewall-gateway.com
+T333	domain 45215 45247	kissecurity.firewall-gateway.net
+T334	domain 45280 45305	mail.firewall-gateway.com
+T335	domain 45338 45363	news.firewall-gateway.com
+T336	domain 45396 45411	opero.spdns.org
+T337	domain 45444 45468	sys.firewall-gateway.net
+T338	domain 45494 45521	account.websurprisemail.com
+T339	domain 45547 45569	addi.apple.cloudns.org
+T340	domain 45595 45620	bailee.alanna.cloudns.biz
+T341	domain 45646 45666	bee.aoto.cloudns.org
+T342	domain 45692 45716	book.websurprisemail.com
+T343	domain 45742 45766	desk.websurprisemail.com
+T344	domain 45792 45815	dolat.diyarpakzimin.com
+T345	domain 45841 45866	dolat.websurprisemail.com
+T346	domain 45892 45917	dolet.websurprisemail.com
+T347	domain 45943 45964	github.ignorelist.com
+T348	domain 45990 46016	islam.youtubesitegroup.com
+T349	domain 46042 46069	mareva.catherine.cloudns.us
+T350	domain 46095 46115	muslim.islamhood.net
+T351	domain 46141 46159	p.klark.cloudns.in
+T352	domain 46185 46213	ppcc.vasilevich.cloudns.info
+T353	domain 46239 46264	press.ufoneconference.com
+T354	domain 46290 46312	vip.yahoo.cloudns.info
+T355	domain 46343 46358	207.204.225.117
+T356	domain 46389 46411	accounts.yourturbe.org
+T357	domain 46442 46458	addnow.zapto.org
+T358	domain 46489 46505	bits.githubs.net
+T359	domain 46536 46562	clean.popqueen.cloudns.org
+T360	domain 46593 46609	economy.spdns.eu
+T361	domain 46640 46658	eemete.freetcp.com
+T362	domain 46689 46707	email.googmail.org
+T363	domain 46738 46762	fish.seafood.cloudns.org
+T364	domain 46793 46810	freeavg.sytes.net
+T365	domain 46841 46863	freeonline.3d-game.com
+T366	domain 46894 46911	ibmcorp.slyip.com
+T367	domain 46942 46964	lemondtree.freetcp.com
+T368	domain 46995 47016	liumingzhen.myftp.org
+T369	domain 47047 47068	liumingzhen.zapto.org
+T370	domain 47099 47121	n.popqueen.cloudns.org
+T371	domain 47152 47169	news.googmail.org
+T372	domain 47200 47215	oic-oci.3-a.net
+T373	domain 47246 47264	polat.googmail.org
+T374	domain 47295 47317	qq.ufoneconference.com
+T375	domain 47348 47364	qq.yourturbe.org
+T376	domain 47395 47411	sisiow.slyip.com
+T377	domain 47442 47461	update.googmail.org
+T378	domain 47492 47507	uprnd.flnet.org
+T379	domain 47538 47556	video.googmail.org
+T380	domain 47587 47608	webmail.yourturbe.org
+T381	domain 47639 47663	worldwildlife.effers.com
+T382	domain 47694 47714	www.angleegg.ddns.us
+T383	domain 47745 47767	www.angleegg.xxxy.info
+T384	domain 47798 47814	www.googmail.org
+T385	domain 47845 47859	youturbe.co.cc
+T386	domain 47890 47906	yycc.mrbonus.com
+T387	domain 47937 47952	zjhao.dtdns.net
+T388	domain 47974 47999	apple.lenovositegroup.com
+T389	domain 48021 48043	mm.lenovositegroup.com
+T390	domain 48065 48088	ftp112.lenta.cloudns.pw
+T391	domain 48110 48132	www.gorlan.cloudns.pro
+T392	domain 48154 48177	otcgk.border.cloudns.pw
+T393	domain 48205 48229	ziba.lenovositegroup.com
+T394	domain 48252 48273	apple12.crabdance.com
+T395	domain 48296 48315	update.googmail.org
+T396	domain 48338 48359	apple12.crabdance.com
+T397	domain 48382 48404	alma.apple.cloudns.org

@@ -1,0 +1,300 @@
+T1	time 1040 1044	2016
+T2	sha2 1689 1753	1d1e7a6175e6c514aaeca8a43dabefa017ddc5b166ccb636789b6a767181a022
+T3	sha2 3293 3357	7bbf14ced3ca490179d3727b7287eb581c3a730131331be042d0f0510bc804f9
+T4	sha2 4595 4659	692815d06b720669585a71bc8151b89ca6748f882b35e365e08cfaf6eda77049
+T5	string 5077 5109	VACqItywGR1v3qGxVZQPYXxMZV0o2fzp
+T6	sha2 5576 5640	bb5540fe0bbc0cda08865aad891a585cd465b224bfe84762216cd04178087516
+T7	sample_name 11454 11489	Tehreek-E-Kashmir Mujahaid List.inp
+T8	sha2 11492 11556	3e410397955d5a127182d69e019dbc8bbffeee864cd9c96e577c9c13f05a232f
+R1	part_of Arg1:T8 Arg2:T7	
+T9	function 15650 15654	2000
+T10	function 15683 15687	2001
+T11	function 15712 15716	2002
+T12	function 15730 15734	2004
+T13	function 15745 15749	2005
+T14	function 15786 15790	2006
+T15	function 15847 15851	2007
+T16	function 15890 15894	2009
+T17	function 15943 15947	2012
+T18	function 15975 15979	2013
+T19	function 16021 16025	2015
+T20	function 16036 16040	2016
+T21	function 16207 16211	2025
+T22	function 16180 16184	2023
+T23	function 16145 16149	2021
+T24	function 16073 16077	2019
+T25	function 16160 16164	2022
+T26	sha2 7658 7722	5716509e4cdbf8ffa5fbce02b8881320cb852d98e590215455986a5604a453f7
+T27	time 7745 7764	1992-06-19 22:22:17
+T28	sha2 13845 13909	71b7de2e3a60803df1c3fdc46af4fd8cfb7c803a53c9a85f7311348f6ff88cbe
+T29	security_team 214 221	Unit 42
+T30	time 199 211	recent weeks
+R2	occur_time Arg1:T29 Arg2:T30	
+T31	time 3380 3399	2015-05-08 12:51:54
+T32	encryption_algo 3285 3291	SHA256
+T33	sample_name 5361 5372	winopen.exe
+T34	sha2 5984 6048	d1a14bc3160f5ed6232ceaf40de1959d7dba3eae614efd2882b04d538cda825b
+T35	time 6071 6090	2016-10-31 02:41:09
+T36	time 5663 5682	2017-05-17 05:47:05
+T37	sample_name 7175 7186	winopen.exe
+T38	sha2 6396 6460	35c5f6030513f11fd1dcf9bd232de457ba7f3af3aedc0e2e976895b296a09df6
+T39	sample_name 7194 7204	SAMPLE.inp
+T40	sha2 6852 6916	83e3b2938ee6a3e354c93c6ec756da96b03cc69118b5748b07aee4d900da1844
+T41	encryption_algo 6844 6850	SHA256
+T42	encryption_algo 6388 6394	SHA256
+T43	encryption_algo 5976 5982	SHA256
+T44	encryption_algo 5568 5574	SHA256
+T45	encryption_algo 4588 4594	SHA256
+T46	encryption_algo 1681 1687	SHA256
+T47	malware 895 899	MY24
+T48	malware 17646 17650	MY24
+T49	sub_activity 455 484	use of very similar shellcode
+T50	sample_name 1776 1800	Cyber Advisory No 91.inp
+R3	part_of Arg1:T2 Arg2:T50	
+T51	sample_name 1441 1465	Cyber Advisory No 91.inp
+T52	malware 1599 1603	MY24
+T53	malware 16465 16469	MY24
+T54	malware 16594 16598	MY24
+T55	malware 15466 15470	MY24
+T56	malware 15231 15235	MY24
+T57	malware 14703 14707	MY24
+T58	time 14252 14271	2017-10-05 05:53:27
+T59	time 13932 13951	2017-05-18 05:26:54
+T60	encryption_algo 13837 13843	SHA256
+T61	sample_name 14206 14236	Las Vegas ISIS Claim Proof.doc
+T62	sha2 14119 14183	3f1d3d02e7707b2bc686b5add875e1258c65a0facd5cf8910ba0f321e230e17c
+T63	encryption_algo 14111 14117	SHA256
+T64	time 6939 6958	2015-05-08 12:51:54
+T65	sample_name 6483 6516	Intelligence Report-561 ( 1 ).inp
+R4	part_of Arg1:T38 Arg2:T65	
+T66	sample_name 7046 7059	Shellcode.pdb
+T67	tool 6273 6275	C2
+T68	malware 6138 6149	CONFUCIUS_B
+T69	sample_name 10419 10430	malware.exe
+T70	sample_name 10914 10925	malware.exe
+T71	sample_name 11294 11305	malware.exe
+T72	sample_name 10708 10719	malware.exe
+T73	sample_name 11425 11436	malware.exe
+T74	sample_name 14486 14498	wintasks.exe
+T75	tool 14791 14793	C2
+T76	tool 14972 14974	C2
+T77	encryption_algo 15500 15503	XOR
+T78	malware 698 709	CONFUCIUS_B
+T79	sample_name 1500 1535	Tehreek-E-Kashmir Mujahaid List.inp
+T80	sample_name 1466 1499	Intelligence Report-561 ( 1 ).inp
+T81	tool 3248 3251	DLL
+R6	occur_time Arg1:T3 Arg2:T31	
+T82	sample_name 3485 3498	Shellcode.pdb
+T83	sample_name 4000 4010	SAMPLE.INP
+T84	tool 10169 10171	C2
+T85	tool 9691 9693	C2
+T86	security_team 16719 16725	Unit42
+T87	sample_name 8713 8722	users.txt
+T88	person 562 571	attackers
+T89	sub_activity 572 603	have access to a shared builder
+R7	launch Arg1:T88 Arg2:T89	
+T90	security_team 1022 1031	Kaspersky
+R8	occur_time Arg1:T90 Arg2:T1	
+T91	tool 7 13	InPage
+T92	tool 276 282	InPage
+T93	tool 293 299	InPage
+T94	tool 409 415	InPage
+T95	tool 913 919	InPage
+T96	tool 1079 1085	InPage
+T97	tool 1421 1427	InPage
+T98	tool 1630 1636	InPage
+T99	tool 1957 1963	InPage
+T100	tool 2119 2125	InPage
+T101	tool 2261 2267	InPage
+T102	company 2595 2604	Microsoft
+T103	OS_name 2605 2612	Windows
+R9	part_of Arg1:T103 Arg2:T102	
+T104	tool 3675 3681	InPage
+T105	tool 4429 4435	InPage
+T106	tool 3920 3926	InPage
+T107	tool 6334 6340	InPage
+T108	tool 6746 6752	InPage
+T109	tool 6619 6622	DLL
+T110	company 6702 6711	Microsoft
+T111	OS_name 6712 6719	Windows
+R10	part_of Arg1:T111 Arg2:T110	
+T112	tool 7357 7363	InPage
+T113	tool 7466 7472	InPage
+T114	tool 12033 12039	InPage
+T115	tool 16649 16655	InPage
+T116	tool 16748 16754	InPage
+T117	security_team 17217 17223	Unit42
+T118	security_team 16859 16868	Kaspersky
+T119	security_team 1875 1884	Kaspersky
+R11	find Arg1:T90 Arg2:T95	
+T120	location 1264 1269	India
+T121	attack_goal 1137 1148	politically
+T122	attack_goal 1152 1162	militarily
+R12	goal Arg1:T96 Arg2:T121	
+R13	goal Arg1:T96 Arg2:T122	
+T123	location 1276 1283	Kashmir
+T124	industry 1296 1305	terrorism
+R14	launch Arg1:T94 Arg2:T49	
+T125	time 4682 4701	2017-07-31 06:03:42
+T126	encryption_algo 5847 5850	RC4
+T127	string 5857 5889	kRPAnN2DN6vfrxsJ55Lntnh7Mma8E68s
+T128	location 4113 4120	Kashmir
+T129	sample_name 3902 3913	winopen.exe
+T130	sample_name 4537 4548	winopen.exe
+T131	encryption_algo 5018 5021	RC4
+T132	sample_name 10565 10576	malware.exe
+T133	sample_name 2069 2073	.INP
+R15	find Arg1:T29 Arg2:T92	
+R17	use Arg1:T133 Arg2:T100	
+T134	sub_activity 2136 2184	execute the shellcode that is embedded within it
+R18	launch Arg1:T133 Arg2:T134	
+T135	IP_evil 6289 6302	151.80.14.194
+R19	use Arg1:T67 Arg2:T135	
+T136	malware 17632 17643	Confucius_B
+T137	time 1890 1899	last year
+R16	occur_time Arg1:T119 Arg2:T137	
+T138	string 2344 2352	LuNdLuNd
+R20	located Arg1:T138 Arg2:T101	
+T139	sub_activity 2535 2566	uses a unique hashing mechanism
+T140	attack_goal 2571 2636	identifying and loading Microsoft Windows libraries and functions
+R21	goal Arg1:T139 Arg2:T140	
+T141	sub_activity 2404 2453	identify an offset to an embedded executable file
+T142	sub_activity 2662 2688	load a series of functions
+T143	tool 2797 2801	YARA
+T144	string 3024 3034	QPONMLKJIH
+T145	encryption_algo 2707 2714	hashing
+T146	encryption_algo 2929 2936	hashing
+T147	encryption_algo 12699 12706	hashing
+T148	malware 13797 13801	MY24
+T149	sub_activity 2991 3036	create a mutex with a value of “ QPONMLKJIH ”
+T150	attack_goal 3040 3081	ensure only one instance of the shellcode
+R22	goal Arg1:T149 Arg2:T150	
+T151	sub_activity 3140 3165	copy the embedded payload
+R23	part_of Arg1:T2 Arg2:T46	
+R24	part_of Arg1:T3 Arg2:T32	
+R25	part_of Arg1:T3 Arg2:T81	
+R26	occur_time Arg1:T82 Arg2:T31	
+T152	tool 3517 3520	DLL
+T153	sub_activity 3620 3653	ultimately drop the final payload
+R27	launch Arg1:T152 Arg2:T153	
+T154	reference_word 3689 3691	It
+R28	coreference Arg1:T154 Arg2:T152	
+T155	sub_activity 3702 3723	spawning a new thread
+R29	launch Arg1:T154 Arg2:T155	
+R30	use Arg1:T154 Arg2:T129	
+R31	coreference Arg1:T83 Arg2:T106	
+R32	part_of Arg1:T4 Arg2:T45	
+R33	part_of Arg1:T4 Arg2:T130	
+R34	occur_time Arg1:T130 Arg2:T125	
+T156	tool 4782 4787	Putty
+T157	sub_activity 4853 4912	has rudimentary anti-debugging and anti-analysis techniques
+T158	reference_word 4841 4852	this sample
+R35	coreference Arg1:T158 Arg2:T130	
+R36	launch Arg1:T158 Arg2:T157	
+T159	reference_word 4957 4959	It
+R37	coreference Arg1:T159 Arg2:T158	
+T160	sub_activity 4972 5031	decrypt an embedded resource object using the RC4 algorithm
+R38	launch Arg1:T159 Arg2:T160	
+R39	use Arg1:T160 Arg2:T5	
+T161	sub_activity 5184 5202	ensure persistence
+R40	goal Arg1:T160 Arg2:T161	
+T162	tool 5271 5276	Putty
+T163	reference_word 5220 5231	the malware
+R41	coreference Arg1:T163 Arg2:T33	
+T164	reference_word 5385 5396	the malware
+R42	coreference Arg1:T164 Arg2:T33	
+T165	sub_activity 5232 5288	mimic the appearance of the legitimate Putty application
+R43	launch Arg1:T163 Arg2:T165	
+T166	sub_activity 5402 5442	spawn a new suspended instance of itself
+R44	launch Arg1:T164 Arg2:T166	
+R45	coreference Arg1:T6 Arg2:T44	
+R46	occur_time Arg1:T6 Arg2:T36	
+T167	sub_activity 5827 5854	using the following RC4 key
+R47	part_of Arg1:T127 Arg2:T126	
+R48	part_of Arg1:T34 Arg2:T43	
+R49	occur_time Arg1:T34 Arg2:T35	
+T168	tool 6965 6968	PDB
+T169	tool 3404 3407	PDB
+T170	sub_activity 15655 15680	Return victim information
+T171	sub_activity 15688 15709	Get drive information
+T172	sub_activity 15717 15727	List files
+T173	sub_activity 15750 15783	Create file handle to append data
+T174	sub_activity 15791 15844	Write appended data to previously created file handle
+T175	sub_activity 15852 15887	Create file handle for reading data
+T176	sub_activity 15895 15940	Read data from previously created file handle
+T177	sample_name 15965 15972	cmd.exe
+T178	sub_activity 15948 15972	Spawn a shell of cmd.exe
+T179	sub_activity 15980 16018	Interact with previously spawned shell
+T180	sub_activity 16041 16070	Kill previously spawned shell
+T181	sub_activity 16078 16142	List current process network communication on the victim machine
+T182	sub_activity 16165 16177	Kill process
+T183	sub_activity 16185 16204	Enumerate processes
+R50	launch Arg1:T9 Arg2:T170	
+R51	launch Arg1:T10 Arg2:T171	
+R52	launch Arg1:T11 Arg2:T172	
+R53	launch Arg1:T13 Arg2:T173	
+R54	launch Arg1:T14 Arg2:T174	
+R55	launch Arg1:T15 Arg2:T175	
+R56	launch Arg1:T16 Arg2:T176	
+R57	launch Arg1:T17 Arg2:T178	
+R58	launch Arg1:T18 Arg2:T179	
+R59	launch Arg1:T20 Arg2:T180	
+R60	launch Arg1:T24 Arg2:T181	
+R61	launch Arg1:T25 Arg2:T182	
+R62	launch Arg1:T22 Arg2:T183	
+T184	string 15513 15526	t6%9k$2Ri9ctv
+R63	part_of Arg1:T184 Arg2:T55	
+R64	part_of Arg1:T184 Arg2:T77	
+T186	sample_name 9133 9142	SyLog.log
+T187	tool 835 842	BioData
+T188	tool 7306 7313	BioData
+T189	tool 7602 7609	Biodata
+T190	tool 8070 8077	BioData
+T191	tool 8544 8551	BioData
+T192	tool 8497 8504	BioData
+T193	tool 9286 9293	BioData
+T194	tool 10776 10783	BioData
+T195	tool 17657 17664	BioData
+T196	tool 7279 7285	Delphi
+T197	function 13389 13401	LoadLibraryA
+T198	sub_activity 13365 13410	Gets the address of the LoadLibraryA function
+T199	sample_name 13421 13431	urlmon.dll
+T200	sub_activity 13411 13439	Loads the urlmon.dll library
+T201	function 13464 13482	URLDownloadToFileA
+T202	sub_activity 13440 13491	Gets the address of the URLDownloadToFileA function
+T203	function 13714 13721	WinExec
+T204	url_evil 13608 13639	http://zmwardrobe[.]com/wp-sign
+T205	tool 13557 13560	URL
+T206	function 13021 13035	GetProcAddress
+T207	function 13232 13239	WinExec
+R65	part_of Arg1:T26 Arg2:T189	
+T208	encryption_algo 7650 7656	SHA256
+R66	part_of Arg1:T26 Arg2:T208	
+R67	occur_time Arg1:T26 Arg2:T27	
+T209	tool 7848 7854	Delphi
+T185	url_evil 9350 9410	http://errorfeedback[.]com/MarkQuality455/developerbuild.php
+R69	use Arg1:T193 Arg2:T185	
+T211	program_language 9232 9238	Python
+T210	url_evil 11052 11178	http://errorfeedback[.]com/MarkQuality455/developerbuild.php?f=62574673643246795a53356c654755&b=bzGwXILtkMRZaJxzciXAeCYviduBuy
+T212	reference_word 6519 6547	This particular exploit file
+R68	coreference Arg1:T212 Arg2:T65	
+T213	sub_activity 6548 6598	uses the exact same shellcode witnessed previously
+R70	launch Arg1:T212 Arg2:T213	
+R71	part_of Arg1:T109 Arg2:T213	
+T214	sub_activity 6671 6699	drops and executes two files
+T215	reference_word 6655 6670	this executable
+R72	coreference Arg1:T215 Arg2:T212	
+R73	launch Arg1:T215 Arg2:T214	
+R74	part_of Arg1:T111 Arg2:T214	
+R75	part_of Arg1:T108 Arg2:T214	
+R5	occur_time Arg1:T40 Arg2:T64	
+R76	part_of Arg1:T40 Arg2:T41	
+R77	part_of Arg1:T40 Arg2:T66	
+R78	use Arg1:T196 Arg2:T188	
+T216	sub_activity 7381 7418	follows a much simpler execution flow
+R79	part_of Arg1:T28 Arg2:T60	
+R80	part_of Arg1:T62 Arg2:T63	
+R81	occur_time Arg1:T28 Arg2:T59	
+R82	part_of Arg1:T62 Arg2:T61	
+R83	first_found_time Arg1:T62 Arg2:T58	
+T217	protocol 10023 10027	HTTP

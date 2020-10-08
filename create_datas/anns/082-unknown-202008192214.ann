@@ -1,0 +1,155 @@
+T1	attack_activity 0 22	Operation ShadowHammer
+T2	time 126 131	today
+T3	security_team 134 145	Motherboard
+T4	person 167 177	Kim Zetter
+T5	attack_activity 181 203	Operation ShadowHammer
+T6	company 260 264	ASUS
+T7	tool 265 285	Live Update software
+R1	part_of Arg1:T7 Arg2:T6	
+R2	part_of Arg1:T4 Arg2:T3	
+R3	find Arg1:T4 Arg2:T5	
+R4	release_time Arg1:T5 Arg2:T2	
+T8	tool 395 398	SAS
+T9	time 399 403	2019
+T10	location 418 427	Singapore
+T11	reference_word 482 492	the attack
+R5	coreference Arg1:T11 Arg2:T5	
+T12	time 498 510	January 2019
+T13	company 577 581	ASUS
+T14	tool 582 601	Live Update Utility
+R6	part_of Arg1:T14 Arg2:T13	
+T15	reference_word 604 614	The attack
+T16	time 626 656	between June and November 2018
+T17	reference_word 690 692	it
+T18	person 720 725	users
+R7	coreference Arg1:T15 Arg2:T11	
+R8	occur_time Arg1:T15 Arg2:T16	
+R9	coreference Arg1:T17 Arg2:T15	
+T19	company 728 732	ASUS
+T20	tool 733 744	Live Update
+R10	part_of Arg1:T20 Arg2:T19	
+T21	company 789 793	ASUS
+T22	sample_function 833 858	update certain components
+T23	tool 867 871	BIOS
+T24	tool 874 878	UEFI
+T25	tool 881 888	drivers
+T26	tool 893 905	applications
+R11	goal Arg1:T20 Arg2:T22	
+T27	company 921 928	Gartner
+T28	company 931 935	ASUS
+T29	time 977 981	2017
+T30	reference_word 1006 1008	it
+R12	coreference Arg1:T30 Arg2:T28	
+T31	tool 1147 1156	Kaspersky
+T32	person 1157 1162	users
+T33	company 1219 1223	ASUS
+T34	tool 1224 1235	Live Update
+R13	part_of Arg1:T34 Arg2:T33	
+R14	use Arg1:T32 Arg2:T31	
+T35	person 1317 1322	users
+T36	person 1461 1466	users
+T37	reference_word 1491 1501	the attack
+T38	attack_goal 1520 1551	target an unknown pool of users
+T39	tool 1585 1601	network adapters
+R15	coreference Arg1:T37 Arg2:T17	
+R16	goal Arg1:T37 Arg2:T38	
+T40	reference_word 1631 1635	this
+T41	person 1642 1651	attackers
+T42	sub_activity 1656 1689	hardcoded a list of MAC addresses
+T43	sample_function 1742 1778	identify the actual intended targets
+T44	reference_word 1782 1804	this massive operation
+R17	coreference Arg1:T40 Arg2:T38	
+R18	launch Arg1:T41 Arg2:T42	
+R19	goal Arg1:T42 Arg2:T43	
+R20	coreference Arg1:T44 Arg2:T37	
+T45	reference_word 1896 1907	this attack
+R21	coreference Arg1:T45 Arg2:T44	
+T46	attack_activity 2107 2116	Shadowpad
+T47	attack_activity 2125 2133	CCleaner
+T48	reference_word 2017 2021	this
+R22	coreference Arg1:T48 Arg2:T45	
+T49	reference_word 2191 2193	it
+T50	tool 2259 2278	trojanized updaters
+T51	string 2329 2350	ASUSTeK Computer Inc.
+R23	coreference Arg1:T49 Arg2:T48	
+T52	tool 2361 2379	malicious updaters
+T53	domain_evil 2408 2430	liveupdate01s.asus.com
+T54	domain_evil 2435 2456	liveupdate01.asus.com
+T55	company 2457 2461	ASUS
+T56	tool 2462 2476	update servers
+R24	part_of Arg1:T56 Arg2:T55	
+R25	located Arg1:T52 Arg2:T53	
+R26	located Arg1:T52 Arg2:T54	
+T57	company 2497 2501	ASUS
+T58	reference_word 2515 2519	them
+T59	reference_word 2526 2536	the attack
+T60	time 2540 2553	Jan 31 , 2019
+T61	reference_word 2617 2628	the malware
+R27	coreference Arg1:T58 Arg2:T57	
+R28	coreference Arg1:T59 Arg2:T49	
+R29	occur_time Arg1:T59 Arg2:T60	
+T62	reference_word 2746 2757	this attack
+T63	attack_activity 2765 2774	ShadowPad
+T64	time 2789 2793	2017
+R30	coreference Arg1:T62 Arg2:T59	
+R31	occur_time Arg1:T63 Arg2:T64	
+T65	reference_word 2796 2805	The actor
+T66	attack_activity 2817 2826	ShadowPad
+T67	company 2868 2877	Microsoft
+T68	threatActor_name 2900 2906	BARIUM
+R32	coreference Arg1:T68 Arg2:T65	
+R33	launch Arg1:T65 Arg2:T66	
+R34	find Arg1:T67 Arg2:T68	
+T69	threatActor_name 2909 2915	BARIUM
+T70	malware 0 2953	Operation ShadowHammer
+T71	malware 2954 2960	Winnti
+R35	use Arg1:T69 Arg2:T71	
+T72	person 2983 2997	our colleagues
+T73	security_team 3003 3007	ESET
+T74	threatActor_name 3057 3063	BARIUM
+R36	part_of Arg1:T72 Arg2:T73	
+T75	tool 3222 3231	Kaspersky
+T76	person 3232 3237	users
+R37	use Arg1:T76 Arg2:T75	
+T77	person 3292 3299	victims
+T78	company 3333 3337	ASUS
+T79	person 3338 3343	users
+T80	sample_function 3403 3419	run to determine
+T81	reference_word 3383 3389	a tool
+T82	reference_word 3488 3499	this attack
+R38	goal Arg1:T81 Arg2:T80	
+R39	coreference Arg1:T82 Arg2:T62	
+T83	sample_function 3521 3569	compares MAC addresses of all adapters to a list
+T84	sample_function 3620 3626	alerts
+T85	reference_word 3518 3520	it
+R40	goal Arg1:T85 Arg2:T83	
+R41	goal Arg1:T85 Arg2:T84	
+R42	coreference Arg1:T85 Arg2:T81	
+R43	goal Arg1:T83 Arg2:T80	
+R44	goal Arg1:T84 Arg2:T80	
+T86	sample_name 3650 3683	Download an archive with the tool
+T87	sample_name 3744 3773	Trojan.Win32.ShadowHammer.gen
+T88	domain_evil 3783 3797	asushotfix.com
+T89	IP_evil 3807 3821	141.105.71.116
+T90	url_evil 3830 3922	http://liveupdate01.asus.com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER365.zip
+T91	url_evil 3932 4026	https://liveupdate01s.asus.com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER362.zip
+T92	url_evil 4036 4130	https://liveupdate01s.asus.com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER360.zip
+T93	url_evil 4140 4234	https://liveupdate01s.asus.com/pub/ASUS/nb/Apps_for_Win8/LiveUpdate/Liveupdate_Test_VER359.zip
+T94	md5 4244 4276	aa15eb28292321b586c27d8401703494
+T95	sha2 4286 4350	bebb16193e4b80f4bc053e4fa818aa4e2832885392469cd5b8ace5cec7e4ca19
+T96	malware 3776 3780	HEUR
+R45	located Arg1:T96 Arg2:T88	
+T97	malware 3800 3804	HEUR
+R46	use Arg1:T97 Arg2:T89	
+T98	malware 3823 3827	HEUR
+R47	use Arg1:T98 Arg2:T90	
+T99	malware 3925 3929	HEUR
+R48	use Arg1:T99 Arg2:T91	
+T100	malware 4029 4033	HEUR
+R49	use Arg1:T100 Arg2:T92	
+T101	malware 4133 4137	HEUR
+R50	use Arg1:T101 Arg2:T93	
+T102	malware 4237 4241	HEUR
+R51	part_of Arg1:T94 Arg2:T102	
+T103	malware 4279 4283	HEUR
+R52	part_of Arg1:T95 Arg2:T103	

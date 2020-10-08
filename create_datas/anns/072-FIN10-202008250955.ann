@@ -1,0 +1,96 @@
+T1	threatActor_name 0 5	FIN10
+T2	attack_activity 19 44	Cyber Extortion Operation
+R1	launch Arg1:T1 Arg2:T2	
+T3	threatActor_name 270 275	FIN10
+T4	threatActor_name 2392 2397	FIN10
+T5	threatActor_name 2987 2992	FIN10
+T6	threatActor_name 3252 3257	FIN10
+T7	threatActor_name 3592 3597	FIN10
+T8	person 511 519	attacker
+T9	reference_word 560 564	They
+R2	coreference Arg1:T9 Arg2:T8	
+T10	reference_word 612 616	They
+R3	coreference Arg1:T10 Arg2:T8	
+T11	counter_measure 1222 1260	deploy a number of temporary solutions
+T12	person 1285 1294	Attackers
+T13	person 1752 1764	attacker (s)
+T14	sub_activity 1771 1795	come back for more money
+T15	sub_activity 1806 1819	leak the data
+R4	launch Arg1:T13 Arg2:T14	
+R5	launch Arg1:T13 Arg2:T15	
+T16	tool 2072 2098	systems containing backups
+T17	person 2153 2161	attacker
+R6	attack Arg1:T17 Arg2:T16	
+T18	person 2233 2241	attacker
+T19	tool 2269 2292	compromised credentials
+R7	use Arg1:T18 Arg2:T19	
+T20	attack_goal 2297 2320	destroying your backups
+R8	goal Arg1:T19 Arg2:T20	
+T21	person 2374 2383	attackers
+T22	company 2966 2973	FireEye
+T23	location 3049 3062	North America
+T24	location 3081 3087	Canada
+R9	part_of Arg1:T24 Arg2:T23	
+T25	industry 3013 3020	casinos
+T26	industry 3025 3045	mining organizations
+R10	attack Arg1:T5 Arg2:T25	
+R11	attack Arg1:T5 Arg2:T26	
+R12	located Arg1:T25 Arg2:T23	
+R13	located Arg1:T26 Arg2:T23	
+R14	find Arg1:T22 Arg2:T5	
+T27	reference_word 3187 3197	this group
+R15	coreference Arg1:T27 Arg2:T5	
+T28	person 3208 3218	bad actors
+T29	attack_goal 3264 3328	steal corporate business data , files , records , correspondence
+R16	goal Arg1:T6 Arg2:T29	
+T30	sub_activity 3622 3654	posting proof of the stolen data
+T31	reference_word 3617 3621	them
+R17	coreference Arg1:T31 Arg2:T7	
+R18	launch Arg1:T31 Arg2:T30	
+T32	person 3980 3992	threat actor
+T33	person 4228 4240	threat actor
+T34	counter_measure 722 740	validate and scope
+T35	reference_word 777 781	This
+R19	coreference Arg1:T35 Arg2:T34	
+T36	counter_measure 888 921	approve emergency change requests
+T37	reference_word 60 67	someone
+T38	reference_word 76 80	they
+R20	coreference Arg1:T38 Arg2:T37	
+T40	string 311 324	Data Exposure
+T41	reference_word 595 599	they
+R21	coreference Arg1:T41 Arg2:T9	
+T39	reference_word 658 662	they
+R22	coreference Arg1:T39 Arg2:T10	
+T42	counter_measure 974 1015	Evaluate whether the tasks you are taking
+T43	sample_function 1264 1282	address the attack
+R23	goal Arg1:T11 Arg2:T43	
+T44	counter_measure 1432 1497	involving law enforcement and legal counsel in all communications
+T45	counter_measure 1597 1632	Identify partners before the breach
+T46	counter_measure 1637 1657	get them on retainer
+T48	counter_measure 2164 2205	Tighten access to your backup environment
+T49	sample_function 2209 2262	mitigate the risk of an attacker accessing the system
+R24	goal Arg1:T48 Arg2:T49	
+T50	person 2468 2476	attacker
+T51	reference_word 2499 2503	they
+R25	coreference Arg1:T51 Arg2:T50	
+T52	person 2664 2673	attackers
+T53	counter_measure 2600 2645	implement both tactical and strategic actions
+T54	sample_function 2649 2692	prevent future attackersfrom gaining access
+R26	goal Arg1:T53 Arg2:T54	
+T55	counter_measure 2712 2761	operationalize and enhance the temporarysolutions
+T56	sample_function 2796 2814	address the attack
+R27	goal Arg1:T55 Arg2:T56	
+T57	counter_measure 2815 2867	Conduct penetration testing and Red Team assessments
+T58	sample_function 2871 2902	validate your security controls
+R28	goal Arg1:T57 Arg2:T58	
+T59	counter_measure 2905 2929	identify vulnerabilities
+T60	counter_measure 2934 2942	fix them
+T61	attack_goal 3333 3345	customer PII
+R29	goal Arg1:T6 Arg2:T61	
+T62	sub_activity 276 298	provides data as proof
+R30	launch Arg1:T3 Arg2:T62	
+T63	counter_measure 3995 4014	Strong segmentation
+T64	counter_measure 4019 4040	controls over backups
+T65	sample_function 4076 4097	recover from a breach
+R31	goal Arg1:T63 Arg2:T65	
+R32	goal Arg1:T64 Arg2:T65	

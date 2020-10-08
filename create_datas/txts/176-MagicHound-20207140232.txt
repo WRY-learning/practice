@@ -1,0 +1,39 @@
+Magic Hound Campaign Attacks Saudi Targets
+Release_Time :  February 15,2017 at 9:16 PM
+Report_URL :  https://unit42.paloaltonetworks.com/unit42-magic-hound-campaign-attacks-saudi-targets/
+Unit 42 has discovered a persistent attack campaign operating primarily in the Middle East dating back to at least mid-2016 which we have named Magic Hound .
+This appears to be an attack campaign focused on espionage .
+Based upon our visibility it has primarily targeted organizations in the energy , government , and technology sectors that are either based or have business interests in Saudi Arabia .
+The adversaries appear to have evolved their tactics and techniques throughout the tracked time-period , iterating through a diverse toolset across different waves of attacks .
+Link analysis of infrastructure and tools also revealed a potential relationship between Magic Hound and the adversary group called “ Rocket Kitten ” ( AKA Operation Saffron Rose , Ajax Security Team , Operation Woolen-Goldfish ) as well as an older attack campaign called Newscasters .
+Artifacts of this campaign was also recently published by Secureworks CTU .
+We were able to collect over fifty samples of the tools used by the Magic Hound campaign using the AutoFocus threat intelligence tool .
+The earliest malware sample we were able to collect had a compile timestamp in May 2016 .
+The samples themselves ranged from IRC bots , an open source Python remote access tool , malicious macros , and others .
+It is believed the use of specific tools may have coincided with specific attack waves by this adversary , with the most recent attacks using weaponized Microsoft Office documents with malicious macros .
+Due to the large amount of data collected , and limitations on attack telemetry , this blog will focus primarily on the most recent attacks occurring in the latter half of 2016 .
+The samples initially collected and associated with Magic Hound were Microsoft Word and Excel documents containing embedded malicious macros .
+We were able to expand our data set by pivoting on infrastructure and tool behavior , which uncovered additional types of tools in use by Magic Hound , such as regular portable executable ( PE ) payloads , PE files compiled in .NET Framework , various forms of IRC bots , and an open source file-less Python remote access tool called Pupy .
+The weaponized Office documents were found to be hosted either on what appeared to be compromised legitimate websites , or on websites using domain names similar to legitimate domain names in appearance .
+The two legitimate websites we were able to identify were owned by organizations in the government and energy sectors .
+Based on the existence of these malicious files on the legitimate websites , it is highly probable that the websites had already been compromised in some fashion .
+At the time of investigation , the files had already been removed from the websites .
+The two other delivery sites were ntg-sa.com , which may be trying to spoof a Saudi based information and communication technology conglomerate and mol.com-ho.me , which may be trying to spoof the Ministry of Labor .
+A third delivery site was identified at its.com-ho.me which may appear to be a benign domain .
+Several of these documents were also found on a seemingly unrelated , but benign-looking domain , briefl.ink .
+It is highly likely the adversary then used spear-phishing attacks containing links to these malicious documents as a delivery mechanism .
+We were ultimately able to identify multiple organizations in the government , energy , and technology sectors targeted by Magic Hound .
+The weaponized documents themselves all contained malicious macros which were designed to call Windows PowerShell to retrieve additional tools .
+A handful of lures with different themes were used repeatedly with variations throughout the eighteen collected documents .
+They ranged from documents masquerading as official Saudi government forms to a holiday greetings card .
+The forms masquerading as official government documents specifically used imagery from the Ministry of Health and the Ministry of Commerce claiming to be mandatory forms that required macros to be enabled .
+Analysis of the weaponized documents revealed some peculiarities right away .
+From there , we were able to map out a large infrastructure separating out into four categories of tools : downloaders , droppers , loaders , and payloads .
+What initially appeared as a disparate and segregated attack campaign appeared very rapidly to be a persistent and prolonged attack campaign with very specific goals in mind .
+In total , we were able to collect over fifty different samples via infrastructure reuse , behavioral matching , and the reuse of a specific file for maintaining persistence .
+These tools included Microsoft Office documents , portable executables ( PE ) , .NET Framework PE files , Meterpreter , IRC bots , an open sourced Meterpreter module called Magic Unicorn , and an open sourced Python RAT called Pupy .
+Interestingly as we continued to expand and pivot in our data set , one of the C2 IPs used by an IRC bot payload from Magic Hound was found to be the same IP used to deliver a different IRC bot called MPK .
+The MPK bot is not publicly available and had previously been attributed to an adversary group called “ Rocket Kitten ” which has often been thought to be a state sponsored adversary operating in the Middle East region .
+Although the likelihood of two different adversaries focused on espionage operating in the same geographical region using one specific IP and not being related somehow is fairly slim , due to limited telemetry , we lack additional corroborating evidence of a conclusive relationship .
+The Magic Hound attacks did not rely on exploit code to compromise targeted systems , instead relying on executables and Microsoft Office documents , specifically Excel and Word documents containing malicious macros .
+During our analysis , we were able to determine the ultimate payload for several of these attacks .

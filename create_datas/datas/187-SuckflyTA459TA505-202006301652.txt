@@ -1,0 +1,7 @@
+Unknown .		others others
+Release_Time : unknown .		others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+Suckfly is a China-based threat group that has been active since at least 2014 .		threatActor_name others others others others others others others others others others others others time others
+TA459 is a threat group believed to operate out of China that has targeted countries including Russia , Belarus , Mongolia , and others .		threatActor_name others others others others others others location location location location others others others others others location others location others location others others others others
+TA505 is a financially motivated threat group that has been active since at least 2014 .		threatActor_name others others industry others others others others others others others others others others time others
+The group is known for frequently changing malware and driving global trends in criminal malware distribution .		others reference_word others others others sub_activity sub_activity sub_activity others sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity sub_activity others

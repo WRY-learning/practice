@@ -1,0 +1,203 @@
+Lucifer: New Cryptojacking and DDoS Hybrid Malware Exploiting High and Critical Vulnerabilities to Infect Windows Devices
+Release_Time :  2020-6-24
+Report_URL :  https://unit42.paloaltonetworks.com/lucifer-new-cryptojacking-and-ddos-hybrid-malware/
+On May 29 , 2020 , Unit 42 researchers discovered a new variant of a hybrid cryptojacking malware from numerous incidents of CVE-2019-9081 exploitation in the wild .
+A closer look revealed the malware , which we ’ve dubbed “ Lucifer ” , is capable of conducting DDoS attacks and well-equipped with all kinds of exploits against vulnerable Windows hosts .
+The first wave of the campaign stopped on June 10 , 2020 .
+The attacker then resumed their campaign on June 11 , 2020 , spreading an upgraded version of the malware and wreaking havoc .
+The sample was compiled on Thursday , June 11 , 2020 10:39:47 PM UTC and caught by Palo Alto Networks Next-Generation Firewall .
+At the time of writing , the campaign ’s still ongoing .
+Lucifer is quite powerful in its capabilities .
+Not only is it capable of dropping XMRig for cryptojacking Monero , it ’s also capable of command and control ( C2 ) operation and self-propagation through the exploitation of multiple vulnerabilities and credential brute-forcing .
+Additionally , it drops and runs EternalBlue , EternalRomance , and DoublePulsar backdoor against vulnerable targets for intranet infections .
+The exhaustive list of weaponized exploits includes CVE-2014-6287 , CVE-2018-1000861 , CVE-2017-10271 , ThinkPHP RCE vulnerabilities ( CVE-2018-20062 ) , CVE-2018-7600 , CVE-2017-9791 , CVE-2019-9081 , PHPStudy Backdoor RCE , CVE-2017-0144 , CVE-2017-0145 , and CVE-2017-8464 .
+These vulnerabilities have either “ high ” or “ critical ” ratings due to their trivial-to-exploit nature and their tremendous impact inflicted on the victim .
+Once exploited , the attacker can execute arbitrary commands on the vulnerable device .
+In this case , the targets are Windows hosts on both the internet and intranet , given that the attacker is leveraging certutil utility in the payload for malware propagation .
+Fortunately , the patches for these vulnerabilities are readily available .
+While the vulnerabilities abused and attack tactics leveraged by this malware are nothing original , they once again deliver a message to all organizations , reminding them why it ’s utterly important to keep systems up-to-date whenever possible , eliminate weak credentials , and have a layer of defenses for assurance .
+At the time of writing this blog , the XMR wallet has paid 0.493527 XMR , which converts to approximately $32 USD .
+Palo Alto Networks Next-Generation Firewalls can detect and block all the exploit attempts from this kind of malware family .
+This blog includes a detailed analysis of Lucifer and the comparison of version 1 and version 2 .
+A quick note on the name : While the malware author named their malware Satan DDoS , there ’s another malware , Satan Ransomware , bearing that devious name already .
+An alternative alias was given to this malware to avoid confusion .
+As a result of staying faithful to the unique strings in the binary , we are calling this Lucifer .
+We identified two versions of Lucifer in our research – we focus first on version 1 and then highlight the changes made to version 2 in the following section .
+Lucifer contains three resource sections , each of which contains a binary for a specific purpose .
+The X86 resource section contains a UPX-packed x86 version of XMRig 5.5.0 .
+The X64 resource section contains a UPX-packed x64 version of XMRig 5.5.0 .
+The SMB section contains a binary , in which there ’s a lot of Equation Group ’s exploits like EternalBlue and EternalRomance , and of course the infamous DoublePulsar backdoor implant .
+X86: 8edbcd63def33827bfd63bffce4a15ba83e88908f9ac9962f10431f571ba07a8 .
+X64: Ac530d542a755ecce6a656ea6309717ec222c34d7e34c61792f3b350a8a29301 .
+SMB : 5214f356f2e8640230e93a95633cd73945c38027b23e76bb5e617c71949f8994 .
+Upon execution , the malware first decrypts its C2 IP address using a xor-incremental encryption and then creates a mutant , using its C2 IP address as the mutant ’s name .
+The decrypted C2 IP address is 122.112.179.189 .
+The name of the mutant object is \Sessions\1\BaseNamedObjects\122.112.179.189 .
+The malware then proceeds to persist itself by setting the following registry key values .
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run\QQMusic – %malware binary path%
+HKLM\Software\Microsoft\Windows\CurrentVersion\Run\QQMusic – %malware binary path%
+The binary also uses schtasks to set up itself as a task running periodically , ensuring additional layer of persistence .
+Once the malware has persisted itself , it then checks whether there ’s any existing stratum mining information stored in the following registry key value : 
+HKLM\Software\Microsoft\Windows\CurrentVersion\spreadCpuXmr – %stratum info%
+The mining information stored in this registry key value takes precedence if the data is present and legit .
+Otherwise , the malware falls back to its default data embedded in the binary .
+The malware enables itself with debug privilege and starts several threads to carry out its operation in concurrent fashion .
+The following table summarizes the function of each thread .
+0x0041C970 : Clear event logs , remove a log file , terminate the miner process , and repeat its cleaning routine every 18000 second .
+0x00414B60 : Collect interface info and send miner status to its C2 server .
+0x00419BC0 : Check the remote address and remote port of all TCP connections .
+If there ’s a match and the connection-owning process is not the malware itself and the process ’s module path is not C:\ProgramData\spreadXfghij.exe , the malware kills that process and deletes that file .
+The allow list of ports and IP address are in the Appendix .
+0x0041A780 : Get or initialize its miner parameter , kill miner and Taskmgr process if necessary , drop the miner binary , and execute the miner binary with the values of the arguments based on the host ’s memory usage .
+Both the x86 or x64 bit version of the miner is saved as C:\\ProgramData\\spreadXfghij.exe
+0x00418DC0 : Propagate through brute-forcing credentials and exploitation .
+Also drop the Equation Group ’s exploits and launch them to propagate through exploiting years old SMB vulnerabilities .
+0x0041C840 : Copy and save the malware as C:\\ProgramData\\spread.txt
+The malware employs different propagation strategies .
+The malware scans for both open TCP ports 135 ( RPC ) and 1433 (MSSQL ) against the target , be it internal or external , and probes for the credential weakness in attempt to gain unauthorized access .
+If the target has the RPC port open , the malware brute-forces the login using the default username administrator and its embedded password list .
+It then copies and runs the malware binary on the remote host upon successful authentication .
+When the malware detects that the target has TCP port 1433 open , it tries to brute-force its way in using its embedded list of usernames and passwords .
+Upon successful login , the malware then issues shell commands to download and execute a replica of itself on the victim .
+The aforementioned list of usernames and passwords can be found in the appendix section .
+In addition to brute-forcing the credentials , the malware leverages exploitation for self-propagation .
+For intranet infection , it drops and runs EternalBlue , EternalRomance , and DoublePulsar backdoor against the target when the target has TCP port 445 ( SMB ) open .
+Upon successful exploitation , certutil is used to propagate the malware .
+In order to infect external hosts , the malware first generates a non-private IP address , and then probes this randomly-selected victim with HTTP requests over a number of ports .
+When the malware receives a valid HTTP response from the victim , it then tries to exploit the target based on the conditions shown in the following table .
+HFS found in the HTTP response : CVE-2014-6287 .
+Jetty found in the HTTP response : CVE-2018-1000861 .
+Servlet found in the HTTP response : CVE-2017-10271 .
+No keywords found in the HTTP response :  ThinkPHP remote code execution ( RCE ) vulnerabilities , CVE-2018-7600 , CVE-2017-9791 , CVE-2019-9081 , PHPStudy Backdoor remote code execution ( RCE ) .
+Since the same vulnerability ( e.g ThinkPHP RCE ) may be triggered in different endpoints ( i.e via different URLs ) , the malware tries all hardcoded URLs against the victim for each vulnerability before it proceeds to the next target or next exploit attempt .
+All the exploits contain the payload that downloads a replica of the malware onto the victim via certutil .
+After the malware has launched all its worker threads , the malware enters an infinite loop to handle its C2 operation , with a sleep interval of five seconds .
+Once the malware has established a TCP connection with its C2 server on port 15888 , the malware saves that same socket for subsequent C2 control as well as the miner ’s status report .
+The initial C2 request contains a magic header \x04\x02\x02 and encrypted system information like the host IP address , the system type , system architecture , username , number of processors , and processor frequency .
+The malware does a decremental-xor encryption on this piece of information before it sends the encrypted data over the wire .
+The encrypted data can be decrypted using the decryption routine described in Figure 1 .
+For example , the decrypted host IP address in Figure 8 is 192.168.56.52 .
+The decrypted Windows system is Windows 7 64Bit , and the decrypted username is Lebron James .
+Unlike its very first C2 request message , the rest of the miner ’s status report messages are actually clear text .
+Table 3 summarizes the control codes received from the C2 server and their corresponding functionalities .
+C2 Command :  Description .
+4 : Perform TCP/UDP/HTTP DoS attack .
+5 : Reenable DoS attack .
+6 : Download and execute a file from its C2 server .
+The file ’s saved as %TEMP%\<4 random lower case characters>.exe .
+7 : Execute the received command from its C2 server .
+8 : Disable the miner ’s status report functionality .
+9 : Enable the miner ’s status report functionality .
+10 : Set the data of the registry key value HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\spreadCpuXmr , and terminate the miner process .
+11 : Enable both flags related to is_miner_killed and start_fresh .
+12 : Reset flags and terminate the miner process .
+The communication between the cryptojacking bot and its mining server is made by using the Stratum protocol on port 10001 and is controlled by the execution of the spreadXfghij.exe program .
+This program accepts different parameters that control configuration settings of the running miner such as username , password , CPU usage , priority , threads , and algorithm names respectively .
+The Stratum protocol is mainly used by miner software to connect to a centralized server , which coordinates the workload between the clients .
+This protocol satisfies the requirements of the JSON RPC 2.0 specification .
+Version 2 of Lucifer is similar to its predecessor in terms of its overall capabilities and behaviors ; It drops XMRig for cryptojacking , handles C2 operation , and propagates itself through exploitation and brute-forcing credentials .
+While version 2 and version 1 share a lot of behavioral similarities , version 2 does have exclusive differences that are worth highlighting .
+The malware possesses anti-sandbox capability by checking the username and the computer name of the infected host .
+If it finds a match in its predefined list of names as shown in Table 4 , the malware halts itself from proceeding further .
+match in its predefined list of names : NMSDBOX Avira WILBERT-SC COMPUTERNAME XPAMASTC CWSX Kappa VBOX XXXX-OS cuckoo cwsx- nmsdbox qemu sandbox virtual wilbert-sc xpamast-sc xxxx – ox cuckoosandbox .
+Lucifer also checks for the presence of following device drivers , DLLs , and virtual devices .
+If any of these objects are detected , the malware enters an infinite loop , stopping its execution from going further .
+device drivers , DLLs , and virtual devices : SbieDrv.sys Sandboxie.sys SbieDll.dll VBoxHook.dll \\.\VBoxMiniRdrDN : Dir_watch.dll \\.\pipe\cuckoo .
+In addition to its anti-sandbox techniques , version 2 possesses an anti-debugger technique that can thwart the analysis by passing a format string to OutputDebugStringA() and crashing the debugger .
+Once Lucifer has passed all the checks , it decrypts its C2 URL and creates a mutex based on its C2 URL .
+The new C2 URL is qf2020.top .
+There ’s an additional LNK resource section , in which there ’s a CVE-2017-8464 exploit used for infection .
+The binaries in the resource section are encrypted using the aforementioned xor-incremental encryption .
+The decrypted X86 , X64 , and SMB binaries are the same as those embedded in version 1 of Lucifer .
+LNK ( encrypted ) : 84b0f2e4d222b0a2e34224e60b66340071e0d03c5f1a2af53b6005a3d739915f .
+LNK ( decrypted ) : 4c729b343ed3186dffdf80a8e3adfea7c2d56a7a06081333030fb4635e09d540 .
+SMB ( encrypted ) : F2d9d7703a5983ae3b7767c33ae79de1db093ea30f97d6b16bb5b62f03e99638 . 
+SMB ( decrypted ) : 5214f356f2e8640230e93a95633cd73945c38027b23e76bb5e617c71949f8994 .
+X64 ( encrypted ) : 4365c2ba5505afeab2c479a9c546ed3cbc07ace184fe5019947823018feb4265 . 
+X64 ( decrypted ) : ac530d542a755ecce6a656ea6309717ec222c34d7e34c61792f3b350a8a29301 .
+X86 ( encrypted ) : b6d4b4ef2880238dc8e322c7438f57b69cec6d44c0599875466a1edb8d093e15 .
+X86  ( decrypted ) : 8edbcd63def33827bfd63bffce4a15ba83e88908f9ac9962f10431f571ba07a8 .
+In contrast to version 1 , version 2 of Lucifer has added CVE-2017-8464 to its arsenal and taken out CVE-2018-1000861 , CVE-2017-10271 , and CVE-2017-9791 .
+The malware infects its targets through IPC , WMI , SMB , and FTP by brute-forcing the credentials , in addition to MSSQL , RPC , and network shares .
+The dropped miner ’s name is also different ; it ’s C:\\ProgramData\\Svchocpu.exe instead of C:\\ProgramData\\spreadXfghij.exe .
+Right before proceeding to its C2 operation , Lucifer checks if the host ’s default language is 0x804 ( zh-CN ) .
+If it is , the malware sets Internet Explorer ‘s Start Page to www.yzzswt.com , and starts a thread that keeps killing and visiting that URL in Internet Explorer .
+The trigger depends on the system ’s idle time .
+While Lucifer version 2 has new C2 at qf2020.top : 19370 , its C2 operation is still the same .
+Lucifer is a new hybrid of cryptojacking and DDoS malware variant that leverages old vulnerabilities to spread and perform malicious activities on Windows platforms .
+Applying the updates and patches to the affected software are strongly advised .
+The vulnerable software includes Rejetto HTTP File Server , Jenkins , Oracle Weblogic , Drupal , Apache Struts , Laravel framework , and Microsoft Windows .
+Strong passwords are also encouraged to prevent dictionary attacks .
+Palo Alto Networks customers are protected from the attacks by the following products and services : 
+Next-Generation Firewalls with Threat Prevention licenses can block the exploits and C2 traffic with best practice configuration .
+WildFire can stop the malware with static signature detections .
+AutoFocus customers can track this activity with the Lucifer tag .
+IoCs ( Lucifer Version1 )
+NBI :
+Malware Hosting Site : 180.126.161.27 .
+Malware Hosting Site : 210.112.41.71 .
+1. stratum + tcp : pool.supportxmr.com : 3333
+2. stratum + tcp : gulf.moneroocean.stream : 10001
+C2 : 122.112.179.189:15888 ( version 1 ) .
+HBI :
+SHA256 – Malware : 94f0e2aa41e1703e37341cba0601441b2d9fa2e11615cad81ba5c93042c8f58c spread.txt ( version 1 ) .
+SHA256 – Embedded Binaries in the Resource Section : 8edbcd63def33827bfd63bffce4a15ba83e88908f9ac9962f10431f571ba07a8 X86 .
+SHA256 – Embedded Binaries in the Resource Section : Ac530d542a755ecce6a656ea6309717ec222c34d7e34c61792f3b350a8a29301 X64 .
+SHA256 – Embedded Binaries in the Resource Section : 5214f356f2e8640230e93a95633cd73945c38027b23e76bb5e617c71949f8994 SMB .
+SHA256 – Binaries Extracted from SMB.exe : ff8c9d8c6f16a466d8e598c25829ec0c2fb4503b74d17f307e13c28fd2e99b93 Shellcode.ini .
+SHA256 – Binaries Extracted from SMB.exe : 7417daf85e6215dedfd85ca8bfafcfd643c8afe0debcf983ad4bacdb4d1a6dbc X64.dll .
+SHA256 – Binaries Extracted from SMB.exe : de23da87e7fbecb2eaccbb85eeff465250dbca7c0aba01a2766761e0538f90b6 X86.dll .
+SHA256 – Binaries Extracted from SMB.exe : f06d02359666b763e189402b7fbf9dfa83ba6f4da2e7d037b3f9aebefd2d5a45 adfw-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : c51bce247bee4a6f4cd2d7d45483b5b1d9b53f8cc0e04fb4f4221283e356959d adfw.dll .
+SHA256 – Binaries Extracted from SMB.exe : d3db1e56360b25e7f36abb822e03c18d23a19a9b5f198e16c16e06785fc8c5fa cnli-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : db0831e19a4e3a736ea7498dadc2d6702342f75fd8f7fbae1894ee2e9738c2b4 cnli-1.dll .
+SHA256 – Binaries Extracted from SMB.exe : 0439628816cabe113315751e7113a9e9f720d7e499ffdd78acbac1ed8ba35887 coli-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : b556b5c077e38dcb65d21a707c19618d02e0a65ff3f9887323728ec078660cc3 crli-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 9b8ec5d0c10ccdd3933b7712ba40065d1b0dd3ffa7968fb28ad426cd5eee5001 dmgd-1.dll .
+SHA256 – Binaries Extracted from SMB.exe : 50f329e034db96ba254328cd1e0f588af6126c341ed92ddf4aeb96bc76835937 dmgd-4.dll .
+SHA256 – Binaries Extracted from SMB.exe : 19690e5b862042d9011dbdd92504f5012c08d51efca36828a5e9bdfe27d88842 esco-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 3fcffe9eae90ec365efb361674613ac95de50b2ccfd634c24491923f85c309a5 etch-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : fe4640fefa4bef02041a771a206f9184adb38de051f0d8726c4579736fe13bb6 etchCore-0.x64.dll .
+SHA256 – Binaries Extracted from SMB.exe : 3596e8fa5e19e860a2029fa4ab7a4f95fadf073feb88e4f82b19a093e1e2737c etchCore-0.x86.dll .
+SHA256 – Binaries Extracted from SMB.exe : SHA256 – Binaries Extracted from SMB.exe : 7ddbade1f4fcb48f254e7defa1ab5ec568e8ff0403693860b76870e11816aee6 eteb-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : 8a5cce25f1bf60e716709c724b96630b95e55cc0e488d74d60ea50ffba7d6946 etebCore-2.x64.dll .
+SHA256 – Binaries Extracted from SMB.exe : 609ed51631da2defa34d58f60dc2a0f38e1574d8cf07647b844fc8b95de4bd8c etebCore-2.x86.dll .
+SHA256 – Binaries Extracted from SMB.exe : 15292172a83f2e7f07114693ab92753ed32311dfba7d54fe36cc7229136874d9 exma-1.dll . 
+SHA256 – Binaries Extracted from SMB.exe : c977ac10aa3d2250a1af39630f532184a5185f505bcd5f03ea7083a3a701a969 exma.dll .
+SHA256 – Binaries Extracted from SMB.exe : b1d48e8185d9d366dce8c723ba765d6c593b7873cb43d77335084b58bbc7cb4d iconv.dll .
+SHA256 – Binaries Extracted from SMB.exe : d3c6985d965cad5bff6075677ed8c2cafee4c3a048fb5af81b442665c76dff7b libcurl.dll . 
+SHA256 – Binaries Extracted from SMB.exe : 5f30aa2fe338191b972705412b8043b0a134cdb287d754771fc225f2309e82ee libeay32.dll .
+SHA256 – Binaries Extracted from SMB.exe : 36b0fa6c0da7434707e7e330f40316458c0c1edc39b80e2fe58745cd77955eb3 libiconv-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : aceb27720115a63b9d47e737fd878a61c52435ea4ec86ba8e58ee744bc85c4f3 libxml2.dll .
+SHA256 – Binaries Extracted from SMB.exe : df9200ba0d967487b9eb9627078d7faa88072c493b6d9e2b68211c14b06e9f4e pcla-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 17d6dde8a6715b9311734cb557b76160a22e340785b3950eae23aae67b0af6a8 pcre-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 93f0a1fe486ad222b742e451f25f4c9219b1e0f5b4273a15ce08dd714827745a pcrecpp-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 1c8100aca288483d5c29dcf33df887e72513f9b1cb6d0c96045401981351307c pcreposix-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : cde45f7ff05f52b7215e4b0ea1f2f42ad9b42031e16a3be9772aa09e014bacdb posh-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 47e16f7db53d9adf24d193ff4d523b1bc7ae59ff8520cfa012365bdb947c96f9 posh.dll .
+SHA256 – Binaries Extracted from SMB.exe : f8ee4c00a3a53206d8d37abe5ed9f4bfc210a188cd5b819d3e1f77b34504061e riar-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : 55039ab48c0916a38f1ceee08ba9f9cf5f292064cf3ee6631f22becde5e74b2d riar.dll .
+SHA256 – Binaries Extracted from SMB.exe : 15ffbb8d382cd2ff7b0bd4c87a7c0bffd1541c2fe86865af445123bc0b770d13 serverlong.exe .
+SHA256 – Binaries Extracted from SMB.exe : a46481cdb4a9fc1dbdcccc49c3deadbf18c7b9f274a0eb5fdf73766a03f19a7f serverlong.fb .
+SHA256 – Binaries Extracted from SMB.exe : cf33a92a05ba3c807447a5f6b7e45577ed53174699241da360876d4f4a2eb2de serverlong.xml .
+SHA256 – Binaries Extracted from SMB.exe : be8eb97d8171b8c91c6bc420346f7a6d2d2f76809a667ade03c990feffadaad5 ssleay32.dll .
+SHA256 – Binaries Extracted from SMB.exe : 85b936960fbe5100c170b777e1647ce9f0f01e3ab9742dfc23f37cb0825b30b5 svchostlong.exe .
+SHA256 – Binaries Extracted from SMB.exe : ad3c0b153d5b5ba4627daa89cd2adbb18ee5831cb67feeb7394c51ebc1660f41 svchostlong.fb .
+SHA256 – Binaries Extracted from SMB.exe : 756f44f1d667132b043bfd3da16b91c9f6681e5d778c5f07bb031d62ff00d380 svchostlong.xml .
+SHA256 – Binaries Extracted from SMB.exe : b99c3cc1acbb085c9a895a8c3510f6daaf31f0d2d9ccb8477c7fb7119376f57b svchostromance.exe .
+SHA256 – Binaries Extracted from SMB.exe : 6c55b736646135c0acbad702fde64574a0a55a77be3f39287774c7e518de3da9 svchostromance.xml .
+SHA256 – Binaries Extracted from SMB.exe : 52e88433f2106cc9a3a961cd8c3d0a8939d8de28f2ef3ee8ea648534a8b036a4 tibe-1.dll .
+SHA256 – Binaries Extracted from SMB.exe : ca63dbb99d9da431bf23aca80dc787df67bb01104fb9358a7813ed2fce479362 tibe-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : a418edc5f1fb14fbf9398051225f649810fa75514ca473610be44264bf3c663c tibe.dll .
+SHA256 – Binaries Extracted from SMB.exe : 6775d627d99733f3f02494db7e13935b505132f43c56e7f8850c54e6627691de trch-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 0259d41720f7084716a3b2bbe34ac6d3021224420f81a4e839b0b3401e5ef29f trch-1.dll .
+SHA256 – Binaries Extracted from SMB.exe : 06c031f0d905cdeb0d9c172c27ae0c2d25bbf0d08db27a4aa98ec540a15306e7 trch.dll .
+SHA256 – Binaries Extracted from SMB.exe : a4c460b27d03daf7828f6b6db87e0ff3ee851fdb1b8654b0a778b4c34953a3dc trfo-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : b2a3172a1d676f00a62df376d8da805714553bb3221a8426f9823a8a5887daaa trfo-2.dll .
+SHA256 – Binaries Extracted from SMB.exe : 96edea8d08ab10eee86776cfb9e32b4701096d21c39dbffeb49bd638f09d726a trfo.dll .
+SHA256 – Binaries Extracted from SMB.exe : cf25bdc6711a72713d80a4a860df724a79042be210930dcbfc522da72b39bb12 tucl-1.dll .
+SHA256 – Binaries Extracted from SMB.exe : 36107f74be98f15a45ff716e37dad70f1ff9515bc72a0a1ec583b803c220aa92 tucl.dll .
+SHA256 – Binaries Extracted from SMB.exe : f0df80978b3a563077def7ba919e2f49e5883d24176e6b3371a8eef1efe2b06a ucl.dll .
+SHA256 – Binaries Extracted from SMB.exe : b7d8fcc3fb533e5e0069e00bc5a68551479e54a990bb1b658e1bd092c0507d68 xdvl-0.dll .
+SHA256 – Binaries Extracted from SMB.exe : 70dbb0b5562cd034c6b70a4a86a346b0f0039acf1b09f5814c42895963e12ea0 zibe.dll .
+SHA256 – Binaries Extracted from SMB.exe : aa8adf96fc5a7e249a6a487faaf0ed3e00c40259fdae11d4caf47a24a9d3aaed zlib1.dll .

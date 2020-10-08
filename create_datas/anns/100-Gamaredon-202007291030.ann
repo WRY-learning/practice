@@ -1,0 +1,183 @@
+T1	threatActor_name 0 9	Gamaredon
+T2	security_team 148 152	ESET
+T3	threatActor_name 261 270	Gamaredon
+T4	tool 213 234	post-compromise tools
+R1	use Arg1:T3 Arg2:T4	
+R2	find Arg1:T2 Arg2:T3	
+T5	company 350 359	Microsoft
+T6	program_language 330 333	VBA
+T7	tool 360 367	Outlook
+T8	tool 461 477	Microsoft Office
+T9	attack_activity 406 431	send spearphishing emails
+R3	launch Arg1:T3 Arg2:T9	
+T10	threatActor_name 518 527	Gamaredon
+T11	function 559 634	inject malicious macros and remote templates into existing Office documents
+T12	tool 528 533	tools
+R4	use Arg1:T12 Arg2:T11	
+T13	threatActor_name 641 650	Gamaredon
+T14	time 688 692	2013
+R5	occur_time Arg1:T13 Arg2:T14	
+T15	location 760 769	Ukrainian
+R6	attack Arg1:T13 Arg2:T15	
+T16	security_team 822 829	CERT-UA
+T17	location 854 863	Ukrainian
+R7	located Arg1:T16 Arg2:T17	
+T18	attack_activity 988 1004	malicious emails
+T19	time 886 905	the last few months
+T20	threatActor_name 1192 1201	Gamaredon
+R8	launch Arg1:T20 Arg2:T18	
+R9	occur_time Arg1:T18 Arg2:T19	
+T21	program_language 1291 1293	C#
+T22	program_language 1297 1305	VBScript
+T23	program_language 1324 1329	C/C++
+R10	use Arg1:T20 Arg2:T21	
+R11	use Arg1:T20 Arg2:T22	
+R12	use Arg1:T20 Arg2:T23	
+T24	threatActor_name 1350 1359	Gamaredon
+T25	threatActor_name 1492 1502	APT groups
+T26	threatActor_name 1509 1518	Gamaredon
+T27	attack_goal 1396 1471	gather sensitive information from compromised systems and to spread further
+R13	goal Arg1:T24 Arg2:T27	
+T28	function 1630 1669	download and execute arbitrary binaries
+T29	tool 1603 1608	tools
+R14	use Arg1:T29 Arg2:T28	
+T30	attack_goal 1746 1807	spread as far and fast as possible in their target ’s network
+R15	goal Arg1:T26 Arg2:T30	
+T31	threatActor_name 2080 2089	Gamaredon
+T32	tool 2134 2189	Microsoft Outlook Visual Basic for Applications ( VBA )
+T33	company 2134 2143	Microsoft
+R16	use Arg1:T31 Arg2:T32	
+T34	tool 2206 2213	Outlook
+T35	program_language 2357 2365	VBScript
+T36	tool 2478 2485	Outlook
+T37	function 2533 2606	disk the malicious OTM file ( Outlook VBA project ) that contains a macro
+T38	reference_word 2309 2338	This bundle of malicious code
+R17	use Arg1:T38 Arg2:T37	
+T39	string 2772 2794	/altvba <OTM filename>
+T40	threatActor_name 2813 2822	Gamaredon
+T41	tool 2740 2747	Outlook
+R18	use Arg1:T40 Arg2:T39	
+T42	attack_activity 2977 2997	send malicious email
+T43	target_crowd 3004 3042	Everyone in the victim ’s address book
+T44	target_crowd 3045 3082	Everyone within the same organization
+T45	target_crowd 3085 3113	A predefined list of targets
+R19	launch Arg1:T40 Arg2:T42	
+R20	goal Arg1:T40 Arg2:T43	
+R21	goal Arg1:T40 Arg2:T44	
+R22	goal Arg1:T40 Arg2:T45	
+T46	tool 3314 3340	OTM file and Outlook macro
+T47	attack_activity 3155 3176	send malicious emails
+T48	threatActor_name 3533 3542	Gamaredon
+R23	use Arg1:T48 Arg2:T46	
+R24	launch Arg1:T48 Arg2:T47	
+T49	malware 3419 3437	malicious VBA code
+R25	use Arg1:T48 Arg2:T49	
+T50	tool 3626 3636	VirusTotal
+T51	threatActor_name 3696 3705	Gamaredon
+T52	location 3716 3721	Japan
+T53	function 3810 3880	builds the email body and attaches the malicious document to the email
+T54	tool 3797 3809	the VBA code
+R26	use Arg1:T54 Arg2:T53	
+T55	threatActor_name 4024 4033	Gamaredon
+T56	attack_activity 4045 4068	spearphishing campaigns
+R27	launch Arg1:T55 Arg2:T56	
+T57	threatActor_name 4346 4355	Gamaredon
+T58	threatActor_name 4494 4503	Gamaredon
+T59	malware 4464 4481	malicious modules
+R28	use Arg1:T58 Arg2:T59	
+T60	counter_measure 4513 4571	inject malicious macros or remote templates into documents
+T61	counter_measure 4641 4698	way of moving laterally within an organization ’s network
+T62	tool 5022 5038	Microsoft Office
+T63	function 5006 5062	tamper with the Microsoft Office macro security settings
+T64	program_language 5253 5255	C#
+T65	program_language 5260 5268	VBScript
+T66	tool 5397 5400	RAR
+T67	tool 5480 5484	Word
+T68	tool 5497 5502	Excel
+T69	malware 5608 5625	the .NET assembly
+T70	function 5642 5685	finding and compromising existing documents
+R29	use Arg1:T69 Arg2:T70	
+T71	reference_word 5738 5749	CodeBuilder
+R30	coreference Arg1:T71 Arg2:T69	
+T72	tool 5888 5892	Word
+T73	tool 5896 5901	Excel
+T74	sub_activity 5857 5906	scans for documents with valid Word or Excel file
+R31	launch Arg1:T71 Arg2:T74	
+T75	OS_name 5987 5994	Windows
+T76	sub_activity 6145 6196	moves each located document into the AppData folder
+T77	sub_activity 6199 6285	inserts malicious Word or Excel macros into it using a Microsoft.Office.Interop object
+R32	launch Arg1:T71 Arg2:T76	
+R33	launch Arg1:T71 Arg2:T77	
+T78	program_language 6427 6435	VBScript
+T79	program_language 6653 6661	VBScript
+T80	tool 6754 6757	VBS
+T81	function 6780 6857	iterating through documents and adding the remote template references to them
+R34	use Arg1:T80 Arg2:T81	
+T82	security_team 6914 6932	Palo Alto Networks
+T83	time 6935 6939	2017
+T84	threatActor_name 6952 6961	Gamaredon
+T85	tool 7227 7252	downloaders and backdoors
+R35	use Arg1:T84 Arg2:T85	
+T86	program_language 7335 7349	C# or VBScript
+T87	tool 7290 7301	downloaders
+R36	use Arg1:T87 Arg2:T86	
+T88	threatActor_name 7542 7551	Gamaredon
+T89	program_language 7669 7675	base64
+T90	reference_word 7479 7499	This .NET executable
+T91	function 7565 7587	obfuscation techniques
+R37	use Arg1:T90 Arg2:T91	
+T92	time 7953 7969	every 10 minutes
+T93	threatActor_name 8092 8103	Gamaredon ’
+T94	tool 8167 8184	GitHub repository
+T95	malware 8139 8148	this .NET
+R38	use Arg1:T95 Arg2:T94	
+T96	function 8188 8219	obtain and execute a downloader
+R39	goal Arg1:T95 Arg2:T96	
+T97	tool 8450 8471	GitHub project module
+T98	function 8478 8523	download this file , decode it and execute it
+R40	use Arg1:T97 Arg2:T98	
+T99	function 8615 8696	enumerate all documents on a compromised system and upload them to the C&C server
+T100	program_language 8888 8924	C/C++ , C# , batch file and VBScript
+T101	threatActor_name 8823 8832	Gamaredon
+T102	tool 8964 8974	USBStealer
+T103	string 9249 9265	Harvesterx64.dll
+T104	time 9280 9289	June 2019
+T105	OS_name 9448 9455	Windows
+T106	function 9501 9606	basic text file instead of a SQLite database to track which files were already uploaded to the C&C server
+R41	use Arg1:T103 Arg2:T106	
+T107	company 9692 9701	Microsoft
+T108	tool 9692 9718	Microsoft Office documents
+T109	md5 9922 9925	MD5
+T110	md5 9873 9876	MD5
+T111	function 10175 10230	download and execute arbitrary code from its C&C server
+T112	reference_word 10058 10068	The module
+R42	use Arg1:T112 Arg2:T111	
+T113	program_language 10263 10265	C#
+T114	program_language 10273 10278	C/C++
+T115	program_language 10560 10568	VBScript
+T116	function 10612 10655	scanning the system for sensitive documents
+T117	tool 10711 10725	Word documents
+T118	program_language 10951 10959	VBScript
+T119	threatActor_name 11031 11040	Gamaredon
+T120	tool 11144 11148	DDNS
+T121	company 11154 11159	No-IP
+T122	domain 11162 11194	hopto.org , ddns.net , myftp.biz
+R43	use Arg1:T119 Arg2:T120	
+T123	company 11243 11249	REG.RU
+T124	domain 11276 11328	.fun , .site , .space , .ru , .website and .xyz TLDs
+T125	protocol 11426 11429	ASN
+T126	company 11528 11532	ESET
+T127	tool 11536 11550	GitHub account
+T128	threatActor_name 11596 11605	Gamaredon
+T129	threatActor_name 11726 11735	Gamaredon
+T130	program_language 12087 12089	C#
+T131	tool 12179 12190	Outlook VBA
+T132	tool 12738 12744	GitHub
+T133	program_language 12888 12890	C#
+T134	tool 12888 12901	C# downloader
+T135	threatActor_name 13311 13320	Gamaredon
+T136	attack_goal 13352 13488	install multiple scripts and executables on each system , and constantly updating them , significantly complicates the defender ’s lives
+R44	goal Arg1:T135 Arg2:T136	
+T137	threatActor_name 13543 13552	Gamaredon
+T138	tool 13617 13635	Outlook VBA module
+T139	threatActor_name 13758 13767	Gamaredon

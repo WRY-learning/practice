@@ -1,0 +1,18 @@
+T1	threatActor_name 67 76	sandboxes
+T2	threatActor_name 349 358	sandboxes
+T3	time 703 716	February 2013
+T4	vulnerability_cve 677 687	Trojan Nap
+T5	company 790 799	Microsoft
+T6	company 804 813	Kaspersky
+T7	malware 767 781	Kelihos Botnet
+T8	threatActor_name 859 868	sandboxes
+T9	threatActor_name 978 987	sandboxes
+T10	company 1022 1031	Microsoft
+T11	tool 1063 1094	PsSetCreateProcessNotifyRoutine
+R1	first_found_time Arg1:T3 Arg2:T4	
+T12	vulnerability_cve 745 751	trojan
+R2	part_of Arg1:T12 Arg2:T7	
+T13	counter_measure 818 837	declared dismantled
+R3	launch Arg1:T6 Arg2:T13	
+R4	launch Arg1:T5 Arg2:T13	
+R5	use Arg1:T9 Arg2:T11	

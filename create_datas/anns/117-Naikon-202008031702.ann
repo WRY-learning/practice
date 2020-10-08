@@ -1,0 +1,143 @@
+T1	threatActor_name 0 6	Naikon
+T2	company 121 131	Checkpoint
+T3	threatActor_name 177 183	Naikon
+T4	time 252 256	2017
+T5	time 283 287	2018
+R1	first_found_time Arg1:T3 Arg2:T4	
+T6	time 405 414	June 2018
+T7	threatActor_name 417 423	Naikon
+T8	location 457 471	Southeast Asia
+T9	company 531 541	Checkpoint
+T10	person 542 553	researchers
+T11	threatActor_name 583 589	Naikon
+T12	time 615 623	May 2015
+T13	location 737 741	APAC
+T14	reference_word 693 702	the group
+R2	coreference Arg1:T14 Arg2:T11	
+T15	threatActor_name 851 857	Naikon
+T16	reference_word 761 770	the group
+R3	coreference Arg1:T16 Arg2:T15	
+T17	time 1066 1070	2018
+T18	location 1036 1051	South China Sea
+T19	reference_word 975 984	the group
+R4	coreference Arg1:T19 Arg2:T15	
+R5	occur_time Arg1:T19 Arg2:T17	
+T20	sub_activity 1003 1028	cyber-espionage campaigns
+R6	launch Arg1:T19 Arg2:T20	
+T21	time 1160 1172	January 2017
+T22	time 1177 1190	February 2018
+T23	threatActor_name 1426 1432	Naikon
+T24	time 1458 1462	2012
+T25	reference_word 1634 1643	the group
+T26	reference_word 1685 1694	the group
+T27	industry 1832 1840	military
+T28	location 1879 1893	Southeast Asia
+T29	target_crowd 1704 1744	communications and sensitive information
+R7	attack Arg1:T26 Arg2:T29	
+R8	located Arg1:T27 Arg2:T28	
+T30	industry 1750 1759	executive
+T31	industry 1764 1783	legislative offices
+T32	industry 1786 1801	law enforcement
+T33	industry 1804 1829	government administrative
+T34	industry 1845 1871	intelligence organizations
+R9	located Arg1:T30 Arg2:T28	
+R10	located Arg1:T31 Arg2:T28	
+R11	located Arg1:T32 Arg2:T28	
+R12	located Arg1:T33 Arg2:T28	
+R13	located Arg1:T34 Arg2:T28	
+T35	malware 1977 1982	PlugX
+T36	time 2040 2044	2015
+T37	time 2111 2115	2018
+T38	reference_word 2008 2017	the group
+T39	time 2179 2183	2017
+T40	time 2188 2192	2018
+T41	time 2274 2278	2012
+T42	threatActor_name 2252 2258	Naikon
+T43	threatActor_name 2396 2402	Naikon
+T44	threatActor_name 2512 2518	Naikon
+T45	threatActor_name 2523 2529	Naikon
+T46	sample_name 2732 2763	c:\windows\system32\svchost.exe
+T47	sample_name 2766 2797	c:\windows\syswow64\svchost.exe
+T48	sample_name 2800 2852	c:\program files\windows nt\accessories\services.exe
+T49	sample_name 2855 2942	c:\users\dell\appdata\roaming\microsoft\windows\start menu\programs\startup\acrobat.exe
+T50	sample_name 2945 2971	c:\alphazawgyi\svchost.exe
+T51	sample_name 3226 3237	msiexec.exe
+T52	md5 3349 3381	c766e55c48a4b2e7f83bfb8b6004fc51
+T53	sha2 3384 3448	357c8825b3f03414582715681e4e0316859b17e702a6d2c8ea9eb0fd467620a4
+T54	time 3451 3474	Tue Jan 3 09:23:48 2017
+T55	md5 3477 3509	2ce4d68a120d76e703298f27073e1682
+T56	sha2 3512 3576	4cab6bf0b63cea04c4a44af1cf25e214771c4220ed48fff5fca834efa117e5db
+T57	time 3579 3603	Thu Feb 22 10:04:02 2018
+T58	OS_name 3646 3653	Windows
+T59	domain 3807 3828	checkip.amazonaws.com
+T60	time 4193 4206	February 2018
+T61	company 4391 4401	Checkpoint
+T62	threatActor_name 4811 4817	Naikon
+T63	time 4843 4847	2012
+T64	time 5074 5078	2013
+T65	threatActor_name 5079 5085	Naikon
+T66	threatActor_name 5110 5116	Naikon
+T67	time 5105 5109	2017
+T68	md5 5203 5235	e09254fa4398fccd607358b24b918b63
+T69	time 5238 5257	2013:09:10 09:00:15
+T70	md5 5260 5292	c766e55c48a4b2e7f83bfb8b6004fc51
+T71	time 5295 5314	2017:01:03 09:23:48
+T72	company 5330 5340	Checkpoint
+T73	person 5341 5352	researchers
+T74	threatActor_name 5386 5392	Naikon
+T75	md5 5437 5469	c766e55c48a4b2e7f83bfb8b6004fc51
+T76	md5 5481 5513	2ce4d68a120d76e703298f27073e1682
+T77	md5 5525 5557	0ed1fa2720cdab23d969e60035f05d92
+T78	md5 5569 5601	3516960dd711b668783ada34286507b9
+T79	threatActor_name 5428 5434	Naikon
+T80	threatActor_name 5472 5478	Naikon
+T81	threatActor_name 5516 5522	Naikon
+T82	threatActor_name 5560 5566	Naikon
+T83	person 107 117	colleagues
+R14	located Arg1:T14 Arg2:T13	
+R15	located Arg1:T19 Arg2:T18	
+R16	located Arg1:T7 Arg2:T8	
+R17	coreference Arg1:T25 Arg2:T23	
+R18	coreference Arg1:T38 Arg2:T26	
+T84	malware 10 14	Aria
+T85	malware 220 229	aria-body
+R19	use Arg1:T3 Arg2:T85	
+T87	malware 1076 1085	Aria-Body
+T88	malware 1093 1095	AR
+T89	tool 1385 1395	xsFunction
+R21	use Arg1:T23 Arg2:T89	
+T90	tool 1517 1527	xsFunction
+R22	use Arg1:T23 Arg2:T90	
+T91	string 1649 1666	Paradir Operation
+T92	string 590 593	APT
+T93	malware 2292 2294	AR
+R23	use Arg1:T42 Arg2:T93	
+T94	malware 2537 2539	AR
+R24	use Arg1:T45 Arg2:T94	
+T95	malware 2640 2642	AR
+T96	string 1406 1409	dll
+T97	string 1398 1401	exe
+T98	string 2554 2557	dll
+T99	malware 3158 3160	AR
+T100	malware 2987 2989	AR
+T101	tool 3028 3032	yara
+T102	malware 3292 3294	AR
+T103	malware 3316 3318	AR
+T104	string 3615 3618	dll
+T105	protocol 3766 3768	C2
+T106	protocol 3774 3776	IP
+T107	protocol 3865 3867	C2
+T108	malware 4282 4284	AR
+T109	malware 4895 4904	Aria-body
+R25	use Arg1:T62 Arg2:T109	
+R26	part_of Arg1:T75 Arg2:T79	
+R27	part_of Arg1:T76 Arg2:T80	
+R28	part_of Arg1:T77 Arg2:T81	
+R29	part_of Arg1:T78 Arg2:T82	
+T110	malware 1110 1119	backdoors
+R30	part_of Arg1:T88 Arg2:T110	
+R31	part_of Arg1:T87 Arg2:T110	
+T86	malware 431 433	AR
+T111	malware 434 442	Backdoor
+R20	part_of Arg1:T86 Arg2:T111	
+R32	use Arg1:T7 Arg2:T86	

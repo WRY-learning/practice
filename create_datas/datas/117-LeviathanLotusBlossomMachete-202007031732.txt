@@ -1,0 +1,10 @@
+Unknown .		others others
+Release_Time : unknown .		others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+Leviathan : TEMP.Jumper , APT40 , TEMP.Periscope .		threatActor_name others threatActor_aliases others threatActor_aliases others threatActor_aliases others
+Leviathan is a cyber espionage group that has been active since at least 2013 .		threatActor_name others others others others others others others others others others others others time others
+The group generally targets defense and government organizations , but has also targeted a range of industries including engineering firms , shipping and transportation , manufacturing , defense , government offices , and research universities in the United States , Western Europe , and along the South China Sea .		reference_word reference_word others others industry target_crowd industry target_crowd others others others others others others others others others others industry industry others industry others industry others industry others industry others industry industry others others industry industry others others location location others location location others others others others location location location others
+Lotus Blossom : DRAGONFISH , Spring Dragon .		threatActor_name threatActor_name others threatActor_aliases others threatActor_aliases threatActor_aliases others
+Lotus Blossom is a threat group that has targeted government and military organizations in Southeast Asia .		threatActor_name threatActor_name others others others others others others others industry target_crowd industry target_crowd others location location others
+Machete : El Machete .		threatActor_name others threatActor_aliases threatActor_aliases others
+Machete is a group that has been active since at least 2010 , targeting high-profile government entities in Latin American countries .		threatActor_name others others others others others others others others others others time others others target_crowd target_crowd target_crowd others location location location others

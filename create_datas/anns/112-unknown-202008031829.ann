@@ -1,0 +1,206 @@
+T1	malware 0 7	COMpfun
+T2	protocol 44 48	HTTP
+R1	use Arg1:T1 Arg2:T2	
+T3	malware 62 68	Trojan
+T4	time 196 207	autumn 2019
+T5	malware 241 248	COMpfun
+T6	malware 268 276	Reductor
+T7	protocol 317 320	TLS
+T8	reference_word 208 210	we
+R2	release_time Arg1:T8 Arg2:T4	
+T9	attack_goal 317 328	TLS traffic
+R3	attack Arg1:T6 Arg2:T9	
+T10	time 444 466	Later in November 2019
+T11	tool 471 489	Attribution Engine
+T12	malware 505 511	Trojan
+T13	malware 618 625	COMPFun
+T14	location 710 716	Europe
+T15	tool 1013 1015	C2
+T16	protocol 1054 1064	HTTP/HTTPS
+T18	protocol 1126 1130	HTTP
+T19	malware 1192 1198	Trojan
+T20	encryption_algo 1384 1387	RSA
+T21	protocol 1410 1414	HTTP
+T22	tool 1562 1564	C2
+T23	encryption_algo 1653 1656	RSA
+T24	tool 1692 1694	C2
+T25	encryption_algo 1736 1743	AES-128
+T26	malware 1793 1800	COMPfun
+T27	security_team 1837 1843	G-DATA
+T28	time 1847 1851	2014
+R4	find Arg1:T27 Arg2:T26	
+R5	release_time Arg1:T27 Arg2:T28	
+T30	threatActor_name 1999 2008	Turla APT
+T31	sample_function 2099 2120	target ’s geolocation
+T32	sample_function 2123 2138	gathering host-
+T33	sample_function 2143 2163	network-related data
+T34	sample_function 2166 2176	keylogging
+T35	sample_function 2181 2192	screenshots
+T36	reference_word 2050 2053	Its
+R6	coreference Arg1:T36 Arg2:T26	
+R7	part_of Arg1:T31 Arg2:T36	
+R8	part_of Arg1:T32 Arg2:T36	
+R9	part_of Arg1:T33 Arg2:T36	
+R10	part_of Arg1:T34 Arg2:T36	
+R11	part_of Arg1:T35 Arg2:T36	
+T37	malware 2240 2246	Trojan
+T38	tool 2482 2484	C2
+T39	protocol 2490 2500	HTTP/HTTPS
+T40	encryption_algo 2520 2523	RSA
+T41	reference_word 2503 2514	the malware
+R13	coreference Arg1:T41 Arg2:T37	
+R14	use Arg1:T41 Arg2:T40	
+T42	reference_word 2319 2335	previous malware
+R15	use Arg1:T42 Arg2:T38	
+R16	use Arg1:T42 Arg2:T39	
+T43	malware 2564 2570	Trojan
+T44	sample_function 2540 2557	hide data locally
+R17	part_of Arg1:T44 Arg2:T43	
+T45	sample_function 2582 2599	LZNT1 compression
+T46	sample_function 2604 2612	one-byte
+T47	sample_function 2617 2627	encryption
+R18	part_of Arg1:T45 Arg2:T43	
+R19	part_of Arg1:T46 Arg2:T43	
+R20	part_of Arg1:T47 Arg2:T43	
+T48	encryption_algo 2856 2859	RSA
+T49	encryption_algo 2860 2863	XOR
+T50	encryption_algo 2891 2898	AES-128
+T51	encryption_algo 2925 2932	AES-128
+T52	tool 2793 2795	C2
+T53	protocol 2800 2804	HTTP
+T54	protocol 2742 2746	HTTP
+T55	protocol 2747 2755	GET/POST
+T56	tool 3138 3141	LAN
+T57	md5 3778 3810	1BB03CBAD293CA9EE3DDCE6F054FC325
+T58	md5 3811 3843	A6AFA05CBD04E9AF256D278E5B5AD050
+T59	sample_name 3858 3873	ieframe.dll.mui
+T60	sample_name 3874 3895	ExplorerFrame.dll.mui
+T61	malware 3916 3922	Trojan
+T62	malware 3938 3944	Trojan
+T63	function 3385 3396	Windows API
+T64	encryption_algo 3585 3588	XOR
+T65	sample_function 3626 3645	LZNT1 decompression
+T66	malware 3106 3113	dropper
+T67	malware 742 749	dropper
+T68	malware 925 932	dropper
+T69	malware 3328 3335	dropper
+R21	use Arg1:T66 Arg2:T56	
+T70	malware 3959 3966	dropper
+T71	malware 4206 4213	dropper
+T72	malware 4349 4356	dropper
+T73	time 4167 4183	2013.12.20 22:31
+T74	tool 4245 4247	PE
+T75	protocol 4491 4495	HTTP
+T76	malware 4509 4515	Trojan
+T77	sha2 4518 4582	710b0fafe5fd7b3d817cf5c22002e46e2a22470cf3894eb619f805d43759b5a3
+T78	md5 4583 4615	a6afa05cbd04e9af256d278e5b5ad050
+T79	time 4616 4635	2015.06.26 09:42:27
+T80	sample_name 4672 4693	ExplorerFrame.dll.mui
+T81	sample_name 4783 4804	ExplorerFrame.dll.mui
+T82	sample_name 4836 4853	ExplorerFrame.dll
+T83	tool 4867 4883	Windows Explorer
+R22	use Arg1:T82 Arg2:T83	
+T84	function 5180 5191	Windows API
+T85	OS_name 5377 5387	Windows OS
+T86	security_team 5632 5640	Symantec
+T87	security_team 5643 5652	Kaspersky
+T88	security_team 5655 5661	Dr.Web
+T89	security_team 5664 5669	Avast
+T90	tool 5710 5712	C2
+T91	tool 5766 5772	WinDbg
+T92	tool 5775 5782	OllyDbg
+T93	tool 5481 5491	VEN_VMWARE
+T94	tool 5494 5507	VBOX_HARDDISK
+T95	tool 5510 5525	Virtual_DVD_ROM
+T96	tool 5785 5798	Visual Studio
+T97	tool 5832 5839	Monitor
+T98	tool 5812 5828	Process Explorer
+T99	tool 5874 5883	Wireshark
+T100	tool 5886 5893	TCPView
+T101	tool 6029 6032	DLL
+T102	encryption_algo 6495 6500	LZNT1
+T103	encryption_algo 6434 6437	XOR
+T104	encryption_algo 6561 6564	RSA
+T105	encryption_algo 6690 6697	AES-128
+T106	protocol 6721 6734	HTTP GET/POST
+T107	protocol 6750 6754	HTTP
+T108	md5 11553 11585	A6AFA05CBD04E9AF256D278E5B5AD050
+T109	md5 11586 11618	1BB03CBAD293CA9EE3DDCE6F054FC325
+T110	IP_evil 11627 11639	95.183.49.10
+T111	IP_evil 11640 11652	95.183.49.29
+T112	IP_evil 11653 11665	200.63.45.35
+T113	sample_name 7093 7112	Symantec ’s nis.exe
+T114	sample_name 7115 7140	Dr.Web ’s spideragent.exe
+T115	sample_name 7038 7045	cmd.exe
+T116	sample_name 7048 7056	smss.exe
+T117	tool 7198 7204	Chrome
+T118	tool 7181 7195	Yandex browser
+T119	tool 7171 7178	Firefox
+T120	tool 7163 7168	Opera
+T121	tool 7158 7160	IE
+T122	tool 7239 7241	C2
+T123	protocol 7251 7254	TLS
+T124	protocol 7318 7323	HTTPS
+T125	protocol 7355 7359	HTTP
+T126	sha1 7482 7514	C8E9CEAD2E084F58A94AEDC14D423E1A
+T127	IP_evil 7515 7527	95.183.49.10
+T128	IP_evil 7528 7540	95.183.49.29
+T129	IP_evil 7541 7553	200.63.45.35
+T130	encryption_algo 7448 7451	RSA
+T131	tool 7595 7599	ETag
+T132	tool 7680 7685	ETags
+T133	tool 7834 7838	ETag
+T134	tool 7893 7895	C2
+T135	tool 7877 7882	ETags
+T136	tool 7996 8000	ETag
+T137	tool 8009 8012	RFC
+T138	tool 8261 8263	C2
+T139	protocol 8363 8367	HTTP
+T140	protocol 8775 8779	HTTP
+T141	protocol 9051 9055	HTTP
+T142	protocol 9127 9131	HTTP
+T143	tool 8888 8890	C2
+T144	encryption_algo 8906 8909	RSA
+T145	tool 8946 8948	C2
+T146	encryption_algo 8964 8967	RSA
+T147	sample_name 8629 8640	IEA94E3.tmp
+T148	sample_function 8567 8576	Send host
+T149	sample_function 8579 8607	network and geolocation data
+T150	sample_function 8608 8645	Get new command into IEA94E3.tmp file
+T151	sample_function 8658 8694	decrypt and execute appended command
+T152	sample_function 8695 8734	Propagate self to USB devices on target
+T153	sample_function 8735 8762	Enumerate network resources
+T154	sample_function 8231 8257	Send collected target data
+T155	sample_function 8401 8433	Delete COM-hijacking persistence
+T156	sample_function 8476 8508	Create COM-hijacking persistence
+T157	sample_function 8513 8564	drop corresponding files to disk Fingerprint target
+T158	sample_function 8438 8473	corresponding files on disk Install
+T159	OS_name 9230 9237	Windows
+T160	tool 9541 9543	C2
+T161	tool 10299 10301	C2
+T162	encryption_algo 10110 10115	LZNT1
+T163	encryption_algo 9589 9592	RSA
+T164	OS_name 9815 9822	Windows
+T165	encryption_algo 9964 9967	RSA
+T166	tool 10069 10084	GDIPlus library
+T167	malware 10026 10032	Trojan
+R23	use Arg1:T167 Arg2:T166	
+T168	domain 10655 10676	geoplugin.net/json.gp
+T169	domain 10679 10694	ip-api.com/json
+T170	domain 10699 10715	telize.com/geoip
+T171	protocol 10780 10784	HTTP
+T172	time 10942 10946	2019
+T173	malware 10914 10921	COMpfun
+T174	reference_word 10876 10878	We
+R24	release_time Arg1:T174 Arg2:T172	
+R25	find Arg1:T174 Arg2:T173	
+T175	encryption_algo 10971 10974	TLS
+T176	protocol 11110 11114	HTTP
+T177	tool 10997 11008	PRNG system
+T178	tool 11077 11079	C2
+T179	malware 11501 11508	COMPFun
+R12	first_found_time Arg1:T11 Arg2:T10	
+R26	use Arg1:T15 Arg2:T16	
+R27	part_of Arg1:T3 Arg2:T1	
+T17	reference_word 573 575	it
+R28	coreference Arg1:T17 Arg2:T6	

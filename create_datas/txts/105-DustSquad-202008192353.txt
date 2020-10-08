@@ -1,0 +1,105 @@
+Octopus-infested seas of Central Asia : Russian-language actor exploits hype over Telegram ban in Central Asia .
+Release_Time : 2018-10-15
+Report_URL : https://securelist.com/octopus-infested-seas-of-central-asia/88200/
+For the last two years we have been monitoring a Russian-language cyberespionage actor that focuses on Central Asian users and diplomatic entities .
+We named the actor DustSquad and have provided private intelligence reports to our customers on four of their campaigns involving custom Android and Windows malware .
+In this blogpost we cover a malicious program for Windows called Octopus that mostly targets diplomatic entities .
+The name was originally coined by ESET in 2017 after the 0ct0pus3.php script used by the actor on their old C2 servers .
+We also started monitoring the malware and , using Kaspersky Attribution Engine based on similarity algorithms , discovered that Octopus is related to DustSquad , something we reported in April 2018 .
+In our telemetry we tracked this campaign back to 2014 in the former Soviet republics of Central Asia ( still mostly Russian-speaking ) , plus Afghanistan .
+In the case of Octopus , DustSquad used Delphi as their programming language of choice , which is unusual for such an actor .
+Among others exceptions are the Russian-language Zebrocy ( Sofacy's Delphi malware ) , the Hindi-language DroppingElephant and the Turkish-language StrongPity .
+Although we detected Octopus victims that were also infected with Zebrocy/Sofacy , we didn't find any strong similarities and we don't consider the two actors to be related .
+In April 2018 we discovered a new Octopus sample pretending to be Telegram Messenger with a Russian interface .
+We couldn't find any legitimate software that this malware appears to be impersonating ; in fact , we don't believe it exists .
+The Trojan uses third-party Delphi libraries like The Indy Project for JSON-based C2 communications and TurboPower Abbrevia ( sourceforge.net/projects/tpabbrevia ) for compression .
+Malware persistence is basic and achieved via the system registry .
+The server side uses commercial hosting in different countries with .php scripts deployed .
+Kaspersky Lab products detect the Octopus Trojan as Trojan.Win32.Octopus.gen .
+The attackers used the potential Telegram ban in Kazakhstan to push its dropper as an alternative communication software for the political opposition .
+This actor previously used spear phishing to spread malware .
+dvkmailer.zip : 979eff03faeaeea5310df53ee1a2fc8e .
+CsvHelper.dll : d6e813a393f40c7375052a15e940bc67 .
+Telegram Messenger.exe : 664a15bdc747c560c11aa0cf1a7bf06e .
+TelegramApi.dll : 87126c8489baa8096c6f30456f5bef5e .
+Settings.json : d41d8cd98f00b204e9800998ecf8427e .
+Before any user interaction , inside the FormCreate() function the launcher checks for a file named TelegramApi.dll in the same directory .
+If it exists , the launcher copies the network module to the startup directory as Java.exe and runs it .
+Delphi Visual Component Library ( VCL ) programs are based on event handlers for form elements .
+Such programs are extremely large , but all this code is mostly used to handle the visual components and run-time libraries .
+There are only three programmer-defined handlers for controlling elements inside the Octopus launcher .
+Makes the network module persistent via Startup directory and runs it .
+Button1Click() : Shows the explorer dialog window to choose the "mailing file" .
+DateTimePicker1Click() : Shows calendar to select the "mailing date" .
+TelegramApi.dll : 87126c8489baa8096c6f30456f5bef5e .
+Despite the file extension , this network module is a self-sufficient portable executable file and not a dynamic-link library .
+The first sample checks for files with names like 1????????? .
+* in the user's temporary folder and deletes any files it finds .
+Then it creates .profiles.ini in the Application Data directory where the malware stores its log .
+All network modules consist of hardcoded IP addresses belonging to commercial web-hosting services based in different countries .
+The operators simply deploy their first-stage .php script in them , which will check the connection and get the actual C2 server domain name using an HTTP GET request .
+The network module checks against a 32-digit hardcoded victim id and sends the gathered data to the C2 using a HTTP POST request .
+In terms of programming , this id is strange , because the malware simultaneously 'fingerprints' its victim with an MD5 hash of its system data .
+All communication with the C2s is based on JSON-formatted data and the HTTP protocol .
+For that , the developers used The Indy Project ( indyproject.org ) publicly available library as well as the third-party TurboPower Abbrevia for compression .
+After all the initial HTTP GET requests , the malware starts to gather JSON-formatted system data .
+For all the fixed drives in the system , the network module stores the disk name and size , as well as computer and user name , Windows directory , host IP , etc .
+The 'id' field is the victim's fingerprint for which the malware actively uses the Windows Management Instrumentation mechanism .
+Besides the Trojan itself , the Octopus developers used the password dumping utility fgdump .
+Political entities in Central Asia have been targeted throughout 2018 by different actors , including IndigoZebra , Sofacy ( with Zebrocy malware ) and most recently by DustSquad ( with Octopus malware ) .
+From our experience we can say that the interest shown by threat actors in this region is now high , and the traditional 'players' have been joined by relative newcomers like DustSquad that have sprung up locally .
+DustSquad : 87126c8489baa8096c6f30456f5bef5e .
+DustSquad : ee3c829e7c773b4f94b700902ea3223c .
+DustSquad : 38f30749a87dcbf156689300737a094e .
+DustSquad : 6e85996c021d55328322ce8e93b31088 .
+DustSquad : 7c0050a3e7aa3172392dcbab3bb92566 .
+DustSquad : 2bf2f63c927616527a693edf31ecebea .
+DustSquad : d9ad277eb23b6268465edb3f68b12cb2 .
+DustSquad : 031e4900715564a21d0217c22609d73f .
+DustSquad : 1610cddb80d1be5d711feb46610f8a77 .
+DustSquad : 1ce9548eae045433a0c943a07bb0570a .
+DustSquad : 3a54b3f9e9bd54b4098fe592d805bf72 .
+DustSquad : 546ab9cdac9a812aab3e785b749c89b2 .
+DustSquad : 5cbbdce774a737618b8aa852ae754251 .
+DustSquad : 688854008f567e65138c3c34fb2562d0 .
+DustSquad : 6fda541befa1ca675d9a0cc310c49061 .
+DustSquad : 73d5d104b34fc14d32c04b30ce4de4ae .
+DustSquad : 88ad67294cf53d521f8295aa1a7b5c46 .
+DustSquad : a90caeb6645b6c866ef60eb2d5f2d0c5 .
+DustSquad : ae4e901509b05022bbe7ef340f4ad96c .
+DustSquad : ca743d10d27277584834e72afefd6be8 .
+DustSquad : ce45e69eac5c55419f2c30d9a8c9104b .
+DustSquad : df392cd03909ad5cd7dcea83ee6d66a0 .
+DustSquad : e149c1da1e05774e6b168b6b00272eb4 .
+DustSquad : f625ba7f9d7577db561d4a39a6bb134a .
+DustSquad : fc8b5b2f0b1132527a2bcb5985c2fe6b .
+DustSquad : f7b1503a48a46e3269e6c6b537b033f8 .
+DustSquad : 4f4a8898b0aa4507dbb568dca1dedd38 .
+DustSquad : 85.93.31.141 .
+DustSquad : 104.223.20.136 .
+DustSquad : 5.8.88.87 .
+DustSquad : 103.208.86.237 .
+DustSquad : 185.106.120.240 .
+DustSquad : 204.145.94.101 .
+DustSquad : 5.188.231.101 .
+DustSquad : 103.208.86.238 .
+DustSquad : 185.106.120.27 .
+DustSquad : 204.145.94.10 .
+DustSquad : hovnanflovers.com
+DustSquad : latecafe.in .
+DustSquad : certificatesshop.com .
+DustSquad : blondehairman.com .
+DustSquad : porenticofacts.com .
+DustSquad : 148.251.185.168 .
+DustSquad : 185.106.120.46 .
+DustSquad : 185.106.120.47 .
+DustSquad : 46.249.52.244 .
+DustSquad : 5.255.71.84 .
+DustSquad : 5.255.71.85 .
+DustSquad : 88.198.204.196 .
+DustSquad : 92.63.88.142 .
+DustSquad : giftfromspace.com .
+DustSquad : mikohanzer.website .
+DustSquad : humorpics.download .
+DustSquad : desperados20.es .
+DustSquad : prom3.biz.ua .

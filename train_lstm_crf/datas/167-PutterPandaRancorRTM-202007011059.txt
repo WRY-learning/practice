@@ -1,0 +1,8 @@
+unknown Release_Time : unknown .		others others others others others
+Report_URL : https://attack.mitre.org/groups/ .		others others others others others others
+Putter Panda : APT2 , MSUpdater .		threatActor_name threatActor_name others threatActor_aliases others threatActor_aliases others
+Putter Panda is a Chinese threat group that has been attributed to Unit 61486 of the 12th Bureau of the PLA ’s 3rd General Staff Department ( GSD ) .		threatActor_name threatActor_name others others location others others others others others others others government government government government government government government government government government government government government government government government government government others
+Rancor is a threat group that has led targeted campaigns against the South East Asia region .		threatActor_name others others others others others others others others others others others location location location location others
+Rancor uses politically-motivated lures to entice victims to open malicious documents .		threatActor_name others tool tool others others others others attack_goal attack_goal attack_goal others
+RTM is a cybercriminal group that has been active since at least 2015 and is primarily interested in users of remote banking systems in Russia and neighboring countries .		threatActor_name others others others others others others others others others others others time others others others others others target_crowd target_crowd target_crowd target_crowd target_crowd others location location location location others
+The group uses a Trojan by the same name ( RTM ) .		reference_word reference_word others others malware others others others others others threatActor_name others others

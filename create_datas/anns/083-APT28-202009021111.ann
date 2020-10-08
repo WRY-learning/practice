@@ -1,0 +1,165 @@
+T1	threatActor_name 0 5	APT28
+T2	threatActor_name 141 157	The Sednit group
+T3	threatActor_name 174 179	APT28
+R1	coreference Arg1:T3 Arg2:T2	
+T4	threatActor_name 182 192	Fancy Bear
+T5	threatActor_name 197 203	Sofacy
+R2	coreference Arg1:T4 Arg2:T2	
+R3	coreference Arg1:T5 Arg2:T2	
+T6	time 246 250	2004
+R4	first_found_time Arg1:T2 Arg2:T6	
+T7	attack_goal 297 349	steal confidential information from specific targets
+R5	goal Arg1:T2 Arg2:T7	
+T8	threatActor_name 433 452	the Sednit ’s group
+T9	time 470 474	2014
+R6	occur_time Arg1:T8 Arg2:T9	
+T10	tool 940 943	C&C
+T11	threatActor_name 496 502	Sednit
+T12	threatActor_name 727 743	The Sednit group
+T13	malware 818 825	Sedreco
+T14	malware 830 836	Xagent
+R7	part_of Arg1:T13 Arg2:T12	
+R8	part_of Arg1:T14 Arg2:T12	
+T15	malware 899 905	Xagent
+R9	use Arg1:T15 Arg2:T10	
+T16	location 1019 1027	Georgian
+T17	threatActor_name 1036 1052	The Sednit group
+T18	tool 1092 1099	Xtunnel
+R10	part_of Arg1:T18 Arg2:T17	
+T19	tool 1241 1249	Internet
+T20	malware 1256 1262	Xagent
+T21	malware 1281 1287	Xagent
+T22	tool 1288 1291	C&C
+R11	use Arg1:T21 Arg2:T22	
+T23	tool 1323 1330	Xtunnel
+T25	threatActor_name 1446 1462	the Sednit group
+T26	tool 1362 1369	Russian
+R12	use Arg1:T23 Arg2:T26	
+R13	use Arg1:T20 Arg2:T26	
+R14	use Arg1:T22 Arg2:T26	
+R15	use Arg1:T25 Arg2:T26	
+T24	domain 1539 1559	threatintel@eset.com
+T27	threatActor_name 1614 1620	Sednit
+T28	threatActor_name 1775 1791	The Sednit group
+T29	threatActor_name 1818 1823	APT28
+T30	threatActor_name 1826 1836	Fancy Bear
+T31	threatActor_name 1839 1845	Sofacy
+T32	threatActor_name 1848 1858	Pawn Storm
+T33	threatActor_name 1861 1870	STRONTIUM
+T34	threatActor_name 1875 1884	Tsar Team
+R16	coreference Arg1:T29 Arg2:T28	
+R17	coreference Arg1:T30 Arg2:T28	
+R18	coreference Arg1:T31 Arg2:T28	
+R19	coreference Arg1:T32 Arg2:T28	
+R20	coreference Arg1:T33 Arg2:T28	
+R21	coreference Arg1:T34 Arg2:T28	
+T35	time 1927 1931	2004
+R22	first_found_time Arg1:T28 Arg2:T35	
+T36	attack_goal 1976 2028	steal confidential information from specific targets
+R23	goal Arg1:T28 Arg2:T36	
+T37	reference_word 2057 2067	this group
+R24	coreference Arg1:T37 Arg2:T28	
+T38	government 2140 2162	government departments
+T39	target_crowd 2167 2176	embassies
+R25	attack Arg1:T37 Arg2:T38	
+R26	attack Arg1:T37 Arg2:T39	
+T40	target_crowd 2248 2286	American Democratic National Committee
+T41	target_crowd 2289 2310	the German parliament
+T42	reference_word 2204 2209	their
+R27	coreference Arg1:T42 Arg2:T37	
+R28	attack Arg1:T42 Arg2:T40	
+R29	attack Arg1:T42 Arg2:T41	
+T43	target_crowd 2319 2353	French television network TV5Monde
+R30	attack Arg1:T42 Arg2:T43	
+T44	threatActor_name 2367 2383	the Sednit group
+T45	location 2410 2424	Eastern Europe
+R31	attack Arg1:T44 Arg2:T45	
+T46	threatActor_name 2549 2565	the Sednit group
+T47	time 2644 2648	2015
+T48	vulnerability_cve 2607 2612	0-day
+R32	part_of Arg1:T48 Arg2:T46	
+T49	reference_word 2651 2660	the group
+R33	coreference Arg1:T49 Arg2:T46	
+R34	occur_time Arg1:T49 Arg2:T47	
+T50	vulnerability_cve 2689 2694	0-day
+R35	use Arg1:T49 Arg2:T50	
+T51	vulnerability_cve 2733 2738	0-day
+T52	threatActor_name 2792 2808	the Sednit group
+R36	use Arg1:T52 Arg2:T51	
+T53	reference_word 2826 2835	the group
+R37	coreference Arg1:T53 Arg2:T52	
+T54	reference_word 2891 2912	these vulnerabilities
+R38	coreference Arg1:T54 Arg2:T51	
+R39	use Arg1:T53 Arg2:T54	
+T55	threatActor_name 2996 3012	the Sednit group
+T56	malware 3242 3248	Xagent
+T57	malware 3253 3260	Sedreco
+T58	malware 3339 3348	Downdelph
+R40	part_of Arg1:T56 Arg2:T55	
+R41	part_of Arg1:T57 Arg2:T55	
+R42	part_of Arg1:T58 Arg2:T55	
+T59	security_team 3447 3451	ESET
+T60	threatActor_name 3475 3491	the Sednit group
+R43	find Arg1:T59 Arg2:T60	
+T61	threatActor_name 3683 3699	the Sednit group
+T62	threatActor_name 4106 4122	the Sednit group
+T63	tool 4152 4158	Delphi
+R44	use Arg1:T62 Arg2:T63	
+T64	threatActor_name 4330 4346	The Sednit group
+T65	threatActor_name 4550 4556	Sednit
+T66	threatActor_name 4875 4881	Sednit
+T67	tool 5120 5127	Xtunnel
+T68	malware 5078 5085	Sedreco
+T69	malware 5090 5096	Xagent
+R45	use Arg1:T66 Arg2:T68	
+R46	use Arg1:T66 Arg2:T69	
+R47	use Arg1:T66 Arg2:T67	
+T70	threatActor_name 5152 5158	Sednit
+T71	malware 5299 5310	Seduploader
+T72	malware 5365 5374	Downdelph
+T73	malware 5190 5197	Sedreco
+T74	malware 5202 5208	Xagent
+R48	part_of Arg1:T71 Arg2:T73	
+R49	part_of Arg1:T71 Arg2:T74	
+R50	part_of Arg1:T72 Arg2:T73	
+R51	part_of Arg1:T72 Arg2:T74	
+R52	use Arg1:T70 Arg2:T71	
+R53	use Arg1:T70 Arg2:T72	
+T75	tool 5542 5549	Xtunnel
+T76	threatActor_name 5663 5669	Sednit
+T77	malware 5729 5735	Xagent
+T78	threatActor_name 5864 5880	the Sednit group
+T79	location 5889 5896	Russian
+T80	security_team 6064 6068	ESET
+T81	threatActor_name 6122 6138	the Sednit group
+T82	threatActor_name 6319 6335	the Sednit group
+T83	time 6937 6941	2014
+T84	threatActor_name 6907 6923	the Sednit group
+R54	release_time Arg1:T84 Arg2:T83	
+T85	threatActor_name 6953 6973	Operation Pawn Storm
+T86	security_team 6987 6997	rend Micro
+T87	threatActor_name 7006 7011	APT28
+T88	security_team 7024 7031	FireEye
+R55	find Arg1:T86 Arg2:T85	
+R56	find Arg1:T88 Arg2:T87	
+T89	time 7283 7287	2014
+T90	threatActor_name 7260 7276	the Sednit group
+T91	threatActor_name 7302 7318	the Sednit group
+T92	threatActor_name 7499 7515	the Sednit group
+T93	threatActor_name 7761 7767	Sednit
+T94	tool 8294 8318	indicators of compromise
+T95	tool 8320 8323	IOC
+R57	coreference Arg1:T95 Arg2:T94	
+T96	threatActor_name 8349 8355	Sednit
+T97	sample_function 8329 8366	help detect current Sednit infections
+R58	goal Arg1:T94 Arg2:T97	
+T98	security_team 8413 8417	ESET
+T99	tool 8421 8427	GitHub
+R59	use Arg1:T98 Arg2:T99	
+T100	tool 8394 8397	IOC
+R60	part_of Arg1:T99 Arg2:T94	
+T101	reference_word 8476 8486	these IOCs
+R61	coreference Arg1:T101 Arg2:T94	
+T102	threatActor_name 8621 8627	Sednit
+T103	threatActor_name 8924 8930	Sednit
+T104	domain 9192 9212	threatintel@eset.com

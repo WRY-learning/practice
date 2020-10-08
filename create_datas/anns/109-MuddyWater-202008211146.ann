@@ -1,0 +1,477 @@
+T1	threatActor_name 0 10	MuddyWater
+T2	threatActor_name 118 128	MuddyWater
+T3	string 149 152	APT
+T4	time 170 174	2017
+R1	first_found_time Arg1:T2 Arg2:T4	
+R2	part_of Arg1:T2 Arg2:T3	
+T5	reference_word 177 179	It
+R3	coreference Arg1:T5 Arg2:T2	
+T6	location 226 230	Iraq
+T7	location 235 247	Saudi Arabia
+T8	threatActor_name 307 317	MuddyWater
+T9	location 366 377	Middle East
+T10	location 380 386	Europe
+T11	location 395 397	US
+T12	target_crowd 366 397	Middle East , Europe and the US
+R4	attack Arg1:T8 Arg2:T12	
+T13	person 294 299	group
+R5	part_of Arg1:T13 Arg2:T8	
+T14	attack_activity 438 462	spear phishing documents
+R6	use Arg1:T8 Arg2:T14	
+T15	target_crowd 491 557	government bodies , military , telcos and educational institutions
+T16	company 522 528	telcos
+T17	industry 533 557	educational institutions
+T18	location 561 567	Jordan
+T19	location 570 576	Turkey
+T20	location 579 589	Azerbaijan
+T21	location 594 602	Pakistan
+R7	located Arg1:T15 Arg2:T18	
+R8	located Arg1:T15 Arg2:T19	
+R9	located Arg1:T15 Arg2:T20	
+R10	located Arg1:T15 Arg2:T21	
+R11	attack Arg1:T8 Arg2:T15	
+T22	location 648 652	Iraq
+T23	location 657 669	Saudi Arabia
+T24	location 708 712	Mali
+T25	location 715 722	Austria
+T26	location 725 731	Russia
+T27	location 734 738	Iran
+T28	location 743 750	Bahrain
+R12	attack Arg1:T8 Arg2:T22	
+R13	attack Arg1:T8 Arg2:T23	
+R14	attack Arg1:T8 Arg2:T24	
+R15	attack Arg1:T8 Arg2:T25	
+R16	attack Arg1:T8 Arg2:T26	
+R17	attack Arg1:T8 Arg2:T27	
+R18	attack Arg1:T8 Arg2:T28	
+T29	reference_word 765 774	documents
+R19	coreference Arg1:T29 Arg2:T14	
+T30	time 800 804	2018
+T31	time 824 827	May
+R20	occur_time Arg1:T29 Arg2:T30	
+T32	attack_activity 878 897	spear-phishing docs
+T33	threatActor_name 906 916	MuddyWater
+R21	use Arg1:T33 Arg2:T32	
+T34	person 985 994	attackers
+R22	part_of Arg1:T34 Arg2:T33	
+T35	string 1204 1209	OPSEC
+T36	url 1272 1352	https://sec0wn.blogspot.com/2018/05/clearing-muddywater-analysis-of-new.html?m=1
+T37	url 1353 1417	https://reaqta.com/2017/11/muddywater-apt-targeting-middle-east/
+T38	url 1418 1559	https://blog.malwarebytes.com/threat-analysis/2017/09/elaborate-scripting-fu-used-in-espionage-attack-against-saudi-arabia-government_entity/
+T39	url 1560 1609	https://www.sekoia.fr/blog/falling-on-muddywater/
+T40	sample_function 1682 1926	starting from the initial infection vector , running VBA code via a macro and then dropping the PowerShell code that establishes command-center communications , sends victim system information and then receives commands supported by the malware
+T41	program_language 1735 1738	VBA
+T42	tool 1778 1788	PowerShell
+T43	tool 1977 1996	Office 97-2003 Word
+T44	reference_word 1642 1649	malware
+R23	part_of Arg1:T40 Arg2:T44	
+R24	use Arg1:T44 Arg2:T43	
+T45	program_language 2096 2099	VBA
+T46	encryption_algo 2275 2281	Base64
+T47	string 2350 2361	ProgramData
+T48	string 2424 2435	ProgramData
+T49	string 2593 2597	HKCU
+T50	string 2583 2586	RUN
+T51	domain 1280 1299	sec0wn.blogspot.com
+T52	domain 1361 1371	reaqta.com
+T53	domain 1426 1447	blog.malwarebytes.com
+T54	domain 1567 1581	/www.sekoia.fr
+T55	md5 11713 11745	08acd1149b09bf6455c553f512b51085
+T56	md5 11762 11794	a9ec30226c83ba6d7abb8d2011cdae14
+T57	md5 11811 11843	E5683fb480353c0dec333a7573710748
+T58	md5 11860 11892	159238b473f80272fdcd0a8ddf336a91
+T59	md5 11909 11941	16ac1a2c1e1c3b49e1a3a48fb71cc74f
+T60	md5 11958 11990	1b086ab28e3d6f73c6605f9ae087ad4a
+T61	md5 12007 12039	23c82e8c028af5c64cbe37314732ec19
+T62	md5 12056 12088	24e1bd221ba3813ed7b6056136237587
+T63	md5 12105 12137	2e82e242cb0684b98a8f6f2c0e8a12f3
+T64	md5 12154 12186	37f7e6e5f073508e1ee552ebea5d200e
+T65	md5 12203 12235	3bb14adb551663fd2328d59f653ba757
+T66	md5 12252 12284	3c2a0d6d0ecf06f1be9ad411d06f7ba8
+T67	md5 12301 12333	4c5a5c236c9f4480b3d725f297673fad
+T68	md5 12350 12382	4f873578956d2790101443f24e4bd4d3
+T69	md5 12399 12431	5466c8a099d1d30096775b1f4357d3cf
+T70	md5 12448 12480	59502e209aedf80e170e653306ca1553
+T71	md5 12497 12529	5a42a712e3b3cfa1db32d9e3d832f8f1
+T72	md5 12546 12578	5bd61a94e7698574eaf82ef277316463
+T73	md5 12595 12627	5de97ae178888f2dd222bb8a66060ac2
+T74	md5 12644 12676	665947cf7037a6772687b69279753cdf
+T75	md5 12693 12725	7a2ff07283ddc69d9f34cfa0d3c936d4
+T76	md5 12742 12774	7beb94f602e97785370fec2d059d54a5
+T77	md5 12791 12823	801f34abbf90ac2b4fb4b6289830cd16
+T78	md5 12840 12872	864d6321be50f29e7a7a4bfab746245a
+T79	md5 12889 12921	8a36d91ca331f62642dbcafc2ea1b1ab
+T80	md5 12938 12970	9486593e4fb5a4d440093d54a3519187
+T81	md5 12987 13019	94edf251b5fe7cc19488b5f0c3c3e359
+T82	threatActor_name 11699 11709	MuddyWater
+T83	threatActor_name 11748 11758	MuddyWater
+T84	threatActor_name 11797 11807	MuddyWater
+T85	threatActor_name 11846 11856	MuddyWater
+T86	threatActor_name 11895 11905	MuddyWater
+T87	threatActor_name 11944 11954	MuddyWater
+T88	threatActor_name 11993 12003	MuddyWater
+T89	threatActor_name 12042 12052	MuddyWater
+T90	threatActor_name 12091 12101	MuddyWater
+T91	threatActor_name 12140 12150	MuddyWater
+T92	threatActor_name 12189 12199	MuddyWater
+T93	threatActor_name 12238 12248	MuddyWater
+T94	threatActor_name 12287 12297	MuddyWater
+T95	threatActor_name 12336 12346	MuddyWater
+T96	threatActor_name 12385 12395	MuddyWater
+T97	threatActor_name 12434 12444	MuddyWater
+T98	threatActor_name 12483 12493	MuddyWater
+T99	threatActor_name 12532 12542	MuddyWater
+T100	threatActor_name 12581 12591	MuddyWater
+T101	threatActor_name 12630 12640	MuddyWater
+T102	threatActor_name 12679 12689	MuddyWater
+T103	threatActor_name 12728 12738	MuddyWater
+T104	threatActor_name 12777 12787	MuddyWater
+T105	threatActor_name 12826 12836	MuddyWater
+T106	threatActor_name 12875 12885	MuddyWater
+T107	threatActor_name 12924 12934	MuddyWater
+T108	threatActor_name 12973 12983	MuddyWater
+T109	threatActor_name 13022 13032	MuddyWater
+T110	threatActor_name 13081 13091	MuddyWater
+T111	threatActor_name 13141 13151	MuddyWater
+T112	threatActor_name 13210 13220	MuddyWater
+T113	threatActor_name 13265 13275	MuddyWater
+T114	threatActor_name 13327 13337	MuddyWater
+T115	threatActor_name 13389 13399	MuddyWater
+T116	threatActor_name 13456 13466	MuddyWater
+T117	threatActor_name 13530 13540	MuddyWater
+T118	threatActor_name 13596 13606	MuddyWater
+T119	threatActor_name 13662 13672	MuddyWater
+T120	threatActor_name 13728 13738	MuddyWater
+T121	threatActor_name 13800 13810	MuddyWater
+T122	threatActor_name 13867 13877	MuddyWater
+T123	threatActor_name 13944 13954	MuddyWater
+T124	threatActor_name 14019 14029	MuddyWater
+T125	threatActor_name 14094 14104	MuddyWater
+T126	threatActor_name 14169 14179	MuddyWater
+T127	threatActor_name 14224 14234	MuddyWater
+T128	threatActor_name 14280 14290	MuddyWater
+T129	threatActor_name 14335 14345	MuddyWater
+T130	threatActor_name 15638 15648	MuddyWater
+T131	threatActor_name 15607 15617	MuddyWater
+T132	threatActor_name 15575 15585	MuddyWater
+T133	threatActor_name 15544 15554	MuddyWater
+T134	threatActor_name 15478 15488	MuddyWater
+T135	threatActor_name 15412 15422	MuddyWater
+T136	threatActor_name 15356 15366	MuddyWater
+T137	threatActor_name 15291 15301	MuddyWater
+T138	threatActor_name 15234 15244	MuddyWater
+T139	threatActor_name 15177 15187	MuddyWater
+T140	threatActor_name 15045 15055	MuddyWater
+T141	threatActor_name 15117 15127	MuddyWater
+T142	threatActor_name 14900 14910	MuddyWater
+T143	threatActor_name 14969 14979	MuddyWater
+T144	threatActor_name 14831 14841	MuddyWater
+T145	threatActor_name 14759 14769	MuddyWater
+T146	threatActor_name 14691 14701	MuddyWater
+T147	threatActor_name 14618 14628	MuddyWater
+T148	threatActor_name 14539 14549	MuddyWater
+T149	threatActor_name 14467 14477	MuddyWater
+T150	threatActor_name 14401 14411	MuddyWater
+T151	IP_evil 15652 15661	5.9.0.155
+T152	IP_evil 15621 15635	104.237.233.40
+T153	IP_evil 15589 15604	104.237.255.212
+T154	IP_evil 15558 15572	104.237.233.60
+R25	part_of Arg1:T154 Arg2:T133	
+R26	part_of Arg1:T153 Arg2:T132	
+R27	part_of Arg1:T152 Arg2:T131	
+R28	part_of Arg1:T151 Arg2:T130	
+T155	url_evil 15492 15541	https://benangin.com/wp-includes/widgets/main.php
+T156	url_evil 15426 15475	http://hubinasia.com/wp-includes/widgets/main.php
+T157	url_evil 15370 15409	http://adibf.ae/wp-includes/js/main.php
+T158	url_evil 15305 15353	https://www.adfg.ae/wp-includes/widgets/main.php
+T159	url_evil 15248 15288	http://gtme.ae/font-awesome/css/main.php
+T160	url_evil 15191 15231	http://ektamservis.com/includes/main.php
+T161	url_evil 15131 15174	http://www.cankayasrc.com/style/js/main.php
+T162	domain_evil 15138 15156	www.cankayasrc.com
+R29	part_of Arg1:T161 Arg2:T141	
+T163	domain_evil 15198 15213	ektamservis.com
+R30	part_of Arg1:T160 Arg2:T139	
+R31	part_of Arg1:T159 Arg2:T138	
+T164	domain_evil 15255 15262	gtme.ae
+R32	part_of Arg1:T158 Arg2:T137	
+T165	domain_evil 15313 15324	www.adfg.ae
+T166	domain_evil 15377 15385	adibf.ae
+R33	part_of Arg1:T157 Arg2:T136	
+R34	part_of Arg1:T156 Arg2:T135	
+R35	part_of Arg1:T155 Arg2:T134	
+T167	domain_evil 15500 15512	benangin.com
+T168	domain_evil 15433 15446	hubinasia.com
+R36	part_of Arg1:T81 Arg2:T108	
+R37	part_of Arg1:T80 Arg2:T107	
+R38	part_of Arg1:T79 Arg2:T106	
+R39	part_of Arg1:T78 Arg2:T105	
+R40	part_of Arg1:T77 Arg2:T104	
+R41	part_of Arg1:T76 Arg2:T103	
+R42	part_of Arg1:T75 Arg2:T102	
+R43	part_of Arg1:T74 Arg2:T101	
+R44	part_of Arg1:T73 Arg2:T100	
+R45	part_of Arg1:T72 Arg2:T99	
+R46	part_of Arg1:T71 Arg2:T98	
+R47	part_of Arg1:T70 Arg2:T97	
+R48	part_of Arg1:T69 Arg2:T96	
+R49	part_of Arg1:T68 Arg2:T95	
+R50	part_of Arg1:T67 Arg2:T94	
+R51	part_of Arg1:T66 Arg2:T93	
+R52	part_of Arg1:T65 Arg2:T92	
+R53	part_of Arg1:T64 Arg2:T91	
+R54	part_of Arg1:T63 Arg2:T90	
+R55	part_of Arg1:T62 Arg2:T89	
+R56	part_of Arg1:T61 Arg2:T88	
+R57	part_of Arg1:T60 Arg2:T87	
+R58	part_of Arg1:T59 Arg2:T86	
+R59	part_of Arg1:T58 Arg2:T85	
+R60	part_of Arg1:T57 Arg2:T84	
+R61	part_of Arg1:T56 Arg2:T83	
+R62	part_of Arg1:T55 Arg2:T82	
+T169	company 3042 3051	Microsoft
+T170	string 3153 3163	EITHER INF
+T171	string 3166 3169	SCT
+T172	program_language 3188 3191	VBS
+T173	string 3209 3212	INF
+T174	string 3278 3281	INF
+T175	sample_name 3233 3244	advpack.dll
+T176	string 3247 3263	LaunchINFSection
+R63	part_of Arg1:T176 Arg2:T175	
+T177	string 3296 3299	SCT
+T178	sample_name 3328 3338	scrobj.dll
+T179	tool 3341 3350	Microsoft
+T180	string 3341 3368	Microsoft Scriptlet library
+R64	part_of Arg1:T178 Arg2:T180	
+R65	use Arg1:T174 Arg2:T178	
+T181	reference_word 3307 3316	scriptlet
+R66	coreference Arg1:T181 Arg2:T177	
+T182	tool 3377 3380	WMI
+T183	string 3383 3390	winmgmt
+T184	string 3434 3437	SCT
+T185	program_language 3399 3409	JavaScript
+T186	program_language 3413 3421	VBscript
+R67	part_of Arg1:T186 Arg2:T184	
+R68	part_of Arg1:T185 Arg2:T184	
+R69	use Arg1:T184 Arg2:T182	
+T189	tool 3452 3462	PowerShell
+T190	program_language 3516 3519	VBS
+T191	sample_name 3550 3559	mshta.exe
+R70	use Arg1:T190 Arg2:T191	
+T192	program_language 3585 3593	VBScript
+T187	tool 3630 3640	PowerShell
+T188	encryption_algo 3698 3704	Base64
+T193	tool 3761 3764	WMI
+T194	sample_name 3767 3778	wscript.exe
+T195	sample_name 3784 3793	mshta.exe
+T196	tool 3820 3830	PowerShell
+T197	tool 3727 3737	PowerShell
+R71	use Arg1:T197 Arg2:T193	
+R72	use Arg1:T197 Arg2:T194	
+R73	use Arg1:T197 Arg2:T195	
+T198	string 3902 3913	ProgramData
+T199	sample_name 13062 13078	EventManager.dll
+T200	sample_name 13121 13138	EventManager.logs
+R74	part_of Arg1:T199 Arg2:T109	
+R75	part_of Arg1:T200 Arg2:T110	
+T201	sample_name 13181 13207	WindowsDefenderService.ini
+R76	part_of Arg1:T201 Arg2:T111	
+T202	sample_name 13250 13262	Defender.sct
+R77	part_of Arg1:T202 Arg2:T112	
+T203	sample_name 13305 13324	DefenderService.inf
+T204	sample_name 13367 13386	WindowsDefender.ini
+R78	attack Arg1:T203 Arg2:T113	
+R79	part_of Arg1:T204 Arg2:T114	
+T205	sample_name 13436 13453	InstallConfNT.vbs
+R80	part_of Arg1:T205 Arg2:T115	
+T206	sample_name 14591 14615	ProjectConfManagerNT.ini
+R81	part_of Arg1:T206 Arg2:T148	
+T207	sample_name 14519 14536	ConfManagerNT.vbs
+R82	part_of Arg1:T207 Arg2:T149	
+T208	sample_name 14451 14464	WindowsNT.vbs
+R83	part_of Arg1:T208 Arg2:T150	
+T209	sample_name 14385 14398	WindowsNT.ini
+R84	part_of Arg1:T209 Arg2:T129	
+T210	sample_name 14320 14332	OneDrive.ini
+R85	part_of Arg1:T210 Arg2:T128	
+T211	sample_name 14264 14277	OneDrive.html
+T212	sample_name 14209 14221	OneDrive.dll
+T213	sample_name 14145 14166	ConfigRegisterSDK.vbs
+T214	sample_name 14070 14091	ConfigRegisterSDK.ini
+R86	part_of Arg1:T211 Arg2:T127	
+R87	part_of Arg1:T212 Arg2:T126	
+R88	part_of Arg1:T213 Arg2:T125	
+R89	part_of Arg1:T214 Arg2:T124	
+T215	sample_name 14000 14016	SetupConfSDK.ini
+T216	sample_name 13923 13941	ProjectConfSDK.vbs
+R90	part_of Arg1:T215 Arg2:T123	
+R91	part_of Arg1:T216 Arg2:T122	
+T217	sample_name 13851 13864	SetupConf.ini
+T218	sample_name 13779 13797	ConfigRegister.vbs
+T219	sample_name 13702 13725	WindowsDefenderTask.xml
+T220	sample_name 13636 13659	WindowsDefenderTask.txt
+T221	sample_name 13570 13593	WindowsDefenderTask.ini
+T222	sample_name 13503 13527	ProjectConfManagerNT.ini
+R92	part_of Arg1:T222 Arg2:T116	
+R93	part_of Arg1:T221 Arg2:T117	
+R94	part_of Arg1:T220 Arg2:T118	
+R95	part_of Arg1:T219 Arg2:T119	
+R96	part_of Arg1:T218 Arg2:T120	
+R97	part_of Arg1:T217 Arg2:T121	
+T223	tool 4012 4022	PowerShell
+T224	tool 4056 4070	Macro Warnings
+T225	tool 4080 4094	Protected View
+T226	program_language 4211 4214	VBA
+T227	reference_word 4607 4609	it
+T228	reference_word 4166 4168	It
+R98	coreference Arg1:T228 Arg2:T223	
+T229	reference_word 4286 4288	it
+R99	coreference Arg1:T229 Arg2:T228	
+T230	reference_word 4504 4506	it
+R100	coreference Arg1:T230 Arg2:T229	
+R101	coreference Arg1:T227 Arg2:T230	
+T231	sample_name 4632 4641	ntdll.dll
+T232	function 4644 4660	NtRaiseHardError
+R102	part_of Arg1:T232 Arg2:T231	
+R103	use Arg1:T227 Arg2:T231	
+T233	string 4677 4680	URL
+T234	string 4732 4735	URL
+T235	string 4790 4793	URL
+T236	tool 4842 4845	CnC
+T237	tool 4891 4894	CnC
+T238	string 4895 4898	URL
+T239	string 4935 4938	URL
+T240	string 4945 4958	middle_dragon
+T241	string 4761 4774	dragon_middle
+R104	use Arg1:T241 Arg2:T233	
+R105	use Arg1:T241 Arg2:T236	
+T242	protocol 5065 5067	IP
+T243	reference_word 5018 5022	code
+T244	url_evil 5074 5096	https://api.ipify.org/
+R106	use Arg1:T243 Arg2:T244	
+T245	protocol 5113 5115	IP
+T246	OS_name 5142 5144	OS
+T247	string 5254 5257	URL
+T248	person 5301 5310	attackers
+T249	tool 5465 5468	CnC
+T250	string 5497 5499	ID
+T251	string 5514 5516	ID
+T252	tool 5532 5535	CnC
+T253	tool 5811 5814	PNG
+T254	tool 5895 5905	PowerShell
+T255	sample_name 5942 5947	a.ps1
+T256	tool 5965 5970	Excel
+T257	tool 5987 5997	PowerShell
+T258	string 6009 6012	DDE
+T259	tool 6070 6080	PowerShell
+T260	string 6152 6155	COM
+T261	sample_name 6162 6171	MSHTA.exe
+T262	sample_name 6117 6122	a.ps1
+T263	sample_name 6289 6294	a.ps1
+T264	tool 6140 6147	Outlook
+T265	sample_name 6312 6324	Explorer.exe
+T266	string 6329 6332	COM
+T267	tool 6242 6252	PowerShell
+T268	tool 5848 5853	Excel
+T269	tool 6021 6028	Outlook
+T270	tool 6410 6413	CnC
+T271	string 6710 6721	ProgramData
+T272	string 6773 6779	Kasper
+T273	company 6803 6807	ESET
+T274	string 6787 6792	Panda
+T275	string 5825 5836	ProgramData
+R107	part_of Arg1:T253 Arg2:T275	
+R108	use Arg1:T256 Arg2:T258	
+R109	use Arg1:T264 Arg2:T260	
+R110	use Arg1:T264 Arg2:T261	
+R111	use Arg1:T265 Arg2:T266	
+T276	threatActor_name 6829 6839	MuddyWater
+T277	location 6854 6860	Jordan
+T278	location 6863 6869	Turkey
+T279	location 6872 6876	Iraq
+T280	location 6879 6887	Pakistan
+T281	location 6890 6902	Saudi Arabia
+T282	location 6905 6916	Afghanistan
+T283	location 6921 6931	Azerbaijan
+T284	target_crowd 6818 6825	victims
+R112	located Arg1:T284 Arg2:T277	
+R113	located Arg1:T284 Arg2:T278	
+R114	located Arg1:T284 Arg2:T279	
+R115	located Arg1:T284 Arg2:T280	
+R116	located Arg1:T284 Arg2:T281	
+R117	located Arg1:T284 Arg2:T282	
+R118	located Arg1:T284 Arg2:T283	
+R119	attack Arg1:T276 Arg2:T284	
+T285	location 6970 6976	Russia
+T286	location 6979 6983	Iran
+T287	location 6986 6993	Bahrain
+T288	location 6996 7003	Austria
+T289	location 7008 7012	Mali
+T290	target_crowd 6940 6947	victims
+R120	located Arg1:T290 Arg2:T285	
+R121	located Arg1:T290 Arg2:T286	
+R122	located Arg1:T290 Arg2:T287	
+R123	located Arg1:T290 Arg2:T288	
+R124	located Arg1:T290 Arg2:T289	
+R125	attack Arg1:T276 Arg2:T290	
+T291	tool 7176 7186	PowerShell
+T292	threatActor_name 7204 7214	MuddyWater
+R126	use Arg1:T292 Arg2:T291	
+T293	tool 7247 7257	PowerShell
+T294	tool 7433 7439	Office
+T295	string 7525 7528	OLE
+T296	tool 7581 7585	Word
+T297	sample_name 7666 7677	MSForms.exd
+T298	sample_name 7723 7734	MSForms.exd
+T299	sample_name 7782 7793	MSForms.exd
+T300	sample_name 7837 7848	MSForms.exd
+T301	location 8152 8160	Pakistan
+T302	tool 8486 8496	PowerShell
+T303	string 8550 8553	URL
+T304	md5 8711 8743	5a42a712e3b3cfa1db32d9e3d832f8f1
+T305	tool 8750 8760	PowerShell
+T306	tool 8781 8784	CnC
+T307	string 8785 8788	URL
+T308	tool 8835 8838	CnC
+T309	string 8839 8842	URL
+T310	string 8848 8861	dragon_middle
+T311	url_evil 8967 9010	http://www.cankayasrc.com/style/js/main.php
+T312	url_evil 9013 9053	http://ektamservis.com/includes/main.php
+T313	url_evil 9056 9096	http://gtme.ae/font-awesome/css/main.php
+R127	part_of Arg1:T306 Arg2:T305	
+R128	part_of Arg1:T307 Arg2:T305	
+R129	part_of Arg1:T305 Arg2:T304	
+T314	counter_measure 9436 9466	eliminate the holes altogether
+T315	tool 9695 9705	PowerShell
+T316	tool 9782 9792	PowerShell
+T317	sub_activity 9479 9564	those related to improper system configurations or errors in proprietary applications
+R130	part_of Arg1:T317 Arg2:T314	
+T318	tool 9743 9746	IEX
+T319	tool 9749 9757	Add-Type
+T320	tool 9764 9774	New-Object
+R131	use Arg1:T315 Arg2:T318	
+R132	use Arg1:T315 Arg2:T319	
+R133	use Arg1:T315 Arg2:T320	
+T321	string 9846 9849	GPO
+R134	use Arg1:T316 Arg2:T321	
+T322	threatActor_name 9944 9955	MuddyWaters
+T323	sub_activity 9966 10158	carried out a large number of attacks and demonstrated advanced social engineering , in addition to the active development of attacks , infrastructure and the use of new methods and techniques
+T324	person 10165 10174	attackers
+R135	part_of Arg1:T324 Arg2:T322	
+R136	goal Arg1:T322 Arg2:T323	
+T325	sub_activity 10188 10285	improving their toolkit in an effort to minimize their exposure to security products and services
+R137	goal Arg1:T322 Arg2:T325	
+T327	security_team 10415 10428	Kaspersky Lab
+T326	security_team 10288 10301	Kaspersky Lab
+T328	sub_activity 10490 10576	Educate generic staff to be able to distinguish malicious behavior like phishing links
+T329	tool 11556 11560	YARA
+T330	sub_activity 10579 10678	Educate information security staff to have full configuration , investigative and hunting abilities
+R138	part_of Arg1:T328 Arg2:T327	
+R139	part_of Arg1:T330 Arg2:T327	
+T331	sub_activity 10681 10838	Use a proven corporate-grade security solution in combination with anti-targeted attack solutions capable of detecting attacks by analyzing network anomalies
+T332	string 11431 11436	OPSEC
+T333	tool 11040 11044	YARA
+T334	sub_activity 10841 11050	Provide security staff with access to the latest threat intelligence data , which will arm them with helpful tools for targeted attack prevention and discovery , such as indicators of compromise and YARA rules
+R140	part_of Arg1:T331 Arg2:T327	
+R141	part_of Arg1:T334 Arg2:T327	
+T335	sub_activity 11053 11140	Make sure enterprise-grade patch management processes are well established and executed
+R142	part_of Arg1:T335 Arg2:T327	

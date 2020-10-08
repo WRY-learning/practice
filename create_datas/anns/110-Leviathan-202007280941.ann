@@ -1,0 +1,563 @@
+T1	threatActor_name 0 9	Leviathan
+T2	attack_activity 27 39	spearphishes
+T3	security_team 230 240	Proofpoint
+T4	person 241 252	researchers
+R2	part_of Arg1:T4 Arg2:T3	
+T5	person 269 284	espionage actor
+R3	find Arg1:T4 Arg2:T5	
+T6	industry 335 342	defense
+T7	government 347 357	government
+R4	attack Arg1:T5 Arg2:T6	
+R5	attack Arg1:T5 Arg2:T7	
+T8	time 382 386	2014
+T9	reference_word 394 399	actor
+R6	coreference Arg1:T9 Arg2:T5	
+T10	industry 430 438	maritime
+T11	industry 452 465	naval defense
+T12	industry 495 503	research
+T13	location 524 537	United States
+T14	location 542 556	Western Europe
+R7	first_found_time Arg1:T9 Arg2:T8	
+R8	attack Arg1:T9 Arg2:T10	
+R9	attack Arg1:T9 Arg2:T11	
+R10	attack Arg1:T9 Arg2:T12	
+R11	located Arg1:T12 Arg2:T13	
+R12	located Arg1:T12 Arg2:T14	
+T15	reference_word 580 589	The actor
+R13	coreference Arg1:T15 Arg2:T9	
+T16	industry 598 605	defense
+T17	industry 620 632	universities
+R15	attack Arg1:T15 Arg2:T16	
+R16	attack Arg1:T15 Arg2:T17	
+T20	industry 686 691	legal
+T21	government 710 720	government
+R17	attack Arg1:T15 Arg2:T20	
+R18	attack Arg1:T15 Arg2:T21	
+T22	reference_word 732 741	The actor
+R19	attack Arg1:T22 Arg2:T15	
+T23	industry 796 808	shipbuilding
+T24	industry 821 829	research
+R20	attack Arg1:T22 Arg2:T23	
+R21	attack Arg1:T22 Arg2:T24	
+T25	location 876 889	United States
+T26	location 892 906	Western Europe
+T27	location 913 928	South China Sea
+R22	attack Arg1:T22 Arg2:T25	
+R23	attack Arg1:T22 Arg2:T26	
+R24	attack Arg1:T22 Arg2:T27	
+T28	program_language 946 956	JavaScript
+T29	malware 976 979	Orz
+T30	malware 988 997	NanHaiShu
+R25	use Arg1:T29 Arg2:T28	
+R26	use Arg1:T30 Arg2:T28	
+T31	malware 1002 1015	Cobalt Strike
+T32	malware 1022 1045	SeDll JavaScript loader
+T33	malware 1052 1070	MockDll dll loader
+T38	sub_activity 1133 1160	fraudulent lookalike domain
+T36	sub_activity 1084 1112	Emailed attachments and URLs
+T37	sub_activity 1165 1180	stolen branding
+T39	tool 1208 1213	Excel
+T40	company 1198 1207	Microsoft
+T41	tool 1218 1222	Word
+R29	part_of Arg1:T39 Arg2:T40	
+R30	part_of Arg1:T41 Arg2:T40	
+T42	tool 1238 1244	macros
+R31	use Arg1:T22 Arg2:T29	
+R32	use Arg1:T22 Arg2:T30	
+R33	use Arg1:T22 Arg2:T31	
+R34	use Arg1:T22 Arg2:T32	
+R35	use Arg1:T22 Arg2:T33	
+T43	program_language 1028 1038	JavaScript
+R36	part_of Arg1:T36 Arg2:T22	
+R37	part_of Arg1:T38 Arg2:T22	
+R38	part_of Arg1:T37 Arg2:T22	
+T44	vulnerability_cve 1316 1329	CVE-2017-0199
+T45	vulnerability_cve 1334 1347	CVE-2017-8759
+T46	tool 1374 1383	Publisher
+T47	company 1364 1373	Microsoft
+R39	part_of Arg1:T46 Arg2:T47	
+T48	tool 1198 1232	Microsoft Excel and Word documents
+T49	tool 1364 1389	Microsoft Publisher files
+R41	use Arg1:T50 Arg2:T49	
+R40	use Arg1:T50 Arg2:T48	
+R42	use Arg1:T44 Arg2:T50	
+R43	use Arg1:T45 Arg2:T50	
+T50	reference_word 1519 1528	The actor
+R44	coreference Arg1:T50 Arg2:T22	
+T51	program_language 1407 1417	JavaScript
+T53	tool 1451 1454	HTA
+T55	tool 1457 1467	PowerShell
+T56	tool 1470 1473	WMI
+T57	tool 1476 1484	regsvr32
+T58	tool 1487 1497	Squiblydoo
+R45	use Arg1:T50 Arg2:T55	
+R46	use Arg1:T50 Arg2:T56	
+R47	use Arg1:T50 Arg2:T57	
+R48	use Arg1:T50 Arg2:T58	
+R49	use Arg1:T50 Arg2:T53	
+R50	use Arg1:T50 Arg2:T51	
+T52	program_language 1420 1441	JavaScript Scriptlets
+T54	program_language 1445 1448	XML
+R51	use Arg1:T50 Arg2:T52	
+T59	sub_activity 1539 1586	utilizes access at one compromised organization
+R53	launch Arg1:T50 Arg2:T59	
+T60	sub_activity 1590 1605	attack the next
+R54	goal Arg1:T59 Arg2:T60	
+T61	reference_word 1780 1789	the actor
+R55	coreference Arg1:T61 Arg2:T50	
+T62	sub_activity 1802 1848	compromise servers within victim organizations
+R56	launch Arg1:T61 Arg2:T62	
+T63	tool 1866 1885	command and control
+T64	tool 1888 1891	C&C
+R57	coreference Arg1:T64 Arg2:T63	
+T65	time 1917 1943	September 15 and 19 , 2017
+T66	security_team 1946 1956	Proofpoint
+T67	attack_activity 1978 1991	spearphishing
+T68	tool 1992 1998	emails
+R59	use Arg1:T67 Arg2:T68	
+R60	find Arg1:T66 Arg2:T67	
+R61	occur_time Arg1:T67 Arg2:T65	
+T69	reference_word 2009 2014	group
+R62	coreference Arg1:T69 Arg2:T61	
+R63	launch Arg1:T69 Arg2:T67	
+T70	location 2027 2029	US
+T71	industry 2030 2042	shipbuilding
+R64	located Arg1:T71 Arg2:T70	
+R65	attack Arg1:T69 Arg2:T71	
+T72	location 2057 2059	US
+T73	industry 2071 2079	research
+T74	industry 2092 2100	military
+R66	attack Arg1:T69 Arg2:T73	
+R68	located Arg1:T73 Arg2:T72	
+R67	part_of Arg1:T74 Arg2:T73	
+T75	tool 2116 2122	emails
+T76	string 2142 2171	Apply for internship position
+R69	part_of Arg1:T76 Arg2:T75	
+T77	sample_name 2204 2214	resume.rtf
+R70	part_of Arg1:T77 Arg2:T75	
+T78	sample_name 2242 2272	ARLUAS_FieldLog_2017-08-21.doc
+T79	string 2289 2316	Torpedo recovery experiment
+R71	part_of Arg1:T79 Arg2:T78	
+R72	part_of Arg1:T78 Arg2:T75	
+T80	vulnerability_cve 2352 2365	CVE-2017-8759
+R73	use Arg1:T78 Arg2:T80	
+R74	use Arg1:T77 Arg2:T80	
+T81	time 2441 2463	Between August 2 and 4
+T82	reference_word 2466 2475	the actor
+R75	coreference Arg1:T82 Arg2:T69	
+T84	attack_activity 2490 2503	spearphishing
+T85	tool 2504 2510	emails
+R76	use Arg1:T84 Arg2:T85	
+R77	launch Arg1:T82 Arg2:T84	
+T86	industry 2570 2577	defense
+T87	tool 2691 2694	C&C
+T88	industry 2809 2817	military
+T89	vulnerability_cve 2865 2878	CVE-2017-0199
+R79	use Arg1:T82 Arg2:T89	
+T90	company 2925 2934	Microsoft
+T91	tool 2935 2944	Publisher
+R80	part_of Arg1:T91 Arg2:T90	
+T92	tool 3046 3056	PowerPoint
+R81	part_of Arg1:T92 Arg2:T90	
+T93	sub_activity 3014 3069	lured into starting an embedded PowerPoint presentation
+T94	sub_activity 3092 3135	trigger execution of an embedded JavaScript
+T95	sub_activity 3200 3216	payload download
+T96	person 3001 3008	victims
+R82	launch Arg1:T96 Arg2:T93	
+R83	goal Arg1:T93 Arg2:T94	
+R84	goal Arg1:T94 Arg2:T95	
+T97	tool 3223 3232	Publisher
+T98	time 3365 3392	February to October of 2015
+T99	security_team 3413 3421	F-Secure
+T100	security_team 3426 3432	McAfee
+T101	person 3399 3409	colleagues
+R85	part_of Arg1:T101 Arg2:T99	
+R86	part_of Arg1:T101 Arg2:T100	
+T102	reference_word 3463 3468	actor
+R87	coreference Arg1:T102 Arg2:T82	
+T103	location 3479 3494	South China Sea
+R88	attack Arg1:T102 Arg2:T103	
+R89	find Arg1:T101 Arg2:T102	
+R90	release_time Arg1:T101 Arg2:T98	
+T104	reference_word 3526 3535	the group
+R91	coreference Arg1:T104 Arg2:T102	
+T105	company 3545 3554	Microsoft
+T106	tool 3555 3560	Excel
+T107	tool 3565 3569	Word
+R92	part_of Arg1:T106 Arg2:T105	
+R93	part_of Arg1:T107 Arg2:T105	
+T108	tool 3545 3579	Microsoft Excel and Word documents
+R94	use Arg1:T104 Arg2:T108	
+T109	location 3606 3617	Philippines
+T110	government 3618 3639	Department of Justice
+T111	government 3642 3646	APEC
+R95	located Arg1:T110 Arg2:T109	
+T112	industry 3681 3684	law
+T113	location 3858 3873	South China sea
+T114	reference_word 3780 3785	actor
+R99	coreference Arg1:T114 Arg2:T104	
+T115	industry 3820 3826	marine
+T116	industry 3831 3836	naval
+R100	located Arg1:T116 Arg2:T113	
+R101	located Arg1:T115 Arg2:T113	
+R102	attack Arg1:T114 Arg2:T115	
+R103	attack Arg1:T114 Arg2:T116	
+T117	time 3896 3934	between November 2014 and January 2015
+T118	security_team 3980 3990	Proofpoint
+T119	reference_word 4041 4046	actor
+R104	coreference Arg1:T119 Arg2:T114	
+T120	sub_activity 4000 4032	persistent exploitation attempts
+R105	release_time Arg1:T118 Arg2:T117	
+R106	find Arg1:T118 Arg2:T120	
+R107	launch Arg1:T119 Arg2:T120	
+T121	reference_word 4053 4058	actor
+R108	coreference Arg1:T121 Arg2:T119	
+T122	company 4077 4086	Microsoft
+T123	tool 4087 4092	Excel
+R109	part_of Arg1:T123 Arg2:T122	
+T124	tool 4077 4102	Microsoft Excel documents
+R110	use Arg1:T121 Arg2:T124	
+T125	location 4128 4130	US
+T126	industry 4131 4143	universities
+R111	attack Arg1:T124 Arg2:T126	
+R112	located Arg1:T126 Arg2:T125	
+T127	industry 4149 4157	military
+R113	part_of Arg1:T126 Arg2:T127	
+T128	industry 4201 4205	Navy
+R114	part_of Arg1:T126 Arg2:T128	
+T129	reference_word 4212 4217	actor
+R115	coreference Arg1:T129 Arg2:T121	
+T130	company 4253 4262	Microsoft
+T131	tool 4263 4267	Word
+R116	part_of Arg1:T131 Arg2:T130	
+T132	tool 4253 4277	Microsoft Word documents
+R117	use Arg1:T129 Arg2:T132	
+T133	location 4294 4296	US
+T134	industry 4297 4305	research
+T135	industry 4310 4321	development
+T136	industry 4341 4349	military
+R118	located Arg1:T134 Arg2:T133	
+R119	located Arg1:T135 Arg2:T133	
+T137	sub_activity 4294 4335	US research and development organizations
+R120	goal Arg1:T132 Arg2:T137	
+T138	sub_activity 4341 4371	military and intelligence ties
+R121	part_of Arg1:T138 Arg2:T137	
+R96	attack Arg1:T108 Arg2:T110	
+R97	attack Arg1:T108 Arg2:T111	
+R98	attack Arg1:T108 Arg2:T112	
+T139	tool 4393 4399	Emails
+T140	reference_word 4496 4509	the attackers
+R122	coreference Arg1:T140 Arg2:T129	
+T141	sub_activity 4510 4535	used highly topical lures
+R123	launch Arg1:T140 Arg2:T141	
+T142	industry 4651 4655	Navy
+T143	industry 4658 4660	IT
+T144	industry 4676 4684	research
+R124	part_of Arg1:T142 Arg2:T141	
+R125	part_of Arg1:T143 Arg2:T141	
+R126	part_of Arg1:T144 Arg2:T141	
+T145	reference_word 4687 4696	The actor
+R127	coreference Arg1:T145 Arg2:T140	
+T146	malware 4788 4796	backdoor
+T147	program_language 4856 4866	JavaScript
+T148	program_language 4869 4890	JavaScript Scriptlets
+T149	program_language 4893 4901	VBScript
+T150	program_language 4908 4911	XML
+T151	encryption_algo 4945 4951	base64
+T152	encryption_algo 4954 4970	gzip compression
+T153	encryption_algo 4990 5008	garbage characters
+T154	malware 5038 5046	backdoor
+R52	use Arg1:T145 Arg2:T146	
+R128	use Arg1:T145 Arg2:T147	
+R129	use Arg1:T145 Arg2:T148	
+R130	use Arg1:T145 Arg2:T149	
+R131	use Arg1:T145 Arg2:T150	
+R132	use Arg1:T145 Arg2:T151	
+R133	use Arg1:T145 Arg2:T152	
+R134	use Arg1:T145 Arg2:T153	
+T155	sub_activity 5011 5053	Split functionality of the backdoor & code
+R135	launch Arg1:T145 Arg2:T155	
+T156	sub_activity 5059 5082	establishes persistence
+R136	goal Arg1:T155 Arg2:T156	
+T157	malware 5091 5099	backdoor
+T158	sample_name 5140 5150	resume.rtf
+T159	time 5167 5186	September 19 , 2017
+T160	protocol 5218 5222	SOAP
+T161	program_language 5223 5227	WSDL
+T162	sample_name 5247 5257	readme.txt
+T163	protocol 5279 5282	FTP
+T164	sub_activity 5194 5259	retrieves the malicious SOAP WSDL definition named “ readme.txt “
+R137	launch Arg1:T158 Arg2:T164	
+R138	use Arg1:T164 Arg2:T163	
+R139	occur_time Arg1:T164 Arg2:T159	
+T165	program_language 5353 5361	VBScript
+T166	sample_name 5362 5373	favicon.ico
+R140	use Arg1:T166 Arg2:T165	
+T167	sample_function 5392 5429	creates and runs two JavaScript files
+T168	location 5437 5442	%TMP%
+R141	goal Arg1:T166 Arg2:T167	
+T169	program_language 5413 5423	JavaScript
+T170	sub_activity 5409 5429	two JavaScript files
+R142	located Arg1:T170 Arg2:T168	
+T171	sub_activity 5507 5545	establish a system autostart mechanism
+R143	goal Arg1:T170 Arg2:T171	
+T172	sample_name 5603 5610	link.js
+T173	location 5618 5623	%TMP%
+R144	located Arg1:T172 Arg2:T173	
+T174	sample_name 5626 5633	Link.js
+T175	sample_name 5668 5707	Java (TM ) Platform SE Auto Updater.lnk
+T176	malware 5762 5770	backdoor
+T177	program_language 5771 5781	JavaScript
+R145	use Arg1:T176 Arg2:T177	
+T178	sub_activity 5835 5881	download and execute the Cobalt Strike payload
+T179	malware 5860 5873	Cobalt Strike
+R146	goal Arg1:T170 Arg2:T178	
+T180	sample_name 5929 5950	rWug5n0PHUFjDFyb8k.js
+T181	tool 5998 6008	PowerShell
+T182	encryption_algo 6057 6063	base64
+T183	encryption_algo 6079 6095	Gzip compression
+T184	encryption_algo 6036 6054	garbage characters
+T185	sample_function 5991 6016	runs a PowerShell command
+R147	goal Arg1:T180 Arg2:T185	
+R148	use Arg1:T185 Arg2:T184	
+R149	use Arg1:T185 Arg2:T182	
+R150	use Arg1:T185 Arg2:T183	
+T186	tool 6104 6114	PowerShell
+T187	malware 6128 6141	Cobalt Strike
+T188	company 6192 6201	Microsoft
+T189	tool 6202 6211	Publisher
+R151	part_of Arg1:T189 Arg2:T188	
+T190	sample_name 6266 6270	0.js
+T191	sample_name 6350 6360	resume.rtf
+T192	sample_name 6369 6373	0.js
+T193	sample_function 6217 6263	downloads and runs yet another JavaScript file
+R152	use Arg1:T180 Arg2:T332	
+R153	goal Arg1:T180 Arg2:T193	
+R154	part_of Arg1:T190 Arg2:T193	
+T194	sample_function 6374 6412	handles the system autostart mechanism
+R155	goal Arg1:T192 Arg2:T194	
+T195	sample_name 6434 6448	office 365.lnk
+R156	use Arg1:T194 Arg2:T195	
+T196	string 6520 6530	Squiblydoo
+R157	use Arg1:T195 Arg2:T196	
+T197	malware 6560 6568	backdoor
+T198	malware 6613 6618	SeDll
+T199	sample_name 6621 6625	0.js
+T200	sub_activity 6671 6674	C&C
+T201	sample_function 6631 6681	downloads two additional files from the C&C server
+R158	goal Arg1:T199 Arg2:T201	
+T202	sample_name 6684 6693	green.ddd
+T203	sample_name 6698 6707	green.tmp
+R159	part_of Arg1:T202 Arg2:T200	
+R160	part_of Arg1:T203 Arg2:T200	
+T204	sample_name 6737 6746	green.ddd
+T205	sample_name 6790 6805	SEDll_Win32.dll
+R161	coreference Arg1:T204 Arg2:T205	
+T206	malware 6826 6834	backdoor
+T207	reference_word 6848 6853	actor
+R162	coreference Arg1:T207 Arg2:T145	
+R163	use Arg1:T207 Arg2:T206	
+T208	time 6854 6864	since 2014
+R164	first_found_time Arg1:T206 Arg2:T208	
+T209	sample_function 6888 6950	decrypting and executing the final JavaScript backdoor “ Orz ”
+R165	goal Arg1:T206 Arg2:T209	
+T210	malware 6945 6948	Orz
+T211	malware 6934 6942	backdoor
+R166	part_of Arg1:T210 Arg2:T211	
+T212	program_language 6923 6933	JavaScript
+R167	use Arg1:T210 Arg2:T212	
+T213	program_language 6987 6997	JavaScript
+T214	malware 6998 7006	backdoor
+R168	use Arg1:T214 Arg2:T213	
+T215	reference_word 7073 7082	The actor
+R169	coreference Arg1:T215 Arg2:T207	
+T216	tool 7168 7179	HTA wrapper
+T217	sub_activity 7146 7179	wrapping it inside an HTA wrapper
+R170	launch Arg1:T215 Arg2:T217	
+T218	reference_word 7155 7157	it
+R171	coreference Arg1:T218 Arg2:T210	
+T219	sample_function 7292 7313	Information gathering
+T220	sample_function 7377 7397	Downloading from URL
+T221	sample_function 7400 7426	Executing other JavaScript
+T222	program_language 7416 7426	JavaScript
+T223	sample_function 7429 7486	Registry , system , process , directory , file operations
+T224	sample_function 7489 7495	SafeIE
+R172	goal Arg1:T218 Arg2:T219	
+R173	goal Arg1:T218 Arg2:T220	
+R174	goal Arg1:T218 Arg2:T221	
+R175	goal Arg1:T218 Arg2:T223	
+R176	goal Arg1:T218 Arg2:T224	
+T225	tool 7505 7507	IE
+T226	sub_activity 7498 7535	change IE settings to reduce warnings
+R177	part_of Arg1:T226 Arg2:T224	
+T227	malware 7586 7594	backdoor
+T228	time 7601 7612	August 2017
+T229	company 7637 7646	Microsoft
+T230	tool 7647 7656	Publisher
+R178	part_of Arg1:T230 Arg2:T229	
+T231	time 7689 7696	in 2014
+T232	malware 7736 7739	orz
+T233	malware 7766 7770	core
+R179	coreference Arg1:T232 Arg2:T233	
+T234	reference_word 7802 7811	The actor
+R180	coreference Arg1:T234 Arg2:T215	
+T235	reference_word 7869 7881	The backdoor
+R182	coreference Arg1:T235 Arg2:T233	
+T236	sample_function 7949 7970	Information gathering
+T237	tool 7973 7975	IE
+T238	sample_function 8026 8055	Overwriting registry settings
+T239	sample_function 8059 8094	reduce malware visibility on system
+R183	goal Arg1:T238 Arg2:T239	
+T240	sample_function 8097 8110	Download file
+T241	sample_function 8113 8124	Upload file
+T242	sample_function 8127 8157	Execute a command with cscript
+T243	sample_function 8160 8178	Execute JavaScript
+T244	program_language 8168 8178	JavaScript
+T245	sample_function 8181 8202	Execute shell command
+T246	sample_function 8205 8218	Execute a dll
+T247	malware 8239 8246	MockDll
+R185	use Arg1:T246 Arg2:T247	
+T248	sample_function 8252 8266	Get proxy info
+T249	sample_function 8269 8285	Get process list
+T250	sample_function 8288 8305	Terminate process
+T251	sample_function 8308 8322	Get drive info
+T252	sample_function 8325 8345	GET request to a URL
+T253	sample_function 8348 8369	POST request to a URL
+R186	goal Arg1:T235 Arg2:T236	
+R184	goal Arg1:T235 Arg2:T238	
+R187	goal Arg1:T235 Arg2:T240	
+R188	goal Arg1:T235 Arg2:T241	
+R189	goal Arg1:T235 Arg2:T242	
+R190	goal Arg1:T235 Arg2:T243	
+R191	goal Arg1:T235 Arg2:T245	
+R192	goal Arg1:T235 Arg2:T246	
+R193	goal Arg1:T235 Arg2:T248	
+R194	goal Arg1:T235 Arg2:T249	
+R195	goal Arg1:T235 Arg2:T250	
+R196	goal Arg1:T235 Arg2:T251	
+R197	goal Arg1:T235 Arg2:T252	
+R198	goal Arg1:T235 Arg2:T253	
+T254	sub_activity 8481 8484	C&C
+T255	sub_activity 8513 8547	determine the secondary C&C server
+T256	string 8448 8458	jmpUrlList
+T257	tool 8537 8540	C&C
+T258	sub_activity 8460 8492	provides the initial C&C servers
+R199	goal Arg1:T256 Arg2:T258	
+R200	goal Arg1:T258 Arg2:T255	
+T259	sub_activity 8630 8633	C&C
+T260	tool 8805 8808	C&C
+T261	tool 8823 8826	C&C
+T262	reference_word 8861 8873	The backdoor
+R201	coreference Arg1:T262 Arg2:T235	
+T263	tool 8912 8915	C&C
+T264	string 8934 8942	jmpRegex
+T265	sample_function 8880 8922	looks for the secondary encoded C&C server
+R181	goal Arg1:T262 Arg2:T265	
+R202	use Arg1:T265 Arg2:T264	
+T266	reference_word 8959 8971	the backdoor
+R203	coreference Arg1:T266 Arg2:T262	
+T267	string 9020 9029	codeRegex
+R204	use Arg1:T266 Arg2:T267	
+T268	malware 9170 9173	Orz
+T269	malware 9174 9182	backdoor
+R205	part_of Arg1:T268 Arg2:T269	
+T270	string 9212 9216	DLLs
+T271	encryption_algo 9240 9246	base64
+T272	malware 9426 9433	MockDll
+T273	malware 9440 9448	backdoor
+R206	part_of Arg1:T272 Arg2:T273	
+T274	sample_function 9449 9482	creates a configuration .ini file
+R207	goal Arg1:T272 Arg2:T274	
+T275	malware 9531 9538	MockDll
+T276	tool 9556 9564	regsvr32
+T277	malware 9567 9574	MockDll
+T278	string 9707 9711	outf
+T279	sub_activity 9747 9799	decrypting and executing another JavaScript backdoor
+T280	malware 9808 9811	Orz
+T281	tool 9859 9867	regsvr32
+T282	tool 9874 9891	DllRegisterServer
+T283	encryption_algo 10161 10167	base64
+T284	function 10326 10339	IActiveScript
+T285	function 10344 10368	IActiveScriptParse32 COM
+R208	use Arg1:T280 Arg2:T284	
+R209	use Arg1:T280 Arg2:T285	
+T286	string 10454 10483	regsvr32 /s \"%s\" DR __CIM__
+T287	sample_function 10490 10498	register
+R210	goal Arg1:T286 Arg2:T287	
+T288	malware 10692 10705	Cobalt Strike
+T289	sub_activity 10718 10742	penetration testing tool
+R211	part_of Arg1:T289 Arg2:T288	
+T290	location 10870 10872	US
+T291	reference_word 10801 10806	actor
+R212	coreference Arg1:T291 Arg2:T234	
+T292	location 10877 10891	Western Europe
+T293	target_crowd 10870 10910	US and Western Europe with military ties
+R213	attack Arg1:T291 Arg2:T293	
+T294	time 10944 10948	2014
+R214	first_found_time Arg1:T291 Arg2:T294	
+T295	industry 11058 11063	naval
+T297	industry 11068 11084	maritime defense
+T296	malware 11113 11122	backdoors
+T298	industry 11131 11138	defense
+T299	company 11155 11180	academic research centers
+T300	industry 11186 11194	military
+T301	counter_measure 11441 11449	firewall
+T302	counter_measure 11452 11465	email gateway
+T303	counter_measure 11472 11480	endpoint
+T304	threatActor_name 11687 11696	Leviathan
+T305	threatActor_name 11806 11815	Leviathan
+T306	threatActor_name 11945 11954	Leviathan
+T307	threatActor_name 12031 12040	Leviathan
+T308	threatActor_name 12115 12124	Leviathan
+T309	threatActor_name 12208 12217	Leviathan
+T310	threatActor_name 12303 12312	Leviathan
+T311	sample_name 11699 11709	Resume.rtf
+T312	vulnerability_cve 11723 11736	CVE-2017-8759
+T313	sha2 11739 11803	cdf6e2e928a89cbb857e688055a25e37a8d8b8b90530bd52c8548fb544f66f1f
+T314	sample_name 11818 11848	ARLUAS_FieldLog_2017-08-21.doc
+T315	vulnerability_cve 11862 11875	CVE-2017-8759
+T316	sha2 11878 11942	c7fa6f27ec4f4142ae591f2dd7c63d046431945f03c87dbed88d79f55180a46d
+T317	url_evil 11957 11993	ftp://185.106.120.206/pub/readme.txt
+T318	sample_name 11996 12006	Resume.rtf
+T319	sample_function 12009 12028	downloading scripts
+T320	url_evil 12043 12077	http://185.106.120.206/favicon.ico
+T321	sample_name 12080 12090	Resume.rtf
+T322	sample_function 12093 12112	downloading scripts
+T323	sample_name 12127 12138	Favicon.ico
+T324	sha2 12141 12205	39c952c7e14b6be5a9cb1be3f05eafa22e1115806e927f4e2dc85d609bc0eb36
+T325	malware 12220 12233	Cobalt Strike
+T326	sha2 12236 12300	5860ddc428ffa900258207e9c385f843a3472f2fbf252d2f6357d458646cf362
+T327	sample_name 12315 12342	20170720_final_pm_app-2.doc
+T328	sha2 12345 12409	ced7ca9625543d3d3d09f70223cc19f0d99e21792854452df5ba84b3a59d17b8
+R215	part_of Arg1:T311 Arg2:T304	
+R216	use Arg1:T311 Arg2:T312	
+R217	part_of Arg1:T313 Arg2:T311	
+R218	part_of Arg1:T314 Arg2:T305	
+R219	use Arg1:T314 Arg2:T315	
+R220	part_of Arg1:T316 Arg2:T314	
+R221	part_of Arg1:T317 Arg2:T306	
+R222	part_of Arg1:T318 Arg2:T317	
+R223	goal Arg1:T318 Arg2:T319	
+R224	part_of Arg1:T320 Arg2:T307	
+R225	part_of Arg1:T321 Arg2:T320	
+R226	goal Arg1:T321 Arg2:T322	
+R227	part_of Arg1:T323 Arg2:T308	
+R228	part_of Arg1:T324 Arg2:T323	
+R229	part_of Arg1:T325 Arg2:T309	
+R230	part_of Arg1:T326 Arg2:T325	
+R231	part_of Arg1:T327 Arg2:T310	
+R232	part_of Arg1:T328 Arg2:T327	
+T18	tool 2925 2950	Microsoft Publisher files
+T19	tool 3585 3591	macros
+R14	part_of Arg1:T19 Arg2:T108	
+R233	part_of Arg1:T42 Arg2:T48	
+T329	tool 4118 4124	macros
+R234	part_of Arg1:T329 Arg2:T124	
+T330	tool 4241 4246	macro
+R235	part_of Arg1:T330 Arg2:T132	
+T331	tool 7637 7662	Microsoft Publisher files
+T332	tool 6192 6216	Microsoft Publisher file
+R58	use Arg1:T61 Arg2:T63	
+T83	industry 40 48	maritime
+T333	industry 53 60	defense
+T34	tool 1060 1063	dll
